@@ -110,7 +110,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getTypeMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setTypeMap(java.util.Map)"/>
         /// </summary>
-        Java.Util.Map<Java.Lang.String, Java.Lang.Class> TypeMap { get; set; }
+        Java.Util.Map<, > TypeMap { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getWarnings()"/> 
         /// </summary>
@@ -118,285 +118,285 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isClosed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool IsClosed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isReadOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool IsReadOnly();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isValid(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool IsValid(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getClientInfo(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Lang.String GetClientInfo(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#nativeSQL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Lang.String NativeSQL(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createArrayOf(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Sql.Array"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Array CreateArrayOf(Java.Lang.String arg0, object[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createBlob()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.Blob"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Blob CreateBlob();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2, int arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createClob()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.Clob"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Clob CreateClob();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createNClob()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.NClob"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.NClob CreateNClob();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2, int arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, Java.Lang.String[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSavepoint()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.Savepoint"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Savepoint SetSavepoint();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSavepoint(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Savepoint"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Savepoint SetSavepoint(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createSQLXML()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.SQLXML"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.SQLXML CreateSQLXML();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.Statement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Statement CreateStatement();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.Statement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Statement CreateStatement(int arg0, int arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.Statement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Statement CreateStatement(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStruct(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Sql.Struct"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Struct CreateStruct(Java.Lang.String arg0, object[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#abort(java.util.concurrent.Executor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Abort(Java.Util.Concurrent.Executor arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#clearWarnings()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void ClearWarnings();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#commit()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Commit();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#releaseSavepoint(java.sql.Savepoint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void ReleaseSavepoint(Java.Sql.Savepoint arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#rollback()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Rollback();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#rollback(java.sql.Savepoint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Rollback(Java.Sql.Savepoint arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setClientInfo(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Sql.SQLClientInfoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetClientInfo(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setNetworkTimeout(java.util.concurrent.Executor,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetNetworkTimeout(Java.Util.Concurrent.Executor arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setReadOnly(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetReadOnly(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setShardingKeyIfValid(java.sql.ShardingKey,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool SetShardingKeyIfValid(Java.Sql.ShardingKey arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setShardingKeyIfValid(java.sql.ShardingKey,java.sql.ShardingKey,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool SetShardingKeyIfValid(Java.Sql.ShardingKey arg0, Java.Sql.ShardingKey arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#beginRequest()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void BeginRequest();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#endRequest()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void EndRequest();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setShardingKey(java.sql.ShardingKey,java.sql.ShardingKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetShardingKey(Java.Sql.ShardingKey arg0, Java.Sql.ShardingKey arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setShardingKey(java.sql.ShardingKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetShardingKey(Java.Sql.ShardingKey arg0);
 
         #endregion
@@ -418,11 +418,11 @@ namespace Java.Sql
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Sql.Connection"/> to <see cref="Java.Sql.Wrapper"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Sql.Wrapper(Java.Sql.Connection t) => t.Cast<Java.Sql.Wrapper>();
         /// <summary>
-        /// Converter from <see cref="Java.Sql.Connection"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Sql.Connection t) => t.Cast<Java.Lang.AutoCloseable>();
 
@@ -526,9 +526,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getTypeMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setTypeMap(java.util.Map)"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.Class> TypeMap
+        public Java.Util.Map<, > TypeMap
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Class>>("getTypeMap", "()Ljava/util/Map;"); } set { IExecuteWithSignature("setTypeMap", "(Ljava/util/Map;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Map<, >>("getTypeMap", "()Ljava/util/Map;"); } set { IExecuteWithSignature("setTypeMap", "(Ljava/util/Map;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getWarnings()"/> 
@@ -540,8 +540,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isClosed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool IsClosed()
         {
             return IExecuteWithSignature<bool>("isClosed", "()Z");
@@ -549,8 +549,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isReadOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool IsReadOnly()
         {
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
@@ -558,9 +558,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#isValid(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool IsValid(int arg0)
         {
             return IExecuteWithSignature<bool>("isValid", "(I)Z", arg0);
@@ -568,9 +568,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#getClientInfo(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String GetClientInfo(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getClientInfo", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -578,9 +578,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#nativeSQL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String NativeSQL(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("nativeSQL", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -588,10 +588,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createArrayOf(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Sql.Array"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Array CreateArrayOf(Java.Lang.String arg0, object[] arg1)
         {
             return IExecuteWithSignature<Java.Sql.Array>("createArrayOf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/sql/Array;", arg0, arg1);
@@ -599,8 +599,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createBlob()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.Blob"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Blob CreateBlob()
         {
             return IExecuteWithSignature<Java.Sql.Blob>("createBlob", "()Ljava/sql/Blob;");
@@ -608,12 +608,12 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<Java.Sql.CallableStatement>("prepareCall", "(Ljava/lang/String;III)Ljava/sql/CallableStatement;", arg0, arg1, arg2, arg3);
@@ -621,11 +621,11 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Sql.CallableStatement>("prepareCall", "(Ljava/lang/String;II)Ljava/sql/CallableStatement;", arg0, arg1, arg2);
@@ -633,9 +633,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Sql.CallableStatement>("prepareCall", "(Ljava/lang/String;)Ljava/sql/CallableStatement;", arg0);
@@ -643,8 +643,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createClob()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.Clob"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Clob CreateClob()
         {
             return IExecuteWithSignature<Java.Sql.Clob>("createClob", "()Ljava/sql/Clob;");
@@ -652,8 +652,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createNClob()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.NClob"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.NClob CreateNClob()
         {
             return IExecuteWithSignature<Java.Sql.NClob>("createNClob", "()Ljava/sql/NClob;");
@@ -661,12 +661,12 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;III)Ljava/sql/PreparedStatement;", arg0, arg1, arg2, arg3);
@@ -674,11 +674,11 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;II)Ljava/sql/PreparedStatement;", arg0, arg1, arg2);
@@ -686,10 +686,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;I)Ljava/sql/PreparedStatement;", arg0, arg1);
@@ -697,10 +697,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int[] arg1)
         {
             return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;[I)Ljava/sql/PreparedStatement;", arg0, arg1);
@@ -708,10 +708,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
             return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/sql/PreparedStatement;", arg0, arg1);
@@ -719,9 +719,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;)Ljava/sql/PreparedStatement;", arg0);
@@ -729,8 +729,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSavepoint()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.Savepoint"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Savepoint SetSavepoint()
         {
             return IExecuteWithSignature<Java.Sql.Savepoint>("setSavepoint", "()Ljava/sql/Savepoint;");
@@ -738,9 +738,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setSavepoint(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Savepoint"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Savepoint SetSavepoint(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Sql.Savepoint>("setSavepoint", "(Ljava/lang/String;)Ljava/sql/Savepoint;", arg0);
@@ -748,8 +748,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createSQLXML()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.SQLXML"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.SQLXML CreateSQLXML()
         {
             return IExecuteWithSignature<Java.Sql.SQLXML>("createSQLXML", "()Ljava/sql/SQLXML;");
@@ -757,8 +757,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.Statement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Statement CreateStatement()
         {
             return IExecuteWithSignature<Java.Sql.Statement>("createStatement", "()Ljava/sql/Statement;");
@@ -766,11 +766,11 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.Statement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Statement CreateStatement(int arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Sql.Statement>("createStatement", "(III)Ljava/sql/Statement;", arg0, arg1, arg2);
@@ -778,10 +778,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.Statement"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Statement CreateStatement(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Sql.Statement>("createStatement", "(II)Ljava/sql/Statement;", arg0, arg1);
@@ -789,10 +789,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStruct(java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Sql.Struct"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Struct CreateStruct(Java.Lang.String arg0, object[] arg1)
         {
             return IExecuteWithSignature<Java.Sql.Struct>("createStruct", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/sql/Struct;", arg0, arg1);
@@ -800,8 +800,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#abort(java.util.concurrent.Executor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Abort(Java.Util.Concurrent.Executor arg0)
         {
             IExecuteWithSignature("abort", "(Ljava/util/concurrent/Executor;)V", arg0);
@@ -809,7 +809,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#clearWarnings()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void ClearWarnings()
         {
             IExecuteWithSignature("clearWarnings", "()V");
@@ -817,7 +817,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -825,7 +825,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#commit()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Commit()
         {
             IExecuteWithSignature("commit", "()V");
@@ -833,8 +833,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#releaseSavepoint(java.sql.Savepoint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void ReleaseSavepoint(Java.Sql.Savepoint arg0)
         {
             IExecuteWithSignature("releaseSavepoint", "(Ljava/sql/Savepoint;)V", arg0);
@@ -842,7 +842,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#rollback()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Rollback()
         {
             IExecuteWithSignature("rollback", "()V");
@@ -850,8 +850,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#rollback(java.sql.Savepoint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Rollback(Java.Sql.Savepoint arg0)
         {
             IExecuteWithSignature("rollback", "(Ljava/sql/Savepoint;)V", arg0);
@@ -859,9 +859,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setClientInfo(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Sql.SQLClientInfoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetClientInfo(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("setClientInfo", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -869,9 +869,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setNetworkTimeout(java.util.concurrent.Executor,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetNetworkTimeout(Java.Util.Concurrent.Executor arg0, int arg1)
         {
             IExecuteWithSignature("setNetworkTimeout", "(Ljava/util/concurrent/Executor;I)V", arg0, arg1);
@@ -879,8 +879,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setReadOnly(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetReadOnly(bool arg0)
         {
             IExecuteWithSignature("setReadOnly", "(Z)V", arg0);
@@ -888,10 +888,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setShardingKeyIfValid(java.sql.ShardingKey,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool SetShardingKeyIfValid(Java.Sql.ShardingKey arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("setShardingKeyIfValid", "(Ljava/sql/ShardingKey;I)Z", arg0, arg1);
@@ -899,11 +899,11 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setShardingKeyIfValid(java.sql.ShardingKey,java.sql.ShardingKey,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool SetShardingKeyIfValid(Java.Sql.ShardingKey arg0, Java.Sql.ShardingKey arg1, int arg2)
         {
             return IExecuteWithSignature<bool>("setShardingKeyIfValid", "(Ljava/sql/ShardingKey;Ljava/sql/ShardingKey;I)Z", arg0, arg1, arg2);
@@ -911,7 +911,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#beginRequest()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void BeginRequest()
         {
             IExecuteWithSignature("beginRequest", "()V");
@@ -919,7 +919,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#endRequest()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void EndRequest()
         {
             IExecuteWithSignature("endRequest", "()V");
@@ -927,9 +927,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setShardingKey(java.sql.ShardingKey,java.sql.ShardingKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetShardingKey(Java.Sql.ShardingKey arg0, Java.Sql.ShardingKey arg1)
         {
             IExecuteWithSignature("setShardingKey", "(Ljava/sql/ShardingKey;Ljava/sql/ShardingKey;)V", arg0, arg1);
@@ -937,8 +937,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setShardingKey(java.sql.ShardingKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetShardingKey(Java.Sql.ShardingKey arg0)
         {
             IExecuteWithSignature("setShardingKey", "(Ljava/sql/ShardingKey;)V", arg0);

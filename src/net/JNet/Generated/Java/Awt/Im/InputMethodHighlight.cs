@@ -73,20 +73,20 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#%3Cinit%3E(boolean,int,int,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
-        public InputMethodHighlight(bool arg0, int arg1, int arg2, Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        public InputMethodHighlight(bool arg0, int arg1, int arg2, Java.Util.Map<, > arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#%3Cinit%3E(boolean,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public InputMethodHighlight(bool arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -94,8 +94,8 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#%3Cinit%3E(boolean,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public InputMethodHighlight(bool arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -162,9 +162,9 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getStyle()"/> 
         /// </summary>
-        public Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> Style
+        public Java.Util.Map<, > Style
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Awt.FontNs.TextAttribute, object>>("getStyle", "()Ljava/util/Map;"); }
+            get { return IExecuteWithSignature<Java.Util.Map<, >>("getStyle", "()Ljava/util/Map;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getVariation()"/> 
@@ -176,7 +176,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#isSelected()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSelected()
         {
             return IExecuteWithSignature<bool>("isSelected", "()Z");

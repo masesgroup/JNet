@@ -82,8 +82,8 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationList.html#item(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Org.W3c.Dom.DOMImplementation Item(int arg0);
 
         #endregion
@@ -126,8 +126,8 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationList.html#item(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.DOMImplementation Item(int arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("item", "(I)Lorg/w3c/dom/DOMImplementation;", arg0);

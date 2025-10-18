@@ -75,7 +75,7 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Short"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Short t) => t.Cast<Java.Lang.Comparable>();
 
@@ -119,9 +119,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compare(short,short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int Compare(short arg0, short arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(SS)I", arg0, arg1);
@@ -129,9 +129,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareUnsigned(short,short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int CompareUnsigned(short arg0, short arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "compareUnsigned", "(SS)I", arg0, arg1);
@@ -139,8 +139,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#hashCode(short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int HashCode(short arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(S)I", arg0);
@@ -148,8 +148,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedInt(short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int ToUnsignedInt(short arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "toUnsignedInt", "(S)I", arg0);
@@ -157,9 +157,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#decode(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Short"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.Short Decode(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/lang/Short;", arg0);
@@ -167,10 +167,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.Short"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.Short ValueOf(Java.Lang.String arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;I)Ljava/lang/Short;", arg0, arg1);
@@ -178,9 +178,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Short"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.Short ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Short;", arg0);
@@ -188,8 +188,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="Java.Lang.Short"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Short ValueOf(short arg0)
         {
             return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "valueOf", "(S)Ljava/lang/Short;", arg0);
@@ -197,8 +197,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toString(short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ToString(short arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(S)Ljava/lang/String;", arg0);
@@ -206,8 +206,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedLong(short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static long ToUnsignedLong(short arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "toUnsignedLong", "(S)J", arg0);
@@ -215,10 +215,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="short"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static short ParseShort(Java.Lang.String arg0, int arg1)
         {
             return SExecuteWithSignature<short>(LocalBridgeClazz, "parseShort", "(Ljava/lang/String;I)S", arg0, arg1);
@@ -226,9 +226,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="short"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static short ParseShort(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<short>(LocalBridgeClazz, "parseShort", "(Ljava/lang/String;)S", arg0);
@@ -236,8 +236,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#reverseBytes(short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="short"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static short ReverseBytes(short arg0)
         {
             return SExecuteWithSignature<short>(LocalBridgeClazz, "reverseBytes", "(S)S", arg0);
@@ -249,8 +249,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -258,8 +258,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareTo(java.lang.Short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Short"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Lang.Short arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Short;)I", arg0);

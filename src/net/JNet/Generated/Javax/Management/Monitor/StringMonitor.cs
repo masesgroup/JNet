@@ -75,7 +75,7 @@ namespace Javax.Management.Monitor
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Monitor.StringMonitor"/> to <see cref="Javax.Management.Monitor.StringMonitorMBean"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Monitor.StringMonitorMBean(Javax.Management.Monitor.StringMonitor t) => t.Cast<Javax.Management.Monitor.StringMonitorMBean>();
 
@@ -114,8 +114,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitor.html#getDerivedGauge(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDerivedGauge(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDerivedGauge", "(Ljavax/management/ObjectName;)Ljava/lang/String;", arg0);
@@ -123,8 +123,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitor.html#getDerivedGaugeTimeStamp(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long GetDerivedGaugeTimeStamp(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "(Ljavax/management/ObjectName;)J", arg0);

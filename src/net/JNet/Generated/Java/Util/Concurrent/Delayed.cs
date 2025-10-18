@@ -29,7 +29,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Delayed.html"/>
     /// </summary>
-    public partial class Delayed : Java.Lang.Comparable<Java.Util.Concurrent.Delayed>
+    public partial class Delayed : Java.Lang.Comparable
     {
         const string _bridgeClassName = "java.util.concurrent.Delayed";
         /// <summary>
@@ -72,14 +72,14 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Delayed.html"/>
     /// </summary>
-    public partial interface IDelayed : Java.Lang.IComparable<Java.Util.Concurrent.Delayed>
+    public partial interface IDelayed : Java.Lang.IComparable
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Delayed.html#getDelay(java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         long GetDelay(Java.Util.Concurrent.TimeUnit arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Delayed.html#getDelay(java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long GetDelay(Java.Util.Concurrent.TimeUnit arg0)
         {
             return IExecuteWithSignature<long>("getDelay", "(Ljava/util/concurrent/TimeUnit;)J", arg0);

@@ -105,16 +105,16 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getRequestedServerNames()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Net.Ssl.SNIServerName> RequestedServerNames
+        public Java.Util.List RequestedServerNames
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getRequestedServerNames", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getRequestedServerNames", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getStatusResponses()"/> 
         /// </summary>
-        public Java.Util.List<byte[]> StatusResponses
+        public Java.Util.List StatusResponses
         {
-            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getStatusResponses", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getStatusResponses", "()Ljava/util/List;"); }
         }
 
         #endregion

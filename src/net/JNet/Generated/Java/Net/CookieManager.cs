@@ -73,8 +73,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieManager.html#%3Cinit%3E(java.net.CookieStore,java.net.CookiePolicy)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.CookieStore"/></param>
-        /// <param name="arg1"><see cref="Java.Net.CookiePolicy"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public CookieManager(Java.Net.CookieStore arg0, Java.Net.CookiePolicy arg1)
             : base(arg0, arg1)
         {
@@ -105,7 +105,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieManager.html#setCookiePolicy(java.net.CookiePolicy)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.CookiePolicy"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetCookiePolicy(Java.Net.CookiePolicy arg0)
         {
             IExecuteWithSignature("setCookiePolicy", "(Ljava/net/CookiePolicy;)V", arg0);

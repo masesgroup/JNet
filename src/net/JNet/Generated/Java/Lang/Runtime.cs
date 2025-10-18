@@ -66,7 +66,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html"/>
         /// </summary>
-        public partial class Version : Java.Lang.Comparable<Java.Lang.Runtime.Version>
+        public partial class Version : Java.Lang.Comparable
         {
             const string _bridgeClassName = "java.lang.Runtime$Version";
             /// <summary>
@@ -133,7 +133,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#version()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Runtime.Version VersionMethod()
         {
             return SExecuteWithSignature<Java.Lang.Runtime.Version>(LocalBridgeClazz, "version", "()Ljava/lang/Runtime$Version;");
@@ -145,8 +145,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#removeShutdownHook(java.lang.Thread)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveShutdownHook(Java.Lang.Thread arg0)
         {
             return IExecuteWithSignature<bool>("removeShutdownHook", "(Ljava/lang/Thread;)Z", arg0);
@@ -154,11 +154,11 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String[],java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.Process"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Process Exec(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Io.File arg2)
         {
             return IExecuteWithSignature<Java.Lang.Process>("exec", "(Ljava/lang/String;[Ljava/lang/String;Ljava/io/File;)Ljava/lang/Process;", arg0, arg1, arg2);
@@ -166,10 +166,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Process"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Process Exec(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
             return IExecuteWithSignature<Java.Lang.Process>("exec", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/Process;", arg0, arg1);
@@ -177,9 +177,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Process"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Process Exec(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.Process>("exec", "(Ljava/lang/String;)Ljava/lang/Process;", arg0);
@@ -187,11 +187,11 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String[],java.lang.String[],java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.Process"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Process Exec(Java.Lang.String[] arg0, Java.Lang.String[] arg1, Java.Io.File arg2)
         {
             return IExecuteWithSignature<Java.Lang.Process>("exec", "([Ljava/lang/String;[Ljava/lang/String;Ljava/io/File;)Ljava/lang/Process;", arg0, arg1, arg2);
@@ -199,10 +199,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Process"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Process Exec(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
         {
             return IExecuteWithSignature<Java.Lang.Process>("exec", "([Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/Process;", arg0, arg1);
@@ -210,9 +210,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Process"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Process Exec(Java.Lang.String[] arg0)
         {
             return IExecuteWithSignature<Java.Lang.Process>("exec", "([Ljava/lang/String;)Ljava/lang/Process;", new object[] { arg0 });
@@ -220,7 +220,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#availableProcessors()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int AvailableProcessors()
         {
             return IExecuteWithSignature<int>("availableProcessors", "()I");
@@ -228,7 +228,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#freeMemory()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long FreeMemory()
         {
             return IExecuteWithSignature<long>("freeMemory", "()J");
@@ -236,7 +236,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#maxMemory()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long MaxMemory()
         {
             return IExecuteWithSignature<long>("maxMemory", "()J");
@@ -244,7 +244,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#totalMemory()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long TotalMemory()
         {
             return IExecuteWithSignature<long>("totalMemory", "()J");
@@ -259,7 +259,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#addShutdownHook(java.lang.Thread)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddShutdownHook(Java.Lang.Thread arg0)
         {
             IExecuteWithSignature("addShutdownHook", "(Ljava/lang/Thread;)V", arg0);
@@ -267,7 +267,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Exit(int arg0)
         {
             IExecuteWithSignature("exit", "(I)V", arg0);
@@ -275,7 +275,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#halt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Halt(int arg0)
         {
             IExecuteWithSignature("halt", "(I)V", arg0);
@@ -283,7 +283,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#load(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Load(Java.Lang.String arg0)
         {
             IExecuteWithSignature("load", "(Ljava/lang/String;)V", arg0);
@@ -291,7 +291,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#loadLibrary(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void LoadLibrary(Java.Lang.String arg0)
         {
             IExecuteWithSignature("loadLibrary", "(Ljava/lang/String;)V", arg0);
@@ -326,8 +326,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#parse(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.Runtime.Version Parse(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Lang.Runtime.Version>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)Ljava/lang/Runtime$Version;", arg0);
@@ -339,8 +339,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#equalsIgnoreOptional(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool EqualsIgnoreOptional(object arg0)
             {
                 return IExecuteWithSignature<bool>("equalsIgnoreOptional", "(Ljava/lang/Object;)Z", arg0);
@@ -348,8 +348,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#compareTo(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -357,8 +357,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#compareTo(java.lang.Runtime.Version)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Runtime.Version"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(Java.Lang.Runtime.Version arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Runtime$Version;)I", arg0);
@@ -366,8 +366,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#compareToIgnoreOptional(java.lang.Runtime.Version)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Runtime.Version"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareToIgnoreOptional(Java.Lang.Runtime.Version arg0)
             {
                 return IExecuteWithSignature<int>("compareToIgnoreOptional", "(Ljava/lang/Runtime$Version;)I", arg0);
@@ -375,7 +375,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#feature()"/>
             /// </summary>
-            /// <returns><see cref="int"/></returns>
+            /// <returns><see cref=""/></returns>
             public int Feature()
             {
                 return IExecuteWithSignature<int>("feature", "()I");
@@ -383,7 +383,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#interim()"/>
             /// </summary>
-            /// <returns><see cref="int"/></returns>
+            /// <returns><see cref=""/></returns>
             public int Interim()
             {
                 return IExecuteWithSignature<int>("interim", "()I");
@@ -391,7 +391,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#patch()"/>
             /// </summary>
-            /// <returns><see cref="int"/></returns>
+            /// <returns><see cref=""/></returns>
             public int Patch()
             {
                 return IExecuteWithSignature<int>("patch", "()I");
@@ -399,7 +399,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#update()"/>
             /// </summary>
-            /// <returns><see cref="int"/></returns>
+            /// <returns><see cref=""/></returns>
             public int Update()
             {
                 return IExecuteWithSignature<int>("update", "()I");
@@ -407,34 +407,34 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#version()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.List"/></returns>
-            public Java.Util.List<Java.Lang.Integer> VersionMethod()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.List VersionMethod()
             {
-                return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("version", "()Ljava/util/List;");
+                return IExecuteWithSignature<Java.Util.List>("version", "()Ljava/util/List;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#build()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Optional"/></returns>
-            public Java.Util.Optional<Java.Lang.Integer> Build()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Optional Build()
             {
-                return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Integer>>("build", "()Ljava/util/Optional;");
+                return IExecuteWithSignature<Java.Util.Optional>("build", "()Ljava/util/Optional;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#optional()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Optional"/></returns>
-            public Java.Util.Optional<Java.Lang.String> Optional()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Optional Optional()
             {
-                return IExecuteWithSignature<Java.Util.Optional<Java.Lang.String>>("optional", "()Ljava/util/Optional;");
+                return IExecuteWithSignature<Java.Util.Optional>("optional", "()Ljava/util/Optional;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#pre()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Optional"/></returns>
-            public Java.Util.Optional<Java.Lang.String> Pre()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Optional Pre()
             {
-                return IExecuteWithSignature<Java.Util.Optional<Java.Lang.String>>("pre", "()Ljava/util/Optional;");
+                return IExecuteWithSignature<Java.Util.Optional>("pre", "()Ljava/util/Optional;");
             }
 
             #endregion

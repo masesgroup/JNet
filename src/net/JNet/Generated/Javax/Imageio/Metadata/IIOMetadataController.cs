@@ -78,8 +78,8 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataController.html#activate(javax.imageio.metadata.IIOMetadata)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Activate(Javax.Imageio.Metadata.IIOMetadata arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataController.html#activate(javax.imageio.metadata.IIOMetadata)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Activate(Javax.Imageio.Metadata.IIOMetadata arg0)
         {
             return IExecuteWithSignature<bool>("activate", "(Ljavax/imageio/metadata/IIOMetadata;)Z", arg0);

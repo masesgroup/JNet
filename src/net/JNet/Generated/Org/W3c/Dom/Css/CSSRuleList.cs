@@ -82,8 +82,8 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRuleList.html#item(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Css.CSSRule"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Org.W3c.Dom.Css.CSSRule Item(int arg0);
 
         #endregion
@@ -126,8 +126,8 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRuleList.html#item(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Css.CSSRule"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.Css.CSSRule Item(int arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Css.CSSRule>("item", "(I)Lorg/w3c/dom/css/CSSRule;", arg0);

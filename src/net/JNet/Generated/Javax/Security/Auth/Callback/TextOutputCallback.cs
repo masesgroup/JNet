@@ -73,8 +73,8 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#%3Cinit%3E(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public TextOutputCallback(int arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -84,11 +84,11 @@ namespace Javax.Security.Auth.Callback
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Callback.TextOutputCallback"/> to <see cref="Javax.Security.Auth.Callback.Callback"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Security.Auth.Callback.Callback(Javax.Security.Auth.Callback.TextOutputCallback t) => t.Cast<Javax.Security.Auth.Callback.Callback>();
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Callback.TextOutputCallback"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.TextOutputCallback t) => t.Cast<Java.Io.Serializable>();
 

@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.MediaTray"/> to <see cref="Javax.Print.Attribute.Attribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.Standard.MediaTray t) => t.Cast<Javax.Print.Attribute.Attribute>();
 

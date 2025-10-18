@@ -90,61 +90,61 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getArray()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         object GetArray();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getArray(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        object GetArray(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        object GetArray(Java.Util.Map<, > arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getArray(long,int,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        object GetArray(long arg0, int arg1, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg2);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        object GetArray(long arg0, int arg1, Java.Util.Map<, > arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getArray(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         object GetArray(long arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getResultSet(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.ResultSet GetResultSet(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Sql.ResultSet GetResultSet(Java.Util.Map<, > arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getResultSet(long,int,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg2);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map<, > arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getResultSet(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.ResultSet GetResultSet(long arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#free()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Free();
 
         #endregion
@@ -201,8 +201,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getArray()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object GetArray()
         {
             return IExecuteWithSignature("getArray", "()Ljava/lang/Object;");
@@ -210,32 +210,32 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getArray(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public object GetArray(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public object GetArray(Java.Util.Map<, > arg0)
         {
             return IExecuteWithSignature("getArray", "(Ljava/util/Map;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getArray(long,int,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public object GetArray(long arg0, int arg1, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public object GetArray(long arg0, int arg1, Java.Util.Map<, > arg2)
         {
             return IExecuteWithSignature("getArray", "(JILjava/util/Map;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getArray(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object GetArray(long arg0, int arg1)
         {
             return IExecuteWithSignature("getArray", "(JI)Ljava/lang/Object;", arg0, arg1);
@@ -243,32 +243,32 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getResultSet(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.ResultSet GetResultSet(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Sql.ResultSet GetResultSet(Java.Util.Map<, > arg0)
         {
             return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "(Ljava/util/Map;)Ljava/sql/ResultSet;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getResultSet(long,int,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map<, > arg2)
         {
             return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "(JILjava/util/Map;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#getResultSet(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.ResultSet GetResultSet(long arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "(JI)Ljava/sql/ResultSet;", arg0, arg1);
@@ -276,7 +276,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Array.html#free()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Free()
         {
             IExecuteWithSignature("free", "()V");

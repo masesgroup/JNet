@@ -68,12 +68,12 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region Reference<T> declaration
+    #region Reference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class Reference<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reference<T>>
+    public partial class Reference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reference>
     {
         const string _bridgeClassName = "java.lang.ref.Reference";
         /// <summary>
@@ -131,7 +131,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#reachabilityFence(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void ReachabilityFence(object arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "reachabilityFence", "(Ljava/lang/Object;)V", arg0);
@@ -143,7 +143,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#enqueue()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Enqueue()
         {
             return IExecuteWithSignature<bool>("enqueue", "()Z");
@@ -151,7 +151,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEnqueued()
         {
             return IExecuteWithSignature<bool>("isEnqueued", "()Z");
@@ -159,7 +159,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#get()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Get()
         {
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
@@ -182,8 +182,8 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region Reference<T> implementation
-    public partial class Reference<T>
+    #region Reference implementation
+    public partial class Reference
     {
         #region Constructors
 
@@ -191,9 +191,9 @@ namespace Java.Lang.Ref
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Ref.Reference{T}"/> to <see cref="Java.Lang.Ref.Reference"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Ref.Reference(Java.Lang.Ref.Reference<T> t) => t.Cast<Java.Lang.Ref.Reference>();
+        public static implicit operator Java.Lang.Ref.Reference(Java.Lang.Ref.Reference t) => t.Cast<Java.Lang.Ref.Reference>();
 
         #endregion
 
@@ -205,7 +205,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#reachabilityFence(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void ReachabilityFence(object arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "reachabilityFence", "(Ljava/lang/Object;)V", arg0);
@@ -217,7 +217,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#enqueue()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Enqueue()
         {
             return IExecuteWithSignature<bool>("enqueue", "()Z");
@@ -225,7 +225,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEnqueued()
         {
             return IExecuteWithSignature<bool>("isEnqueued", "()Z");
@@ -233,7 +233,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Reference.html#get()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         public T Get()
         {
             return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");

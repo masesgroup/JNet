@@ -73,8 +73,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#%3Cinit%3E(java.net.URL,java.security.cert.Certificate[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public CodeSource(Java.Net.URL arg0, Java.Security.Cert.Certificate[] arg1)
             : base(arg0, arg1)
         {
@@ -82,8 +82,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#%3Cinit%3E(java.net.URL,java.security.CodeSigner[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Security.CodeSigner"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public CodeSource(Java.Net.URL arg0, Java.Security.CodeSigner[] arg1)
             : base(arg0, arg1)
         {
@@ -128,8 +128,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#implies(java.security.CodeSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Implies(Java.Security.CodeSource arg0)
         {
             return IExecuteWithSignature<bool>("implies", "(Ljava/security/CodeSource;)Z", arg0);

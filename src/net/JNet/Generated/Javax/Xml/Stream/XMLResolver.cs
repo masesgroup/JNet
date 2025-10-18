@@ -78,12 +78,12 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLResolver.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         object ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3);
 
         #endregion
@@ -119,12 +119,12 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLResolver.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             return IExecuteWithSignature("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);

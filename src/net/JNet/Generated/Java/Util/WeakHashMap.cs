@@ -66,13 +66,13 @@ namespace Java.Util
     }
     #endregion
 
-    #region WeakHashMap<K, V> declaration
+    #region WeakHashMap<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class WeakHashMap<K, V> : Java.Util.AbstractMap<K, V>
+    public partial class WeakHashMap<, > : Java.Util.AbstractMap<, >
     {
         const string _bridgeClassName = "java.util.WeakHashMap";
         /// <summary>
@@ -116,8 +116,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public WeakHashMap(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -125,7 +125,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public WeakHashMap(int arg0)
             : base(arg0)
         {
@@ -133,7 +133,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public WeakHashMap(Java.Util.Map arg0)
             : base(arg0)
         {
@@ -165,15 +165,15 @@ namespace Java.Util
     }
     #endregion
 
-    #region WeakHashMap<K, V> implementation
-    public partial class WeakHashMap<K, V>
+    #region WeakHashMap<, > implementation
+    public partial class WeakHashMap<, >
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public WeakHashMap(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -181,7 +181,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public WeakHashMap(int arg0)
             : base(arg0)
         {
@@ -189,8 +189,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public WeakHashMap(Java.Util.Map<K, V> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public WeakHashMap(Java.Util.Map<, > arg0)
             : base(arg0)
         {
         }
@@ -199,9 +199,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.WeakHashMap{K, V}"/> to <see cref="Java.Util.WeakHashMap"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.WeakHashMap(Java.Util.WeakHashMap<K, V> t) => t.Cast<Java.Util.WeakHashMap>();
+        public static implicit operator Java.Util.WeakHashMap(Java.Util.WeakHashMap<, > t) => t.Cast<Java.Util.WeakHashMap>();
 
         #endregion
 

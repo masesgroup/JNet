@@ -106,58 +106,58 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getDescriptor(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Descriptor"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.Descriptor GetDescriptor(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getDescriptors(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Descriptor"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.Descriptor[] GetDescriptors(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanAttributeInfo"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.Modelmbean.ModelMBeanAttributeInfo GetAttribute(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getNotification(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanNotificationInfo"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.Modelmbean.ModelMBeanNotificationInfo GetNotification(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getOperation(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanOperationInfo"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.Modelmbean.ModelMBeanOperationInfo GetOperation(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#setDescriptor(javax.management.Descriptor,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetDescriptor(Javax.Management.Descriptor arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#setDescriptors(javax.management.Descriptor[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetDescriptors(Javax.Management.Descriptor[] arg0);
 
         #endregion
@@ -242,11 +242,11 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getDescriptor(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Descriptor"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.Descriptor GetDescriptor(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Javax.Management.Descriptor>("getDescriptor", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/Descriptor;", arg0, arg1);
@@ -254,10 +254,10 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getDescriptors(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Descriptor"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.Descriptor[] GetDescriptors(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Javax.Management.Descriptor>("getDescriptors", "(Ljava/lang/String;)[Ljavax/management/Descriptor;", arg0);
@@ -265,10 +265,10 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanAttributeInfo"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.Modelmbean.ModelMBeanAttributeInfo GetAttribute(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Management.Modelmbean.ModelMBeanAttributeInfo>("getAttribute", "(Ljava/lang/String;)Ljavax/management/modelmbean/ModelMBeanAttributeInfo;", arg0);
@@ -276,10 +276,10 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getNotification(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanNotificationInfo"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.Modelmbean.ModelMBeanNotificationInfo GetNotification(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Management.Modelmbean.ModelMBeanNotificationInfo>("getNotification", "(Ljava/lang/String;)Ljavax/management/modelmbean/ModelMBeanNotificationInfo;", arg0);
@@ -287,10 +287,10 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getOperation(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanOperationInfo"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.Modelmbean.ModelMBeanOperationInfo GetOperation(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Management.Modelmbean.ModelMBeanOperationInfo>("getOperation", "(Ljava/lang/String;)Ljavax/management/modelmbean/ModelMBeanOperationInfo;", arg0);
@@ -298,10 +298,10 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#setDescriptor(javax.management.Descriptor,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetDescriptor(Javax.Management.Descriptor arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("setDescriptor", "(Ljavax/management/Descriptor;Ljava/lang/String;)V", arg0, arg1);
@@ -309,9 +309,9 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#setDescriptors(javax.management.Descriptor[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetDescriptors(Javax.Management.Descriptor[] arg0)
         {
             IExecuteWithSignature("setDescriptors", "([Ljavax/management/Descriptor;)V", new object[] { arg0 });

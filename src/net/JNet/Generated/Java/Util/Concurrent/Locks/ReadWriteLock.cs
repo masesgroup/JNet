@@ -78,12 +78,12 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Concurrent.Locks.Lock ReadLock();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Concurrent.Locks.Lock WriteLock();
 
         #endregion
@@ -119,7 +119,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Locks.Lock ReadLock()
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Lock>("readLock", "()Ljava/util/concurrent/locks/Lock;");
@@ -127,7 +127,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Locks.Lock WriteLock()
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Lock>("writeLock", "()Ljava/util/concurrent/locks/Lock;");

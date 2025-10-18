@@ -118,11 +118,11 @@ namespace Java.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Text.Format"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Text.Format t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Text.Format"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.Format t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -140,9 +140,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#parseObject(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object ParseObject(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
             return IExecuteWithSignature("parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;", arg0, arg1);
@@ -150,10 +150,10 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.StringBuffer"/></param>
-        /// <param name="arg2"><see cref="Java.Text.FieldPosition"/></param>
-        /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.StringBuffer FormatMethod(object arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
             return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
@@ -161,8 +161,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#format(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String FormatMethod(object arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
@@ -170,9 +170,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#parseObject(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Text.ParseException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object ParseObject(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("parseObject", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -180,8 +180,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#formatToCharacterIterator(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.AttributedCharacterIterator FormatToCharacterIterator(object arg0)
         {
             return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("formatToCharacterIterator", "(Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;", arg0);

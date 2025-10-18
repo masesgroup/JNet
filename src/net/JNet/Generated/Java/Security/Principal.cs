@@ -82,8 +82,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html#implies(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Implies(Javax.Security.Auth.Subject arg0);
 
         #endregion
@@ -126,8 +126,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html#implies(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Implies(Javax.Security.Auth.Subject arg0)
         {
             return IExecuteWithSignature<bool>("implies", "(Ljavax/security/auth/Subject;)Z", arg0);

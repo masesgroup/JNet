@@ -82,76 +82,76 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBytes(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         byte[] GetBytes(long arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBytes(long,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         int SetBytes(long arg0, byte[] arg1, int arg2, int arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBytes(long,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         int SetBytes(long arg0, byte[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBinaryStream(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Io.InputStream GetBinaryStream(long arg0, long arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBinaryStream(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Io.OutputStream SetBinaryStream(long arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#length()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         long Length();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(byte[],long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         long Position(byte[] arg0, long arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(java.sql.Blob,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         long Position(Java.Sql.Blob arg0, long arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#free()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Free();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#truncate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Truncate(long arg0);
 
         #endregion
@@ -194,10 +194,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBytes(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] GetBytes(long arg0, int arg1)
         {
             return IExecuteWithSignatureArray<byte>("getBytes", "(JI)[B", arg0, arg1);
@@ -205,12 +205,12 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBytes(long,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int SetBytes(long arg0, byte[] arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<int>("setBytes", "(J[BII)I", arg0, arg1, arg2, arg3);
@@ -218,10 +218,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBytes(long,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int SetBytes(long arg0, byte[] arg1)
         {
             return IExecuteWithSignature<int>("setBytes", "(J[B)I", arg0, arg1);
@@ -229,10 +229,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBinaryStream(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.InputStream GetBinaryStream(long arg0, long arg1)
         {
             return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "(JJ)Ljava/io/InputStream;", arg0, arg1);
@@ -240,9 +240,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBinaryStream(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.OutputStream SetBinaryStream(long arg0)
         {
             return IExecuteWithSignature<Java.Io.OutputStream>("setBinaryStream", "(J)Ljava/io/OutputStream;", arg0);
@@ -250,8 +250,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#length()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Length()
         {
             return IExecuteWithSignature<long>("length", "()J");
@@ -259,10 +259,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(byte[],long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Position(byte[] arg0, long arg1)
         {
             return IExecuteWithSignature<long>("position", "([BJ)J", arg0, arg1);
@@ -270,10 +270,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(java.sql.Blob,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Position(Java.Sql.Blob arg0, long arg1)
         {
             return IExecuteWithSignature<long>("position", "(Ljava/sql/Blob;J)J", arg0, arg1);
@@ -281,7 +281,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#free()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Free()
         {
             IExecuteWithSignature("free", "()V");
@@ -289,8 +289,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#truncate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Truncate(long arg0)
         {
             IExecuteWithSignature("truncate", "(J)V", arg0);

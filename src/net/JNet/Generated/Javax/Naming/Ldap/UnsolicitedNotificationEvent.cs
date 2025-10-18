@@ -73,8 +73,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationEvent.html#%3Cinit%3E(java.lang.Object,javax.naming.ldap.UnsolicitedNotification)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Naming.Ldap.UnsolicitedNotification"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public UnsolicitedNotificationEvent(object arg0, Javax.Naming.Ldap.UnsolicitedNotification arg1)
             : base(arg0, arg1)
         {
@@ -105,7 +105,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationEvent.html#dispatch(javax.naming.ldap.UnsolicitedNotificationListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Ldap.UnsolicitedNotificationListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Dispatch(Javax.Naming.Ldap.UnsolicitedNotificationListener arg0)
         {
             IExecuteWithSignature("dispatch", "(Ljavax/naming/ldap/UnsolicitedNotificationListener;)V", arg0);

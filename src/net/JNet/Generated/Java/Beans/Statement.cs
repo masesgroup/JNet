@@ -110,7 +110,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#execute()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <exception cref=""/>
         public void Execute()
         {
             IExecuteWithSignature("execute", "()V");

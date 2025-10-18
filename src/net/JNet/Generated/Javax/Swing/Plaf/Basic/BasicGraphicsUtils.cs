@@ -99,10 +99,10 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getStringWidth(javax.swing.JComponent,java.awt.FontMetrics,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static float GetStringWidth(Javax.Swing.JComponent arg0, Java.Awt.FontMetrics arg1, Java.Lang.String arg2)
         {
             return SExecuteWithSignature<float>(LocalBridgeClazz, "getStringWidth", "(Ljavax/swing/JComponent;Ljava/awt/FontMetrics;Ljava/lang/String;)F", arg0, arg1, arg2);
@@ -110,9 +110,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getPreferredButtonSize(javax.swing.AbstractButton,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Dimension GetPreferredButtonSize(Javax.Swing.AbstractButton arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Awt.Dimension>(LocalBridgeClazz, "getPreferredButtonSize", "(Ljavax/swing/AbstractButton;I)Ljava/awt/Dimension;", arg0, arg1);
@@ -120,11 +120,11 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getClippedString(javax.swing.JComponent,java.awt.FontMetrics,java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String GetClippedString(Javax.Swing.JComponent arg0, Java.Awt.FontMetrics arg1, Java.Lang.String arg2, int arg3)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getClippedString", "(Ljavax/swing/JComponent;Ljava/awt/FontMetrics;Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1, arg2, arg3);
@@ -132,17 +132,17 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawBezel(java.awt.Graphics,int,int,int,int,boolean,boolean,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
-        /// <param name="arg6"><see cref="bool"/></param>
-        /// <param name="arg7"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg8"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg9"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg10"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
         public static void DrawBezel(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, bool arg6, Java.Awt.Color arg7, Java.Awt.Color arg8, Java.Awt.Color arg9, Java.Awt.Color arg10)
         {
             SExecuteWithSignature(LocalBridgeClazz, "drawBezel", "(Ljava/awt/Graphics;IIIIZZLjava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
@@ -150,11 +150,11 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawDashedRect(java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public static void DrawDashedRect(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4)
         {
             SExecuteWithSignature(LocalBridgeClazz, "drawDashedRect", "(Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4);
@@ -162,15 +162,15 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawEtchedRect(java.awt.Graphics,int,int,int,int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg7"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg8"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
         public static void DrawEtchedRect(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.Color arg5, Java.Awt.Color arg6, Java.Awt.Color arg7, Java.Awt.Color arg8)
         {
             SExecuteWithSignature(LocalBridgeClazz, "drawEtchedRect", "(Ljava/awt/Graphics;IIIILjava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -178,13 +178,13 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawGroove(java.awt.Graphics,int,int,int,int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public static void DrawGroove(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.Color arg5, Java.Awt.Color arg6)
         {
             SExecuteWithSignature(LocalBridgeClazz, "drawGroove", "(Ljava/awt/Graphics;IIIILjava/awt/Color;Ljava/awt/Color;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -192,15 +192,15 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawLoweredBezel(java.awt.Graphics,int,int,int,int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg7"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg8"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
         public static void DrawLoweredBezel(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.Color arg5, Java.Awt.Color arg6, Java.Awt.Color arg7, Java.Awt.Color arg8)
         {
             SExecuteWithSignature(LocalBridgeClazz, "drawLoweredBezel", "(Ljava/awt/Graphics;IIIILjava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -208,11 +208,11 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawString(java.awt.Graphics,java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public static void DrawString(Java.Awt.Graphics arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4)
         {
             SExecuteWithSignature(LocalBridgeClazz, "drawString", "(Ljava/awt/Graphics;Ljava/lang/String;III)V", arg0, arg1, arg2, arg3, arg4);
@@ -220,11 +220,11 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawString(javax.swing.JComponent,java.awt.Graphics2D,java.lang.String,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics2D"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
-        /// <param name="arg4"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public static void DrawString(Javax.Swing.JComponent arg0, Java.Awt.Graphics2D arg1, Java.Lang.String arg2, float arg3, float arg4)
         {
             SExecuteWithSignature(LocalBridgeClazz, "drawString", "(Ljavax/swing/JComponent;Ljava/awt/Graphics2D;Ljava/lang/String;FF)V", arg0, arg1, arg2, arg3, arg4);
@@ -232,11 +232,11 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawStringUnderlineCharAt(java.awt.Graphics,java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public static void DrawStringUnderlineCharAt(Java.Awt.Graphics arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4)
         {
             SExecuteWithSignature(LocalBridgeClazz, "drawStringUnderlineCharAt", "(Ljava/awt/Graphics;Ljava/lang/String;III)V", arg0, arg1, arg2, arg3, arg4);
@@ -244,12 +244,12 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawStringUnderlineCharAt(javax.swing.JComponent,java.awt.Graphics2D,java.lang.String,int,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics2D"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="float"/></param>
-        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public static void DrawStringUnderlineCharAt(Javax.Swing.JComponent arg0, Java.Awt.Graphics2D arg1, Java.Lang.String arg2, int arg3, float arg4, float arg5)
         {
             SExecuteWithSignature(LocalBridgeClazz, "drawStringUnderlineCharAt", "(Ljavax/swing/JComponent;Ljava/awt/Graphics2D;Ljava/lang/String;IFF)V", arg0, arg1, arg2, arg3, arg4, arg5);

@@ -73,7 +73,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ResponseAPDU.html#%3Cinit%3E(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ResponseAPDU(byte[] arg0)
             : base(arg0)
         {

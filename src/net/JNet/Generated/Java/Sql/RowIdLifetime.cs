@@ -29,7 +29,7 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html"/>
     /// </summary>
-    public partial class RowIdLifetime : Java.Lang.Enum<Java.Sql.RowIdLifetime>
+    public partial class RowIdLifetime : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.sql.RowIdLifetime";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.RowIdLifetime"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.RowIdLifetime ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/RowIdLifetime;", arg0);
@@ -124,7 +124,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.RowIdLifetime"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.RowIdLifetime[] Values()
         {
             return SExecuteWithSignatureArray<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "values", "()[Ljava/sql/RowIdLifetime;");

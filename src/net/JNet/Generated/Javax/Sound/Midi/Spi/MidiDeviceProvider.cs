@@ -98,8 +98,8 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#getDevice(javax.sound.midi.MidiDevice.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiDevice.Info"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.MidiDevice"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Midi.MidiDevice GetDevice(Javax.Sound.Midi.MidiDevice.Info arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Midi.MidiDevice>("getDevice", "(Ljavax/sound/midi/MidiDevice$Info;)Ljavax/sound/midi/MidiDevice;", arg0);
@@ -107,8 +107,8 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#isDeviceSupported(javax.sound.midi.MidiDevice.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiDevice.Info"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDeviceSupported(Javax.Sound.Midi.MidiDevice.Info arg0)
         {
             return IExecuteWithSignature<bool>("isDeviceSupported", "(Ljavax/sound/midi/MidiDevice$Info;)Z", arg0);

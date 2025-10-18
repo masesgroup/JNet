@@ -146,9 +146,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getServices()"/> 
         /// </summary>
-        public Java.Util.Set<Java.Security.Provider.Service> Services
+        public Java.Util.Set Services
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Security.Provider.Service>>("getServices", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getServices", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getVersionStr()"/> 
@@ -160,7 +160,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#isConfigured()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsConfigured()
         {
             return IExecuteWithSignature<bool>("isConfigured", "()Z");
@@ -168,8 +168,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#configure(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Provider"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Security.Provider Configure(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Security.Provider>("configure", "(Ljava/lang/String;)Ljava/security/Provider;", arg0);
@@ -177,9 +177,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getService(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Provider.Service"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Security.Provider.Service GetService(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Java.Security.Provider.Service>("getService", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/Provider$Service;", arg0, arg1);
@@ -195,13 +195,13 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#%3Cinit%3E(java.security.Provider,java.lang.String,java.lang.String,java.lang.String,java.util.List,java.util.Map)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg4"><see cref="Java.Util.List"/></param>
-            /// <param name="arg5"><see cref="Java.Util.Map"/></param>
-            public Service(Java.Security.Provider arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.List<Java.Lang.String> arg4, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg5)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <param name="arg5"><see cref=""/></param>
+            public Service(Java.Security.Provider arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.List arg4, Java.Util.Map<, > arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
             }
@@ -252,8 +252,8 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#supportsParameter(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool SupportsParameter(object arg0)
             {
                 return IExecuteWithSignature<bool>("supportsParameter", "(Ljava/lang/Object;)Z", arg0);
@@ -261,8 +261,8 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getAttribute(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.String"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.String GetAttribute(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Lang.String>("getAttribute", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -270,9 +270,9 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#newInstance(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
-            /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public object NewInstance(object arg0)
             {
                 return IExecuteWithSignature("newInstance", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);

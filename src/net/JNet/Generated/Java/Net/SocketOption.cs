@@ -68,12 +68,12 @@ namespace Java.Net
     }
     #endregion
 
-    #region SocketOption<T> declaration
+    #region SocketOption declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class SocketOption<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SocketOption<T>>
+    public partial class SocketOption : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SocketOption>
     {
         const string _bridgeClassName = "java.net.SocketOption";
         /// <summary>
@@ -135,7 +135,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Class Type()
         {
             return IExecuteWithSignature<Java.Lang.Class>("type", "()Ljava/lang/Class;");
@@ -143,7 +143,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -159,22 +159,22 @@ namespace Java.Net
     }
     #endregion
 
-    #region ISocketOption<T>
+    #region ISocketOption
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html"/>
     /// </summary>
-    public partial interface ISocketOption<T>
+    public partial interface ISocketOption
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.Class Type();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String Name();
 
         #endregion
@@ -187,8 +187,8 @@ namespace Java.Net
     }
     #endregion
 
-    #region SocketOption<T> implementation
-    public partial class SocketOption<T> : Java.Net.ISocketOption<T>
+    #region SocketOption implementation
+    public partial class SocketOption : Java.Net.ISocketOption
     {
         #region Constructors
 
@@ -196,9 +196,9 @@ namespace Java.Net
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Net.SocketOption{T}"/> to <see cref="Java.Net.SocketOption"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Net.SocketOption(Java.Net.SocketOption<T> t) => t.Cast<Java.Net.SocketOption>();
+        public static implicit operator Java.Net.SocketOption(Java.Net.SocketOption t) => t.Cast<Java.Net.SocketOption>();
 
         #endregion
 
@@ -214,7 +214,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Class Type()
         {
             return IExecuteWithSignature<Java.Lang.Class>("type", "()Ljava/lang/Class;");
@@ -222,7 +222,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");

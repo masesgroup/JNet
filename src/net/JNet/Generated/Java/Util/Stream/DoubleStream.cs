@@ -29,7 +29,7 @@ namespace Java.Util.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html"/>
     /// </summary>
-    public partial class DoubleStream : Java.Util.Stream.BaseStream<Java.Lang.Double, Java.Util.Stream.DoubleStream>
+    public partial class DoubleStream : Java.Util.Stream.BaseStream<, >
     {
         const string _bridgeClassName = "java.util.stream.DoubleStream";
         /// <summary>
@@ -72,207 +72,207 @@ namespace Java.Util.Stream
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html"/>
     /// </summary>
-    public partial interface IDoubleStream : Java.Util.Stream.IBaseStream<Java.Lang.Double, Java.Util.Stream.DoubleStream>
+    public partial interface IDoubleStream : Java.Util.Stream.IBaseStream<, >
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#collect(java.util.function.Supplier,java.util.function.ObjDoubleConsumer,java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.ObjDoubleConsumer"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="R"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjDoubleConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2);
+        /// <returns><see cref=""/></returns>
+        R Collect(Java.Util.Function.Supplier arg0, Java.Util.Function.ObjDoubleConsumer arg1, Java.Util.Function.BiConsumer<, > arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#mapToObj(java.util.function.DoubleFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="U"></typeparam>
-        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.DoubleFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU : U;
+        /// <typeparam name="Arg0ExtendsU"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Stream.Stream MapToObj<, >(Java.Util.Function.DoubleFunction arg0) where Arg0ExtendsU : U;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#allMatch(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool AllMatch(Java.Util.Function.DoublePredicate arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#anyMatch(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool AnyMatch(Java.Util.Function.DoublePredicate arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#noneMatch(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool NoneMatch(Java.Util.Function.DoublePredicate arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#reduce(double,java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         double Reduce(double arg0, Java.Util.Function.DoubleBinaryOperator arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sum()"/>
         /// </summary>
-        /// <returns><see cref="double"/></returns>
+        /// <returns><see cref=""/></returns>
         double Sum();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="double"/></returns>
+        /// <returns><see cref=""/></returns>
         double[] ToArray();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#summaryStatistics()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.DoubleSummaryStatistics"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.DoubleSummaryStatistics SummaryStatistics();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#average()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.OptionalDouble Average();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#findAny()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.OptionalDouble FindAny();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#findFirst()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.OptionalDouble FindFirst();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#max()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.OptionalDouble Max();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#min()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.OptionalDouble Min();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#reduce(java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.OptionalDouble Reduce(Java.Util.Function.DoubleBinaryOperator arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#distinct()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.DoubleStream Distinct();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#filter(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.DoubleStream Filter(Java.Util.Function.DoublePredicate arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#flatMap(java.util.function.DoubleFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref="Java.Util.Stream.DoubleStream"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        Java.Util.Stream.DoubleStream FlatMap<Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.DoubleFunction<Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream : Java.Util.Stream.DoubleStream;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Stream.DoubleStream FlatMap(Java.Util.Function.DoubleFunction arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream : Java.Util.Stream.DoubleStream;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#limit(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.DoubleStream Limit(long arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#map(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.DoubleStream Map(Java.Util.Function.DoubleUnaryOperator arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#peek(java.util.function.DoubleConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.DoubleStream Peek(Java.Util.Function.DoubleConsumer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#skip(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.DoubleStream Skip(long arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sorted()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.DoubleStream Sorted();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#mapToInt(java.util.function.DoubleToIntFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleToIntFunction"/></param>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.IntStream MapToInt(Java.Util.Function.DoubleToIntFunction arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#mapToLong(java.util.function.DoubleToLongFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleToLongFunction"/></param>
-        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.LongStream MapToLong(Java.Util.Function.DoubleToLongFunction arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#boxed()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<Java.Lang.Double> Boxed();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Stream.Stream Boxed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#count()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         long Count();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#forEach(java.util.function.DoubleConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ForEach(Java.Util.Function.DoubleConsumer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#forEachOrdered(java.util.function.DoubleConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ForEachOrdered(Java.Util.Function.DoubleConsumer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Iterator Iterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Spliterator Spliterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#parallel()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.BaseStream Parallel();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sequential()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.BaseStream Sequential();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#dropWhile(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.DoubleStream DropWhile(Java.Util.Function.DoublePredicate arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#takeWhile(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Stream.DoubleStream TakeWhile(Java.Util.Function.DoublePredicate arg0);
 
         #endregion
@@ -304,9 +304,9 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#concat(java.util.stream.DoubleStream,java.util.stream.DoubleStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Stream.DoubleStream"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Stream.DoubleStream"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Stream.DoubleStream Concat(Java.Util.Stream.DoubleStream arg0, Java.Util.Stream.DoubleStream arg1)
         {
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "concat", "(Ljava/util/stream/DoubleStream;Ljava/util/stream/DoubleStream;)Ljava/util/stream/DoubleStream;", arg0, arg1);
@@ -314,7 +314,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#empty()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Stream.DoubleStream Empty()
         {
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "empty", "()Ljava/util/stream/DoubleStream;");
@@ -322,8 +322,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#generate(java.util.function.DoubleSupplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleSupplier"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Stream.DoubleStream Generate(Java.Util.Function.DoubleSupplier arg0)
         {
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "generate", "(Ljava/util/function/DoubleSupplier;)Ljava/util/stream/DoubleStream;", arg0);
@@ -331,10 +331,10 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoublePredicate,java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Stream.DoubleStream Iterate(double arg0, Java.Util.Function.DoublePredicate arg1, Java.Util.Function.DoubleUnaryOperator arg2)
         {
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "iterate", "(DLjava/util/function/DoublePredicate;Ljava/util/function/DoubleUnaryOperator;)Ljava/util/stream/DoubleStream;", arg0, arg1, arg2);
@@ -342,9 +342,9 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Stream.DoubleStream Iterate(double arg0, Java.Util.Function.DoubleUnaryOperator arg1)
         {
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "iterate", "(DLjava/util/function/DoubleUnaryOperator;)Ljava/util/stream/DoubleStream;", arg0, arg1);
@@ -352,8 +352,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#of(double...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Stream.DoubleStream Of(params double[] arg0)
         {
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "of", "([D)Ljava/util/stream/DoubleStream;", arg0);
@@ -361,8 +361,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#of(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Stream.DoubleStream Of(double arg0)
         {
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "of", "(D)Ljava/util/stream/DoubleStream;", arg0);
@@ -374,31 +374,31 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#collect(java.util.function.Supplier,java.util.function.ObjDoubleConsumer,java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.ObjDoubleConsumer"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="R"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        public R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjDoubleConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2)
+        /// <returns><see cref=""/></returns>
+        public R Collect(Java.Util.Function.Supplier arg0, Java.Util.Function.ObjDoubleConsumer arg1, Java.Util.Function.BiConsumer<, > arg2)
         {
             return IExecuteWithSignature<R>("collect", "(Ljava/util/function/Supplier;Ljava/util/function/ObjDoubleConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#mapToObj(java.util.function.DoubleFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="U"></typeparam>
-        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.DoubleFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU : U
+        /// <typeparam name="Arg0ExtendsU"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Stream.Stream MapToObj<, >(Java.Util.Function.DoubleFunction arg0) where Arg0ExtendsU : U
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<U>>("mapToObj", "(Ljava/util/function/DoubleFunction;)Ljava/util/stream/Stream;", arg0);
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("mapToObj", "(Ljava/util/function/DoubleFunction;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#allMatch(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AllMatch(Java.Util.Function.DoublePredicate arg0)
         {
             return IExecuteWithSignature<bool>("allMatch", "(Ljava/util/function/DoublePredicate;)Z", arg0);
@@ -406,8 +406,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#anyMatch(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AnyMatch(Java.Util.Function.DoublePredicate arg0)
         {
             return IExecuteWithSignature<bool>("anyMatch", "(Ljava/util/function/DoublePredicate;)Z", arg0);
@@ -415,8 +415,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#noneMatch(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool NoneMatch(Java.Util.Function.DoublePredicate arg0)
         {
             return IExecuteWithSignature<bool>("noneMatch", "(Ljava/util/function/DoublePredicate;)Z", arg0);
@@ -424,9 +424,9 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#reduce(double,java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double Reduce(double arg0, Java.Util.Function.DoubleBinaryOperator arg1)
         {
             return IExecuteWithSignature<double>("reduce", "(DLjava/util/function/DoubleBinaryOperator;)D", arg0, arg1);
@@ -434,7 +434,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sum()"/>
         /// </summary>
-        /// <returns><see cref="double"/></returns>
+        /// <returns><see cref=""/></returns>
         public double Sum()
         {
             return IExecuteWithSignature<double>("sum", "()D");
@@ -442,7 +442,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="double"/></returns>
+        /// <returns><see cref=""/></returns>
         public double[] ToArray()
         {
             return IExecuteWithSignatureArray<double>("toArray", "()[D");
@@ -450,7 +450,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#summaryStatistics()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.DoubleSummaryStatistics"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.DoubleSummaryStatistics SummaryStatistics()
         {
             return IExecuteWithSignature<Java.Util.DoubleSummaryStatistics>("summaryStatistics", "()Ljava/util/DoubleSummaryStatistics;");
@@ -458,7 +458,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#average()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.OptionalDouble Average()
         {
             return IExecuteWithSignature<Java.Util.OptionalDouble>("average", "()Ljava/util/OptionalDouble;");
@@ -466,7 +466,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#findAny()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.OptionalDouble FindAny()
         {
             return IExecuteWithSignature<Java.Util.OptionalDouble>("findAny", "()Ljava/util/OptionalDouble;");
@@ -474,7 +474,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#findFirst()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.OptionalDouble FindFirst()
         {
             return IExecuteWithSignature<Java.Util.OptionalDouble>("findFirst", "()Ljava/util/OptionalDouble;");
@@ -482,7 +482,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#max()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.OptionalDouble Max()
         {
             return IExecuteWithSignature<Java.Util.OptionalDouble>("max", "()Ljava/util/OptionalDouble;");
@@ -490,7 +490,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#min()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.OptionalDouble Min()
         {
             return IExecuteWithSignature<Java.Util.OptionalDouble>("min", "()Ljava/util/OptionalDouble;");
@@ -498,8 +498,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#reduce(java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.OptionalDouble Reduce(Java.Util.Function.DoubleBinaryOperator arg0)
         {
             return IExecuteWithSignature<Java.Util.OptionalDouble>("reduce", "(Ljava/util/function/DoubleBinaryOperator;)Ljava/util/OptionalDouble;", arg0);
@@ -507,7 +507,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#distinct()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Distinct()
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("distinct", "()Ljava/util/stream/DoubleStream;");
@@ -515,8 +515,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#filter(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Filter(Java.Util.Function.DoublePredicate arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("filter", "(Ljava/util/function/DoublePredicate;)Ljava/util/stream/DoubleStream;", arg0);
@@ -524,18 +524,18 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#flatMap(java.util.function.DoubleFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref="Java.Util.Stream.DoubleStream"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public Java.Util.Stream.DoubleStream FlatMap<Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.DoubleFunction<Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream : Java.Util.Stream.DoubleStream
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Stream.DoubleStream FlatMap(Java.Util.Function.DoubleFunction arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream : Java.Util.Stream.DoubleStream
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("flatMap", "(Ljava/util/function/DoubleFunction;)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#limit(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Limit(long arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("limit", "(J)Ljava/util/stream/DoubleStream;", arg0);
@@ -543,8 +543,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#map(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Map(Java.Util.Function.DoubleUnaryOperator arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("map", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/stream/DoubleStream;", arg0);
@@ -552,8 +552,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#peek(java.util.function.DoubleConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Peek(Java.Util.Function.DoubleConsumer arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("peek", "(Ljava/util/function/DoubleConsumer;)Ljava/util/stream/DoubleStream;", arg0);
@@ -561,8 +561,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#skip(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Skip(long arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("skip", "(J)Ljava/util/stream/DoubleStream;", arg0);
@@ -570,7 +570,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sorted()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Sorted()
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("sorted", "()Ljava/util/stream/DoubleStream;");
@@ -578,8 +578,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#mapToInt(java.util.function.DoubleToIntFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleToIntFunction"/></param>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.IntStream MapToInt(Java.Util.Function.DoubleToIntFunction arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapToInt", "(Ljava/util/function/DoubleToIntFunction;)Ljava/util/stream/IntStream;", arg0);
@@ -587,8 +587,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#mapToLong(java.util.function.DoubleToLongFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleToLongFunction"/></param>
-        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.LongStream MapToLong(Java.Util.Function.DoubleToLongFunction arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("mapToLong", "(Ljava/util/function/DoubleToLongFunction;)Ljava/util/stream/LongStream;", arg0);
@@ -596,15 +596,15 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#boxed()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Lang.Double> Boxed()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Stream.Stream Boxed()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.Double>>("boxed", "()Ljava/util/stream/Stream;");
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("boxed", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#count()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long Count()
         {
             return IExecuteWithSignature<long>("count", "()J");
@@ -612,7 +612,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#forEach(java.util.function.DoubleConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ForEach(Java.Util.Function.DoubleConsumer arg0)
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/DoubleConsumer;)V", arg0);
@@ -620,7 +620,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#forEachOrdered(java.util.function.DoubleConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ForEachOrdered(Java.Util.Function.DoubleConsumer arg0)
         {
             IExecuteWithSignature("forEachOrdered", "(Ljava/util/function/DoubleConsumer;)V", arg0);
@@ -628,7 +628,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Iterator Iterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
@@ -636,7 +636,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Spliterator Spliterator()
         {
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
@@ -644,7 +644,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#parallel()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.BaseStream Parallel()
         {
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("parallel", "()Ljava/util/stream/BaseStream;");
@@ -652,7 +652,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#sequential()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.BaseStream Sequential()
         {
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("sequential", "()Ljava/util/stream/BaseStream;");
@@ -660,8 +660,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#dropWhile(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream DropWhile(Java.Util.Function.DoublePredicate arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("dropWhile", "(Ljava/util/function/DoublePredicate;)Ljava/util/stream/DoubleStream;", arg0);
@@ -669,8 +669,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#takeWhile(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream TakeWhile(Java.Util.Function.DoublePredicate arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("takeWhile", "(Ljava/util/function/DoublePredicate;)Ljava/util/stream/DoubleStream;", arg0);

@@ -86,46 +86,46 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.MBeanServerConnection"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Management.MBeanServerConnection GetMBeanServerConnection(Javax.Security.Auth.Subject arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#addConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         void AddConnectionNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         void Connect();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void Connect(Java.Util.Map<Java.Lang.String, object> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        void Connect(Java.Util.Map<, > arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void RemoveConnectionNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void RemoveConnectionNotificationListener(Javax.Management.NotificationListener arg0);
 
         #endregion
@@ -181,9 +181,9 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#getMBeanServerConnection(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.MBeanServerConnection"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Management.MBeanServerConnection GetMBeanServerConnection(Javax.Security.Auth.Subject arg0)
         {
             return IExecuteWithSignature<Javax.Management.MBeanServerConnection>("getMBeanServerConnection", "(Ljavax/security/auth/Subject;)Ljavax/management/MBeanServerConnection;", arg0);
@@ -191,9 +191,9 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#addConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void AddConnectionNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecuteWithSignature("addConnectionNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -201,7 +201,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -209,7 +209,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Connect()
         {
             IExecuteWithSignature("connect", "()V");
@@ -217,19 +217,19 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public void Connect(Java.Util.Map<Java.Lang.String, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        public void Connect(Java.Util.Map<, > arg0)
         {
             IExecuteWithSignature("connect", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void RemoveConnectionNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecuteWithSignature("removeConnectionNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -237,8 +237,8 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void RemoveConnectionNotificationListener(Javax.Management.NotificationListener arg0)
         {
             IExecuteWithSignature("removeConnectionNotificationListener", "(Ljavax/management/NotificationListener;)V", arg0);

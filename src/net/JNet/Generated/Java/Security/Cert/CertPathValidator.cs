@@ -92,11 +92,11 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Cert.CertPathValidator"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Security.Cert.CertPathValidator GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Java.Security.Cert.CertPathValidator>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/cert/CertPathValidator;", arg0, arg1);
@@ -104,10 +104,10 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Java.Security.Cert.CertPathValidator"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Security.Cert.CertPathValidator GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecuteWithSignature<Java.Security.Cert.CertPathValidator>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/cert/CertPathValidator;", arg0, arg1);
@@ -115,9 +115,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Cert.CertPathValidator"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Security.Cert.CertPathValidator GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Security.Cert.CertPathValidator>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/cert/CertPathValidator;", arg0);
@@ -150,11 +150,11 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#validate(java.security.cert.CertPath,java.security.cert.CertPathParameters)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CertPath"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Cert.CertPathParameters"/></param>
-        /// <returns><see cref="Java.Security.Cert.CertPathValidatorResult"/></returns>
-        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Security.Cert.CertPathValidatorResult Validate(Java.Security.Cert.CertPath arg0, Java.Security.Cert.CertPathParameters arg1)
         {
             return IExecuteWithSignature<Java.Security.Cert.CertPathValidatorResult>("validate", "(Ljava/security/cert/CertPath;Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathValidatorResult;", arg0, arg1);

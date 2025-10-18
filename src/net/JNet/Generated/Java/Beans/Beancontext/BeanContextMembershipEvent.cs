@@ -73,8 +73,8 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html#%3Cinit%3E(java.beans.beancontext.BeanContext,java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public BeanContextMembershipEvent(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Collection arg1)
             : base(arg0, arg1)
         {
@@ -98,8 +98,8 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(object arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
@@ -107,7 +107,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -115,7 +115,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object[] ToArray()
         {
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
@@ -123,7 +123,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Iterator Iterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");

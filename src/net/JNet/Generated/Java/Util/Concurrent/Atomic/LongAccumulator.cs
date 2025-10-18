@@ -73,8 +73,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#%3Cinit%3E(java.util.function.LongBinaryOperator,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public LongAccumulator(Java.Util.Function.LongBinaryOperator arg0, long arg1)
             : base(arg0, arg1)
         {
@@ -105,7 +105,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#get()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long Get()
         {
             return IExecuteWithSignature<long>("get", "()J");
@@ -113,7 +113,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#accumulate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Accumulate(long arg0)
         {
             IExecuteWithSignature("accumulate", "(J)V", arg0);

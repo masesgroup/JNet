@@ -86,7 +86,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getInputArguments()"/> 
         /// </summary>
-        Java.Util.List<Java.Lang.String> InputArguments { get; }
+        Java.Util.List InputArguments { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getLibraryPath()"/> 
         /// </summary>
@@ -122,7 +122,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSystemProperties()"/> 
         /// </summary>
-        Java.Util.Map<Java.Lang.String, Java.Lang.String> SystemProperties { get; }
+        Java.Util.Map<, > SystemProperties { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getUptime()"/> 
         /// </summary>
@@ -142,7 +142,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsBootClassPathSupported();
 
         #endregion
@@ -192,9 +192,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getInputArguments()"/> 
         /// </summary>
-        public Java.Util.List<Java.Lang.String> InputArguments
+        public Java.Util.List InputArguments
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getInputArguments", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getInputArguments", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getLibraryPath()"/> 
@@ -255,9 +255,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSystemProperties()"/> 
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.String> SystemProperties
+        public Java.Util.Map<, > SystemProperties
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getSystemProperties", "()Ljava/util/Map;"); }
+            get { return IExecuteWithSignature<Java.Util.Map<, >>("getSystemProperties", "()Ljava/util/Map;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getUptime()"/> 
@@ -290,7 +290,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBootClassPathSupported()
         {
             return IExecuteWithSignature<bool>("isBootClassPathSupported", "()Z");

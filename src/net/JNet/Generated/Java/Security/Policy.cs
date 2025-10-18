@@ -143,12 +143,12 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Policy.Parameters"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Policy"/></returns>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Security.Policy GetInstance(Java.Lang.String arg0, Java.Security.Policy.Parameters arg1, Java.Lang.String arg2)
         {
             return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Policy$Parameters;Ljava/lang/String;)Ljava/security/Policy;", arg0, arg1, arg2);
@@ -156,11 +156,11 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Policy.Parameters"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Java.Security.Policy"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Security.Policy GetInstance(Java.Lang.String arg0, Java.Security.Policy.Parameters arg1, Java.Security.Provider arg2)
         {
             return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Policy$Parameters;Ljava/security/Provider;)Ljava/security/Policy;", arg0, arg1, arg2);
@@ -168,10 +168,10 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Policy.Parameters"/></param>
-        /// <returns><see cref="Java.Security.Policy"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Security.Policy GetInstance(Java.Lang.String arg0, Java.Security.Policy.Parameters arg1)
         {
             return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Policy$Parameters;)Ljava/security/Policy;", arg0, arg1);
@@ -179,7 +179,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#setPolicy(java.security.Policy)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Policy"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void SetPolicy(Java.Security.Policy arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setPolicy", "(Ljava/security/Policy;)V", arg0);
@@ -212,9 +212,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#implies(java.security.ProtectionDomain,java.security.Permission)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Permission"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Implies(Java.Security.ProtectionDomain arg0, Java.Security.Permission arg1)
         {
             return IExecuteWithSignature<bool>("implies", "(Ljava/security/ProtectionDomain;Ljava/security/Permission;)Z", arg0, arg1);
@@ -222,8 +222,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPermissions(java.security.CodeSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
-        /// <returns><see cref="Java.Security.PermissionCollection"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Security.PermissionCollection GetPermissions(Java.Security.CodeSource arg0)
         {
             return IExecuteWithSignature<Java.Security.PermissionCollection>("getPermissions", "(Ljava/security/CodeSource;)Ljava/security/PermissionCollection;", arg0);
@@ -231,8 +231,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPermissions(java.security.ProtectionDomain)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <returns><see cref="Java.Security.PermissionCollection"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Security.PermissionCollection GetPermissions(Java.Security.ProtectionDomain arg0)
         {
             return IExecuteWithSignature<Java.Security.PermissionCollection>("getPermissions", "(Ljava/security/ProtectionDomain;)Ljava/security/PermissionCollection;", arg0);

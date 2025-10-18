@@ -78,8 +78,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ContentHandlerFactory.html#createContentHandler(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Net.ContentHandler"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Net.ContentHandler CreateContentHandler(Java.Lang.String arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ContentHandlerFactory.html#createContentHandler(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Net.ContentHandler"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Net.ContentHandler CreateContentHandler(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Net.ContentHandler>("createContentHandler", "(Ljava/lang/String;)Ljava/net/ContentHandler;", arg0);

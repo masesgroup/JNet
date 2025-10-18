@@ -91,12 +91,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintArrowButtonBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintArrowButtonBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintArrowButtonBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -104,12 +104,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintArrowButtonBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintArrowButtonBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintArrowButtonBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -117,13 +117,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintArrowButtonForeground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintArrowButtonForeground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintArrowButtonForeground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -131,12 +131,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintButtonBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintButtonBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintButtonBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -144,12 +144,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintButtonBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintButtonBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintButtonBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -157,12 +157,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintCheckBoxBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintCheckBoxBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintCheckBoxBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -170,12 +170,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintCheckBoxBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintCheckBoxBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintCheckBoxBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -183,12 +183,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintCheckBoxMenuItemBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintCheckBoxMenuItemBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintCheckBoxMenuItemBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -196,12 +196,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintCheckBoxMenuItemBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintCheckBoxMenuItemBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintCheckBoxMenuItemBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -209,12 +209,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintColorChooserBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintColorChooserBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintColorChooserBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -222,12 +222,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintColorChooserBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintColorChooserBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintColorChooserBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -235,12 +235,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintComboBoxBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintComboBoxBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintComboBoxBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -248,12 +248,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintComboBoxBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintComboBoxBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintComboBoxBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -261,12 +261,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintDesktopIconBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintDesktopIconBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintDesktopIconBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -274,12 +274,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintDesktopIconBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintDesktopIconBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintDesktopIconBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -287,12 +287,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintDesktopPaneBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintDesktopPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintDesktopPaneBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -300,12 +300,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintDesktopPaneBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintDesktopPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintDesktopPaneBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -313,12 +313,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintEditorPaneBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintEditorPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintEditorPaneBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -326,12 +326,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintEditorPaneBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintEditorPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintEditorPaneBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -339,12 +339,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintFileChooserBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintFileChooserBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintFileChooserBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -352,12 +352,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintFileChooserBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintFileChooserBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintFileChooserBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -365,12 +365,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintFormattedTextFieldBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintFormattedTextFieldBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintFormattedTextFieldBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -378,12 +378,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintFormattedTextFieldBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintFormattedTextFieldBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintFormattedTextFieldBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -391,12 +391,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintInternalFrameBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintInternalFrameBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintInternalFrameBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -404,12 +404,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintInternalFrameBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintInternalFrameBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintInternalFrameBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -417,12 +417,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintInternalFrameTitlePaneBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintInternalFrameTitlePaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintInternalFrameTitlePaneBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -430,12 +430,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintInternalFrameTitlePaneBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintInternalFrameTitlePaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintInternalFrameTitlePaneBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -443,12 +443,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintLabelBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintLabelBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintLabelBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -456,12 +456,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintLabelBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintLabelBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintLabelBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -469,12 +469,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintListBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintListBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintListBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -482,12 +482,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintListBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintListBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintListBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -495,12 +495,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintMenuBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintMenuBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintMenuBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -508,12 +508,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintMenuBarBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintMenuBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintMenuBarBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -521,12 +521,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintMenuBarBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintMenuBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintMenuBarBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -534,12 +534,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintMenuBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintMenuBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintMenuBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -547,12 +547,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintMenuItemBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintMenuItemBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintMenuItemBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -560,12 +560,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintMenuItemBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintMenuItemBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintMenuItemBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -573,12 +573,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintOptionPaneBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintOptionPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintOptionPaneBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -586,12 +586,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintOptionPaneBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintOptionPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintOptionPaneBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -599,12 +599,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintPanelBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintPanelBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintPanelBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -612,12 +612,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintPanelBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintPanelBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintPanelBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -625,12 +625,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintPasswordFieldBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintPasswordFieldBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintPasswordFieldBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -638,12 +638,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintPasswordFieldBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintPasswordFieldBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintPasswordFieldBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -651,12 +651,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintPopupMenuBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintPopupMenuBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintPopupMenuBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -664,12 +664,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintPopupMenuBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintPopupMenuBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintPopupMenuBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -677,13 +677,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintProgressBarBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintProgressBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintProgressBarBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -691,12 +691,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintProgressBarBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintProgressBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintProgressBarBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -704,13 +704,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintProgressBarBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintProgressBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintProgressBarBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -718,12 +718,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintProgressBarBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintProgressBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintProgressBarBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -731,13 +731,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintProgressBarForeground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintProgressBarForeground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintProgressBarForeground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -745,12 +745,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintRadioButtonBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintRadioButtonBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintRadioButtonBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -758,12 +758,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintRadioButtonBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintRadioButtonBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintRadioButtonBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -771,12 +771,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintRadioButtonMenuItemBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintRadioButtonMenuItemBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintRadioButtonMenuItemBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -784,12 +784,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintRadioButtonMenuItemBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintRadioButtonMenuItemBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintRadioButtonMenuItemBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -797,12 +797,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintRootPaneBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintRootPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintRootPaneBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -810,12 +810,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintRootPaneBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintRootPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintRootPaneBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -823,13 +823,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollBarBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintScrollBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintScrollBarBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -837,12 +837,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollBarBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintScrollBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintScrollBarBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -850,13 +850,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollBarBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintScrollBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintScrollBarBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -864,12 +864,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollBarBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintScrollBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintScrollBarBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -877,13 +877,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollBarThumbBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintScrollBarThumbBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintScrollBarThumbBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -891,13 +891,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollBarThumbBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintScrollBarThumbBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintScrollBarThumbBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -905,13 +905,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollBarTrackBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintScrollBarTrackBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintScrollBarTrackBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -919,12 +919,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollBarTrackBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintScrollBarTrackBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintScrollBarTrackBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -932,13 +932,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollBarTrackBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintScrollBarTrackBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintScrollBarTrackBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -946,12 +946,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollBarTrackBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintScrollBarTrackBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintScrollBarTrackBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -959,12 +959,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollPaneBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintScrollPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintScrollPaneBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -972,12 +972,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintScrollPaneBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintScrollPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintScrollPaneBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -985,13 +985,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSeparatorBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSeparatorBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSeparatorBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -999,12 +999,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSeparatorBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSeparatorBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSeparatorBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1012,13 +1012,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSeparatorBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSeparatorBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSeparatorBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1026,12 +1026,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSeparatorBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSeparatorBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSeparatorBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1039,13 +1039,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSeparatorForeground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSeparatorForeground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSeparatorForeground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1053,13 +1053,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSliderBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSliderBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSliderBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1067,12 +1067,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSliderBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSliderBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSliderBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1080,13 +1080,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSliderBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSliderBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSliderBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1094,12 +1094,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSliderBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSliderBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSliderBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1107,13 +1107,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSliderThumbBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSliderThumbBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSliderThumbBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1121,13 +1121,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSliderThumbBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSliderThumbBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSliderThumbBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1135,13 +1135,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSliderTrackBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSliderTrackBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSliderTrackBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1149,12 +1149,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSliderTrackBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSliderTrackBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSliderTrackBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1162,13 +1162,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSliderTrackBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSliderTrackBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSliderTrackBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1176,12 +1176,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSliderTrackBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSliderTrackBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSliderTrackBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1189,12 +1189,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSpinnerBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSpinnerBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSpinnerBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1202,12 +1202,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSpinnerBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSpinnerBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSpinnerBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1215,12 +1215,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSplitPaneBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSplitPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSplitPaneBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1228,12 +1228,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSplitPaneBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSplitPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSplitPaneBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1241,13 +1241,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSplitPaneDividerBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSplitPaneDividerBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSplitPaneDividerBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1255,12 +1255,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSplitPaneDividerBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintSplitPaneDividerBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintSplitPaneDividerBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1268,13 +1268,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSplitPaneDividerForeground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSplitPaneDividerForeground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSplitPaneDividerForeground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1282,13 +1282,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintSplitPaneDragDivider(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintSplitPaneDragDivider(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintSplitPaneDragDivider", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1296,12 +1296,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTabbedPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTabbedPaneBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1309,12 +1309,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTabbedPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTabbedPaneBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1322,12 +1322,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneContentBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTabbedPaneContentBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTabbedPaneContentBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1335,12 +1335,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneContentBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTabbedPaneContentBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTabbedPaneContentBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1348,13 +1348,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneTabAreaBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintTabbedPaneTabAreaBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintTabbedPaneTabAreaBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1362,12 +1362,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneTabAreaBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTabbedPaneTabAreaBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTabbedPaneTabAreaBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1375,13 +1375,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneTabAreaBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintTabbedPaneTabAreaBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintTabbedPaneTabAreaBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1389,12 +1389,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneTabAreaBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTabbedPaneTabAreaBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTabbedPaneTabAreaBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1402,14 +1402,14 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneTabBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
         public void PaintTabbedPaneTabBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
         {
             IExecuteWithSignature("paintTabbedPaneTabBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -1417,13 +1417,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneTabBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintTabbedPaneTabBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintTabbedPaneTabBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1431,14 +1431,14 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneTabBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
         public void PaintTabbedPaneTabBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
         {
             IExecuteWithSignature("paintTabbedPaneTabBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -1446,13 +1446,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTabbedPaneTabBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintTabbedPaneTabBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintTabbedPaneTabBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1460,12 +1460,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTableBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTableBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTableBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1473,12 +1473,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTableBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTableBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTableBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1486,12 +1486,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTableHeaderBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTableHeaderBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTableHeaderBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1499,12 +1499,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTableHeaderBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTableHeaderBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTableHeaderBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1512,12 +1512,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTextAreaBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTextAreaBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTextAreaBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1525,12 +1525,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTextAreaBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTextAreaBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTextAreaBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1538,12 +1538,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTextFieldBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTextFieldBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTextFieldBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1551,12 +1551,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTextFieldBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTextFieldBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTextFieldBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1564,12 +1564,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTextPaneBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTextPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTextPaneBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1577,12 +1577,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTextPaneBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTextPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTextPaneBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1590,12 +1590,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToggleButtonBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintToggleButtonBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintToggleButtonBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1603,12 +1603,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToggleButtonBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintToggleButtonBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintToggleButtonBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1616,13 +1616,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintToolBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintToolBarBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1630,12 +1630,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintToolBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintToolBarBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1643,13 +1643,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintToolBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintToolBarBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1657,12 +1657,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintToolBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintToolBarBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1670,13 +1670,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarContentBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintToolBarContentBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintToolBarContentBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1684,12 +1684,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarContentBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintToolBarContentBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintToolBarContentBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1697,13 +1697,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarContentBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintToolBarContentBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintToolBarContentBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1711,12 +1711,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarContentBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintToolBarContentBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintToolBarContentBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1724,13 +1724,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarDragWindowBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintToolBarDragWindowBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintToolBarDragWindowBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1738,12 +1738,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarDragWindowBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintToolBarDragWindowBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintToolBarDragWindowBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1751,13 +1751,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarDragWindowBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void PaintToolBarDragWindowBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("paintToolBarDragWindowBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1765,12 +1765,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolBarDragWindowBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintToolBarDragWindowBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintToolBarDragWindowBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1778,12 +1778,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolTipBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintToolTipBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintToolTipBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1791,12 +1791,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintToolTipBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintToolTipBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintToolTipBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1804,12 +1804,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTreeBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTreeBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTreeBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1817,12 +1817,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTreeBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTreeBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTreeBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1830,12 +1830,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTreeCellBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTreeCellBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTreeCellBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1843,12 +1843,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTreeCellBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTreeCellBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTreeCellBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1856,12 +1856,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintTreeCellFocus(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintTreeCellFocus(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintTreeCellFocus", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1869,12 +1869,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintViewportBackground(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintViewportBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintViewportBackground", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1882,12 +1882,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthPainter.html#paintViewportBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintViewportBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintViewportBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);

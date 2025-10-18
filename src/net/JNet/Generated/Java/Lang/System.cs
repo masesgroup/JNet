@@ -105,7 +105,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html"/>
             /// </summary>
-            public partial class Level : Java.Lang.Enum<Java.Lang.System.Logger.Level>
+            public partial class Level : Java.Lang.Enum
             {
                 const string _bridgeClassName = "java.lang.System$Logger$Level";
                 /// <summary>
@@ -230,9 +230,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getenv()"/> 
         /// </summary>
-        public static Java.Util.Map<Java.Lang.String, Java.Lang.String> Env
+        public static Java.Util.Map<, > Env
         {
-            get { return SExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>(LocalBridgeClazz, "getenv", "()Ljava/util/Map;"); }
+            get { return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "getenv", "()Ljava/util/Map;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperties()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setProperties(java.util.Properties)"/>
@@ -251,7 +251,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#console()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.Console"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Io.Console Console()
         {
             return SExecuteWithSignature<Java.Io.Console>(LocalBridgeClazz, "console", "()Ljava/io/Console;");
@@ -259,8 +259,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#clearProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ClearProperty(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "clearProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -268,8 +268,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getenv(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Getenv(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getenv", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -277,9 +277,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String GetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
@@ -287,8 +287,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String GetProperty(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -296,7 +296,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#lineSeparator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String LineSeparator()
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "lineSeparator", "()Ljava/lang/String;");
@@ -304,9 +304,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String SetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
@@ -314,9 +314,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getLogger(java.lang.String,java.util.ResourceBundle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
-        /// <returns><see cref="Java.Lang.System.Logger"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.System.Logger GetLogger(Java.Lang.String arg0, Java.Util.ResourceBundle arg1)
         {
             return SExecuteWithSignature<Java.Lang.System.Logger>(LocalBridgeClazz, "getLogger", "(Ljava/lang/String;Ljava/util/ResourceBundle;)Ljava/lang/System$Logger;", arg0, arg1);
@@ -324,8 +324,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getLogger(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.System.Logger"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.System.Logger GetLogger(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.System.Logger>(LocalBridgeClazz, "getLogger", "(Ljava/lang/String;)Ljava/lang/System$Logger;", arg0);
@@ -333,8 +333,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#inheritedChannel()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Nio.Channels.Channel InheritedChannel()
         {
             return SExecuteWithSignature<Java.Nio.Channels.Channel>(LocalBridgeClazz, "inheritedChannel", "()Ljava/nio/channels/Channel;");
@@ -342,8 +342,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#identityHashCode(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int IdentityHashCode(object arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "identityHashCode", "(Ljava/lang/Object;)I", arg0);
@@ -351,8 +351,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#mapLibraryName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String MapLibraryName(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "mapLibraryName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -360,7 +360,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#currentTimeMillis()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public static long CurrentTimeMillis()
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "currentTimeMillis", "()J");
@@ -368,7 +368,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#nanoTime()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public static long NanoTime()
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "nanoTime", "()J");
@@ -376,11 +376,11 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#arraycopy(java.lang.Object,int,java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public static void Arraycopy(object arg0, int arg1, object arg2, int arg3, int arg4)
         {
             SExecuteWithSignature(LocalBridgeClazz, "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", arg0, arg1, arg2, arg3, arg4);
@@ -388,7 +388,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#exit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void Exit(int arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "exit", "(I)V", arg0);
@@ -403,7 +403,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#load(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void Load(Java.Lang.String arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "load", "(Ljava/lang/String;)V", arg0);
@@ -411,7 +411,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#loadLibrary(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void LoadLibrary(Java.Lang.String arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "loadLibrary", "(Ljava/lang/String;)V", arg0);
@@ -426,7 +426,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setErr(java.io.PrintStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void SetErr(Java.Io.PrintStream arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setErr", "(Ljava/io/PrintStream;)V", arg0);
@@ -434,7 +434,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setIn(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void SetIn(Java.Io.InputStream arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setIn", "(Ljava/io/InputStream;)V", arg0);
@@ -442,7 +442,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setOut(java.io.PrintStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void SetOut(Java.Io.PrintStream arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setOut", "(Ljava/io/PrintStream;)V", arg0);
@@ -485,8 +485,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#isLoggable(java.lang.System.Logger.Level)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool IsLoggable(Java.Lang.System.Logger.Level arg0)
             {
                 return IExecuteWithSignature<bool>("isLoggable", "(Ljava/lang/System$Logger$Level;)Z", arg0);
@@ -494,10 +494,10 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.ResourceBundle,java.lang.String,java.lang.Object...)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
-            /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg3"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.ResourceBundle arg1, Java.Lang.String arg2, params object[] arg3)
             {
                 IExecuteWithSignature("log", "(Ljava/lang/System$Logger$Level;Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)V", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg3, arg0, arg1, arg2));
@@ -505,10 +505,10 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
-            /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg3"><see cref="Java.Lang.Throwable"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.ResourceBundle arg1, Java.Lang.String arg2, MASES.JCOBridge.C2JBridge.JVMBridgeException arg3)
             {
                 IExecuteWithSignature("log", "(Ljava/lang/System$Logger$Level;Ljava/util/ResourceBundle;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2, arg3);
@@ -516,8 +516,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Log(Java.Lang.System.Logger.Level arg0, object arg1)
             {
                 IExecuteWithSignature("log", "(Ljava/lang/System$Logger$Level;Ljava/lang/Object;)V", arg0, arg1);
@@ -525,9 +525,9 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String,java.lang.Object...)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg2"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public void Log(Java.Lang.System.Logger.Level arg0, Java.Lang.String arg1, params object[] arg2)
             {
                 IExecuteWithSignature("log", "(Ljava/lang/System$Logger$Level;Ljava/lang/String;[Ljava/lang/Object;)V", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
@@ -535,9 +535,9 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String,java.lang.Throwable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public void Log(Java.Lang.System.Logger.Level arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
             {
                 IExecuteWithSignature("log", "(Ljava/lang/System$Logger$Level;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2);
@@ -545,8 +545,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Log(Java.Lang.System.Logger.Level arg0, Java.Lang.String arg1)
             {
                 IExecuteWithSignature("log", "(Ljava/lang/System$Logger$Level;Ljava/lang/String;)V", arg0, arg1);
@@ -554,19 +554,19 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.function.Supplier,java.lang.Throwable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
-            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier<Java.Lang.String> arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
             {
                 IExecuteWithSignature("log", "(Ljava/lang/System$Logger$Level;Ljava/util/function/Supplier;Ljava/lang/Throwable;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.function.Supplier)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier<Java.Lang.String> arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier arg1)
             {
                 IExecuteWithSignature("log", "(Ljava/lang/System$Logger$Level;Ljava/util/function/Supplier;)V", arg0, arg1);
             }
@@ -635,8 +635,8 @@ namespace Java.Lang
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#valueOf(java.lang.String)"/>
                 /// </summary>
-                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-                /// <returns><see cref="Java.Lang.System.Logger.Level"/></returns>
+                /// <param name="arg0"><see cref=""/></param>
+                /// <returns><see cref=""/></returns>
                 public static Java.Lang.System.Logger.Level ValueOf(Java.Lang.String arg0)
                 {
                     return SExecute<Java.Lang.System.Logger.Level>(LocalBridgeClazz, "valueOf", arg0);
@@ -644,7 +644,7 @@ namespace Java.Lang
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#values()"/>
                 /// </summary>
-                /// <returns><see cref="Java.Lang.System.Logger.Level"/></returns>
+                /// <returns><see cref=""/></returns>
                 public static Java.Lang.System.Logger.Level[] Values()
                 {
                     return SExecuteArray<Java.Lang.System.Logger.Level>(LocalBridgeClazz, "values");
@@ -715,9 +715,9 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.LoggerFinder.html#getLogger(java.lang.String,java.lang.Module)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
-            /// <returns><see cref="Java.Lang.System.Logger"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.System.Logger GetLogger(Java.Lang.String arg0, Java.Lang.Module arg1)
             {
                 return IExecuteWithSignature<Java.Lang.System.Logger>("getLogger", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/System$Logger;", arg0, arg1);
@@ -725,10 +725,10 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.LoggerFinder.html#getLocalizedLogger(java.lang.String,java.util.ResourceBundle,java.lang.Module)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.Module"/></param>
-            /// <returns><see cref="Java.Lang.System.Logger"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.System.Logger GetLocalizedLogger(Java.Lang.String arg0, Java.Util.ResourceBundle arg1, Java.Lang.Module arg2)
             {
                 return IExecuteWithSignature<Java.Lang.System.Logger>("getLocalizedLogger", "(Ljava/lang/String;Ljava/util/ResourceBundle;Ljava/lang/Module;)Ljava/lang/System$Logger;", arg0, arg1, arg2);

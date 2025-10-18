@@ -82,36 +82,36 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#isDynamic()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsDynamic();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getBounds2D(java.awt.image.renderable.ParameterBlock)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.Renderable.ParameterBlock arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#mapRenderContext(int,java.awt.image.renderable.RenderContext,java.awt.image.renderable.ParameterBlock,java.awt.image.renderable.RenderableImage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.ImageNs.Renderable.RenderContext MapRenderContext(int arg0, Java.Awt.ImageNs.Renderable.RenderContext arg1, Java.Awt.ImageNs.Renderable.ParameterBlock arg2, Java.Awt.ImageNs.Renderable.RenderableImage arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#create(java.awt.image.renderable.RenderContext,java.awt.image.renderable.ParameterBlock)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.ImageNs.RenderedImage Create(Java.Awt.ImageNs.Renderable.RenderContext arg0, Java.Awt.ImageNs.Renderable.ParameterBlock arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getProperty(java.awt.image.renderable.ParameterBlock,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         object GetProperty(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, Java.Lang.String arg1);
 
         #endregion
@@ -154,7 +154,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#isDynamic()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDynamic()
         {
             return IExecuteWithSignature<bool>("isDynamic", "()Z");
@@ -162,8 +162,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getBounds2D(java.awt.image.renderable.ParameterBlock)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.Renderable.ParameterBlock arg0)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds2D", "(Ljava/awt/image/renderable/ParameterBlock;)Ljava/awt/geom/Rectangle2D;", arg0);
@@ -171,11 +171,11 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#mapRenderContext(int,java.awt.image.renderable.RenderContext,java.awt.image.renderable.ParameterBlock,java.awt.image.renderable.RenderableImage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.RenderContext MapRenderContext(int arg0, Java.Awt.ImageNs.Renderable.RenderContext arg1, Java.Awt.ImageNs.Renderable.ParameterBlock arg2, Java.Awt.ImageNs.Renderable.RenderableImage arg3)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.RenderContext>("mapRenderContext", "(ILjava/awt/image/renderable/RenderContext;Ljava/awt/image/renderable/ParameterBlock;Ljava/awt/image/renderable/RenderableImage;)Ljava/awt/image/renderable/RenderContext;", arg0, arg1, arg2, arg3);
@@ -183,9 +183,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#create(java.awt.image.renderable.RenderContext,java.awt.image.renderable.ParameterBlock)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.RenderedImage Create(Java.Awt.ImageNs.Renderable.RenderContext arg0, Java.Awt.ImageNs.Renderable.ParameterBlock arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("create", "(Ljava/awt/image/renderable/RenderContext;Ljava/awt/image/renderable/ParameterBlock;)Ljava/awt/image/RenderedImage;", arg0, arg1);
@@ -193,9 +193,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getProperty(java.awt.image.renderable.ParameterBlock,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetProperty(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/awt/image/renderable/ParameterBlock;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);

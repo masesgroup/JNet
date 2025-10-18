@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#%3Cinit%3E(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public SplittableRandom(long arg0)
             : base(arg0)
         {
@@ -97,7 +97,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextBoolean()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool NextBoolean()
         {
             return IExecuteWithSignature<bool>("nextBoolean", "()Z");
@@ -105,7 +105,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextDouble()"/>
         /// </summary>
-        /// <returns><see cref="double"/></returns>
+        /// <returns><see cref=""/></returns>
         public double NextDouble()
         {
             return IExecuteWithSignature<double>("nextDouble", "()D");
@@ -113,9 +113,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextDouble(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double NextDouble(double arg0, double arg1)
         {
             return IExecuteWithSignature<double>("nextDouble", "(DD)D", arg0, arg1);
@@ -123,8 +123,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextDouble(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double NextDouble(double arg0)
         {
             return IExecuteWithSignature<double>("nextDouble", "(D)D", arg0);
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextInt()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int NextInt()
         {
             return IExecuteWithSignature<int>("nextInt", "()I");
@@ -140,9 +140,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextInt(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int NextInt(int arg0, int arg1)
         {
             return IExecuteWithSignature<int>("nextInt", "(II)I", arg0, arg1);
@@ -150,8 +150,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextInt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int NextInt(int arg0)
         {
             return IExecuteWithSignature<int>("nextInt", "(I)I", arg0);
@@ -159,7 +159,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#split()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.SplittableRandom"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.SplittableRandom Split()
         {
             return IExecuteWithSignature<Java.Util.SplittableRandom>("split", "()Ljava/util/SplittableRandom;");
@@ -167,7 +167,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#doubles()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Doubles()
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "()Ljava/util/stream/DoubleStream;");
@@ -175,9 +175,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#doubles(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Doubles(double arg0, double arg1)
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "(DD)Ljava/util/stream/DoubleStream;", arg0, arg1);
@@ -185,10 +185,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#doubles(long,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Doubles(long arg0, double arg1, double arg2)
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "(JDD)Ljava/util/stream/DoubleStream;", arg0, arg1, arg2);
@@ -196,8 +196,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#doubles(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Doubles(long arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "(J)Ljava/util/stream/DoubleStream;", arg0);
@@ -205,7 +205,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#ints()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.IntStream Ints()
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "()Ljava/util/stream/IntStream;");
@@ -213,9 +213,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#ints(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.IntStream Ints(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "(II)Ljava/util/stream/IntStream;", arg0, arg1);
@@ -223,10 +223,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#ints(long,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.IntStream Ints(long arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "(JII)Ljava/util/stream/IntStream;", arg0, arg1, arg2);
@@ -234,8 +234,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#ints(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.IntStream Ints(long arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "(J)Ljava/util/stream/IntStream;", arg0);
@@ -243,7 +243,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#longs()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.LongStream Longs()
         {
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "()Ljava/util/stream/LongStream;");
@@ -251,10 +251,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#longs(long,long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0, long arg1, long arg2)
         {
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "(JJJ)Ljava/util/stream/LongStream;", arg0, arg1, arg2);
@@ -262,9 +262,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#longs(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0, long arg1)
         {
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "(JJ)Ljava/util/stream/LongStream;", arg0, arg1);
@@ -272,8 +272,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#longs(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "(J)Ljava/util/stream/LongStream;", arg0);
@@ -281,7 +281,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextLong()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long NextLong()
         {
             return IExecuteWithSignature<long>("nextLong", "()J");
@@ -289,9 +289,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextLong(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long NextLong(long arg0, long arg1)
         {
             return IExecuteWithSignature<long>("nextLong", "(JJ)J", arg0, arg1);
@@ -299,8 +299,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextLong(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long NextLong(long arg0)
         {
             return IExecuteWithSignature<long>("nextLong", "(J)J", arg0);
@@ -308,7 +308,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SplittableRandom.html#nextBytes(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void NextBytes(byte[] arg0)
         {
             IExecuteWithSignature("nextBytes", "([B)V", new object[] { arg0 });

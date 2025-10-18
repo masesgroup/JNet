@@ -73,8 +73,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public TIFFTagSet(Java.Util.List<Javax.Imageio.Plugins.Tiff.TIFFTag> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public TIFFTagSet(Java.Util.List arg0)
             : base(arg0)
         {
         }
@@ -97,22 +97,22 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTagNames()"/> 
         /// </summary>
-        public Java.Util.SortedSet<Java.Lang.String> TagNames
+        public Java.Util.SortedSet TagNames
         {
-            get { return IExecuteWithSignature<Java.Util.SortedSet<Java.Lang.String>>("getTagNames", "()Ljava/util/SortedSet;"); }
+            get { return IExecuteWithSignature<Java.Util.SortedSet>("getTagNames", "()Ljava/util/SortedSet;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTagNumbers()"/> 
         /// </summary>
-        public Java.Util.SortedSet<Java.Lang.Integer> TagNumbers
+        public Java.Util.SortedSet TagNumbers
         {
-            get { return IExecuteWithSignature<Java.Util.SortedSet<Java.Lang.Integer>>("getTagNumbers", "()Ljava/util/SortedSet;"); }
+            get { return IExecuteWithSignature<Java.Util.SortedSet>("getTagNumbers", "()Ljava/util/SortedSet;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTag(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Imageio.Plugins.Tiff.TIFFTag GetTag(int arg0)
         {
             return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag", "(I)Ljavax/imageio/plugins/tiff/TIFFTag;", arg0);
@@ -120,8 +120,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTag(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Imageio.Plugins.Tiff.TIFFTag GetTag(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag", "(Ljava/lang/String;)Ljavax/imageio/plugins/tiff/TIFFTag;", arg0);

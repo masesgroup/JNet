@@ -73,7 +73,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.html#%3Cinit%3E(javax.xml.crypto.XMLStructure)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public XSLTTransformParameterSpec(Javax.Xml.Crypto.XMLStructure arg0)
             : base(arg0)
         {

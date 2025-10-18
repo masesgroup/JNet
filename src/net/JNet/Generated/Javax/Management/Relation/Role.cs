@@ -73,10 +73,10 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#%3Cinit%3E(java.lang.String,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public Role(Java.Lang.String arg0, Java.Util.List<Javax.Management.ObjectName> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        public Role(Java.Lang.String arg0, Java.Util.List arg1)
             : base(arg0, arg1)
         {
         }
@@ -95,10 +95,10 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#roleValueToString(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public static Java.Lang.String RoleValueToString(Java.Util.List<Javax.Management.ObjectName> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Java.Lang.String RoleValueToString(Java.Util.List arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "roleValueToString", "(Ljava/util/List;)Ljava/lang/String;", arg0);
         }
@@ -116,9 +116,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#getRoleValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#setRoleValue(java.util.List)"/>
         /// </summary>
-        public Java.Util.List<Javax.Management.ObjectName> RoleValue
+        public Java.Util.List RoleValue
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Management.ObjectName>>("getRoleValue", "()Ljava/util/List;"); } set { IExecuteWithSignature("setRoleValue", "(Ljava/util/List;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.List>("getRoleValue", "()Ljava/util/List;"); } set { IExecuteWithSignature("setRoleValue", "(Ljava/util/List;)V", value); }
         }
 
         #endregion

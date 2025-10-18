@@ -73,9 +73,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#%3Cinit%3E(java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.TrustAnchor"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Cert.PolicyNode"/></param>
-        /// <param name="arg2"><see cref="Java.Security.PublicKey"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public PKIXCertPathValidatorResult(Java.Security.Cert.TrustAnchor arg0, Java.Security.Cert.PolicyNode arg1, Java.Security.PublicKey arg2)
             : base(arg0, arg1, arg2)
         {

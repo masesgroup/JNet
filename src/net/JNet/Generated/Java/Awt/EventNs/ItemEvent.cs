@@ -73,10 +73,10 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#%3Cinit%3E(java.awt.ItemSelectable,int,java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ItemSelectable"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public ItemEvent(Java.Awt.ItemSelectable arg0, int arg1, object arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {

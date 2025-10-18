@@ -91,16 +91,16 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getFileStores()"/> 
         /// </summary>
-        public Java.Lang.Iterable<Java.Nio.File.FileStore> FileStores
+        public Java.Lang.Iterable FileStores
         {
-            get { return IExecuteWithSignature<Java.Lang.Iterable<Java.Nio.File.FileStore>>("getFileStores", "()Ljava/lang/Iterable;"); }
+            get { return IExecuteWithSignature<Java.Lang.Iterable>("getFileStores", "()Ljava/lang/Iterable;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getRootDirectories()"/> 
         /// </summary>
-        public Java.Lang.Iterable<Java.Nio.File.Path> RootDirectories
+        public Java.Lang.Iterable RootDirectories
         {
-            get { return IExecuteWithSignature<Java.Lang.Iterable<Java.Nio.File.Path>>("getRootDirectories", "()Ljava/lang/Iterable;"); }
+            get { return IExecuteWithSignature<Java.Lang.Iterable>("getRootDirectories", "()Ljava/lang/Iterable;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getSeparator()"/> 
@@ -119,7 +119,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#isOpen()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOpen()
         {
             return IExecuteWithSignature<bool>("isOpen", "()Z");
@@ -127,7 +127,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#isReadOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsReadOnly()
         {
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
@@ -135,9 +135,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getPath(java.lang.String,java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path GetPath(Java.Lang.String arg0, params Java.Lang.String[] arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("getPath", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -145,8 +145,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getPathMatcher(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.PathMatcher"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.PathMatcher GetPathMatcher(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Nio.File.PathMatcher>("getPathMatcher", "(Ljava/lang/String;)Ljava/nio/file/PathMatcher;", arg0);
@@ -154,7 +154,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#provider()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Spi.FileSystemProvider"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Spi.FileSystemProvider Provider()
         {
             return IExecuteWithSignature<Java.Nio.File.Spi.FileSystemProvider>("provider", "()Ljava/nio/file/spi/FileSystemProvider;");
@@ -162,8 +162,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#newWatchService()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.WatchService"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.WatchService NewWatchService()
         {
             return IExecuteWithSignature<Java.Nio.File.WatchService>("newWatchService", "()Ljava/nio/file/WatchService;");
@@ -171,15 +171,15 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#supportedFileAttributeViews()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.String> SupportedFileAttributeViews()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set SupportedFileAttributeViews()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("supportedFileAttributeViews", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("supportedFileAttributeViews", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");

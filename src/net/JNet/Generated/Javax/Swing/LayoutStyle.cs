@@ -68,7 +68,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html"/>
         /// </summary>
-        public partial class ComponentPlacement : Java.Lang.Enum<Javax.Swing.LayoutStyle.ComponentPlacement>
+        public partial class ComponentPlacement : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.swing.LayoutStyle$ComponentPlacement";
             /// <summary>
@@ -139,10 +139,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#getContainerGap(javax.swing.JComponent,int,java.awt.Container)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetContainerGap(Javax.Swing.JComponent arg0, int arg1, Java.Awt.Container arg2)
         {
             return IExecuteWithSignature<int>("getContainerGap", "(Ljavax/swing/JComponent;ILjava/awt/Container;)I", arg0, arg1, arg2);
@@ -150,12 +150,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#getPreferredGap(javax.swing.JComponent,javax.swing.JComponent,javax.swing.LayoutStyle.ComponentPlacement,int,java.awt.Container)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetPreferredGap(Javax.Swing.JComponent arg0, Javax.Swing.JComponent arg1, Javax.Swing.LayoutStyle.ComponentPlacement arg2, int arg3, Java.Awt.Container arg4)
         {
             return IExecuteWithSignature<int>("getPreferredGap", "(Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljavax/swing/LayoutStyle$ComponentPlacement;ILjava/awt/Container;)I", arg0, arg1, arg2, arg3, arg4);
@@ -201,8 +201,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Swing.LayoutStyle.ComponentPlacement ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/LayoutStyle$ComponentPlacement;", arg0);
@@ -210,7 +210,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Swing.LayoutStyle.ComponentPlacement[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalBridgeClazz, "values", "()[Ljavax/swing/LayoutStyle$ComponentPlacement;");

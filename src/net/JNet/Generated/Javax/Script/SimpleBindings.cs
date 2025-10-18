@@ -73,8 +73,8 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public SimpleBindings(Java.Util.Map<Java.Lang.String, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public SimpleBindings(Java.Util.Map<, > arg0)
             : base(arg0)
         {
         }
@@ -97,8 +97,8 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#containsKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
@@ -106,8 +106,8 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#containsValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
@@ -115,7 +115,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -123,7 +123,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -131,8 +131,8 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(object arg0)
         {
             return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -140,9 +140,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Put(object arg0, object arg1)
         {
             return IExecuteWithSignature("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -150,9 +150,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#put(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Put(Java.Lang.String arg0, object arg1)
         {
             return IExecuteWithSignature("put", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -160,8 +160,8 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Remove(object arg0)
         {
             return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -169,26 +169,26 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public Java.Util.Collection<object> Values()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Collection Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<object>>("values", "()Ljava/util/Collection;");
+            return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#keySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.String> KeySet()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("keySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#entrySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Util.Map.Entry<Java.Lang.String, object>> EntrySet()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set EntrySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<Java.Lang.String, object>>>("entrySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#clear()"/>
@@ -200,9 +200,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#putAll(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Lang_String"><see cref="Java.Lang.String"/></typeparam>
-        public void PutAll<Arg0ExtendsJava_Lang_String>(Java.Util.Map<Arg0ExtendsJava_Lang_String, object> arg0) where Arg0ExtendsJava_Lang_String : Java.Lang.String
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Lang_String"><see cref=""/></typeparam>
+        public void PutAll(Java.Util.Map<, > arg0) where Arg0ExtendsJava_Lang_String : Java.Lang.String
         {
             IExecute("putAll", arg0);
         }

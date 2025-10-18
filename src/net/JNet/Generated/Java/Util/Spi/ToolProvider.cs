@@ -78,23 +78,23 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintWriter,java.io.PrintWriter,java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
-        /// <param name="arg1"><see cref="Java.Io.PrintWriter"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int Run(Java.Io.PrintWriter arg0, Java.Io.PrintWriter arg1, params Java.Lang.String[] arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String Name();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
-        /// <param name="arg1"><see cref="Java.Io.PrintStream"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int Run(Java.Io.PrintStream arg0, Java.Io.PrintStream arg1, params Java.Lang.String[] arg2);
 
         #endregion
@@ -126,11 +126,11 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#findFirst(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public static Java.Util.Optional<Java.Util.Spi.ToolProvider> FindFirst(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Optional FindFirst(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Optional<Java.Util.Spi.ToolProvider>>(LocalBridgeClazz, "findFirst", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
+            return SExecuteWithSignature<Java.Util.Optional>(LocalBridgeClazz, "findFirst", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
         }
 
         #endregion
@@ -139,10 +139,10 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintWriter,java.io.PrintWriter,java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
-        /// <param name="arg1"><see cref="Java.Io.PrintWriter"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Run(Java.Io.PrintWriter arg0, Java.Io.PrintWriter arg1, params Java.Lang.String[] arg2)
         {
             return IExecuteWithSignature<int>("run", "(Ljava/io/PrintWriter;Ljava/io/PrintWriter;[Ljava/lang/String;)I", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
@@ -150,7 +150,7 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -158,10 +158,10 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
-        /// <param name="arg1"><see cref="Java.Io.PrintStream"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Run(Java.Io.PrintStream arg0, Java.Io.PrintStream arg1, params Java.Lang.String[] arg2)
         {
             return IExecuteWithSignature<int>("run", "(Ljava/io/PrintStream;Ljava/io/PrintStream;[Ljava/lang/String;)I", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));

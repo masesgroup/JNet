@@ -73,9 +73,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#%3Cinit%3E(java.security.KeyStore)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.KeyStore"/></param>
-        /// <exception cref="Java.Security.KeyStoreException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public PKIXParameters(Java.Security.KeyStore arg0)
             : base(arg0)
         {
@@ -83,9 +83,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#%3Cinit%3E(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
-        public PKIXParameters(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        public PKIXParameters(Java.Util.Set arg0)
             : base(arg0)
         {
         }
@@ -108,16 +108,16 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getCertPathCheckers()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setCertPathCheckers(java.util.List)"/>
         /// </summary>
-        public Java.Util.List<Java.Security.Cert.PKIXCertPathChecker> CertPathCheckers
+        public Java.Util.List CertPathCheckers
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.PKIXCertPathChecker>>("getCertPathCheckers", "()Ljava/util/List;"); } set { IExecuteWithSignature("setCertPathCheckers", "(Ljava/util/List;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.List>("getCertPathCheckers", "()Ljava/util/List;"); } set { IExecuteWithSignature("setCertPathCheckers", "(Ljava/util/List;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getCertStores()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setCertStores(java.util.List)"/>
         /// </summary>
-        public Java.Util.List<Java.Security.Cert.CertStore> CertStores
+        public Java.Util.List CertStores
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.CertStore>>("getCertStores", "()Ljava/util/List;"); } set { IExecuteWithSignature("setCertStores", "(Ljava/util/List;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.List>("getCertStores", "()Ljava/util/List;"); } set { IExecuteWithSignature("setCertStores", "(Ljava/util/List;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getDate()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setDate(java.util.Date)"/>
@@ -129,9 +129,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getInitialPolicies()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setInitialPolicies(java.util.Set)"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> InitialPolicies
+        public Java.Util.Set InitialPolicies
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getInitialPolicies", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setInitialPolicies", "(Ljava/util/Set;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getInitialPolicies", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setInitialPolicies", "(Ljava/util/Set;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getPolicyQualifiersRejected()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setPolicyQualifiersRejected(boolean)"/>
@@ -157,14 +157,14 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getTrustAnchors()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setTrustAnchors(java.util.Set)"/>
         /// </summary>
-        public Java.Util.Set<Java.Security.Cert.TrustAnchor> TrustAnchors
+        public Java.Util.Set TrustAnchors
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Security.Cert.TrustAnchor>>("getTrustAnchors", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setTrustAnchors", "(Ljava/util/Set;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getTrustAnchors", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setTrustAnchors", "(Ljava/util/Set;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isAnyPolicyInhibited()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsAnyPolicyInhibited()
         {
             return IExecuteWithSignature<bool>("isAnyPolicyInhibited", "()Z");
@@ -172,7 +172,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isExplicitPolicyRequired()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsExplicitPolicyRequired()
         {
             return IExecuteWithSignature<bool>("isExplicitPolicyRequired", "()Z");
@@ -180,7 +180,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isPolicyMappingInhibited()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPolicyMappingInhibited()
         {
             return IExecuteWithSignature<bool>("isPolicyMappingInhibited", "()Z");
@@ -188,7 +188,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isRevocationEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRevocationEnabled()
         {
             return IExecuteWithSignature<bool>("isRevocationEnabled", "()Z");
@@ -196,7 +196,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#addCertPathChecker(java.security.cert.PKIXCertPathChecker)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.PKIXCertPathChecker"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddCertPathChecker(Java.Security.Cert.PKIXCertPathChecker arg0)
         {
             IExecuteWithSignature("addCertPathChecker", "(Ljava/security/cert/PKIXCertPathChecker;)V", arg0);
@@ -204,7 +204,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#addCertStore(java.security.cert.CertStore)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CertStore"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddCertStore(Java.Security.Cert.CertStore arg0)
         {
             IExecuteWithSignature("addCertStore", "(Ljava/security/cert/CertStore;)V", arg0);
@@ -212,7 +212,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setAnyPolicyInhibited(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetAnyPolicyInhibited(bool arg0)
         {
             IExecuteWithSignature("setAnyPolicyInhibited", "(Z)V", arg0);
@@ -220,7 +220,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setExplicitPolicyRequired(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetExplicitPolicyRequired(bool arg0)
         {
             IExecuteWithSignature("setExplicitPolicyRequired", "(Z)V", arg0);
@@ -228,7 +228,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setPolicyMappingInhibited(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetPolicyMappingInhibited(bool arg0)
         {
             IExecuteWithSignature("setPolicyMappingInhibited", "(Z)V", arg0);
@@ -236,7 +236,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setRevocationEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRevocationEnabled(bool arg0)
         {
             IExecuteWithSignature("setRevocationEnabled", "(Z)V", arg0);

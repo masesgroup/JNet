@@ -68,12 +68,12 @@ namespace Javax.Swing.Plaf.Nimbus
     }
     #endregion
 
-    #region State<T> declaration
+    #region State declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/State.html"/>
     /// </summary>
-    /// <typeparam name="T"><see cref="Javax.Swing.JComponent"/></typeparam>
-    public partial class State<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<State<T>> where T : Javax.Swing.JComponent
+    /// <typeparam name="T"></typeparam>
+    public partial class State : MASES.JCOBridge.C2JBridge.JVMBridgeBase<State>
     {
         const string _bridgeClassName = "javax.swing.plaf.nimbus.State";
         /// <summary>
@@ -143,8 +143,8 @@ namespace Javax.Swing.Plaf.Nimbus
     }
     #endregion
 
-    #region State<T> implementation
-    public partial class State<T>
+    #region State implementation
+    public partial class State
     {
         #region Constructors
 
@@ -152,9 +152,9 @@ namespace Javax.Swing.Plaf.Nimbus
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Nimbus.State{T}"/> to <see cref="Javax.Swing.Plaf.Nimbus.State"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.Plaf.Nimbus.State(Javax.Swing.Plaf.Nimbus.State<T> t) => t.Cast<Javax.Swing.Plaf.Nimbus.State>();
+        public static implicit operator Javax.Swing.Plaf.Nimbus.State(Javax.Swing.Plaf.Nimbus.State t) => t.Cast<Javax.Swing.Plaf.Nimbus.State>();
 
         #endregion
 

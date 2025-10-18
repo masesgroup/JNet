@@ -78,18 +78,18 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#commit()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Commit();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Rollback();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback(java.sql.Savepoint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Rollback(Java.Sql.Savepoint arg0);
 
         #endregion
@@ -125,7 +125,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#commit()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Commit()
         {
             IExecuteWithSignature("commit", "()V");
@@ -133,7 +133,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Rollback()
         {
             IExecuteWithSignature("rollback", "()V");
@@ -141,8 +141,8 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback(java.sql.Savepoint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Rollback(Java.Sql.Savepoint arg0)
         {
             IExecuteWithSignature("rollback", "(Ljava/sql/Savepoint;)V", arg0);

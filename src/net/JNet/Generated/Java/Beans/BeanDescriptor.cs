@@ -73,8 +73,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanDescriptor.html#%3Cinit%3E(java.lang.Class,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public BeanDescriptor(Java.Lang.Class arg0, Java.Lang.Class arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanDescriptor.html#%3Cinit%3E(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BeanDescriptor(Java.Lang.Class arg0)
             : base(arg0)
         {

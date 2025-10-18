@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperator<T> declaration
+    #region UnaryOperator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/UnaryOperator.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class UnaryOperator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class UnaryOperator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperatorDirect<T> declaration
+    #region UnaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="UnaryOperator"/> or its generic type if there is one
     /// </summary>
-    public partial class UnaryOperatorDirect<T> : UnaryOperator<T>
+    public partial class UnaryOperatorDirect : UnaryOperator
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -221,8 +221,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual object Apply(object arg0)
         {
             hasOverrideApply = false; return default;
@@ -230,8 +230,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Function AndThenDefault(Java.Util.Function.Function arg0)
         {
@@ -256,8 +256,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Function AndThen(Java.Util.Function.Function arg0)
         {
@@ -266,8 +266,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Function ComposeDefault(Java.Util.Function.Function arg0)
         {
@@ -292,8 +292,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="ComposeDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Function Compose(Java.Util.Function.Function arg0)
         {
@@ -333,8 +333,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override object Apply(object arg0)
         {
             return IExecuteWithSignature("apply", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -342,8 +342,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.Function AndThen(Java.Util.Function.Function arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
@@ -351,8 +351,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.Function Compose(Java.Util.Function.Function arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("compose", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
@@ -368,40 +368,40 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IUnaryOperator<T>
+    #region IUnaryOperator
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.UnaryOperator implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/UnaryOperator.html"/>
     /// </summary>
-    public partial interface IUnaryOperator<T>
+    public partial interface IUnaryOperator
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="R"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        R Apply<R>(T arg0);
+        /// <returns><see cref=""/></returns>
+        R Apply(T arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V;
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Function.Function<, > AndThen<, , , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        Java.Util.Function.Function<V, R> Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T;
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Function.Function<, > Compose<, , , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T;
 
         #endregion
 
@@ -413,8 +413,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperator<T> implementation
-    public partial class UnaryOperator<T> : Java.Util.Function.IUnaryOperator<T>
+    #region UnaryOperator implementation
+    public partial class UnaryOperator : Java.Util.Function.IUnaryOperator
     {
         #region Constructors
 
@@ -438,124 +438,124 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Apply<R>EventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler));
-            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>EventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<, , , >EventHandler));
+            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Compose<, , , >EventHandler));
 
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnApply<R>"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<T, R> OnApply<R> { get; set; } = null;
+        /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<T, R> OnApply { get; set; } = null;
 
-        bool hasOverrideApply<R> = true;
-        void Apply<R>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        bool hasOverrideApply = true;
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
-            hasOverrideApply<R> = true;
-            var methodToExecute = (OnApply<R> != null) ? OnApply<R> : Apply<R>;
+            hasOverrideApply = true;
+            var methodToExecute = (OnApply != null) ? OnApply : Apply;
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0));
-            data.EventData.TypedEventData.SetReturnData(hasOverrideApply<R>, executionResult);
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApply, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="R"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        public virtual R Apply<R>(T arg0)
+        /// <returns><see cref=""/></returns>
+        public virtual R Apply(T arg0)
         {
-            hasOverrideApply<R> = false; return default;
+            hasOverrideApply = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
+        public Java.Util.Function.Function<, > AndThen<, , , >Default(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecuteWithSignature<Java.Util.Function.Function<T, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Function<, >>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.Function<T, V>> OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> { get; set; } = null;
+        /// <remarks>If <see cref="OnAndThen<, , , >"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<Java.Util.Function.Function<, >, Java.Util.Function.Function<, >> OnAndThen<, , , > { get; set; } = null;
 
-        bool hasOverrideAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> = true;
-        void AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        bool hasOverrideAndThen<, , , > = true;
+        void AndThen<, , , >EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
-            hasOverrideAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> = true;
-            var methodToExecute = (OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> != null) ? OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> : AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>;
-            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>(0));
-            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>, executionResult);
+            hasOverrideAndThen<, , , > = true;
+            var methodToExecute = (OnAndThen<, , , > != null) ? OnAndThen<, , , > : AndThen<, , , >;
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<, >>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<, , , >, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<, , , >Default"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.Function<, > AndThen<, , , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            hasOverrideAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> = false; return default;
+            hasOverrideAndThen<, , , > = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Function<V, R> Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>Default(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
+        public Java.Util.Function.Function<, > Compose<, , , >Default(Java.Util.Function.Function<, > arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.Function<V, R>>("composeDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Function<, >>("composeDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>, Java.Util.Function.Function<V, R>> OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> { get; set; } = null;
+        /// <remarks>If <see cref="OnCompose<, , , >"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<Java.Util.Function.Function<, >, Java.Util.Function.Function<, >> OnCompose<, , , > { get; set; } = null;
 
-        bool hasOverrideCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> = true;
-        void Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        bool hasOverrideCompose<, , , > = true;
+        void Compose<, , , >EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
-            hasOverrideCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> = true;
-            var methodToExecute = (OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> != null) ? OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> : Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>;
-            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>(0));
-            data.EventData.TypedEventData.SetReturnData(hasOverrideCompose<V, R, Arg0objectSuperV, Arg0ExtendsT>, executionResult);
+            hasOverrideCompose<, , , > = true;
+            var methodToExecute = (OnCompose<, , , > != null) ? OnCompose<, , , > : Compose<, , , >;
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<, >>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideCompose<, , , >, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Function<V, R> Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Compose<, , , >Default"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.Function<, > Compose<, , , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
         {
-            hasOverrideCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> = false; return default;
+            hasOverrideCompose<, , , > = false; return default;
         }
 
         #endregion
@@ -568,8 +568,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region UnaryOperatorDirect<T> implementation
-    public partial class UnaryOperatorDirect<T> : Java.Util.Function.IUnaryOperator<T>
+    #region UnaryOperatorDirect implementation
+    public partial class UnaryOperatorDirect : Java.Util.Function.IUnaryOperator
     {
         #region Constructors
 
@@ -591,38 +591,38 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="R"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        public override R Apply<R>(T arg0)
+        /// <returns><see cref=""/></returns>
+        public override R Apply(T arg0)
         {
             return IExecuteWithSignature<R>("apply", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public override Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public override Java.Util.Function.Function<, > AndThen<, , , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecuteWithSignature<Java.Util.Function.FunctionDirect<T, V>, Java.Util.Function.Function<T, V>>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.FunctionDirect<, >, Java.Util.Function.Function<, >>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public override Java.Util.Function.Function<V, R> Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public override Java.Util.Function.Function<, > Compose<, , , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.FunctionDirect<V, R>, Java.Util.Function.Function<V, R>>("compose", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.FunctionDirect<, >, Java.Util.Function.Function<, >>("compose", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         #endregion

@@ -159,7 +159,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JFormattedTextField(object arg0)
             : base(arg0)
         {
@@ -167,7 +167,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#%3Cinit%3E(java.text.Format)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.Format"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JFormattedTextField(Java.Text.Format arg0)
             : base(arg0)
         {
@@ -175,7 +175,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#%3Cinit%3E(javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatter arg0)
             : base(arg0)
         {
@@ -183,8 +183,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#%3Cinit%3E(javax.swing.JFormattedTextField.AbstractFormatterFactory,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatterFactory"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0, object arg1)
             : base(arg0, arg1)
         {
@@ -192,7 +192,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#%3Cinit%3E(javax.swing.JFormattedTextField.AbstractFormatterFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatterFactory"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0)
             : base(arg0)
         {
@@ -268,7 +268,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#isEditValid()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEditValid()
         {
             return IExecuteWithSignature<bool>("isEditValid", "()Z");
@@ -276,7 +276,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#commitEdit()"/>
         /// </summary>
-        /// <exception cref="Java.Text.ParseException"/>
+        /// <exception cref=""/>
         public void CommitEdit()
         {
             IExecuteWithSignature("commitEdit", "()V");
@@ -308,9 +308,9 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#stringToValue(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="object"/></returns>
-            /// <exception cref="Java.Text.ParseException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public object StringToValue(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature("stringToValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -318,9 +318,9 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#valueToString(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="Java.Lang.String"/></returns>
-            /// <exception cref="Java.Text.ParseException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public Java.Lang.String ValueToString(object arg0)
             {
                 return IExecuteWithSignature<Java.Lang.String>("valueToString", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
@@ -328,7 +328,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#install(javax.swing.JFormattedTextField)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void Install(Javax.Swing.JFormattedTextField arg0)
             {
                 IExecuteWithSignature("install", "(Ljavax/swing/JFormattedTextField;)V", arg0);
@@ -374,8 +374,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#getFormatter(javax.swing.JFormattedTextField)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField"/></param>
-            /// <returns><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.JFormattedTextField.AbstractFormatter GetFormatter(Javax.Swing.JFormattedTextField arg0)
             {
                 return IExecuteWithSignature<Javax.Swing.JFormattedTextField.AbstractFormatter>("getFormatter", "(Ljavax/swing/JFormattedTextField;)Ljavax/swing/JFormattedTextField$AbstractFormatter;", arg0);

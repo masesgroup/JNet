@@ -68,12 +68,12 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Enum<E> declaration
+    #region Enum declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html"/>
     /// </summary>
-    /// <typeparam name="E"><see cref="Java.Lang.Enum{E}"/></typeparam>
-    public partial class Enum<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Enum<E>> where E : Java.Lang.Enum<E>
+    /// <typeparam name="E"></typeparam>
+    public partial class Enum : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Enum>
     {
         const string _bridgeClassName = "java.lang.Enum";
         /// <summary>
@@ -121,11 +121,11 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Enum"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Enum t) => t.Cast<Java.Lang.Comparable>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Enum"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.Enum t) => t.Cast<Java.Io.Serializable>();
 
@@ -139,9 +139,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#valueOf(java.lang.Class,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Enum"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Enum ValueOf(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Lang.Enum>(LocalBridgeClazz, "valueOf", arg0, arg1);
@@ -160,8 +160,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Enum)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Lang.Enum arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Enum;)I", arg0);
@@ -169,7 +169,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#ordinal()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Ordinal()
         {
             return IExecuteWithSignature<int>("ordinal", "()I");
@@ -177,7 +177,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -185,8 +185,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -202,8 +202,8 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Enum<E> implementation
-    public partial class Enum<E>
+    #region Enum implementation
+    public partial class Enum
     {
         #region Constructors
 
@@ -211,17 +211,17 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Enum{E}"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Comparable(Java.Lang.Enum<E> t) => t.Cast<Java.Lang.Comparable>();
+        public static implicit operator Java.Lang.Comparable(Java.Lang.Enum t) => t.Cast<Java.Lang.Comparable>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Enum{E}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Lang.Enum<E> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Lang.Enum t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Enum{E}"/> to <see cref="Java.Lang.Enum"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Enum(Java.Lang.Enum<E> t) => t.Cast<Java.Lang.Enum>();
+        public static implicit operator Java.Lang.Enum(Java.Lang.Enum t) => t.Cast<Java.Lang.Enum>();
 
         #endregion
 
@@ -233,11 +233,11 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#valueOf(java.lang.Class,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Enum{T}"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T ValueOf<T>(Java.Lang.Class arg0, Java.Lang.String arg1) where T : Java.Lang.Enum<T>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static T ValueOf(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
             return SExecute<T>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
@@ -255,8 +255,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Enum)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(E arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Enum;)I", arg0);
@@ -264,7 +264,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#ordinal()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Ordinal()
         {
             return IExecuteWithSignature<int>("ordinal", "()I");
@@ -272,7 +272,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -280,8 +280,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);

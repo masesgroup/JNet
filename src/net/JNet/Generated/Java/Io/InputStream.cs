@@ -87,7 +87,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#nullInputStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Io.InputStream NullInputStream()
         {
             return SExecuteWithSignature<Java.Io.InputStream>(LocalBridgeClazz, "nullInputStream", "()Ljava/io/InputStream;");
@@ -99,8 +99,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#read()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read()
         {
             return IExecuteWithSignature<int>("read", "()I");
@@ -108,7 +108,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#markSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool MarkSupported()
         {
             return IExecuteWithSignature<bool>("markSupported", "()Z");
@@ -116,8 +116,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readAllBytes()"/>
         /// </summary>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] ReadAllBytes()
         {
             return IExecuteWithSignatureArray<byte>("readAllBytes", "()[B");
@@ -125,9 +125,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readNBytes(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] ReadNBytes(int arg0)
         {
             return IExecuteWithSignatureArray<byte>("readNBytes", "(I)[B", arg0);
@@ -135,8 +135,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#available()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Available()
         {
             return IExecuteWithSignature<int>("available", "()I");
@@ -144,11 +144,11 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#read(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("read", "([BII)I", arg0, arg1, arg2);
@@ -156,9 +156,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#read(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read(byte[] arg0)
         {
             return IExecuteWithSignature<int>("read", "([B)I", new object[] { arg0 });
@@ -166,11 +166,11 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readNBytes(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int ReadNBytes(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("readNBytes", "([BII)I", arg0, arg1, arg2);
@@ -178,9 +178,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#skip(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Skip(long arg0)
         {
             return IExecuteWithSignature<long>("skip", "(J)J", arg0);
@@ -188,9 +188,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#transferTo(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long TransferTo(Java.Io.OutputStream arg0)
         {
             return IExecuteWithSignature<long>("transferTo", "(Ljava/io/OutputStream;)J", arg0);
@@ -198,7 +198,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#mark(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Mark(int arg0)
         {
             IExecuteWithSignature("mark", "(I)V", arg0);
@@ -206,7 +206,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#reset()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
@@ -214,7 +214,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");

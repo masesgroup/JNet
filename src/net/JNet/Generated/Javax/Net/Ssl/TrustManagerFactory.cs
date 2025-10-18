@@ -92,11 +92,11 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.TrustManagerFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Net.Ssl.TrustManagerFactory GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Javax.Net.Ssl.TrustManagerFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;", arg0, arg1);
@@ -104,10 +104,10 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.TrustManagerFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Net.Ssl.TrustManagerFactory GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecuteWithSignature<Javax.Net.Ssl.TrustManagerFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljavax/net/ssl/TrustManagerFactory;", arg0, arg1);
@@ -115,9 +115,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.TrustManagerFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Net.Ssl.TrustManagerFactory GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Net.Ssl.TrustManagerFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;", arg0);
@@ -150,8 +150,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#init(java.security.KeyStore)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.KeyStore"/></param>
-        /// <exception cref="Java.Security.KeyStoreException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(Java.Security.KeyStore arg0)
         {
             IExecuteWithSignature("init", "(Ljava/security/KeyStore;)V", arg0);
@@ -159,8 +159,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/TrustManagerFactory.html#init(javax.net.ssl.ManagerFactoryParameters)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.ManagerFactoryParameters"/></param>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(Javax.Net.Ssl.ManagerFactoryParameters arg0)
         {
             IExecuteWithSignature("init", "(Ljavax/net/ssl/ManagerFactoryParameters;)V", arg0);

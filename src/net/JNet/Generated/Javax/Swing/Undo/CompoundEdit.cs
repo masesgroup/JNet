@@ -89,7 +89,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html#isInProgress()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsInProgress()
         {
             return IExecuteWithSignature<bool>("isInProgress", "()Z");

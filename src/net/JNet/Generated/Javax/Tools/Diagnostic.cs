@@ -68,7 +68,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html"/>
         /// </summary>
-        public partial class Kind : Java.Lang.Enum<Javax.Tools.Diagnostic.Kind>
+        public partial class Kind : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.tools.Diagnostic$Kind";
             /// <summary>
@@ -109,12 +109,12 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region Diagnostic<S> declaration
+    #region Diagnostic declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html"/>
     /// </summary>
     /// <typeparam name="S"></typeparam>
-    public partial class Diagnostic<S> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Diagnostic<S>>
+    public partial class Diagnostic : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Diagnostic>
     {
         const string _bridgeClassName = "javax.tools.Diagnostic";
         /// <summary>
@@ -238,8 +238,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getMessage(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetMessage(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getMessage", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
@@ -297,8 +297,8 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Tools.Diagnostic.Kind"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Tools.Diagnostic.Kind ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Tools.Diagnostic.Kind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/tools/Diagnostic$Kind;", arg0);
@@ -306,7 +306,7 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Tools.Diagnostic.Kind"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Tools.Diagnostic.Kind[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Tools.Diagnostic.Kind>(LocalBridgeClazz, "values", "()[Ljavax/tools/Diagnostic$Kind;");
@@ -333,11 +333,11 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region IDiagnostic<S>
+    #region IDiagnostic
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html"/>
     /// </summary>
-    public partial interface IDiagnostic<S>
+    public partial interface IDiagnostic
     {
         #region Instance methods
         /// <summary>
@@ -375,8 +375,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getMessage(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String GetMessage(Java.Util.Locale arg0);
 
         #endregion
@@ -389,8 +389,8 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region Diagnostic<S> implementation
-    public partial class Diagnostic<S> : Javax.Tools.IDiagnostic<S>
+    #region Diagnostic implementation
+    public partial class Diagnostic : Javax.Tools.IDiagnostic
     {
         #region Constructors
 
@@ -398,9 +398,9 @@ namespace Javax.Tools
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Tools.Diagnostic{S}"/> to <see cref="Javax.Tools.Diagnostic"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Tools.Diagnostic(Javax.Tools.Diagnostic<S> t) => t.Cast<Javax.Tools.Diagnostic>();
+        public static implicit operator Javax.Tools.Diagnostic(Javax.Tools.Diagnostic t) => t.Cast<Javax.Tools.Diagnostic>();
 
         #endregion
 
@@ -478,8 +478,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getMessage(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetMessage(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getMessage", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);

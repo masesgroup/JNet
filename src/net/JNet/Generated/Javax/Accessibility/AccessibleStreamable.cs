@@ -82,8 +82,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html#getStream(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Io.InputStream GetStream(Java.Awt.Datatransfer.DataFlavor arg0);
 
         #endregion
@@ -126,8 +126,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html#getStream(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.InputStream GetStream(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecuteWithSignature<Java.Io.InputStream>("getStream", "(Ljava/awt/datatransfer/DataFlavor;)Ljava/io/InputStream;", arg0);

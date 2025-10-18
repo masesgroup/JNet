@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#%3Cinit%3E(javax.print.attribute.DocAttribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.DocAttribute"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashDocAttributeSet(Javax.Print.Attribute.DocAttribute arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#%3Cinit%3E(javax.print.attribute.DocAttribute[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.DocAttribute"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashDocAttributeSet(Javax.Print.Attribute.DocAttribute[] arg0)
             : base(arg0)
         {
@@ -89,7 +89,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#%3Cinit%3E(javax.print.attribute.DocAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.DocAttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashDocAttributeSet(Javax.Print.Attribute.DocAttributeSet arg0)
             : base(arg0)
         {
@@ -99,7 +99,7 @@ namespace Javax.Print.Attribute
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.HashDocAttributeSet"/> to <see cref="Javax.Print.Attribute.DocAttributeSet"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.DocAttributeSet(Javax.Print.Attribute.HashDocAttributeSet t) => t.Cast<Javax.Print.Attribute.DocAttributeSet>();
 

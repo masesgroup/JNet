@@ -66,12 +66,12 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultListModel<E> declaration
+    #region DefaultListModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class DefaultListModel<E> : Javax.Swing.AbstractListModel<E>
+    public partial class DefaultListModel : Javax.Swing.AbstractListModel
     {
         const string _bridgeClassName = "javax.swing.DefaultListModel";
         /// <summary>
@@ -131,8 +131,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(object arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
@@ -140,7 +140,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -148,8 +148,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#removeElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveElement(object arg0)
         {
             return IExecuteWithSignature<bool>("removeElement", "(Ljava/lang/Object;)Z", arg0);
@@ -157,8 +157,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#elementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object ElementAt(int arg0)
         {
             return IExecuteWithSignature("elementAt", "(I)Ljava/lang/Object;", arg0);
@@ -166,7 +166,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#firstElement()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object FirstElement()
         {
             return IExecuteWithSignature("firstElement", "()Ljava/lang/Object;");
@@ -174,8 +174,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(int arg0)
         {
             return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
@@ -183,7 +183,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#lastElement()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object LastElement()
         {
             return IExecuteWithSignature("lastElement", "()Ljava/lang/Object;");
@@ -191,8 +191,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Remove(int arg0)
         {
             return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
@@ -200,9 +200,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#set(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Set(int arg0, object arg1)
         {
             return IExecuteWithSignature("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -210,7 +210,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#capacity()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Capacity()
         {
             return IExecuteWithSignature<int>("capacity", "()I");
@@ -218,9 +218,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#indexOf(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(object arg0, int arg1)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
@@ -228,8 +228,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#indexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
@@ -237,9 +237,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#lastIndexOf(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(object arg0, int arg1)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
@@ -247,8 +247,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
@@ -256,7 +256,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -264,7 +264,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object[] ToArray()
         {
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
@@ -272,7 +272,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#elements()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Enumeration Elements()
         {
             return IExecuteWithSignature<Java.Util.Enumeration>("elements", "()Ljava/util/Enumeration;");
@@ -280,8 +280,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#add(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Add(int arg0, object arg1)
         {
             IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
@@ -289,8 +289,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(int,java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void AddAll(int arg0, Java.Util.Collection arg1)
         {
             IExecuteWithSignature("addAll", "(ILjava/util/Collection;)V", arg0, arg1);
@@ -298,7 +298,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddAll(Java.Util.Collection arg0)
         {
             IExecuteWithSignature("addAll", "(Ljava/util/Collection;)V", arg0);
@@ -306,7 +306,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddElement(object arg0)
         {
             IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
@@ -321,7 +321,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#copyInto(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void CopyInto(object[] arg0)
         {
             IExecuteWithSignature("copyInto", "([Ljava/lang/Object;)V", new object[] { arg0 });
@@ -329,7 +329,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#ensureCapacity(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EnsureCapacity(int arg0)
         {
             IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
@@ -337,8 +337,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void InsertElementAt(object arg0, int arg1)
         {
             IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -353,7 +353,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#removeElementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveElementAt(int arg0)
         {
             IExecuteWithSignature("removeElementAt", "(I)V", arg0);
@@ -361,8 +361,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#removeRange(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemoveRange(int arg0, int arg1)
         {
             IExecuteWithSignature("removeRange", "(II)V", arg0, arg1);
@@ -370,8 +370,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#setElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetElementAt(object arg0, int arg1)
         {
             IExecuteWithSignature("setElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -379,7 +379,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#setSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSize(int arg0)
         {
             IExecuteWithSignature("setSize", "(I)V", arg0);
@@ -402,8 +402,8 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region DefaultListModel<E> implementation
-    public partial class DefaultListModel<E>
+    #region DefaultListModel implementation
+    public partial class DefaultListModel
     {
         #region Constructors
 
@@ -411,9 +411,9 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.DefaultListModel{E}"/> to <see cref="Javax.Swing.DefaultListModel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.DefaultListModel(Javax.Swing.DefaultListModel<E> t) => t.Cast<Javax.Swing.DefaultListModel>();
+        public static implicit operator Javax.Swing.DefaultListModel(Javax.Swing.DefaultListModel t) => t.Cast<Javax.Swing.DefaultListModel>();
 
         #endregion
 
@@ -429,8 +429,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(object arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
@@ -438,7 +438,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -446,8 +446,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#removeElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveElement(object arg0)
         {
             return IExecuteWithSignature<bool>("removeElement", "(Ljava/lang/Object;)Z", arg0);
@@ -455,8 +455,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#elementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E ElementAt(int arg0)
         {
             return IExecuteWithSignature<E>("elementAt", "(I)Ljava/lang/Object;", arg0);
@@ -464,7 +464,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#firstElement()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E FirstElement()
         {
             return IExecuteWithSignature<E>("firstElement", "()Ljava/lang/Object;");
@@ -472,8 +472,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Get(int arg0)
         {
             return IExecuteWithSignature<E>("get", "(I)Ljava/lang/Object;", arg0);
@@ -481,7 +481,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#lastElement()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E LastElement()
         {
             return IExecuteWithSignature<E>("lastElement", "()Ljava/lang/Object;");
@@ -489,8 +489,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Remove(int arg0)
         {
             return IExecuteWithSignature<E>("remove", "(I)Ljava/lang/Object;", arg0);
@@ -498,9 +498,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#set(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Set(int arg0, E arg1)
         {
             return IExecuteWithSignature<E>("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -508,7 +508,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#capacity()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Capacity()
         {
             return IExecuteWithSignature<int>("capacity", "()I");
@@ -516,9 +516,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#indexOf(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(object arg0, int arg1)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
@@ -526,8 +526,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#indexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
@@ -535,9 +535,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#lastIndexOf(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(object arg0, int arg1)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
@@ -545,8 +545,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
@@ -554,7 +554,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -562,7 +562,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object[] ToArray()
         {
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
@@ -570,16 +570,16 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#elements()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<E> Elements()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration Elements()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<E>>("elements", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("elements", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#add(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Add(int arg0, E arg1)
         {
             IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
@@ -587,26 +587,26 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(int,java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
-        public void AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1ExtendsE"><see cref=""/></typeparam>
+        public void AddAll(int arg0, Java.Util.Collection arg1) where Arg1ExtendsE : E
         {
             IExecuteWithSignature("addAll", "(ILjava/util/Collection;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
-        public void AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsE"><see cref=""/></typeparam>
+        public void AddAll(Java.Util.Collection arg0) where Arg0ExtendsE : E
         {
             IExecuteWithSignature("addAll", "(Ljava/util/Collection;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddElement(E arg0)
         {
             IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
@@ -621,7 +621,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#copyInto(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void CopyInto(object[] arg0)
         {
             IExecuteWithSignature("copyInto", "([Ljava/lang/Object;)V", new object[] { arg0 });
@@ -629,7 +629,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#ensureCapacity(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EnsureCapacity(int arg0)
         {
             IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
@@ -637,8 +637,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void InsertElementAt(E arg0, int arg1)
         {
             IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -653,7 +653,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#removeElementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveElementAt(int arg0)
         {
             IExecuteWithSignature("removeElementAt", "(I)V", arg0);
@@ -661,8 +661,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#removeRange(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemoveRange(int arg0, int arg1)
         {
             IExecuteWithSignature("removeRange", "(II)V", arg0, arg1);
@@ -670,8 +670,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#setElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetElementAt(E arg0, int arg1)
         {
             IExecuteWithSignature("setElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -679,7 +679,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#setSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSize(int arg0)
         {
             IExecuteWithSignature("setSize", "(I)V", arg0);

@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JEditorPane(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -82,8 +82,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public JEditorPane(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -91,8 +91,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#%3Cinit%3E(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public JEditorPane(Java.Net.URL arg0)
             : base(arg0)
         {
@@ -124,8 +124,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitClassNameForContentType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String GetEditorKitClassNameForContentType(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getEditorKitClassNameForContentType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -133,8 +133,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#createEditorKitForContentType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Text.EditorKit CreateEditorKitForContentType(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Text.EditorKit>(LocalBridgeClazz, "createEditorKitForContentType", "(Ljava/lang/String;)Ljavax/swing/text/EditorKit;", arg0);
@@ -142,9 +142,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public static void RegisterEditorKitForContentType(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "registerEditorKitForContentType", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)V", arg0, arg1, arg2);
@@ -152,8 +152,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public static void RegisterEditorKitForContentType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "registerEditorKitForContentType", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -193,8 +193,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitForContentType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.EditorKit GetEditorKitForContentType(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.EditorKit>("getEditorKitForContentType", "(Ljava/lang/String;)Ljavax/swing/text/EditorKit;", arg0);
@@ -202,7 +202,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#addHyperlinkListener(javax.swing.event.HyperlinkListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddHyperlinkListener(Javax.Swing.Event.HyperlinkListener arg0)
         {
             IExecuteWithSignature("addHyperlinkListener", "(Ljavax/swing/event/HyperlinkListener;)V", arg0);
@@ -210,7 +210,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#removeHyperlinkListener(javax.swing.event.HyperlinkListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveHyperlinkListener(Javax.Swing.Event.HyperlinkListener arg0)
         {
             IExecuteWithSignature("removeHyperlinkListener", "(Ljavax/swing/event/HyperlinkListener;)V", arg0);
@@ -218,7 +218,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#fireHyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void FireHyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent arg0)
         {
             IExecuteWithSignature("fireHyperlinkUpdate", "(Ljavax/swing/event/HyperlinkEvent;)V", arg0);
@@ -226,9 +226,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#read(java.io.InputStream,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Read(Java.Io.InputStream arg0, object arg1)
         {
             IExecuteWithSignature("read", "(Ljava/io/InputStream;Ljava/lang/Object;)V", arg0, arg1);
@@ -236,7 +236,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#scrollToReference(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ScrollToReference(Java.Lang.String arg0)
         {
             IExecuteWithSignature("scrollToReference", "(Ljava/lang/String;)V", arg0);
@@ -244,8 +244,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKitForContentType(java.lang.String,javax.swing.text.EditorKit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.EditorKit"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetEditorKitForContentType(Java.Lang.String arg0, Javax.Swing.Text.EditorKit arg1)
         {
             IExecuteWithSignature("setEditorKitForContentType", "(Ljava/lang/String;Ljavax/swing/text/EditorKit;)V", arg0, arg1);
@@ -253,8 +253,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetPage(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setPage", "(Ljava/lang/String;)V", arg0);
@@ -262,8 +262,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetPage(Java.Net.URL arg0)
         {
             IExecuteWithSignature("setPage", "(Ljava/net/URL;)V", arg0);

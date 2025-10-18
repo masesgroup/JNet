@@ -108,7 +108,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void TextValueChanged(Java.Awt.EventNs.TextEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void TextValueChanged(Java.Awt.EventNs.TextEvent arg0)
         {
             hasOverrideTextValueChanged = false;
@@ -207,7 +207,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void TextValueChanged(Java.Awt.EventNs.TextEvent arg0)
         {
             IExecuteWithSignature("textValueChanged", "(Ljava/awt/event/TextEvent;)V", arg0);

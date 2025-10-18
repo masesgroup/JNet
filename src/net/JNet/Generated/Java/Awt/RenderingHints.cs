@@ -116,8 +116,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#%3Cinit%3E(java.awt.RenderingHints.Key,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.RenderingHints.Key"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public RenderingHints(Java.Awt.RenderingHints.Key arg0, object arg1)
             : base(arg0, arg1)
         {
@@ -125,8 +125,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public RenderingHints(Java.Util.Map<Java.Awt.RenderingHints.Key, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public RenderingHints(Java.Util.Map<, > arg0)
             : base(arg0)
         {
         }
@@ -135,11 +135,11 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.RenderingHints"/> to <see cref="Java.Util.Map"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Map(Java.Awt.RenderingHints t) => t.Cast<Java.Util.Map>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.RenderingHints"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.RenderingHints t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -439,8 +439,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#containsKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
@@ -448,8 +448,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#containsValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
@@ -457,7 +457,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -465,7 +465,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -473,8 +473,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(object arg0)
         {
             return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -482,9 +482,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Put(object arg0, object arg1)
         {
             return IExecuteWithSignature("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -492,8 +492,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Remove(object arg0)
         {
             return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -501,31 +501,31 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public Java.Util.Collection<object> Values()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Collection Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<object>>("values", "()Ljava/util/Collection;");
+            return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#keySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<object> KeySet()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<object>>("keySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#entrySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Util.Map.Entry<object, object>> EntrySet()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set EntrySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<object, object>>>("entrySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#add(java.awt.RenderingHints)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.RenderingHints"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Add(Java.Awt.RenderingHints arg0)
         {
             IExecuteWithSignature("add", "(Ljava/awt/RenderingHints;)V", arg0);
@@ -540,8 +540,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#putAll(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public void PutAll(Java.Util.Map<object, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void PutAll(Java.Util.Map<, > arg0)
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
@@ -572,8 +572,8 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.Key.html#isCompatibleValue(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool IsCompatibleValue(object arg0)
             {
                 return IExecuteWithSignature<bool>("isCompatibleValue", "(Ljava/lang/Object;)Z", arg0);

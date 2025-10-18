@@ -78,24 +78,24 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#getLoggerNames()"/> 
         /// </summary>
-        Java.Util.List<Java.Lang.String> LoggerNames { get; }
+        Java.Util.List LoggerNames { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#getLoggerLevel(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String GetLoggerLevel(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#getParentLoggerName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String GetParentLoggerName(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#setLoggerLevel(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void SetLoggerLevel(Java.Lang.String arg0, Java.Lang.String arg1);
 
         #endregion
@@ -131,15 +131,15 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#getLoggerNames()"/> 
         /// </summary>
-        public Java.Util.List<Java.Lang.String> LoggerNames
+        public Java.Util.List LoggerNames
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getLoggerNames", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getLoggerNames", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#getLoggerLevel(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetLoggerLevel(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getLoggerLevel", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -147,8 +147,8 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#getParentLoggerName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetParentLoggerName(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getParentLoggerName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -156,8 +156,8 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#setLoggerLevel(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetLoggerLevel(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("setLoggerLevel", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);

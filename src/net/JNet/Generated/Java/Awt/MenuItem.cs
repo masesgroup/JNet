@@ -73,9 +73,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#%3Cinit%3E(java.lang.String,java.awt.MenuShortcut)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.MenuShortcut"/></param>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public MenuItem(Java.Lang.String arg0, Java.Awt.MenuShortcut arg1)
             : base(arg0, arg1)
         {
@@ -83,8 +83,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public MenuItem(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -94,7 +94,7 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.MenuItem"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.MenuItem t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -140,17 +140,17 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#getListeners(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public T[] GetListeners(Java.Lang.Class arg0)
         {
             return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#isEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEnabled()
         {
             return IExecuteWithSignature<bool>("isEnabled", "()Z");
@@ -158,7 +158,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#paramString()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ParamString()
         {
             return IExecuteWithSignature<Java.Lang.String>("paramString", "()Ljava/lang/String;");
@@ -166,7 +166,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -174,7 +174,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -182,7 +182,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#setEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetEnabled(bool arg0)
         {
             IExecuteWithSignature("setEnabled", "(Z)V", arg0);

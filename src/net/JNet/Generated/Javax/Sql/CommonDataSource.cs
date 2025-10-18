@@ -90,8 +90,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder();
 
         #endregion
@@ -148,8 +148,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder()
         {
             return IExecuteWithSignature<Java.Sql.ShardingKeyBuilder>("createShardingKeyBuilder", "()Ljava/sql/ShardingKeyBuilder;");

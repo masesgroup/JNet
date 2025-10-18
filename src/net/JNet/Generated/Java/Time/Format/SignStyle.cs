@@ -29,7 +29,7 @@ namespace Java.Time.Format
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html"/>
     /// </summary>
-    public partial class SignStyle : Java.Lang.Enum<Java.Time.Format.SignStyle>
+    public partial class SignStyle : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.time.format.SignStyle";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Time.Format.SignStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Format.SignStyle ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Time.Format.SignStyle>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/format/SignStyle;", arg0);
@@ -124,7 +124,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Format.SignStyle"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Format.SignStyle[] Values()
         {
             return SExecuteWithSignatureArray<Java.Time.Format.SignStyle>(LocalBridgeClazz, "values", "()[Ljava/time/format/SignStyle;");

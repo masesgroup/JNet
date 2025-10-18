@@ -73,12 +73,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#%3Cinit%3E(java.awt.Image,int,int,int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public PixelGrabber(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, bool arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -86,14 +86,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#%3Cinit%3E(java.awt.Image,int,int,int,int,int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
         public PixelGrabber(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
@@ -101,14 +101,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#%3Cinit%3E(java.awt.image.ImageProducer,int,int,int,int,int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageProducer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
         public PixelGrabber(Java.Awt.ImageNs.ImageProducer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
@@ -160,8 +160,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#grabPixels()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool GrabPixels()
         {
             return IExecuteWithSignature<bool>("grabPixels", "()Z");
@@ -169,9 +169,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#grabPixels(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool GrabPixels(long arg0)
         {
             return IExecuteWithSignature<bool>("grabPixels", "(J)Z", arg0);
@@ -179,7 +179,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getStatus()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int GetStatus()
         {
             return IExecuteWithSignature<int>("getStatus", "()I");
@@ -187,7 +187,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#status()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Status()
         {
             return IExecuteWithSignature<int>("status", "()I");
@@ -202,7 +202,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#imageComplete(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ImageComplete(int arg0)
         {
             IExecuteWithSignature("imageComplete", "(I)V", arg0);
@@ -217,8 +217,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setDimensions(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetDimensions(int arg0, int arg1)
         {
             IExecuteWithSignature("setDimensions", "(II)V", arg0, arg1);
@@ -226,7 +226,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setHints(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetHints(int arg0)
         {
             IExecuteWithSignature("setHints", "(I)V", arg0);
@@ -234,14 +234,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setPixels(int,int,int,int,java.awt.image.ColorModel,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg5"><see cref="byte"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.ColorModel arg4, byte[] arg5, int arg6, int arg7)
         {
             IExecuteWithSignature("setPixels", "(IIIILjava/awt/image/ColorModel;[BII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -249,14 +249,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setPixels(int,int,int,int,java.awt.image.ColorModel,int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.ColorModel arg4, int[] arg5, int arg6, int arg7)
         {
             IExecuteWithSignature("setPixels", "(IIIILjava/awt/image/ColorModel;[III)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -264,8 +264,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setProperties(java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        public void SetProperties(Java.Util.Hashtable<object, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void SetProperties(Java.Util.Hashtable<, > arg0)
         {
             IExecuteWithSignature("setProperties", "(Ljava/util/Hashtable;)V", arg0);
         }

@@ -73,11 +73,11 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Beans.IntrospectionException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -85,9 +85,9 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <exception cref="Java.Beans.IntrospectionException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1)
             : base(arg0, arg1)
         {
@@ -95,10 +95,10 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Reflect.Method"/></param>
-        /// <exception cref="Java.Beans.IntrospectionException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2)
             : base(arg0, arg1, arg2)
         {
@@ -150,7 +150,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isBound()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBound()
         {
             return IExecuteWithSignature<bool>("isBound", "()Z");
@@ -158,7 +158,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isConstrained()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsConstrained()
         {
             return IExecuteWithSignature<bool>("isConstrained", "()Z");
@@ -166,8 +166,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#createPropertyEditor(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Beans.PropertyEditor"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Beans.PropertyEditor CreatePropertyEditor(object arg0)
         {
             return IExecuteWithSignature<Java.Beans.PropertyEditor>("createPropertyEditor", "(Ljava/lang/Object;)Ljava/beans/PropertyEditor;", arg0);
@@ -175,7 +175,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setBound(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetBound(bool arg0)
         {
             IExecuteWithSignature("setBound", "(Z)V", arg0);
@@ -183,7 +183,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setConstrained(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetConstrained(bool arg0)
         {
             IExecuteWithSignature("setConstrained", "(Z)V", arg0);

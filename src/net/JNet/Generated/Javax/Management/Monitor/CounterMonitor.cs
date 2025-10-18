@@ -75,7 +75,7 @@ namespace Javax.Management.Monitor
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Monitor.CounterMonitor"/> to <see cref="Javax.Management.Monitor.CounterMonitorMBean"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Monitor.CounterMonitorMBean(Javax.Management.Monitor.CounterMonitor t) => t.Cast<Javax.Management.Monitor.CounterMonitorMBean>();
 
@@ -128,8 +128,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitor.html#getDerivedGauge(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Java.Lang.Number"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Number GetDerivedGauge(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<Java.Lang.Number>("getDerivedGauge", "(Ljavax/management/ObjectName;)Ljava/lang/Number;", arg0);
@@ -137,8 +137,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitor.html#getThreshold(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Java.Lang.Number"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Number GetThreshold(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<Java.Lang.Number>("getThreshold", "(Ljavax/management/ObjectName;)Ljava/lang/Number;", arg0);
@@ -146,8 +146,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/CounterMonitor.html#getDerivedGaugeTimeStamp(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long GetDerivedGaugeTimeStamp(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "(Ljavax/management/ObjectName;)J", arg0);

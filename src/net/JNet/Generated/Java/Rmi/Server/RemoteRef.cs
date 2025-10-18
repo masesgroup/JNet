@@ -78,34 +78,34 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteEquals(java.rmi.server.RemoteRef)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool RemoteEquals(Java.Rmi.Server.RemoteRef arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         int RemoteHashCode();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#invoke(java.rmi.Remote,java.lang.reflect.Method,java.lang.Object[],long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="long"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         object Invoke(Java.Rmi.Remote arg0, Java.Lang.Reflect.Method arg1, object[] arg2, long arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#getRefClass(java.io.ObjectOutput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String GetRefClass(Java.Io.ObjectOutput arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String RemoteToString();
 
         #endregion
@@ -153,8 +153,8 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteEquals(java.rmi.server.RemoteRef)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoteEquals(Java.Rmi.Server.RemoteRef arg0)
         {
             return IExecuteWithSignature<bool>("remoteEquals", "(Ljava/rmi/server/RemoteRef;)Z", arg0);
@@ -162,7 +162,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int RemoteHashCode()
         {
             return IExecuteWithSignature<int>("remoteHashCode", "()I");
@@ -170,12 +170,12 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#invoke(java.rmi.Remote,java.lang.reflect.Method,java.lang.Object[],long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="long"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Invoke(Java.Rmi.Remote arg0, Java.Lang.Reflect.Method arg1, object[] arg2, long arg3)
         {
             return IExecuteWithSignature("invoke", "(Ljava/rmi/Remote;Ljava/lang/reflect/Method;[Ljava/lang/Object;J)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
@@ -183,8 +183,8 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#getRefClass(java.io.ObjectOutput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetRefClass(Java.Io.ObjectOutput arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getRefClass", "(Ljava/io/ObjectOutput;)Ljava/lang/String;", arg0);
@@ -192,7 +192,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String RemoteToString()
         {
             return IExecuteWithSignature<Java.Lang.String>("remoteToString", "()Ljava/lang/String;");

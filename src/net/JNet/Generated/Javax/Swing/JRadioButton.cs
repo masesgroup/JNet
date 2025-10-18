@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRadioButton.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JRadioButton(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -82,9 +82,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRadioButton.html#%3Cinit%3E(java.lang.String,javax.swing.Icon,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JRadioButton(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -92,8 +92,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRadioButton.html#%3Cinit%3E(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JRadioButton(Java.Lang.String arg0, Javax.Swing.Icon arg1)
             : base(arg0, arg1)
         {
@@ -101,7 +101,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRadioButton.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JRadioButton(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -109,7 +109,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRadioButton.html#%3Cinit%3E(javax.swing.Action)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JRadioButton(Javax.Swing.Action arg0)
             : base(arg0)
         {
@@ -117,8 +117,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRadioButton.html#%3Cinit%3E(javax.swing.Icon,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JRadioButton(Javax.Swing.Icon arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -126,7 +126,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRadioButton.html#%3Cinit%3E(javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JRadioButton(Javax.Swing.Icon arg0)
             : base(arg0)
         {

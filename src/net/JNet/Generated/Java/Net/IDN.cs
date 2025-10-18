@@ -97,9 +97,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toASCII(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ToASCII(Java.Lang.String arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toASCII", "(Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1);
@@ -107,8 +107,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toASCII(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ToASCII(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toASCII", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -116,9 +116,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toUnicode(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ToUnicode(Java.Lang.String arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toUnicode", "(Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1);
@@ -126,8 +126,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toUnicode(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ToUnicode(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toUnicode", "(Ljava/lang/String;)Ljava/lang/String;", arg0);

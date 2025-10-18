@@ -108,7 +108,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void FlavorsChanged(Java.Awt.Datatransfer.FlavorEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void FlavorsChanged(Java.Awt.Datatransfer.FlavorEvent arg0)
         {
             hasOverrideFlavorsChanged = false;
@@ -207,7 +207,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void FlavorsChanged(Java.Awt.Datatransfer.FlavorEvent arg0)
         {
             IExecuteWithSignature("flavorsChanged", "(Ljava/awt/datatransfer/FlavorEvent;)V", arg0);

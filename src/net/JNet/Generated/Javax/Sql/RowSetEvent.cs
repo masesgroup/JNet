@@ -73,7 +73,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetEvent.html#%3Cinit%3E(javax.sql.RowSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public RowSetEvent(Javax.Sql.RowSet arg0)
             : base(arg0)
         {

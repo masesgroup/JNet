@@ -73,9 +73,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#%3Cinit%3E(int,java.net.InetAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public DatagramSocket(int arg0, Java.Net.InetAddress arg1)
             : base(arg0, arg1)
         {
@@ -83,8 +83,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public DatagramSocket(int arg0)
             : base(arg0)
         {
@@ -92,8 +92,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#%3Cinit%3E(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public DatagramSocket(Java.Net.SocketAddress arg0)
             : base(arg0)
         {
@@ -113,8 +113,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.DatagramSocketImplFactory"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void SetDatagramSocketImplFactory(Java.Net.DatagramSocketImplFactory arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDatagramSocketImplFactory", "(Ljava/net/DatagramSocketImplFactory;)V", arg0);
@@ -217,30 +217,30 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Net.DatagramSocket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Net.DatagramSocket SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Net.DatagramSocket SetOption(Java.Net.SocketOption arg0, T arg1)
         {
             return IExecuteWithSignature<Java.Net.DatagramSocket>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/net/DatagramSocket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getOption(java.net.SocketOption)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public T GetOption<T>(Java.Net.SocketOption<T> arg0)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public T GetOption(Java.Net.SocketOption arg0)
         {
             return IExecuteWithSignature<T>("getOption", "(Ljava/net/SocketOption;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isBound()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBound()
         {
             return IExecuteWithSignature<bool>("isBound", "()Z");
@@ -248,7 +248,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isClosed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsClosed()
         {
             return IExecuteWithSignature<bool>("isClosed", "()Z");
@@ -256,7 +256,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isConnected()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsConnected()
         {
             return IExecuteWithSignature<bool>("isConnected", "()Z");
@@ -264,16 +264,16 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#supportedOptions()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set SupportedOptions()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("supportedOptions", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#bind(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Bind(Java.Net.SocketAddress arg0)
         {
             IExecuteWithSignature("bind", "(Ljava/net/SocketAddress;)V", arg0);
@@ -281,8 +281,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#receive(java.net.DatagramPacket)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.DatagramPacket"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Receive(Java.Net.DatagramPacket arg0)
         {
             IExecuteWithSignature("receive", "(Ljava/net/DatagramPacket;)V", arg0);
@@ -297,8 +297,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#connect(java.net.InetAddress,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Connect(Java.Net.InetAddress arg0, int arg1)
         {
             IExecuteWithSignature("connect", "(Ljava/net/InetAddress;I)V", arg0, arg1);
@@ -306,8 +306,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#connect(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Connect(Java.Net.SocketAddress arg0)
         {
             IExecuteWithSignature("connect", "(Ljava/net/SocketAddress;)V", arg0);
@@ -322,8 +322,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#send(java.net.DatagramPacket)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.DatagramPacket"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Send(Java.Net.DatagramPacket arg0)
         {
             IExecuteWithSignature("send", "(Ljava/net/DatagramPacket;)V", arg0);

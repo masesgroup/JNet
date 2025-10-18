@@ -108,12 +108,12 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html#treeCollapsed(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void TreeCollapsed(Javax.Swing.Event.TreeExpansionEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html#treeExpanded(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void TreeExpanded(Javax.Swing.Event.TreeExpansionEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html#treeCollapsed(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void TreeCollapsed(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
             hasOverrideTreeCollapsed = false;
@@ -198,7 +198,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html#treeExpanded(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void TreeExpanded(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
             hasOverrideTreeExpanded = false;
@@ -237,7 +237,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html#treeCollapsed(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void TreeCollapsed(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
             IExecuteWithSignature("treeCollapsed", "(Ljavax/swing/event/TreeExpansionEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html#treeExpanded(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void TreeExpanded(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
             IExecuteWithSignature("treeExpanded", "(Ljavax/swing/event/TreeExpansionEvent;)V", arg0);

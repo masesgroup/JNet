@@ -132,13 +132,13 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/NavigationFilter.html#getNextVisualPositionFrom(javax.swing.text.JTextComponent,int,javax.swing.text.Position.Bias,int,javax.swing.text.Position.Bias[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int GetNextVisualPositionFrom(Javax.Swing.Text.JTextComponent arg0, int arg1, Javax.Swing.Text.Position.Bias arg2, int arg3, Javax.Swing.Text.Position.Bias[] arg4)
         {
             return IExecuteWithSignature<int>("getNextVisualPositionFrom", "(Ljavax/swing/text/JTextComponent;ILjavax/swing/text/Position$Bias;I[Ljavax/swing/text/Position$Bias;)I", arg0, arg1, arg2, arg3, arg4);
@@ -146,9 +146,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/NavigationFilter.html#moveDot(javax.swing.text.NavigationFilter.FilterBypass,int,javax.swing.text.Position.Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.NavigationFilter.FilterBypass"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void MoveDot(Javax.Swing.Text.NavigationFilter.FilterBypass arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
             IExecuteWithSignature("moveDot", "(Ljavax/swing/text/NavigationFilter$FilterBypass;ILjavax/swing/text/Position$Bias;)V", arg0, arg1, arg2);
@@ -156,9 +156,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/NavigationFilter.html#setDot(javax.swing.text.NavigationFilter.FilterBypass,int,javax.swing.text.Position.Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.NavigationFilter.FilterBypass"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void SetDot(Javax.Swing.Text.NavigationFilter.FilterBypass arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
             IExecuteWithSignature("setDot", "(Ljavax/swing/text/NavigationFilter$FilterBypass;ILjavax/swing/text/Position$Bias;)V", arg0, arg1, arg2);
@@ -197,8 +197,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/NavigationFilter.FilterBypass.html#moveDot(int,javax.swing.text.Position.Bias)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void MoveDot(int arg0, Javax.Swing.Text.Position.Bias arg1)
             {
                 IExecuteWithSignature("moveDot", "(ILjavax/swing/text/Position$Bias;)V", arg0, arg1);
@@ -206,8 +206,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/NavigationFilter.FilterBypass.html#setDot(int,javax.swing.text.Position.Bias)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void SetDot(int arg0, Javax.Swing.Text.Position.Bias arg1)
             {
                 IExecuteWithSignature("setDot", "(ILjavax/swing/text/Position$Bias;)V", arg0, arg1);

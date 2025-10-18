@@ -78,8 +78,8 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Name.html#contentEquals(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool ContentEquals(Java.Lang.CharSequence arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Name.html#contentEquals(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContentEquals(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<bool>("contentEquals", "(Ljava/lang/CharSequence;)Z", arg0);

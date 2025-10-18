@@ -66,12 +66,12 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ExecutorCompletionService<V> declaration
+    #region ExecutorCompletionService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class ExecutorCompletionService<V> : Java.Util.Concurrent.CompletionService<V>
+    public partial class ExecutorCompletionService : Java.Util.Concurrent.CompletionService
     {
         const string _bridgeClassName = "java.util.concurrent.ExecutorCompletionService";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#%3Cinit%3E(java.util.concurrent.Executor,java.util.concurrent.BlockingQueue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ExecutorCompletionService(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue arg1)
             : base(arg0, arg1)
         {
@@ -124,7 +124,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#%3Cinit%3E(java.util.concurrent.Executor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ExecutorCompletionService(Java.Util.Concurrent.Executor arg0)
             : base(arg0)
         {
@@ -148,7 +148,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#poll()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Future Poll()
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "()Ljava/util/concurrent/Future;");
@@ -156,10 +156,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Util.Concurrent.Future Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Future;", arg0, arg1);
@@ -167,9 +167,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, object arg1)
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", arg0, arg1);
@@ -177,8 +177,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#submit(java.util.concurrent.Callable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0)
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
@@ -186,8 +186,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#take()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Util.Concurrent.Future Take()
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("take", "()Ljava/util/concurrent/Future;");
@@ -203,23 +203,23 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ExecutorCompletionService<V> implementation
-    public partial class ExecutorCompletionService<V>
+    #region ExecutorCompletionService implementation
+    public partial class ExecutorCompletionService
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#%3Cinit%3E(java.util.concurrent.Executor,java.util.concurrent.BlockingQueue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
-        public ExecutorCompletionService(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue<Java.Util.Concurrent.Future<V>> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public ExecutorCompletionService(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#%3Cinit%3E(java.util.concurrent.Executor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ExecutorCompletionService(Java.Util.Concurrent.Executor arg0)
             : base(arg0)
         {
@@ -229,9 +229,9 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ExecutorCompletionService{V}"/> to <see cref="Java.Util.Concurrent.ExecutorCompletionService"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.ExecutorCompletionService(Java.Util.Concurrent.ExecutorCompletionService<V> t) => t.Cast<Java.Util.Concurrent.ExecutorCompletionService>();
+        public static implicit operator Java.Util.Concurrent.ExecutorCompletionService(Java.Util.Concurrent.ExecutorCompletionService t) => t.Cast<Java.Util.Concurrent.ExecutorCompletionService>();
 
         #endregion
 
@@ -247,49 +247,49 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#poll()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<V> Poll()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Poll()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("poll", "()Ljava/util/concurrent/Future;");
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "()Ljava/util/concurrent/Future;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Util.Concurrent.Future<V> Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Concurrent.Future Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Future;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<V> Submit(Java.Lang.Runnable arg0, V arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, V arg1)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#submit(java.util.concurrent.Callable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<V> Submit(Java.Util.Concurrent.Callable<V> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#take()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Util.Concurrent.Future<V> Take()
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Concurrent.Future Take()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("take", "()Ljava/util/concurrent/Future;");
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("take", "()Ljava/util/concurrent/Future;");
         }
 
         #endregion

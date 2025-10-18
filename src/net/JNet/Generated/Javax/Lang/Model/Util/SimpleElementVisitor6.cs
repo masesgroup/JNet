@@ -66,13 +66,13 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleElementVisitor6<R, P> declaration
+    #region SimpleElementVisitor6<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor6.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class SimpleElementVisitor6<R, P> : Javax.Lang.Model.Util.AbstractElementVisitor6<R, P>
+    public partial class SimpleElementVisitor6<, > : Javax.Lang.Model.Util.AbstractElementVisitor6<, >
     {
         const string _bridgeClassName = "javax.lang.model.util.SimpleElementVisitor6";
         /// <summary>
@@ -140,8 +140,8 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleElementVisitor6<R, P> implementation
-    public partial class SimpleElementVisitor6<R, P>
+    #region SimpleElementVisitor6<, > implementation
+    public partial class SimpleElementVisitor6<, >
     {
         #region Constructors
 
@@ -149,9 +149,9 @@ namespace Javax.Lang.Model.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.SimpleElementVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Util.SimpleElementVisitor6"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Lang.Model.Util.SimpleElementVisitor6(Javax.Lang.Model.Util.SimpleElementVisitor6<R, P> t) => t.Cast<Javax.Lang.Model.Util.SimpleElementVisitor6>();
+        public static implicit operator Javax.Lang.Model.Util.SimpleElementVisitor6(Javax.Lang.Model.Util.SimpleElementVisitor6<, > t) => t.Cast<Javax.Lang.Model.Util.SimpleElementVisitor6>();
 
         #endregion
 

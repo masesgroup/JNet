@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html#%3Cinit%3E(java.security.cert.CertPathParameters)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CertPathParameters"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public CertPathTrustManagerParameters(Java.Security.Cert.CertPathParameters arg0)
             : base(arg0)
         {

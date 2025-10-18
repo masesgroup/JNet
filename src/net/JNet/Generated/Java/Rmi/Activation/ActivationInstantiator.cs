@@ -78,13 +78,13 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationInstantiator.html#newInstance(java.rmi.activation.ActivationID,java.rmi.activation.ActivationDesc)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationDesc"/></param>
-        /// <typeparam name="ReturnExtendsJava_Rmi_Remote"><see cref="Java.Rmi.Remote"/></typeparam>
-        /// <returns><see cref="Java.Rmi.MarshalledObject"/></returns>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote> NewInstance<ReturnExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Activation.ActivationDesc arg1) where ReturnExtendsJava_Rmi_Remote : Java.Rmi.Remote;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJava_Rmi_Remote"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        Java.Rmi.MarshalledObject NewInstance(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Activation.ActivationDesc arg1) where ReturnExtendsJava_Rmi_Remote : Java.Rmi.Remote;
 
         #endregion
 
@@ -119,15 +119,15 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationInstantiator.html#newInstance(java.rmi.activation.ActivationID,java.rmi.activation.ActivationDesc)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationDesc"/></param>
-        /// <typeparam name="ReturnExtendsJava_Rmi_Remote"><see cref="Java.Rmi.Remote"/></typeparam>
-        /// <returns><see cref="Java.Rmi.MarshalledObject"/></returns>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        public Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote> NewInstance<ReturnExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Activation.ActivationDesc arg1) where ReturnExtendsJava_Rmi_Remote : Java.Rmi.Remote
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJava_Rmi_Remote"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        public Java.Rmi.MarshalledObject NewInstance(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Activation.ActivationDesc arg1) where ReturnExtendsJava_Rmi_Remote : Java.Rmi.Remote
         {
-            return IExecute<Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote>>("newInstance", arg0, arg1);
+            return IExecute<Java.Rmi.MarshalledObject>("newInstance", arg0, arg1);
         }
 
         #endregion

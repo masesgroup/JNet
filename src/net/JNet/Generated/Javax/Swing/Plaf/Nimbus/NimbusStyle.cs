@@ -125,29 +125,29 @@ namespace Javax.Swing.Plaf.Nimbus
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#getBackgroundPainter(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see cref="Javax.Swing.Painter"/></returns>
-        public Javax.Swing.Painter<object> GetBackgroundPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Javax.Swing.Painter GetBackgroundPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Painter<object>>("getBackgroundPainter", "(Ljavax/swing/plaf/synth/SynthContext;)Ljavax/swing/Painter;", arg0);
+            return IExecuteWithSignature<Javax.Swing.Painter>("getBackgroundPainter", "(Ljavax/swing/plaf/synth/SynthContext;)Ljavax/swing/Painter;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#getBorderPainter(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see cref="Javax.Swing.Painter"/></returns>
-        public Javax.Swing.Painter<object> GetBorderPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Javax.Swing.Painter GetBorderPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Painter<object>>("getBorderPainter", "(Ljavax/swing/plaf/synth/SynthContext;)Ljavax/swing/Painter;", arg0);
+            return IExecuteWithSignature<Javax.Swing.Painter>("getBorderPainter", "(Ljavax/swing/plaf/synth/SynthContext;)Ljavax/swing/Painter;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusStyle.html#getForegroundPainter(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see cref="Javax.Swing.Painter"/></returns>
-        public Javax.Swing.Painter<object> GetForegroundPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Javax.Swing.Painter GetForegroundPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
-            return IExecuteWithSignature<Javax.Swing.Painter<object>>("getForegroundPainter", "(Ljavax/swing/plaf/synth/SynthContext;)Ljavax/swing/Painter;", arg0);
+            return IExecuteWithSignature<Javax.Swing.Painter>("getForegroundPainter", "(Ljavax/swing/plaf/synth/SynthContext;)Ljavax/swing/Painter;", arg0);
         }
 
         #endregion

@@ -73,7 +73,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#%3Cinit%3E(javax.accessibility.AccessibleState[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AccessibleStateSet(Javax.Accessibility.AccessibleState[] arg0)
             : base(arg0)
         {
@@ -97,8 +97,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#add(javax.accessibility.AccessibleState)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Add(Javax.Accessibility.AccessibleState arg0)
         {
             return IExecuteWithSignature<bool>("add", "(Ljavax/accessibility/AccessibleState;)Z", arg0);
@@ -106,8 +106,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#contains(javax.accessibility.AccessibleState)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(Javax.Accessibility.AccessibleState arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljavax/accessibility/AccessibleState;)Z", arg0);
@@ -115,8 +115,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#remove(javax.accessibility.AccessibleState)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(Javax.Accessibility.AccessibleState arg0)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljavax/accessibility/AccessibleState;)Z", arg0);
@@ -124,7 +124,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Accessibility.AccessibleState"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Accessibility.AccessibleState[] ToArray()
         {
             return IExecuteWithSignatureArray<Javax.Accessibility.AccessibleState>("toArray", "()[Ljavax/accessibility/AccessibleState;");
@@ -132,7 +132,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#addAll(javax.accessibility.AccessibleState[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddAll(Javax.Accessibility.AccessibleState[] arg0)
         {
             IExecuteWithSignature("addAll", "([Ljavax/accessibility/AccessibleState;)V", new object[] { arg0 });

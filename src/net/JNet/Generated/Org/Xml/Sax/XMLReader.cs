@@ -94,48 +94,48 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getFeature(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         bool GetFeature(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         object GetProperty(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void Parse(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void Parse(Org.Xml.Sax.InputSource arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetFeature(Java.Lang.String arg0, bool arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetProperty(Java.Lang.String arg0, object arg1);
 
         #endregion
@@ -199,10 +199,10 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getFeature(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public bool GetFeature(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
@@ -210,10 +210,10 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -221,9 +221,9 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Parse(Java.Lang.String arg0)
         {
             IExecuteWithSignature("parse", "(Ljava/lang/String;)V", arg0);
@@ -231,9 +231,9 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Parse(Org.Xml.Sax.InputSource arg0)
         {
             IExecuteWithSignature("parse", "(Lorg/xml/sax/InputSource;)V", arg0);
@@ -241,10 +241,10 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
             IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
@@ -252,10 +252,10 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
             IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);

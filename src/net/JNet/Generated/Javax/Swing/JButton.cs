@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#%3Cinit%3E(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JButton(Java.Lang.String arg0, Javax.Swing.Icon arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JButton(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -90,7 +90,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#%3Cinit%3E(javax.swing.Action)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JButton(Javax.Swing.Action arg0)
             : base(arg0)
         {
@@ -98,7 +98,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#%3Cinit%3E(javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JButton(Javax.Swing.Icon arg0)
             : base(arg0)
         {
@@ -108,7 +108,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JButton"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JButton t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -126,7 +126,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#isDefaultButton()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDefaultButton()
         {
             return IExecuteWithSignature<bool>("isDefaultButton", "()Z");
@@ -134,7 +134,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#isDefaultCapable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDefaultCapable()
         {
             return IExecuteWithSignature<bool>("isDefaultCapable", "()Z");
@@ -142,7 +142,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#setDefaultCapable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDefaultCapable(bool arg0)
         {
             IExecuteWithSignature("setDefaultCapable", "(Z)V", arg0);

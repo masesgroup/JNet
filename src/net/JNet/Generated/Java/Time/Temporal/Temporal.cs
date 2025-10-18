@@ -78,54 +78,54 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#isSupported(java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsSupported(Java.Time.Temporal.TemporalUnit arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#plus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Time.Temporal.Temporal Plus(long arg0, Java.Time.Temporal.TemporalUnit arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#with(java.time.temporal.TemporalField,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalField arg0, long arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         long Until(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.TemporalUnit arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#minus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Time.Temporal.Temporal Minus(Java.Time.Temporal.TemporalAmount arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#minus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Time.Temporal.Temporal Minus(long arg0, Java.Time.Temporal.TemporalUnit arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#plus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Time.Temporal.Temporal Plus(Java.Time.Temporal.TemporalAmount arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#with(java.time.temporal.TemporalAdjuster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAdjuster"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalAdjuster arg0);
 
         #endregion
@@ -161,8 +161,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#isSupported(java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalUnit arg0)
         {
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
@@ -170,9 +170,9 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#plus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Temporal.Temporal Plus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/temporal/Temporal;", arg0, arg1);
@@ -180,9 +180,9 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#with(java.time.temporal.TemporalField,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalField arg0, long arg1)
         {
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("with", "(Ljava/time/temporal/TemporalField;J)Ljava/time/temporal/Temporal;", arg0, arg1);
@@ -190,9 +190,9 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long Until(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
             return IExecuteWithSignature<long>("until", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/TemporalUnit;)J", arg0, arg1);
@@ -200,8 +200,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#minus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Temporal.Temporal Minus(Java.Time.Temporal.TemporalAmount arg0)
         {
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
@@ -209,9 +209,9 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#minus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Temporal.Temporal Minus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/temporal/Temporal;", arg0, arg1);
@@ -219,8 +219,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#plus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Temporal.Temporal Plus(Java.Time.Temporal.TemporalAmount arg0)
         {
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
@@ -228,8 +228,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/Temporal.html#with(java.time.temporal.TemporalAdjuster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAdjuster"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalAdjuster arg0)
         {
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("with", "(Ljava/time/temporal/TemporalAdjuster;)Ljava/time/temporal/Temporal;", arg0);

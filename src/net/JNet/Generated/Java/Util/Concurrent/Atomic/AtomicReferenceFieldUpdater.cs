@@ -68,13 +68,13 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicReferenceFieldUpdater<T, V> declaration
+    #region AtomicReferenceFieldUpdater<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class AtomicReferenceFieldUpdater<T, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicReferenceFieldUpdater<T, V>>
+    public partial class AtomicReferenceFieldUpdater<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicReferenceFieldUpdater<, >>
     {
         const string _bridgeClassName = "java.util.concurrent.atomic.AtomicReferenceFieldUpdater";
         /// <summary>
@@ -132,10 +132,10 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#newUpdater(java.lang.Class,java.lang.Class,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater NewUpdater(Java.Lang.Class arg0, Java.Lang.Class arg1, Java.Lang.String arg2)
         {
             return SExecuteWithSignature<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>(LocalBridgeClazz, "newUpdater", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;", arg0, arg1, arg2);
@@ -147,10 +147,10 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareAndSet(object arg0, object arg1, object arg2)
         {
             return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
@@ -158,10 +158,10 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#weakCompareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool WeakCompareAndSet(object arg0, object arg1, object arg2)
         {
             return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
@@ -169,8 +169,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(object arg0)
         {
             return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -178,8 +178,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#lazySet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void LazySet(object arg0, object arg1)
         {
             IExecuteWithSignature("lazySet", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -187,8 +187,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#set(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Set(object arg0, object arg1)
         {
             IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -196,10 +196,10 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#accumulateAndGet(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object AccumulateAndGet(object arg0, object arg1, Java.Util.Function.BinaryOperator arg2)
         {
             return IExecuteWithSignature("accumulateAndGet", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1, arg2);
@@ -207,10 +207,10 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndAccumulate(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetAndAccumulate(object arg0, object arg1, Java.Util.Function.BinaryOperator arg2)
         {
             return IExecuteWithSignature("getAndAccumulate", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1, arg2);
@@ -218,9 +218,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.UnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetAndUpdate(object arg0, Java.Util.Function.UnaryOperator arg1)
         {
             return IExecuteWithSignature("getAndUpdate", "(Ljava/lang/Object;Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0, arg1);
@@ -228,9 +228,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.UnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object UpdateAndGet(object arg0, Java.Util.Function.UnaryOperator arg1)
         {
             return IExecuteWithSignature("updateAndGet", "(Ljava/lang/Object;Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0, arg1);
@@ -238,9 +238,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetAndSet(object arg0, object arg1)
         {
             return IExecuteWithSignature("getAndSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -256,8 +256,8 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicReferenceFieldUpdater<T, V> implementation
-    public partial class AtomicReferenceFieldUpdater<T, V>
+    #region AtomicReferenceFieldUpdater<, > implementation
+    public partial class AtomicReferenceFieldUpdater<, >
     {
         #region Constructors
 
@@ -265,9 +265,9 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater{T, V}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater(Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<T, V> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>();
+        public static implicit operator Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater(Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<, > t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>();
 
         #endregion
 
@@ -279,15 +279,15 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#newUpdater(java.lang.Class,java.lang.Class,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="W"></typeparam>
-        /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater"/></returns>
-        public static Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<U, W> NewUpdater<U, W>(Java.Lang.Class arg0, Java.Lang.Class arg1, Java.Lang.String arg2)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<, > NewUpdater<, >(Java.Lang.Class arg0, Java.Lang.Class arg1, Java.Lang.String arg2)
         {
-            return SExecuteWithSignature<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<U, W>>(LocalBridgeClazz, "newUpdater", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<, >>(LocalBridgeClazz, "newUpdater", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;", arg0, arg1, arg2);
         }
 
         #endregion
@@ -296,10 +296,10 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="V"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareAndSet(T arg0, V arg1, V arg2)
         {
             return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
@@ -307,10 +307,10 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#weakCompareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="V"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool WeakCompareAndSet(T arg0, V arg1, V arg2)
         {
             return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
@@ -318,8 +318,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Get(T arg0)
         {
             return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -327,8 +327,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#lazySet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void LazySet(T arg0, V arg1)
         {
             IExecuteWithSignature("lazySet", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -336,8 +336,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#set(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Set(T arg0, V arg1)
         {
             IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -345,51 +345,51 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#accumulateAndGet(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><typeparamref name="V"/></returns>
-        public V AccumulateAndGet(T arg0, V arg1, Java.Util.Function.BinaryOperator<V> arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public V AccumulateAndGet(T arg0, V arg1, Java.Util.Function.BinaryOperator arg2)
         {
             return IExecuteWithSignature<V>("accumulateAndGet", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndAccumulate(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
-        /// <returns><typeparamref name="V"/></returns>
-        public V GetAndAccumulate(T arg0, V arg1, Java.Util.Function.BinaryOperator<V> arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public V GetAndAccumulate(T arg0, V arg1, Java.Util.Function.BinaryOperator arg2)
         {
             return IExecuteWithSignature<V>("getAndAccumulate", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.UnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        /// <returns><typeparamref name="V"/></returns>
-        public V GetAndUpdate(T arg0, Java.Util.Function.UnaryOperator<V> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public V GetAndUpdate(T arg0, Java.Util.Function.UnaryOperator arg1)
         {
             return IExecuteWithSignature<V>("getAndUpdate", "(Ljava/lang/Object;Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.UnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        /// <returns><typeparamref name="V"/></returns>
-        public V UpdateAndGet(T arg0, Java.Util.Function.UnaryOperator<V> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public V UpdateAndGet(T arg0, Java.Util.Function.UnaryOperator arg1)
         {
             return IExecuteWithSignature<V>("updateAndGet", "(Ljava/lang/Object;Ljava/util/function/UnaryOperator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V GetAndSet(T arg0, V arg1)
         {
             return IExecuteWithSignature<V>("getAndSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);

@@ -73,11 +73,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IntSummaryStatistics.html#%3Cinit%3E(long,int,int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="long"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public IntSummaryStatistics(long arg0, int arg1, int arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -87,7 +87,7 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.IntSummaryStatistics"/> to <see cref="Java.Util.Function.IntConsumer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Function.IntConsumer(Java.Util.IntSummaryStatistics t) => t.Cast<Java.Util.Function.IntConsumer>();
 
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IntSummaryStatistics.html#accept(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Accept(int arg0)
         {
             IExecuteWithSignature("accept", "(I)V", arg0);
@@ -148,7 +148,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IntSummaryStatistics.html#combine(java.util.IntSummaryStatistics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.IntSummaryStatistics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Combine(Java.Util.IntSummaryStatistics arg0)
         {
             IExecuteWithSignature("combine", "(Ljava/util/IntSummaryStatistics;)V", arg0);

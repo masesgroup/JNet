@@ -161,7 +161,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasUniformLineMetrics()
         {
             return IExecuteWithSignature<bool>("hasUniformLineMetrics", "()Z");
@@ -169,10 +169,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#bytesWidth(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int BytesWidth(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("bytesWidth", "([BII)I", arg0, arg1, arg2);
@@ -180,10 +180,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charsWidth(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CharsWidth(char[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("charsWidth", "([CII)I", arg0, arg1, arg2);
@@ -191,8 +191,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charWidth(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CharWidth(char arg0)
         {
             return IExecuteWithSignature<int>("charWidth", "(C)I", arg0);
@@ -200,8 +200,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charWidth(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CharWidth(int arg0)
         {
             return IExecuteWithSignature<int>("charWidth", "(I)I", arg0);
@@ -209,8 +209,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#stringWidth(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int StringWidth(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("stringWidth", "(Ljava/lang/String;)I", arg0);
@@ -218,11 +218,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(char[],int,int,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(char[] arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "([CIILjava/awt/Graphics;)Ljava/awt/font/LineMetrics;", arg0, arg1, arg2, arg3);
@@ -230,11 +230,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.lang.String,int,int,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Lang.String arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "(Ljava/lang/String;IILjava/awt/Graphics;)Ljava/awt/font/LineMetrics;", arg0, arg1, arg2, arg3);
@@ -242,9 +242,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.lang.String,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Lang.String arg0, Java.Awt.Graphics arg1)
         {
             return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "(Ljava/lang/String;Ljava/awt/Graphics;)Ljava/awt/font/LineMetrics;", arg0, arg1);
@@ -252,11 +252,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.text.CharacterIterator,int,int,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "(Ljava/text/CharacterIterator;IILjava/awt/Graphics;)Ljava/awt/font/LineMetrics;", arg0, arg1, arg2, arg3);
@@ -264,8 +264,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxCharBounds(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Rectangle2D GetMaxCharBounds(Java.Awt.Graphics arg0)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getMaxCharBounds", "(Ljava/awt/Graphics;)Ljava/awt/geom/Rectangle2D;", arg0);
@@ -273,11 +273,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(char[],int,int,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(char[] arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "([CIILjava/awt/Graphics;)Ljava/awt/geom/Rectangle2D;", arg0, arg1, arg2, arg3);
@@ -285,11 +285,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.lang.String,int,int,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Lang.String arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "(Ljava/lang/String;IILjava/awt/Graphics;)Ljava/awt/geom/Rectangle2D;", arg0, arg1, arg2, arg3);
@@ -297,9 +297,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.lang.String,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Lang.String arg0, Java.Awt.Graphics arg1)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "(Ljava/lang/String;Ljava/awt/Graphics;)Ljava/awt/geom/Rectangle2D;", arg0, arg1);
@@ -307,11 +307,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.text.CharacterIterator,int,int,java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "(Ljava/text/CharacterIterator;IILjava/awt/Graphics;)Ljava/awt/geom/Rectangle2D;", arg0, arg1, arg2, arg3);

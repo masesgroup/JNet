@@ -94,10 +94,10 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/keyinfo/KeyInfoFactory;", arg0, arg1);
@@ -105,9 +105,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljavax/xml/crypto/dsig/keyinfo/KeyInfoFactory;", arg0, arg1);
@@ -115,8 +115,8 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/xml/crypto/dsig/keyinfo/KeyInfoFactory;", arg0);
@@ -149,8 +149,8 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#isFeatureSupported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFeatureSupported(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isFeatureSupported", "(Ljava/lang/String;)Z", arg0);
@@ -158,30 +158,30 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newKeyInfo(java.util.List,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo NewKeyInfo<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0, Java.Lang.String arg1) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo NewKeyInfo(Java.Util.List arg0, Java.Lang.String arg1) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo>("newKeyInfo", "(Ljava/util/List;Ljava/lang/String;)Ljavax/xml/crypto/dsig/keyinfo/KeyInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newKeyInfo(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo NewKeyInfo<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo NewKeyInfo(Java.Util.List arg0) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo>("newKeyInfo", "(Ljava/util/List;)Ljavax/xml/crypto/dsig/keyinfo/KeyInfo;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#unmarshalKeyInfo(javax.xml.crypto.XMLStructure)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo UnmarshalKeyInfo(Javax.Xml.Crypto.XMLStructure arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo>("unmarshalKeyInfo", "(Ljavax/xml/crypto/XMLStructure;)Ljavax/xml/crypto/dsig/keyinfo/KeyInfo;", arg0);
@@ -189,8 +189,8 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newKeyName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyName"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.KeyName NewKeyName(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyName>("newKeyName", "(Ljava/lang/String;)Ljavax/xml/crypto/dsig/keyinfo/KeyName;", arg0);
@@ -198,9 +198,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newKeyValue(java.security.PublicKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyValue"/></returns>
-        /// <exception cref="Java.Security.KeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Dsig.Keyinfo.KeyValue NewKeyValue(Java.Security.PublicKey arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.KeyValue>("newKeyValue", "(Ljava/security/PublicKey;)Ljavax/xml/crypto/dsig/keyinfo/KeyValue;", arg0);
@@ -208,31 +208,31 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newPGPData(byte[],byte[],java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.PGPData"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData<Arg2ExtendsJavax_Xml_Crypto_XMLStructure>(byte[] arg0, byte[] arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_XMLStructure> arg2) where Arg2ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_XMLStructure"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData(byte[] arg0, byte[] arg1, Java.Util.List arg2) where Arg2ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.PGPData>("newPGPData", "([B[BLjava/util/List;)Ljavax/xml/crypto/dsig/keyinfo/PGPData;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newPGPData(byte[],java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg1ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.PGPData"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData<Arg1ExtendsJavax_Xml_Crypto_XMLStructure>(byte[] arg0, Java.Util.List<Arg1ExtendsJavax_Xml_Crypto_XMLStructure> arg1) where Arg1ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1ExtendsJavax_Xml_Crypto_XMLStructure"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData(byte[] arg0, Java.Util.List arg1) where Arg1ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.PGPData>("newPGPData", "([BLjava/util/List;)Ljavax/xml/crypto/dsig/keyinfo/PGPData;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newPGPData(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.PGPData"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.PGPData NewPGPData(byte[] arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.PGPData>("newPGPData", "([B)Ljavax/xml/crypto/dsig/keyinfo/PGPData;", new object[] { arg0 });
@@ -240,20 +240,20 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newRetrievalMethod(java.lang.String,java.lang.String,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref="Javax.Xml.Crypto.Dsig.Transform"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod NewRetrievalMethod<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform>(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform> arg2) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod NewRetrievalMethod(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.List arg2) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod>("newRetrievalMethod", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljavax/xml/crypto/dsig/keyinfo/RetrievalMethod;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newRetrievalMethod(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod NewRetrievalMethod(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod>("newRetrievalMethod", "(Ljava/lang/String;)Ljavax/xml/crypto/dsig/keyinfo/RetrievalMethod;", arg0);
@@ -261,18 +261,18 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newX509Data(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.X509Data"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.X509Data NewX509Data(Java.Util.List<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Keyinfo.X509Data NewX509Data(Java.Util.List arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.X509Data>("newX509Data", "(Ljava/util/List;)Ljavax/xml/crypto/dsig/keyinfo/X509Data;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newX509IssuerSerial(java.lang.String,java.math.BigInteger)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.X509IssuerSerial"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.X509IssuerSerial NewX509IssuerSerial(Java.Lang.String arg0, Java.Math.BigInteger arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Keyinfo.X509IssuerSerial>("newX509IssuerSerial", "(Ljava/lang/String;Ljava/math/BigInteger;)Ljavax/xml/crypto/dsig/keyinfo/X509IssuerSerial;", arg0, arg1);

@@ -73,9 +73,9 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public DSAGenParameterSpec(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DSAGenParameterSpec(int arg0, int arg1)
             : base(arg0, arg1)
         {

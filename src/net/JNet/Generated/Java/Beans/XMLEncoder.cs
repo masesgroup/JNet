@@ -73,10 +73,10 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#%3Cinit%3E(java.io.OutputStream,java.lang.String,boolean,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public XMLEncoder(Java.Io.OutputStream arg0, Java.Lang.String arg1, bool arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,7 +84,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public XMLEncoder(Java.Io.OutputStream arg0)
             : base(arg0)
         {
@@ -94,7 +94,7 @@ namespace Java.Beans
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Beans.XMLEncoder"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Beans.XMLEncoder t) => t.Cast<Java.Lang.AutoCloseable>();
 
@@ -133,7 +133,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#writeObject(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WriteObject(object arg0)
         {
             IExecuteWithSignature("writeObject", "(Ljava/lang/Object;)V", arg0);

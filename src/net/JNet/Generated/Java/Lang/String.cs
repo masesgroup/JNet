@@ -73,11 +73,11 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public String(byte[] arg0, int arg1, int arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -85,10 +85,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public String(byte[] arg0, int arg1, int arg2, Java.Nio.Charset.Charset arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -96,9 +96,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public String(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -106,9 +106,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public String(byte[] arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -116,8 +116,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[],java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public String(byte[] arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
@@ -125,7 +125,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public String(byte[] arg0)
             : base(arg0)
         {
@@ -133,9 +133,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public String(char[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -143,7 +143,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public String(char[] arg0)
             : base(arg0)
         {
@@ -151,9 +151,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public String(int[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -161,7 +161,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public String(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -169,7 +169,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(java.lang.StringBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.StringBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public String(Java.Lang.StringBuffer arg0)
             : base(arg0)
         {
@@ -177,7 +177,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#%3Cinit%3E(java.lang.StringBuilder)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.StringBuilder"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public String(Java.Lang.StringBuilder arg0)
             : base(arg0)
         {
@@ -187,15 +187,15 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.String"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.String t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.String"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.String t) => t.Cast<Java.Lang.Comparable>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.String"/> to <see cref="Java.Lang.CharSequence"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Java.Lang.String t) => t.Cast<Java.Lang.CharSequence>();
 
@@ -215,10 +215,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#copyValueOf(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String CopyValueOf(char[] arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "copyValueOf", "([CII)Ljava/lang/String;", arg0, arg1, arg2);
@@ -226,8 +226,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#copyValueOf(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String CopyValueOf(char[] arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "copyValueOf", "([C)Ljava/lang/String;", new object[] { arg0 });
@@ -235,9 +235,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Format(Java.Lang.String arg0, params object[] arg1)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -245,10 +245,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#format(java.util.Locale,java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
@@ -256,9 +256,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#join(java.lang.CharSequence,java.lang.CharSequence...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Join(Java.Lang.CharSequence arg0, params Java.Lang.CharSequence[] arg1)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "join", "(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -266,19 +266,19 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#join(java.lang.CharSequence,java.lang.Iterable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Iterable"/></param>
-        /// <typeparam name="Arg1ExtendsJava_Lang_CharSequence"><see cref="Java.Lang.CharSequence"/></typeparam>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        public static Java.Lang.String Join<Arg1ExtendsJava_Lang_CharSequence>(Java.Lang.CharSequence arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1) where Arg1ExtendsJava_Lang_CharSequence : Java.Lang.CharSequence
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1ExtendsJava_Lang_CharSequence"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Lang.String Join(Java.Lang.CharSequence arg0, Java.Lang.Iterable arg1) where Arg1ExtendsJava_Lang_CharSequence : Java.Lang.CharSequence
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "join", "(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ValueOf(bool arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(Z)Ljava/lang/String;", arg0);
@@ -286,8 +286,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ValueOf(char arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(C)Ljava/lang/String;", arg0);
@@ -295,10 +295,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ValueOf(char[] arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "([CII)Ljava/lang/String;", arg0, arg1, arg2);
@@ -306,8 +306,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ValueOf(char[] arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "([C)Ljava/lang/String;", new object[] { arg0 });
@@ -315,8 +315,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ValueOf(double arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(D)Ljava/lang/String;", arg0);
@@ -324,8 +324,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ValueOf(float arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(F)Ljava/lang/String;", arg0);
@@ -333,8 +333,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ValueOf(int arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(I)Ljava/lang/String;", arg0);
@@ -342,8 +342,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ValueOf(object arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
@@ -351,8 +351,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ValueOf(long arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "valueOf", "(J)Ljava/lang/String;", arg0);
@@ -371,8 +371,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#contains(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/CharSequence;)Z", arg0);
@@ -380,8 +380,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#contentEquals(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContentEquals(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<bool>("contentEquals", "(Ljava/lang/CharSequence;)Z", arg0);
@@ -389,8 +389,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#contentEquals(java.lang.StringBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.StringBuffer"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContentEquals(Java.Lang.StringBuffer arg0)
         {
             return IExecuteWithSignature<bool>("contentEquals", "(Ljava/lang/StringBuffer;)Z", arg0);
@@ -398,8 +398,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#endsWith(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool EndsWith(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("endsWith", "(Ljava/lang/String;)Z", arg0);
@@ -407,8 +407,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#equalsIgnoreCase(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool EqualsIgnoreCase(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("equalsIgnoreCase", "(Ljava/lang/String;)Z", arg0);
@@ -416,7 +416,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#isBlank()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBlank()
         {
             return IExecuteWithSignature<bool>("isBlank", "()Z");
@@ -424,7 +424,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -432,8 +432,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#matches(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Matches(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("matches", "(Ljava/lang/String;)Z", arg0);
@@ -441,12 +441,12 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#regionMatches(boolean,int,java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RegionMatches(bool arg0, int arg1, Java.Lang.String arg2, int arg3, int arg4)
         {
             return IExecuteWithSignature<bool>("regionMatches", "(ZILjava/lang/String;II)Z", arg0, arg1, arg2, arg3, arg4);
@@ -454,11 +454,11 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#regionMatches(int,java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RegionMatches(int arg0, Java.Lang.String arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<bool>("regionMatches", "(ILjava/lang/String;II)Z", arg0, arg1, arg2, arg3);
@@ -466,9 +466,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#startsWith(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool StartsWith(Java.Lang.String arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("startsWith", "(Ljava/lang/String;I)Z", arg0, arg1);
@@ -476,8 +476,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#startsWith(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool StartsWith(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("startsWith", "(Ljava/lang/String;)Z", arg0);
@@ -485,9 +485,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#getBytes(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] GetBytes(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<byte>("getBytes", "(Ljava/lang/String;)[B", arg0);
@@ -495,8 +495,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#getBytes(java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <returns><see cref="byte"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public byte[] GetBytes(Java.Nio.Charset.Charset arg0)
         {
             return IExecuteWithSignatureArray<byte>("getBytes", "(Ljava/nio/charset/Charset;)[B", arg0);
@@ -504,8 +504,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#charAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public char CharAt(int arg0)
         {
             return IExecuteWithSignature<char>("charAt", "(I)C", arg0);
@@ -513,7 +513,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toCharArray()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char[] ToCharArray()
         {
             return IExecuteWithSignatureArray<char>("toCharArray", "()[C");
@@ -521,8 +521,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#codePointAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CodePointAt(int arg0)
         {
             return IExecuteWithSignature<int>("codePointAt", "(I)I", arg0);
@@ -530,8 +530,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#codePointBefore(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CodePointBefore(int arg0)
         {
             return IExecuteWithSignature<int>("codePointBefore", "(I)I", arg0);
@@ -539,9 +539,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#codePointCount(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CodePointCount(int arg0, int arg1)
         {
             return IExecuteWithSignature<int>("codePointCount", "(II)I", arg0, arg1);
@@ -549,8 +549,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -558,8 +558,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#compareTo(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/String;)I", arg0);
@@ -567,8 +567,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#compareToIgnoreCase(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareToIgnoreCase(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("compareToIgnoreCase", "(Ljava/lang/String;)I", arg0);
@@ -576,9 +576,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(int arg0, int arg1)
         {
             return IExecuteWithSignature<int>("indexOf", "(II)I", arg0, arg1);
@@ -586,8 +586,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(int arg0)
         {
             return IExecuteWithSignature<int>("indexOf", "(I)I", arg0);
@@ -595,9 +595,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(Java.Lang.String arg0, int arg1)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/String;I)I", arg0, arg1);
@@ -605,8 +605,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#indexOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/String;)I", arg0);
@@ -614,9 +614,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(int arg0, int arg1)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(II)I", arg0, arg1);
@@ -624,8 +624,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(int arg0)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(I)I", arg0);
@@ -633,9 +633,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(Java.Lang.String arg0, int arg1)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/String;I)I", arg0, arg1);
@@ -643,8 +643,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lastIndexOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/String;)I", arg0);
@@ -652,7 +652,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#length()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Length()
         {
             return IExecuteWithSignature<int>("length", "()I");
@@ -660,9 +660,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#offsetByCodePoints(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int OffsetByCodePoints(int arg0, int arg1)
         {
             return IExecuteWithSignature<int>("offsetByCodePoints", "(II)I", arg0, arg1);
@@ -670,9 +670,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#subSequence(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("subSequence", "(II)Ljava/lang/CharSequence;", arg0, arg1);
@@ -680,8 +680,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#concat(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Concat(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("concat", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -689,8 +689,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#repeat(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Repeat(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("repeat", "(I)Ljava/lang/String;", arg0);
@@ -698,9 +698,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#replace(char,char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="char"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Replace(char arg0, char arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("replace", "(CC)Ljava/lang/String;", arg0, arg1);
@@ -708,9 +708,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#replace(java.lang.CharSequence,java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Replace(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("replace", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;", arg0, arg1);
@@ -718,9 +718,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#replaceAll(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ReplaceAll(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("replaceAll", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
@@ -728,9 +728,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#replaceFirst(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ReplaceFirst(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("replaceFirst", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
@@ -738,7 +738,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#strip()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Strip()
         {
             return IExecuteWithSignature<Java.Lang.String>("strip", "()Ljava/lang/String;");
@@ -746,7 +746,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#stripLeading()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String StripLeading()
         {
             return IExecuteWithSignature<Java.Lang.String>("stripLeading", "()Ljava/lang/String;");
@@ -754,7 +754,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#stripTrailing()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String StripTrailing()
         {
             return IExecuteWithSignature<Java.Lang.String>("stripTrailing", "()Ljava/lang/String;");
@@ -762,9 +762,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#substring(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Substring(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("substring", "(II)Ljava/lang/String;", arg0, arg1);
@@ -772,8 +772,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#substring(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Substring(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("substring", "(I)Ljava/lang/String;", arg0);
@@ -781,7 +781,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toLowerCase()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToLowerCase()
         {
             return IExecuteWithSignature<Java.Lang.String>("toLowerCase", "()Ljava/lang/String;");
@@ -789,8 +789,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toLowerCase(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToLowerCase(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("toLowerCase", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
@@ -798,7 +798,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toUpperCase()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToUpperCase()
         {
             return IExecuteWithSignature<Java.Lang.String>("toUpperCase", "()Ljava/lang/String;");
@@ -806,8 +806,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#toUpperCase(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToUpperCase(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("toUpperCase", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
@@ -815,7 +815,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#trim()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Trim()
         {
             return IExecuteWithSignature<Java.Lang.String>("trim", "()Ljava/lang/String;");
@@ -823,9 +823,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#split(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] Split(Java.Lang.String arg0, int arg1)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("split", "(Ljava/lang/String;I)[Ljava/lang/String;", arg0, arg1);
@@ -833,8 +833,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#split(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] Split(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("split", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
@@ -842,7 +842,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#chars()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.IntStream Chars()
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("chars", "()Ljava/util/stream/IntStream;");
@@ -850,7 +850,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#codePoints()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.IntStream CodePoints()
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("codePoints", "()Ljava/util/stream/IntStream;");
@@ -858,15 +858,15 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lines()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Lang.String> Lines()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Stream.Stream Lines()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.String>>("lines", "()Ljava/util/stream/Stream;");
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("lines", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#intern()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Intern()
         {
             return IExecuteWithSignature<Java.Lang.String>("intern", "()Ljava/lang/String;");
@@ -874,10 +874,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#getChars(int,int,char[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="char"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void GetChars(int arg0, int arg1, char[] arg2, int arg3)
         {
             IExecuteWithSignature("getChars", "(II[CI)V", arg0, arg1, arg2, arg3);

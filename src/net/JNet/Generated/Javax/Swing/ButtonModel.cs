@@ -90,82 +90,82 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#isArmed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsArmed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#isEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsEnabled();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#isPressed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsPressed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#isRollover()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsRollover();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#isSelected()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsSelected();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddActionListener(Java.Awt.EventNs.ActionListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddChangeListener(Javax.Swing.Event.ChangeListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#addItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddItemListener(Java.Awt.EventNs.ItemListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#removeItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#setArmed(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetArmed(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#setEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetEnabled(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#setPressed(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetPressed(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#setRollover(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetRollover(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#setSelected(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetSelected(bool arg0);
 
         #endregion
@@ -222,7 +222,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#isArmed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsArmed()
         {
             return IExecuteWithSignature<bool>("isArmed", "()Z");
@@ -230,7 +230,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#isEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEnabled()
         {
             return IExecuteWithSignature<bool>("isEnabled", "()Z");
@@ -238,7 +238,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#isPressed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPressed()
         {
             return IExecuteWithSignature<bool>("isPressed", "()Z");
@@ -246,7 +246,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#isRollover()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRollover()
         {
             return IExecuteWithSignature<bool>("isRollover", "()Z");
@@ -254,7 +254,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#isSelected()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSelected()
         {
             return IExecuteWithSignature<bool>("isSelected", "()Z");
@@ -262,7 +262,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -270,7 +270,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -278,7 +278,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#addItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
@@ -286,7 +286,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -294,7 +294,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -302,7 +302,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#removeItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecuteWithSignature("removeItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
@@ -310,7 +310,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#setArmed(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetArmed(bool arg0)
         {
             IExecuteWithSignature("setArmed", "(Z)V", arg0);
@@ -318,7 +318,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#setEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetEnabled(bool arg0)
         {
             IExecuteWithSignature("setEnabled", "(Z)V", arg0);
@@ -326,7 +326,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#setPressed(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetPressed(bool arg0)
         {
             IExecuteWithSignature("setPressed", "(Z)V", arg0);
@@ -334,7 +334,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#setRollover(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRollover(bool arg0)
         {
             IExecuteWithSignature("setRollover", "(Z)V", arg0);
@@ -342,7 +342,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonModel.html#setSelected(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSelected(bool arg0)
         {
             IExecuteWithSignature("setSelected", "(Z)V", arg0);

@@ -73,10 +73,10 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#%3Cinit%3E(javax.imageio.plugins.tiff.TIFFTag,int,int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public TIFFField(Javax.Imageio.Plugins.Tiff.TIFFTag arg0, int arg1, int arg2, object arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,9 +84,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#%3Cinit%3E(javax.imageio.plugins.tiff.TIFFTag,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public TIFFField(Javax.Imageio.Plugins.Tiff.TIFFTag arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -94,10 +94,10 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#%3Cinit%3E(javax.imageio.plugins.tiff.TIFFTag,int,long,javax.imageio.plugins.tiff.TIFFDirectory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="Javax.Imageio.Plugins.Tiff.TIFFDirectory"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public TIFFField(Javax.Imageio.Plugins.Tiff.TIFFTag arg0, int arg1, long arg2, Javax.Imageio.Plugins.Tiff.TIFFDirectory arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -105,8 +105,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#%3Cinit%3E(javax.imageio.plugins.tiff.TIFFTag,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public TIFFField(Javax.Imageio.Plugins.Tiff.TIFFTag arg0, long arg1)
             : base(arg0, arg1)
         {
@@ -126,8 +126,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getTypeByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int GetTypeByName(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeByName", "(Ljava/lang/String;)I", arg0);
@@ -135,9 +135,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#createArrayForType(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static object CreateArrayForType(int arg0, int arg1)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "createArrayForType", "(II)Ljava/lang/Object;", arg0, arg1);
@@ -145,8 +145,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getTypeName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String GetTypeName(int arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getTypeName", "(I)Ljava/lang/String;", arg0);
@@ -154,9 +154,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#createFromMetadataNode(javax.imageio.plugins.tiff.TIFFTagSet,org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFField"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Imageio.Plugins.Tiff.TIFFField CreateFromMetadataNode(Javax.Imageio.Plugins.Tiff.TIFFTagSet arg0, Org.W3c.Dom.Node arg1)
         {
             return SExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFField>(LocalBridgeClazz, "createFromMetadataNode", "(Ljavax/imageio/plugins/tiff/TIFFTagSet;Lorg/w3c/dom/Node;)Ljavax/imageio/plugins/tiff/TIFFField;", arg0, arg1);
@@ -280,7 +280,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#hasDirectory()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasDirectory()
         {
             return IExecuteWithSignature<bool>("hasDirectory", "()Z");
@@ -288,7 +288,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#isIntegral()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsIntegral()
         {
             return IExecuteWithSignature<bool>("isIntegral", "()Z");
@@ -296,8 +296,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsDouble(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double GetAsDouble(int arg0)
         {
             return IExecuteWithSignature<double>("getAsDouble", "(I)D", arg0);
@@ -305,8 +305,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsFloat(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float GetAsFloat(int arg0)
         {
             return IExecuteWithSignature<float>("getAsFloat", "(I)F", arg0);
@@ -314,8 +314,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsInt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetAsInt(int arg0)
         {
             return IExecuteWithSignature<int>("getAsInt", "(I)I", arg0);
@@ -323,8 +323,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsSRational(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetAsSRational(int arg0)
         {
             return IExecuteWithSignatureArray<int>("getAsSRational", "(I)[I", arg0);
@@ -332,8 +332,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsString(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetAsString(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getAsString", "(I)Ljava/lang/String;", arg0);
@@ -341,8 +341,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getValueAsString(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetValueAsString(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getValueAsString", "(I)Ljava/lang/String;", arg0);
@@ -350,8 +350,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#clone()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFField"/></returns>
-        /// <exception cref="Java.Lang.CloneNotSupportedException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Imageio.Plugins.Tiff.TIFFField Clone()
         {
             return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFField>("clone", "()Ljavax/imageio/plugins/tiff/TIFFField;");
@@ -359,8 +359,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsLong(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long GetAsLong(int arg0)
         {
             return IExecuteWithSignature<long>("getAsLong", "(I)J", arg0);
@@ -368,8 +368,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getAsRational(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long[] GetAsRational(int arg0)
         {
             return IExecuteWithSignatureArray<long>("getAsRational", "(I)[J", arg0);

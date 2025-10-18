@@ -75,9 +75,9 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public ImageOutputStreamSpi(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
             : base(arg0, arg1, arg2)
         {
@@ -108,11 +108,11 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#createOutputStreamInstance(java.lang.Object,boolean,java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Imageio.Stream.ImageOutputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Imageio.Stream.ImageOutputStream CreateOutputStreamInstance(object arg0, bool arg1, Java.Io.File arg2)
         {
             return IExecuteWithSignature<Javax.Imageio.Stream.ImageOutputStream>("createOutputStreamInstance", "(Ljava/lang/Object;ZLjava/io/File;)Ljavax/imageio/stream/ImageOutputStream;", arg0, arg1, arg2);
@@ -120,7 +120,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#canUseCacheFile()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool CanUseCacheFile()
         {
             return IExecuteWithSignature<bool>("canUseCacheFile", "()Z");
@@ -128,7 +128,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#needsCacheFile()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool NeedsCacheFile()
         {
             return IExecuteWithSignature<bool>("needsCacheFile", "()Z");
@@ -136,9 +136,9 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#createOutputStreamInstance(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Imageio.Stream.ImageOutputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Imageio.Stream.ImageOutputStream CreateOutputStreamInstance(object arg0)
         {
             return IExecuteWithSignature<Javax.Imageio.Stream.ImageOutputStream>("createOutputStreamInstance", "(Ljava/lang/Object;)Ljavax/imageio/stream/ImageOutputStream;", arg0);

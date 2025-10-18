@@ -108,12 +108,12 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowGainedFocus = false;
@@ -198,7 +198,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowLostFocus = false;
@@ -237,7 +237,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowGainedFocus", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowLostFocus", "(Ljava/awt/event/WindowEvent;)V", arg0);

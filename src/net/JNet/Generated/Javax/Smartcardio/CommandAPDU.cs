@@ -73,9 +73,9 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public CommandAPDU(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,7 +83,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#%3Cinit%3E(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public CommandAPDU(byte[] arg0)
             : base(arg0)
         {
@@ -91,14 +91,14 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#%3Cinit%3E(int,int,int,int,byte[],int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="byte"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
         public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6, int arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
@@ -106,13 +106,13 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#%3Cinit%3E(int,int,int,int,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="byte"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -120,12 +120,12 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#%3Cinit%3E(int,int,int,int,byte[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="byte"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -133,11 +133,11 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#%3Cinit%3E(int,int,int,int,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -145,11 +145,11 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#%3Cinit%3E(int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public CommandAPDU(int arg0, int arg1, int arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -157,10 +157,10 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public CommandAPDU(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -168,7 +168,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#%3Cinit%3E(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public CommandAPDU(Java.Nio.ByteBuffer arg0)
             : base(arg0)
         {

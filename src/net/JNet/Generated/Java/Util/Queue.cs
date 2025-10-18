@@ -68,12 +68,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region Queue<E> declaration
+    #region Queue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class Queue<E> : Java.Util.Collection<E>
+    public partial class Queue : Java.Util.Collection
     {
         const string _bridgeClassName = "java.util.Queue";
         /// <summary>
@@ -135,8 +135,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Add(object arg0)
         {
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
@@ -144,8 +144,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#offer(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Offer(object arg0)
         {
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
@@ -153,7 +153,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Element()
         {
             return IExecuteWithSignature("element", "()Ljava/lang/Object;");
@@ -161,7 +161,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Peek()
         {
             return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
@@ -169,7 +169,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Poll()
         {
             return IExecuteWithSignature("poll", "()Ljava/lang/Object;");
@@ -177,7 +177,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Remove()
         {
             return IExecuteWithSignature("remove", "()Ljava/lang/Object;");
@@ -193,44 +193,44 @@ namespace Java.Util
     }
     #endregion
 
-    #region IQueue<E>
+    #region IQueue
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html"/>
     /// </summary>
-    public partial interface IQueue<E> : Java.Util.ICollection<E>
+    public partial interface IQueue : Java.Util.ICollection
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Add(E arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#offer(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Offer(E arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         E Element();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         E Peek();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         E Poll();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         E Remove();
 
         #endregion
@@ -243,8 +243,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region Queue<E> implementation
-    public partial class Queue<E> : Java.Util.IQueue<E>
+    #region Queue implementation
+    public partial class Queue : Java.Util.IQueue
     {
         #region Constructors
 
@@ -252,9 +252,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Queue{E}"/> to <see cref="Java.Util.Queue"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Queue(Java.Util.Queue<E> t) => t.Cast<Java.Util.Queue>();
+        public static implicit operator Java.Util.Queue(Java.Util.Queue t) => t.Cast<Java.Util.Queue>();
 
         #endregion
 
@@ -270,8 +270,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Add(E arg0)
         {
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
@@ -279,8 +279,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#offer(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Offer(E arg0)
         {
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
@@ -288,7 +288,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Element()
         {
             return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
@@ -296,7 +296,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Peek()
         {
             return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
@@ -304,7 +304,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Poll()
         {
             return IExecuteWithSignature<E>("poll", "()Ljava/lang/Object;");
@@ -312,7 +312,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Remove()
         {
             return IExecuteWithSignature<E>("remove", "()Ljava/lang/Object;");

@@ -78,17 +78,17 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Wrapper.html#unwrap(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        T Unwrap<T>(Java.Lang.Class arg0);
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        T Unwrap(Java.Lang.Class arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Wrapper.html#isWrapperFor(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool IsWrapperFor(Java.Lang.Class arg0);
 
         #endregion
@@ -124,20 +124,20 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Wrapper.html#unwrap(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public T Unwrap<T>(Java.Lang.Class arg0)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public T Unwrap(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<T>("unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Wrapper.html#isWrapperFor(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool IsWrapperFor(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<bool>("isWrapperFor", "(Ljava/lang/Class;)Z", arg0);

@@ -78,11 +78,11 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLReporter.html#report(java.lang.String,java.lang.String,java.lang.Object,javax.xml.stream.Location)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="Javax.Xml.Stream.Location"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         void Report(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Xml.Stream.Location arg3);
 
         #endregion
@@ -118,11 +118,11 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLReporter.html#report(java.lang.String,java.lang.String,java.lang.Object,javax.xml.stream.Location)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="Javax.Xml.Stream.Location"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Report(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Xml.Stream.Location arg3)
         {
             IExecuteWithSignature("report", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/stream/Location;)V", arg0, arg1, arg2, arg3);

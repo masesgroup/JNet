@@ -92,123 +92,123 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
-        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Permission"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
+        /// <returns><see cref=""/></returns>
+        public static T DoPrivileged(Java.Security.PrivilegedAction arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext,java.security.Permission...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
-        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Permission"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.PrivilegedActionException"/>
-        public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static T DoPrivileged(Java.Security.PrivilegedExceptionAction arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
-        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Permission"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
+        /// <returns><see cref=""/></returns>
+        public static T DoPrivilegedWithCombiner(Java.Security.PrivilegedAction arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedAction<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static T DoPrivilegedWithCombiner(Java.Security.PrivilegedAction arg0)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedAction;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction,java.security.AccessControlContext,java.security.Permission...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
-        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Permission"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.PrivilegedActionException"/>
-        public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static T DoPrivilegedWithCombiner(Java.Security.PrivilegedExceptionAction arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.PrivilegedActionException"/>
-        public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedExceptionAction<T> arg0)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static T DoPrivilegedWithCombiner(Java.Security.PrivilegedExceptionAction arg0)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
-        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1)
+        /// <returns><see cref=""/></returns>
+        public static T DoPrivileged(Java.Security.PrivilegedAction arg0, Java.Security.AccessControlContext arg1)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static T DoPrivileged(Java.Security.PrivilegedAction arg0)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedAction;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
-        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.PrivilegedActionException"/>
-        public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static T DoPrivileged(Java.Security.PrivilegedExceptionAction arg0, Java.Security.AccessControlContext arg1)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.PrivilegedActionException"/>
-        public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static T DoPrivileged(Java.Security.PrivilegedExceptionAction arg0)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#checkPermission(java.security.Permission)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
-        /// <exception cref="Java.Security.AccessControlException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void CheckPermission(Java.Security.Permission arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "checkPermission", "(Ljava/security/Permission;)V", arg0);

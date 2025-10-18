@@ -82,197 +82,197 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         object GetProperty(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#getPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Lang.String GetPrefix(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#close()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#flush()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         void Flush();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#setDefaultNamespace(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetDefaultNamespace(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#setPrefix(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetPrefix(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeAttribute(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteAttribute(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeAttribute(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteAttribute(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeAttribute(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteAttribute(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeCData(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteCData(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeCharacters(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteCharacters(char[] arg0, int arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeCharacters(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteCharacters(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeComment(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteComment(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeDefaultNamespace(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteDefaultNamespace(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeDTD(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteDTD(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEmptyElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteEmptyElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEmptyElement(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteEmptyElement(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEmptyElement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteEmptyElement(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEndDocument()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         void WriteEndDocument();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEndElement()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         void WriteEndElement();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEntityRef(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteEntityRef(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeNamespace(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteNamespace(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeProcessingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeProcessingInstruction(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteProcessingInstruction(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartDocument()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         void WriteStartDocument();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartDocument(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteStartDocument(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartDocument(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteStartDocument(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteStartElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartElement(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteStartElement(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartElement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteStartElement(Java.Lang.String arg0);
 
         #endregion
@@ -315,9 +315,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -325,9 +325,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#getPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String GetPrefix(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getPrefix", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -335,7 +335,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#close()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -343,7 +343,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#flush()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         public void Flush()
         {
             IExecuteWithSignature("flush", "()V");
@@ -351,8 +351,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#setDefaultNamespace(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetDefaultNamespace(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setDefaultNamespace", "(Ljava/lang/String;)V", arg0);
@@ -360,9 +360,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#setPrefix(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetPrefix(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("setPrefix", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -370,11 +370,11 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeAttribute(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteAttribute(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             IExecuteWithSignature("writeAttribute", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
@@ -382,10 +382,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeAttribute(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteAttribute(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             IExecuteWithSignature("writeAttribute", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
@@ -393,9 +393,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeAttribute(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteAttribute(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("writeAttribute", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -403,8 +403,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeCData(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteCData(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeCData", "(Ljava/lang/String;)V", arg0);
@@ -412,10 +412,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeCharacters(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteCharacters(char[] arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("writeCharacters", "([CII)V", arg0, arg1, arg2);
@@ -423,8 +423,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeCharacters(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteCharacters(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeCharacters", "(Ljava/lang/String;)V", arg0);
@@ -432,8 +432,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeComment(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteComment(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeComment", "(Ljava/lang/String;)V", arg0);
@@ -441,8 +441,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeDefaultNamespace(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteDefaultNamespace(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeDefaultNamespace", "(Ljava/lang/String;)V", arg0);
@@ -450,8 +450,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeDTD(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteDTD(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeDTD", "(Ljava/lang/String;)V", arg0);
@@ -459,10 +459,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEmptyElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteEmptyElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             IExecuteWithSignature("writeEmptyElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
@@ -470,9 +470,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEmptyElement(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteEmptyElement(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("writeEmptyElement", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -480,8 +480,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEmptyElement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteEmptyElement(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeEmptyElement", "(Ljava/lang/String;)V", arg0);
@@ -489,7 +489,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEndDocument()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         public void WriteEndDocument()
         {
             IExecuteWithSignature("writeEndDocument", "()V");
@@ -497,7 +497,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEndElement()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         public void WriteEndElement()
         {
             IExecuteWithSignature("writeEndElement", "()V");
@@ -505,8 +505,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeEntityRef(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteEntityRef(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeEntityRef", "(Ljava/lang/String;)V", arg0);
@@ -514,9 +514,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeNamespace(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteNamespace(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("writeNamespace", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -524,9 +524,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeProcessingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("writeProcessingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -534,8 +534,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeProcessingInstruction(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteProcessingInstruction(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeProcessingInstruction", "(Ljava/lang/String;)V", arg0);
@@ -543,7 +543,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartDocument()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         public void WriteStartDocument()
         {
             IExecuteWithSignature("writeStartDocument", "()V");
@@ -551,9 +551,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartDocument(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteStartDocument(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("writeStartDocument", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -561,8 +561,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartDocument(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteStartDocument(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeStartDocument", "(Ljava/lang/String;)V", arg0);
@@ -570,10 +570,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteStartElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             IExecuteWithSignature("writeStartElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
@@ -581,9 +581,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartElement(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteStartElement(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("writeStartElement", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -591,8 +591,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html#writeStartElement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteStartElement(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeStartElement", "(Ljava/lang/String;)V", arg0);

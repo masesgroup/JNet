@@ -29,7 +29,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html"/>
     /// </summary>
-    public partial class CRLReason : Java.Lang.Enum<Java.Security.Cert.CRLReason>
+    public partial class CRLReason : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.security.cert.CRLReason";
         /// <summary>
@@ -151,8 +151,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Cert.CRLReason"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Security.Cert.CRLReason ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Security.Cert.CRLReason>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/cert/CRLReason;", arg0);
@@ -160,7 +160,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Security.Cert.CRLReason"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Security.Cert.CRLReason[] Values()
         {
             return SExecuteWithSignatureArray<Java.Security.Cert.CRLReason>(LocalBridgeClazz, "values", "()[Ljava/security/cert/CRLReason;");

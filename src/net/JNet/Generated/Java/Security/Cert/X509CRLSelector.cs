@@ -103,16 +103,16 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getIssuerNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setIssuerNames(java.util.Collection)"/>
         /// </summary>
-        public Java.Util.Collection<object> IssuerNames
+        public Java.Util.Collection IssuerNames
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<object>>("getIssuerNames", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setIssuerNames", "(Ljava/util/Collection;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Collection>("getIssuerNames", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setIssuerNames", "(Ljava/util/Collection;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getIssuers()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setIssuers(java.util.Collection)"/>
         /// </summary>
-        public Java.Util.Collection<Javax.Security.Auth.X500.X500Principal> Issuers
+        public Java.Util.Collection Issuers
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Javax.Security.Auth.X500.X500Principal>>("getIssuers", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setIssuers", "(Ljava/util/Collection;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Collection>("getIssuers", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setIssuers", "(Ljava/util/Collection;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getMaxCRL()"/> 
@@ -131,8 +131,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#match(java.security.cert.CRL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CRL"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Match(Java.Security.Cert.CRL arg0)
         {
             return IExecuteWithSignature<bool>("match", "(Ljava/security/cert/CRL;)Z", arg0);
@@ -140,7 +140,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuer(javax.security.auth.x500.X500Principal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.X500.X500Principal"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddIssuer(Javax.Security.Auth.X500.X500Principal arg0)
         {
             IExecuteWithSignature("addIssuer", "(Ljavax/security/auth/x500/X500Principal;)V", arg0);
@@ -148,8 +148,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddIssuerName(byte[] arg0)
         {
             IExecuteWithSignature("addIssuerName", "([B)V", new object[] { arg0 });
@@ -157,8 +157,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddIssuerName(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addIssuerName", "(Ljava/lang/String;)V", arg0);
@@ -166,7 +166,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setMaxCRLNumber(java.math.BigInteger)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMaxCRLNumber(Java.Math.BigInteger arg0)
         {
             IExecuteWithSignature("setMaxCRLNumber", "(Ljava/math/BigInteger;)V", arg0);
@@ -174,7 +174,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setMinCRLNumber(java.math.BigInteger)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMinCRLNumber(Java.Math.BigInteger arg0)
         {
             IExecuteWithSignature("setMinCRLNumber", "(Ljava/math/BigInteger;)V", arg0);

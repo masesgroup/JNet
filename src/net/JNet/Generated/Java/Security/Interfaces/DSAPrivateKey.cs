@@ -99,11 +99,11 @@ namespace Java.Security.Interfaces
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Interfaces.DSAPrivateKey"/> to <see cref="Java.Security.Interfaces.DSAKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Interfaces.DSAKey(Java.Security.Interfaces.DSAPrivateKey t) => t.Cast<Java.Security.Interfaces.DSAKey>();
         /// <summary>
-        /// Converter from <see cref="Java.Security.Interfaces.DSAPrivateKey"/> to <see cref="Java.Security.PrivateKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.PrivateKey(Java.Security.Interfaces.DSAPrivateKey t) => t.Cast<Java.Security.PrivateKey>();
 

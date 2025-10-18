@@ -86,7 +86,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/CompilationMXBean.html#isCompilationTimeMonitoringSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsCompilationTimeMonitoringSupported();
 
         #endregion
@@ -136,7 +136,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/CompilationMXBean.html#isCompilationTimeMonitoringSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsCompilationTimeMonitoringSupported()
         {
             return IExecuteWithSignature<bool>("isCompilationTimeMonitoringSupported", "()Z");

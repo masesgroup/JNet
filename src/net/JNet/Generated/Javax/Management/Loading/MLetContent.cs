@@ -73,11 +73,11 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#%3Cinit%3E(java.net.URL,java.util.Map,java.util.List,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg2"><see cref="Java.Util.List"/></param>
-        /// <param name="arg3"><see cref="Java.Util.List"/></param>
-        public MLetContent(Java.Net.URL arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1, Java.Util.List<Java.Lang.String> arg2, Java.Util.List<Java.Lang.String> arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        public MLetContent(Java.Net.URL arg0, Java.Util.Map<, > arg1, Java.Util.List arg2, Java.Util.List arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -100,9 +100,9 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getAttributes()"/> 
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.String> Attributes
+        public Java.Util.Map<, > Attributes
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getAttributes", "()Ljava/util/Map;"); }
+            get { return IExecuteWithSignature<Java.Util.Map<, >>("getAttributes", "()Ljava/util/Map;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getCode()"/> 
@@ -142,16 +142,16 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getParameterTypes()"/> 
         /// </summary>
-        public Java.Util.List<Java.Lang.String> ParameterTypes
+        public Java.Util.List ParameterTypes
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getParameterTypes", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getParameterTypes", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getParameterValues()"/> 
         /// </summary>
-        public Java.Util.List<Java.Lang.String> ParameterValues
+        public Java.Util.List ParameterValues
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getParameterValues", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getParameterValues", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getSerializedObject()"/> 

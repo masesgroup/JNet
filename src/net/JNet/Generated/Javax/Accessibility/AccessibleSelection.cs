@@ -82,19 +82,19 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#isAccessibleChildSelected(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsAccessibleChildSelected(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#getAccessibleSelection(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Accessibility.Accessible GetAccessibleSelection(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#addAccessibleSelection(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddAccessibleSelection(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#clearAccessibleSelection()"/>
@@ -103,7 +103,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#removeAccessibleSelection(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveAccessibleSelection(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#selectAllAccessibleSelection()"/>
@@ -150,8 +150,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#isAccessibleChildSelected(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsAccessibleChildSelected(int arg0)
         {
             return IExecuteWithSignature<bool>("isAccessibleChildSelected", "(I)Z", arg0);
@@ -159,8 +159,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#getAccessibleSelection(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Accessibility.Accessible GetAccessibleSelection(int arg0)
         {
             return IExecuteWithSignature<Javax.Accessibility.Accessible>("getAccessibleSelection", "(I)Ljavax/accessibility/Accessible;", arg0);
@@ -168,7 +168,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#addAccessibleSelection(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddAccessibleSelection(int arg0)
         {
             IExecuteWithSignature("addAccessibleSelection", "(I)V", arg0);
@@ -183,7 +183,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#removeAccessibleSelection(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveAccessibleSelection(int arg0)
         {
             IExecuteWithSignature("removeAccessibleSelection", "(I)V", arg0);

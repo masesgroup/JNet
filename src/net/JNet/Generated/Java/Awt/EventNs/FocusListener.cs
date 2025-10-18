@@ -108,12 +108,12 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void FocusGained(Java.Awt.EventNs.FocusEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusLost(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void FocusLost(Java.Awt.EventNs.FocusEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
         {
             hasOverrideFocusGained = false;
@@ -198,7 +198,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusLost(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
         {
             hasOverrideFocusLost = false;
@@ -237,7 +237,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusLost(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);

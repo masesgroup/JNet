@@ -73,8 +73,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public File(Java.Io.File arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -82,8 +82,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public File(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -91,7 +91,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public File(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -99,7 +99,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#%3Cinit%3E(java.net.URI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public File(Java.Net.URI arg0)
             : base(arg0)
         {
@@ -109,11 +109,11 @@ namespace Java.Io
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Io.File"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Io.File t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Io.File"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Io.File t) => t.Cast<Java.Lang.Comparable>();
 
@@ -151,11 +151,11 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createTempFile(java.lang.String,java.lang.String,java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Io.File CreateTempFile(Java.Lang.String arg0, Java.Lang.String arg1, Java.Io.File arg2)
         {
             return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "createTempFile", "(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;", arg0, arg1, arg2);
@@ -163,10 +163,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createTempFile(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Io.File CreateTempFile(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "createTempFile", "(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;", arg0, arg1);
@@ -174,7 +174,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#listRoots()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Io.File[] ListRoots()
         {
             return SExecuteWithSignatureArray<Java.Io.File>(LocalBridgeClazz, "listRoots", "()[Ljava/io/File;");
@@ -263,7 +263,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canExecute()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool CanExecute()
         {
             return IExecuteWithSignature<bool>("canExecute", "()Z");
@@ -271,7 +271,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canRead()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool CanRead()
         {
             return IExecuteWithSignature<bool>("canRead", "()Z");
@@ -279,7 +279,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#canWrite()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool CanWrite()
         {
             return IExecuteWithSignature<bool>("canWrite", "()Z");
@@ -287,8 +287,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createNewFile()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool CreateNewFile()
         {
             return IExecuteWithSignature<bool>("createNewFile", "()Z");
@@ -296,7 +296,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#delete()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Delete()
         {
             return IExecuteWithSignature<bool>("delete", "()Z");
@@ -304,7 +304,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#exists()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Exists()
         {
             return IExecuteWithSignature<bool>("exists", "()Z");
@@ -312,7 +312,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isAbsolute()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsAbsolute()
         {
             return IExecuteWithSignature<bool>("isAbsolute", "()Z");
@@ -320,7 +320,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isDirectory()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDirectory()
         {
             return IExecuteWithSignature<bool>("isDirectory", "()Z");
@@ -328,7 +328,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isFile()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFile()
         {
             return IExecuteWithSignature<bool>("isFile", "()Z");
@@ -336,7 +336,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#isHidden()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsHidden()
         {
             return IExecuteWithSignature<bool>("isHidden", "()Z");
@@ -344,7 +344,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#mkdir()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Mkdir()
         {
             return IExecuteWithSignature<bool>("mkdir", "()Z");
@@ -352,7 +352,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#mkdirs()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Mkdirs()
         {
             return IExecuteWithSignature<bool>("mkdirs", "()Z");
@@ -360,8 +360,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#renameTo(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RenameTo(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("renameTo", "(Ljava/io/File;)Z", arg0);
@@ -369,9 +369,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setExecutable(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SetExecutable(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("setExecutable", "(ZZ)Z", arg0, arg1);
@@ -379,8 +379,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setExecutable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SetExecutable(bool arg0)
         {
             return IExecuteWithSignature<bool>("setExecutable", "(Z)Z", arg0);
@@ -388,8 +388,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setLastModified(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SetLastModified(long arg0)
         {
             return IExecuteWithSignature<bool>("setLastModified", "(J)Z", arg0);
@@ -397,9 +397,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setReadable(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SetReadable(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("setReadable", "(ZZ)Z", arg0, arg1);
@@ -407,8 +407,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setReadable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SetReadable(bool arg0)
         {
             return IExecuteWithSignature<bool>("setReadable", "(Z)Z", arg0);
@@ -416,7 +416,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setReadOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool SetReadOnly()
         {
             return IExecuteWithSignature<bool>("setReadOnly", "()Z");
@@ -424,9 +424,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setWritable(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SetWritable(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("setWritable", "(ZZ)Z", arg0, arg1);
@@ -434,8 +434,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#setWritable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SetWritable(bool arg0)
         {
             return IExecuteWithSignature<bool>("setWritable", "(Z)Z", arg0);
@@ -443,8 +443,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#compareTo(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Io.File arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/io/File;)I", arg0);
@@ -452,8 +452,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -461,7 +461,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#listFiles()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Io.File[] ListFiles()
         {
             return IExecuteWithSignatureArray<Java.Io.File>("listFiles", "()[Ljava/io/File;");
@@ -469,8 +469,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#listFiles(java.io.FileFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.FileFilter"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.File[] ListFiles(Java.Io.FileFilter arg0)
         {
             return IExecuteWithSignatureArray<Java.Io.File>("listFiles", "(Ljava/io/FileFilter;)[Ljava/io/File;", arg0);
@@ -478,8 +478,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#listFiles(java.io.FilenameFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.FilenameFilter"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.File[] ListFiles(Java.Io.FilenameFilter arg0)
         {
             return IExecuteWithSignatureArray<Java.Io.File>("listFiles", "(Ljava/io/FilenameFilter;)[Ljava/io/File;", arg0);
@@ -487,7 +487,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#list()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] List()
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("list", "()[Ljava/lang/String;");
@@ -495,8 +495,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#list(java.io.FilenameFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.FilenameFilter"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] List(Java.Io.FilenameFilter arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("list", "(Ljava/io/FilenameFilter;)[Ljava/lang/String;", arg0);
@@ -504,7 +504,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#toURI()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.URI ToURI()
         {
             return IExecuteWithSignature<Java.Net.URI>("toURI", "()Ljava/net/URI;");
@@ -512,7 +512,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#toPath()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path ToPath()
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("toPath", "()Ljava/nio/file/Path;");
@@ -520,7 +520,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#lastModified()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long LastModified()
         {
             return IExecuteWithSignature<long>("lastModified", "()J");
@@ -528,7 +528,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#length()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long Length()
         {
             return IExecuteWithSignature<long>("length", "()J");

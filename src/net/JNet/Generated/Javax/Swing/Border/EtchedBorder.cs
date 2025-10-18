@@ -73,9 +73,9 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#%3Cinit%3E(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public EtchedBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,7 +83,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public EtchedBorder(int arg0)
             : base(arg0)
         {
@@ -91,8 +91,8 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#%3Cinit%3E(java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public EtchedBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
             : base(arg0, arg1)
         {
@@ -149,8 +149,8 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getHighlightColor(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Color GetHighlightColor(Java.Awt.Component arg0)
         {
             return IExecuteWithSignature<Java.Awt.Color>("getHighlightColor", "(Ljava/awt/Component;)Ljava/awt/Color;", arg0);
@@ -158,8 +158,8 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getShadowColor(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Color GetShadowColor(Java.Awt.Component arg0)
         {
             return IExecuteWithSignature<Java.Awt.Color>("getShadowColor", "(Ljava/awt/Component;)Ljava/awt/Color;", arg0);

@@ -86,58 +86,58 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#contains(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Contains(double arg0, double arg1, double arg2, double arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#contains(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Contains(double arg0, double arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#contains(java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Contains(Java.Awt.Geom.Point2D arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#contains(java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Contains(Java.Awt.Geom.Rectangle2D arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#intersects(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Intersects(double arg0, double arg1, double arg2, double arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#intersects(java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Intersects(Java.Awt.Geom.Rectangle2D arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#getPathIterator(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0);
 
         #endregion
@@ -187,11 +187,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#contains(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecuteWithSignature<bool>("contains", "(DDDD)Z", arg0, arg1, arg2, arg3);
@@ -199,9 +199,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#contains(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(double arg0, double arg1)
         {
             return IExecuteWithSignature<bool>("contains", "(DD)Z", arg0, arg1);
@@ -209,8 +209,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#contains(java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Point2D;)Z", arg0);
@@ -218,8 +218,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#contains(java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
@@ -227,11 +227,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#intersects(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecuteWithSignature<bool>("intersects", "(DDDD)Z", arg0, arg1, arg2, arg3);
@@ -239,8 +239,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#intersects(java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecuteWithSignature<bool>("intersects", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
@@ -248,9 +248,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
             return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;D)Ljava/awt/geom/PathIterator;", arg0, arg1);
@@ -258,8 +258,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#getPathIterator(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0)
         {
             return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/PathIterator;", arg0);

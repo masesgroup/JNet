@@ -66,7 +66,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html"/>
         /// </summary>
-        public partial class Range : Java.Lang.Enum<Java.Awt.FontNs.NumericShaper.Range>
+        public partial class Range : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.awt.font.NumericShaper$Range";
             /// <summary>
@@ -246,9 +246,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getContextualShaper(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.FontNs.NumericShaper GetContextualShaper(int arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Awt.FontNs.NumericShaper>(LocalBridgeClazz, "getContextualShaper", "(II)Ljava/awt/font/NumericShaper;", arg0, arg1);
@@ -256,8 +256,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getContextualShaper(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.FontNs.NumericShaper GetContextualShaper(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.FontNs.NumericShaper>(LocalBridgeClazz, "getContextualShaper", "(I)Ljava/awt/font/NumericShaper;", arg0);
@@ -265,27 +265,27 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getContextualShaper(java.util.Set,java.awt.font.NumericShaper.Range)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.FontNs.NumericShaper.Range"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
-        public static Java.Awt.FontNs.NumericShaper GetContextualShaper(Java.Util.Set<Java.Awt.FontNs.NumericShaper.Range> arg0, Java.Awt.FontNs.NumericShaper.Range arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Awt.FontNs.NumericShaper GetContextualShaper(Java.Util.Set arg0, Java.Awt.FontNs.NumericShaper.Range arg1)
         {
             return SExecuteWithSignature<Java.Awt.FontNs.NumericShaper>(LocalBridgeClazz, "getContextualShaper", "(Ljava/util/Set;Ljava/awt/font/NumericShaper$Range;)Ljava/awt/font/NumericShaper;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getContextualShaper(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
-        public static Java.Awt.FontNs.NumericShaper GetContextualShaper(Java.Util.Set<Java.Awt.FontNs.NumericShaper.Range> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Awt.FontNs.NumericShaper GetContextualShaper(Java.Util.Set arg0)
         {
             return SExecuteWithSignature<Java.Awt.FontNs.NumericShaper>(LocalBridgeClazz, "getContextualShaper", "(Ljava/util/Set;)Ljava/awt/font/NumericShaper;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getShaper(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.FontNs.NumericShaper GetShaper(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.FontNs.NumericShaper>(LocalBridgeClazz, "getShaper", "(I)Ljava/awt/font/NumericShaper;", arg0);
@@ -293,8 +293,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getShaper(java.awt.font.NumericShaper.Range)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.FontNs.NumericShaper.Range"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.FontNs.NumericShaper GetShaper(Java.Awt.FontNs.NumericShaper.Range arg0)
         {
             return SExecuteWithSignature<Java.Awt.FontNs.NumericShaper>(LocalBridgeClazz, "getShaper", "(Ljava/awt/font/NumericShaper$Range;)Ljava/awt/font/NumericShaper;", arg0);
@@ -313,14 +313,14 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getRangeSet()"/> 
         /// </summary>
-        public Java.Util.Set<Java.Awt.FontNs.NumericShaper.Range> RangeSet
+        public Java.Util.Set RangeSet
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Awt.FontNs.NumericShaper.Range>>("getRangeSet", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getRangeSet", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#isContextual()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsContextual()
         {
             return IExecuteWithSignature<bool>("isContextual", "()Z");
@@ -328,10 +328,10 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#shape(char[],int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void Shape(char[] arg0, int arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("shape", "([CIII)V", arg0, arg1, arg2, arg3);
@@ -339,10 +339,10 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#shape(char[],int,int,java.awt.font.NumericShaper.Range)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.FontNs.NumericShaper.Range"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void Shape(char[] arg0, int arg1, int arg2, Java.Awt.FontNs.NumericShaper.Range arg3)
         {
             IExecuteWithSignature("shape", "([CIILjava/awt/font/NumericShaper$Range;)V", arg0, arg1, arg2, arg3);
@@ -350,9 +350,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#shape(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Shape(char[] arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("shape", "([CII)V", arg0, arg1, arg2);
@@ -602,8 +602,8 @@ namespace Java.Awt.FontNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Awt.FontNs.NumericShaper.Range"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.FontNs.NumericShaper.Range ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Awt.FontNs.NumericShaper.Range>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/font/NumericShaper$Range;", arg0);
@@ -611,7 +611,7 @@ namespace Java.Awt.FontNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Awt.FontNs.NumericShaper.Range"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.FontNs.NumericShaper.Range[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Awt.FontNs.NumericShaper.Range>(LocalBridgeClazz, "values", "()[Ljava/awt/font/NumericShaper$Range;");

@@ -73,10 +73,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public PrintStream(Java.Io.File arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -84,9 +84,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public PrintStream(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
@@ -94,8 +94,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public PrintStream(Java.Io.File arg0)
             : base(arg0)
         {
@@ -103,10 +103,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.OutputStream,boolean,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public PrintStream(Java.Io.OutputStream arg0, bool arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -114,9 +114,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public PrintStream(Java.Io.OutputStream arg0, bool arg1, Java.Nio.Charset.Charset arg2)
             : base(arg0, arg1, arg2)
         {
@@ -124,8 +124,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.OutputStream,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public PrintStream(Java.Io.OutputStream arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -133,7 +133,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PrintStream(Java.Io.OutputStream arg0)
             : base(arg0)
         {
@@ -141,10 +141,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public PrintStream(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -152,9 +152,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public PrintStream(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
@@ -162,8 +162,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public PrintStream(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -173,11 +173,11 @@ namespace Java.Io
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Io.PrintStream"/> to <see cref="Java.Lang.Appendable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Appendable(Java.Io.PrintStream t) => t.Cast<Java.Lang.Appendable>();
         /// <summary>
-        /// Converter from <see cref="Java.Io.PrintStream"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.PrintStream t) => t.Cast<Java.Io.Closeable>();
 
@@ -195,7 +195,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#checkError()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool CheckError()
         {
             return IExecuteWithSignature<bool>("checkError", "()Z");
@@ -203,9 +203,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Io.PrintStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.PrintStream Format(Java.Lang.String arg0, params object[] arg1)
         {
             return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -213,10 +213,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#format(java.util.Locale,java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="Java.Io.PrintStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.PrintStream Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
             return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
@@ -224,9 +224,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#printf(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Io.PrintStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.PrintStream Printf(Java.Lang.String arg0, params object[] arg1)
         {
             return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -234,10 +234,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#printf(java.util.Locale,java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="Java.Io.PrintStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.PrintStream Printf(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
             return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
@@ -245,9 +245,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#append(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Appendable Append(char arg0)
         {
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(C)Ljava/lang/Appendable;", arg0);
@@ -255,11 +255,11 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#append(java.lang.CharSequence,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;", arg0, arg1, arg2);
@@ -267,9 +267,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#append(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;", arg0);
@@ -277,7 +277,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#print(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Print(bool arg0)
         {
             IExecuteWithSignature("print", "(Z)V", arg0);
@@ -285,7 +285,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#print(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Print(char arg0)
         {
             IExecuteWithSignature("print", "(C)V", arg0);
@@ -293,7 +293,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#print(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Print(char[] arg0)
         {
             IExecuteWithSignature("print", "([C)V", new object[] { arg0 });
@@ -301,7 +301,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#print(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Print(double arg0)
         {
             IExecuteWithSignature("print", "(D)V", arg0);
@@ -309,7 +309,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#print(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Print(float arg0)
         {
             IExecuteWithSignature("print", "(F)V", arg0);
@@ -317,7 +317,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#print(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Print(int arg0)
         {
             IExecuteWithSignature("print", "(I)V", arg0);
@@ -325,7 +325,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#print(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Print(object arg0)
         {
             IExecuteWithSignature("print", "(Ljava/lang/Object;)V", arg0);
@@ -333,7 +333,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#print(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Print(Java.Lang.String arg0)
         {
             IExecuteWithSignature("print", "(Ljava/lang/String;)V", arg0);
@@ -341,7 +341,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#print(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Print(long arg0)
         {
             IExecuteWithSignature("print", "(J)V", arg0);
@@ -356,7 +356,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Println(bool arg0)
         {
             IExecuteWithSignature("println", "(Z)V", arg0);
@@ -364,7 +364,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Println(char arg0)
         {
             IExecuteWithSignature("println", "(C)V", arg0);
@@ -372,7 +372,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Println(char[] arg0)
         {
             IExecuteWithSignature("println", "([C)V", new object[] { arg0 });
@@ -380,7 +380,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Println(double arg0)
         {
             IExecuteWithSignature("println", "(D)V", arg0);
@@ -388,7 +388,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Println(float arg0)
         {
             IExecuteWithSignature("println", "(F)V", arg0);
@@ -396,7 +396,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Println(int arg0)
         {
             IExecuteWithSignature("println", "(I)V", arg0);
@@ -404,7 +404,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Println(object arg0)
         {
             IExecuteWithSignature("println", "(Ljava/lang/Object;)V", arg0);
@@ -412,7 +412,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Println(Java.Lang.String arg0)
         {
             IExecuteWithSignature("println", "(Ljava/lang/String;)V", arg0);
@@ -420,7 +420,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#println(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Println(long arg0)
         {
             IExecuteWithSignature("println", "(J)V", arg0);

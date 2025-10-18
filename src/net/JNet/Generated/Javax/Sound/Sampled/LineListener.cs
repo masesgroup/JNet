@@ -108,7 +108,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Update(Javax.Sound.Sampled.LineEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void Update(Javax.Sound.Sampled.LineEvent arg0)
         {
             hasOverrideUpdate = false;
@@ -207,7 +207,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void Update(Javax.Sound.Sampled.LineEvent arg0)
         {
             IExecuteWithSignature("update", "(Ljavax/sound/sampled/LineEvent;)V", arg0);

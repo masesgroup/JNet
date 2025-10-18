@@ -68,7 +68,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html"/>
         /// </summary>
-        public partial class OfDouble : Java.Util.Spliterator.OfPrimitive<Java.Lang.Double, Java.Util.Function.DoubleConsumer, Java.Util.Spliterator.OfDouble>
+        public partial class OfDouble : Java.Util.Spliterator.OfPrimitive<, , >
         {
             const string _bridgeClassName = "java.util.Spliterator$OfDouble";
             /// <summary>
@@ -111,7 +111,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html"/>
         /// </summary>
-        public partial class OfInt : Java.Util.Spliterator.OfPrimitive<Java.Lang.Integer, Java.Util.Function.IntConsumer, Java.Util.Spliterator.OfInt>
+        public partial class OfInt : Java.Util.Spliterator.OfPrimitive<, , >
         {
             const string _bridgeClassName = "java.util.Spliterator$OfInt";
             /// <summary>
@@ -154,7 +154,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html"/>
         /// </summary>
-        public partial class OfLong : Java.Util.Spliterator.OfPrimitive<Java.Lang.Long, Java.Util.Function.LongConsumer, Java.Util.Spliterator.OfLong>
+        public partial class OfLong : Java.Util.Spliterator.OfPrimitive<, , >
         {
             const string _bridgeClassName = "java.util.Spliterator$OfLong";
             /// <summary>
@@ -236,14 +236,14 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfPrimitive<T, T_CONS, T_SPLITR> declaration
+        #region OfPrimitive<, , > declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="T_CONS"></typeparam>
-        /// <typeparam name="T_SPLITR"><see cref="Java.Util.Spliterator.OfPrimitive{T, T_CONS, T_SPLITR}"/></typeparam>
-        public partial class OfPrimitive<T, T_CONS, T_SPLITR> : Java.Util.Spliterator<T> where T_SPLITR : Java.Util.Spliterator.OfPrimitive<T, T_CONS, T_SPLITR>
+        /// <typeparam name="T_SPLITR"></typeparam>
+        public partial class OfPrimitive<, , > : Java.Util.Spliterator
         {
             const string _bridgeClassName = "java.util.Spliterator$OfPrimitive";
             /// <summary>
@@ -286,12 +286,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region Spliterator<T> declaration
+    #region Spliterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class Spliterator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Spliterator<T>>
+    public partial class Spliterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Spliterator>
     {
         const string _bridgeClassName = "java.util.Spliterator";
         /// <summary>
@@ -415,8 +415,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#tryAdvance(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool TryAdvance(Java.Util.Function.Consumer arg0)
         {
             return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/Consumer;)Z", arg0);
@@ -424,7 +424,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Characteristics()
         {
             return IExecuteWithSignature<int>("characteristics", "()I");
@@ -432,7 +432,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#trySplit()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Spliterator TrySplit()
         {
             return IExecuteWithSignature<Java.Util.Spliterator>("trySplit", "()Ljava/util/Spliterator;");
@@ -440,7 +440,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long EstimateSize()
         {
             return IExecuteWithSignature<long>("estimateSize", "()J");
@@ -448,8 +448,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool HasCharacteristics(int arg0)
         {
             return IExecuteWithSignature<bool>("hasCharacteristics", "(I)Z", arg0);
@@ -457,7 +457,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ForEachRemaining(Java.Util.Function.Consumer arg0)
         {
             IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
@@ -489,8 +489,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.DoubleConsumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool TryAdvance(Java.Util.Function.DoubleConsumer arg0)
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/DoubleConsumer;)Z", arg0);
@@ -498,8 +498,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/lang/Object;)Z", arg0);
@@ -507,17 +507,17 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.Consumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperJava_Lang_Double"><see cref="Java.Lang.Double"/></typeparam>
-            /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double : Java.Lang.Double
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperJava_Lang_Double"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public bool TryAdvance(Java.Util.Function.Consumer arg0) where Arg0objectSuperJava_Lang_Double : Java.Lang.Double
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/Consumer;)Z", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#trySplit()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Spliterator.OfPrimitive"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Spliterator.OfPrimitive TrySplit()
             {
                 return IExecuteWithSignature<Java.Util.Spliterator.OfPrimitive>("trySplit", "()Ljava/util/Spliterator$OfPrimitive;");
@@ -525,7 +525,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
@@ -533,16 +533,16 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperJava_Lang_Double"><see cref="Java.Lang.Double"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double : Java.Lang.Double
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperJava_Lang_Double"><see cref=""/></typeparam>
+            public void ForEachRemaining(Java.Util.Function.Consumer arg0) where Arg0objectSuperJava_Lang_Double : Java.Lang.Double
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ForEachRemaining(Java.Util.Function.DoubleConsumer arg0)
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/DoubleConsumer;)V", arg0);
@@ -581,8 +581,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.util.function.IntConsumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool TryAdvance(Java.Util.Function.IntConsumer arg0)
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/IntConsumer;)Z", arg0);
@@ -590,8 +590,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/lang/Object;)Z", arg0);
@@ -599,17 +599,17 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.util.function.Consumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperJava_Lang_Integer"><see cref="Java.Lang.Integer"/></typeparam>
-            /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer : Java.Lang.Integer
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperJava_Lang_Integer"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public bool TryAdvance(Java.Util.Function.Consumer arg0) where Arg0objectSuperJava_Lang_Integer : Java.Lang.Integer
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/Consumer;)Z", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#trySplit()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Spliterator.OfPrimitive"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Spliterator.OfPrimitive TrySplit()
             {
                 return IExecuteWithSignature<Java.Util.Spliterator.OfPrimitive>("trySplit", "()Ljava/util/Spliterator$OfPrimitive;");
@@ -617,7 +617,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
@@ -625,16 +625,16 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperJava_Lang_Integer"><see cref="Java.Lang.Integer"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer : Java.Lang.Integer
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperJava_Lang_Integer"><see cref=""/></typeparam>
+            public void ForEachRemaining(Java.Util.Function.Consumer arg0) where Arg0objectSuperJava_Lang_Integer : Java.Lang.Integer
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.util.function.IntConsumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ForEachRemaining(Java.Util.Function.IntConsumer arg0)
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/IntConsumer;)V", arg0);
@@ -673,8 +673,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.util.function.LongConsumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool TryAdvance(Java.Util.Function.LongConsumer arg0)
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/LongConsumer;)Z", arg0);
@@ -682,8 +682,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/lang/Object;)Z", arg0);
@@ -691,17 +691,17 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.util.function.Consumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperJava_Lang_Long"><see cref="Java.Lang.Long"/></typeparam>
-            /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long : Java.Lang.Long
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperJava_Lang_Long"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public bool TryAdvance(Java.Util.Function.Consumer arg0) where Arg0objectSuperJava_Lang_Long : Java.Lang.Long
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/Consumer;)Z", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#trySplit()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Spliterator.OfPrimitive"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Spliterator.OfPrimitive TrySplit()
             {
                 return IExecuteWithSignature<Java.Util.Spliterator.OfPrimitive>("trySplit", "()Ljava/util/Spliterator$OfPrimitive;");
@@ -709,7 +709,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
@@ -717,16 +717,16 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperJava_Lang_Long"><see cref="Java.Lang.Long"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long : Java.Lang.Long
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperJava_Lang_Long"><see cref=""/></typeparam>
+            public void ForEachRemaining(Java.Util.Function.Consumer arg0) where Arg0objectSuperJava_Lang_Long : Java.Lang.Long
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ForEachRemaining(Java.Util.Function.LongConsumer arg0)
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/LongConsumer;)V", arg0);
@@ -765,8 +765,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/lang/Object;)Z", arg0);
@@ -774,7 +774,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#trySplit()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Spliterator"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Spliterator TrySplit()
             {
                 return IExecuteWithSignature<Java.Util.Spliterator>("trySplit", "()Ljava/util/Spliterator;");
@@ -782,7 +782,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
@@ -798,8 +798,8 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfPrimitive<T, T_CONS, T_SPLITR> implementation
-        public partial class OfPrimitive<T, T_CONS, T_SPLITR>
+        #region OfPrimitive<, , > implementation
+        public partial class OfPrimitive<, , >
         {
             #region Constructors
 
@@ -807,9 +807,9 @@ namespace Java.Util
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.Spliterator.OfPrimitive{T, T_CONS, T_SPLITR}"/> to <see cref="Java.Util.Spliterator.OfPrimitive"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Util.Spliterator.OfPrimitive(Java.Util.Spliterator.OfPrimitive<T, T_CONS, T_SPLITR> t) => t.Cast<Java.Util.Spliterator.OfPrimitive>();
+            public static implicit operator Java.Util.Spliterator.OfPrimitive(Java.Util.Spliterator.OfPrimitive<, , > t) => t.Cast<Java.Util.Spliterator.OfPrimitive>();
 
             #endregion
 
@@ -825,8 +825,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="T_CONS"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool TryAdvance(T_CONS arg0)
             {
                 return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/lang/Object;)Z", arg0);
@@ -834,7 +834,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#trySplit()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Spliterator"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Spliterator TrySplit()
             {
                 return IExecuteWithSignature<Java.Util.Spliterator>("trySplit", "()Ljava/util/Spliterator;");
@@ -842,7 +842,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="T_CONS"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ForEachRemaining(T_CONS arg0)
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
@@ -865,11 +865,11 @@ namespace Java.Util
     }
     #endregion
 
-    #region ISpliterator<T>
+    #region ISpliterator
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html"/>
     /// </summary>
-    public partial interface ISpliterator<T>
+    public partial interface ISpliterator
     {
         #region Instance methods
         /// <summary>
@@ -883,37 +883,37 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#tryAdvance(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        bool TryAdvance<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        bool TryAdvance(Java.Util.Function.Consumer arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         int Characteristics();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#trySplit()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        Java.Util.Spliterator<T> TrySplit();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Spliterator TrySplit();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         long EstimateSize();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool HasCharacteristics(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        void ForEachRemaining<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        void ForEachRemaining(Java.Util.Function.Consumer arg0) where Arg0objectSuperT : T;
 
         #endregion
 
@@ -925,8 +925,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region Spliterator<T> implementation
-    public partial class Spliterator<T> : Java.Util.ISpliterator<T>
+    #region Spliterator implementation
+    public partial class Spliterator : Java.Util.ISpliterator
     {
         #region Constructors
 
@@ -934,9 +934,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Spliterator{T}"/> to <see cref="Java.Util.Spliterator"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Spliterator(Java.Util.Spliterator<T> t) => t.Cast<Java.Util.Spliterator>();
+        public static implicit operator Java.Util.Spliterator(Java.Util.Spliterator t) => t.Cast<Java.Util.Spliterator>();
 
         #endregion
 
@@ -1014,17 +1014,17 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#tryAdvance(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        public bool TryAdvance<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public bool TryAdvance(Java.Util.Function.Consumer arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<bool>("tryAdvance", "(Ljava/util/function/Consumer;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Characteristics()
         {
             return IExecuteWithSignature<int>("characteristics", "()I");
@@ -1032,15 +1032,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#trySplit()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator<T> TrySplit()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Spliterator TrySplit()
         {
-            return IExecuteWithSignature<Java.Util.Spliterator<T>>("trySplit", "()Ljava/util/Spliterator;");
+            return IExecuteWithSignature<Java.Util.Spliterator>("trySplit", "()Ljava/util/Spliterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long EstimateSize()
         {
             return IExecuteWithSignature<long>("estimateSize", "()J");
@@ -1048,8 +1048,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool HasCharacteristics(int arg0)
         {
             return IExecuteWithSignature<bool>("hasCharacteristics", "(I)Z", arg0);
@@ -1057,9 +1057,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        public void ForEachRemaining<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        public void ForEachRemaining(Java.Util.Function.Consumer arg0) where Arg0objectSuperT : T
         {
             IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
         }

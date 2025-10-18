@@ -29,7 +29,7 @@ namespace Javax.Management.Openmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularType.html"/>
     /// </summary>
-    public partial class TabularType : Javax.Management.Openmbean.OpenType<Javax.Management.Openmbean.TabularData>
+    public partial class TabularType : Javax.Management.Openmbean.OpenType
     {
         const string _bridgeClassName = "javax.management.openmbean.TabularType";
         /// <summary>
@@ -73,11 +73,11 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularType.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.CompositeType,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Openmbean.CompositeType"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public TabularType(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.CompositeType arg2, Java.Lang.String[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -101,9 +101,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularType.html#getIndexNames()"/> 
         /// </summary>
-        public Java.Util.List<Java.Lang.String> IndexNames
+        public Java.Util.List IndexNames
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getIndexNames", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getIndexNames", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularType.html#getRowType()"/> 

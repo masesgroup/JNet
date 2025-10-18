@@ -29,7 +29,7 @@ namespace Java.Nio.File.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html"/>
     /// </summary>
-    public partial class PosixFilePermission : Java.Lang.Enum<Java.Nio.File.Attribute.PosixFilePermission>
+    public partial class PosixFilePermission : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.nio.file.attribute.PosixFilePermission";
         /// <summary>
@@ -139,8 +139,8 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.Attribute.PosixFilePermission"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Attribute.PosixFilePermission ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.Attribute.PosixFilePermission>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/attribute/PosixFilePermission;", arg0);
@@ -148,7 +148,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.PosixFilePermission"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Attribute.PosixFilePermission[] Values()
         {
             return SExecuteWithSignatureArray<Java.Nio.File.Attribute.PosixFilePermission>(LocalBridgeClazz, "values", "()[Ljava/nio/file/attribute/PosixFilePermission;");

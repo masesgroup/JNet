@@ -78,8 +78,8 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParamController.html#activate(javax.imageio.IIOParam)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.IIOParam"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Activate(Javax.Imageio.IIOParam arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParamController.html#activate(javax.imageio.IIOParam)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.IIOParam"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Activate(Javax.Imageio.IIOParam arg0)
         {
             return IExecuteWithSignature<bool>("activate", "(Ljavax/imageio/IIOParam;)Z", arg0);

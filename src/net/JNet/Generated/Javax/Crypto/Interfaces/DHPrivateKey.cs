@@ -99,11 +99,11 @@ namespace Javax.Crypto.Interfaces
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Crypto.Interfaces.DHPrivateKey"/> to <see cref="Javax.Crypto.Interfaces.DHKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Crypto.Interfaces.DHKey(Javax.Crypto.Interfaces.DHPrivateKey t) => t.Cast<Javax.Crypto.Interfaces.DHKey>();
         /// <summary>
-        /// Converter from <see cref="Javax.Crypto.Interfaces.DHPrivateKey"/> to <see cref="Java.Security.PrivateKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.PrivateKey(Javax.Crypto.Interfaces.DHPrivateKey t) => t.Cast<Java.Security.PrivateKey>();
 

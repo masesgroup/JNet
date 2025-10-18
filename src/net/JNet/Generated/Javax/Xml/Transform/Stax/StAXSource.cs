@@ -73,8 +73,8 @@ namespace Javax.Xml.Transform.Stax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#%3Cinit%3E(javax.xml.stream.XMLEventReader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLEventReader"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public StAXSource(Javax.Xml.Stream.XMLEventReader arg0)
             : base(arg0)
         {
@@ -82,7 +82,7 @@ namespace Javax.Xml.Transform.Stax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#%3Cinit%3E(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StAXSource(Javax.Xml.Stream.XMLStreamReader arg0)
             : base(arg0)
         {
@@ -133,7 +133,7 @@ namespace Javax.Xml.Transform.Stax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");

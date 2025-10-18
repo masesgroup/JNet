@@ -152,7 +152,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
         {
             hasOverrideMouseClicked = false;
@@ -176,7 +176,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
         {
             hasOverrideMouseDragged = false;
@@ -200,7 +200,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
         {
             hasOverrideMouseEntered = false;
@@ -224,7 +224,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
         {
             hasOverrideMouseExited = false;
@@ -248,7 +248,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
         {
             hasOverrideMouseMoved = false;
@@ -272,7 +272,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
         {
             hasOverrideMousePressed = false;
@@ -296,7 +296,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
         {
             hasOverrideMouseReleased = false;
@@ -320,7 +320,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MouseWheelMoved(Java.Awt.EventNs.MouseWheelEvent arg0)
         {
             hasOverrideMouseWheelMoved = false;
@@ -359,7 +359,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseClicked", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -367,7 +367,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseDragged", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -375,7 +375,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseEntered", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -383,7 +383,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseExited", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -391,7 +391,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseMoved", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -399,7 +399,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mousePressed", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -407,7 +407,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseReleased", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -415,7 +415,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MouseWheelMoved(Java.Awt.EventNs.MouseWheelEvent arg0)
         {
             IExecuteWithSignature("mouseWheelMoved", "(Ljava/awt/event/MouseWheelEvent;)V", arg0);

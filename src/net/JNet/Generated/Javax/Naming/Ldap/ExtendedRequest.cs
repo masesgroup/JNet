@@ -86,12 +86,12 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html#createExtendedResponse(java.lang.String,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Naming.Ldap.ExtendedResponse"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Naming.Ldap.ExtendedResponse CreateExtendedResponse(Java.Lang.String arg0, byte[] arg1, int arg2, int arg3);
 
         #endregion
@@ -141,12 +141,12 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html#createExtendedResponse(java.lang.String,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Naming.Ldap.ExtendedResponse"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Naming.Ldap.ExtendedResponse CreateExtendedResponse(Java.Lang.String arg0, byte[] arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<Javax.Naming.Ldap.ExtendedResponse>("createExtendedResponse", "(Ljava/lang/String;[BII)Ljavax/naming/ldap/ExtendedResponse;", arg0, arg1, arg2, arg3);

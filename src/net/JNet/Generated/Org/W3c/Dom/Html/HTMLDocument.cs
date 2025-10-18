@@ -122,8 +122,8 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getElementsByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Org.W3c.Dom.NodeList GetElementsByName(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#close()"/>
@@ -136,12 +136,12 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#write(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Write(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#writeln(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Writeln(Java.Lang.String arg0);
 
         #endregion
@@ -254,8 +254,8 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getElementsByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.NodeList GetElementsByName(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.NodeList>("getElementsByName", "(Ljava/lang/String;)Lorg/w3c/dom/NodeList;", arg0);
@@ -277,7 +277,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#write(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Write(Java.Lang.String arg0)
         {
             IExecuteWithSignature("write", "(Ljava/lang/String;)V", arg0);
@@ -285,7 +285,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#writeln(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Writeln(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeln", "(Ljava/lang/String;)V", arg0);

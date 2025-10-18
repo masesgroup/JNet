@@ -73,11 +73,11 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File,boolean,int,java.lang.Runtime.Version)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.Runtime.Version"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public JarFile(Java.Io.File arg0, bool arg1, int arg2, Java.Lang.Runtime.Version arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -85,10 +85,10 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File,boolean,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public JarFile(Java.Io.File arg0, bool arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -96,9 +96,9 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public JarFile(Java.Io.File arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -106,8 +106,8 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public JarFile(Java.Io.File arg0)
             : base(arg0)
         {
@@ -115,9 +115,9 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public JarFile(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -125,8 +125,8 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public JarFile(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -152,7 +152,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#baseVersion()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Runtime.Version BaseVersion()
         {
             return SExecuteWithSignature<Java.Lang.Runtime.Version>(LocalBridgeClazz, "baseVersion", "()Ljava/lang/Runtime$Version;");
@@ -160,7 +160,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#runtimeVersion()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Runtime.Version RuntimeVersion()
         {
             return SExecuteWithSignature<Java.Lang.Runtime.Version>(LocalBridgeClazz, "runtimeVersion", "()Ljava/lang/Runtime$Version;");
@@ -186,7 +186,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#isMultiRelease()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMultiRelease()
         {
             return IExecuteWithSignature<bool>("isMultiRelease", "()Z");
@@ -194,8 +194,8 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#getJarEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Jar.JarEntry"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Jar.JarEntry GetJarEntry(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Util.Jar.JarEntry>("getJarEntry", "(Ljava/lang/String;)Ljava/util/jar/JarEntry;", arg0);
@@ -203,10 +203,10 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#versionedStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Util.Jar.JarEntry> VersionedStream()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Stream.Stream VersionedStream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.Jar.JarEntry>>("versionedStream", "()Ljava/util/stream/Stream;");
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("versionedStream", "()Ljava/util/stream/Stream;");
         }
 
         #endregion

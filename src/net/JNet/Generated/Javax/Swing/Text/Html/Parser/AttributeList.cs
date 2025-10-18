@@ -73,20 +73,20 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#%3Cinit%3E(java.lang.String,int,int,java.lang.String,java.util.Vector,javax.swing.text.html.parser.AttributeList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Vector"/></param>
-        /// <param name="arg5"><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></param>
-        public AttributeList(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.String arg3, Java.Util.Vector<object> arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        public AttributeList(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.String arg3, Java.Util.Vector arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AttributeList(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -96,11 +96,11 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Html.Parser.AttributeList"/> to <see cref="Javax.Swing.Text.Html.Parser.DTDConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.Html.Parser.DTDConstants(Javax.Swing.Text.Html.Parser.AttributeList t) => t.Cast<Javax.Swing.Text.Html.Parser.DTDConstants>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Html.Parser.AttributeList"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.Parser.AttributeList t) => t.Cast<Java.Io.Serializable>();
 
@@ -138,8 +138,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#name2type(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int Name2type(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "name2type", "(Ljava/lang/String;)I", arg0);
@@ -147,8 +147,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#type2name(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Type2name(int arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "type2name", "(I)Ljava/lang/String;", arg0);
@@ -195,9 +195,9 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getValues()"/> 
         /// </summary>
-        public Java.Util.Enumeration<object> Values
+        public Java.Util.Enumeration Values
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<object>>("getValues", "()Ljava/util/Enumeration;"); }
+            get { return IExecuteWithSignature<Java.Util.Enumeration>("getValues", "()Ljava/util/Enumeration;"); }
         }
 
         #endregion

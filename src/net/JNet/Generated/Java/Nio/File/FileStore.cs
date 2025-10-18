@@ -119,17 +119,17 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getFileStoreAttributeView(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileStoreAttributeView"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V GetFileStoreAttributeView<V>(Java.Lang.Class arg0) where V : Java.Nio.File.Attribute.IFileStoreAttributeView, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V GetFileStoreAttributeView(Java.Lang.Class arg0)
         {
             return IExecute<V>("getFileStoreAttributeView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#isReadOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsReadOnly()
         {
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
@@ -137,8 +137,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SupportsFileAttributeView(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<bool>("supportsFileAttributeView", "(Ljava/lang/Class;)Z", arg0);
@@ -146,8 +146,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SupportsFileAttributeView(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("supportsFileAttributeView", "(Ljava/lang/String;)Z", arg0);
@@ -155,9 +155,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object GetAttribute(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getAttribute", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -165,7 +165,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -173,7 +173,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#type()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Type()
         {
             return IExecuteWithSignature<Java.Lang.String>("type", "()Ljava/lang/String;");

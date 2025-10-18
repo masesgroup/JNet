@@ -95,11 +95,11 @@ namespace Java.Nio.Channels
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.ByteChannel"/> to <see cref="Java.Nio.Channels.ReadableByteChannel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.ReadableByteChannel(Java.Nio.Channels.ByteChannel t) => t.Cast<Java.Nio.Channels.ReadableByteChannel>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.ByteChannel"/> to <see cref="Java.Nio.Channels.WritableByteChannel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.WritableByteChannel(Java.Nio.Channels.ByteChannel t) => t.Cast<Java.Nio.Channels.WritableByteChannel>();
 

@@ -29,7 +29,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html"/>
     /// </summary>
-    public partial class VetoableChangeListenerProxy : Java.Util.EventListenerProxy<Java.Beans.VetoableChangeListener>
+    public partial class VetoableChangeListenerProxy : Java.Util.EventListenerProxy
     {
         const string _bridgeClassName = "java.beans.VetoableChangeListenerProxy";
         /// <summary>
@@ -73,8 +73,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#%3Cinit%3E(java.lang.String,java.beans.VetoableChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public VetoableChangeListenerProxy(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
             : base(arg0, arg1)
         {
@@ -84,7 +84,7 @@ namespace Java.Beans
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Beans.VetoableChangeListenerProxy"/> to <see cref="Java.Beans.VetoableChangeListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Beans.VetoableChangeListener(Java.Beans.VetoableChangeListenerProxy t) => t.Cast<Java.Beans.VetoableChangeListener>();
 
@@ -109,8 +109,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
-        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void VetoableChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecuteWithSignature("vetoableChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);

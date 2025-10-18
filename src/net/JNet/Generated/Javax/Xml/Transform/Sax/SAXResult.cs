@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#%3Cinit%3E(org.xml.sax.ContentHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.ContentHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public SAXResult(Org.Xml.Sax.ContentHandler arg0)
             : base(arg0)
         {

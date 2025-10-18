@@ -78,17 +78,17 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#comments()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String Comments();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#date()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String Date();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#value()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String[] Value();
 
         #endregion
@@ -124,7 +124,7 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#comments()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Comments()
         {
             return IExecuteWithSignature<Java.Lang.String>("comments", "()Ljava/lang/String;");
@@ -132,7 +132,7 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#date()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Date()
         {
             return IExecuteWithSignature<Java.Lang.String>("date", "()Ljava/lang/String;");
@@ -140,7 +140,7 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#value()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] Value()
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("value", "()[Ljava/lang/String;");

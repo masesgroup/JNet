@@ -78,8 +78,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Filter.html#isLoggable(java.util.logging.LogRecord)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsLoggable(Java.Util.Logging.LogRecord arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Filter.html#isLoggable(java.util.logging.LogRecord)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsLoggable(Java.Util.Logging.LogRecord arg0)
         {
             return IExecuteWithSignature<bool>("isLoggable", "(Ljava/util/logging/LogRecord;)Z", arg0);

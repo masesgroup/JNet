@@ -68,12 +68,12 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region OpenType<T> declaration
+    #region OpenType declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class OpenType<T> : Java.Io.Serializable
+    public partial class OpenType : Java.Io.Serializable
     {
         const string _bridgeClassName = "javax.management.openmbean.OpenType";
         /// <summary>
@@ -162,8 +162,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("isValue", "(Ljava/lang/Object;)Z", arg0);
@@ -171,7 +171,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isArray()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsArray()
         {
             return IExecuteWithSignature<bool>("isArray", "()Z");
@@ -187,8 +187,8 @@ namespace Javax.Management.Openmbean
     }
     #endregion
 
-    #region OpenType<T> implementation
-    public partial class OpenType<T>
+    #region OpenType implementation
+    public partial class OpenType
     {
         #region Constructors
 
@@ -196,9 +196,9 @@ namespace Javax.Management.Openmbean
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Openmbean.OpenType{T}"/> to <see cref="Javax.Management.Openmbean.OpenType"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Management.Openmbean.OpenType(Javax.Management.Openmbean.OpenType<T> t) => t.Cast<Javax.Management.Openmbean.OpenType>();
+        public static implicit operator Javax.Management.Openmbean.OpenType(Javax.Management.Openmbean.OpenType t) => t.Cast<Javax.Management.Openmbean.OpenType>();
 
         #endregion
 
@@ -206,8 +206,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES_LIST"/>
         /// </summary>
-        public static Java.Util.List<Java.Lang.String> ALLOWED_CLASSNAMES_LIST { get { if (!_ALLOWED_CLASSNAMES_LISTReady) { _ALLOWED_CLASSNAMES_LISTContent = SGetField<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "ALLOWED_CLASSNAMES_LIST"); _ALLOWED_CLASSNAMES_LISTReady = true; } return _ALLOWED_CLASSNAMES_LISTContent; } }
-        private static Java.Util.List<Java.Lang.String> _ALLOWED_CLASSNAMES_LISTContent = default;
+        public static Java.Util.List ALLOWED_CLASSNAMES_LIST { get { if (!_ALLOWED_CLASSNAMES_LISTReady) { _ALLOWED_CLASSNAMES_LISTContent = SGetField<Java.Util.List>(LocalBridgeClazz, "ALLOWED_CLASSNAMES_LIST"); _ALLOWED_CLASSNAMES_LISTReady = true; } return _ALLOWED_CLASSNAMES_LISTContent; } }
+        private static Java.Util.List _ALLOWED_CLASSNAMES_LISTContent = default;
         private static bool _ALLOWED_CLASSNAMES_LISTReady = false; // this is used because in case of generics 
 
         #endregion
@@ -241,8 +241,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("isValue", "(Ljava/lang/Object;)Z", arg0);
@@ -250,7 +250,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isArray()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsArray()
         {
             return IExecuteWithSignature<bool>("isArray", "()Z");

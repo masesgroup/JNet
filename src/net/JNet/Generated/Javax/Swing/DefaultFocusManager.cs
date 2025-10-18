@@ -89,9 +89,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultFocusManager.html#compareTabOrder(java.awt.Component,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareTabOrder(Java.Awt.Component arg0, Java.Awt.Component arg1)
         {
             return IExecuteWithSignature<bool>("compareTabOrder", "(Ljava/awt/Component;Ljava/awt/Component;)Z", arg0, arg1);
@@ -99,9 +99,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultFocusManager.html#getComponentAfter(java.awt.Container,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetComponentAfter(Java.Awt.Container arg0, Java.Awt.Component arg1)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getComponentAfter", "(Ljava/awt/Container;Ljava/awt/Component;)Ljava/awt/Component;", arg0, arg1);
@@ -109,9 +109,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultFocusManager.html#getComponentBefore(java.awt.Container,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetComponentBefore(Java.Awt.Container arg0, Java.Awt.Component arg1)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getComponentBefore", "(Ljava/awt/Container;Ljava/awt/Component;)Ljava/awt/Component;", arg0, arg1);
@@ -119,8 +119,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultFocusManager.html#getFirstComponent(java.awt.Container)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetFirstComponent(Java.Awt.Container arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getFirstComponent", "(Ljava/awt/Container;)Ljava/awt/Component;", arg0);
@@ -128,8 +128,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultFocusManager.html#getLastComponent(java.awt.Container)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetLastComponent(Java.Awt.Container arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getLastComponent", "(Ljava/awt/Container;)Ljava/awt/Component;", arg0);

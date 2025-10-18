@@ -103,11 +103,11 @@ namespace Javax.Naming.Ldap
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Naming.Ldap.UnsolicitedNotification"/> to <see cref="Javax.Naming.Ldap.ExtendedResponse"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Naming.Ldap.ExtendedResponse(Javax.Naming.Ldap.UnsolicitedNotification t) => t.Cast<Javax.Naming.Ldap.ExtendedResponse>();
         /// <summary>
-        /// Converter from <see cref="Javax.Naming.Ldap.UnsolicitedNotification"/> to <see cref="Javax.Naming.Ldap.HasControls"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Naming.Ldap.HasControls(Javax.Naming.Ldap.UnsolicitedNotification t) => t.Cast<Javax.Naming.Ldap.HasControls>();
 

@@ -151,7 +151,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#%3Cinit%3E(java.awt.Color)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public DefaultHighlightPainter(Java.Awt.Color arg0)
                 : base(arg0)
             {

@@ -167,8 +167,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getIndexOfSize(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int GetIndexOfSize(float arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getIndexOfSize", "(F)I", arg0);
@@ -194,10 +194,10 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addCSSAttributeFromHTML(javax.swing.text.MutableAttributeSet,javax.swing.text.html.CSS.Attribute,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddCSSAttributeFromHTML(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, Java.Lang.String arg2)
         {
             return IExecuteWithSignature<bool>("addCSSAttributeFromHTML", "(Ljavax/swing/text/MutableAttributeSet;Ljavax/swing/text/html/CSS$Attribute;Ljava/lang/String;)Z", arg0, arg1, arg2);
@@ -205,8 +205,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float GetPointSize(int arg0)
         {
             return IExecuteWithSignature<float>("getPointSize", "(I)F", arg0);
@@ -214,8 +214,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float GetPointSize(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<float>("getPointSize", "(Ljava/lang/String;)F", arg0);
@@ -223,8 +223,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#stringToColor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Color StringToColor(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Awt.Color>("stringToColor", "(Ljava/lang/String;)Ljava/awt/Color;", arg0);
@@ -232,8 +232,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getDeclaration(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.AttributeSet GetDeclaration(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getDeclaration", "(Ljava/lang/String;)Ljavax/swing/text/AttributeSet;", arg0);
@@ -241,8 +241,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getViewAttributes(javax.swing.text.View)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.View"/></param>
-        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.AttributeSet GetViewAttributes(Javax.Swing.Text.View arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("getViewAttributes", "(Ljavax/swing/text/View;)Ljavax/swing/text/AttributeSet;", arg0);
@@ -250,8 +250,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#translateHTMLToCSS(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.AttributeSet TranslateHTMLToCSS(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("translateHTMLToCSS", "(Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/AttributeSet;", arg0);
@@ -259,8 +259,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getBoxPainter(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.StyleSheet.BoxPainter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.StyleSheet.BoxPainter GetBoxPainter(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.StyleSheet.BoxPainter>("getBoxPainter", "(Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/html/StyleSheet$BoxPainter;", arg0);
@@ -268,8 +268,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getListPainter(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.StyleSheet.ListPainter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.StyleSheet.ListPainter GetListPainter(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.StyleSheet.ListPainter>("getListPainter", "(Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/html/StyleSheet$ListPainter;", arg0);
@@ -277,8 +277,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getRule(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Style GetRule(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Style>("getRule", "(Ljava/lang/String;)Ljavax/swing/text/Style;", arg0);
@@ -286,9 +286,9 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getRule(javax.swing.text.html.HTML.Tag,javax.swing.text.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Style GetRule(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.Element arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Style>("getRule", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/Element;)Ljavax/swing/text/Style;", arg0, arg1);
@@ -296,9 +296,9 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addCSSAttribute(javax.swing.text.MutableAttributeSet,javax.swing.text.html.CSS.Attribute,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void AddCSSAttribute(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, Java.Lang.String arg2)
         {
             IExecuteWithSignature("addCSSAttribute", "(Ljavax/swing/text/MutableAttributeSet;Ljavax/swing/text/html/CSS$Attribute;Ljava/lang/String;)V", arg0, arg1, arg2);
@@ -306,7 +306,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addRule(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddRule(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addRule", "(Ljava/lang/String;)V", arg0);
@@ -314,7 +314,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addStyleSheet(javax.swing.text.html.StyleSheet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.StyleSheet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddStyleSheet(Javax.Swing.Text.Html.StyleSheet arg0)
         {
             IExecuteWithSignature("addStyleSheet", "(Ljavax/swing/text/html/StyleSheet;)V", arg0);
@@ -322,7 +322,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#importStyleSheet(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ImportStyleSheet(Java.Net.URL arg0)
         {
             IExecuteWithSignature("importStyleSheet", "(Ljava/net/URL;)V", arg0);
@@ -330,9 +330,9 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#loadRules(java.io.Reader,java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg1"><see cref="Java.Net.URL"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void LoadRules(Java.Io.Reader arg0, Java.Net.URL arg1)
         {
             IExecuteWithSignature("loadRules", "(Ljava/io/Reader;Ljava/net/URL;)V", arg0, arg1);
@@ -340,7 +340,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#removeStyleSheet(javax.swing.text.html.StyleSheet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.StyleSheet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveStyleSheet(Javax.Swing.Text.Html.StyleSheet arg0)
         {
             IExecuteWithSignature("removeStyleSheet", "(Ljavax/swing/text/html/StyleSheet;)V", arg0);
@@ -348,7 +348,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetBaseFontSize(int arg0)
         {
             IExecuteWithSignature("setBaseFontSize", "(I)V", arg0);
@@ -356,7 +356,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetBaseFontSize(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setBaseFontSize", "(Ljava/lang/String;)V", arg0);
@@ -388,9 +388,9 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html#getInset(int,javax.swing.text.View)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.View"/></param>
-            /// <returns><see cref="float"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public float GetInset(int arg0, Javax.Swing.Text.View arg1)
             {
                 return IExecuteWithSignature<float>("getInset", "(ILjavax/swing/text/View;)F", arg0, arg1);
@@ -398,12 +398,12 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg1"><see cref="float"/></param>
-            /// <param name="arg2"><see cref="float"/></param>
-            /// <param name="arg3"><see cref="float"/></param>
-            /// <param name="arg4"><see cref="float"/></param>
-            /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <param name="arg5"><see cref=""/></param>
             public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5)
             {
                 IExecuteWithSignature("paint", "(Ljava/awt/Graphics;FFFFLjavax/swing/text/View;)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -442,13 +442,13 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg1"><see cref="float"/></param>
-            /// <param name="arg2"><see cref="float"/></param>
-            /// <param name="arg3"><see cref="float"/></param>
-            /// <param name="arg4"><see cref="float"/></param>
-            /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
-            /// <param name="arg6"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <param name="arg5"><see cref=""/></param>
+            /// <param name="arg6"><see cref=""/></param>
             public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5, int arg6)
             {
                 IExecuteWithSignature("paint", "(Ljava/awt/Graphics;FFFFLjavax/swing/text/View;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);

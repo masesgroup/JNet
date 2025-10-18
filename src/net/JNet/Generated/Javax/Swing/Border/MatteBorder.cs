@@ -73,11 +73,11 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#%3Cinit%3E(int,int,int,int,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public MatteBorder(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -85,11 +85,11 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#%3Cinit%3E(int,int,int,int,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public MatteBorder(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -97,8 +97,8 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#%3Cinit%3E(java.awt.Insets,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Insets"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public MatteBorder(Java.Awt.Insets arg0, Java.Awt.Color arg1)
             : base(arg0, arg1)
         {
@@ -106,8 +106,8 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#%3Cinit%3E(java.awt.Insets,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Insets"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public MatteBorder(Java.Awt.Insets arg0, Javax.Swing.Icon arg1)
             : base(arg0, arg1)
         {
@@ -115,7 +115,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#%3Cinit%3E(javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public MatteBorder(Javax.Swing.Icon arg0)
             : base(arg0)
         {

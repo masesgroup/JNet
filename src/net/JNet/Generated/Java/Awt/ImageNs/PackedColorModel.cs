@@ -75,15 +75,15 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PackedColorModel.html#%3Cinit%3E(java.awt.color.ColorSpace,int,int,int,int,int,boolean,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="bool"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
-        /// <param name="arg8"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
         public PackedColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7, int arg8)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
         {
@@ -91,13 +91,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PackedColorModel.html#%3Cinit%3E(java.awt.color.ColorSpace,int,int[],int,boolean,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public PackedColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -128,8 +128,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PackedColorModel.html#getMask(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetMask(int arg0)
         {
             return IExecuteWithSignature<int>("getMask", "(I)I", arg0);

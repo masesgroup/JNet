@@ -66,12 +66,12 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JLayer<V> declaration
+    #region JLayer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html"/>
     /// </summary>
-    /// <typeparam name="V"><see cref="Java.Awt.Component"/></typeparam>
-    public partial class JLayer<V> : Javax.Swing.JComponent where V : Java.Awt.Component
+    /// <typeparam name="V"></typeparam>
+    public partial class JLayer : Javax.Swing.JComponent
     {
         const string _bridgeClassName = "javax.swing.JLayer";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#%3Cinit%3E(java.awt.Component,javax.swing.plaf.LayerUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JLayer(Java.Awt.Component arg0, Javax.Swing.Plaf.LayerUI arg1)
             : base(arg0, arg1)
         {
@@ -124,7 +124,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#%3Cinit%3E(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JLayer(Java.Awt.Component arg0)
             : base(arg0)
         {
@@ -134,15 +134,15 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JLayer"/> to <see cref="Javax.Swing.Scrollable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JLayer t) => t.Cast<Javax.Swing.Scrollable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JLayer"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.JLayer t) => t.Cast<Java.Beans.PropertyChangeListener>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JLayer"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JLayer t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -202,10 +202,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
@@ -213,10 +213,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
@@ -224,7 +224,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#createGlassPane()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.JPanel"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JPanel CreateGlassPane()
         {
             return IExecuteWithSignature<Javax.Swing.JPanel>("createGlassPane", "()Ljavax/swing/JPanel;");
@@ -232,7 +232,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
@@ -240,7 +240,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setUI(javax.swing.plaf.LayerUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.LayerUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/LayerUI;)V", arg0);
@@ -256,23 +256,23 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JLayer<V> implementation
-    public partial class JLayer<V>
+    #region JLayer implementation
+    public partial class JLayer
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#%3Cinit%3E(java.awt.Component,javax.swing.plaf.LayerUI)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
-        public JLayer(V arg0, Javax.Swing.Plaf.LayerUI<V> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public JLayer(V arg0, Javax.Swing.Plaf.LayerUI arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#%3Cinit%3E(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JLayer(V arg0)
             : base(arg0)
         {
@@ -282,21 +282,21 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JLayer{V}"/> to <see cref="Javax.Swing.Scrollable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JLayer<V> t) => t.Cast<Javax.Swing.Scrollable>();
+        public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JLayer t) => t.Cast<Javax.Swing.Scrollable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JLayer{V}"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.JLayer<V> t) => t.Cast<Java.Beans.PropertyChangeListener>();
+        public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.JLayer t) => t.Cast<Java.Beans.PropertyChangeListener>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JLayer{V}"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JLayer<V> t) => t.Cast<Javax.Accessibility.Accessible>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JLayer t) => t.Cast<Javax.Accessibility.Accessible>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JLayer{V}"/> to <see cref="Javax.Swing.JLayer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.JLayer(Javax.Swing.JLayer<V> t) => t.Cast<Javax.Swing.JLayer>();
+        public static implicit operator Javax.Swing.JLayer(Javax.Swing.JLayer t) => t.Cast<Javax.Swing.JLayer>();
 
         #endregion
 
@@ -354,10 +354,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
@@ -365,10 +365,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
@@ -376,7 +376,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#createGlassPane()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.JPanel"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JPanel CreateGlassPane()
         {
             return IExecuteWithSignature<Javax.Swing.JPanel>("createGlassPane", "()Ljavax/swing/JPanel;");
@@ -384,7 +384,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
@@ -392,8 +392,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setUI(javax.swing.plaf.LayerUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
-        public void SetUI(Javax.Swing.Plaf.LayerUI arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        public void SetUI(Javax.Swing.Plaf.LayerUI arg0) where Arg0objectSuperV : V
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/LayerUI;)V", arg0);
         }

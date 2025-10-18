@@ -98,28 +98,28 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#isPaintable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsPaintable();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#supportsCustomEditor()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool SupportsCustomEditor();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#paintValue(java.awt.Graphics,java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void PaintValue(Java.Awt.Graphics arg0, Java.Awt.Rectangle arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0);
 
         #endregion
@@ -190,7 +190,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#isPaintable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPaintable()
         {
             return IExecuteWithSignature<bool>("isPaintable", "()Z");
@@ -198,7 +198,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#supportsCustomEditor()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool SupportsCustomEditor()
         {
             return IExecuteWithSignature<bool>("supportsCustomEditor", "()Z");
@@ -206,7 +206,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
@@ -214,8 +214,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#paintValue(java.awt.Graphics,java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void PaintValue(Java.Awt.Graphics arg0, Java.Awt.Rectangle arg1)
         {
             IExecuteWithSignature("paintValue", "(Ljava/awt/Graphics;Ljava/awt/Rectangle;)V", arg0, arg1);
@@ -223,7 +223,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);

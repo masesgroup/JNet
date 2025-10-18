@@ -112,10 +112,10 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#transmitControlCommand(int,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] TransmitControlCommand(int arg0, byte[] arg1)
         {
             return IExecuteWithSignatureArray<byte>("transmitControlCommand", "(I[B)[B", arg0, arg1);
@@ -123,8 +123,8 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#openLogicalChannel()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Smartcardio.CardChannel"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Smartcardio.CardChannel OpenLogicalChannel()
         {
             return IExecuteWithSignature<Javax.Smartcardio.CardChannel>("openLogicalChannel", "()Ljavax/smartcardio/CardChannel;");
@@ -132,7 +132,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#beginExclusive()"/>
         /// </summary>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <exception cref=""/>
         public void BeginExclusive()
         {
             IExecuteWithSignature("beginExclusive", "()V");
@@ -140,8 +140,8 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#disconnect(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Disconnect(bool arg0)
         {
             IExecuteWithSignature("disconnect", "(Z)V", arg0);
@@ -149,7 +149,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#endExclusive()"/>
         /// </summary>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <exception cref=""/>
         public void EndExclusive()
         {
             IExecuteWithSignature("endExclusive", "()V");

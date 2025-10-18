@@ -97,8 +97,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#isHTMLString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsHTMLString(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isHTMLString", "(Ljava/lang/String;)Z", arg0);
@@ -106,10 +106,10 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#getHTMLBaseline(javax.swing.text.View,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.View"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int GetHTMLBaseline(Javax.Swing.Text.View arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getHTMLBaseline", "(Ljavax/swing/text/View;II)I", arg0, arg1, arg2);
@@ -117,9 +117,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#createHTMLView(javax.swing.JComponent,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.View"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Text.View CreateHTMLView(Javax.Swing.JComponent arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Javax.Swing.Text.View>(LocalBridgeClazz, "createHTMLView", "(Ljavax/swing/JComponent;Ljava/lang/String;)Ljavax/swing/text/View;", arg0, arg1);
@@ -127,8 +127,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#updateRenderer(javax.swing.JComponent,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public static void UpdateRenderer(Javax.Swing.JComponent arg0, Java.Lang.String arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "updateRenderer", "(Ljavax/swing/JComponent;Ljava/lang/String;)V", arg0, arg1);

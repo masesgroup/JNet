@@ -75,8 +75,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#%3Cinit%3E(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public AbstractAction(Java.Lang.String arg0, Javax.Swing.Icon arg1)
             : base(arg0, arg1)
         {
@@ -84,7 +84,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AbstractAction(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -94,15 +94,15 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.AbstractAction"/> to <see cref="Javax.Swing.Action"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Action(Javax.Swing.AbstractAction t) => t.Cast<Javax.Swing.Action>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.AbstractAction"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Swing.AbstractAction t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.AbstractAction"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.AbstractAction t) => t.Cast<Java.Io.Serializable>();
 
@@ -134,7 +134,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#isEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEnabled()
         {
             return IExecuteWithSignature<bool>("isEnabled", "()Z");
@@ -142,8 +142,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#getValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetValue(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -151,7 +151,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
@@ -159,7 +159,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
@@ -167,8 +167,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#putValue(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void PutValue(Java.Lang.String arg0, object arg1)
         {
             IExecuteWithSignature("putValue", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
@@ -176,7 +176,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractAction.html#setEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetEnabled(bool arg0)
         {
             IExecuteWithSignature("setEnabled", "(Z)V", arg0);

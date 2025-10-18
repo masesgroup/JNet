@@ -90,25 +90,25 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#isLeaf()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsLeaf();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getIndex(javax.swing.tree.TreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int GetIndex(Javax.Swing.Tree.TreeNode arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#children()"/>
         /// </summary>
-        /// <typeparam name="ReturnExtendsJavax_Swing_Tree_TreeNode"><see cref="Javax.Swing.Tree.TreeNode"/></typeparam>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        Java.Util.Enumeration<ReturnExtendsJavax_Swing_Tree_TreeNode> Children<ReturnExtendsJavax_Swing_Tree_TreeNode>() where ReturnExtendsJavax_Swing_Tree_TreeNode : Javax.Swing.Tree.TreeNode;
+        /// <typeparam name="ReturnExtendsJavax_Swing_Tree_TreeNode"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Enumeration Children() where ReturnExtendsJavax_Swing_Tree_TreeNode : Javax.Swing.Tree.TreeNode;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getChildAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Swing.Tree.TreeNode GetChildAt(int arg0);
 
         #endregion
@@ -165,7 +165,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#isLeaf()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsLeaf()
         {
             return IExecuteWithSignature<bool>("isLeaf", "()Z");
@@ -173,8 +173,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getIndex(javax.swing.tree.TreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetIndex(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecuteWithSignature<int>("getIndex", "(Ljavax/swing/tree/TreeNode;)I", arg0);
@@ -182,17 +182,17 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#children()"/>
         /// </summary>
-        /// <typeparam name="ReturnExtendsJavax_Swing_Tree_TreeNode"><see cref="Javax.Swing.Tree.TreeNode"/></typeparam>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<ReturnExtendsJavax_Swing_Tree_TreeNode> Children<ReturnExtendsJavax_Swing_Tree_TreeNode>() where ReturnExtendsJavax_Swing_Tree_TreeNode : Javax.Swing.Tree.TreeNode
+        /// <typeparam name="ReturnExtendsJavax_Swing_Tree_TreeNode"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration Children() where ReturnExtendsJavax_Swing_Tree_TreeNode : Javax.Swing.Tree.TreeNode
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<ReturnExtendsJavax_Swing_Tree_TreeNode>>("children", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("children", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getChildAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreeNode GetChildAt(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreeNode>("getChildAt", "(I)Ljavax/swing/tree/TreeNode;", arg0);

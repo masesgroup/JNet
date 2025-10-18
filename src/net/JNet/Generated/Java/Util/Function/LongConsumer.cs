@@ -108,13 +108,13 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#accept(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Accept(long arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0);
 
         #endregion
@@ -175,7 +175,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#accept(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void Accept(long arg0)
         {
             hasOverrideAccept = false;
@@ -183,8 +183,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.LongConsumer AndThenDefault(Java.Util.Function.LongConsumer arg0)
         {
@@ -209,8 +209,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0)
         {
@@ -250,7 +250,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#accept(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void Accept(long arg0)
         {
             IExecuteWithSignature("accept", "(J)V", arg0);
@@ -258,8 +258,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.LongConsumerDirect, Java.Util.Function.LongConsumer>("andThen", "(Ljava/util/function/LongConsumer;)Ljava/util/function/LongConsumer;", arg0);

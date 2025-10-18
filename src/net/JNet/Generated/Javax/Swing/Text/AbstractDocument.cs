@@ -370,11 +370,11 @@ namespace Javax.Swing.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.AbstractDocument"/> to <see cref="Javax.Swing.Text.Document"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.Document(Javax.Swing.Text.AbstractDocument t) => t.Cast<Javax.Swing.Text.Document>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.AbstractDocument"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.AbstractDocument t) => t.Cast<Java.Io.Serializable>();
 
@@ -450,9 +450,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getDocumentProperties()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#setDocumentProperties(java.util.Dictionary)"/>
         /// </summary>
-        public Java.Util.Dictionary<object, object> DocumentProperties
+        public Java.Util.Dictionary<, > DocumentProperties
         {
-            get { return IExecuteWithSignature<Java.Util.Dictionary<object, object>>("getDocumentProperties", "()Ljava/util/Dictionary;"); } set { IExecuteWithSignature("setDocumentProperties", "(Ljava/util/Dictionary;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Dictionary<, >>("getDocumentProperties", "()Ljava/util/Dictionary;"); } set { IExecuteWithSignature("setDocumentProperties", "(Ljava/util/Dictionary;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getEndPosition()"/> 
@@ -499,18 +499,18 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getListeners(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public T[] GetListeners(Java.Lang.Class arg0)
         {
             return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getParagraphElement(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Element GetParagraphElement(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Element>("getParagraphElement", "(I)Ljavax/swing/text/Element;", arg0);
@@ -518,8 +518,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getProperty(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetProperty(object arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -541,8 +541,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#putProperty(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void PutProperty(object arg0, object arg1)
         {
             IExecuteWithSignature("putProperty", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -550,10 +550,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getText(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String GetText(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("getText", "(II)Ljava/lang/String;", arg0, arg1);
@@ -561,9 +561,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#createPosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Position"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Swing.Text.Position CreatePosition(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Position>("createPosition", "(I)Ljavax/swing/text/Position;", arg0);
@@ -571,7 +571,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#addDocumentListener(javax.swing.event.DocumentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddDocumentListener(Javax.Swing.Event.DocumentListener arg0)
         {
             IExecuteWithSignature("addDocumentListener", "(Ljavax/swing/event/DocumentListener;)V", arg0);
@@ -579,7 +579,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#addUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
             IExecuteWithSignature("addUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
@@ -587,7 +587,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#dump(java.io.PrintStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Dump(Java.Io.PrintStream arg0)
         {
             IExecuteWithSignature("dump", "(Ljava/io/PrintStream;)V", arg0);
@@ -595,10 +595,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getText(int,int,javax.swing.text.Segment)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Segment"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void GetText(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
         {
             IExecuteWithSignature("getText", "(IILjavax/swing/text/Segment;)V", arg0, arg1, arg2);
@@ -606,10 +606,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#insertString(int,java.lang.String,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void InsertString(int arg0, Java.Lang.String arg1, Javax.Swing.Text.AttributeSet arg2)
         {
             IExecuteWithSignature("insertString", "(ILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2);
@@ -617,9 +617,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#remove(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Remove(int arg0, int arg1)
         {
             IExecuteWithSignature("remove", "(II)V", arg0, arg1);
@@ -627,7 +627,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#removeDocumentListener(javax.swing.event.DocumentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveDocumentListener(Javax.Swing.Event.DocumentListener arg0)
         {
             IExecuteWithSignature("removeDocumentListener", "(Ljavax/swing/event/DocumentListener;)V", arg0);
@@ -635,7 +635,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#removeUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
             IExecuteWithSignature("removeUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
@@ -643,7 +643,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#render(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Render(Java.Lang.Runnable arg0)
         {
             IExecuteWithSignature("render", "(Ljava/lang/Runnable;)V", arg0);
@@ -651,11 +651,11 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#replace(int,int,java.lang.String,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Replace(int arg0, int arg1, Java.Lang.String arg2, Javax.Swing.Text.AttributeSet arg3)
         {
             IExecuteWithSignature("replace", "(IILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2, arg3);
@@ -671,9 +671,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#%3Cinit%3E(javax.swing.text.AbstractDocument,javax.swing.text.Element,javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
-            /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public AbstractElement(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -683,19 +683,19 @@ namespace Javax.Swing.Text
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.AbstractDocument.AbstractElement"/> to <see cref="Javax.Swing.Text.Element"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Text.Element(Javax.Swing.Text.AbstractDocument.AbstractElement t) => t.Cast<Javax.Swing.Text.Element>();
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.AbstractDocument.AbstractElement"/> to <see cref="Javax.Swing.Text.MutableAttributeSet"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Text.MutableAttributeSet(Javax.Swing.Text.AbstractDocument.AbstractElement t) => t.Cast<Javax.Swing.Text.MutableAttributeSet>();
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.AbstractDocument.AbstractElement"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.AbstractDocument.AbstractElement t) => t.Cast<Java.Io.Serializable>();
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.AbstractDocument.AbstractElement"/> to <see cref="Javax.Swing.Tree.TreeNode"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Tree.TreeNode(Javax.Swing.Text.AbstractDocument.AbstractElement t) => t.Cast<Javax.Swing.Tree.TreeNode>();
 
@@ -727,9 +727,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttributeNames()"/> 
             /// </summary>
-            public Java.Util.Enumeration<object> AttributeNames
+            public Java.Util.Enumeration AttributeNames
             {
-                get { return IExecuteWithSignature<Java.Util.Enumeration<object>>("getAttributeNames", "()Ljava/util/Enumeration;"); }
+                get { return IExecuteWithSignature<Java.Util.Enumeration>("getAttributeNames", "()Ljava/util/Enumeration;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttributes()"/> 
@@ -804,7 +804,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isLeaf()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsLeaf()
             {
                 return IExecuteWithSignature<bool>("isLeaf", "()Z");
@@ -812,8 +812,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElementIndex(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int GetElementIndex(int arg0)
             {
                 return IExecuteWithSignature<int>("getElementIndex", "(I)I", arg0);
@@ -821,16 +821,16 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#children()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Enumeration"/></returns>
-            public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> Children()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Enumeration Children()
             {
-                return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("children", "()Ljava/util/Enumeration;");
+                return IExecuteWithSignature<Java.Util.Enumeration>("children", "()Ljava/util/Enumeration;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElement(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Text.Element GetElement(int arg0)
             {
                 return IExecuteWithSignature<Javax.Swing.Text.Element>("getElement", "(I)Ljavax/swing/text/Element;", arg0);
@@ -838,9 +838,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#containsAttribute(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool ContainsAttribute(object arg0, object arg1)
             {
                 return IExecuteWithSignature<bool>("containsAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
@@ -848,8 +848,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#containsAttributes(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool ContainsAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
                 return IExecuteWithSignature<bool>("containsAttributes", "(Ljavax/swing/text/AttributeSet;)Z", arg0);
@@ -857,8 +857,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isDefined(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool IsDefined(object arg0)
             {
                 return IExecuteWithSignature<bool>("isDefined", "(Ljava/lang/Object;)Z", arg0);
@@ -866,8 +866,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isEqual(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool IsEqual(Javax.Swing.Text.AttributeSet arg0)
             {
                 return IExecuteWithSignature<bool>("isEqual", "(Ljavax/swing/text/AttributeSet;)Z", arg0);
@@ -875,8 +875,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getIndex(javax.swing.tree.TreeNode)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int GetIndex(Javax.Swing.Tree.TreeNode arg0)
             {
                 return IExecuteWithSignature<int>("getIndex", "(Ljavax/swing/tree/TreeNode;)I", arg0);
@@ -884,8 +884,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttribute(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object GetAttribute(object arg0)
             {
                 return IExecuteWithSignature("getAttribute", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -893,7 +893,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#copyAttributes()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Text.AttributeSet CopyAttributes()
             {
                 return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("copyAttributes", "()Ljavax/swing/text/AttributeSet;");
@@ -901,8 +901,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getChildAt(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Tree.TreeNode GetChildAt(int arg0)
             {
                 return IExecuteWithSignature<Javax.Swing.Tree.TreeNode>("getChildAt", "(I)Ljavax/swing/tree/TreeNode;", arg0);
@@ -910,8 +910,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#addAttribute(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void AddAttribute(object arg0, object arg1)
             {
                 IExecuteWithSignature("addAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -919,7 +919,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#addAttributes(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void AddAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
                 IExecuteWithSignature("addAttributes", "(Ljavax/swing/text/AttributeSet;)V", arg0);
@@ -927,8 +927,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#dump(java.io.PrintStream,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Dump(Java.Io.PrintStream arg0, int arg1)
             {
                 IExecuteWithSignature("dump", "(Ljava/io/PrintStream;I)V", arg0, arg1);
@@ -936,7 +936,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#removeAttribute(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void RemoveAttribute(object arg0)
             {
                 IExecuteWithSignature("removeAttribute", "(Ljava/lang/Object;)V", arg0);
@@ -944,15 +944,15 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#removeAttributes(java.util.Enumeration)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
-            public void RemoveAttributes(Java.Util.Enumeration<object> arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            public void RemoveAttributes(Java.Util.Enumeration arg0)
             {
                 IExecuteWithSignature("removeAttributes", "(Ljava/util/Enumeration;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#removeAttributes(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void RemoveAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
                 IExecuteWithSignature("removeAttributes", "(Ljavax/swing/text/AttributeSet;)V", arg0);
@@ -998,10 +998,10 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#addAttribute(javax.swing.text.AttributeSet,java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <param name="arg2"><see cref="object"/></param>
-            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Text.AttributeSet AddAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1, object arg2)
             {
                 return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("addAttribute", "(Ljavax/swing/text/AttributeSet;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/AttributeSet;", arg0, arg1, arg2);
@@ -1009,9 +1009,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#addAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Text.AttributeSet AddAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
             {
                 return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("addAttributes", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
@@ -1019,9 +1019,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttribute(javax.swing.text.AttributeSet,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Text.AttributeSet RemoveAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1)
             {
                 return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttribute", "(Ljavax/swing/text/AttributeSet;Ljava/lang/Object;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
@@ -1029,19 +1029,19 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttributes(javax.swing.text.AttributeSet,java.util.Enumeration)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Enumeration"/></param>
-            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
-            public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration<object> arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration arg1)
             {
                 return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttributes", "(Ljavax/swing/text/AttributeSet;Ljava/util/Enumeration;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
             {
                 return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttributes", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
@@ -1049,7 +1049,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#reclaim(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void Reclaim(Javax.Swing.Text.AttributeSet arg0)
             {
                 IExecuteWithSignature("reclaim", "(Ljavax/swing/text/AttributeSet;)V", arg0);
@@ -1072,9 +1072,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.BranchElement.html#%3Cinit%3E(javax.swing.text.AbstractDocument,javax.swing.text.Element,javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
-            /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public BranchElement(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -1098,8 +1098,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.BranchElement.html#positionToElement(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Text.Element PositionToElement(int arg0)
             {
                 return IExecuteWithSignature<Javax.Swing.Text.Element>("positionToElement", "(I)Ljavax/swing/text/Element;", arg0);
@@ -1107,9 +1107,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.BranchElement.html#replace(int,int,javax.swing.text.Element[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Javax.Swing.Text.Element"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public void Replace(int arg0, int arg1, Javax.Swing.Text.Element[] arg2)
             {
                 IExecuteWithSignature("replace", "(II[Ljavax/swing/text/Element;)V", arg0, arg1, arg2);
@@ -1148,7 +1148,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#length()"/>
             /// </summary>
-            /// <returns><see cref="int"/></returns>
+            /// <returns><see cref=""/></returns>
             public int Length()
             {
                 return IExecuteWithSignature<int>("length", "()I");
@@ -1156,10 +1156,10 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getString(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <returns><see cref="Java.Lang.String"/></returns>
-            /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public Java.Lang.String GetString(int arg0, int arg1)
             {
                 return IExecuteWithSignature<Java.Lang.String>("getString", "(II)Ljava/lang/String;", arg0, arg1);
@@ -1167,9 +1167,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#createPosition(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Javax.Swing.Text.Position"/></returns>
-            /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public Javax.Swing.Text.Position CreatePosition(int arg0)
             {
                 return IExecuteWithSignature<Javax.Swing.Text.Position>("createPosition", "(I)Ljavax/swing/text/Position;", arg0);
@@ -1177,10 +1177,10 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#insertString(int,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Swing.Undo.UndoableEdit"/></returns>
-            /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, Java.Lang.String arg1)
             {
                 return IExecuteWithSignature<Javax.Swing.Undo.UndoableEdit>("insertString", "(ILjava/lang/String;)Ljavax/swing/undo/UndoableEdit;", arg0, arg1);
@@ -1188,10 +1188,10 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#remove(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <returns><see cref="Javax.Swing.Undo.UndoableEdit"/></returns>
-            /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public Javax.Swing.Undo.UndoableEdit Remove(int arg0, int arg1)
             {
                 return IExecuteWithSignature<Javax.Swing.Undo.UndoableEdit>("remove", "(II)Ljavax/swing/undo/UndoableEdit;", arg0, arg1);
@@ -1199,10 +1199,10 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getChars(int,int,javax.swing.text.Segment)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Javax.Swing.Text.Segment"/></param>
-            /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <exception cref=""/>
             public void GetChars(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
             {
                 IExecuteWithSignature("getChars", "(IILjavax/swing/text/Segment;)V", arg0, arg1, arg2);
@@ -1225,10 +1225,10 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#%3Cinit%3E(javax.swing.text.AbstractDocument,int,int,javax.swing.event.DocumentEvent.EventType)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="Javax.Swing.Event.DocumentEvent.EventType"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public DefaultDocumentEvent(Javax.Swing.Text.AbstractDocument arg0, int arg1, int arg2, Javax.Swing.Event.DocumentEvent.EventType arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -1238,7 +1238,7 @@ namespace Javax.Swing.Text
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/> to <see cref="Javax.Swing.Event.DocumentEvent"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.DocumentEvent(Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent t) => t.Cast<Javax.Swing.Event.DocumentEvent>();
 
@@ -1284,8 +1284,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getChange(javax.swing.text.Element)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-            /// <returns><see cref="Javax.Swing.Event.DocumentEvent.ElementChange"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0)
             {
                 return IExecuteWithSignature<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", "(Ljavax/swing/text/Element;)Ljavax/swing/event/DocumentEvent$ElementChange;", arg0);
@@ -1308,10 +1308,10 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#%3Cinit%3E(javax.swing.text.Element,int,javax.swing.text.Element[],javax.swing.text.Element[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Javax.Swing.Text.Element"/></param>
-            /// <param name="arg3"><see cref="Javax.Swing.Text.Element"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public ElementEdit(Javax.Swing.Text.Element arg0, int arg1, Javax.Swing.Text.Element[] arg2, Javax.Swing.Text.Element[] arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -1378,11 +1378,11 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.LeafElement.html#%3Cinit%3E(javax.swing.text.AbstractDocument,javax.swing.text.Element,javax.swing.text.AttributeSet,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
-            /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg3"><see cref="int"/></param>
-            /// <param name="arg4"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
             public LeafElement(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
             {

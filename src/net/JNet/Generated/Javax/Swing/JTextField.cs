@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JTextField(int arg0)
             : base(arg0)
         {
@@ -81,8 +81,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JTextField(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -90,7 +90,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JTextField(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -98,9 +98,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(javax.swing.text.Document,java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Document"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JTextField(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -110,7 +110,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JTextField"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JTextField t) => t.Cast<Javax.Swing.SwingConstants>();
 
@@ -176,7 +176,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -184,7 +184,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -199,7 +199,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setActionCommand(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetActionCommand(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setActionCommand", "(Ljava/lang/String;)V", arg0);

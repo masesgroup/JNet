@@ -98,12 +98,12 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Callable<V> declaration
+    #region Callable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class Callable<V> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class Callable : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CallableDirect<V> declaration
+    #region CallableDirect declaration
     /// <summary>
     /// Direct override of <see cref="Callable"/> or its generic type if there is one
     /// </summary>
-    public partial class CallableDirect<V> : Callable<V>
+    public partial class CallableDirect : Callable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,8 +219,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public virtual object Call()
         {
             hasOverrideCall = false; return default;
@@ -259,8 +259,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public override object Call()
         {
             return IExecuteWithSignature("call", "()Ljava/lang/Object;");
@@ -276,18 +276,18 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ICallable<V>
+    #region ICallable
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.concurrent.Callable implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html"/>
     /// </summary>
-    public partial interface ICallable<V>
+    public partial interface ICallable
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
-        /// <returns><typeparamref name="V"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         V Call();
 
         #endregion
@@ -300,8 +300,8 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region Callable<V> implementation
-    public partial class Callable<V> : Java.Util.Concurrent.ICallable<V>
+    #region Callable implementation
+    public partial class Callable : Java.Util.Concurrent.ICallable
     {
         #region Constructors
 
@@ -347,8 +347,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
-        /// <returns><typeparamref name="V"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public virtual V Call()
         {
             hasOverrideCall = false; return default;
@@ -364,8 +364,8 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CallableDirect<V> implementation
-    public partial class CallableDirect<V> : Java.Util.Concurrent.ICallable<V>
+    #region CallableDirect implementation
+    public partial class CallableDirect : Java.Util.Concurrent.ICallable
     {
         #region Constructors
 
@@ -387,8 +387,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
-        /// <returns><typeparamref name="V"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public override V Call()
         {
             return IExecuteWithSignature<V>("call", "()Ljava/lang/Object;");

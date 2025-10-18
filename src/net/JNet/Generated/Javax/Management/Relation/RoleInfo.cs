@@ -73,17 +73,17 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean,boolean,int,int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Javax.Management.Relation.InvalidRoleInfoException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public RoleInfo(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3, int arg4, int arg5, Java.Lang.String arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -91,13 +91,13 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public RoleInfo(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -105,11 +105,11 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public RoleInfo(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -117,8 +117,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(javax.management.relation.RoleInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Relation.RoleInfo"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public RoleInfo(Javax.Management.Relation.RoleInfo arg0)
             : base(arg0)
         {
@@ -183,8 +183,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#checkMaxDegree(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CheckMaxDegree(int arg0)
         {
             return IExecuteWithSignature<bool>("checkMaxDegree", "(I)Z", arg0);
@@ -192,8 +192,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#checkMinDegree(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CheckMinDegree(int arg0)
         {
             return IExecuteWithSignature<bool>("checkMinDegree", "(I)Z", arg0);
@@ -201,7 +201,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isReadable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsReadable()
         {
             return IExecuteWithSignature<bool>("isReadable", "()Z");
@@ -209,7 +209,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isWritable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsWritable()
         {
             return IExecuteWithSignature<bool>("isWritable", "()Z");

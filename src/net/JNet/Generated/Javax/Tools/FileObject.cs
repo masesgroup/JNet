@@ -86,44 +86,44 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#delete()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool Delete();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openInputStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Io.InputStream OpenInputStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openOutputStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Io.OutputStream OpenOutputStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openReader(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Io.Reader"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Io.Reader OpenReader(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openWriter()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Io.Writer OpenWriter();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#getCharContent(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Lang.CharSequence GetCharContent(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#toUri()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Net.URI ToUri();
 
         #endregion
@@ -173,7 +173,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#delete()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Delete()
         {
             return IExecuteWithSignature<bool>("delete", "()Z");
@@ -181,8 +181,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openInputStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.InputStream OpenInputStream()
         {
             return IExecuteWithSignature<Java.Io.InputStream>("openInputStream", "()Ljava/io/InputStream;");
@@ -190,8 +190,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openOutputStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.OutputStream OpenOutputStream()
         {
             return IExecuteWithSignature<Java.Io.OutputStream>("openOutputStream", "()Ljava/io/OutputStream;");
@@ -199,9 +199,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openReader(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Io.Reader"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.Reader OpenReader(bool arg0)
         {
             return IExecuteWithSignature<Java.Io.Reader>("openReader", "(Z)Ljava/io/Reader;", arg0);
@@ -209,8 +209,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openWriter()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.Writer OpenWriter()
         {
             return IExecuteWithSignature<Java.Io.Writer>("openWriter", "()Ljava/io/Writer;");
@@ -218,9 +218,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#getCharContent(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.CharSequence GetCharContent(bool arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("getCharContent", "(Z)Ljava/lang/CharSequence;", arg0);
@@ -228,7 +228,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#toUri()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.URI ToUri()
         {
             return IExecuteWithSignature<Java.Net.URI>("toUri", "()Ljava/net/URI;");

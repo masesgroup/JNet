@@ -78,7 +78,7 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html#createMultiDocPrintJob()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Print.MultiDocPrintJob"/></returns>
+        /// <returns><see cref=""/></returns>
         Javax.Print.MultiDocPrintJob CreateMultiDocPrintJob();
 
         #endregion
@@ -114,7 +114,7 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html#createMultiDocPrintJob()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Print.MultiDocPrintJob"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Print.MultiDocPrintJob CreateMultiDocPrintJob()
         {
             return IExecuteWithSignature<Javax.Print.MultiDocPrintJob>("createMultiDocPrintJob", "()Ljavax/print/MultiDocPrintJob;");

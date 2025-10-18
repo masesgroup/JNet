@@ -126,9 +126,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)"/>
         /// </summary>
-        public Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<Java.Lang.String>, Java.Lang.String> HandshakeApplicationProtocolSelector
+        public Java.Util.Function.BiFunction<, , > HandshakeApplicationProtocolSelector
         {
-            get { return IExecuteWithSignature<Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<Java.Lang.String>, Java.Lang.String>>("getHandshakeApplicationProtocolSelector", "()Ljava/util/function/BiFunction;"); } set { IExecuteWithSignature("setHandshakeApplicationProtocolSelector", "(Ljava/util/function/BiFunction;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Function.BiFunction<, , >>("getHandshakeApplicationProtocolSelector", "()Ljava/util/function/BiFunction;"); } set { IExecuteWithSignature("setHandshakeApplicationProtocolSelector", "(Ljava/util/function/BiFunction;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#getHandshakeSession()"/> 
@@ -189,7 +189,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddHandshakeCompletedListener(Javax.Net.Ssl.HandshakeCompletedListener arg0)
         {
             IExecuteWithSignature("addHandshakeCompletedListener", "(Ljavax/net/ssl/HandshakeCompletedListener;)V", arg0);
@@ -197,7 +197,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveHandshakeCompletedListener(Javax.Net.Ssl.HandshakeCompletedListener arg0)
         {
             IExecuteWithSignature("removeHandshakeCompletedListener", "(Ljavax/net/ssl/HandshakeCompletedListener;)V", arg0);
@@ -205,7 +205,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#startHandshake()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void StartHandshake()
         {
             IExecuteWithSignature("startHandshake", "()V");

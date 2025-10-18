@@ -75,15 +75,15 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.Sides"/> to <see cref="Javax.Print.Attribute.DocAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.DocAttribute(Javax.Print.Attribute.Standard.Sides t) => t.Cast<Javax.Print.Attribute.DocAttribute>();
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.Sides"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.Sides t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.Sides"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.Sides t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
 

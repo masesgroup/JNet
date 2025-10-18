@@ -66,12 +66,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region Vector<E> declaration
+    #region Vector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class Vector<E> : Java.Util.AbstractList<E>
+    public partial class Vector : Java.Util.AbstractList
     {
         const string _bridgeClassName = "java.util.Vector";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Vector(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Vector(int arg0)
             : base(arg0)
         {
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Vector(Java.Util.Collection arg0)
             : base(arg0)
         {
@@ -142,15 +142,15 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Vector"/> to <see cref="Java.Util.RandomAccess"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.RandomAccess(Java.Util.Vector t) => t.Cast<Java.Util.RandomAccess>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Vector"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Vector t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Vector"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Vector t) => t.Cast<Java.Io.Serializable>();
 
@@ -168,7 +168,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elements()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Enumeration Elements()
         {
             return IExecuteWithSignature<Java.Util.Enumeration>("elements", "()Ljava/util/Enumeration;");
@@ -176,8 +176,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveElement(object arg0)
         {
             return IExecuteWithSignature<bool>("removeElement", "(Ljava/lang/Object;)Z", arg0);
@@ -185,8 +185,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object ElementAt(int arg0)
         {
             return IExecuteWithSignature("elementAt", "(I)Ljava/lang/Object;", arg0);
@@ -194,7 +194,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object FirstElement()
         {
             return IExecuteWithSignature("firstElement", "()Ljava/lang/Object;");
@@ -202,7 +202,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object LastElement()
         {
             return IExecuteWithSignature("lastElement", "()Ljava/lang/Object;");
@@ -210,7 +210,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Capacity()
         {
             return IExecuteWithSignature<int>("capacity", "()I");
@@ -218,9 +218,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#indexOf(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(object arg0, int arg1)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
@@ -228,9 +228,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(object arg0, int arg1)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
@@ -238,7 +238,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#addElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddElement(object arg0)
         {
             IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
@@ -246,7 +246,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#copyInto(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void CopyInto(object[] arg0)
         {
             IExecuteWithSignature("copyInto", "([Ljava/lang/Object;)V", new object[] { arg0 });
@@ -254,7 +254,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#ensureCapacity(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EnsureCapacity(int arg0)
         {
             IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
@@ -262,8 +262,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void InsertElementAt(object arg0, int arg1)
         {
             IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -278,7 +278,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveElementAt(int arg0)
         {
             IExecuteWithSignature("removeElementAt", "(I)V", arg0);
@@ -286,8 +286,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetElementAt(object arg0, int arg1)
         {
             IExecuteWithSignature("setElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -295,7 +295,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSize(int arg0)
         {
             IExecuteWithSignature("setSize", "(I)V", arg0);
@@ -318,15 +318,15 @@ namespace Java.Util
     }
     #endregion
 
-    #region Vector<E> implementation
-    public partial class Vector<E>
+    #region Vector implementation
+    public partial class Vector
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Vector(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -334,7 +334,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Vector(int arg0)
             : base(arg0)
         {
@@ -342,8 +342,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public Vector(Java.Util.Collection<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public Vector(Java.Util.Collection arg0)
             : base(arg0)
         {
         }
@@ -352,21 +352,21 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Vector{E}"/> to <see cref="Java.Util.RandomAccess"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.RandomAccess(Java.Util.Vector<E> t) => t.Cast<Java.Util.RandomAccess>();
+        public static implicit operator Java.Util.RandomAccess(Java.Util.Vector t) => t.Cast<Java.Util.RandomAccess>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Vector{E}"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Util.Vector<E> t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Lang.Cloneable(Java.Util.Vector t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Vector{E}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Vector<E> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.Vector t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Vector{E}"/> to <see cref="Java.Util.Vector"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Vector(Java.Util.Vector<E> t) => t.Cast<Java.Util.Vector>();
+        public static implicit operator Java.Util.Vector(Java.Util.Vector t) => t.Cast<Java.Util.Vector>();
 
         #endregion
 
@@ -382,16 +382,16 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elements()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<E> Elements()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration Elements()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<E>>("elements", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("elements", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveElement(object arg0)
         {
             return IExecuteWithSignature<bool>("removeElement", "(Ljava/lang/Object;)Z", arg0);
@@ -399,8 +399,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E ElementAt(int arg0)
         {
             return IExecuteWithSignature<E>("elementAt", "(I)Ljava/lang/Object;", arg0);
@@ -408,7 +408,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E FirstElement()
         {
             return IExecuteWithSignature<E>("firstElement", "()Ljava/lang/Object;");
@@ -416,7 +416,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E LastElement()
         {
             return IExecuteWithSignature<E>("lastElement", "()Ljava/lang/Object;");
@@ -424,7 +424,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Capacity()
         {
             return IExecuteWithSignature<int>("capacity", "()I");
@@ -432,9 +432,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#indexOf(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(object arg0, int arg1)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
@@ -442,9 +442,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(object arg0, int arg1)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;I)I", arg0, arg1);
@@ -452,7 +452,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#addElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddElement(E arg0)
         {
             IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
@@ -460,7 +460,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#copyInto(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void CopyInto(object[] arg0)
         {
             IExecuteWithSignature("copyInto", "([Ljava/lang/Object;)V", new object[] { arg0 });
@@ -468,7 +468,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#ensureCapacity(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EnsureCapacity(int arg0)
         {
             IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
@@ -476,8 +476,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void InsertElementAt(E arg0, int arg1)
         {
             IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -492,7 +492,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveElementAt(int arg0)
         {
             IExecuteWithSignature("removeElementAt", "(I)V", arg0);
@@ -500,8 +500,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetElementAt(E arg0, int arg1)
         {
             IExecuteWithSignature("setElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -509,7 +509,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSize(int arg0)
         {
             IExecuteWithSignature("setSize", "(I)V", arg0);

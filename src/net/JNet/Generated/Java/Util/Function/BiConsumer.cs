@@ -98,13 +98,13 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumer<T, U> declaration
+    #region BiConsumer<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
-    public partial class BiConsumer<T, U> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class BiConsumer<, > : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -133,11 +133,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumerDirect<T, U> declaration
+    #region BiConsumerDirect<, > declaration
     /// <summary>
     /// Direct override of <see cref="BiConsumer"/> or its generic type if there is one
     /// </summary>
-    public partial class BiConsumerDirect<T, U> : BiConsumer<T, U>
+    public partial class BiConsumerDirect<, > : BiConsumer<, >
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -221,8 +221,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void Accept(object arg0, object arg1)
         {
             hasOverrideAccept = false;
@@ -230,8 +230,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiConsumer AndThenDefault(Java.Util.Function.BiConsumer arg0)
         {
@@ -256,8 +256,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiConsumer AndThen(Java.Util.Function.BiConsumer arg0)
         {
@@ -297,8 +297,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void Accept(object arg0, object arg1)
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -306,8 +306,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.BiConsumer AndThen(Java.Util.Function.BiConsumer arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect, Java.Util.Function.BiConsumer>("andThen", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
@@ -323,27 +323,27 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IBiConsumer<T, U>
+    #region IBiConsumer<, >
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.BiConsumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html"/>
     /// </summary>
-    public partial interface IBiConsumer<T, U>
+    public partial interface IBiConsumer<, >
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void Accept(T arg0, U arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperU"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Function.BiConsumer<, > AndThen<, >(Java.Util.Function.BiConsumer<, > arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U;
 
         #endregion
 
@@ -355,8 +355,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumer<T, U> implementation
-    public partial class BiConsumer<T, U> : Java.Util.Function.IBiConsumer<T, U>
+    #region BiConsumer<, > implementation
+    public partial class BiConsumer<, > : Java.Util.Function.IBiConsumer<, >
     {
         #region Constructors
 
@@ -381,7 +381,7 @@ namespace Java.Util.Function
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<, >EventHandler));
 
         }
 
@@ -403,8 +403,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void Accept(T arg0, U arg1)
         {
             hasOverrideAccept = false;
@@ -412,42 +412,42 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperU"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
+        public Java.Util.Function.BiConsumer<, > AndThen<, >Default(Java.Util.Function.BiConsumer<, > arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return IExecuteWithSignature<Java.Util.Function.BiConsumer<T, U>>("andThenDefault", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiConsumer<, >>("andThenDefault", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnAndThen<Arg0objectSuperT, Arg0objectSuperU>"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiConsumer<T, U>> OnAndThen<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
+        /// <remarks>If <see cref="OnAndThen<, >"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<Java.Util.Function.BiConsumer<, >, Java.Util.Function.BiConsumer<, >> OnAndThen<, > { get; set; } = null;
 
-        bool hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU> = true;
-        void AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        bool hasOverrideAndThen<, > = true;
+        void AndThen<, >EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
-            hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU> = true;
-            var methodToExecute = (OnAndThen<Arg0objectSuperT, Arg0objectSuperU> != null) ? OnAndThen<Arg0objectSuperT, Arg0objectSuperU> : AndThen<Arg0objectSuperT, Arg0objectSuperU>;
-            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>(0));
-            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU>, executionResult);
+            hasOverrideAndThen<, > = true;
+            var methodToExecute = (OnAndThen<, > != null) ? OnAndThen<, > : AndThen<, >;
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.BiConsumer<, >>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<, >, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<Arg0objectSuperT, Arg0objectSuperU>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperU"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<, >Default"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.BiConsumer<, > AndThen<, >(Java.Util.Function.BiConsumer<, > arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            hasOverrideAndThen<Arg0objectSuperT, Arg0objectSuperU> = false; return default;
+            hasOverrideAndThen<, > = false; return default;
         }
 
         #endregion
@@ -460,8 +460,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiConsumerDirect<T, U> implementation
-    public partial class BiConsumerDirect<T, U> : Java.Util.Function.IBiConsumer<T, U>
+    #region BiConsumerDirect<, > implementation
+    public partial class BiConsumerDirect<, > : Java.Util.Function.IBiConsumer<, >
     {
         #region Constructors
 
@@ -483,8 +483,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void Accept(T arg0, U arg1)
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -492,13 +492,13 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        public override Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperU"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public override Java.Util.Function.BiConsumer<, > AndThen<, >(Java.Util.Function.BiConsumer<, > arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect<T, U>, Java.Util.Function.BiConsumer<T, U>>("andThen", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect<, >, Java.Util.Function.BiConsumer<, >>("andThen", "(Ljava/util/function/BiConsumer;)Ljava/util/function/BiConsumer;", arg0);
         }
 
         #endregion

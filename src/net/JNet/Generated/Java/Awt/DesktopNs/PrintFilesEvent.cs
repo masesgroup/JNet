@@ -73,8 +73,8 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PrintFilesEvent.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public PrintFilesEvent(Java.Util.List<Java.Io.File> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public PrintFilesEvent(Java.Util.List arg0)
             : base(arg0)
         {
         }

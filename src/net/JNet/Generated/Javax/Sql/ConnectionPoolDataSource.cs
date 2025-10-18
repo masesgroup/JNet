@@ -90,16 +90,16 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Sql.PooledConnection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Sql.PooledConnection GetPooledConnection(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#createPooledConnectionBuilder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Sql.PooledConnectionBuilder CreatePooledConnectionBuilder();
 
         #endregion
@@ -156,10 +156,10 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Sql.PooledConnection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Sql.PooledConnection GetPooledConnection(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Javax.Sql.PooledConnection>("getPooledConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/sql/PooledConnection;", arg0, arg1);
@@ -167,8 +167,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#createPooledConnectionBuilder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Sql.PooledConnectionBuilder CreatePooledConnectionBuilder()
         {
             return IExecuteWithSignature<Javax.Sql.PooledConnectionBuilder>("createPooledConnectionBuilder", "()Ljavax/sql/PooledConnectionBuilder;");

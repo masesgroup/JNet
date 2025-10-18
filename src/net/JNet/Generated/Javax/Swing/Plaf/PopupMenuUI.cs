@@ -91,8 +91,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html#isPopupTrigger(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsPopupTrigger(Java.Awt.EventNs.MouseEvent arg0)
         {
             return IExecuteWithSignature<bool>("isPopupTrigger", "(Ljava/awt/event/MouseEvent;)Z", arg0);
@@ -100,10 +100,10 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html#getPopup(javax.swing.JPopupMenu,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JPopupMenu"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Popup"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Popup GetPopup(Javax.Swing.JPopupMenu arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Javax.Swing.Popup>("getPopup", "(Ljavax/swing/JPopupMenu;II)Ljavax/swing/Popup;", arg0, arg1, arg2);

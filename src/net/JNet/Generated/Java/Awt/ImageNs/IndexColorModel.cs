@@ -73,12 +73,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#%3Cinit%3E(int,int,byte[],byte[],byte[],byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <param name="arg3"><see cref="byte"/></param>
-        /// <param name="arg4"><see cref="byte"/></param>
-        /// <param name="arg5"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public IndexColorModel(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4, byte[] arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -86,12 +86,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#%3Cinit%3E(int,int,byte[],byte[],byte[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <param name="arg3"><see cref="byte"/></param>
-        /// <param name="arg4"><see cref="byte"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public IndexColorModel(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -99,11 +99,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#%3Cinit%3E(int,int,byte[],byte[],byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <param name="arg3"><see cref="byte"/></param>
-        /// <param name="arg4"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public IndexColorModel(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -111,12 +111,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#%3Cinit%3E(int,int,byte[],int,boolean,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public IndexColorModel(int arg0, int arg1, byte[] arg2, int arg3, bool arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -124,11 +124,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#%3Cinit%3E(int,int,byte[],int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public IndexColorModel(int arg0, int arg1, byte[] arg2, int arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -136,13 +136,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#%3Cinit%3E(int,int,int[],int,boolean,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public IndexColorModel(int arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -150,12 +150,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#%3Cinit%3E(int,int,int[],int,int,java.math.BigInteger)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public IndexColorModel(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Math.BigInteger arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -200,7 +200,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#isValid()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsValid()
         {
             return IExecuteWithSignature<bool>("isValid", "()Z");
@@ -208,8 +208,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#isValid(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsValid(int arg0)
         {
             return IExecuteWithSignature<bool>("isValid", "(I)Z", arg0);
@@ -217,7 +217,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getAlphas(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void GetAlphas(byte[] arg0)
         {
             IExecuteWithSignature("getAlphas", "([B)V", new object[] { arg0 });
@@ -225,7 +225,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getBlues(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void GetBlues(byte[] arg0)
         {
             IExecuteWithSignature("getBlues", "([B)V", new object[] { arg0 });
@@ -233,7 +233,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getGreens(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void GetGreens(byte[] arg0)
         {
             IExecuteWithSignature("getGreens", "([B)V", new object[] { arg0 });
@@ -241,7 +241,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getReds(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void GetReds(byte[] arg0)
         {
             IExecuteWithSignature("getReds", "([B)V", new object[] { arg0 });
@@ -249,7 +249,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#getRGBs(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void GetRGBs(int[] arg0)
         {
             IExecuteWithSignature("getRGBs", "([I)V", new object[] { arg0 });
@@ -257,9 +257,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#convertToIntDiscrete(java.awt.image.Raster,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.BufferedImage ConvertToIntDiscrete(Java.Awt.ImageNs.Raster arg0, bool arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("convertToIntDiscrete", "(Ljava/awt/image/Raster;Z)Ljava/awt/image/BufferedImage;", arg0, arg1);

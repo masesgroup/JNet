@@ -229,9 +229,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getInstance(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.AlphaComposite GetInstance(int arg0, float arg1)
         {
             return SExecuteWithSignature<Java.Awt.AlphaComposite>(LocalBridgeClazz, "getInstance", "(IF)Ljava/awt/AlphaComposite;", arg0, arg1);
@@ -239,8 +239,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getInstance(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.AlphaComposite GetInstance(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.AlphaComposite>(LocalBridgeClazz, "getInstance", "(I)Ljava/awt/AlphaComposite;", arg0);
@@ -266,8 +266,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#derive(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.AlphaComposite Derive(float arg0)
         {
             return IExecuteWithSignature<Java.Awt.AlphaComposite>("derive", "(F)Ljava/awt/AlphaComposite;", arg0);
@@ -275,8 +275,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#derive(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.AlphaComposite Derive(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.AlphaComposite>("derive", "(I)Ljava/awt/AlphaComposite;", arg0);
@@ -284,10 +284,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#createContext(java.awt.image.ColorModel,java.awt.image.ColorModel,java.awt.RenderingHints)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
-        /// <returns><see cref="Java.Awt.CompositeContext"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.CompositeContext CreateContext(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.ColorModel arg1, Java.Awt.RenderingHints arg2)
         {
             return IExecuteWithSignature<Java.Awt.CompositeContext>("createContext", "(Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;Ljava/awt/RenderingHints;)Ljava/awt/CompositeContext;", arg0, arg1, arg2);

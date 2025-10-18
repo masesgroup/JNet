@@ -68,12 +68,12 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RunnableScheduledFuture<V> declaration
+    #region RunnableScheduledFuture declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class RunnableScheduledFuture<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RunnableScheduledFuture<V>>
+    public partial class RunnableScheduledFuture : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RunnableScheduledFuture>
     {
         const string _bridgeClassName = "java.util.concurrent.RunnableScheduledFuture";
         /// <summary>
@@ -121,11 +121,11 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RunnableScheduledFuture"/> to <see cref="Java.Util.Concurrent.RunnableFuture"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.RunnableFuture(Java.Util.Concurrent.RunnableScheduledFuture t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RunnableScheduledFuture"/> to <see cref="Java.Util.Concurrent.ScheduledFuture"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ScheduledFuture(Java.Util.Concurrent.RunnableScheduledFuture t) => t.Cast<Java.Util.Concurrent.ScheduledFuture>();
 
@@ -143,7 +143,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPeriodic()
         {
             return IExecuteWithSignature<bool>("isPeriodic", "()Z");
@@ -159,17 +159,17 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region IRunnableScheduledFuture<V>
+    #region IRunnableScheduledFuture
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html"/>
     /// </summary>
-    public partial interface IRunnableScheduledFuture<V>
+    public partial interface IRunnableScheduledFuture
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsPeriodic();
 
         #endregion
@@ -182,8 +182,8 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RunnableScheduledFuture<V> implementation
-    public partial class RunnableScheduledFuture<V> : Java.Util.Concurrent.IRunnableScheduledFuture<V>
+    #region RunnableScheduledFuture implementation
+    public partial class RunnableScheduledFuture : Java.Util.Concurrent.IRunnableScheduledFuture
     {
         #region Constructors
 
@@ -191,17 +191,17 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RunnableScheduledFuture{V}"/> to <see cref="Java.Util.Concurrent.RunnableFuture{V}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.RunnableFuture<V>(Java.Util.Concurrent.RunnableScheduledFuture<V> t) => t.Cast<Java.Util.Concurrent.RunnableFuture<V>>();
+        public static implicit operator Java.Util.Concurrent.RunnableFuture(Java.Util.Concurrent.RunnableScheduledFuture t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RunnableScheduledFuture{V}"/> to <see cref="Java.Util.Concurrent.ScheduledFuture{V}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.ScheduledFuture<V>(Java.Util.Concurrent.RunnableScheduledFuture<V> t) => t.Cast<Java.Util.Concurrent.ScheduledFuture<V>>();
+        public static implicit operator Java.Util.Concurrent.ScheduledFuture(Java.Util.Concurrent.RunnableScheduledFuture t) => t.Cast<Java.Util.Concurrent.ScheduledFuture>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RunnableScheduledFuture{V}"/> to <see cref="Java.Util.Concurrent.RunnableScheduledFuture"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.RunnableScheduledFuture(Java.Util.Concurrent.RunnableScheduledFuture<V> t) => t.Cast<Java.Util.Concurrent.RunnableScheduledFuture>();
+        public static implicit operator Java.Util.Concurrent.RunnableScheduledFuture(Java.Util.Concurrent.RunnableScheduledFuture t) => t.Cast<Java.Util.Concurrent.RunnableScheduledFuture>();
 
         #endregion
 
@@ -217,7 +217,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPeriodic()
         {
             return IExecuteWithSignature<bool>("isPeriodic", "()Z");

@@ -75,7 +75,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JLayeredPane"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JLayeredPane t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -131,8 +131,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getLayer(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int GetLayer(Javax.Swing.JComponent arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getLayer", "(Ljavax/swing/JComponent;)I", arg0);
@@ -140,8 +140,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getLayeredPaneAbove(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="Javax.Swing.JLayeredPane"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.JLayeredPane GetLayeredPaneAbove(Java.Awt.Component arg0)
         {
             return SExecuteWithSignature<Javax.Swing.JLayeredPane>(LocalBridgeClazz, "getLayeredPaneAbove", "(Ljava/awt/Component;)Ljavax/swing/JLayeredPane;", arg0);
@@ -149,8 +149,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#putLayer(javax.swing.JComponent,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public static void PutLayer(Javax.Swing.JComponent arg0, int arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "putLayer", "(Ljavax/swing/JComponent;I)V", arg0, arg1);
@@ -162,8 +162,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getComponentCountInLayer(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetComponentCountInLayer(int arg0)
         {
             return IExecuteWithSignature<int>("getComponentCountInLayer", "(I)I", arg0);
@@ -171,8 +171,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getIndexOf(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetIndexOf(Java.Awt.Component arg0)
         {
             return IExecuteWithSignature<int>("getIndexOf", "(Ljava/awt/Component;)I", arg0);
@@ -180,8 +180,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getLayer(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetLayer(Java.Awt.Component arg0)
         {
             return IExecuteWithSignature<int>("getLayer", "(Ljava/awt/Component;)I", arg0);
@@ -189,8 +189,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getPosition(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetPosition(Java.Awt.Component arg0)
         {
             return IExecuteWithSignature<int>("getPosition", "(Ljava/awt/Component;)I", arg0);
@@ -198,7 +198,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#highestLayer()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int HighestLayer()
         {
             return IExecuteWithSignature<int>("highestLayer", "()I");
@@ -206,7 +206,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#lowestLayer()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int LowestLayer()
         {
             return IExecuteWithSignature<int>("lowestLayer", "()I");
@@ -214,8 +214,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getComponentsInLayer(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component[] GetComponentsInLayer(int arg0)
         {
             return IExecuteWithSignatureArray<Java.Awt.Component>("getComponentsInLayer", "(I)[Ljava/awt/Component;", arg0);
@@ -223,7 +223,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#moveToBack(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MoveToBack(Java.Awt.Component arg0)
         {
             IExecuteWithSignature("moveToBack", "(Ljava/awt/Component;)V", arg0);
@@ -231,7 +231,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#moveToFront(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MoveToFront(Java.Awt.Component arg0)
         {
             IExecuteWithSignature("moveToFront", "(Ljava/awt/Component;)V", arg0);
@@ -239,9 +239,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setLayer(java.awt.Component,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void SetLayer(Java.Awt.Component arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("setLayer", "(Ljava/awt/Component;II)V", arg0, arg1, arg2);
@@ -249,8 +249,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setLayer(java.awt.Component,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetLayer(Java.Awt.Component arg0, int arg1)
         {
             IExecuteWithSignature("setLayer", "(Ljava/awt/Component;I)V", arg0, arg1);
@@ -258,8 +258,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setPosition(java.awt.Component,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetPosition(Java.Awt.Component arg0, int arg1)
         {
             IExecuteWithSignature("setPosition", "(Ljava/awt/Component;I)V", arg0, arg1);

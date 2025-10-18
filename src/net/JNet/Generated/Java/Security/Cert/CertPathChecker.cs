@@ -78,19 +78,19 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsForwardCheckingSupported();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#check(java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Check(Java.Security.Cert.Certificate arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#init(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Init(bool arg0);
 
         #endregion
@@ -126,7 +126,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsForwardCheckingSupported()
         {
             return IExecuteWithSignature<bool>("isForwardCheckingSupported", "()Z");
@@ -134,8 +134,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#check(java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Check(Java.Security.Cert.Certificate arg0)
         {
             IExecuteWithSignature("check", "(Ljava/security/cert/Certificate;)V", arg0);
@@ -143,8 +143,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#init(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(bool arg0)
         {
             IExecuteWithSignature("init", "(Z)V", arg0);

@@ -98,14 +98,14 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunction<T, U, R> declaration
+    #region BiFunction<, , > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
     /// <typeparam name="R"></typeparam>
-    public partial class BiFunction<T, U, R> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class BiFunction<, , > : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -134,11 +134,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunctionDirect<T, U, R> declaration
+    #region BiFunctionDirect<, , > declaration
     /// <summary>
     /// Direct override of <see cref="BiFunction"/> or its generic type if there is one
     /// </summary>
-    public partial class BiFunctionDirect<T, U, R> : BiFunction<T, U, R>
+    public partial class BiFunctionDirect<, , > : BiFunction<, , >
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -222,9 +222,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual object Apply(object arg0, object arg1)
         {
             hasOverrideApply = false; return default;
@@ -232,8 +232,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiFunction AndThenDefault(Java.Util.Function.Function arg0)
         {
@@ -258,8 +258,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
         {
@@ -299,9 +299,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override object Apply(object arg0, object arg1)
         {
             return IExecuteWithSignature("apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -309,8 +309,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect, Java.Util.Function.BiFunction>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
@@ -326,29 +326,29 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IBiFunction<T, U, R>
+    #region IBiFunction<, , >
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.BiFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html"/>
     /// </summary>
-    public partial interface IBiFunction<T, U, R>
+    public partial interface IBiFunction<, , >
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R Apply(T arg0, U arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V;
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Function.BiFunction<, , > AndThen<, , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V;
 
         #endregion
 
@@ -360,8 +360,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunction<T, U, R> implementation
-    public partial class BiFunction<T, U, R> : Java.Util.Function.IBiFunction<T, U, R>
+    #region BiFunction<, , > implementation
+    public partial class BiFunction<, , > : Java.Util.Function.IBiFunction<, , >
     {
         #region Constructors
 
@@ -386,7 +386,7 @@ namespace Java.Util.Function
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<, , >EventHandler));
 
         }
 
@@ -408,9 +408,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual R Apply(T arg0, U arg1)
         {
             hasOverrideApply = false; return default;
@@ -418,44 +418,44 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
+        public Java.Util.Function.BiFunction<, , > AndThen<, , >Default(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecuteWithSignature<Java.Util.Function.BiFunction<T, U, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiFunction<, , >>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV>"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.BiFunction<T, U, V>> OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> { get; set; } = null;
+        /// <remarks>If <see cref="OnAndThen<, , >"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<Java.Util.Function.Function<, >, Java.Util.Function.BiFunction<, , >> OnAndThen<, , > { get; set; } = null;
 
-        bool hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = true;
-        void AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        bool hasOverrideAndThen<, , > = true;
+        void AndThen<, , >EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
-            hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = true;
-            var methodToExecute = (OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> != null) ? OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> : AndThen<V, Arg0objectSuperR, Arg0ExtendsV>;
-            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>(0));
-            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV>, executionResult);
+            hasOverrideAndThen<, , > = true;
+            var methodToExecute = (OnAndThen<, , > != null) ? OnAndThen<, , > : AndThen<, , >;
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<, >>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<, , >, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<, , >Default"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.BiFunction<, , > AndThen<, , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = false; return default;
+            hasOverrideAndThen<, , > = false; return default;
         }
 
         #endregion
@@ -468,8 +468,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BiFunctionDirect<T, U, R> implementation
-    public partial class BiFunctionDirect<T, U, R> : Java.Util.Function.IBiFunction<T, U, R>
+    #region BiFunctionDirect<, , > implementation
+    public partial class BiFunctionDirect<, , > : Java.Util.Function.IBiFunction<, , >
     {
         #region Constructors
 
@@ -491,9 +491,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override R Apply(T arg0, U arg1)
         {
             return IExecuteWithSignature<R>("apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -501,14 +501,14 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        public override Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public override Java.Util.Function.BiFunction<, , > AndThen<, , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect<T, U, V>, Java.Util.Function.BiFunction<T, U, V>>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect<, , >, Java.Util.Function.BiFunction<, , >>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
 
         #endregion

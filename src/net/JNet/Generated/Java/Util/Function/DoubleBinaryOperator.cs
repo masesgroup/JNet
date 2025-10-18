@@ -108,9 +108,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         double ApplyAsDouble(double arg0, double arg1);
 
         #endregion
@@ -170,9 +170,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual double ApplyAsDouble(double arg0, double arg1)
         {
             hasOverrideApplyAsDouble = false; return default;
@@ -211,9 +211,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override double ApplyAsDouble(double arg0, double arg1)
         {
             return IExecuteWithSignature<double>("applyAsDouble", "(DD)D", arg0, arg1);

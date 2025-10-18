@@ -73,8 +73,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ShortLookupTable.html#%3Cinit%3E(int,short[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ShortLookupTable(int arg0, short[] arg1)
             : base(arg0, arg1)
         {
@@ -82,8 +82,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ShortLookupTable.html#%3Cinit%3E(int,short[][])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ShortLookupTable(int arg0, short[][] arg1)
             : base(arg0, arg1)
         {
@@ -114,9 +114,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ShortLookupTable.html#lookupPixel(short[],short[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see cref="short"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public short[] LookupPixel(short[] arg0, short[] arg1)
         {
             return IExecuteWithSignatureArray<short>("lookupPixel", "([S[S)[S", arg0, arg1);

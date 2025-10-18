@@ -73,7 +73,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public InputSource(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public InputSource(Java.Io.Reader arg0)
             : base(arg0)
         {
@@ -89,7 +89,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public InputSource(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -148,7 +148,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");

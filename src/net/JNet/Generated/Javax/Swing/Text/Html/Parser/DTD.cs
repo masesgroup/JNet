@@ -173,9 +173,9 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getDTD(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.DTD"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Swing.Text.Html.Parser.DTD GetDTD(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Text.Html.Parser.DTD>(LocalBridgeClazz, "getDTD", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/DTD;", arg0);
@@ -183,8 +183,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#putDTDHash(java.lang.String,javax.swing.text.html.parser.DTD)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.Parser.DTD"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public static void PutDTDHash(Java.Lang.String arg0, Javax.Swing.Text.Html.Parser.DTD arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "putDTDHash", "(Ljava/lang/String;Ljavax/swing/text/html/parser/DTD;)V", arg0, arg1);
@@ -203,15 +203,15 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defineElement(java.lang.String,int,boolean,boolean,javax.swing.text.html.parser.ContentModel,java.util.BitSet,java.util.BitSet,javax.swing.text.html.parser.AttributeList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="Javax.Swing.Text.Html.Parser.ContentModel"/></param>
-        /// <param name="arg5"><see cref="Java.Util.BitSet"/></param>
-        /// <param name="arg6"><see cref="Java.Util.BitSet"/></param>
-        /// <param name="arg7"><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Element"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.Parser.Element DefineElement(Java.Lang.String arg0, int arg1, bool arg2, bool arg3, Javax.Swing.Text.Html.Parser.ContentModel arg4, Java.Util.BitSet arg5, Java.Util.BitSet arg6, Javax.Swing.Text.Html.Parser.AttributeList arg7)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Element>("defineElement", "(Ljava/lang/String;IZZLjavax/swing/text/html/parser/ContentModel;Ljava/util/BitSet;Ljava/util/BitSet;Ljavax/swing/text/html/parser/AttributeList;)Ljavax/swing/text/html/parser/Element;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -219,8 +219,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getElement(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Element"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.Parser.Element GetElement(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Element>("getElement", "(I)Ljavax/swing/text/html/parser/Element;", arg0);
@@ -228,8 +228,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getElement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Element"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.Parser.Element GetElement(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Element>("getElement", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/Element;", arg0);
@@ -237,10 +237,10 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defEntity(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Entity"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.Parser.Entity DefEntity(Java.Lang.String arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Entity>("defEntity", "(Ljava/lang/String;II)Ljavax/swing/text/html/parser/Entity;", arg0, arg1, arg2);
@@ -248,10 +248,10 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defineEntity(java.lang.String,int,char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="char"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Entity"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.Parser.Entity DefineEntity(Java.Lang.String arg0, int arg1, char[] arg2)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Entity>("defineEntity", "(Ljava/lang/String;I[C)Ljavax/swing/text/html/parser/Entity;", arg0, arg1, arg2);
@@ -259,8 +259,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getEntity(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Entity"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.Parser.Entity GetEntity(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Entity>("getEntity", "(I)Ljavax/swing/text/html/parser/Entity;", arg0);
@@ -268,8 +268,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getEntity(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Entity"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.Parser.Entity GetEntity(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Entity>("getEntity", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/Entity;", arg0);
@@ -277,8 +277,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defineAttributes(java.lang.String,javax.swing.text.html.parser.AttributeList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void DefineAttributes(Java.Lang.String arg0, Javax.Swing.Text.Html.Parser.AttributeList arg1)
         {
             IExecuteWithSignature("defineAttributes", "(Ljava/lang/String;Ljavax/swing/text/html/parser/AttributeList;)V", arg0, arg1);
@@ -286,8 +286,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#read(java.io.DataInputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.DataInputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Read(Java.Io.DataInputStream arg0)
         {
             IExecuteWithSignature("read", "(Ljava/io/DataInputStream;)V", arg0);

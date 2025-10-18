@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyStoreBuilderParameters.html#%3Cinit%3E(java.security.KeyStore.Builder)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.KeyStore.Builder"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public KeyStoreBuilderParameters(Java.Security.KeyStore.Builder arg0)
             : base(arg0)
         {
@@ -81,8 +81,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyStoreBuilderParameters.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public KeyStoreBuilderParameters(Java.Util.List<Java.Security.KeyStore.Builder> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public KeyStoreBuilderParameters(Java.Util.List arg0)
             : base(arg0)
         {
         }
@@ -105,9 +105,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyStoreBuilderParameters.html#getParameters()"/> 
         /// </summary>
-        public Java.Util.List<Java.Security.KeyStore.Builder> Parameters
+        public Java.Util.List Parameters
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.KeyStore.Builder>>("getParameters", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getParameters", "()Ljava/util/List;"); }
         }
 
         #endregion

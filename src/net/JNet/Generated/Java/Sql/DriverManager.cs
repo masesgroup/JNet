@@ -99,11 +99,11 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Connection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return SExecuteWithSignature<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;", arg0, arg1, arg2);
@@ -111,10 +111,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.util.Properties)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
-        /// <returns><see cref="Java.Sql.Connection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
             return SExecuteWithSignature<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", "(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;", arg0, arg1);
@@ -122,9 +122,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Connection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Sql.Connection GetConnection(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", "(Ljava/lang/String;)Ljava/sql/Connection;", arg0);
@@ -132,9 +132,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getDriver(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Driver"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Sql.Driver GetDriver(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Sql.Driver>(LocalBridgeClazz, "getDriver", "(Ljava/lang/String;)Ljava/sql/Driver;", arg0);
@@ -142,24 +142,24 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getDrivers()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public static Java.Util.Enumeration<Java.Sql.Driver> GetDrivers()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Enumeration GetDrivers()
         {
-            return SExecuteWithSignature<Java.Util.Enumeration<Java.Sql.Driver>>(LocalBridgeClazz, "getDrivers", "()Ljava/util/Enumeration;");
+            return SExecuteWithSignature<Java.Util.Enumeration>(LocalBridgeClazz, "getDrivers", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#drivers()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream<Java.Sql.Driver> Drivers()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Stream.Stream Drivers()
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream<Java.Sql.Driver>>(LocalBridgeClazz, "drivers", "()Ljava/util/stream/Stream;");
+            return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "drivers", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#deregisterDriver(java.sql.Driver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Driver"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void DeregisterDriver(Java.Sql.Driver arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "deregisterDriver", "(Ljava/sql/Driver;)V", arg0);
@@ -167,7 +167,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#println(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void Println(Java.Lang.String arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "println", "(Ljava/lang/String;)V", arg0);
@@ -175,9 +175,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver,java.sql.DriverAction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Driver"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.DriverAction"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void RegisterDriver(Java.Sql.Driver arg0, Java.Sql.DriverAction arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "registerDriver", "(Ljava/sql/Driver;Ljava/sql/DriverAction;)V", arg0, arg1);
@@ -185,8 +185,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Driver"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void RegisterDriver(Java.Sql.Driver arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "registerDriver", "(Ljava/sql/Driver;)V", arg0);

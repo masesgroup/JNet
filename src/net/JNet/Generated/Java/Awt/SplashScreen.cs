@@ -117,7 +117,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#isVisible()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsVisible()
         {
             return IExecuteWithSignature<bool>("isVisible", "()Z");
@@ -125,8 +125,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#createGraphics()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
-        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Awt.Graphics2D CreateGraphics()
         {
             return IExecuteWithSignature<Java.Awt.Graphics2D>("createGraphics", "()Ljava/awt/Graphics2D;");
@@ -134,7 +134,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -142,7 +142,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#update()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref=""/>
         public void Update()
         {
             IExecuteWithSignature("update", "()V");

@@ -82,7 +82,7 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EndElement.html#getNamespaces()"/> 
         /// </summary>
-        Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace> Namespaces { get; }
+        Java.Util.Iterator Namespaces { get; }
 
         #endregion
 
@@ -124,9 +124,9 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EndElement.html#getNamespaces()"/> 
         /// </summary>
-        public Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace> Namespaces
+        public Java.Util.Iterator Namespaces
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace>>("getNamespaces", "()Ljava/util/Iterator;"); }
+            get { return IExecuteWithSignature<Java.Util.Iterator>("getNamespaces", "()Ljava/util/Iterator;"); }
         }
 
         #endregion

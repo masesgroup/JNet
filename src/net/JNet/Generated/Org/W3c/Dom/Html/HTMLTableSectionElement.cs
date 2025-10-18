@@ -98,15 +98,15 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#insertRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.Html.HTMLElement InsertRow(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#deleteRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void DeleteRow(int arg0);
 
         #endregion
@@ -177,9 +177,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#insertRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Html.HTMLElement InsertRow(int arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLElement>("insertRow", "(I)Lorg/w3c/dom/html/HTMLElement;", arg0);
@@ -187,8 +187,8 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableSectionElement.html#deleteRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void DeleteRow(int arg0)
         {
             IExecuteWithSignature("deleteRow", "(I)V", arg0);

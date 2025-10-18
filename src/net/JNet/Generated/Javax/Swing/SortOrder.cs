@@ -29,7 +29,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html"/>
     /// </summary>
-    public partial class SortOrder : Java.Lang.Enum<Javax.Swing.SortOrder>
+    public partial class SortOrder : Java.Lang.Enum
     {
         const string _bridgeClassName = "javax.swing.SortOrder";
         /// <summary>
@@ -103,8 +103,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.SortOrder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.SortOrder ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Swing.SortOrder>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/SortOrder;", arg0);
@@ -112,7 +112,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.SortOrder"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.SortOrder[] Values()
         {
             return SExecuteWithSignatureArray<Javax.Swing.SortOrder>(LocalBridgeClazz, "values", "()[Ljavax/swing/SortOrder;");

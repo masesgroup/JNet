@@ -85,19 +85,19 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#asInterfaceInstance(java.lang.Class,java.lang.invoke.MethodHandle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T AsInterfaceInstance<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1)
+        /// <returns><see cref=""/></returns>
+        public static T AsInterfaceInstance(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "asInterfaceInstance", "(Ljava/lang/Class;Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#isWrapperInstance(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsWrapperInstance(object arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isWrapperInstance", "(Ljava/lang/Object;)Z", arg0);
@@ -105,8 +105,8 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#wrapperInstanceType(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Class WrapperInstanceType(object arg0)
         {
             return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "wrapperInstanceType", "(Ljava/lang/Object;)Ljava/lang/Class;", arg0);
@@ -114,8 +114,8 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#wrapperInstanceTarget(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Invoke.MethodHandle WrapperInstanceTarget(object arg0)
         {
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "wrapperInstanceTarget", "(Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle;", arg0);

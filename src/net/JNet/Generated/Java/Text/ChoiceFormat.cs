@@ -73,8 +73,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#%3Cinit%3E(double[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ChoiceFormat(double[] arg0, Java.Lang.String[] arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ChoiceFormat(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -102,9 +102,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#nextDouble(double,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static double NextDouble(double arg0, bool arg1)
         {
             return SExecuteWithSignature<double>(LocalBridgeClazz, "nextDouble", "(DZ)D", arg0, arg1);
@@ -112,8 +112,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#nextDouble(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static double NextDouble(double arg0)
         {
             return SExecuteWithSignature<double>(LocalBridgeClazz, "nextDouble", "(D)D", arg0);
@@ -121,8 +121,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#previousDouble(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static double PreviousDouble(double arg0)
         {
             return SExecuteWithSignature<double>(LocalBridgeClazz, "previousDouble", "(D)D", arg0);
@@ -148,7 +148,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#toPattern()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToPattern()
         {
             return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
@@ -156,7 +156,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#applyPattern(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ApplyPattern(Java.Lang.String arg0)
         {
             IExecuteWithSignature("applyPattern", "(Ljava/lang/String;)V", arg0);
@@ -164,8 +164,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#setChoices(double[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetChoices(double[] arg0, Java.Lang.String[] arg1)
         {
             IExecuteWithSignature("setChoices", "([D[Ljava/lang/String;)V", arg0, arg1);

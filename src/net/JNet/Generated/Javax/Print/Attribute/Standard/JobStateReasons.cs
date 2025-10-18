@@ -29,7 +29,7 @@ namespace Javax.Print.Attribute.Standard
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html"/>
     /// </summary>
-    public partial class JobStateReasons : Java.Util.HashSet<Javax.Print.Attribute.Standard.JobStateReason>
+    public partial class JobStateReasons : Java.Util.HashSet
     {
         const string _bridgeClassName = "javax.print.attribute.standard.JobStateReasons";
         /// <summary>
@@ -73,8 +73,8 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JobStateReasons(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JobStateReasons(int arg0)
             : base(arg0)
         {
@@ -90,8 +90,8 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public JobStateReasons(Java.Util.Collection<Javax.Print.Attribute.Standard.JobStateReason> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public JobStateReasons(Java.Util.Collection arg0)
             : base(arg0)
         {
         }
@@ -100,7 +100,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.JobStateReasons"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.JobStateReasons t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
 
@@ -132,8 +132,8 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html#add(javax.print.attribute.standard.JobStateReason)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Standard.JobStateReason"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Add(Javax.Print.Attribute.Standard.JobStateReason arg0)
         {
             return IExecuteWithSignature<bool>("add", "(Ljavax/print/attribute/standard/JobStateReason;)Z", arg0);

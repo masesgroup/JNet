@@ -68,12 +68,12 @@ namespace Java.Security
     }
     #endregion
 
-    #region PrivilegedAction<T> declaration
+    #region PrivilegedAction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class PrivilegedAction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivilegedAction<T>>
+    public partial class PrivilegedAction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivilegedAction>
     {
         const string _bridgeClassName = "java.security.PrivilegedAction";
         /// <summary>
@@ -135,7 +135,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Run()
         {
             return IExecuteWithSignature("run", "()Ljava/lang/Object;");
@@ -151,17 +151,17 @@ namespace Java.Security
     }
     #endregion
 
-    #region IPrivilegedAction<T>
+    #region IPrivilegedAction
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html"/>
     /// </summary>
-    public partial interface IPrivilegedAction<T>
+    public partial interface IPrivilegedAction
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         T Run();
 
         #endregion
@@ -174,8 +174,8 @@ namespace Java.Security
     }
     #endregion
 
-    #region PrivilegedAction<T> implementation
-    public partial class PrivilegedAction<T> : Java.Security.IPrivilegedAction<T>
+    #region PrivilegedAction implementation
+    public partial class PrivilegedAction : Java.Security.IPrivilegedAction
     {
         #region Constructors
 
@@ -183,9 +183,9 @@ namespace Java.Security
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.PrivilegedAction{T}"/> to <see cref="Java.Security.PrivilegedAction"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Security.PrivilegedAction(Java.Security.PrivilegedAction<T> t) => t.Cast<Java.Security.PrivilegedAction>();
+        public static implicit operator Java.Security.PrivilegedAction(Java.Security.PrivilegedAction t) => t.Cast<Java.Security.PrivilegedAction>();
 
         #endregion
 
@@ -201,7 +201,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         public T Run()
         {
             return IExecuteWithSignature<T>("run", "()Ljava/lang/Object;");

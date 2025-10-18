@@ -155,23 +155,23 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        public JTree(Java.Util.Hashtable<object, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public JTree(Java.Util.Hashtable<, > arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(java.util.Vector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        public JTree(Java.Util.Vector<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public JTree(Java.Util.Vector arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(javax.swing.tree.TreeModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JTree(Javax.Swing.Tree.TreeModel arg0)
             : base(arg0)
         {
@@ -179,8 +179,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(javax.swing.tree.TreeNode,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JTree(Javax.Swing.Tree.TreeNode arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -188,7 +188,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(javax.swing.tree.TreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JTree(Javax.Swing.Tree.TreeNode arg0)
             : base(arg0)
         {
@@ -198,11 +198,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JTree"/> to <see cref="Javax.Swing.Scrollable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JTree t) => t.Cast<Javax.Swing.Scrollable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JTree"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JTree t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -540,8 +540,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#hasBeenExpanded(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool HasBeenExpanded(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<bool>("hasBeenExpanded", "(Ljavax/swing/tree/TreePath;)Z", arg0);
@@ -549,8 +549,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isCollapsed(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsCollapsed(int arg0)
         {
             return IExecuteWithSignature<bool>("isCollapsed", "(I)Z", arg0);
@@ -558,8 +558,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isCollapsed(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsCollapsed(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<bool>("isCollapsed", "(Ljavax/swing/tree/TreePath;)Z", arg0);
@@ -567,7 +567,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEditable()
         {
             return IExecuteWithSignature<bool>("isEditable", "()Z");
@@ -575,7 +575,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditing()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEditing()
         {
             return IExecuteWithSignature<bool>("isEditing", "()Z");
@@ -583,8 +583,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isExpanded(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsExpanded(int arg0)
         {
             return IExecuteWithSignature<bool>("isExpanded", "(I)Z", arg0);
@@ -592,8 +592,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isExpanded(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsExpanded(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<bool>("isExpanded", "(Ljavax/swing/tree/TreePath;)Z", arg0);
@@ -601,7 +601,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isFixedRowHeight()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFixedRowHeight()
         {
             return IExecuteWithSignature<bool>("isFixedRowHeight", "()Z");
@@ -609,7 +609,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isLargeModel()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsLargeModel()
         {
             return IExecuteWithSignature<bool>("isLargeModel", "()Z");
@@ -617,8 +617,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isPathEditable(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsPathEditable(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<bool>("isPathEditable", "(Ljavax/swing/tree/TreePath;)Z", arg0);
@@ -626,8 +626,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isPathSelected(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsPathSelected(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<bool>("isPathSelected", "(Ljavax/swing/tree/TreePath;)Z", arg0);
@@ -635,7 +635,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRootVisible()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRootVisible()
         {
             return IExecuteWithSignature<bool>("isRootVisible", "()Z");
@@ -643,8 +643,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRowSelected(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsRowSelected(int arg0)
         {
             return IExecuteWithSignature<bool>("isRowSelected", "(I)Z", arg0);
@@ -652,7 +652,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isSelectionEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSelectionEmpty()
         {
             return IExecuteWithSignature<bool>("isSelectionEmpty", "()Z");
@@ -660,8 +660,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isVisible(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsVisible(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<bool>("isVisible", "(Ljavax/swing/tree/TreePath;)Z", arg0);
@@ -669,7 +669,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#stopEditing()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool StopEditing()
         {
             return IExecuteWithSignature<bool>("stopEditing", "()Z");
@@ -677,9 +677,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestRowForLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetClosestRowForLocation(int arg0, int arg1)
         {
             return IExecuteWithSignature<int>("getClosestRowForLocation", "(II)I", arg0, arg1);
@@ -687,9 +687,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowForLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetRowForLocation(int arg0, int arg1)
         {
             return IExecuteWithSignature<int>("getRowForLocation", "(II)I", arg0, arg1);
@@ -697,8 +697,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowForPath(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetRowForPath(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<int>("getRowForPath", "(Ljavax/swing/tree/TreePath;)I", arg0);
@@ -706,10 +706,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
@@ -717,10 +717,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
@@ -728,8 +728,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathBounds(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Rectangle GetPathBounds(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getPathBounds", "(Ljavax/swing/tree/TreePath;)Ljava/awt/Rectangle;", arg0);
@@ -737,8 +737,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowBounds(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Rectangle GetRowBounds(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getRowBounds", "(I)Ljava/awt/Rectangle;", arg0);
@@ -746,13 +746,13 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#convertValueToText(java.lang.Object,boolean,boolean,boolean,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ConvertValueToText(object arg0, bool arg1, bool arg2, bool arg3, int arg4, bool arg5)
         {
             return IExecuteWithSignature<Java.Lang.String>("convertValueToText", "(Ljava/lang/Object;ZZZIZ)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -760,18 +760,18 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getExpandedDescendants(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<Javax.Swing.Tree.TreePath> GetExpandedDescendants(Javax.Swing.Tree.TreePath arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration GetExpandedDescendants(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreePath>>("getExpandedDescendants", "(Ljavax/swing/tree/TreePath;)Ljava/util/Enumeration;", arg0);
+            return IExecuteWithSignature<Java.Util.Enumeration>("getExpandedDescendants", "(Ljavax/swing/tree/TreePath;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestPathForLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreePath GetClosestPathForLocation(int arg0, int arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getClosestPathForLocation", "(II)Ljavax/swing/tree/TreePath;", arg0, arg1);
@@ -779,10 +779,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreePath GetNextMatch(Java.Lang.String arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getNextMatch", "(Ljava/lang/String;ILjavax/swing/text/Position$Bias;)Ljavax/swing/tree/TreePath;", arg0, arg1, arg2);
@@ -790,9 +790,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathForLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreePath GetPathForLocation(int arg0, int arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPathForLocation", "(II)Ljavax/swing/tree/TreePath;", arg0, arg1);
@@ -800,8 +800,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathForRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreePath GetPathForRow(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPathForRow", "(I)Ljavax/swing/tree/TreePath;", arg0);
@@ -809,8 +809,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("addSelectionInterval", "(II)V", arg0, arg1);
@@ -818,7 +818,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionPath(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddSelectionPath(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("addSelectionPath", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -826,7 +826,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
             IExecuteWithSignature("addSelectionPaths", "([Ljavax/swing/tree/TreePath;)V", new object[] { arg0 });
@@ -834,7 +834,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddSelectionRow(int arg0)
         {
             IExecuteWithSignature("addSelectionRow", "(I)V", arg0);
@@ -842,7 +842,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionRows(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddSelectionRows(int[] arg0)
         {
             IExecuteWithSignature("addSelectionRows", "([I)V", new object[] { arg0 });
@@ -850,7 +850,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeExpansionListener(javax.swing.event.TreeExpansionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddTreeExpansionListener(Javax.Swing.Event.TreeExpansionListener arg0)
         {
             IExecuteWithSignature("addTreeExpansionListener", "(Ljavax/swing/event/TreeExpansionListener;)V", arg0);
@@ -858,7 +858,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddTreeSelectionListener(Javax.Swing.Event.TreeSelectionListener arg0)
         {
             IExecuteWithSignature("addTreeSelectionListener", "(Ljavax/swing/event/TreeSelectionListener;)V", arg0);
@@ -866,7 +866,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeWillExpandListener(javax.swing.event.TreeWillExpandListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeWillExpandListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddTreeWillExpandListener(Javax.Swing.Event.TreeWillExpandListener arg0)
         {
             IExecuteWithSignature("addTreeWillExpandListener", "(Ljavax/swing/event/TreeWillExpandListener;)V", arg0);
@@ -888,7 +888,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#collapsePath(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void CollapsePath(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("collapsePath", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -896,7 +896,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#collapseRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void CollapseRow(int arg0)
         {
             IExecuteWithSignature("collapseRow", "(I)V", arg0);
@@ -904,7 +904,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#expandPath(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ExpandPath(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("expandPath", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -912,7 +912,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#expandRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ExpandRow(int arg0)
         {
             IExecuteWithSignature("expandRow", "(I)V", arg0);
@@ -920,7 +920,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeCollapsed(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void FireTreeCollapsed(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("fireTreeCollapsed", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -928,7 +928,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeExpanded(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void FireTreeExpanded(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("fireTreeExpanded", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -936,8 +936,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeWillCollapse(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void FireTreeWillCollapse(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("fireTreeWillCollapse", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -945,8 +945,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeWillExpand(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void FireTreeWillExpand(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("fireTreeWillExpand", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -954,7 +954,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#makeVisible(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MakeVisible(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("makeVisible", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -962,8 +962,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("removeSelectionInterval", "(II)V", arg0, arg1);
@@ -971,7 +971,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionPath(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveSelectionPath(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("removeSelectionPath", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -979,7 +979,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
             IExecuteWithSignature("removeSelectionPaths", "([Ljavax/swing/tree/TreePath;)V", new object[] { arg0 });
@@ -987,7 +987,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveSelectionRow(int arg0)
         {
             IExecuteWithSignature("removeSelectionRow", "(I)V", arg0);
@@ -995,7 +995,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionRows(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveSelectionRows(int[] arg0)
         {
             IExecuteWithSignature("removeSelectionRows", "([I)V", new object[] { arg0 });
@@ -1003,7 +1003,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeExpansionListener(javax.swing.event.TreeExpansionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveTreeExpansionListener(Javax.Swing.Event.TreeExpansionListener arg0)
         {
             IExecuteWithSignature("removeTreeExpansionListener", "(Ljavax/swing/event/TreeExpansionListener;)V", arg0);
@@ -1011,7 +1011,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveTreeSelectionListener(Javax.Swing.Event.TreeSelectionListener arg0)
         {
             IExecuteWithSignature("removeTreeSelectionListener", "(Ljavax/swing/event/TreeSelectionListener;)V", arg0);
@@ -1019,7 +1019,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeWillExpandListener(javax.swing.event.TreeWillExpandListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeWillExpandListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveTreeWillExpandListener(Javax.Swing.Event.TreeWillExpandListener arg0)
         {
             IExecuteWithSignature("removeTreeWillExpandListener", "(Ljavax/swing/event/TreeWillExpandListener;)V", arg0);
@@ -1027,7 +1027,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#scrollPathToVisible(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ScrollPathToVisible(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("scrollPathToVisible", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -1035,7 +1035,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#scrollRowToVisible(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ScrollRowToVisible(int arg0)
         {
             IExecuteWithSignature("scrollRowToVisible", "(I)V", arg0);
@@ -1043,7 +1043,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setEditable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetEditable(bool arg0)
         {
             IExecuteWithSignature("setEditable", "(Z)V", arg0);
@@ -1051,7 +1051,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setLargeModel(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetLargeModel(bool arg0)
         {
             IExecuteWithSignature("setLargeModel", "(Z)V", arg0);
@@ -1059,7 +1059,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setRootVisible(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRootVisible(bool arg0)
         {
             IExecuteWithSignature("setRootVisible", "(Z)V", arg0);
@@ -1067,8 +1067,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("setSelectionInterval", "(II)V", arg0, arg1);
@@ -1076,7 +1076,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSelectionRow(int arg0)
         {
             IExecuteWithSignature("setSelectionRow", "(I)V", arg0);
@@ -1084,7 +1084,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setUI(javax.swing.plaf.TreeUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.TreeUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.TreeUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/TreeUI;)V", arg0);
@@ -1092,7 +1092,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#startEditingAtPath(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void StartEditingAtPath(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("startEditingAtPath", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -1160,8 +1160,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DynamicUtilTreeNode.html#%3Cinit%3E(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public DynamicUtilTreeNode(object arg0, object arg1)
                 : base(arg0, arg1)
             {
@@ -1181,8 +1181,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DynamicUtilTreeNode.html#createChildren(javax.swing.tree.DefaultMutableTreeNode,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public static void CreateChildren(Javax.Swing.Tree.DefaultMutableTreeNode arg0, object arg1)
             {
                 SExecuteWithSignature(LocalBridgeClazz, "createChildren", "(Ljavax/swing/tree/DefaultMutableTreeNode;Ljava/lang/Object;)V", arg0, arg1);

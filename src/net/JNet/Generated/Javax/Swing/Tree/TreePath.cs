@@ -73,7 +73,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TreePath(object arg0)
             : base(arg0)
         {
@@ -125,8 +125,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#isDescendant(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDescendant(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<bool>("isDescendant", "(Ljavax/swing/tree/TreePath;)Z", arg0);
@@ -134,8 +134,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getPathComponent(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetPathComponent(int arg0)
         {
             return IExecuteWithSignature("getPathComponent", "(I)Ljava/lang/Object;", arg0);
@@ -143,8 +143,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#pathByAddingChild(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreePath PathByAddingChild(object arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("pathByAddingChild", "(Ljava/lang/Object;)Ljavax/swing/tree/TreePath;", arg0);

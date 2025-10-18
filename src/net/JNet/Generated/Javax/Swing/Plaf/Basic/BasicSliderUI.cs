@@ -237,7 +237,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#%3Cinit%3E(javax.swing.JSlider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JSlider"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BasicSliderUI(Javax.Swing.JSlider arg0)
             : base(arg0)
         {
@@ -313,8 +313,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#valueForXPosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int ValueForXPosition(int arg0)
         {
             return IExecuteWithSignature<int>("valueForXPosition", "(I)I", arg0);
@@ -322,8 +322,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#valueForYPosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int ValueForYPosition(int arg0)
         {
             return IExecuteWithSignature<int>("valueForYPosition", "(I)I", arg0);
@@ -331,7 +331,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#paintFocus(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PaintFocus(Java.Awt.Graphics arg0)
         {
             IExecuteWithSignature("paintFocus", "(Ljava/awt/Graphics;)V", arg0);
@@ -339,7 +339,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#paintLabels(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PaintLabels(Java.Awt.Graphics arg0)
         {
             IExecuteWithSignature("paintLabels", "(Ljava/awt/Graphics;)V", arg0);
@@ -347,7 +347,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#paintThumb(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PaintThumb(Java.Awt.Graphics arg0)
         {
             IExecuteWithSignature("paintThumb", "(Ljava/awt/Graphics;)V", arg0);
@@ -355,7 +355,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#paintTicks(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PaintTicks(Java.Awt.Graphics arg0)
         {
             IExecuteWithSignature("paintTicks", "(Ljava/awt/Graphics;)V", arg0);
@@ -363,7 +363,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#paintTrack(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PaintTrack(Java.Awt.Graphics arg0)
         {
             IExecuteWithSignature("paintTrack", "(Ljava/awt/Graphics;)V", arg0);
@@ -371,7 +371,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#scrollByBlock(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ScrollByBlock(int arg0)
         {
             IExecuteWithSignature("scrollByBlock", "(I)V", arg0);
@@ -379,7 +379,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#scrollByUnit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ScrollByUnit(int arg0)
         {
             IExecuteWithSignature("scrollByUnit", "(I)V", arg0);
@@ -387,8 +387,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#setThumbLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetThumbLocation(int arg0, int arg1)
         {
             IExecuteWithSignature("setThumbLocation", "(II)V", arg0, arg1);
@@ -404,10 +404,10 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ActionScroller.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSliderUI,javax.swing.JSlider,int,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSliderUI"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.JSlider"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="bool"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public ActionScroller(Javax.Swing.Plaf.Basic.BasicSliderUI arg0, Javax.Swing.JSlider arg1, int arg2, bool arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -446,7 +446,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSliderUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSliderUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public ChangeHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
                 : base(arg0)
             {
@@ -456,7 +456,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSliderUI.ChangeHandler"/> to <see cref="Javax.Swing.Event.ChangeListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicSliderUI.ChangeHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
 
@@ -474,7 +474,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ChangeHandler.html#stateChanged(javax.swing.event.ChangeEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
             {
                 IExecuteWithSignature("stateChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
@@ -497,7 +497,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.FocusHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSliderUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSliderUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public FocusHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
                 : base(arg0)
             {
@@ -507,7 +507,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSliderUI.FocusHandler"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicSliderUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
 
@@ -525,7 +525,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -533,7 +533,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -556,7 +556,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.PropertyChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSliderUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSliderUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
                 : base(arg0)
             {
@@ -566,7 +566,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSliderUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicSliderUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
 
@@ -584,7 +584,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);

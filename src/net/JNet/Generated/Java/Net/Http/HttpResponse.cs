@@ -107,12 +107,12 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyHandler<T> declaration
+        #region BodyHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        public partial class BodyHandler<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyHandler<T>>
+        public partial class BodyHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyHandler>
         {
             const string _bridgeClassName = "java.net.http.HttpResponse$BodyHandler";
             /// <summary>
@@ -235,12 +235,12 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodySubscriber<T> declaration
+        #region BodySubscriber declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscriber.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        public partial class BodySubscriber<T> : Java.Util.Concurrent.Flow.Subscriber<Java.Util.List<Java.Nio.ByteBuffer>>
+        public partial class BodySubscriber : Java.Util.Concurrent.Flow.Subscriber
         {
             const string _bridgeClassName = "java.net.http.HttpResponse$BodySubscriber";
             /// <summary>
@@ -363,12 +363,12 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region PushPromiseHandler<T> declaration
+        #region PushPromiseHandler declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        public partial class PushPromiseHandler<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PushPromiseHandler<T>>
+        public partial class PushPromiseHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PushPromiseHandler>
         {
             const string _bridgeClassName = "java.net.http.HttpResponse$PushPromiseHandler";
             /// <summary>
@@ -454,12 +454,12 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region HttpResponse<T> declaration
+    #region HttpResponse declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class HttpResponse<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HttpResponse<T>>
+    public partial class HttpResponse : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HttpResponse>
     {
         const string _bridgeClassName = "java.net.http.HttpResponse";
         /// <summary>
@@ -521,7 +521,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#statusCode()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int StatusCode()
         {
             return IExecuteWithSignature<int>("statusCode", "()I");
@@ -529,7 +529,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#version()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.Http.HttpClient.Version Version()
         {
             return IExecuteWithSignature<Java.Net.Http.HttpClient.Version>("version", "()Ljava/net/http/HttpClient$Version;");
@@ -537,7 +537,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#headers()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.Http.HttpHeaders Headers()
         {
             return IExecuteWithSignature<Java.Net.Http.HttpHeaders>("headers", "()Ljava/net/http/HttpHeaders;");
@@ -545,7 +545,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#request()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpRequest"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.Http.HttpRequest Request()
         {
             return IExecuteWithSignature<Java.Net.Http.HttpRequest>("request", "()Ljava/net/http/HttpRequest;");
@@ -553,7 +553,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#uri()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.URI Uri()
         {
             return IExecuteWithSignature<Java.Net.URI>("uri", "()Ljava/net/URI;");
@@ -561,7 +561,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#previousResponse()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Optional PreviousResponse()
         {
             return IExecuteWithSignature<Java.Util.Optional>("previousResponse", "()Ljava/util/Optional;");
@@ -569,7 +569,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#sslSession()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Optional SslSession()
         {
             return IExecuteWithSignature<Java.Util.Optional>("sslSession", "()Ljava/util/Optional;");
@@ -577,7 +577,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#body()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Body()
         {
             return IExecuteWithSignature("body", "()Ljava/lang/Object;");
@@ -609,8 +609,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html#apply(java.net.http.HttpResponse.ResponseInfo)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.ResponseInfo"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpResponse.BodySubscriber Apply(Java.Net.Http.HttpResponse.ResponseInfo arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>("apply", "(Ljava/net/http/HttpResponse$ResponseInfo;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
@@ -626,8 +626,8 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyHandler<T> implementation
-        public partial class BodyHandler<T>
+        #region BodyHandler implementation
+        public partial class BodyHandler
         {
             #region Constructors
 
@@ -635,9 +635,9 @@ namespace Java.Net.Http
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Net.Http.HttpResponse.BodyHandler{T}"/> to <see cref="Java.Net.Http.HttpResponse.BodyHandler"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Net.Http.HttpResponse.BodyHandler(Java.Net.Http.HttpResponse.BodyHandler<T> t) => t.Cast<Java.Net.Http.HttpResponse.BodyHandler>();
+            public static implicit operator Java.Net.Http.HttpResponse.BodyHandler(Java.Net.Http.HttpResponse.BodyHandler t) => t.Cast<Java.Net.Http.HttpResponse.BodyHandler>();
 
             #endregion
 
@@ -653,11 +653,11 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html#apply(java.net.http.HttpResponse.ResponseInfo)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.ResponseInfo"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public Java.Net.Http.HttpResponse.BodySubscriber<T> Apply(Java.Net.Http.HttpResponse.ResponseInfo arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Net.Http.HttpResponse.BodySubscriber Apply(Java.Net.Http.HttpResponse.ResponseInfo arg0)
             {
-                return IExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<T>>("apply", "(Ljava/net/http/HttpResponse$ResponseInfo;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
+                return IExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>("apply", "(Ljava/net/http/HttpResponse$ResponseInfo;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }
 
             #endregion
@@ -689,167 +689,167 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber,java.util.function.Function,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="S"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             /// <typeparam name="T"></typeparam>
             /// <typeparam name="S"></typeparam>
-            /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
-            /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<T> FromLineSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1, Java.Lang.String arg2) where Arg1objectSuperS : S where Arg1ExtendsT : T
+            /// <typeparam name="Arg1objectSuperS"><see cref=""/></typeparam>
+            /// <typeparam name="Arg1ExtendsT"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler FromLineSubscriber<, , , >(S arg0, Java.Util.Function.Function<, > arg1, Java.Lang.String arg2) where Arg1objectSuperS : S where Arg1ExtendsT : T
             {
-                return SExecute<Java.Net.Http.HttpResponse.BodyHandler<T>>(LocalBridgeClazz, "fromLineSubscriber", arg0, arg1, arg2);
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "fromLineSubscriber", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromSubscriber(java.util.concurrent.Flow.Subscriber,java.util.function.Function)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="S"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             /// <typeparam name="T"></typeparam>
             /// <typeparam name="S"></typeparam>
-            /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
-            /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<T> FromSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1) where Arg1objectSuperS : S where Arg1ExtendsT : T
+            /// <typeparam name="Arg1objectSuperS"><see cref=""/></typeparam>
+            /// <typeparam name="Arg1ExtendsT"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler FromSubscriber<, , , >(S arg0, Java.Util.Function.Function<, > arg1) where Arg1objectSuperS : S where Arg1ExtendsT : T
             {
-                return SExecute<Java.Net.Http.HttpResponse.BodyHandler<T>>(LocalBridgeClazz, "fromSubscriber", arg0, arg1);
+                return SExecute<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "fromSubscriber", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#buffering(java.net.http.HttpResponse.BodyHandler,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             /// <typeparam name="T"></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<T> Buffering<T>(Java.Net.Http.HttpResponse.BodyHandler<T> arg0, int arg1)
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler Buffering(Java.Net.Http.HttpResponse.BodyHandler arg0, int arg1)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<T>>(LocalBridgeClazz, "buffering", "(Ljava/net/http/HttpResponse$BodyHandler;I)Ljava/net/http/HttpResponse$BodyHandler;", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "buffering", "(Ljava/net/http/HttpResponse$BodyHandler;I)Ljava/net/http/HttpResponse$BodyHandler;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#replacing(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="U"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             /// <typeparam name="U"></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<U> Replacing<U>(U arg0)
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler Replacing(U arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<U>>(LocalBridgeClazz, "replacing", "(Ljava/lang/Object;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "replacing", "(Ljava/lang/Object;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofByteArray()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<byte[]> OfByteArray()
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfByteArray()
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<byte[]>>(LocalBridgeClazz, "ofByteArray", "()Ljava/net/http/HttpResponse$BodyHandler;");
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "ofByteArray", "()Ljava/net/http/HttpResponse$BodyHandler;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofInputStream()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Io.InputStream> OfInputStream()
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfInputStream()
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Io.InputStream>>(LocalBridgeClazz, "ofInputStream", "()Ljava/net/http/HttpResponse$BodyHandler;");
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "ofInputStream", "()Ljava/net/http/HttpResponse$BodyHandler;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofString()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.String> OfString()
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfString()
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.String>>(LocalBridgeClazz, "ofString", "()Ljava/net/http/HttpResponse$BodyHandler;");
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "ofString", "()Ljava/net/http/HttpResponse$BodyHandler;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofString(java.nio.charset.Charset)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.String> OfString(Java.Nio.Charset.Charset arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfString(Java.Nio.Charset.Charset arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.String>>(LocalBridgeClazz, "ofString", "(Ljava/nio/charset/Charset;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "ofString", "(Ljava/nio/charset/Charset;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#discarding()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> Discarding()
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler Discarding()
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void>>(LocalBridgeClazz, "discarding", "()Ljava/net/http/HttpResponse$BodyHandler;");
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "discarding", "()Ljava/net/http/HttpResponse$BodyHandler;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
-            /// <typeparam name="Arg0objectSuperJava_Lang_String"><see cref="Java.Lang.String"/></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> FromLineSubscriber<Arg0objectSuperJava_Lang_String>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Lang_String> arg0) where Arg0objectSuperJava_Lang_String : Java.Lang.String
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperJava_Lang_String"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler FromLineSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0) where Arg0objectSuperJava_Lang_String : Java.Lang.String
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void>>(LocalBridgeClazz, "fromLineSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "fromLineSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromSubscriber(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
-            /// <typeparam name="Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_"><see cref="Java.Util.List{Java.Nio.ByteBuffer}"/></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> FromSubscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_> arg0) where Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_ : Java.Util.List<Java.Nio.ByteBuffer>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperJava_Util_List"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler FromSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0) where Arg0objectSuperJava_Util_List : Java.Util.List
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void>>(LocalBridgeClazz, "fromSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "fromSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofByteArrayConsumer(java.util.function.Consumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> OfByteArrayConsumer(Java.Util.Function.Consumer<Java.Util.Optional<byte[]>> arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfByteArrayConsumer(Java.Util.Function.Consumer arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void>>(LocalBridgeClazz, "ofByteArrayConsumer", "(Ljava/util/function/Consumer;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "ofByteArrayConsumer", "(Ljava/util/function/Consumer;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path,java.nio.file.OpenOption...)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path> OfFile(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfFile(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodyHandler;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodyHandler;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path> OfFile(Java.Nio.File.Path arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfFile(Java.Nio.File.Path arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFileDownload(java.nio.file.Path,java.nio.file.OpenOption...)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path> OfFileDownload(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfFileDownload(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFileDownload", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodyHandler;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "ofFileDownload", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodyHandler;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofPublisher()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Util.Concurrent.Flow.Publisher<Java.Util.List<Java.Nio.ByteBuffer>>> OfPublisher()
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfPublisher()
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Util.Concurrent.Flow.Publisher<Java.Util.List<Java.Nio.ByteBuffer>>>>(LocalBridgeClazz, "ofPublisher", "()Ljava/net/http/HttpResponse$BodyHandler;");
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "ofPublisher", "()Ljava/net/http/HttpResponse$BodyHandler;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofLines()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Util.Stream.Stream<Java.Lang.String>> OfLines()
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodyHandler OfLines()
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Util.Stream.Stream<Java.Lang.String>>>(LocalBridgeClazz, "ofLines", "()Ljava/net/http/HttpResponse$BodyHandler;");
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler>(LocalBridgeClazz, "ofLines", "()Ljava/net/http/HttpResponse$BodyHandler;");
             }
 
             #endregion
@@ -904,8 +904,8 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodySubscriber<T> implementation
-        public partial class BodySubscriber<T>
+        #region BodySubscriber implementation
+        public partial class BodySubscriber
         {
             #region Constructors
 
@@ -913,9 +913,9 @@ namespace Java.Net.Http
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Net.Http.HttpResponse.BodySubscriber{T}"/> to <see cref="Java.Net.Http.HttpResponse.BodySubscriber"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Net.Http.HttpResponse.BodySubscriber(Java.Net.Http.HttpResponse.BodySubscriber<T> t) => t.Cast<Java.Net.Http.HttpResponse.BodySubscriber>();
+            public static implicit operator Java.Net.Http.HttpResponse.BodySubscriber(Java.Net.Http.HttpResponse.BodySubscriber t) => t.Cast<Java.Net.Http.HttpResponse.BodySubscriber>();
 
             #endregion
 
@@ -931,9 +931,9 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscriber.html#getBody()"/> 
             /// </summary>
-            public Java.Util.Concurrent.CompletionStage<T> Body
+            public Java.Util.Concurrent.CompletionStage Body
             {
-                get { return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<T>>("getBody", "()Ljava/util/concurrent/CompletionStage;"); }
+                get { return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("getBody", "()Ljava/util/concurrent/CompletionStage;"); }
             }
 
             #endregion
@@ -965,165 +965,165 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber,java.util.function.Function,java.nio.charset.Charset,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="S"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-            /// <param name="arg2"><see cref="Java.Nio.Charset.Charset"/></param>
-            /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             /// <typeparam name="T"></typeparam>
             /// <typeparam name="S"></typeparam>
-            /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
-            /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<T> FromLineSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1, Java.Nio.Charset.Charset arg2, Java.Lang.String arg3) where Arg1objectSuperS : S where Arg1ExtendsT : T
+            /// <typeparam name="Arg1objectSuperS"><see cref=""/></typeparam>
+            /// <typeparam name="Arg1ExtendsT"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber FromLineSubscriber<, , , >(S arg0, Java.Util.Function.Function<, > arg1, Java.Nio.Charset.Charset arg2, Java.Lang.String arg3) where Arg1objectSuperS : S where Arg1ExtendsT : T
             {
-                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<T>>(LocalBridgeClazz, "fromLineSubscriber", arg0, arg1, arg2, arg3);
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "fromLineSubscriber", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromSubscriber(java.util.concurrent.Flow.Subscriber,java.util.function.Function)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="S"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             /// <typeparam name="T"></typeparam>
             /// <typeparam name="S"></typeparam>
-            /// <typeparam name="Arg1objectSuperS"><typeparamref name="S"/></typeparam>
-            /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<T> FromSubscriber<T, S, Arg1objectSuperS, Arg1ExtendsT>(S arg0, Java.Util.Function.Function<Arg1objectSuperS, Arg1ExtendsT> arg1) where Arg1objectSuperS : S where Arg1ExtendsT : T
+            /// <typeparam name="Arg1objectSuperS"><see cref=""/></typeparam>
+            /// <typeparam name="Arg1ExtendsT"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber FromSubscriber<, , , >(S arg0, Java.Util.Function.Function<, > arg1) where Arg1objectSuperS : S where Arg1ExtendsT : T
             {
-                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<T>>(LocalBridgeClazz, "fromSubscriber", arg0, arg1);
+                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "fromSubscriber", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#mapping(java.net.http.HttpResponse.BodySubscriber,java.util.function.Function)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             /// <typeparam name="U"></typeparam>
             /// <typeparam name="T"></typeparam>
-            /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
-            /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<U> Mapping<U, T, Arg1objectSuperT, Arg1ExtendsU>(Java.Net.Http.HttpResponse.BodySubscriber<T> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg1objectSuperT : T where Arg1ExtendsU : U
+            /// <typeparam name="Arg1objectSuperT"><see cref=""/></typeparam>
+            /// <typeparam name="Arg1ExtendsU"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber Mapping<, , , >(Java.Net.Http.HttpResponse.BodySubscriber arg0, Java.Util.Function.Function<, > arg1) where Arg1objectSuperT : T where Arg1ExtendsU : U
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<U>>(LocalBridgeClazz, "mapping", "(Ljava/net/http/HttpResponse$BodySubscriber;Ljava/util/function/Function;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "mapping", "(Ljava/net/http/HttpResponse$BodySubscriber;Ljava/util/function/Function;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#buffering(java.net.http.HttpResponse.BodySubscriber,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             /// <typeparam name="T"></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<T> Buffering<T>(Java.Net.Http.HttpResponse.BodySubscriber<T> arg0, int arg1)
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber Buffering(Java.Net.Http.HttpResponse.BodySubscriber arg0, int arg1)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<T>>(LocalBridgeClazz, "buffering", "(Ljava/net/http/HttpResponse$BodySubscriber;I)Ljava/net/http/HttpResponse$BodySubscriber;", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "buffering", "(Ljava/net/http/HttpResponse$BodySubscriber;I)Ljava/net/http/HttpResponse$BodySubscriber;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#replacing(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="U"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             /// <typeparam name="U"></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<U> Replacing<U>(U arg0)
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber Replacing(U arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<U>>(LocalBridgeClazz, "replacing", "(Ljava/lang/Object;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "replacing", "(Ljava/lang/Object;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofByteArray()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<byte[]> OfByteArray()
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfByteArray()
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<byte[]>>(LocalBridgeClazz, "ofByteArray", "()Ljava/net/http/HttpResponse$BodySubscriber;");
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "ofByteArray", "()Ljava/net/http/HttpResponse$BodySubscriber;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofInputStream()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Io.InputStream> OfInputStream()
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfInputStream()
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Io.InputStream>>(LocalBridgeClazz, "ofInputStream", "()Ljava/net/http/HttpResponse$BodySubscriber;");
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "ofInputStream", "()Ljava/net/http/HttpResponse$BodySubscriber;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofString(java.nio.charset.Charset)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.String> OfString(Java.Nio.Charset.Charset arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfString(Java.Nio.Charset.Charset arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.String>>(LocalBridgeClazz, "ofString", "(Ljava/nio/charset/Charset;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "ofString", "(Ljava/nio/charset/Charset;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#discarding()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> Discarding()
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber Discarding()
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void>>(LocalBridgeClazz, "discarding", "()Ljava/net/http/HttpResponse$BodySubscriber;");
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "discarding", "()Ljava/net/http/HttpResponse$BodySubscriber;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
-            /// <typeparam name="Arg0objectSuperJava_Lang_String"><see cref="Java.Lang.String"/></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> FromLineSubscriber<Arg0objectSuperJava_Lang_String>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Lang_String> arg0) where Arg0objectSuperJava_Lang_String : Java.Lang.String
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperJava_Lang_String"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber FromLineSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0) where Arg0objectSuperJava_Lang_String : Java.Lang.String
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void>>(LocalBridgeClazz, "fromLineSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "fromLineSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromSubscriber(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
-            /// <typeparam name="Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_"><see cref="Java.Util.List{Java.Nio.ByteBuffer}"/></typeparam>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> FromSubscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_> arg0) where Arg0objectSuperJava_Util_List_Java_Nio_ByteBuffer_ : Java.Util.List<Java.Nio.ByteBuffer>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperJava_Util_List"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber FromSubscriber(Java.Util.Concurrent.Flow.Subscriber arg0) where Arg0objectSuperJava_Util_List : Java.Util.List
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void>>(LocalBridgeClazz, "fromSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "fromSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofByteArrayConsumer(java.util.function.Consumer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> OfByteArrayConsumer(Java.Util.Function.Consumer<Java.Util.Optional<byte[]>> arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfByteArrayConsumer(Java.Util.Function.Consumer arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void>>(LocalBridgeClazz, "ofByteArrayConsumer", "(Ljava/util/function/Consumer;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "ofByteArrayConsumer", "(Ljava/util/function/Consumer;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofFile(java.nio.file.Path,java.nio.file.OpenOption...)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Nio.File.Path> OfFile(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfFile(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodySubscriber;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodySubscriber;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofFile(java.nio.file.Path)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Nio.File.Path> OfFile(Java.Nio.File.Path arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfFile(Java.Nio.File.Path arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofPublisher()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Util.Concurrent.Flow.Publisher<Java.Util.List<Java.Nio.ByteBuffer>>> OfPublisher()
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfPublisher()
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Util.Concurrent.Flow.Publisher<Java.Util.List<Java.Nio.ByteBuffer>>>>(LocalBridgeClazz, "ofPublisher", "()Ljava/net/http/HttpResponse$BodySubscriber;");
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "ofPublisher", "()Ljava/net/http/HttpResponse$BodySubscriber;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofLines(java.nio.charset.Charset)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Util.Stream.Stream<Java.Lang.String>> OfLines(Java.Nio.Charset.Charset arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.BodySubscriber OfLines(Java.Nio.Charset.Charset arg0)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Util.Stream.Stream<Java.Lang.String>>>(LocalBridgeClazz, "ofLines", "(Ljava/nio/charset/Charset;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber>(LocalBridgeClazz, "ofLines", "(Ljava/nio/charset/Charset;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }
 
             #endregion
@@ -1159,9 +1159,9 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#of(java.util.function.Function,java.util.concurrent.ConcurrentMap)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Concurrent.ConcurrentMap"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Net.Http.HttpResponse.PushPromiseHandler Of(Java.Util.Function.Function arg0, Java.Util.Concurrent.ConcurrentMap arg1)
             {
                 return SExecuteWithSignature<Java.Net.Http.HttpResponse.PushPromiseHandler>(LocalBridgeClazz, "of", "(Ljava/util/function/Function;Ljava/util/concurrent/ConcurrentMap;)Ljava/net/http/HttpResponse$PushPromiseHandler;", arg0, arg1);
@@ -1173,9 +1173,9 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#applyPushPromise(java.net.http.HttpRequest,java.net.http.HttpRequest,java.util.function.Function)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
-            /// <param name="arg1"><see cref="Java.Net.Http.HttpRequest"/></param>
-            /// <param name="arg2"><see cref="Java.Util.Function.Function"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public void ApplyPushPromise(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpRequest arg1, Java.Util.Function.Function arg2)
             {
                 IExecuteWithSignature("applyPushPromise", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpRequest;Ljava/util/function/Function;)V", arg0, arg1, arg2);
@@ -1191,8 +1191,8 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region PushPromiseHandler<T> implementation
-        public partial class PushPromiseHandler<T>
+        #region PushPromiseHandler implementation
+        public partial class PushPromiseHandler
         {
             #region Constructors
 
@@ -1200,9 +1200,9 @@ namespace Java.Net.Http
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Net.Http.HttpResponse.PushPromiseHandler{T}"/> to <see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Net.Http.HttpResponse.PushPromiseHandler(Java.Net.Http.HttpResponse.PushPromiseHandler<T> t) => t.Cast<Java.Net.Http.HttpResponse.PushPromiseHandler>();
+            public static implicit operator Java.Net.Http.HttpResponse.PushPromiseHandler(Java.Net.Http.HttpResponse.PushPromiseHandler t) => t.Cast<Java.Net.Http.HttpResponse.PushPromiseHandler>();
 
             #endregion
 
@@ -1214,12 +1214,12 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#of(java.util.function.Function,java.util.concurrent.ConcurrentMap)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Concurrent.ConcurrentMap"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.PushPromiseHandler<T> Of(Java.Util.Function.Function<Java.Net.Http.HttpRequest, Java.Net.Http.HttpResponse.BodyHandler<T>> arg0, Java.Util.Concurrent.ConcurrentMap<Java.Net.Http.HttpRequest, Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>> arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public static Java.Net.Http.HttpResponse.PushPromiseHandler Of(Java.Util.Function.Function<, > arg0, Java.Util.Concurrent.ConcurrentMap<, > arg1)
             {
-                return SExecuteWithSignature<Java.Net.Http.HttpResponse.PushPromiseHandler<T>>(LocalBridgeClazz, "of", "(Ljava/util/function/Function;Ljava/util/concurrent/ConcurrentMap;)Ljava/net/http/HttpResponse$PushPromiseHandler;", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.PushPromiseHandler>(LocalBridgeClazz, "of", "(Ljava/util/function/Function;Ljava/util/concurrent/ConcurrentMap;)Ljava/net/http/HttpResponse$PushPromiseHandler;", arg0, arg1);
             }
 
             #endregion
@@ -1228,10 +1228,10 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html#applyPushPromise(java.net.http.HttpRequest,java.net.http.HttpRequest,java.util.function.Function)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
-            /// <param name="arg1"><see cref="Java.Net.Http.HttpRequest"/></param>
-            /// <param name="arg2"><see cref="Java.Util.Function.Function"/></param>
-            public void ApplyPushPromise(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpRequest arg1, Java.Util.Function.Function<Java.Net.Http.HttpResponse.BodyHandler<T>, Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>> arg2)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            public void ApplyPushPromise(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpRequest arg1, Java.Util.Function.Function<, > arg2)
             {
                 IExecuteWithSignature("applyPushPromise", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpRequest;Ljava/util/function/Function;)V", arg0, arg1, arg2);
             }
@@ -1269,7 +1269,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#statusCode()"/>
             /// </summary>
-            /// <returns><see cref="int"/></returns>
+            /// <returns><see cref=""/></returns>
             public int StatusCode()
             {
                 return IExecuteWithSignature<int>("statusCode", "()I");
@@ -1277,7 +1277,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#version()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Version Version()
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Version>("version", "()Ljava/net/http/HttpClient$Version;");
@@ -1285,7 +1285,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#headers()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpHeaders Headers()
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpHeaders>("headers", "()Ljava/net/http/HttpHeaders;");
@@ -1308,52 +1308,52 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region IHttpResponse<T>
+    #region IHttpResponse
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html"/>
     /// </summary>
-    public partial interface IHttpResponse<T>
+    public partial interface IHttpResponse
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#statusCode()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         int StatusCode();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#version()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Net.Http.HttpClient.Version Version();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#headers()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Net.Http.HttpHeaders Headers();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#request()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpRequest"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Net.Http.HttpRequest Request();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#uri()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Net.URI Uri();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#previousResponse()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        Java.Util.Optional<Java.Net.Http.HttpResponse<T>> PreviousResponse();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Optional PreviousResponse();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#sslSession()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        Java.Util.Optional<Javax.Net.Ssl.SSLSession> SslSession();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Optional SslSession();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#body()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         T Body();
 
         #endregion
@@ -1366,8 +1366,8 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region HttpResponse<T> implementation
-    public partial class HttpResponse<T> : Java.Net.Http.IHttpResponse<T>
+    #region HttpResponse implementation
+    public partial class HttpResponse : Java.Net.Http.IHttpResponse
     {
         #region Constructors
 
@@ -1375,9 +1375,9 @@ namespace Java.Net.Http
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Net.Http.HttpResponse{T}"/> to <see cref="Java.Net.Http.HttpResponse"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Net.Http.HttpResponse(Java.Net.Http.HttpResponse<T> t) => t.Cast<Java.Net.Http.HttpResponse>();
+        public static implicit operator Java.Net.Http.HttpResponse(Java.Net.Http.HttpResponse t) => t.Cast<Java.Net.Http.HttpResponse>();
 
         #endregion
 
@@ -1393,7 +1393,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#statusCode()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int StatusCode()
         {
             return IExecuteWithSignature<int>("statusCode", "()I");
@@ -1401,7 +1401,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#version()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.Http.HttpClient.Version Version()
         {
             return IExecuteWithSignature<Java.Net.Http.HttpClient.Version>("version", "()Ljava/net/http/HttpClient$Version;");
@@ -1409,7 +1409,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#headers()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.Http.HttpHeaders Headers()
         {
             return IExecuteWithSignature<Java.Net.Http.HttpHeaders>("headers", "()Ljava/net/http/HttpHeaders;");
@@ -1417,7 +1417,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#request()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpRequest"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.Http.HttpRequest Request()
         {
             return IExecuteWithSignature<Java.Net.Http.HttpRequest>("request", "()Ljava/net/http/HttpRequest;");
@@ -1425,7 +1425,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#uri()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.URI Uri()
         {
             return IExecuteWithSignature<Java.Net.URI>("uri", "()Ljava/net/URI;");
@@ -1433,23 +1433,23 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#previousResponse()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Net.Http.HttpResponse<T>> PreviousResponse()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional PreviousResponse()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Net.Http.HttpResponse<T>>>("previousResponse", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("previousResponse", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#sslSession()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Javax.Net.Ssl.SSLSession> SslSession()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional SslSession()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Javax.Net.Ssl.SSLSession>>("sslSession", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("sslSession", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#body()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         public T Body()
         {
             return IExecuteWithSignature<T>("body", "()Ljava/lang/Object;");

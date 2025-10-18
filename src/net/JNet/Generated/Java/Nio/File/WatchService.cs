@@ -78,26 +78,26 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#poll()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.WatchKey Poll();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Nio.File.WatchKey Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#take()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Nio.File.WatchKey Take();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         void Close();
 
         #endregion
@@ -133,7 +133,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#poll()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.WatchKey Poll()
         {
             return IExecuteWithSignature<Java.Nio.File.WatchKey>("poll", "()Ljava/nio/file/WatchKey;");
@@ -141,10 +141,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.WatchKey Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.WatchKey>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/nio/file/WatchKey;", arg0, arg1);
@@ -152,8 +152,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#take()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.WatchKey Take()
         {
             return IExecuteWithSignature<Java.Nio.File.WatchKey>("take", "()Ljava/nio/file/WatchKey;");
@@ -161,7 +161,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");

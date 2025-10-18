@@ -89,7 +89,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char[] ReadPassword()
         {
             return IExecuteWithSignatureArray<char>("readPassword", "()[C");
@@ -97,9 +97,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="char"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public char[] ReadPassword(Java.Lang.String arg0, params object[] arg1)
         {
             return IExecuteWithSignatureArray<char>("readPassword", "(Ljava/lang/String;[Ljava/lang/Object;)[C", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -107,9 +107,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Io.Console"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.Console Format(Java.Lang.String arg0, params object[] arg1)
         {
             return IExecuteWithSignature<Java.Io.Console>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -117,9 +117,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#printf(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Io.Console"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.Console Printf(Java.Lang.String arg0, params object[] arg1)
         {
             return IExecuteWithSignature<Java.Io.Console>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -127,7 +127,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#writer()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.PrintWriter"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Io.PrintWriter Writer()
         {
             return IExecuteWithSignature<Java.Io.PrintWriter>("writer", "()Ljava/io/PrintWriter;");
@@ -135,7 +135,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#reader()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.Reader"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Io.Reader Reader()
         {
             return IExecuteWithSignature<Java.Io.Reader>("reader", "()Ljava/io/Reader;");
@@ -143,7 +143,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ReadLine()
         {
             return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
@@ -151,9 +151,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ReadLine(Java.Lang.String arg0, params object[] arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("readLine", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));

@@ -29,7 +29,7 @@ namespace Java.Nio.File.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html"/>
     /// </summary>
-    public partial class FileTime : Java.Lang.Comparable<Java.Nio.File.Attribute.FileTime>
+    public partial class FileTime : Java.Lang.Comparable
     {
         const string _bridgeClassName = "java.nio.file.attribute.FileTime";
         /// <summary>
@@ -85,8 +85,8 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#from(java.time.Instant)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
-        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Attribute.FileTime From(Java.Time.Instant arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "from", "(Ljava/time/Instant;)Ljava/nio/file/attribute/FileTime;", arg0);
@@ -94,9 +94,9 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#from(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Attribute.FileTime From(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return SExecuteWithSignature<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "from", "(JLjava/util/concurrent/TimeUnit;)Ljava/nio/file/attribute/FileTime;", arg0, arg1);
@@ -104,8 +104,8 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#fromMillis(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Attribute.FileTime FromMillis(long arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "fromMillis", "(J)Ljava/nio/file/attribute/FileTime;", arg0);
@@ -117,8 +117,8 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -126,8 +126,8 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.nio.file.attribute.FileTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Nio.File.Attribute.FileTime arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/file/attribute/FileTime;)I", arg0);
@@ -135,7 +135,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toInstant()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Instant"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Instant ToInstant()
         {
             return IExecuteWithSignature<Java.Time.Instant>("toInstant", "()Ljava/time/Instant;");
@@ -143,8 +143,8 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#to(java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long To(Java.Util.Concurrent.TimeUnit arg0)
         {
             return IExecuteWithSignature<long>("to", "(Ljava/util/concurrent/TimeUnit;)J", arg0);
@@ -152,7 +152,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toMillis()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long ToMillis()
         {
             return IExecuteWithSignature<long>("toMillis", "()J");

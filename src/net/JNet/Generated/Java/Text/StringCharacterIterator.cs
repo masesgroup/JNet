@@ -73,10 +73,10 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#%3Cinit%3E(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public StringCharacterIterator(Java.Lang.String arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,8 +84,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public StringCharacterIterator(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -93,7 +93,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StringCharacterIterator(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -138,7 +138,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#current()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char Current()
         {
             return IExecuteWithSignature<char>("current", "()C");
@@ -146,7 +146,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#first()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char First()
         {
             return IExecuteWithSignature<char>("first", "()C");
@@ -154,7 +154,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#last()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char Last()
         {
             return IExecuteWithSignature<char>("last", "()C");
@@ -162,7 +162,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#next()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char Next()
         {
             return IExecuteWithSignature<char>("next", "()C");
@@ -170,7 +170,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#previous()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char Previous()
         {
             return IExecuteWithSignature<char>("previous", "()C");
@@ -178,8 +178,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#setIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public char SetIndex(int arg0)
         {
             return IExecuteWithSignature<char>("setIndex", "(I)C", arg0);
@@ -187,7 +187,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html#setText(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetText(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setText", "(Ljava/lang/String;)V", arg0);

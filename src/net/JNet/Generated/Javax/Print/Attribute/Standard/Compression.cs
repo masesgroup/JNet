@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.Compression"/> to <see cref="Javax.Print.Attribute.DocAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.DocAttribute(Javax.Print.Attribute.Standard.Compression t) => t.Cast<Javax.Print.Attribute.DocAttribute>();
 

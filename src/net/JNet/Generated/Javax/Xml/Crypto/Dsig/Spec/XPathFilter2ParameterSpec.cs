@@ -73,8 +73,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public XPathFilter2ParameterSpec(Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public XPathFilter2ParameterSpec(Java.Util.List arg0)
             : base(arg0)
         {
         }
@@ -97,9 +97,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html#getXPathList()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType> XPathList
+        public Java.Util.List XPathList
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType>>("getXPathList", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getXPathList", "()Ljava/util/List;"); }
         }
 
         #endregion

@@ -108,12 +108,12 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0)
         {
             hasOverrideChildAdded = false;
@@ -198,7 +198,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0)
         {
             hasOverrideChildRemoved = false;
@@ -237,7 +237,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0)
         {
             IExecuteWithSignature("childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0)
         {
             IExecuteWithSignature("childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V", arg0);

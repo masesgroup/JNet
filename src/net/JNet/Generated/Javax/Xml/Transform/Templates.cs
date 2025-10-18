@@ -82,8 +82,8 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#newTransformer()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Xml.Transform.Transformer NewTransformer();
 
         #endregion
@@ -126,8 +126,8 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#newTransformer()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Transform.Transformer NewTransformer()
         {
             return IExecuteWithSignature<Javax.Xml.Transform.Transformer>("newTransformer", "()Ljavax/xml/transform/Transformer;");

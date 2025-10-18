@@ -73,10 +73,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public JSlider(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,9 +84,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JSlider(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -94,8 +94,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JSlider(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -103,7 +103,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JSlider(int arg0)
             : base(arg0)
         {
@@ -111,7 +111,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#%3Cinit%3E(javax.swing.BoundedRangeModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.BoundedRangeModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JSlider(Javax.Swing.BoundedRangeModel arg0)
             : base(arg0)
         {
@@ -121,11 +121,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JSlider"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JSlider t) => t.Cast<Javax.Swing.SwingConstants>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JSlider"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JSlider t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -255,26 +255,26 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#createStandardLabels(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.Hashtable"/></returns>
-        public Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent> CreateStandardLabels(int arg0, int arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Hashtable<, > CreateStandardLabels(int arg0, int arg1)
         {
-            return IExecuteWithSignature<Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent>>("createStandardLabels", "(II)Ljava/util/Hashtable;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Hashtable<, >>("createStandardLabels", "(II)Ljava/util/Hashtable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#createStandardLabels(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.Hashtable"/></returns>
-        public Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent> CreateStandardLabels(int arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Hashtable<, > CreateStandardLabels(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent>>("createStandardLabels", "(I)Ljava/util/Hashtable;", arg0);
+            return IExecuteWithSignature<Java.Util.Hashtable<, >>("createStandardLabels", "(I)Ljava/util/Hashtable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -282,7 +282,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -290,7 +290,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setUI(javax.swing.plaf.SliderUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.SliderUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.SliderUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/SliderUI;)V", arg0);

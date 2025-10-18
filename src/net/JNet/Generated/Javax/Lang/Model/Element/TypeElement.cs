@@ -127,15 +127,15 @@ namespace Javax.Lang.Model.Element
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Element.TypeElement"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.TypeElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Element.TypeElement"/> to <see cref="Javax.Lang.Model.Element.Parameterizable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Parameterizable(Javax.Lang.Model.Element.TypeElement t) => t.Cast<Javax.Lang.Model.Element.Parameterizable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Element.TypeElement"/> to <see cref="Javax.Lang.Model.Element.QualifiedNameable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.QualifiedNameable(Javax.Lang.Model.Element.TypeElement t) => t.Cast<Javax.Lang.Model.Element.QualifiedNameable>();
 

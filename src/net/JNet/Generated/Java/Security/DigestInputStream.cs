@@ -73,8 +73,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestInputStream.html#%3Cinit%3E(java.io.InputStream,java.security.MessageDigest)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Security.MessageDigest"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DigestInputStream(Java.Io.InputStream arg0, Java.Security.MessageDigest arg1)
             : base(arg0, arg1)
         {
@@ -105,7 +105,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestInputStream.html#on(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void On(bool arg0)
         {
             IExecuteWithSignature("on", "(Z)V", arg0);

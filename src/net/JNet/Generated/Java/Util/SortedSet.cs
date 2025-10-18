@@ -68,12 +68,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region SortedSet<E> declaration
+    #region SortedSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class SortedSet<E> : Java.Util.Set<E>
+    public partial class SortedSet : Java.Util.Set
     {
         const string _bridgeClassName = "java.util.SortedSet";
         /// <summary>
@@ -135,7 +135,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object First()
         {
             return IExecuteWithSignature("first", "()Ljava/lang/Object;");
@@ -143,7 +143,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Last()
         {
             return IExecuteWithSignature("last", "()Ljava/lang/Object;");
@@ -151,7 +151,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Comparator Comparator()
         {
             return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
@@ -159,8 +159,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.SortedSet HeadSet(object arg0)
         {
             return IExecuteWithSignature<Java.Util.SortedSet>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
@@ -168,9 +168,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.SortedSet SubSet(object arg0, object arg1)
         {
             return IExecuteWithSignature<Java.Util.SortedSet>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
@@ -178,8 +178,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.SortedSet TailSet(object arg0)
         {
             return IExecuteWithSignature<Java.Util.SortedSet>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
@@ -187,7 +187,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Spliterator Spliterator()
         {
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
@@ -203,53 +203,53 @@ namespace Java.Util
     }
     #endregion
 
-    #region ISortedSet<E>
+    #region ISortedSet
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html"/>
     /// </summary>
-    public partial interface ISortedSet<E> : Java.Util.ISet<E>
+    public partial interface ISortedSet : Java.Util.ISet
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         E First();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         E Last();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/>
         /// </summary>
-        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE : E;
+        /// <typeparam name="ReturnobjectSuperE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Comparator Comparator() where ReturnobjectSuperE : E;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        Java.Util.SortedSet<E> HeadSet(E arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.SortedSet HeadSet(E arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        Java.Util.SortedSet<E> SubSet(E arg0, E arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.SortedSet SubSet(E arg0, E arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        Java.Util.SortedSet<E> TailSet(E arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.SortedSet TailSet(E arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        Java.Util.Spliterator<E> Spliterator();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Spliterator Spliterator();
 
         #endregion
 
@@ -261,8 +261,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region SortedSet<E> implementation
-    public partial class SortedSet<E> : Java.Util.ISortedSet<E>
+    #region SortedSet implementation
+    public partial class SortedSet : Java.Util.ISortedSet
     {
         #region Constructors
 
@@ -270,9 +270,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.SortedSet{E}"/> to <see cref="Java.Util.SortedSet"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.SortedSet(Java.Util.SortedSet<E> t) => t.Cast<Java.Util.SortedSet>();
+        public static implicit operator Java.Util.SortedSet(Java.Util.SortedSet t) => t.Cast<Java.Util.SortedSet>();
 
         #endregion
 
@@ -288,7 +288,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E First()
         {
             return IExecuteWithSignature<E>("first", "()Ljava/lang/Object;");
@@ -296,7 +296,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Last()
         {
             return IExecuteWithSignature<E>("last", "()Ljava/lang/Object;");
@@ -304,47 +304,47 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/>
         /// </summary>
-        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE : E
+        /// <typeparam name="ReturnobjectSuperE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Comparator Comparator() where ReturnobjectSuperE : E
         {
-            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperE>>("comparator", "()Ljava/util/Comparator;");
+            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public Java.Util.SortedSet<E> HeadSet(E arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.SortedSet HeadSet(E arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedSet<E>>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
+            return IExecuteWithSignature<Java.Util.SortedSet>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public Java.Util.SortedSet<E> SubSet(E arg0, E arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.SortedSet SubSet(E arg0, E arg1)
         {
-            return IExecuteWithSignature<Java.Util.SortedSet<E>>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedSet>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public Java.Util.SortedSet<E> TailSet(E arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.SortedSet TailSet(E arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedSet<E>>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
+            return IExecuteWithSignature<Java.Util.SortedSet>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator<E> Spliterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Spliterator Spliterator()
         {
-            return IExecuteWithSignature<Java.Util.Spliterator<E>>("spliterator", "()Ljava/util/Spliterator;");
+            return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
         }
 
         #endregion

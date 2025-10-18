@@ -66,12 +66,12 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ThreadLocal<T> declaration
+    #region ThreadLocal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class ThreadLocal<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ThreadLocal<T>>
+    public partial class ThreadLocal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ThreadLocal>
     {
         const string _bridgeClassName = "java.lang.ThreadLocal";
         /// <summary>
@@ -127,8 +127,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#withInitial(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <returns><see cref="Java.Lang.ThreadLocal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.ThreadLocal WithInitial(Java.Util.Function.Supplier arg0)
         {
             return SExecuteWithSignature<Java.Lang.ThreadLocal>(LocalBridgeClazz, "withInitial", "(Ljava/util/function/Supplier;)Ljava/lang/ThreadLocal;", arg0);
@@ -140,7 +140,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#get()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Get()
         {
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
@@ -155,7 +155,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#set(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Set(object arg0)
         {
             IExecuteWithSignature("set", "(Ljava/lang/Object;)V", arg0);
@@ -171,8 +171,8 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ThreadLocal<T> implementation
-    public partial class ThreadLocal<T>
+    #region ThreadLocal implementation
+    public partial class ThreadLocal
     {
         #region Constructors
 
@@ -180,9 +180,9 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.ThreadLocal{T}"/> to <see cref="Java.Lang.ThreadLocal"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.ThreadLocal(Java.Lang.ThreadLocal<T> t) => t.Cast<Java.Lang.ThreadLocal>();
+        public static implicit operator Java.Lang.ThreadLocal(Java.Lang.ThreadLocal t) => t.Cast<Java.Lang.ThreadLocal>();
 
         #endregion
 
@@ -194,13 +194,13 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#withInitial(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="S"></typeparam>
-        /// <typeparam name="Arg0ExtendsS"><typeparamref name="S"/></typeparam>
-        /// <returns><see cref="Java.Lang.ThreadLocal"/></returns>
-        public static Java.Lang.ThreadLocal<S> WithInitial<S, Arg0ExtendsS>(Java.Util.Function.Supplier<Arg0ExtendsS> arg0) where Arg0ExtendsS : S
+        /// <typeparam name="Arg0ExtendsS"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Lang.ThreadLocal WithInitial<, >(Java.Util.Function.Supplier arg0) where Arg0ExtendsS : S
         {
-            return SExecuteWithSignature<Java.Lang.ThreadLocal<S>>(LocalBridgeClazz, "withInitial", "(Ljava/util/function/Supplier;)Ljava/lang/ThreadLocal;", arg0);
+            return SExecuteWithSignature<Java.Lang.ThreadLocal>(LocalBridgeClazz, "withInitial", "(Ljava/util/function/Supplier;)Ljava/lang/ThreadLocal;", arg0);
         }
 
         #endregion
@@ -209,7 +209,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#get()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         public T Get()
         {
             return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
@@ -224,7 +224,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#set(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Set(T arg0)
         {
             IExecuteWithSignature("set", "(Ljava/lang/Object;)V", arg0);

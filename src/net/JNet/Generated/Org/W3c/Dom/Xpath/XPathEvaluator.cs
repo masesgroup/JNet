@@ -78,29 +78,29 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#evaluate(java.lang.String,org.w3c.dom.Node,org.w3c.dom.xpath.XPathNSResolver,short,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg2"><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></param>
-        /// <param name="arg3"><see cref="short"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         object Evaluate(Java.Lang.String arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Xpath.XPathNSResolver arg2, short arg3, object arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createExpression(java.lang.String,org.w3c.dom.xpath.XPathNSResolver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Xpath.XPathExpression"/></returns>
-        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Org.W3c.Dom.Xpath.XPathExpression CreateExpression(Java.Lang.String arg0, Org.W3c.Dom.Xpath.XPathNSResolver arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createNSResolver(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Org.W3c.Dom.Xpath.XPathNSResolver CreateNSResolver(Org.W3c.Dom.Node arg0);
 
         #endregion
@@ -136,14 +136,14 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#evaluate(java.lang.String,org.w3c.dom.Node,org.w3c.dom.xpath.XPathNSResolver,short,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg2"><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></param>
-        /// <param name="arg3"><see cref="short"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object Evaluate(Java.Lang.String arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Xpath.XPathNSResolver arg2, short arg3, object arg4)
         {
             return IExecuteWithSignature("evaluate", "(Ljava/lang/String;Lorg/w3c/dom/Node;Lorg/w3c/dom/xpath/XPathNSResolver;SLjava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4);
@@ -151,11 +151,11 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createExpression(java.lang.String,org.w3c.dom.xpath.XPathNSResolver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Xpath.XPathExpression"/></returns>
-        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Xpath.XPathExpression CreateExpression(Java.Lang.String arg0, Org.W3c.Dom.Xpath.XPathNSResolver arg1)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Xpath.XPathExpression>("createExpression", "(Ljava/lang/String;Lorg/w3c/dom/xpath/XPathNSResolver;)Lorg/w3c/dom/xpath/XPathExpression;", arg0, arg1);
@@ -163,8 +163,8 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createNSResolver(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.Xpath.XPathNSResolver CreateNSResolver(Org.W3c.Dom.Node arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Xpath.XPathNSResolver>("createNSResolver", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/xpath/XPathNSResolver;", arg0);

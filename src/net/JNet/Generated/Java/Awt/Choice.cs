@@ -75,11 +75,11 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Choice"/> to <see cref="Java.Awt.ItemSelectable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.ItemSelectable(Java.Awt.Choice t) => t.Cast<Java.Awt.ItemSelectable>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Choice"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Choice t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -132,8 +132,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#getItem(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetItem(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getItem", "(I)Ljava/lang/String;", arg0);
@@ -141,7 +141,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#addItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
@@ -149,7 +149,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#removeItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecuteWithSignature("removeItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
@@ -157,7 +157,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#select(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Select(int arg0)
         {
             IExecuteWithSignature("select", "(I)V", arg0);
@@ -165,7 +165,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#select(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Select(Java.Lang.String arg0)
         {
             IExecuteWithSignature("select", "(Ljava/lang/String;)V", arg0);
@@ -173,7 +173,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#add(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Add(Java.Lang.String arg0)
         {
             IExecuteWithSignature("add", "(Ljava/lang/String;)V", arg0);
@@ -181,7 +181,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#addItem(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddItem(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addItem", "(Ljava/lang/String;)V", arg0);
@@ -189,8 +189,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#insert(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Insert(Java.Lang.String arg0, int arg1)
         {
             IExecuteWithSignature("insert", "(Ljava/lang/String;I)V", arg0, arg1);
@@ -198,7 +198,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(int arg0)
         {
             IExecuteWithSignature("remove", "(I)V", arg0);
@@ -206,7 +206,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Choice.html#remove(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(Java.Lang.String arg0)
         {
             IExecuteWithSignature("remove", "(Ljava/lang/String;)V", arg0);

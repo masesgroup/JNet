@@ -98,8 +98,8 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#getMixer(javax.sound.sampled.Mixer.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Mixer.Info"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.Mixer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Sampled.Mixer GetMixer(Javax.Sound.Sampled.Mixer.Info arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.Mixer>("getMixer", "(Ljavax/sound/sampled/Mixer$Info;)Ljavax/sound/sampled/Mixer;", arg0);
@@ -107,8 +107,8 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#isMixerSupported(javax.sound.sampled.Mixer.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Mixer.Info"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsMixerSupported(Javax.Sound.Sampled.Mixer.Info arg0)
         {
             return IExecuteWithSignature<bool>("isMixerSupported", "(Ljavax/sound/sampled/Mixer$Info;)Z", arg0);

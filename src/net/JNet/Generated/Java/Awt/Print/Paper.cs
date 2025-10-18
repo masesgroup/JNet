@@ -131,10 +131,10 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#setImageableArea(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetImageableArea(double arg0, double arg1, double arg2, double arg3)
         {
             IExecuteWithSignature("setImageableArea", "(DDDD)V", arg0, arg1, arg2, arg3);
@@ -142,8 +142,8 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#setSize(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetSize(double arg0, double arg1)
         {
             IExecuteWithSignature("setSize", "(DD)V", arg0, arg1);

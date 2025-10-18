@@ -99,11 +99,11 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.SignatureMethod"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.SignatureMethod t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.SignatureMethod"/> to <see cref="Javax.Xml.Crypto.AlgorithmMethod"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.AlgorithmMethod(Javax.Xml.Crypto.Dsig.SignatureMethod t) => t.Cast<Javax.Xml.Crypto.AlgorithmMethod>();
 

@@ -78,44 +78,44 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#chooseClientAlias(java.lang.String[],java.security.Principal[],java.net.Socket)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <param name="arg2"><see cref="Java.Net.Socket"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String ChooseClientAlias(Java.Lang.String[] arg0, Java.Security.Principal[] arg1, Java.Net.Socket arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#chooseServerAlias(java.lang.String,java.security.Principal[],java.net.Socket)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <param name="arg2"><see cref="Java.Net.Socket"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String ChooseServerAlias(Java.Lang.String arg0, Java.Security.Principal[] arg1, Java.Net.Socket arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getClientAliases(java.lang.String,java.security.Principal[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String[] GetClientAliases(Java.Lang.String arg0, Java.Security.Principal[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getServerAliases(java.lang.String,java.security.Principal[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String[] GetServerAliases(Java.Lang.String arg0, Java.Security.Principal[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getCertificateChain(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Security.Cert.X509Certificate[] GetCertificateChain(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getPrivateKey(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.PrivateKey"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Security.PrivateKey GetPrivateKey(Java.Lang.String arg0);
 
         #endregion
@@ -151,10 +151,10 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#chooseClientAlias(java.lang.String[],java.security.Principal[],java.net.Socket)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <param name="arg2"><see cref="Java.Net.Socket"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ChooseClientAlias(Java.Lang.String[] arg0, Java.Security.Principal[] arg1, Java.Net.Socket arg2)
         {
             return IExecuteWithSignature<Java.Lang.String>("chooseClientAlias", "([Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;", arg0, arg1, arg2);
@@ -162,10 +162,10 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#chooseServerAlias(java.lang.String,java.security.Principal[],java.net.Socket)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <param name="arg2"><see cref="Java.Net.Socket"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ChooseServerAlias(Java.Lang.String arg0, Java.Security.Principal[] arg1, Java.Net.Socket arg2)
         {
             return IExecuteWithSignature<Java.Lang.String>("chooseServerAlias", "(Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;", arg0, arg1, arg2);
@@ -173,9 +173,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getClientAliases(java.lang.String,java.security.Principal[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] GetClientAliases(Java.Lang.String arg0, Java.Security.Principal[] arg1)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("getClientAliases", "(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;", arg0, arg1);
@@ -183,9 +183,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getServerAliases(java.lang.String,java.security.Principal[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] GetServerAliases(Java.Lang.String arg0, Java.Security.Principal[] arg1)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("getServerAliases", "(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;", arg0, arg1);
@@ -193,8 +193,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getCertificateChain(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Security.Cert.X509Certificate[] GetCertificateChain(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getCertificateChain", "(Ljava/lang/String;)[Ljava/security/cert/X509Certificate;", arg0);
@@ -202,8 +202,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getPrivateKey(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.PrivateKey"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Security.PrivateKey GetPrivateKey(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivateKey", "(Ljava/lang/String;)Ljava/security/PrivateKey;", arg0);

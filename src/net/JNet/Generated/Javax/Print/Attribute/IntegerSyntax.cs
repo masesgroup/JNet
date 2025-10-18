@@ -77,11 +77,11 @@ namespace Javax.Print.Attribute
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.IntegerSyntax"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.IntegerSyntax t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.IntegerSyntax"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Print.Attribute.IntegerSyntax t) => t.Cast<Java.Lang.Cloneable>();
 

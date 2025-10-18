@@ -108,7 +108,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterListener.html#sorterChanged(javax.swing.event.RowSorterEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SorterChanged(Javax.Swing.Event.RowSorterEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterListener.html#sorterChanged(javax.swing.event.RowSorterEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void SorterChanged(Javax.Swing.Event.RowSorterEvent arg0)
         {
             hasOverrideSorterChanged = false;
@@ -207,7 +207,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterListener.html#sorterChanged(javax.swing.event.RowSorterEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void SorterChanged(Javax.Swing.Event.RowSorterEvent arg0)
         {
             IExecuteWithSignature("sorterChanged", "(Ljavax/swing/event/RowSorterEvent;)V", arg0);

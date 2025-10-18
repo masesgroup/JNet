@@ -73,7 +73,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DocumentParser.html#%3Cinit%3E(javax.swing.text.html.parser.DTD)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.Parser.DTD"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DocumentParser(Javax.Swing.Text.Html.Parser.DTD arg0)
             : base(arg0)
         {
@@ -97,10 +97,10 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DocumentParser.html#parse(java.io.Reader,javax.swing.text.html.HTMLEditorKit.ParserCallback,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Parse(Java.Io.Reader arg0, Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback arg1, bool arg2)
         {
             IExecuteWithSignature("parse", "(Ljava/io/Reader;Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;Z)V", arg0, arg1, arg2);

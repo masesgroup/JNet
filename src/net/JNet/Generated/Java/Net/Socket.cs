@@ -73,11 +73,11 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int,java.net.InetAddress,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public Socket(Java.Lang.String arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -85,10 +85,10 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Net.UnknownHostException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Socket(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -96,11 +96,11 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.net.InetAddress,int,java.net.InetAddress,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public Socket(Java.Net.InetAddress arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -108,9 +108,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.net.InetAddress,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public Socket(Java.Net.InetAddress arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -118,7 +118,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.net.Proxy)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.Proxy"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Socket(Java.Net.Proxy arg0)
             : base(arg0)
         {
@@ -138,8 +138,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSocketImplFactory(java.net.SocketImplFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketImplFactory"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void SetSocketImplFactory(Java.Net.SocketImplFactory arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setSocketImplFactory", "(Ljava/net/SocketImplFactory;)V", arg0);
@@ -277,30 +277,30 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Net.Socket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Net.Socket SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Net.Socket SetOption(Java.Net.SocketOption arg0, T arg1)
         {
             return IExecuteWithSignature<Java.Net.Socket>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/net/Socket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getOption(java.net.SocketOption)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public T GetOption<T>(Java.Net.SocketOption<T> arg0)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public T GetOption(Java.Net.SocketOption arg0)
         {
             return IExecuteWithSignature<T>("getOption", "(Ljava/net/SocketOption;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isBound()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBound()
         {
             return IExecuteWithSignature<bool>("isBound", "()Z");
@@ -308,7 +308,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isClosed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsClosed()
         {
             return IExecuteWithSignature<bool>("isClosed", "()Z");
@@ -316,7 +316,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isConnected()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsConnected()
         {
             return IExecuteWithSignature<bool>("isConnected", "()Z");
@@ -324,7 +324,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isInputShutdown()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsInputShutdown()
         {
             return IExecuteWithSignature<bool>("isInputShutdown", "()Z");
@@ -332,7 +332,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isOutputShutdown()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOutputShutdown()
         {
             return IExecuteWithSignature<bool>("isOutputShutdown", "()Z");
@@ -340,15 +340,15 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#supportedOptions()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set SupportedOptions()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("supportedOptions", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -356,8 +356,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#bind(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Bind(Java.Net.SocketAddress arg0)
         {
             IExecuteWithSignature("bind", "(Ljava/net/SocketAddress;)V", arg0);
@@ -365,9 +365,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#connect(java.net.SocketAddress,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Connect(Java.Net.SocketAddress arg0, int arg1)
         {
             IExecuteWithSignature("connect", "(Ljava/net/SocketAddress;I)V", arg0, arg1);
@@ -375,8 +375,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#connect(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Connect(Java.Net.SocketAddress arg0)
         {
             IExecuteWithSignature("connect", "(Ljava/net/SocketAddress;)V", arg0);
@@ -384,8 +384,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#sendUrgentData(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SendUrgentData(int arg0)
         {
             IExecuteWithSignature("sendUrgentData", "(I)V", arg0);
@@ -393,9 +393,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setPerformancePreferences(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void SetPerformancePreferences(int arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("setPerformancePreferences", "(III)V", arg0, arg1, arg2);
@@ -403,9 +403,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSoLinger(boolean,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetSoLinger(bool arg0, int arg1)
         {
             IExecuteWithSignature("setSoLinger", "(ZI)V", arg0, arg1);
@@ -413,7 +413,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#shutdownInput()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void ShutdownInput()
         {
             IExecuteWithSignature("shutdownInput", "()V");
@@ -421,7 +421,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#shutdownOutput()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void ShutdownOutput()
         {
             IExecuteWithSignature("shutdownOutput", "()V");

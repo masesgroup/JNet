@@ -82,8 +82,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleKeyBinding.html#getAccessibleKeyBinding(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         object GetAccessibleKeyBinding(int arg0);
 
         #endregion
@@ -126,8 +126,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleKeyBinding.html#getAccessibleKeyBinding(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetAccessibleKeyBinding(int arg0)
         {
             return IExecuteWithSignature("getAccessibleKeyBinding", "(I)Ljava/lang/Object;", arg0);

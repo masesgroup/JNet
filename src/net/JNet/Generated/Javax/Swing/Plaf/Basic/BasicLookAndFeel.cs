@@ -77,7 +77,7 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicLookAndFeel"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Basic.BasicLookAndFeel t) => t.Cast<Java.Io.Serializable>();
 

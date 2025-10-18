@@ -98,11 +98,11 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat.Type,java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
-        /// <param name="arg2"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Write(Javax.Sound.Sampled.AudioInputStream arg0, Javax.Sound.Sampled.AudioFileFormat.Type arg1, Java.Io.File arg2)
         {
             return IExecuteWithSignature<int>("write", "(Ljavax/sound/sampled/AudioInputStream;Ljavax/sound/sampled/AudioFileFormat$Type;Ljava/io/File;)I", arg0, arg1, arg2);
@@ -110,11 +110,11 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat.Type,java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
-        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Write(Javax.Sound.Sampled.AudioInputStream arg0, Javax.Sound.Sampled.AudioFileFormat.Type arg1, Java.Io.OutputStream arg2)
         {
             return IExecuteWithSignature<int>("write", "(Ljavax/sound/sampled/AudioInputStream;Ljavax/sound/sampled/AudioFileFormat$Type;Ljava/io/OutputStream;)I", arg0, arg1, arg2);
@@ -122,8 +122,8 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#getAudioFileTypes(javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Sampled.AudioFileFormat.Type[] GetAudioFileTypes(Javax.Sound.Sampled.AudioInputStream arg0)
         {
             return IExecuteWithSignatureArray<Javax.Sound.Sampled.AudioFileFormat.Type>("getAudioFileTypes", "(Ljavax/sound/sampled/AudioInputStream;)[Ljavax/sound/sampled/AudioFileFormat$Type;", arg0);
@@ -131,9 +131,9 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat.Type,javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFileTypeSupported(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioInputStream arg1)
         {
             return IExecuteWithSignature<bool>("isFileTypeSupported", "(Ljavax/sound/sampled/AudioFileFormat$Type;Ljavax/sound/sampled/AudioInputStream;)Z", arg0, arg1);
@@ -141,8 +141,8 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat.Type)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFileTypeSupported(Javax.Sound.Sampled.AudioFileFormat.Type arg0)
         {
             return IExecuteWithSignature<bool>("isFileTypeSupported", "(Ljavax/sound/sampled/AudioFileFormat$Type;)Z", arg0);

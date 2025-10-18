@@ -75,11 +75,11 @@ namespace Java.Time.Zone
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Time.Zone.ZoneOffsetTransition"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Time.Zone.ZoneOffsetTransition t) => t.Cast<Java.Lang.Comparable>();
         /// <summary>
-        /// Converter from <see cref="Java.Time.Zone.ZoneOffsetTransition"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Zone.ZoneOffsetTransition t) => t.Cast<Java.Io.Serializable>();
 
@@ -93,10 +93,10 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#of(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
-        /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <param name="arg2"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Zone.ZoneOffsetTransition Of(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1, Java.Time.ZoneOffset arg2)
         {
             return SExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransition>(LocalBridgeClazz, "of", "(Ljava/time/LocalDateTime;Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;)Ljava/time/zone/ZoneOffsetTransition;", arg0, arg1, arg2);
@@ -150,7 +150,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isGap()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsGap()
         {
             return IExecuteWithSignature<bool>("isGap", "()Z");
@@ -158,7 +158,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isOverlap()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOverlap()
         {
             return IExecuteWithSignature<bool>("isOverlap", "()Z");
@@ -166,8 +166,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isValidOffset(java.time.ZoneOffset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsValidOffset(Java.Time.ZoneOffset arg0)
         {
             return IExecuteWithSignature<bool>("isValidOffset", "(Ljava/time/ZoneOffset;)Z", arg0);
@@ -175,8 +175,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -184,8 +184,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.time.zone.ZoneOffsetTransition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Zone.ZoneOffsetTransition"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Time.Zone.ZoneOffsetTransition arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/time/zone/ZoneOffsetTransition;)I", arg0);
@@ -193,7 +193,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#toEpochSecond()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long ToEpochSecond()
         {
             return IExecuteWithSignature<long>("toEpochSecond", "()J");

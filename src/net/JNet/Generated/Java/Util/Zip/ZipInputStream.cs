@@ -73,8 +73,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipInputStream.html#%3Cinit%3E(java.io.InputStream,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ZipInputStream(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ZipInputStream(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -113,7 +113,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipInputStream.html#closeEntry()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void CloseEntry()
         {
             IExecuteWithSignature("closeEntry", "()V");

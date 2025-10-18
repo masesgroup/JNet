@@ -78,11 +78,11 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/EntityResolver.html#resolveEntity(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1);
 
         #endregion
@@ -118,11 +118,11 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/EntityResolver.html#resolveEntity(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Org.Xml.Sax.InputSource>("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1);

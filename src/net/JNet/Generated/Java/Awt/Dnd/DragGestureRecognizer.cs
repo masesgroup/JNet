@@ -119,8 +119,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#addDragGestureListener(java.awt.dnd.DragGestureListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
-        /// <exception cref="Java.Util.TooManyListenersException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddDragGestureListener(Java.Awt.Dnd.DragGestureListener arg0)
         {
             IExecuteWithSignature("addDragGestureListener", "(Ljava/awt/dnd/DragGestureListener;)V", arg0);
@@ -128,7 +128,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#removeDragGestureListener(java.awt.dnd.DragGestureListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveDragGestureListener(Java.Awt.Dnd.DragGestureListener arg0)
         {
             IExecuteWithSignature("removeDragGestureListener", "(Ljava/awt/dnd/DragGestureListener;)V", arg0);

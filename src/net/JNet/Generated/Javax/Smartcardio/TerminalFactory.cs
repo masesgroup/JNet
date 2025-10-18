@@ -99,12 +99,12 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Smartcardio.TerminalFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Smartcardio.TerminalFactory GetInstance(Java.Lang.String arg0, object arg1, Java.Lang.String arg2)
         {
             return SExecuteWithSignature<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljavax/smartcardio/TerminalFactory;", arg0, arg1, arg2);
@@ -112,11 +112,11 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Javax.Smartcardio.TerminalFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Smartcardio.TerminalFactory GetInstance(Java.Lang.String arg0, object arg1, Java.Security.Provider arg2)
         {
             return SExecuteWithSignature<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/Object;Ljava/security/Provider;)Ljavax/smartcardio/TerminalFactory;", arg0, arg1, arg2);
@@ -124,10 +124,10 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Smartcardio.TerminalFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Smartcardio.TerminalFactory GetInstance(Java.Lang.String arg0, object arg1)
         {
             return SExecuteWithSignature<Javax.Smartcardio.TerminalFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/smartcardio/TerminalFactory;", arg0, arg1);
@@ -153,7 +153,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#terminals()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Smartcardio.CardTerminals"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Smartcardio.CardTerminals Terminals()
         {
             return IExecuteWithSignature<Javax.Smartcardio.CardTerminals>("terminals", "()Ljavax/smartcardio/CardTerminals;");

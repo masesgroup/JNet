@@ -78,8 +78,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/EventFilter.html#accept(javax.xml.stream.events.XMLEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Stream.Events.XMLEvent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Accept(Javax.Xml.Stream.Events.XMLEvent arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/EventFilter.html#accept(javax.xml.stream.events.XMLEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Stream.Events.XMLEvent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Accept(Javax.Xml.Stream.Events.XMLEvent arg0)
         {
             return IExecuteWithSignature<bool>("accept", "(Ljavax/xml/stream/events/XMLEvent;)Z", arg0);

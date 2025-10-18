@@ -85,23 +85,23 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
-        public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3, Javax.Naming.Directory.Attributes arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<, > arg3, Javax.Naming.Directory.Attributes arg4)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "getObjectInstance", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;Ljavax/naming/directory/Attributes;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html#getContinuationDirContext(javax.naming.CannotProceedException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.CannotProceedException"/></param>
-        /// <returns><see cref="Javax.Naming.Directory.DirContext"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Naming.Directory.DirContext GetContinuationDirContext(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return SExecuteWithSignature<Javax.Naming.Directory.DirContext>(LocalBridgeClazz, "getContinuationDirContext", "(Ljavax/naming/CannotProceedException;)Ljavax/naming/directory/DirContext;", arg0);
@@ -109,14 +109,14 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html#getStateToBind(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.DirStateFactory.Result"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3, Javax.Naming.Directory.Attributes arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<, > arg3, Javax.Naming.Directory.Attributes arg4)
         {
             return SExecuteWithSignature<Javax.Naming.Spi.DirStateFactory.Result>(LocalBridgeClazz, "getStateToBind", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;Ljavax/naming/directory/Attributes;)Ljavax/naming/spi/DirStateFactory$Result;", arg0, arg1, arg2, arg3, arg4);
         }

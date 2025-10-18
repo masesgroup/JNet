@@ -73,7 +73,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantCallSite.html#%3Cinit%3E(java.lang.invoke.MethodHandle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ConstantCallSite(Java.Lang.Invoke.MethodHandle arg0)
             : base(arg0)
         {

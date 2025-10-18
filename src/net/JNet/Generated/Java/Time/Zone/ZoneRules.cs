@@ -85,21 +85,21 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#of(java.time.ZoneOffset,java.time.ZoneOffset,java.util.List,java.util.List,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <param name="arg2"><see cref="Java.Util.List"/></param>
-        /// <param name="arg3"><see cref="Java.Util.List"/></param>
-        /// <param name="arg4"><see cref="Java.Util.List"/></param>
-        /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
-        public static Java.Time.Zone.ZoneRules Of(Java.Time.ZoneOffset arg0, Java.Time.ZoneOffset arg1, Java.Util.List<Java.Time.Zone.ZoneOffsetTransition> arg2, Java.Util.List<Java.Time.Zone.ZoneOffsetTransition> arg3, Java.Util.List<Java.Time.Zone.ZoneOffsetTransitionRule> arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Time.Zone.ZoneRules Of(Java.Time.ZoneOffset arg0, Java.Time.ZoneOffset arg1, Java.Util.List arg2, Java.Util.List arg3, Java.Util.List arg4)
         {
             return SExecuteWithSignature<Java.Time.Zone.ZoneRules>(LocalBridgeClazz, "of", "(Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Ljava/time/zone/ZoneRules;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#of(java.time.ZoneOffset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Zone.ZoneRules Of(Java.Time.ZoneOffset arg0)
         {
             return SExecuteWithSignature<Java.Time.Zone.ZoneRules>(LocalBridgeClazz, "of", "(Ljava/time/ZoneOffset;)Ljava/time/zone/ZoneRules;", arg0);
@@ -111,22 +111,22 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getTransitionRules()"/> 
         /// </summary>
-        public Java.Util.List<Java.Time.Zone.ZoneOffsetTransitionRule> TransitionRules
+        public Java.Util.List TransitionRules
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Time.Zone.ZoneOffsetTransitionRule>>("getTransitionRules", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getTransitionRules", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getTransitions()"/> 
         /// </summary>
-        public Java.Util.List<Java.Time.Zone.ZoneOffsetTransition> Transitions
+        public Java.Util.List Transitions
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Time.Zone.ZoneOffsetTransition>>("getTransitions", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getTransitions", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isDaylightSavings(java.time.Instant)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDaylightSavings(Java.Time.Instant arg0)
         {
             return IExecuteWithSignature<bool>("isDaylightSavings", "(Ljava/time/Instant;)Z", arg0);
@@ -134,7 +134,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isFixedOffset()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFixedOffset()
         {
             return IExecuteWithSignature<bool>("isFixedOffset", "()Z");
@@ -142,9 +142,9 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isValidOffset(java.time.LocalDateTime,java.time.ZoneOffset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
-        /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsValidOffset(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1)
         {
             return IExecuteWithSignature<bool>("isValidOffset", "(Ljava/time/LocalDateTime;Ljava/time/ZoneOffset;)Z", arg0, arg1);
@@ -152,8 +152,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getDaylightSavings(java.time.Instant)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
-        /// <returns><see cref="Java.Time.Duration"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Duration GetDaylightSavings(Java.Time.Instant arg0)
         {
             return IExecuteWithSignature<Java.Time.Duration>("getDaylightSavings", "(Ljava/time/Instant;)Ljava/time/Duration;", arg0);
@@ -161,8 +161,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getTransition(java.time.LocalDateTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
-        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Zone.ZoneOffsetTransition GetTransition(Java.Time.LocalDateTime arg0)
         {
             return IExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransition>("getTransition", "(Ljava/time/LocalDateTime;)Ljava/time/zone/ZoneOffsetTransition;", arg0);
@@ -170,8 +170,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#nextTransition(java.time.Instant)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
-        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Zone.ZoneOffsetTransition NextTransition(Java.Time.Instant arg0)
         {
             return IExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransition>("nextTransition", "(Ljava/time/Instant;)Ljava/time/zone/ZoneOffsetTransition;", arg0);
@@ -179,8 +179,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#previousTransition(java.time.Instant)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
-        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Zone.ZoneOffsetTransition PreviousTransition(Java.Time.Instant arg0)
         {
             return IExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransition>("previousTransition", "(Ljava/time/Instant;)Ljava/time/zone/ZoneOffsetTransition;", arg0);
@@ -188,8 +188,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getOffset(java.time.Instant)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
-        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.ZoneOffset GetOffset(Java.Time.Instant arg0)
         {
             return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffset", "(Ljava/time/Instant;)Ljava/time/ZoneOffset;", arg0);
@@ -197,8 +197,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getOffset(java.time.LocalDateTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
-        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.ZoneOffset GetOffset(Java.Time.LocalDateTime arg0)
         {
             return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffset", "(Ljava/time/LocalDateTime;)Ljava/time/ZoneOffset;", arg0);
@@ -206,8 +206,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getStandardOffset(java.time.Instant)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
-        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.ZoneOffset GetStandardOffset(Java.Time.Instant arg0)
         {
             return IExecuteWithSignature<Java.Time.ZoneOffset>("getStandardOffset", "(Ljava/time/Instant;)Ljava/time/ZoneOffset;", arg0);
@@ -215,11 +215,11 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getValidOffsets(java.time.LocalDateTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<Java.Time.ZoneOffset> GetValidOffsets(Java.Time.LocalDateTime arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List GetValidOffsets(Java.Time.LocalDateTime arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Time.ZoneOffset>>("getValidOffsets", "(Ljava/time/LocalDateTime;)Ljava/util/List;", arg0);
+            return IExecuteWithSignature<Java.Util.List>("getValidOffsets", "(Ljava/time/LocalDateTime;)Ljava/util/List;", arg0);
         }
 
         #endregion

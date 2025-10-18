@@ -78,9 +78,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CompositeContext.html#compose(java.awt.image.Raster,java.awt.image.Raster,java.awt.image.WritableRaster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Raster"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         void Compose(Java.Awt.ImageNs.Raster arg0, Java.Awt.ImageNs.Raster arg1, Java.Awt.ImageNs.WritableRaster arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CompositeContext.html#dispose()"/>
@@ -120,9 +120,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CompositeContext.html#compose(java.awt.image.Raster,java.awt.image.Raster,java.awt.image.WritableRaster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Raster"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Compose(Java.Awt.ImageNs.Raster arg0, Java.Awt.ImageNs.Raster arg1, Java.Awt.ImageNs.WritableRaster arg2)
         {
             IExecuteWithSignature("compose", "(Ljava/awt/image/Raster;Ljava/awt/image/Raster;Ljava/awt/image/WritableRaster;)V", arg0, arg1, arg2);

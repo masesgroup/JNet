@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StringContent(int arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Javax.Swing.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.StringContent"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.StringContent t) => t.Cast<Java.Io.Serializable>();
 
@@ -101,7 +101,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#length()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Length()
         {
             return IExecuteWithSignature<int>("length", "()I");
@@ -109,10 +109,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#getString(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String GetString(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("getString", "(II)Ljava/lang/String;", arg0, arg1);
@@ -120,9 +120,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#createPosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Position"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Swing.Text.Position CreatePosition(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Position>("createPosition", "(I)Ljavax/swing/text/Position;", arg0);
@@ -130,10 +130,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#insertString(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Undo.UndoableEdit"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Undo.UndoableEdit>("insertString", "(ILjava/lang/String;)Ljavax/swing/undo/UndoableEdit;", arg0, arg1);
@@ -141,10 +141,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#remove(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Undo.UndoableEdit"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Swing.Undo.UndoableEdit Remove(int arg0, int arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Undo.UndoableEdit>("remove", "(II)Ljavax/swing/undo/UndoableEdit;", arg0, arg1);
@@ -152,10 +152,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#getChars(int,int,javax.swing.text.Segment)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Segment"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void GetChars(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
         {
             IExecuteWithSignature("getChars", "(IILjavax/swing/text/Segment;)V", arg0, arg1, arg2);

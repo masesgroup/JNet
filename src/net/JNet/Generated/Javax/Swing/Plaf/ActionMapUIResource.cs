@@ -75,7 +75,7 @@ namespace Javax.Swing.Plaf
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.ActionMapUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.ActionMapUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
 

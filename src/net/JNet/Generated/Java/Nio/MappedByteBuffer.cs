@@ -91,7 +91,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#isLoaded()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsLoaded()
         {
             return IExecuteWithSignature<bool>("isLoaded", "()Z");
@@ -99,7 +99,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#force()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.MappedByteBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.MappedByteBuffer Force()
         {
             return IExecuteWithSignature<Java.Nio.MappedByteBuffer>("force", "()Ljava/nio/MappedByteBuffer;");
@@ -107,7 +107,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#load()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.MappedByteBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.MappedByteBuffer Load()
         {
             return IExecuteWithSignature<Java.Nio.MappedByteBuffer>("load", "()Ljava/nio/MappedByteBuffer;");

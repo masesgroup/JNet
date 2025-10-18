@@ -126,7 +126,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isReadOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsReadOnly()
         {
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
@@ -134,8 +134,8 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getAsTree(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.Node GetAsTree(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Node>("getAsTree", "(Ljava/lang/String;)Lorg/w3c/dom/Node;", arg0);
@@ -143,9 +143,9 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#mergeTree(java.lang.String,org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void MergeTree(Java.Lang.String arg0, Org.W3c.Dom.Node arg1)
         {
             IExecuteWithSignature("mergeTree", "(Ljava/lang/String;Lorg/w3c/dom/Node;)V", arg0, arg1);
@@ -160,7 +160,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#activateController()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool ActivateController()
         {
             return IExecuteWithSignature<bool>("activateController", "()Z");
@@ -168,7 +168,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#hasController()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasController()
         {
             return IExecuteWithSignature<bool>("hasController", "()Z");
@@ -176,7 +176,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isStandardMetadataFormatSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsStandardMetadataFormatSupported()
         {
             return IExecuteWithSignature<bool>("isStandardMetadataFormatSupported", "()Z");
@@ -184,8 +184,8 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormat(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Imageio.Metadata.IIOMetadataFormat GetMetadataFormat(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Imageio.Metadata.IIOMetadataFormat>("getMetadataFormat", "(Ljava/lang/String;)Ljavax/imageio/metadata/IIOMetadataFormat;", arg0);
@@ -193,9 +193,9 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#setFromTree(java.lang.String,org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetFromTree(Java.Lang.String arg0, Org.W3c.Dom.Node arg1)
         {
             IExecuteWithSignature("setFromTree", "(Ljava/lang/String;Lorg/w3c/dom/Node;)V", arg0, arg1);

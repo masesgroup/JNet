@@ -73,9 +73,9 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.jar.Manifest)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Jar.Manifest"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public JarOutputStream(Java.Io.OutputStream arg0, Java.Util.Jar.Manifest arg1)
             : base(arg0, arg1)
         {
@@ -83,8 +83,8 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public JarOutputStream(Java.Io.OutputStream arg0)
             : base(arg0)
         {

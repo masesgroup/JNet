@@ -78,10 +78,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/TileObserver.html#tileUpdate(java.awt.image.WritableRenderedImage,int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.WritableRenderedImage"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         void TileUpdate(Java.Awt.ImageNs.WritableRenderedImage arg0, int arg1, int arg2, bool arg3);
 
         #endregion
@@ -117,10 +117,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/TileObserver.html#tileUpdate(java.awt.image.WritableRenderedImage,int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.WritableRenderedImage"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void TileUpdate(Java.Awt.ImageNs.WritableRenderedImage arg0, int arg1, int arg2, bool arg3)
         {
             IExecuteWithSignature("tileUpdate", "(Ljava/awt/image/WritableRenderedImage;IIZ)V", arg0, arg1, arg2, arg3);

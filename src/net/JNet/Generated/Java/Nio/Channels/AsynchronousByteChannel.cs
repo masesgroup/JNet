@@ -78,33 +78,33 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA : A;
+        /// <typeparam name="Arg2objectSuperA"><see cref=""/></typeparam>
+        void Read<, >(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<, > arg2) where Arg2objectSuperA : A;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA : A;
+        /// <typeparam name="Arg2objectSuperA"><see cref=""/></typeparam>
+        void Write<, >(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<, > arg2) where Arg2objectSuperA : A;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        Java.Util.Concurrent.Future<Java.Lang.Integer> Read(Java.Nio.ByteBuffer arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Concurrent.Future Read(Java.Nio.ByteBuffer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        Java.Util.Concurrent.Future<Java.Lang.Integer> Write(Java.Nio.ByteBuffer arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Concurrent.Future Write(Java.Nio.ByteBuffer arg0);
 
         #endregion
 
@@ -139,44 +139,44 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA : A
+        /// <typeparam name="Arg2objectSuperA"><see cref=""/></typeparam>
+        public void Read<, >(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<, > arg2) where Arg2objectSuperA : A
         {
             IExecuteWithSignature("read", "(Ljava/nio/ByteBuffer;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA : A
+        /// <typeparam name="Arg2objectSuperA"><see cref=""/></typeparam>
+        public void Write<, >(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<, > arg2) where Arg2objectSuperA : A
         {
             IExecuteWithSignature("write", "(Ljava/nio/ByteBuffer;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<Java.Lang.Integer> Read(Java.Nio.ByteBuffer arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Read(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Lang.Integer>>("read", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/Future;", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("read", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/Future;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<Java.Lang.Integer> Write(Java.Nio.ByteBuffer arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Write(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Lang.Integer>>("write", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/Future;", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("write", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/Future;", arg0);
         }
 
         #endregion

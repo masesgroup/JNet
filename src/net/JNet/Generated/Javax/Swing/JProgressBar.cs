@@ -73,9 +73,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JProgressBar(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JProgressBar(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -92,7 +92,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JProgressBar(int arg0)
             : base(arg0)
         {
@@ -100,7 +100,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#%3Cinit%3E(javax.swing.BoundedRangeModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.BoundedRangeModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JProgressBar(Javax.Swing.BoundedRangeModel arg0)
             : base(arg0)
         {
@@ -110,11 +110,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JProgressBar"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JProgressBar t) => t.Cast<Javax.Swing.SwingConstants>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JProgressBar"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JProgressBar t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -188,7 +188,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#isBorderPainted()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBorderPainted()
         {
             return IExecuteWithSignature<bool>("isBorderPainted", "()Z");
@@ -196,7 +196,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#isIndeterminate()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsIndeterminate()
         {
             return IExecuteWithSignature<bool>("isIndeterminate", "()Z");
@@ -204,7 +204,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#isStringPainted()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsStringPainted()
         {
             return IExecuteWithSignature<bool>("isStringPainted", "()Z");
@@ -212,7 +212,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -220,7 +220,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -228,7 +228,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setBorderPainted(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetBorderPainted(bool arg0)
         {
             IExecuteWithSignature("setBorderPainted", "(Z)V", arg0);
@@ -236,7 +236,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setIndeterminate(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetIndeterminate(bool arg0)
         {
             IExecuteWithSignature("setIndeterminate", "(Z)V", arg0);
@@ -244,7 +244,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setStringPainted(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetStringPainted(bool arg0)
         {
             IExecuteWithSignature("setStringPainted", "(Z)V", arg0);
@@ -252,7 +252,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#setUI(javax.swing.plaf.ProgressBarUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ProgressBarUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.ProgressBarUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ProgressBarUI;)V", arg0);

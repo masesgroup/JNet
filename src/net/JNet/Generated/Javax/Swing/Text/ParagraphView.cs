@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ParagraphView.html#%3Cinit%3E(javax.swing.text.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ParagraphView(Javax.Swing.Text.Element arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Javax.Swing.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.ParagraphView"/> to <see cref="Javax.Swing.Text.TabExpander"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.TabExpander(Javax.Swing.Text.ParagraphView t) => t.Cast<Javax.Swing.Text.TabExpander>();
 
@@ -101,9 +101,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ParagraphView.html#nextTabStop(float,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float NextTabStop(float arg0, int arg1)
         {
             return IExecuteWithSignature<float>("nextTabStop", "(FI)F", arg0, arg1);
@@ -111,9 +111,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ParagraphView.html#getBreakWeight(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetBreakWeight(int arg0, float arg1)
         {
             return IExecuteWithSignature<int>("getBreakWeight", "(IF)I", arg0, arg1);
@@ -121,10 +121,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ParagraphView.html#breakView(int,float,java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
-        /// <returns><see cref="Javax.Swing.Text.View"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.View BreakView(int arg0, float arg1, Java.Awt.Shape arg2)
         {
             return IExecuteWithSignature<Javax.Swing.Text.View>("breakView", "(IFLjava/awt/Shape;)Ljavax/swing/text/View;", arg0, arg1, arg2);

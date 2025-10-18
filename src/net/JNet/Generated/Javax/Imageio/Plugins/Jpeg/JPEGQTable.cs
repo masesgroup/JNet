@@ -73,7 +73,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#%3Cinit%3E(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JPEGQTable(int[] arg0)
             : base(arg0)
         {
@@ -128,9 +128,9 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#getScaledInstance(float,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Javax.Imageio.Plugins.Jpeg.JPEGQTable"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Imageio.Plugins.Jpeg.JPEGQTable GetScaledInstance(float arg0, bool arg1)
         {
             return IExecuteWithSignature<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("getScaledInstance", "(FZ)Ljavax/imageio/plugins/jpeg/JPEGQTable;", arg0, arg1);

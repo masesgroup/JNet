@@ -73,9 +73,9 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#%3Cinit%3E(int,java.lang.Object,javax.swing.text.html.parser.ContentModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Html.Parser.ContentModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public ContentModel(int arg0, object arg1, Javax.Swing.Text.Html.Parser.ContentModel arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#%3Cinit%3E(int,javax.swing.text.html.parser.ContentModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.Parser.ContentModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ContentModel(int arg0, Javax.Swing.Text.Html.Parser.ContentModel arg1)
             : base(arg0, arg1)
         {
@@ -92,7 +92,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#%3Cinit%3E(javax.swing.text.html.parser.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.Parser.Element"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ContentModel(Javax.Swing.Text.Html.Parser.Element arg0)
             : base(arg0)
         {
@@ -128,7 +128,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#empty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Empty()
         {
             return IExecuteWithSignature<bool>("empty", "()Z");
@@ -136,8 +136,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#first(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool First(object arg0)
         {
             return IExecuteWithSignature<bool>("first", "(Ljava/lang/Object;)Z", arg0);
@@ -145,7 +145,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#first()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Element"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.Parser.Element First()
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Element>("first", "()Ljavax/swing/text/html/parser/Element;");
@@ -153,8 +153,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#getElements(java.util.Vector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        public void GetElements(Java.Util.Vector<Javax.Swing.Text.Html.Parser.Element> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void GetElements(Java.Util.Vector arg0)
         {
             IExecuteWithSignature("getElements", "(Ljava/util/Vector;)V", arg0);
         }

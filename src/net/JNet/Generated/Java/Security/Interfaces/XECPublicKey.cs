@@ -99,11 +99,11 @@ namespace Java.Security.Interfaces
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Interfaces.XECPublicKey"/> to <see cref="Java.Security.Interfaces.XECKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Interfaces.XECKey(Java.Security.Interfaces.XECPublicKey t) => t.Cast<Java.Security.Interfaces.XECKey>();
         /// <summary>
-        /// Converter from <see cref="Java.Security.Interfaces.XECPublicKey"/> to <see cref="Java.Security.PublicKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.PublicKey(Java.Security.Interfaces.XECPublicKey t) => t.Cast<Java.Security.PublicKey>();
 

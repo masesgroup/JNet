@@ -73,7 +73,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BeanContextChildSupport(Java.Beans.Beancontext.BeanContextChild arg0)
             : base(arg0)
         {
@@ -83,15 +83,15 @@ namespace Java.Beans.Beancontext
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextChildSupport"/> to <see cref="Java.Beans.Beancontext.BeanContextChild"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Beans.Beancontext.BeanContextChild(Java.Beans.Beancontext.BeanContextChildSupport t) => t.Cast<Java.Beans.Beancontext.BeanContextChild>();
         /// <summary>
-        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextChildSupport"/> to <see cref="Java.Beans.Beancontext.BeanContextServicesListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Beans.Beancontext.BeanContextServicesListener(Java.Beans.Beancontext.BeanContextChildSupport t) => t.Cast<Java.Beans.Beancontext.BeanContextServicesListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextChildSupport"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Beans.Beancontext.BeanContextChildSupport t) => t.Cast<Java.Io.Serializable>();
 
@@ -127,7 +127,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#isDelegated()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDelegated()
         {
             return IExecuteWithSignature<bool>("isDelegated", "()Z");
@@ -135,8 +135,8 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#validatePendingSetBeanContext(java.beans.beancontext.BeanContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ValidatePendingSetBeanContext(Java.Beans.Beancontext.BeanContext arg0)
         {
             return IExecuteWithSignature<bool>("validatePendingSetBeanContext", "(Ljava/beans/beancontext/BeanContext;)Z", arg0);
@@ -144,8 +144,8 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void AddPropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
             IExecuteWithSignature("addPropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
@@ -153,8 +153,8 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void AddVetoableChangeListener(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
         {
             IExecuteWithSignature("addVetoableChangeListener", "(Ljava/lang/String;Ljava/beans/VetoableChangeListener;)V", arg0, arg1);
@@ -162,9 +162,9 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void FirePropertyChange(Java.Lang.String arg0, object arg1, object arg2)
         {
             IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -172,10 +172,10 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#fireVetoableChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void FireVetoableChange(Java.Lang.String arg0, object arg1, object arg2)
         {
             IExecuteWithSignature("fireVetoableChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -183,8 +183,8 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemovePropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
             IExecuteWithSignature("removePropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
@@ -192,8 +192,8 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemoveVetoableChangeListener(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
         {
             IExecuteWithSignature("removeVetoableChangeListener", "(Ljava/lang/String;Ljava/beans/VetoableChangeListener;)V", arg0, arg1);
@@ -201,7 +201,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceAvailableEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ServiceAvailable(Java.Beans.Beancontext.BeanContextServiceAvailableEvent arg0)
         {
             IExecuteWithSignature("serviceAvailable", "(Ljava/beans/beancontext/BeanContextServiceAvailableEvent;)V", arg0);
@@ -209,7 +209,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
         {
             IExecuteWithSignature("serviceRevoked", "(Ljava/beans/beancontext/BeanContextServiceRevokedEvent;)V", arg0);

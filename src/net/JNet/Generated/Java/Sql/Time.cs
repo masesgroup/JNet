@@ -73,7 +73,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Time.html#%3Cinit%3E(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Time(long arg0)
             : base(arg0)
         {
@@ -93,8 +93,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Time.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Time"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.Time ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Sql.Time>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/Time;", arg0);
@@ -102,8 +102,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Time.html#valueOf(java.time.LocalTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.LocalTime"/></param>
-        /// <returns><see cref="Java.Sql.Time"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.Time ValueOf(Java.Time.LocalTime arg0)
         {
             return SExecuteWithSignature<Java.Sql.Time>(LocalBridgeClazz, "valueOf", "(Ljava/time/LocalTime;)Ljava/sql/Time;", arg0);
@@ -115,7 +115,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Time.html#toLocalTime()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.LocalTime"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Time.LocalTime ToLocalTime()
         {
             return IExecuteWithSignature<Java.Time.LocalTime>("toLocalTime", "()Ljava/time/LocalTime;");

@@ -73,9 +73,9 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public DescriptorSupport(int arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DescriptorSupport(params Java.Lang.String[] arg0)
             : base(arg0)
         {
@@ -91,10 +91,10 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        /// <exception cref="Javax.Management.Modelmbean.XMLParseException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public DescriptorSupport(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -102,7 +102,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(javax.management.modelmbean.DescriptorSupport)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Modelmbean.DescriptorSupport"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DescriptorSupport(Javax.Management.Modelmbean.DescriptorSupport arg0)
             : base(arg0)
         {
@@ -140,8 +140,8 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#isValid()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool IsValid()
         {
             return IExecuteWithSignature<bool>("isValid", "()Z");
@@ -149,9 +149,9 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFieldValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object GetFieldValue(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getFieldValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -159,8 +159,8 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFieldValues(java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object[] GetFieldValues(params Java.Lang.String[] arg0)
         {
             return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;", arg0);
@@ -168,7 +168,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToXMLString()
         {
             return IExecuteWithSignature<Java.Lang.String>("toXMLString", "()Ljava/lang/String;");
@@ -176,7 +176,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#removeField(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveField(Java.Lang.String arg0)
         {
             IExecuteWithSignature("removeField", "(Ljava/lang/String;)V", arg0);
@@ -184,9 +184,9 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#setField(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetField(Java.Lang.String arg0, object arg1)
         {
             IExecuteWithSignature("setField", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
@@ -194,9 +194,9 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#setFields(java.lang.String[],java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetFields(Java.Lang.String[] arg0, object[] arg1)
         {
             IExecuteWithSignature("setFields", "([Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1);

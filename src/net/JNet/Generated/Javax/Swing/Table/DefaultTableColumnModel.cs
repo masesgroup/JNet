@@ -75,19 +75,19 @@ namespace Javax.Swing.Table
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Table.DefaultTableColumnModel"/> to <see cref="Javax.Swing.Table.TableColumnModel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Table.TableColumnModel(Javax.Swing.Table.DefaultTableColumnModel t) => t.Cast<Javax.Swing.Table.TableColumnModel>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Table.DefaultTableColumnModel"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Table.DefaultTableColumnModel t) => t.Cast<Java.Beans.PropertyChangeListener>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Table.DefaultTableColumnModel"/> to <see cref="Javax.Swing.Event.ListSelectionListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Event.ListSelectionListener(Javax.Swing.Table.DefaultTableColumnModel t) => t.Cast<Javax.Swing.Event.ListSelectionListener>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Table.DefaultTableColumnModel"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Table.DefaultTableColumnModel t) => t.Cast<Java.Io.Serializable>();
 
@@ -126,9 +126,9 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#getColumns()"/> 
         /// </summary>
-        public Java.Util.Enumeration<Javax.Swing.Table.TableColumn> Columns
+        public Java.Util.Enumeration Columns
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Table.TableColumn>>("getColumns", "()Ljava/util/Enumeration;"); }
+            get { return IExecuteWithSignature<Java.Util.Enumeration>("getColumns", "()Ljava/util/Enumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#getColumnSelectionAllowed()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#setColumnSelectionAllowed(boolean)"/>
@@ -168,18 +168,18 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#getListeners(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public T[] GetListeners(Java.Lang.Class arg0)
         {
             return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#getColumnIndex(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetColumnIndex(object arg0)
         {
             return IExecuteWithSignature<int>("getColumnIndex", "(Ljava/lang/Object;)I", arg0);
@@ -187,8 +187,8 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#getColumnIndexAtX(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetColumnIndexAtX(int arg0)
         {
             return IExecuteWithSignature<int>("getColumnIndexAtX", "(I)I", arg0);
@@ -196,8 +196,8 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#getColumn(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Table.TableColumn"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Table.TableColumn GetColumn(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Table.TableColumn>("getColumn", "(I)Ljavax/swing/table/TableColumn;", arg0);
@@ -205,7 +205,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#addColumn(javax.swing.table.TableColumn)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Table.TableColumn"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddColumn(Javax.Swing.Table.TableColumn arg0)
         {
             IExecuteWithSignature("addColumn", "(Ljavax/swing/table/TableColumn;)V", arg0);
@@ -213,7 +213,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#addColumnModelListener(javax.swing.event.TableColumnModelListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddColumnModelListener(Javax.Swing.Event.TableColumnModelListener arg0)
         {
             IExecuteWithSignature("addColumnModelListener", "(Ljavax/swing/event/TableColumnModelListener;)V", arg0);
@@ -221,8 +221,8 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#moveColumn(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void MoveColumn(int arg0, int arg1)
         {
             IExecuteWithSignature("moveColumn", "(II)V", arg0, arg1);
@@ -230,7 +230,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
@@ -238,7 +238,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#removeColumn(javax.swing.table.TableColumn)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Table.TableColumn"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveColumn(Javax.Swing.Table.TableColumn arg0)
         {
             IExecuteWithSignature("removeColumn", "(Ljavax/swing/table/TableColumn;)V", arg0);
@@ -246,7 +246,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#removeColumnModelListener(javax.swing.event.TableColumnModelListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveColumnModelListener(Javax.Swing.Event.TableColumnModelListener arg0)
         {
             IExecuteWithSignature("removeColumnModelListener", "(Ljavax/swing/event/TableColumnModelListener;)V", arg0);
@@ -254,7 +254,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableColumnModel.html#valueChanged(javax.swing.event.ListSelectionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ValueChanged(Javax.Swing.Event.ListSelectionEvent arg0)
         {
             IExecuteWithSignature("valueChanged", "(Ljavax/swing/event/ListSelectionEvent;)V", arg0);

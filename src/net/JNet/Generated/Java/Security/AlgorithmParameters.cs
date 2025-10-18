@@ -85,11 +85,11 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.AlgorithmParameters"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Security.AlgorithmParameters GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/AlgorithmParameters;", arg0, arg1);
@@ -97,10 +97,10 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Java.Security.AlgorithmParameters"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Security.AlgorithmParameters GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecuteWithSignature<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/AlgorithmParameters;", arg0, arg1);
@@ -108,9 +108,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.AlgorithmParameters"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Security.AlgorithmParameters GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/AlgorithmParameters;", arg0);
@@ -143,20 +143,20 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getParameterSpec(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Security.Spec.IAlgorithmParameterSpec"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.Spec.InvalidParameterSpecException"/>
-        public T GetParameterSpec<T>(Java.Lang.Class arg0) where T : Java.Security.Spec.IAlgorithmParameterSpec, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public T GetParameterSpec(Java.Lang.Class arg0)
         {
             return IExecute<T>("getParameterSpec", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getEncoded(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] GetEncoded(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<byte>("getEncoded", "(Ljava/lang/String;)[B", arg0);
@@ -164,9 +164,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#init(byte[],java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(byte[] arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("init", "([BLjava/lang/String;)V", arg0, arg1);
@@ -174,8 +174,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#init(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(byte[] arg0)
         {
             IExecuteWithSignature("init", "([B)V", new object[] { arg0 });
@@ -183,8 +183,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#init(java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
-        /// <exception cref="Java.Security.Spec.InvalidParameterSpecException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(Java.Security.Spec.AlgorithmParameterSpec arg0)
         {
             IExecuteWithSignature("init", "(Ljava/security/spec/AlgorithmParameterSpec;)V", arg0);

@@ -68,13 +68,13 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region BaseStream<T, S> declaration
+    #region BaseStream<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <typeparam name="S"><see cref="Java.Util.Stream.BaseStream{T, S}"/></typeparam>
-    public partial class BaseStream<T, S> : Java.Lang.AutoCloseable where S : Java.Util.Stream.BaseStream<T, S>
+    /// <typeparam name="S"></typeparam>
+    public partial class BaseStream<, > : Java.Lang.AutoCloseable
     {
         const string _bridgeClassName = "java.util.stream.BaseStream";
         /// <summary>
@@ -136,7 +136,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsParallel()
         {
             return IExecuteWithSignature<bool>("isParallel", "()Z");
@@ -144,7 +144,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Iterator Iterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
@@ -152,7 +152,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Spliterator Spliterator()
         {
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
@@ -160,8 +160,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.BaseStream OnClose(Java.Lang.Runnable arg0)
         {
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("onClose", "(Ljava/lang/Runnable;)Ljava/util/stream/BaseStream;", arg0);
@@ -169,7 +169,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.BaseStream Parallel()
         {
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("parallel", "()Ljava/util/stream/BaseStream;");
@@ -177,7 +177,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.BaseStream Sequential()
         {
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("sequential", "()Ljava/util/stream/BaseStream;");
@@ -185,7 +185,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.BaseStream Unordered()
         {
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("unordered", "()Ljava/util/stream/BaseStream;");
@@ -208,48 +208,48 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region IBaseStream<T, S>
+    #region IBaseStream<, >
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html"/>
     /// </summary>
-    public partial interface IBaseStream<T, S> : Java.Lang.IAutoCloseable
+    public partial interface IBaseStream<, > : Java.Lang.IAutoCloseable
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsParallel();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<T> Iterator();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Iterator Iterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        Java.Util.Spliterator<T> Spliterator();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Spliterator Spliterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <returns><typeparamref name="S"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         S OnClose(Java.Lang.Runnable arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/>
         /// </summary>
-        /// <returns><typeparamref name="S"/></returns>
+        /// <returns><see cref=""/></returns>
         S Parallel();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/>
         /// </summary>
-        /// <returns><typeparamref name="S"/></returns>
+        /// <returns><see cref=""/></returns>
         S Sequential();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/>
         /// </summary>
-        /// <returns><typeparamref name="S"/></returns>
+        /// <returns><see cref=""/></returns>
         S Unordered();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#close()"/>
@@ -266,8 +266,8 @@ namespace Java.Util.Stream
     }
     #endregion
 
-    #region BaseStream<T, S> implementation
-    public partial class BaseStream<T, S> : Java.Util.Stream.IBaseStream<T, S>
+    #region BaseStream<, > implementation
+    public partial class BaseStream<, > : Java.Util.Stream.IBaseStream<, >
     {
         #region Constructors
 
@@ -275,9 +275,9 @@ namespace Java.Util.Stream
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Stream.BaseStream{T, S}"/> to <see cref="Java.Util.Stream.BaseStream"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Stream.BaseStream(Java.Util.Stream.BaseStream<T, S> t) => t.Cast<Java.Util.Stream.BaseStream>();
+        public static implicit operator Java.Util.Stream.BaseStream(Java.Util.Stream.BaseStream<, > t) => t.Cast<Java.Util.Stream.BaseStream>();
 
         #endregion
 
@@ -293,7 +293,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsParallel()
         {
             return IExecuteWithSignature<bool>("isParallel", "()Z");
@@ -301,24 +301,24 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<T> Iterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<T>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator<T> Spliterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Spliterator Spliterator()
         {
-            return IExecuteWithSignature<Java.Util.Spliterator<T>>("spliterator", "()Ljava/util/Spliterator;");
+            return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <returns><typeparamref name="S"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public S OnClose(Java.Lang.Runnable arg0)
         {
             return IExecuteWithSignature<S>("onClose", "(Ljava/lang/Runnable;)Ljava/util/stream/BaseStream;", arg0);
@@ -326,7 +326,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/>
         /// </summary>
-        /// <returns><typeparamref name="S"/></returns>
+        /// <returns><see cref=""/></returns>
         public S Parallel()
         {
             return IExecuteWithSignature<S>("parallel", "()Ljava/util/stream/BaseStream;");
@@ -334,7 +334,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/>
         /// </summary>
-        /// <returns><typeparamref name="S"/></returns>
+        /// <returns><see cref=""/></returns>
         public S Sequential()
         {
             return IExecuteWithSignature<S>("sequential", "()Ljava/util/stream/BaseStream;");
@@ -342,7 +342,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/>
         /// </summary>
-        /// <returns><typeparamref name="S"/></returns>
+        /// <returns><see cref=""/></returns>
         public S Unordered()
         {
             return IExecuteWithSignature<S>("unordered", "()Ljava/util/stream/BaseStream;");

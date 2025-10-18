@@ -148,8 +148,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getHeight(java.awt.image.ImageObserver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetHeight(Java.Awt.ImageNs.ImageObserver arg0)
         {
             return IExecuteWithSignature<int>("getHeight", "(Ljava/awt/image/ImageObserver;)I", arg0);
@@ -157,8 +157,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getWidth(java.awt.image.ImageObserver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetWidth(Java.Awt.ImageNs.ImageObserver arg0)
         {
             return IExecuteWithSignature<int>("getWidth", "(Ljava/awt/image/ImageObserver;)I", arg0);
@@ -166,9 +166,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getProperty(java.lang.String,java.awt.image.ImageObserver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetProperty(Java.Lang.String arg0, Java.Awt.ImageNs.ImageObserver arg1)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;Ljava/awt/image/ImageObserver;)Ljava/lang/Object;", arg0, arg1);
@@ -176,10 +176,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getScaledInstance(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Image"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Image GetScaledInstance(int arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Awt.Image>("getScaledInstance", "(III)Ljava/awt/Image;", arg0, arg1, arg2);
@@ -187,8 +187,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getCapabilities(java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
-        /// <returns><see cref="Java.Awt.ImageCapabilities"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageCapabilities GetCapabilities(Java.Awt.GraphicsConfiguration arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageCapabilities>("getCapabilities", "(Ljava/awt/GraphicsConfiguration;)Ljava/awt/ImageCapabilities;", arg0);

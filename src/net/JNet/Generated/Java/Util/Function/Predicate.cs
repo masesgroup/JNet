@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Predicate<T> declaration
+    #region Predicate declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class Predicate<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class Predicate : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region PredicateDirect<T> declaration
+    #region PredicateDirect declaration
     /// <summary>
     /// Direct override of <see cref="Predicate"/> or its generic type if there is one
     /// </summary>
-    public partial class PredicateDirect<T> : Predicate<T>
+    public partial class PredicateDirect : Predicate
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -191,8 +191,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.Predicate IsEqual(object arg0)
         {
@@ -201,8 +201,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.Predicate Not(Java.Util.Function.Predicate arg0)
         {
@@ -242,8 +242,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual bool Test(object arg0)
         {
             hasOverrideTest = false; return default;
@@ -251,8 +251,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate AndDefault(Java.Util.Function.Predicate arg0)
         {
@@ -277,8 +277,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Predicate And(Java.Util.Function.Predicate arg0)
         {
@@ -287,7 +287,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate NegateDefault()
         {
@@ -312,7 +312,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Predicate Negate()
         {
@@ -321,8 +321,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Predicate OrDefault(Java.Util.Function.Predicate arg0)
         {
@@ -347,8 +347,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Predicate Or(Java.Util.Function.Predicate arg0)
         {
@@ -388,8 +388,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override bool Test(object arg0)
         {
             return IExecuteWithSignature<bool>("test", "(Ljava/lang/Object;)Z", arg0);
@@ -397,8 +397,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.Predicate And(Java.Util.Function.Predicate arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
@@ -406,7 +406,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.Predicate Negate()
         {
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("negate", "()Ljava/util/function/Predicate;");
@@ -414,8 +414,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.Predicate Or(Java.Util.Function.Predicate arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("or", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
@@ -431,38 +431,38 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IPredicate<T>
+    #region IPredicate
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.Predicate implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html"/>
     /// </summary>
-    public partial interface IPredicate<T>
+    public partial interface IPredicate
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Test(T arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Function.Predicate And(Java.Util.Function.Predicate arg0) where Arg0objectSuperT : T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        Java.Util.Function.Predicate<T> Negate();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Function.Predicate Negate();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Function.Predicate Or(Java.Util.Function.Predicate arg0) where Arg0objectSuperT : T;
 
         #endregion
 
@@ -474,8 +474,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Predicate<T> implementation
-    public partial class Predicate<T> : Java.Util.Function.IPredicate<T>
+    #region Predicate implementation
+    public partial class Predicate : Java.Util.Function.IPredicate
     {
         #region Constructors
 
@@ -493,23 +493,23 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
-        public static Java.Util.Function.Predicate<T> IsEqual(object arg0)
+        public static Java.Util.Function.Predicate IsEqual(object arg0)
         {
-            return SExecuteWithSignature<Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "isEqual", "(Ljava/lang/Object;)Ljava/util/function/Predicate;", arg0);
+            return SExecuteWithSignature<Java.Util.Function.Predicate>(LocalBridgeClazz, "isEqual", "(Ljava/lang/Object;)Ljava/util/function/Predicate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
-        public static Java.Util.Function.Predicate<T> Not<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        public static Java.Util.Function.Predicate Not(Java.Util.Function.Predicate arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "not", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return SExecuteWithSignature<Java.Util.Function.Predicate>(LocalBridgeClazz, "not", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         #endregion
@@ -521,9 +521,9 @@ namespace Java.Util.Function
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(TestEventHandler));
-            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(And<Arg0objectSuperT>EventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndEventHandler));
             AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(NegateEventHandler));
-            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Or<Arg0objectSuperT>EventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OrEventHandler));
 
         }
 
@@ -545,8 +545,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual bool Test(T arg0)
         {
             hasOverrideTest = false; return default;
@@ -554,56 +554,56 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Predicate<T> And<Arg0objectSuperT>Default(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        public Java.Util.Function.Predicate AndDefault(Java.Util.Function.Predicate arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Predicate>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnAnd<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnAnd<Arg0objectSuperT> { get; set; } = null;
+        /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnAnd { get; set; } = null;
 
-        bool hasOverrideAnd<Arg0objectSuperT> = true;
-        void And<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        bool hasOverrideAnd = true;
+        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
-            hasOverrideAnd<Arg0objectSuperT> = true;
-            var methodToExecute = (OnAnd<Arg0objectSuperT> != null) ? OnAnd<Arg0objectSuperT> : And<Arg0objectSuperT>;
-            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Predicate<Arg0objectSuperT>>(0));
-            data.EventData.TypedEventData.SetReturnData(hasOverrideAnd<Arg0objectSuperT>, executionResult);
+            hasOverrideAnd = true;
+            var methodToExecute = (OnAnd != null) ? OnAnd : And;
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Predicate>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAnd, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="And<Arg0objectSuperT>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.Predicate And(Java.Util.Function.Predicate arg0) where Arg0objectSuperT : T
         {
-            hasOverrideAnd<Arg0objectSuperT> = false; return default;
+            hasOverrideAnd = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Predicate<T> NegateDefault()
+        public Java.Util.Function.Predicate NegateDefault()
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("negateDefault", "()Ljava/util/function/Predicate;");
+            return IExecuteWithSignature<Java.Util.Function.Predicate>("negateDefault", "()Ljava/util/function/Predicate;");
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<Java.Util.Function.Predicate<T>> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Predicate> OnNegate { get; set; } = null;
 
         bool hasOverrideNegate = true;
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
@@ -617,49 +617,49 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate<T> Negate()
+        public virtual Java.Util.Function.Predicate Negate()
         {
             hasOverrideNegate = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>Default(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        public Java.Util.Function.Predicate OrDefault(Java.Util.Function.Predicate arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Predicate>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOr<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnOr<Arg0objectSuperT> { get; set; } = null;
+        /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnOr { get; set; } = null;
 
-        bool hasOverrideOr<Arg0objectSuperT> = true;
-        void Or<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        bool hasOverrideOr = true;
+        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
-            hasOverrideOr<Arg0objectSuperT> = true;
-            var methodToExecute = (OnOr<Arg0objectSuperT> != null) ? OnOr<Arg0objectSuperT> : Or<Arg0objectSuperT>;
-            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Predicate<Arg0objectSuperT>>(0));
-            data.EventData.TypedEventData.SetReturnData(hasOverrideOr<Arg0objectSuperT>, executionResult);
+            hasOverrideOr = true;
+            var methodToExecute = (OnOr != null) ? OnOr : Or;
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Predicate>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideOr, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Or<Arg0objectSuperT>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.Predicate Or(Java.Util.Function.Predicate arg0) where Arg0objectSuperT : T
         {
-            hasOverrideOr<Arg0objectSuperT> = false; return default;
+            hasOverrideOr = false; return default;
         }
 
         #endregion
@@ -672,8 +672,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region PredicateDirect<T> implementation
-    public partial class PredicateDirect<T> : Java.Util.Function.IPredicate<T>
+    #region PredicateDirect implementation
+    public partial class PredicateDirect : Java.Util.Function.IPredicate
     {
         #region Constructors
 
@@ -695,8 +695,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override bool Test(T arg0)
         {
             return IExecuteWithSignature<bool>("test", "(Ljava/lang/Object;)Z", arg0);
@@ -704,30 +704,30 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public override Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public override Java.Util.Function.Predicate And(Java.Util.Function.Predicate arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public override Java.Util.Function.Predicate<T> Negate()
+        /// <returns><see cref=""/></returns>
+        public override Java.Util.Function.Predicate Negate()
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("negate", "()Ljava/util/function/Predicate;");
+            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("negate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public override Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public override Java.Util.Function.Predicate Or(Java.Util.Function.Predicate arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("or", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("or", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
 
         #endregion

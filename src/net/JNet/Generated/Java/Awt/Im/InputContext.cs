@@ -110,7 +110,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#isCompositionEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsCompositionEnabled()
         {
             return IExecuteWithSignature<bool>("isCompositionEnabled", "()Z");
@@ -118,8 +118,8 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#selectInputMethod(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SelectInputMethod(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<bool>("selectInputMethod", "(Ljava/util/Locale;)Z", arg0);
@@ -127,7 +127,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#dispatchEvent(java.awt.AWTEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DispatchEvent(Java.Awt.AWTEvent arg0)
         {
             IExecuteWithSignature("dispatchEvent", "(Ljava/awt/AWTEvent;)V", arg0);
@@ -156,7 +156,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#removeNotify(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveNotify(Java.Awt.Component arg0)
         {
             IExecuteWithSignature("removeNotify", "(Ljava/awt/Component;)V", arg0);
@@ -164,7 +164,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#setCharacterSubsets(java.lang.Character.Subset[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Character.Subset"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetCharacterSubsets(Java.Lang.Character.Subset[] arg0)
         {
             IExecuteWithSignature("setCharacterSubsets", "([Ljava/lang/Character$Subset;)V", new object[] { arg0 });
@@ -172,7 +172,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#setCompositionEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetCompositionEnabled(bool arg0)
         {
             IExecuteWithSignature("setCompositionEnabled", "(Z)V", arg0);

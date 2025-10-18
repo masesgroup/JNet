@@ -66,12 +66,12 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region ForwardingJavaFileObject<F> declaration
+    #region ForwardingJavaFileObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html"/>
     /// </summary>
-    /// <typeparam name="F"><see cref="Javax.Tools.IJavaFileObject"/></typeparam>
-    public partial class ForwardingJavaFileObject<F> : Javax.Tools.ForwardingFileObject<F> where F : Javax.Tools.IJavaFileObject, new()
+    /// <typeparam name="F"></typeparam>
+    public partial class ForwardingJavaFileObject : Javax.Tools.ForwardingFileObject
     {
         const string _bridgeClassName = "javax.tools.ForwardingJavaFileObject";
         /// <summary>
@@ -117,7 +117,7 @@ namespace Javax.Tools
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Tools.ForwardingJavaFileObject"/> to <see cref="Javax.Tools.JavaFileObject"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Tools.JavaFileObject(Javax.Tools.ForwardingJavaFileObject t) => t.Cast<Javax.Tools.JavaFileObject>();
 
@@ -156,9 +156,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#isNameCompatible(java.lang.String,javax.tools.JavaFileObject.Kind)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject.Kind"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsNameCompatible(Java.Lang.String arg0, Javax.Tools.JavaFileObject.Kind arg1)
         {
             return IExecuteWithSignature<bool>("isNameCompatible", "(Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;)Z", arg0, arg1);
@@ -174,8 +174,8 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region ForwardingJavaFileObject<F> implementation
-    public partial class ForwardingJavaFileObject<F>
+    #region ForwardingJavaFileObject implementation
+    public partial class ForwardingJavaFileObject
     {
         #region Constructors
 
@@ -183,13 +183,13 @@ namespace Javax.Tools
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Tools.ForwardingJavaFileObject{F}"/> to <see cref="Javax.Tools.JavaFileObject"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Tools.JavaFileObject(Javax.Tools.ForwardingJavaFileObject<F> t) => t.Cast<Javax.Tools.JavaFileObject>();
+        public static implicit operator Javax.Tools.JavaFileObject(Javax.Tools.ForwardingJavaFileObject t) => t.Cast<Javax.Tools.JavaFileObject>();
         /// <summary>
-        /// Converter from <see cref="Javax.Tools.ForwardingJavaFileObject{F}"/> to <see cref="Javax.Tools.ForwardingJavaFileObject"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Tools.ForwardingJavaFileObject(Javax.Tools.ForwardingJavaFileObject<F> t) => t.Cast<Javax.Tools.ForwardingJavaFileObject>();
+        public static implicit operator Javax.Tools.ForwardingJavaFileObject(Javax.Tools.ForwardingJavaFileObject t) => t.Cast<Javax.Tools.ForwardingJavaFileObject>();
 
         #endregion
 
@@ -226,9 +226,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html#isNameCompatible(java.lang.String,javax.tools.JavaFileObject.Kind)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject.Kind"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsNameCompatible(Java.Lang.String arg0, Javax.Tools.JavaFileObject.Kind arg1)
         {
             return IExecuteWithSignature<bool>("isNameCompatible", "(Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;)Z", arg0, arg1);

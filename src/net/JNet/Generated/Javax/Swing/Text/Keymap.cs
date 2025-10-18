@@ -98,32 +98,32 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#isLocallyDefined(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsLocallyDefined(Javax.Swing.KeyStroke arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see cref="Javax.Swing.Action"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Swing.Action GetAction(Javax.Swing.KeyStroke arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see cref="Javax.Swing.Action"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Swing.Action GetActionDirect(Javax.Swing.KeyStroke arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getKeyStrokesForAction(javax.swing.Action)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
-        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Swing.KeyStroke[] GetKeyStrokesForAction(Javax.Swing.Action arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#addActionForKeyStroke(javax.swing.KeyStroke,javax.swing.Action)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Action"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void AddActionForKeyStroke(Javax.Swing.KeyStroke arg0, Javax.Swing.Action arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeBindings()"/>
@@ -132,7 +132,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeKeyStrokeBinding(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveKeyStrokeBinding(Javax.Swing.KeyStroke arg0);
 
         #endregion
@@ -203,8 +203,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#isLocallyDefined(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsLocallyDefined(Javax.Swing.KeyStroke arg0)
         {
             return IExecuteWithSignature<bool>("isLocallyDefined", "(Ljavax/swing/KeyStroke;)Z", arg0);
@@ -212,8 +212,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see cref="Javax.Swing.Action"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Action GetAction(Javax.Swing.KeyStroke arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Action>("getAction", "(Ljavax/swing/KeyStroke;)Ljavax/swing/Action;", arg0);
@@ -221,8 +221,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see cref="Javax.Swing.Action"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Action GetActionDirect(Javax.Swing.KeyStroke arg0)
         {
             return IExecuteWithSignature<Javax.Swing.ActionDirect, Javax.Swing.Action>("getAction", "(Ljavax/swing/KeyStroke;)Ljavax/swing/Action;", arg0);
@@ -230,8 +230,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getKeyStrokesForAction(javax.swing.Action)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
-        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.KeyStroke[] GetKeyStrokesForAction(Javax.Swing.Action arg0)
         {
             return IExecuteWithSignatureArray<Javax.Swing.KeyStroke>("getKeyStrokesForAction", "(Ljavax/swing/Action;)[Ljavax/swing/KeyStroke;", arg0);
@@ -239,8 +239,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#addActionForKeyStroke(javax.swing.KeyStroke,javax.swing.Action)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Action"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void AddActionForKeyStroke(Javax.Swing.KeyStroke arg0, Javax.Swing.Action arg1)
         {
             IExecuteWithSignature("addActionForKeyStroke", "(Ljavax/swing/KeyStroke;Ljavax/swing/Action;)V", arg0, arg1);
@@ -255,7 +255,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeKeyStrokeBinding(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveKeyStrokeBinding(Javax.Swing.KeyStroke arg0)
         {
             IExecuteWithSignature("removeKeyStrokeBinding", "(Ljavax/swing/KeyStroke;)V", arg0);

@@ -77,15 +77,15 @@ namespace Java.Io
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Io.Writer"/> to <see cref="Java.Lang.Appendable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Appendable(Java.Io.Writer t) => t.Cast<Java.Lang.Appendable>();
         /// <summary>
-        /// Converter from <see cref="Java.Io.Writer"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.Writer t) => t.Cast<Java.Io.Closeable>();
         /// <summary>
-        /// Converter from <see cref="Java.Io.Writer"/> to <see cref="Java.Io.Flushable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Io.Writer t) => t.Cast<Java.Io.Flushable>();
 
@@ -99,7 +99,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#nullWriter()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.Writer"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Io.Writer NullWriter()
         {
             return SExecuteWithSignature<Java.Io.Writer>(LocalBridgeClazz, "nullWriter", "()Ljava/io/Writer;");
@@ -111,7 +111,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -119,7 +119,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#flush()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Flush()
         {
             IExecuteWithSignature("flush", "()V");
@@ -127,10 +127,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#write(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(char[] arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("write", "([CII)V", arg0, arg1, arg2);
@@ -138,9 +138,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#append(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Appendable Append(char arg0)
         {
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(C)Ljava/lang/Appendable;", arg0);
@@ -148,11 +148,11 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#append(java.lang.CharSequence,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;", arg0, arg1, arg2);
@@ -160,9 +160,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#append(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;", arg0);
@@ -170,8 +170,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#write(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(char[] arg0)
         {
             IExecuteWithSignature("write", "([C)V", new object[] { arg0 });
@@ -179,8 +179,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#write(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(int arg0)
         {
             IExecuteWithSignature("write", "(I)V", arg0);
@@ -188,10 +188,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#write(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(Java.Lang.String arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("write", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
@@ -199,8 +199,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#write(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(Java.Lang.String arg0)
         {
             IExecuteWithSignature("write", "(Ljava/lang/String;)V", arg0);

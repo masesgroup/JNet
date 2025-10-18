@@ -73,8 +73,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#%3Cinit%3E(java.lang.String[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public SSLParameters(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#%3Cinit%3E(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public SSLParameters(Java.Lang.String[] arg0)
             : base(arg0)
         {
@@ -162,16 +162,16 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getServerNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setServerNames(java.util.List)"/>
         /// </summary>
-        public Java.Util.List<Javax.Net.Ssl.SNIServerName> ServerNames
+        public Java.Util.List ServerNames
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getServerNames", "()Ljava/util/List;"); } set { IExecuteWithSignature("setServerNames", "(Ljava/util/List;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.List>("getServerNames", "()Ljava/util/List;"); } set { IExecuteWithSignature("setServerNames", "(Ljava/util/List;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getSNIMatchers()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setSNIMatchers(java.util.Collection)"/>
         /// </summary>
-        public Java.Util.Collection<Javax.Net.Ssl.SNIMatcher> SNIMatchers
+        public Java.Util.Collection SNIMatchers
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Javax.Net.Ssl.SNIMatcher>>("getSNIMatchers", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setSNIMatchers", "(Ljava/util/Collection;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Collection>("getSNIMatchers", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setSNIMatchers", "(Ljava/util/Collection;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getUseCipherSuitesOrder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setUseCipherSuitesOrder(boolean)"/>

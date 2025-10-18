@@ -78,8 +78,8 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAuthenticator.html#authenticate(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Security.Auth.Subject Authenticate(object arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAuthenticator.html#authenticate(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Security.Auth.Subject Authenticate(object arg0)
         {
             return IExecuteWithSignature<Javax.Security.Auth.Subject>("authenticate", "(Ljava/lang/Object;)Ljavax/security/auth/Subject;", arg0);

@@ -82,27 +82,27 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#addConnectionEventListener(javax.sql.ConnectionEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddConnectionEventListener(Javax.Sql.ConnectionEventListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#addStatementEventListener(javax.sql.StatementEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.StatementEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddStatementEventListener(Javax.Sql.StatementEventListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#removeConnectionEventListener(javax.sql.ConnectionEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveConnectionEventListener(Javax.Sql.ConnectionEventListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#removeStatementEventListener(javax.sql.StatementEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.StatementEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveStatementEventListener(Javax.Sql.StatementEventListener arg0);
 
         #endregion
@@ -145,7 +145,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#addConnectionEventListener(javax.sql.ConnectionEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddConnectionEventListener(Javax.Sql.ConnectionEventListener arg0)
         {
             IExecuteWithSignature("addConnectionEventListener", "(Ljavax/sql/ConnectionEventListener;)V", arg0);
@@ -153,7 +153,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#addStatementEventListener(javax.sql.StatementEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.StatementEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddStatementEventListener(Javax.Sql.StatementEventListener arg0)
         {
             IExecuteWithSignature("addStatementEventListener", "(Ljavax/sql/StatementEventListener;)V", arg0);
@@ -161,7 +161,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -169,7 +169,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#removeConnectionEventListener(javax.sql.ConnectionEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveConnectionEventListener(Javax.Sql.ConnectionEventListener arg0)
         {
             IExecuteWithSignature("removeConnectionEventListener", "(Ljavax/sql/ConnectionEventListener;)V", arg0);
@@ -177,7 +177,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#removeStatementEventListener(javax.sql.StatementEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.StatementEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveStatementEventListener(Javax.Sql.StatementEventListener arg0)
         {
             IExecuteWithSignature("removeStatementEventListener", "(Ljavax/sql/StatementEventListener;)V", arg0);

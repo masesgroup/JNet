@@ -75,11 +75,11 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Html.Parser.Element"/> to <see cref="Javax.Swing.Text.Html.Parser.DTDConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.Html.Parser.DTDConstants(Javax.Swing.Text.Html.Parser.Element t) => t.Cast<Javax.Swing.Text.Html.Parser.DTDConstants>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Html.Parser.Element"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.Parser.Element t) => t.Cast<Java.Io.Serializable>();
 
@@ -133,8 +133,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#name2type(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int Name2type(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "name2type", "(Ljava/lang/String;)I", arg0);
@@ -181,7 +181,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -189,7 +189,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#omitEnd()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool OmitEnd()
         {
             return IExecuteWithSignature<bool>("omitEnd", "()Z");
@@ -197,7 +197,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#omitStart()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool OmitStart()
         {
             return IExecuteWithSignature<bool>("omitStart", "()Z");
@@ -205,8 +205,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#getAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.Parser.AttributeList GetAttribute(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.AttributeList>("getAttribute", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/AttributeList;", arg0);
@@ -214,8 +214,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#getAttributeByValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Html.Parser.AttributeList GetAttributeByValue(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.AttributeList>("getAttributeByValue", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/AttributeList;", arg0);

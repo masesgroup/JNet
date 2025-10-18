@@ -78,7 +78,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIHandler.html#openURI(java.awt.desktop.OpenURIEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenURIEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void OpenURI(Java.Awt.DesktopNs.OpenURIEvent arg0);
 
         #endregion
@@ -114,7 +114,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIHandler.html#openURI(java.awt.desktop.OpenURIEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenURIEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void OpenURI(Java.Awt.DesktopNs.OpenURIEvent arg0)
         {
             IExecuteWithSignature("openURI", "(Ljava/awt/desktop/OpenURIEvent;)V", arg0);

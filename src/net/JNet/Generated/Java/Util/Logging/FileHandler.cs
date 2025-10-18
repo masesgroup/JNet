@@ -73,10 +73,10 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public FileHandler(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -84,12 +84,12 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public FileHandler(Java.Lang.String arg0, int arg1, int arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -97,11 +97,11 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public FileHandler(Java.Lang.String arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -109,11 +109,11 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,long,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public FileHandler(Java.Lang.String arg0, long arg1, int arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -121,9 +121,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public FileHandler(Java.Lang.String arg0)
             : base(arg0)
         {

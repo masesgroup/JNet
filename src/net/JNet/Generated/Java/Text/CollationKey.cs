@@ -29,7 +29,7 @@ namespace Java.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html"/>
     /// </summary>
-    public partial class CollationKey : Java.Lang.Comparable<Java.Text.CollationKey>
+    public partial class CollationKey : Java.Lang.Comparable
     {
         const string _bridgeClassName = "java.text.CollationKey";
         /// <summary>
@@ -98,7 +98,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#toByteArray()"/>
         /// </summary>
-        /// <returns><see cref="byte"/></returns>
+        /// <returns><see cref=""/></returns>
         public byte[] ToByteArray()
         {
             return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
@@ -106,8 +106,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#compareTo(java.text.CollationKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.CollationKey"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Text.CollationKey arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/text/CollationKey;)I", arg0);
@@ -115,8 +115,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);

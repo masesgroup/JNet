@@ -139,9 +139,9 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matches(java.lang.String,java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool Matches(Java.Lang.String arg0, Java.Lang.CharSequence arg1)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "matches", "(Ljava/lang/String;Ljava/lang/CharSequence;)Z", arg0, arg1);
@@ -149,8 +149,8 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#quote(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Quote(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "quote", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -158,9 +158,9 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#compile(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Regex.Pattern Compile(Java.Lang.String arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Util.Regex.Pattern>(LocalBridgeClazz, "compile", "(Ljava/lang/String;I)Ljava/util/regex/Pattern;", arg0, arg1);
@@ -168,8 +168,8 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#compile(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Regex.Pattern Compile(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Util.Regex.Pattern>(LocalBridgeClazz, "compile", "(Ljava/lang/String;)Ljava/util/regex/Pattern;", arg0);
@@ -181,7 +181,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#flags()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Flags()
         {
             return IExecuteWithSignature<int>("flags", "()I");
@@ -189,7 +189,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#pattern()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String PatternMethod()
         {
             return IExecuteWithSignature<Java.Lang.String>("pattern", "()Ljava/lang/String;");
@@ -197,9 +197,9 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#split(java.lang.CharSequence,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] Split(Java.Lang.CharSequence arg0, int arg1)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("split", "(Ljava/lang/CharSequence;I)[Ljava/lang/String;", arg0, arg1);
@@ -207,8 +207,8 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#split(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] Split(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("split", "(Ljava/lang/CharSequence;)[Ljava/lang/String;", arg0);
@@ -216,40 +216,40 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public Java.Util.Function.Predicate<Java.Lang.String> AsMatchPredicate()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Function.Predicate AsMatchPredicate()
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate<Java.Lang.String>>("asMatchPredicate", "()Ljava/util/function/Predicate;");
+            return IExecuteWithSignature<Java.Util.Function.Predicate>("asMatchPredicate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public Java.Util.Function.Predicate<Java.Lang.String> AsMatchPredicateDirect()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Function.Predicate AsMatchPredicateDirect()
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<Java.Lang.String>, Java.Util.Function.Predicate<Java.Lang.String>>("asMatchPredicate", "()Ljava/util/function/Predicate;");
+            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("asMatchPredicate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public Java.Util.Function.Predicate<Java.Lang.String> AsPredicate()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Function.Predicate AsPredicate()
         {
-            return IExecuteWithSignature<Java.Util.Function.Predicate<Java.Lang.String>>("asPredicate", "()Ljava/util/function/Predicate;");
+            return IExecuteWithSignature<Java.Util.Function.Predicate>("asPredicate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public Java.Util.Function.Predicate<Java.Lang.String> AsPredicateDirect()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Function.Predicate AsPredicateDirect()
         {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<Java.Lang.String>, Java.Util.Function.Predicate<Java.Lang.String>>("asPredicate", "()Ljava/util/function/Predicate;");
+            return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("asPredicate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matcher(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Regex.Matcher Matcher(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Java.Util.Regex.Matcher>("matcher", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;", arg0);
@@ -257,11 +257,11 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#splitAsStream(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Lang.String> SplitAsStream(Java.Lang.CharSequence arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Stream.Stream SplitAsStream(Java.Lang.CharSequence arg0)
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.String>>("splitAsStream", "(Ljava/lang/CharSequence;)Ljava/util/stream/Stream;", arg0);
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("splitAsStream", "(Ljava/lang/CharSequence;)Ljava/util/stream/Stream;", arg0);
         }
 
         #endregion

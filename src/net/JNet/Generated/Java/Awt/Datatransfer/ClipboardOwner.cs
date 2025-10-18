@@ -78,8 +78,8 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/ClipboardOwner.html#lostOwnership(java.awt.datatransfer.Clipboard,java.awt.datatransfer.Transferable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.Clipboard"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void LostOwnership(Java.Awt.Datatransfer.Clipboard arg0, Java.Awt.Datatransfer.Transferable arg1);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/ClipboardOwner.html#lostOwnership(java.awt.datatransfer.Clipboard,java.awt.datatransfer.Transferable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.Clipboard"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void LostOwnership(Java.Awt.Datatransfer.Clipboard arg0, Java.Awt.Datatransfer.Transferable arg1)
         {
             IExecuteWithSignature("lostOwnership", "(Ljava/awt/datatransfer/Clipboard;Ljava/awt/datatransfer/Transferable;)V", arg0, arg1);

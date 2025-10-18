@@ -128,8 +128,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getCharacterInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.BreakIterator GetCharacterInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getCharacterInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
@@ -137,8 +137,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getLineInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.BreakIterator GetLineInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getLineInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
@@ -146,8 +146,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getSentenceInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.BreakIterator GetSentenceInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getSentenceInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
@@ -155,8 +155,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getWordInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.BreakIterator GetWordInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getWordInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
@@ -175,7 +175,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#current()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Current()
         {
             return IExecuteWithSignature<int>("current", "()I");
@@ -183,7 +183,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#first()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int First()
         {
             return IExecuteWithSignature<int>("first", "()I");
@@ -191,8 +191,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#following(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Following(int arg0)
         {
             return IExecuteWithSignature<int>("following", "(I)I", arg0);
@@ -200,7 +200,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#last()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Last()
         {
             return IExecuteWithSignature<int>("last", "()I");
@@ -208,7 +208,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#next()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Next()
         {
             return IExecuteWithSignature<int>("next", "()I");
@@ -216,8 +216,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#next(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Next(int arg0)
         {
             return IExecuteWithSignature<int>("next", "(I)I", arg0);
@@ -225,7 +225,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#previous()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Previous()
         {
             return IExecuteWithSignature<int>("previous", "()I");
@@ -233,7 +233,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#setText(java.text.CharacterIterator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetText(Java.Text.CharacterIterator arg0)
         {
             IExecuteWithSignature("setText", "(Ljava/text/CharacterIterator;)V", arg0);
@@ -241,8 +241,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#isBoundary(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsBoundary(int arg0)
         {
             return IExecuteWithSignature<bool>("isBoundary", "(I)Z", arg0);
@@ -250,8 +250,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#preceding(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Preceding(int arg0)
         {
             return IExecuteWithSignature<int>("preceding", "(I)I", arg0);
@@ -259,7 +259,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#setText(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetText(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setText", "(Ljava/lang/String;)V", arg0);

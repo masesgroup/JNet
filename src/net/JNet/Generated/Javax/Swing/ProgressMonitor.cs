@@ -73,11 +73,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#%3Cinit%3E(java.awt.Component,java.lang.Object,java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public ProgressMonitor(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -143,7 +143,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#isCanceled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsCanceled()
         {
             return IExecuteWithSignature<bool>("isCanceled", "()Z");
@@ -158,7 +158,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setProgress(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetProgress(int arg0)
         {
             IExecuteWithSignature("setProgress", "(I)V", arg0);

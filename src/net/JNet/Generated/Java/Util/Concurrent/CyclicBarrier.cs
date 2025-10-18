@@ -73,8 +73,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#%3Cinit%3E(int,java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public CyclicBarrier(int arg0, Java.Lang.Runnable arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public CyclicBarrier(int arg0)
             : base(arg0)
         {
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#isBroken()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBroken()
         {
             return IExecuteWithSignature<bool>("isBroken", "()Z");
@@ -128,9 +128,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#await()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        /// <exception cref="Java.Util.Concurrent.BrokenBarrierException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public int Await()
         {
             return IExecuteWithSignature<int>("await", "()I");
@@ -138,12 +138,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#await(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        /// <exception cref="Java.Util.Concurrent.BrokenBarrierException"/>
-        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public int Await(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecuteWithSignature<int>("await", "(JLjava/util/concurrent/TimeUnit;)I", arg0, arg1);

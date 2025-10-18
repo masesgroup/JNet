@@ -29,7 +29,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html"/>
     /// </summary>
-    public partial class StandardLocation : Java.Lang.Enum<Javax.Tools.StandardLocation>
+    public partial class StandardLocation : Java.Lang.Enum
     {
         const string _bridgeClassName = "javax.tools.StandardLocation";
         /// <summary>
@@ -163,8 +163,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#locationFor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Tools.JavaFileManager.Location"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Tools.JavaFileManager.Location LocationFor(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Tools.JavaFileManager.Location>(LocalBridgeClazz, "locationFor", "(Ljava/lang/String;)Ljavax/tools/JavaFileManager$Location;", arg0);
@@ -172,8 +172,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Tools.StandardLocation"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Tools.StandardLocation ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Tools.StandardLocation>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/tools/StandardLocation;", arg0);
@@ -181,7 +181,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Tools.StandardLocation"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Tools.StandardLocation[] Values()
         {
             return SExecuteWithSignatureArray<Javax.Tools.StandardLocation>(LocalBridgeClazz, "values", "()[Ljavax/tools/StandardLocation;");
@@ -200,7 +200,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isModuleOrientedLocation()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsModuleOrientedLocation()
         {
             return IExecuteWithSignature<bool>("isModuleOrientedLocation", "()Z");
@@ -208,7 +208,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isOutputLocation()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOutputLocation()
         {
             return IExecuteWithSignature<bool>("isOutputLocation", "()Z");

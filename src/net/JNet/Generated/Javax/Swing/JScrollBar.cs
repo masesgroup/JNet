@@ -73,11 +73,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#%3Cinit%3E(int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public JScrollBar(int arg0, int arg1, int arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -85,7 +85,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JScrollBar(int arg0)
             : base(arg0)
         {
@@ -95,11 +95,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JScrollBar"/> to <see cref="Java.Awt.Adjustable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.Adjustable(Javax.Swing.JScrollBar t) => t.Cast<Java.Awt.Adjustable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JScrollBar"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JScrollBar t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -187,8 +187,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getBlockIncrement(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetBlockIncrement(int arg0)
         {
             return IExecuteWithSignature<int>("getBlockIncrement", "(I)I", arg0);
@@ -196,8 +196,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#getUnitIncrement(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetUnitIncrement(int arg0)
         {
             return IExecuteWithSignature<int>("getUnitIncrement", "(I)I", arg0);
@@ -205,7 +205,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#addAdjustmentListener(java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
             IExecuteWithSignature("addAdjustmentListener", "(Ljava/awt/event/AdjustmentListener;)V", arg0);
@@ -213,7 +213,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#removeAdjustmentListener(java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
             IExecuteWithSignature("removeAdjustmentListener", "(Ljava/awt/event/AdjustmentListener;)V", arg0);
@@ -221,7 +221,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setUI(javax.swing.plaf.ScrollBarUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ScrollBarUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.ScrollBarUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ScrollBarUI;)V", arg0);
@@ -229,10 +229,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#setValues(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetValues(int arg0, int arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("setValues", "(IIII)V", arg0, arg1, arg2, arg3);

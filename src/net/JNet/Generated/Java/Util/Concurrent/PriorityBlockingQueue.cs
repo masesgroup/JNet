@@ -66,12 +66,12 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region PriorityBlockingQueue<E> declaration
+    #region PriorityBlockingQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class PriorityBlockingQueue<E> : Java.Util.AbstractQueue<E>
+    public partial class PriorityBlockingQueue : Java.Util.AbstractQueue
     {
         const string _bridgeClassName = "java.util.concurrent.PriorityBlockingQueue";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(int,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public PriorityBlockingQueue(int arg0, Java.Util.Comparator arg1)
             : base(arg0, arg1)
         {
@@ -124,7 +124,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PriorityBlockingQueue(int arg0)
             : base(arg0)
         {
@@ -132,7 +132,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PriorityBlockingQueue(Java.Util.Collection arg0)
             : base(arg0)
         {
@@ -142,11 +142,11 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.PriorityBlockingQueue"/> to <see cref="Java.Util.Concurrent.BlockingQueue"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.BlockingQueue(Java.Util.Concurrent.PriorityBlockingQueue t) => t.Cast<Java.Util.Concurrent.BlockingQueue>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.PriorityBlockingQueue"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.PriorityBlockingQueue t) => t.Cast<Java.Io.Serializable>();
 
@@ -164,10 +164,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Offer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
@@ -175,10 +175,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecuteWithSignature("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
@@ -186,8 +186,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#take()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Take()
         {
             return IExecuteWithSignature("take", "()Ljava/lang/Object;");
@@ -195,9 +195,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#drainTo(java.util.Collection,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int DrainTo(Java.Util.Collection arg0, int arg1)
         {
             return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;I)I", arg0, arg1);
@@ -205,8 +205,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#drainTo(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int DrainTo(Java.Util.Collection arg0)
         {
             return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
@@ -214,7 +214,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#remainingCapacity()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int RemainingCapacity()
         {
             return IExecuteWithSignature<int>("remainingCapacity", "()I");
@@ -222,7 +222,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#comparator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Comparator Comparator()
         {
             return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
@@ -230,7 +230,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#put(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Put(object arg0)
         {
             IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
@@ -246,23 +246,23 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region PriorityBlockingQueue<E> implementation
-    public partial class PriorityBlockingQueue<E>
+    #region PriorityBlockingQueue implementation
+    public partial class PriorityBlockingQueue
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(int,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
-        public PriorityBlockingQueue(int arg0, Java.Util.Comparator<E> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public PriorityBlockingQueue(int arg0, Java.Util.Comparator arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PriorityBlockingQueue(int arg0)
             : base(arg0)
         {
@@ -270,8 +270,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public PriorityBlockingQueue(Java.Util.Collection<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public PriorityBlockingQueue(Java.Util.Collection arg0)
             : base(arg0)
         {
         }
@@ -280,17 +280,17 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.PriorityBlockingQueue{E}"/> to <see cref="Java.Util.Concurrent.BlockingQueue{E}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.BlockingQueue<E>(Java.Util.Concurrent.PriorityBlockingQueue<E> t) => t.Cast<Java.Util.Concurrent.BlockingQueue<E>>();
+        public static implicit operator Java.Util.Concurrent.BlockingQueue(Java.Util.Concurrent.PriorityBlockingQueue t) => t.Cast<Java.Util.Concurrent.BlockingQueue>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.PriorityBlockingQueue{E}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.PriorityBlockingQueue<E> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.PriorityBlockingQueue t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.PriorityBlockingQueue{E}"/> to <see cref="Java.Util.Concurrent.PriorityBlockingQueue"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.PriorityBlockingQueue(Java.Util.Concurrent.PriorityBlockingQueue<E> t) => t.Cast<Java.Util.Concurrent.PriorityBlockingQueue>();
+        public static implicit operator Java.Util.Concurrent.PriorityBlockingQueue(Java.Util.Concurrent.PriorityBlockingQueue t) => t.Cast<Java.Util.Concurrent.PriorityBlockingQueue>();
 
         #endregion
 
@@ -306,10 +306,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Offer(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
@@ -317,10 +317,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><typeparamref name="E"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public E Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecuteWithSignature<E>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
@@ -328,8 +328,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#take()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public E Take()
         {
             return IExecuteWithSignature<E>("take", "()Ljava/lang/Object;");
@@ -337,28 +337,28 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#drainTo(java.util.Collection,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="int"/></returns>
-        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public int DrainTo(Java.Util.Collection arg0, int arg1) where Arg0objectSuperE : E
         {
             return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#drainTo(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="int"/></returns>
-        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public int DrainTo(Java.Util.Collection arg0) where Arg0objectSuperE : E
         {
             return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#remainingCapacity()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int RemainingCapacity()
         {
             return IExecuteWithSignature<int>("remainingCapacity", "()I");
@@ -366,16 +366,16 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#comparator()"/>
         /// </summary>
-        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE : E
+        /// <typeparam name="ReturnobjectSuperE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Comparator Comparator() where ReturnobjectSuperE : E
         {
-            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperE>>("comparator", "()Ljava/util/Comparator;");
+            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#put(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Put(E arg0)
         {
             IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);

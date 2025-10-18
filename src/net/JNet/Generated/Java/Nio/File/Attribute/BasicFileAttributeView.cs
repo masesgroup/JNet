@@ -78,21 +78,21 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String Name();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#readAttributes()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#setTimes(java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetTimes(Java.Nio.File.Attribute.FileTime arg0, Java.Nio.File.Attribute.FileTime arg1, Java.Nio.File.Attribute.FileTime arg2);
 
         #endregion
@@ -128,7 +128,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -136,8 +136,8 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#readAttributes()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes()
         {
             return IExecuteWithSignature<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;");
@@ -145,10 +145,10 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#setTimes(java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetTimes(Java.Nio.File.Attribute.FileTime arg0, Java.Nio.File.Attribute.FileTime arg1, Java.Nio.File.Attribute.FileTime arg2)
         {
             IExecuteWithSignature("setTimes", "(Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;)V", arg0, arg1, arg2);

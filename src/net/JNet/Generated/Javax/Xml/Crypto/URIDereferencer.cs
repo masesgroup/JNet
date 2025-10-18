@@ -78,10 +78,10 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIDereferencer.html#dereference(javax.xml.crypto.URIReference,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.URIReference"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.URIReferenceException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Xml.Crypto.Data Dereference(Javax.Xml.Crypto.URIReference arg0, Javax.Xml.Crypto.XMLCryptoContext arg1);
 
         #endregion
@@ -117,10 +117,10 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIDereferencer.html#dereference(javax.xml.crypto.URIReference,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.URIReference"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.URIReferenceException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Data Dereference(Javax.Xml.Crypto.URIReference arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Data>("dereference", "(Ljavax/xml/crypto/URIReference;Ljavax/xml/crypto/XMLCryptoContext;)Ljavax/xml/crypto/Data;", arg0, arg1);

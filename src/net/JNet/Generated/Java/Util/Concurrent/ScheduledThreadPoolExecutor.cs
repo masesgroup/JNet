@@ -73,8 +73,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.RejectedExecutionHandler arg1)
             : base(arg0, arg1)
         {
@@ -82,9 +82,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1, Java.Util.Concurrent.RejectedExecutionHandler arg2)
             : base(arg0, arg1, arg2)
         {
@@ -92,8 +92,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
             : base(arg0, arg1)
         {
@@ -101,7 +101,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ScheduledThreadPoolExecutor(int arg0)
             : base(arg0)
         {
@@ -111,7 +111,7 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ScheduledThreadPoolExecutor"/> to <see cref="Java.Util.Concurrent.ScheduledExecutorService"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ScheduledExecutorService(Java.Util.Concurrent.ScheduledThreadPoolExecutor t) => t.Cast<Java.Util.Concurrent.ScheduledExecutorService>();
 
@@ -150,49 +150,49 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
-        public Java.Util.Concurrent.ScheduledFuture<V> Schedule<V>(Java.Util.Concurrent.Callable<V> arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.ScheduledFuture Schedule(Java.Util.Concurrent.Callable arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<V>>("schedule", "(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture>("schedule", "(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
-        public Java.Util.Concurrent.ScheduledFuture<object> Schedule(Java.Lang.Runnable arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.ScheduledFuture Schedule(Java.Lang.Runnable arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<object>>("schedule", "(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture>("schedule", "(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
-        public Java.Util.Concurrent.ScheduledFuture<object> ScheduleAtFixedRate(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.ScheduledFuture ScheduleAtFixedRate(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleAtFixedRate", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture>("scheduleAtFixedRate", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
-        public Java.Util.Concurrent.ScheduledFuture<object> ScheduleWithFixedDelay(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.ScheduledFuture ScheduleWithFixedDelay(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleWithFixedDelay", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.Concurrent.ScheduledFuture>("scheduleWithFixedDelay", "(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

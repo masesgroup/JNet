@@ -73,8 +73,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#%3Cinit%3E(java.util.function.DoubleBinaryOperator,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DoubleAccumulator(Java.Util.Function.DoubleBinaryOperator arg0, double arg1)
             : base(arg0, arg1)
         {
@@ -105,7 +105,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#get()"/>
         /// </summary>
-        /// <returns><see cref="double"/></returns>
+        /// <returns><see cref=""/></returns>
         public double Get()
         {
             return IExecuteWithSignature<double>("get", "()D");
@@ -113,7 +113,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#accumulate(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Accumulate(double arg0)
         {
             IExecuteWithSignature("accumulate", "(D)V", arg0);

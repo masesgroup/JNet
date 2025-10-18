@@ -66,12 +66,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region LinkedHashSet<E> declaration
+    #region LinkedHashSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class LinkedHashSet<E> : Java.Util.HashSet<E>
+    public partial class LinkedHashSet : Java.Util.HashSet
     {
         const string _bridgeClassName = "java.util.LinkedHashSet";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public LinkedHashSet(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public LinkedHashSet(int arg0)
             : base(arg0)
         {
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public LinkedHashSet(Java.Util.Collection arg0)
             : base(arg0)
         {
@@ -164,15 +164,15 @@ namespace Java.Util
     }
     #endregion
 
-    #region LinkedHashSet<E> implementation
-    public partial class LinkedHashSet<E>
+    #region LinkedHashSet implementation
+    public partial class LinkedHashSet
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public LinkedHashSet(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -180,7 +180,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public LinkedHashSet(int arg0)
             : base(arg0)
         {
@@ -188,8 +188,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public LinkedHashSet(Java.Util.Collection<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public LinkedHashSet(Java.Util.Collection arg0)
             : base(arg0)
         {
         }
@@ -198,9 +198,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.LinkedHashSet{E}"/> to <see cref="Java.Util.LinkedHashSet"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.LinkedHashSet(Java.Util.LinkedHashSet<E> t) => t.Cast<Java.Util.LinkedHashSet>();
+        public static implicit operator Java.Util.LinkedHashSet(Java.Util.LinkedHashSet t) => t.Cast<Java.Util.LinkedHashSet>();
 
         #endregion
 

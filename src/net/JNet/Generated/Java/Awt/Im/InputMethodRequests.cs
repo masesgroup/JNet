@@ -86,35 +86,35 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getLocationOffset(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.FontNs.TextHitInfo GetLocationOffset(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getTextLocation(java.awt.font.TextHitInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.Rectangle GetTextLocation(Java.Awt.FontNs.TextHitInfo arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#cancelLatestCommittedText(java.text.AttributedCharacterIterator.Attribute[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Text.AttributedCharacterIterator CancelLatestCommittedText(Java.Text.AttributedCharacterIterator.Attribute[] arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getCommittedText(int,int,java.text.AttributedCharacterIterator.Attribute[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Text.AttributedCharacterIterator GetCommittedText(int arg0, int arg1, Java.Text.AttributedCharacterIterator.Attribute[] arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getSelectedText(java.text.AttributedCharacterIterator.Attribute[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Text.AttributedCharacterIterator GetSelectedText(Java.Text.AttributedCharacterIterator.Attribute[] arg0);
 
         #endregion
@@ -164,9 +164,9 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getLocationOffset(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.FontNs.TextHitInfo GetLocationOffset(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>("getLocationOffset", "(II)Ljava/awt/font/TextHitInfo;", arg0, arg1);
@@ -174,8 +174,8 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getTextLocation(java.awt.font.TextHitInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Rectangle GetTextLocation(Java.Awt.FontNs.TextHitInfo arg0)
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getTextLocation", "(Ljava/awt/font/TextHitInfo;)Ljava/awt/Rectangle;", arg0);
@@ -183,8 +183,8 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#cancelLatestCommittedText(java.text.AttributedCharacterIterator.Attribute[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.AttributedCharacterIterator CancelLatestCommittedText(Java.Text.AttributedCharacterIterator.Attribute[] arg0)
         {
             return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("cancelLatestCommittedText", "([Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;", new object[] { arg0 });
@@ -192,10 +192,10 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getCommittedText(int,int,java.text.AttributedCharacterIterator.Attribute[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.AttributedCharacterIterator GetCommittedText(int arg0, int arg1, Java.Text.AttributedCharacterIterator.Attribute[] arg2)
         {
             return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("getCommittedText", "(II[Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;", arg0, arg1, arg2);
@@ -203,8 +203,8 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getSelectedText(java.text.AttributedCharacterIterator.Attribute[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.AttributedCharacterIterator GetSelectedText(Java.Text.AttributedCharacterIterator.Attribute[] arg0)
         {
             return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("getSelectedText", "([Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;", new object[] { arg0 });

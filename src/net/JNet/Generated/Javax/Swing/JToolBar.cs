@@ -114,7 +114,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JToolBar(int arg0)
             : base(arg0)
         {
@@ -122,8 +122,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JToolBar(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -131,7 +131,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JToolBar(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -141,11 +141,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JToolBar"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JToolBar t) => t.Cast<Javax.Swing.SwingConstants>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JToolBar"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JToolBar t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -177,7 +177,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#isBorderPainted()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBorderPainted()
         {
             return IExecuteWithSignature<bool>("isBorderPainted", "()Z");
@@ -185,7 +185,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#isFloatable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFloatable()
         {
             return IExecuteWithSignature<bool>("isFloatable", "()Z");
@@ -193,7 +193,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#isRollover()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRollover()
         {
             return IExecuteWithSignature<bool>("isRollover", "()Z");
@@ -201,8 +201,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#getComponentIndex(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetComponentIndex(Java.Awt.Component arg0)
         {
             return IExecuteWithSignature<int>("getComponentIndex", "(Ljava/awt/Component;)I", arg0);
@@ -210,8 +210,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#getComponentAtIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetComponentAtIndex(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getComponentAtIndex", "(I)Ljava/awt/Component;", arg0);
@@ -219,8 +219,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#add(javax.swing.Action)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
-        /// <returns><see cref="Javax.Swing.JButton"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JButton Add(Javax.Swing.Action arg0)
         {
             return IExecuteWithSignature<Javax.Swing.JButton>("add", "(Ljavax/swing/Action;)Ljavax/swing/JButton;", arg0);
@@ -235,7 +235,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#addSeparator(java.awt.Dimension)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddSeparator(Java.Awt.Dimension arg0)
         {
             IExecuteWithSignature("addSeparator", "(Ljava/awt/Dimension;)V", arg0);
@@ -243,7 +243,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#setBorderPainted(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetBorderPainted(bool arg0)
         {
             IExecuteWithSignature("setBorderPainted", "(Z)V", arg0);
@@ -251,7 +251,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#setFloatable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetFloatable(bool arg0)
         {
             IExecuteWithSignature("setFloatable", "(Z)V", arg0);
@@ -259,7 +259,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#setRollover(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRollover(bool arg0)
         {
             IExecuteWithSignature("setRollover", "(Z)V", arg0);
@@ -267,7 +267,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#setUI(javax.swing.plaf.ToolBarUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ToolBarUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.ToolBarUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ToolBarUI;)V", arg0);
@@ -283,7 +283,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.Separator.html#%3Cinit%3E(java.awt.Dimension)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public Separator(Java.Awt.Dimension arg0)
                 : base(arg0)
             {

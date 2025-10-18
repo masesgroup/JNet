@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSplitPaneUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BasicSplitPaneDivider(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneDivider"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicSplitPaneDivider t) => t.Cast<Java.Beans.PropertyChangeListener>();
 
@@ -122,7 +122,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#isMouseOver()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMouseOver()
         {
             return IExecuteWithSignature<bool>("isMouseOver", "()Z");
@@ -130,7 +130,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);

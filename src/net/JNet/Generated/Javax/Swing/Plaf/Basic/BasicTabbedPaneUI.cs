@@ -198,7 +198,7 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI t) => t.Cast<Javax.Swing.SwingConstants>();
 
@@ -224,7 +224,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.PropertyChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTabbedPaneUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
                 : base(arg0)
             {
@@ -234,7 +234,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
 
@@ -252,7 +252,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
@@ -275,7 +275,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabbedPaneLayout.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTabbedPaneUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public TabbedPaneLayout(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
                 : base(arg0)
             {
@@ -299,8 +299,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabbedPaneLayout.html#minimumLayoutSize(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-            /// <returns><see cref="Java.Awt.Dimension"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
@@ -308,8 +308,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabbedPaneLayout.html#preferredLayoutSize(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-            /// <returns><see cref="Java.Awt.Dimension"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
@@ -317,8 +317,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabbedPaneLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
             {
                 IExecuteWithSignature("addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
@@ -333,7 +333,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabbedPaneLayout.html#layoutContainer(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void LayoutContainer(Java.Awt.Container arg0)
             {
                 IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
@@ -341,7 +341,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabbedPaneLayout.html#removeLayoutComponent(java.awt.Component)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
@@ -364,7 +364,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabSelectionHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTabbedPaneUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public TabSelectionHandler(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
                 : base(arg0)
             {
@@ -374,7 +374,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.TabSelectionHandler"/> to <see cref="Javax.Swing.Event.ChangeListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.TabSelectionHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
 
@@ -392,7 +392,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabSelectionHandler.html#stateChanged(javax.swing.event.ChangeEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
             {
                 IExecuteWithSignature("stateChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);

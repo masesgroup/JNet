@@ -77,11 +77,11 @@ namespace Java.Awt.Geom
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Geom.RectangularShape"/> to <see cref="Java.Awt.Shape"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.Shape(Java.Awt.Geom.RectangularShape t) => t.Cast<Java.Awt.Shape>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Geom.RectangularShape"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.RectangularShape t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -183,7 +183,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -191,10 +191,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrame(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetFrame(double arg0, double arg1, double arg2, double arg3)
         {
             IExecuteWithSignature("setFrame", "(DDDD)V", arg0, arg1, arg2, arg3);
@@ -202,8 +202,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#contains(java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Point2D;)Z", arg0);
@@ -211,8 +211,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#contains(java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
@@ -220,8 +220,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#intersects(java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecuteWithSignature<bool>("intersects", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
@@ -229,9 +229,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
             return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;D)Ljava/awt/geom/PathIterator;", arg0, arg1);
@@ -239,8 +239,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrame(java.awt.geom.Point2D,java.awt.geom.Dimension2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Dimension2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetFrame(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Dimension2D arg1)
         {
             IExecuteWithSignature("setFrame", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Dimension2D;)V", arg0, arg1);
@@ -248,10 +248,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrameFromCenter(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetFrameFromCenter(double arg0, double arg1, double arg2, double arg3)
         {
             IExecuteWithSignature("setFrameFromCenter", "(DDDD)V", arg0, arg1, arg2, arg3);
@@ -259,8 +259,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrameFromCenter(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetFrameFromCenter(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             IExecuteWithSignature("setFrameFromCenter", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)V", arg0, arg1);
@@ -268,10 +268,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrameFromDiagonal(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetFrameFromDiagonal(double arg0, double arg1, double arg2, double arg3)
         {
             IExecuteWithSignature("setFrameFromDiagonal", "(DDDD)V", arg0, arg1, arg2, arg3);
@@ -279,8 +279,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrameFromDiagonal(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetFrameFromDiagonal(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             IExecuteWithSignature("setFrameFromDiagonal", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)V", arg0, arg1);

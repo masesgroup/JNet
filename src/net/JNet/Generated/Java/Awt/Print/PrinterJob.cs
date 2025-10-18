@@ -94,7 +94,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupPrintServices()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Print.PrintService"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Print.PrintService[] LookupPrintServices()
         {
             return SExecuteWithSignatureArray<Javax.Print.PrintService>(LocalBridgeClazz, "lookupPrintServices", "()[Ljavax/print/PrintService;");
@@ -102,8 +102,8 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupStreamPrintServices(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Print.StreamPrintServiceFactory"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Print.StreamPrintServiceFactory[] LookupStreamPrintServices(Java.Lang.String arg0)
         {
             return SExecuteWithSignatureArray<Javax.Print.StreamPrintServiceFactory>(LocalBridgeClazz, "lookupStreamPrintServices", "(Ljava/lang/String;)[Ljavax/print/StreamPrintServiceFactory;", arg0);
@@ -143,7 +143,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#isCancelled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsCancelled()
         {
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
@@ -151,8 +151,8 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool PrintDialog()
         {
             return IExecuteWithSignature<bool>("printDialog", "()Z");
@@ -160,8 +160,8 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#defaultPage(java.awt.print.PageFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Print.PageFormat"/></param>
-        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Print.PageFormat DefaultPage(Java.Awt.Print.PageFormat arg0)
         {
             return IExecuteWithSignature<Java.Awt.Print.PageFormat>("defaultPage", "(Ljava/awt/print/PageFormat;)Ljava/awt/print/PageFormat;", arg0);
@@ -169,9 +169,9 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#pageDialog(java.awt.print.PageFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Print.PageFormat"/></param>
-        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Awt.Print.PageFormat PageDialog(Java.Awt.Print.PageFormat arg0)
         {
             return IExecuteWithSignature<Java.Awt.Print.PageFormat>("pageDialog", "(Ljava/awt/print/PageFormat;)Ljava/awt/print/PageFormat;", arg0);
@@ -179,8 +179,8 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#validatePage(java.awt.print.PageFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Print.PageFormat"/></param>
-        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Print.PageFormat ValidatePage(Java.Awt.Print.PageFormat arg0)
         {
             return IExecuteWithSignature<Java.Awt.Print.PageFormat>("validatePage", "(Ljava/awt/print/PageFormat;)Ljava/awt/print/PageFormat;", arg0);
@@ -195,7 +195,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#print()"/>
         /// </summary>
-        /// <exception cref="Java.Awt.Print.PrinterException"/>
+        /// <exception cref=""/>
         public void Print()
         {
             IExecuteWithSignature("print", "()V");
@@ -203,8 +203,8 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPageable(java.awt.print.Pageable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Print.Pageable"/></param>
-        /// <exception cref="Java.Lang.NullPointerException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetPageable(Java.Awt.Print.Pageable arg0)
         {
             IExecuteWithSignature("setPageable", "(Ljava/awt/print/Pageable;)V", arg0);
@@ -212,8 +212,8 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPrintable(java.awt.print.Printable,java.awt.print.PageFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Print.Printable"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetPrintable(Java.Awt.Print.Printable arg0, Java.Awt.Print.PageFormat arg1)
         {
             IExecuteWithSignature("setPrintable", "(Ljava/awt/print/Printable;Ljava/awt/print/PageFormat;)V", arg0, arg1);
@@ -221,7 +221,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPrintable(java.awt.print.Printable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Print.Printable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetPrintable(Java.Awt.Print.Printable arg0)
         {
             IExecuteWithSignature("setPrintable", "(Ljava/awt/print/Printable;)V", arg0);
@@ -229,9 +229,9 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool PrintDialog(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             return IExecuteWithSignature<bool>("printDialog", "(Ljavax/print/attribute/PrintRequestAttributeSet;)Z", arg0);
@@ -239,7 +239,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#defaultPage()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Print.PageFormat DefaultPage()
         {
             return IExecuteWithSignature<Java.Awt.Print.PageFormat>("defaultPage", "()Ljava/awt/print/PageFormat;");
@@ -247,8 +247,8 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getPageFormat(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
-        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Print.PageFormat GetPageFormat(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             return IExecuteWithSignature<Java.Awt.Print.PageFormat>("getPageFormat", "(Ljavax/print/attribute/PrintRequestAttributeSet;)Ljava/awt/print/PageFormat;", arg0);
@@ -256,9 +256,9 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#pageDialog(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
-        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Awt.Print.PageFormat PageDialog(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             return IExecuteWithSignature<Java.Awt.Print.PageFormat>("pageDialog", "(Ljavax/print/attribute/PrintRequestAttributeSet;)Ljava/awt/print/PageFormat;", arg0);
@@ -266,8 +266,8 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#print(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
-        /// <exception cref="Java.Awt.Print.PrinterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Print(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             IExecuteWithSignature("print", "(Ljavax/print/attribute/PrintRequestAttributeSet;)V", arg0);

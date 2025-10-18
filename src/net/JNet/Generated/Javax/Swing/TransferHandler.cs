@@ -155,7 +155,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TransferHandler(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -244,9 +244,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#canImport(javax.swing.JComponent,java.awt.datatransfer.DataFlavor[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CanImport(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.DataFlavor[] arg1)
         {
             return IExecuteWithSignature<bool>("canImport", "(Ljavax/swing/JComponent;[Ljava/awt/datatransfer/DataFlavor;)Z", arg0, arg1);
@@ -254,8 +254,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#canImport(javax.swing.TransferHandler.TransferSupport)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.TransferHandler.TransferSupport"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CanImport(Javax.Swing.TransferHandler.TransferSupport arg0)
         {
             return IExecuteWithSignature<bool>("canImport", "(Ljavax/swing/TransferHandler$TransferSupport;)Z", arg0);
@@ -263,9 +263,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#importData(javax.swing.JComponent,java.awt.datatransfer.Transferable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ImportData(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.Transferable arg1)
         {
             return IExecuteWithSignature<bool>("importData", "(Ljavax/swing/JComponent;Ljava/awt/datatransfer/Transferable;)Z", arg0, arg1);
@@ -273,8 +273,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#importData(javax.swing.TransferHandler.TransferSupport)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.TransferHandler.TransferSupport"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ImportData(Javax.Swing.TransferHandler.TransferSupport arg0)
         {
             return IExecuteWithSignature<bool>("importData", "(Ljavax/swing/TransferHandler$TransferSupport;)Z", arg0);
@@ -282,8 +282,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getSourceActions(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetSourceActions(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<int>("getSourceActions", "(Ljavax/swing/JComponent;)I", arg0);
@@ -291,8 +291,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getVisualRepresentation(java.awt.datatransfer.Transferable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Icon GetVisualRepresentation(Java.Awt.Datatransfer.Transferable arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Icon>("getVisualRepresentation", "(Ljava/awt/datatransfer/Transferable;)Ljavax/swing/Icon;", arg0);
@@ -300,9 +300,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#exportAsDrag(javax.swing.JComponent,java.awt.event.InputEvent,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.InputEvent"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void ExportAsDrag(Javax.Swing.JComponent arg0, Java.Awt.EventNs.InputEvent arg1, int arg2)
         {
             IExecuteWithSignature("exportAsDrag", "(Ljavax/swing/JComponent;Ljava/awt/event/InputEvent;I)V", arg0, arg1, arg2);
@@ -310,10 +310,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#exportToClipboard(javax.swing.JComponent,java.awt.datatransfer.Clipboard,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Clipboard"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void ExportToClipboard(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.Clipboard arg1, int arg2)
         {
             IExecuteWithSignature("exportToClipboard", "(Ljavax/swing/JComponent;Ljava/awt/datatransfer/Clipboard;I)V", arg0, arg1, arg2);
@@ -367,8 +367,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#%3Cinit%3E(java.awt.Component,java.awt.datatransfer.Transferable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public TransferSupport(Java.Awt.Component arg0, Java.Awt.Datatransfer.Transferable arg1)
                 : base(arg0, arg1)
             {
@@ -441,8 +441,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
             {
                 return IExecuteWithSignature<bool>("isDataFlavorSupported", "(Ljava/awt/datatransfer/DataFlavor;)Z", arg0);
@@ -450,7 +450,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDrop()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsDrop()
             {
                 return IExecuteWithSignature<bool>("isDrop", "()Z");
@@ -458,7 +458,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setShowDropLocation(boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="bool"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void SetShowDropLocation(bool arg0)
             {
                 IExecuteWithSignature("setShowDropLocation", "(Z)V", arg0);

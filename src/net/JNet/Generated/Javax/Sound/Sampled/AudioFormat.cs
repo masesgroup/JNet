@@ -114,11 +114,11 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#%3Cinit%3E(float,int,int,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public AudioFormat(float arg0, int arg1, int arg2, bool arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -126,28 +126,28 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#%3Cinit%3E(javax.sound.sampled.AudioFormat.Encoding,float,int,int,int,float,boolean,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="float"/></param>
-        /// <param name="arg6"><see cref="bool"/></param>
-        /// <param name="arg7"><see cref="Java.Util.Map"/></param>
-        public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map<Java.Lang.String, object> arg7)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map<, > arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#%3Cinit%3E(javax.sound.sampled.AudioFormat.Encoding,float,int,int,int,float,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="float"/></param>
-        /// <param name="arg6"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -213,7 +213,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#isBigEndian()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBigEndian()
         {
             return IExecuteWithSignature<bool>("isBigEndian", "()Z");
@@ -221,8 +221,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#matches(javax.sound.sampled.AudioFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Matches(Javax.Sound.Sampled.AudioFormat arg0)
         {
             return IExecuteWithSignature<bool>("matches", "(Ljavax/sound/sampled/AudioFormat;)Z", arg0);
@@ -230,8 +230,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -239,10 +239,10 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#properties()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<Java.Lang.String, object> Properties()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Map<, > Properties()
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, object>>("properties", "()Ljava/util/Map;");
+            return IExecuteWithSignature<Java.Util.Map<, >>("properties", "()Ljava/util/Map;");
         }
 
         #endregion
@@ -255,7 +255,7 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public Encoding(Java.Lang.String arg0)
                 : base(arg0)
             {

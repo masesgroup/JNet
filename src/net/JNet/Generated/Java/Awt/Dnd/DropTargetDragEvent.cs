@@ -73,10 +73,10 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#%3Cinit%3E(java.awt.dnd.DropTargetContext,java.awt.Point,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public DropTargetDragEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -107,9 +107,9 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getCurrentDataFlavorsAsList()"/> 
         /// </summary>
-        public Java.Util.List<Java.Awt.Datatransfer.DataFlavor> CurrentDataFlavorsAsList
+        public Java.Util.List CurrentDataFlavorsAsList
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Awt.Datatransfer.DataFlavor>>("getCurrentDataFlavorsAsList", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getCurrentDataFlavorsAsList", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getDropAction()"/> 
@@ -142,8 +142,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecuteWithSignature<bool>("isDataFlavorSupported", "(Ljava/awt/datatransfer/DataFlavor;)Z", arg0);
@@ -151,7 +151,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#acceptDrag(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AcceptDrag(int arg0)
         {
             IExecuteWithSignature("acceptDrag", "(I)V", arg0);

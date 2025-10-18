@@ -73,8 +73,8 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public AuthorizeCallback(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -84,11 +84,11 @@ namespace Javax.Security.Sasl
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Sasl.AuthorizeCallback"/> to <see cref="Javax.Security.Auth.Callback.Callback"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Security.Auth.Callback.Callback(Javax.Security.Sasl.AuthorizeCallback t) => t.Cast<Javax.Security.Auth.Callback.Callback>();
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Sasl.AuthorizeCallback"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Sasl.AuthorizeCallback t) => t.Cast<Java.Io.Serializable>();
 
@@ -127,7 +127,7 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#isAuthorized()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsAuthorized()
         {
             return IExecuteWithSignature<bool>("isAuthorized", "()Z");
@@ -135,7 +135,7 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#setAuthorized(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetAuthorized(bool arg0)
         {
             IExecuteWithSignature("setAuthorized", "(Z)V", arg0);

@@ -68,7 +68,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html"/>
         /// </summary>
-        public partial class State : Java.Lang.Enum<Javax.Smartcardio.CardTerminals.State>
+        public partial class State : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.smartcardio.CardTerminals$State";
             /// <summary>
@@ -132,9 +132,9 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#waitForChange(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool WaitForChange(long arg0)
         {
             return IExecuteWithSignature<bool>("waitForChange", "(J)Z", arg0);
@@ -142,27 +142,27 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#list(javax.smartcardio.CardTerminals.State)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Smartcardio.CardTerminals.State"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
-        public Java.Util.List<Javax.Smartcardio.CardTerminal> List(Javax.Smartcardio.CardTerminals.State arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.List List(Javax.Smartcardio.CardTerminals.State arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Javax.Smartcardio.CardTerminal>>("list", "(Ljavax/smartcardio/CardTerminals$State;)Ljava/util/List;", arg0);
+            return IExecuteWithSignature<Java.Util.List>("list", "(Ljavax/smartcardio/CardTerminals$State;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#list()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
-        public Java.Util.List<Javax.Smartcardio.CardTerminal> List()
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.List List()
         {
-            return IExecuteWithSignature<Java.Util.List<Javax.Smartcardio.CardTerminal>>("list", "()Ljava/util/List;");
+            return IExecuteWithSignature<Java.Util.List>("list", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#getTerminal(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Smartcardio.CardTerminal"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Smartcardio.CardTerminal GetTerminal(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Smartcardio.CardTerminal>("getTerminal", "(Ljava/lang/String;)Ljavax/smartcardio/CardTerminal;", arg0);
@@ -170,7 +170,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#waitForChange()"/>
         /// </summary>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <exception cref=""/>
         public void WaitForChange()
         {
             IExecuteWithSignature("waitForChange", "()V");
@@ -228,8 +228,8 @@ namespace Javax.Smartcardio
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Smartcardio.CardTerminals.State"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Smartcardio.CardTerminals.State ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Smartcardio.CardTerminals.State>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/smartcardio/CardTerminals$State;", arg0);
@@ -237,7 +237,7 @@ namespace Javax.Smartcardio
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Smartcardio.CardTerminals.State"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Smartcardio.CardTerminals.State[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Smartcardio.CardTerminals.State>(LocalBridgeClazz, "values", "()[Ljavax/smartcardio/CardTerminals$State;");

@@ -284,7 +284,7 @@ namespace Javax.Swing.Text.Html
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Html.HTMLEditorKit"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Text.Html.HTMLEditorKit t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -408,7 +408,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#isAutoFormSubmission()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsAutoFormSubmission()
         {
             return IExecuteWithSignature<bool>("isAutoFormSubmission", "()Z");
@@ -416,14 +416,14 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#insertHTML(javax.swing.text.html.HTMLDocument,int,java.lang.String,int,int,javax.swing.text.html.HTML.Tag)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void InsertHTML(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1, Java.Lang.String arg2, int arg3, int arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
         {
             IExecuteWithSignature("insertHTML", "(Ljavax/swing/text/html/HTMLDocument;ILjava/lang/String;IILjavax/swing/text/html/HTML$Tag;)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -431,7 +431,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#setAutoFormSubmission(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetAutoFormSubmission(bool arg0)
         {
             IExecuteWithSignature("setAutoFormSubmission", "(Z)V", arg0);
@@ -463,8 +463,8 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLFactory.html#create(javax.swing.text.Element)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-            /// <returns><see cref="Javax.Swing.Text.View"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0)
             {
                 return IExecuteWithSignature<Javax.Swing.Text.View>("create", "(Ljavax/swing/text/Element;)Ljavax/swing/text/View;", arg0);
@@ -487,7 +487,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLTextAction.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public HTMLTextAction(Java.Lang.String arg0)
                 : base(arg0)
             {
@@ -526,12 +526,12 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.swing.text.html.HTML.Tag,javax.swing.text.html.HTML.Tag,javax.swing.text.html.HTML.Tag,javax.swing.text.html.HTML.Tag)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg2"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-            /// <param name="arg3"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-            /// <param name="arg4"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-            /// <param name="arg5"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <param name="arg5"><see cref=""/></param>
             public InsertHTMLTextAction(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3, Javax.Swing.Text.Html.HTML.Tag arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
@@ -539,10 +539,10 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.swing.text.html.HTML.Tag,javax.swing.text.html.HTML.Tag)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg2"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-            /// <param name="arg3"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public InsertHTMLTextAction(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -597,10 +597,10 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.Parser.html#parse(java.io.Reader,javax.swing.text.html.HTMLEditorKit.ParserCallback,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <exception cref="Java.Io.IOException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <exception cref=""/>
             public void Parse(Java.Io.Reader arg0, Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback arg1, bool arg2)
             {
                 IExecuteWithSignature("parse", "(Ljava/io/Reader;Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;Z)V", arg0, arg1, arg2);
@@ -645,7 +645,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#flush()"/>
             /// </summary>
-            /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+            /// <exception cref=""/>
             public void Flush()
             {
                 IExecuteWithSignature("flush", "()V");
@@ -653,8 +653,8 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleComment(char[],int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="char"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void HandleComment(char[] arg0, int arg1)
             {
                 IExecuteWithSignature("handleComment", "([CI)V", arg0, arg1);
@@ -662,7 +662,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleEndOfLineString(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void HandleEndOfLineString(Java.Lang.String arg0)
             {
                 IExecuteWithSignature("handleEndOfLineString", "(Ljava/lang/String;)V", arg0);
@@ -670,8 +670,8 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleEndTag(javax.swing.text.html.HTML.Tag,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void HandleEndTag(Javax.Swing.Text.Html.HTML.Tag arg0, int arg1)
             {
                 IExecuteWithSignature("handleEndTag", "(Ljavax/swing/text/html/HTML$Tag;I)V", arg0, arg1);
@@ -679,8 +679,8 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleError(java.lang.String,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void HandleError(Java.Lang.String arg0, int arg1)
             {
                 IExecuteWithSignature("handleError", "(Ljava/lang/String;I)V", arg0, arg1);
@@ -688,9 +688,9 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleSimpleTag(javax.swing.text.html.HTML.Tag,javax.swing.text.MutableAttributeSet,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public void HandleSimpleTag(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.MutableAttributeSet arg1, int arg2)
             {
                 IExecuteWithSignature("handleSimpleTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;I)V", arg0, arg1, arg2);
@@ -698,9 +698,9 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleStartTag(javax.swing.text.html.HTML.Tag,javax.swing.text.MutableAttributeSet,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public void HandleStartTag(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.MutableAttributeSet arg1, int arg2)
             {
                 IExecuteWithSignature("handleStartTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;I)V", arg0, arg1, arg2);
@@ -708,8 +708,8 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleText(char[],int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="char"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void HandleText(char[] arg0, int arg1)
             {
                 IExecuteWithSignature("handleText", "([CI)V", arg0, arg1);

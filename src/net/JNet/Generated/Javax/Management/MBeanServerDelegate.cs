@@ -75,11 +75,11 @@ namespace Javax.Management
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.MBeanServerDelegate"/> to <see cref="Javax.Management.MBeanServerDelegateMBean"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.MBeanServerDelegateMBean(Javax.Management.MBeanServerDelegate t) => t.Cast<Javax.Management.MBeanServerDelegateMBean>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.MBeanServerDelegate"/> to <see cref="Javax.Management.NotificationEmitter"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.NotificationEmitter(Javax.Management.MBeanServerDelegate t) => t.Cast<Javax.Management.NotificationEmitter>();
 
@@ -159,10 +159,10 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecuteWithSignature("addNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -170,10 +170,10 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#removeNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -181,8 +181,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#removeNotificationListener(javax.management.NotificationListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0)
         {
             IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/NotificationListener;)V", arg0);
@@ -190,7 +190,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#sendNotification(javax.management.Notification)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SendNotification(Javax.Management.Notification arg0)
         {
             IExecuteWithSignature("sendNotification", "(Ljavax/management/Notification;)V", arg0);

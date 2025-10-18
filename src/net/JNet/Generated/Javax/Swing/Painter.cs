@@ -68,12 +68,12 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region Painter<T> declaration
+    #region Painter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class Painter<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Painter<T>>
+    public partial class Painter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Painter>
     {
         const string _bridgeClassName = "javax.swing.Painter";
         /// <summary>
@@ -135,10 +135,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html#paint(java.awt.Graphics2D,java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void Paint(Java.Awt.Graphics2D arg0, object arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("paint", "(Ljava/awt/Graphics2D;Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3);
@@ -154,20 +154,20 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region IPainter<T>
+    #region IPainter
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html"/>
     /// </summary>
-    public partial interface IPainter<T>
+    public partial interface IPainter
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html#paint(java.awt.Graphics2D,java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         void Paint(Java.Awt.Graphics2D arg0, T arg1, int arg2, int arg3);
 
         #endregion
@@ -180,8 +180,8 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region Painter<T> implementation
-    public partial class Painter<T> : Javax.Swing.IPainter<T>
+    #region Painter implementation
+    public partial class Painter : Javax.Swing.IPainter
     {
         #region Constructors
 
@@ -189,9 +189,9 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Painter{T}"/> to <see cref="Javax.Swing.Painter"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.Painter(Javax.Swing.Painter<T> t) => t.Cast<Javax.Swing.Painter>();
+        public static implicit operator Javax.Swing.Painter(Javax.Swing.Painter t) => t.Cast<Javax.Swing.Painter>();
 
         #endregion
 
@@ -207,10 +207,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html#paint(java.awt.Graphics2D,java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void Paint(Java.Awt.Graphics2D arg0, T arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("paint", "(Ljava/awt/Graphics2D;Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3);

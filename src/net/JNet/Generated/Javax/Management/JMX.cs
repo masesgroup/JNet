@@ -139,58 +139,58 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#newMBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T NewMBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
+        /// <returns><see cref=""/></returns>
+        public static T NewMBeanProxy(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "newMBeanProxy", "(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/Class;Z)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#newMBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T NewMBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2)
+        /// <returns><see cref=""/></returns>
+        public static T NewMBeanProxy(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "newMBeanProxy", "(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#newMXBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T NewMXBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
+        /// <returns><see cref=""/></returns>
+        public static T NewMXBeanProxy(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "newMXBeanProxy", "(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/Class;Z)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#newMXBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T NewMXBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2)
+        /// <returns><see cref=""/></returns>
+        public static T NewMXBeanProxy(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "newMXBeanProxy", "(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#isMXBeanInterface(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsMXBeanInterface(Java.Lang.Class arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMXBeanInterface", "(Ljava/lang/Class;)Z", arg0);

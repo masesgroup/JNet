@@ -108,7 +108,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PropertyChange(Java.Beans.PropertyChangeEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             hasOverridePropertyChange = false;
@@ -207,7 +207,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);

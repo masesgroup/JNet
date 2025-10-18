@@ -82,42 +82,42 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#hasTileWriters()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool HasTileWriters();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#isTileWritable(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsTileWritable(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#getWritableTile(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.ImageNs.WritableRaster GetWritableTile(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#addTileObserver(java.awt.image.TileObserver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddTileObserver(Java.Awt.ImageNs.TileObserver arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#releaseWritableTile(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void ReleaseWritableTile(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#removeTileObserver(java.awt.image.TileObserver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveTileObserver(Java.Awt.ImageNs.TileObserver arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#setData(java.awt.image.Raster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetData(Java.Awt.ImageNs.Raster arg0);
 
         #endregion
@@ -160,7 +160,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#hasTileWriters()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasTileWriters()
         {
             return IExecuteWithSignature<bool>("hasTileWriters", "()Z");
@@ -168,9 +168,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#isTileWritable(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsTileWritable(int arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("isTileWritable", "(II)Z", arg0, arg1);
@@ -178,9 +178,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#getWritableTile(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.WritableRaster GetWritableTile(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("getWritableTile", "(II)Ljava/awt/image/WritableRaster;", arg0, arg1);
@@ -188,7 +188,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#addTileObserver(java.awt.image.TileObserver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddTileObserver(Java.Awt.ImageNs.TileObserver arg0)
         {
             IExecuteWithSignature("addTileObserver", "(Ljava/awt/image/TileObserver;)V", arg0);
@@ -196,8 +196,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#releaseWritableTile(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void ReleaseWritableTile(int arg0, int arg1)
         {
             IExecuteWithSignature("releaseWritableTile", "(II)V", arg0, arg1);
@@ -205,7 +205,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#removeTileObserver(java.awt.image.TileObserver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveTileObserver(Java.Awt.ImageNs.TileObserver arg0)
         {
             IExecuteWithSignature("removeTileObserver", "(Ljava/awt/image/TileObserver;)V", arg0);
@@ -213,7 +213,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#setData(java.awt.image.Raster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetData(Java.Awt.ImageNs.Raster arg0)
         {
             IExecuteWithSignature("setData", "(Ljava/awt/image/Raster;)V", arg0);

@@ -90,35 +90,35 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        T GetSource<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.ISource, new();
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        T GetSource(Java.Lang.Class arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setResult(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.IResult"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        T SetResult<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.IResult, new();
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        T SetResult(Java.Lang.Class arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Io.OutputStream SetBinaryStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Io.Writer SetCharacterStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Free();
 
         #endregion
@@ -175,30 +175,30 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public T GetSource<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.ISource, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public T GetSource(Java.Lang.Class arg0)
         {
             return IExecute<T>("getSource", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setResult(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.IResult"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public T SetResult<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.IResult, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public T SetResult(Java.Lang.Class arg0)
         {
             return IExecute<T>("setResult", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.OutputStream SetBinaryStream()
         {
             return IExecuteWithSignature<Java.Io.OutputStream>("setBinaryStream", "()Ljava/io/OutputStream;");
@@ -206,8 +206,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.Writer SetCharacterStream()
         {
             return IExecuteWithSignature<Java.Io.Writer>("setCharacterStream", "()Ljava/io/Writer;");
@@ -215,7 +215,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Free()
         {
             IExecuteWithSignature("free", "()V");

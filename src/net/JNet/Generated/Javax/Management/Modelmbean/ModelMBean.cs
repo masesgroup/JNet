@@ -78,19 +78,19 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBean.html#setManagedResource(java.lang.Object,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.Modelmbean.InvalidTargetObjectTypeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetManagedResource(object arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBean.html#setModelMBeanInfo(javax.management.modelmbean.ModelMBeanInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Modelmbean.ModelMBeanInfo"/></param>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetModelMBeanInfo(Javax.Management.Modelmbean.ModelMBeanInfo arg0);
 
         #endregion
@@ -112,15 +112,15 @@ namespace Javax.Management.Modelmbean
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Modelmbean.ModelMBean"/> to <see cref="Javax.Management.DynamicMBean"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.DynamicMBean(Javax.Management.Modelmbean.ModelMBean t) => t.Cast<Javax.Management.DynamicMBean>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Modelmbean.ModelMBean"/> to <see cref="Javax.Management.PersistentMBean"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.PersistentMBean(Javax.Management.Modelmbean.ModelMBean t) => t.Cast<Javax.Management.PersistentMBean>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Modelmbean.ModelMBean"/> to <see cref="Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster(Javax.Management.Modelmbean.ModelMBean t) => t.Cast<Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster>();
 
@@ -138,12 +138,12 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBean.html#setManagedResource(java.lang.Object,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.Modelmbean.InvalidTargetObjectTypeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetManagedResource(object arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("setManagedResource", "(Ljava/lang/Object;Ljava/lang/String;)V", arg0, arg1);
@@ -151,9 +151,9 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBean.html#setModelMBeanInfo(javax.management.modelmbean.ModelMBeanInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Modelmbean.ModelMBeanInfo"/></param>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetModelMBeanInfo(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
         {
             IExecuteWithSignature("setModelMBeanInfo", "(Ljavax/management/modelmbean/ModelMBeanInfo;)V", arg0);

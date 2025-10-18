@@ -106,50 +106,50 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#isSoundbankSupported(javax.sound.midi.Soundbank)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsSoundbankSupported(Javax.Sound.Midi.Soundbank arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadAllInstruments(javax.sound.midi.Soundbank)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool LoadAllInstruments(Javax.Sound.Midi.Soundbank arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadInstrument(javax.sound.midi.Instrument)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool LoadInstrument(Javax.Sound.Midi.Instrument arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadInstruments(javax.sound.midi.Soundbank,javax.sound.midi.Patch[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Midi.Patch"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool LoadInstruments(Javax.Sound.Midi.Soundbank arg0, Javax.Sound.Midi.Patch[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#remapInstrument(javax.sound.midi.Instrument,javax.sound.midi.Instrument)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Midi.Instrument"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool RemapInstrument(Javax.Sound.Midi.Instrument arg0, Javax.Sound.Midi.Instrument arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadAllInstruments(javax.sound.midi.Soundbank)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void UnloadAllInstruments(Javax.Sound.Midi.Soundbank arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadInstrument(javax.sound.midi.Instrument)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void UnloadInstrument(Javax.Sound.Midi.Instrument arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadInstruments(javax.sound.midi.Soundbank,javax.sound.midi.Patch[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Midi.Patch"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void UnloadInstruments(Javax.Sound.Midi.Soundbank arg0, Javax.Sound.Midi.Patch[] arg1);
 
         #endregion
@@ -234,8 +234,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#isSoundbankSupported(javax.sound.midi.Soundbank)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSoundbankSupported(Javax.Sound.Midi.Soundbank arg0)
         {
             return IExecuteWithSignature<bool>("isSoundbankSupported", "(Ljavax/sound/midi/Soundbank;)Z", arg0);
@@ -243,8 +243,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadAllInstruments(javax.sound.midi.Soundbank)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool LoadAllInstruments(Javax.Sound.Midi.Soundbank arg0)
         {
             return IExecuteWithSignature<bool>("loadAllInstruments", "(Ljavax/sound/midi/Soundbank;)Z", arg0);
@@ -252,8 +252,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadInstrument(javax.sound.midi.Instrument)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool LoadInstrument(Javax.Sound.Midi.Instrument arg0)
         {
             return IExecuteWithSignature<bool>("loadInstrument", "(Ljavax/sound/midi/Instrument;)Z", arg0);
@@ -261,9 +261,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadInstruments(javax.sound.midi.Soundbank,javax.sound.midi.Patch[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Midi.Patch"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool LoadInstruments(Javax.Sound.Midi.Soundbank arg0, Javax.Sound.Midi.Patch[] arg1)
         {
             return IExecuteWithSignature<bool>("loadInstruments", "(Ljavax/sound/midi/Soundbank;[Ljavax/sound/midi/Patch;)Z", arg0, arg1);
@@ -271,9 +271,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#remapInstrument(javax.sound.midi.Instrument,javax.sound.midi.Instrument)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Midi.Instrument"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemapInstrument(Javax.Sound.Midi.Instrument arg0, Javax.Sound.Midi.Instrument arg1)
         {
             return IExecuteWithSignature<bool>("remapInstrument", "(Ljavax/sound/midi/Instrument;Ljavax/sound/midi/Instrument;)Z", arg0, arg1);
@@ -281,7 +281,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadAllInstruments(javax.sound.midi.Soundbank)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void UnloadAllInstruments(Javax.Sound.Midi.Soundbank arg0)
         {
             IExecuteWithSignature("unloadAllInstruments", "(Ljavax/sound/midi/Soundbank;)V", arg0);
@@ -289,7 +289,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadInstrument(javax.sound.midi.Instrument)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void UnloadInstrument(Javax.Sound.Midi.Instrument arg0)
         {
             IExecuteWithSignature("unloadInstrument", "(Ljavax/sound/midi/Instrument;)V", arg0);
@@ -297,8 +297,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadInstruments(javax.sound.midi.Soundbank,javax.sound.midi.Patch[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Midi.Patch"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void UnloadInstruments(Javax.Sound.Midi.Soundbank arg0, Javax.Sound.Midi.Patch[] arg1)
         {
             IExecuteWithSignature("unloadInstruments", "(Ljavax/sound/midi/Soundbank;[Ljavax/sound/midi/Patch;)V", arg0, arg1);

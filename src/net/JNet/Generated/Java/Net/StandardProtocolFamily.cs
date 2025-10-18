@@ -29,7 +29,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html"/>
     /// </summary>
-    public partial class StandardProtocolFamily : Java.Lang.Enum<Java.Net.StandardProtocolFamily>
+    public partial class StandardProtocolFamily : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.net.StandardProtocolFamily";
         /// <summary>
@@ -75,7 +75,7 @@ namespace Java.Net
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Net.StandardProtocolFamily"/> to <see cref="Java.Net.ProtocolFamily"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Net.ProtocolFamily(Java.Net.StandardProtocolFamily t) => t.Cast<Java.Net.ProtocolFamily>();
 
@@ -101,8 +101,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Net.StandardProtocolFamily"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.StandardProtocolFamily ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/StandardProtocolFamily;", arg0);
@@ -110,7 +110,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.StandardProtocolFamily"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.StandardProtocolFamily[] Values()
         {
             return SExecuteWithSignatureArray<Java.Net.StandardProtocolFamily>(LocalBridgeClazz, "values", "()[Ljava/net/StandardProtocolFamily;");

@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#%3Cinit%3E(javax.swing.text.Document)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Document"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ElementIterator(Javax.Swing.Text.Document arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#%3Cinit%3E(javax.swing.text.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ElementIterator(Javax.Swing.Text.Element arg0)
             : base(arg0)
         {
@@ -105,7 +105,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#depth()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Depth()
         {
             return IExecuteWithSignature<int>("depth", "()I");
@@ -113,7 +113,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#current()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Element Current()
         {
             return IExecuteWithSignature<Javax.Swing.Text.Element>("current", "()Ljavax/swing/text/Element;");
@@ -121,7 +121,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#first()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Element First()
         {
             return IExecuteWithSignature<Javax.Swing.Text.Element>("first", "()Ljavax/swing/text/Element;");
@@ -129,7 +129,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#next()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Element Next()
         {
             return IExecuteWithSignature<Javax.Swing.Text.Element>("next", "()Ljavax/swing/text/Element;");
@@ -137,7 +137,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html#previous()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Element Previous()
         {
             return IExecuteWithSignature<Javax.Swing.Text.Element>("previous", "()Ljavax/swing/text/Element;");

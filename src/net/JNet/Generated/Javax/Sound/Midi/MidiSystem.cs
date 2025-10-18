@@ -127,9 +127,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#isFileTypeSupported(int,javax.sound.midi.Sequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsFileTypeSupported(int arg0, Javax.Sound.Midi.Sequence arg1)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFileTypeSupported", "(ILjavax/sound/midi/Sequence;)Z", arg0, arg1);
@@ -137,8 +137,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#isFileTypeSupported(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsFileTypeSupported(int arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFileTypeSupported", "(I)Z", arg0);
@@ -146,11 +146,11 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#write(javax.sound.midi.Sequence,int,java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static int Write(Javax.Sound.Midi.Sequence arg0, int arg1, Java.Io.File arg2)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "write", "(Ljavax/sound/midi/Sequence;ILjava/io/File;)I", arg0, arg1, arg2);
@@ -158,11 +158,11 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#write(javax.sound.midi.Sequence,int,java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static int Write(Javax.Sound.Midi.Sequence arg0, int arg1, Java.Io.OutputStream arg2)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "write", "(Ljavax/sound/midi/Sequence;ILjava/io/OutputStream;)I", arg0, arg1, arg2);
@@ -170,8 +170,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiFileTypes(javax.sound.midi.Sequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int[] GetMidiFileTypes(Javax.Sound.Midi.Sequence arg0)
         {
             return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "getMidiFileTypes", "(Ljavax/sound/midi/Sequence;)[I", arg0);
@@ -179,9 +179,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiDevice(javax.sound.midi.MidiDevice.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiDevice.Info"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.MidiDevice"/></returns>
-        /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.MidiDevice GetMidiDevice(Javax.Sound.Midi.MidiDevice.Info arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.MidiDevice>(LocalBridgeClazz, "getMidiDevice", "(Ljavax/sound/midi/MidiDevice$Info;)Ljavax/sound/midi/MidiDevice;", arg0);
@@ -189,10 +189,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiFileFormat(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.MidiFileFormat"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Io.File arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.MidiFileFormat>(LocalBridgeClazz, "getMidiFileFormat", "(Ljava/io/File;)Ljavax/sound/midi/MidiFileFormat;", arg0);
@@ -200,10 +200,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiFileFormat(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.MidiFileFormat"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Io.InputStream arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.MidiFileFormat>(LocalBridgeClazz, "getMidiFileFormat", "(Ljava/io/InputStream;)Ljavax/sound/midi/MidiFileFormat;", arg0);
@@ -211,10 +211,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiFileFormat(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.MidiFileFormat"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Net.URL arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.MidiFileFormat>(LocalBridgeClazz, "getMidiFileFormat", "(Ljava/net/URL;)Ljavax/sound/midi/MidiFileFormat;", arg0);
@@ -222,10 +222,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSequence(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.Sequence"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.Sequence GetSequence(Java.Io.File arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.Sequence>(LocalBridgeClazz, "getSequence", "(Ljava/io/File;)Ljavax/sound/midi/Sequence;", arg0);
@@ -233,10 +233,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSequence(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.Sequence"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.Sequence GetSequence(Java.Io.InputStream arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.Sequence>(LocalBridgeClazz, "getSequence", "(Ljava/io/InputStream;)Ljavax/sound/midi/Sequence;", arg0);
@@ -244,10 +244,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSequence(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.Sequence"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.Sequence GetSequence(Java.Net.URL arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.Sequence>(LocalBridgeClazz, "getSequence", "(Ljava/net/URL;)Ljavax/sound/midi/Sequence;", arg0);
@@ -255,9 +255,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSequencer(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.Sequencer"/></returns>
-        /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.Sequencer GetSequencer(bool arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.Sequencer>(LocalBridgeClazz, "getSequencer", "(Z)Ljavax/sound/midi/Sequencer;", arg0);
@@ -265,10 +265,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSoundbank(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.Soundbank"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.Soundbank GetSoundbank(Java.Io.File arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.Soundbank>(LocalBridgeClazz, "getSoundbank", "(Ljava/io/File;)Ljavax/sound/midi/Soundbank;", arg0);
@@ -276,10 +276,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSoundbank(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.Soundbank"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.Soundbank GetSoundbank(Java.Io.InputStream arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.Soundbank>(LocalBridgeClazz, "getSoundbank", "(Ljava/io/InputStream;)Ljavax/sound/midi/Soundbank;", arg0);
@@ -287,10 +287,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSoundbank(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.Soundbank"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Sound.Midi.Soundbank GetSoundbank(Java.Net.URL arg0)
         {
             return SExecuteWithSignature<Javax.Sound.Midi.Soundbank>(LocalBridgeClazz, "getSoundbank", "(Ljava/net/URL;)Ljavax/sound/midi/Soundbank;", arg0);

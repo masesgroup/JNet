@@ -73,8 +73,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#%3Cinit%3E(javax.swing.text.Element,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public BoxView(Javax.Swing.Text.Element arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -119,7 +119,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#layoutChanged(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void LayoutChanged(int arg0)
         {
             IExecuteWithSignature("layoutChanged", "(I)V", arg0);

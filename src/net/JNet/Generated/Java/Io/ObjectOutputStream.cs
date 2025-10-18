@@ -116,8 +116,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public ObjectOutputStream(Java.Io.OutputStream arg0)
             : base(arg0)
         {
@@ -127,11 +127,11 @@ namespace Java.Io
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Io.ObjectOutputStream"/> to <see cref="Java.Io.ObjectOutput"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.ObjectOutput(Java.Io.ObjectOutputStream t) => t.Cast<Java.Io.ObjectOutput>();
         /// <summary>
-        /// Converter from <see cref="Java.Io.ObjectOutputStream"/> to <see cref="Java.Io.ObjectStreamConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.ObjectStreamConstants(Java.Io.ObjectOutputStream t) => t.Cast<Java.Io.ObjectStreamConstants>();
 
@@ -149,8 +149,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeObject(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteObject(object arg0)
         {
             IExecuteWithSignature("writeObject", "(Ljava/lang/Object;)V", arg0);
@@ -158,8 +158,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#putFields()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.ObjectOutputStream.PutField"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.ObjectOutputStream.PutField PutFields()
         {
             return IExecuteWithSignature<Java.Io.ObjectOutputStream.PutField>("putFields", "()Ljava/io/ObjectOutputStream$PutField;");
@@ -167,7 +167,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#defaultWriteObject()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void DefaultWriteObject()
         {
             IExecuteWithSignature("defaultWriteObject", "()V");
@@ -175,7 +175,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#reset()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
@@ -183,8 +183,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#useProtocolVersion(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void UseProtocolVersion(int arg0)
         {
             IExecuteWithSignature("useProtocolVersion", "(I)V", arg0);
@@ -192,8 +192,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeBoolean(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteBoolean(bool arg0)
         {
             IExecuteWithSignature("writeBoolean", "(Z)V", arg0);
@@ -201,8 +201,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeByte(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteByte(int arg0)
         {
             IExecuteWithSignature("writeByte", "(I)V", arg0);
@@ -210,8 +210,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeBytes(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteBytes(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeBytes", "(Ljava/lang/String;)V", arg0);
@@ -219,8 +219,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeChar(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteChar(int arg0)
         {
             IExecuteWithSignature("writeChar", "(I)V", arg0);
@@ -228,8 +228,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeChars(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteChars(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeChars", "(Ljava/lang/String;)V", arg0);
@@ -237,8 +237,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeDouble(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteDouble(double arg0)
         {
             IExecuteWithSignature("writeDouble", "(D)V", arg0);
@@ -246,7 +246,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeFields()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void WriteFields()
         {
             IExecuteWithSignature("writeFields", "()V");
@@ -254,8 +254,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeFloat(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteFloat(float arg0)
         {
             IExecuteWithSignature("writeFloat", "(F)V", arg0);
@@ -263,8 +263,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeInt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteInt(int arg0)
         {
             IExecuteWithSignature("writeInt", "(I)V", arg0);
@@ -272,8 +272,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeLong(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteLong(long arg0)
         {
             IExecuteWithSignature("writeLong", "(J)V", arg0);
@@ -281,8 +281,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeShort(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteShort(int arg0)
         {
             IExecuteWithSignature("writeShort", "(I)V", arg0);
@@ -290,8 +290,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeUnshared(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteUnshared(object arg0)
         {
             IExecuteWithSignature("writeUnshared", "(Ljava/lang/Object;)V", arg0);
@@ -299,8 +299,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeUTF(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteUTF(Java.Lang.String arg0)
         {
             IExecuteWithSignature("writeUTF", "(Ljava/lang/String;)V", arg0);
@@ -332,8 +332,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="bool"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Put(Java.Lang.String arg0, bool arg1)
             {
                 IExecuteWithSignature("put", "(Ljava/lang/String;Z)V", arg0, arg1);
@@ -341,8 +341,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,byte)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="byte"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Put(Java.Lang.String arg0, byte arg1)
             {
                 IExecuteWithSignature("put", "(Ljava/lang/String;B)V", arg0, arg1);
@@ -350,8 +350,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,char)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="char"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Put(Java.Lang.String arg0, char arg1)
             {
                 IExecuteWithSignature("put", "(Ljava/lang/String;C)V", arg0, arg1);
@@ -359,8 +359,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,double)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="double"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Put(Java.Lang.String arg0, double arg1)
             {
                 IExecuteWithSignature("put", "(Ljava/lang/String;D)V", arg0, arg1);
@@ -368,8 +368,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,float)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Put(Java.Lang.String arg0, float arg1)
             {
                 IExecuteWithSignature("put", "(Ljava/lang/String;F)V", arg0, arg1);
@@ -377,8 +377,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Put(Java.Lang.String arg0, int arg1)
             {
                 IExecuteWithSignature("put", "(Ljava/lang/String;I)V", arg0, arg1);
@@ -386,8 +386,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Put(Java.Lang.String arg0, object arg1)
             {
                 IExecuteWithSignature("put", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
@@ -395,8 +395,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,long)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="long"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Put(Java.Lang.String arg0, long arg1)
             {
                 IExecuteWithSignature("put", "(Ljava/lang/String;J)V", arg0, arg1);
@@ -404,8 +404,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,short)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="short"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void Put(Java.Lang.String arg0, short arg1)
             {
                 IExecuteWithSignature("put", "(Ljava/lang/String;S)V", arg0, arg1);

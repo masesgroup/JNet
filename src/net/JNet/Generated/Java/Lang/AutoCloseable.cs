@@ -78,7 +78,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <exception cref=""/>
         void Close();
 
         #endregion
@@ -114,7 +114,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");

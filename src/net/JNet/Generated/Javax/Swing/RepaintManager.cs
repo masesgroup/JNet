@@ -85,8 +85,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#currentManager(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="Javax.Swing.RepaintManager"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.RepaintManager CurrentManager(Java.Awt.Component arg0)
         {
             return SExecuteWithSignature<Javax.Swing.RepaintManager>(LocalBridgeClazz, "currentManager", "(Ljava/awt/Component;)Ljavax/swing/RepaintManager;", arg0);
@@ -94,8 +94,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#currentManager(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Javax.Swing.RepaintManager"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.RepaintManager CurrentManager(Javax.Swing.JComponent arg0)
         {
             return SExecuteWithSignature<Javax.Swing.RepaintManager>(LocalBridgeClazz, "currentManager", "(Ljavax/swing/JComponent;)Ljavax/swing/RepaintManager;", arg0);
@@ -103,7 +103,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#setCurrentManager(javax.swing.RepaintManager)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RepaintManager"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void SetCurrentManager(Javax.Swing.RepaintManager arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setCurrentManager", "(Ljavax/swing/RepaintManager;)V", arg0);
@@ -122,8 +122,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#isCompletelyDirty(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsCompletelyDirty(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<bool>("isCompletelyDirty", "(Ljavax/swing/JComponent;)Z", arg0);
@@ -131,7 +131,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#isDoubleBufferingEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDoubleBufferingEnabled()
         {
             return IExecuteWithSignature<bool>("isDoubleBufferingEnabled", "()Z");
@@ -139,10 +139,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#getOffscreenBuffer(java.awt.Component,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Image"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Image GetOffscreenBuffer(Java.Awt.Component arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Awt.Image>("getOffscreenBuffer", "(Ljava/awt/Component;II)Ljava/awt/Image;", arg0, arg1, arg2);
@@ -150,10 +150,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#getVolatileOffscreenBuffer(java.awt.Component,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Image"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Image GetVolatileOffscreenBuffer(Java.Awt.Component arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Awt.Image>("getVolatileOffscreenBuffer", "(Ljava/awt/Component;II)Ljava/awt/Image;", arg0, arg1, arg2);
@@ -161,8 +161,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#getDirtyRegion(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Rectangle GetDirtyRegion(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getDirtyRegion", "(Ljavax/swing/JComponent;)Ljava/awt/Rectangle;", arg0);
@@ -170,7 +170,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#addInvalidComponent(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddInvalidComponent(Javax.Swing.JComponent arg0)
         {
             IExecuteWithSignature("addInvalidComponent", "(Ljavax/swing/JComponent;)V", arg0);
@@ -178,7 +178,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#removeInvalidComponent(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveInvalidComponent(Javax.Swing.JComponent arg0)
         {
             IExecuteWithSignature("removeInvalidComponent", "(Ljavax/swing/JComponent;)V", arg0);
@@ -186,11 +186,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(java.awt.Window,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void AddDirtyRegion(Java.Awt.Window arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("addDirtyRegion", "(Ljava/awt/Window;IIII)V", arg0, arg1, arg2, arg3, arg4);
@@ -198,11 +198,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(javax.swing.JComponent,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void AddDirtyRegion(Javax.Swing.JComponent arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("addDirtyRegion", "(Ljavax/swing/JComponent;IIII)V", arg0, arg1, arg2, arg3, arg4);
@@ -210,7 +210,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#markCompletelyClean(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MarkCompletelyClean(Javax.Swing.JComponent arg0)
         {
             IExecuteWithSignature("markCompletelyClean", "(Ljavax/swing/JComponent;)V", arg0);
@@ -218,7 +218,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#markCompletelyDirty(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MarkCompletelyDirty(Javax.Swing.JComponent arg0)
         {
             IExecuteWithSignature("markCompletelyDirty", "(Ljavax/swing/JComponent;)V", arg0);
@@ -233,7 +233,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#setDoubleBufferingEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDoubleBufferingEnabled(bool arg0)
         {
             IExecuteWithSignature("setDoubleBufferingEnabled", "(Z)V", arg0);

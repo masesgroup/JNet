@@ -29,7 +29,7 @@ namespace Java.Awt.EventNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html"/>
     /// </summary>
-    public partial class AWTEventListenerProxy : Java.Util.EventListenerProxy<Java.Awt.EventNs.AWTEventListener>
+    public partial class AWTEventListenerProxy : Java.Util.EventListenerProxy
     {
         const string _bridgeClassName = "java.awt.event.AWTEventListenerProxy";
         /// <summary>
@@ -73,8 +73,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html#%3Cinit%3E(long,java.awt.event.AWTEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.AWTEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public AWTEventListenerProxy(long arg0, Java.Awt.EventNs.AWTEventListener arg1)
             : base(arg0, arg1)
         {
@@ -84,7 +84,7 @@ namespace Java.Awt.EventNs
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.EventNs.AWTEventListenerProxy"/> to <see cref="Java.Awt.EventNs.AWTEventListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.AWTEventListener(Java.Awt.EventNs.AWTEventListenerProxy t) => t.Cast<Java.Awt.EventNs.AWTEventListener>();
 
@@ -109,7 +109,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html#eventDispatched(java.awt.AWTEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EventDispatched(Java.Awt.AWTEvent arg0)
         {
             IExecuteWithSignature("eventDispatched", "(Ljava/awt/AWTEvent;)V", arg0);

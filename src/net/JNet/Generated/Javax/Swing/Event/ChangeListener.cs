@@ -108,7 +108,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void StateChanged(Javax.Swing.Event.ChangeEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
         {
             hasOverrideStateChanged = false;
@@ -207,7 +207,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
         {
             IExecuteWithSignature("stateChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);

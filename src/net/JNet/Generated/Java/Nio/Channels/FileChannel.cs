@@ -118,15 +118,15 @@ namespace Java.Nio.Channels
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.FileChannel"/> to <see cref="Java.Nio.Channels.SeekableByteChannel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.SeekableByteChannel(Java.Nio.Channels.FileChannel t) => t.Cast<Java.Nio.Channels.SeekableByteChannel>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.FileChannel"/> to <see cref="Java.Nio.Channels.GatheringByteChannel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.GatheringByteChannel(Java.Nio.Channels.FileChannel t) => t.Cast<Java.Nio.Channels.GatheringByteChannel>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.FileChannel"/> to <see cref="Java.Nio.Channels.ScatteringByteChannel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.FileChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
 
@@ -140,10 +140,10 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#open(java.nio.file.Path,java.nio.file.OpenOption...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
-        /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Nio.Channels.FileChannel Open(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
             return SExecuteWithSignature<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/nio/channels/FileChannel;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -151,13 +151,13 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#open(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
-        /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
-        /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.Channels.FileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Java.Nio.Channels.FileChannel Open(Java.Nio.File.Path arg0, Java.Util.Set arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
             return SExecuteWithSignature<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", "(Ljava/nio/file/Path;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/FileChannel;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
@@ -168,10 +168,10 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read(Java.Nio.ByteBuffer arg0, long arg1)
         {
             return IExecuteWithSignature<int>("read", "(Ljava/nio/ByteBuffer;J)I", arg0, arg1);
@@ -179,9 +179,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read(Java.Nio.ByteBuffer arg0)
         {
             return IExecuteWithSignature<int>("read", "(Ljava/nio/ByteBuffer;)I", arg0);
@@ -189,10 +189,10 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Write(Java.Nio.ByteBuffer arg0, long arg1)
         {
             return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;J)I", arg0, arg1);
@@ -200,9 +200,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Write(Java.Nio.ByteBuffer arg0)
         {
             return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;)I", arg0);
@@ -210,11 +210,11 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#lock(long,long,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.FileLock Lock(long arg0, long arg1, bool arg2)
         {
             return IExecuteWithSignature<Java.Nio.Channels.FileLock>("lock", "(JJZ)Ljava/nio/channels/FileLock;", arg0, arg1, arg2);
@@ -222,11 +222,11 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#tryLock(long,long,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.FileLock TryLock(long arg0, long arg1, bool arg2)
         {
             return IExecuteWithSignature<Java.Nio.Channels.FileLock>("tryLock", "(JJZ)Ljava/nio/channels/FileLock;", arg0, arg1, arg2);
@@ -234,11 +234,11 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Channels.FileChannel.MapMode"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <returns><see cref="Java.Nio.MappedByteBuffer"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.MappedByteBuffer Map(Java.Nio.Channels.FileChannel.MapMode arg0, long arg1, long arg2)
         {
             return IExecuteWithSignature<Java.Nio.MappedByteBuffer>("map", "(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;", arg0, arg1, arg2);
@@ -246,8 +246,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#position()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Position()
         {
             return IExecuteWithSignature<long>("position", "()J");
@@ -255,11 +255,11 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Read(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<long>("read", "([Ljava/nio/ByteBuffer;II)J", arg0, arg1, arg2);
@@ -267,8 +267,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#size()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Size()
         {
             return IExecuteWithSignature<long>("size", "()J");
@@ -276,11 +276,11 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#transferFrom(java.nio.channels.ReadableByteChannel,long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long TransferFrom(Java.Nio.Channels.ReadableByteChannel arg0, long arg1, long arg2)
         {
             return IExecuteWithSignature<long>("transferFrom", "(Ljava/nio/channels/ReadableByteChannel;JJ)J", arg0, arg1, arg2);
@@ -288,11 +288,11 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#transferTo(long,long,java.nio.channels.WritableByteChannel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long TransferTo(long arg0, long arg1, Java.Nio.Channels.WritableByteChannel arg2)
         {
             return IExecuteWithSignature<long>("transferTo", "(JJLjava/nio/channels/WritableByteChannel;)J", arg0, arg1, arg2);
@@ -300,11 +300,11 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Write(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;II)J", arg0, arg1, arg2);
@@ -312,8 +312,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#force(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Force(bool arg0)
         {
             IExecuteWithSignature("force", "(Z)V", arg0);
@@ -321,8 +321,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#lock()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.FileLock Lock()
         {
             return IExecuteWithSignature<Java.Nio.Channels.FileLock>("lock", "()Ljava/nio/channels/FileLock;");
@@ -330,8 +330,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#tryLock()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.FileLock TryLock()
         {
             return IExecuteWithSignature<Java.Nio.Channels.FileLock>("tryLock", "()Ljava/nio/channels/FileLock;");
@@ -339,9 +339,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Read(Java.Nio.ByteBuffer[] arg0)
         {
             return IExecuteWithSignature<long>("read", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
@@ -349,9 +349,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Write(Java.Nio.ByteBuffer[] arg0)
         {
             return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
@@ -359,9 +359,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#position(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.SeekableByteChannel Position(long arg0)
         {
             return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("position", "(J)Ljava/nio/channels/SeekableByteChannel;", arg0);
@@ -369,9 +369,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#truncate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.SeekableByteChannel Truncate(long arg0)
         {
             return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("truncate", "(J)Ljava/nio/channels/SeekableByteChannel;", arg0);

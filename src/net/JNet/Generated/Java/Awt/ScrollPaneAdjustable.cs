@@ -75,11 +75,11 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ScrollPaneAdjustable"/> to <see cref="Java.Awt.Adjustable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.Adjustable(Java.Awt.ScrollPaneAdjustable t) => t.Cast<Java.Awt.Adjustable>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ScrollPaneAdjustable"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ScrollPaneAdjustable t) => t.Cast<Java.Io.Serializable>();
 
@@ -160,7 +160,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPaneAdjustable.html#paramString()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ParamString()
         {
             return IExecuteWithSignature<Java.Lang.String>("paramString", "()Ljava/lang/String;");
@@ -168,7 +168,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPaneAdjustable.html#addAdjustmentListener(java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
             IExecuteWithSignature("addAdjustmentListener", "(Ljava/awt/event/AdjustmentListener;)V", arg0);
@@ -176,7 +176,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPaneAdjustable.html#removeAdjustmentListener(java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
             IExecuteWithSignature("removeAdjustmentListener", "(Ljava/awt/event/AdjustmentListener;)V", arg0);

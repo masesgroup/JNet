@@ -91,10 +91,10 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderSpi.html#engineBuild(java.security.cert.CertPathParameters)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CertPathParameters"/></param>
-        /// <returns><see cref="Java.Security.Cert.CertPathBuilderResult"/></returns>
-        /// <exception cref="Java.Security.Cert.CertPathBuilderException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Security.Cert.CertPathBuilderResult EngineBuild(Java.Security.Cert.CertPathParameters arg0)
         {
             return IExecuteWithSignature<Java.Security.Cert.CertPathBuilderResult>("engineBuild", "(Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathBuilderResult;", arg0);
@@ -102,7 +102,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderSpi.html#engineGetRevocationChecker()"/>
         /// </summary>
-        /// <returns><see cref="Java.Security.Cert.CertPathChecker"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Security.Cert.CertPathChecker EngineGetRevocationChecker()
         {
             return IExecuteWithSignature<Java.Security.Cert.CertPathChecker>("engineGetRevocationChecker", "()Ljava/security/cert/CertPathChecker;");

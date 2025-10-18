@@ -78,14 +78,14 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activator.html#activate(java.rmi.activation.ActivationID,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <typeparam name="ReturnExtendsJava_Rmi_Remote"><see cref="Java.Rmi.Remote"/></typeparam>
-        /// <returns><see cref="Java.Rmi.MarshalledObject"/></returns>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote> Activate<ReturnExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, bool arg1) where ReturnExtendsJava_Rmi_Remote : Java.Rmi.Remote;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJava_Rmi_Remote"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        Java.Rmi.MarshalledObject Activate(Java.Rmi.Activation.ActivationID arg0, bool arg1) where ReturnExtendsJava_Rmi_Remote : Java.Rmi.Remote;
 
         #endregion
 
@@ -120,16 +120,16 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activator.html#activate(java.rmi.activation.ActivationID,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <typeparam name="ReturnExtendsJava_Rmi_Remote"><see cref="Java.Rmi.Remote"/></typeparam>
-        /// <returns><see cref="Java.Rmi.MarshalledObject"/></returns>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        public Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote> Activate<ReturnExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, bool arg1) where ReturnExtendsJava_Rmi_Remote : Java.Rmi.Remote
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJava_Rmi_Remote"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        public Java.Rmi.MarshalledObject Activate(Java.Rmi.Activation.ActivationID arg0, bool arg1) where ReturnExtendsJava_Rmi_Remote : Java.Rmi.Remote
         {
-            return IExecute<Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote>>("activate", arg0, arg1);
+            return IExecute<Java.Rmi.MarshalledObject>("activate", arg0, arg1);
         }
 
         #endregion

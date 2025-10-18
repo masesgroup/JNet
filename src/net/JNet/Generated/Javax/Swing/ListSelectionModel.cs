@@ -110,24 +110,24 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectedIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsSelectedIndex(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectionEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsSelectionEmpty();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#addSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void AddSelectionInterval(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#clearSelection()"/>
@@ -136,32 +136,32 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#insertIndexInterval(int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         void InsertIndexInterval(int arg0, int arg1, bool arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeIndexInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void RemoveIndexInterval(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void RemoveSelectionInterval(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void SetSelectionInterval(int arg0, int arg1);
 
         #endregion
@@ -271,8 +271,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectedIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSelectedIndex(int arg0)
         {
             return IExecuteWithSignature<bool>("isSelectedIndex", "(I)Z", arg0);
@@ -280,7 +280,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectionEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSelectionEmpty()
         {
             return IExecuteWithSignature<bool>("isSelectionEmpty", "()Z");
@@ -288,7 +288,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
             IExecuteWithSignature("addListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
@@ -296,8 +296,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#addSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("addSelectionInterval", "(II)V", arg0, arg1);
@@ -312,9 +312,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#insertIndexInterval(int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void InsertIndexInterval(int arg0, int arg1, bool arg2)
         {
             IExecuteWithSignature("insertIndexInterval", "(IIZ)V", arg0, arg1, arg2);
@@ -322,8 +322,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeIndexInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemoveIndexInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("removeIndexInterval", "(II)V", arg0, arg1);
@@ -331,7 +331,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
             IExecuteWithSignature("removeListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
@@ -339,8 +339,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("removeSelectionInterval", "(II)V", arg0, arg1);
@@ -348,8 +348,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("setSelectionInterval", "(II)V", arg0, arg1);

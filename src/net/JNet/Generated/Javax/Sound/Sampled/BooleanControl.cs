@@ -139,8 +139,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html#getStateLabel(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetStateLabel(bool arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getStateLabel", "(Z)Ljava/lang/String;", arg0);

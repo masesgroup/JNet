@@ -78,12 +78,12 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableCellEditor.html#getTableCellEditorComponent(javax.swing.JTable,java.lang.Object,boolean,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JTable"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.Component GetTableCellEditorComponent(Javax.Swing.JTable arg0, object arg1, bool arg2, int arg3, int arg4);
 
         #endregion
@@ -119,12 +119,12 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableCellEditor.html#getTableCellEditorComponent(javax.swing.JTable,java.lang.Object,boolean,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JTable"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetTableCellEditorComponent(Javax.Swing.JTable arg0, object arg1, bool arg2, int arg3, int arg4)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getTableCellEditorComponent", "(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;", arg0, arg1, arg2, arg3, arg4);

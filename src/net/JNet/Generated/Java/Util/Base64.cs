@@ -209,9 +209,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeEncoder(int,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Util.Base64.Encoder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Base64.Encoder GetMimeEncoder(int arg0, byte[] arg1)
         {
             return SExecuteWithSignature<Java.Util.Base64.Encoder>(LocalBridgeClazz, "getMimeEncoder", "(I[B)Ljava/util/Base64$Encoder;", arg0, arg1);
@@ -247,8 +247,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(byte[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="byte"/></param>
-            /// <returns><see cref="byte"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public byte[] Decode(byte[] arg0)
             {
                 return IExecuteWithSignatureArray<byte>("decode", "([B)[B", new object[] { arg0 });
@@ -256,8 +256,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="byte"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public byte[] Decode(Java.Lang.String arg0)
             {
                 return IExecuteWithSignatureArray<byte>("decode", "(Ljava/lang/String;)[B", arg0);
@@ -265,9 +265,9 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(byte[],byte[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="byte"/></param>
-            /// <param name="arg1"><see cref="byte"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int Decode(byte[] arg0, byte[] arg1)
             {
                 return IExecuteWithSignature<int>("decode", "([B[B)I", arg0, arg1);
@@ -275,8 +275,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#wrap(java.io.InputStream)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-            /// <returns><see cref="Java.Io.InputStream"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Io.InputStream Wrap(Java.Io.InputStream arg0)
             {
                 return IExecuteWithSignature<Java.Io.InputStream>("wrap", "(Ljava/io/InputStream;)Ljava/io/InputStream;", arg0);
@@ -284,8 +284,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(java.nio.ByteBuffer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Nio.ByteBuffer Decode(Java.Nio.ByteBuffer arg0)
             {
                 return IExecuteWithSignature<Java.Nio.ByteBuffer>("decode", "(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;", arg0);
@@ -324,8 +324,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encode(byte[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="byte"/></param>
-            /// <returns><see cref="byte"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public byte[] Encode(byte[] arg0)
             {
                 return IExecuteWithSignatureArray<byte>("encode", "([B)[B", new object[] { arg0 });
@@ -333,9 +333,9 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encode(byte[],byte[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="byte"/></param>
-            /// <param name="arg1"><see cref="byte"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int Encode(byte[] arg0, byte[] arg1)
             {
                 return IExecuteWithSignature<int>("encode", "([B[B)I", arg0, arg1);
@@ -343,8 +343,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#wrap(java.io.OutputStream)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-            /// <returns><see cref="Java.Io.OutputStream"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Io.OutputStream Wrap(Java.Io.OutputStream arg0)
             {
                 return IExecuteWithSignature<Java.Io.OutputStream>("wrap", "(Ljava/io/OutputStream;)Ljava/io/OutputStream;", arg0);
@@ -352,8 +352,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encodeToString(byte[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="byte"/></param>
-            /// <returns><see cref="Java.Lang.String"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.String EncodeToString(byte[] arg0)
             {
                 return IExecuteWithSignature<Java.Lang.String>("encodeToString", "([B)Ljava/lang/String;", new object[] { arg0 });
@@ -361,8 +361,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#encode(java.nio.ByteBuffer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Nio.ByteBuffer Encode(Java.Nio.ByteBuffer arg0)
             {
                 return IExecuteWithSignature<Java.Nio.ByteBuffer>("encode", "(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;", arg0);
@@ -370,7 +370,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html#withoutPadding()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Base64.Encoder"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Base64.Encoder WithoutPadding()
             {
                 return IExecuteWithSignature<Java.Util.Base64.Encoder>("withoutPadding", "()Ljava/util/Base64$Encoder;");

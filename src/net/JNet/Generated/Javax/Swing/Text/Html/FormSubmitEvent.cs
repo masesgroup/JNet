@@ -66,7 +66,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html"/>
         /// </summary>
-        public partial class MethodType : Java.Lang.Enum<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>
+        public partial class MethodType : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.swing.text.html.FormSubmitEvent$MethodType";
             /// <summary>
@@ -176,8 +176,8 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Swing.Text.Html.FormSubmitEvent.MethodType"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/text/html/FormSubmitEvent$MethodType;", arg0);
@@ -185,7 +185,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Swing.Text.Html.FormSubmitEvent.MethodType"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalBridgeClazz, "values", "()[Ljavax/swing/text/html/FormSubmitEvent$MethodType;");

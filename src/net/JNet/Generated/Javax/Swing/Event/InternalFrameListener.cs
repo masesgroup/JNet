@@ -108,37 +108,37 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameActivated(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void InternalFrameActivated(Javax.Swing.Event.InternalFrameEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameClosed(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void InternalFrameClosed(Javax.Swing.Event.InternalFrameEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameClosing(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void InternalFrameClosing(Javax.Swing.Event.InternalFrameEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameDeactivated(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void InternalFrameDeactivated(Javax.Swing.Event.InternalFrameEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameDeiconified(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void InternalFrameDeiconified(Javax.Swing.Event.InternalFrameEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameIconified(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void InternalFrameIconified(Javax.Swing.Event.InternalFrameEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameOpened(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void InternalFrameOpened(Javax.Swing.Event.InternalFrameEvent arg0);
 
         #endregion
@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameActivated(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void InternalFrameActivated(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             hasOverrideInternalFrameActivated = false;
@@ -228,7 +228,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameClosed(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void InternalFrameClosed(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             hasOverrideInternalFrameClosed = false;
@@ -252,7 +252,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameClosing(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void InternalFrameClosing(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             hasOverrideInternalFrameClosing = false;
@@ -276,7 +276,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameDeactivated(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void InternalFrameDeactivated(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             hasOverrideInternalFrameDeactivated = false;
@@ -300,7 +300,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameDeiconified(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void InternalFrameDeiconified(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             hasOverrideInternalFrameDeiconified = false;
@@ -324,7 +324,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameIconified(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void InternalFrameIconified(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             hasOverrideInternalFrameIconified = false;
@@ -348,7 +348,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameOpened(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void InternalFrameOpened(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             hasOverrideInternalFrameOpened = false;
@@ -387,7 +387,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameActivated(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void InternalFrameActivated(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             IExecuteWithSignature("internalFrameActivated", "(Ljavax/swing/event/InternalFrameEvent;)V", arg0);
@@ -395,7 +395,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameClosed(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void InternalFrameClosed(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             IExecuteWithSignature("internalFrameClosed", "(Ljavax/swing/event/InternalFrameEvent;)V", arg0);
@@ -403,7 +403,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameClosing(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void InternalFrameClosing(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             IExecuteWithSignature("internalFrameClosing", "(Ljavax/swing/event/InternalFrameEvent;)V", arg0);
@@ -411,7 +411,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameDeactivated(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void InternalFrameDeactivated(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             IExecuteWithSignature("internalFrameDeactivated", "(Ljavax/swing/event/InternalFrameEvent;)V", arg0);
@@ -419,7 +419,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameDeiconified(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void InternalFrameDeiconified(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             IExecuteWithSignature("internalFrameDeiconified", "(Ljavax/swing/event/InternalFrameEvent;)V", arg0);
@@ -427,7 +427,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameIconified(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void InternalFrameIconified(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             IExecuteWithSignature("internalFrameIconified", "(Ljavax/swing/event/InternalFrameEvent;)V", arg0);
@@ -435,7 +435,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html#internalFrameOpened(javax.swing.event.InternalFrameEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void InternalFrameOpened(Javax.Swing.Event.InternalFrameEvent arg0)
         {
             IExecuteWithSignature("internalFrameOpened", "(Ljavax/swing/event/InternalFrameEvent;)V", arg0);

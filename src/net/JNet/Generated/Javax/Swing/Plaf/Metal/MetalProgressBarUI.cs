@@ -89,8 +89,8 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalProgressBarUI.html#paintDeterminate(java.awt.Graphics,javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void PaintDeterminate(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
             IExecuteWithSignature("paintDeterminate", "(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V", arg0, arg1);
@@ -98,8 +98,8 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalProgressBarUI.html#paintIndeterminate(java.awt.Graphics,javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void PaintIndeterminate(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
             IExecuteWithSignature("paintIndeterminate", "(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V", arg0, arg1);

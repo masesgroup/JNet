@@ -73,9 +73,9 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method,javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Descriptor"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public ModelMBeanOperationInfo(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Javax.Management.Descriptor arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ModelMBeanOperationInfo(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1)
             : base(arg0, arg1)
         {
@@ -92,12 +92,12 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],java.lang.String,int,javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.MBeanParameterInfo"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Javax.Management.Descriptor"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public ModelMBeanOperationInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4, Javax.Management.Descriptor arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -105,11 +105,11 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.MBeanParameterInfo"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public ModelMBeanOperationInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -117,7 +117,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(javax.management.modelmbean.ModelMBeanOperationInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Modelmbean.ModelMBeanOperationInfo"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ModelMBeanOperationInfo(Javax.Management.Modelmbean.ModelMBeanOperationInfo arg0)
             : base(arg0)
         {
@@ -127,7 +127,7 @@ namespace Javax.Management.Modelmbean
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Modelmbean.ModelMBeanOperationInfo"/> to <see cref="Javax.Management.DescriptorAccess"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.DescriptorAccess(Javax.Management.Modelmbean.ModelMBeanOperationInfo t) => t.Cast<Javax.Management.DescriptorAccess>();
 
@@ -145,7 +145,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#setDescriptor(javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDescriptor(Javax.Management.Descriptor arg0)
         {
             IExecuteWithSignature("setDescriptor", "(Ljavax/management/Descriptor;)V", arg0);

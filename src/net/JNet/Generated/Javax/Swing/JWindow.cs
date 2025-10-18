@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#%3Cinit%3E(java.awt.Frame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JWindow(Java.Awt.Frame arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#%3Cinit%3E(java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JWindow(Java.Awt.GraphicsConfiguration arg0)
             : base(arg0)
         {
@@ -89,8 +89,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#%3Cinit%3E(java.awt.Window,java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JWindow(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
             : base(arg0, arg1)
         {
@@ -98,7 +98,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#%3Cinit%3E(java.awt.Window)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JWindow(Java.Awt.Window arg0)
             : base(arg0)
         {
@@ -108,7 +108,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JWindow"/> to <see cref="Javax.Swing.RootPaneContainer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.RootPaneContainer(Javax.Swing.JWindow t) => t.Cast<Javax.Swing.RootPaneContainer>();
 

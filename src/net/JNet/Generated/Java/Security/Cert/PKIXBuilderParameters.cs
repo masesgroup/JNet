@@ -73,10 +73,10 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html#%3Cinit%3E(java.security.KeyStore,java.security.cert.CertSelector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.KeyStore"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Cert.CertSelector"/></param>
-        /// <exception cref="Java.Security.KeyStoreException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public PKIXBuilderParameters(Java.Security.KeyStore arg0, Java.Security.Cert.CertSelector arg1)
             : base(arg0, arg1)
         {
@@ -84,10 +84,10 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html#%3Cinit%3E(java.util.Set,java.security.cert.CertSelector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Cert.CertSelector"/></param>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
-        public PKIXBuilderParameters(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0, Java.Security.Cert.CertSelector arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        public PKIXBuilderParameters(Java.Util.Set arg0, Java.Security.Cert.CertSelector arg1)
             : base(arg0, arg1)
         {
         }

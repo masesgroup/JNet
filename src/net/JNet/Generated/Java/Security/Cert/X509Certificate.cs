@@ -77,7 +77,7 @@ namespace Java.Security.Cert
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.X509Certificate"/> to <see cref="Java.Security.Cert.X509Extension"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Cert.X509Extension(Java.Security.Cert.X509Certificate t) => t.Cast<Java.Security.Cert.X509Extension>();
 
@@ -102,16 +102,16 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getExtendedKeyUsage()"/> 
         /// </summary>
-        public Java.Util.List<Java.Lang.String> ExtendedKeyUsage
+        public Java.Util.List ExtendedKeyUsage
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getExtendedKeyUsage", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getExtendedKeyUsage", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerAlternativeNames()"/> 
         /// </summary>
-        public Java.Util.Collection<Java.Util.List<object>> IssuerAlternativeNames
+        public Java.Util.Collection IssuerAlternativeNames
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getIssuerAlternativeNames", "()Ljava/util/Collection;"); }
+            get { return IExecuteWithSignature<Java.Util.Collection>("getIssuerAlternativeNames", "()Ljava/util/Collection;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerDN()"/> 
@@ -193,9 +193,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectAlternativeNames()"/> 
         /// </summary>
-        public Java.Util.Collection<Java.Util.List<object>> SubjectAlternativeNames
+        public Java.Util.Collection SubjectAlternativeNames
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames", "()Ljava/util/Collection;"); }
+            get { return IExecuteWithSignature<Java.Util.Collection>("getSubjectAlternativeNames", "()Ljava/util/Collection;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectDN()"/> 
@@ -235,8 +235,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#checkValidity()"/>
         /// </summary>
-        /// <exception cref="Java.Security.Cert.CertificateExpiredException"/>
-        /// <exception cref="Java.Security.Cert.CertificateNotYetValidException"/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void CheckValidity()
         {
             IExecuteWithSignature("checkValidity", "()V");
@@ -244,9 +244,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#checkValidity(java.util.Date)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
-        /// <exception cref="Java.Security.Cert.CertificateExpiredException"/>
-        /// <exception cref="Java.Security.Cert.CertificateNotYetValidException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void CheckValidity(Java.Util.Date arg0)
         {
             IExecuteWithSignature("checkValidity", "(Ljava/util/Date;)V", arg0);

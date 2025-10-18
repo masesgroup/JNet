@@ -82,38 +82,38 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#addTo(java.time.temporal.Temporal,long)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="R"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        R AddTo<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new();
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="R"></typeparam>
+        /// <returns><see cref=""/></returns>
+        R AddTo(R arg0, long arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsDateBased();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsDurationEstimated();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsTimeBased();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         long Between(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.Temporal arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isSupportedBy(java.time.temporal.Temporal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsSupportedBy(Java.Time.Temporal.Temporal arg0);
 
         #endregion
@@ -156,18 +156,18 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#addTo(java.time.temporal.Temporal,long)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="R"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        public R AddTo<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="R"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public R AddTo(R arg0, long arg1)
         {
             return IExecute<R>("addTo", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDateBased()
         {
             return IExecuteWithSignature<bool>("isDateBased", "()Z");
@@ -175,7 +175,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDurationEstimated()
         {
             return IExecuteWithSignature<bool>("isDurationEstimated", "()Z");
@@ -183,7 +183,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsTimeBased()
         {
             return IExecuteWithSignature<bool>("isTimeBased", "()Z");
@@ -191,9 +191,9 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long Between(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.Temporal arg1)
         {
             return IExecuteWithSignature<long>("between", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/Temporal;)J", arg0, arg1);
@@ -201,8 +201,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isSupportedBy(java.time.temporal.Temporal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSupportedBy(Java.Time.Temporal.Temporal arg0)
         {
             return IExecuteWithSignature<bool>("isSupportedBy", "(Ljava/time/temporal/Temporal;)Z", arg0);

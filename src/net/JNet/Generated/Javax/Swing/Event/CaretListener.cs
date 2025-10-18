@@ -108,7 +108,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.CaretEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void CaretUpdate(Javax.Swing.Event.CaretEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.CaretEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void CaretUpdate(Javax.Swing.Event.CaretEvent arg0)
         {
             hasOverrideCaretUpdate = false;
@@ -207,7 +207,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.CaretEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void CaretUpdate(Javax.Swing.Event.CaretEvent arg0)
         {
             IExecuteWithSignature("caretUpdate", "(Ljavax/swing/event/CaretEvent;)V", arg0);

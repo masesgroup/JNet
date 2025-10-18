@@ -90,16 +90,16 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#getConnection(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Connection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#createConnectionBuilder()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.ConnectionBuilder CreateConnectionBuilder();
 
         #endregion
@@ -121,11 +121,11 @@ namespace Javax.Sql
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.DataSource"/> to <see cref="Javax.Sql.CommonDataSource"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Sql.CommonDataSource(Javax.Sql.DataSource t) => t.Cast<Javax.Sql.CommonDataSource>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.DataSource"/> to <see cref="Java.Sql.Wrapper"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Sql.Wrapper(Javax.Sql.DataSource t) => t.Cast<Java.Sql.Wrapper>();
 
@@ -164,10 +164,10 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#getConnection(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Connection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;", arg0, arg1);
@@ -175,8 +175,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#createConnectionBuilder()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.ConnectionBuilder CreateConnectionBuilder()
         {
             return IExecuteWithSignature<Java.Sql.ConnectionBuilder>("createConnectionBuilder", "()Ljava/sql/ConnectionBuilder;");

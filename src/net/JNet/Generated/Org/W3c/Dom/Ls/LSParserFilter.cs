@@ -82,14 +82,14 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see cref="short"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         short AcceptNode(Org.W3c.Dom.Node arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
-        /// <returns><see cref="short"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         short StartElement(Org.W3c.Dom.Element arg0);
 
         #endregion
@@ -156,8 +156,8 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see cref="short"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public short AcceptNode(Org.W3c.Dom.Node arg0)
         {
             return IExecuteWithSignature<short>("acceptNode", "(Lorg/w3c/dom/Node;)S", arg0);
@@ -165,8 +165,8 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
-        /// <returns><see cref="short"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public short StartElement(Org.W3c.Dom.Element arg0)
         {
             return IExecuteWithSignature<short>("startElement", "(Lorg/w3c/dom/Element;)S", arg0);

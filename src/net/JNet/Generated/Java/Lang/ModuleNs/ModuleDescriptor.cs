@@ -29,7 +29,7 @@ namespace Java.Lang.ModuleNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html"/>
     /// </summary>
-    public partial class ModuleDescriptor : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor>
+    public partial class ModuleDescriptor : Java.Lang.Comparable
     {
         const string _bridgeClassName = "java.lang.module.ModuleDescriptor";
         /// <summary>
@@ -107,7 +107,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html"/>
         /// </summary>
-        public partial class Exports : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor.Exports>
+        public partial class Exports : Java.Lang.Comparable
         {
             const string _bridgeClassName = "java.lang.module.ModuleDescriptor$Exports";
             /// <summary>
@@ -144,7 +144,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html"/>
             /// </summary>
-            public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>
+            public partial class Modifier : Java.Lang.Enum
             {
                 const string _bridgeClassName = "java.lang.module.ModuleDescriptor$Exports$Modifier";
                 /// <summary>
@@ -189,7 +189,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html"/>
         /// </summary>
-        public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>
+        public partial class Modifier : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.lang.module.ModuleDescriptor$Modifier";
             /// <summary>
@@ -230,7 +230,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html"/>
         /// </summary>
-        public partial class Opens : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor.Opens>
+        public partial class Opens : Java.Lang.Comparable
         {
             const string _bridgeClassName = "java.lang.module.ModuleDescriptor$Opens";
             /// <summary>
@@ -267,7 +267,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html"/>
             /// </summary>
-            public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>
+            public partial class Modifier : Java.Lang.Enum
             {
                 const string _bridgeClassName = "java.lang.module.ModuleDescriptor$Opens$Modifier";
                 /// <summary>
@@ -312,7 +312,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html"/>
         /// </summary>
-        public partial class Provides : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor.Provides>
+        public partial class Provides : Java.Lang.Comparable
         {
             const string _bridgeClassName = "java.lang.module.ModuleDescriptor$Provides";
             /// <summary>
@@ -353,7 +353,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html"/>
         /// </summary>
-        public partial class Requires : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor.Requires>
+        public partial class Requires : Java.Lang.Comparable
         {
             const string _bridgeClassName = "java.lang.module.ModuleDescriptor$Requires";
             /// <summary>
@@ -390,7 +390,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html"/>
             /// </summary>
-            public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>
+            public partial class Modifier : Java.Lang.Enum
             {
                 const string _bridgeClassName = "java.lang.module.ModuleDescriptor$Requires$Modifier";
                 /// <summary>
@@ -435,7 +435,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Version.html"/>
         /// </summary>
-        public partial class Version : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor.Version>
+        public partial class Version : Java.Lang.Comparable
         {
             const string _bridgeClassName = "java.lang.module.ModuleDescriptor$Version";
             /// <summary>
@@ -495,20 +495,20 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#read(java.io.InputStream,java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public static Java.Lang.ModuleNs.ModuleDescriptor Read(Java.Io.InputStream arg0, Java.Util.Function.Supplier<Java.Util.Set<Java.Lang.String>> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Java.Lang.ModuleNs.ModuleDescriptor Read(Java.Io.InputStream arg0, Java.Util.Function.Supplier arg1)
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor>(LocalBridgeClazz, "read", "(Ljava/io/InputStream;Ljava/util/function/Supplier;)Ljava/lang/module/ModuleDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#read(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.ModuleNs.ModuleDescriptor Read(Java.Io.InputStream arg0)
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor>(LocalBridgeClazz, "read", "(Ljava/io/InputStream;)Ljava/lang/module/ModuleDescriptor;", arg0);
@@ -516,18 +516,18 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#read(java.nio.ByteBuffer,java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
-        public static Java.Lang.ModuleNs.ModuleDescriptor Read(Java.Nio.ByteBuffer arg0, Java.Util.Function.Supplier<Java.Util.Set<Java.Lang.String>> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Lang.ModuleNs.ModuleDescriptor Read(Java.Nio.ByteBuffer arg0, Java.Util.Function.Supplier arg1)
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor>(LocalBridgeClazz, "read", "(Ljava/nio/ByteBuffer;Ljava/util/function/Supplier;)Ljava/lang/module/ModuleDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.ModuleNs.ModuleDescriptor Read(Java.Nio.ByteBuffer arg0)
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor>(LocalBridgeClazz, "read", "(Ljava/nio/ByteBuffer;)Ljava/lang/module/ModuleDescriptor;", arg0);
@@ -535,8 +535,8 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#newAutomaticModule(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.ModuleNs.ModuleDescriptor.Builder NewAutomaticModule(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>(LocalBridgeClazz, "newAutomaticModule", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -544,18 +544,18 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#newModule(java.lang.String,java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-        public static Java.Lang.ModuleNs.ModuleDescriptor.Builder NewModule(Java.Lang.String arg0, Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Modifier> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Lang.ModuleNs.ModuleDescriptor.Builder NewModule(Java.Lang.String arg0, Java.Util.Set arg1)
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>(LocalBridgeClazz, "newModule", "(Ljava/lang/String;Ljava/util/Set;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#newModule(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.ModuleNs.ModuleDescriptor.Builder NewModule(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>(LocalBridgeClazz, "newModule", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -563,8 +563,8 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#newOpenModule(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.ModuleNs.ModuleDescriptor.Builder NewOpenModule(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>(LocalBridgeClazz, "newOpenModule", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -576,7 +576,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#isAutomatic()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsAutomatic()
         {
             return IExecuteWithSignature<bool>("isAutomatic", "()Z");
@@ -584,7 +584,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#isOpen()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOpen()
         {
             return IExecuteWithSignature<bool>("isOpen", "()Z");
@@ -592,8 +592,8 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#compareTo(java.lang.module.ModuleDescriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/module/ModuleDescriptor;)I", arg0);
@@ -601,8 +601,8 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -610,7 +610,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -618,7 +618,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#toNameAndVersion()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToNameAndVersion()
         {
             return IExecuteWithSignature<Java.Lang.String>("toNameAndVersion", "()Ljava/lang/String;");
@@ -626,82 +626,82 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#version()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.ModuleNs.ModuleDescriptor.Version> VersionMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional VersionMethod()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.ModuleNs.ModuleDescriptor.Version>>("version", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("version", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#mainClass()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.String> MainClass()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional MainClass()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.String>>("mainClass", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("mainClass", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#rawVersion()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.String> RawVersion()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional RawVersion()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.String>>("rawVersion", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("rawVersion", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#exports()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Exports> ExportsMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set ExportsMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Exports>>("exports", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("exports", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#modifiers()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Modifier> Modifiers()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set Modifiers()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>>("modifiers", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("modifiers", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#opens()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Opens> OpensMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set OpensMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Opens>>("opens", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("opens", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#provides()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Provides> ProvidesMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set ProvidesMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Provides>>("provides", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("provides", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#requires()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Requires> RequiresMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set RequiresMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Requires>>("requires", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("requires", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#packages()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.String> Packages()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set Packages()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("packages", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("packages", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html#uses()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.String> Uses()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set Uses()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("uses", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("uses", "()Ljava/util/Set;");
         }
 
         #endregion
@@ -730,7 +730,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#build()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor Build()
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor>("build", "()Ljava/lang/module/ModuleDescriptor;");
@@ -738,8 +738,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.lang.module.ModuleDescriptor.Exports)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(Java.Lang.ModuleNs.ModuleDescriptor.Exports arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("exports", "(Ljava/lang/module/ModuleDescriptor$Exports;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -747,18 +747,18 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.lang.String,java.util.Set)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Set"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(Java.Lang.String arg0, Java.Util.Set<Java.Lang.String> arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(Java.Lang.String arg0, Java.Util.Set arg1)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("exports", "(Ljava/lang/String;Ljava/util/Set;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("exports", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -766,29 +766,29 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.util.Set,java.lang.String,java.util.Set)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg2"><see cref="Java.Util.Set"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier> arg0, Java.Lang.String arg1, Java.Util.Set<Java.Lang.String> arg2)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(Java.Util.Set arg0, Java.Lang.String arg1, Java.Util.Set arg2)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("exports", "(Ljava/util/Set;Ljava/lang/String;Ljava/util/Set;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.util.Set,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier> arg0, Java.Lang.String arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(Java.Util.Set arg0, Java.Lang.String arg1)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("exports", "(Ljava/util/Set;Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#mainClass(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder MainClass(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("mainClass", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -796,8 +796,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#opens(java.lang.module.ModuleDescriptor.Opens)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(Java.Lang.ModuleNs.ModuleDescriptor.Opens arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("opens", "(Ljava/lang/module/ModuleDescriptor$Opens;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -805,18 +805,18 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#opens(java.lang.String,java.util.Set)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Set"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(Java.Lang.String arg0, Java.Util.Set<Java.Lang.String> arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(Java.Lang.String arg0, Java.Util.Set arg1)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("opens", "(Ljava/lang/String;Ljava/util/Set;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#opens(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("opens", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -824,38 +824,38 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#opens(java.util.Set,java.lang.String,java.util.Set)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg2"><see cref="Java.Util.Set"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier> arg0, Java.Lang.String arg1, Java.Util.Set<Java.Lang.String> arg2)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(Java.Util.Set arg0, Java.Lang.String arg1, Java.Util.Set arg2)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("opens", "(Ljava/util/Set;Ljava/lang/String;Ljava/util/Set;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#opens(java.util.Set,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier> arg0, Java.Lang.String arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(Java.Util.Set arg0, Java.Lang.String arg1)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("opens", "(Ljava/util/Set;Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#packages(java.util.Set)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder Packages(Java.Util.Set<Java.Lang.String> arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder Packages(Java.Util.Set arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("packages", "(Ljava/util/Set;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#provides(java.lang.module.ModuleDescriptor.Provides)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Provides"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder ProvidesMethod(Java.Lang.ModuleNs.ModuleDescriptor.Provides arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("provides", "(Ljava/lang/module/ModuleDescriptor$Provides;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -863,18 +863,18 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#provides(java.lang.String,java.util.List)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Util.List"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ProvidesMethod(Java.Lang.String arg0, Java.Util.List<Java.Lang.String> arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ProvidesMethod(Java.Lang.String arg0, Java.Util.List arg1)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("provides", "(Ljava/lang/String;Ljava/util/List;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#requires(java.lang.module.ModuleDescriptor.Requires)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder RequiresMethod(Java.Lang.ModuleNs.ModuleDescriptor.Requires arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("requires", "(Ljava/lang/module/ModuleDescriptor$Requires;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -882,8 +882,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#requires(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder RequiresMethod(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("requires", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -891,29 +891,29 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#requires(java.util.Set,java.lang.String,java.lang.module.ModuleDescriptor.Version)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Version"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder RequiresMethod(Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier> arg0, Java.Lang.String arg1, Java.Lang.ModuleNs.ModuleDescriptor.Version arg2)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder RequiresMethod(Java.Util.Set arg0, Java.Lang.String arg1, Java.Lang.ModuleNs.ModuleDescriptor.Version arg2)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("requires", "(Ljava/util/Set;Ljava/lang/String;Ljava/lang/module/ModuleDescriptor$Version;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#requires(java.util.Set,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder RequiresMethod(Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier> arg0, Java.Lang.String arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder RequiresMethod(Java.Util.Set arg0, Java.Lang.String arg1)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("requires", "(Ljava/util/Set;Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#uses(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder Uses(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("uses", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -921,8 +921,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#version(java.lang.module.ModuleDescriptor.Version)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Version"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder VersionMethod(Java.Lang.ModuleNs.ModuleDescriptor.Version arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("version", "(Ljava/lang/module/ModuleDescriptor$Version;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -930,8 +930,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#version(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.ModuleNs.ModuleDescriptor.Builder VersionMethod(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("version", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Builder;", arg0);
@@ -970,7 +970,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#isQualified()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsQualified()
             {
                 return IExecuteWithSignature<bool>("isQualified", "()Z");
@@ -978,8 +978,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#compareTo(java.lang.module.ModuleDescriptor.Exports)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Exports arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/module/ModuleDescriptor$Exports;)I", arg0);
@@ -987,8 +987,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#compareTo(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -996,7 +996,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#source()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.String"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.String Source()
             {
                 return IExecuteWithSignature<Java.Lang.String>("source", "()Ljava/lang/String;");
@@ -1004,18 +1004,18 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#modifiers()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Set"/></returns>
-            public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier> Modifiers()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Set Modifiers()
             {
-                return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>>("modifiers", "()Ljava/util/Set;");
+                return IExecuteWithSignature<Java.Util.Set>("modifiers", "()Ljava/util/Set;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#targets()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Set"/></returns>
-            public Java.Util.Set<Java.Lang.String> Targets()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Set Targets()
             {
-                return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("targets", "()Ljava/util/Set;");
+                return IExecuteWithSignature<Java.Util.Set>("targets", "()Ljava/util/Set;");
             }
 
             #endregion
@@ -1052,8 +1052,8 @@ namespace Java.Lang.ModuleNs
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html#valueOf(java.lang.String)"/>
                 /// </summary>
-                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-                /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier"/></returns>
+                /// <param name="arg0"><see cref=""/></param>
+                /// <returns><see cref=""/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier ValueOf(Java.Lang.String arg0)
                 {
                     return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>(LocalBridgeClazz, "valueOf", arg0);
@@ -1061,7 +1061,7 @@ namespace Java.Lang.ModuleNs
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html#values()"/>
                 /// </summary>
-                /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier"/></returns>
+                /// <returns><see cref=""/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier[] Values()
                 {
                     return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>(LocalBridgeClazz, "values");
@@ -1131,8 +1131,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Modifier"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Modifier;", arg0);
@@ -1140,7 +1140,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Modifier"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>(LocalBridgeClazz, "values", "()[Ljava/lang/module/ModuleDescriptor$Modifier;");
@@ -1183,7 +1183,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#isQualified()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsQualified()
             {
                 return IExecuteWithSignature<bool>("isQualified", "()Z");
@@ -1191,8 +1191,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#compareTo(java.lang.module.ModuleDescriptor.Opens)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Opens arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/module/ModuleDescriptor$Opens;)I", arg0);
@@ -1200,8 +1200,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#compareTo(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -1209,7 +1209,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#source()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.String"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.String Source()
             {
                 return IExecuteWithSignature<Java.Lang.String>("source", "()Ljava/lang/String;");
@@ -1217,18 +1217,18 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#modifiers()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Set"/></returns>
-            public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier> Modifiers()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Set Modifiers()
             {
-                return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>>("modifiers", "()Ljava/util/Set;");
+                return IExecuteWithSignature<Java.Util.Set>("modifiers", "()Ljava/util/Set;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html#targets()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Set"/></returns>
-            public Java.Util.Set<Java.Lang.String> Targets()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Set Targets()
             {
-                return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("targets", "()Ljava/util/Set;");
+                return IExecuteWithSignature<Java.Util.Set>("targets", "()Ljava/util/Set;");
             }
 
             #endregion
@@ -1265,8 +1265,8 @@ namespace Java.Lang.ModuleNs
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html#valueOf(java.lang.String)"/>
                 /// </summary>
-                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-                /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier"/></returns>
+                /// <param name="arg0"><see cref=""/></param>
+                /// <returns><see cref=""/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier ValueOf(Java.Lang.String arg0)
                 {
                     return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>(LocalBridgeClazz, "valueOf", arg0);
@@ -1274,7 +1274,7 @@ namespace Java.Lang.ModuleNs
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html#values()"/>
                 /// </summary>
-                /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier"/></returns>
+                /// <returns><see cref=""/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier[] Values()
                 {
                     return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>(LocalBridgeClazz, "values");
@@ -1324,8 +1324,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html#compareTo(java.lang.module.ModuleDescriptor.Provides)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Provides"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Provides arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/module/ModuleDescriptor$Provides;)I", arg0);
@@ -1333,8 +1333,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html#compareTo(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -1342,7 +1342,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html#service()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.String"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.String Service()
             {
                 return IExecuteWithSignature<Java.Lang.String>("service", "()Ljava/lang/String;");
@@ -1350,10 +1350,10 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html#providers()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.List"/></returns>
-            public Java.Util.List<Java.Lang.String> Providers()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.List Providers()
             {
-                return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("providers", "()Ljava/util/List;");
+                return IExecuteWithSignature<Java.Util.List>("providers", "()Ljava/util/List;");
             }
 
             #endregion
@@ -1389,8 +1389,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#compareTo(java.lang.module.ModuleDescriptor.Requires)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Requires arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/module/ModuleDescriptor$Requires;)I", arg0);
@@ -1398,8 +1398,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#compareTo(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -1407,7 +1407,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#name()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.String"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.String Name()
             {
                 return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -1415,26 +1415,26 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#compiledVersion()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Optional"/></returns>
-            public Java.Util.Optional<Java.Lang.ModuleNs.ModuleDescriptor.Version> CompiledVersion()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Optional CompiledVersion()
             {
-                return IExecuteWithSignature<Java.Util.Optional<Java.Lang.ModuleNs.ModuleDescriptor.Version>>("compiledVersion", "()Ljava/util/Optional;");
+                return IExecuteWithSignature<Java.Util.Optional>("compiledVersion", "()Ljava/util/Optional;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#rawCompiledVersion()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Optional"/></returns>
-            public Java.Util.Optional<Java.Lang.String> RawCompiledVersion()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Optional RawCompiledVersion()
             {
-                return IExecuteWithSignature<Java.Util.Optional<Java.Lang.String>>("rawCompiledVersion", "()Ljava/util/Optional;");
+                return IExecuteWithSignature<Java.Util.Optional>("rawCompiledVersion", "()Ljava/util/Optional;");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#modifiers()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Set"/></returns>
-            public Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier> Modifiers()
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Set Modifiers()
             {
-                return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>>("modifiers", "()Ljava/util/Set;");
+                return IExecuteWithSignature<Java.Util.Set>("modifiers", "()Ljava/util/Set;");
             }
 
             #endregion
@@ -1483,8 +1483,8 @@ namespace Java.Lang.ModuleNs
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html#valueOf(java.lang.String)"/>
                 /// </summary>
-                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-                /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier"/></returns>
+                /// <param name="arg0"><see cref=""/></param>
+                /// <returns><see cref=""/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier ValueOf(Java.Lang.String arg0)
                 {
                     return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalBridgeClazz, "valueOf", arg0);
@@ -1492,7 +1492,7 @@ namespace Java.Lang.ModuleNs
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html#values()"/>
                 /// </summary>
-                /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier"/></returns>
+                /// <returns><see cref=""/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier[] Values()
                 {
                     return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalBridgeClazz, "values");
@@ -1538,8 +1538,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Version.html#parse(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Version"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.ModuleNs.ModuleDescriptor.Version Parse(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Version>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Version;", arg0);
@@ -1551,8 +1551,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Version.html#compareTo(java.lang.module.ModuleDescriptor.Version)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Version"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Version arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/module/ModuleDescriptor$Version;)I", arg0);
@@ -1560,8 +1560,8 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Version.html#compareTo(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int CompareTo(object arg0)
             {
                 return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);

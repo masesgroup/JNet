@@ -73,10 +73,10 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,int,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public ZipFile(Java.Io.File arg0, int arg1, Java.Nio.Charset.Charset arg2)
             : base(arg0, arg1, arg2)
         {
@@ -84,9 +84,9 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public ZipFile(Java.Io.File arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -94,9 +94,9 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public ZipFile(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
@@ -104,9 +104,9 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <exception cref="Java.Util.Zip.ZipException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public ZipFile(Java.Io.File arg0)
             : base(arg0)
         {
@@ -114,9 +114,9 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public ZipFile(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
@@ -124,8 +124,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public ZipFile(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -135,7 +135,7 @@ namespace Java.Util.Zip
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Zip.ZipFile"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Util.Zip.ZipFile t) => t.Cast<Java.Io.Closeable>();
 
@@ -179,7 +179,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -187,9 +187,9 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getInputStream(java.util.zip.ZipEntry)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.InputStream GetInputStream(Java.Util.Zip.ZipEntry arg0)
         {
             return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "(Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;", arg0);
@@ -197,26 +197,26 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#entries()"/>
         /// </summary>
-        /// <typeparam name="ReturnExtendsJava_Util_Zip_ZipEntry"><see cref="Java.Util.Zip.ZipEntry"/></typeparam>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry> Entries<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry : Java.Util.Zip.ZipEntry
+        /// <typeparam name="ReturnExtendsJava_Util_Zip_ZipEntry"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration Entries() where ReturnExtendsJava_Util_Zip_ZipEntry : Java.Util.Zip.ZipEntry
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry>>("entries", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("entries", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#stream()"/>
         /// </summary>
-        /// <typeparam name="ReturnExtendsJava_Util_Zip_ZipEntry"><see cref="Java.Util.Zip.ZipEntry"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry> Stream<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry : Java.Util.Zip.ZipEntry
+        /// <typeparam name="ReturnExtendsJava_Util_Zip_ZipEntry"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Stream.Stream Stream() where ReturnExtendsJava_Util_Zip_ZipEntry : Java.Util.Zip.ZipEntry
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry>>("stream", "()Ljava/util/stream/Stream;");
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("stream", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Zip.ZipEntry GetEntry(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("getEntry", "(Ljava/lang/String;)Ljava/util/zip/ZipEntry;", arg0);
@@ -224,7 +224,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");

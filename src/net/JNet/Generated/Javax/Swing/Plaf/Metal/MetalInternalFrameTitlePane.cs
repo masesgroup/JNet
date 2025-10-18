@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalInternalFrameTitlePane.html#%3Cinit%3E(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public MetalInternalFrameTitlePane(Javax.Swing.JInternalFrame arg0)
             : base(arg0)
         {
@@ -97,7 +97,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalInternalFrameTitlePane.html#paintPalette(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PaintPalette(Java.Awt.Graphics arg0)
         {
             IExecuteWithSignature("paintPalette", "(Ljava/awt/Graphics;)V", arg0);
@@ -105,7 +105,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalInternalFrameTitlePane.html#setPalette(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetPalette(bool arg0)
         {
             IExecuteWithSignature("setPalette", "(Z)V", arg0);

@@ -92,8 +92,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#getFileSystem(java.net.URI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.FileSystem GetFileSystem(Java.Net.URI arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "getFileSystem", "(Ljava/net/URI;)Ljava/nio/file/FileSystem;", arg0);
@@ -101,33 +101,33 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,java.util.Map,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, object> arg1, Java.Lang.ClassLoader arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map<, > arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/net/URI;Ljava/util/Map;Ljava/lang/ClassLoader;)Ljava/nio/file/FileSystem;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, object> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map<, > arg1)
         {
             return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/net/URI;Ljava/util/Map;)Ljava/nio/file/FileSystem;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Nio.File.FileSystem NewFileSystem(Java.Nio.File.Path arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/nio/file/Path;Ljava/lang/ClassLoader;)Ljava/nio/file/FileSystem;", arg0, arg1);

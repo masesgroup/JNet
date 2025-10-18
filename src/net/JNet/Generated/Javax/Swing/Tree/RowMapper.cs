@@ -78,8 +78,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/RowMapper.html#getRowsForPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int[] GetRowsForPaths(Javax.Swing.Tree.TreePath[] arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/RowMapper.html#getRowsForPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetRowsForPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
             return IExecuteWithSignatureArray<int>("getRowsForPaths", "([Ljavax/swing/tree/TreePath;)[I", new object[] { arg0 });

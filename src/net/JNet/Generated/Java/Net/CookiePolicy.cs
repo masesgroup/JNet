@@ -78,9 +78,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#shouldAccept(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool ShouldAccept(Java.Net.URI arg0, Java.Net.HttpCookie arg1);
 
         #endregion
@@ -134,9 +134,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#shouldAccept(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ShouldAccept(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
             return IExecuteWithSignature<bool>("shouldAccept", "(Ljava/net/URI;Ljava/net/HttpCookie;)Z", arg0, arg1);

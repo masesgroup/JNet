@@ -114,11 +114,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#%3Cinit%3E(java.lang.String,boolean,boolean,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -126,10 +126,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#%3Cinit%3E(java.lang.String,boolean,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -137,9 +137,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#%3Cinit%3E(java.lang.String,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -147,8 +147,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JInternalFrame(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -156,7 +156,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JInternalFrame(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -166,15 +166,15 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JInternalFrame"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JInternalFrame t) => t.Cast<Javax.Accessibility.Accessible>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JInternalFrame"/> to <see cref="Javax.Swing.WindowConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.WindowConstants(Javax.Swing.JInternalFrame t) => t.Cast<Javax.Swing.WindowConstants>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JInternalFrame"/> to <see cref="Javax.Swing.RootPaneContainer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.RootPaneContainer(Javax.Swing.JInternalFrame t) => t.Cast<Javax.Swing.RootPaneContainer>();
 
@@ -370,7 +370,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isClosable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsClosable()
         {
             return IExecuteWithSignature<bool>("isClosable", "()Z");
@@ -378,7 +378,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isClosed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsClosed()
         {
             return IExecuteWithSignature<bool>("isClosed", "()Z");
@@ -386,7 +386,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isIcon()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsIcon()
         {
             return IExecuteWithSignature<bool>("isIcon", "()Z");
@@ -394,7 +394,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isIconifiable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsIconifiable()
         {
             return IExecuteWithSignature<bool>("isIconifiable", "()Z");
@@ -402,7 +402,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isMaximizable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMaximizable()
         {
             return IExecuteWithSignature<bool>("isMaximizable", "()Z");
@@ -410,7 +410,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isMaximum()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMaximum()
         {
             return IExecuteWithSignature<bool>("isMaximum", "()Z");
@@ -418,7 +418,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isResizable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsResizable()
         {
             return IExecuteWithSignature<bool>("isResizable", "()Z");
@@ -426,7 +426,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#isSelected()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSelected()
         {
             return IExecuteWithSignature<bool>("isSelected", "()Z");
@@ -434,7 +434,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#addInternalFrameListener(javax.swing.event.InternalFrameListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddInternalFrameListener(Javax.Swing.Event.InternalFrameListener arg0)
         {
             IExecuteWithSignature("addInternalFrameListener", "(Ljavax/swing/event/InternalFrameListener;)V", arg0);
@@ -477,7 +477,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#removeInternalFrameListener(javax.swing.event.InternalFrameListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveInternalFrameListener(Javax.Swing.Event.InternalFrameListener arg0)
         {
             IExecuteWithSignature("removeInternalFrameListener", "(Ljavax/swing/event/InternalFrameListener;)V", arg0);
@@ -492,7 +492,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setClosable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetClosable(bool arg0)
         {
             IExecuteWithSignature("setClosable", "(Z)V", arg0);
@@ -500,8 +500,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setClosed(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetClosed(bool arg0)
         {
             IExecuteWithSignature("setClosed", "(Z)V", arg0);
@@ -509,8 +509,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setIcon(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetIcon(bool arg0)
         {
             IExecuteWithSignature("setIcon", "(Z)V", arg0);
@@ -518,7 +518,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setIconifiable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetIconifiable(bool arg0)
         {
             IExecuteWithSignature("setIconifiable", "(Z)V", arg0);
@@ -526,7 +526,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setLayer(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetLayer(int arg0)
         {
             IExecuteWithSignature("setLayer", "(I)V", arg0);
@@ -534,7 +534,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setLayer(java.lang.Integer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetLayer(Java.Lang.Integer arg0)
         {
             IExecuteWithSignature("setLayer", "(Ljava/lang/Integer;)V", arg0);
@@ -542,7 +542,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setMaximizable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMaximizable(bool arg0)
         {
             IExecuteWithSignature("setMaximizable", "(Z)V", arg0);
@@ -550,8 +550,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setMaximum(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetMaximum(bool arg0)
         {
             IExecuteWithSignature("setMaximum", "(Z)V", arg0);
@@ -559,7 +559,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setResizable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetResizable(bool arg0)
         {
             IExecuteWithSignature("setResizable", "(Z)V", arg0);
@@ -567,8 +567,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setSelected(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetSelected(bool arg0)
         {
             IExecuteWithSignature("setSelected", "(Z)V", arg0);
@@ -576,7 +576,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setUI(javax.swing.plaf.InternalFrameUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.InternalFrameUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.InternalFrameUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/InternalFrameUI;)V", arg0);
@@ -606,7 +606,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.JDesktopIcon.html#%3Cinit%3E(javax.swing.JInternalFrame)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public JDesktopIcon(Javax.Swing.JInternalFrame arg0)
                 : base(arg0)
             {
@@ -616,7 +616,7 @@ namespace Javax.Swing
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.JInternalFrame.JDesktopIcon"/> to <see cref="Javax.Accessibility.Accessible"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JInternalFrame.JDesktopIcon t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -648,7 +648,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.JDesktopIcon.html#setUI(javax.swing.plaf.DesktopIconUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.DesktopIconUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void SetUI(Javax.Swing.Plaf.DesktopIconUI arg0)
             {
                 IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/DesktopIconUI;)V", arg0);

@@ -77,7 +77,7 @@ namespace Java.Nio
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.DoubleBuffer"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.DoubleBuffer t) => t.Cast<Java.Lang.Comparable>();
 
@@ -91,8 +91,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#allocate(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.DoubleBuffer Allocate(int arg0)
         {
             return SExecuteWithSignature<Java.Nio.DoubleBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/DoubleBuffer;", arg0);
@@ -100,10 +100,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#wrap(double[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.DoubleBuffer Wrap(double[] arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Nio.DoubleBuffer>(LocalBridgeClazz, "wrap", "([DII)Ljava/nio/DoubleBuffer;", arg0, arg1, arg2);
@@ -111,8 +111,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#wrap(double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.DoubleBuffer Wrap(double[] arg0)
         {
             return SExecuteWithSignature<Java.Nio.DoubleBuffer>(LocalBridgeClazz, "wrap", "([D)Ljava/nio/DoubleBuffer;", new object[] { arg0 });
@@ -124,7 +124,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#get()"/>
         /// </summary>
-        /// <returns><see cref="double"/></returns>
+        /// <returns><see cref=""/></returns>
         public double Get()
         {
             return IExecuteWithSignature<double>("get", "()D");
@@ -132,8 +132,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double Get(int arg0)
         {
             return IExecuteWithSignature<double>("get", "(I)D", arg0);
@@ -141,7 +141,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#order()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ByteOrder Order()
         {
             return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
@@ -149,7 +149,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.DoubleBuffer AsReadOnlyBuffer()
         {
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("asReadOnlyBuffer", "()Ljava/nio/DoubleBuffer;");
@@ -157,7 +157,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#compact()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.DoubleBuffer Compact()
         {
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("compact", "()Ljava/nio/DoubleBuffer;");
@@ -165,8 +165,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.DoubleBuffer Put(double arg0)
         {
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("put", "(D)Ljava/nio/DoubleBuffer;", arg0);
@@ -174,9 +174,9 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.DoubleBuffer Put(int arg0, double arg1)
         {
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("put", "(ID)Ljava/nio/DoubleBuffer;", arg0, arg1);
@@ -184,8 +184,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.DoubleBuffer Put(double[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("put", "([D)Ljava/nio/DoubleBuffer;", new object[] { arg0 });
@@ -193,8 +193,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -202,8 +202,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#compareTo(java.nio.DoubleBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.DoubleBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Nio.DoubleBuffer arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/DoubleBuffer;)I", arg0);
@@ -211,8 +211,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#mismatch(java.nio.DoubleBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.DoubleBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Mismatch(Java.Nio.DoubleBuffer arg0)
         {
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/DoubleBuffer;)I", arg0);
@@ -220,10 +220,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#get(double[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.DoubleBuffer Get(double[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("get", "([DII)Ljava/nio/DoubleBuffer;", arg0, arg1, arg2);
@@ -231,8 +231,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#get(double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.DoubleBuffer Get(double[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("get", "([D)Ljava/nio/DoubleBuffer;", new object[] { arg0 });
@@ -240,10 +240,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(double[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.DoubleBuffer Put(double[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("put", "([DII)Ljava/nio/DoubleBuffer;", arg0, arg1, arg2);
@@ -251,8 +251,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(java.nio.DoubleBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.DoubleBuffer"/></param>
-        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.DoubleBuffer Put(Java.Nio.DoubleBuffer arg0)
         {
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("put", "(Ljava/nio/DoubleBuffer;)Ljava/nio/DoubleBuffer;", arg0);

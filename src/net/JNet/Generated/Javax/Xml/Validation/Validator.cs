@@ -112,10 +112,10 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#validate(javax.xml.transform.Source,javax.xml.transform.Result)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Transform.Result"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Validate(Javax.Xml.Transform.Source arg0, Javax.Xml.Transform.Result arg1)
         {
             IExecuteWithSignature("validate", "(Ljavax/xml/transform/Source;Ljavax/xml/transform/Result;)V", arg0, arg1);
@@ -123,10 +123,10 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#getFeature(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public bool GetFeature(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
@@ -134,10 +134,10 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -145,10 +145,10 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
             IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
@@ -156,10 +156,10 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
             IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
@@ -167,9 +167,9 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html#validate(javax.xml.transform.Source)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Validate(Javax.Xml.Transform.Source arg0)
         {
             IExecuteWithSignature("validate", "(Ljavax/xml/transform/Source;)V", arg0);

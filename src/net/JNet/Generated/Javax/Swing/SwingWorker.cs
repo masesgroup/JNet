@@ -68,7 +68,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html"/>
         /// </summary>
-        public partial class StateValue : Java.Lang.Enum<Javax.Swing.SwingWorker.StateValue>
+        public partial class StateValue : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.swing.SwingWorker$StateValue";
             /// <summary>
@@ -109,13 +109,13 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region SwingWorker<T, V> declaration
+    #region SwingWorker<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class SwingWorker<T, V> : Java.Util.Concurrent.RunnableFuture<T>
+    public partial class SwingWorker<, > : Java.Util.Concurrent.RunnableFuture
     {
         const string _bridgeClassName = "javax.swing.SwingWorker";
         /// <summary>
@@ -198,8 +198,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#cancel(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Cancel(bool arg0)
         {
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
@@ -207,7 +207,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsCancelled()
         {
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
@@ -215,7 +215,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDone()
         {
             return IExecuteWithSignature<bool>("isDone", "()Z");
@@ -223,9 +223,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object Get()
         {
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
@@ -233,12 +233,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
-        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecuteWithSignature("get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
@@ -246,7 +246,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
@@ -261,9 +261,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void FirePropertyChange(Java.Lang.String arg0, object arg1, object arg2)
         {
             IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -271,7 +271,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
@@ -324,8 +324,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Swing.SwingWorker.StateValue"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Swing.SwingWorker.StateValue ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Swing.SwingWorker.StateValue>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/SwingWorker$StateValue;", arg0);
@@ -333,7 +333,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Swing.SwingWorker.StateValue"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Swing.SwingWorker.StateValue[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Swing.SwingWorker.StateValue>(LocalBridgeClazz, "values", "()[Ljavax/swing/SwingWorker$StateValue;");
@@ -360,8 +360,8 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region SwingWorker<T, V> implementation
-    public partial class SwingWorker<T, V>
+    #region SwingWorker<, > implementation
+    public partial class SwingWorker<, >
     {
         #region Constructors
 
@@ -369,9 +369,9 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.SwingWorker{T, V}"/> to <see cref="Javax.Swing.SwingWorker"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.SwingWorker(Javax.Swing.SwingWorker<T, V> t) => t.Cast<Javax.Swing.SwingWorker>();
+        public static implicit operator Javax.Swing.SwingWorker(Javax.Swing.SwingWorker<, > t) => t.Cast<Javax.Swing.SwingWorker>();
 
         #endregion
 
@@ -408,8 +408,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#cancel(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Cancel(bool arg0)
         {
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
@@ -417,7 +417,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsCancelled()
         {
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
@@ -425,7 +425,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDone()
         {
             return IExecuteWithSignature<bool>("isDone", "()Z");
@@ -433,9 +433,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public T Get()
         {
             return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
@@ -443,12 +443,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
-        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public T Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecuteWithSignature<T>("get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
@@ -456,7 +456,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
@@ -471,9 +471,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void FirePropertyChange(Java.Lang.String arg0, object arg1, object arg2)
         {
             IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -481,7 +481,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);

@@ -73,10 +73,10 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#%3Cinit%3E(java.lang.String,java.lang.String[],int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public ChoiceCallback(Java.Lang.String arg0, Java.Lang.String[] arg1, int arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -86,11 +86,11 @@ namespace Javax.Security.Auth.Callback
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Callback.ChoiceCallback"/> to <see cref="Javax.Security.Auth.Callback.Callback"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Security.Auth.Callback.Callback(Javax.Security.Auth.Callback.ChoiceCallback t) => t.Cast<Javax.Security.Auth.Callback.Callback>();
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Callback.ChoiceCallback"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.ChoiceCallback t) => t.Cast<Java.Io.Serializable>();
 
@@ -136,7 +136,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#allowMultipleSelections()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool AllowMultipleSelections()
         {
             return IExecuteWithSignature<bool>("allowMultipleSelections", "()Z");
@@ -144,7 +144,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ChoiceCallback.html#setSelectedIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSelectedIndex(int arg0)
         {
             IExecuteWithSignature("setSelectedIndex", "(I)V", arg0);

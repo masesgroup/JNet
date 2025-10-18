@@ -78,21 +78,21 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getCriticalExtensionOIDs()"/> 
         /// </summary>
-        Java.Util.Set<Java.Lang.String> CriticalExtensionOIDs { get; }
+        Java.Util.Set CriticalExtensionOIDs { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs()"/> 
         /// </summary>
-        Java.Util.Set<Java.Lang.String> NonCriticalExtensionOIDs { get; }
+        Java.Util.Set NonCriticalExtensionOIDs { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool HasUnsupportedCriticalExtension();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getExtensionValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="byte"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         byte[] GetExtensionValue(Java.Lang.String arg0);
 
         #endregion
@@ -128,21 +128,21 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getCriticalExtensionOIDs()"/> 
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> CriticalExtensionOIDs
+        public Java.Util.Set CriticalExtensionOIDs
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getCriticalExtensionOIDs", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getCriticalExtensionOIDs", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs()"/> 
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> NonCriticalExtensionOIDs
+        public Java.Util.Set NonCriticalExtensionOIDs
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getNonCriticalExtensionOIDs", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getNonCriticalExtensionOIDs", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasUnsupportedCriticalExtension()
         {
             return IExecuteWithSignature<bool>("hasUnsupportedCriticalExtension", "()Z");
@@ -150,8 +150,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getExtensionValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="byte"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public byte[] GetExtensionValue(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<byte>("getExtensionValue", "(Ljava/lang/String;)[B", arg0);

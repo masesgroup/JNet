@@ -109,8 +109,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html#isGraphicsConfigSupported(java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsGraphicsConfigSupported(Java.Awt.GraphicsConfiguration arg0)
         {
             return IExecuteWithSignature<bool>("isGraphicsConfigSupported", "(Ljava/awt/GraphicsConfiguration;)Z", arg0);
@@ -118,8 +118,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html#getBestConfiguration(java.awt.GraphicsConfiguration[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
-        /// <returns><see cref="Java.Awt.GraphicsConfiguration"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.GraphicsConfiguration GetBestConfiguration(Java.Awt.GraphicsConfiguration[] arg0)
         {
             return IExecuteWithSignature<Java.Awt.GraphicsConfiguration>("getBestConfiguration", "([Ljava/awt/GraphicsConfiguration;)Ljava/awt/GraphicsConfiguration;", new object[] { arg0 });

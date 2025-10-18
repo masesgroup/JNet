@@ -85,11 +85,11 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.KeyFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Security.KeyFactory GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Java.Security.KeyFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/KeyFactory;", arg0, arg1);
@@ -97,10 +97,10 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Java.Security.KeyFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Security.KeyFactory GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecuteWithSignature<Java.Security.KeyFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/KeyFactory;", arg0, arg1);
@@ -108,9 +108,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.KeyFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Security.KeyFactory GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Security.KeyFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/KeyFactory;", arg0);
@@ -136,21 +136,21 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#getKeySpec(java.security.Key,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Security.Spec.IKeySpec"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
-        public T GetKeySpec<T>(Java.Security.Key arg0, Java.Lang.Class arg1) where T : Java.Security.Spec.IKeySpec, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public T GetKeySpec(Java.Security.Key arg0, Java.Lang.Class arg1)
         {
             return IExecute<T>("getKeySpec", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#translateKey(java.security.Key)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <returns><see cref="Java.Security.Key"/></returns>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Security.Key TranslateKey(Java.Security.Key arg0)
         {
             return IExecuteWithSignature<Java.Security.Key>("translateKey", "(Ljava/security/Key;)Ljava/security/Key;", arg0);
@@ -158,9 +158,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#generatePrivate(java.security.spec.KeySpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Spec.KeySpec"/></param>
-        /// <returns><see cref="Java.Security.PrivateKey"/></returns>
-        /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Security.PrivateKey GeneratePrivate(Java.Security.Spec.KeySpec arg0)
         {
             return IExecuteWithSignature<Java.Security.PrivateKey>("generatePrivate", "(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;", arg0);
@@ -168,9 +168,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html#generatePublic(java.security.spec.KeySpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Spec.KeySpec"/></param>
-        /// <returns><see cref="Java.Security.PublicKey"/></returns>
-        /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Security.PublicKey GeneratePublic(Java.Security.Spec.KeySpec arg0)
         {
             return IExecuteWithSignature<Java.Security.PublicKey>("generatePublic", "(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;", arg0);

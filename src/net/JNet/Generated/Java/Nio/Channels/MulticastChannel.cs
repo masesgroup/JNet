@@ -78,24 +78,24 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface,java.net.InetAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
-        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
-        /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Nio.Channels.MembershipKey Join(Java.Net.InetAddress arg0, Java.Net.NetworkInterface arg1, Java.Net.InetAddress arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
-        /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Nio.Channels.MembershipKey Join(Java.Net.InetAddress arg0, Java.Net.NetworkInterface arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         void Close();
 
         #endregion
@@ -131,11 +131,11 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface,java.net.InetAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
-        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
-        /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.MembershipKey Join(Java.Net.InetAddress arg0, Java.Net.NetworkInterface arg1, Java.Net.InetAddress arg2)
         {
             return IExecuteWithSignature<Java.Nio.Channels.MembershipKey>("join", "(Ljava/net/InetAddress;Ljava/net/NetworkInterface;Ljava/net/InetAddress;)Ljava/nio/channels/MembershipKey;", arg0, arg1, arg2);
@@ -143,10 +143,10 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
-        /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.MembershipKey Join(Java.Net.InetAddress arg0, Java.Net.NetworkInterface arg1)
         {
             return IExecuteWithSignature<Java.Nio.Channels.MembershipKey>("join", "(Ljava/net/InetAddress;Ljava/net/NetworkInterface;)Ljava/nio/channels/MembershipKey;", arg0, arg1);
@@ -154,7 +154,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");

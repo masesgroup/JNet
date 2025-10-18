@@ -155,7 +155,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#%3Cinit%3E(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ReentrantReadWriteLock(bool arg0)
             : base(arg0)
         {
@@ -165,11 +165,11 @@ namespace Java.Util.Concurrent.Locks
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantReadWriteLock"/> to <see cref="Java.Util.Concurrent.Locks.ReadWriteLock"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Locks.ReadWriteLock(Java.Util.Concurrent.Locks.ReentrantReadWriteLock t) => t.Cast<Java.Util.Concurrent.Locks.ReadWriteLock>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantReadWriteLock"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantReadWriteLock t) => t.Cast<Java.Io.Serializable>();
 
@@ -215,8 +215,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasWaiters(java.util.concurrent.locks.Condition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool HasWaiters(Java.Util.Concurrent.Locks.Condition arg0)
         {
             return IExecuteWithSignature<bool>("hasWaiters", "(Ljava/util/concurrent/locks/Condition;)Z", arg0);
@@ -224,7 +224,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#isWriteLocked()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsWriteLocked()
         {
             return IExecuteWithSignature<bool>("isWriteLocked", "()Z");
@@ -232,7 +232,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#isWriteLockedByCurrentThread()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsWriteLockedByCurrentThread()
         {
             return IExecuteWithSignature<bool>("isWriteLockedByCurrentThread", "()Z");
@@ -240,8 +240,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasQueuedThread(java.lang.Thread)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool HasQueuedThread(Java.Lang.Thread arg0)
         {
             return IExecuteWithSignature<bool>("hasQueuedThread", "(Ljava/lang/Thread;)Z", arg0);
@@ -249,7 +249,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#hasQueuedThreads()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasQueuedThreads()
         {
             return IExecuteWithSignature<bool>("hasQueuedThreads", "()Z");
@@ -257,7 +257,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#isFair()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFair()
         {
             return IExecuteWithSignature<bool>("isFair", "()Z");
@@ -265,8 +265,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#getWaitQueueLength(java.util.concurrent.locks.Condition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetWaitQueueLength(Java.Util.Concurrent.Locks.Condition arg0)
         {
             return IExecuteWithSignature<int>("getWaitQueueLength", "(Ljava/util/concurrent/locks/Condition;)I", arg0);
@@ -274,7 +274,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#readLock()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Locks.Lock ReadLockMethod()
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Lock>("readLock", "()Ljava/util/concurrent/locks/Lock;");
@@ -282,7 +282,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html#writeLock()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Locks.Lock WriteLockMethod()
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Lock>("writeLock", "()Ljava/util/concurrent/locks/Lock;");
@@ -300,11 +300,11 @@ namespace Java.Util.Concurrent.Locks
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantReadWriteLock.ReadLock"/> to <see cref="Java.Util.Concurrent.Locks.Lock"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Util.Concurrent.Locks.Lock(Java.Util.Concurrent.Locks.ReentrantReadWriteLock.ReadLock t) => t.Cast<Java.Util.Concurrent.Locks.Lock>();
             /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantReadWriteLock.ReadLock"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantReadWriteLock.ReadLock t) => t.Cast<Java.Io.Serializable>();
 
@@ -322,7 +322,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#tryLock()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool TryLock()
             {
                 return IExecuteWithSignature<bool>("tryLock", "()Z");
@@ -330,10 +330,10 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="long"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-            /// <returns><see cref="bool"/></returns>
-            /// <exception cref="Java.Lang.InterruptedException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public bool TryLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
             {
                 return IExecuteWithSignature<bool>("tryLock", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
@@ -341,7 +341,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#newCondition()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Concurrent.Locks.Condition NewCondition()
             {
                 return IExecuteWithSignature<Java.Util.Concurrent.Locks.Condition>("newCondition", "()Ljava/util/concurrent/locks/Condition;");
@@ -356,7 +356,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#lockInterruptibly()"/>
             /// </summary>
-            /// <exception cref="Java.Lang.InterruptedException"/>
+            /// <exception cref=""/>
             public void LockInterruptibly()
             {
                 IExecuteWithSignature("lockInterruptibly", "()V");
@@ -388,11 +388,11 @@ namespace Java.Util.Concurrent.Locks
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantReadWriteLock.WriteLock"/> to <see cref="Java.Util.Concurrent.Locks.Lock"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Util.Concurrent.Locks.Lock(Java.Util.Concurrent.Locks.ReentrantReadWriteLock.WriteLock t) => t.Cast<Java.Util.Concurrent.Locks.Lock>();
             /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantReadWriteLock.WriteLock"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantReadWriteLock.WriteLock t) => t.Cast<Java.Io.Serializable>();
 
@@ -417,7 +417,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#isHeldByCurrentThread()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsHeldByCurrentThread()
             {
                 return IExecuteWithSignature<bool>("isHeldByCurrentThread", "()Z");
@@ -425,7 +425,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#tryLock()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool TryLock()
             {
                 return IExecuteWithSignature<bool>("tryLock", "()Z");
@@ -433,10 +433,10 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="long"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-            /// <returns><see cref="bool"/></returns>
-            /// <exception cref="Java.Lang.InterruptedException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public bool TryLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
             {
                 return IExecuteWithSignature<bool>("tryLock", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
@@ -444,7 +444,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#newCondition()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Concurrent.Locks.Condition NewCondition()
             {
                 return IExecuteWithSignature<Java.Util.Concurrent.Locks.Condition>("newCondition", "()Ljava/util/concurrent/locks/Condition;");
@@ -459,7 +459,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#lockInterruptibly()"/>
             /// </summary>
-            /// <exception cref="Java.Lang.InterruptedException"/>
+            /// <exception cref=""/>
             public void LockInterruptibly()
             {
                 IExecuteWithSignature("lockInterruptibly", "()V");

@@ -73,8 +73,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessControlContext.html#%3Cinit%3E(java.security.AccessControlContext,java.security.DomainCombiner)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <param name="arg1"><see cref="Java.Security.DomainCombiner"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public AccessControlContext(Java.Security.AccessControlContext arg0, Java.Security.DomainCombiner arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessControlContext.html#%3Cinit%3E(java.security.ProtectionDomain[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AccessControlContext(Java.Security.ProtectionDomain[] arg0)
             : base(arg0)
         {
@@ -113,8 +113,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessControlContext.html#checkPermission(java.security.Permission)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
-        /// <exception cref="Java.Security.AccessControlException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void CheckPermission(Java.Security.Permission arg0)
         {
             IExecuteWithSignature("checkPermission", "(Ljava/security/Permission;)V", arg0);

@@ -66,7 +66,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html"/>
         /// </summary>
-        public partial class State : Java.Lang.Enum<Java.Lang.Thread.State>
+        public partial class State : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.lang.Thread$State";
             /// <summary>
@@ -114,8 +114,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.Runnable,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Thread(Java.Lang.Runnable arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -123,7 +123,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Thread(Java.Lang.Runnable arg0)
             : base(arg0)
         {
@@ -131,7 +131,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Thread(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -139,11 +139,11 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="long"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2, long arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -151,10 +151,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -162,9 +162,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -172,8 +172,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1)
             : base(arg0, arg1)
         {
@@ -181,8 +181,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -192,7 +192,7 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Thread"/> to <see cref="Java.Lang.Runnable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Runnable(Java.Lang.Thread t) => t.Cast<Java.Lang.Runnable>();
 
@@ -224,14 +224,14 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getAllStackTraces()"/> 
         /// </summary>
-        public static Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]> AllStackTraces
+        public static Java.Util.Map<, > AllStackTraces
         {
-            get { return SExecuteWithSignature<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>(LocalBridgeClazz, "getAllStackTraces", "()Ljava/util/Map;"); }
+            get { return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "getAllStackTraces", "()Ljava/util/Map;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupted()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public static bool Interrupted()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "interrupted", "()Z");
@@ -239,7 +239,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#activeCount()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public static int ActiveCount()
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "activeCount", "()I");
@@ -247,8 +247,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#enumerate(java.lang.Thread[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int Enumerate(Java.Lang.Thread[] arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "enumerate", "([Ljava/lang/Thread;)I", new object[] { arg0 });
@@ -256,8 +256,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#holdsLock(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool HoldsLock(object arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "holdsLock", "(Ljava/lang/Object;)Z", arg0);
@@ -265,7 +265,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#currentThread()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Thread"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Thread CurrentThread()
         {
             return SExecuteWithSignature<Java.Lang.Thread>(LocalBridgeClazz, "currentThread", "()Ljava/lang/Thread;");
@@ -273,8 +273,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void Sleep(long arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "sleep", "(J)V", arg0);
@@ -303,9 +303,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void Sleep(long arg0, int arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "sleep", "(JI)V", arg0, arg1);
@@ -366,7 +366,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isInterrupted()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsInterrupted()
         {
             return IExecuteWithSignature<bool>("isInterrupted", "()Z");
@@ -374,7 +374,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isDaemon()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDaemon()
         {
             return IExecuteWithSignature<bool>("isDaemon", "()Z");
@@ -382,7 +382,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isAlive()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsAlive()
         {
             return IExecuteWithSignature<bool>("isAlive", "()Z");
@@ -390,9 +390,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Join(long arg0, int arg1)
         {
             IExecuteWithSignature("join", "(JI)V", arg0, arg1);
@@ -400,8 +400,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Join(long arg0)
         {
             IExecuteWithSignature("join", "(J)V", arg0);
@@ -416,7 +416,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref=""/>
         public void Join()
         {
             IExecuteWithSignature("join", "()V");
@@ -424,7 +424,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDaemon(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDaemon(bool arg0)
         {
             IExecuteWithSignature("setDaemon", "(Z)V", arg0);
@@ -509,8 +509,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.Thread.State"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.Thread.State ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Lang.Thread.State>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Thread$State;", arg0);
@@ -518,7 +518,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.Thread.State"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.Thread.State[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Lang.Thread.State>(LocalBridgeClazz, "values", "()[Ljava/lang/Thread$State;");

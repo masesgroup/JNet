@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#%3Cinit%3E(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AtomicBoolean(bool arg0)
             : base(arg0)
         {
@@ -118,9 +118,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetPlain(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool WeakCompareAndSetPlain(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "(ZZ)Z", arg0, arg1);
@@ -128,9 +128,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchange(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareAndExchange(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("compareAndExchange", "(ZZ)Z", arg0, arg1);
@@ -138,9 +138,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeAcquire(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareAndExchangeAcquire(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("compareAndExchangeAcquire", "(ZZ)Z", arg0, arg1);
@@ -148,9 +148,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeRelease(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareAndExchangeRelease(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("compareAndExchangeRelease", "(ZZ)Z", arg0, arg1);
@@ -158,9 +158,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndSet(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareAndSet(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("compareAndSet", "(ZZ)Z", arg0, arg1);
@@ -168,7 +168,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#get()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Get()
         {
             return IExecuteWithSignature<bool>("get", "()Z");
@@ -176,8 +176,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getAndSet(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool GetAndSet(bool arg0)
         {
             return IExecuteWithSignature<bool>("getAndSet", "(Z)Z", arg0);
@@ -185,9 +185,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetAcquire(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool WeakCompareAndSetAcquire(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "(ZZ)Z", arg0, arg1);
@@ -195,9 +195,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetRelease(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool WeakCompareAndSetRelease(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "(ZZ)Z", arg0, arg1);
@@ -205,9 +205,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetVolatile(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool WeakCompareAndSetVolatile(bool arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("weakCompareAndSetVolatile", "(ZZ)Z", arg0, arg1);
@@ -215,7 +215,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#lazySet(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void LazySet(bool arg0)
         {
             IExecuteWithSignature("lazySet", "(Z)V", arg0);
@@ -223,7 +223,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#set(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Set(bool arg0)
         {
             IExecuteWithSignature("set", "(Z)V", arg0);
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setRelease(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRelease(bool arg0)
         {
             IExecuteWithSignature("setRelease", "(Z)V", arg0);

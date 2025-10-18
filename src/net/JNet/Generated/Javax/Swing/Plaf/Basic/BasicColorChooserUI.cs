@@ -138,7 +138,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicColorChooserUI.PropertyHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicColorChooserUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicColorChooserUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public PropertyHandler(Javax.Swing.Plaf.Basic.BasicColorChooserUI arg0)
                 : base(arg0)
             {
@@ -148,7 +148,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicColorChooserUI.PropertyHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicColorChooserUI.PropertyHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
 
@@ -166,7 +166,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicColorChooserUI.PropertyHandler.html#propertyChange(java.beans.PropertyChangeEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);

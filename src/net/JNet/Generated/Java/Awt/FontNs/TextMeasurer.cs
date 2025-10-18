@@ -73,8 +73,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html#%3Cinit%3E(java.text.AttributedCharacterIterator,java.awt.font.FontRenderContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public TextMeasurer(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
             : base(arg0, arg1)
         {
@@ -98,9 +98,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html#getAdvanceBetween(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float GetAdvanceBetween(int arg0, int arg1)
         {
             return IExecuteWithSignature<float>("getAdvanceBetween", "(II)F", arg0, arg1);
@@ -108,9 +108,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html#getLineBreakIndex(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetLineBreakIndex(int arg0, float arg1)
         {
             return IExecuteWithSignature<int>("getLineBreakIndex", "(IF)I", arg0, arg1);
@@ -118,9 +118,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html#getLayout(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.TextLayout"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.FontNs.TextLayout GetLayout(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.FontNs.TextLayout>("getLayout", "(II)Ljava/awt/font/TextLayout;", arg0, arg1);
@@ -128,8 +128,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html#deleteChar(java.text.AttributedCharacterIterator,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void DeleteChar(Java.Text.AttributedCharacterIterator arg0, int arg1)
         {
             IExecuteWithSignature("deleteChar", "(Ljava/text/AttributedCharacterIterator;I)V", arg0, arg1);
@@ -137,8 +137,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html#insertChar(java.text.AttributedCharacterIterator,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void InsertChar(Java.Text.AttributedCharacterIterator arg0, int arg1)
         {
             IExecuteWithSignature("insertChar", "(Ljava/text/AttributedCharacterIterator;I)V", arg0, arg1);

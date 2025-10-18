@@ -108,12 +108,12 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ObjectChanged(Javax.Naming.Event.NamingEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
         {
             hasOverrideNamingExceptionThrown = false;
@@ -198,7 +198,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ObjectChanged(Javax.Naming.Event.NamingEvent arg0)
         {
             hasOverrideObjectChanged = false;
@@ -237,7 +237,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
         {
             IExecuteWithSignature("namingExceptionThrown", "(Ljavax/naming/event/NamingExceptionEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ObjectChanged(Javax.Naming.Event.NamingEvent arg0)
         {
             IExecuteWithSignature("objectChanged", "(Ljavax/naming/event/NamingEvent;)V", arg0);

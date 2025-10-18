@@ -75,71 +75,71 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.ComponentListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.ComponentListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ComponentListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.ContainerListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.ContainerListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ContainerListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.FocusListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.FocusListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.KeyListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.KeyListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.KeyListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.MouseListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.MouseListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.MouseMotionListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseMotionListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.MouseMotionListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.WindowListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.WindowListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.WindowListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.WindowFocusListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.WindowFocusListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.WindowFocusListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.WindowStateListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.WindowStateListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.WindowStateListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.ActionListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ActionListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.ItemListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.ItemListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ItemListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.AdjustmentListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.AdjustmentListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.AdjustmentListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.TextListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.TextListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.TextListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.InputMethodListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.InputMethodListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.InputMethodListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.HierarchyListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.HierarchyListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.HierarchyListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.HierarchyBoundsListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.HierarchyBoundsListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.HierarchyBoundsListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.MouseWheelListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseWheelListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.MouseWheelListener>();
 
@@ -153,20 +153,20 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#getListeners(java.util.EventListener,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.EventListener"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T[] GetListeners<T>(Java.Util.EventListener arg0, Java.Lang.Class arg1) where T : Java.Util.IEventListener, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static T[] GetListeners(Java.Util.EventListener arg0, Java.Lang.Class arg1)
         {
             return SExecuteArray<T>(LocalBridgeClazz, "getListeners", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ActionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ActionListener Add(Java.Awt.EventNs.ActionListener arg0, Java.Awt.EventNs.ActionListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ActionListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/ActionListener;Ljava/awt/event/ActionListener;)Ljava/awt/event/ActionListener;", arg0, arg1);
@@ -174,9 +174,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ActionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ActionListener AddDirect(Java.Awt.EventNs.ActionListener arg0, Java.Awt.EventNs.ActionListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ActionListenerDirect, Java.Awt.EventNs.ActionListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/ActionListener;Ljava/awt/event/ActionListener;)Ljava/awt/event/ActionListener;", arg0, arg1);
@@ -184,9 +184,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ActionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ActionListener Remove(Java.Awt.EventNs.ActionListener arg0, Java.Awt.EventNs.ActionListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ActionListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/ActionListener;Ljava/awt/event/ActionListener;)Ljava/awt/event/ActionListener;", arg0, arg1);
@@ -194,9 +194,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ActionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ActionListener RemoveDirect(Java.Awt.EventNs.ActionListener arg0, Java.Awt.EventNs.ActionListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ActionListenerDirect, Java.Awt.EventNs.ActionListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/ActionListener;Ljava/awt/event/ActionListener;)Ljava/awt/event/ActionListener;", arg0, arg1);
@@ -204,9 +204,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.AdjustmentListener,java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.AdjustmentListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.AdjustmentListener Add(Java.Awt.EventNs.AdjustmentListener arg0, Java.Awt.EventNs.AdjustmentListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.AdjustmentListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/AdjustmentListener;Ljava/awt/event/AdjustmentListener;)Ljava/awt/event/AdjustmentListener;", arg0, arg1);
@@ -214,9 +214,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.AdjustmentListener,java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.AdjustmentListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.AdjustmentListener AddDirect(Java.Awt.EventNs.AdjustmentListener arg0, Java.Awt.EventNs.AdjustmentListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.AdjustmentListenerDirect, Java.Awt.EventNs.AdjustmentListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/AdjustmentListener;Ljava/awt/event/AdjustmentListener;)Ljava/awt/event/AdjustmentListener;", arg0, arg1);
@@ -224,9 +224,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.AdjustmentListener,java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.AdjustmentListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.AdjustmentListener Remove(Java.Awt.EventNs.AdjustmentListener arg0, Java.Awt.EventNs.AdjustmentListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.AdjustmentListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/AdjustmentListener;Ljava/awt/event/AdjustmentListener;)Ljava/awt/event/AdjustmentListener;", arg0, arg1);
@@ -234,9 +234,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.AdjustmentListener,java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.AdjustmentListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.AdjustmentListener RemoveDirect(Java.Awt.EventNs.AdjustmentListener arg0, Java.Awt.EventNs.AdjustmentListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.AdjustmentListenerDirect, Java.Awt.EventNs.AdjustmentListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/AdjustmentListener;Ljava/awt/event/AdjustmentListener;)Ljava/awt/event/AdjustmentListener;", arg0, arg1);
@@ -244,9 +244,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ComponentListener,java.awt.event.ComponentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ComponentListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ComponentListener Add(Java.Awt.EventNs.ComponentListener arg0, Java.Awt.EventNs.ComponentListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ComponentListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/ComponentListener;Ljava/awt/event/ComponentListener;)Ljava/awt/event/ComponentListener;", arg0, arg1);
@@ -254,9 +254,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ComponentListener,java.awt.event.ComponentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ComponentListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ComponentListener AddDirect(Java.Awt.EventNs.ComponentListener arg0, Java.Awt.EventNs.ComponentListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ComponentListenerDirect, Java.Awt.EventNs.ComponentListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/ComponentListener;Ljava/awt/event/ComponentListener;)Ljava/awt/event/ComponentListener;", arg0, arg1);
@@ -264,9 +264,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ComponentListener,java.awt.event.ComponentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ComponentListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ComponentListener Remove(Java.Awt.EventNs.ComponentListener arg0, Java.Awt.EventNs.ComponentListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ComponentListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/ComponentListener;Ljava/awt/event/ComponentListener;)Ljava/awt/event/ComponentListener;", arg0, arg1);
@@ -274,9 +274,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ComponentListener,java.awt.event.ComponentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ComponentListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ComponentListener RemoveDirect(Java.Awt.EventNs.ComponentListener arg0, Java.Awt.EventNs.ComponentListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ComponentListenerDirect, Java.Awt.EventNs.ComponentListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/ComponentListener;Ljava/awt/event/ComponentListener;)Ljava/awt/event/ComponentListener;", arg0, arg1);
@@ -284,9 +284,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ContainerListener,java.awt.event.ContainerListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ContainerListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ContainerListener Add(Java.Awt.EventNs.ContainerListener arg0, Java.Awt.EventNs.ContainerListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ContainerListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/ContainerListener;Ljava/awt/event/ContainerListener;)Ljava/awt/event/ContainerListener;", arg0, arg1);
@@ -294,9 +294,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ContainerListener,java.awt.event.ContainerListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ContainerListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ContainerListener AddDirect(Java.Awt.EventNs.ContainerListener arg0, Java.Awt.EventNs.ContainerListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ContainerListenerDirect, Java.Awt.EventNs.ContainerListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/ContainerListener;Ljava/awt/event/ContainerListener;)Ljava/awt/event/ContainerListener;", arg0, arg1);
@@ -304,9 +304,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ContainerListener,java.awt.event.ContainerListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ContainerListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ContainerListener Remove(Java.Awt.EventNs.ContainerListener arg0, Java.Awt.EventNs.ContainerListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ContainerListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/ContainerListener;Ljava/awt/event/ContainerListener;)Ljava/awt/event/ContainerListener;", arg0, arg1);
@@ -314,9 +314,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ContainerListener,java.awt.event.ContainerListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ContainerListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ContainerListener RemoveDirect(Java.Awt.EventNs.ContainerListener arg0, Java.Awt.EventNs.ContainerListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ContainerListenerDirect, Java.Awt.EventNs.ContainerListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/ContainerListener;Ljava/awt/event/ContainerListener;)Ljava/awt/event/ContainerListener;", arg0, arg1);
@@ -324,9 +324,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.FocusListener,java.awt.event.FocusListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.FocusListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.FocusListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.FocusListener Add(Java.Awt.EventNs.FocusListener arg0, Java.Awt.EventNs.FocusListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.FocusListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/FocusListener;Ljava/awt/event/FocusListener;)Ljava/awt/event/FocusListener;", arg0, arg1);
@@ -334,9 +334,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.FocusListener,java.awt.event.FocusListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.FocusListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.FocusListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.FocusListener AddDirect(Java.Awt.EventNs.FocusListener arg0, Java.Awt.EventNs.FocusListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.FocusListenerDirect, Java.Awt.EventNs.FocusListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/FocusListener;Ljava/awt/event/FocusListener;)Ljava/awt/event/FocusListener;", arg0, arg1);
@@ -344,9 +344,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.FocusListener,java.awt.event.FocusListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.FocusListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.FocusListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.FocusListener Remove(Java.Awt.EventNs.FocusListener arg0, Java.Awt.EventNs.FocusListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.FocusListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/FocusListener;Ljava/awt/event/FocusListener;)Ljava/awt/event/FocusListener;", arg0, arg1);
@@ -354,9 +354,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.FocusListener,java.awt.event.FocusListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.FocusListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.FocusListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.FocusListener RemoveDirect(Java.Awt.EventNs.FocusListener arg0, Java.Awt.EventNs.FocusListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.FocusListenerDirect, Java.Awt.EventNs.FocusListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/FocusListener;Ljava/awt/event/FocusListener;)Ljava/awt/event/FocusListener;", arg0, arg1);
@@ -364,9 +364,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.HierarchyBoundsListener,java.awt.event.HierarchyBoundsListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.HierarchyBoundsListener Add(Java.Awt.EventNs.HierarchyBoundsListener arg0, Java.Awt.EventNs.HierarchyBoundsListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.HierarchyBoundsListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/HierarchyBoundsListener;Ljava/awt/event/HierarchyBoundsListener;)Ljava/awt/event/HierarchyBoundsListener;", arg0, arg1);
@@ -374,9 +374,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.HierarchyBoundsListener,java.awt.event.HierarchyBoundsListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.HierarchyBoundsListener AddDirect(Java.Awt.EventNs.HierarchyBoundsListener arg0, Java.Awt.EventNs.HierarchyBoundsListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.HierarchyBoundsListenerDirect, Java.Awt.EventNs.HierarchyBoundsListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/HierarchyBoundsListener;Ljava/awt/event/HierarchyBoundsListener;)Ljava/awt/event/HierarchyBoundsListener;", arg0, arg1);
@@ -384,9 +384,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.HierarchyBoundsListener,java.awt.event.HierarchyBoundsListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.HierarchyBoundsListener Remove(Java.Awt.EventNs.HierarchyBoundsListener arg0, Java.Awt.EventNs.HierarchyBoundsListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.HierarchyBoundsListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/HierarchyBoundsListener;Ljava/awt/event/HierarchyBoundsListener;)Ljava/awt/event/HierarchyBoundsListener;", arg0, arg1);
@@ -394,9 +394,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.HierarchyBoundsListener,java.awt.event.HierarchyBoundsListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.HierarchyBoundsListener RemoveDirect(Java.Awt.EventNs.HierarchyBoundsListener arg0, Java.Awt.EventNs.HierarchyBoundsListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.HierarchyBoundsListenerDirect, Java.Awt.EventNs.HierarchyBoundsListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/HierarchyBoundsListener;Ljava/awt/event/HierarchyBoundsListener;)Ljava/awt/event/HierarchyBoundsListener;", arg0, arg1);
@@ -404,9 +404,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.HierarchyListener,java.awt.event.HierarchyListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.HierarchyListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.HierarchyListener Add(Java.Awt.EventNs.HierarchyListener arg0, Java.Awt.EventNs.HierarchyListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.HierarchyListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/HierarchyListener;Ljava/awt/event/HierarchyListener;)Ljava/awt/event/HierarchyListener;", arg0, arg1);
@@ -414,9 +414,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.HierarchyListener,java.awt.event.HierarchyListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.HierarchyListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.HierarchyListener AddDirect(Java.Awt.EventNs.HierarchyListener arg0, Java.Awt.EventNs.HierarchyListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.HierarchyListenerDirect, Java.Awt.EventNs.HierarchyListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/HierarchyListener;Ljava/awt/event/HierarchyListener;)Ljava/awt/event/HierarchyListener;", arg0, arg1);
@@ -424,9 +424,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.HierarchyListener,java.awt.event.HierarchyListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.HierarchyListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.HierarchyListener Remove(Java.Awt.EventNs.HierarchyListener arg0, Java.Awt.EventNs.HierarchyListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.HierarchyListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/HierarchyListener;Ljava/awt/event/HierarchyListener;)Ljava/awt/event/HierarchyListener;", arg0, arg1);
@@ -434,9 +434,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.HierarchyListener,java.awt.event.HierarchyListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.HierarchyListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.HierarchyListener RemoveDirect(Java.Awt.EventNs.HierarchyListener arg0, Java.Awt.EventNs.HierarchyListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.HierarchyListenerDirect, Java.Awt.EventNs.HierarchyListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/HierarchyListener;Ljava/awt/event/HierarchyListener;)Ljava/awt/event/HierarchyListener;", arg0, arg1);
@@ -444,9 +444,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.InputMethodListener,java.awt.event.InputMethodListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.InputMethodListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.InputMethodListener Add(Java.Awt.EventNs.InputMethodListener arg0, Java.Awt.EventNs.InputMethodListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.InputMethodListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/InputMethodListener;Ljava/awt/event/InputMethodListener;)Ljava/awt/event/InputMethodListener;", arg0, arg1);
@@ -454,9 +454,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.InputMethodListener,java.awt.event.InputMethodListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.InputMethodListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.InputMethodListener AddDirect(Java.Awt.EventNs.InputMethodListener arg0, Java.Awt.EventNs.InputMethodListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.InputMethodListenerDirect, Java.Awt.EventNs.InputMethodListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/InputMethodListener;Ljava/awt/event/InputMethodListener;)Ljava/awt/event/InputMethodListener;", arg0, arg1);
@@ -464,9 +464,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.InputMethodListener,java.awt.event.InputMethodListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.InputMethodListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.InputMethodListener Remove(Java.Awt.EventNs.InputMethodListener arg0, Java.Awt.EventNs.InputMethodListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.InputMethodListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/InputMethodListener;Ljava/awt/event/InputMethodListener;)Ljava/awt/event/InputMethodListener;", arg0, arg1);
@@ -474,9 +474,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.InputMethodListener,java.awt.event.InputMethodListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.InputMethodListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.InputMethodListener RemoveDirect(Java.Awt.EventNs.InputMethodListener arg0, Java.Awt.EventNs.InputMethodListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.InputMethodListenerDirect, Java.Awt.EventNs.InputMethodListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/InputMethodListener;Ljava/awt/event/InputMethodListener;)Ljava/awt/event/InputMethodListener;", arg0, arg1);
@@ -484,9 +484,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ItemListener,java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ItemListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ItemListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ItemListener Add(Java.Awt.EventNs.ItemListener arg0, Java.Awt.EventNs.ItemListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ItemListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/ItemListener;Ljava/awt/event/ItemListener;)Ljava/awt/event/ItemListener;", arg0, arg1);
@@ -494,9 +494,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ItemListener,java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ItemListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ItemListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ItemListener AddDirect(Java.Awt.EventNs.ItemListener arg0, Java.Awt.EventNs.ItemListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ItemListenerDirect, Java.Awt.EventNs.ItemListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/ItemListener;Ljava/awt/event/ItemListener;)Ljava/awt/event/ItemListener;", arg0, arg1);
@@ -504,9 +504,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ItemListener,java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ItemListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ItemListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ItemListener Remove(Java.Awt.EventNs.ItemListener arg0, Java.Awt.EventNs.ItemListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ItemListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/ItemListener;Ljava/awt/event/ItemListener;)Ljava/awt/event/ItemListener;", arg0, arg1);
@@ -514,9 +514,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ItemListener,java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.ItemListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ItemListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.ItemListener RemoveDirect(Java.Awt.EventNs.ItemListener arg0, Java.Awt.EventNs.ItemListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.ItemListenerDirect, Java.Awt.EventNs.ItemListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/ItemListener;Ljava/awt/event/ItemListener;)Ljava/awt/event/ItemListener;", arg0, arg1);
@@ -524,9 +524,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.KeyListener,java.awt.event.KeyListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.KeyListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.KeyListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.KeyListener Add(Java.Awt.EventNs.KeyListener arg0, Java.Awt.EventNs.KeyListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.KeyListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/KeyListener;Ljava/awt/event/KeyListener;)Ljava/awt/event/KeyListener;", arg0, arg1);
@@ -534,9 +534,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.KeyListener,java.awt.event.KeyListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.KeyListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.KeyListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.KeyListener AddDirect(Java.Awt.EventNs.KeyListener arg0, Java.Awt.EventNs.KeyListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.KeyListenerDirect, Java.Awt.EventNs.KeyListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/KeyListener;Ljava/awt/event/KeyListener;)Ljava/awt/event/KeyListener;", arg0, arg1);
@@ -544,9 +544,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.KeyListener,java.awt.event.KeyListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.KeyListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.KeyListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.KeyListener Remove(Java.Awt.EventNs.KeyListener arg0, Java.Awt.EventNs.KeyListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.KeyListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/KeyListener;Ljava/awt/event/KeyListener;)Ljava/awt/event/KeyListener;", arg0, arg1);
@@ -554,9 +554,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.KeyListener,java.awt.event.KeyListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.KeyListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.KeyListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.KeyListener RemoveDirect(Java.Awt.EventNs.KeyListener arg0, Java.Awt.EventNs.KeyListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.KeyListenerDirect, Java.Awt.EventNs.KeyListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/KeyListener;Ljava/awt/event/KeyListener;)Ljava/awt/event/KeyListener;", arg0, arg1);
@@ -564,9 +564,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseListener,java.awt.event.MouseListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseListener Add(Java.Awt.EventNs.MouseListener arg0, Java.Awt.EventNs.MouseListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/MouseListener;Ljava/awt/event/MouseListener;)Ljava/awt/event/MouseListener;", arg0, arg1);
@@ -574,9 +574,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseListener,java.awt.event.MouseListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseListener AddDirect(Java.Awt.EventNs.MouseListener arg0, Java.Awt.EventNs.MouseListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseListenerDirect, Java.Awt.EventNs.MouseListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/MouseListener;Ljava/awt/event/MouseListener;)Ljava/awt/event/MouseListener;", arg0, arg1);
@@ -584,9 +584,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseListener,java.awt.event.MouseListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseListener Remove(Java.Awt.EventNs.MouseListener arg0, Java.Awt.EventNs.MouseListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/MouseListener;Ljava/awt/event/MouseListener;)Ljava/awt/event/MouseListener;", arg0, arg1);
@@ -594,9 +594,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseListener,java.awt.event.MouseListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseListener RemoveDirect(Java.Awt.EventNs.MouseListener arg0, Java.Awt.EventNs.MouseListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseListenerDirect, Java.Awt.EventNs.MouseListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/MouseListener;Ljava/awt/event/MouseListener;)Ljava/awt/event/MouseListener;", arg0, arg1);
@@ -604,9 +604,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseMotionListener,java.awt.event.MouseMotionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseMotionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseMotionListener Add(Java.Awt.EventNs.MouseMotionListener arg0, Java.Awt.EventNs.MouseMotionListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseMotionListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/MouseMotionListener;Ljava/awt/event/MouseMotionListener;)Ljava/awt/event/MouseMotionListener;", arg0, arg1);
@@ -614,9 +614,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseMotionListener,java.awt.event.MouseMotionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseMotionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseMotionListener AddDirect(Java.Awt.EventNs.MouseMotionListener arg0, Java.Awt.EventNs.MouseMotionListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseMotionListenerDirect, Java.Awt.EventNs.MouseMotionListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/MouseMotionListener;Ljava/awt/event/MouseMotionListener;)Ljava/awt/event/MouseMotionListener;", arg0, arg1);
@@ -624,9 +624,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseMotionListener,java.awt.event.MouseMotionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseMotionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseMotionListener Remove(Java.Awt.EventNs.MouseMotionListener arg0, Java.Awt.EventNs.MouseMotionListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseMotionListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/MouseMotionListener;Ljava/awt/event/MouseMotionListener;)Ljava/awt/event/MouseMotionListener;", arg0, arg1);
@@ -634,9 +634,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseMotionListener,java.awt.event.MouseMotionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseMotionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseMotionListener RemoveDirect(Java.Awt.EventNs.MouseMotionListener arg0, Java.Awt.EventNs.MouseMotionListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseMotionListenerDirect, Java.Awt.EventNs.MouseMotionListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/MouseMotionListener;Ljava/awt/event/MouseMotionListener;)Ljava/awt/event/MouseMotionListener;", arg0, arg1);
@@ -644,9 +644,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseWheelListener,java.awt.event.MouseWheelListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseWheelListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseWheelListener Add(Java.Awt.EventNs.MouseWheelListener arg0, Java.Awt.EventNs.MouseWheelListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseWheelListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/MouseWheelListener;Ljava/awt/event/MouseWheelListener;)Ljava/awt/event/MouseWheelListener;", arg0, arg1);
@@ -654,9 +654,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseWheelListener,java.awt.event.MouseWheelListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseWheelListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseWheelListener AddDirect(Java.Awt.EventNs.MouseWheelListener arg0, Java.Awt.EventNs.MouseWheelListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseWheelListenerDirect, Java.Awt.EventNs.MouseWheelListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/MouseWheelListener;Ljava/awt/event/MouseWheelListener;)Ljava/awt/event/MouseWheelListener;", arg0, arg1);
@@ -664,9 +664,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseWheelListener,java.awt.event.MouseWheelListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseWheelListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseWheelListener Remove(Java.Awt.EventNs.MouseWheelListener arg0, Java.Awt.EventNs.MouseWheelListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseWheelListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/MouseWheelListener;Ljava/awt/event/MouseWheelListener;)Ljava/awt/event/MouseWheelListener;", arg0, arg1);
@@ -674,9 +674,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseWheelListener,java.awt.event.MouseWheelListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.MouseWheelListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.MouseWheelListener RemoveDirect(Java.Awt.EventNs.MouseWheelListener arg0, Java.Awt.EventNs.MouseWheelListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.MouseWheelListenerDirect, Java.Awt.EventNs.MouseWheelListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/MouseWheelListener;Ljava/awt/event/MouseWheelListener;)Ljava/awt/event/MouseWheelListener;", arg0, arg1);
@@ -684,9 +684,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.TextListener,java.awt.event.TextListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.TextListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.TextListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.TextListener Add(Java.Awt.EventNs.TextListener arg0, Java.Awt.EventNs.TextListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.TextListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/TextListener;Ljava/awt/event/TextListener;)Ljava/awt/event/TextListener;", arg0, arg1);
@@ -694,9 +694,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.TextListener,java.awt.event.TextListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.TextListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.TextListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.TextListener AddDirect(Java.Awt.EventNs.TextListener arg0, Java.Awt.EventNs.TextListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.TextListenerDirect, Java.Awt.EventNs.TextListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/TextListener;Ljava/awt/event/TextListener;)Ljava/awt/event/TextListener;", arg0, arg1);
@@ -704,9 +704,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.TextListener,java.awt.event.TextListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.TextListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.TextListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.TextListener Remove(Java.Awt.EventNs.TextListener arg0, Java.Awt.EventNs.TextListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.TextListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/TextListener;Ljava/awt/event/TextListener;)Ljava/awt/event/TextListener;", arg0, arg1);
@@ -714,9 +714,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.TextListener,java.awt.event.TextListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.TextListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.TextListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.TextListener RemoveDirect(Java.Awt.EventNs.TextListener arg0, Java.Awt.EventNs.TextListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.TextListenerDirect, Java.Awt.EventNs.TextListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/TextListener;Ljava/awt/event/TextListener;)Ljava/awt/event/TextListener;", arg0, arg1);
@@ -724,9 +724,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowFocusListener,java.awt.event.WindowFocusListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowFocusListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowFocusListener Add(Java.Awt.EventNs.WindowFocusListener arg0, Java.Awt.EventNs.WindowFocusListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowFocusListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/WindowFocusListener;Ljava/awt/event/WindowFocusListener;)Ljava/awt/event/WindowFocusListener;", arg0, arg1);
@@ -734,9 +734,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowFocusListener,java.awt.event.WindowFocusListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowFocusListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowFocusListener AddDirect(Java.Awt.EventNs.WindowFocusListener arg0, Java.Awt.EventNs.WindowFocusListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowFocusListenerDirect, Java.Awt.EventNs.WindowFocusListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/WindowFocusListener;Ljava/awt/event/WindowFocusListener;)Ljava/awt/event/WindowFocusListener;", arg0, arg1);
@@ -744,9 +744,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowFocusListener,java.awt.event.WindowFocusListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowFocusListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowFocusListener Remove(Java.Awt.EventNs.WindowFocusListener arg0, Java.Awt.EventNs.WindowFocusListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowFocusListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/WindowFocusListener;Ljava/awt/event/WindowFocusListener;)Ljava/awt/event/WindowFocusListener;", arg0, arg1);
@@ -754,9 +754,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowFocusListener,java.awt.event.WindowFocusListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowFocusListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowFocusListener RemoveDirect(Java.Awt.EventNs.WindowFocusListener arg0, Java.Awt.EventNs.WindowFocusListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowFocusListenerDirect, Java.Awt.EventNs.WindowFocusListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/WindowFocusListener;Ljava/awt/event/WindowFocusListener;)Ljava/awt/event/WindowFocusListener;", arg0, arg1);
@@ -764,9 +764,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowListener,java.awt.event.WindowListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowListener Add(Java.Awt.EventNs.WindowListener arg0, Java.Awt.EventNs.WindowListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/WindowListener;Ljava/awt/event/WindowListener;)Ljava/awt/event/WindowListener;", arg0, arg1);
@@ -774,9 +774,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowListener,java.awt.event.WindowListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowListener AddDirect(Java.Awt.EventNs.WindowListener arg0, Java.Awt.EventNs.WindowListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowListenerDirect, Java.Awt.EventNs.WindowListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/WindowListener;Ljava/awt/event/WindowListener;)Ljava/awt/event/WindowListener;", arg0, arg1);
@@ -784,9 +784,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowListener,java.awt.event.WindowListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowListener Remove(Java.Awt.EventNs.WindowListener arg0, Java.Awt.EventNs.WindowListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/WindowListener;Ljava/awt/event/WindowListener;)Ljava/awt/event/WindowListener;", arg0, arg1);
@@ -794,9 +794,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowListener,java.awt.event.WindowListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowListener RemoveDirect(Java.Awt.EventNs.WindowListener arg0, Java.Awt.EventNs.WindowListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowListenerDirect, Java.Awt.EventNs.WindowListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/WindowListener;Ljava/awt/event/WindowListener;)Ljava/awt/event/WindowListener;", arg0, arg1);
@@ -804,9 +804,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowStateListener,java.awt.event.WindowStateListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowStateListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowStateListener Add(Java.Awt.EventNs.WindowStateListener arg0, Java.Awt.EventNs.WindowStateListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowStateListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/WindowStateListener;Ljava/awt/event/WindowStateListener;)Ljava/awt/event/WindowStateListener;", arg0, arg1);
@@ -814,9 +814,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowStateListener,java.awt.event.WindowStateListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowStateListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowStateListener AddDirect(Java.Awt.EventNs.WindowStateListener arg0, Java.Awt.EventNs.WindowStateListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowStateListenerDirect, Java.Awt.EventNs.WindowStateListener>(LocalBridgeClazz, "add", "(Ljava/awt/event/WindowStateListener;Ljava/awt/event/WindowStateListener;)Ljava/awt/event/WindowStateListener;", arg0, arg1);
@@ -824,9 +824,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowStateListener,java.awt.event.WindowStateListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowStateListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowStateListener Remove(Java.Awt.EventNs.WindowStateListener arg0, Java.Awt.EventNs.WindowStateListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowStateListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/WindowStateListener;Ljava/awt/event/WindowStateListener;)Ljava/awt/event/WindowStateListener;", arg0, arg1);
@@ -834,9 +834,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowStateListener,java.awt.event.WindowStateListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.WindowStateListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.EventNs.WindowStateListener RemoveDirect(Java.Awt.EventNs.WindowStateListener arg0, Java.Awt.EventNs.WindowStateListener arg1)
         {
             return SExecuteWithSignature<Java.Awt.EventNs.WindowStateListenerDirect, Java.Awt.EventNs.WindowStateListener>(LocalBridgeClazz, "remove", "(Ljava/awt/event/WindowStateListener;Ljava/awt/event/WindowStateListener;)Ljava/awt/event/WindowStateListener;", arg0, arg1);
@@ -848,7 +848,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#actionPerformed(java.awt.event.ActionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
             IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);
@@ -856,7 +856,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AdjustmentValueChanged(Java.Awt.EventNs.AdjustmentEvent arg0)
         {
             IExecuteWithSignature("adjustmentValueChanged", "(Ljava/awt/event/AdjustmentEvent;)V", arg0);
@@ -864,7 +864,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AncestorMoved(Java.Awt.EventNs.HierarchyEvent arg0)
         {
             IExecuteWithSignature("ancestorMoved", "(Ljava/awt/event/HierarchyEvent;)V", arg0);
@@ -872,7 +872,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AncestorResized(Java.Awt.EventNs.HierarchyEvent arg0)
         {
             IExecuteWithSignature("ancestorResized", "(Ljava/awt/event/HierarchyEvent;)V", arg0);
@@ -880,7 +880,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
             IExecuteWithSignature("caretPositionChanged", "(Ljava/awt/event/InputMethodEvent;)V", arg0);
@@ -888,7 +888,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentAdded(java.awt.event.ContainerEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ComponentAdded(Java.Awt.EventNs.ContainerEvent arg0)
         {
             IExecuteWithSignature("componentAdded", "(Ljava/awt/event/ContainerEvent;)V", arg0);
@@ -896,7 +896,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentHidden(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecuteWithSignature("componentHidden", "(Ljava/awt/event/ComponentEvent;)V", arg0);
@@ -904,7 +904,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentMoved(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecuteWithSignature("componentMoved", "(Ljava/awt/event/ComponentEvent;)V", arg0);
@@ -912,7 +912,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentRemoved(java.awt.event.ContainerEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ComponentRemoved(Java.Awt.EventNs.ContainerEvent arg0)
         {
             IExecuteWithSignature("componentRemoved", "(Ljava/awt/event/ContainerEvent;)V", arg0);
@@ -920,7 +920,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentResized(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecuteWithSignature("componentResized", "(Ljava/awt/event/ComponentEvent;)V", arg0);
@@ -928,7 +928,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentShown(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecuteWithSignature("componentShown", "(Ljava/awt/event/ComponentEvent;)V", arg0);
@@ -936,7 +936,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -944,7 +944,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#focusLost(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -952,7 +952,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void HierarchyChanged(Java.Awt.EventNs.HierarchyEvent arg0)
         {
             IExecuteWithSignature("hierarchyChanged", "(Ljava/awt/event/HierarchyEvent;)V", arg0);
@@ -960,7 +960,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
             IExecuteWithSignature("inputMethodTextChanged", "(Ljava/awt/event/InputMethodEvent;)V", arg0);
@@ -968,7 +968,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#itemStateChanged(java.awt.event.ItemEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
         {
             IExecuteWithSignature("itemStateChanged", "(Ljava/awt/event/ItemEvent;)V", arg0);
@@ -976,7 +976,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyPressed(java.awt.event.KeyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void KeyPressed(Java.Awt.EventNs.KeyEvent arg0)
         {
             IExecuteWithSignature("keyPressed", "(Ljava/awt/event/KeyEvent;)V", arg0);
@@ -984,7 +984,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyReleased(java.awt.event.KeyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void KeyReleased(Java.Awt.EventNs.KeyEvent arg0)
         {
             IExecuteWithSignature("keyReleased", "(Ljava/awt/event/KeyEvent;)V", arg0);
@@ -992,7 +992,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyTyped(java.awt.event.KeyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
         {
             IExecuteWithSignature("keyTyped", "(Ljava/awt/event/KeyEvent;)V", arg0);
@@ -1000,7 +1000,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseClicked", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -1008,7 +1008,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseDragged", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -1016,7 +1016,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseEntered", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -1024,7 +1024,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseExited", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -1032,7 +1032,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseMoved", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -1040,7 +1040,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mousePressed", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -1048,7 +1048,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseReleased", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -1056,7 +1056,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseWheelMoved(Java.Awt.EventNs.MouseWheelEvent arg0)
         {
             IExecuteWithSignature("mouseWheelMoved", "(Ljava/awt/event/MouseWheelEvent;)V", arg0);
@@ -1064,7 +1064,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#textValueChanged(java.awt.event.TextEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void TextValueChanged(Java.Awt.EventNs.TextEvent arg0)
         {
             IExecuteWithSignature("textValueChanged", "(Ljava/awt/event/TextEvent;)V", arg0);
@@ -1072,7 +1072,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowActivated(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WindowActivated(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowActivated", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -1080,7 +1080,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowClosed(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WindowClosed(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowClosed", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -1088,7 +1088,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowClosing(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WindowClosing(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowClosing", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -1096,7 +1096,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowDeactivated(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowDeactivated", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -1104,7 +1104,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowDeiconified(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowDeiconified", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -1112,7 +1112,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowGainedFocus", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -1120,7 +1120,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowIconified(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WindowIconified(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowIconified", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -1128,7 +1128,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowLostFocus", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -1136,7 +1136,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowOpened(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WindowOpened(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowOpened", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -1144,7 +1144,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowStateChanged", "(Ljava/awt/event/WindowEvent;)V", arg0);

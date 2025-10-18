@@ -78,8 +78,8 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventConsumer.html#add(javax.xml.stream.events.XMLEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Stream.Events.XMLEvent"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Add(Javax.Xml.Stream.Events.XMLEvent arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventConsumer.html#add(javax.xml.stream.events.XMLEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Stream.Events.XMLEvent"/></param>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Add(Javax.Xml.Stream.Events.XMLEvent arg0)
         {
             IExecuteWithSignature("add", "(Ljavax/xml/stream/events/XMLEvent;)V", arg0);

@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuffer.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StringBuffer(int arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuffer.html#%3Cinit%3E(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StringBuffer(Java.Lang.CharSequence arg0)
             : base(arg0)
         {
@@ -89,7 +89,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuffer.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StringBuffer(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -99,15 +99,15 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.StringBuffer"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.StringBuffer t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.StringBuffer"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.StringBuffer t) => t.Cast<Java.Lang.Comparable>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.StringBuffer"/> to <see cref="Java.Lang.CharSequence"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Java.Lang.StringBuffer t) => t.Cast<Java.Lang.CharSequence>();
 
@@ -125,8 +125,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -134,8 +134,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuffer.html#compareTo(java.lang.StringBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.StringBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Lang.StringBuffer arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/StringBuffer;)I", arg0);

@@ -91,7 +91,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#doubleValue()"/>
         /// </summary>
-        /// <returns><see cref="double"/></returns>
+        /// <returns><see cref=""/></returns>
         public double DoubleValue()
         {
             return IExecuteWithSignature<double>("doubleValue", "()D");
@@ -99,7 +99,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#floatValue()"/>
         /// </summary>
-        /// <returns><see cref="float"/></returns>
+        /// <returns><see cref=""/></returns>
         public float FloatValue()
         {
             return IExecuteWithSignature<float>("floatValue", "()F");
@@ -107,7 +107,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#intValue()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int IntValue()
         {
             return IExecuteWithSignature<int>("intValue", "()I");
@@ -115,7 +115,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#longValue()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long LongValue()
         {
             return IExecuteWithSignature<long>("longValue", "()J");
@@ -123,7 +123,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#byteValue()"/>
         /// </summary>
-        /// <returns><see cref="byte"/></returns>
+        /// <returns><see cref=""/></returns>
         public byte ByteValue()
         {
             return IExecuteWithSignature<byte>("byteValue", "()B");
@@ -131,7 +131,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#shortValue()"/>
         /// </summary>
-        /// <returns><see cref="short"/></returns>
+        /// <returns><see cref=""/></returns>
         public short ShortValue()
         {
             return IExecuteWithSignature<short>("shortValue", "()S");

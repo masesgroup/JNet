@@ -73,8 +73,8 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public Manifest(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -82,7 +82,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#%3Cinit%3E(java.util.jar.Manifest)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Jar.Manifest"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Manifest(Java.Util.Jar.Manifest arg0)
             : base(arg0)
         {
@@ -106,9 +106,9 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#getEntries()"/> 
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.Jar.Attributes> Entries
+        public Java.Util.Map<, > Entries
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Jar.Attributes>>("getEntries", "()Ljava/util/Map;"); }
+            get { return IExecuteWithSignature<Java.Util.Map<, >>("getEntries", "()Ljava/util/Map;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#getMainAttributes()"/> 
@@ -120,8 +120,8 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#getAttributes(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Jar.Attributes"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Jar.Attributes GetAttributes(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Util.Jar.Attributes>("getAttributes", "(Ljava/lang/String;)Ljava/util/jar/Attributes;", arg0);
@@ -136,8 +136,8 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#read(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Read(Java.Io.InputStream arg0)
         {
             IExecuteWithSignature("read", "(Ljava/io/InputStream;)V", arg0);
@@ -145,8 +145,8 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#write(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(Java.Io.OutputStream arg0)
         {
             IExecuteWithSignature("write", "(Ljava/io/OutputStream;)V", arg0);

@@ -139,9 +139,9 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#getUI(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetUI(int arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature("getUI", "(ILjava/lang/String;)Ljava/lang/Object;", arg0, arg1);
@@ -149,8 +149,8 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#getUIClassNamesForRole(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] GetUIClassNamesForRole(int arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("getUIClassNamesForRole", "(I)[Ljava/lang/String;", arg0);

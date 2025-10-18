@@ -82,17 +82,17 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new();
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <returns><see cref=""/></returns>
+        A GetAnnotation(Java.Lang.Class arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new();
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <returns><see cref=""/></returns>
+        A[] GetAnnotationsByType(Java.Lang.Class arg0);
 
         #endregion
 
@@ -134,20 +134,20 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        public A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public A GetAnnotation(Java.Lang.Class arg0)
         {
             return IExecute<A>("getAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public A[] GetAnnotationsByType(Java.Lang.Class arg0)
         {
             return IExecuteArray<A>("getAnnotationsByType", arg0);
         }

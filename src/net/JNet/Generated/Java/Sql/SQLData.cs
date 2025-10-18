@@ -82,15 +82,15 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.SQLInput"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void ReadSQL(Java.Sql.SQLInput arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.SQLOutput"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteSQL(Java.Sql.SQLOutput arg0);
 
         #endregion
@@ -133,9 +133,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.SQLInput"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void ReadSQL(Java.Sql.SQLInput arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("readSQL", "(Ljava/sql/SQLInput;Ljava/lang/String;)V", arg0, arg1);
@@ -143,8 +143,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.SQLOutput"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteSQL(Java.Sql.SQLOutput arg0)
         {
             IExecuteWithSignature("writeSQL", "(Ljava/sql/SQLOutput;)V", arg0);

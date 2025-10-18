@@ -73,10 +73,10 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Beans.ExceptionListener"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2, Java.Lang.ClassLoader arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,9 +84,9 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Beans.ExceptionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2)
             : base(arg0, arg1, arg2)
         {
@@ -94,8 +94,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public XMLDecoder(Java.Io.InputStream arg0, object arg1)
             : base(arg0, arg1)
         {
@@ -103,7 +103,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public XMLDecoder(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -111,7 +111,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(org.xml.sax.InputSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public XMLDecoder(Org.Xml.Sax.InputSource arg0)
             : base(arg0)
         {
@@ -131,10 +131,10 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#createHandler(java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.ExceptionListener"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="Org.Xml.Sax.Helpers.DefaultHandler"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Org.Xml.Sax.Helpers.DefaultHandler CreateHandler(object arg0, Java.Beans.ExceptionListener arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecuteWithSignature<Org.Xml.Sax.Helpers.DefaultHandler>(LocalBridgeClazz, "createHandler", "(Ljava/lang/Object;Ljava/beans/ExceptionListener;Ljava/lang/ClassLoader;)Lorg/xml/sax/helpers/DefaultHandler;", arg0, arg1, arg2);
@@ -160,7 +160,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#readObject()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object ReadObject()
         {
             return IExecuteWithSignature("readObject", "()Ljava/lang/Object;");

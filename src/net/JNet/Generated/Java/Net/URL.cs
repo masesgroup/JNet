@@ -73,12 +73,12 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Net.URLStreamHandler"/></param>
-        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         public URL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, Java.Net.URLStreamHandler arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -86,11 +86,11 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public URL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -98,10 +98,10 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public URL(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -109,8 +109,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public URL(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -118,10 +118,10 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String,java.net.URLStreamHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Net.URLStreamHandler"/></param>
-        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public URL(Java.Net.URL arg0, Java.Lang.String arg1, Java.Net.URLStreamHandler arg2)
             : base(arg0, arg1, arg2)
         {
@@ -129,9 +129,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public URL(Java.Net.URL arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -151,7 +151,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void SetURLStreamHandlerFactory(Java.Net.URLStreamHandlerFactory arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setURLStreamHandlerFactory", "(Ljava/net/URLStreamHandlerFactory;)V", arg0);
@@ -240,8 +240,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#sameFile(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SameFile(Java.Net.URL arg0)
         {
             return IExecuteWithSignature<bool>("sameFile", "(Ljava/net/URL;)Z", arg0);
@@ -249,8 +249,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.InputStream OpenStream()
         {
             return IExecuteWithSignature<Java.Io.InputStream>("openStream", "()Ljava/io/InputStream;");
@@ -258,9 +258,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getContent(java.lang.Class[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object GetContent(Java.Lang.Class[] arg0)
         {
             return IExecuteWithSignature("getContent", "([Ljava/lang/Class;)Ljava/lang/Object;", new object[] { arg0 });
@@ -268,7 +268,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toExternalForm()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToExternalForm()
         {
             return IExecuteWithSignature<Java.Lang.String>("toExternalForm", "()Ljava/lang/String;");
@@ -276,8 +276,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toURI()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
-        /// <exception cref="Java.Net.URISyntaxException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.URI ToURI()
         {
             return IExecuteWithSignature<Java.Net.URI>("toURI", "()Ljava/net/URI;");
@@ -285,8 +285,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openConnection()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URLConnection"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.URLConnection OpenConnection()
         {
             return IExecuteWithSignature<Java.Net.URLConnection>("openConnection", "()Ljava/net/URLConnection;");
@@ -294,9 +294,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openConnection(java.net.Proxy)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.Proxy"/></param>
-        /// <returns><see cref="Java.Net.URLConnection"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.URLConnection OpenConnection(Java.Net.Proxy arg0)
         {
             return IExecuteWithSignature<Java.Net.URLConnection>("openConnection", "(Ljava/net/Proxy;)Ljava/net/URLConnection;", arg0);

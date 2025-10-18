@@ -73,7 +73,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormView.html#%3Cinit%3E(javax.swing.text.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public FormView(Javax.Swing.Text.Element arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Javax.Swing.Text.Html
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Html.FormView"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Text.Html.FormView t) => t.Cast<Java.Awt.EventNs.ActionListener>();
 
@@ -101,7 +101,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormView.html#actionPerformed(java.awt.event.ActionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
             IExecuteWithSignature("actionPerformed", "(Ljava/awt/event/ActionEvent;)V", arg0);

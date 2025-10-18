@@ -178,8 +178,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getChange(javax.swing.text.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <returns><see cref="Javax.Swing.Event.DocumentEvent.ElementChange"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0);
 
         #endregion
@@ -243,8 +243,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getChange(javax.swing.text.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <returns><see cref="Javax.Swing.Event.DocumentEvent.ElementChange"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", "(Ljavax/swing/text/Element;)Ljavax/swing/event/DocumentEvent$ElementChange;", arg0);

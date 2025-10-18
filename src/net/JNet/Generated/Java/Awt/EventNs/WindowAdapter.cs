@@ -154,7 +154,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowActivated(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowActivated(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowActivated = false;
@@ -178,7 +178,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosed(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowClosed(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowClosed = false;
@@ -202,7 +202,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosing(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowClosing(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowClosing = false;
@@ -226,7 +226,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeactivated(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowDeactivated = false;
@@ -250,7 +250,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeiconified(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowDeiconified = false;
@@ -274,7 +274,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowGainedFocus = false;
@@ -298,7 +298,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowIconified(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowIconified(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowIconified = false;
@@ -322,7 +322,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowLostFocus = false;
@@ -346,7 +346,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowOpened(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowOpened(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowOpened = false;
@@ -370,7 +370,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowStateChanged = false;
@@ -409,7 +409,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowActivated(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowActivated(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowActivated", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -417,7 +417,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosed(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowClosed(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowClosed", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -425,7 +425,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosing(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowClosing(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowClosing", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -433,7 +433,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeactivated(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowDeactivated", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -441,7 +441,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeiconified(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowDeiconified", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -449,7 +449,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowGainedFocus", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -457,7 +457,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowIconified(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowIconified(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowIconified", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -465,7 +465,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowLostFocus", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -473,7 +473,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowOpened(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowOpened(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowOpened", "(Ljava/awt/event/WindowEvent;)V", arg0);
@@ -481,7 +481,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowStateChanged", "(Ljava/awt/event/WindowEvent;)V", arg0);

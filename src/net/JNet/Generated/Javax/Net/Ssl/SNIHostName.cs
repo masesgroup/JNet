@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIHostName.html#%3Cinit%3E(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public SNIHostName(byte[] arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIHostName.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public SNIHostName(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -101,8 +101,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIHostName.html#createSNIMatcher(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SNIMatcher"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Net.Ssl.SNIMatcher CreateSNIMatcher(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Net.Ssl.SNIMatcher>(LocalBridgeClazz, "createSNIMatcher", "(Ljava/lang/String;)Ljavax/net/ssl/SNIMatcher;", arg0);

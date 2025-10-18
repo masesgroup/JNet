@@ -108,25 +108,25 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Test(double arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Function.DoublePredicate And(Java.Util.Function.DoublePredicate arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Function.DoublePredicate Negate();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0);
 
         #endregion
@@ -189,8 +189,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual bool Test(double arg0)
         {
             hasOverrideTest = false; return default;
@@ -198,8 +198,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoublePredicate AndDefault(Java.Util.Function.DoublePredicate arg0)
         {
@@ -224,8 +224,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.DoublePredicate And(Java.Util.Function.DoublePredicate arg0)
         {
@@ -234,7 +234,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoublePredicate NegateDefault()
         {
@@ -259,7 +259,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.DoublePredicate Negate()
         {
@@ -268,8 +268,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.DoublePredicate OrDefault(Java.Util.Function.DoublePredicate arg0)
         {
@@ -294,8 +294,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0)
         {
@@ -335,8 +335,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override bool Test(double arg0)
         {
             return IExecuteWithSignature<bool>("test", "(D)Z", arg0);
@@ -344,8 +344,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.DoublePredicate And(Java.Util.Function.DoublePredicate arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("and", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
@@ -353,7 +353,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.DoublePredicate Negate()
         {
             return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("negate", "()Ljava/util/function/DoublePredicate;");
@@ -361,8 +361,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("or", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);

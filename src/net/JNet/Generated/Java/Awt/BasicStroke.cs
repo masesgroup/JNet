@@ -73,12 +73,12 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float,int,int,float,float[],float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
-        /// <param name="arg4"><see cref="float"/></param>
-        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public BasicStroke(float arg0, int arg1, int arg2, float arg3, float[] arg4, float arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -86,10 +86,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float,int,int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public BasicStroke(float arg0, int arg1, int arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -97,9 +97,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public BasicStroke(float arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -107,7 +107,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BasicStroke(float arg0)
             : base(arg0)
         {
@@ -209,8 +209,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#createStrokedShape(java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
-        /// <returns><see cref="Java.Awt.Shape"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Shape CreateStrokedShape(Java.Awt.Shape arg0)
         {
             return IExecuteWithSignature<Java.Awt.Shape>("createStrokedShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;", arg0);

@@ -66,12 +66,12 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region ForwardingFileObject<F> declaration
+    #region ForwardingFileObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html"/>
     /// </summary>
-    /// <typeparam name="F"><see cref="Javax.Tools.IFileObject"/></typeparam>
-    public partial class ForwardingFileObject<F> : Javax.Tools.FileObject where F : Javax.Tools.IFileObject, new()
+    /// <typeparam name="F"></typeparam>
+    public partial class ForwardingFileObject : Javax.Tools.FileObject
     {
         const string _bridgeClassName = "javax.tools.ForwardingFileObject";
         /// <summary>
@@ -145,7 +145,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#delete()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Delete()
         {
             return IExecuteWithSignature<bool>("delete", "()Z");
@@ -153,8 +153,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openInputStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.InputStream OpenInputStream()
         {
             return IExecuteWithSignature<Java.Io.InputStream>("openInputStream", "()Ljava/io/InputStream;");
@@ -162,8 +162,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openOutputStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.OutputStream OpenOutputStream()
         {
             return IExecuteWithSignature<Java.Io.OutputStream>("openOutputStream", "()Ljava/io/OutputStream;");
@@ -171,9 +171,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openReader(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Io.Reader"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.Reader OpenReader(bool arg0)
         {
             return IExecuteWithSignature<Java.Io.Reader>("openReader", "(Z)Ljava/io/Reader;", arg0);
@@ -181,8 +181,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openWriter()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.Writer OpenWriter()
         {
             return IExecuteWithSignature<Java.Io.Writer>("openWriter", "()Ljava/io/Writer;");
@@ -190,9 +190,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#getCharContent(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.CharSequence GetCharContent(bool arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("getCharContent", "(Z)Ljava/lang/CharSequence;", arg0);
@@ -200,7 +200,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#toUri()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.URI ToUri()
         {
             return IExecuteWithSignature<Java.Net.URI>("toUri", "()Ljava/net/URI;");
@@ -216,8 +216,8 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region ForwardingFileObject<F> implementation
-    public partial class ForwardingFileObject<F>
+    #region ForwardingFileObject implementation
+    public partial class ForwardingFileObject
     {
         #region Constructors
 
@@ -225,9 +225,9 @@ namespace Javax.Tools
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Tools.ForwardingFileObject{F}"/> to <see cref="Javax.Tools.ForwardingFileObject"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Tools.ForwardingFileObject(Javax.Tools.ForwardingFileObject<F> t) => t.Cast<Javax.Tools.ForwardingFileObject>();
+        public static implicit operator Javax.Tools.ForwardingFileObject(Javax.Tools.ForwardingFileObject t) => t.Cast<Javax.Tools.ForwardingFileObject>();
 
         #endregion
 
@@ -257,7 +257,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#delete()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Delete()
         {
             return IExecuteWithSignature<bool>("delete", "()Z");
@@ -265,8 +265,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openInputStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.InputStream OpenInputStream()
         {
             return IExecuteWithSignature<Java.Io.InputStream>("openInputStream", "()Ljava/io/InputStream;");
@@ -274,8 +274,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openOutputStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.OutputStream OpenOutputStream()
         {
             return IExecuteWithSignature<Java.Io.OutputStream>("openOutputStream", "()Ljava/io/OutputStream;");
@@ -283,9 +283,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openReader(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Io.Reader"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.Reader OpenReader(bool arg0)
         {
             return IExecuteWithSignature<Java.Io.Reader>("openReader", "(Z)Ljava/io/Reader;", arg0);
@@ -293,8 +293,8 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#openWriter()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.Writer OpenWriter()
         {
             return IExecuteWithSignature<Java.Io.Writer>("openWriter", "()Ljava/io/Writer;");
@@ -302,9 +302,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#getCharContent(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.CharSequence GetCharContent(bool arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("getCharContent", "(Z)Ljava/lang/CharSequence;", arg0);
@@ -312,7 +312,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html#toUri()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.URI ToUri()
         {
             return IExecuteWithSignature<Java.Net.URI>("toUri", "()Ljava/net/URI;");

@@ -108,12 +108,12 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html#notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Ldap.UnsolicitedNotificationEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void NotificationReceived(Javax.Naming.Ldap.UnsolicitedNotificationEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
         {
             hasOverrideNamingExceptionThrown = false;
@@ -198,7 +198,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html#notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Ldap.UnsolicitedNotificationEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void NotificationReceived(Javax.Naming.Ldap.UnsolicitedNotificationEvent arg0)
         {
             hasOverrideNotificationReceived = false;
@@ -237,7 +237,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
         {
             IExecuteWithSignature("namingExceptionThrown", "(Ljavax/naming/event/NamingExceptionEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html#notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Ldap.UnsolicitedNotificationEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void NotificationReceived(Javax.Naming.Ldap.UnsolicitedNotificationEvent arg0)
         {
             IExecuteWithSignature("notificationReceived", "(Ljavax/naming/ldap/UnsolicitedNotificationEvent;)V", arg0);

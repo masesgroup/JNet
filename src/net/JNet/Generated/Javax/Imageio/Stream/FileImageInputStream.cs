@@ -73,9 +73,9 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public FileImageInputStream(Java.Io.File arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html#%3Cinit%3E(java.io.RandomAccessFile)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.RandomAccessFile"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public FileImageInputStream(Java.Io.RandomAccessFile arg0)
             : base(arg0)
         {

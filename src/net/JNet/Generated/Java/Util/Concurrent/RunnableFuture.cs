@@ -68,12 +68,12 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RunnableFuture<V> declaration
+    #region RunnableFuture declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableFuture.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class RunnableFuture<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RunnableFuture<V>>
+    public partial class RunnableFuture : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RunnableFuture>
     {
         const string _bridgeClassName = "java.util.concurrent.RunnableFuture";
         /// <summary>
@@ -121,11 +121,11 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RunnableFuture"/> to <see cref="Java.Lang.Runnable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Runnable(Java.Util.Concurrent.RunnableFuture t) => t.Cast<Java.Lang.Runnable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RunnableFuture"/> to <see cref="Java.Util.Concurrent.Future"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Future(Java.Util.Concurrent.RunnableFuture t) => t.Cast<Java.Util.Concurrent.Future>();
 
@@ -158,11 +158,11 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region IRunnableFuture<V>
+    #region IRunnableFuture
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableFuture.html"/>
     /// </summary>
-    public partial interface IRunnableFuture<V>
+    public partial interface IRunnableFuture
     {
         #region Instance methods
         /// <summary>
@@ -180,8 +180,8 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RunnableFuture<V> implementation
-    public partial class RunnableFuture<V> : Java.Util.Concurrent.IRunnableFuture<V>
+    #region RunnableFuture implementation
+    public partial class RunnableFuture : Java.Util.Concurrent.IRunnableFuture
     {
         #region Constructors
 
@@ -189,17 +189,17 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RunnableFuture{V}"/> to <see cref="Java.Lang.Runnable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Runnable(Java.Util.Concurrent.RunnableFuture<V> t) => t.Cast<Java.Lang.Runnable>();
+        public static implicit operator Java.Lang.Runnable(Java.Util.Concurrent.RunnableFuture t) => t.Cast<Java.Lang.Runnable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RunnableFuture{V}"/> to <see cref="Java.Util.Concurrent.Future{V}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.Future<V>(Java.Util.Concurrent.RunnableFuture<V> t) => t.Cast<Java.Util.Concurrent.Future<V>>();
+        public static implicit operator Java.Util.Concurrent.Future(Java.Util.Concurrent.RunnableFuture t) => t.Cast<Java.Util.Concurrent.Future>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RunnableFuture{V}"/> to <see cref="Java.Util.Concurrent.RunnableFuture"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.RunnableFuture(Java.Util.Concurrent.RunnableFuture<V> t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
+        public static implicit operator Java.Util.Concurrent.RunnableFuture(Java.Util.Concurrent.RunnableFuture t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
 
         #endregion
 

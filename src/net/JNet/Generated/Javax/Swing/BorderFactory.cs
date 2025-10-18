@@ -85,12 +85,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createBevelBorder(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createBevelBorder", "(ILjava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)Ljavax/swing/border/Border;", arg0, arg1, arg2, arg3, arg4);
@@ -98,10 +98,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createBevelBorder(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createBevelBorder", "(ILjava/awt/Color;Ljava/awt/Color;)Ljavax/swing/border/Border;", arg0, arg1, arg2);
@@ -109,8 +109,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createBevelBorder(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateBevelBorder(int arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createBevelBorder", "(I)Ljavax/swing/border/Border;", arg0);
@@ -118,12 +118,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createDashedBorder(java.awt.Paint,float,float,float,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Paint"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateDashedBorder(Java.Awt.Paint arg0, float arg1, float arg2, float arg3, bool arg4)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createDashedBorder", "(Ljava/awt/Paint;FFFZ)Ljavax/swing/border/Border;", arg0, arg1, arg2, arg3, arg4);
@@ -131,10 +131,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createDashedBorder(java.awt.Paint,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Paint"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateDashedBorder(Java.Awt.Paint arg0, float arg1, float arg2)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createDashedBorder", "(Ljava/awt/Paint;FF)Ljavax/swing/border/Border;", arg0, arg1, arg2);
@@ -142,8 +142,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createDashedBorder(java.awt.Paint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Paint"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateDashedBorder(Java.Awt.Paint arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createDashedBorder", "(Ljava/awt/Paint;)Ljavax/swing/border/Border;", arg0);
@@ -151,7 +151,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEmptyBorder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateEmptyBorder()
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createEmptyBorder", "()Ljavax/swing/border/Border;");
@@ -159,11 +159,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEmptyBorder(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateEmptyBorder(int arg0, int arg1, int arg2, int arg3)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createEmptyBorder", "(IIII)Ljavax/swing/border/Border;", arg0, arg1, arg2, arg3);
@@ -171,7 +171,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateEtchedBorder()
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createEtchedBorder", "()Ljavax/swing/border/Border;");
@@ -179,10 +179,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateEtchedBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createEtchedBorder", "(ILjava/awt/Color;Ljava/awt/Color;)Ljavax/swing/border/Border;", arg0, arg1, arg2);
@@ -190,8 +190,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateEtchedBorder(int arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createEtchedBorder", "(I)Ljavax/swing/border/Border;", arg0);
@@ -199,9 +199,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder(java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateEtchedBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createEtchedBorder", "(Ljava/awt/Color;Ljava/awt/Color;)Ljavax/swing/border/Border;", arg0, arg1);
@@ -209,10 +209,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLineBorder(java.awt.Color,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateLineBorder(Java.Awt.Color arg0, int arg1, bool arg2)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createLineBorder", "(Ljava/awt/Color;IZ)Ljavax/swing/border/Border;", arg0, arg1, arg2);
@@ -220,9 +220,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLineBorder(java.awt.Color,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateLineBorder(Java.Awt.Color arg0, int arg1)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createLineBorder", "(Ljava/awt/Color;I)Ljavax/swing/border/Border;", arg0, arg1);
@@ -230,8 +230,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLineBorder(java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateLineBorder(Java.Awt.Color arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createLineBorder", "(Ljava/awt/Color;)Ljavax/swing/border/Border;", arg0);
@@ -239,7 +239,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredBevelBorder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateLoweredBevelBorder()
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createLoweredBevelBorder", "()Ljavax/swing/border/Border;");
@@ -247,7 +247,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredSoftBevelBorder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateLoweredSoftBevelBorder()
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createLoweredSoftBevelBorder", "()Ljavax/swing/border/Border;");
@@ -255,7 +255,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedBevelBorder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateRaisedBevelBorder()
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createRaisedBevelBorder", "()Ljavax/swing/border/Border;");
@@ -263,7 +263,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedSoftBevelBorder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateRaisedSoftBevelBorder()
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createRaisedSoftBevelBorder", "()Ljavax/swing/border/Border;");
@@ -271,12 +271,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createSoftBevelBorder(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateSoftBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createSoftBevelBorder", "(ILjava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)Ljavax/swing/border/Border;", arg0, arg1, arg2, arg3, arg4);
@@ -284,10 +284,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createSoftBevelBorder(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateSoftBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createSoftBevelBorder", "(ILjava/awt/Color;Ljava/awt/Color;)Ljavax/swing/border/Border;", arg0, arg1, arg2);
@@ -295,8 +295,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createSoftBevelBorder(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateSoftBevelBorder(int arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createSoftBevelBorder", "(I)Ljavax/swing/border/Border;", arg0);
@@ -304,9 +304,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createStrokeBorder(java.awt.BasicStroke,java.awt.Paint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.BasicStroke"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Paint"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateStrokeBorder(Java.Awt.BasicStroke arg0, Java.Awt.Paint arg1)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createStrokeBorder", "(Ljava/awt/BasicStroke;Ljava/awt/Paint;)Ljavax/swing/border/Border;", arg0, arg1);
@@ -314,8 +314,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createStrokeBorder(java.awt.BasicStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.BasicStroke"/></param>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateStrokeBorder(Java.Awt.BasicStroke arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createStrokeBorder", "(Ljava/awt/BasicStroke;)Ljavax/swing/border/Border;", arg0);
@@ -323,7 +323,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createCompoundBorder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Border.CompoundBorder"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.CompoundBorder CreateCompoundBorder()
         {
             return SExecuteWithSignature<Javax.Swing.Border.CompoundBorder>(LocalBridgeClazz, "createCompoundBorder", "()Ljavax/swing/border/CompoundBorder;");
@@ -331,9 +331,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createCompoundBorder(javax.swing.border.Border,javax.swing.border.Border)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <returns><see cref="Javax.Swing.Border.CompoundBorder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.CompoundBorder CreateCompoundBorder(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
         {
             return SExecuteWithSignature<Javax.Swing.Border.CompoundBorder>(LocalBridgeClazz, "createCompoundBorder", "(Ljavax/swing/border/Border;Ljavax/swing/border/Border;)Ljavax/swing/border/CompoundBorder;", arg0, arg1);
@@ -341,12 +341,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createMatteBorder(int,int,int,int,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Javax.Swing.Border.MatteBorder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.MatteBorder CreateMatteBorder(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
         {
             return SExecuteWithSignature<Javax.Swing.Border.MatteBorder>(LocalBridgeClazz, "createMatteBorder", "(IIIILjava/awt/Color;)Ljavax/swing/border/MatteBorder;", arg0, arg1, arg2, arg3, arg4);
@@ -354,12 +354,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createMatteBorder(int,int,int,int,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
-        /// <returns><see cref="Javax.Swing.Border.MatteBorder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.MatteBorder CreateMatteBorder(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
         {
             return SExecuteWithSignature<Javax.Swing.Border.MatteBorder>(LocalBridgeClazz, "createMatteBorder", "(IIIILjavax/swing/Icon;)Ljavax/swing/border/MatteBorder;", arg0, arg1, arg2, arg3, arg4);
@@ -367,8 +367,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", "(Ljava/lang/String;)Ljavax/swing/border/TitledBorder;", arg0);
@@ -376,13 +376,13 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Font"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
         {
             return SExecuteWithSignature<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", "(Ljavax/swing/border/Border;Ljava/lang/String;IILjava/awt/Font;Ljava/awt/Color;)Ljavax/swing/border/TitledBorder;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -390,12 +390,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Font"/></param>
-        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
         {
             return SExecuteWithSignature<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", "(Ljavax/swing/border/Border;Ljava/lang/String;IILjava/awt/Font;)Ljavax/swing/border/TitledBorder;", arg0, arg1, arg2, arg3, arg4);
@@ -403,11 +403,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
         {
             return SExecuteWithSignature<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", "(Ljavax/swing/border/Border;Ljava/lang/String;II)Ljavax/swing/border/TitledBorder;", arg0, arg1, arg2, arg3);
@@ -415,9 +415,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", "(Ljavax/swing/border/Border;Ljava/lang/String;)Ljavax/swing/border/TitledBorder;", arg0, arg1);
@@ -425,8 +425,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Border.TitledBorder>(LocalBridgeClazz, "createTitledBorder", "(Ljavax/swing/border/Border;)Ljavax/swing/border/TitledBorder;", arg0);

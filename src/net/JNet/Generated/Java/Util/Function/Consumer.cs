@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Consumer<T> declaration
+    #region Consumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class Consumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class Consumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ConsumerDirect<T> declaration
+    #region ConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="Consumer"/> or its generic type if there is one
     /// </summary>
-    public partial class ConsumerDirect<T> : Consumer<T>
+    public partial class ConsumerDirect : Consumer
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -220,7 +220,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void Accept(object arg0)
         {
             hasOverrideAccept = false;
@@ -228,8 +228,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Consumer AndThenDefault(Java.Util.Function.Consumer arg0)
         {
@@ -254,8 +254,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Consumer AndThen(Java.Util.Function.Consumer arg0)
         {
@@ -295,7 +295,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void Accept(object arg0)
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;)V", arg0);
@@ -303,8 +303,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.Consumer AndThen(Java.Util.Function.Consumer arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.ConsumerDirect, Java.Util.Function.Consumer>("andThen", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
@@ -320,25 +320,25 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IConsumer<T>
+    #region IConsumer
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.Consumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html"/>
     /// </summary>
-    public partial interface IConsumer<T>
+    public partial interface IConsumer
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Accept(T arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
-        Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Function.Consumer AndThen(Java.Util.Function.Consumer arg0) where Arg0objectSuperT : T;
 
         #endregion
 
@@ -350,8 +350,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Consumer<T> implementation
-    public partial class Consumer<T> : Java.Util.Function.IConsumer<T>
+    #region Consumer implementation
+    public partial class Consumer : Java.Util.Function.IConsumer
     {
         #region Constructors
 
@@ -376,7 +376,7 @@ namespace Java.Util.Function
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<Arg0objectSuperT>EventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThenEventHandler));
 
         }
 
@@ -398,7 +398,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void Accept(T arg0)
         {
             hasOverrideAccept = false;
@@ -406,40 +406,40 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>Default(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        public Java.Util.Function.Consumer AndThenDefault(Java.Util.Function.Consumer arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.Consumer<T>>("andThenDefault", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Consumer>("andThenDefault", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnAndThen<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<Java.Util.Function.Consumer<Arg0objectSuperT>, Java.Util.Function.Consumer<T>> OnAndThen<Arg0objectSuperT> { get; set; } = null;
+        /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<Java.Util.Function.Consumer, Java.Util.Function.Consumer> OnAndThen { get; set; } = null;
 
-        bool hasOverrideAndThen<Arg0objectSuperT> = true;
-        void AndThen<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        bool hasOverrideAndThen = true;
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
-            hasOverrideAndThen<Arg0objectSuperT> = true;
-            var methodToExecute = (OnAndThen<Arg0objectSuperT> != null) ? OnAndThen<Arg0objectSuperT> : AndThen<Arg0objectSuperT>;
-            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Consumer<Arg0objectSuperT>>(0));
-            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<Arg0objectSuperT>, executionResult);
+            hasOverrideAndThen = true;
+            var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Consumer>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<Arg0objectSuperT>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.Consumer AndThen(Java.Util.Function.Consumer arg0) where Arg0objectSuperT : T
         {
-            hasOverrideAndThen<Arg0objectSuperT> = false; return default;
+            hasOverrideAndThen = false; return default;
         }
 
         #endregion
@@ -452,8 +452,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ConsumerDirect<T> implementation
-    public partial class ConsumerDirect<T> : Java.Util.Function.IConsumer<T>
+    #region ConsumerDirect implementation
+    public partial class ConsumerDirect : Java.Util.Function.IConsumer
     {
         #region Constructors
 
@@ -475,7 +475,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void Accept(T arg0)
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;)V", arg0);
@@ -483,12 +483,12 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
-        public override Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public override Java.Util.Function.Consumer AndThen(Java.Util.Function.Consumer arg0) where Arg0objectSuperT : T
         {
-            return IExecuteWithSignature<Java.Util.Function.ConsumerDirect<T>, Java.Util.Function.Consumer<T>>("andThen", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.ConsumerDirect, Java.Util.Function.Consumer>("andThen", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }
 
         #endregion

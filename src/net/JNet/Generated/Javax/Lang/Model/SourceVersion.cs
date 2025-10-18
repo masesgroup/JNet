@@ -29,7 +29,7 @@ namespace Javax.Lang.Model
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html"/>
     /// </summary>
-    public partial class SourceVersion : Java.Lang.Enum<Javax.Lang.Model.SourceVersion>
+    public partial class SourceVersion : Java.Lang.Enum
     {
         const string _bridgeClassName = "javax.lang.model.SourceVersion";
         /// <summary>
@@ -157,8 +157,8 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isIdentifier(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsIdentifier(Java.Lang.CharSequence arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isIdentifier", "(Ljava/lang/CharSequence;)Z", arg0);
@@ -166,9 +166,9 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence,javax.lang.model.SourceVersion)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.SourceVersion"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0, Javax.Lang.Model.SourceVersion arg1)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isKeyword", "(Ljava/lang/CharSequence;Ljavax/lang/model/SourceVersion;)Z", arg0, arg1);
@@ -176,8 +176,8 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isKeyword", "(Ljava/lang/CharSequence;)Z", arg0);
@@ -185,9 +185,9 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence,javax.lang.model.SourceVersion)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.SourceVersion"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0, Javax.Lang.Model.SourceVersion arg1)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isName", "(Ljava/lang/CharSequence;Ljavax/lang/model/SourceVersion;)Z", arg0, arg1);
@@ -195,8 +195,8 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isName", "(Ljava/lang/CharSequence;)Z", arg0);
@@ -204,7 +204,7 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latest()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.SourceVersion Latest()
         {
             return SExecuteWithSignature<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "latest", "()Ljavax/lang/model/SourceVersion;");
@@ -212,7 +212,7 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latestSupported()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.SourceVersion LatestSupported()
         {
             return SExecuteWithSignature<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "latestSupported", "()Ljavax/lang/model/SourceVersion;");
@@ -220,8 +220,8 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.SourceVersion ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/SourceVersion;", arg0);
@@ -229,7 +229,7 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.SourceVersion[] Values()
         {
             return SExecuteWithSignatureArray<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/SourceVersion;");

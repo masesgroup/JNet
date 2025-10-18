@@ -94,18 +94,18 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#deriveMMFont(float[],float,float,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
-        /// <param name="arg4"><see cref="float"/></param>
-        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.Font DeriveMMFont(float[] arg0, float arg1, float arg2, float arg3, float arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#deriveMMFont(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.Font DeriveMMFont(float[] arg0);
 
         #endregion
@@ -169,12 +169,12 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#deriveMMFont(float[],float,float,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
-        /// <param name="arg4"><see cref="float"/></param>
-        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Font DeriveMMFont(float[] arg0, float arg1, float arg2, float arg3, float arg4)
         {
             return IExecuteWithSignature<Java.Awt.Font>("deriveMMFont", "([FFFFF)Ljava/awt/Font;", arg0, arg1, arg2, arg3, arg4);
@@ -182,8 +182,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#deriveMMFont(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Font DeriveMMFont(float[] arg0)
         {
             return IExecuteWithSignature<Java.Awt.Font>("deriveMMFont", "([F)Ljava/awt/Font;", new object[] { arg0 });

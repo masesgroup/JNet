@@ -108,27 +108,27 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnAdded(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ColumnAdded(Javax.Swing.Event.TableColumnModelEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMarginChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ColumnMarginChanged(Javax.Swing.Event.ChangeEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMoved(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ColumnMoved(Javax.Swing.Event.TableColumnModelEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnRemoved(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ColumnRemoved(Javax.Swing.Event.TableColumnModelEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnSelectionChanged(javax.swing.event.ListSelectionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ColumnSelectionChanged(Javax.Swing.Event.ListSelectionEvent arg0);
 
         #endregion
@@ -192,7 +192,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnAdded(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ColumnAdded(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
             hasOverrideColumnAdded = false;
@@ -216,7 +216,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMarginChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ColumnMarginChanged(Javax.Swing.Event.ChangeEvent arg0)
         {
             hasOverrideColumnMarginChanged = false;
@@ -240,7 +240,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMoved(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ColumnMoved(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
             hasOverrideColumnMoved = false;
@@ -264,7 +264,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnRemoved(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ColumnRemoved(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
             hasOverrideColumnRemoved = false;
@@ -288,7 +288,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnSelectionChanged(javax.swing.event.ListSelectionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ColumnSelectionChanged(Javax.Swing.Event.ListSelectionEvent arg0)
         {
             hasOverrideColumnSelectionChanged = false;
@@ -327,7 +327,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnAdded(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ColumnAdded(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
             IExecuteWithSignature("columnAdded", "(Ljavax/swing/event/TableColumnModelEvent;)V", arg0);
@@ -335,7 +335,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMarginChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ColumnMarginChanged(Javax.Swing.Event.ChangeEvent arg0)
         {
             IExecuteWithSignature("columnMarginChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
@@ -343,7 +343,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMoved(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ColumnMoved(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
             IExecuteWithSignature("columnMoved", "(Ljavax/swing/event/TableColumnModelEvent;)V", arg0);
@@ -351,7 +351,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnRemoved(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ColumnRemoved(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
             IExecuteWithSignature("columnRemoved", "(Ljavax/swing/event/TableColumnModelEvent;)V", arg0);
@@ -359,7 +359,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnSelectionChanged(javax.swing.event.ListSelectionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ColumnSelectionChanged(Javax.Swing.Event.ListSelectionEvent arg0)
         {
             IExecuteWithSignature("columnSelectionChanged", "(Ljavax/swing/event/ListSelectionEvent;)V", arg0);

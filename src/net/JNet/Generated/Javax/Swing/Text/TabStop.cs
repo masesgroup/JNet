@@ -73,9 +73,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#%3Cinit%3E(float,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public TabStop(float arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,7 +83,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#%3Cinit%3E(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TabStop(float arg0)
             : base(arg0)
         {

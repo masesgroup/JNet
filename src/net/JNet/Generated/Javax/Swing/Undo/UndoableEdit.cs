@@ -90,29 +90,29 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool AddEdit(Javax.Swing.Undo.UndoableEdit arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#canRedo()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool CanRedo();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#canUndo()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool CanUndo();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#isSignificant()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsSignificant();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#replaceEdit(javax.swing.undo.UndoableEdit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool ReplaceEdit(Javax.Swing.Undo.UndoableEdit arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#die()"/>
@@ -121,12 +121,12 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#redo()"/>
         /// </summary>
-        /// <exception cref="Javax.Swing.Undo.CannotRedoException"/>
+        /// <exception cref=""/>
         void Redo();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#undo()"/>
         /// </summary>
-        /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
+        /// <exception cref=""/>
         void Undo();
 
         #endregion
@@ -183,8 +183,8 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
             return IExecuteWithSignature<bool>("addEdit", "(Ljavax/swing/undo/UndoableEdit;)Z", arg0);
@@ -192,7 +192,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#canRedo()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool CanRedo()
         {
             return IExecuteWithSignature<bool>("canRedo", "()Z");
@@ -200,7 +200,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#canUndo()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool CanUndo()
         {
             return IExecuteWithSignature<bool>("canUndo", "()Z");
@@ -208,7 +208,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#isSignificant()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSignificant()
         {
             return IExecuteWithSignature<bool>("isSignificant", "()Z");
@@ -216,8 +216,8 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#replaceEdit(javax.swing.undo.UndoableEdit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ReplaceEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
             return IExecuteWithSignature<bool>("replaceEdit", "(Ljavax/swing/undo/UndoableEdit;)Z", arg0);
@@ -232,7 +232,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#redo()"/>
         /// </summary>
-        /// <exception cref="Javax.Swing.Undo.CannotRedoException"/>
+        /// <exception cref=""/>
         public void Redo()
         {
             IExecuteWithSignature("redo", "()V");
@@ -240,7 +240,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#undo()"/>
         /// </summary>
-        /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
+        /// <exception cref=""/>
         public void Undo()
         {
             IExecuteWithSignature("undo", "()V");

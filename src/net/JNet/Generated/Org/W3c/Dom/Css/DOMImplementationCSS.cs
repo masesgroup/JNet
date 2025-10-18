@@ -78,10 +78,10 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/DOMImplementationCSS.html#createCSSStyleSheet(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Css.CSSStyleSheet"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.Css.CSSStyleSheet CreateCSSStyleSheet(Java.Lang.String arg0, Java.Lang.String arg1);
 
         #endregion
@@ -117,10 +117,10 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/DOMImplementationCSS.html#createCSSStyleSheet(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Css.CSSStyleSheet"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Css.CSSStyleSheet CreateCSSStyleSheet(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Css.CSSStyleSheet>("createCSSStyleSheet", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleSheet;", arg0, arg1);

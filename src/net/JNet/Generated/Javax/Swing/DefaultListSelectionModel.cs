@@ -75,15 +75,15 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.DefaultListSelectionModel"/> to <see cref="Javax.Swing.ListSelectionModel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.ListSelectionModel(Javax.Swing.DefaultListSelectionModel t) => t.Cast<Javax.Swing.ListSelectionModel>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.DefaultListSelectionModel"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Swing.DefaultListSelectionModel t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.DefaultListSelectionModel"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultListSelectionModel t) => t.Cast<Java.Io.Serializable>();
 
@@ -150,17 +150,17 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#getListeners(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public T[] GetListeners(Java.Lang.Class arg0)
         {
             return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#isLeadAnchorNotificationEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsLeadAnchorNotificationEnabled()
         {
             return IExecuteWithSignature<bool>("isLeadAnchorNotificationEnabled", "()Z");
@@ -168,8 +168,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#isSelectedIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSelectedIndex(int arg0)
         {
             return IExecuteWithSignature<bool>("isSelectedIndex", "(I)Z", arg0);
@@ -177,7 +177,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#isSelectionEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSelectionEmpty()
         {
             return IExecuteWithSignature<bool>("isSelectionEmpty", "()Z");
@@ -185,7 +185,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
             IExecuteWithSignature("addListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
@@ -193,8 +193,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#addSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("addSelectionInterval", "(II)V", arg0, arg1);
@@ -209,9 +209,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#insertIndexInterval(int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void InsertIndexInterval(int arg0, int arg1, bool arg2)
         {
             IExecuteWithSignature("insertIndexInterval", "(IIZ)V", arg0, arg1, arg2);
@@ -219,7 +219,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#moveLeadSelectionIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MoveLeadSelectionIndex(int arg0)
         {
             IExecuteWithSignature("moveLeadSelectionIndex", "(I)V", arg0);
@@ -227,8 +227,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#removeIndexInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemoveIndexInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("removeIndexInterval", "(II)V", arg0, arg1);
@@ -236,7 +236,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#removeListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
             IExecuteWithSignature("removeListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
@@ -244,8 +244,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#removeSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("removeSelectionInterval", "(II)V", arg0, arg1);
@@ -253,7 +253,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#setLeadAnchorNotificationEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetLeadAnchorNotificationEnabled(bool arg0)
         {
             IExecuteWithSignature("setLeadAnchorNotificationEnabled", "(Z)V", arg0);
@@ -261,8 +261,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#setSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("setSelectionInterval", "(II)V", arg0, arg1);

@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPanel.html#%3Cinit%3E(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JPanel(bool arg0)
             : base(arg0)
         {
@@ -81,8 +81,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPanel.html#%3Cinit%3E(java.awt.LayoutManager,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.LayoutManager"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JPanel(Java.Awt.LayoutManager arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -90,7 +90,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPanel.html#%3Cinit%3E(java.awt.LayoutManager)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.LayoutManager"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JPanel(Java.Awt.LayoutManager arg0)
             : base(arg0)
         {
@@ -100,7 +100,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JPanel"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JPanel t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -118,7 +118,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPanel.html#setUI(javax.swing.plaf.PanelUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.PanelUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.PanelUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/PanelUI;)V", arg0);

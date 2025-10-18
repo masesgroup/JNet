@@ -29,7 +29,7 @@ namespace Java.Awt.DesktopNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html"/>
     /// </summary>
-    public partial class QuitStrategy : Java.Lang.Enum<Java.Awt.DesktopNs.QuitStrategy>
+    public partial class QuitStrategy : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.awt.desktop.QuitStrategy";
         /// <summary>
@@ -97,8 +97,8 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Awt.DesktopNs.QuitStrategy"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.DesktopNs.QuitStrategy ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Awt.DesktopNs.QuitStrategy>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/desktop/QuitStrategy;", arg0);
@@ -106,7 +106,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.DesktopNs.QuitStrategy"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.DesktopNs.QuitStrategy[] Values()
         {
             return SExecuteWithSignatureArray<Java.Awt.DesktopNs.QuitStrategy>(LocalBridgeClazz, "values", "()[Ljava/awt/desktop/QuitStrategy;");

@@ -78,10 +78,10 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/URIResolver.html#resolve(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Xml.Transform.Source Resolve(Java.Lang.String arg0, Java.Lang.String arg1);
 
         #endregion
@@ -117,10 +117,10 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/URIResolver.html#resolve(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Transform.Source Resolve(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Transform.Source>("resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", arg0, arg1);

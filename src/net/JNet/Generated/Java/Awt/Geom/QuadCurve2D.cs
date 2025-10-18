@@ -159,11 +159,11 @@ namespace Java.Awt.Geom
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Geom.QuadCurve2D"/> to <see cref="Java.Awt.Shape"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.Shape(Java.Awt.Geom.QuadCurve2D t) => t.Cast<Java.Awt.Shape>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Geom.QuadCurve2D"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.QuadCurve2D t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -177,13 +177,13 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getFlatness(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <param name="arg5"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static double GetFlatness(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
             return SExecuteWithSignature<double>(LocalBridgeClazz, "getFlatness", "(DDDDDD)D", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -191,9 +191,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getFlatness(double[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static double GetFlatness(double[] arg0, int arg1)
         {
             return SExecuteWithSignature<double>(LocalBridgeClazz, "getFlatness", "([DI)D", arg0, arg1);
@@ -201,13 +201,13 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getFlatnessSq(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <param name="arg5"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static double GetFlatnessSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
             return SExecuteWithSignature<double>(LocalBridgeClazz, "getFlatnessSq", "(DDDDDD)D", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -215,9 +215,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getFlatnessSq(double[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static double GetFlatnessSq(double[] arg0, int arg1)
         {
             return SExecuteWithSignature<double>(LocalBridgeClazz, "getFlatnessSq", "([DI)D", arg0, arg1);
@@ -225,9 +225,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#solveQuadratic(double[],double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int SolveQuadratic(double[] arg0, double[] arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "solveQuadratic", "([D[D)I", arg0, arg1);
@@ -235,8 +235,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#solveQuadratic(double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int SolveQuadratic(double[] arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "solveQuadratic", "([D)I", new object[] { arg0 });
@@ -244,12 +244,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#subdivide(double[],int,double[],int,double[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public static void Subdivide(double[] arg0, int arg1, double[] arg2, int arg3, double[] arg4, int arg5)
         {
             SExecuteWithSignature(LocalBridgeClazz, "subdivide", "([DI[DI[DI)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -257,9 +257,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#subdivide(java.awt.geom.QuadCurve2D,java.awt.geom.QuadCurve2D,java.awt.geom.QuadCurve2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.QuadCurve2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.QuadCurve2D"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Geom.QuadCurve2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public static void Subdivide(Java.Awt.Geom.QuadCurve2D arg0, Java.Awt.Geom.QuadCurve2D arg1, Java.Awt.Geom.QuadCurve2D arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "subdivide", "(Ljava/awt/geom/QuadCurve2D;Ljava/awt/geom/QuadCurve2D;Ljava/awt/geom/QuadCurve2D;)V", arg0, arg1, arg2);
@@ -355,12 +355,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#setCurve(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <param name="arg5"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void SetCurve(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
             IExecuteWithSignature("setCurve", "(DDDDDD)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -368,11 +368,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#contains(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecuteWithSignature<bool>("contains", "(DDDD)Z", arg0, arg1, arg2, arg3);
@@ -380,9 +380,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#contains(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(double arg0, double arg1)
         {
             return IExecuteWithSignature<bool>("contains", "(DD)Z", arg0, arg1);
@@ -390,8 +390,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#contains(java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Point2D;)Z", arg0);
@@ -399,8 +399,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#contains(java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
@@ -408,11 +408,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#intersects(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecuteWithSignature<bool>("intersects", "(DDDD)Z", arg0, arg1, arg2, arg3);
@@ -420,8 +420,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#intersects(java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecuteWithSignature<bool>("intersects", "(Ljava/awt/geom/Rectangle2D;)Z", arg0);
@@ -429,9 +429,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
             return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;D)Ljava/awt/geom/PathIterator;", arg0, arg1);
@@ -439,8 +439,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#getPathIterator(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0)
         {
             return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/PathIterator;", arg0);
@@ -448,8 +448,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#setCurve(double[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetCurve(double[] arg0, int arg1)
         {
             IExecuteWithSignature("setCurve", "([DI)V", arg0, arg1);
@@ -457,9 +457,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#setCurve(java.awt.geom.Point2D,java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void SetCurve(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, Java.Awt.Geom.Point2D arg2)
         {
             IExecuteWithSignature("setCurve", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)V", arg0, arg1, arg2);
@@ -467,8 +467,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#setCurve(java.awt.geom.Point2D[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetCurve(Java.Awt.Geom.Point2D[] arg0, int arg1)
         {
             IExecuteWithSignature("setCurve", "([Ljava/awt/geom/Point2D;I)V", arg0, arg1);
@@ -476,7 +476,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#setCurve(java.awt.geom.QuadCurve2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.QuadCurve2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetCurve(Java.Awt.Geom.QuadCurve2D arg0)
         {
             IExecuteWithSignature("setCurve", "(Ljava/awt/geom/QuadCurve2D;)V", arg0);
@@ -484,8 +484,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.html#subdivide(java.awt.geom.QuadCurve2D,java.awt.geom.QuadCurve2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.QuadCurve2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.QuadCurve2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Subdivide(Java.Awt.Geom.QuadCurve2D arg0, Java.Awt.Geom.QuadCurve2D arg1)
         {
             IExecuteWithSignature("subdivide", "(Ljava/awt/geom/QuadCurve2D;Ljava/awt/geom/QuadCurve2D;)V", arg0, arg1);
@@ -501,12 +501,12 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Double.html#%3Cinit%3E(double,double,double,double,double,double)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="double"/></param>
-            /// <param name="arg1"><see cref="double"/></param>
-            /// <param name="arg2"><see cref="double"/></param>
-            /// <param name="arg3"><see cref="double"/></param>
-            /// <param name="arg4"><see cref="double"/></param>
-            /// <param name="arg5"><see cref="double"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <param name="arg5"><see cref=""/></param>
             public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
@@ -516,7 +516,7 @@ namespace Java.Awt.Geom
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Awt.Geom.QuadCurve2D.Double"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.QuadCurve2D.Double t) => t.Cast<Java.Io.Serializable>();
 
@@ -573,12 +573,12 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html#%3Cinit%3E(float,float,float,float,float,float)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="float"/></param>
-            /// <param name="arg1"><see cref="float"/></param>
-            /// <param name="arg2"><see cref="float"/></param>
-            /// <param name="arg3"><see cref="float"/></param>
-            /// <param name="arg4"><see cref="float"/></param>
-            /// <param name="arg5"><see cref="float"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <param name="arg5"><see cref=""/></param>
             public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
@@ -588,7 +588,7 @@ namespace Java.Awt.Geom
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Awt.Geom.QuadCurve2D.Float"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.QuadCurve2D.Float t) => t.Cast<Java.Io.Serializable>();
 
@@ -630,12 +630,12 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/QuadCurve2D.Float.html#setCurve(float,float,float,float,float,float)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="float"/></param>
-            /// <param name="arg1"><see cref="float"/></param>
-            /// <param name="arg2"><see cref="float"/></param>
-            /// <param name="arg3"><see cref="float"/></param>
-            /// <param name="arg4"><see cref="float"/></param>
-            /// <param name="arg5"><see cref="float"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <param name="arg5"><see cref=""/></param>
             public void SetCurve(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
             {
                 IExecuteWithSignature("setCurve", "(FFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5);

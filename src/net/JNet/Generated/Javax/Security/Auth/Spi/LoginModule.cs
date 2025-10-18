@@ -78,35 +78,35 @@ namespace Javax.Security.Auth.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#abort()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool Abort();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#commit()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool Commit();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool Login();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool Logout();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#initialize(javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler,java.util.Map,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
-        void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<Java.Lang.String, object> arg2, Java.Util.Map<Java.Lang.String, object> arg3);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<, > arg2, Java.Util.Map<, > arg3);
 
         #endregion
 
@@ -141,8 +141,8 @@ namespace Javax.Security.Auth.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#abort()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool Abort()
         {
             return IExecuteWithSignature<bool>("abort", "()Z");
@@ -150,8 +150,8 @@ namespace Javax.Security.Auth.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#commit()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool Commit()
         {
             return IExecuteWithSignature<bool>("commit", "()Z");
@@ -159,8 +159,8 @@ namespace Javax.Security.Auth.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool Login()
         {
             return IExecuteWithSignature<bool>("login", "()Z");
@@ -168,8 +168,8 @@ namespace Javax.Security.Auth.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool Logout()
         {
             return IExecuteWithSignature<bool>("logout", "()Z");
@@ -177,11 +177,11 @@ namespace Javax.Security.Auth.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#initialize(javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler,java.util.Map,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
-        public void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<Java.Lang.String, object> arg2, Java.Util.Map<Java.Lang.String, object> arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        public void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<, > arg2, Java.Util.Map<, > arg3)
         {
             IExecuteWithSignature("initialize", "(Ljavax/security/auth/Subject;Ljavax/security/auth/callback/CallbackHandler;Ljava/util/Map;Ljava/util/Map;)V", arg0, arg1, arg2, arg3);
         }

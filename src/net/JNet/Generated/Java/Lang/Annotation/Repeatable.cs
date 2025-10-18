@@ -78,9 +78,9 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Repeatable.html#value()"/>
         /// </summary>
-        /// <typeparam name="ReturnExtendsJava_Lang_Annotation_Annotation"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        Java.Lang.Class Value<ReturnExtendsJava_Lang_Annotation_Annotation>() where ReturnExtendsJava_Lang_Annotation_Annotation : Java.Lang.Annotation.Annotation;
+        /// <typeparam name="ReturnExtendsJava_Lang_Annotation_Annotation"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Lang.Class Value() where ReturnExtendsJava_Lang_Annotation_Annotation : Java.Lang.Annotation.Annotation;
 
         #endregion
 
@@ -115,9 +115,9 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Repeatable.html#value()"/>
         /// </summary>
-        /// <typeparam name="ReturnExtendsJava_Lang_Annotation_Annotation"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class Value<ReturnExtendsJava_Lang_Annotation_Annotation>() where ReturnExtendsJava_Lang_Annotation_Annotation : Java.Lang.Annotation.Annotation
+        /// <typeparam name="ReturnExtendsJava_Lang_Annotation_Annotation"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Lang.Class Value() where ReturnExtendsJava_Lang_Annotation_Annotation : Java.Lang.Annotation.Annotation
         {
             return IExecuteWithSignature<Java.Lang.Class>("value", "()Ljava/lang/Class;");
         }

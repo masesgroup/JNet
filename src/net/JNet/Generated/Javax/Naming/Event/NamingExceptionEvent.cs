@@ -73,8 +73,8 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#%3Cinit%3E(javax.naming.event.EventContext,javax.naming.NamingException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.EventContext"/></param>
-        /// <param name="arg1"><see cref="Javax.Naming.NamingException"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public NamingExceptionEvent(Javax.Naming.Event.EventContext arg0, Javax.Naming.NamingException arg1)
             : base(arg0, arg1)
         {
@@ -112,7 +112,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#dispatch(javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Dispatch(Javax.Naming.Event.NamingListener arg0)
         {
             IExecuteWithSignature("dispatch", "(Ljavax/naming/event/NamingListener;)V", arg0);

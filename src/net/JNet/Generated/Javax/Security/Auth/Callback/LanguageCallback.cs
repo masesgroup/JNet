@@ -75,11 +75,11 @@ namespace Javax.Security.Auth.Callback
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Callback.LanguageCallback"/> to <see cref="Javax.Security.Auth.Callback.Callback"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Security.Auth.Callback.Callback(Javax.Security.Auth.Callback.LanguageCallback t) => t.Cast<Javax.Security.Auth.Callback.Callback>();
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Callback.LanguageCallback"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.LanguageCallback t) => t.Cast<Java.Io.Serializable>();
 

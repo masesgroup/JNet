@@ -75,11 +75,11 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.Fidelity"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.Fidelity t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.Fidelity"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.Fidelity t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
 

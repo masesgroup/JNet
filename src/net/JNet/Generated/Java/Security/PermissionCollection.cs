@@ -91,8 +91,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#implies(java.security.Permission)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Implies(Java.Security.Permission arg0)
         {
             return IExecuteWithSignature<bool>("implies", "(Ljava/security/Permission;)Z", arg0);
@@ -100,15 +100,15 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#elements()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<Java.Security.Permission> Elements()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration Elements()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Java.Security.Permission>>("elements", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("elements", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#add(java.security.Permission)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Add(Java.Security.Permission arg0)
         {
             IExecuteWithSignature("add", "(Ljava/security/Permission;)V", arg0);
@@ -116,7 +116,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#isReadOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsReadOnly()
         {
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
@@ -124,10 +124,10 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#elementsAsStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Security.Permission> ElementsAsStream()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Stream.Stream ElementsAsStream()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Security.Permission>>("elementsAsStream", "()Ljava/util/stream/Stream;");
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("elementsAsStream", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#setReadOnly()"/>

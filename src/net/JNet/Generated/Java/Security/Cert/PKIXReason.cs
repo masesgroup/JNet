@@ -29,7 +29,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html"/>
     /// </summary>
-    public partial class PKIXReason : Java.Lang.Enum<Java.Security.Cert.PKIXReason>
+    public partial class PKIXReason : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.security.cert.PKIXReason";
         /// <summary>
@@ -133,8 +133,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Cert.PKIXReason"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Security.Cert.PKIXReason ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Security.Cert.PKIXReason>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/cert/PKIXReason;", arg0);
@@ -142,7 +142,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Security.Cert.PKIXReason"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Security.Cert.PKIXReason[] Values()
         {
             return SExecuteWithSignatureArray<Java.Security.Cert.PKIXReason>(LocalBridgeClazz, "values", "()[Ljava/security/cert/PKIXReason;");

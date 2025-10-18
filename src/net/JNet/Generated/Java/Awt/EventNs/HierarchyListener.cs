@@ -108,7 +108,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void HierarchyChanged(Java.Awt.EventNs.HierarchyEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void HierarchyChanged(Java.Awt.EventNs.HierarchyEvent arg0)
         {
             hasOverrideHierarchyChanged = false;
@@ -207,7 +207,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void HierarchyChanged(Java.Awt.EventNs.HierarchyEvent arg0)
         {
             IExecuteWithSignature("hierarchyChanged", "(Ljava/awt/event/HierarchyEvent;)V", arg0);

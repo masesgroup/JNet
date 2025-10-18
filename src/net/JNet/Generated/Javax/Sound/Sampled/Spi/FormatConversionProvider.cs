@@ -105,9 +105,9 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#getTargetFormats(javax.sound.sampled.AudioFormat.Encoding,javax.sound.sampled.AudioFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Sampled.AudioFormat[] GetTargetFormats(Javax.Sound.Sampled.AudioFormat.Encoding arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
             return IExecuteWithSignatureArray<Javax.Sound.Sampled.AudioFormat>("getTargetFormats", "(Ljavax/sound/sampled/AudioFormat$Encoding;Ljavax/sound/sampled/AudioFormat;)[Ljavax/sound/sampled/AudioFormat;", arg0, arg1);
@@ -115,8 +115,8 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#getTargetEncodings(javax.sound.sampled.AudioFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Sampled.AudioFormat.Encoding[] GetTargetEncodings(Javax.Sound.Sampled.AudioFormat arg0)
         {
             return IExecuteWithSignatureArray<Javax.Sound.Sampled.AudioFormat.Encoding>("getTargetEncodings", "(Ljavax/sound/sampled/AudioFormat;)[Ljavax/sound/sampled/AudioFormat$Encoding;", arg0);
@@ -124,9 +124,9 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#getAudioInputStream(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Javax.Sound.Sampled.AudioFormat arg0, Javax.Sound.Sampled.AudioInputStream arg1)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", "(Ljavax/sound/sampled/AudioFormat;Ljavax/sound/sampled/AudioInputStream;)Ljavax/sound/sampled/AudioInputStream;", arg0, arg1);
@@ -134,9 +134,9 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#getAudioInputStream(javax.sound.sampled.AudioFormat.Encoding,javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Javax.Sound.Sampled.AudioFormat.Encoding arg0, Javax.Sound.Sampled.AudioInputStream arg1)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", "(Ljavax/sound/sampled/AudioFormat$Encoding;Ljavax/sound/sampled/AudioInputStream;)Ljavax/sound/sampled/AudioInputStream;", arg0, arg1);
@@ -144,9 +144,9 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#isConversionSupported(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsConversionSupported(Javax.Sound.Sampled.AudioFormat arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
             return IExecuteWithSignature<bool>("isConversionSupported", "(Ljavax/sound/sampled/AudioFormat;Ljavax/sound/sampled/AudioFormat;)Z", arg0, arg1);
@@ -154,9 +154,9 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#isConversionSupported(javax.sound.sampled.AudioFormat.Encoding,javax.sound.sampled.AudioFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsConversionSupported(Javax.Sound.Sampled.AudioFormat.Encoding arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
             return IExecuteWithSignature<bool>("isConversionSupported", "(Ljavax/sound/sampled/AudioFormat$Encoding;Ljavax/sound/sampled/AudioFormat;)Z", arg0, arg1);
@@ -164,8 +164,8 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#isSourceEncodingSupported(javax.sound.sampled.AudioFormat.Encoding)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSourceEncodingSupported(Javax.Sound.Sampled.AudioFormat.Encoding arg0)
         {
             return IExecuteWithSignature<bool>("isSourceEncodingSupported", "(Ljavax/sound/sampled/AudioFormat$Encoding;)Z", arg0);
@@ -173,8 +173,8 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/FormatConversionProvider.html#isTargetEncodingSupported(javax.sound.sampled.AudioFormat.Encoding)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsTargetEncodingSupported(Javax.Sound.Sampled.AudioFormat.Encoding arg0)
         {
             return IExecuteWithSignature<bool>("isTargetEncodingSupported", "(Ljavax/sound/sampled/AudioFormat$Encoding;)Z", arg0);

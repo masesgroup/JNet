@@ -73,9 +73,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#%3Cinit%3E(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public Segment(char[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -85,15 +85,15 @@ namespace Javax.Swing.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Segment"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.Segment t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Segment"/> to <see cref="Java.Text.CharacterIterator"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Text.CharacterIterator(Javax.Swing.Text.Segment t) => t.Cast<Java.Text.CharacterIterator>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Segment"/> to <see cref="Java.Lang.CharSequence"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Javax.Swing.Text.Segment t) => t.Cast<Java.Lang.CharSequence>();
 
@@ -144,7 +144,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#isPartialReturn()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPartialReturn()
         {
             return IExecuteWithSignature<bool>("isPartialReturn", "()Z");
@@ -152,8 +152,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#charAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public char CharAt(int arg0)
         {
             return IExecuteWithSignature<char>("charAt", "(I)C", arg0);
@@ -161,7 +161,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#current()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char Current()
         {
             return IExecuteWithSignature<char>("current", "()C");
@@ -169,7 +169,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#first()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char First()
         {
             return IExecuteWithSignature<char>("first", "()C");
@@ -177,7 +177,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#last()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char Last()
         {
             return IExecuteWithSignature<char>("last", "()C");
@@ -185,7 +185,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#next()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char Next()
         {
             return IExecuteWithSignature<char>("next", "()C");
@@ -193,7 +193,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#previous()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char Previous()
         {
             return IExecuteWithSignature<char>("previous", "()C");
@@ -201,8 +201,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#setIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public char SetIndex(int arg0)
         {
             return IExecuteWithSignature<char>("setIndex", "(I)C", arg0);
@@ -210,7 +210,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#length()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Length()
         {
             return IExecuteWithSignature<int>("length", "()I");
@@ -218,9 +218,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#subSequence(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("subSequence", "(II)Ljava/lang/CharSequence;", arg0, arg1);
@@ -228,7 +228,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#setPartialReturn(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetPartialReturn(bool arg0)
         {
             IExecuteWithSignature("setPartialReturn", "(Z)V", arg0);

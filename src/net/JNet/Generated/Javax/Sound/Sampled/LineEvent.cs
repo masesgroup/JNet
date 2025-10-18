@@ -114,9 +114,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#%3Cinit%3E(javax.sound.sampled.Line,javax.sound.sampled.LineEvent.Type,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Sampled.LineEvent.Type"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public LineEvent(Javax.Sound.Sampled.Line arg0, Javax.Sound.Sampled.LineEvent.Type arg1, long arg2)
             : base(arg0, arg1, arg2)
         {

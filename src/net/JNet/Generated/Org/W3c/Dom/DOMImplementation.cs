@@ -78,34 +78,34 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#hasFeature(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool HasFeature(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#getFeature(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         object GetFeature(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#createDocument(java.lang.String,java.lang.String,org.w3c.dom.DocumentType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Org.W3c.Dom.DocumentType"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.Document CreateDocument(Java.Lang.String arg0, Java.Lang.String arg1, Org.W3c.Dom.DocumentType arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#createDocumentType(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.DocumentType"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.DocumentType CreateDocumentType(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2);
 
         #endregion
@@ -141,9 +141,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#hasFeature(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool HasFeature(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<bool>("hasFeature", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
@@ -151,9 +151,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#getFeature(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetFeature(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature("getFeature", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
@@ -161,11 +161,11 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#createDocument(java.lang.String,java.lang.String,org.w3c.dom.DocumentType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Org.W3c.Dom.DocumentType"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Document CreateDocument(Java.Lang.String arg0, Java.Lang.String arg1, Org.W3c.Dom.DocumentType arg2)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Document>("createDocument", "(Ljava/lang/String;Ljava/lang/String;Lorg/w3c/dom/DocumentType;)Lorg/w3c/dom/Document;", arg0, arg1, arg2);
@@ -173,11 +173,11 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#createDocumentType(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.DocumentType"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.DocumentType CreateDocumentType(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return IExecuteWithSignature<Org.W3c.Dom.DocumentType>("createDocumentType", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/DocumentType;", arg0, arg1, arg2);

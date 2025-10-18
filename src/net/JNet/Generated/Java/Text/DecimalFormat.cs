@@ -73,8 +73,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#%3Cinit%3E(java.lang.String,java.text.DecimalFormatSymbols)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Text.DecimalFormatSymbols"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DecimalFormat(Java.Lang.String arg0, Java.Text.DecimalFormatSymbols arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DecimalFormat(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -155,7 +155,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#isDecimalSeparatorAlwaysShown()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDecimalSeparatorAlwaysShown()
         {
             return IExecuteWithSignature<bool>("isDecimalSeparatorAlwaysShown", "()Z");
@@ -163,7 +163,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#isParseBigDecimal()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsParseBigDecimal()
         {
             return IExecuteWithSignature<bool>("isParseBigDecimal", "()Z");
@@ -171,7 +171,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#toLocalizedPattern()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToLocalizedPattern()
         {
             return IExecuteWithSignature<Java.Lang.String>("toLocalizedPattern", "()Ljava/lang/String;");
@@ -179,7 +179,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#toPattern()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToPattern()
         {
             return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
@@ -187,7 +187,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#applyLocalizedPattern(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ApplyLocalizedPattern(Java.Lang.String arg0)
         {
             IExecuteWithSignature("applyLocalizedPattern", "(Ljava/lang/String;)V", arg0);
@@ -195,7 +195,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#applyPattern(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ApplyPattern(Java.Lang.String arg0)
         {
             IExecuteWithSignature("applyPattern", "(Ljava/lang/String;)V", arg0);
@@ -203,7 +203,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setDecimalSeparatorAlwaysShown(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDecimalSeparatorAlwaysShown(bool arg0)
         {
             IExecuteWithSignature("setDecimalSeparatorAlwaysShown", "(Z)V", arg0);
@@ -211,7 +211,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormat.html#setParseBigDecimal(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetParseBigDecimal(bool arg0)
         {
             IExecuteWithSignature("setParseBigDecimal", "(Z)V", arg0);

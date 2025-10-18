@@ -77,11 +77,11 @@ namespace Java.Nio.Channels
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.AsynchronousSocketChannel"/> to <see cref="Java.Nio.Channels.AsynchronousByteChannel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.AsynchronousByteChannel(Java.Nio.Channels.AsynchronousSocketChannel t) => t.Cast<Java.Nio.Channels.AsynchronousByteChannel>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.AsynchronousSocketChannel"/> to <see cref="Java.Nio.Channels.NetworkChannel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.NetworkChannel(Java.Nio.Channels.AsynchronousSocketChannel t) => t.Cast<Java.Nio.Channels.NetworkChannel>();
 
@@ -95,8 +95,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#open()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Nio.Channels.AsynchronousSocketChannel Open()
         {
             return SExecuteWithSignature<Java.Nio.Channels.AsynchronousSocketChannel>(LocalBridgeClazz, "open", "()Ljava/nio/channels/AsynchronousSocketChannel;");
@@ -104,9 +104,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#open(java.nio.channels.AsynchronousChannelGroup)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></param>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Nio.Channels.AsynchronousSocketChannel Open(Java.Nio.Channels.AsynchronousChannelGroup arg0)
         {
             return SExecuteWithSignature<Java.Nio.Channels.AsynchronousSocketChannel>(LocalBridgeClazz, "open", "(Ljava/nio/channels/AsynchronousChannelGroup;)Ljava/nio/channels/AsynchronousSocketChannel;", arg0);
@@ -132,80 +132,80 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#connect(java.net.SocketAddress,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Connect<A, Arg2objectSuperA>(Java.Net.SocketAddress arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Void, Arg2objectSuperA> arg2) where Arg2objectSuperA : A
+        /// <typeparam name="Arg2objectSuperA"><see cref=""/></typeparam>
+        public void Connect<, >(Java.Net.SocketAddress arg0, A arg1, Java.Nio.Channels.CompletionHandler<, > arg2) where Arg2objectSuperA : A
         {
             IExecuteWithSignature("connect", "(Ljava/net/SocketAddress;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#read(java.nio.ByteBuffer,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg3"><typeparamref name="A"/></param>
-        /// <param name="arg4"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg4objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Read<A, Arg4objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg4objectSuperA> arg4) where Arg4objectSuperA : A
+        /// <typeparam name="Arg4objectSuperA"><see cref=""/></typeparam>
+        public void Read<, >(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<, > arg4) where Arg4objectSuperA : A
         {
             IExecuteWithSignature("read", "(Ljava/nio/ByteBuffer;JLjava/util/concurrent/TimeUnit;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#read(java.nio.ByteBuffer[],int,int,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="long"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg5"><typeparamref name="A"/></param>
-        /// <param name="arg6"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg6objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Read<A, Arg6objectSuperA>(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<Java.Lang.Long, Arg6objectSuperA> arg6) where Arg6objectSuperA : A
+        /// <typeparam name="Arg6objectSuperA"><see cref=""/></typeparam>
+        public void Read<, >(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<, > arg6) where Arg6objectSuperA : A
         {
             IExecuteWithSignature("read", "([Ljava/nio/ByteBuffer;IIJLjava/util/concurrent/TimeUnit;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#write(java.nio.ByteBuffer,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg3"><typeparamref name="A"/></param>
-        /// <param name="arg4"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg4objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Write<A, Arg4objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg4objectSuperA> arg4) where Arg4objectSuperA : A
+        /// <typeparam name="Arg4objectSuperA"><see cref=""/></typeparam>
+        public void Write<, >(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<, > arg4) where Arg4objectSuperA : A
         {
             IExecuteWithSignature("write", "(Ljava/nio/ByteBuffer;JLjava/util/concurrent/TimeUnit;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#write(java.nio.ByteBuffer[],int,int,long,java.util.concurrent.TimeUnit,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="long"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg5"><typeparamref name="A"/></param>
-        /// <param name="arg6"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg6objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Write<A, Arg6objectSuperA>(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<Java.Lang.Long, Arg6objectSuperA> arg6) where Arg6objectSuperA : A
+        /// <typeparam name="Arg6objectSuperA"><see cref=""/></typeparam>
+        public void Write<, >(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<, > arg6) where Arg6objectSuperA : A
         {
             IExecuteWithSignature("write", "([Ljava/nio/ByteBuffer;IIJLjava/util/concurrent/TimeUnit;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#shutdownInput()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.AsynchronousSocketChannel ShutdownInput()
         {
             return IExecuteWithSignature<Java.Nio.Channels.AsynchronousSocketChannel>("shutdownInput", "()Ljava/nio/channels/AsynchronousSocketChannel;");
@@ -213,8 +213,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#shutdownOutput()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.AsynchronousSocketChannel ShutdownOutput()
         {
             return IExecuteWithSignature<Java.Nio.Channels.AsynchronousSocketChannel>("shutdownOutput", "()Ljava/nio/channels/AsynchronousSocketChannel;");
@@ -222,58 +222,58 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<Java.Lang.Integer> Read(Java.Nio.ByteBuffer arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Read(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Lang.Integer>>("read", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/Future;", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("read", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/Future;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<Java.Lang.Integer> Write(Java.Nio.ByteBuffer arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Write(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Lang.Integer>>("write", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/Future;", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("write", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/Future;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#connect(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<Java.Lang.Void> Connect(Java.Net.SocketAddress arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Connect(Java.Net.SocketAddress arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Lang.Void>>("connect", "(Ljava/net/SocketAddress;)Ljava/util/concurrent/Future;", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("connect", "(Ljava/net/SocketAddress;)Ljava/util/concurrent/Future;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#read(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA : A
+        /// <typeparam name="Arg2objectSuperA"><see cref=""/></typeparam>
+        public void Read<, >(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<, > arg2) where Arg2objectSuperA : A
         {
             IExecuteWithSignature("read", "(Ljava/nio/ByteBuffer;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA : A
+        /// <typeparam name="Arg2objectSuperA"><see cref=""/></typeparam>
+        public void Write<, >(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<, > arg2) where Arg2objectSuperA : A
         {
             IExecuteWithSignature("write", "(Ljava/nio/ByteBuffer;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#provider()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
         {
             return IExecuteWithSignature<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider", "()Ljava/nio/channels/spi/AsynchronousChannelProvider;");
@@ -281,9 +281,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#bind(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
             return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
@@ -291,10 +291,10 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.NetworkChannel SetOption(Java.Net.SocketOption arg0, object arg1)
         {
             return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/nio/channels/NetworkChannel;", arg0, arg1);

@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#%3Cinit%3E(org.xml.sax.Locator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public LocatorImpl(Org.Xml.Sax.Locator arg0)
             : base(arg0)
         {

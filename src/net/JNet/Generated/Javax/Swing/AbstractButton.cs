@@ -77,11 +77,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.AbstractButton"/> to <see cref="Java.Awt.ItemSelectable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.ItemSelectable(Javax.Swing.AbstractButton t) => t.Cast<Java.Awt.ItemSelectable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.AbstractButton"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.AbstractButton t) => t.Cast<Javax.Swing.SwingConstants>();
 
@@ -388,7 +388,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isBorderPainted()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBorderPainted()
         {
             return IExecuteWithSignature<bool>("isBorderPainted", "()Z");
@@ -396,7 +396,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isContentAreaFilled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsContentAreaFilled()
         {
             return IExecuteWithSignature<bool>("isContentAreaFilled", "()Z");
@@ -404,7 +404,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isFocusPainted()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFocusPainted()
         {
             return IExecuteWithSignature<bool>("isFocusPainted", "()Z");
@@ -412,7 +412,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isRolloverEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRolloverEnabled()
         {
             return IExecuteWithSignature<bool>("isRolloverEnabled", "()Z");
@@ -420,7 +420,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isSelected()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSelected()
         {
             return IExecuteWithSignature<bool>("isSelected", "()Z");
@@ -428,7 +428,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -436,7 +436,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -444,7 +444,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
@@ -459,7 +459,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#doClick(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DoClick(int arg0)
         {
             IExecuteWithSignature("doClick", "(I)V", arg0);
@@ -467,7 +467,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -475,7 +475,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -483,7 +483,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecuteWithSignature("removeItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
@@ -491,7 +491,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setBorderPainted(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetBorderPainted(bool arg0)
         {
             IExecuteWithSignature("setBorderPainted", "(Z)V", arg0);
@@ -499,7 +499,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setContentAreaFilled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetContentAreaFilled(bool arg0)
         {
             IExecuteWithSignature("setContentAreaFilled", "(Z)V", arg0);
@@ -507,7 +507,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setFocusPainted(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetFocusPainted(bool arg0)
         {
             IExecuteWithSignature("setFocusPainted", "(Z)V", arg0);
@@ -515,7 +515,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMnemonic(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMnemonic(char arg0)
         {
             IExecuteWithSignature("setMnemonic", "(C)V", arg0);
@@ -523,7 +523,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMnemonic(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMnemonic(int arg0)
         {
             IExecuteWithSignature("setMnemonic", "(I)V", arg0);
@@ -531,7 +531,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setRolloverEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRolloverEnabled(bool arg0)
         {
             IExecuteWithSignature("setRolloverEnabled", "(Z)V", arg0);
@@ -539,7 +539,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setSelected(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSelected(bool arg0)
         {
             IExecuteWithSignature("setSelected", "(Z)V", arg0);
@@ -547,7 +547,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setUI(javax.swing.plaf.ButtonUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ButtonUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.ButtonUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ButtonUI;)V", arg0);

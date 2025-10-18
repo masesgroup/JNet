@@ -78,36 +78,36 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolve(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Xml.Transform.Source Resolve(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolveResource(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Ls.LSInput"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Org.W3c.Dom.Ls.LSInput ResolveResource(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolveEntity(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         object ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3);
 
         #endregion
@@ -129,19 +129,19 @@ namespace Javax.Xml.Catalog
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Catalog.CatalogResolver"/> to <see cref="Org.Xml.Sax.EntityResolver"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.EntityResolver(Javax.Xml.Catalog.CatalogResolver t) => t.Cast<Org.Xml.Sax.EntityResolver>();
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Catalog.CatalogResolver"/> to <see cref="Javax.Xml.Stream.XMLResolver"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Xml.Stream.XMLResolver(Javax.Xml.Catalog.CatalogResolver t) => t.Cast<Javax.Xml.Stream.XMLResolver>();
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Catalog.CatalogResolver"/> to <see cref="Javax.Xml.Transform.URIResolver"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Xml.Transform.URIResolver(Javax.Xml.Catalog.CatalogResolver t) => t.Cast<Javax.Xml.Transform.URIResolver>();
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Catalog.CatalogResolver"/> to <see cref="Org.W3c.Dom.Ls.LSResourceResolver"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Org.W3c.Dom.Ls.LSResourceResolver(Javax.Xml.Catalog.CatalogResolver t) => t.Cast<Org.W3c.Dom.Ls.LSResourceResolver>();
 
@@ -159,9 +159,9 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolve(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Transform.Source Resolve(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Transform.Source>("resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", arg0, arg1);
@@ -169,12 +169,12 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolveResource(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Ls.LSInput"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.Ls.LSInput ResolveResource(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Ls.LSInput>("resolveResource", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/ls/LSInput;", arg0, arg1, arg2, arg3, arg4);
@@ -182,9 +182,9 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolveEntity(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Org.Xml.Sax.InputSource>("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1);
@@ -192,12 +192,12 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             return IExecuteWithSignature("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);

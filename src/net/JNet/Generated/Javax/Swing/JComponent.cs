@@ -120,7 +120,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JComponent"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.JComponent t) => t.Cast<Java.Io.Serializable>();
 
@@ -171,8 +171,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isLightweightComponent(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsLightweightComponent(Java.Awt.Component arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLightweightComponent", "(Ljava/awt/Component;)Z", arg0);
@@ -317,7 +317,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isOptimizedDrawingEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOptimizedDrawingEnabled()
         {
             return IExecuteWithSignature<bool>("isOptimizedDrawingEnabled", "()Z");
@@ -325,7 +325,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isPaintingTile()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPaintingTile()
         {
             return IExecuteWithSignature<bool>("isPaintingTile", "()Z");
@@ -333,7 +333,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isRequestFocusEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRequestFocusEnabled()
         {
             return IExecuteWithSignature<bool>("isRequestFocusEnabled", "()Z");
@@ -341,8 +341,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#requestFocus(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RequestFocus(bool arg0)
         {
             return IExecuteWithSignature<bool>("requestFocus", "(Z)Z", arg0);
@@ -350,7 +350,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isPaintingForPrint()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPaintingForPrint()
         {
             return IExecuteWithSignature<bool>("isPaintingForPrint", "()Z");
@@ -358,8 +358,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getClientProperty(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetClientProperty(object arg0)
         {
             return IExecuteWithSignature("getClientProperty", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -367,8 +367,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInputMap(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.InputMap"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.InputMap GetInputMap(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.InputMap>("getInputMap", "(I)Ljavax/swing/InputMap;", arg0);
@@ -376,8 +376,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#putClientProperty(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void PutClientProperty(object arg0, object arg1)
         {
             IExecuteWithSignature("putClientProperty", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -385,8 +385,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInputMap(int,javax.swing.InputMap)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.InputMap"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetInputMap(int arg0, Javax.Swing.InputMap arg1)
         {
             IExecuteWithSignature("setInputMap", "(ILjavax/swing/InputMap;)V", arg0, arg1);
@@ -394,8 +394,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getConditionForKeyStroke(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetConditionForKeyStroke(Javax.Swing.KeyStroke arg0)
         {
             return IExecuteWithSignature<int>("getConditionForKeyStroke", "(Ljavax/swing/KeyStroke;)I", arg0);
@@ -403,8 +403,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getActionForKeyStroke(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ActionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.EventNs.ActionListener GetActionForKeyStroke(Javax.Swing.KeyStroke arg0)
         {
             return IExecuteWithSignature<Java.Awt.EventNs.ActionListener>("getActionForKeyStroke", "(Ljavax/swing/KeyStroke;)Ljava/awt/event/ActionListener;", arg0);
@@ -412,8 +412,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getActionForKeyStroke(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <returns><see cref="Java.Awt.EventNs.ActionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.EventNs.ActionListener GetActionForKeyStrokeDirect(Javax.Swing.KeyStroke arg0)
         {
             return IExecuteWithSignature<Java.Awt.EventNs.ActionListenerDirect, Java.Awt.EventNs.ActionListener>("getActionForKeyStroke", "(Ljavax/swing/KeyStroke;)Ljava/awt/event/ActionListener;", arg0);
@@ -421,8 +421,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInsets(java.awt.Insets)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Insets"/></param>
-        /// <returns><see cref="Java.Awt.Insets"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Insets GetInsets(Java.Awt.Insets arg0)
         {
             return IExecuteWithSignature<Java.Awt.Insets>("getInsets", "(Ljava/awt/Insets;)Ljava/awt/Insets;", arg0);
@@ -430,8 +430,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getPopupLocation(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-        /// <returns><see cref="Java.Awt.Point"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Point GetPopupLocation(Java.Awt.EventNs.MouseEvent arg0)
         {
             return IExecuteWithSignature<Java.Awt.Point>("getPopupLocation", "(Ljava/awt/event/MouseEvent;)Ljava/awt/Point;", arg0);
@@ -439,8 +439,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getToolTipLocation(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-        /// <returns><see cref="Java.Awt.Point"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Point GetToolTipLocation(Java.Awt.EventNs.MouseEvent arg0)
         {
             return IExecuteWithSignature<Java.Awt.Point>("getToolTipLocation", "(Ljava/awt/event/MouseEvent;)Ljava/awt/Point;", arg0);
@@ -448,8 +448,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getToolTipText(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetToolTipText(Java.Awt.EventNs.MouseEvent arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getToolTipText", "(Ljava/awt/event/MouseEvent;)Ljava/lang/String;", arg0);
@@ -457,7 +457,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#createToolTip()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.JToolTip"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JToolTip CreateToolTip()
         {
             return IExecuteWithSignature<Javax.Swing.JToolTip>("createToolTip", "()Ljavax/swing/JToolTip;");
@@ -465,7 +465,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#addVetoableChangeListener(java.beans.VetoableChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.VetoableChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddVetoableChangeListener(Java.Beans.VetoableChangeListener arg0)
         {
             IExecuteWithSignature("addVetoableChangeListener", "(Ljava/beans/VetoableChangeListener;)V", arg0);
@@ -473,7 +473,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#removeVetoableChangeListener(java.beans.VetoableChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.VetoableChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveVetoableChangeListener(Java.Beans.VetoableChangeListener arg0)
         {
             IExecuteWithSignature("removeVetoableChangeListener", "(Ljava/beans/VetoableChangeListener;)V", arg0);
@@ -481,7 +481,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#addAncestorListener(javax.swing.event.AncestorListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddAncestorListener(Javax.Swing.Event.AncestorListener arg0)
         {
             IExecuteWithSignature("addAncestorListener", "(Ljavax/swing/event/AncestorListener;)V", arg0);
@@ -489,7 +489,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#computeVisibleRect(java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ComputeVisibleRect(Java.Awt.Rectangle arg0)
         {
             IExecuteWithSignature("computeVisibleRect", "(Ljava/awt/Rectangle;)V", arg0);
@@ -497,9 +497,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#firePropertyChange(java.lang.String,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void FirePropertyChange(Java.Lang.String arg0, bool arg1, bool arg2)
         {
             IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;ZZ)V", arg0, arg1, arg2);
@@ -507,9 +507,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#firePropertyChange(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void FirePropertyChange(Java.Lang.String arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
@@ -524,10 +524,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#paintImmediately(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void PaintImmediately(int arg0, int arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("paintImmediately", "(IIII)V", arg0, arg1, arg2, arg3);
@@ -535,7 +535,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#paintImmediately(java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PaintImmediately(Java.Awt.Rectangle arg0)
         {
             IExecuteWithSignature("paintImmediately", "(Ljava/awt/Rectangle;)V", arg0);
@@ -543,10 +543,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#registerKeyboardAction(java.awt.event.ActionListener,java.lang.String,javax.swing.KeyStroke,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void RegisterKeyboardAction(Java.Awt.EventNs.ActionListener arg0, Java.Lang.String arg1, Javax.Swing.KeyStroke arg2, int arg3)
         {
             IExecuteWithSignature("registerKeyboardAction", "(Ljava/awt/event/ActionListener;Ljava/lang/String;Ljavax/swing/KeyStroke;I)V", arg0, arg1, arg2, arg3);
@@ -554,9 +554,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#registerKeyboardAction(java.awt.event.ActionListener,javax.swing.KeyStroke,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void RegisterKeyboardAction(Java.Awt.EventNs.ActionListener arg0, Javax.Swing.KeyStroke arg1, int arg2)
         {
             IExecuteWithSignature("registerKeyboardAction", "(Ljava/awt/event/ActionListener;Ljavax/swing/KeyStroke;I)V", arg0, arg1, arg2);
@@ -564,7 +564,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#removeAncestorListener(javax.swing.event.AncestorListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveAncestorListener(Javax.Swing.Event.AncestorListener arg0)
         {
             IExecuteWithSignature("removeAncestorListener", "(Ljavax/swing/event/AncestorListener;)V", arg0);
@@ -572,7 +572,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#repaint(java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Repaint(Java.Awt.Rectangle arg0)
         {
             IExecuteWithSignature("repaint", "(Ljava/awt/Rectangle;)V", arg0);
@@ -587,7 +587,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#scrollRectToVisible(java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ScrollRectToVisible(Java.Awt.Rectangle arg0)
         {
             IExecuteWithSignature("scrollRectToVisible", "(Ljava/awt/Rectangle;)V", arg0);
@@ -595,7 +595,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAlignmentX(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetAlignmentX(float arg0)
         {
             IExecuteWithSignature("setAlignmentX", "(F)V", arg0);
@@ -603,7 +603,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAlignmentY(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetAlignmentY(float arg0)
         {
             IExecuteWithSignature("setAlignmentY", "(F)V", arg0);
@@ -611,7 +611,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDoubleBuffered(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDoubleBuffered(bool arg0)
         {
             IExecuteWithSignature("setDoubleBuffered", "(Z)V", arg0);
@@ -619,7 +619,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setOpaque(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetOpaque(bool arg0)
         {
             IExecuteWithSignature("setOpaque", "(Z)V", arg0);
@@ -627,7 +627,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setRequestFocusEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRequestFocusEnabled(bool arg0)
         {
             IExecuteWithSignature("setRequestFocusEnabled", "(Z)V", arg0);
@@ -635,7 +635,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#unregisterKeyboardAction(javax.swing.KeyStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void UnregisterKeyboardAction(Javax.Swing.KeyStroke arg0)
         {
             IExecuteWithSignature("unregisterKeyboardAction", "(Ljavax/swing/KeyStroke;)V", arg0);

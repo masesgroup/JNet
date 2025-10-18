@@ -85,10 +85,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createRaster(java.awt.image.SampleModel,java.awt.image.DataBuffer,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.SampleModel"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.Raster CreateRaster(Java.Awt.ImageNs.SampleModel arg0, Java.Awt.ImageNs.DataBuffer arg1, Java.Awt.Point arg2)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.Raster>(LocalBridgeClazz, "createRaster", "(Ljava/awt/image/SampleModel;Ljava/awt/image/DataBuffer;Ljava/awt/Point;)Ljava/awt/image/Raster;", arg0, arg1, arg2);
@@ -96,14 +96,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createBandedRaster(int,int,int,int,int[],int[],java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreateBandedRaster(int arg0, int arg1, int arg2, int arg3, int[] arg4, int[] arg5, Java.Awt.Point arg6)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createBandedRaster", "(IIII[I[ILjava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -111,12 +111,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createBandedRaster(int,int,int,int,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreateBandedRaster(int arg0, int arg1, int arg2, int arg3, Java.Awt.Point arg4)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createBandedRaster", "(IIIILjava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4);
@@ -124,14 +124,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createBandedRaster(java.awt.image.DataBuffer,int,int,int,int[],int[],java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreateBandedRaster(Java.Awt.ImageNs.DataBuffer arg0, int arg1, int arg2, int arg3, int[] arg4, int[] arg5, Java.Awt.Point arg6)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createBandedRaster", "(Ljava/awt/image/DataBuffer;III[I[ILjava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -139,14 +139,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createInterleavedRaster(int,int,int,int,int,int[],java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreateInterleavedRaster(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, Java.Awt.Point arg6)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createInterleavedRaster", "(IIIII[ILjava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -154,12 +154,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createInterleavedRaster(int,int,int,int,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreateInterleavedRaster(int arg0, int arg1, int arg2, int arg3, Java.Awt.Point arg4)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createInterleavedRaster", "(IIIILjava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4);
@@ -167,14 +167,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createInterleavedRaster(java.awt.image.DataBuffer,int,int,int,int,int[],java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreateInterleavedRaster(Java.Awt.ImageNs.DataBuffer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, Java.Awt.Point arg6)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createInterleavedRaster", "(Ljava/awt/image/DataBuffer;IIII[ILjava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -182,13 +182,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createPackedRaster(int,int,int,int,int,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreatePackedRaster(int arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.Point arg5)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createPackedRaster", "(IIIIILjava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -196,12 +196,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createPackedRaster(int,int,int,int[],java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreatePackedRaster(int arg0, int arg1, int arg2, int[] arg3, Java.Awt.Point arg4)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createPackedRaster", "(III[ILjava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4);
@@ -209,13 +209,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createPackedRaster(java.awt.image.DataBuffer,int,int,int,int[],java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreatePackedRaster(Java.Awt.ImageNs.DataBuffer arg0, int arg1, int arg2, int arg3, int[] arg4, Java.Awt.Point arg5)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createPackedRaster", "(Ljava/awt/image/DataBuffer;III[ILjava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -223,12 +223,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createPackedRaster(java.awt.image.DataBuffer,int,int,int,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreatePackedRaster(Java.Awt.ImageNs.DataBuffer arg0, int arg1, int arg2, int arg3, Java.Awt.Point arg4)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createPackedRaster", "(Ljava/awt/image/DataBuffer;IIILjava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4);
@@ -236,10 +236,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createWritableRaster(java.awt.image.SampleModel,java.awt.image.DataBuffer,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.SampleModel"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreateWritableRaster(Java.Awt.ImageNs.SampleModel arg0, Java.Awt.ImageNs.DataBuffer arg1, Java.Awt.Point arg2)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createWritableRaster", "(Ljava/awt/image/SampleModel;Ljava/awt/image/DataBuffer;Ljava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2);
@@ -247,9 +247,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createWritableRaster(java.awt.image.SampleModel,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.SampleModel"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ImageNs.WritableRaster CreateWritableRaster(Java.Awt.ImageNs.SampleModel arg0, Java.Awt.Point arg1)
         {
             return SExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>(LocalBridgeClazz, "createWritableRaster", "(Ljava/awt/image/SampleModel;Ljava/awt/Point;)Ljava/awt/image/WritableRaster;", arg0, arg1);
@@ -352,10 +352,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getSampleDouble(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double GetSampleDouble(int arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<double>("getSampleDouble", "(III)D", arg0, arg1, arg2);
@@ -363,10 +363,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getPixel(int,int,double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double[] GetPixel(int arg0, int arg1, double[] arg2)
         {
             return IExecuteWithSignatureArray<double>("getPixel", "(II[D)[D", arg0, arg1, arg2);
@@ -374,12 +374,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getPixels(int,int,int,int,double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double[] GetPixels(int arg0, int arg1, int arg2, int arg3, double[] arg4)
         {
             return IExecuteWithSignatureArray<double>("getPixels", "(IIII[D)[D", arg0, arg1, arg2, arg3, arg4);
@@ -387,13 +387,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getSamples(int,int,int,int,int,double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double[] GetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, double[] arg5)
         {
             return IExecuteWithSignatureArray<double>("getSamples", "(IIIII[D)[D", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -401,10 +401,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getSampleFloat(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float GetSampleFloat(int arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<float>("getSampleFloat", "(III)F", arg0, arg1, arg2);
@@ -412,10 +412,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getPixel(int,int,float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetPixel(int arg0, int arg1, float[] arg2)
         {
             return IExecuteWithSignatureArray<float>("getPixel", "(II[F)[F", arg0, arg1, arg2);
@@ -423,12 +423,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getPixels(int,int,int,int,float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetPixels(int arg0, int arg1, int arg2, int arg3, float[] arg4)
         {
             return IExecuteWithSignatureArray<float>("getPixels", "(IIII[F)[F", arg0, arg1, arg2, arg3, arg4);
@@ -436,13 +436,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getSamples(int,int,int,int,int,float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, float[] arg5)
         {
             return IExecuteWithSignatureArray<float>("getSamples", "(IIIII[F)[F", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -450,10 +450,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getSample(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetSample(int arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getSample", "(III)I", arg0, arg1, arg2);
@@ -461,10 +461,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getPixel(int,int,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetPixel(int arg0, int arg1, int[] arg2)
         {
             return IExecuteWithSignatureArray<int>("getPixel", "(II[I)[I", arg0, arg1, arg2);
@@ -472,12 +472,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getPixels(int,int,int,int,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetPixels(int arg0, int arg1, int arg2, int arg3, int[] arg4)
         {
             return IExecuteWithSignatureArray<int>("getPixels", "(IIII[I)[I", arg0, arg1, arg2, arg3, arg4);
@@ -485,13 +485,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getSamples(int,int,int,int,int,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
         {
             return IExecuteWithSignatureArray<int>("getSamples", "(IIIII[I)[I", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -499,14 +499,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createChild(int,int,int,int,int,int,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Raster CreateChild(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int[] arg6)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("createChild", "(IIIIII[I)Ljava/awt/image/Raster;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -514,9 +514,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createTranslatedChild(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Raster CreateTranslatedChild(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("createTranslatedChild", "(II)Ljava/awt/image/Raster;", arg0, arg1);
@@ -524,7 +524,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createCompatibleWritableRaster()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleWritableRaster()
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster", "()Ljava/awt/image/WritableRaster;");
@@ -532,11 +532,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createCompatibleWritableRaster(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleWritableRaster(int arg0, int arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster", "(IIII)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3);
@@ -544,9 +544,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createCompatibleWritableRaster(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleWritableRaster(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster", "(II)Ljava/awt/image/WritableRaster;", arg0, arg1);
@@ -554,8 +554,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#createCompatibleWritableRaster(java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleWritableRaster(Java.Awt.Rectangle arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster", "(Ljava/awt/Rectangle;)Ljava/awt/image/WritableRaster;", arg0);
@@ -563,12 +563,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getDataElements(int,int,int,int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetDataElements(int arg0, int arg1, int arg2, int arg3, object arg4)
         {
             return IExecuteWithSignature("getDataElements", "(IIIILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4);
@@ -576,10 +576,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Raster.html#getDataElements(int,int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetDataElements(int arg0, int arg1, object arg2)
         {
             return IExecuteWithSignature("getDataElements", "(IILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);

@@ -112,7 +112,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#lastPageFirst()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool LastPageFirst()
         {
             return IExecuteWithSignature<bool>("lastPageFirst", "()Z");

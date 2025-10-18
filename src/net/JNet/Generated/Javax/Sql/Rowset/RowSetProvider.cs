@@ -85,8 +85,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html#newFactory()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Sql.Rowset.RowSetFactory"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Sql.Rowset.RowSetFactory NewFactory()
         {
             return SExecuteWithSignature<Javax.Sql.Rowset.RowSetFactory>(LocalBridgeClazz, "newFactory", "()Ljavax/sql/rowset/RowSetFactory;");
@@ -94,10 +94,10 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="Javax.Sql.Rowset.RowSetFactory"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Sql.Rowset.RowSetFactory NewFactory(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecuteWithSignature<Javax.Sql.Rowset.RowSetFactory>(LocalBridgeClazz, "newFactory", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/sql/rowset/RowSetFactory;", arg0, arg1);

@@ -98,13 +98,13 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunction<T, U> declaration
+    #region ToIntBiFunction<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
-    public partial class ToIntBiFunction<T, U> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ToIntBiFunction<, > : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -133,11 +133,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunctionDirect<T, U> declaration
+    #region ToIntBiFunctionDirect<, > declaration
     /// <summary>
     /// Direct override of <see cref="ToIntBiFunction"/> or its generic type if there is one
     /// </summary>
-    public partial class ToIntBiFunctionDirect<T, U> : ToIntBiFunction<T, U>
+    public partial class ToIntBiFunctionDirect<, > : ToIntBiFunction<, >
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -220,9 +220,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual int ApplyAsInt(object arg0, object arg1)
         {
             hasOverrideApplyAsInt = false; return default;
@@ -261,9 +261,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override int ApplyAsInt(object arg0, object arg1)
         {
             return IExecuteWithSignature<int>("applyAsInt", "(Ljava/lang/Object;Ljava/lang/Object;)I", arg0, arg1);
@@ -279,19 +279,19 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IToIntBiFunction<T, U>
+    #region IToIntBiFunction<, >
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ToIntBiFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html"/>
     /// </summary>
-    public partial interface IToIntBiFunction<T, U>
+    public partial interface IToIntBiFunction<, >
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int ApplyAsInt(T arg0, U arg1);
 
         #endregion
@@ -304,8 +304,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunction<T, U> implementation
-    public partial class ToIntBiFunction<T, U> : Java.Util.Function.IToIntBiFunction<T, U>
+    #region ToIntBiFunction<, > implementation
+    public partial class ToIntBiFunction<, > : Java.Util.Function.IToIntBiFunction<, >
     {
         #region Constructors
 
@@ -351,9 +351,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual int ApplyAsInt(T arg0, U arg1)
         {
             hasOverrideApplyAsInt = false; return default;
@@ -369,8 +369,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntBiFunctionDirect<T, U> implementation
-    public partial class ToIntBiFunctionDirect<T, U> : Java.Util.Function.IToIntBiFunction<T, U>
+    #region ToIntBiFunctionDirect<, > implementation
+    public partial class ToIntBiFunctionDirect<, > : Java.Util.Function.IToIntBiFunction<, >
     {
         #region Constructors
 
@@ -392,9 +392,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override int ApplyAsInt(T arg0, U arg1)
         {
             return IExecuteWithSignature<int>("applyAsInt", "(Ljava/lang/Object;Ljava/lang/Object;)I", arg0, arg1);

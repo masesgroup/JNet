@@ -126,7 +126,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -141,7 +141,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#publish(java.util.logging.LogRecord)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Publish(Java.Util.Logging.LogRecord arg0)
         {
             IExecuteWithSignature("publish", "(Ljava/util/logging/LogRecord;)V", arg0);
@@ -149,8 +149,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#isLoggable(java.util.logging.LogRecord)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsLoggable(Java.Util.Logging.LogRecord arg0)
         {
             return IExecuteWithSignature<bool>("isLoggable", "(Ljava/util/logging/LogRecord;)Z", arg0);

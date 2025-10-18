@@ -73,7 +73,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Clipboard(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -118,8 +118,8 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#isDataFlavorAvailable(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDataFlavorAvailable(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecuteWithSignature<bool>("isDataFlavorAvailable", "(Ljava/awt/datatransfer/DataFlavor;)Z", arg0);
@@ -127,10 +127,10 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getData(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Awt.Datatransfer.UnsupportedFlavorException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object GetData(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecuteWithSignature("getData", "(Ljava/awt/datatransfer/DataFlavor;)Ljava/lang/Object;", arg0);
@@ -138,8 +138,8 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getContents(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Awt.Datatransfer.Transferable"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Datatransfer.Transferable GetContents(object arg0)
         {
             return IExecuteWithSignature<Java.Awt.Datatransfer.Transferable>("getContents", "(Ljava/lang/Object;)Ljava/awt/datatransfer/Transferable;", arg0);
@@ -147,7 +147,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#addFlavorListener(java.awt.datatransfer.FlavorListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddFlavorListener(Java.Awt.Datatransfer.FlavorListener arg0)
         {
             IExecuteWithSignature("addFlavorListener", "(Ljava/awt/datatransfer/FlavorListener;)V", arg0);
@@ -155,7 +155,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#removeFlavorListener(java.awt.datatransfer.FlavorListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveFlavorListener(Java.Awt.Datatransfer.FlavorListener arg0)
         {
             IExecuteWithSignature("removeFlavorListener", "(Ljava/awt/datatransfer/FlavorListener;)V", arg0);
@@ -163,8 +163,8 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.ClipboardOwner"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetContents(Java.Awt.Datatransfer.Transferable arg0, Java.Awt.Datatransfer.ClipboardOwner arg1)
         {
             IExecuteWithSignature("setContents", "(Ljava/awt/datatransfer/Transferable;Ljava/awt/datatransfer/ClipboardOwner;)V", arg0, arg1);

@@ -181,10 +181,10 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#%3Cinit%3E(double,double,double,double)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="double"/></param>
-            /// <param name="arg1"><see cref="double"/></param>
-            /// <param name="arg2"><see cref="double"/></param>
-            /// <param name="arg3"><see cref="double"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public Double(double arg0, double arg1, double arg2, double arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -194,7 +194,7 @@ namespace Java.Awt.Geom
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Awt.Geom.Ellipse2D.Double"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Ellipse2D.Double t) => t.Cast<Java.Io.Serializable>();
 
@@ -243,10 +243,10 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#%3Cinit%3E(float,float,float,float)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="float"/></param>
-            /// <param name="arg1"><see cref="float"/></param>
-            /// <param name="arg2"><see cref="float"/></param>
-            /// <param name="arg3"><see cref="float"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public Float(float arg0, float arg1, float arg2, float arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -256,7 +256,7 @@ namespace Java.Awt.Geom
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Awt.Geom.Ellipse2D.Float"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Ellipse2D.Float t) => t.Cast<Java.Io.Serializable>();
 
@@ -290,10 +290,10 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#setFrame(float,float,float,float)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="float"/></param>
-            /// <param name="arg1"><see cref="float"/></param>
-            /// <param name="arg2"><see cref="float"/></param>
-            /// <param name="arg3"><see cref="float"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public void SetFrame(float arg0, float arg1, float arg2, float arg3)
             {
                 IExecuteWithSignature("setFrame", "(FFFF)V", arg0, arg1, arg2, arg3);

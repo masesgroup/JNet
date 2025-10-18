@@ -66,7 +66,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html"/>
         /// </summary>
-        public partial class Type : Java.Lang.Enum<Java.Security.KeyRep.Type>
+        public partial class Type : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.security.KeyRep$Type";
             /// <summary>
@@ -114,10 +114,10 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.html#%3Cinit%3E(java.security.KeyRep.Type,java.lang.String,java.lang.String,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.KeyRep.Type"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public KeyRep(Java.Security.KeyRep.Type arg0, Java.Lang.String arg1, Java.Lang.String arg2, byte[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -179,8 +179,8 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Security.KeyRep.Type"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Security.KeyRep.Type ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Security.KeyRep.Type>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/KeyRep$Type;", arg0);
@@ -188,7 +188,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Security.KeyRep.Type"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Security.KeyRep.Type[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Security.KeyRep.Type>(LocalBridgeClazz, "values", "()[Ljava/security/KeyRep$Type;");

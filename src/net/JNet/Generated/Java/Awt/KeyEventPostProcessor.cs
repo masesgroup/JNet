@@ -78,8 +78,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyEventPostProcessor.html#postProcessKeyEvent(java.awt.event.KeyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool PostProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyEventPostProcessor.html#postProcessKeyEvent(java.awt.event.KeyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool PostProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
             return IExecuteWithSignature<bool>("postProcessKeyEvent", "(Ljava/awt/event/KeyEvent;)Z", arg0);

@@ -103,577 +103,577 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedCollection(java.util.Collection,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="E"></typeparam>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public static Java.Util.Collection<E> CheckedCollectionMethod<E>(Java.Util.Collection<E> arg0, Java.Lang.Class arg1)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Collection CheckedCollectionMethod(Java.Util.Collection arg0, Java.Lang.Class arg1)
         {
-            return SExecuteWithSignature<Java.Util.Collection<E>>(LocalBridgeClazz, "checkedCollection", "(Ljava/util/Collection;Ljava/lang/Class;)Ljava/util/Collection;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Collection>(LocalBridgeClazz, "checkedCollection", "(Ljava/util/Collection;Ljava/lang/Class;)Ljava/util/Collection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedList(java.util.List,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="E"></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> CheckedListMethod<E>(Java.Util.List<E> arg0, Java.Lang.Class arg1)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List CheckedListMethod(Java.Util.List arg0, Java.Lang.Class arg1)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "checkedList", "(Ljava/util/List;Ljava/lang/Class;)Ljava/util/List;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "checkedList", "(Ljava/util/List;Ljava/lang/Class;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedNavigableSet(java.util.NavigableSet,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="E"></typeparam>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public static Java.Util.NavigableSet<E> CheckedNavigableSetMethod<E>(Java.Util.NavigableSet<E> arg0, Java.Lang.Class arg1)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.NavigableSet CheckedNavigableSetMethod(Java.Util.NavigableSet arg0, Java.Lang.Class arg1)
         {
-            return SExecuteWithSignature<Java.Util.NavigableSet<E>>(LocalBridgeClazz, "checkedNavigableSet", "(Ljava/util/NavigableSet;Ljava/lang/Class;)Ljava/util/NavigableSet;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.NavigableSet>(LocalBridgeClazz, "checkedNavigableSet", "(Ljava/util/NavigableSet;Ljava/lang/Class;)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableSet()"/>
         /// </summary>
         /// <typeparam name="E"></typeparam>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public static Java.Util.NavigableSet<E> EmptyNavigableSet<E>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.NavigableSet EmptyNavigableSet()
         {
-            return SExecuteWithSignature<Java.Util.NavigableSet<E>>(LocalBridgeClazz, "emptyNavigableSet", "()Ljava/util/NavigableSet;");
+            return SExecuteWithSignature<Java.Util.NavigableSet>(LocalBridgeClazz, "emptyNavigableSet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedQueue(java.util.Queue,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Queue"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="E"></typeparam>
-        /// <returns><see cref="Java.Util.Queue"/></returns>
-        public static Java.Util.Queue<E> CheckedQueueMethod<E>(Java.Util.Queue<E> arg0, Java.Lang.Class arg1)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Queue CheckedQueueMethod(Java.Util.Queue arg0, Java.Lang.Class arg1)
         {
-            return SExecuteWithSignature<Java.Util.Queue<E>>(LocalBridgeClazz, "checkedQueue", "(Ljava/util/Queue;Ljava/lang/Class;)Ljava/util/Queue;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Queue>(LocalBridgeClazz, "checkedQueue", "(Ljava/util/Queue;Ljava/lang/Class;)Ljava/util/Queue;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedSet(java.util.Set,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="E"></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<E> CheckedSetMethod<E>(Java.Util.Set<E> arg0, Java.Lang.Class arg1)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Set CheckedSetMethod(Java.Util.Set arg0, Java.Lang.Class arg1)
         {
-            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "checkedSet", "(Ljava/util/Set;Ljava/lang/Class;)Ljava/util/Set;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "checkedSet", "(Ljava/util/Set;Ljava/lang/Class;)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#newSetFromMap(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="E"></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<E> NewSetFromMap<E>(Java.Util.Map<E, Java.Lang.Boolean> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Set NewSetFromMap(Java.Util.Map<, > arg0)
         {
-            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "newSetFromMap", "(Ljava/util/Map;)Ljava/util/Set;", arg0);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "newSetFromMap", "(Ljava/util/Map;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedSortedSet(java.util.SortedSet,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="E"></typeparam>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public static Java.Util.SortedSet<E> CheckedSortedSetMethod<E>(Java.Util.SortedSet<E> arg0, Java.Lang.Class arg1)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.SortedSet CheckedSortedSetMethod(Java.Util.SortedSet arg0, Java.Lang.Class arg1)
         {
-            return SExecuteWithSignature<Java.Util.SortedSet<E>>(LocalBridgeClazz, "checkedSortedSet", "(Ljava/util/SortedSet;Ljava/lang/Class;)Ljava/util/SortedSet;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.SortedSet>(LocalBridgeClazz, "checkedSortedSet", "(Ljava/util/SortedSet;Ljava/lang/Class;)Ljava/util/SortedSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedSet()"/>
         /// </summary>
         /// <typeparam name="E"></typeparam>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public static Java.Util.SortedSet<E> EmptySortedSet<E>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.SortedSet EmptySortedSet()
         {
-            return SExecuteWithSignature<Java.Util.SortedSet<E>>(LocalBridgeClazz, "emptySortedSet", "()Ljava/util/SortedSet;");
+            return SExecuteWithSignature<Java.Util.SortedSet>(LocalBridgeClazz, "emptySortedSet", "()Ljava/util/SortedSet;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedMap(java.util.Map,java.lang.Class,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> CheckedMapMethod<K, V>(Java.Util.Map<K, V> arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > CheckedMapMethod<, >(Java.Util.Map<, > arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "checkedMap", "(Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/Map;", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "checkedMap", "(Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/Map;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> SingletonMapMethod<K, V>(K arg0, V arg1)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > SingletonMapMethod<, >(K arg0, V arg1)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "singletonMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "singletonMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedMap(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> SynchronizedMapMethod<K, V>(Java.Util.Map<K, V> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > SynchronizedMapMethod<, >(Java.Util.Map<, > arg0)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "synchronizedMap", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "synchronizedMap", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableMap(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> UnmodifiableMapMethod<K, V, Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
+        /// <typeparam name="Arg0ExtendsK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > UnmodifiableMapMethod<, , , >(Java.Util.Map<, > arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "unmodifiableMap", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "unmodifiableMap", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedNavigableMap(java.util.NavigableMap,java.lang.Class,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public static Java.Util.NavigableMap<K, V> CheckedNavigableMapMethod<K, V>(Java.Util.NavigableMap<K, V> arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.NavigableMap<, > CheckedNavigableMapMethod<, >(Java.Util.NavigableMap<, > arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
         {
-            return SExecuteWithSignature<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "checkedNavigableMap", "(Ljava/util/NavigableMap;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/NavigableMap;", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.NavigableMap<, >>(LocalBridgeClazz, "checkedNavigableMap", "(Ljava/util/NavigableMap;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/NavigableMap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedNavigableMap(java.util.NavigableMap)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public static Java.Util.NavigableMap<K, V> SynchronizedNavigableMapMethod<K, V>(Java.Util.NavigableMap<K, V> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.NavigableMap<, > SynchronizedNavigableMapMethod<, >(Java.Util.NavigableMap<, > arg0)
         {
-            return SExecuteWithSignature<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "synchronizedNavigableMap", "(Ljava/util/NavigableMap;)Ljava/util/NavigableMap;", arg0);
+            return SExecuteWithSignature<Java.Util.NavigableMap<, >>(LocalBridgeClazz, "synchronizedNavigableMap", "(Ljava/util/NavigableMap;)Ljava/util/NavigableMap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableNavigableMap(java.util.NavigableMap)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public static Java.Util.NavigableMap<K, V> UnmodifiableNavigableMapMethod<K, V, Arg0ExtendsV>(Java.Util.NavigableMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV : V
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.NavigableMap<, > UnmodifiableNavigableMapMethod<, , >(Java.Util.NavigableMap<, > arg0) where Arg0ExtendsV : V
         {
-            return SExecuteWithSignature<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "unmodifiableNavigableMap", "(Ljava/util/NavigableMap;)Ljava/util/NavigableMap;", arg0);
+            return SExecuteWithSignature<Java.Util.NavigableMap<, >>(LocalBridgeClazz, "unmodifiableNavigableMap", "(Ljava/util/NavigableMap;)Ljava/util/NavigableMap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedSortedMap(java.util.SortedMap,java.lang.Class,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        public static Java.Util.SortedMap<K, V> CheckedSortedMapMethod<K, V>(Java.Util.SortedMap<K, V> arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.SortedMap<, > CheckedSortedMapMethod<, >(Java.Util.SortedMap<, > arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
         {
-            return SExecuteWithSignature<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "checkedSortedMap", "(Ljava/util/SortedMap;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/SortedMap;", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.SortedMap<, >>(LocalBridgeClazz, "checkedSortedMap", "(Ljava/util/SortedMap;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/SortedMap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSortedMap(java.util.SortedMap)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        public static Java.Util.SortedMap<K, V> SynchronizedSortedMapMethod<K, V>(Java.Util.SortedMap<K, V> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.SortedMap<, > SynchronizedSortedMapMethod<, >(Java.Util.SortedMap<, > arg0)
         {
-            return SExecuteWithSignature<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "synchronizedSortedMap", "(Ljava/util/SortedMap;)Ljava/util/SortedMap;", arg0);
+            return SExecuteWithSignature<Java.Util.SortedMap<, >>(LocalBridgeClazz, "synchronizedSortedMap", "(Ljava/util/SortedMap;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSortedMap(java.util.SortedMap)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        public static Java.Util.SortedMap<K, V> UnmodifiableSortedMapMethod<K, V, Arg0ExtendsV>(Java.Util.SortedMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV : V
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.SortedMap<, > UnmodifiableSortedMapMethod<, , >(Java.Util.SortedMap<, > arg0) where Arg0ExtendsV : V
         {
-            return SExecuteWithSignature<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "unmodifiableSortedMap", "(Ljava/util/SortedMap;)Ljava/util/SortedMap;", arg0);
+            return SExecuteWithSignature<Java.Util.SortedMap<, >>(LocalBridgeClazz, "unmodifiableSortedMap", "(Ljava/util/SortedMap;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#addAll(java.util.Collection,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        public static bool AddAll<Arg0objectSuperT, T>(Java.Util.Collection<Arg0objectSuperT> arg0, params T[] arg1) where Arg0objectSuperT : T
+        /// <returns><see cref=""/></returns>
+        public static bool AddAll<, >(Java.Util.Collection arg0, params T[] arg1) where Arg0objectSuperT : T
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "addAll", "(Ljava/util/Collection;[Ljava/lang/Object;)Z", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#replaceAll(java.util.List,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <param name="arg2"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        public static bool ReplaceAll<T>(Java.Util.List<T> arg0, T arg1, T arg2)
+        /// <returns><see cref=""/></returns>
+        public static bool ReplaceAll(Java.Util.List arg0, T arg1, T arg2)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "replaceAll", "(Ljava/util/List;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_"><see cref="Java.Lang.Comparable{Arg0objectSuperT}"/></typeparam>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Lang_Comparable"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="int"/></returns>
-        public static int BinarySearch<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_, Arg0objectSuperT, T>(Java.Util.List<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_> arg0, T arg1) where Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_ : Java.Lang.Comparable<Arg0objectSuperT> where Arg0objectSuperT : T
+        /// <returns><see cref=""/></returns>
+        public static int BinarySearch<, , >(Java.Util.List arg0, T arg1) where Arg0ExtendsJava_Lang_Comparable : Java.Lang.Comparable where Arg0objectSuperT : T
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "binarySearch", "(Ljava/util/List;Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="int"/></returns>
-        public static int BinarySearch<Arg0ExtendsT, T, Arg2objectSuperT>(Java.Util.List<Arg0ExtendsT> arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg0ExtendsT : T where Arg2objectSuperT : T
+        /// <typeparam name="Arg2objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static int BinarySearch<, , >(Java.Util.List arg0, T arg1, Java.Util.Comparator arg2) where Arg0ExtendsT : T where Arg2objectSuperT : T
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "binarySearch", "(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#list(java.util.Enumeration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.ArrayList"/></returns>
-        public static Java.Util.ArrayList<T> List<T>(Java.Util.Enumeration<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.ArrayList List(Java.Util.Enumeration arg0)
         {
-            return SExecuteWithSignature<Java.Util.ArrayList<T>>(LocalBridgeClazz, "list", "(Ljava/util/Enumeration;)Ljava/util/ArrayList;", arg0);
+            return SExecuteWithSignature<Java.Util.ArrayList>(LocalBridgeClazz, "list", "(Ljava/util/Enumeration;)Ljava/util/ArrayList;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedCollection(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public static Java.Util.Collection<T> SynchronizedCollectionMethod<T>(Java.Util.Collection<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Collection SynchronizedCollectionMethod(Java.Util.Collection arg0)
         {
-            return SExecuteWithSignature<Java.Util.Collection<T>>(LocalBridgeClazz, "synchronizedCollection", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
+            return SExecuteWithSignature<Java.Util.Collection>(LocalBridgeClazz, "synchronizedCollection", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableCollection(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public static Java.Util.Collection<T> UnmodifiableCollectionMethod<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Collection UnmodifiableCollectionMethod<, >(Java.Util.Collection arg0) where Arg0ExtendsT : T
         {
-            return SExecuteWithSignature<Java.Util.Collection<T>>(LocalBridgeClazz, "unmodifiableCollection", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
+            return SExecuteWithSignature<Java.Util.Collection>(LocalBridgeClazz, "unmodifiableCollection", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public static Java.Util.Comparator<T> ReverseOrder<T>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Comparator ReverseOrder()
         {
-            return SExecuteWithSignature<Java.Util.Comparator<T>>(LocalBridgeClazz, "reverseOrder", "()Ljava/util/Comparator;");
+            return SExecuteWithSignature<Java.Util.Comparator>(LocalBridgeClazz, "reverseOrder", "()Ljava/util/Comparator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public static Java.Util.Comparator<T> ReverseOrder<T>(Java.Util.Comparator<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Comparator ReverseOrder(Java.Util.Comparator arg0)
         {
-            return SExecuteWithSignature<Java.Util.Comparator<T>>(LocalBridgeClazz, "reverseOrder", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
+            return SExecuteWithSignature<Java.Util.Comparator>(LocalBridgeClazz, "reverseOrder", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyEnumeration()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public static Java.Util.Enumeration<T> EmptyEnumerationMethod<T>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Enumeration EmptyEnumerationMethod()
         {
-            return SExecuteWithSignature<Java.Util.Enumeration<T>>(LocalBridgeClazz, "emptyEnumeration", "()Ljava/util/Enumeration;");
+            return SExecuteWithSignature<Java.Util.Enumeration>(LocalBridgeClazz, "emptyEnumeration", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#enumeration(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public static Java.Util.Enumeration<T> Enumeration<T>(Java.Util.Collection<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Enumeration Enumeration(Java.Util.Collection arg0)
         {
-            return SExecuteWithSignature<Java.Util.Enumeration<T>>(LocalBridgeClazz, "enumeration", "(Ljava/util/Collection;)Ljava/util/Enumeration;", arg0);
+            return SExecuteWithSignature<Java.Util.Enumeration>(LocalBridgeClazz, "enumeration", "(Ljava/util/Collection;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyIterator()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator<T> EmptyIteratorMethod<T>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Iterator EmptyIteratorMethod()
         {
-            return SExecuteWithSignature<Java.Util.Iterator<T>>(LocalBridgeClazz, "emptyIterator", "()Ljava/util/Iterator;");
+            return SExecuteWithSignature<Java.Util.Iterator>(LocalBridgeClazz, "emptyIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#nCopies(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<T> NCopies<T>(int arg0, T arg1)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List NCopies(int arg0, T arg1)
         {
-            return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "nCopies", "(ILjava/lang/Object;)Ljava/util/List;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "nCopies", "(ILjava/lang/Object;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonList(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<T> SingletonListMethod<T>(T arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List SingletonListMethod(T arg0)
         {
-            return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "singletonList", "(Ljava/lang/Object;)Ljava/util/List;", arg0);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "singletonList", "(Ljava/lang/Object;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedList(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<T> SynchronizedListMethod<T>(Java.Util.List<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List SynchronizedListMethod(Java.Util.List arg0)
         {
-            return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "synchronizedList", "(Ljava/util/List;)Ljava/util/List;", arg0);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "synchronizedList", "(Ljava/util/List;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableList(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<T> UnmodifiableListMethod<T, Arg0ExtendsT>(Java.Util.List<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List UnmodifiableListMethod<, >(Java.Util.List arg0) where Arg0ExtendsT : T
         {
-            return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "unmodifiableList", "(Ljava/util/List;)Ljava/util/List;", arg0);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "unmodifiableList", "(Ljava/util/List;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyListIterator()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
-        public static Java.Util.ListIterator<T> EmptyListIteratorMethod<T>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.ListIterator EmptyListIteratorMethod()
         {
-            return SExecuteWithSignature<Java.Util.ListIterator<T>>(LocalBridgeClazz, "emptyListIterator", "()Ljava/util/ListIterator;");
+            return SExecuteWithSignature<Java.Util.ListIterator>(LocalBridgeClazz, "emptyListIterator", "()Ljava/util/ListIterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedNavigableSet(java.util.NavigableSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public static Java.Util.NavigableSet<T> SynchronizedNavigableSetMethod<T>(Java.Util.NavigableSet<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.NavigableSet SynchronizedNavigableSetMethod(Java.Util.NavigableSet arg0)
         {
-            return SExecuteWithSignature<Java.Util.NavigableSet<T>>(LocalBridgeClazz, "synchronizedNavigableSet", "(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;", arg0);
+            return SExecuteWithSignature<Java.Util.NavigableSet>(LocalBridgeClazz, "synchronizedNavigableSet", "(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableNavigableSet(java.util.NavigableSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public static Java.Util.NavigableSet<T> UnmodifiableNavigableSetMethod<T>(Java.Util.NavigableSet<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.NavigableSet UnmodifiableNavigableSetMethod(Java.Util.NavigableSet arg0)
         {
-            return SExecuteWithSignature<Java.Util.NavigableSet<T>>(LocalBridgeClazz, "unmodifiableNavigableSet", "(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;", arg0);
+            return SExecuteWithSignature<Java.Util.NavigableSet>(LocalBridgeClazz, "unmodifiableNavigableSet", "(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#asLifoQueue(java.util.Deque)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Deque"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Queue"/></returns>
-        public static Java.Util.Queue<T> AsLifoQueue<T>(Java.Util.Deque<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Queue AsLifoQueue(Java.Util.Deque arg0)
         {
-            return SExecuteWithSignature<Java.Util.Queue<T>>(LocalBridgeClazz, "asLifoQueue", "(Ljava/util/Deque;)Ljava/util/Queue;", arg0);
+            return SExecuteWithSignature<Java.Util.Queue>(LocalBridgeClazz, "asLifoQueue", "(Ljava/util/Deque;)Ljava/util/Queue;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<T> Singleton<T>(T arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Set Singleton(T arg0)
         {
-            return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "singleton", "(Ljava/lang/Object;)Ljava/util/Set;", arg0);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "singleton", "(Ljava/lang/Object;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSet(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<T> SynchronizedSetMethod<T>(Java.Util.Set<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Set SynchronizedSetMethod(Java.Util.Set arg0)
         {
-            return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "synchronizedSet", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "synchronizedSet", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSet(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<T> UnmodifiableSetMethod<T, Arg0ExtendsT>(Java.Util.Set<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Set UnmodifiableSetMethod<, >(Java.Util.Set arg0) where Arg0ExtendsT : T
         {
-            return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "unmodifiableSet", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "unmodifiableSet", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSortedSet(java.util.SortedSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public static Java.Util.SortedSet<T> SynchronizedSortedSetMethod<T>(Java.Util.SortedSet<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.SortedSet SynchronizedSortedSetMethod(Java.Util.SortedSet arg0)
         {
-            return SExecuteWithSignature<Java.Util.SortedSet<T>>(LocalBridgeClazz, "synchronizedSortedSet", "(Ljava/util/SortedSet;)Ljava/util/SortedSet;", arg0);
+            return SExecuteWithSignature<Java.Util.SortedSet>(LocalBridgeClazz, "synchronizedSortedSet", "(Ljava/util/SortedSet;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSortedSet(java.util.SortedSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public static Java.Util.SortedSet<T> UnmodifiableSortedSetMethod<T>(Java.Util.SortedSet<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.SortedSet UnmodifiableSortedSetMethod(Java.Util.SortedSet arg0)
         {
-            return SExecuteWithSignature<Java.Util.SortedSet<T>>(LocalBridgeClazz, "unmodifiableSortedSet", "(Ljava/util/SortedSet;)Ljava/util/SortedSet;", arg0);
+            return SExecuteWithSignature<Java.Util.SortedSet>(LocalBridgeClazz, "unmodifiableSortedSet", "(Ljava/util/SortedSet;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T Max<T, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Collection<Arg0ExtendsT> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static T Max<, , >(Java.Util.Collection arg0, Java.Util.Comparator arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "max", "(Ljava/util/Collection;Ljava/util/Comparator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T Max<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static T Max<, >(Java.Util.Collection arg0) where Arg0ExtendsT : T
         {
             return SExecute<T>(LocalBridgeClazz, "max", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T Min<T, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Collection<Arg0ExtendsT> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static T Min<, , >(Java.Util.Collection arg0, Java.Util.Comparator arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "min", "(Ljava/util/Collection;Ljava/util/Comparator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T Min<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static T Min<, >(Java.Util.Collection arg0) where Arg0ExtendsT : T
         {
             return SExecute<T>(LocalBridgeClazz, "min", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#copy(java.util.List,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-        public static void Copy<Arg0objectSuperT, T, Arg1ExtendsT>(Java.Util.List<Arg0objectSuperT> arg0, Java.Util.List<Arg1ExtendsT> arg1) where Arg0objectSuperT : T where Arg1ExtendsT : T
+        /// <typeparam name="Arg1ExtendsT"><see cref=""/></typeparam>
+        public static void Copy<, , >(Java.Util.List arg0, Java.Util.List arg1) where Arg0objectSuperT : T where Arg1ExtendsT : T
         {
             SExecuteWithSignature(LocalBridgeClazz, "copy", "(Ljava/util/List;Ljava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#fill(java.util.List,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
         /// <typeparam name="T"></typeparam>
-        public static void Fill<Arg0objectSuperT, T>(Java.Util.List<Arg0objectSuperT> arg0, T arg1) where Arg0objectSuperT : T
+        public static void Fill<, >(Java.Util.List arg0, T arg1) where Arg0objectSuperT : T
         {
             SExecuteWithSignature(LocalBridgeClazz, "fill", "(Ljava/util/List;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
-        public static void Sort<T, Arg1objectSuperT>(Java.Util.List<T> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT : T
+        /// <typeparam name="Arg1objectSuperT"><see cref=""/></typeparam>
+        public static void Sort<, >(Java.Util.List arg0, Java.Util.Comparator arg1) where Arg1objectSuperT : T
         {
             SExecuteWithSignature(LocalBridgeClazz, "sort", "(Ljava/util/List;Ljava/util/Comparator;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        public static void Sort<T>(Java.Util.List<T> arg0)
+        public static void Sort(Java.Util.List arg0)
         {
             SExecute(LocalBridgeClazz, "sort", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#disjoint(java.util.Collection,java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public static bool Disjoint(Java.Util.Collection<object> arg0, Java.Util.Collection<object> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static bool Disjoint(Java.Util.Collection arg0, Java.Util.Collection arg1)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "disjoint", "(Ljava/util/Collection;Ljava/util/Collection;)Z", arg0, arg1);
         }
@@ -682,120 +682,120 @@ namespace Java.Util
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> EmptyMapMethod<K, V>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > EmptyMapMethod<, >()
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "emptyMap", "()Ljava/util/Map;");
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "emptyMap", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableMap()"/>
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public static Java.Util.NavigableMap<K, V> EmptyNavigableMap<K, V>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.NavigableMap<, > EmptyNavigableMap<, >()
         {
-            return SExecuteWithSignature<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "emptyNavigableMap", "()Ljava/util/NavigableMap;");
+            return SExecuteWithSignature<Java.Util.NavigableMap<, >>(LocalBridgeClazz, "emptyNavigableMap", "()Ljava/util/NavigableMap;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedMap()"/>
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        public static Java.Util.SortedMap<K, V> EmptySortedMap<K, V>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.SortedMap<, > EmptySortedMap<, >()
         {
-            return SExecuteWithSignature<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "emptySortedMap", "()Ljava/util/SortedMap;");
+            return SExecuteWithSignature<Java.Util.SortedMap<, >>(LocalBridgeClazz, "emptySortedMap", "()Ljava/util/SortedMap;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyList()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<T> EmptyListMethod<T>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List EmptyListMethod()
         {
-            return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "emptyList", "()Ljava/util/List;");
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "emptyList", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySet()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<T> EmptySetMethod<T>()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Set EmptySetMethod()
         {
-            return SExecuteWithSignature<Java.Util.Set<T>>(LocalBridgeClazz, "emptySet", "()Ljava/util/Set;");
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "emptySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#frequency(java.util.Collection,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
-        public static int Frequency(Java.Util.Collection<object> arg0, object arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static int Frequency(Java.Util.Collection arg0, object arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "frequency", "(Ljava/util/Collection;Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#indexOfSubList(java.util.List,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <returns><see cref="int"/></returns>
-        public static int IndexOfSubList(Java.Util.List<object> arg0, Java.Util.List<object> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static int IndexOfSubList(Java.Util.List arg0, Java.Util.List arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "indexOfSubList", "(Ljava/util/List;Ljava/util/List;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#lastIndexOfSubList(java.util.List,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <returns><see cref="int"/></returns>
-        public static int LastIndexOfSubList(Java.Util.List<object> arg0, Java.Util.List<object> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static int LastIndexOfSubList(Java.Util.List arg0, Java.Util.List arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "lastIndexOfSubList", "(Ljava/util/List;Ljava/util/List;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverse(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public static void Reverse(Java.Util.List<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public static void Reverse(Java.Util.List arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "reverse", "(Ljava/util/List;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#rotate(java.util.List,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        public static void Rotate(Java.Util.List<object> arg0, int arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public static void Rotate(Java.Util.List arg0, int arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "rotate", "(Ljava/util/List;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List,java.util.Random)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Random"/></param>
-        public static void Shuffle(Java.Util.List<object> arg0, Java.Util.Random arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public static void Shuffle(Java.Util.List arg0, Java.Util.Random arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "shuffle", "(Ljava/util/List;Ljava/util/Random;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public static void Shuffle(Java.Util.List<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public static void Shuffle(Java.Util.List arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "shuffle", "(Ljava/util/List;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#swap(java.util.List,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        public static void Swap(Java.Util.List<object> arg0, int arg1, int arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        public static void Swap(Java.Util.List arg0, int arg1, int arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "swap", "(Ljava/util/List;II)V", arg0, arg1, arg2);
         }

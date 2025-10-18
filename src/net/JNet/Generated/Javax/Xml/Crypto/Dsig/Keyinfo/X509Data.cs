@@ -78,7 +78,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html#getContent()"/> 
         /// </summary>
-        Java.Util.List<object> Content { get; }
+        Java.Util.List Content { get; }
 
         #endregion
 
@@ -125,9 +125,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html#getContent()"/> 
         /// </summary>
-        public Java.Util.List<object> Content
+        public Java.Util.List Content
         {
-            get { return IExecuteWithSignature<Java.Util.List<object>>("getContent", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getContent", "()Ljava/util/List;"); }
         }
 
         #endregion

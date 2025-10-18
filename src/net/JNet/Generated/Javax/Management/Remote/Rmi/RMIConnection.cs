@@ -82,281 +82,281 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         bool IsInstanceOf(Javax.Management.ObjectName arg0, Java.Lang.String arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isRegistered(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool IsRegistered(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanCount(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Lang.Integer"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Lang.Integer GetMBeanCount(Javax.Security.Auth.Subject arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Lang.Integer"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Java.Lang.Integer[] AddNotificationListeners(Javax.Management.ObjectName[] arg0, Java.Rmi.MarshalledObject[] arg1, Javax.Security.Auth.Subject[] arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         object GetAttribute(Javax.Management.ObjectName arg0, Java.Lang.String arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#invoke(javax.management.ObjectName,java.lang.String,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         object Invoke(Javax.Management.ObjectName arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject arg2, Java.Lang.String[] arg3, Javax.Security.Auth.Subject arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDefaultDomain(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Lang.String GetDefaultDomain(Javax.Security.Auth.Subject arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDomains(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Lang.String[] GetDomains(Javax.Security.Auth.Subject arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Util.Set<Javax.Management.ObjectInstance> QueryMBeans(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Util.Set QueryMBeans(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryNames(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Util.Set<Javax.Management.ObjectName> QueryNames(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Util.Set QueryNames(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttributes(javax.management.ObjectName,java.lang.String[],javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.AttributeList GetAttributes(Javax.Management.ObjectName arg0, Java.Lang.String[] arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttributes(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.AttributeList SetAttributes(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.MBeanInfo"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.IntrospectionException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.MBeanInfo GetMBeanInfo(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
-        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Java.Rmi.MarshalledObject arg2, Java.Lang.String[] arg3, Javax.Security.Auth.Subject arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
-        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, Java.Rmi.MarshalledObject arg3, Java.Lang.String[] arg4, Javax.Security.Auth.Subject arg5);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg3"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
-        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, Javax.Security.Auth.Subject arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
-        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.ObjectInstance GetObjectInstance(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#fetchNotifications(long,int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <returns><see cref="Javax.Management.Remote.NotificationResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Management.Remote.NotificationResult FetchNotifications(long arg0, int arg1, long arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg4"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void AddNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Java.Rmi.MarshalledObject arg2, Java.Rmi.MarshalledObject arg3, Javax.Security.Auth.Subject arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         void Close();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg4"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Java.Rmi.MarshalledObject arg2, Java.Rmi.MarshalledObject arg3, Javax.Security.Auth.Subject arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Integer"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void RemoveNotificationListeners(Javax.Management.ObjectName arg0, Java.Lang.Integer[] arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttribute(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
-        /// <exception cref="Javax.Management.InvalidAttributeValueException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetAttribute(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void UnregisterMBean(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1);
 
         #endregion
@@ -378,11 +378,11 @@ namespace Javax.Management.Remote.Rmi
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIConnection"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Javax.Management.Remote.Rmi.RMIConnection t) => t.Cast<Java.Io.Closeable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIConnection"/> to <see cref="Java.Rmi.Remote"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Rmi.Remote(Javax.Management.Remote.Rmi.RMIConnection t) => t.Cast<Java.Rmi.Remote>();
 
@@ -407,12 +407,12 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public bool IsInstanceOf(Javax.Management.ObjectName arg0, Java.Lang.String arg1, Javax.Security.Auth.Subject arg2)
         {
             return IExecuteWithSignature<bool>("isInstanceOf", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljavax/security/auth/Subject;)Z", arg0, arg1, arg2);
@@ -420,10 +420,10 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isRegistered(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool IsRegistered(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1)
         {
             return IExecuteWithSignature<bool>("isRegistered", "(Ljavax/management/ObjectName;Ljavax/security/auth/Subject;)Z", arg0, arg1);
@@ -431,9 +431,9 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanCount(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Lang.Integer"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Integer GetMBeanCount(Javax.Security.Auth.Subject arg0)
         {
             return IExecuteWithSignature<Java.Lang.Integer>("getMBeanCount", "(Ljavax/security/auth/Subject;)Ljava/lang/Integer;", arg0);
@@ -441,12 +441,12 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Lang.Integer"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Lang.Integer[] AddNotificationListeners(Javax.Management.ObjectName[] arg0, Java.Rmi.MarshalledObject[] arg1, Javax.Security.Auth.Subject[] arg2)
         {
             return IExecuteWithSignatureArray<Java.Lang.Integer>("addNotificationListeners", "([Ljavax/management/ObjectName;[Ljava/rmi/MarshalledObject;[Ljavax/security/auth/Subject;)[Ljava/lang/Integer;", arg0, arg1, arg2);
@@ -454,15 +454,15 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object GetAttribute(Javax.Management.ObjectName arg0, Java.Lang.String arg1, Javax.Security.Auth.Subject arg2)
         {
             return IExecuteWithSignature("getAttribute", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljavax/security/auth/Subject;)Ljava/lang/Object;", arg0, arg1, arg2);
@@ -470,16 +470,16 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#invoke(javax.management.ObjectName,java.lang.String,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object Invoke(Javax.Management.ObjectName arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject arg2, Java.Lang.String[] arg3, Javax.Security.Auth.Subject arg4)
         {
             return IExecuteWithSignature("invoke", "(Ljavax/management/ObjectName;Ljava/lang/String;Ljava/rmi/MarshalledObject;[Ljava/lang/String;Ljavax/security/auth/Subject;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4);
@@ -487,9 +487,9 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDefaultDomain(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String GetDefaultDomain(Javax.Security.Auth.Subject arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDefaultDomain", "(Ljavax/security/auth/Subject;)Ljava/lang/String;", arg0);
@@ -497,9 +497,9 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDomains(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String[] GetDomains(Javax.Security.Auth.Subject arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("getDomains", "(Ljavax/security/auth/Subject;)[Ljava/lang/String;", arg0);
@@ -507,37 +507,37 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Set<Javax.Management.ObjectInstance> QueryMBeans(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Set QueryMBeans(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2)
         {
-            return IExecuteWithSignature<Java.Util.Set<Javax.Management.ObjectInstance>>("queryMBeans", "(Ljavax/management/ObjectName;Ljava/rmi/MarshalledObject;Ljavax/security/auth/Subject;)Ljava/util/Set;", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Set>("queryMBeans", "(Ljavax/management/ObjectName;Ljava/rmi/MarshalledObject;Ljavax/security/auth/Subject;)Ljava/util/Set;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryNames(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Set<Javax.Management.ObjectName> QueryNames(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Set QueryNames(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2)
         {
-            return IExecuteWithSignature<Java.Util.Set<Javax.Management.ObjectName>>("queryNames", "(Ljavax/management/ObjectName;Ljava/rmi/MarshalledObject;Ljavax/security/auth/Subject;)Ljava/util/Set;", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Set>("queryNames", "(Ljavax/management/ObjectName;Ljava/rmi/MarshalledObject;Ljavax/security/auth/Subject;)Ljava/util/Set;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttributes(javax.management.ObjectName,java.lang.String[],javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.AttributeList GetAttributes(Javax.Management.ObjectName arg0, Java.Lang.String[] arg1, Javax.Security.Auth.Subject arg2)
         {
             return IExecuteWithSignature<Javax.Management.AttributeList>("getAttributes", "(Ljavax/management/ObjectName;[Ljava/lang/String;Ljavax/security/auth/Subject;)Ljavax/management/AttributeList;", arg0, arg1, arg2);
@@ -545,13 +545,13 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttributes(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.AttributeList SetAttributes(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2)
         {
             return IExecuteWithSignature<Javax.Management.AttributeList>("setAttributes", "(Ljavax/management/ObjectName;Ljava/rmi/MarshalledObject;Ljavax/security/auth/Subject;)Ljavax/management/AttributeList;", arg0, arg1, arg2);
@@ -559,13 +559,13 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.MBeanInfo"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.IntrospectionException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.MBeanInfo GetMBeanInfo(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1)
         {
             return IExecuteWithSignature<Javax.Management.MBeanInfo>("getMBeanInfo", "(Ljavax/management/ObjectName;Ljavax/security/auth/Subject;)Ljavax/management/MBeanInfo;", arg0, arg1);
@@ -573,18 +573,18 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
-        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Java.Rmi.MarshalledObject arg2, Java.Lang.String[] arg3, Javax.Security.Auth.Subject arg4)
         {
             return IExecuteWithSignature<Javax.Management.ObjectInstance>("createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;Ljava/rmi/MarshalledObject;[Ljava/lang/String;Ljavax/security/auth/Subject;)Ljavax/management/ObjectInstance;", arg0, arg1, arg2, arg3, arg4);
@@ -592,20 +592,20 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
-        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, Java.Rmi.MarshalledObject arg3, Java.Lang.String[] arg4, Javax.Security.Auth.Subject arg5)
         {
             return IExecuteWithSignature<Javax.Management.ObjectInstance>("createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljava/rmi/MarshalledObject;[Ljava/lang/String;Ljavax/security/auth/Subject;)Ljavax/management/ObjectInstance;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -613,18 +613,18 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg3"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
-        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, Javax.Security.Auth.Subject arg3)
         {
             return IExecuteWithSignature<Javax.Management.ObjectInstance>("createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljavax/security/auth/Subject;)Ljavax/management/ObjectInstance;", arg0, arg1, arg2, arg3);
@@ -632,16 +632,16 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
-        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Security.Auth.Subject arg2)
         {
             return IExecuteWithSignature<Javax.Management.ObjectInstance>("createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/security/auth/Subject;)Ljavax/management/ObjectInstance;", arg0, arg1, arg2);
@@ -649,11 +649,11 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.ObjectInstance GetObjectInstance(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1)
         {
             return IExecuteWithSignature<Javax.Management.ObjectInstance>("getObjectInstance", "(Ljavax/management/ObjectName;Ljavax/security/auth/Subject;)Ljavax/management/ObjectInstance;", arg0, arg1);
@@ -661,11 +661,11 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#fetchNotifications(long,int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <returns><see cref="Javax.Management.Remote.NotificationResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Management.Remote.NotificationResult FetchNotifications(long arg0, int arg1, long arg2)
         {
             return IExecuteWithSignature<Javax.Management.Remote.NotificationResult>("fetchNotifications", "(JIJ)Ljavax/management/remote/NotificationResult;", arg0, arg1, arg2);
@@ -673,13 +673,13 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg4"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void AddNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Java.Rmi.MarshalledObject arg2, Java.Rmi.MarshalledObject arg3, Javax.Security.Auth.Subject arg4)
         {
             IExecuteWithSignature("addNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljava/rmi/MarshalledObject;Ljava/rmi/MarshalledObject;Ljavax/security/auth/Subject;)V", arg0, arg1, arg2, arg3, arg4);
@@ -687,7 +687,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -695,14 +695,14 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg4"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Java.Rmi.MarshalledObject arg2, Java.Rmi.MarshalledObject arg3, Javax.Security.Auth.Subject arg4)
         {
             IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljava/rmi/MarshalledObject;Ljava/rmi/MarshalledObject;Ljavax/security/auth/Subject;)V", arg0, arg1, arg2, arg3, arg4);
@@ -710,12 +710,12 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Javax.Security.Auth.Subject arg2)
         {
             IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljavax/security/auth/Subject;)V", arg0, arg1, arg2);
@@ -723,12 +723,12 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Integer"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void RemoveNotificationListeners(Javax.Management.ObjectName arg0, Java.Lang.Integer[] arg1, Javax.Security.Auth.Subject arg2)
         {
             IExecuteWithSignature("removeNotificationListeners", "(Ljavax/management/ObjectName;[Ljava/lang/Integer;Ljavax/security/auth/Subject;)V", arg0, arg1, arg2);
@@ -736,15 +736,15 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttribute(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
-        /// <exception cref="Javax.Management.InvalidAttributeValueException"/>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetAttribute(Javax.Management.ObjectName arg0, Java.Rmi.MarshalledObject arg1, Javax.Security.Auth.Subject arg2)
         {
             IExecuteWithSignature("setAttribute", "(Ljavax/management/ObjectName;Ljava/rmi/MarshalledObject;Ljavax/security/auth/Subject;)V", arg0, arg1, arg2);
@@ -752,11 +752,11 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void UnregisterMBean(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1)
         {
             IExecuteWithSignature("unregisterMBean", "(Ljavax/management/ObjectName;Ljavax/security/auth/Subject;)V", arg0, arg1);

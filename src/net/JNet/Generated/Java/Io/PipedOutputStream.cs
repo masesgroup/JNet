@@ -73,8 +73,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedOutputStream.html#%3Cinit%3E(java.io.PipedInputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PipedInputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public PipedOutputStream(Java.Io.PipedInputStream arg0)
             : base(arg0)
         {
@@ -98,8 +98,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedOutputStream.html#connect(java.io.PipedInputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PipedInputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Connect(Java.Io.PipedInputStream arg0)
         {
             IExecuteWithSignature("connect", "(Ljava/io/PipedInputStream;)V", arg0);

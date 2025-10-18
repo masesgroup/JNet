@@ -78,16 +78,16 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#getOption(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         object GetOption(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#setOption(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetOption(int arg0, object arg1);
 
         #endregion
@@ -213,9 +213,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#getOption(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object GetOption(int arg0)
         {
             return IExecuteWithSignature("getOption", "(I)Ljava/lang/Object;", arg0);
@@ -223,9 +223,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#setOption(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetOption(int arg0, object arg1)
         {
             IExecuteWithSignature("setOption", "(ILjava/lang/Object;)V", arg0, arg1);

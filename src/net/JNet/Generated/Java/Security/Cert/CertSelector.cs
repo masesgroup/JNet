@@ -78,8 +78,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertSelector.html#match(java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Match(Java.Security.Cert.Certificate arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertSelector.html#match(java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Match(Java.Security.Cert.Certificate arg0)
         {
             return IExecuteWithSignature<bool>("match", "(Ljava/security/cert/Certificate;)Z", arg0);

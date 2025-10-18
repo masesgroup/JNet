@@ -157,7 +157,7 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicScrollPaneUI"/> to <see cref="Javax.Swing.ScrollPaneConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.ScrollPaneConstants(Javax.Swing.Plaf.Basic.BasicScrollPaneUI t) => t.Cast<Javax.Swing.ScrollPaneConstants>();
 
@@ -183,7 +183,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.PropertyChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicScrollPaneUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicScrollPaneUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicScrollPaneUI arg0)
                 : base(arg0)
             {
@@ -193,7 +193,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicScrollPaneUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicScrollPaneUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
 
@@ -211,7 +211,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
@@ -234,7 +234,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicScrollPaneUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicScrollPaneUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public ViewportChangeHandler(Javax.Swing.Plaf.Basic.BasicScrollPaneUI arg0)
                 : base(arg0)
             {
@@ -244,7 +244,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicScrollPaneUI.ViewportChangeHandler"/> to <see cref="Javax.Swing.Event.ChangeListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicScrollPaneUI.ViewportChangeHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
 
@@ -262,7 +262,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html#stateChanged(javax.swing.event.ChangeEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
             {
                 IExecuteWithSignature("stateChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);

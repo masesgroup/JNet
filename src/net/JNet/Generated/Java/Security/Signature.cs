@@ -87,11 +87,11 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Signature"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Security.Signature GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Java.Security.Signature>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/Signature;", arg0, arg1);
@@ -99,10 +99,10 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Java.Security.Signature"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Security.Signature GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecuteWithSignature<Java.Security.Signature>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/Signature;", arg0, arg1);
@@ -110,9 +110,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Signature"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Security.Signature GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Security.Signature>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/Signature;", arg0);
@@ -145,11 +145,11 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#verify(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool Verify(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<bool>("verify", "([BII)Z", arg0, arg1, arg2);
@@ -157,9 +157,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#verify(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool Verify(byte[] arg0)
         {
             return IExecuteWithSignature<bool>("verify", "([B)Z", new object[] { arg0 });
@@ -167,8 +167,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#sign()"/>
         /// </summary>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] Sign()
         {
             return IExecuteWithSignatureArray<byte>("sign", "()[B");
@@ -176,11 +176,11 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#sign(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Sign(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("sign", "([BII)I", arg0, arg1, arg2);
@@ -188,9 +188,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#initSign(java.security.PrivateKey,java.security.SecureRandom)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
-        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void InitSign(Java.Security.PrivateKey arg0, Java.Security.SecureRandom arg1)
         {
             IExecuteWithSignature("initSign", "(Ljava/security/PrivateKey;Ljava/security/SecureRandom;)V", arg0, arg1);
@@ -198,8 +198,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#initSign(java.security.PrivateKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void InitSign(Java.Security.PrivateKey arg0)
         {
             IExecuteWithSignature("initSign", "(Ljava/security/PrivateKey;)V", arg0);
@@ -207,8 +207,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#initVerify(java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void InitVerify(Java.Security.Cert.Certificate arg0)
         {
             IExecuteWithSignature("initVerify", "(Ljava/security/cert/Certificate;)V", arg0);
@@ -216,8 +216,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#initVerify(java.security.PublicKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void InitVerify(Java.Security.PublicKey arg0)
         {
             IExecuteWithSignature("initVerify", "(Ljava/security/PublicKey;)V", arg0);
@@ -225,8 +225,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#setParameter(java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetParameter(Java.Security.Spec.AlgorithmParameterSpec arg0)
         {
             IExecuteWithSignature("setParameter", "(Ljava/security/spec/AlgorithmParameterSpec;)V", arg0);
@@ -234,8 +234,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#update(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Update(byte arg0)
         {
             IExecuteWithSignature("update", "(B)V", arg0);
@@ -243,10 +243,10 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#update(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Update(byte[] arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("update", "([BII)V", arg0, arg1, arg2);
@@ -254,8 +254,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#update(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Update(byte[] arg0)
         {
             IExecuteWithSignature("update", "([B)V", new object[] { arg0 });
@@ -263,8 +263,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#update(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Update(Java.Nio.ByteBuffer arg0)
         {
             IExecuteWithSignature("update", "(Ljava/nio/ByteBuffer;)V", arg0);

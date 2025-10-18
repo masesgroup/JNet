@@ -82,7 +82,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getList()"/> 
         /// </summary>
-        Javax.Swing.JList<object> List { get; }
+        Javax.Swing.JList List { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getMouseListener()"/> 
         /// </summary>
@@ -94,7 +94,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#isVisible()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsVisible();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#hide()"/>
@@ -149,9 +149,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getList()"/> 
         /// </summary>
-        public Javax.Swing.JList<object> List
+        public Javax.Swing.JList List
         {
-            get { return IExecuteWithSignature<Javax.Swing.JList<object>>("getList", "()Ljavax/swing/JList;"); }
+            get { return IExecuteWithSignature<Javax.Swing.JList>("getList", "()Ljavax/swing/JList;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getMouseListener()"/> 
@@ -170,7 +170,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#isVisible()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsVisible()
         {
             return IExecuteWithSignature<bool>("isVisible", "()Z");

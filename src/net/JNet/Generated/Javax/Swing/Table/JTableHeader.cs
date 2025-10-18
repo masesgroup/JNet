@@ -73,7 +73,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html#%3Cinit%3E(javax.swing.table.TableColumnModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Table.TableColumnModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JTableHeader(Javax.Swing.Table.TableColumnModel arg0)
             : base(arg0)
         {
@@ -83,11 +83,11 @@ namespace Javax.Swing.Table
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Table.JTableHeader"/> to <see cref="Javax.Swing.Event.TableColumnModelListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Event.TableColumnModelListener(Javax.Swing.Table.JTableHeader t) => t.Cast<Javax.Swing.Event.TableColumnModelListener>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Table.JTableHeader"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Table.JTableHeader t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -168,8 +168,8 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html#columnAtPoint(java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int ColumnAtPoint(Java.Awt.Point arg0)
         {
             return IExecuteWithSignature<int>("columnAtPoint", "(Ljava/awt/Point;)I", arg0);
@@ -177,8 +177,8 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html#getHeaderRect(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Rectangle GetHeaderRect(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getHeaderRect", "(I)Ljava/awt/Rectangle;", arg0);
@@ -186,7 +186,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html#columnAdded(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ColumnAdded(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
             IExecuteWithSignature("columnAdded", "(Ljavax/swing/event/TableColumnModelEvent;)V", arg0);
@@ -194,7 +194,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html#columnMarginChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ColumnMarginChanged(Javax.Swing.Event.ChangeEvent arg0)
         {
             IExecuteWithSignature("columnMarginChanged", "(Ljavax/swing/event/ChangeEvent;)V", arg0);
@@ -202,7 +202,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html#columnMoved(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ColumnMoved(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
             IExecuteWithSignature("columnMoved", "(Ljavax/swing/event/TableColumnModelEvent;)V", arg0);
@@ -210,7 +210,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html#columnRemoved(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ColumnRemoved(Javax.Swing.Event.TableColumnModelEvent arg0)
         {
             IExecuteWithSignature("columnRemoved", "(Ljavax/swing/event/TableColumnModelEvent;)V", arg0);
@@ -218,7 +218,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html#columnSelectionChanged(javax.swing.event.ListSelectionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ColumnSelectionChanged(Javax.Swing.Event.ListSelectionEvent arg0)
         {
             IExecuteWithSignature("columnSelectionChanged", "(Ljavax/swing/event/ListSelectionEvent;)V", arg0);
@@ -233,7 +233,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html#setUI(javax.swing.plaf.TableHeaderUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.TableHeaderUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.TableHeaderUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/TableHeaderUI;)V", arg0);

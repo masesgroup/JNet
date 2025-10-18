@@ -75,7 +75,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JViewport"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JViewport t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -160,8 +160,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#toViewCoordinates(java.awt.Dimension)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Dimension ToViewCoordinates(Java.Awt.Dimension arg0)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("toViewCoordinates", "(Ljava/awt/Dimension;)Ljava/awt/Dimension;", arg0);
@@ -169,8 +169,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#toViewCoordinates(java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.Point"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Point ToViewCoordinates(Java.Awt.Point arg0)
         {
             return IExecuteWithSignature<Java.Awt.Point>("toViewCoordinates", "(Ljava/awt/Point;)Ljava/awt/Point;", arg0);
@@ -178,7 +178,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -186,7 +186,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -194,7 +194,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#setUI(javax.swing.plaf.ViewportUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ViewportUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.ViewportUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ViewportUI;)V", arg0);

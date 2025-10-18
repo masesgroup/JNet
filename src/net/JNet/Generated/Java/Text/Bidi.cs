@@ -73,12 +73,12 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#%3Cinit%3E(char[],int,byte[],int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public Bidi(char[] arg0, int arg1, byte[] arg2, int arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -86,8 +86,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Bidi(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -95,7 +95,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#%3Cinit%3E(java.text.AttributedCharacterIterator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Bidi(Java.Text.AttributedCharacterIterator arg0)
             : base(arg0)
         {
@@ -139,10 +139,10 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#requiresBidi(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool RequiresBidi(char[] arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "requiresBidi", "([CII)Z", arg0, arg1, arg2);
@@ -150,11 +150,11 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#reorderVisually(byte[],int,java.lang.Object[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public static void ReorderVisually(byte[] arg0, int arg1, object[] arg2, int arg3, int arg4)
         {
             SExecuteWithSignature(LocalBridgeClazz, "reorderVisually", "([BI[Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3, arg4);
@@ -187,7 +187,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#baseIsLeftToRight()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool BaseIsLeftToRight()
         {
             return IExecuteWithSignature<bool>("baseIsLeftToRight", "()Z");
@@ -195,7 +195,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isLeftToRight()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsLeftToRight()
         {
             return IExecuteWithSignature<bool>("isLeftToRight", "()Z");
@@ -203,7 +203,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isMixed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMixed()
         {
             return IExecuteWithSignature<bool>("isMixed", "()Z");
@@ -211,7 +211,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isRightToLeft()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRightToLeft()
         {
             return IExecuteWithSignature<bool>("isRightToLeft", "()Z");
@@ -219,8 +219,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getLevelAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetLevelAt(int arg0)
         {
             return IExecuteWithSignature<int>("getLevelAt", "(I)I", arg0);
@@ -228,8 +228,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunLevel(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetRunLevel(int arg0)
         {
             return IExecuteWithSignature<int>("getRunLevel", "(I)I", arg0);
@@ -237,8 +237,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunLimit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetRunLimit(int arg0)
         {
             return IExecuteWithSignature<int>("getRunLimit", "(I)I", arg0);
@@ -246,8 +246,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunStart(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetRunStart(int arg0)
         {
             return IExecuteWithSignature<int>("getRunStart", "(I)I", arg0);
@@ -255,9 +255,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#createLineBidi(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Text.Bidi"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.Bidi CreateLineBidi(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Text.Bidi>("createLineBidi", "(II)Ljava/text/Bidi;", arg0, arg1);

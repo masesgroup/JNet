@@ -90,24 +90,24 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#containsObservedObject(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool ContainsObservedObject(Javax.Management.ObjectName arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsActive();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#addObservedObject(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void AddObservedObject(Javax.Management.ObjectName arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#removeObservedObject(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveObservedObject(Javax.Management.ObjectName arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#start()"/>
@@ -172,8 +172,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#containsObservedObject(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsObservedObject(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<bool>("containsObservedObject", "(Ljavax/management/ObjectName;)Z", arg0);
@@ -181,7 +181,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsActive()
         {
             return IExecuteWithSignature<bool>("isActive", "()Z");
@@ -189,8 +189,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#addObservedObject(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddObservedObject(Javax.Management.ObjectName arg0)
         {
             IExecuteWithSignature("addObservedObject", "(Ljavax/management/ObjectName;)V", arg0);
@@ -198,7 +198,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#removeObservedObject(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveObservedObject(Javax.Management.ObjectName arg0)
         {
             IExecuteWithSignature("removeObservedObject", "(Ljavax/management/ObjectName;)V", arg0);

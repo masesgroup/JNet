@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunction<T> declaration
+    #region ToLongFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class ToLongFunction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ToLongFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunctionDirect<T> declaration
+    #region ToLongFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="ToLongFunction"/> or its generic type if there is one
     /// </summary>
-    public partial class ToLongFunctionDirect<T> : ToLongFunction<T>
+    public partial class ToLongFunctionDirect : ToLongFunction
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,8 +219,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual long ApplyAsLong(object arg0)
         {
             hasOverrideApplyAsLong = false; return default;
@@ -259,8 +259,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override long ApplyAsLong(object arg0)
         {
             return IExecuteWithSignature<long>("applyAsLong", "(Ljava/lang/Object;)J", arg0);
@@ -276,18 +276,18 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IToLongFunction<T>
+    #region IToLongFunction
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ToLongFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html"/>
     /// </summary>
-    public partial interface IToLongFunction<T>
+    public partial interface IToLongFunction
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         long ApplyAsLong(T arg0);
 
         #endregion
@@ -300,8 +300,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunction<T> implementation
-    public partial class ToLongFunction<T> : Java.Util.Function.IToLongFunction<T>
+    #region ToLongFunction implementation
+    public partial class ToLongFunction : Java.Util.Function.IToLongFunction
     {
         #region Constructors
 
@@ -347,8 +347,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual long ApplyAsLong(T arg0)
         {
             hasOverrideApplyAsLong = false; return default;
@@ -364,8 +364,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongFunctionDirect<T> implementation
-    public partial class ToLongFunctionDirect<T> : Java.Util.Function.IToLongFunction<T>
+    #region ToLongFunctionDirect implementation
+    public partial class ToLongFunctionDirect : Java.Util.Function.IToLongFunction
     {
         #region Constructors
 
@@ -387,8 +387,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override long ApplyAsLong(T arg0)
         {
             return IExecuteWithSignature<long>("applyAsLong", "(Ljava/lang/Object;)J", arg0);

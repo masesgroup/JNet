@@ -73,8 +73,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#%3Cinit%3E(java.io.Reader,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public BufferedReader(Java.Io.Reader arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BufferedReader(Java.Io.Reader arg0)
             : base(arg0)
         {
@@ -106,8 +106,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#readLine()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String ReadLine()
         {
             return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
@@ -115,10 +115,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#lines()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Lang.String> Lines()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Stream.Stream Lines()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.String>>("lines", "()Ljava/util/stream/Stream;");
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("lines", "()Ljava/util/stream/Stream;");
         }
 
         #endregion

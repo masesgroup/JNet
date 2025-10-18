@@ -82,25 +82,25 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsAnonymous();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsMN();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/>
         /// </summary>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         byte[] Export();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#canonicalize(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.Ietf.Jgss.GSSName Canonicalize(Org.Ietf.Jgss.Oid arg0);
 
         #endregion
@@ -179,7 +179,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsAnonymous()
         {
             return IExecuteWithSignature<bool>("isAnonymous", "()Z");
@@ -187,7 +187,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMN()
         {
             return IExecuteWithSignature<bool>("isMN", "()Z");
@@ -195,8 +195,8 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/>
         /// </summary>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] Export()
         {
             return IExecuteWithSignatureArray<byte>("export", "()[B");
@@ -204,9 +204,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#canonicalize(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSName Canonicalize(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("canonicalize", "(Lorg/ietf/jgss/Oid;)Lorg/ietf/jgss/GSSName;", arg0);

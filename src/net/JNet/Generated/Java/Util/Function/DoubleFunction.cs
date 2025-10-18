@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunction<R> declaration
+    #region DoubleFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
-    public partial class DoubleFunction<R> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DoubleFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunctionDirect<R> declaration
+    #region DoubleFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="DoubleFunction"/> or its generic type if there is one
     /// </summary>
-    public partial class DoubleFunctionDirect<R> : DoubleFunction<R>
+    public partial class DoubleFunctionDirect : DoubleFunction
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,8 +219,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual object Apply(double arg0)
         {
             hasOverrideApply = false; return default;
@@ -259,8 +259,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override object Apply(double arg0)
         {
             return IExecuteWithSignature("apply", "(D)Ljava/lang/Object;", arg0);
@@ -276,18 +276,18 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IDoubleFunction<R>
+    #region IDoubleFunction
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.DoubleFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html"/>
     /// </summary>
-    public partial interface IDoubleFunction<R>
+    public partial interface IDoubleFunction
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R Apply(double arg0);
 
         #endregion
@@ -300,8 +300,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunction<R> implementation
-    public partial class DoubleFunction<R> : Java.Util.Function.IDoubleFunction<R>
+    #region DoubleFunction implementation
+    public partial class DoubleFunction : Java.Util.Function.IDoubleFunction
     {
         #region Constructors
 
@@ -347,8 +347,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual R Apply(double arg0)
         {
             hasOverrideApply = false; return default;
@@ -364,8 +364,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region DoubleFunctionDirect<R> implementation
-    public partial class DoubleFunctionDirect<R> : Java.Util.Function.IDoubleFunction<R>
+    #region DoubleFunctionDirect implementation
+    public partial class DoubleFunctionDirect : Java.Util.Function.IDoubleFunction
     {
         #region Constructors
 
@@ -387,8 +387,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override R Apply(double arg0)
         {
             return IExecuteWithSignature<R>("apply", "(D)Ljava/lang/Object;", arg0);

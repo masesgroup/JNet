@@ -78,34 +78,34 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getCookies()"/> 
         /// </summary>
-        Java.Util.List<Java.Net.HttpCookie> Cookies { get; }
+        Java.Util.List Cookies { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getURIs()"/> 
         /// </summary>
-        Java.Util.List<Java.Net.URI> URIs { get; }
+        Java.Util.List URIs { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Remove(Java.Net.URI arg0, Java.Net.HttpCookie arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool RemoveAll();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#get(java.net.URI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<Java.Net.HttpCookie> Get(Java.Net.URI arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.List Get(Java.Net.URI arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#add(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void Add(Java.Net.URI arg0, Java.Net.HttpCookie arg1);
 
         #endregion
@@ -141,23 +141,23 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getCookies()"/> 
         /// </summary>
-        public Java.Util.List<Java.Net.HttpCookie> Cookies
+        public Java.Util.List Cookies
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.HttpCookie>>("getCookies", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getCookies", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getURIs()"/> 
         /// </summary>
-        public Java.Util.List<Java.Net.URI> URIs
+        public Java.Util.List URIs
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.URI>>("getURIs", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getURIs", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/net/URI;Ljava/net/HttpCookie;)Z", arg0, arg1);
@@ -165,7 +165,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool RemoveAll()
         {
             return IExecuteWithSignature<bool>("removeAll", "()Z");
@@ -173,17 +173,17 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#get(java.net.URI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<Java.Net.HttpCookie> Get(Java.Net.URI arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List Get(Java.Net.URI arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Net.HttpCookie>>("get", "(Ljava/net/URI;)Ljava/util/List;", arg0);
+            return IExecuteWithSignature<Java.Util.List>("get", "(Ljava/net/URI;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#add(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Add(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
             IExecuteWithSignature("add", "(Ljava/net/URI;Ljava/net/HttpCookie;)V", arg0, arg1);

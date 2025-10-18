@@ -78,8 +78,8 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ResourceBundleControlProvider.html#getControl(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.ResourceBundle.Control GetControl(Java.Lang.String arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ResourceBundleControlProvider.html#getControl(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.ResourceBundle.Control GetControl(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Util.ResourceBundle.Control>("getControl", "(Ljava/lang/String;)Ljava/util/ResourceBundle$Control;", arg0);

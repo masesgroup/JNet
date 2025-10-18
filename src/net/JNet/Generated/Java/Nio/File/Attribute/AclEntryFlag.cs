@@ -29,7 +29,7 @@ namespace Java.Nio.File.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html"/>
     /// </summary>
-    public partial class AclEntryFlag : Java.Lang.Enum<Java.Nio.File.Attribute.AclEntryFlag>
+    public partial class AclEntryFlag : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.nio.file.attribute.AclEntryFlag";
         /// <summary>
@@ -109,8 +109,8 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.Attribute.AclEntryFlag"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Attribute.AclEntryFlag ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.Attribute.AclEntryFlag>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/attribute/AclEntryFlag;", arg0);
@@ -118,7 +118,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.AclEntryFlag"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Attribute.AclEntryFlag[] Values()
         {
             return SExecuteWithSignatureArray<Java.Nio.File.Attribute.AclEntryFlag>(LocalBridgeClazz, "values", "()[Ljava/nio/file/attribute/AclEntryFlag;");

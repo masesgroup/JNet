@@ -75,7 +75,7 @@ namespace Javax.Management.Monitor
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Monitor.GaugeMonitor"/> to <see cref="Javax.Management.Monitor.GaugeMonitorMBean"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Monitor.GaugeMonitorMBean(Javax.Management.Monitor.GaugeMonitor t) => t.Cast<Javax.Management.Monitor.GaugeMonitorMBean>();
 
@@ -128,8 +128,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitor.html#getDerivedGauge(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Java.Lang.Number"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Number GetDerivedGauge(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<Java.Lang.Number>("getDerivedGauge", "(Ljavax/management/ObjectName;)Ljava/lang/Number;", arg0);
@@ -137,8 +137,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitor.html#getDerivedGaugeTimeStamp(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long GetDerivedGaugeTimeStamp(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "(Ljavax/management/ObjectName;)J", arg0);
@@ -146,9 +146,9 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitor.html#setThresholds(java.lang.Number,java.lang.Number)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Number"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetThresholds(Java.Lang.Number arg0, Java.Lang.Number arg1)
         {
             IExecuteWithSignature("setThresholds", "(Ljava/lang/Number;Ljava/lang/Number;)V", arg0, arg1);

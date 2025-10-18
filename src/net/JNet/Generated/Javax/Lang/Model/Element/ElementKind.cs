@@ -29,7 +29,7 @@ namespace Javax.Lang.Model.Element
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html"/>
     /// </summary>
-    public partial class ElementKind : Java.Lang.Enum<Javax.Lang.Model.Element.ElementKind>
+    public partial class ElementKind : Java.Lang.Enum
     {
         const string _bridgeClassName = "javax.lang.model.element.ElementKind";
         /// <summary>
@@ -193,8 +193,8 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.ElementKind"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.Element.ElementKind ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Lang.Model.Element.ElementKind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/element/ElementKind;", arg0);
@@ -202,7 +202,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.Element.ElementKind"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.Element.ElementKind[] Values()
         {
             return SExecuteWithSignatureArray<Javax.Lang.Model.Element.ElementKind>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/element/ElementKind;");
@@ -214,7 +214,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isClass()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsClass()
         {
             return IExecuteWithSignature<bool>("isClass", "()Z");
@@ -222,7 +222,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isField()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsField()
         {
             return IExecuteWithSignature<bool>("isField", "()Z");
@@ -230,7 +230,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInterface()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsInterface()
         {
             return IExecuteWithSignature<bool>("isInterface", "()Z");

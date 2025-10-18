@@ -73,7 +73,7 @@ namespace Javax.Imageio.Plugins.Bmp
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BMPImageWriteParam(Java.Util.Locale arg0)
             : base(arg0)
         {
@@ -97,7 +97,7 @@ namespace Javax.Imageio.Plugins.Bmp
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#isTopDown()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsTopDown()
         {
             return IExecuteWithSignature<bool>("isTopDown", "()Z");
@@ -105,7 +105,7 @@ namespace Javax.Imageio.Plugins.Bmp
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#setTopDown(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetTopDown(bool arg0)
         {
             IExecuteWithSignature("setTopDown", "(Z)V", arg0);

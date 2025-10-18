@@ -98,8 +98,8 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#isCardPresent()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool IsCardPresent()
         {
             return IExecuteWithSignature<bool>("isCardPresent", "()Z");
@@ -107,9 +107,9 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#waitForCardAbsent(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool WaitForCardAbsent(long arg0)
         {
             return IExecuteWithSignature<bool>("waitForCardAbsent", "(J)Z", arg0);
@@ -117,9 +117,9 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#waitForCardPresent(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool WaitForCardPresent(long arg0)
         {
             return IExecuteWithSignature<bool>("waitForCardPresent", "(J)Z", arg0);
@@ -127,9 +127,9 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#connect(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Smartcardio.Card"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Smartcardio.Card Connect(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Smartcardio.Card>("connect", "(Ljava/lang/String;)Ljavax/smartcardio/Card;", arg0);

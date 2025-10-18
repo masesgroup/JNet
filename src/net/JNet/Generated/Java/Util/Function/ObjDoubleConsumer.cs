@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumer<T> declaration
+    #region ObjDoubleConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class ObjDoubleConsumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ObjDoubleConsumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumerDirect<T> declaration
+    #region ObjDoubleConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ObjDoubleConsumer"/> or its generic type if there is one
     /// </summary>
-    public partial class ObjDoubleConsumerDirect<T> : ObjDoubleConsumer<T>
+    public partial class ObjDoubleConsumerDirect : ObjDoubleConsumer
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,8 +219,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void Accept(object arg0, double arg1)
         {
             hasOverrideAccept = false;
@@ -259,8 +259,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void Accept(object arg0, double arg1)
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;D)V", arg0, arg1);
@@ -276,18 +276,18 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IObjDoubleConsumer<T>
+    #region IObjDoubleConsumer
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ObjDoubleConsumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html"/>
     /// </summary>
-    public partial interface IObjDoubleConsumer<T>
+    public partial interface IObjDoubleConsumer
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void Accept(T arg0, double arg1);
 
         #endregion
@@ -300,8 +300,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumer<T> implementation
-    public partial class ObjDoubleConsumer<T> : Java.Util.Function.IObjDoubleConsumer<T>
+    #region ObjDoubleConsumer implementation
+    public partial class ObjDoubleConsumer : Java.Util.Function.IObjDoubleConsumer
     {
         #region Constructors
 
@@ -347,8 +347,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void Accept(T arg0, double arg1)
         {
             hasOverrideAccept = false;
@@ -364,8 +364,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjDoubleConsumerDirect<T> implementation
-    public partial class ObjDoubleConsumerDirect<T> : Java.Util.Function.IObjDoubleConsumer<T>
+    #region ObjDoubleConsumerDirect implementation
+    public partial class ObjDoubleConsumerDirect : Java.Util.Function.IObjDoubleConsumer
     {
         #region Constructors
 
@@ -387,8 +387,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void Accept(T arg0, double arg1)
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;D)V", arg0, arg1);

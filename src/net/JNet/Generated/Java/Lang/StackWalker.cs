@@ -66,7 +66,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html"/>
         /// </summary>
-        public partial class Option : Java.Lang.Enum<Java.Lang.StackWalker.Option>
+        public partial class Option : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.lang.StackWalker$Option";
             /// <summary>
@@ -176,8 +176,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance(java.lang.StackWalker.Option)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.StackWalker.Option"/></param>
-        /// <returns><see cref="Java.Lang.StackWalker"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.StackWalker GetInstance(Java.Lang.StackWalker.Option arg0)
         {
             return SExecuteWithSignature<Java.Lang.StackWalker>(LocalBridgeClazz, "getInstance", "(Ljava/lang/StackWalker$Option;)Ljava/lang/StackWalker;", arg0);
@@ -185,19 +185,19 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance(java.util.Set,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.StackWalker"/></returns>
-        public static Java.Lang.StackWalker GetInstance(Java.Util.Set<Java.Lang.StackWalker.Option> arg0, int arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Lang.StackWalker GetInstance(Java.Util.Set arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Lang.StackWalker>(LocalBridgeClazz, "getInstance", "(Ljava/util/Set;I)Ljava/lang/StackWalker;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <returns><see cref="Java.Lang.StackWalker"/></returns>
-        public static Java.Lang.StackWalker GetInstance(Java.Util.Set<Java.Lang.StackWalker.Option> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Lang.StackWalker GetInstance(Java.Util.Set arg0)
         {
             return SExecuteWithSignature<Java.Lang.StackWalker>(LocalBridgeClazz, "getInstance", "(Ljava/util/Set;)Ljava/lang/StackWalker;", arg0);
         }
@@ -215,21 +215,21 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#walk(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_"><see cref="Java.Util.Stream.Stream{Java.Lang.StackWalker.StackFrame}"/></typeparam>
-        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T Walk<T, Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_, Arg0ExtendsT> arg0) where Arg0objectSuperJava_Util_Stream_Stream_Java_Lang_StackWalker_StackFrame_ : Java.Util.Stream.Stream<Java.Lang.StackWalker.StackFrame> where Arg0ExtendsT : T
+        /// <typeparam name="Arg0objectSuperJava_Util_Stream_Stream"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public T Walk<, , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperJava_Util_Stream_Stream : Java.Util.Stream.Stream where Arg0ExtendsT : T
         {
             return IExecuteWithSignature<T>("walk", "(Ljava/util/function/Function;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#forEach(java.util.function.Consumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        /// <typeparam name="Arg0objectSuperJava_Lang_StackWalker_StackFrame"><see cref="Java.Lang.StackWalker.StackFrame"/></typeparam>
-        public void ForEach<Arg0objectSuperJava_Lang_StackWalker_StackFrame>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_StackWalker_StackFrame> arg0) where Arg0objectSuperJava_Lang_StackWalker_StackFrame : Java.Lang.StackWalker.StackFrame
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperJava_Lang_StackWalker_StackFrame"><see cref=""/></typeparam>
+        public void ForEach(Java.Util.Function.Consumer arg0) where Arg0objectSuperJava_Lang_StackWalker_StackFrame : Java.Lang.StackWalker.StackFrame
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
         }
@@ -274,8 +274,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Lang.StackWalker.Option"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.StackWalker.Option ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Lang.StackWalker.Option>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/StackWalker$Option;", arg0);
@@ -283,7 +283,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.StackWalker.Option"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.StackWalker.Option[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Lang.StackWalker.Option>(LocalBridgeClazz, "values", "()[Ljava/lang/StackWalker$Option;");
@@ -382,7 +382,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#isNativeMethod()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsNativeMethod()
             {
                 return IExecuteWithSignature<bool>("isNativeMethod", "()Z");
@@ -390,7 +390,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#toStackTraceElement()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.StackTraceElement"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.StackTraceElement ToStackTraceElement()
             {
                 return IExecuteWithSignature<Java.Lang.StackTraceElement>("toStackTraceElement", "()Ljava/lang/StackTraceElement;");

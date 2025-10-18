@@ -78,7 +78,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorAccess.html#setDescriptor(javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetDescriptor(Javax.Management.Descriptor arg0);
 
         #endregion
@@ -114,7 +114,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorAccess.html#setDescriptor(javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDescriptor(Javax.Management.Descriptor arg0)
         {
             IExecuteWithSignature("setDescriptor", "(Ljavax/management/Descriptor;)V", arg0);

@@ -91,9 +91,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LayoutPath.html#pointToPath(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool PointToPath(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             return IExecuteWithSignature<bool>("pointToPath", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Z", arg0, arg1);
@@ -101,9 +101,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LayoutPath.html#pathToPoint(java.awt.geom.Point2D,boolean,java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void PathToPoint(Java.Awt.Geom.Point2D arg0, bool arg1, Java.Awt.Geom.Point2D arg2)
         {
             IExecuteWithSignature("pathToPoint", "(Ljava/awt/geom/Point2D;ZLjava/awt/geom/Point2D;)V", arg0, arg1, arg2);

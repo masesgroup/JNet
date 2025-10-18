@@ -117,9 +117,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getExtendedKeyUsage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setExtendedKeyUsage(java.util.Set)"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> ExtendedKeyUsage
+        public Java.Util.Set ExtendedKeyUsage
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getExtendedKeyUsage", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setExtendedKeyUsage", "(Ljava/util/Set;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getExtendedKeyUsage", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setExtendedKeyUsage", "(Ljava/util/Set;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getIssuer()"/> 
@@ -166,16 +166,16 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPathToNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPathToNames(java.util.Collection)"/>
         /// </summary>
-        public Java.Util.Collection<Java.Util.List<object>> PathToNames
+        public Java.Util.Collection PathToNames
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getPathToNames", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setPathToNames", "(Ljava/util/Collection;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Collection>("getPathToNames", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setPathToNames", "(Ljava/util/Collection;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPolicy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPolicy(java.util.Set)"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> Policy
+        public Java.Util.Set Policy
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPolicy", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setPolicy", "(Ljava/util/Set;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getPolicy", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setPolicy", "(Ljava/util/Set;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPrivateKeyValid()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPrivateKeyValid(java.util.Date)"/>
@@ -201,9 +201,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAlternativeNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectAlternativeNames(java.util.Collection)"/>
         /// </summary>
-        public Java.Util.Collection<Java.Util.List<object>> SubjectAlternativeNames
+        public Java.Util.Collection SubjectAlternativeNames
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setSubjectAlternativeNames", "(Ljava/util/Collection;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Collection>("getSubjectAlternativeNames", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setSubjectAlternativeNames", "(Ljava/util/Collection;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAsBytes()"/> 
@@ -243,8 +243,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#match(java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Match(Java.Security.Cert.Certificate arg0)
         {
             return IExecuteWithSignature<bool>("match", "(Ljava/security/cert/Certificate;)Z", arg0);
@@ -252,9 +252,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#addPathToName(int,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddPathToName(int arg0, byte[] arg1)
         {
             IExecuteWithSignature("addPathToName", "(I[B)V", arg0, arg1);
@@ -262,9 +262,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#addPathToName(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddPathToName(int arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("addPathToName", "(ILjava/lang/String;)V", arg0, arg1);
@@ -272,9 +272,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#addSubjectAlternativeName(int,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddSubjectAlternativeName(int arg0, byte[] arg1)
         {
             IExecuteWithSignature("addSubjectAlternativeName", "(I[B)V", arg0, arg1);
@@ -282,9 +282,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#addSubjectAlternativeName(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddSubjectAlternativeName(int arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("addSubjectAlternativeName", "(ILjava/lang/String;)V", arg0, arg1);
@@ -292,8 +292,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setIssuer(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetIssuer(byte[] arg0)
         {
             IExecuteWithSignature("setIssuer", "([B)V", new object[] { arg0 });
@@ -301,8 +301,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setIssuer(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetIssuer(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setIssuer", "(Ljava/lang/String;)V", arg0);
@@ -310,7 +310,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setIssuer(javax.security.auth.x500.X500Principal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.X500.X500Principal"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetIssuer(Javax.Security.Auth.X500.X500Principal arg0)
         {
             IExecuteWithSignature("setIssuer", "(Ljavax/security/auth/x500/X500Principal;)V", arg0);
@@ -318,8 +318,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubject(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetSubject(byte[] arg0)
         {
             IExecuteWithSignature("setSubject", "([B)V", new object[] { arg0 });
@@ -327,8 +327,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubject(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetSubject(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setSubject", "(Ljava/lang/String;)V", arg0);
@@ -336,7 +336,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubject(javax.security.auth.x500.X500Principal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.X500.X500Principal"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSubject(Javax.Security.Auth.X500.X500Principal arg0)
         {
             IExecuteWithSignature("setSubject", "(Ljavax/security/auth/x500/X500Principal;)V", arg0);
@@ -344,8 +344,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectPublicKey(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetSubjectPublicKey(byte[] arg0)
         {
             IExecuteWithSignature("setSubjectPublicKey", "([B)V", new object[] { arg0 });
@@ -353,7 +353,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectPublicKey(java.security.PublicKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSubjectPublicKey(Java.Security.PublicKey arg0)
         {
             IExecuteWithSignature("setSubjectPublicKey", "(Ljava/security/PublicKey;)V", arg0);

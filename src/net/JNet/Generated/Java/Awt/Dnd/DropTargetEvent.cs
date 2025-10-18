@@ -73,7 +73,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetEvent.html#%3Cinit%3E(java.awt.dnd.DropTargetContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DropTargetEvent(Java.Awt.Dnd.DropTargetContext arg0)
             : base(arg0)
         {

@@ -73,8 +73,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public ScrollPane(int arg0)
             : base(arg0)
         {
@@ -84,7 +84,7 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ScrollPane"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.ScrollPane t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -169,7 +169,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#isWheelScrollingEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsWheelScrollingEnabled()
         {
             return IExecuteWithSignature<bool>("isWheelScrollingEnabled", "()Z");
@@ -177,7 +177,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#paramString()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ParamString()
         {
             return IExecuteWithSignature<Java.Lang.String>("paramString", "()Ljava/lang/String;");
@@ -185,8 +185,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setScrollPosition(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetScrollPosition(int arg0, int arg1)
         {
             IExecuteWithSignature("setScrollPosition", "(II)V", arg0, arg1);
@@ -194,7 +194,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setWheelScrollingEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetWheelScrollingEnabled(bool arg0)
         {
             IExecuteWithSignature("setWheelScrollingEnabled", "(Z)V", arg0);

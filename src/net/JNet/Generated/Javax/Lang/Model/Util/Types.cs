@@ -82,121 +82,121 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#contains(javax.lang.model.type.TypeMirror,javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Contains(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#isAssignable(javax.lang.model.type.TypeMirror,javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsAssignable(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#isSameType(javax.lang.model.type.TypeMirror,javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsSameType(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#isSubsignature(javax.lang.model.type.ExecutableType,javax.lang.model.type.ExecutableType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.ExecutableType"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.ExecutableType"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsSubsignature(Javax.Lang.Model.Type.ExecutableType arg0, Javax.Lang.Model.Type.ExecutableType arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#isSubtype(javax.lang.model.type.TypeMirror,javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsSubtype(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#directSupertypes(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Type_TypeMirror"><see cref="Javax.Lang.Model.Type.TypeMirror"/></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<ReturnExtendsJavax_Lang_Model_Type_TypeMirror> DirectSupertypes<ReturnExtendsJavax_Lang_Model_Type_TypeMirror>(Javax.Lang.Model.Type.TypeMirror arg0) where ReturnExtendsJavax_Lang_Model_Type_TypeMirror : Javax.Lang.Model.Type.TypeMirror;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Type_TypeMirror"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.List DirectSupertypes(Javax.Lang.Model.Type.TypeMirror arg0) where ReturnExtendsJavax_Lang_Model_Type_TypeMirror : Javax.Lang.Model.Type.TypeMirror;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#asElement(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.Element AsElement(Javax.Lang.Model.Type.TypeMirror arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#boxedClass(javax.lang.model.type.PrimitiveType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.TypeElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.TypeElement BoxedClass(Javax.Lang.Model.Type.PrimitiveType arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getArrayType(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.ArrayType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.ArrayType GetArrayType(Javax.Lang.Model.Type.TypeMirror arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.DeclaredType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.DeclaredType GetDeclaredType(Javax.Lang.Model.Element.TypeElement arg0, params Javax.Lang.Model.Type.TypeMirror[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.type.DeclaredType,javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.DeclaredType"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg2"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.DeclaredType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.DeclaredType GetDeclaredType(Javax.Lang.Model.Type.DeclaredType arg0, Javax.Lang.Model.Element.TypeElement arg1, params Javax.Lang.Model.Type.TypeMirror[] arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getNoType(javax.lang.model.type.TypeKind)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeKind"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.NoType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.NoType GetNoType(Javax.Lang.Model.Type.TypeKind arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getPrimitiveType(javax.lang.model.type.TypeKind)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeKind"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.PrimitiveType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.PrimitiveType GetPrimitiveType(Javax.Lang.Model.Type.TypeKind arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#unboxedType(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.PrimitiveType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.PrimitiveType UnboxedType(Javax.Lang.Model.Type.TypeMirror arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#asMemberOf(javax.lang.model.type.DeclaredType,javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.DeclaredType"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.TypeMirror AsMemberOf(Javax.Lang.Model.Type.DeclaredType arg0, Javax.Lang.Model.Element.Element arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#capture(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.TypeMirror Capture(Javax.Lang.Model.Type.TypeMirror arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#erasure(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.TypeMirror Erasure(Javax.Lang.Model.Type.TypeMirror arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getWildcardType(javax.lang.model.type.TypeMirror,javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.WildcardType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.WildcardType GetWildcardType(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1);
 
         #endregion
@@ -239,9 +239,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#contains(javax.lang.model.type.TypeMirror,javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljavax/lang/model/type/TypeMirror;Ljavax/lang/model/type/TypeMirror;)Z", arg0, arg1);
@@ -249,9 +249,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#isAssignable(javax.lang.model.type.TypeMirror,javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsAssignable(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1)
         {
             return IExecuteWithSignature<bool>("isAssignable", "(Ljavax/lang/model/type/TypeMirror;Ljavax/lang/model/type/TypeMirror;)Z", arg0, arg1);
@@ -259,9 +259,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#isSameType(javax.lang.model.type.TypeMirror,javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSameType(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1)
         {
             return IExecuteWithSignature<bool>("isSameType", "(Ljavax/lang/model/type/TypeMirror;Ljavax/lang/model/type/TypeMirror;)Z", arg0, arg1);
@@ -269,9 +269,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#isSubsignature(javax.lang.model.type.ExecutableType,javax.lang.model.type.ExecutableType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.ExecutableType"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.ExecutableType"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSubsignature(Javax.Lang.Model.Type.ExecutableType arg0, Javax.Lang.Model.Type.ExecutableType arg1)
         {
             return IExecuteWithSignature<bool>("isSubsignature", "(Ljavax/lang/model/type/ExecutableType;Ljavax/lang/model/type/ExecutableType;)Z", arg0, arg1);
@@ -279,9 +279,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#isSubtype(javax.lang.model.type.TypeMirror,javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSubtype(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1)
         {
             return IExecuteWithSignature<bool>("isSubtype", "(Ljavax/lang/model/type/TypeMirror;Ljavax/lang/model/type/TypeMirror;)Z", arg0, arg1);
@@ -289,18 +289,18 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#directSupertypes(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Type_TypeMirror"><see cref="Javax.Lang.Model.Type.TypeMirror"/></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<ReturnExtendsJavax_Lang_Model_Type_TypeMirror> DirectSupertypes<ReturnExtendsJavax_Lang_Model_Type_TypeMirror>(Javax.Lang.Model.Type.TypeMirror arg0) where ReturnExtendsJavax_Lang_Model_Type_TypeMirror : Javax.Lang.Model.Type.TypeMirror
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Type_TypeMirror"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List DirectSupertypes(Javax.Lang.Model.Type.TypeMirror arg0) where ReturnExtendsJavax_Lang_Model_Type_TypeMirror : Javax.Lang.Model.Type.TypeMirror
         {
-            return IExecuteWithSignature<Java.Util.List<ReturnExtendsJavax_Lang_Model_Type_TypeMirror>>("directSupertypes", "(Ljavax/lang/model/type/TypeMirror;)Ljava/util/List;", arg0);
+            return IExecuteWithSignature<Java.Util.List>("directSupertypes", "(Ljavax/lang/model/type/TypeMirror;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#asElement(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.Element AsElement(Javax.Lang.Model.Type.TypeMirror arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("asElement", "(Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/element/Element;", arg0);
@@ -308,8 +308,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#boxedClass(javax.lang.model.type.PrimitiveType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.TypeElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.TypeElement BoxedClass(Javax.Lang.Model.Type.PrimitiveType arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.TypeElement>("boxedClass", "(Ljavax/lang/model/type/PrimitiveType;)Ljavax/lang/model/element/TypeElement;", arg0);
@@ -317,8 +317,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getArrayType(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.ArrayType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.ArrayType GetArrayType(Javax.Lang.Model.Type.TypeMirror arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.ArrayType>("getArrayType", "(Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/ArrayType;", arg0);
@@ -326,9 +326,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.DeclaredType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.DeclaredType GetDeclaredType(Javax.Lang.Model.Element.TypeElement arg0, params Javax.Lang.Model.Type.TypeMirror[] arg1)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", "(Ljavax/lang/model/element/TypeElement;[Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/DeclaredType;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -336,10 +336,10 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.type.DeclaredType,javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.DeclaredType"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg2"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.DeclaredType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.DeclaredType GetDeclaredType(Javax.Lang.Model.Type.DeclaredType arg0, Javax.Lang.Model.Element.TypeElement arg1, params Javax.Lang.Model.Type.TypeMirror[] arg2)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", "(Ljavax/lang/model/type/DeclaredType;Ljavax/lang/model/element/TypeElement;[Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/DeclaredType;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
@@ -347,8 +347,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getNoType(javax.lang.model.type.TypeKind)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeKind"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.NoType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.NoType GetNoType(Javax.Lang.Model.Type.TypeKind arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.NoType>("getNoType", "(Ljavax/lang/model/type/TypeKind;)Ljavax/lang/model/type/NoType;", arg0);
@@ -356,8 +356,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getPrimitiveType(javax.lang.model.type.TypeKind)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeKind"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.PrimitiveType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.PrimitiveType GetPrimitiveType(Javax.Lang.Model.Type.TypeKind arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.PrimitiveType>("getPrimitiveType", "(Ljavax/lang/model/type/TypeKind;)Ljavax/lang/model/type/PrimitiveType;", arg0);
@@ -365,8 +365,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#unboxedType(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.PrimitiveType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.PrimitiveType UnboxedType(Javax.Lang.Model.Type.TypeMirror arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.PrimitiveType>("unboxedType", "(Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/PrimitiveType;", arg0);
@@ -374,9 +374,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#asMemberOf(javax.lang.model.type.DeclaredType,javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.DeclaredType"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.TypeMirror AsMemberOf(Javax.Lang.Model.Type.DeclaredType arg0, Javax.Lang.Model.Element.Element arg1)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("asMemberOf", "(Ljavax/lang/model/type/DeclaredType;Ljavax/lang/model/element/Element;)Ljavax/lang/model/type/TypeMirror;", arg0, arg1);
@@ -384,8 +384,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#capture(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.TypeMirror Capture(Javax.Lang.Model.Type.TypeMirror arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("capture", "(Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/TypeMirror;", arg0);
@@ -393,8 +393,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#erasure(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.TypeMirror Erasure(Javax.Lang.Model.Type.TypeMirror arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("erasure", "(Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/TypeMirror;", arg0);
@@ -402,9 +402,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getWildcardType(javax.lang.model.type.TypeMirror,javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.WildcardType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.WildcardType GetWildcardType(Javax.Lang.Model.Type.TypeMirror arg0, Javax.Lang.Model.Type.TypeMirror arg1)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.WildcardType>("getWildcardType", "(Ljavax/lang/model/type/TypeMirror;Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/WildcardType;", arg0, arg1);

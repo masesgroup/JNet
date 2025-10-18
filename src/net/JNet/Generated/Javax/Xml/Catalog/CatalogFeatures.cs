@@ -107,7 +107,7 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html"/>
         /// </summary>
-        public partial class Feature : Java.Lang.Enum<Javax.Xml.Catalog.CatalogFeatures.Feature>
+        public partial class Feature : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.xml.catalog.CatalogFeatures$Feature";
             /// <summary>
@@ -167,7 +167,7 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#defaults()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Catalog.CatalogFeatures Defaults()
         {
             return SExecuteWithSignature<Javax.Xml.Catalog.CatalogFeatures>(LocalBridgeClazz, "defaults", "()Ljavax/xml/catalog/CatalogFeatures;");
@@ -175,7 +175,7 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#builder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Builder"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Catalog.CatalogFeatures.Builder BuilderMethod()
         {
             return SExecuteWithSignature<Javax.Xml.Catalog.CatalogFeatures.Builder>(LocalBridgeClazz, "builder", "()Ljavax/xml/catalog/CatalogFeatures$Builder;");
@@ -187,8 +187,8 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#get(javax.xml.catalog.CatalogFeatures.Feature)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Get(Javax.Xml.Catalog.CatalogFeatures.Feature arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("get", "(Ljavax/xml/catalog/CatalogFeatures$Feature;)Ljava/lang/String;", arg0);
@@ -220,7 +220,7 @@ namespace Javax.Xml.Catalog
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#build()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures"/></returns>
+            /// <returns><see cref=""/></returns>
             public Javax.Xml.Catalog.CatalogFeatures Build()
             {
                 return IExecuteWithSignature<Javax.Xml.Catalog.CatalogFeatures>("build", "()Ljavax/xml/catalog/CatalogFeatures;");
@@ -228,9 +228,9 @@ namespace Javax.Xml.Catalog
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#with(javax.xml.catalog.CatalogFeatures.Feature,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Javax.Xml.Catalog.CatalogFeatures.Builder With(Javax.Xml.Catalog.CatalogFeatures.Feature arg0, Java.Lang.String arg1)
             {
                 return IExecuteWithSignature<Javax.Xml.Catalog.CatalogFeatures.Builder>("with", "(Ljavax/xml/catalog/CatalogFeatures$Feature;Ljava/lang/String;)Ljavax/xml/catalog/CatalogFeatures$Builder;", arg0, arg1);
@@ -289,8 +289,8 @@ namespace Javax.Xml.Catalog
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Xml.Catalog.CatalogFeatures.Feature ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/xml/catalog/CatalogFeatures$Feature;", arg0);
@@ -298,7 +298,7 @@ namespace Javax.Xml.Catalog
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Xml.Catalog.CatalogFeatures.Feature[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "values", "()[Ljavax/xml/catalog/CatalogFeatures$Feature;");
@@ -317,7 +317,7 @@ namespace Javax.Xml.Catalog
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#defaultValue()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.String"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.String DefaultValue()
             {
                 return IExecuteWithSignature<Java.Lang.String>("defaultValue", "()Ljava/lang/String;");

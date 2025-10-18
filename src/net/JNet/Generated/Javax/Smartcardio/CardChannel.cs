@@ -105,10 +105,10 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#transmit(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Transmit(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {
             return IExecuteWithSignature<int>("transmit", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I", arg0, arg1);
@@ -116,9 +116,9 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#transmit(javax.smartcardio.CommandAPDU)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Smartcardio.CommandAPDU"/></param>
-        /// <returns><see cref="Javax.Smartcardio.ResponseAPDU"/></returns>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Smartcardio.ResponseAPDU Transmit(Javax.Smartcardio.CommandAPDU arg0)
         {
             return IExecuteWithSignature<Javax.Smartcardio.ResponseAPDU>("transmit", "(Ljavax/smartcardio/CommandAPDU;)Ljavax/smartcardio/ResponseAPDU;", arg0);
@@ -126,7 +126,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#close()"/>
         /// </summary>
-        /// <exception cref="Javax.Smartcardio.CardException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");

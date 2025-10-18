@@ -108,13 +108,13 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Accept(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0);
 
         #endregion
@@ -175,7 +175,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void Accept(int arg0)
         {
             hasOverrideAccept = false;
@@ -183,8 +183,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.IntConsumer AndThenDefault(Java.Util.Function.IntConsumer arg0)
         {
@@ -209,8 +209,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0)
         {
@@ -250,7 +250,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void Accept(int arg0)
         {
             IExecuteWithSignature("accept", "(I)V", arg0);
@@ -258,8 +258,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.IntConsumerDirect, Java.Util.Function.IntConsumer>("andThen", "(Ljava/util/function/IntConsumer;)Ljava/util/function/IntConsumer;", arg0);

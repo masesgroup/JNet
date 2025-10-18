@@ -73,7 +73,7 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public X500Principal(byte[] arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public X500Principal(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -89,16 +89,16 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(java.lang.String,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        public X500Principal(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public X500Principal(Java.Lang.String arg0, Java.Util.Map<, > arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public X500Principal(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -108,11 +108,11 @@ namespace Javax.Security.Auth.X500
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.X500.X500Principal"/> to <see cref="Java.Security.Principal"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Principal(Javax.Security.Auth.X500.X500Principal t) => t.Cast<Java.Security.Principal>();
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.X500.X500Principal"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.X500.X500Principal t) => t.Cast<Java.Io.Serializable>();
 
@@ -162,18 +162,18 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#getName(java.lang.String,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        public Java.Lang.String GetName(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Lang.String GetName(Java.Lang.String arg0, Java.Util.Map<, > arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#getName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetName(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);

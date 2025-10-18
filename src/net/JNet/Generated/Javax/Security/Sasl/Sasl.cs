@@ -169,43 +169,43 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#getSaslClientFactories()"/> 
         /// </summary>
-        public static Java.Util.Enumeration<Javax.Security.Sasl.SaslClientFactory> SaslClientFactories
+        public static Java.Util.Enumeration SaslClientFactories
         {
-            get { return SExecuteWithSignature<Java.Util.Enumeration<Javax.Security.Sasl.SaslClientFactory>>(LocalBridgeClazz, "getSaslClientFactories", "()Ljava/util/Enumeration;"); }
+            get { return SExecuteWithSignature<Java.Util.Enumeration>(LocalBridgeClazz, "getSaslClientFactories", "()Ljava/util/Enumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#getSaslServerFactories()"/> 
         /// </summary>
-        public static Java.Util.Enumeration<Javax.Security.Sasl.SaslServerFactory> SaslServerFactories
+        public static Java.Util.Enumeration SaslServerFactories
         {
-            get { return SExecuteWithSignature<Java.Util.Enumeration<Javax.Security.Sasl.SaslServerFactory>>(LocalBridgeClazz, "getSaslServerFactories", "()Ljava/util/Enumeration;"); }
+            get { return SExecuteWithSignature<Java.Util.Enumeration>(LocalBridgeClazz, "getSaslServerFactories", "()Ljava/util/Enumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#createSaslClient(java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.util.Map,javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg5"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
-        /// <returns><see cref="Javax.Security.Sasl.SaslClient"/></returns>
-        /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        public static Javax.Security.Sasl.SaslClient CreateSaslClient(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.Map<Java.Lang.String, object> arg4, Javax.Security.Auth.Callback.CallbackHandler arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Javax.Security.Sasl.SaslClient CreateSaslClient(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.Map<, > arg4, Javax.Security.Auth.Callback.CallbackHandler arg5)
         {
             return SExecuteWithSignature<Javax.Security.Sasl.SaslClient>(LocalBridgeClazz, "createSaslClient", "([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljavax/security/auth/callback/CallbackHandler;)Ljavax/security/sasl/SaslClient;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#createSaslServer(java.lang.String,java.lang.String,java.lang.String,java.util.Map,javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg4"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
-        /// <returns><see cref="Javax.Security.Sasl.SaslServer"/></returns>
-        /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        public static Javax.Security.Sasl.SaslServer CreateSaslServer(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.Map<Java.Lang.String, object> arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Javax.Security.Sasl.SaslServer CreateSaslServer(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.Map<, > arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
         {
             return SExecuteWithSignature<Javax.Security.Sasl.SaslServer>(LocalBridgeClazz, "createSaslServer", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljavax/security/auth/callback/CallbackHandler;)Ljavax/security/sasl/SaslServer;", arg0, arg1, arg2, arg3, arg4);
         }

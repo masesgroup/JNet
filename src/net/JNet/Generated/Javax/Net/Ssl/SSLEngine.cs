@@ -133,9 +133,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeApplicationProtocolSelector()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)"/>
         /// </summary>
-        public Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String> HandshakeApplicationProtocolSelector
+        public Java.Util.Function.BiFunction<, , > HandshakeApplicationProtocolSelector
         {
-            get { return IExecuteWithSignature<Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String>>("getHandshakeApplicationProtocolSelector", "()Ljava/util/function/BiFunction;"); } set { IExecuteWithSignature("setHandshakeApplicationProtocolSelector", "(Ljava/util/function/BiFunction;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Function.BiFunction<, , >>("getHandshakeApplicationProtocolSelector", "()Ljava/util/function/BiFunction;"); } set { IExecuteWithSignature("setHandshakeApplicationProtocolSelector", "(Ljava/util/function/BiFunction;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeSession()"/> 
@@ -217,7 +217,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#isInboundDone()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsInboundDone()
         {
             return IExecuteWithSignature<bool>("isInboundDone", "()Z");
@@ -225,7 +225,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#isOutboundDone()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOutboundDone()
         {
             return IExecuteWithSignature<bool>("isOutboundDone", "()Z");
@@ -233,12 +233,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult"/></returns>
-        /// <exception cref="Javax.Net.Ssl.SSLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Net.Ssl.SSLEngineResult Unwrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer[] arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("unwrap", "(Ljava/nio/ByteBuffer;[Ljava/nio/ByteBuffer;II)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1, arg2, arg3);
@@ -246,12 +246,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#wrap(java.nio.ByteBuffer[],int,int,java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult"/></returns>
-        /// <exception cref="Javax.Net.Ssl.SSLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Net.Ssl.SSLEngineResult Wrap(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, Java.Nio.ByteBuffer arg3)
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("wrap", "([Ljava/nio/ByteBuffer;IILjava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1, arg2, arg3);
@@ -259,7 +259,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#beginHandshake()"/>
         /// </summary>
-        /// <exception cref="Javax.Net.Ssl.SSLException"/>
+        /// <exception cref=""/>
         public void BeginHandshake()
         {
             IExecuteWithSignature("beginHandshake", "()V");
@@ -267,7 +267,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#closeInbound()"/>
         /// </summary>
-        /// <exception cref="Javax.Net.Ssl.SSLException"/>
+        /// <exception cref=""/>
         public void CloseInbound()
         {
             IExecuteWithSignature("closeInbound", "()V");
@@ -282,10 +282,10 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult"/></returns>
-        /// <exception cref="Javax.Net.Ssl.SSLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Net.Ssl.SSLEngineResult Unwrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("unwrap", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
@@ -293,10 +293,10 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult"/></returns>
-        /// <exception cref="Javax.Net.Ssl.SSLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Net.Ssl.SSLEngineResult Unwrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer[] arg1)
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("unwrap", "(Ljava/nio/ByteBuffer;[Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
@@ -304,10 +304,10 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult"/></returns>
-        /// <exception cref="Javax.Net.Ssl.SSLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Net.Ssl.SSLEngineResult Wrap(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("wrap", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);
@@ -315,10 +315,10 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#wrap(java.nio.ByteBuffer[],java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult"/></returns>
-        /// <exception cref="Javax.Net.Ssl.SSLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Net.Ssl.SSLEngineResult Wrap(Java.Nio.ByteBuffer[] arg0, Java.Nio.ByteBuffer arg1)
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult>("wrap", "([Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljavax/net/ssl/SSLEngineResult;", arg0, arg1);

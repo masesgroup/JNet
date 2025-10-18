@@ -78,20 +78,20 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#getSourceVersions()"/> 
         /// </summary>
-        Java.Util.Set<Javax.Lang.Model.SourceVersion> SourceVersions { get; }
+        Java.Util.Set SourceVersions { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#run(java.io.InputStream,java.io.OutputStream,java.io.OutputStream,java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int Run(Java.Io.InputStream arg0, Java.Io.OutputStream arg1, Java.Io.OutputStream arg2, params Java.Lang.String[] arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String Name();
 
         #endregion
@@ -127,18 +127,18 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#getSourceVersions()"/> 
         /// </summary>
-        public Java.Util.Set<Javax.Lang.Model.SourceVersion> SourceVersions
+        public Java.Util.Set SourceVersions
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.SourceVersion>>("getSourceVersions", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getSourceVersions", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#run(java.io.InputStream,java.io.OutputStream,java.io.OutputStream,java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Run(Java.Io.InputStream arg0, Java.Io.OutputStream arg1, Java.Io.OutputStream arg2, params Java.Lang.String[] arg3)
         {
             return IExecuteWithSignature<int>("run", "(Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/io/OutputStream;[Ljava/lang/String;)I", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg3, arg0, arg1, arg2));
@@ -146,7 +146,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");

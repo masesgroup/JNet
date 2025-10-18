@@ -75,7 +75,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JRootPane"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JRootPane t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -189,7 +189,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setUI(javax.swing.plaf.RootPaneUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.RootPaneUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.RootPaneUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/RootPaneUI;)V", arg0);

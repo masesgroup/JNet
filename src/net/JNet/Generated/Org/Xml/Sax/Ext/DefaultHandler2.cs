@@ -75,15 +75,15 @@ namespace Org.Xml.Sax.Ext
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Org.Xml.Sax.Ext.DefaultHandler2"/> to <see cref="Org.Xml.Sax.Ext.LexicalHandler"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.LexicalHandler(Org.Xml.Sax.Ext.DefaultHandler2 t) => t.Cast<Org.Xml.Sax.Ext.LexicalHandler>();
         /// <summary>
-        /// Converter from <see cref="Org.Xml.Sax.Ext.DefaultHandler2"/> to <see cref="Org.Xml.Sax.Ext.DeclHandler"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.DeclHandler(Org.Xml.Sax.Ext.DefaultHandler2 t) => t.Cast<Org.Xml.Sax.Ext.DeclHandler>();
         /// <summary>
-        /// Converter from <see cref="Org.Xml.Sax.Ext.DefaultHandler2"/> to <see cref="Org.Xml.Sax.Ext.EntityResolver2"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.EntityResolver2(Org.Xml.Sax.Ext.DefaultHandler2 t) => t.Cast<Org.Xml.Sax.Ext.EntityResolver2>();
 
@@ -101,11 +101,11 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#getExternalSubset(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.Xml.Sax.InputSource GetExternalSubset(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Org.Xml.Sax.InputSource>("getExternalSubset", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1);
@@ -113,13 +113,13 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             return IExecuteWithSignature<Org.Xml.Sax.InputSource>("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1, arg2, arg3);
@@ -127,12 +127,12 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#attributeDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AttributeDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
             IExecuteWithSignature("attributeDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
@@ -140,10 +140,10 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#comment(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Comment(char[] arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("comment", "([CII)V", arg0, arg1, arg2);
@@ -151,9 +151,9 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#elementDecl(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void ElementDecl(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("elementDecl", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -161,7 +161,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#endCDATA()"/>
         /// </summary>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref=""/>
         public void EndCDATA()
         {
             IExecuteWithSignature("endCDATA", "()V");
@@ -169,7 +169,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#endDTD()"/>
         /// </summary>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref=""/>
         public void EndDTD()
         {
             IExecuteWithSignature("endDTD", "()V");
@@ -177,8 +177,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#endEntity(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void EndEntity(Java.Lang.String arg0)
         {
             IExecuteWithSignature("endEntity", "(Ljava/lang/String;)V", arg0);
@@ -186,10 +186,10 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#externalEntityDecl(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void ExternalEntityDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             IExecuteWithSignature("externalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
@@ -197,9 +197,9 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#internalEntityDecl(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void InternalEntityDecl(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("internalEntityDecl", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -207,7 +207,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#startCDATA()"/>
         /// </summary>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref=""/>
         public void StartCDATA()
         {
             IExecuteWithSignature("startCDATA", "()V");
@@ -215,10 +215,10 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#startDTD(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void StartDTD(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             IExecuteWithSignature("startDTD", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
@@ -226,8 +226,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DefaultHandler2.html#startEntity(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void StartEntity(Java.Lang.String arg0)
         {
             IExecuteWithSignature("startEntity", "(Ljava/lang/String;)V", arg0);

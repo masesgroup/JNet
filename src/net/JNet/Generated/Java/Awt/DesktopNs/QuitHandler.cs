@@ -78,8 +78,8 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitHandler.html#handleQuitRequestWith(java.awt.desktop.QuitEvent,java.awt.desktop.QuitResponse)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.QuitEvent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.DesktopNs.QuitResponse"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void HandleQuitRequestWith(Java.Awt.DesktopNs.QuitEvent arg0, Java.Awt.DesktopNs.QuitResponse arg1);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitHandler.html#handleQuitRequestWith(java.awt.desktop.QuitEvent,java.awt.desktop.QuitResponse)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.QuitEvent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.DesktopNs.QuitResponse"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void HandleQuitRequestWith(Java.Awt.DesktopNs.QuitEvent arg0, Java.Awt.DesktopNs.QuitResponse arg1)
         {
             IExecuteWithSignature("handleQuitRequestWith", "(Ljava/awt/desktop/QuitEvent;Ljava/awt/desktop/QuitResponse;)V", arg0, arg1);

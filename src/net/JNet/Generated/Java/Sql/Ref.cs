@@ -86,10 +86,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getObject(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        object GetObject(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        object GetObject(Java.Util.Map<, > arg0);
 
         #endregion
 
@@ -138,10 +138,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getObject(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public object GetObject(Java.Util.Map<, > arg0)
         {
             return IExecuteWithSignature("getObject", "(Ljava/util/Map;)Ljava/lang/Object;", arg0);
         }

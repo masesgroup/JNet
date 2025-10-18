@@ -92,13 +92,13 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Cert.CertStore"/></returns>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Security.Cert.CertStore GetInstance(Java.Lang.String arg0, Java.Security.Cert.CertStoreParameters arg1, Java.Lang.String arg2)
         {
             return SExecuteWithSignature<Java.Security.Cert.CertStore>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/cert/CertStoreParameters;Ljava/lang/String;)Ljava/security/cert/CertStore;", arg0, arg1, arg2);
@@ -106,12 +106,12 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Java.Security.Cert.CertStore"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Security.Cert.CertStore GetInstance(Java.Lang.String arg0, Java.Security.Cert.CertStoreParameters arg1, Java.Security.Provider arg2)
         {
             return SExecuteWithSignature<Java.Security.Cert.CertStore>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/cert/CertStoreParameters;Ljava/security/Provider;)Ljava/security/cert/CertStore;", arg0, arg1, arg2);
@@ -119,11 +119,11 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
-        /// <returns><see cref="Java.Security.Cert.CertStore"/></returns>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Security.Cert.CertStore GetInstance(Java.Lang.String arg0, Java.Security.Cert.CertStoreParameters arg1)
         {
             return SExecuteWithSignature<Java.Security.Cert.CertStore>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/cert/CertStoreParameters;)Ljava/security/cert/CertStore;", arg0, arg1);
@@ -156,24 +156,24 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getCertificates(java.security.cert.CertSelector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CertSelector"/></param>
-        /// <typeparam name="ReturnExtendsJava_Security_Cert_Certificate"><see cref="Java.Security.Cert.Certificate"/></typeparam>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> GetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJava_Security_Cert_Certificate"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Collection GetCertificates(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
         {
-            return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("getCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;", arg0);
+            return IExecuteWithSignature<Java.Util.Collection>("getCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getCRLs(java.security.cert.CRLSelector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CRLSelector"/></param>
-        /// <typeparam name="ReturnExtendsJava_Security_Cert_CRL"><see cref="Java.Security.Cert.CRL"/></typeparam>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> GetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL : Java.Security.Cert.CRL
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJava_Security_Cert_CRL"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Collection GetCRLs(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL : Java.Security.Cert.CRL
         {
-            return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("getCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;", arg0);
+            return IExecuteWithSignature<Java.Util.Collection>("getCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;", arg0);
         }
 
         #endregion

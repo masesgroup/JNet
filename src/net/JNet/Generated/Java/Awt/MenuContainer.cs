@@ -82,7 +82,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuContainer.html#remove(java.awt.MenuComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.MenuComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Remove(Java.Awt.MenuComponent arg0);
 
         #endregion
@@ -125,7 +125,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuContainer.html#remove(java.awt.MenuComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.MenuComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(Java.Awt.MenuComponent arg0)
         {
             IExecuteWithSignature("remove", "(Ljava/awt/MenuComponent;)V", arg0);

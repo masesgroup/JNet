@@ -78,9 +78,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <param name="arg1"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <returns><see cref="Java.Security.ProtectionDomain"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Security.ProtectionDomain[] Combine(Java.Security.ProtectionDomain[] arg0, Java.Security.ProtectionDomain[] arg1);
 
         #endregion
@@ -116,9 +116,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <param name="arg1"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <returns><see cref="Java.Security.ProtectionDomain"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Security.ProtectionDomain[] Combine(Java.Security.ProtectionDomain[] arg0, Java.Security.ProtectionDomain[] arg1)
         {
             return IExecuteWithSignatureArray<Java.Security.ProtectionDomain>("combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;", arg0, arg1);

@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Phaser(int arg0)
             : base(arg0)
         {
@@ -81,8 +81,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#%3Cinit%3E(java.util.concurrent.Phaser,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Phaser"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Phaser(Java.Util.Concurrent.Phaser arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -90,7 +90,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#%3Cinit%3E(java.util.concurrent.Phaser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Phaser"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Phaser(Java.Util.Concurrent.Phaser arg0)
             : base(arg0)
         {
@@ -156,7 +156,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#isTerminated()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsTerminated()
         {
             return IExecuteWithSignature<bool>("isTerminated", "()Z");
@@ -164,7 +164,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arrive()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Arrive()
         {
             return IExecuteWithSignature<int>("arrive", "()I");
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndAwaitAdvance()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int ArriveAndAwaitAdvance()
         {
             return IExecuteWithSignature<int>("arriveAndAwaitAdvance", "()I");
@@ -180,7 +180,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndDeregister()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int ArriveAndDeregister()
         {
             return IExecuteWithSignature<int>("arriveAndDeregister", "()I");
@@ -188,8 +188,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvance(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int AwaitAdvance(int arg0)
         {
             return IExecuteWithSignature<int>("awaitAdvance", "(I)I", arg0);
@@ -197,12 +197,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public int AwaitAdvanceInterruptibly(int arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
             return IExecuteWithSignature<int>("awaitAdvanceInterruptibly", "(IJLjava/util/concurrent/TimeUnit;)I", arg0, arg1, arg2);
@@ -210,9 +210,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int AwaitAdvanceInterruptibly(int arg0)
         {
             return IExecuteWithSignature<int>("awaitAdvanceInterruptibly", "(I)I", arg0);
@@ -220,8 +220,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#bulkRegister(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int BulkRegister(int arg0)
         {
             return IExecuteWithSignature<int>("bulkRegister", "(I)I", arg0);
@@ -229,7 +229,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#register()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Register()
         {
             return IExecuteWithSignature<int>("register", "()I");

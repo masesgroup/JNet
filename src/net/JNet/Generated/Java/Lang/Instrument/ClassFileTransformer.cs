@@ -78,25 +78,25 @@ namespace Java.Lang.Instrument
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html#transform(java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <param name="arg4"><see cref="byte"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Lang.Instrument.IllegalClassFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         byte[] Transform(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Security.ProtectionDomain arg3, byte[] arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html#transform(java.lang.Module,java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg4"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <param name="arg5"><see cref="byte"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Lang.Instrument.IllegalClassFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         byte[] Transform(Java.Lang.Module arg0, Java.Lang.ClassLoader arg1, Java.Lang.String arg2, Java.Lang.Class arg3, Java.Security.ProtectionDomain arg4, byte[] arg5);
 
         #endregion
@@ -132,13 +132,13 @@ namespace Java.Lang.Instrument
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html#transform(java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <param name="arg4"><see cref="byte"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Lang.Instrument.IllegalClassFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] Transform(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Security.ProtectionDomain arg3, byte[] arg4)
         {
             return IExecuteWithSignatureArray<byte>("transform", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/Class;Ljava/security/ProtectionDomain;[B)[B", arg0, arg1, arg2, arg3, arg4);
@@ -146,14 +146,14 @@ namespace Java.Lang.Instrument
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html#transform(java.lang.Module,java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg4"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <param name="arg5"><see cref="byte"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Lang.Instrument.IllegalClassFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] Transform(Java.Lang.Module arg0, Java.Lang.ClassLoader arg1, Java.Lang.String arg2, Java.Lang.Class arg3, Java.Security.ProtectionDomain arg4, byte[] arg5)
         {
             return IExecuteWithSignatureArray<byte>("transform", "(Ljava/lang/Module;Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/Class;Ljava/security/ProtectionDomain;[B)[B", arg0, arg1, arg2, arg3, arg4, arg5);

@@ -75,11 +75,11 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.MenuBar"/> to <see cref="Java.Awt.MenuContainer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.MenuContainer(Java.Awt.MenuBar t) => t.Cast<Java.Awt.MenuContainer>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.MenuBar"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.MenuBar t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -111,8 +111,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#add(java.awt.Menu)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Menu"/></param>
-        /// <returns><see cref="Java.Awt.Menu"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Menu Add(Java.Awt.Menu arg0)
         {
             return IExecuteWithSignature<Java.Awt.Menu>("add", "(Ljava/awt/Menu;)Ljava/awt/Menu;", arg0);
@@ -120,8 +120,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#getMenu(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Menu"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Menu GetMenu(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Menu>("getMenu", "(I)Ljava/awt/Menu;", arg0);
@@ -129,8 +129,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#getShortcutMenuItem(java.awt.MenuShortcut)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.MenuShortcut"/></param>
-        /// <returns><see cref="Java.Awt.MenuItem"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.MenuItem GetShortcutMenuItem(Java.Awt.MenuShortcut arg0)
         {
             return IExecuteWithSignature<Java.Awt.MenuItem>("getShortcutMenuItem", "(Ljava/awt/MenuShortcut;)Ljava/awt/MenuItem;", arg0);
@@ -138,10 +138,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#shortcuts()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<Java.Awt.MenuShortcut> Shortcuts()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration Shortcuts()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Java.Awt.MenuShortcut>>("shortcuts", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("shortcuts", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#addNotify()"/>
@@ -153,7 +153,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#deleteShortcut(java.awt.MenuShortcut)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.MenuShortcut"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DeleteShortcut(Java.Awt.MenuShortcut arg0)
         {
             IExecuteWithSignature("deleteShortcut", "(Ljava/awt/MenuShortcut;)V", arg0);
@@ -161,7 +161,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(int arg0)
         {
             IExecuteWithSignature("remove", "(I)V", arg0);
@@ -169,7 +169,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#remove(java.awt.MenuComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.MenuComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(Java.Awt.MenuComponent arg0)
         {
             IExecuteWithSignature("remove", "(Ljava/awt/MenuComponent;)V", arg0);

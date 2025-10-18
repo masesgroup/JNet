@@ -129,8 +129,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#selectFrame(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JInternalFrame SelectFrame(bool arg0)
         {
             return IExecuteWithSignature<Javax.Swing.JInternalFrame>("selectFrame", "(Z)Ljavax/swing/JInternalFrame;", arg0);
@@ -138,8 +138,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getAllFramesInLayer(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JInternalFrame[] GetAllFramesInLayer(int arg0)
         {
             return IExecuteWithSignatureArray<Javax.Swing.JInternalFrame>("getAllFramesInLayer", "(I)[Ljavax/swing/JInternalFrame;", arg0);
@@ -147,7 +147,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setUI(javax.swing.plaf.DesktopPaneUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.DesktopPaneUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.DesktopPaneUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/DesktopPaneUI;)V", arg0);

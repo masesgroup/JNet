@@ -378,7 +378,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalTheme.html#addCustomEntriesToTable(javax.swing.UIDefaults)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.UIDefaults"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddCustomEntriesToTable(Javax.Swing.UIDefaults arg0)
         {
             IExecuteWithSignature("addCustomEntriesToTable", "(Ljavax/swing/UIDefaults;)V", arg0);

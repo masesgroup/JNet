@@ -29,7 +29,7 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html"/>
     /// </summary>
-    public partial class ClientInfoStatus : Java.Lang.Enum<Java.Sql.ClientInfoStatus>
+    public partial class ClientInfoStatus : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.sql.ClientInfoStatus";
         /// <summary>
@@ -109,8 +109,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.ClientInfoStatus"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.ClientInfoStatus ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/ClientInfoStatus;", arg0);
@@ -118,7 +118,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.ClientInfoStatus"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.ClientInfoStatus[] Values()
         {
             return SExecuteWithSignatureArray<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "values", "()[Ljava/sql/ClientInfoStatus;");

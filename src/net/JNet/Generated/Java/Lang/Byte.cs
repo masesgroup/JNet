@@ -75,7 +75,7 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Byte"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Byte t) => t.Cast<Java.Lang.Comparable>();
 
@@ -119,10 +119,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#parseByte(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static byte ParseByte(Java.Lang.String arg0, int arg1)
         {
             return SExecuteWithSignature<byte>(LocalBridgeClazz, "parseByte", "(Ljava/lang/String;I)B", arg0, arg1);
@@ -130,9 +130,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#parseByte(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static byte ParseByte(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<byte>(LocalBridgeClazz, "parseByte", "(Ljava/lang/String;)B", arg0);
@@ -140,9 +140,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compare(byte,byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int Compare(byte arg0, byte arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(BB)I", arg0, arg1);
@@ -150,9 +150,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareUnsigned(byte,byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int CompareUnsigned(byte arg0, byte arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "compareUnsigned", "(BB)I", arg0, arg1);
@@ -160,8 +160,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#hashCode(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int HashCode(byte arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(B)I", arg0);
@@ -169,8 +169,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toUnsignedInt(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int ToUnsignedInt(byte arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "toUnsignedInt", "(B)I", arg0);
@@ -178,9 +178,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#decode(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Byte"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.Byte Decode(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.Byte>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/lang/Byte;", arg0);
@@ -188,8 +188,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Lang.Byte"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Byte ValueOf(byte arg0)
         {
             return SExecuteWithSignature<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", "(B)Ljava/lang/Byte;", arg0);
@@ -197,10 +197,10 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.Byte"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.Byte ValueOf(Java.Lang.String arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;I)Ljava/lang/Byte;", arg0, arg1);
@@ -208,9 +208,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Byte"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.Byte ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Byte;", arg0);
@@ -218,8 +218,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toString(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ToString(byte arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(B)Ljava/lang/String;", arg0);
@@ -227,8 +227,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toUnsignedLong(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static long ToUnsignedLong(byte arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "toUnsignedLong", "(B)J", arg0);
@@ -240,8 +240,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Byte"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Lang.Byte arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Byte;)I", arg0);
@@ -249,8 +249,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);

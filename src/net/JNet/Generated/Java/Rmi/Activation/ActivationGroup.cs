@@ -77,7 +77,7 @@ namespace Java.Rmi.Activation
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Rmi.Activation.ActivationGroup"/> to <see cref="Java.Rmi.Activation.ActivationInstantiator"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Rmi.Activation.ActivationInstantiator(Java.Rmi.Activation.ActivationGroup t) => t.Cast<Java.Rmi.Activation.ActivationInstantiator>();
 
@@ -98,11 +98,11 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#createGroup(java.rmi.activation.ActivationGroupID,java.rmi.activation.ActivationGroupDesc,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationGroupDesc"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <returns><see cref="Java.Rmi.Activation.ActivationGroup"/></returns>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Activation.ActivationGroup CreateGroup(Java.Rmi.Activation.ActivationGroupID arg0, Java.Rmi.Activation.ActivationGroupDesc arg1, long arg2)
         {
             return SExecuteWithSignature<Java.Rmi.Activation.ActivationGroup>(LocalBridgeClazz, "createGroup", "(Ljava/rmi/activation/ActivationGroupID;Ljava/rmi/activation/ActivationGroupDesc;J)Ljava/rmi/activation/ActivationGroup;", arg0, arg1, arg2);
@@ -110,7 +110,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#currentGroupID()"/>
         /// </summary>
-        /// <returns><see cref="Java.Rmi.Activation.ActivationGroupID"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Rmi.Activation.ActivationGroupID CurrentGroupID()
         {
             return SExecuteWithSignature<Java.Rmi.Activation.ActivationGroupID>(LocalBridgeClazz, "currentGroupID", "()Ljava/rmi/activation/ActivationGroupID;");
@@ -122,11 +122,11 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#activeObject(java.rmi.activation.ActivationID,java.rmi.Remote)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void ActiveObject(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Remote arg1)
         {
             IExecuteWithSignature("activeObject", "(Ljava/rmi/activation/ActivationID;Ljava/rmi/Remote;)V", arg0, arg1);
@@ -134,11 +134,11 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#inactiveObject(java.rmi.activation.ActivationID)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public bool InactiveObject(Java.Rmi.Activation.ActivationID arg0)
         {
             return IExecuteWithSignature<bool>("inactiveObject", "(Ljava/rmi/activation/ActivationID;)Z", arg0);

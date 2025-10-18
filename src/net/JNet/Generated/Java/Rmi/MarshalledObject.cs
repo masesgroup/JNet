@@ -66,12 +66,12 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region MarshalledObject<T> declaration
+    #region MarshalledObject declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class MarshalledObject<T> : Java.Io.Serializable
+    public partial class MarshalledObject : Java.Io.Serializable
     {
         const string _bridgeClassName = "java.rmi.MarshalledObject";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public MarshalledObject(object arg0)
             : base(arg0)
         {
@@ -140,9 +140,9 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#get()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object Get()
         {
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
@@ -158,15 +158,15 @@ namespace Java.Rmi
     }
     #endregion
 
-    #region MarshalledObject<T> implementation
-    public partial class MarshalledObject<T>
+    #region MarshalledObject implementation
+    public partial class MarshalledObject
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public MarshalledObject(T arg0)
             : base(arg0)
         {
@@ -176,9 +176,9 @@ namespace Java.Rmi
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Rmi.MarshalledObject{T}"/> to <see cref="Java.Rmi.MarshalledObject"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Rmi.MarshalledObject(Java.Rmi.MarshalledObject<T> t) => t.Cast<Java.Rmi.MarshalledObject>();
+        public static implicit operator Java.Rmi.MarshalledObject(Java.Rmi.MarshalledObject t) => t.Cast<Java.Rmi.MarshalledObject>();
 
         #endregion
 
@@ -194,9 +194,9 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#get()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public T Get()
         {
             return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");

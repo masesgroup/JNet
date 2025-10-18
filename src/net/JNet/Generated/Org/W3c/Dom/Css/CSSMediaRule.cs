@@ -86,16 +86,16 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#insertRule(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         int InsertRule(Java.Lang.String arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#deleteRule(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void DeleteRule(int arg0);
 
         #endregion
@@ -145,10 +145,10 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#insertRule(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int InsertRule(Java.Lang.String arg0, int arg1)
         {
             return IExecuteWithSignature<int>("insertRule", "(Ljava/lang/String;I)I", arg0, arg1);
@@ -156,8 +156,8 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#deleteRule(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void DeleteRule(int arg0)
         {
             IExecuteWithSignature("deleteRule", "(I)V", arg0);

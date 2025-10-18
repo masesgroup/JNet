@@ -134,12 +134,12 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html#paintLayeredHighlights(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent,javax.swing.text.View)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
-        /// <param name="arg4"><see cref="Javax.Swing.Text.JTextComponent"/></param>
-        /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintLayeredHighlights(Java.Awt.Graphics arg0, int arg1, int arg2, Java.Awt.Shape arg3, Javax.Swing.Text.JTextComponent arg4, Javax.Swing.Text.View arg5)
         {
             IExecuteWithSignature("paintLayeredHighlights", "(Ljava/awt/Graphics;IILjava/awt/Shape;Ljavax/swing/text/JTextComponent;Ljavax/swing/text/View;)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -171,13 +171,13 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html#paintLayer(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent,javax.swing.text.View)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
-            /// <param name="arg4"><see cref="Javax.Swing.Text.JTextComponent"/></param>
-            /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
-            /// <returns><see cref="Java.Awt.Shape"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <param name="arg5"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Shape PaintLayer(Java.Awt.Graphics arg0, int arg1, int arg2, Java.Awt.Shape arg3, Javax.Swing.Text.JTextComponent arg4, Javax.Swing.Text.View arg5)
             {
                 return IExecuteWithSignature<Java.Awt.Shape>("paintLayer", "(Ljava/awt/Graphics;IILjava/awt/Shape;Ljavax/swing/text/JTextComponent;Ljavax/swing/text/View;)Ljava/awt/Shape;", arg0, arg1, arg2, arg3, arg4, arg5);

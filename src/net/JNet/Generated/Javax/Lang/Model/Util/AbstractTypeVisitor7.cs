@@ -68,13 +68,13 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractTypeVisitor7<R, P> declaration
+    #region AbstractTypeVisitor7<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor7.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class AbstractTypeVisitor7<R, P> : Javax.Lang.Model.Util.AbstractTypeVisitor6<R, P>
+    public partial class AbstractTypeVisitor7<, > : Javax.Lang.Model.Util.AbstractTypeVisitor6<, >
     {
         const string _bridgeClassName = "javax.lang.model.util.AbstractTypeVisitor7";
         /// <summary>
@@ -144,8 +144,8 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractTypeVisitor7<R, P> implementation
-    public partial class AbstractTypeVisitor7<R, P>
+    #region AbstractTypeVisitor7<, > implementation
+    public partial class AbstractTypeVisitor7<, >
     {
         #region Constructors
 
@@ -153,9 +153,9 @@ namespace Javax.Lang.Model.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.AbstractTypeVisitor7{R, P}"/> to <see cref="Javax.Lang.Model.Util.AbstractTypeVisitor7"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Lang.Model.Util.AbstractTypeVisitor7(Javax.Lang.Model.Util.AbstractTypeVisitor7<R, P> t) => t.Cast<Javax.Lang.Model.Util.AbstractTypeVisitor7>();
+        public static implicit operator Javax.Lang.Model.Util.AbstractTypeVisitor7(Javax.Lang.Model.Util.AbstractTypeVisitor7<, > t) => t.Cast<Javax.Lang.Model.Util.AbstractTypeVisitor7>();
 
         #endregion
 

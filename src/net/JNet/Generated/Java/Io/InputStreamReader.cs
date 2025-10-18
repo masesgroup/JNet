@@ -73,9 +73,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#%3Cinit%3E(java.io.InputStream,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public InputStreamReader(Java.Io.InputStream arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -83,8 +83,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#%3Cinit%3E(java.io.InputStream,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
@@ -92,8 +92,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#%3Cinit%3E(java.io.InputStream,java.nio.charset.CharsetDecoder)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.CharsetDecoder"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.CharsetDecoder arg1)
             : base(arg0, arg1)
         {
@@ -101,7 +101,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public InputStreamReader(Java.Io.InputStream arg0)
             : base(arg0)
         {

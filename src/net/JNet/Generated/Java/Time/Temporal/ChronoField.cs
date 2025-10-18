@@ -29,7 +29,7 @@ namespace Java.Time.Temporal
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html"/>
     /// </summary>
-    public partial class ChronoField : Java.Lang.Enum<Java.Time.Temporal.ChronoField>
+    public partial class ChronoField : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.time.temporal.ChronoField";
         /// <summary>
@@ -75,7 +75,7 @@ namespace Java.Time.Temporal
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Time.Temporal.ChronoField"/> to <see cref="Java.Time.Temporal.TemporalField"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalField(Java.Time.Temporal.ChronoField t) => t.Cast<Java.Time.Temporal.TemporalField>();
 
@@ -269,8 +269,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Time.Temporal.ChronoField"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Temporal.ChronoField ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Time.Temporal.ChronoField>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/temporal/ChronoField;", arg0);
@@ -278,7 +278,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Temporal.ChronoField"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Temporal.ChronoField[] Values()
         {
             return SExecuteWithSignatureArray<Java.Time.Temporal.ChronoField>(LocalBridgeClazz, "values", "()[Ljava/time/temporal/ChronoField;");
@@ -304,18 +304,18 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#adjustInto(java.time.temporal.Temporal,long)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="R"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        public R AdjustInto<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="R"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public R AdjustInto(R arg0, long arg1)
         {
             return IExecute<R>("adjustInto", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#isDateBased()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDateBased()
         {
             return IExecuteWithSignature<bool>("isDateBased", "()Z");
@@ -323,8 +323,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#isSupportedBy(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSupportedBy(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return IExecuteWithSignature<bool>("isSupportedBy", "(Ljava/time/temporal/TemporalAccessor;)Z", arg0);
@@ -332,7 +332,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#isTimeBased()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsTimeBased()
         {
             return IExecuteWithSignature<bool>("isTimeBased", "()Z");
@@ -340,8 +340,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#checkValidIntValue(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CheckValidIntValue(long arg0)
         {
             return IExecuteWithSignature<int>("checkValidIntValue", "(J)I", arg0);
@@ -349,8 +349,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#getDisplayName(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDisplayName(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
@@ -358,7 +358,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#range()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Temporal.ValueRange Range()
         {
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "()Ljava/time/temporal/ValueRange;");
@@ -366,8 +366,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#rangeRefinedBy(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Temporal.ValueRange RangeRefinedBy(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("rangeRefinedBy", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/temporal/ValueRange;", arg0);
@@ -375,8 +375,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#checkValidValue(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long CheckValidValue(long arg0)
         {
             return IExecuteWithSignature<long>("checkValidValue", "(J)J", arg0);
@@ -384,8 +384,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#getFrom(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long GetFrom(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return IExecuteWithSignature<long>("getFrom", "(Ljava/time/temporal/TemporalAccessor;)J", arg0);

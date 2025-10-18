@@ -75,8 +75,8 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIOServiceProvider.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public IIOServiceProvider(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -114,8 +114,8 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIOServiceProvider.html#getDescription(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDescription(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDescription", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
@@ -123,8 +123,8 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIOServiceProvider.html#onDeregistration(javax.imageio.spi.ServiceRegistry,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Spi.ServiceRegistry"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void OnDeregistration(Javax.Imageio.Spi.ServiceRegistry arg0, Java.Lang.Class arg1)
         {
             IExecuteWithSignature("onDeregistration", "(Ljavax/imageio/spi/ServiceRegistry;Ljava/lang/Class;)V", arg0, arg1);
@@ -132,8 +132,8 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIOServiceProvider.html#onRegistration(javax.imageio.spi.ServiceRegistry,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Spi.ServiceRegistry"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void OnRegistration(Javax.Imageio.Spi.ServiceRegistry arg0, Java.Lang.Class arg1)
         {
             IExecuteWithSignature("onRegistration", "(Ljavax/imageio/spi/ServiceRegistry;Ljava/lang/Class;)V", arg0, arg1);

@@ -108,12 +108,12 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
             hasOverrideCaretPositionChanged = false;
@@ -198,7 +198,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
             hasOverrideInputMethodTextChanged = false;
@@ -237,7 +237,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
             IExecuteWithSignature("caretPositionChanged", "(Ljava/awt/event/InputMethodEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
             IExecuteWithSignature("inputMethodTextChanged", "(Ljava/awt/event/InputMethodEvent;)V", arg0);

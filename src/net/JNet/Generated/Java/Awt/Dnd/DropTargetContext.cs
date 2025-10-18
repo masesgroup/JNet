@@ -103,8 +103,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html#dropComplete(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void DropComplete(bool arg0)
         {
             IExecuteWithSignature("dropComplete", "(Z)V", arg0);

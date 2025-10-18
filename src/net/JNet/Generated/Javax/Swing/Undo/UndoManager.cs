@@ -75,7 +75,7 @@ namespace Javax.Swing.Undo
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Undo.UndoManager"/> to <see cref="Javax.Swing.Event.UndoableEditListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Event.UndoableEditListener(Javax.Swing.Undo.UndoManager t) => t.Cast<Javax.Swing.Event.UndoableEditListener>();
 
@@ -107,7 +107,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#canUndoOrRedo()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool CanUndoOrRedo()
         {
             return IExecuteWithSignature<bool>("canUndoOrRedo", "()Z");
@@ -122,7 +122,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void UndoableEditHappened(Javax.Swing.Event.UndoableEditEvent arg0)
         {
             IExecuteWithSignature("undoableEditHappened", "(Ljavax/swing/event/UndoableEditEvent;)V", arg0);
@@ -130,8 +130,8 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#undoOrRedo()"/>
         /// </summary>
-        /// <exception cref="Javax.Swing.Undo.CannotRedoException"/>
-        /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void UndoOrRedo()
         {
             IExecuteWithSignature("undoOrRedo", "()V");

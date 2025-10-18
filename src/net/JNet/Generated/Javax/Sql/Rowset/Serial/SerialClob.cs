@@ -73,9 +73,9 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#%3Cinit%3E(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public SerialClob(char[] arg0)
             : base(arg0)
         {
@@ -83,9 +83,9 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#%3Cinit%3E(java.sql.Clob)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Clob"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public SerialClob(Java.Sql.Clob arg0)
             : base(arg0)
         {
@@ -95,15 +95,15 @@ namespace Javax.Sql.Rowset.Serial
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialClob"/> to <see cref="Java.Sql.Clob"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Sql.Clob(Javax.Sql.Rowset.Serial.SerialClob t) => t.Cast<Java.Sql.Clob>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialClob"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.Serial.SerialClob t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialClob"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialClob t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -135,12 +135,12 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#setString(long,java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int SetString(long arg0, Java.Lang.String arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<int>("setString", "(JLjava/lang/String;II)I", arg0, arg1, arg2, arg3);
@@ -148,10 +148,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#setString(long,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int SetString(long arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<int>("setString", "(JLjava/lang/String;)I", arg0, arg1);
@@ -159,10 +159,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#setAsciiStream(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Io.OutputStream SetAsciiStream(long arg0)
         {
             return IExecuteWithSignature<Java.Io.OutputStream>("setAsciiStream", "(J)Ljava/io/OutputStream;", arg0);
@@ -170,10 +170,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#getCharacterStream(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Io.Reader"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.Reader GetCharacterStream(long arg0, long arg1)
         {
             return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "(JJ)Ljava/io/Reader;", arg0, arg1);
@@ -181,10 +181,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#setCharacterStream(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Io.Writer SetCharacterStream(long arg0)
         {
             return IExecuteWithSignature<Java.Io.Writer>("setCharacterStream", "(J)Ljava/io/Writer;", arg0);
@@ -192,10 +192,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#getSubString(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String GetSubString(long arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("getSubString", "(JI)Ljava/lang/String;", arg0, arg1);
@@ -203,8 +203,8 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#length()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Length()
         {
             return IExecuteWithSignature<long>("length", "()J");
@@ -212,11 +212,11 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#position(java.lang.String,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public long Position(Java.Lang.String arg0, long arg1)
         {
             return IExecuteWithSignature<long>("position", "(Ljava/lang/String;J)J", arg0, arg1);
@@ -224,11 +224,11 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#position(java.sql.Clob,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Clob"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public long Position(Java.Sql.Clob arg0, long arg1)
         {
             return IExecuteWithSignature<long>("position", "(Ljava/sql/Clob;J)J", arg0, arg1);
@@ -236,7 +236,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#free()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Free()
         {
             IExecuteWithSignature("free", "()V");
@@ -244,8 +244,8 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialClob.html#truncate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Truncate(long arg0)
         {
             IExecuteWithSignature("truncate", "(J)V", arg0);

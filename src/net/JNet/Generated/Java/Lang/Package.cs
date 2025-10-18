@@ -159,48 +159,48 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        public A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public A GetAnnotation(Java.Lang.Class arg0)
         {
             return IExecute<A>("getAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getDeclaredAnnotation(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        public A GetDeclaredAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public A GetDeclaredAnnotation(Java.Lang.Class arg0)
         {
             return IExecute<A>("getDeclaredAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public A[] GetAnnotationsByType(Java.Lang.Class arg0)
         {
             return IExecuteArray<A>("getAnnotationsByType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        public A[] GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public A[] GetDeclaredAnnotationsByType(Java.Lang.Class arg0)
         {
             return IExecuteArray<A>("getDeclaredAnnotationsByType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#isAnnotationPresent(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsAnnotationPresent(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<bool>("isAnnotationPresent", "(Ljava/lang/Class;)Z", arg0);
@@ -208,9 +208,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#isCompatibleWith(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool IsCompatibleWith(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isCompatibleWith", "(Ljava/lang/String;)Z", arg0);
@@ -218,7 +218,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#isSealed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSealed()
         {
             return IExecuteWithSignature<bool>("isSealed", "()Z");
@@ -226,8 +226,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html#isSealed(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSealed(Java.Net.URL arg0)
         {
             return IExecuteWithSignature<bool>("isSealed", "(Ljava/net/URL;)Z", arg0);

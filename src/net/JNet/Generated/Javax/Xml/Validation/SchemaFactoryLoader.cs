@@ -91,8 +91,8 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryLoader.html#newFactory(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Validation.SchemaFactory NewFactory(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Validation.SchemaFactory>("newFactory", "(Ljava/lang/String;)Ljavax/xml/validation/SchemaFactory;", arg0);

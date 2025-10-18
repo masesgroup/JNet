@@ -78,14 +78,14 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintRequestAttributeSet.html#add(javax.print.attribute.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Add(Javax.Print.Attribute.Attribute arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintRequestAttributeSet.html#addAll(javax.print.attribute.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool AddAll(Javax.Print.Attribute.AttributeSet arg0);
 
         #endregion
@@ -121,8 +121,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintRequestAttributeSet.html#add(javax.print.attribute.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Add(Javax.Print.Attribute.Attribute arg0)
         {
             return IExecuteWithSignature<bool>("add", "(Ljavax/print/attribute/Attribute;)Z", arg0);
@@ -130,8 +130,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintRequestAttributeSet.html#addAll(javax.print.attribute.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddAll(Javax.Print.Attribute.AttributeSet arg0)
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljavax/print/attribute/AttributeSet;)Z", arg0);

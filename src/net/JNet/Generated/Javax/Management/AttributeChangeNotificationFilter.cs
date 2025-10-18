@@ -75,7 +75,7 @@ namespace Javax.Management
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.AttributeChangeNotificationFilter"/> to <see cref="Javax.Management.NotificationFilter"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.NotificationFilter(Javax.Management.AttributeChangeNotificationFilter t) => t.Cast<Javax.Management.NotificationFilter>();
 
@@ -93,15 +93,15 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#getEnabledAttributes()"/> 
         /// </summary>
-        public Java.Util.Vector<Java.Lang.String> EnabledAttributes
+        public Java.Util.Vector EnabledAttributes
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Java.Lang.String>>("getEnabledAttributes", "()Ljava/util/Vector;"); }
+            get { return IExecuteWithSignature<Java.Util.Vector>("getEnabledAttributes", "()Ljava/util/Vector;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsNotificationEnabled(Javax.Management.Notification arg0)
         {
             return IExecuteWithSignature<bool>("isNotificationEnabled", "(Ljavax/management/Notification;)Z", arg0);
@@ -116,7 +116,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#disableAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DisableAttribute(Java.Lang.String arg0)
         {
             IExecuteWithSignature("disableAttribute", "(Ljava/lang/String;)V", arg0);
@@ -124,8 +124,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#enableAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void EnableAttribute(Java.Lang.String arg0)
         {
             IExecuteWithSignature("enableAttribute", "(Ljava/lang/String;)V", arg0);

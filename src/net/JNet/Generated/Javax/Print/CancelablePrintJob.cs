@@ -78,7 +78,7 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/CancelablePrintJob.html#cancel()"/>
         /// </summary>
-        /// <exception cref="Javax.Print.PrintException"/>
+        /// <exception cref=""/>
         void Cancel();
 
         #endregion
@@ -114,7 +114,7 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/CancelablePrintJob.html#cancel()"/>
         /// </summary>
-        /// <exception cref="Javax.Print.PrintException"/>
+        /// <exception cref=""/>
         public void Cancel()
         {
             IExecuteWithSignature("cancel", "()V");

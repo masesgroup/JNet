@@ -29,7 +29,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html"/>
     /// </summary>
-    public partial class StandardCopyOption : Java.Lang.Enum<Java.Nio.File.StandardCopyOption>
+    public partial class StandardCopyOption : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.nio.file.StandardCopyOption";
         /// <summary>
@@ -75,7 +75,7 @@ namespace Java.Nio.File
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.StandardCopyOption"/> to <see cref="Java.Nio.File.CopyOption"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.File.CopyOption(Java.Nio.File.StandardCopyOption t) => t.Cast<Java.Nio.File.CopyOption>();
 
@@ -107,8 +107,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.StandardCopyOption"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.StandardCopyOption ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/StandardCopyOption;", arg0);
@@ -116,7 +116,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.StandardCopyOption"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.StandardCopyOption[] Values()
         {
             return SExecuteWithSignatureArray<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "values", "()[Ljava/nio/file/StandardCopyOption;");

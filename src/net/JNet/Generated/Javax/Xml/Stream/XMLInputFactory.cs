@@ -141,7 +141,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newDefaultFactory()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Stream.XMLInputFactory"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Stream.XMLInputFactory NewDefaultFactory()
         {
             return SExecuteWithSignature<Javax.Xml.Stream.XMLInputFactory>(LocalBridgeClazz, "newDefaultFactory", "()Ljavax/xml/stream/XMLInputFactory;");
@@ -149,8 +149,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newFactory()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Stream.XMLInputFactory"/></returns>
-        /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Xml.Stream.XMLInputFactory NewFactory()
         {
             return SExecuteWithSignature<Javax.Xml.Stream.XMLInputFactory>(LocalBridgeClazz, "newFactory", "()Ljavax/xml/stream/XMLInputFactory;");
@@ -158,10 +158,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLInputFactory"/></returns>
-        /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Xml.Stream.XMLInputFactory NewFactory(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecuteWithSignature<Javax.Xml.Stream.XMLInputFactory>(LocalBridgeClazz, "newFactory", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/xml/stream/XMLInputFactory;", arg0, arg1);
@@ -169,8 +169,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newInstance()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Stream.XMLInputFactory"/></returns>
-        /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Xml.Stream.XMLInputFactory NewInstance()
         {
             return SExecuteWithSignature<Javax.Xml.Stream.XMLInputFactory>(LocalBridgeClazz, "newInstance", "()Ljavax/xml/stream/XMLInputFactory;");
@@ -203,8 +203,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#isPropertySupported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsPropertySupported(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isPropertySupported", "(Ljava/lang/String;)Z", arg0);
@@ -212,9 +212,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -222,10 +222,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createFilteredReader(javax.xml.stream.XMLEventReader,javax.xml.stream.EventFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLEventReader"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Stream.EventFilter"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLEventReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLEventReader CreateFilteredReader(Javax.Xml.Stream.XMLEventReader arg0, Javax.Xml.Stream.EventFilter arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLEventReader>("createFilteredReader", "(Ljavax/xml/stream/XMLEventReader;Ljavax/xml/stream/EventFilter;)Ljavax/xml/stream/XMLEventReader;", arg0, arg1);
@@ -233,10 +233,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLEventReader(java.io.InputStream,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLEventReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLEventReader CreateXMLEventReader(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLEventReader>("createXMLEventReader", "(Ljava/io/InputStream;Ljava/lang/String;)Ljavax/xml/stream/XMLEventReader;", arg0, arg1);
@@ -244,9 +244,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLEventReader(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLEventReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLEventReader CreateXMLEventReader(Java.Io.InputStream arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLEventReader>("createXMLEventReader", "(Ljava/io/InputStream;)Ljavax/xml/stream/XMLEventReader;", arg0);
@@ -254,9 +254,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLEventReader(java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLEventReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLEventReader CreateXMLEventReader(Java.Io.Reader arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLEventReader>("createXMLEventReader", "(Ljava/io/Reader;)Ljavax/xml/stream/XMLEventReader;", arg0);
@@ -264,10 +264,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLEventReader(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLEventReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLEventReader CreateXMLEventReader(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLEventReader>("createXMLEventReader", "(Ljava/lang/String;Ljava/io/InputStream;)Ljavax/xml/stream/XMLEventReader;", arg0, arg1);
@@ -275,10 +275,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLEventReader(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLEventReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLEventReader CreateXMLEventReader(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLEventReader>("createXMLEventReader", "(Ljava/lang/String;Ljava/io/Reader;)Ljavax/xml/stream/XMLEventReader;", arg0, arg1);
@@ -286,9 +286,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLEventReader(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLEventReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLEventReader CreateXMLEventReader(Javax.Xml.Stream.XMLStreamReader arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLEventReader>("createXMLEventReader", "(Ljavax/xml/stream/XMLStreamReader;)Ljavax/xml/stream/XMLEventReader;", arg0);
@@ -296,9 +296,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLEventReader(javax.xml.transform.Source)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLEventReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLEventReader CreateXMLEventReader(Javax.Xml.Transform.Source arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLEventReader>("createXMLEventReader", "(Ljavax/xml/transform/Source;)Ljavax/xml/stream/XMLEventReader;", arg0);
@@ -306,10 +306,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createFilteredReader(javax.xml.stream.XMLStreamReader,javax.xml.stream.StreamFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Stream.StreamFilter"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLStreamReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLStreamReader CreateFilteredReader(Javax.Xml.Stream.XMLStreamReader arg0, Javax.Xml.Stream.StreamFilter arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamReader>("createFilteredReader", "(Ljavax/xml/stream/XMLStreamReader;Ljavax/xml/stream/StreamFilter;)Ljavax/xml/stream/XMLStreamReader;", arg0, arg1);
@@ -317,10 +317,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLStreamReader(java.io.InputStream,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLStreamReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLStreamReader CreateXMLStreamReader(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamReader>("createXMLStreamReader", "(Ljava/io/InputStream;Ljava/lang/String;)Ljavax/xml/stream/XMLStreamReader;", arg0, arg1);
@@ -328,9 +328,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLStreamReader(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLStreamReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLStreamReader CreateXMLStreamReader(Java.Io.InputStream arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamReader>("createXMLStreamReader", "(Ljava/io/InputStream;)Ljavax/xml/stream/XMLStreamReader;", arg0);
@@ -338,9 +338,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLStreamReader(java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLStreamReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLStreamReader CreateXMLStreamReader(Java.Io.Reader arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamReader>("createXMLStreamReader", "(Ljava/io/Reader;)Ljavax/xml/stream/XMLStreamReader;", arg0);
@@ -348,10 +348,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLStreamReader(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLStreamReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLStreamReader CreateXMLStreamReader(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamReader>("createXMLStreamReader", "(Ljava/lang/String;Ljava/io/InputStream;)Ljavax/xml/stream/XMLStreamReader;", arg0, arg1);
@@ -359,10 +359,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLStreamReader(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLStreamReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLStreamReader CreateXMLStreamReader(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamReader>("createXMLStreamReader", "(Ljava/lang/String;Ljava/io/Reader;)Ljavax/xml/stream/XMLStreamReader;", arg0, arg1);
@@ -370,9 +370,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#createXMLStreamReader(javax.xml.transform.Source)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.XMLStreamReader"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.XMLStreamReader CreateXMLStreamReader(Javax.Xml.Transform.Source arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamReader>("createXMLStreamReader", "(Ljavax/xml/transform/Source;)Ljavax/xml/stream/XMLStreamReader;", arg0);
@@ -380,9 +380,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
             IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);

@@ -73,8 +73,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public ExcC14NParameterSpec(Java.Util.List<Java.Lang.String> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public ExcC14NParameterSpec(Java.Util.List arg0)
             : base(arg0)
         {
         }
@@ -103,9 +103,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#getPrefixList()"/> 
         /// </summary>
-        public Java.Util.List<Java.Lang.String> PrefixList
+        public Java.Util.List PrefixList
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPrefixList", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getPrefixList", "()Ljava/util/List;"); }
         }
 
         #endregion

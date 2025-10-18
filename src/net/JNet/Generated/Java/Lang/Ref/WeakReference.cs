@@ -66,12 +66,12 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region WeakReference<T> declaration
+    #region WeakReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class WeakReference<T> : Java.Lang.Ref.Reference<T>
+    public partial class WeakReference : Java.Lang.Ref.Reference
     {
         const string _bridgeClassName = "java.lang.ref.WeakReference";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Ref.ReferenceQueue"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public WeakReference(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
             : base(arg0, arg1)
         {
@@ -124,7 +124,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public WeakReference(object arg0)
             : base(arg0)
         {
@@ -156,23 +156,23 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region WeakReference<T> implementation
-    public partial class WeakReference<T>
+    #region WeakReference implementation
+    public partial class WeakReference
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Ref.ReferenceQueue"/></param>
-        public WeakReference(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public WeakReference(T arg0, Java.Lang.Ref.ReferenceQueue arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/WeakReference.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public WeakReference(T arg0)
             : base(arg0)
         {
@@ -182,9 +182,9 @@ namespace Java.Lang.Ref
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Ref.WeakReference{T}"/> to <see cref="Java.Lang.Ref.WeakReference"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Ref.WeakReference(Java.Lang.Ref.WeakReference<T> t) => t.Cast<Java.Lang.Ref.WeakReference>();
+        public static implicit operator Java.Lang.Ref.WeakReference(Java.Lang.Ref.WeakReference t) => t.Cast<Java.Lang.Ref.WeakReference>();
 
         #endregion
 

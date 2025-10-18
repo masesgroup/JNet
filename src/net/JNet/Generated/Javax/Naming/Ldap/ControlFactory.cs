@@ -87,12 +87,12 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ControlFactory.html#getControlInstance(javax.naming.ldap.Control,javax.naming.Context,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Ldap.Control"/></param>
-        /// <param name="arg1"><see cref="Javax.Naming.Context"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see cref="Javax.Naming.Ldap.Control"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Ldap.Control GetControlInstance(Javax.Naming.Ldap.Control arg0, Javax.Naming.Context arg1, Java.Util.Hashtable<object, object> arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Javax.Naming.Ldap.Control GetControlInstance(Javax.Naming.Ldap.Control arg0, Javax.Naming.Context arg1, Java.Util.Hashtable<, > arg2)
         {
             return SExecuteWithSignature<Javax.Naming.Ldap.Control>(LocalBridgeClazz, "getControlInstance", "(Ljavax/naming/ldap/Control;Ljavax/naming/Context;Ljava/util/Hashtable;)Ljavax/naming/ldap/Control;", arg0, arg1, arg2);
         }
@@ -103,9 +103,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ControlFactory.html#getControlInstance(javax.naming.ldap.Control)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Ldap.Control"/></param>
-        /// <returns><see cref="Javax.Naming.Ldap.Control"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Naming.Ldap.Control GetControlInstance(Javax.Naming.Ldap.Control arg0)
         {
             return IExecuteWithSignature<Javax.Naming.Ldap.Control>("getControlInstance", "(Ljavax/naming/ldap/Control;)Ljavax/naming/ldap/Control;", arg0);

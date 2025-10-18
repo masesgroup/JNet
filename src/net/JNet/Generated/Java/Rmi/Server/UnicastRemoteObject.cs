@@ -85,10 +85,10 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#unexportObject(java.rmi.Remote,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Rmi.NoSuchObjectException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static bool UnexportObject(Java.Rmi.Remote arg0, bool arg1)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "unexportObject", "(Ljava/rmi/Remote;Z)Z", arg0, arg1);
@@ -96,11 +96,11 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.io.ObjectInputFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Io.ObjectInputFilter"/></param>
-        /// <returns><see cref="Java.Rmi.Remote"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, int arg1, Java.Io.ObjectInputFilter arg2)
         {
             return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;ILjava/io/ObjectInputFilter;)Ljava/rmi/Remote;", arg0, arg1, arg2);
@@ -108,13 +108,13 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.io.ObjectInputFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
-        /// <param name="arg3"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
-        /// <param name="arg4"><see cref="Java.Io.ObjectInputFilter"/></param>
-        /// <returns><see cref="Java.Rmi.Remote"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, int arg1, Java.Rmi.Server.RMIClientSocketFactory arg2, Java.Rmi.Server.RMIServerSocketFactory arg3, Java.Io.ObjectInputFilter arg4)
         {
             return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;Ljava/io/ObjectInputFilter;)Ljava/rmi/Remote;", arg0, arg1, arg2, arg3, arg4);
@@ -122,12 +122,12 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
-        /// <param name="arg3"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
-        /// <returns><see cref="Java.Rmi.Remote"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, int arg1, Java.Rmi.Server.RMIClientSocketFactory arg2, Java.Rmi.Server.RMIServerSocketFactory arg3)
         {
             return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;)Ljava/rmi/Remote;", arg0, arg1, arg2, arg3);
@@ -135,10 +135,10 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Rmi.Remote"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;I)Ljava/rmi/Remote;", arg0, arg1);

@@ -78,7 +78,7 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPrivateKey.html#getScalar()"/> 
         /// </summary>
-        Java.Util.Optional<byte[]> Scalar { get; }
+        Java.Util.Optional Scalar { get; }
 
         #endregion
 
@@ -99,11 +99,11 @@ namespace Java.Security.Interfaces
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Interfaces.XECPrivateKey"/> to <see cref="Java.Security.Interfaces.XECKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Interfaces.XECKey(Java.Security.Interfaces.XECPrivateKey t) => t.Cast<Java.Security.Interfaces.XECKey>();
         /// <summary>
-        /// Converter from <see cref="Java.Security.Interfaces.XECPrivateKey"/> to <see cref="Java.Security.PrivateKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.PrivateKey(Java.Security.Interfaces.XECPrivateKey t) => t.Cast<Java.Security.PrivateKey>();
 
@@ -121,9 +121,9 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPrivateKey.html#getScalar()"/> 
         /// </summary>
-        public Java.Util.Optional<byte[]> Scalar
+        public Java.Util.Optional Scalar
         {
-            get { return IExecuteWithSignature<Java.Util.Optional<byte[]>>("getScalar", "()Ljava/util/Optional;"); }
+            get { return IExecuteWithSignature<Java.Util.Optional>("getScalar", "()Ljava/util/Optional;"); }
         }
 
         #endregion

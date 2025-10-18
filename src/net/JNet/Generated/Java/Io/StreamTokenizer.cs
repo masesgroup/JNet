@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StreamTokenizer(Java.Io.Reader arg0)
             : base(arg0)
         {
@@ -133,7 +133,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#lineno()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Lineno()
         {
             return IExecuteWithSignature<int>("lineno", "()I");
@@ -141,8 +141,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nextToken()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int NextToken()
         {
             return IExecuteWithSignature<int>("nextToken", "()I");
@@ -150,7 +150,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#commentChar(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void CommentChar(int arg0)
         {
             IExecuteWithSignature("commentChar", "(I)V", arg0);
@@ -158,7 +158,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#eolIsSignificant(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EolIsSignificant(bool arg0)
         {
             IExecuteWithSignature("eolIsSignificant", "(Z)V", arg0);
@@ -166,7 +166,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#lowerCaseMode(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void LowerCaseMode(bool arg0)
         {
             IExecuteWithSignature("lowerCaseMode", "(Z)V", arg0);
@@ -174,7 +174,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ordinaryChar(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void OrdinaryChar(int arg0)
         {
             IExecuteWithSignature("ordinaryChar", "(I)V", arg0);
@@ -182,8 +182,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ordinaryChars(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void OrdinaryChars(int arg0, int arg1)
         {
             IExecuteWithSignature("ordinaryChars", "(II)V", arg0, arg1);
@@ -205,7 +205,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#quoteChar(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void QuoteChar(int arg0)
         {
             IExecuteWithSignature("quoteChar", "(I)V", arg0);
@@ -220,7 +220,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#slashSlashComments(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SlashSlashComments(bool arg0)
         {
             IExecuteWithSignature("slashSlashComments", "(Z)V", arg0);
@@ -228,7 +228,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#slashStarComments(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SlashStarComments(bool arg0)
         {
             IExecuteWithSignature("slashStarComments", "(Z)V", arg0);
@@ -236,8 +236,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#whitespaceChars(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void WhitespaceChars(int arg0, int arg1)
         {
             IExecuteWithSignature("whitespaceChars", "(II)V", arg0, arg1);
@@ -245,8 +245,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#wordChars(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void WordChars(int arg0, int arg1)
         {
             IExecuteWithSignature("wordChars", "(II)V", arg0, arg1);

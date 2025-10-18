@@ -85,10 +85,10 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#list(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Lang.String[] List(Java.Lang.String arg0)
         {
             return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "list", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
@@ -96,11 +96,11 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#lookup(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Rmi.Remote"/></returns>
-        /// <exception cref="Java.Rmi.NotBoundException"/>
-        /// <exception cref="Java.Net.MalformedURLException"/>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Rmi.Remote Lookup(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "lookup", "(Ljava/lang/String;)Ljava/rmi/Remote;", arg0);
@@ -108,11 +108,11 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#bind(java.lang.String,java.rmi.Remote)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
-        /// <exception cref="Java.Rmi.AlreadyBoundException"/>
-        /// <exception cref="Java.Net.MalformedURLException"/>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void Bind(Java.Lang.String arg0, Java.Rmi.Remote arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "bind", "(Ljava/lang/String;Ljava/rmi/Remote;)V", arg0, arg1);
@@ -120,10 +120,10 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#rebind(java.lang.String,java.rmi.Remote)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void Rebind(Java.Lang.String arg0, Java.Rmi.Remote arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "rebind", "(Ljava/lang/String;Ljava/rmi/Remote;)V", arg0, arg1);
@@ -131,10 +131,10 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#unbind(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        /// <exception cref="Java.Rmi.NotBoundException"/>
-        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void Unbind(Java.Lang.String arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "unbind", "(Ljava/lang/String;)V", arg0);

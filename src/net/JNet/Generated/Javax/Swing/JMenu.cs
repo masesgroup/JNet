@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JMenu(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JMenu(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -90,7 +90,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#%3Cinit%3E(javax.swing.Action)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JMenu(Javax.Swing.Action arg0)
             : base(arg0)
         {
@@ -156,8 +156,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isMenuComponent(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsMenuComponent(Java.Awt.Component arg0)
         {
             return IExecuteWithSignature<bool>("isMenuComponent", "(Ljava/awt/Component;)Z", arg0);
@@ -165,7 +165,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isPopupMenuVisible()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPopupMenuVisible()
         {
             return IExecuteWithSignature<bool>("isPopupMenuVisible", "()Z");
@@ -173,7 +173,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isTearOff()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsTearOff()
         {
             return IExecuteWithSignature<bool>("isTearOff", "()Z");
@@ -181,7 +181,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#isTopLevelMenu()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsTopLevelMenu()
         {
             return IExecuteWithSignature<bool>("isTopLevelMenu", "()Z");
@@ -189,8 +189,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#getMenuComponent(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetMenuComponent(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getMenuComponent", "(I)Ljava/awt/Component;", arg0);
@@ -198,8 +198,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#add(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.JMenuItem"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JMenuItem Add(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Swing.JMenuItem>("add", "(Ljava/lang/String;)Ljavax/swing/JMenuItem;", arg0);
@@ -207,8 +207,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#add(javax.swing.Action)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
-        /// <returns><see cref="Javax.Swing.JMenuItem"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JMenuItem Add(Javax.Swing.Action arg0)
         {
             return IExecuteWithSignature<Javax.Swing.JMenuItem>("add", "(Ljavax/swing/Action;)Ljavax/swing/JMenuItem;", arg0);
@@ -216,8 +216,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#add(javax.swing.JMenuItem)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JMenuItem"/></param>
-        /// <returns><see cref="Javax.Swing.JMenuItem"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JMenuItem Add(Javax.Swing.JMenuItem arg0)
         {
             return IExecuteWithSignature<Javax.Swing.JMenuItem>("add", "(Ljavax/swing/JMenuItem;)Ljavax/swing/JMenuItem;", arg0);
@@ -225,8 +225,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#getItem(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.JMenuItem"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JMenuItem GetItem(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.JMenuItem>("getItem", "(I)Ljavax/swing/JMenuItem;", arg0);
@@ -234,9 +234,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#insert(javax.swing.Action,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.JMenuItem"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JMenuItem Insert(Javax.Swing.Action arg0, int arg1)
         {
             return IExecuteWithSignature<Javax.Swing.JMenuItem>("insert", "(Ljavax/swing/Action;I)Ljavax/swing/JMenuItem;", arg0, arg1);
@@ -244,9 +244,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#insert(javax.swing.JMenuItem,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JMenuItem"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.JMenuItem"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JMenuItem Insert(Javax.Swing.JMenuItem arg0, int arg1)
         {
             return IExecuteWithSignature<Javax.Swing.JMenuItem>("insert", "(Ljavax/swing/JMenuItem;I)Ljavax/swing/JMenuItem;", arg0, arg1);
@@ -254,7 +254,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#addMenuListener(javax.swing.event.MenuListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddMenuListener(Javax.Swing.Event.MenuListener arg0)
         {
             IExecuteWithSignature("addMenuListener", "(Ljavax/swing/event/MenuListener;)V", arg0);
@@ -269,8 +269,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#insert(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Insert(Java.Lang.String arg0, int arg1)
         {
             IExecuteWithSignature("insert", "(Ljava/lang/String;I)V", arg0, arg1);
@@ -278,7 +278,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#insertSeparator(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void InsertSeparator(int arg0)
         {
             IExecuteWithSignature("insertSeparator", "(I)V", arg0);
@@ -286,7 +286,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#remove(javax.swing.JMenuItem)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JMenuItem"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(Javax.Swing.JMenuItem arg0)
         {
             IExecuteWithSignature("remove", "(Ljavax/swing/JMenuItem;)V", arg0);
@@ -294,7 +294,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#removeMenuListener(javax.swing.event.MenuListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveMenuListener(Javax.Swing.Event.MenuListener arg0)
         {
             IExecuteWithSignature("removeMenuListener", "(Ljavax/swing/event/MenuListener;)V", arg0);
@@ -302,8 +302,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#setMenuLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetMenuLocation(int arg0, int arg1)
         {
             IExecuteWithSignature("setMenuLocation", "(II)V", arg0, arg1);
@@ -311,7 +311,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#setPopupMenuVisible(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetPopupMenuVisible(bool arg0)
         {
             IExecuteWithSignature("setPopupMenuVisible", "(Z)V", arg0);

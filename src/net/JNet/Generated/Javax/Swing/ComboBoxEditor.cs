@@ -86,12 +86,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddActionListener(Java.Awt.EventNs.ActionListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#selectAll()"/>
@@ -145,7 +145,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -153,7 +153,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);

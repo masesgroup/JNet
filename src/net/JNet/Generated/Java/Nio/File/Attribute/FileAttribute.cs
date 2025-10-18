@@ -68,12 +68,12 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region FileAttribute<T> declaration
+    #region FileAttribute declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class FileAttribute<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileAttribute<T>>
+    public partial class FileAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileAttribute>
     {
         const string _bridgeClassName = "java.nio.file.attribute.FileAttribute";
         /// <summary>
@@ -135,7 +135,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -143,7 +143,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Value()
         {
             return IExecuteWithSignature("value", "()Ljava/lang/Object;");
@@ -159,22 +159,22 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region IFileAttribute<T>
+    #region IFileAttribute
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html"/>
     /// </summary>
-    public partial interface IFileAttribute<T>
+    public partial interface IFileAttribute
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String Name();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         T Value();
 
         #endregion
@@ -187,8 +187,8 @@ namespace Java.Nio.File.Attribute
     }
     #endregion
 
-    #region FileAttribute<T> implementation
-    public partial class FileAttribute<T> : Java.Nio.File.Attribute.IFileAttribute<T>
+    #region FileAttribute implementation
+    public partial class FileAttribute : Java.Nio.File.Attribute.IFileAttribute
     {
         #region Constructors
 
@@ -196,9 +196,9 @@ namespace Java.Nio.File.Attribute
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.Attribute.FileAttribute{T}"/> to <see cref="Java.Nio.File.Attribute.FileAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Nio.File.Attribute.FileAttribute(Java.Nio.File.Attribute.FileAttribute<T> t) => t.Cast<Java.Nio.File.Attribute.FileAttribute>();
+        public static implicit operator Java.Nio.File.Attribute.FileAttribute(Java.Nio.File.Attribute.FileAttribute t) => t.Cast<Java.Nio.File.Attribute.FileAttribute>();
 
         #endregion
 
@@ -214,7 +214,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -222,7 +222,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         public T Value()
         {
             return IExecuteWithSignature<T>("value", "()Ljava/lang/Object;");

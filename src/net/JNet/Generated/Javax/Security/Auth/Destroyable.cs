@@ -78,12 +78,12 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsDestroyed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#destroy()"/>
         /// </summary>
-        /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
+        /// <exception cref=""/>
         void Destroy();
 
         #endregion
@@ -119,7 +119,7 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDestroyed()
         {
             return IExecuteWithSignature<bool>("isDestroyed", "()Z");
@@ -127,7 +127,7 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#destroy()"/>
         /// </summary>
-        /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
+        /// <exception cref=""/>
         public void Destroy()
         {
             IExecuteWithSignature("destroy", "()V");

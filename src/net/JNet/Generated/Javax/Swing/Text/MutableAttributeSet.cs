@@ -78,33 +78,33 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#addAttribute(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void AddAttribute(object arg0, object arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#addAttributes(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddAttributes(Javax.Swing.Text.AttributeSet arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttribute(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveAttribute(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttributes(java.util.Enumeration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
-        void RemoveAttributes(Java.Util.Enumeration<object> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        void RemoveAttributes(Java.Util.Enumeration arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttributes(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveAttributes(Javax.Swing.Text.AttributeSet arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#setResolveParent(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetResolveParent(Javax.Swing.Text.AttributeSet arg0);
 
         #endregion
@@ -140,8 +140,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#addAttribute(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void AddAttribute(object arg0, object arg1)
         {
             IExecuteWithSignature("addAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -149,7 +149,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#addAttributes(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddAttributes(Javax.Swing.Text.AttributeSet arg0)
         {
             IExecuteWithSignature("addAttributes", "(Ljavax/swing/text/AttributeSet;)V", arg0);
@@ -157,7 +157,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttribute(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveAttribute(object arg0)
         {
             IExecuteWithSignature("removeAttribute", "(Ljava/lang/Object;)V", arg0);
@@ -165,15 +165,15 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttributes(java.util.Enumeration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
-        public void RemoveAttributes(Java.Util.Enumeration<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void RemoveAttributes(Java.Util.Enumeration arg0)
         {
             IExecuteWithSignature("removeAttributes", "(Ljava/util/Enumeration;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttributes(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveAttributes(Javax.Swing.Text.AttributeSet arg0)
         {
             IExecuteWithSignature("removeAttributes", "(Ljavax/swing/text/AttributeSet;)V", arg0);
@@ -181,7 +181,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#setResolveParent(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetResolveParent(Javax.Swing.Text.AttributeSet arg0)
         {
             IExecuteWithSignature("setResolveParent", "(Ljavax/swing/text/AttributeSet;)V", arg0);

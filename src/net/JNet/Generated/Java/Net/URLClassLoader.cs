@@ -73,10 +73,10 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg3"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public URLClassLoader(Java.Lang.String arg0, Java.Net.URL[] arg1, Java.Lang.ClassLoader arg2, Java.Net.URLStreamHandlerFactory arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,9 +84,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public URLClassLoader(Java.Lang.String arg0, Java.Net.URL[] arg1, Java.Lang.ClassLoader arg2)
             : base(arg0, arg1, arg2)
         {
@@ -94,9 +94,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg2"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public URLClassLoader(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
             : base(arg0, arg1, arg2)
         {
@@ -104,8 +104,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public URLClassLoader(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
             : base(arg0, arg1)
         {
@@ -113,7 +113,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public URLClassLoader(Java.Net.URL[] arg0)
             : base(arg0)
         {
@@ -123,7 +123,7 @@ namespace Java.Net
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Net.URLClassLoader"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Net.URLClassLoader t) => t.Cast<Java.Io.Closeable>();
 
@@ -137,9 +137,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#newInstance(java.net.URL[],java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="Java.Net.URLClassLoader"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.URLClassLoader NewInstance(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecuteWithSignature<Java.Net.URLClassLoader>(LocalBridgeClazz, "newInstance", "([Ljava/net/URL;Ljava/lang/ClassLoader;)Ljava/net/URLClassLoader;", arg0, arg1);
@@ -147,8 +147,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#newInstance(java.net.URL[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="Java.Net.URLClassLoader"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.URLClassLoader NewInstance(Java.Net.URL[] arg0)
         {
             return SExecuteWithSignature<Java.Net.URLClassLoader>(LocalBridgeClazz, "newInstance", "([Ljava/net/URL;)Ljava/net/URLClassLoader;", new object[] { arg0 });
@@ -167,8 +167,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#findResource(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Net.URL"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Net.URL FindResource(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Net.URL>("findResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
@@ -176,17 +176,17 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#findResources(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Util.Enumeration<Java.Net.URL> FindResources(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Enumeration FindResources(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Java.Net.URL>>("findResources", "(Ljava/lang/String;)Ljava/util/Enumeration;", arg0);
+            return IExecuteWithSignature<Java.Util.Enumeration>("findResources", "(Ljava/lang/String;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");

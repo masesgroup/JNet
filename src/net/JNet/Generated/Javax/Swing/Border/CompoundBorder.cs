@@ -73,8 +73,8 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/CompoundBorder.html#%3Cinit%3E(javax.swing.border.Border,javax.swing.border.Border)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Border.Border"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public CompoundBorder(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
             : base(arg0, arg1)
         {

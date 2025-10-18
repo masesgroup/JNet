@@ -111,7 +111,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html"/>
         /// </summary>
-        public partial class Redirect : Java.Lang.Enum<Java.Net.Http.HttpClient.Redirect>
+        public partial class Redirect : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.net.http.HttpClient$Redirect";
             /// <summary>
@@ -152,7 +152,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html"/>
         /// </summary>
-        public partial class Version : Java.Lang.Enum<Java.Net.Http.HttpClient.Version>
+        public partial class Version : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.net.http.HttpClient$Version";
             /// <summary>
@@ -212,7 +212,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newHttpClient()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpClient"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.Http.HttpClient NewHttpClient()
         {
             return SExecuteWithSignature<Java.Net.Http.HttpClient>(LocalBridgeClazz, "newHttpClient", "()Ljava/net/http/HttpClient;");
@@ -220,7 +220,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newBuilder()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.Http.HttpClient.Builder NewBuilder()
         {
             return SExecuteWithSignature<Java.Net.Http.HttpClient.Builder>(LocalBridgeClazz, "newBuilder", "()Ljava/net/http/HttpClient$Builder;");
@@ -232,43 +232,43 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#send(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
-        /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Net.Http.HttpResponse"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Net.Http.HttpResponse<T> Send<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        public Java.Net.Http.HttpResponse Send(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler arg1)
         {
-            return IExecuteWithSignature<Java.Net.Http.HttpResponse<T>>("send", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/net/http/HttpResponse;", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.Http.HttpResponse>("send", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/net/http/HttpResponse;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler,java.net.http.HttpResponse.PushPromiseHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
-        /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
-        /// <param name="arg2"><see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>> SendAsync<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1, Java.Net.Http.HttpResponse.PushPromiseHandler<T> arg2)
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.CompletableFuture SendAsync(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler arg1, Java.Net.Http.HttpResponse.PushPromiseHandler arg2)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>>("sendAsync", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;Ljava/net/http/HttpResponse$PushPromiseHandler;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("sendAsync", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;Ljava/net/http/HttpResponse$PushPromiseHandler;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse.BodyHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
-        /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>> SendAsync<T>(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler<T> arg1)
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.CompletableFuture SendAsync(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler arg1)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>>("sendAsync", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("sendAsync", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#followRedirects()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpClient.Redirect"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.Http.HttpClient.Redirect FollowRedirects()
         {
             return IExecuteWithSignature<Java.Net.Http.HttpClient.Redirect>("followRedirects", "()Ljava/net/http/HttpClient$Redirect;");
@@ -276,7 +276,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#version()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.Http.HttpClient.Version VersionMethod()
         {
             return IExecuteWithSignature<Java.Net.Http.HttpClient.Version>("version", "()Ljava/net/http/HttpClient$Version;");
@@ -284,47 +284,47 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#authenticator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Net.Authenticator> Authenticator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional Authenticator()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Net.Authenticator>>("authenticator", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("authenticator", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#cookieHandler()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Net.CookieHandler> CookieHandler()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional CookieHandler()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Net.CookieHandler>>("cookieHandler", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("cookieHandler", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#proxy()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Net.ProxySelector> Proxy()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional Proxy()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Net.ProxySelector>>("proxy", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("proxy", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#connectTimeout()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Time.Duration> ConnectTimeout()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional ConnectTimeout()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Time.Duration>>("connectTimeout", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("connectTimeout", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#executor()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Util.Concurrent.Executor> Executor()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional Executor()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Util.Concurrent.Executor>>("executor", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("executor", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslContext()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Net.Ssl.SSLContext"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Net.Ssl.SSLContext SslContext()
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLContext>("sslContext", "()Ljavax/net/ssl/SSLContext;");
@@ -332,7 +332,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslParameters()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Net.Ssl.SSLParameters"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Net.Ssl.SSLParameters SslParameters()
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLParameters>("sslParameters", "()Ljavax/net/ssl/SSLParameters;");
@@ -340,7 +340,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newWebSocketBuilder()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.Http.WebSocket.Builder NewWebSocketBuilder()
         {
             return IExecuteWithSignature<Java.Net.Http.WebSocket.Builder>("newWebSocketBuilder", "()Ljava/net/http/WebSocket$Builder;");
@@ -378,7 +378,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#build()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpClient"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient Build()
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient>("build", "()Ljava/net/http/HttpClient;");
@@ -386,8 +386,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#authenticator(java.net.Authenticator)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Authenticator"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Builder Authenticator(Java.Net.Authenticator arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Builder>("authenticator", "(Ljava/net/Authenticator;)Ljava/net/http/HttpClient$Builder;", arg0);
@@ -395,8 +395,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#connectTimeout(java.time.Duration)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Builder ConnectTimeout(Java.Time.Duration arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Builder>("connectTimeout", "(Ljava/time/Duration;)Ljava/net/http/HttpClient$Builder;", arg0);
@@ -404,8 +404,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#cookieHandler(java.net.CookieHandler)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.CookieHandler"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Builder CookieHandler(Java.Net.CookieHandler arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Builder>("cookieHandler", "(Ljava/net/CookieHandler;)Ljava/net/http/HttpClient$Builder;", arg0);
@@ -413,8 +413,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#executor(java.util.concurrent.Executor)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Builder Executor(Java.Util.Concurrent.Executor arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Builder>("executor", "(Ljava/util/concurrent/Executor;)Ljava/net/http/HttpClient$Builder;", arg0);
@@ -422,8 +422,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#followRedirects(java.net.http.HttpClient.Redirect)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.HttpClient.Redirect"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Builder FollowRedirects(Java.Net.Http.HttpClient.Redirect arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Builder>("followRedirects", "(Ljava/net/http/HttpClient$Redirect;)Ljava/net/http/HttpClient$Builder;", arg0);
@@ -431,8 +431,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#priority(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Builder Priority(int arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Builder>("priority", "(I)Ljava/net/http/HttpClient$Builder;", arg0);
@@ -440,8 +440,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#proxy(java.net.ProxySelector)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.ProxySelector"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Builder Proxy(Java.Net.ProxySelector arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Builder>("proxy", "(Ljava/net/ProxySelector;)Ljava/net/http/HttpClient$Builder;", arg0);
@@ -449,8 +449,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#sslContext(javax.net.ssl.SSLContext)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLContext"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Builder SslContext(Javax.Net.Ssl.SSLContext arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Builder>("sslContext", "(Ljavax/net/ssl/SSLContext;)Ljava/net/http/HttpClient$Builder;", arg0);
@@ -458,8 +458,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#sslParameters(javax.net.ssl.SSLParameters)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLParameters"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Builder SslParameters(Javax.Net.Ssl.SSLParameters arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Builder>("sslParameters", "(Ljavax/net/ssl/SSLParameters;)Ljava/net/http/HttpClient$Builder;", arg0);
@@ -467,8 +467,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#version(java.net.http.HttpClient.Version)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.HttpClient.Version"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.HttpClient.Builder VersionMethod(Java.Net.Http.HttpClient.Version arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.HttpClient.Builder>("version", "(Ljava/net/http/HttpClient$Version;)Ljava/net/http/HttpClient$Builder;", arg0);
@@ -521,8 +521,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Redirect"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Net.Http.HttpClient.Redirect ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Net.Http.HttpClient.Redirect>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/http/HttpClient$Redirect;", arg0);
@@ -530,7 +530,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Redirect"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Net.Http.HttpClient.Redirect[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Net.Http.HttpClient.Redirect>(LocalBridgeClazz, "values", "()[Ljava/net/http/HttpClient$Redirect;");
@@ -581,8 +581,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Net.Http.HttpClient.Version ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Net.Http.HttpClient.Version>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/http/HttpClient$Version;", arg0);
@@ -590,7 +590,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Net.Http.HttpClient.Version[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Net.Http.HttpClient.Version>(LocalBridgeClazz, "values", "()[Ljava/net/http/HttpClient$Version;");

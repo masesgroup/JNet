@@ -66,7 +66,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html"/>
         /// </summary>
-        public partial class Reason : Java.Lang.Enum<Java.Awt.DesktopNs.UserSessionEvent.Reason>
+        public partial class Reason : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.awt.desktop.UserSessionEvent$Reason";
             /// <summary>
@@ -114,7 +114,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.html#%3Cinit%3E(java.awt.desktop.UserSessionEvent.Reason)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public UserSessionEvent(Java.Awt.DesktopNs.UserSessionEvent.Reason arg0)
             : base(arg0)
         {
@@ -189,8 +189,8 @@ namespace Java.Awt.DesktopNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/desktop/UserSessionEvent$Reason;", arg0);
@@ -198,7 +198,7 @@ namespace Java.Awt.DesktopNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalBridgeClazz, "values", "()[Ljava/awt/desktop/UserSessionEvent$Reason;");

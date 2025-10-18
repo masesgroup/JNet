@@ -78,11 +78,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/InvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Throwable"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2);
 
         #endregion
@@ -118,11 +118,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/InvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Throwable"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {
             return IExecuteWithSignature("invoke", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);

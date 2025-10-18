@@ -176,8 +176,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getExpandedState(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool GetExpandedState(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<bool>("getExpandedState", "(Ljavax/swing/tree/TreePath;)Z", arg0);
@@ -185,8 +185,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#isExpanded(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsExpanded(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<bool>("isExpanded", "(Ljavax/swing/tree/TreePath;)Z", arg0);
@@ -194,8 +194,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getRowForPath(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetRowForPath(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<int>("getRowForPath", "(Ljavax/swing/tree/TreePath;)I", arg0);
@@ -203,8 +203,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getVisibleChildCount(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetVisibleChildCount(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecuteWithSignature<int>("getVisibleChildCount", "(Ljavax/swing/tree/TreePath;)I", arg0);
@@ -212,9 +212,9 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getBounds(javax.swing.tree.TreePath,java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Rectangle GetBounds(Javax.Swing.Tree.TreePath arg0, Java.Awt.Rectangle arg1)
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "(Ljavax/swing/tree/TreePath;Ljava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0, arg1);
@@ -222,18 +222,18 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getVisiblePathsFrom(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<Javax.Swing.Tree.TreePath> GetVisiblePathsFrom(Javax.Swing.Tree.TreePath arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration GetVisiblePathsFrom(Javax.Swing.Tree.TreePath arg0)
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreePath>>("getVisiblePathsFrom", "(Ljavax/swing/tree/TreePath;)Ljava/util/Enumeration;", arg0);
+            return IExecuteWithSignature<Java.Util.Enumeration>("getVisiblePathsFrom", "(Ljavax/swing/tree/TreePath;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPathClosestTo(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreePath GetPathClosestTo(int arg0, int arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPathClosestTo", "(II)Ljavax/swing/tree/TreePath;", arg0, arg1);
@@ -241,8 +241,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPathForRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreePath GetPathForRow(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPathForRow", "(I)Ljavax/swing/tree/TreePath;", arg0);
@@ -250,7 +250,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#invalidatePathBounds(javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void InvalidatePathBounds(Javax.Swing.Tree.TreePath arg0)
         {
             IExecuteWithSignature("invalidatePathBounds", "(Ljavax/swing/tree/TreePath;)V", arg0);
@@ -265,8 +265,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setExpandedState(javax.swing.tree.TreePath,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetExpandedState(Javax.Swing.Tree.TreePath arg0, bool arg1)
         {
             IExecuteWithSignature("setExpandedState", "(Ljavax/swing/tree/TreePath;Z)V", arg0, arg1);
@@ -274,7 +274,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeNodesChanged(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void TreeNodesChanged(Javax.Swing.Event.TreeModelEvent arg0)
         {
             IExecuteWithSignature("treeNodesChanged", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
@@ -282,7 +282,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeNodesInserted(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void TreeNodesInserted(Javax.Swing.Event.TreeModelEvent arg0)
         {
             IExecuteWithSignature("treeNodesInserted", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
@@ -290,7 +290,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void TreeNodesRemoved(Javax.Swing.Event.TreeModelEvent arg0)
         {
             IExecuteWithSignature("treeNodesRemoved", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
@@ -298,7 +298,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeStructureChanged(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void TreeStructureChanged(Javax.Swing.Event.TreeModelEvent arg0)
         {
             IExecuteWithSignature("treeStructureChanged", "(Ljavax/swing/event/TreeModelEvent;)V", arg0);
@@ -306,7 +306,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#isRootVisible()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRootVisible()
         {
             return IExecuteWithSignature<bool>("isRootVisible", "()Z");
@@ -314,8 +314,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPreferredWidth(java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetPreferredWidth(Java.Awt.Rectangle arg0)
         {
             return IExecuteWithSignature<int>("getPreferredWidth", "(Ljava/awt/Rectangle;)I", arg0);
@@ -323,8 +323,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getRowsForPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetRowsForPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
             return IExecuteWithSignatureArray<int>("getRowsForPaths", "([Ljavax/swing/tree/TreePath;)[I", new object[] { arg0 });
@@ -332,7 +332,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setNodeDimensions(javax.swing.tree.AbstractLayoutCache.NodeDimensions)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetNodeDimensions(Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions arg0)
         {
             IExecuteWithSignature("setNodeDimensions", "(Ljavax/swing/tree/AbstractLayoutCache$NodeDimensions;)V", arg0);
@@ -340,7 +340,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setRootVisible(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRootVisible(bool arg0)
         {
             IExecuteWithSignature("setRootVisible", "(Z)V", arg0);
@@ -372,12 +372,12 @@ namespace Javax.Swing.Tree
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html#getNodeDimensions(java.lang.Object,int,int,boolean,java.awt.Rectangle)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="bool"/></param>
-            /// <param name="arg4"><see cref="Java.Awt.Rectangle"/></param>
-            /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Rectangle GetNodeDimensions(object arg0, int arg1, int arg2, bool arg3, Java.Awt.Rectangle arg4)
             {
                 return IExecuteWithSignature<Java.Awt.Rectangle>("getNodeDimensions", "(Ljava/lang/Object;IIZLjava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0, arg1, arg2, arg3, arg4);

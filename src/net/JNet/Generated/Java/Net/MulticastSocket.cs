@@ -73,8 +73,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public MulticastSocket(int arg0)
             : base(arg0)
         {
@@ -82,8 +82,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#%3Cinit%3E(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public MulticastSocket(Java.Net.SocketAddress arg0)
             : base(arg0)
         {
@@ -135,8 +135,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void JoinGroup(Java.Net.InetAddress arg0)
         {
             IExecuteWithSignature("joinGroup", "(Ljava/net/InetAddress;)V", arg0);
@@ -144,9 +144,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void JoinGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
         {
             IExecuteWithSignature("joinGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V", arg0, arg1);
@@ -154,8 +154,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void LeaveGroup(Java.Net.InetAddress arg0)
         {
             IExecuteWithSignature("leaveGroup", "(Ljava/net/InetAddress;)V", arg0);
@@ -163,9 +163,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void LeaveGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
         {
             IExecuteWithSignature("leaveGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V", arg0, arg1);

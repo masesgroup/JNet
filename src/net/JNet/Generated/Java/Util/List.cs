@@ -68,12 +68,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region List<E> declaration
+    #region List declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class List<E> : Java.Util.Collection<E>
+    public partial class List : Java.Util.Collection
     {
         const string _bridgeClassName = "java.util.List";
         /// <summary>
@@ -131,8 +131,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#copyOf(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List CopyOf(Java.Util.Collection arg0)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "copyOf", "(Ljava/util/Collection;)Ljava/util/List;", arg0);
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of()
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "()Ljava/util/List;");
@@ -148,17 +148,17 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <param name="arg8"><see cref="object"/></param>
-        /// <param name="arg9"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -166,16 +166,16 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <param name="arg8"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -183,15 +183,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -199,14 +199,14 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -214,13 +214,13 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -228,12 +228,12 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3, object arg4)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4);
@@ -241,11 +241,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2, object arg3)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3);
@@ -253,10 +253,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(object arg0, object arg1, object arg2)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2);
@@ -264,9 +264,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(object arg0, object arg1)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1);
@@ -274,8 +274,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(params object[] arg0)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/List;", arg0);
@@ -283,8 +283,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.List Of(object arg0)
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/List;", arg0);
@@ -296,8 +296,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#toArray(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object[] ToArray(object[] arg0)
         {
             return IExecuteWithSignatureArray<object>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
@@ -305,8 +305,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Add(object arg0)
         {
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
@@ -314,9 +314,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#addAll(int,java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddAll(int arg0, Java.Util.Collection arg1)
         {
             return IExecuteWithSignature<bool>("addAll", "(ILjava/util/Collection;)Z", arg0, arg1);
@@ -324,8 +324,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#addAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddAll(Java.Util.Collection arg0)
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
@@ -333,8 +333,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(object arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
@@ -342,8 +342,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#containsAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsAll(Java.Util.Collection arg0)
         {
             return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
@@ -351,7 +351,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -359,8 +359,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(object arg0)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
@@ -368,8 +368,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#removeAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveAll(Java.Util.Collection arg0)
         {
             return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
@@ -377,8 +377,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#retainAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RetainAll(Java.Util.Collection arg0)
         {
             return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
@@ -386,8 +386,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(int arg0)
         {
             return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
@@ -395,8 +395,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Remove(int arg0)
         {
             return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
@@ -404,9 +404,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#set(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Set(int arg0, object arg1)
         {
             return IExecuteWithSignature("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -414,8 +414,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#indexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
@@ -423,8 +423,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
@@ -432,7 +432,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -440,7 +440,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object[] ToArray()
         {
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
@@ -448,7 +448,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Iterator Iterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
@@ -456,9 +456,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#subList(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.List SubList(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Util.List>("subList", "(II)Ljava/util/List;", arg0, arg1);
@@ -466,7 +466,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#listIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.ListIterator ListIterator()
         {
             return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "()Ljava/util/ListIterator;");
@@ -474,8 +474,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#listIterator(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.ListIterator ListIterator(int arg0)
         {
             return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
@@ -483,8 +483,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#add(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Add(int arg0, object arg1)
         {
             IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
@@ -499,7 +499,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Spliterator Spliterator()
         {
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
@@ -507,7 +507,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#replaceAll(java.util.function.UnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ReplaceAll(Java.Util.Function.UnaryOperator arg0)
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/UnaryOperator;)V", arg0);
@@ -515,7 +515,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#sort(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Sort(Java.Util.Comparator arg0)
         {
             IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
@@ -531,145 +531,145 @@ namespace Java.Util
     }
     #endregion
 
-    #region IList<E>
+    #region IList
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html"/>
     /// </summary>
-    public partial interface IList<E> : Java.Util.ICollection<E>
+    public partial interface IList : Java.Util.ICollection
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#toArray(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        T[] ToArray<T>(T[] arg0);
+        /// <returns><see cref=""/></returns>
+        T[] ToArray(T[] arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Add(E arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#addAll(int,java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1ExtendsE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        bool AddAll(int arg0, Java.Util.Collection arg1) where Arg1ExtendsE : E;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#addAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        bool AddAll(Java.Util.Collection arg0) where Arg0ExtendsE : E;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Contains(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#containsAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool ContainsAll(Java.Util.Collection<object> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        bool ContainsAll(Java.Util.Collection arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsEmpty();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Remove(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#removeAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool RemoveAll(Java.Util.Collection<object> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        bool RemoveAll(Java.Util.Collection arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#retainAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool RetainAll(Java.Util.Collection<object> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        bool RetainAll(Java.Util.Collection arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         E Get(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         E Remove(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#set(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         E Set(int arg0, E arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#indexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int IndexOf(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int LastIndexOf(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         int Size();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         object[] ToArray();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<E> Iterator();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Iterator Iterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#subList(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<E> SubList(int arg0, int arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.List SubList(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#listIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
-        Java.Util.ListIterator<E> ListIterator();
+        /// <returns><see cref=""/></returns>
+        Java.Util.ListIterator ListIterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#listIterator(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
-        Java.Util.ListIterator<E> ListIterator(int arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.ListIterator ListIterator(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#add(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void Add(int arg0, E arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#clear()"/>
@@ -678,19 +678,19 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        Java.Util.Spliterator<E> Spliterator();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Spliterator Spliterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#replaceAll(java.util.function.UnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        void ReplaceAll(Java.Util.Function.UnaryOperator<E> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        void ReplaceAll(Java.Util.Function.UnaryOperator arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#sort(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
-        void Sort<Arg0objectSuperE>(Java.Util.Comparator<Arg0objectSuperE> arg0) where Arg0objectSuperE : E;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperE"><see cref=""/></typeparam>
+        void Sort(Java.Util.Comparator arg0) where Arg0objectSuperE : E;
 
         #endregion
 
@@ -702,8 +702,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region List<E> implementation
-    public partial class List<E> : Java.Util.IList<E>
+    #region List implementation
+    public partial class List : Java.Util.IList
     {
         #region Constructors
 
@@ -711,9 +711,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.List{E}"/> to <see cref="Java.Util.List"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.List(Java.Util.List<E> t) => t.Cast<Java.Util.List>();
+        public static implicit operator Java.Util.List(Java.Util.List t) => t.Cast<Java.Util.List>();
 
         #endregion
 
@@ -725,164 +725,164 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#copyOf(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> CopyOf<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List CopyOf(Java.Util.Collection arg0) where Arg0ExtendsE : E
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "copyOf", "(Ljava/util/Collection;)Ljava/util/List;", arg0);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "copyOf", "(Ljava/util/Collection;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of()
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "()Ljava/util/List;");
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <param name="arg2"><typeparamref name="E"/></param>
-        /// <param name="arg3"><typeparamref name="E"/></param>
-        /// <param name="arg4"><typeparamref name="E"/></param>
-        /// <param name="arg5"><typeparamref name="E"/></param>
-        /// <param name="arg6"><typeparamref name="E"/></param>
-        /// <param name="arg7"><typeparamref name="E"/></param>
-        /// <param name="arg8"><typeparamref name="E"/></param>
-        /// <param name="arg9"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7, E arg8, E arg9)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7, E arg8, E arg9)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <param name="arg2"><typeparamref name="E"/></param>
-        /// <param name="arg3"><typeparamref name="E"/></param>
-        /// <param name="arg4"><typeparamref name="E"/></param>
-        /// <param name="arg5"><typeparamref name="E"/></param>
-        /// <param name="arg6"><typeparamref name="E"/></param>
-        /// <param name="arg7"><typeparamref name="E"/></param>
-        /// <param name="arg8"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7, E arg8)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7, E arg8)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <param name="arg2"><typeparamref name="E"/></param>
-        /// <param name="arg3"><typeparamref name="E"/></param>
-        /// <param name="arg4"><typeparamref name="E"/></param>
-        /// <param name="arg5"><typeparamref name="E"/></param>
-        /// <param name="arg6"><typeparamref name="E"/></param>
-        /// <param name="arg7"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <param name="arg2"><typeparamref name="E"/></param>
-        /// <param name="arg3"><typeparamref name="E"/></param>
-        /// <param name="arg4"><typeparamref name="E"/></param>
-        /// <param name="arg5"><typeparamref name="E"/></param>
-        /// <param name="arg6"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <param name="arg2"><typeparamref name="E"/></param>
-        /// <param name="arg3"><typeparamref name="E"/></param>
-        /// <param name="arg4"><typeparamref name="E"/></param>
-        /// <param name="arg5"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <param name="arg2"><typeparamref name="E"/></param>
-        /// <param name="arg3"><typeparamref name="E"/></param>
-        /// <param name="arg4"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(E arg0, E arg1, E arg2, E arg3, E arg4)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <param name="arg2"><typeparamref name="E"/></param>
-        /// <param name="arg3"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(E arg0, E arg1, E arg2, E arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(E arg0, E arg1, E arg2, E arg3)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <param name="arg2"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(E arg0, E arg1, E arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(E arg0, E arg1, E arg2)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(E arg0, E arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(E arg0, E arg1)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(params E[] arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(params E[] arg0)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/List;", arg0);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> Of(E arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Of(E arg0)
         {
-            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/List;", arg0);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/List;", arg0);
         }
 
         #endregion
@@ -891,18 +891,18 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#toArray(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T[] ToArray<T>(T[] arg0)
+        /// <returns><see cref=""/></returns>
+        public T[] ToArray(T[] arg0)
         {
             return IExecuteWithSignatureArray<T>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Add(E arg0)
         {
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
@@ -910,29 +910,29 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#addAll(int,java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1ExtendsE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public bool AddAll(int arg0, Java.Util.Collection arg1) where Arg1ExtendsE : E
         {
             return IExecuteWithSignature<bool>("addAll", "(ILjava/util/Collection;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#addAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public bool AddAll(Java.Util.Collection arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(object arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
@@ -940,16 +940,16 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#containsAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public bool ContainsAll(Java.Util.Collection<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public bool ContainsAll(Java.Util.Collection arg0)
         {
             return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -957,8 +957,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(object arg0)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
@@ -966,26 +966,26 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#removeAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public bool RemoveAll(Java.Util.Collection<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public bool RemoveAll(Java.Util.Collection arg0)
         {
             return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#retainAll(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public bool RetainAll(Java.Util.Collection<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public bool RetainAll(Java.Util.Collection arg0)
         {
             return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Get(int arg0)
         {
             return IExecuteWithSignature<E>("get", "(I)Ljava/lang/Object;", arg0);
@@ -993,8 +993,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Remove(int arg0)
         {
             return IExecuteWithSignature<E>("remove", "(I)Ljava/lang/Object;", arg0);
@@ -1002,9 +1002,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#set(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Set(int arg0, E arg1)
         {
             return IExecuteWithSignature<E>("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -1012,8 +1012,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#indexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
@@ -1021,8 +1021,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
@@ -1030,7 +1030,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -1038,7 +1038,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object[] ToArray()
         {
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
@@ -1046,43 +1046,43 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> Iterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#subList(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<E> SubList(int arg0, int arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List SubList(int arg0, int arg1)
         {
-            return IExecuteWithSignature<Java.Util.List<E>>("subList", "(II)Ljava/util/List;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List>("subList", "(II)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#listIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
-        public Java.Util.ListIterator<E> ListIterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.ListIterator ListIterator()
         {
-            return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "()Ljava/util/ListIterator;");
+            return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "()Ljava/util/ListIterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#listIterator(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
-        public Java.Util.ListIterator<E> ListIterator(int arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.ListIterator ListIterator(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
+            return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#add(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Add(int arg0, E arg1)
         {
             IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
@@ -1097,25 +1097,25 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#spliterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        public Java.Util.Spliterator<E> Spliterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Spliterator Spliterator()
         {
-            return IExecuteWithSignature<Java.Util.Spliterator<E>>("spliterator", "()Ljava/util/Spliterator;");
+            return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#replaceAll(java.util.function.UnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
-        public void ReplaceAll(Java.Util.Function.UnaryOperator<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void ReplaceAll(Java.Util.Function.UnaryOperator arg0)
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/UnaryOperator;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#sort(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
-        public void Sort<Arg0objectSuperE>(Java.Util.Comparator<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperE"><see cref=""/></typeparam>
+        public void Sort(Java.Util.Comparator arg0) where Arg0objectSuperE : E
         {
             IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
         }

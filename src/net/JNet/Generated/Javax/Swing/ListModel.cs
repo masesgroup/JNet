@@ -68,12 +68,12 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ListModel<E> declaration
+    #region ListModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class ListModel<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ListModel<E>>
+    public partial class ListModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ListModel>
     {
         const string _bridgeClassName = "javax.swing.ListModel";
         /// <summary>
@@ -142,8 +142,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#getElementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetElementAt(int arg0)
         {
             return IExecuteWithSignature("getElementAt", "(I)Ljava/lang/Object;", arg0);
@@ -151,7 +151,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecuteWithSignature("addListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);
@@ -159,7 +159,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#removeListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecuteWithSignature("removeListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);
@@ -175,11 +175,11 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region IListModel<E>
+    #region IListModel
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html"/>
     /// </summary>
-    public partial interface IListModel<E>
+    public partial interface IListModel
     {
         #region Instance methods
         /// <summary>
@@ -189,18 +189,18 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#getElementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         E GetElementAt(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddListDataListener(Javax.Swing.Event.ListDataListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#removeListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveListDataListener(Javax.Swing.Event.ListDataListener arg0);
 
         #endregion
@@ -213,8 +213,8 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ListModel<E> implementation
-    public partial class ListModel<E> : Javax.Swing.IListModel<E>
+    #region ListModel implementation
+    public partial class ListModel : Javax.Swing.IListModel
     {
         #region Constructors
 
@@ -222,9 +222,9 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.ListModel{E}"/> to <see cref="Javax.Swing.ListModel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.ListModel(Javax.Swing.ListModel<E> t) => t.Cast<Javax.Swing.ListModel>();
+        public static implicit operator Javax.Swing.ListModel(Javax.Swing.ListModel t) => t.Cast<Javax.Swing.ListModel>();
 
         #endregion
 
@@ -247,8 +247,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#getElementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E GetElementAt(int arg0)
         {
             return IExecuteWithSignature<E>("getElementAt", "(I)Ljava/lang/Object;", arg0);
@@ -256,7 +256,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecuteWithSignature("addListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);
@@ -264,7 +264,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#removeListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecuteWithSignature("removeListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);

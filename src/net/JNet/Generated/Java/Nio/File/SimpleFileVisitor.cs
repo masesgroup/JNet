@@ -66,12 +66,12 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region SimpleFileVisitor<T> declaration
+    #region SimpleFileVisitor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class SimpleFileVisitor<T> : Java.Nio.File.FileVisitor<T>
+    public partial class SimpleFileVisitor : Java.Nio.File.FileVisitor
     {
         const string _bridgeClassName = "java.nio.file.SimpleFileVisitor";
         /// <summary>
@@ -131,10 +131,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.FileVisitResult PostVisitDirectory(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("postVisitDirectory", "(Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
@@ -142,10 +142,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.FileVisitResult PreVisitDirectory(object arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("preVisitDirectory", "(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
@@ -153,10 +153,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.FileVisitResult VisitFile(object arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("visitFile", "(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
@@ -164,10 +164,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.FileVisitResult VisitFileFailed(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("visitFileFailed", "(Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
@@ -183,8 +183,8 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region SimpleFileVisitor<T> implementation
-    public partial class SimpleFileVisitor<T>
+    #region SimpleFileVisitor implementation
+    public partial class SimpleFileVisitor
     {
         #region Constructors
 
@@ -192,9 +192,9 @@ namespace Java.Nio.File
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor{T}"/> to <see cref="Java.Nio.File.SimpleFileVisitor"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Nio.File.SimpleFileVisitor(Java.Nio.File.SimpleFileVisitor<T> t) => t.Cast<Java.Nio.File.SimpleFileVisitor>();
+        public static implicit operator Java.Nio.File.SimpleFileVisitor(Java.Nio.File.SimpleFileVisitor t) => t.Cast<Java.Nio.File.SimpleFileVisitor>();
 
         #endregion
 
@@ -210,10 +210,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("postVisitDirectory", "(Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
@@ -221,10 +221,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.FileVisitResult PreVisitDirectory(T arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("preVisitDirectory", "(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
@@ -232,10 +232,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.FileVisitResult VisitFile(T arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("visitFile", "(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
@@ -243,10 +243,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("visitFileFailed", "(Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;", arg0, arg1);

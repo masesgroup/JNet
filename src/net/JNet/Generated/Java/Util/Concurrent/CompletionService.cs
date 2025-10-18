@@ -68,12 +68,12 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletionService<V> declaration
+    #region CompletionService declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class CompletionService<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionService<V>>
+    public partial class CompletionService : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionService>
     {
         const string _bridgeClassName = "java.util.concurrent.CompletionService";
         /// <summary>
@@ -135,7 +135,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Future Poll()
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "()Ljava/util/concurrent/Future;");
@@ -143,10 +143,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Util.Concurrent.Future Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Future;", arg0, arg1);
@@ -154,9 +154,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, object arg1)
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", arg0, arg1);
@@ -164,8 +164,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0)
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
@@ -173,8 +173,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#take()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Util.Concurrent.Future Take()
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("take", "()Ljava/util/concurrent/Future;");
@@ -190,45 +190,45 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ICompletionService<V>
+    #region ICompletionService
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html"/>
     /// </summary>
-    public partial interface ICompletionService<V>
+    public partial interface ICompletionService
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        Java.Util.Concurrent.Future<V> Poll();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Concurrent.Future Poll();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        Java.Util.Concurrent.Future<V> Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Util.Concurrent.Future Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        Java.Util.Concurrent.Future<V> Submit(Java.Lang.Runnable arg0, V arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, V arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        Java.Util.Concurrent.Future<V> Submit(Java.Util.Concurrent.Callable<V> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#take()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        Java.Util.Concurrent.Future<V> Take();
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Util.Concurrent.Future Take();
 
         #endregion
 
@@ -240,8 +240,8 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CompletionService<V> implementation
-    public partial class CompletionService<V> : Java.Util.Concurrent.ICompletionService<V>
+    #region CompletionService implementation
+    public partial class CompletionService : Java.Util.Concurrent.ICompletionService
     {
         #region Constructors
 
@@ -249,9 +249,9 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.CompletionService{V}"/> to <see cref="Java.Util.Concurrent.CompletionService"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.CompletionService(Java.Util.Concurrent.CompletionService<V> t) => t.Cast<Java.Util.Concurrent.CompletionService>();
+        public static implicit operator Java.Util.Concurrent.CompletionService(Java.Util.Concurrent.CompletionService t) => t.Cast<Java.Util.Concurrent.CompletionService>();
 
         #endregion
 
@@ -267,49 +267,49 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<V> Poll()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Poll()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("poll", "()Ljava/util/concurrent/Future;");
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "()Ljava/util/concurrent/Future;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Util.Concurrent.Future<V> Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Concurrent.Future Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Future;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<V> Submit(Java.Lang.Runnable arg0, V arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, V arg1)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<V> Submit(Java.Util.Concurrent.Callable<V> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#take()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Util.Concurrent.Future<V> Take()
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Concurrent.Future Take()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("take", "()Ljava/util/concurrent/Future;");
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("take", "()Ljava/util/concurrent/Future;");
         }
 
         #endregion

@@ -105,13 +105,13 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Processor<T, R> declaration
+        #region Processor<, > declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Processor.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="R"></typeparam>
-        public partial class Processor<T, R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Processor<T, R>>
+        public partial class Processor<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Processor<, >>
         {
             const string _bridgeClassName = "java.util.concurrent.Flow$Processor";
             /// <summary>
@@ -193,12 +193,12 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Publisher<T> declaration
+        #region Publisher declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Publisher.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        public partial class Publisher<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Publisher<T>>
+        public partial class Publisher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Publisher>
         {
             const string _bridgeClassName = "java.util.concurrent.Flow$Publisher";
             /// <summary>
@@ -280,12 +280,12 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Subscriber<T> declaration
+        #region Subscriber declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        public partial class Subscriber<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Subscriber<T>>
+        public partial class Subscriber : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Subscriber>
         {
             const string _bridgeClassName = "java.util.concurrent.Flow$Subscriber";
             /// <summary>
@@ -390,7 +390,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.html#defaultBufferSize()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public static int DefaultBufferSize()
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "defaultBufferSize", "()I");
@@ -434,8 +434,8 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Processor<T, R> implementation
-        public partial class Processor<T, R>
+        #region Processor<, > implementation
+        public partial class Processor<, >
         {
             #region Constructors
 
@@ -443,9 +443,9 @@ namespace Java.Util.Concurrent
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.Flow.Processor{T, R}"/> to <see cref="Java.Util.Concurrent.Flow.Processor"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Util.Concurrent.Flow.Processor(Java.Util.Concurrent.Flow.Processor<T, R> t) => t.Cast<Java.Util.Concurrent.Flow.Processor>();
+            public static implicit operator Java.Util.Concurrent.Flow.Processor(Java.Util.Concurrent.Flow.Processor<, > t) => t.Cast<Java.Util.Concurrent.Flow.Processor>();
 
             #endregion
 
@@ -492,7 +492,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Publisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void Subscribe(Java.Util.Concurrent.Flow.Subscriber arg0)
             {
                 IExecuteWithSignature("subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V", arg0);
@@ -508,8 +508,8 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Publisher<T> implementation
-        public partial class Publisher<T>
+        #region Publisher implementation
+        public partial class Publisher
         {
             #region Constructors
 
@@ -517,9 +517,9 @@ namespace Java.Util.Concurrent
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.Flow.Publisher{T}"/> to <see cref="Java.Util.Concurrent.Flow.Publisher"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Util.Concurrent.Flow.Publisher(Java.Util.Concurrent.Flow.Publisher<T> t) => t.Cast<Java.Util.Concurrent.Flow.Publisher>();
+            public static implicit operator Java.Util.Concurrent.Flow.Publisher(Java.Util.Concurrent.Flow.Publisher t) => t.Cast<Java.Util.Concurrent.Flow.Publisher>();
 
             #endregion
 
@@ -535,9 +535,9 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Publisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
-            /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-            public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+            public void Subscribe(Java.Util.Concurrent.Flow.Subscriber arg0) where Arg0objectSuperT : T
             {
                 IExecuteWithSignature("subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V", arg0);
             }
@@ -582,7 +582,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onError(java.lang.Throwable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void OnError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
             {
                 IExecuteWithSignature("onError", "(Ljava/lang/Throwable;)V", arg0);
@@ -590,7 +590,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onNext(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void OnNext(object arg0)
             {
                 IExecuteWithSignature("onNext", "(Ljava/lang/Object;)V", arg0);
@@ -598,7 +598,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onSubscribe(java.util.concurrent.Flow.Subscription)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscription"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void OnSubscribe(Java.Util.Concurrent.Flow.Subscription arg0)
             {
                 IExecuteWithSignature("onSubscribe", "(Ljava/util/concurrent/Flow$Subscription;)V", arg0);
@@ -614,8 +614,8 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Subscriber<T> implementation
-        public partial class Subscriber<T>
+        #region Subscriber implementation
+        public partial class Subscriber
         {
             #region Constructors
 
@@ -623,9 +623,9 @@ namespace Java.Util.Concurrent
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.Flow.Subscriber{T}"/> to <see cref="Java.Util.Concurrent.Flow.Subscriber"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Util.Concurrent.Flow.Subscriber(Java.Util.Concurrent.Flow.Subscriber<T> t) => t.Cast<Java.Util.Concurrent.Flow.Subscriber>();
+            public static implicit operator Java.Util.Concurrent.Flow.Subscriber(Java.Util.Concurrent.Flow.Subscriber t) => t.Cast<Java.Util.Concurrent.Flow.Subscriber>();
 
             #endregion
 
@@ -648,7 +648,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onError(java.lang.Throwable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void OnError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
             {
                 IExecuteWithSignature("onError", "(Ljava/lang/Throwable;)V", arg0);
@@ -656,7 +656,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onNext(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="T"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void OnNext(T arg0)
             {
                 IExecuteWithSignature("onNext", "(Ljava/lang/Object;)V", arg0);
@@ -664,7 +664,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onSubscribe(java.util.concurrent.Flow.Subscription)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscription"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void OnSubscribe(Java.Util.Concurrent.Flow.Subscription arg0)
             {
                 IExecuteWithSignature("onSubscribe", "(Ljava/util/concurrent/Flow$Subscription;)V", arg0);
@@ -710,7 +710,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscription.html#request(long)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="long"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void Request(long arg0)
             {
                 IExecuteWithSignature("request", "(J)V", arg0);

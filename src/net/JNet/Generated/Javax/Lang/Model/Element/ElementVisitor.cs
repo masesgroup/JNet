@@ -68,13 +68,13 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region ElementVisitor<R, P> declaration
+    #region ElementVisitor<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class ElementVisitor<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ElementVisitor<R, P>>
+    public partial class ElementVisitor<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ElementVisitor<, >>
     {
         const string _bridgeClassName = "javax.lang.model.element.ElementVisitor";
         /// <summary>
@@ -136,9 +136,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visit(javax.lang.model.element.Element,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Visit(Javax.Lang.Model.Element.Element arg0, object arg1)
         {
             return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -146,9 +146,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitExecutable(javax.lang.model.element.ExecutableElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitExecutable(Javax.Lang.Model.Element.ExecutableElement arg0, object arg1)
         {
             return IExecuteWithSignature("visitExecutable", "(Ljavax/lang/model/element/ExecutableElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -156,9 +156,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitPackage(javax.lang.model.element.PackageElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.PackageElement"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitPackage(Javax.Lang.Model.Element.PackageElement arg0, object arg1)
         {
             return IExecuteWithSignature("visitPackage", "(Ljavax/lang/model/element/PackageElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -166,9 +166,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitType(javax.lang.model.element.TypeElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitType(Javax.Lang.Model.Element.TypeElement arg0, object arg1)
         {
             return IExecuteWithSignature("visitType", "(Ljavax/lang/model/element/TypeElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -176,9 +176,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitTypeParameter(javax.lang.model.element.TypeParameterElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeParameterElement"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitTypeParameter(Javax.Lang.Model.Element.TypeParameterElement arg0, object arg1)
         {
             return IExecuteWithSignature("visitTypeParameter", "(Ljavax/lang/model/element/TypeParameterElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -186,9 +186,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitUnknown(javax.lang.model.element.Element,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitUnknown(Javax.Lang.Model.Element.Element arg0, object arg1)
         {
             return IExecuteWithSignature("visitUnknown", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -196,9 +196,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitVariable(javax.lang.model.element.VariableElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitVariable(Javax.Lang.Model.Element.VariableElement arg0, object arg1)
         {
             return IExecuteWithSignature("visitVariable", "(Ljavax/lang/model/element/VariableElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -206,8 +206,8 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visit(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Visit(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/Element;)Ljava/lang/Object;", arg0);
@@ -215,9 +215,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitModule(javax.lang.model.element.ModuleElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitModule(Javax.Lang.Model.Element.ModuleElement arg0, object arg1)
         {
             return IExecuteWithSignature("visitModule", "(Ljavax/lang/model/element/ModuleElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -233,74 +233,74 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region IElementVisitor<R, P>
+    #region IElementVisitor<, >
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html"/>
     /// </summary>
-    public partial interface IElementVisitor<R, P>
+    public partial interface IElementVisitor<, >
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visit(javax.lang.model.element.Element,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R Visit(Javax.Lang.Model.Element.Element arg0, P arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitExecutable(javax.lang.model.element.ExecutableElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R VisitExecutable(Javax.Lang.Model.Element.ExecutableElement arg0, P arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitPackage(javax.lang.model.element.PackageElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.PackageElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R VisitPackage(Javax.Lang.Model.Element.PackageElement arg0, P arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitType(javax.lang.model.element.TypeElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R VisitType(Javax.Lang.Model.Element.TypeElement arg0, P arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitTypeParameter(javax.lang.model.element.TypeParameterElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeParameterElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R VisitTypeParameter(Javax.Lang.Model.Element.TypeParameterElement arg0, P arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitUnknown(javax.lang.model.element.Element,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R VisitUnknown(Javax.Lang.Model.Element.Element arg0, P arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitVariable(javax.lang.model.element.VariableElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R VisitVariable(Javax.Lang.Model.Element.VariableElement arg0, P arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visit(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R Visit(Javax.Lang.Model.Element.Element arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitModule(javax.lang.model.element.ModuleElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R VisitModule(Javax.Lang.Model.Element.ModuleElement arg0, P arg1);
 
         #endregion
@@ -313,8 +313,8 @@ namespace Javax.Lang.Model.Element
     }
     #endregion
 
-    #region ElementVisitor<R, P> implementation
-    public partial class ElementVisitor<R, P> : Javax.Lang.Model.Element.IElementVisitor<R, P>
+    #region ElementVisitor<, > implementation
+    public partial class ElementVisitor<, > : Javax.Lang.Model.Element.IElementVisitor<, >
     {
         #region Constructors
 
@@ -322,9 +322,9 @@ namespace Javax.Lang.Model.Element
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Element.ElementVisitor{R, P}"/> to <see cref="Javax.Lang.Model.Element.ElementVisitor"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Lang.Model.Element.ElementVisitor(Javax.Lang.Model.Element.ElementVisitor<R, P> t) => t.Cast<Javax.Lang.Model.Element.ElementVisitor>();
+        public static implicit operator Javax.Lang.Model.Element.ElementVisitor(Javax.Lang.Model.Element.ElementVisitor<, > t) => t.Cast<Javax.Lang.Model.Element.ElementVisitor>();
 
         #endregion
 
@@ -340,9 +340,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visit(javax.lang.model.element.Element,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R Visit(Javax.Lang.Model.Element.Element arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -350,9 +350,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitExecutable(javax.lang.model.element.ExecutableElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitExecutable(Javax.Lang.Model.Element.ExecutableElement arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitExecutable", "(Ljavax/lang/model/element/ExecutableElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -360,9 +360,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitPackage(javax.lang.model.element.PackageElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.PackageElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitPackage(Javax.Lang.Model.Element.PackageElement arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitPackage", "(Ljavax/lang/model/element/PackageElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -370,9 +370,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitType(javax.lang.model.element.TypeElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitType(Javax.Lang.Model.Element.TypeElement arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitType", "(Ljavax/lang/model/element/TypeElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -380,9 +380,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitTypeParameter(javax.lang.model.element.TypeParameterElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeParameterElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitTypeParameter(Javax.Lang.Model.Element.TypeParameterElement arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitTypeParameter", "(Ljavax/lang/model/element/TypeParameterElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -390,9 +390,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitUnknown(javax.lang.model.element.Element,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitUnknown(Javax.Lang.Model.Element.Element arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitUnknown", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -400,9 +400,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitVariable(javax.lang.model.element.VariableElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.VariableElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitVariable(Javax.Lang.Model.Element.VariableElement arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitVariable", "(Ljavax/lang/model/element/VariableElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -410,8 +410,8 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visit(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R Visit(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/Element;)Ljava/lang/Object;", arg0);
@@ -419,9 +419,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html#visitModule(javax.lang.model.element.ModuleElement,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitModule(Javax.Lang.Model.Element.ModuleElement arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitModule", "(Ljavax/lang/model/element/ModuleElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);

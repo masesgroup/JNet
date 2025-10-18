@@ -77,11 +77,11 @@ namespace Javax.Management.Monitor
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Monitor.Monitor"/> to <see cref="Javax.Management.Monitor.MonitorMBean"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Monitor.MonitorMBean(Javax.Management.Monitor.Monitor t) => t.Cast<Javax.Management.Monitor.MonitorMBean>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Monitor.Monitor"/> to <see cref="Javax.Management.MBeanRegistration"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Monitor.Monitor t) => t.Cast<Javax.Management.MBeanRegistration>();
 
@@ -134,10 +134,10 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
             return IExecuteWithSignature<Javax.Management.ObjectName>("preRegister", "(Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", arg0, arg1);
@@ -145,8 +145,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#containsObservedObject(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsObservedObject(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<bool>("containsObservedObject", "(Ljavax/management/ObjectName;)Z", arg0);
@@ -154,7 +154,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#isActive()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsActive()
         {
             return IExecuteWithSignature<bool>("isActive", "()Z");
@@ -162,8 +162,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#addObservedObject(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddObservedObject(Javax.Management.ObjectName arg0)
         {
             IExecuteWithSignature("addObservedObject", "(Ljavax/management/ObjectName;)V", arg0);
@@ -171,7 +171,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#removeObservedObject(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveObservedObject(Javax.Management.ObjectName arg0)
         {
             IExecuteWithSignature("removeObservedObject", "(Ljavax/management/ObjectName;)V", arg0);
@@ -186,7 +186,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PostRegister(Java.Lang.Boolean arg0)
         {
             IExecuteWithSignature("postRegister", "(Ljava/lang/Boolean;)V", arg0);
@@ -194,7 +194,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#preDeregister()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <exception cref=""/>
         public void PreDeregister()
         {
             IExecuteWithSignature("preDeregister", "()V");

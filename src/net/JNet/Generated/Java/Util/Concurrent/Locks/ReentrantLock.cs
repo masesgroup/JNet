@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#%3Cinit%3E(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ReentrantLock(bool arg0)
             : base(arg0)
         {
@@ -83,11 +83,11 @@ namespace Java.Util.Concurrent.Locks
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantLock"/> to <see cref="Java.Util.Concurrent.Locks.Lock"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Locks.Lock(Java.Util.Concurrent.Locks.ReentrantLock t) => t.Cast<Java.Util.Concurrent.Locks.Lock>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Locks.ReentrantLock"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantLock t) => t.Cast<Java.Io.Serializable>();
 
@@ -119,8 +119,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasWaiters(java.util.concurrent.locks.Condition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool HasWaiters(Java.Util.Concurrent.Locks.Condition arg0)
         {
             return IExecuteWithSignature<bool>("hasWaiters", "(Ljava/util/concurrent/locks/Condition;)Z", arg0);
@@ -128,7 +128,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isHeldByCurrentThread()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsHeldByCurrentThread()
         {
             return IExecuteWithSignature<bool>("isHeldByCurrentThread", "()Z");
@@ -136,7 +136,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isLocked()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsLocked()
         {
             return IExecuteWithSignature<bool>("isLocked", "()Z");
@@ -144,7 +144,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#tryLock()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool TryLock()
         {
             return IExecuteWithSignature<bool>("tryLock", "()Z");
@@ -152,10 +152,10 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool TryLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecuteWithSignature<bool>("tryLock", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
@@ -163,8 +163,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThread(java.lang.Thread)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool HasQueuedThread(Java.Lang.Thread arg0)
         {
             return IExecuteWithSignature<bool>("hasQueuedThread", "(Ljava/lang/Thread;)Z", arg0);
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThreads()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasQueuedThreads()
         {
             return IExecuteWithSignature<bool>("hasQueuedThreads", "()Z");
@@ -180,7 +180,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#isFair()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFair()
         {
             return IExecuteWithSignature<bool>("isFair", "()Z");
@@ -188,8 +188,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#getWaitQueueLength(java.util.concurrent.locks.Condition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.Condition"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetWaitQueueLength(Java.Util.Concurrent.Locks.Condition arg0)
         {
             return IExecuteWithSignature<int>("getWaitQueueLength", "(Ljava/util/concurrent/locks/Condition;)I", arg0);
@@ -197,7 +197,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#newCondition()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Concurrent.Locks.Condition NewCondition()
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Condition>("newCondition", "()Ljava/util/concurrent/locks/Condition;");
@@ -212,7 +212,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#lockInterruptibly()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref=""/>
         public void LockInterruptibly()
         {
             IExecuteWithSignature("lockInterruptibly", "()V");

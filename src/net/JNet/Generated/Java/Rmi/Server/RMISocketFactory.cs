@@ -77,11 +77,11 @@ namespace Java.Rmi.Server
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Rmi.Server.RMISocketFactory"/> to <see cref="Java.Rmi.Server.RMIClientSocketFactory"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Rmi.Server.RMIClientSocketFactory(Java.Rmi.Server.RMISocketFactory t) => t.Cast<Java.Rmi.Server.RMIClientSocketFactory>();
         /// <summary>
-        /// Converter from <see cref="Java.Rmi.Server.RMISocketFactory"/> to <see cref="Java.Rmi.Server.RMIServerSocketFactory"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Rmi.Server.RMIServerSocketFactory(Java.Rmi.Server.RMISocketFactory t) => t.Cast<Java.Rmi.Server.RMIServerSocketFactory>();
 
@@ -120,9 +120,9 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#createServerSocket(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Net.ServerSocket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0)
         {
             return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(I)Ljava/net/ServerSocket;", arg0);
@@ -130,10 +130,10 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#createSocket(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Net.Socket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.Socket CreateSocket(Java.Lang.String arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/lang/String;I)Ljava/net/Socket;", arg0, arg1);

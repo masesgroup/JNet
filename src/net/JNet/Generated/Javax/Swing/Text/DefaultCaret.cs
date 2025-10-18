@@ -75,19 +75,19 @@ namespace Javax.Swing.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.DefaultCaret"/> to <see cref="Javax.Swing.Text.Caret"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.Caret(Javax.Swing.Text.DefaultCaret t) => t.Cast<Javax.Swing.Text.Caret>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.DefaultCaret"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Text.DefaultCaret t) => t.Cast<Java.Awt.EventNs.FocusListener>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.DefaultCaret"/> to <see cref="Java.Awt.EventNs.MouseListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseListener(Javax.Swing.Text.DefaultCaret t) => t.Cast<Java.Awt.EventNs.MouseListener>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.DefaultCaret"/> to <see cref="Java.Awt.EventNs.MouseMotionListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseMotionListener(Javax.Swing.Text.DefaultCaret t) => t.Cast<Java.Awt.EventNs.MouseMotionListener>();
 
@@ -179,17 +179,17 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getListeners(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public T[] GetListeners(Java.Lang.Class arg0)
         {
             return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isActive()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsActive()
         {
             return IExecuteWithSignature<bool>("isActive", "()Z");
@@ -197,7 +197,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isSelectionVisible()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSelectionVisible()
         {
             return IExecuteWithSignature<bool>("isSelectionVisible", "()Z");
@@ -205,7 +205,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isVisible()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsVisible()
         {
             return IExecuteWithSignature<bool>("isVisible", "()Z");
@@ -213,7 +213,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -221,7 +221,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#deinstall(javax.swing.text.JTextComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Deinstall(Javax.Swing.Text.JTextComponent arg0)
         {
             IExecuteWithSignature("deinstall", "(Ljavax/swing/text/JTextComponent;)V", arg0);
@@ -229,7 +229,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -237,7 +237,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#focusLost(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#install(javax.swing.text.JTextComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Install(Javax.Swing.Text.JTextComponent arg0)
         {
             IExecuteWithSignature("install", "(Ljavax/swing/text/JTextComponent;)V", arg0);
@@ -253,7 +253,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseClicked", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -261,7 +261,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseDragged", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -269,7 +269,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseEntered", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -277,7 +277,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseExited", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -285,7 +285,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseMoved", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -293,7 +293,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mousePressed", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -301,7 +301,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("mouseReleased", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -309,8 +309,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#moveDot(int,javax.swing.text.Position.Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void MoveDot(int arg0, Javax.Swing.Text.Position.Bias arg1)
         {
             IExecuteWithSignature("moveDot", "(ILjavax/swing/text/Position$Bias;)V", arg0, arg1);
@@ -318,7 +318,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#moveDot(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MoveDot(int arg0)
         {
             IExecuteWithSignature("moveDot", "(I)V", arg0);
@@ -326,7 +326,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#paint(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Paint(Java.Awt.Graphics arg0)
         {
             IExecuteWithSignature("paint", "(Ljava/awt/Graphics;)V", arg0);
@@ -334,7 +334,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -342,8 +342,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setDot(int,javax.swing.text.Position.Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetDot(int arg0, Javax.Swing.Text.Position.Bias arg1)
         {
             IExecuteWithSignature("setDot", "(ILjavax/swing/text/Position$Bias;)V", arg0, arg1);
@@ -351,7 +351,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setSelectionVisible(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSelectionVisible(bool arg0)
         {
             IExecuteWithSignature("setSelectionVisible", "(Z)V", arg0);
@@ -359,7 +359,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setVisible(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetVisible(bool arg0)
         {
             IExecuteWithSignature("setVisible", "(Z)V", arg0);

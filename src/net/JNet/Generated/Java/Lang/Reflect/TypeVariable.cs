@@ -68,12 +68,12 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region TypeVariable<D> declaration
+    #region TypeVariable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
-    /// <typeparam name="D"><see cref="Java.Lang.Reflect.IGenericDeclaration"/></typeparam>
-    public partial class TypeVariable<D> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVariable<D>> where D : Java.Lang.Reflect.IGenericDeclaration, new()
+    /// <typeparam name="D"></typeparam>
+    public partial class TypeVariable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVariable>
     {
         const string _bridgeClassName = "java.lang.reflect.TypeVariable";
         /// <summary>
@@ -121,11 +121,11 @@ namespace Java.Lang.Reflect
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Reflect.TypeVariable"/> to <see cref="Java.Lang.Reflect.Type"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.Type(Java.Lang.Reflect.TypeVariable t) => t.Cast<Java.Lang.Reflect.Type>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Reflect.TypeVariable"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Reflect.TypeVariable t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
 
@@ -179,11 +179,11 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region ITypeVariable<D>
+    #region ITypeVariable
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
-    public partial interface ITypeVariable<D>
+    public partial interface ITypeVariable
     {
         #region Instance methods
         /// <summary>
@@ -213,8 +213,8 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region TypeVariable<D> implementation
-    public partial class TypeVariable<D> : Java.Lang.Reflect.ITypeVariable<D>
+    #region TypeVariable implementation
+    public partial class TypeVariable : Java.Lang.Reflect.ITypeVariable
     {
         #region Constructors
 
@@ -222,17 +222,17 @@ namespace Java.Lang.Reflect
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Reflect.TypeVariable{D}"/> to <see cref="Java.Lang.Reflect.Type"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Reflect.Type(Java.Lang.Reflect.TypeVariable<D> t) => t.Cast<Java.Lang.Reflect.Type>();
+        public static implicit operator Java.Lang.Reflect.Type(Java.Lang.Reflect.TypeVariable t) => t.Cast<Java.Lang.Reflect.Type>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Reflect.TypeVariable{D}"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Reflect.TypeVariable<D> t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
+        public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Reflect.TypeVariable t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Reflect.TypeVariable{D}"/> to <see cref="Java.Lang.Reflect.TypeVariable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Reflect.TypeVariable(Java.Lang.Reflect.TypeVariable<D> t) => t.Cast<Java.Lang.Reflect.TypeVariable>();
+        public static implicit operator Java.Lang.Reflect.TypeVariable(Java.Lang.Reflect.TypeVariable t) => t.Cast<Java.Lang.Reflect.TypeVariable>();
 
         #endregion
 

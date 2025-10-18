@@ -73,7 +73,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DecimalFormatSymbols(Java.Util.Locale arg0)
             : base(arg0)
         {
@@ -83,11 +83,11 @@ namespace Java.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Text.DecimalFormatSymbols"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.DecimalFormatSymbols t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Text.DecimalFormatSymbols"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Text.DecimalFormatSymbols t) => t.Cast<Java.Io.Serializable>();
 
@@ -115,8 +115,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.DecimalFormatSymbols"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.DecimalFormatSymbols GetInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.DecimalFormatSymbols>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/text/DecimalFormatSymbols;", arg0);

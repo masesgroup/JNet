@@ -78,7 +78,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenFilesHandler.html#openFiles(java.awt.desktop.OpenFilesEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenFilesEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void OpenFiles(Java.Awt.DesktopNs.OpenFilesEvent arg0);
 
         #endregion
@@ -114,7 +114,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenFilesHandler.html#openFiles(java.awt.desktop.OpenFilesEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenFilesEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void OpenFiles(Java.Awt.DesktopNs.OpenFilesEvent arg0)
         {
             IExecuteWithSignature("openFiles", "(Ljava/awt/desktop/OpenFilesEvent;)V", arg0);

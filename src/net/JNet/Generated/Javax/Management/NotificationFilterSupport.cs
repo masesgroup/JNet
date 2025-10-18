@@ -75,7 +75,7 @@ namespace Javax.Management
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.NotificationFilterSupport"/> to <see cref="Javax.Management.NotificationFilter"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.NotificationFilter(Javax.Management.NotificationFilterSupport t) => t.Cast<Javax.Management.NotificationFilter>();
 
@@ -93,15 +93,15 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#getEnabledTypes()"/> 
         /// </summary>
-        public Java.Util.Vector<Java.Lang.String> EnabledTypes
+        public Java.Util.Vector EnabledTypes
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Java.Lang.String>>("getEnabledTypes", "()Ljava/util/Vector;"); }
+            get { return IExecuteWithSignature<Java.Util.Vector>("getEnabledTypes", "()Ljava/util/Vector;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#isNotificationEnabled(javax.management.Notification)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsNotificationEnabled(Javax.Management.Notification arg0)
         {
             return IExecuteWithSignature<bool>("isNotificationEnabled", "(Ljavax/management/Notification;)Z", arg0);
@@ -116,7 +116,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#disableType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DisableType(Java.Lang.String arg0)
         {
             IExecuteWithSignature("disableType", "(Ljava/lang/String;)V", arg0);
@@ -124,8 +124,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#enableType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void EnableType(Java.Lang.String arg0)
         {
             IExecuteWithSignature("enableType", "(Ljava/lang/String;)V", arg0);

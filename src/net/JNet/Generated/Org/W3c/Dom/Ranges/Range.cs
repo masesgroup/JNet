@@ -102,116 +102,116 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.DocumentFragment CloneContents();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.DocumentFragment ExtractContents();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.Ranges.Range CloneRange();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#compareBoundaryPoints(short,org.w3c.dom.ranges.Range)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Ranges.Range"/></param>
-        /// <returns><see cref="short"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         short CompareBoundaryPoints(short arg0, Org.W3c.Dom.Ranges.Range arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#collapse(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Collapse(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents()"/>
         /// </summary>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <exception cref=""/>
         void DeleteContents();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach()"/>
         /// </summary>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <exception cref=""/>
         void Detach();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#insertNode(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void InsertNode(Org.W3c.Dom.Node arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNode(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SelectNode(Org.W3c.Dom.Node arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNodeContents(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SelectNodeContents(Org.W3c.Dom.Node arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEnd(org.w3c.dom.Node,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetEnd(Org.W3c.Dom.Node arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndAfter(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetEndAfter(Org.W3c.Dom.Node arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndBefore(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetEndBefore(Org.W3c.Dom.Node arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStart(org.w3c.dom.Node,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetStart(Org.W3c.Dom.Node arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartAfter(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetStartAfter(Org.W3c.Dom.Node arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartBefore(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetStartBefore(Org.W3c.Dom.Node arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#surroundContents(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SurroundContents(Org.W3c.Dom.Node arg0);
 
         #endregion
@@ -313,8 +313,8 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.DocumentFragment CloneContents()
         {
             return IExecuteWithSignature<Org.W3c.Dom.DocumentFragment>("cloneContents", "()Lorg/w3c/dom/DocumentFragment;");
@@ -322,8 +322,8 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.DocumentFragment ExtractContents()
         {
             return IExecuteWithSignature<Org.W3c.Dom.DocumentFragment>("extractContents", "()Lorg/w3c/dom/DocumentFragment;");
@@ -331,8 +331,8 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Ranges.Range CloneRange()
         {
             return IExecuteWithSignature<Org.W3c.Dom.Ranges.Range>("cloneRange", "()Lorg/w3c/dom/ranges/Range;");
@@ -340,10 +340,10 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#compareBoundaryPoints(short,org.w3c.dom.ranges.Range)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Ranges.Range"/></param>
-        /// <returns><see cref="short"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public short CompareBoundaryPoints(short arg0, Org.W3c.Dom.Ranges.Range arg1)
         {
             return IExecuteWithSignature<short>("compareBoundaryPoints", "(SLorg/w3c/dom/ranges/Range;)S", arg0, arg1);
@@ -351,8 +351,8 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#collapse(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Collapse(bool arg0)
         {
             IExecuteWithSignature("collapse", "(Z)V", arg0);
@@ -360,7 +360,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents()"/>
         /// </summary>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <exception cref=""/>
         public void DeleteContents()
         {
             IExecuteWithSignature("deleteContents", "()V");
@@ -368,7 +368,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach()"/>
         /// </summary>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <exception cref=""/>
         public void Detach()
         {
             IExecuteWithSignature("detach", "()V");
@@ -376,9 +376,9 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#insertNode(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void InsertNode(Org.W3c.Dom.Node arg0)
         {
             IExecuteWithSignature("insertNode", "(Lorg/w3c/dom/Node;)V", arg0);
@@ -386,9 +386,9 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNode(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SelectNode(Org.W3c.Dom.Node arg0)
         {
             IExecuteWithSignature("selectNode", "(Lorg/w3c/dom/Node;)V", arg0);
@@ -396,9 +396,9 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNodeContents(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SelectNodeContents(Org.W3c.Dom.Node arg0)
         {
             IExecuteWithSignature("selectNodeContents", "(Lorg/w3c/dom/Node;)V", arg0);
@@ -406,10 +406,10 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEnd(org.w3c.dom.Node,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetEnd(Org.W3c.Dom.Node arg0, int arg1)
         {
             IExecuteWithSignature("setEnd", "(Lorg/w3c/dom/Node;I)V", arg0, arg1);
@@ -417,9 +417,9 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndAfter(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetEndAfter(Org.W3c.Dom.Node arg0)
         {
             IExecuteWithSignature("setEndAfter", "(Lorg/w3c/dom/Node;)V", arg0);
@@ -427,9 +427,9 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndBefore(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetEndBefore(Org.W3c.Dom.Node arg0)
         {
             IExecuteWithSignature("setEndBefore", "(Lorg/w3c/dom/Node;)V", arg0);
@@ -437,10 +437,10 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStart(org.w3c.dom.Node,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetStart(Org.W3c.Dom.Node arg0, int arg1)
         {
             IExecuteWithSignature("setStart", "(Lorg/w3c/dom/Node;I)V", arg0, arg1);
@@ -448,9 +448,9 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartAfter(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetStartAfter(Org.W3c.Dom.Node arg0)
         {
             IExecuteWithSignature("setStartAfter", "(Lorg/w3c/dom/Node;)V", arg0);
@@ -458,9 +458,9 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartBefore(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetStartBefore(Org.W3c.Dom.Node arg0)
         {
             IExecuteWithSignature("setStartBefore", "(Lorg/w3c/dom/Node;)V", arg0);
@@ -468,9 +468,9 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#surroundContents(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SurroundContents(Org.W3c.Dom.Node arg0)
         {
             IExecuteWithSignature("surroundContents", "(Lorg/w3c/dom/Node;)V", arg0);

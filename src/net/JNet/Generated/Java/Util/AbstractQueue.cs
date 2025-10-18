@@ -68,12 +68,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractQueue<E> declaration
+    #region AbstractQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class AbstractQueue<E> : Java.Util.AbstractCollection<E>
+    public partial class AbstractQueue : Java.Util.AbstractCollection
     {
         const string _bridgeClassName = "java.util.AbstractQueue";
         /// <summary>
@@ -121,7 +121,7 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractQueue"/> to <see cref="Java.Util.Queue"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Queue(Java.Util.AbstractQueue t) => t.Cast<Java.Util.Queue>();
 
@@ -139,7 +139,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Element()
         {
             return IExecuteWithSignature("element", "()Ljava/lang/Object;");
@@ -147,7 +147,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Remove()
         {
             return IExecuteWithSignature("remove", "()Ljava/lang/Object;");
@@ -163,8 +163,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractQueue<E> implementation
-    public partial class AbstractQueue<E>
+    #region AbstractQueue implementation
+    public partial class AbstractQueue
     {
         #region Constructors
 
@@ -172,13 +172,13 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractQueue{E}"/> to <see cref="Java.Util.Queue{E}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Queue<E>(Java.Util.AbstractQueue<E> t) => t.Cast<Java.Util.Queue<E>>();
+        public static implicit operator Java.Util.Queue(Java.Util.AbstractQueue t) => t.Cast<Java.Util.Queue>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractQueue{E}"/> to <see cref="Java.Util.AbstractQueue"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.AbstractQueue(Java.Util.AbstractQueue<E> t) => t.Cast<Java.Util.AbstractQueue>();
+        public static implicit operator Java.Util.AbstractQueue(Java.Util.AbstractQueue t) => t.Cast<Java.Util.AbstractQueue>();
 
         #endregion
 
@@ -194,7 +194,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Element()
         {
             return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
@@ -202,7 +202,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Remove()
         {
             return IExecuteWithSignature<E>("remove", "()Ljava/lang/Object;");

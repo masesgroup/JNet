@@ -138,8 +138,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getIcon(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Image"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Image GetIcon(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Image>("getIcon", "(I)Ljava/awt/Image;", arg0);
@@ -147,8 +147,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#loadImage(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Awt.Image"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Image LoadImage(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Awt.Image>("loadImage", "(Ljava/lang/String;)Ljava/awt/Image;", arg0);

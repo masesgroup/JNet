@@ -86,39 +86,39 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#loop(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Loop(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioFormat,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         void Open(Javax.Sound.Sampled.AudioFormat arg0, byte[] arg1, int arg2, int arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void Open(Javax.Sound.Sampled.AudioInputStream arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setFramePosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetFramePosition(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setLoopPoints(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void SetLoopPoints(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setMicrosecondPosition(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetMicrosecondPosition(long arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#loop(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Loop(int arg0)
         {
             IExecuteWithSignature("loop", "(I)V", arg0);
@@ -182,11 +182,11 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioFormat,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Open(Javax.Sound.Sampled.AudioFormat arg0, byte[] arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("open", "(Ljavax/sound/sampled/AudioFormat;[BII)V", arg0, arg1, arg2, arg3);
@@ -194,9 +194,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Open(Javax.Sound.Sampled.AudioInputStream arg0)
         {
             IExecuteWithSignature("open", "(Ljavax/sound/sampled/AudioInputStream;)V", arg0);
@@ -204,7 +204,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setFramePosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetFramePosition(int arg0)
         {
             IExecuteWithSignature("setFramePosition", "(I)V", arg0);
@@ -212,8 +212,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setLoopPoints(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetLoopPoints(int arg0, int arg1)
         {
             IExecuteWithSignature("setLoopPoints", "(II)V", arg0, arg1);
@@ -221,7 +221,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setMicrosecondPosition(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMicrosecondPosition(long arg0)
         {
             IExecuteWithSignature("setMicrosecondPosition", "(J)V", arg0);

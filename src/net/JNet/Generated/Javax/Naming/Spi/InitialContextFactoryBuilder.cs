@@ -78,10 +78,10 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/InitialContextFactoryBuilder.html#createInitialContextFactory(java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.InitialContextFactory"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        Javax.Naming.Spi.InitialContextFactory CreateInitialContextFactory(Java.Util.Hashtable<object, object> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Javax.Naming.Spi.InitialContextFactory CreateInitialContextFactory(Java.Util.Hashtable<, > arg0);
 
         #endregion
 
@@ -116,10 +116,10 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/InitialContextFactoryBuilder.html#createInitialContextFactory(java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.InitialContextFactory"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.Spi.InitialContextFactory CreateInitialContextFactory(Java.Util.Hashtable<object, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Javax.Naming.Spi.InitialContextFactory CreateInitialContextFactory(Java.Util.Hashtable<, > arg0)
         {
             return IExecuteWithSignature<Javax.Naming.Spi.InitialContextFactory>("createInitialContextFactory", "(Ljava/util/Hashtable;)Ljavax/naming/spi/InitialContextFactory;", arg0);
         }

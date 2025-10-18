@@ -73,9 +73,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#%3Cinit%3E(javax.management.MBeanServerConnection,javax.management.ObjectName,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public MBeanServerInvocationHandler(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#%3Cinit%3E(javax.management.MBeanServerConnection,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public MBeanServerInvocationHandler(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1)
             : base(arg0, arg1)
         {
@@ -104,13 +104,13 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#newProxyInstance(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T NewProxyInstance<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
+        /// <returns><see cref=""/></returns>
+        public static T NewProxyInstance(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "newProxyInstance", "(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/Class;Z)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
@@ -135,7 +135,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#isMXBean()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMXBean()
         {
             return IExecuteWithSignature<bool>("isMXBean", "()Z");
@@ -143,11 +143,11 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Throwable"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {
             return IExecuteWithSignature("invoke", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);

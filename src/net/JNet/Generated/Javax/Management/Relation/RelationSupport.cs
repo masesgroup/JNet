@@ -73,12 +73,12 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#%3Cinit%3E(java.lang.String,javax.management.ObjectName,java.lang.String,javax.management.relation.RoleList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Javax.Management.Relation.RoleList"/></param>
-        /// <exception cref="Javax.Management.Relation.InvalidRoleValueException"/>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public RelationSupport(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Java.Lang.String arg2, Javax.Management.Relation.RoleList arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -86,13 +86,13 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#%3Cinit%3E(java.lang.String,javax.management.ObjectName,javax.management.MBeanServer,java.lang.String,javax.management.relation.RoleList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.MBeanServer"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Javax.Management.Relation.RoleList"/></param>
-        /// <exception cref="Javax.Management.Relation.InvalidRoleValueException"/>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public RelationSupport(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.MBeanServer arg2, Java.Lang.String arg3, Javax.Management.Relation.RoleList arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -102,11 +102,11 @@ namespace Javax.Management.Relation
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Relation.RelationSupport"/> to <see cref="Javax.Management.Relation.RelationSupportMBean"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Relation.RelationSupportMBean(Javax.Management.Relation.RelationSupport t) => t.Cast<Javax.Management.Relation.RelationSupportMBean>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Relation.RelationSupport"/> to <see cref="Javax.Management.MBeanRegistration"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Relation.RelationSupport t) => t.Cast<Javax.Management.MBeanRegistration>();
 
@@ -131,9 +131,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getReferencedMBeans()"/> 
         /// </summary>
-        public Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<Java.Lang.String>> ReferencedMBeans
+        public Java.Util.Map<, > ReferencedMBeans
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<Java.Lang.String>>>("getReferencedMBeans", "()Ljava/util/Map;"); }
+            get { return IExecuteWithSignature<Java.Util.Map<, >>("getReferencedMBeans", "()Ljava/util/Map;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRelationId()"/> 
@@ -159,7 +159,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#isInRelationService()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Boolean IsInRelationService()
         {
             return IExecuteWithSignature<Java.Lang.Boolean>("isInRelationService", "()Ljava/lang/Boolean;");
@@ -167,10 +167,10 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRoleCardinality(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Integer"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Lang.Integer GetRoleCardinality(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.Integer>("getRoleCardinality", "(Ljava/lang/String;)Ljava/lang/Integer;", arg0);
@@ -178,22 +178,22 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRole(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
-        /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
-        public Java.Util.List<Javax.Management.ObjectName> GetRole(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        public Java.Util.List GetRole(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Javax.Management.ObjectName>>("getRole", "(Ljava/lang/String;)Ljava/util/List;", arg0);
+            return IExecuteWithSignature<Java.Util.List>("getRole", "(Ljava/lang/String;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
             return IExecuteWithSignature<Javax.Management.ObjectName>("preRegister", "(Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", arg0, arg1);
@@ -201,7 +201,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#retrieveAllRoles()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Management.Relation.RoleList"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Management.Relation.RoleList RetrieveAllRoles()
         {
             return IExecuteWithSignature<Javax.Management.Relation.RoleList>("retrieveAllRoles", "()Ljavax/management/relation/RoleList;");
@@ -209,10 +209,10 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRoles(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Relation.RoleResult"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.Relation.RoleResult GetRoles(Java.Lang.String[] arg0)
         {
             return IExecuteWithSignature<Javax.Management.Relation.RoleResult>("getRoles", "([Ljava/lang/String;)Ljavax/management/relation/RoleResult;", new object[] { arg0 });
@@ -220,12 +220,12 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#setRoles(javax.management.relation.RoleList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Relation.RoleList"/></param>
-        /// <returns><see cref="Javax.Management.Relation.RoleResult"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
-        /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
-        /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.Relation.RoleResult SetRoles(Javax.Management.Relation.RoleList arg0)
         {
             return IExecuteWithSignature<Javax.Management.Relation.RoleResult>("setRoles", "(Ljavax/management/relation/RoleList;)Ljavax/management/relation/RoleResult;", arg0);
@@ -233,14 +233,14 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#handleMBeanUnregistration(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
-        /// <exception cref="Javax.Management.Relation.InvalidRoleValueException"/>
-        /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
-        /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
-        /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void HandleMBeanUnregistration(Javax.Management.ObjectName arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("handleMBeanUnregistration", "(Ljavax/management/ObjectName;Ljava/lang/String;)V", arg0, arg1);
@@ -255,7 +255,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PostRegister(Java.Lang.Boolean arg0)
         {
             IExecuteWithSignature("postRegister", "(Ljava/lang/Boolean;)V", arg0);
@@ -263,7 +263,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#preDeregister()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <exception cref=""/>
         public void PreDeregister()
         {
             IExecuteWithSignature("preDeregister", "()V");
@@ -271,8 +271,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetRelationServiceManagementFlag(Java.Lang.Boolean arg0)
         {
             IExecuteWithSignature("setRelationServiceManagementFlag", "(Ljava/lang/Boolean;)V", arg0);
@@ -280,13 +280,13 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#setRole(javax.management.relation.Role)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Relation.Role"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
-        /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
-        /// <exception cref="Javax.Management.Relation.InvalidRoleValueException"/>
-        /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
-        /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetRole(Javax.Management.Relation.Role arg0)
         {
             IExecuteWithSignature("setRole", "(Ljavax/management/relation/Role;)V", arg0);

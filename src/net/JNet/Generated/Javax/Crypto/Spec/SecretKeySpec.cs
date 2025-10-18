@@ -73,10 +73,10 @@ namespace Javax.Crypto.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/SecretKeySpec.html#%3Cinit%3E(byte[],int,int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public SecretKeySpec(byte[] arg0, int arg1, int arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,8 +84,8 @@ namespace Javax.Crypto.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/SecretKeySpec.html#%3Cinit%3E(byte[],java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public SecretKeySpec(byte[] arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -95,11 +95,11 @@ namespace Javax.Crypto.Spec
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Crypto.Spec.SecretKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Javax.Crypto.Spec.SecretKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
         /// <summary>
-        /// Converter from <see cref="Javax.Crypto.Spec.SecretKeySpec"/> to <see cref="Javax.Crypto.SecretKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Crypto.SecretKey(Javax.Crypto.Spec.SecretKeySpec t) => t.Cast<Javax.Crypto.SecretKey>();
 

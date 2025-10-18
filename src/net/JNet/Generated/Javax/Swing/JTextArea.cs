@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JTextArea(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -82,9 +82,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#%3Cinit%3E(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JTextArea(Java.Lang.String arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -92,7 +92,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JTextArea(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -100,10 +100,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#%3Cinit%3E(javax.swing.text.Document,java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Document"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public JTextArea(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -111,7 +111,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#%3Cinit%3E(javax.swing.text.Document)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Document"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JTextArea(Javax.Swing.Text.Document arg0)
             : base(arg0)
         {
@@ -177,9 +177,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getLineEndOffset(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int GetLineEndOffset(int arg0)
         {
             return IExecuteWithSignature<int>("getLineEndOffset", "(I)I", arg0);
@@ -187,9 +187,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getLineOfOffset(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int GetLineOfOffset(int arg0)
         {
             return IExecuteWithSignature<int>("getLineOfOffset", "(I)I", arg0);
@@ -197,9 +197,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#getLineStartOffset(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int GetLineStartOffset(int arg0)
         {
             return IExecuteWithSignature<int>("getLineStartOffset", "(I)I", arg0);
@@ -207,7 +207,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#append(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Append(Java.Lang.String arg0)
         {
             IExecuteWithSignature("append", "(Ljava/lang/String;)V", arg0);
@@ -215,8 +215,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#insert(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Insert(Java.Lang.String arg0, int arg1)
         {
             IExecuteWithSignature("insert", "(Ljava/lang/String;I)V", arg0, arg1);
@@ -224,9 +224,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#replaceRange(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void ReplaceRange(Java.Lang.String arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("replaceRange", "(Ljava/lang/String;II)V", arg0, arg1, arg2);

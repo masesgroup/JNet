@@ -73,10 +73,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#%3Cinit%3E(int,int,int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public SizeRequirements(int arg0, int arg1, int arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -112,9 +112,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#adjustSizes(int,javax.swing.SizeRequirements[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int[] AdjustSizes(int arg0, Javax.Swing.SizeRequirements[] arg1)
         {
             return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "adjustSizes", "(I[Ljavax/swing/SizeRequirements;)[I", arg0, arg1);
@@ -122,8 +122,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#getAlignedSizeRequirements(javax.swing.SizeRequirements[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <returns><see cref="Javax.Swing.SizeRequirements"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.SizeRequirements GetAlignedSizeRequirements(Javax.Swing.SizeRequirements[] arg0)
         {
             return SExecuteWithSignature<Javax.Swing.SizeRequirements>(LocalBridgeClazz, "getAlignedSizeRequirements", "([Ljavax/swing/SizeRequirements;)Ljavax/swing/SizeRequirements;", new object[] { arg0 });
@@ -131,8 +131,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#getTiledSizeRequirements(javax.swing.SizeRequirements[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <returns><see cref="Javax.Swing.SizeRequirements"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.SizeRequirements GetTiledSizeRequirements(Javax.Swing.SizeRequirements[] arg0)
         {
             return SExecuteWithSignature<Javax.Swing.SizeRequirements>(LocalBridgeClazz, "getTiledSizeRequirements", "([Ljavax/swing/SizeRequirements;)Ljavax/swing/SizeRequirements;", new object[] { arg0 });
@@ -140,12 +140,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public static void CalculateAlignedPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4, bool arg5)
         {
             SExecuteWithSignature(LocalBridgeClazz, "calculateAlignedPositions", "(ILjavax/swing/SizeRequirements;[Ljavax/swing/SizeRequirements;[I[IZ)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -153,11 +153,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public static void CalculateAlignedPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4)
         {
             SExecuteWithSignature(LocalBridgeClazz, "calculateAlignedPositions", "(ILjavax/swing/SizeRequirements;[Ljavax/swing/SizeRequirements;[I[I)V", arg0, arg1, arg2, arg3, arg4);
@@ -165,12 +165,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateTiledPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public static void CalculateTiledPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4, bool arg5)
         {
             SExecuteWithSignature(LocalBridgeClazz, "calculateTiledPositions", "(ILjavax/swing/SizeRequirements;[Ljavax/swing/SizeRequirements;[I[IZ)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -178,11 +178,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateTiledPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public static void CalculateTiledPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4)
         {
             SExecuteWithSignature(LocalBridgeClazz, "calculateTiledPositions", "(ILjavax/swing/SizeRequirements;[Ljavax/swing/SizeRequirements;[I[I)V", arg0, arg1, arg2, arg3, arg4);

@@ -73,12 +73,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#%3Cinit%3E(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <param name="arg5"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public AffineTransform(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -86,7 +86,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#%3Cinit%3E(double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AffineTransform(double[] arg0)
             : base(arg0)
         {
@@ -94,12 +94,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#%3Cinit%3E(float,float,float,float,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
-        /// <param name="arg4"><see cref="float"/></param>
-        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public AffineTransform(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -107,7 +107,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#%3Cinit%3E(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AffineTransform(float[] arg0)
             : base(arg0)
         {
@@ -115,7 +115,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#%3Cinit%3E(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AffineTransform(Java.Awt.Geom.AffineTransform arg0)
             : base(arg0)
         {
@@ -125,11 +125,11 @@ namespace Java.Awt.Geom
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Geom.AffineTransform"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.AffineTransform t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Geom.AffineTransform"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Geom.AffineTransform t) => t.Cast<Java.Io.Serializable>();
 
@@ -203,10 +203,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getQuadrantRotateInstance(int,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Geom.AffineTransform GetQuadrantRotateInstance(int arg0, double arg1, double arg2)
         {
             return SExecuteWithSignature<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getQuadrantRotateInstance", "(IDD)Ljava/awt/geom/AffineTransform;", arg0, arg1, arg2);
@@ -214,8 +214,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getQuadrantRotateInstance(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Geom.AffineTransform GetQuadrantRotateInstance(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getQuadrantRotateInstance", "(I)Ljava/awt/geom/AffineTransform;", arg0);
@@ -223,11 +223,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0, double arg1, double arg2, double arg3)
         {
             return SExecuteWithSignature<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getRotateInstance", "(DDDD)Ljava/awt/geom/AffineTransform;", arg0, arg1, arg2, arg3);
@@ -235,10 +235,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0, double arg1, double arg2)
         {
             return SExecuteWithSignature<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getRotateInstance", "(DDD)Ljava/awt/geom/AffineTransform;", arg0, arg1, arg2);
@@ -246,9 +246,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0, double arg1)
         {
             return SExecuteWithSignature<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getRotateInstance", "(DD)Ljava/awt/geom/AffineTransform;", arg0, arg1);
@@ -256,8 +256,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0)
         {
             return SExecuteWithSignature<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getRotateInstance", "(D)Ljava/awt/geom/AffineTransform;", arg0);
@@ -265,9 +265,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getScaleInstance(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Geom.AffineTransform GetScaleInstance(double arg0, double arg1)
         {
             return SExecuteWithSignature<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getScaleInstance", "(DD)Ljava/awt/geom/AffineTransform;", arg0, arg1);
@@ -275,9 +275,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getShearInstance(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Geom.AffineTransform GetShearInstance(double arg0, double arg1)
         {
             return SExecuteWithSignature<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getShearInstance", "(DD)Ljava/awt/geom/AffineTransform;", arg0, arg1);
@@ -285,9 +285,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getTranslateInstance(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Geom.AffineTransform GetTranslateInstance(double arg0, double arg1)
         {
             return SExecuteWithSignature<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getTranslateInstance", "(DD)Ljava/awt/geom/AffineTransform;", arg0, arg1);
@@ -355,7 +355,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#isIdentity()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsIdentity()
         {
             return IExecuteWithSignature<bool>("isIdentity", "()Z");
@@ -363,8 +363,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#createInverse()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
-        /// <exception cref="Java.Awt.Geom.NoninvertibleTransformException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Awt.Geom.AffineTransform CreateInverse()
         {
             return IExecuteWithSignature<Java.Awt.Geom.AffineTransform>("createInverse", "()Ljava/awt/geom/AffineTransform;");
@@ -372,9 +372,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#deltaTransform(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Point2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Point2D DeltaTransform(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Point2D>("deltaTransform", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;", arg0, arg1);
@@ -382,10 +382,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#inverseTransform(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Point2D"/></returns>
-        /// <exception cref="Java.Awt.Geom.NoninvertibleTransformException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Awt.Geom.Point2D InverseTransform(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Point2D>("inverseTransform", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;", arg0, arg1);
@@ -393,9 +393,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#transform(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Point2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Point2D Transform(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Point2D>("transform", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;", arg0, arg1);
@@ -403,8 +403,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#createTransformedShape(java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
-        /// <returns><see cref="Java.Awt.Shape"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Shape CreateTransformedShape(Java.Awt.Shape arg0)
         {
             return IExecuteWithSignature<Java.Awt.Shape>("createTransformedShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;", arg0);
@@ -412,7 +412,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#concatenate(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Concatenate(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecuteWithSignature("concatenate", "(Ljava/awt/geom/AffineTransform;)V", arg0);
@@ -420,11 +420,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#deltaTransform(double[],int,double[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void DeltaTransform(double[] arg0, int arg1, double[] arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("deltaTransform", "([DI[DII)V", arg0, arg1, arg2, arg3, arg4);
@@ -432,7 +432,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getMatrix(double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void GetMatrix(double[] arg0)
         {
             IExecuteWithSignature("getMatrix", "([D)V", new object[] { arg0 });
@@ -440,12 +440,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#inverseTransform(double[],int,double[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <exception cref="Java.Awt.Geom.NoninvertibleTransformException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         public void InverseTransform(double[] arg0, int arg1, double[] arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("inverseTransform", "([DI[DII)V", arg0, arg1, arg2, arg3, arg4);
@@ -453,7 +453,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#invert()"/>
         /// </summary>
-        /// <exception cref="Java.Awt.Geom.NoninvertibleTransformException"/>
+        /// <exception cref=""/>
         public void Invert()
         {
             IExecuteWithSignature("invert", "()V");
@@ -461,7 +461,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#preConcatenate(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PreConcatenate(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecuteWithSignature("preConcatenate", "(Ljava/awt/geom/AffineTransform;)V", arg0);
@@ -469,9 +469,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#quadrantRotate(int,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void QuadrantRotate(int arg0, double arg1, double arg2)
         {
             IExecuteWithSignature("quadrantRotate", "(IDD)V", arg0, arg1, arg2);
@@ -479,7 +479,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#quadrantRotate(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void QuadrantRotate(int arg0)
         {
             IExecuteWithSignature("quadrantRotate", "(I)V", arg0);
@@ -487,10 +487,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#rotate(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void Rotate(double arg0, double arg1, double arg2, double arg3)
         {
             IExecuteWithSignature("rotate", "(DDDD)V", arg0, arg1, arg2, arg3);
@@ -498,9 +498,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#rotate(double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Rotate(double arg0, double arg1, double arg2)
         {
             IExecuteWithSignature("rotate", "(DDD)V", arg0, arg1, arg2);
@@ -508,8 +508,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#rotate(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Rotate(double arg0, double arg1)
         {
             IExecuteWithSignature("rotate", "(DD)V", arg0, arg1);
@@ -517,7 +517,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#rotate(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Rotate(double arg0)
         {
             IExecuteWithSignature("rotate", "(D)V", arg0);
@@ -525,8 +525,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#scale(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Scale(double arg0, double arg1)
         {
             IExecuteWithSignature("scale", "(DD)V", arg0, arg1);
@@ -541,9 +541,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setToQuadrantRotation(int,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void SetToQuadrantRotation(int arg0, double arg1, double arg2)
         {
             IExecuteWithSignature("setToQuadrantRotation", "(IDD)V", arg0, arg1, arg2);
@@ -551,7 +551,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setToQuadrantRotation(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetToQuadrantRotation(int arg0)
         {
             IExecuteWithSignature("setToQuadrantRotation", "(I)V", arg0);
@@ -559,10 +559,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setToRotation(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetToRotation(double arg0, double arg1, double arg2, double arg3)
         {
             IExecuteWithSignature("setToRotation", "(DDDD)V", arg0, arg1, arg2, arg3);
@@ -570,9 +570,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setToRotation(double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void SetToRotation(double arg0, double arg1, double arg2)
         {
             IExecuteWithSignature("setToRotation", "(DDD)V", arg0, arg1, arg2);
@@ -580,8 +580,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setToRotation(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetToRotation(double arg0, double arg1)
         {
             IExecuteWithSignature("setToRotation", "(DD)V", arg0, arg1);
@@ -589,7 +589,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setToRotation(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetToRotation(double arg0)
         {
             IExecuteWithSignature("setToRotation", "(D)V", arg0);
@@ -597,8 +597,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setToScale(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetToScale(double arg0, double arg1)
         {
             IExecuteWithSignature("setToScale", "(DD)V", arg0, arg1);
@@ -606,8 +606,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setToShear(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetToShear(double arg0, double arg1)
         {
             IExecuteWithSignature("setToShear", "(DD)V", arg0, arg1);
@@ -615,8 +615,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setToTranslation(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetToTranslation(double arg0, double arg1)
         {
             IExecuteWithSignature("setToTranslation", "(DD)V", arg0, arg1);
@@ -624,12 +624,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setTransform(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <param name="arg5"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void SetTransform(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
             IExecuteWithSignature("setTransform", "(DDDDDD)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -637,7 +637,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#setTransform(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetTransform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecuteWithSignature("setTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
@@ -645,8 +645,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#shear(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Shear(double arg0, double arg1)
         {
             IExecuteWithSignature("shear", "(DD)V", arg0, arg1);
@@ -654,11 +654,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#transform(double[],int,double[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void Transform(double[] arg0, int arg1, double[] arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("transform", "([DI[DII)V", arg0, arg1, arg2, arg3, arg4);
@@ -666,11 +666,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#transform(double[],int,float[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void Transform(double[] arg0, int arg1, float[] arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("transform", "([DI[FII)V", arg0, arg1, arg2, arg3, arg4);
@@ -678,11 +678,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#transform(float[],int,double[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void Transform(float[] arg0, int arg1, double[] arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("transform", "([FI[DII)V", arg0, arg1, arg2, arg3, arg4);
@@ -690,11 +690,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#transform(float[],int,float[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void Transform(float[] arg0, int arg1, float[] arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("transform", "([FI[FII)V", arg0, arg1, arg2, arg3, arg4);
@@ -702,11 +702,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#transform(java.awt.geom.Point2D[],int,java.awt.geom.Point2D[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void Transform(Java.Awt.Geom.Point2D[] arg0, int arg1, Java.Awt.Geom.Point2D[] arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("transform", "([Ljava/awt/geom/Point2D;I[Ljava/awt/geom/Point2D;II)V", arg0, arg1, arg2, arg3, arg4);
@@ -714,8 +714,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#translate(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Translate(double arg0, double arg1)
         {
             IExecuteWithSignature("translate", "(DD)V", arg0, arg1);

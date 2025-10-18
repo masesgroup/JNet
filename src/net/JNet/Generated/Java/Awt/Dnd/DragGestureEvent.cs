@@ -73,10 +73,10 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#%3Cinit%3E(java.awt.dnd.DragGestureRecognizer,int,java.awt.Point,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureRecognizer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Point"/></param>
-        /// <param name="arg3"><see cref="Java.Util.List"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public DragGestureEvent(Java.Awt.Dnd.DragGestureRecognizer arg0, int arg1, Java.Awt.Point arg2, Java.Util.List arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -142,7 +142,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object[] ToArray()
         {
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
@@ -150,8 +150,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#toArray(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object[] ToArray(object[] arg0)
         {
             return IExecuteWithSignatureArray<object>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
@@ -159,18 +159,18 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Awt.EventNs.InputEvent> Iterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Awt.EventNs.InputEvent>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#startDrag(java.awt.Cursor,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Cursor"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Dnd.DragSourceListener"/></param>
-        /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void StartDrag(Java.Awt.Cursor arg0, Java.Awt.Datatransfer.Transferable arg1, Java.Awt.Dnd.DragSourceListener arg2)
         {
             IExecuteWithSignature("startDrag", "(Ljava/awt/Cursor;Ljava/awt/datatransfer/Transferable;Ljava/awt/dnd/DragSourceListener;)V", arg0, arg1, arg2);
@@ -178,9 +178,9 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#startDrag(java.awt.Cursor,java.awt.datatransfer.Transferable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Cursor"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
-        /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void StartDrag(Java.Awt.Cursor arg0, Java.Awt.Datatransfer.Transferable arg1)
         {
             IExecuteWithSignature("startDrag", "(Ljava/awt/Cursor;Ljava/awt/datatransfer/Transferable;)V", arg0, arg1);
@@ -188,12 +188,12 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#startDrag(java.awt.Cursor,java.awt.Image,java.awt.Point,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Cursor"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Point"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Dnd.DragSourceListener"/></param>
-        /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         public void StartDrag(Java.Awt.Cursor arg0, Java.Awt.Image arg1, Java.Awt.Point arg2, Java.Awt.Datatransfer.Transferable arg3, Java.Awt.Dnd.DragSourceListener arg4)
         {
             IExecuteWithSignature("startDrag", "(Ljava/awt/Cursor;Ljava/awt/Image;Ljava/awt/Point;Ljava/awt/datatransfer/Transferable;Ljava/awt/dnd/DragSourceListener;)V", arg0, arg1, arg2, arg3, arg4);

@@ -343,7 +343,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#usingProxy()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool UsingProxy()
         {
             return IExecuteWithSignature<bool>("usingProxy", "()Z");
@@ -358,7 +358,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setAuthenticator(java.net.Authenticator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.Authenticator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetAuthenticator(Java.Net.Authenticator arg0)
         {
             IExecuteWithSignature("setAuthenticator", "(Ljava/net/Authenticator;)V", arg0);
@@ -366,7 +366,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setChunkedStreamingMode(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetChunkedStreamingMode(int arg0)
         {
             IExecuteWithSignature("setChunkedStreamingMode", "(I)V", arg0);
@@ -374,7 +374,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setFixedLengthStreamingMode(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetFixedLengthStreamingMode(int arg0)
         {
             IExecuteWithSignature("setFixedLengthStreamingMode", "(I)V", arg0);
@@ -382,7 +382,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#setFixedLengthStreamingMode(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetFixedLengthStreamingMode(long arg0)
         {
             IExecuteWithSignature("setFixedLengthStreamingMode", "(J)V", arg0);

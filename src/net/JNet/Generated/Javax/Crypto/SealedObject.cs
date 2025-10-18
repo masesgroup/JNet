@@ -73,10 +73,10 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#%3Cinit%3E(java.io.Serializable,javax.crypto.Cipher)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Serializable"/></param>
-        /// <param name="arg1"><see cref="Javax.Crypto.Cipher"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public SealedObject(Java.Io.Serializable arg0, Javax.Crypto.Cipher arg1)
             : base(arg0, arg1)
         {
@@ -107,14 +107,14 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(java.security.Key,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object GetObject(Java.Security.Key arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature("getObject", "(Ljava/security/Key;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
@@ -122,12 +122,12 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(java.security.Key)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object GetObject(Java.Security.Key arg0)
         {
             return IExecuteWithSignature("getObject", "(Ljava/security/Key;)Ljava/lang/Object;", arg0);
@@ -135,12 +135,12 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(javax.crypto.Cipher)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Crypto.Cipher"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
-        /// <exception cref="Javax.Crypto.BadPaddingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object GetObject(Javax.Crypto.Cipher arg0)
         {
             return IExecuteWithSignature("getObject", "(Ljavax/crypto/Cipher;)Ljava/lang/Object;", arg0);

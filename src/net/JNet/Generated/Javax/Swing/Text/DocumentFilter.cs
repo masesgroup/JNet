@@ -132,11 +132,11 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.html#insertString(javax.swing.text.DocumentFilter.FilterBypass,int,java.lang.String,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.DocumentFilter.FilterBypass"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public void InsertString(Javax.Swing.Text.DocumentFilter.FilterBypass arg0, int arg1, Java.Lang.String arg2, Javax.Swing.Text.AttributeSet arg3)
         {
             IExecuteWithSignature("insertString", "(Ljavax/swing/text/DocumentFilter$FilterBypass;ILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2, arg3);
@@ -144,10 +144,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.html#remove(javax.swing.text.DocumentFilter.FilterBypass,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.DocumentFilter.FilterBypass"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Remove(Javax.Swing.Text.DocumentFilter.FilterBypass arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("remove", "(Ljavax/swing/text/DocumentFilter$FilterBypass;II)V", arg0, arg1, arg2);
@@ -155,12 +155,12 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.html#replace(javax.swing.text.DocumentFilter.FilterBypass,int,int,java.lang.String,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.DocumentFilter.FilterBypass"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Replace(Javax.Swing.Text.DocumentFilter.FilterBypass arg0, int arg1, int arg2, Java.Lang.String arg3, Javax.Swing.Text.AttributeSet arg4)
         {
             IExecuteWithSignature("replace", "(Ljavax/swing/text/DocumentFilter$FilterBypass;IILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2, arg3, arg4);
@@ -199,10 +199,10 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html#insertString(int,java.lang.String,javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <exception cref=""/>
             public void InsertString(int arg0, Java.Lang.String arg1, Javax.Swing.Text.AttributeSet arg2)
             {
                 IExecuteWithSignature("insertString", "(ILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2);
@@ -210,9 +210,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html#remove(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <exception cref=""/>
             public void Remove(int arg0, int arg1)
             {
                 IExecuteWithSignature("remove", "(II)V", arg0, arg1);
@@ -220,11 +220,11 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DocumentFilter.FilterBypass.html#replace(int,int,java.lang.String,javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg3"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <exception cref=""/>
             public void Replace(int arg0, int arg1, Java.Lang.String arg2, Javax.Swing.Text.AttributeSet arg3)
             {
                 IExecuteWithSignature("replace", "(IILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2, arg3);

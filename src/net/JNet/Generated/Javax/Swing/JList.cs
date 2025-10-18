@@ -107,12 +107,12 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JList<E> declaration
+    #region JList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class JList<E> : Javax.Swing.JComponent
+    public partial class JList : Javax.Swing.JComponent
     {
         const string _bridgeClassName = "javax.swing.JList";
         /// <summary>
@@ -156,7 +156,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#%3Cinit%3E(java.util.Vector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JList(Java.Util.Vector arg0)
             : base(arg0)
         {
@@ -164,7 +164,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#%3Cinit%3E(javax.swing.ListModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.ListModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JList(Javax.Swing.ListModel arg0)
             : base(arg0)
         {
@@ -174,11 +174,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JList"/> to <see cref="Javax.Swing.Scrollable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JList t) => t.Cast<Javax.Swing.Scrollable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JList"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JList t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -417,8 +417,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectedIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSelectedIndex(int arg0)
         {
             return IExecuteWithSignature<bool>("isSelectedIndex", "(I)Z", arg0);
@@ -426,7 +426,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSelectionEmpty()
         {
             return IExecuteWithSignature<bool>("isSelectionEmpty", "()Z");
@@ -434,10 +434,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetNextMatch(Java.Lang.String arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
             return IExecuteWithSignature<int>("getNextMatch", "(Ljava/lang/String;ILjavax/swing/text/Position$Bias;)I", arg0, arg1, arg2);
@@ -445,10 +445,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
@@ -456,10 +456,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
@@ -467,8 +467,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#locationToIndex(java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LocationToIndex(Java.Awt.Point arg0)
         {
             return IExecuteWithSignature<int>("locationToIndex", "(Ljava/awt/Point;)I", arg0);
@@ -476,8 +476,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#indexToLocation(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Point"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Point IndexToLocation(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Point>("indexToLocation", "(I)Ljava/awt/Point;", arg0);
@@ -485,9 +485,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellBounds(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Rectangle GetCellBounds(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getCellBounds", "(II)Ljava/awt/Rectangle;", arg0, arg1);
@@ -495,7 +495,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
             IExecuteWithSignature("addListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
@@ -503,8 +503,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#addSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("addSelectionInterval", "(II)V", arg0, arg1);
@@ -519,7 +519,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#ensureIndexIsVisible(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EnsureIndexIsVisible(int arg0)
         {
             IExecuteWithSignature("ensureIndexIsVisible", "(I)V", arg0);
@@ -527,7 +527,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#removeListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
             IExecuteWithSignature("removeListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
@@ -535,8 +535,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#removeSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("removeSelectionInterval", "(II)V", arg0, arg1);
@@ -544,7 +544,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetListData(object[] arg0)
         {
             IExecuteWithSignature("setListData", "([Ljava/lang/Object;)V", new object[] { arg0 });
@@ -552,7 +552,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.util.Vector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetListData(Java.Util.Vector arg0)
         {
             IExecuteWithSignature("setListData", "(Ljava/util/Vector;)V", arg0);
@@ -560,8 +560,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedValue(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetSelectedValue(object arg0, bool arg1)
         {
             IExecuteWithSignature("setSelectedValue", "(Ljava/lang/Object;Z)V", arg0, arg1);
@@ -569,8 +569,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("setSelectionInterval", "(II)V", arg0, arg1);
@@ -578,7 +578,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setUI(javax.swing.plaf.ListUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ListUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.ListUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ListUI;)V", arg0);
@@ -617,7 +617,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.DropLocation.html#isInsert()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsInsert()
             {
                 return IExecuteWithSignature<bool>("isInsert", "()Z");
@@ -640,14 +640,14 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region JList<E> implementation
-    public partial class JList<E>
+    #region JList implementation
+    public partial class JList
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#%3Cinit%3E(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JList(E[] arg0)
             : base(arg0)
         {
@@ -655,16 +655,16 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#%3Cinit%3E(java.util.Vector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        public JList(Java.Util.Vector<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public JList(Java.Util.Vector arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#%3Cinit%3E(javax.swing.ListModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.ListModel"/></param>
-        public JList(Javax.Swing.ListModel<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public JList(Javax.Swing.ListModel arg0)
             : base(arg0)
         {
         }
@@ -673,17 +673,17 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JList{E}"/> to <see cref="Javax.Swing.Scrollable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JList<E> t) => t.Cast<Javax.Swing.Scrollable>();
+        public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JList t) => t.Cast<Javax.Swing.Scrollable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JList{E}"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JList<E> t) => t.Cast<Javax.Accessibility.Accessible>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JList t) => t.Cast<Javax.Accessibility.Accessible>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JList{E}"/> to <see cref="Javax.Swing.JList"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.JList(Javax.Swing.JList<E> t) => t.Cast<Javax.Swing.JList>();
+        public static implicit operator Javax.Swing.JList(Javax.Swing.JList t) => t.Cast<Javax.Swing.JList>();
 
         #endregion
 
@@ -815,9 +815,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setModel(javax.swing.ListModel)"/>
         /// </summary>
-        public Javax.Swing.ListModel<E> Model
+        public Javax.Swing.ListModel Model
         {
-            get { return IExecuteWithSignature<Javax.Swing.ListModel<E>>("getModel", "()Ljavax/swing/ListModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/ListModel;)V", value); }
+            get { return IExecuteWithSignature<Javax.Swing.ListModel>("getModel", "()Ljavax/swing/ListModel;"); } set { IExecuteWithSignature("setModel", "(Ljavax/swing/ListModel;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getPreferredScrollableViewportSize()"/> 
@@ -871,9 +871,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedValuesList()"/> 
         /// </summary>
-        public Java.Util.List<E> SelectedValuesList
+        public Java.Util.List SelectedValuesList
         {
-            get { return IExecuteWithSignature<Java.Util.List<E>>("getSelectedValuesList", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getSelectedValuesList", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionBackground(java.awt.Color)"/>
@@ -920,8 +920,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectedIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSelectedIndex(int arg0)
         {
             return IExecuteWithSignature<bool>("isSelectedIndex", "(I)Z", arg0);
@@ -929,7 +929,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSelectionEmpty()
         {
             return IExecuteWithSignature<bool>("isSelectionEmpty", "()Z");
@@ -937,10 +937,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetNextMatch(Java.Lang.String arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
             return IExecuteWithSignature<int>("getNextMatch", "(Ljava/lang/String;ILjavax/swing/text/Position$Bias;)I", arg0, arg1, arg2);
@@ -948,10 +948,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
@@ -959,10 +959,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
@@ -970,8 +970,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#locationToIndex(java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LocationToIndex(Java.Awt.Point arg0)
         {
             return IExecuteWithSignature<int>("locationToIndex", "(Ljava/awt/Point;)I", arg0);
@@ -979,8 +979,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#indexToLocation(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Point"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Point IndexToLocation(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Point>("indexToLocation", "(I)Ljava/awt/Point;", arg0);
@@ -988,9 +988,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellBounds(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Rectangle GetCellBounds(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getCellBounds", "(II)Ljava/awt/Rectangle;", arg0, arg1);
@@ -998,7 +998,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
             IExecuteWithSignature("addListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
@@ -1006,8 +1006,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#addSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("addSelectionInterval", "(II)V", arg0, arg1);
@@ -1022,7 +1022,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#ensureIndexIsVisible(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EnsureIndexIsVisible(int arg0)
         {
             IExecuteWithSignature("ensureIndexIsVisible", "(I)V", arg0);
@@ -1030,7 +1030,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#removeListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
             IExecuteWithSignature("removeListSelectionListener", "(Ljavax/swing/event/ListSelectionListener;)V", arg0);
@@ -1038,8 +1038,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#removeSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("removeSelectionInterval", "(II)V", arg0, arg1);
@@ -1047,7 +1047,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetListData(E[] arg0)
         {
             IExecuteWithSignature("setListData", "([Ljava/lang/Object;)V", new object[] { arg0 });
@@ -1055,17 +1055,17 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.util.Vector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
-        public void SetListData<Arg0ExtendsE>(Java.Util.Vector<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsE"><see cref=""/></typeparam>
+        public void SetListData(Java.Util.Vector arg0) where Arg0ExtendsE : E
         {
             IExecuteWithSignature("setListData", "(Ljava/util/Vector;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedValue(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetSelectedValue(object arg0, bool arg1)
         {
             IExecuteWithSignature("setSelectedValue", "(Ljava/lang/Object;Z)V", arg0, arg1);
@@ -1073,8 +1073,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
             IExecuteWithSignature("setSelectionInterval", "(II)V", arg0, arg1);
@@ -1082,7 +1082,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setUI(javax.swing.plaf.ListUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ListUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.ListUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ListUI;)V", arg0);

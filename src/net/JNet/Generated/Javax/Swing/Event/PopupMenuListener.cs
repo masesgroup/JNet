@@ -108,17 +108,17 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PopupMenuCanceled(Javax.Swing.Event.PopupMenuEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PopupMenuWillBecomeInvisible(Javax.Swing.Event.PopupMenuEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PopupMenuWillBecomeVisible(Javax.Swing.Event.PopupMenuEvent arg0);
 
         #endregion
@@ -180,7 +180,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PopupMenuCanceled(Javax.Swing.Event.PopupMenuEvent arg0)
         {
             hasOverridePopupMenuCanceled = false;
@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PopupMenuWillBecomeInvisible(Javax.Swing.Event.PopupMenuEvent arg0)
         {
             hasOverridePopupMenuWillBecomeInvisible = false;
@@ -228,7 +228,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PopupMenuWillBecomeVisible(Javax.Swing.Event.PopupMenuEvent arg0)
         {
             hasOverridePopupMenuWillBecomeVisible = false;
@@ -267,7 +267,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PopupMenuCanceled(Javax.Swing.Event.PopupMenuEvent arg0)
         {
             IExecuteWithSignature("popupMenuCanceled", "(Ljavax/swing/event/PopupMenuEvent;)V", arg0);
@@ -275,7 +275,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PopupMenuWillBecomeInvisible(Javax.Swing.Event.PopupMenuEvent arg0)
         {
             IExecuteWithSignature("popupMenuWillBecomeInvisible", "(Ljavax/swing/event/PopupMenuEvent;)V", arg0);
@@ -283,7 +283,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PopupMenuWillBecomeVisible(Javax.Swing.Event.PopupMenuEvent arg0)
         {
             IExecuteWithSignature("popupMenuWillBecomeVisible", "(Ljavax/swing/event/PopupMenuEvent;)V", arg0);

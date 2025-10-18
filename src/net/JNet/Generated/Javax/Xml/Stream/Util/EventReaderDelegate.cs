@@ -73,7 +73,7 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#%3Cinit%3E(javax.xml.stream.XMLEventReader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLEventReader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public EventReaderDelegate(Javax.Xml.Stream.XMLEventReader arg0)
             : base(arg0)
         {
@@ -111,7 +111,7 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#hasNext()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasNext()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
@@ -119,9 +119,9 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -129,7 +129,7 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#next()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Next()
         {
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
@@ -137,8 +137,8 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#nextEvent()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.Events.XMLEvent NextEvent()
         {
             return IExecuteWithSignature<Javax.Xml.Stream.Events.XMLEvent>("nextEvent", "()Ljavax/xml/stream/events/XMLEvent;");
@@ -146,8 +146,8 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#nextTag()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.Events.XMLEvent NextTag()
         {
             return IExecuteWithSignature<Javax.Xml.Stream.Events.XMLEvent>("nextTag", "()Ljavax/xml/stream/events/XMLEvent;");
@@ -155,8 +155,8 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#peek()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Stream.Events.XMLEvent Peek()
         {
             return IExecuteWithSignature<Javax.Xml.Stream.Events.XMLEvent>("peek", "()Ljavax/xml/stream/events/XMLEvent;");
@@ -164,7 +164,7 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html#close()"/>
         /// </summary>
-        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");

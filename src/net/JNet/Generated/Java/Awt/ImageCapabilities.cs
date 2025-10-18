@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#%3Cinit%3E(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ImageCapabilities(bool arg0)
             : base(arg0)
         {
@@ -97,7 +97,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isAccelerated()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsAccelerated()
         {
             return IExecuteWithSignature<bool>("isAccelerated", "()Z");
@@ -105,7 +105,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isTrueVolatile()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsTrueVolatile()
         {
             return IExecuteWithSignature<bool>("isTrueVolatile", "()Z");

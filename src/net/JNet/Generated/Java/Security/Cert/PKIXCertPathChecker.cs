@@ -77,11 +77,11 @@ namespace Java.Security.Cert
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.PKIXCertPathChecker"/> to <see cref="Java.Security.Cert.CertPathChecker"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Cert.CertPathChecker(Java.Security.Cert.PKIXCertPathChecker t) => t.Cast<Java.Security.Cert.CertPathChecker>();
         /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.PKIXCertPathChecker"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Security.Cert.PKIXCertPathChecker t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -99,14 +99,14 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#getSupportedExtensions()"/> 
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> SupportedExtensions
+        public Java.Util.Set SupportedExtensions
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSupportedExtensions", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getSupportedExtensions", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#isForwardCheckingSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsForwardCheckingSupported()
         {
             return IExecuteWithSignature<bool>("isForwardCheckingSupported", "()Z");
@@ -114,18 +114,18 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate,java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
-        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
-        public void Check(Java.Security.Cert.Certificate arg0, Java.Util.Collection<Java.Lang.String> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        public void Check(Java.Security.Cert.Certificate arg0, Java.Util.Collection arg1)
         {
             IExecuteWithSignature("check", "(Ljava/security/cert/Certificate;Ljava/util/Collection;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#init(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(bool arg0)
         {
             IExecuteWithSignature("init", "(Z)V", arg0);
@@ -133,8 +133,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Check(Java.Security.Cert.Certificate arg0)
         {
             IExecuteWithSignature("check", "(Ljava/security/cert/Certificate;)V", arg0);

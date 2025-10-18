@@ -73,8 +73,8 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPublicKeySpec.html#%3Cinit%3E(java.security.spec.ECPoint,java.security.spec.ECParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Spec.ECPoint"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Spec.ECParameterSpec"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ECPublicKeySpec(Java.Security.Spec.ECPoint arg0, Java.Security.Spec.ECParameterSpec arg1)
             : base(arg0, arg1)
         {

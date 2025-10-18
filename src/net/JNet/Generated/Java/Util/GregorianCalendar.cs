@@ -73,12 +73,12 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -86,11 +86,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -98,9 +98,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public GregorianCalendar(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public GregorianCalendar(Java.Util.Locale arg0)
             : base(arg0)
         {
@@ -116,8 +116,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.TimeZone,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public GregorianCalendar(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
@@ -125,7 +125,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.TimeZone)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public GregorianCalendar(Java.Util.TimeZone arg0)
             : base(arg0)
         {
@@ -157,8 +157,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#from(java.time.ZonedDateTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZonedDateTime"/></param>
-        /// <returns><see cref="Java.Util.GregorianCalendar"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.GregorianCalendar From(Java.Time.ZonedDateTime arg0)
         {
             return SExecuteWithSignature<Java.Util.GregorianCalendar>(LocalBridgeClazz, "from", "(Ljava/time/ZonedDateTime;)Ljava/util/GregorianCalendar;", arg0);
@@ -177,8 +177,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#isLeapYear(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsLeapYear(int arg0)
         {
             return IExecuteWithSignature<bool>("isLeapYear", "(I)Z", arg0);
@@ -186,7 +186,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#toZonedDateTime()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Time.ZonedDateTime ToZonedDateTime()
         {
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("toZonedDateTime", "()Ljava/time/ZonedDateTime;");

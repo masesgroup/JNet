@@ -109,12 +109,12 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region RowSorter<M> declaration
+    #region RowSorter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html"/>
     /// </summary>
     /// <typeparam name="M"></typeparam>
-    public partial class RowSorter<M> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSorter<M>>
+    public partial class RowSorter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSorter>
     {
         const string _bridgeClassName = "javax.swing.RowSorter";
         /// <summary>
@@ -204,8 +204,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#convertRowIndexToModel(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int ConvertRowIndexToModel(int arg0)
         {
             return IExecuteWithSignature<int>("convertRowIndexToModel", "(I)I", arg0);
@@ -213,8 +213,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#convertRowIndexToView(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int ConvertRowIndexToView(int arg0)
         {
             return IExecuteWithSignature<int>("convertRowIndexToView", "(I)I", arg0);
@@ -236,8 +236,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsDeleted(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RowsDeleted(int arg0, int arg1)
         {
             IExecuteWithSignature("rowsDeleted", "(II)V", arg0, arg1);
@@ -245,8 +245,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsInserted(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RowsInserted(int arg0, int arg1)
         {
             IExecuteWithSignature("rowsInserted", "(II)V", arg0, arg1);
@@ -254,9 +254,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsUpdated(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void RowsUpdated(int arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("rowsUpdated", "(III)V", arg0, arg1, arg2);
@@ -264,8 +264,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsUpdated(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RowsUpdated(int arg0, int arg1)
         {
             IExecuteWithSignature("rowsUpdated", "(II)V", arg0, arg1);
@@ -273,7 +273,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#toggleSortOrder(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ToggleSortOrder(int arg0)
         {
             IExecuteWithSignature("toggleSortOrder", "(I)V", arg0);
@@ -281,7 +281,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#addRowSorterListener(javax.swing.event.RowSorterListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddRowSorterListener(Javax.Swing.Event.RowSorterListener arg0)
         {
             IExecuteWithSignature("addRowSorterListener", "(Ljavax/swing/event/RowSorterListener;)V", arg0);
@@ -289,7 +289,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#removeRowSorterListener(javax.swing.event.RowSorterListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveRowSorterListener(Javax.Swing.Event.RowSorterListener arg0)
         {
             IExecuteWithSignature("removeRowSorterListener", "(Ljavax/swing/event/RowSorterListener;)V", arg0);
@@ -305,8 +305,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.SortKey.html#%3Cinit%3E(int,javax.swing.SortOrder)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.SortOrder"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public SortKey(int arg0, Javax.Swing.SortOrder arg1)
                 : base(arg0, arg1)
             {
@@ -359,8 +359,8 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region RowSorter<M> implementation
-    public partial class RowSorter<M>
+    #region RowSorter implementation
+    public partial class RowSorter
     {
         #region Constructors
 
@@ -368,9 +368,9 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.RowSorter{M}"/> to <see cref="Javax.Swing.RowSorter"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.RowSorter(Javax.Swing.RowSorter<M> t) => t.Cast<Javax.Swing.RowSorter>();
+        public static implicit operator Javax.Swing.RowSorter(Javax.Swing.RowSorter t) => t.Cast<Javax.Swing.RowSorter>();
 
         #endregion
 
@@ -414,8 +414,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#convertRowIndexToModel(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int ConvertRowIndexToModel(int arg0)
         {
             return IExecuteWithSignature<int>("convertRowIndexToModel", "(I)I", arg0);
@@ -423,8 +423,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#convertRowIndexToView(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int ConvertRowIndexToView(int arg0)
         {
             return IExecuteWithSignature<int>("convertRowIndexToView", "(I)I", arg0);
@@ -446,8 +446,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsDeleted(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RowsDeleted(int arg0, int arg1)
         {
             IExecuteWithSignature("rowsDeleted", "(II)V", arg0, arg1);
@@ -455,8 +455,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsInserted(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RowsInserted(int arg0, int arg1)
         {
             IExecuteWithSignature("rowsInserted", "(II)V", arg0, arg1);
@@ -464,9 +464,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsUpdated(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void RowsUpdated(int arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("rowsUpdated", "(III)V", arg0, arg1, arg2);
@@ -474,8 +474,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsUpdated(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RowsUpdated(int arg0, int arg1)
         {
             IExecuteWithSignature("rowsUpdated", "(II)V", arg0, arg1);
@@ -483,7 +483,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#toggleSortOrder(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ToggleSortOrder(int arg0)
         {
             IExecuteWithSignature("toggleSortOrder", "(I)V", arg0);
@@ -491,7 +491,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#addRowSorterListener(javax.swing.event.RowSorterListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddRowSorterListener(Javax.Swing.Event.RowSorterListener arg0)
         {
             IExecuteWithSignature("addRowSorterListener", "(Ljavax/swing/event/RowSorterListener;)V", arg0);
@@ -499,7 +499,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#removeRowSorterListener(javax.swing.event.RowSorterListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveRowSorterListener(Javax.Swing.Event.RowSorterListener arg0)
         {
             IExecuteWithSignature("removeRowSorterListener", "(Ljavax/swing/event/RowSorterListener;)V", arg0);

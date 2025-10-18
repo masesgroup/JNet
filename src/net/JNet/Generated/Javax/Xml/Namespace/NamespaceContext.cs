@@ -78,21 +78,21 @@ namespace Javax.Xml.Namespace
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/NamespaceContext.html#getNamespaceURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String GetNamespaceURI(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/NamespaceContext.html#getPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String GetPrefix(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/NamespaceContext.html#getPrefixes(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<Java.Lang.String> GetPrefixes(Java.Lang.String arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Iterator GetPrefixes(Java.Lang.String arg0);
 
         #endregion
 
@@ -127,8 +127,8 @@ namespace Javax.Xml.Namespace
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/NamespaceContext.html#getNamespaceURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetNamespaceURI(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -136,8 +136,8 @@ namespace Javax.Xml.Namespace
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/NamespaceContext.html#getPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetPrefix(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getPrefix", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -145,11 +145,11 @@ namespace Javax.Xml.Namespace
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/NamespaceContext.html#getPrefixes(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Lang.String> GetPrefixes(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator GetPrefixes(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getPrefixes", "(Ljava/lang/String;)Ljava/util/Iterator;", arg0);
+            return IExecuteWithSignature<Java.Util.Iterator>("getPrefixes", "(Ljava/lang/String;)Ljava/util/Iterator;", arg0);
         }
 
         #endregion

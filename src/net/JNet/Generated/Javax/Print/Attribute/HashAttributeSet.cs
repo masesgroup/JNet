@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#%3Cinit%3E(javax.print.attribute.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashAttributeSet(Javax.Print.Attribute.Attribute arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#%3Cinit%3E(javax.print.attribute.Attribute[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashAttributeSet(Javax.Print.Attribute.Attribute[] arg0)
             : base(arg0)
         {
@@ -89,7 +89,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#%3Cinit%3E(javax.print.attribute.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashAttributeSet(Javax.Print.Attribute.AttributeSet arg0)
             : base(arg0)
         {
@@ -99,11 +99,11 @@ namespace Javax.Print.Attribute
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.HashAttributeSet"/> to <see cref="Javax.Print.Attribute.AttributeSet"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.AttributeSet(Javax.Print.Attribute.HashAttributeSet t) => t.Cast<Javax.Print.Attribute.AttributeSet>();
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.HashAttributeSet"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.HashAttributeSet t) => t.Cast<Java.Io.Serializable>();
 
@@ -121,8 +121,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#add(javax.print.attribute.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Add(Javax.Print.Attribute.Attribute arg0)
         {
             return IExecuteWithSignature<bool>("add", "(Ljavax/print/attribute/Attribute;)Z", arg0);
@@ -130,8 +130,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#addAll(javax.print.attribute.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddAll(Javax.Print.Attribute.AttributeSet arg0)
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljavax/print/attribute/AttributeSet;)Z", arg0);
@@ -139,8 +139,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#containsKey(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsKey(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Class;)Z", arg0);
@@ -148,8 +148,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#containsValue(javax.print.attribute.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsValue(Javax.Print.Attribute.Attribute arg0)
         {
             return IExecuteWithSignature<bool>("containsValue", "(Ljavax/print/attribute/Attribute;)Z", arg0);
@@ -157,7 +157,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -165,8 +165,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#remove(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Class;)Z", arg0);
@@ -174,8 +174,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#remove(javax.print.attribute.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(Javax.Print.Attribute.Attribute arg0)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljavax/print/attribute/Attribute;)Z", arg0);
@@ -183,7 +183,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -191,8 +191,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#get(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Javax.Print.Attribute.Attribute"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Print.Attribute.Attribute Get(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<Javax.Print.Attribute.Attribute>("get", "(Ljava/lang/Class;)Ljavax/print/attribute/Attribute;", arg0);
@@ -200,7 +200,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashAttributeSet.html#toArray()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Print.Attribute.Attribute"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Print.Attribute.Attribute[] ToArray()
         {
             return IExecuteWithSignatureArray<Javax.Print.Attribute.Attribute>("toArray", "()[Ljavax/print/attribute/Attribute;");

@@ -105,13 +105,13 @@ namespace Java.Util
         }
         #endregion
 
-        #region SimpleEntry<K, V> declaration
+        #region SimpleEntry<, > declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html"/>
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        public partial class SimpleEntry<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleEntry<K, V>>
+        public partial class SimpleEntry<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleEntry<, >>
         {
             const string _bridgeClassName = "java.util.AbstractMap$SimpleEntry";
             /// <summary>
@@ -189,13 +189,13 @@ namespace Java.Util
         }
         #endregion
 
-        #region SimpleImmutableEntry<K, V> declaration
+        #region SimpleImmutableEntry<, > declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html"/>
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        public partial class SimpleImmutableEntry<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleImmutableEntry<K, V>>
+        public partial class SimpleImmutableEntry<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleImmutableEntry<, >>
         {
             const string _bridgeClassName = "java.util.AbstractMap$SimpleImmutableEntry";
             /// <summary>
@@ -236,13 +236,13 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractMap<K, V> declaration
+    #region AbstractMap<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class AbstractMap<K, V> : Java.Util.Map<K, V>
+    public partial class AbstractMap<, > : Java.Util.Map<, >
     {
         const string _bridgeClassName = "java.util.AbstractMap";
         /// <summary>
@@ -304,7 +304,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#entrySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Set EntrySet()
         {
             return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
@@ -312,8 +312,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#containsKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
@@ -321,8 +321,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#containsValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
@@ -330,7 +330,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -338,7 +338,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -346,7 +346,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Collection Values()
         {
             return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
@@ -354,7 +354,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#keySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Set KeySet()
         {
             return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
@@ -362,8 +362,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(object arg0)
         {
             return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -371,9 +371,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Put(object arg0, object arg1)
         {
             return IExecuteWithSignature("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -381,8 +381,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Remove(object arg0)
         {
             return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -397,7 +397,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#putAll(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PutAll(Java.Util.Map arg0)
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
@@ -413,7 +413,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#%3Cinit%3E(java.util.Map.Entry)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public SimpleEntry(Java.Util.Map.Entry arg0)
                 : base(arg0)
             {
@@ -421,8 +421,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#%3Cinit%3E(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public SimpleEntry(object arg0, object arg1)
                 : base(arg0, arg1)
             {
@@ -432,7 +432,7 @@ namespace Java.Util
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.AbstractMap.SimpleEntry"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleEntry t) => t.Cast<Java.Io.Serializable>();
 
@@ -464,8 +464,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#setValue(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object SetValue(object arg0)
             {
                 return IExecuteWithSignature("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -481,23 +481,23 @@ namespace Java.Util
         }
         #endregion
 
-        #region SimpleEntry<K, V> implementation
-        public partial class SimpleEntry<K, V>
+        #region SimpleEntry<, > implementation
+        public partial class SimpleEntry<, >
         {
             #region Constructors
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#%3Cinit%3E(java.util.Map.Entry)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
-            public SimpleEntry(Java.Util.Map.Entry<K, V> arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            public SimpleEntry(Java.Util.Map.Entry<, > arg0)
                 : base(arg0)
             {
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#%3Cinit%3E(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="K"/></param>
-            /// <param name="arg1"><typeparamref name="V"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public SimpleEntry(K arg0, V arg1)
                 : base(arg0, arg1)
             {
@@ -507,13 +507,13 @@ namespace Java.Util
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.AbstractMap.SimpleEntry{K, V}"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleEntry<K, V> t) => t.Cast<Java.Io.Serializable>();
+            public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleEntry<, > t) => t.Cast<Java.Io.Serializable>();
             /// <summary>
-            /// Converter from <see cref="Java.Util.AbstractMap.SimpleEntry{K, V}"/> to <see cref="Java.Util.AbstractMap.SimpleEntry"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Util.AbstractMap.SimpleEntry(Java.Util.AbstractMap.SimpleEntry<K, V> t) => t.Cast<Java.Util.AbstractMap.SimpleEntry>();
+            public static implicit operator Java.Util.AbstractMap.SimpleEntry(Java.Util.AbstractMap.SimpleEntry<, > t) => t.Cast<Java.Util.AbstractMap.SimpleEntry>();
 
             #endregion
 
@@ -543,8 +543,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#setValue(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="V"/></param>
-            /// <returns><typeparamref name="V"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public V SetValue(V arg0)
             {
                 return IExecuteWithSignature<V>("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -567,7 +567,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#%3Cinit%3E(java.util.Map.Entry)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public SimpleImmutableEntry(Java.Util.Map.Entry arg0)
                 : base(arg0)
             {
@@ -575,8 +575,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#%3Cinit%3E(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public SimpleImmutableEntry(object arg0, object arg1)
                 : base(arg0, arg1)
             {
@@ -586,7 +586,7 @@ namespace Java.Util
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.AbstractMap.SimpleImmutableEntry"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleImmutableEntry t) => t.Cast<Java.Io.Serializable>();
 
@@ -618,8 +618,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#setValue(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object SetValue(object arg0)
             {
                 return IExecuteWithSignature("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -635,23 +635,23 @@ namespace Java.Util
         }
         #endregion
 
-        #region SimpleImmutableEntry<K, V> implementation
-        public partial class SimpleImmutableEntry<K, V>
+        #region SimpleImmutableEntry<, > implementation
+        public partial class SimpleImmutableEntry<, >
         {
             #region Constructors
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#%3Cinit%3E(java.util.Map.Entry)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
-            public SimpleImmutableEntry(Java.Util.Map.Entry<K, V> arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            public SimpleImmutableEntry(Java.Util.Map.Entry<, > arg0)
                 : base(arg0)
             {
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#%3Cinit%3E(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="K"/></param>
-            /// <param name="arg1"><typeparamref name="V"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public SimpleImmutableEntry(K arg0, V arg1)
                 : base(arg0, arg1)
             {
@@ -661,13 +661,13 @@ namespace Java.Util
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.AbstractMap.SimpleImmutableEntry{K, V}"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleImmutableEntry<K, V> t) => t.Cast<Java.Io.Serializable>();
+            public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleImmutableEntry<, > t) => t.Cast<Java.Io.Serializable>();
             /// <summary>
-            /// Converter from <see cref="Java.Util.AbstractMap.SimpleImmutableEntry{K, V}"/> to <see cref="Java.Util.AbstractMap.SimpleImmutableEntry"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Util.AbstractMap.SimpleImmutableEntry(Java.Util.AbstractMap.SimpleImmutableEntry<K, V> t) => t.Cast<Java.Util.AbstractMap.SimpleImmutableEntry>();
+            public static implicit operator Java.Util.AbstractMap.SimpleImmutableEntry(Java.Util.AbstractMap.SimpleImmutableEntry<, > t) => t.Cast<Java.Util.AbstractMap.SimpleImmutableEntry>();
 
             #endregion
 
@@ -697,8 +697,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#setValue(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="V"/></param>
-            /// <returns><typeparamref name="V"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public V SetValue(V arg0)
             {
                 return IExecuteWithSignature<V>("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -721,8 +721,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractMap<K, V> implementation
-    public partial class AbstractMap<K, V>
+    #region AbstractMap<, > implementation
+    public partial class AbstractMap<, >
     {
         #region Constructors
 
@@ -730,9 +730,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractMap{K, V}"/> to <see cref="Java.Util.AbstractMap"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.AbstractMap(Java.Util.AbstractMap<K, V> t) => t.Cast<Java.Util.AbstractMap>();
+        public static implicit operator Java.Util.AbstractMap(Java.Util.AbstractMap<, > t) => t.Cast<Java.Util.AbstractMap>();
 
         #endregion
 
@@ -748,16 +748,16 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#entrySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set EntrySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#containsKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
@@ -765,8 +765,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#containsValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
@@ -774,7 +774,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -782,7 +782,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -790,24 +790,24 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public Java.Util.Collection<V> Values()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Collection Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<V>>("values", "()Ljava/util/Collection;");
+            return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#keySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<K> KeySet()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<K>>("keySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Get(object arg0)
         {
             return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -815,9 +815,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Put(K arg0, V arg1)
         {
             return IExecuteWithSignature<V>("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -825,8 +825,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Remove(object arg0)
         {
             return IExecuteWithSignature<V>("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -841,10 +841,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#putAll(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        public void PutAll<, >(Java.Util.Map<, > arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }

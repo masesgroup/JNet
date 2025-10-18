@@ -91,9 +91,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getComponentAfter(java.awt.Container,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetComponentAfter(Java.Awt.Container arg0, Java.Awt.Component arg1)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getComponentAfter", "(Ljava/awt/Container;Ljava/awt/Component;)Ljava/awt/Component;", arg0, arg1);
@@ -101,9 +101,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getComponentBefore(java.awt.Container,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetComponentBefore(Java.Awt.Container arg0, Java.Awt.Component arg1)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getComponentBefore", "(Ljava/awt/Container;Ljava/awt/Component;)Ljava/awt/Component;", arg0, arg1);
@@ -111,8 +111,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getDefaultComponent(java.awt.Container)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetDefaultComponent(Java.Awt.Container arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getDefaultComponent", "(Ljava/awt/Container;)Ljava/awt/Component;", arg0);
@@ -120,8 +120,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getFirstComponent(java.awt.Container)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetFirstComponent(Java.Awt.Container arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getFirstComponent", "(Ljava/awt/Container;)Ljava/awt/Component;", arg0);
@@ -129,8 +129,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getLastComponent(java.awt.Container)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetLastComponent(Java.Awt.Container arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getLastComponent", "(Ljava/awt/Container;)Ljava/awt/Component;", arg0);
@@ -138,8 +138,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getInitialComponent(java.awt.Window)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetInitialComponent(Java.Awt.Window arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getInitialComponent", "(Ljava/awt/Window;)Ljava/awt/Component;", arg0);

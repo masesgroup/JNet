@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Panel.html#%3Cinit%3E(java.awt.LayoutManager)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.LayoutManager"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Panel(Java.Awt.LayoutManager arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Panel"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Panel t) => t.Cast<Javax.Accessibility.Accessible>();
 

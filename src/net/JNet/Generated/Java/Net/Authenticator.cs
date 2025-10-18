@@ -68,7 +68,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html"/>
         /// </summary>
-        public partial class RequestorType : Java.Lang.Enum<Java.Net.Authenticator.RequestorType>
+        public partial class RequestorType : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.net.Authenticator$RequestorType";
             /// <summary>
@@ -135,15 +135,15 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg6"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg7"><see cref="Java.Net.Authenticator.RequestorType"/></param>
-        /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Lang.String arg0, Java.Net.InetAddress arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Net.URL arg6, Java.Net.Authenticator.RequestorType arg7)
         {
             return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Ljava/net/Authenticator$RequestorType;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -151,13 +151,13 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Lang.String arg0, Java.Net.InetAddress arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
         {
             return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -165,16 +165,16 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.Authenticator,java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.Authenticator"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg6"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg7"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg8"><see cref="Java.Net.Authenticator.RequestorType"/></param>
-        /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Net.Authenticator arg0, Java.Lang.String arg1, Java.Net.InetAddress arg2, int arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Java.Net.URL arg7, Java.Net.Authenticator.RequestorType arg8)
         {
             return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/net/Authenticator;Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Ljava/net/Authenticator$RequestorType;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -182,12 +182,12 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Net.InetAddress arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
             return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4);
@@ -199,15 +199,15 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthenticationInstance(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg6"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg7"><see cref="Java.Net.Authenticator.RequestorType"/></param>
-        /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Net.PasswordAuthentication RequestPasswordAuthenticationInstance(Java.Lang.String arg0, Java.Net.InetAddress arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Net.URL arg6, Java.Net.Authenticator.RequestorType arg7)
         {
             return IExecuteWithSignature<Java.Net.PasswordAuthentication>("requestPasswordAuthenticationInstance", "(Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Ljava/net/Authenticator$RequestorType;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -247,8 +247,8 @@ namespace Java.Net
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Net.Authenticator.RequestorType"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Net.Authenticator.RequestorType ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/Authenticator$RequestorType;", arg0);
@@ -256,7 +256,7 @@ namespace Java.Net
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Net.Authenticator.RequestorType"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Net.Authenticator.RequestorType[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "values", "()[Ljava/net/Authenticator$RequestorType;");

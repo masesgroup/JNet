@@ -68,12 +68,12 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Comparable<T> declaration
+    #region Comparable declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class Comparable<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Comparable<T>>
+    public partial class Comparable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Comparable>
     {
         const string _bridgeClassName = "java.lang.Comparable";
         /// <summary>
@@ -135,8 +135,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -152,18 +152,18 @@ namespace Java.Lang
     }
     #endregion
 
-    #region IComparable<T>
+    #region IComparable
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html"/>
     /// </summary>
-    public partial interface IComparable<T>
+    public partial interface IComparable
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int CompareTo(T arg0);
 
         #endregion
@@ -176,8 +176,8 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Comparable<T> implementation
-    public partial class Comparable<T> : Java.Lang.IComparable<T>
+    #region Comparable implementation
+    public partial class Comparable : Java.Lang.IComparable
     {
         #region Constructors
 
@@ -185,9 +185,9 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Comparable{T}"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Comparable(Java.Lang.Comparable<T> t) => t.Cast<Java.Lang.Comparable>();
+        public static implicit operator Java.Lang.Comparable(Java.Lang.Comparable t) => t.Cast<Java.Lang.Comparable>();
 
         #endregion
 
@@ -203,8 +203,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(T arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);

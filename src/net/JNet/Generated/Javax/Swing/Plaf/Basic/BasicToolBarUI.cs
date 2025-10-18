@@ -75,7 +75,7 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicToolBarUI"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Basic.BasicToolBarUI t) => t.Cast<Javax.Swing.SwingConstants>();
 
@@ -107,9 +107,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#canDock(java.awt.Component,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CanDock(Java.Awt.Component arg0, Java.Awt.Point arg1)
         {
             return IExecuteWithSignature<bool>("canDock", "(Ljava/awt/Component;Ljava/awt/Point;)Z", arg0, arg1);
@@ -117,7 +117,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isFloating()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFloating()
         {
             return IExecuteWithSignature<bool>("isFloating", "()Z");
@@ -125,7 +125,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isRolloverBorders()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRolloverBorders()
         {
             return IExecuteWithSignature<bool>("isRolloverBorders", "()Z");
@@ -133,8 +133,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloating(boolean,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetFloating(bool arg0, Java.Awt.Point arg1)
         {
             IExecuteWithSignature("setFloating", "(ZLjava/awt/Point;)V", arg0, arg1);
@@ -142,8 +142,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloatingLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetFloatingLocation(int arg0, int arg1)
         {
             IExecuteWithSignature("setFloatingLocation", "(II)V", arg0, arg1);
@@ -151,7 +151,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setOrientation(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetOrientation(int arg0)
         {
             IExecuteWithSignature("setOrientation", "(I)V", arg0);
@@ -159,7 +159,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setRolloverBorders(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRolloverBorders(bool arg0)
         {
             IExecuteWithSignature("setRolloverBorders", "(Z)V", arg0);

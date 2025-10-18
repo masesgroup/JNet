@@ -87,9 +87,9 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#fixed(java.time.Instant,java.time.ZoneId)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
-        /// <param name="arg1"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Clock Fixed(Java.Time.Instant arg0, Java.Time.ZoneId arg1)
         {
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "fixed", "(Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/Clock;", arg0, arg1);
@@ -97,9 +97,9 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#offset(java.time.Clock,java.time.Duration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Duration"/></param>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Clock Offset(Java.Time.Clock arg0, Java.Time.Duration arg1)
         {
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "offset", "(Ljava/time/Clock;Ljava/time/Duration;)Ljava/time/Clock;", arg0, arg1);
@@ -107,8 +107,8 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#system(java.time.ZoneId)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Clock System(Java.Time.ZoneId arg0)
         {
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "system", "(Ljava/time/ZoneId;)Ljava/time/Clock;", arg0);
@@ -116,7 +116,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#systemDefaultZone()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Clock SystemDefaultZone()
         {
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "systemDefaultZone", "()Ljava/time/Clock;");
@@ -124,7 +124,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#systemUTC()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Clock SystemUTC()
         {
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "systemUTC", "()Ljava/time/Clock;");
@@ -132,9 +132,9 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#tick(java.time.Clock,java.time.Duration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Duration"/></param>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Clock Tick(Java.Time.Clock arg0, Java.Time.Duration arg1)
         {
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "tick", "(Ljava/time/Clock;Ljava/time/Duration;)Ljava/time/Clock;", arg0, arg1);
@@ -142,8 +142,8 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#tickMillis(java.time.ZoneId)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Clock TickMillis(Java.Time.ZoneId arg0)
         {
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "tickMillis", "(Ljava/time/ZoneId;)Ljava/time/Clock;", arg0);
@@ -151,8 +151,8 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#tickMinutes(java.time.ZoneId)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Clock TickMinutes(Java.Time.ZoneId arg0)
         {
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "tickMinutes", "(Ljava/time/ZoneId;)Ljava/time/Clock;", arg0);
@@ -160,8 +160,8 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#tickSeconds(java.time.ZoneId)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Clock TickSeconds(Java.Time.ZoneId arg0)
         {
             return SExecuteWithSignature<Java.Time.Clock>(LocalBridgeClazz, "tickSeconds", "(Ljava/time/ZoneId;)Ljava/time/Clock;", arg0);
@@ -180,8 +180,8 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#withZone(java.time.ZoneId)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Clock WithZone(Java.Time.ZoneId arg0)
         {
             return IExecuteWithSignature<Java.Time.Clock>("withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;", arg0);
@@ -189,7 +189,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#instant()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Instant"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Instant Instant()
         {
             return IExecuteWithSignature<Java.Time.Instant>("instant", "()Ljava/time/Instant;");
@@ -197,7 +197,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#millis()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long Millis()
         {
             return IExecuteWithSignature<long>("millis", "()J");

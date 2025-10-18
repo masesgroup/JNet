@@ -78,11 +78,11 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#getAcl()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#setAcl(java.util.List)"/>
         /// </summary>
-        Java.Util.List<Java.Nio.File.Attribute.AclEntry> Acl { get; set; }
+        Java.Util.List Acl { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String Name();
 
         #endregion
@@ -118,14 +118,14 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#getAcl()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#setAcl(java.util.List)"/>
         /// </summary>
-        public Java.Util.List<Java.Nio.File.Attribute.AclEntry> Acl
+        public Java.Util.List Acl
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Nio.File.Attribute.AclEntry>>("getAcl", "()Ljava/util/List;"); } set { IExecuteWithSignature("setAcl", "(Ljava/util/List;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.List>("getAcl", "()Ljava/util/List;"); } set { IExecuteWithSignature("setAcl", "(Ljava/util/List;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");

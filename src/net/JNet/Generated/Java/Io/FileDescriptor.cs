@@ -107,7 +107,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#valid()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Valid()
         {
             return IExecuteWithSignature<bool>("valid", "()Z");
@@ -115,7 +115,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#sync()"/>
         /// </summary>
-        /// <exception cref="Java.Io.SyncFailedException"/>
+        /// <exception cref=""/>
         public void Sync()
         {
             IExecuteWithSignature("sync", "()V");

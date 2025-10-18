@@ -82,7 +82,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Manifest.html#getReferences()"/> 
         /// </summary>
-        Java.Util.List<Javax.Xml.Crypto.Dsig.Reference> References { get; }
+        Java.Util.List References { get; }
 
         #endregion
 
@@ -130,9 +130,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Manifest.html#getReferences()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Xml.Crypto.Dsig.Reference> References
+        public Java.Util.List References
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.Dsig.Reference>>("getReferences", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getReferences", "()Ljava/util/List;"); }
         }
 
         #endregion

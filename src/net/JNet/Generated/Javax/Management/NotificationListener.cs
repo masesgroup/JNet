@@ -108,8 +108,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void HandleNotification(Javax.Management.Notification arg0, object arg1);
 
         #endregion
@@ -169,8 +169,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void HandleNotification(Javax.Management.Notification arg0, object arg1)
         {
             hasOverrideHandleNotification = false;
@@ -209,8 +209,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void HandleNotification(Javax.Management.Notification arg0, object arg1)
         {
             IExecuteWithSignature("handleNotification", "(Ljavax/management/Notification;Ljava/lang/Object;)V", arg0, arg1);

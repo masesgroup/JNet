@@ -29,7 +29,7 @@ namespace Javax.Print.Attribute.Standard
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html"/>
     /// </summary>
-    public partial class PrinterStateReasons : Java.Util.HashMap<Javax.Print.Attribute.Standard.PrinterStateReason, Javax.Print.Attribute.Standard.Severity>
+    public partial class PrinterStateReasons : Java.Util.HashMap<, >
     {
         const string _bridgeClassName = "javax.print.attribute.standard.PrinterStateReasons";
         /// <summary>
@@ -73,8 +73,8 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public PrinterStateReasons(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PrinterStateReasons(int arg0)
             : base(arg0)
         {
@@ -90,8 +90,8 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public PrinterStateReasons(Java.Util.Map<Javax.Print.Attribute.Standard.PrinterStateReason, Javax.Print.Attribute.Standard.Severity> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public PrinterStateReasons(Java.Util.Map<, > arg0)
             : base(arg0)
         {
         }
@@ -100,7 +100,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.PrinterStateReasons"/> to <see cref="Javax.Print.Attribute.PrintServiceAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintServiceAttribute(Javax.Print.Attribute.Standard.PrinterStateReasons t) => t.Cast<Javax.Print.Attribute.PrintServiceAttribute>();
 
@@ -132,18 +132,18 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#printerStateReasonSet(javax.print.attribute.standard.Severity)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Standard.Severity"/></param>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Javax.Print.Attribute.Standard.PrinterStateReason> PrinterStateReasonSetMethod(Javax.Print.Attribute.Standard.Severity arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set PrinterStateReasonSetMethod(Javax.Print.Attribute.Standard.Severity arg0)
         {
-            return IExecuteWithSignature<Java.Util.Set<Javax.Print.Attribute.Standard.PrinterStateReason>>("printerStateReasonSet", "(Ljavax/print/attribute/standard/Severity;)Ljava/util/Set;", arg0);
+            return IExecuteWithSignature<Java.Util.Set>("printerStateReasonSet", "(Ljavax/print/attribute/standard/Severity;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#put(javax.print.attribute.standard.PrinterStateReason,javax.print.attribute.standard.Severity)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Standard.PrinterStateReason"/></param>
-        /// <param name="arg1"><see cref="Javax.Print.Attribute.Standard.Severity"/></param>
-        /// <returns><see cref="Javax.Print.Attribute.Standard.Severity"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Print.Attribute.Standard.Severity Put(Javax.Print.Attribute.Standard.PrinterStateReason arg0, Javax.Print.Attribute.Standard.Severity arg1)
         {
             return IExecuteWithSignature<Javax.Print.Attribute.Standard.Severity>("put", "(Ljavax/print/attribute/standard/PrinterStateReason;Ljavax/print/attribute/standard/Severity;)Ljavax/print/attribute/standard/Severity;", arg0, arg1);

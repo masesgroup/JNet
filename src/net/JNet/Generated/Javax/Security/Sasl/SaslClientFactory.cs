@@ -78,21 +78,21 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClientFactory.html#getMechanismNames(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String[] GetMechanismNames(Java.Util.Map<Java.Lang.String, object> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Lang.String[] GetMechanismNames(Java.Util.Map<, > arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClientFactory.html#createSaslClient(java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.util.Map,javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg5"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
-        /// <returns><see cref="Javax.Security.Sasl.SaslClient"/></returns>
-        /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        Javax.Security.Sasl.SaslClient CreateSaslClient(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.Map<Java.Lang.String, object> arg4, Javax.Security.Auth.Callback.CallbackHandler arg5);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Javax.Security.Sasl.SaslClient CreateSaslClient(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.Map<, > arg4, Javax.Security.Auth.Callback.CallbackHandler arg5);
 
         #endregion
 
@@ -127,24 +127,24 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClientFactory.html#getMechanismNames(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        public Java.Lang.String[] GetMechanismNames(Java.Util.Map<Java.Lang.String, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Lang.String[] GetMechanismNames(Java.Util.Map<, > arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("getMechanismNames", "(Ljava/util/Map;)[Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClientFactory.html#createSaslClient(java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.util.Map,javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg5"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
-        /// <returns><see cref="Javax.Security.Sasl.SaslClient"/></returns>
-        /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        public Javax.Security.Sasl.SaslClient CreateSaslClient(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.Map<Java.Lang.String, object> arg4, Javax.Security.Auth.Callback.CallbackHandler arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Javax.Security.Sasl.SaslClient CreateSaslClient(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.Map<, > arg4, Javax.Security.Auth.Callback.CallbackHandler arg5)
         {
             return IExecuteWithSignature<Javax.Security.Sasl.SaslClient>("createSaslClient", "([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljavax/security/auth/callback/CallbackHandler;)Ljavax/security/sasl/SaslClient;", arg0, arg1, arg2, arg3, arg4, arg5);
         }

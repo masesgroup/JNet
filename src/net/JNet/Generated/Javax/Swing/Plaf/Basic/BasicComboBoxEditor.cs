@@ -116,11 +116,11 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxEditor"/> to <see cref="Javax.Swing.ComboBoxEditor"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.ComboBoxEditor(Javax.Swing.Plaf.Basic.BasicComboBoxEditor t) => t.Cast<Javax.Swing.ComboBoxEditor>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxEditor"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicComboBoxEditor t) => t.Cast<Java.Awt.EventNs.FocusListener>();
 
@@ -152,7 +152,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -160,7 +160,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -168,7 +168,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#focusLost(java.awt.event.FocusEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -176,7 +176,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxEditor.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -201,7 +201,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxEditor.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicComboBoxEditor.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
 

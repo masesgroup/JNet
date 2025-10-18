@@ -99,11 +99,11 @@ namespace Java.Security.Interfaces
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Interfaces.RSAPrivateKey"/> to <see cref="Java.Security.PrivateKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.PrivateKey(Java.Security.Interfaces.RSAPrivateKey t) => t.Cast<Java.Security.PrivateKey>();
         /// <summary>
-        /// Converter from <see cref="Java.Security.Interfaces.RSAPrivateKey"/> to <see cref="Java.Security.Interfaces.RSAKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Interfaces.RSAKey(Java.Security.Interfaces.RSAPrivateKey t) => t.Cast<Java.Security.Interfaces.RSAKey>();
 

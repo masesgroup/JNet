@@ -78,11 +78,11 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactoryBuilder.html#createObjectFactory(java.lang.Object,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.ObjectFactory"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        Javax.Naming.Spi.ObjectFactory CreateObjectFactory(object arg0, Java.Util.Hashtable<object, object> arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Javax.Naming.Spi.ObjectFactory CreateObjectFactory(object arg0, Java.Util.Hashtable<, > arg1);
 
         #endregion
 
@@ -117,11 +117,11 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactoryBuilder.html#createObjectFactory(java.lang.Object,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.ObjectFactory"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.Spi.ObjectFactory CreateObjectFactory(object arg0, Java.Util.Hashtable<object, object> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Javax.Naming.Spi.ObjectFactory CreateObjectFactory(object arg0, Java.Util.Hashtable<, > arg1)
         {
             return IExecuteWithSignature<Javax.Naming.Spi.ObjectFactory>("createObjectFactory", "(Ljava/lang/Object;Ljava/util/Hashtable;)Ljavax/naming/spi/ObjectFactory;", arg0, arg1);
         }

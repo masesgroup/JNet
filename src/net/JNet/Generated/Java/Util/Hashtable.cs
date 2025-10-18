@@ -66,13 +66,13 @@ namespace Java.Util
     }
     #endregion
 
-    #region Hashtable<K, V> declaration
+    #region Hashtable<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class Hashtable<K, V> : Java.Util.Dictionary<K, V>
+    public partial class Hashtable<, > : Java.Util.Dictionary<, >
     {
         const string _bridgeClassName = "java.util.Hashtable";
         /// <summary>
@@ -116,8 +116,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Hashtable(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -125,7 +125,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Hashtable(int arg0)
             : base(arg0)
         {
@@ -133,7 +133,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Hashtable(Java.Util.Map arg0)
             : base(arg0)
         {
@@ -143,15 +143,15 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Hashtable"/> to <see cref="Java.Util.Map"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Map(Java.Util.Hashtable t) => t.Cast<Java.Util.Map>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Hashtable"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Hashtable t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Hashtable"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Hashtable t) => t.Cast<Java.Io.Serializable>();
 
@@ -169,8 +169,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#containsValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
@@ -178,7 +178,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Collection Values()
         {
             return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
@@ -186,7 +186,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#entrySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Set EntrySetMethod()
         {
             return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
@@ -194,7 +194,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#keySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Set KeySetMethod()
         {
             return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
@@ -202,8 +202,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(object arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
@@ -211,8 +211,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#containsKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
@@ -220,9 +220,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(object arg0, object arg1)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
@@ -230,10 +230,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Replace(object arg0, object arg1, object arg2)
         {
             return IExecuteWithSignature<bool>("replace", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
@@ -241,9 +241,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Compute(object arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecuteWithSignature("compute", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
@@ -251,9 +251,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object ComputeIfAbsent(object arg0, Java.Util.Function.Function arg1)
         {
             return IExecuteWithSignature("computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
@@ -261,9 +261,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object ComputeIfPresent(object arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecuteWithSignature("computeIfPresent", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
@@ -271,9 +271,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetOrDefault(object arg0, object arg1)
         {
             return IExecuteWithSignature("getOrDefault", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -281,10 +281,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Merge(object arg0, object arg1, Java.Util.Function.BiFunction arg2)
         {
             return IExecuteWithSignature("merge", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1, arg2);
@@ -292,9 +292,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object PutIfAbsent(object arg0, object arg1)
         {
             return IExecuteWithSignature("putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -302,9 +302,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Replace(object arg0, object arg1)
         {
             return IExecuteWithSignature("replace", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -319,7 +319,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ForEach(Java.Util.Function.BiConsumer arg0)
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
@@ -327,7 +327,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putAll(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PutAll(Java.Util.Map arg0)
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
@@ -335,7 +335,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ReplaceAll(Java.Util.Function.BiFunction arg0)
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
@@ -351,15 +351,15 @@ namespace Java.Util
     }
     #endregion
 
-    #region Hashtable<K, V> implementation
-    public partial class Hashtable<K, V>
+    #region Hashtable<, > implementation
+    public partial class Hashtable<, >
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Hashtable(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -367,7 +367,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Hashtable(int arg0)
             : base(arg0)
         {
@@ -375,8 +375,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public Hashtable(Java.Util.Map<K, V> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public Hashtable(Java.Util.Map<, > arg0)
             : base(arg0)
         {
         }
@@ -385,21 +385,21 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Hashtable{K, V}"/> to <see cref="Java.Util.Map{K, V}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Map<K, V>(Java.Util.Hashtable<K, V> t) => t.Cast<Java.Util.Map<K, V>>();
+        public static implicit operator Java.Util.Map<, >(Java.Util.Hashtable<, > t) => t.Cast<Java.Util.Map<, >>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Hashtable{K, V}"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Util.Hashtable<K, V> t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Lang.Cloneable(Java.Util.Hashtable<, > t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Hashtable{K, V}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Hashtable<K, V> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.Hashtable<, > t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Hashtable{K, V}"/> to <see cref="Java.Util.Hashtable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Hashtable(Java.Util.Hashtable<K, V> t) => t.Cast<Java.Util.Hashtable>();
+        public static implicit operator Java.Util.Hashtable(Java.Util.Hashtable<, > t) => t.Cast<Java.Util.Hashtable>();
 
         #endregion
 
@@ -415,8 +415,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#containsValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
@@ -424,32 +424,32 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public Java.Util.Collection<V> Values()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Collection Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<V>>("values", "()Ljava/util/Collection;");
+            return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#entrySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySetMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set EntrySetMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#keySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<K> KeySetMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set KeySetMethod()
         {
-            return IExecuteWithSignature<Java.Util.Set<K>>("keySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(object arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
@@ -457,8 +457,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#containsKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
@@ -466,9 +466,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(object arg0, object arg1)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
@@ -476,10 +476,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="V"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Replace(K arg0, V arg1, V arg2)
         {
             return IExecuteWithSignature<bool>("replace", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
@@ -487,47 +487,47 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V Compute<, , >(K arg0, Java.Util.Function.BiFunction<, , > arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecuteWithSignature<V>("compute", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V ComputeIfAbsent<, >(K arg0, Java.Util.Function.Function<, > arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V
         {
             return IExecuteWithSignature<V>("computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V ComputeIfPresent<, , >(K arg0, Java.Util.Function.BiFunction<, , > arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecuteWithSignature<V>("computeIfPresent", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V GetOrDefault(object arg0, V arg1)
         {
             return IExecuteWithSignature<V>("getOrDefault", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -535,22 +535,22 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg2objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg2ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg2objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg2ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V Merge<, >(K arg0, V arg1, Java.Util.Function.BiFunction<, , > arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V
         {
             return IExecuteWithSignature<V>("merge", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V PutIfAbsent(K arg0, V arg1)
         {
             return IExecuteWithSignature<V>("putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -558,9 +558,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Replace(K arg0, V arg1)
         {
             return IExecuteWithSignature<V>("replace", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -575,31 +575,31 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        public void ForEach<, >(Java.Util.Function.BiConsumer<, > arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putAll(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        public void PutAll<, >(Java.Util.Map<, > arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        public void ReplaceAll<, , >(Java.Util.Function.BiFunction<, , > arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
         }

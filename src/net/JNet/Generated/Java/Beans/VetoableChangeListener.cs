@@ -108,8 +108,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
-        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void VetoableChange(Java.Beans.PropertyChangeEvent arg0);
 
         #endregion
@@ -169,8 +169,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
-        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public virtual void VetoableChange(Java.Beans.PropertyChangeEvent arg0)
         {
             hasOverrideVetoableChange = false;
@@ -209,8 +209,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
-        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public override void VetoableChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecuteWithSignature("vetoableChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);

@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#%3Cinit%3E(javax.swing.text.AbstractDocument.Content)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument.Content"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PlainDocument(Javax.Swing.Text.AbstractDocument.Content arg0)
             : base(arg0)
         {

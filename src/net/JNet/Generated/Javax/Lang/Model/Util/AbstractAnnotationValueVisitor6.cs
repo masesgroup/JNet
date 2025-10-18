@@ -68,13 +68,13 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractAnnotationValueVisitor6<R, P> declaration
+    #region AbstractAnnotationValueVisitor6<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class AbstractAnnotationValueVisitor6<R, P> : Javax.Lang.Model.Element.AnnotationValueVisitor<R, P>
+    public partial class AbstractAnnotationValueVisitor6<, > : Javax.Lang.Model.Element.AnnotationValueVisitor<, >
     {
         const string _bridgeClassName = "javax.lang.model.util.AbstractAnnotationValueVisitor6";
         /// <summary>
@@ -136,9 +136,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Visit(Javax.Lang.Model.Element.AnnotationValue arg0, object arg1)
         {
             return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/AnnotationValue;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -146,8 +146,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Visit(Javax.Lang.Model.Element.AnnotationValue arg0)
         {
             return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/AnnotationValue;)Ljava/lang/Object;", arg0);
@@ -155,9 +155,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visitUnknown(javax.lang.model.element.AnnotationValue,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitUnknown(Javax.Lang.Model.Element.AnnotationValue arg0, object arg1)
         {
             return IExecuteWithSignature("visitUnknown", "(Ljavax/lang/model/element/AnnotationValue;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -173,8 +173,8 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractAnnotationValueVisitor6<R, P> implementation
-    public partial class AbstractAnnotationValueVisitor6<R, P>
+    #region AbstractAnnotationValueVisitor6<, > implementation
+    public partial class AbstractAnnotationValueVisitor6<, >
     {
         #region Constructors
 
@@ -182,9 +182,9 @@ namespace Javax.Lang.Model.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6(Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6<R, P> t) => t.Cast<Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6>();
+        public static implicit operator Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6(Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6<, > t) => t.Cast<Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6>();
 
         #endregion
 
@@ -200,9 +200,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R Visit(Javax.Lang.Model.Element.AnnotationValue arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/AnnotationValue;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -210,8 +210,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R Visit(Javax.Lang.Model.Element.AnnotationValue arg0)
         {
             return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/AnnotationValue;)Ljava/lang/Object;", arg0);
@@ -219,9 +219,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visitUnknown(javax.lang.model.element.AnnotationValue,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitUnknown(Javax.Lang.Model.Element.AnnotationValue arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitUnknown", "(Ljavax/lang/model/element/AnnotationValue;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);

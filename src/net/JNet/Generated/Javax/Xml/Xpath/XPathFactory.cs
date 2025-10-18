@@ -99,7 +99,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newDefaultInstance()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Xpath.XPathFactory NewDefaultInstance()
         {
             return SExecuteWithSignature<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newDefaultInstance", "()Ljavax/xml/xpath/XPathFactory;");
@@ -107,7 +107,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Xpath.XPathFactory NewInstance()
         {
             return SExecuteWithSignature<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", "()Ljavax/xml/xpath/XPathFactory;");
@@ -115,11 +115,11 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
-        /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Xml.Xpath.XPathFactory NewInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecuteWithSignature<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/xml/xpath/XPathFactory;", arg0, arg1, arg2);
@@ -127,9 +127,9 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
-        /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Xml.Xpath.XPathFactory NewInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;)Ljavax/xml/xpath/XPathFactory;", arg0);
@@ -141,9 +141,9 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool GetFeature(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
@@ -151,8 +151,8 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#isObjectModelSupported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsObjectModelSupported(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isObjectModelSupported", "(Ljava/lang/String;)Z", arg0);
@@ -160,7 +160,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newXPath()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Xpath.XPath"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Xpath.XPath NewXPath()
         {
             return IExecuteWithSignature<Javax.Xml.Xpath.XPath>("newXPath", "()Ljavax/xml/xpath/XPath;");
@@ -168,9 +168,9 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
             IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
@@ -178,7 +178,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Xpath.XPathFunctionResolver"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetXPathFunctionResolver(Javax.Xml.Xpath.XPathFunctionResolver arg0)
         {
             IExecuteWithSignature("setXPathFunctionResolver", "(Ljavax/xml/xpath/XPathFunctionResolver;)V", arg0);
@@ -186,7 +186,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Xpath.XPathVariableResolver"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetXPathVariableResolver(Javax.Xml.Xpath.XPathVariableResolver arg0)
         {
             IExecuteWithSignature("setXPathVariableResolver", "(Ljavax/xml/xpath/XPathVariableResolver;)V", arg0);

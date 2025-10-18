@@ -73,7 +73,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ObjID(int arg0)
             : base(arg0)
         {
@@ -111,9 +111,9 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#read(java.io.ObjectInput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectInput"/></param>
-        /// <returns><see cref="Java.Rmi.Server.ObjID"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Server.ObjID Read(Java.Io.ObjectInput arg0)
         {
             return SExecuteWithSignature<Java.Rmi.Server.ObjID>(LocalBridgeClazz, "read", "(Ljava/io/ObjectInput;)Ljava/rmi/server/ObjID;", arg0);
@@ -125,8 +125,8 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#write(java.io.ObjectOutput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(Java.Io.ObjectOutput arg0)
         {
             IExecuteWithSignature("write", "(Ljava/io/ObjectOutput;)V", arg0);

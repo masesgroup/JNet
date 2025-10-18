@@ -66,12 +66,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region Stack<E> declaration
+    #region Stack declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class Stack<E> : Java.Util.Vector<E>
+    public partial class Stack : Java.Util.Vector
     {
         const string _bridgeClassName = "java.util.Stack";
         /// <summary>
@@ -131,7 +131,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#empty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Empty()
         {
             return IExecuteWithSignature<bool>("empty", "()Z");
@@ -139,8 +139,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#push(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Push(object arg0)
         {
             return IExecuteWithSignature("push", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -148,7 +148,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#peek()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Peek()
         {
             return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
@@ -156,7 +156,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#pop()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Pop()
         {
             return IExecuteWithSignature("pop", "()Ljava/lang/Object;");
@@ -164,8 +164,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#search(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Search(object arg0)
         {
             return IExecuteWithSignature<int>("search", "(Ljava/lang/Object;)I", arg0);
@@ -181,8 +181,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region Stack<E> implementation
-    public partial class Stack<E>
+    #region Stack implementation
+    public partial class Stack
     {
         #region Constructors
 
@@ -190,9 +190,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Stack{E}"/> to <see cref="Java.Util.Stack"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Stack(Java.Util.Stack<E> t) => t.Cast<Java.Util.Stack>();
+        public static implicit operator Java.Util.Stack(Java.Util.Stack t) => t.Cast<Java.Util.Stack>();
 
         #endregion
 
@@ -208,7 +208,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#empty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Empty()
         {
             return IExecuteWithSignature<bool>("empty", "()Z");
@@ -216,8 +216,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#push(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Push(E arg0)
         {
             return IExecuteWithSignature<E>("push", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -225,7 +225,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#peek()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Peek()
         {
             return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
@@ -233,7 +233,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#pop()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Pop()
         {
             return IExecuteWithSignature<E>("pop", "()Ljava/lang/Object;");
@@ -241,8 +241,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#search(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Search(object arg0)
         {
             return IExecuteWithSignature<int>("search", "(Ljava/lang/Object;)I", arg0);

@@ -73,8 +73,8 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public BeanContextServiceAvailableEvent(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
             : base(arg0, arg1)
         {
@@ -98,9 +98,9 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#getCurrentServiceSelectors()"/> 
         /// </summary>
-        public Java.Util.Iterator<object> CurrentServiceSelectors
+        public Java.Util.Iterator CurrentServiceSelectors
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<object>>("getCurrentServiceSelectors", "()Ljava/util/Iterator;"); }
+            get { return IExecuteWithSignature<Java.Util.Iterator>("getCurrentServiceSelectors", "()Ljava/util/Iterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#getServiceClass()"/> 

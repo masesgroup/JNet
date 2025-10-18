@@ -73,12 +73,12 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html#%3Cinit%3E(java.awt.dnd.DragGestureEvent,java.awt.Cursor,java.awt.Image,java.awt.Point,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureEvent"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Cursor"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Point"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.Dnd.DragSourceListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public DragSourceContext(Java.Awt.Dnd.DragGestureEvent arg0, Java.Awt.Cursor arg1, Java.Awt.Image arg2, Java.Awt.Point arg3, Java.Awt.Datatransfer.Transferable arg4, Java.Awt.Dnd.DragSourceListener arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -88,15 +88,15 @@ namespace Java.Awt.Dnd
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Dnd.DragSourceContext"/> to <see cref="Java.Awt.Dnd.DragSourceListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.Dnd.DragSourceListener(Java.Awt.Dnd.DragSourceContext t) => t.Cast<Java.Awt.Dnd.DragSourceListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Dnd.DragSourceContext"/> to <see cref="Java.Awt.Dnd.DragSourceMotionListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.Dnd.DragSourceMotionListener(Java.Awt.Dnd.DragSourceContext t) => t.Cast<Java.Awt.Dnd.DragSourceMotionListener>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Dnd.DragSourceContext"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Dnd.DragSourceContext t) => t.Cast<Java.Io.Serializable>();
 
@@ -156,8 +156,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html#addDragSourceListener(java.awt.dnd.DragSourceListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceListener"/></param>
-        /// <exception cref="Java.Util.TooManyListenersException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddDragSourceListener(Java.Awt.Dnd.DragSourceListener arg0)
         {
             IExecuteWithSignature("addDragSourceListener", "(Ljava/awt/dnd/DragSourceListener;)V", arg0);
@@ -165,7 +165,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html#removeDragSourceListener(java.awt.dnd.DragSourceListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveDragSourceListener(Java.Awt.Dnd.DragSourceListener arg0)
         {
             IExecuteWithSignature("removeDragSourceListener", "(Ljava/awt/dnd/DragSourceListener;)V", arg0);
@@ -173,7 +173,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDropEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DragDropEnd(Java.Awt.Dnd.DragSourceDropEvent arg0)
         {
             IExecuteWithSignature("dragDropEnd", "(Ljava/awt/dnd/DragSourceDropEvent;)V", arg0);
@@ -181,7 +181,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DragEnter(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             IExecuteWithSignature("dragEnter", "(Ljava/awt/dnd/DragSourceDragEvent;)V", arg0);
@@ -189,7 +189,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DragExit(Java.Awt.Dnd.DragSourceEvent arg0)
         {
             IExecuteWithSignature("dragExit", "(Ljava/awt/dnd/DragSourceEvent;)V", arg0);
@@ -197,7 +197,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DragMouseMoved(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             IExecuteWithSignature("dragMouseMoved", "(Ljava/awt/dnd/DragSourceDragEvent;)V", arg0);
@@ -205,7 +205,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DragOver(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             IExecuteWithSignature("dragOver", "(Ljava/awt/dnd/DragSourceDragEvent;)V", arg0);
@@ -213,7 +213,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DropActionChanged(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             IExecuteWithSignature("dropActionChanged", "(Ljava/awt/dnd/DragSourceDragEvent;)V", arg0);

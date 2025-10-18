@@ -78,7 +78,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getIds()"/> 
         /// </summary>
-        Java.Util.Enumeration<byte[]> Ids { get; }
+        Java.Util.Enumeration Ids { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSessionCacheSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)"/>
         /// </summary>
@@ -90,8 +90,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSession(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Net.Ssl.SSLSession GetSession(byte[] arg0);
 
         #endregion
@@ -127,9 +127,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getIds()"/> 
         /// </summary>
-        public Java.Util.Enumeration<byte[]> Ids
+        public Java.Util.Enumeration Ids
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<byte[]>>("getIds", "()Ljava/util/Enumeration;"); }
+            get { return IExecuteWithSignature<Java.Util.Enumeration>("getIds", "()Ljava/util/Enumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSessionCacheSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)"/>
@@ -148,8 +148,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSession(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Net.Ssl.SSLSession GetSession(byte[] arg0)
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "([B)Ljavax/net/ssl/SSLSession;", new object[] { arg0 });

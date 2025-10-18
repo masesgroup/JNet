@@ -78,12 +78,12 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html#systemRoot()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Prefs.Preferences SystemRoot();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html#userRoot()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Util.Prefs.Preferences UserRoot();
 
         #endregion
@@ -119,7 +119,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html#systemRoot()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Prefs.Preferences SystemRoot()
         {
             return IExecuteWithSignature<Java.Util.Prefs.Preferences>("systemRoot", "()Ljava/util/prefs/Preferences;");
@@ -127,7 +127,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html#userRoot()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Prefs.Preferences UserRoot()
         {
             return IExecuteWithSignature<Java.Util.Prefs.Preferences>("userRoot", "()Ljava/util/prefs/Preferences;");

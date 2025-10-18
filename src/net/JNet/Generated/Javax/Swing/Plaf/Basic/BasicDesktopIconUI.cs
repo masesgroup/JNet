@@ -89,8 +89,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDesktopIconUI.html#getInsets(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Java.Awt.Insets"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Insets GetInsets(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<Java.Awt.Insets>("getInsets", "(Ljavax/swing/JComponent;)Ljava/awt/Insets;", arg0);

@@ -73,8 +73,8 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html#%3Cinit%3E(org.w3c.dom.Node,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DOMSource(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html#%3Cinit%3E(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DOMSource(Org.W3c.Dom.Node arg0)
             : base(arg0)
         {
@@ -126,7 +126,7 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");

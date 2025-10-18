@@ -78,25 +78,25 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#getService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Class,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         object GetService(Java.Beans.Beancontext.BeanContextServices arg0, object arg1, Java.Lang.Class arg2, object arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#getCurrentServiceSelectors(java.beans.beancontext.BeanContextServices,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<object> GetCurrentServiceSelectors(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Iterator GetCurrentServiceSelectors(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#releaseService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         void ReleaseService(Java.Beans.Beancontext.BeanContextServices arg0, object arg1, object arg2);
 
         #endregion
@@ -132,11 +132,11 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#getService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Class,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetService(Java.Beans.Beancontext.BeanContextServices arg0, object arg1, Java.Lang.Class arg2, object arg3)
         {
             return IExecuteWithSignature("getService", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
@@ -144,19 +144,19 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#getCurrentServiceSelectors(java.beans.beancontext.BeanContextServices,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<object> GetCurrentServiceSelectors(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator GetCurrentServiceSelectors(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
         {
-            return IExecuteWithSignature<Java.Util.Iterator<object>>("getCurrentServiceSelectors", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Class;)Ljava/util/Iterator;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Iterator>("getCurrentServiceSelectors", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Class;)Ljava/util/Iterator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#releaseService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void ReleaseService(Java.Beans.Beancontext.BeanContextServices arg0, object arg1, object arg2)
         {
             IExecuteWithSignature("releaseService", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);

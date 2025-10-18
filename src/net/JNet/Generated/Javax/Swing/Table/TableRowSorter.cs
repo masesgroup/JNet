@@ -66,12 +66,12 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region TableRowSorter<M> declaration
+    #region TableRowSorter declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html"/>
     /// </summary>
-    /// <typeparam name="M"><see cref="Javax.Swing.Table.ITableModel"/></typeparam>
-    public partial class TableRowSorter<M> : Javax.Swing.DefaultRowSorter<M, Java.Lang.Integer> where M : Javax.Swing.Table.ITableModel, new()
+    /// <typeparam name="M"></typeparam>
+    public partial class TableRowSorter : Javax.Swing.DefaultRowSorter<, >
     {
         const string _bridgeClassName = "javax.swing.table.TableRowSorter";
         /// <summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#%3Cinit%3E(javax.swing.table.TableModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TableRowSorter(Javax.Swing.Table.TableModel arg0)
             : base(arg0)
         {
@@ -146,7 +146,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#setModel(javax.swing.table.TableModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetModel(Javax.Swing.Table.TableModel arg0)
         {
             IExecuteWithSignature("setModel", "(Ljavax/swing/table/TableModel;)V", arg0);
@@ -162,14 +162,14 @@ namespace Javax.Swing.Table
     }
     #endregion
 
-    #region TableRowSorter<M> implementation
-    public partial class TableRowSorter<M>
+    #region TableRowSorter implementation
+    public partial class TableRowSorter
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#%3Cinit%3E(javax.swing.table.TableModel)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="M"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TableRowSorter(M arg0)
             : base(arg0)
         {
@@ -179,9 +179,9 @@ namespace Javax.Swing.Table
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Table.TableRowSorter{M}"/> to <see cref="Javax.Swing.Table.TableRowSorter"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.Table.TableRowSorter(Javax.Swing.Table.TableRowSorter<M> t) => t.Cast<Javax.Swing.Table.TableRowSorter>();
+        public static implicit operator Javax.Swing.Table.TableRowSorter(Javax.Swing.Table.TableRowSorter t) => t.Cast<Javax.Swing.Table.TableRowSorter>();
 
         #endregion
 
@@ -204,7 +204,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#setModel(javax.swing.table.TableModel)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="M"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetModel(M arg0)
         {
             IExecuteWithSignature("setModel", "(Ljavax/swing/table/TableModel;)V", arg0);

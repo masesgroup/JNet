@@ -75,7 +75,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#%3Cinit%3E(javax.management.MBeanServer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JMXConnectorServer(Javax.Management.MBeanServer arg0)
             : base(arg0)
         {
@@ -85,15 +85,15 @@ namespace Javax.Management.Remote
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.JMXConnectorServer"/> to <see cref="Javax.Management.Remote.JMXConnectorServerMBean"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Remote.JMXConnectorServerMBean(Javax.Management.Remote.JMXConnectorServer t) => t.Cast<Javax.Management.Remote.JMXConnectorServerMBean>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.JMXConnectorServer"/> to <see cref="Javax.Management.MBeanRegistration"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Remote.JMXConnectorServer t) => t.Cast<Javax.Management.MBeanRegistration>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.JMXConnectorServer"/> to <see cref="Javax.Management.Remote.JMXAddressable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Remote.JMXAddressable(Javax.Management.Remote.JMXConnectorServer t) => t.Cast<Javax.Management.Remote.JMXAddressable>();
 
@@ -131,19 +131,19 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#toJMXConnector(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<Java.Lang.String, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<, > arg0)
         {
             return IExecuteWithSignature<Javax.Management.Remote.JMXConnector>("toJMXConnector", "(Ljava/util/Map;)Ljavax/management/remote/JMXConnector;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
             return IExecuteWithSignature<Javax.Management.ObjectName>("preRegister", "(Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", arg0, arg1);
@@ -151,7 +151,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#preDeregister()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <exception cref=""/>
         public void PreDeregister()
         {
             IExecuteWithSignature("preDeregister", "()V");
@@ -159,7 +159,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Remote.MBeanServerForwarder"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMBeanServerForwarder(Javax.Management.Remote.MBeanServerForwarder arg0)
         {
             IExecuteWithSignature("setMBeanServerForwarder", "(Ljavax/management/remote/MBeanServerForwarder;)V", arg0);
@@ -174,7 +174,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PostRegister(Java.Lang.Boolean arg0)
         {
             IExecuteWithSignature("postRegister", "(Ljava/lang/Boolean;)V", arg0);

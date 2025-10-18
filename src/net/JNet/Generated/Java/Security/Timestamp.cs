@@ -73,8 +73,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html#%3Cinit%3E(java.util.Date,java.security.cert.CertPath)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Cert.CertPath"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Timestamp(Java.Util.Date arg0, Java.Security.Cert.CertPath arg1)
             : base(arg0, arg1)
         {

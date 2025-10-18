@@ -198,46 +198,46 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsInputClosed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsOutputClosed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendBinary(java.nio.ByteBuffer,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendBinary(Java.Nio.ByteBuffer arg0, bool arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Concurrent.CompletableFuture SendBinary(Java.Nio.ByteBuffer arg0, bool arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendClose(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendClose(int arg0, Java.Lang.String arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Concurrent.CompletableFuture SendClose(int arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendPing(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendPing(Java.Nio.ByteBuffer arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Concurrent.CompletableFuture SendPing(Java.Nio.ByteBuffer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendPong(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendPong(Java.Nio.ByteBuffer arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Concurrent.CompletableFuture SendPong(Java.Nio.ByteBuffer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendText(java.lang.CharSequence,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendText(Java.Lang.CharSequence arg0, bool arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Concurrent.CompletableFuture SendText(Java.Lang.CharSequence arg0, bool arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#abort()"/>
         /// </summary>
@@ -245,7 +245,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#request(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Request(long arg0);
 
         #endregion
@@ -294,7 +294,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsInputClosed()
         {
             return IExecuteWithSignature<bool>("isInputClosed", "()Z");
@@ -302,7 +302,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOutputClosed()
         {
             return IExecuteWithSignature<bool>("isOutputClosed", "()Z");
@@ -310,50 +310,50 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendBinary(java.nio.ByteBuffer,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendBinary(Java.Nio.ByteBuffer arg0, bool arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.CompletableFuture SendBinary(Java.Nio.ByteBuffer arg0, bool arg1)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendBinary", "(Ljava/nio/ByteBuffer;Z)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("sendBinary", "(Ljava/nio/ByteBuffer;Z)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendClose(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendClose(int arg0, Java.Lang.String arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.CompletableFuture SendClose(int arg0, Java.Lang.String arg1)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendClose", "(ILjava/lang/String;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("sendClose", "(ILjava/lang/String;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendPing(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendPing(Java.Nio.ByteBuffer arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.CompletableFuture SendPing(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendPing", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletableFuture;", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("sendPing", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendPong(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendPong(Java.Nio.ByteBuffer arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.CompletableFuture SendPong(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendPong", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletableFuture;", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("sendPong", "(Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendText(java.lang.CharSequence,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendText(Java.Lang.CharSequence arg0, bool arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.CompletableFuture SendText(Java.Lang.CharSequence arg0, bool arg1)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendText", "(Ljava/lang/CharSequence;Z)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("sendText", "(Ljava/lang/CharSequence;Z)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#abort()"/>
@@ -365,7 +365,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#request(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Request(long arg0)
         {
             IExecuteWithSignature("request", "(J)V", arg0);
@@ -397,8 +397,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#connectTimeout(java.time.Duration)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
-            /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.WebSocket.Builder ConnectTimeout(Java.Time.Duration arg0)
             {
                 return IExecuteWithSignature<Java.Net.Http.WebSocket.Builder>("connectTimeout", "(Ljava/time/Duration;)Ljava/net/http/WebSocket$Builder;", arg0);
@@ -406,9 +406,9 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#header(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.WebSocket.Builder Header(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 return IExecuteWithSignature<Java.Net.Http.WebSocket.Builder>("header", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/WebSocket$Builder;", arg0, arg1);
@@ -416,9 +416,9 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#subprotocols(java.lang.String,java.lang.String...)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Net.Http.WebSocket.Builder Subprotocols(Java.Lang.String arg0, params Java.Lang.String[] arg1)
             {
                 return IExecuteWithSignature<Java.Net.Http.WebSocket.Builder>("subprotocols", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/net/http/WebSocket$Builder;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -426,12 +426,12 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#buildAsync(java.net.URI,java.net.http.WebSocket.Listener)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-            /// <param name="arg1"><see cref="Java.Net.Http.WebSocket.Listener"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-            public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> BuildAsync(Java.Net.URI arg0, Java.Net.Http.WebSocket.Listener arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public Java.Util.Concurrent.CompletableFuture BuildAsync(Java.Net.URI arg0, Java.Net.Http.WebSocket.Listener arg1)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("buildAsync", "(Ljava/net/URI;Ljava/net/http/WebSocket$Listener;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("buildAsync", "(Ljava/net/URI;Ljava/net/http/WebSocket$Listener;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
             }
 
             #endregion
@@ -481,21 +481,21 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnBinaryDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
+            public Java.Util.Concurrent.CompletionStage OnBinaryDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onBinaryDefault", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("onBinaryDefault", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
 
             /// <summary>
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBinary"/> has a value it takes precedence over corresponding class method</remarks>
-            public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, bool, Java.Util.Concurrent.CompletionStage<object>> OnOnBinary { get; set; } = null;
+            public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, bool, Java.Util.Concurrent.CompletionStage> OnOnBinary { get; set; } = null;
 
             bool hasOverrideOnBinary = true;
             void OnBinaryEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
@@ -509,33 +509,33 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnBinaryDefault"/>; override the method to implement a different behavior</remarks>
-            public virtual Java.Util.Concurrent.CompletionStage<object> OnBinary(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
+            public virtual Java.Util.Concurrent.CompletionStage OnBinary(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
             {
                 hasOverrideOnBinary = false; return default;
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnCloseDefault(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
+            public Java.Util.Concurrent.CompletionStage OnCloseDefault(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onCloseDefault", "(Ljava/net/http/WebSocket;ILjava/lang/String;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("onCloseDefault", "(Ljava/net/http/WebSocket;ILjava/lang/String;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
 
             /// <summary>
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClose"/> has a value it takes precedence over corresponding class method</remarks>
-            public global::System.Func<Java.Net.Http.WebSocket, int, Java.Lang.String, Java.Util.Concurrent.CompletionStage<object>> OnOnClose { get; set; } = null;
+            public global::System.Func<Java.Net.Http.WebSocket, int, Java.Lang.String, Java.Util.Concurrent.CompletionStage> OnOnClose { get; set; } = null;
 
             bool hasOverrideOnClose = true;
             void OnCloseEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
@@ -549,32 +549,32 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCloseDefault"/>; override the method to implement a different behavior</remarks>
-            public virtual Java.Util.Concurrent.CompletionStage<object> OnClose(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
+            public virtual Java.Util.Concurrent.CompletionStage OnClose(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
             {
                 hasOverrideOnClose = false; return default;
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPing(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnPingDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
+            public Java.Util.Concurrent.CompletionStage OnPingDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onPingDefault", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("onPingDefault", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
             }
 
             /// <summary>
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPing(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPing"/> has a value it takes precedence over corresponding class method</remarks>
-            public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage<object>> OnOnPing { get; set; } = null;
+            public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage> OnOnPing { get; set; } = null;
 
             bool hasOverrideOnPing = true;
             void OnPingEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
@@ -588,31 +588,31 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPing(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPingDefault"/>; override the method to implement a different behavior</remarks>
-            public virtual Java.Util.Concurrent.CompletionStage<object> OnPing(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
+            public virtual Java.Util.Concurrent.CompletionStage OnPing(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
                 hasOverrideOnPing = false; return default;
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPong(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnPongDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
+            public Java.Util.Concurrent.CompletionStage OnPongDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onPongDefault", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("onPongDefault", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
             }
 
             /// <summary>
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPong(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPong"/> has a value it takes precedence over corresponding class method</remarks>
-            public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage<object>> OnOnPong { get; set; } = null;
+            public global::System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage> OnOnPong { get; set; } = null;
 
             bool hasOverrideOnPong = true;
             void OnPongEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
@@ -626,32 +626,32 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPong(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPongDefault"/>; override the method to implement a different behavior</remarks>
-            public virtual Java.Util.Concurrent.CompletionStage<object> OnPong(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
+            public virtual Java.Util.Concurrent.CompletionStage OnPong(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
                 hasOverrideOnPong = false; return default;
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-            public Java.Util.Concurrent.CompletionStage<object> OnTextDefault(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
+            public Java.Util.Concurrent.CompletionStage OnTextDefault(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onTextDefault", "(Ljava/net/http/WebSocket;Ljava/lang/CharSequence;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("onTextDefault", "(Ljava/net/http/WebSocket;Ljava/lang/CharSequence;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
 
             /// <summary>
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnText"/> has a value it takes precedence over corresponding class method</remarks>
-            public global::System.Func<Java.Net.Http.WebSocket, Java.Lang.CharSequence, bool, Java.Util.Concurrent.CompletionStage<object>> OnOnText { get; set; } = null;
+            public global::System.Func<Java.Net.Http.WebSocket, Java.Lang.CharSequence, bool, Java.Util.Concurrent.CompletionStage> OnOnText { get; set; } = null;
 
             bool hasOverrideOnText = true;
             void OnTextEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
@@ -665,20 +665,20 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnTextDefault"/>; override the method to implement a different behavior</remarks>
-            public virtual Java.Util.Concurrent.CompletionStage<object> OnText(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
+            public virtual Java.Util.Concurrent.CompletionStage OnText(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
             {
                 hasOverrideOnText = false; return default;
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onError(java.net.http.WebSocket,java.lang.Throwable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnErrorDefault(Java.Net.Http.WebSocket arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
@@ -703,8 +703,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onError(java.net.http.WebSocket,java.lang.Throwable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnErrorDefault"/>; override the method to implement a different behavior</remarks>
             public virtual void OnError(Java.Net.Http.WebSocket arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
@@ -713,7 +713,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnOpenDefault(Java.Net.Http.WebSocket arg0)
             {
@@ -738,7 +738,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnOpenDefault"/>; override the method to implement a different behavior</remarks>
             public virtual void OnOpen(Java.Net.Http.WebSocket arg0)
             {
@@ -778,61 +778,61 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            public override Java.Util.Concurrent.CompletionStage<object> OnBinary(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public override Java.Util.Concurrent.CompletionStage OnBinary(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onBinary", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("onBinary", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            public override Java.Util.Concurrent.CompletionStage<object> OnClose(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public override Java.Util.Concurrent.CompletionStage OnClose(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onClose", "(Ljava/net/http/WebSocket;ILjava/lang/String;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("onClose", "(Ljava/net/http/WebSocket;ILjava/lang/String;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPing(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            public override Java.Util.Concurrent.CompletionStage<object> OnPing(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public override Java.Util.Concurrent.CompletionStage OnPing(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onPing", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("onPing", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPong(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            public override Java.Util.Concurrent.CompletionStage<object> OnPong(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public override Java.Util.Concurrent.CompletionStage OnPong(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onPong", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("onPong", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            public override Java.Util.Concurrent.CompletionStage<object> OnText(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            public override Java.Util.Concurrent.CompletionStage OnText(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
             {
-                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onText", "(Ljava/net/http/WebSocket;Ljava/lang/CharSequence;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("onText", "(Ljava/net/http/WebSocket;Ljava/lang/CharSequence;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onError(java.net.http.WebSocket,java.lang.Throwable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public override void OnError(Java.Net.Http.WebSocket arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
                 IExecuteWithSignature("onError", "(Ljava/net/http/WebSocket;Ljava/lang/Throwable;)V", arg0, arg1);
@@ -840,7 +840,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public override void OnOpen(Java.Net.Http.WebSocket arg0)
             {
                 IExecuteWithSignature("onOpen", "(Ljava/net/http/WebSocket;)V", arg0);

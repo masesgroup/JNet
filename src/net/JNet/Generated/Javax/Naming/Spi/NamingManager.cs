@@ -91,7 +91,7 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#hasInitialContextFactoryBuilder()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public static bool HasInitialContextFactoryBuilder()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "hasInitialContextFactoryBuilder", "()Z");
@@ -99,35 +99,35 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
-        public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<, > arg3)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "getObjectInstance", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getStateToBind(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public static object GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static object GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<, > arg3)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "getStateToBind", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getContinuationContext(javax.naming.CannotProceedException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.CannotProceedException"/></param>
-        /// <returns><see cref="Javax.Naming.Context"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Naming.Context GetContinuationContext(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return SExecuteWithSignature<Javax.Naming.Context>(LocalBridgeClazz, "getContinuationContext", "(Ljavax/naming/CannotProceedException;)Ljavax/naming/Context;", arg0);
@@ -135,29 +135,29 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getInitialContext(java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see cref="Javax.Naming.Context"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Context GetInitialContext(Java.Util.Hashtable<object, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Javax.Naming.Context GetInitialContext(Java.Util.Hashtable<, > arg0)
         {
             return SExecuteWithSignature<Javax.Naming.Context>(LocalBridgeClazz, "getInitialContext", "(Ljava/util/Hashtable;)Ljavax/naming/Context;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getURLContext(java.lang.String,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see cref="Javax.Naming.Context"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Context GetURLContext(Java.Lang.String arg0, Java.Util.Hashtable<object, object> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Javax.Naming.Context GetURLContext(Java.Lang.String arg0, Java.Util.Hashtable<, > arg1)
         {
             return SExecuteWithSignature<Javax.Naming.Context>(LocalBridgeClazz, "getURLContext", "(Ljava/lang/String;Ljava/util/Hashtable;)Ljavax/naming/Context;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#setInitialContextFactoryBuilder(javax.naming.spi.InitialContextFactoryBuilder)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Spi.InitialContextFactoryBuilder"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void SetInitialContextFactoryBuilder(Javax.Naming.Spi.InitialContextFactoryBuilder arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setInitialContextFactoryBuilder", "(Ljavax/naming/spi/InitialContextFactoryBuilder;)V", arg0);
@@ -165,8 +165,8 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#setObjectFactoryBuilder(javax.naming.spi.ObjectFactoryBuilder)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Spi.ObjectFactoryBuilder"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void SetObjectFactoryBuilder(Javax.Naming.Spi.ObjectFactoryBuilder arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setObjectFactoryBuilder", "(Ljavax/naming/spi/ObjectFactoryBuilder;)V", arg0);

@@ -85,11 +85,11 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/multi/MultiLookAndFeel.html#createUIs(javax.swing.plaf.ComponentUI,java.util.Vector,javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ComponentUI"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
-        public static Javax.Swing.Plaf.ComponentUI CreateUIs(Javax.Swing.Plaf.ComponentUI arg0, Java.Util.Vector<Javax.Swing.Plaf.ComponentUI> arg1, Javax.Swing.JComponent arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Javax.Swing.Plaf.ComponentUI CreateUIs(Javax.Swing.Plaf.ComponentUI arg0, Java.Util.Vector arg1, Javax.Swing.JComponent arg2)
         {
             return SExecuteWithSignature<Javax.Swing.Plaf.ComponentUI>(LocalBridgeClazz, "createUIs", "(Ljavax/swing/plaf/ComponentUI;Ljava/util/Vector;Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;", arg0, arg1, arg2);
         }

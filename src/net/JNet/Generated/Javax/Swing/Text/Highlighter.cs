@@ -168,34 +168,34 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#addHighlight(int,int,javax.swing.text.Highlighter.HighlightPainter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Highlighter.HighlightPainter"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         object AddHighlight(int arg0, int arg1, Javax.Swing.Text.Highlighter.HighlightPainter arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#changeHighlight(java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void ChangeHighlight(object arg0, int arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#deinstall(javax.swing.text.JTextComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Deinstall(Javax.Swing.Text.JTextComponent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#install(javax.swing.text.JTextComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Install(Javax.Swing.Text.JTextComponent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#paint(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Paint(Java.Awt.Graphics arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#removeAllHighlights()"/>
@@ -204,7 +204,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#removeHighlight(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveHighlight(object arg0);
 
         #endregion
@@ -247,11 +247,11 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#addHighlight(int,int,javax.swing.text.Highlighter.HighlightPainter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Highlighter.HighlightPainter"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object AddHighlight(int arg0, int arg1, Javax.Swing.Text.Highlighter.HighlightPainter arg2)
         {
             return IExecuteWithSignature("addHighlight", "(IILjavax/swing/text/Highlighter$HighlightPainter;)Ljava/lang/Object;", arg0, arg1, arg2);
@@ -259,10 +259,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#changeHighlight(java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void ChangeHighlight(object arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("changeHighlight", "(Ljava/lang/Object;II)V", arg0, arg1, arg2);
@@ -270,7 +270,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#deinstall(javax.swing.text.JTextComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Deinstall(Javax.Swing.Text.JTextComponent arg0)
         {
             IExecuteWithSignature("deinstall", "(Ljavax/swing/text/JTextComponent;)V", arg0);
@@ -278,7 +278,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#install(javax.swing.text.JTextComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Install(Javax.Swing.Text.JTextComponent arg0)
         {
             IExecuteWithSignature("install", "(Ljavax/swing/text/JTextComponent;)V", arg0);
@@ -286,7 +286,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#paint(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Paint(Java.Awt.Graphics arg0)
         {
             IExecuteWithSignature("paint", "(Ljava/awt/Graphics;)V", arg0);
@@ -301,7 +301,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#removeHighlight(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveHighlight(object arg0)
         {
             IExecuteWithSignature("removeHighlight", "(Ljava/lang/Object;)V", arg0);
@@ -385,11 +385,11 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.HighlightPainter.html#paint(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
-            /// <param name="arg4"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
             public void Paint(Java.Awt.Graphics arg0, int arg1, int arg2, Java.Awt.Shape arg3, Javax.Swing.Text.JTextComponent arg4)
             {
                 IExecuteWithSignature("paint", "(Ljava/awt/Graphics;IILjava/awt/Shape;Ljavax/swing/text/JTextComponent;)V", arg0, arg1, arg2, arg3, arg4);

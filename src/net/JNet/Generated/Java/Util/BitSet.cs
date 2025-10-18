@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BitSet(int arg0)
             : base(arg0)
         {
@@ -83,11 +83,11 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.BitSet"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.BitSet t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.BitSet"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.BitSet t) => t.Cast<Java.Io.Serializable>();
 
@@ -101,8 +101,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Util.BitSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.BitSet ValueOf(byte[] arg0)
         {
             return SExecuteWithSignature<Java.Util.BitSet>(LocalBridgeClazz, "valueOf", "([B)Ljava/util/BitSet;", new object[] { arg0 });
@@ -110,8 +110,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(java.nio.ByteBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.BitSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.BitSet ValueOf(Java.Nio.ByteBuffer arg0)
         {
             return SExecuteWithSignature<Java.Util.BitSet>(LocalBridgeClazz, "valueOf", "(Ljava/nio/ByteBuffer;)Ljava/util/BitSet;", arg0);
@@ -119,8 +119,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(java.nio.LongBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.LongBuffer"/></param>
-        /// <returns><see cref="Java.Util.BitSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.BitSet ValueOf(Java.Nio.LongBuffer arg0)
         {
             return SExecuteWithSignature<Java.Util.BitSet>(LocalBridgeClazz, "valueOf", "(Ljava/nio/LongBuffer;)Ljava/util/BitSet;", arg0);
@@ -128,8 +128,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(long[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.BitSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.BitSet ValueOf(long[] arg0)
         {
             return SExecuteWithSignature<Java.Util.BitSet>(LocalBridgeClazz, "valueOf", "([J)Ljava/util/BitSet;", new object[] { arg0 });
@@ -141,8 +141,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Get(int arg0)
         {
             return IExecuteWithSignature<bool>("get", "(I)Z", arg0);
@@ -150,8 +150,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#intersects(java.util.BitSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Intersects(Java.Util.BitSet arg0)
         {
             return IExecuteWithSignature<bool>("intersects", "(Ljava/util/BitSet;)Z", arg0);
@@ -159,7 +159,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -167,7 +167,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toByteArray()"/>
         /// </summary>
-        /// <returns><see cref="byte"/></returns>
+        /// <returns><see cref=""/></returns>
         public byte[] ToByteArray()
         {
             return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
@@ -175,7 +175,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#cardinality()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Cardinality()
         {
             return IExecuteWithSignature<int>("cardinality", "()I");
@@ -183,7 +183,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#length()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Length()
         {
             return IExecuteWithSignature<int>("length", "()I");
@@ -191,8 +191,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#nextClearBit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int NextClearBit(int arg0)
         {
             return IExecuteWithSignature<int>("nextClearBit", "(I)I", arg0);
@@ -200,8 +200,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#nextSetBit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int NextSetBit(int arg0)
         {
             return IExecuteWithSignature<int>("nextSetBit", "(I)I", arg0);
@@ -209,8 +209,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#previousClearBit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int PreviousClearBit(int arg0)
         {
             return IExecuteWithSignature<int>("previousClearBit", "(I)I", arg0);
@@ -218,8 +218,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#previousSetBit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int PreviousSetBit(int arg0)
         {
             return IExecuteWithSignature<int>("previousSetBit", "(I)I", arg0);
@@ -227,7 +227,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -235,9 +235,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#get(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.BitSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.BitSet Get(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Util.BitSet>("get", "(II)Ljava/util/BitSet;", arg0, arg1);
@@ -245,7 +245,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#stream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.IntStream Stream()
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("stream", "()Ljava/util/stream/IntStream;");
@@ -253,7 +253,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toLongArray()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long[] ToLongArray()
         {
             return IExecuteWithSignatureArray<long>("toLongArray", "()[J");
@@ -261,7 +261,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#and(java.util.BitSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void And(Java.Util.BitSet arg0)
         {
             IExecuteWithSignature("and", "(Ljava/util/BitSet;)V", arg0);
@@ -269,7 +269,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#andNot(java.util.BitSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AndNot(Java.Util.BitSet arg0)
         {
             IExecuteWithSignature("andNot", "(Ljava/util/BitSet;)V", arg0);
@@ -284,8 +284,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#clear(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Clear(int arg0, int arg1)
         {
             IExecuteWithSignature("clear", "(II)V", arg0, arg1);
@@ -293,7 +293,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#clear(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Clear(int arg0)
         {
             IExecuteWithSignature("clear", "(I)V", arg0);
@@ -301,8 +301,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#flip(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Flip(int arg0, int arg1)
         {
             IExecuteWithSignature("flip", "(II)V", arg0, arg1);
@@ -310,7 +310,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#flip(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Flip(int arg0)
         {
             IExecuteWithSignature("flip", "(I)V", arg0);
@@ -318,7 +318,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#or(java.util.BitSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Or(Java.Util.BitSet arg0)
         {
             IExecuteWithSignature("or", "(Ljava/util/BitSet;)V", arg0);
@@ -326,8 +326,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Set(int arg0, bool arg1)
         {
             IExecuteWithSignature("set", "(IZ)V", arg0, arg1);
@@ -335,9 +335,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Set(int arg0, int arg1, bool arg2)
         {
             IExecuteWithSignature("set", "(IIZ)V", arg0, arg1, arg2);
@@ -345,8 +345,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Set(int arg0, int arg1)
         {
             IExecuteWithSignature("set", "(II)V", arg0, arg1);
@@ -354,7 +354,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Set(int arg0)
         {
             IExecuteWithSignature("set", "(I)V", arg0);
@@ -362,7 +362,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#xor(java.util.BitSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Xor(Java.Util.BitSet arg0)
         {
             IExecuteWithSignature("xor", "(Ljava/util/BitSet;)V", arg0);

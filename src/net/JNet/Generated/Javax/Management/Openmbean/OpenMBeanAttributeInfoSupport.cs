@@ -73,16 +73,16 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,java.lang.Object,java.lang.Comparable,java.lang.Comparable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="Java.Lang.Comparable"/></param>
-        /// <param name="arg8"><see cref="Java.Lang.Comparable"/></param>
-        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <exception cref=""/>
         public OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, Java.Lang.Comparable arg7, Java.Lang.Comparable arg8)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
         {
@@ -90,15 +90,15 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,java.lang.Object,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <exception cref=""/>
         public OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, object[] arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
@@ -106,14 +106,14 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <exception cref=""/>
         public OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -121,27 +121,27 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
-        /// <param name="arg6"><see cref="Javax.Management.Descriptor"/></param>
-        public OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        public OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
-        public OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        public OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
@@ -150,7 +150,7 @@ namespace Javax.Management.Openmbean
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Openmbean.OpenMBeanAttributeInfoSupport"/> to <see cref="Javax.Management.Openmbean.OpenMBeanAttributeInfo"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Openmbean.OpenMBeanAttributeInfo(Javax.Management.Openmbean.OpenMBeanAttributeInfoSupport t) => t.Cast<Javax.Management.Openmbean.OpenMBeanAttributeInfo>();
 
@@ -175,35 +175,35 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#getLegalValues()"/> 
         /// </summary>
-        public Java.Util.Set<object> LegalValues
+        public Java.Util.Set LegalValues
         {
-            get { return IExecuteWithSignature<Java.Util.Set<object>>("getLegalValues", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getLegalValues", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#getMaxValue()"/> 
         /// </summary>
-        public Java.Lang.Comparable<object> MaxValue
+        public Java.Lang.Comparable MaxValue
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMaxValue", "()Ljava/lang/Comparable;"); }
+            get { return IExecuteWithSignature<Java.Lang.Comparable>("getMaxValue", "()Ljava/lang/Comparable;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#getMinValue()"/> 
         /// </summary>
-        public Java.Lang.Comparable<object> MinValue
+        public Java.Lang.Comparable MinValue
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMinValue", "()Ljava/lang/Comparable;"); }
+            get { return IExecuteWithSignature<Java.Lang.Comparable>("getMinValue", "()Ljava/lang/Comparable;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#getOpenType()"/> 
         /// </summary>
-        public Javax.Management.Openmbean.OpenType<object> OpenType
+        public Javax.Management.Openmbean.OpenType OpenType
         {
-            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType<object>>("getOpenType", "()Ljavax/management/openmbean/OpenType;"); }
+            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType>("getOpenType", "()Ljavax/management/openmbean/OpenType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#hasDefaultValue()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasDefaultValue()
         {
             return IExecuteWithSignature<bool>("hasDefaultValue", "()Z");
@@ -211,7 +211,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#hasLegalValues()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasLegalValues()
         {
             return IExecuteWithSignature<bool>("hasLegalValues", "()Z");
@@ -219,7 +219,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#hasMaxValue()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasMaxValue()
         {
             return IExecuteWithSignature<bool>("hasMaxValue", "()Z");
@@ -227,7 +227,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#hasMinValue()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasMinValue()
         {
             return IExecuteWithSignature<bool>("hasMinValue", "()Z");
@@ -235,8 +235,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#isValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("isValue", "(Ljava/lang/Object;)Z", arg0);

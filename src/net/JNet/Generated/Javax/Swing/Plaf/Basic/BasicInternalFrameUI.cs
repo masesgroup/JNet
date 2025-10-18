@@ -114,7 +114,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#%3Cinit%3E(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BasicInternalFrameUI(Javax.Swing.JInternalFrame arg0)
             : base(arg0)
         {
@@ -166,7 +166,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#isKeyBindingActive()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsKeyBindingActive()
         {
             return IExecuteWithSignature<bool>("isKeyBindingActive", "()Z");
@@ -182,7 +182,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public InternalFrameLayout(Javax.Swing.Plaf.Basic.BasicInternalFrameUI arg0)
                 : base(arg0)
             {
@@ -206,8 +206,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#minimumLayoutSize(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-            /// <returns><see cref="Java.Awt.Dimension"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
@@ -215,8 +215,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#preferredLayoutSize(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-            /// <returns><see cref="Java.Awt.Dimension"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
@@ -224,8 +224,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
             {
                 IExecuteWithSignature("addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
@@ -233,7 +233,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#layoutContainer(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void LayoutContainer(Java.Awt.Container arg0)
             {
                 IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
@@ -241,7 +241,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#removeLayoutComponent(java.awt.Component)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);

@@ -114,7 +114,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Box(int arg0)
             : base(arg0)
         {
@@ -124,7 +124,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Box"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Box t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -138,7 +138,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createGlue()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Component CreateGlue()
         {
             return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createGlue", "()Ljava/awt/Component;");
@@ -146,7 +146,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalGlue()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Component CreateHorizontalGlue()
         {
             return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createHorizontalGlue", "()Ljava/awt/Component;");
@@ -154,8 +154,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalStrut(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Component CreateHorizontalStrut(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createHorizontalStrut", "(I)Ljava/awt/Component;", arg0);
@@ -163,8 +163,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createRigidArea(java.awt.Dimension)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Component CreateRigidArea(Java.Awt.Dimension arg0)
         {
             return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createRigidArea", "(Ljava/awt/Dimension;)Ljava/awt/Component;", arg0);
@@ -172,7 +172,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalGlue()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Component CreateVerticalGlue()
         {
             return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createVerticalGlue", "()Ljava/awt/Component;");
@@ -180,8 +180,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalStrut(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Component CreateVerticalStrut(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "createVerticalStrut", "(I)Ljava/awt/Component;", arg0);
@@ -189,7 +189,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createHorizontalBox()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Box"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Box CreateHorizontalBox()
         {
             return SExecuteWithSignature<Javax.Swing.Box>(LocalBridgeClazz, "createHorizontalBox", "()Ljavax/swing/Box;");
@@ -197,7 +197,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.html#createVerticalBox()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Box"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Box CreateVerticalBox()
         {
             return SExecuteWithSignature<Javax.Swing.Box>(LocalBridgeClazz, "createVerticalBox", "()Ljavax/swing/Box;");
@@ -217,9 +217,9 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.Filler.html#%3Cinit%3E(java.awt.Dimension,java.awt.Dimension,java.awt.Dimension)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Dimension"/></param>
-            /// <param name="arg2"><see cref="Java.Awt.Dimension"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public Filler(Java.Awt.Dimension arg0, Java.Awt.Dimension arg1, Java.Awt.Dimension arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -229,7 +229,7 @@ namespace Javax.Swing
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Box.Filler"/> to <see cref="Javax.Accessibility.Accessible"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Box.Filler t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -247,9 +247,9 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Box.Filler.html#changeShape(java.awt.Dimension,java.awt.Dimension,java.awt.Dimension)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Dimension"/></param>
-            /// <param name="arg2"><see cref="Java.Awt.Dimension"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public void ChangeShape(Java.Awt.Dimension arg0, Java.Awt.Dimension arg1, Java.Awt.Dimension arg2)
             {
                 IExecuteWithSignature("changeShape", "(Ljava/awt/Dimension;Ljava/awt/Dimension;Ljava/awt/Dimension;)V", arg0, arg1, arg2);

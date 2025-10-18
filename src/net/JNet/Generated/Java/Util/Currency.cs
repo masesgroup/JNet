@@ -85,15 +85,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getAvailableCurrencies()"/> 
         /// </summary>
-        public static Java.Util.Set<Java.Util.Currency> AvailableCurrencies
+        public static Java.Util.Set AvailableCurrencies
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Util.Currency>>(LocalBridgeClazz, "getAvailableCurrencies", "()Ljava/util/Set;"); }
+            get { return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "getAvailableCurrencies", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Currency"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Currency GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Util.Currency>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/util/Currency;", arg0);
@@ -101,8 +101,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Util.Currency"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Currency GetInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Util.Currency>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/util/Currency;", arg0);
@@ -156,8 +156,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getDisplayName(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDisplayName(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
@@ -165,8 +165,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getSymbol(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetSymbol(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getSymbol", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);

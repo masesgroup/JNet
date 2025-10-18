@@ -87,9 +87,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getDesktopPropertyValue(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static object GetDesktopPropertyValue(Java.Lang.String arg0, object arg1)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "getDesktopPropertyValue", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -97,9 +97,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeIcon(java.lang.Class,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static object MakeIcon(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "makeIcon", "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
@@ -107,9 +107,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeComponentInputMap(javax.swing.JComponent,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Swing.ComponentInputMap"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.ComponentInputMap MakeComponentInputMap(Javax.Swing.JComponent arg0, object[] arg1)
         {
             return SExecuteWithSignature<Javax.Swing.ComponentInputMap>(LocalBridgeClazz, "makeComponentInputMap", "(Ljavax/swing/JComponent;[Ljava/lang/Object;)Ljavax/swing/ComponentInputMap;", arg0, arg1);
@@ -117,8 +117,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeInputMap(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Swing.InputMap"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.InputMap MakeInputMap(object[] arg0)
         {
             return SExecuteWithSignature<Javax.Swing.InputMap>(LocalBridgeClazz, "makeInputMap", "([Ljava/lang/Object;)Ljavax/swing/InputMap;", new object[] { arg0 });
@@ -126,8 +126,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeKeyBindings(java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Swing.Text.JTextComponent.KeyBinding"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Text.JTextComponent.KeyBinding[] MakeKeyBindings(object[] arg0)
         {
             return SExecuteWithSignatureArray<Javax.Swing.Text.JTextComponent.KeyBinding>(LocalBridgeClazz, "makeKeyBindings", "([Ljava/lang/Object;)[Ljavax/swing/text/JTextComponent$KeyBinding;", new object[] { arg0 });
@@ -135,8 +135,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#installBorder(javax.swing.JComponent,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public static void InstallBorder(Javax.Swing.JComponent arg0, Java.Lang.String arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "installBorder", "(Ljavax/swing/JComponent;Ljava/lang/String;)V", arg0, arg1);
@@ -144,9 +144,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#installColors(javax.swing.JComponent,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public static void InstallColors(Javax.Swing.JComponent arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "installColors", "(Ljavax/swing/JComponent;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
@@ -154,10 +154,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#installColorsAndFont(javax.swing.JComponent,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public static void InstallColorsAndFont(Javax.Swing.JComponent arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             SExecuteWithSignature(LocalBridgeClazz, "installColorsAndFont", "(Ljavax/swing/JComponent;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
@@ -165,9 +165,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#installProperty(javax.swing.JComponent,java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public static void InstallProperty(Javax.Swing.JComponent arg0, Java.Lang.String arg1, object arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "installProperty", "(Ljavax/swing/JComponent;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -175,8 +175,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#loadKeyBindings(javax.swing.InputMap,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.InputMap"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public static void LoadKeyBindings(Javax.Swing.InputMap arg0, object[] arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "loadKeyBindings", "(Ljavax/swing/InputMap;[Ljava/lang/Object;)V", arg0, arg1);
@@ -184,7 +184,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#uninstallBorder(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void UninstallBorder(Javax.Swing.JComponent arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "uninstallBorder", "(Ljavax/swing/JComponent;)V", arg0);
@@ -238,7 +238,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#isNativeLookAndFeel()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsNativeLookAndFeel()
         {
             return IExecuteWithSignature<bool>("isNativeLookAndFeel", "()Z");
@@ -246,7 +246,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#isSupportedLookAndFeel()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSupportedLookAndFeel()
         {
             return IExecuteWithSignature<bool>("isSupportedLookAndFeel", "()Z");
@@ -254,9 +254,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getDisabledIcon(javax.swing.JComponent,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Icon GetDisabledIcon(Javax.Swing.JComponent arg0, Javax.Swing.Icon arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Icon>("getDisabledIcon", "(Ljavax/swing/JComponent;Ljavax/swing/Icon;)Ljavax/swing/Icon;", arg0, arg1);
@@ -264,9 +264,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getDisabledSelectedIcon(javax.swing.JComponent,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Icon GetDisabledSelectedIcon(Javax.Swing.JComponent arg0, Javax.Swing.Icon arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Icon>("getDisabledSelectedIcon", "(Ljavax/swing/JComponent;Ljavax/swing/Icon;)Ljavax/swing/Icon;", arg0, arg1);
@@ -281,7 +281,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#provideErrorFeedback(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ProvideErrorFeedback(Java.Awt.Component arg0)
         {
             IExecuteWithSignature("provideErrorFeedback", "(Ljava/awt/Component;)V", arg0);

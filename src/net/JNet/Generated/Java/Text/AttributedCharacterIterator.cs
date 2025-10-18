@@ -119,11 +119,11 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAllAttributeKeys()"/> 
         /// </summary>
-        Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute> AllAttributeKeys { get; }
+        Java.Util.Set AllAttributeKeys { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttributes()"/> 
         /// </summary>
-        Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object> Attributes { get; }
+        Java.Util.Map<, > Attributes { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit()"/> 
         /// </summary>
@@ -135,34 +135,34 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.text.AttributedCharacterIterator.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int GetRunLimit(Java.Text.AttributedCharacterIterator.Attribute arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
-        /// <returns><see cref="int"/></returns>
-        int GetRunLimit<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        int GetRunLimit(Java.Util.Set arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.text.AttributedCharacterIterator.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int GetRunStart(Java.Text.AttributedCharacterIterator.Attribute arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
-        /// <returns><see cref="int"/></returns>
-        int GetRunStart<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        int GetRunStart(Java.Util.Set arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttribute(java.text.AttributedCharacterIterator.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         object GetAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0);
 
         #endregion
@@ -198,16 +198,16 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAllAttributeKeys()"/> 
         /// </summary>
-        public Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute> AllAttributeKeys
+        public Java.Util.Set AllAttributeKeys
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute>>("getAllAttributeKeys", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getAllAttributeKeys", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttributes()"/> 
         /// </summary>
-        public Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object> Attributes
+        public Java.Util.Map<, > Attributes
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object>>("getAttributes", "()Ljava/util/Map;"); }
+            get { return IExecuteWithSignature<Java.Util.Map<, >>("getAttributes", "()Ljava/util/Map;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit()"/> 
@@ -226,8 +226,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.text.AttributedCharacterIterator.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetRunLimit(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
             return IExecuteWithSignature<int>("getRunLimit", "(Ljava/text/AttributedCharacterIterator$Attribute;)I", arg0);
@@ -235,18 +235,18 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
-        /// <returns><see cref="int"/></returns>
-        public int GetRunLimit<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public int GetRunLimit(Java.Util.Set arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
         {
             return IExecuteWithSignature<int>("getRunLimit", "(Ljava/util/Set;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.text.AttributedCharacterIterator.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetRunStart(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
             return IExecuteWithSignature<int>("getRunStart", "(Ljava/text/AttributedCharacterIterator$Attribute;)I", arg0);
@@ -254,18 +254,18 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
-        /// <returns><see cref="int"/></returns>
-        public int GetRunStart<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public int GetRunStart(Java.Util.Set arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
         {
             return IExecuteWithSignature<int>("getRunStart", "(Ljava/util/Set;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttribute(java.text.AttributedCharacterIterator.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
             return IExecuteWithSignature("getAttribute", "(Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/lang/Object;", arg0);

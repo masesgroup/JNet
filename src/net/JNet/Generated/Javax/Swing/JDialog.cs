@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Dialog,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JDialog(Java.Awt.Dialog arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -82,10 +82,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -93,9 +93,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -103,8 +103,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -112,7 +112,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Dialog)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JDialog(Java.Awt.Dialog arg0)
             : base(arg0)
         {
@@ -120,8 +120,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Frame,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JDialog(Java.Awt.Frame arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -129,10 +129,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -140,9 +140,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -150,8 +150,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -159,7 +159,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Frame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JDialog(Java.Awt.Frame arg0)
             : base(arg0)
         {
@@ -167,8 +167,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.awt.Dialog.ModalityType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Dialog.ModalityType"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JDialog(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
             : base(arg0, arg1)
         {
@@ -176,10 +176,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.lang.String,java.awt.Dialog.ModalityType,java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Dialog.ModalityType"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public JDialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -187,9 +187,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.lang.String,java.awt.Dialog.ModalityType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Dialog.ModalityType"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JDialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
             : base(arg0, arg1, arg2)
         {
@@ -197,8 +197,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JDialog(Java.Awt.Window arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -206,7 +206,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JDialog(Java.Awt.Window arg0)
             : base(arg0)
         {
@@ -216,15 +216,15 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JDialog"/> to <see cref="Javax.Swing.WindowConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.WindowConstants(Javax.Swing.JDialog t) => t.Cast<Javax.Swing.WindowConstants>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JDialog"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JDialog t) => t.Cast<Javax.Accessibility.Accessible>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JDialog"/> to <see cref="Javax.Swing.RootPaneContainer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.RootPaneContainer(Javax.Swing.JDialog t) => t.Cast<Javax.Swing.RootPaneContainer>();
 
@@ -238,7 +238,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#isDefaultLookAndFeelDecorated()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public static bool IsDefaultLookAndFeelDecorated()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDefaultLookAndFeelDecorated", "()Z");
@@ -246,7 +246,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#setDefaultLookAndFeelDecorated(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void SetDefaultLookAndFeelDecorated(bool arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDefaultLookAndFeelDecorated", "(Z)V", arg0);

@@ -78,8 +78,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Stroke.html#createStrokedShape(java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
-        /// <returns><see cref="Java.Awt.Shape"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.Shape CreateStrokedShape(Java.Awt.Shape arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Stroke.html#createStrokedShape(java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
-        /// <returns><see cref="Java.Awt.Shape"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Shape CreateStrokedShape(Java.Awt.Shape arg0)
         {
             return IExecuteWithSignature<Java.Awt.Shape>("createStrokedShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;", arg0);

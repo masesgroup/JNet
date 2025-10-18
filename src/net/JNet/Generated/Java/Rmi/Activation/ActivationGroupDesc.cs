@@ -114,20 +114,20 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#%3Cinit%3E(java.lang.String,java.lang.String,java.rmi.MarshalledObject,java.util.Properties,java.rmi.activation.ActivationGroupDesc.CommandEnvironment)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Properties"/></param>
-        /// <param name="arg4"><see cref="Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment"/></param>
-        public ActivationGroupDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2, Java.Util.Properties arg3, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        public ActivationGroupDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject arg2, Java.Util.Properties arg3, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#%3Cinit%3E(java.util.Properties,java.rmi.activation.ActivationGroupDesc.CommandEnvironment)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Properties"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ActivationGroupDesc(Java.Util.Properties arg0, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg1)
             : base(arg0, arg1)
         {
@@ -158,9 +158,9 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getData()"/> 
         /// </summary>
-        public Java.Rmi.MarshalledObject<object> Data
+        public Java.Rmi.MarshalledObject Data
         {
-            get { return IExecute<Java.Rmi.MarshalledObject<object>>("getData"); }
+            get { return IExecute<Java.Rmi.MarshalledObject>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getCommandEnvironment()"/> 
@@ -194,8 +194,8 @@ namespace Java.Rmi.Activation
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.CommandEnvironment.html#%3Cinit%3E(java.lang.String,java.lang.String[])"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public CommandEnvironment(Java.Lang.String arg0, Java.Lang.String[] arg1)
                 : base(arg0, arg1)
             {

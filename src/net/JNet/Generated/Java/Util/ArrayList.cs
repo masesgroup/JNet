@@ -66,12 +66,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region ArrayList<E> declaration
+    #region ArrayList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class ArrayList<E> : Java.Util.AbstractList<E>
+    public partial class ArrayList : Java.Util.AbstractList
     {
         const string _bridgeClassName = "java.util.ArrayList";
         /// <summary>
@@ -115,7 +115,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ArrayList(int arg0)
             : base(arg0)
         {
@@ -123,7 +123,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ArrayList(Java.Util.Collection arg0)
             : base(arg0)
         {
@@ -133,15 +133,15 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayList"/> to <see cref="Java.Util.RandomAccess"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.RandomAccess(Java.Util.ArrayList t) => t.Cast<Java.Util.RandomAccess>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayList"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.ArrayList t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayList"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.ArrayList t) => t.Cast<Java.Io.Serializable>();
 
@@ -159,7 +159,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#ensureCapacity(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EnsureCapacity(int arg0)
         {
             IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
@@ -182,14 +182,14 @@ namespace Java.Util
     }
     #endregion
 
-    #region ArrayList<E> implementation
-    public partial class ArrayList<E>
+    #region ArrayList implementation
+    public partial class ArrayList
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ArrayList(int arg0)
             : base(arg0)
         {
@@ -197,8 +197,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public ArrayList(Java.Util.Collection<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public ArrayList(Java.Util.Collection arg0)
             : base(arg0)
         {
         }
@@ -207,21 +207,21 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayList{E}"/> to <see cref="Java.Util.RandomAccess"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.RandomAccess(Java.Util.ArrayList<E> t) => t.Cast<Java.Util.RandomAccess>();
+        public static implicit operator Java.Util.RandomAccess(Java.Util.ArrayList t) => t.Cast<Java.Util.RandomAccess>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayList{E}"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Util.ArrayList<E> t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Lang.Cloneable(Java.Util.ArrayList t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayList{E}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.ArrayList<E> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.ArrayList t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayList{E}"/> to <see cref="Java.Util.ArrayList"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.ArrayList(Java.Util.ArrayList<E> t) => t.Cast<Java.Util.ArrayList>();
+        public static implicit operator Java.Util.ArrayList(Java.Util.ArrayList t) => t.Cast<Java.Util.ArrayList>();
 
         #endregion
 
@@ -237,7 +237,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#ensureCapacity(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EnsureCapacity(int arg0)
         {
             IExecuteWithSignature("ensureCapacity", "(I)V", arg0);

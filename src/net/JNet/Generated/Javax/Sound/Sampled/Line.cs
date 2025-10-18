@@ -127,24 +127,24 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isControlSupported(javax.sound.sampled.Control.Type)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Control.Type"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsControlSupported(Javax.Sound.Sampled.Control.Type arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsOpen();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getControl(javax.sound.sampled.Control.Type)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Control.Type"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.Control"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Sound.Sampled.Control GetControl(Javax.Sound.Sampled.Control.Type arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#addLineListener(javax.sound.sampled.LineListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddLineListener(Javax.Sound.Sampled.LineListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#close()"/>
@@ -153,12 +153,12 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#open()"/>
         /// </summary>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <exception cref=""/>
         void Open();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#removeLineListener(javax.sound.sampled.LineListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveLineListener(Javax.Sound.Sampled.LineListener arg0);
 
         #endregion
@@ -208,8 +208,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isControlSupported(javax.sound.sampled.Control.Type)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Control.Type"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsControlSupported(Javax.Sound.Sampled.Control.Type arg0)
         {
             return IExecuteWithSignature<bool>("isControlSupported", "(Ljavax/sound/sampled/Control$Type;)Z", arg0);
@@ -217,7 +217,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOpen()
         {
             return IExecuteWithSignature<bool>("isOpen", "()Z");
@@ -225,8 +225,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getControl(javax.sound.sampled.Control.Type)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Control.Type"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.Control"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Sampled.Control GetControl(Javax.Sound.Sampled.Control.Type arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.Control>("getControl", "(Ljavax/sound/sampled/Control$Type;)Ljavax/sound/sampled/Control;", arg0);
@@ -234,7 +234,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#addLineListener(javax.sound.sampled.LineListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddLineListener(Javax.Sound.Sampled.LineListener arg0)
         {
             IExecuteWithSignature("addLineListener", "(Ljavax/sound/sampled/LineListener;)V", arg0);
@@ -249,7 +249,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#open()"/>
         /// </summary>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <exception cref=""/>
         public void Open()
         {
             IExecuteWithSignature("open", "()V");
@@ -257,7 +257,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#removeLineListener(javax.sound.sampled.LineListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveLineListener(Javax.Sound.Sampled.LineListener arg0)
         {
             IExecuteWithSignature("removeLineListener", "(Ljavax/sound/sampled/LineListener;)V", arg0);
@@ -273,7 +273,7 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.Info.html#%3Cinit%3E(java.lang.Class)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public Info(Java.Lang.Class arg0)
                 : base(arg0)
             {
@@ -304,8 +304,8 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.Info.html#matches(javax.sound.sampled.Line.Info)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool Matches(Javax.Sound.Sampled.Line.Info arg0)
             {
                 return IExecuteWithSignature<bool>("matches", "(Ljavax/sound/sampled/Line$Info;)Z", arg0);

@@ -105,7 +105,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isNamespaceAware()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsNamespaceAware()
         {
             return IExecuteWithSignature<bool>("isNamespaceAware", "()Z");
@@ -113,7 +113,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isValidating()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsValidating()
         {
             return IExecuteWithSignature<bool>("isValidating", "()Z");
@@ -121,7 +121,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#newDocument()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.Document NewDocument()
         {
             return IExecuteWithSignature<Org.W3c.Dom.Document>("newDocument", "()Lorg/w3c/dom/Document;");
@@ -129,10 +129,10 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Document Parse(Org.Xml.Sax.InputSource arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Lorg/xml/sax/InputSource;)Lorg/w3c/dom/Document;", arg0);
@@ -140,7 +140,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
         {
             IExecuteWithSignature("setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", arg0);
@@ -148,7 +148,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
         {
             IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
@@ -156,7 +156,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isXIncludeAware()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsXIncludeAware()
         {
             return IExecuteWithSignature<bool>("isXIncludeAware", "()Z");
@@ -164,10 +164,10 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Document Parse(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/io/File;)Lorg/w3c/dom/Document;", arg0);
@@ -175,11 +175,11 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.InputStream,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Document Parse(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/io/InputStream;Ljava/lang/String;)Lorg/w3c/dom/Document;", arg0, arg1);
@@ -187,10 +187,10 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Document Parse(Java.Io.InputStream arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/io/InputStream;)Lorg/w3c/dom/Document;", arg0);
@@ -198,10 +198,10 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Document Parse(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/lang/String;)Lorg/w3c/dom/Document;", arg0);

@@ -73,9 +73,9 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#%3Cinit%3E(int,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public RSAKeyGenParameterSpec(int arg0, Java.Math.BigInteger arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#%3Cinit%3E(int,java.math.BigInteger)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public RSAKeyGenParameterSpec(int arg0, Java.Math.BigInteger arg1)
             : base(arg0, arg1)
         {

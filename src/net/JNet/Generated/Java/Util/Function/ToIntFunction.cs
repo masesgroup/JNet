@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunction<T> declaration
+    #region ToIntFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class ToIntFunction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ToIntFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunctionDirect<T> declaration
+    #region ToIntFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="ToIntFunction"/> or its generic type if there is one
     /// </summary>
-    public partial class ToIntFunctionDirect<T> : ToIntFunction<T>
+    public partial class ToIntFunctionDirect : ToIntFunction
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,8 +219,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual int ApplyAsInt(object arg0)
         {
             hasOverrideApplyAsInt = false; return default;
@@ -259,8 +259,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override int ApplyAsInt(object arg0)
         {
             return IExecuteWithSignature<int>("applyAsInt", "(Ljava/lang/Object;)I", arg0);
@@ -276,18 +276,18 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IToIntFunction<T>
+    #region IToIntFunction
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ToIntFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html"/>
     /// </summary>
-    public partial interface IToIntFunction<T>
+    public partial interface IToIntFunction
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int ApplyAsInt(T arg0);
 
         #endregion
@@ -300,8 +300,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunction<T> implementation
-    public partial class ToIntFunction<T> : Java.Util.Function.IToIntFunction<T>
+    #region ToIntFunction implementation
+    public partial class ToIntFunction : Java.Util.Function.IToIntFunction
     {
         #region Constructors
 
@@ -347,8 +347,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual int ApplyAsInt(T arg0)
         {
             hasOverrideApplyAsInt = false; return default;
@@ -364,8 +364,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToIntFunctionDirect<T> implementation
-    public partial class ToIntFunctionDirect<T> : Java.Util.Function.IToIntFunction<T>
+    #region ToIntFunctionDirect implementation
+    public partial class ToIntFunctionDirect : Java.Util.Function.IToIntFunction
     {
         #region Constructors
 
@@ -387,8 +387,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override int ApplyAsInt(T arg0)
         {
             return IExecuteWithSignature<int>("applyAsInt", "(Ljava/lang/Object;)I", arg0);

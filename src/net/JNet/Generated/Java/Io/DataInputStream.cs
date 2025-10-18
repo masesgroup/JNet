@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DataInputStream(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Java.Io
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Io.DataInputStream"/> to <see cref="Java.Io.DataInput"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.DataInput(Java.Io.DataInputStream t) => t.Cast<Java.Io.DataInput>();
 
@@ -97,9 +97,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readUTF(java.io.DataInput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.DataInput"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.String ReadUTF(Java.Io.DataInput arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "readUTF", "(Ljava/io/DataInput;)Ljava/lang/String;", arg0);
@@ -111,8 +111,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readBoolean()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool ReadBoolean()
         {
             return IExecuteWithSignature<bool>("readBoolean", "()Z");
@@ -120,8 +120,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readByte()"/>
         /// </summary>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte ReadByte()
         {
             return IExecuteWithSignature<byte>("readByte", "()B");
@@ -129,8 +129,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readChar()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public char ReadChar()
         {
             return IExecuteWithSignature<char>("readChar", "()C");
@@ -138,8 +138,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readDouble()"/>
         /// </summary>
-        /// <returns><see cref="double"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public double ReadDouble()
         {
             return IExecuteWithSignature<double>("readDouble", "()D");
@@ -147,8 +147,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readFloat()"/>
         /// </summary>
-        /// <returns><see cref="float"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public float ReadFloat()
         {
             return IExecuteWithSignature<float>("readFloat", "()F");
@@ -156,8 +156,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readInt()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int ReadInt()
         {
             return IExecuteWithSignature<int>("readInt", "()I");
@@ -165,8 +165,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readUnsignedByte()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int ReadUnsignedByte()
         {
             return IExecuteWithSignature<int>("readUnsignedByte", "()I");
@@ -174,8 +174,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readUnsignedShort()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int ReadUnsignedShort()
         {
             return IExecuteWithSignature<int>("readUnsignedShort", "()I");
@@ -183,9 +183,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#skipBytes(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int SkipBytes(int arg0)
         {
             return IExecuteWithSignature<int>("skipBytes", "(I)I", arg0);
@@ -193,8 +193,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readUTF()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String ReadUTF()
         {
             return IExecuteWithSignature<Java.Lang.String>("readUTF", "()Ljava/lang/String;");
@@ -202,8 +202,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readLong()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long ReadLong()
         {
             return IExecuteWithSignature<long>("readLong", "()J");
@@ -211,8 +211,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readShort()"/>
         /// </summary>
-        /// <returns><see cref="short"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public short ReadShort()
         {
             return IExecuteWithSignature<short>("readShort", "()S");
@@ -220,10 +220,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readFully(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void ReadFully(byte[] arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("readFully", "([BII)V", arg0, arg1, arg2);
@@ -231,8 +231,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataInputStream.html#readFully(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void ReadFully(byte[] arg0)
         {
             IExecuteWithSignature("readFully", "([B)V", new object[] { arg0 });

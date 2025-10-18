@@ -78,23 +78,23 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#isValid()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsValid();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#reset()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool Reset();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#watchable()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Watchable"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Watchable Watchable();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents();
+        /// <returns><see cref=""/></returns>
+        Java.Util.List PollEvents();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#cancel()"/>
         /// </summary>
@@ -133,7 +133,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#isValid()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsValid()
         {
             return IExecuteWithSignature<bool>("isValid", "()Z");
@@ -141,7 +141,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#reset()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Reset()
         {
             return IExecuteWithSignature<bool>("reset", "()Z");
@@ -149,7 +149,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#watchable()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Watchable"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Watchable Watchable()
         {
             return IExecuteWithSignature<Java.Nio.File.Watchable>("watchable", "()Ljava/nio/file/Watchable;");
@@ -157,10 +157,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List PollEvents()
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Nio.File.WatchEvent<object>>>("pollEvents", "()Ljava/util/List;");
+            return IExecuteWithSignature<Java.Util.List>("pollEvents", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#cancel()"/>

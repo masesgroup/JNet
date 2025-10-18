@@ -121,8 +121,8 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#getGamma(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float GetGamma(int arg0)
         {
             return IExecuteWithSignature<float>("getGamma", "(I)F", arg0);
@@ -130,8 +130,8 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#getTRC(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="short"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public short[] GetTRC(int arg0)
         {
             return IExecuteWithSignatureArray<short>("getTRC", "(I)[S", arg0);

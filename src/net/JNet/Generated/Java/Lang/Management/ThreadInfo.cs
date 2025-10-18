@@ -85,8 +85,8 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#from(javax.management.openmbean.CompositeData)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
-        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Management.ThreadInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
             return SExecuteWithSignature<Java.Lang.Management.ThreadInfo>(LocalBridgeClazz, "from", "(Ljavax/management/openmbean/CompositeData;)Ljava/lang/management/ThreadInfo;", arg0);
@@ -203,7 +203,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isDaemon()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDaemon()
         {
             return IExecuteWithSignature<bool>("isDaemon", "()Z");
@@ -211,7 +211,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isInNative()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsInNative()
         {
             return IExecuteWithSignature<bool>("isInNative", "()Z");
@@ -219,7 +219,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isSuspended()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsSuspended()
         {
             return IExecuteWithSignature<bool>("isSuspended", "()Z");

@@ -75,8 +75,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html#%3Cinit%3E(java.security.cert.CertStoreParameters)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public CertStoreSpi(Java.Security.Cert.CertStoreParameters arg0)
             : base(arg0)
         {
@@ -100,24 +100,24 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html#engineGetCertificates(java.security.cert.CertSelector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CertSelector"/></param>
-        /// <typeparam name="ReturnExtendsJava_Security_Cert_Certificate"><see cref="Java.Security.Cert.Certificate"/></typeparam>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> EngineGetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJava_Security_Cert_Certificate"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Collection EngineGetCertificates(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
         {
-            return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("engineGetCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;", arg0);
+            return IExecuteWithSignature<Java.Util.Collection>("engineGetCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html#engineGetCRLs(java.security.cert.CRLSelector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CRLSelector"/></param>
-        /// <typeparam name="ReturnExtendsJava_Security_Cert_CRL"><see cref="Java.Security.Cert.CRL"/></typeparam>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> EngineGetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL : Java.Security.Cert.CRL
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJava_Security_Cert_CRL"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Collection EngineGetCRLs(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL : Java.Security.Cert.CRL
         {
-            return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("engineGetCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;", arg0);
+            return IExecuteWithSignature<Java.Util.Collection>("engineGetCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;", arg0);
         }
 
         #endregion

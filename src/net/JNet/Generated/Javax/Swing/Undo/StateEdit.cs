@@ -73,8 +73,8 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#%3Cinit%3E(javax.swing.undo.StateEditable,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Undo.StateEditable"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public StateEdit(Javax.Swing.Undo.StateEditable arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#%3Cinit%3E(javax.swing.undo.StateEditable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Undo.StateEditable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StateEdit(Javax.Swing.Undo.StateEditable arg0)
             : base(arg0)
         {

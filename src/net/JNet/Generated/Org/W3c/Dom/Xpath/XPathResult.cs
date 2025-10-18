@@ -106,16 +106,16 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Org.W3c.Dom.Node IterateNext();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#snapshotItem(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.Node SnapshotItem(int arg0);
 
         #endregion
@@ -260,9 +260,9 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Node IterateNext()
         {
             return IExecuteWithSignature<Org.W3c.Dom.Node>("iterateNext", "()Lorg/w3c/dom/Node;");
@@ -270,9 +270,9 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#snapshotItem(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Node SnapshotItem(int arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Node>("snapshotItem", "(I)Lorg/w3c/dom/Node;", arg0);

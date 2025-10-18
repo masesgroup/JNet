@@ -91,8 +91,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#isTraversable(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Boolean IsTraversable(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.Boolean>("isTraversable", "(Ljava/io/File;)Ljava/lang/Boolean;", arg0);
@@ -100,8 +100,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getDescription(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDescription(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDescription", "(Ljava/io/File;)Ljava/lang/String;", arg0);
@@ -109,8 +109,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getName(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetName(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "(Ljava/io/File;)Ljava/lang/String;", arg0);
@@ -118,8 +118,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getTypeDescription(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetTypeDescription(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getTypeDescription", "(Ljava/io/File;)Ljava/lang/String;", arg0);
@@ -127,8 +127,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getIcon(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Icon GetIcon(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Icon>("getIcon", "(Ljava/io/File;)Ljavax/swing/Icon;", arg0);

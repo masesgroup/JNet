@@ -73,8 +73,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html#%3Cinit%3E(java.security.PublicKey,java.security.PrivateKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PrivateKey"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public KeyPair(Java.Security.PublicKey arg0, Java.Security.PrivateKey arg1)
             : base(arg0, arg1)
         {

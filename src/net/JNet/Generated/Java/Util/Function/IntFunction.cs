@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunction<R> declaration
+    #region IntFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
-    public partial class IntFunction<R> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class IntFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunctionDirect<R> declaration
+    #region IntFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="IntFunction"/> or its generic type if there is one
     /// </summary>
-    public partial class IntFunctionDirect<R> : IntFunction<R>
+    public partial class IntFunctionDirect : IntFunction
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,8 +219,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual object Apply(int arg0)
         {
             hasOverrideApply = false; return default;
@@ -259,8 +259,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override object Apply(int arg0)
         {
             return IExecuteWithSignature("apply", "(I)Ljava/lang/Object;", arg0);
@@ -276,18 +276,18 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IIntFunction<R>
+    #region IIntFunction
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.IntFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html"/>
     /// </summary>
-    public partial interface IIntFunction<R>
+    public partial interface IIntFunction
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R Apply(int arg0);
 
         #endregion
@@ -300,8 +300,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunction<R> implementation
-    public partial class IntFunction<R> : Java.Util.Function.IIntFunction<R>
+    #region IntFunction implementation
+    public partial class IntFunction : Java.Util.Function.IIntFunction
     {
         #region Constructors
 
@@ -347,8 +347,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual R Apply(int arg0)
         {
             hasOverrideApply = false; return default;
@@ -364,8 +364,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IntFunctionDirect<R> implementation
-    public partial class IntFunctionDirect<R> : Java.Util.Function.IIntFunction<R>
+    #region IntFunctionDirect implementation
+    public partial class IntFunctionDirect : Java.Util.Function.IIntFunction
     {
         #region Constructors
 
@@ -387,8 +387,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override R Apply(int arg0)
         {
             return IExecuteWithSignature<R>("apply", "(I)Ljava/lang/Object;", arg0);

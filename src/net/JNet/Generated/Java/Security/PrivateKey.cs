@@ -95,11 +95,11 @@ namespace Java.Security
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.PrivateKey"/> to <see cref="Java.Security.Key"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Key(Java.Security.PrivateKey t) => t.Cast<Java.Security.Key>();
         /// <summary>
-        /// Converter from <see cref="Java.Security.PrivateKey"/> to <see cref="Javax.Security.Auth.Destroyable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Java.Security.PrivateKey t) => t.Cast<Javax.Security.Auth.Destroyable>();
 

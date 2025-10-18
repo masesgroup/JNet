@@ -73,8 +73,8 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#%3Cinit%3E(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public EncryptedPrivateKeyInfo(byte[] arg0)
             : base(arg0)
         {
@@ -82,9 +82,9 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#%3Cinit%3E(java.lang.String,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public EncryptedPrivateKeyInfo(Java.Lang.String arg0, byte[] arg1)
             : base(arg0, arg1)
         {
@@ -92,9 +92,9 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#%3Cinit%3E(java.security.AlgorithmParameters,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.AlgorithmParameters"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public EncryptedPrivateKeyInfo(Java.Security.AlgorithmParameters arg0, byte[] arg1)
             : base(arg0, arg1)
         {
@@ -146,12 +146,12 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(java.security.Key,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Spec.PKCS8EncodedKeySpec"/></returns>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Security.Spec.PKCS8EncodedKeySpec GetKeySpec(Java.Security.Key arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Java.Security.Spec.PKCS8EncodedKeySpec>("getKeySpec", "(Ljava/security/Key;Ljava/lang/String;)Ljava/security/spec/PKCS8EncodedKeySpec;", arg0, arg1);
@@ -159,11 +159,11 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(java.security.Key,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Java.Security.Spec.PKCS8EncodedKeySpec"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Security.Spec.PKCS8EncodedKeySpec GetKeySpec(Java.Security.Key arg0, Java.Security.Provider arg1)
         {
             return IExecuteWithSignature<Java.Security.Spec.PKCS8EncodedKeySpec>("getKeySpec", "(Ljava/security/Key;Ljava/security/Provider;)Ljava/security/spec/PKCS8EncodedKeySpec;", arg0, arg1);
@@ -171,10 +171,10 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(java.security.Key)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <returns><see cref="Java.Security.Spec.PKCS8EncodedKeySpec"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Security.Spec.PKCS8EncodedKeySpec GetKeySpec(Java.Security.Key arg0)
         {
             return IExecuteWithSignature<Java.Security.Spec.PKCS8EncodedKeySpec>("getKeySpec", "(Ljava/security/Key;)Ljava/security/spec/PKCS8EncodedKeySpec;", arg0);
@@ -182,9 +182,9 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(javax.crypto.Cipher)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Crypto.Cipher"/></param>
-        /// <returns><see cref="Java.Security.Spec.PKCS8EncodedKeySpec"/></returns>
-        /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Security.Spec.PKCS8EncodedKeySpec GetKeySpec(Javax.Crypto.Cipher arg0)
         {
             return IExecuteWithSignature<Java.Security.Spec.PKCS8EncodedKeySpec>("getKeySpec", "(Ljavax/crypto/Cipher;)Ljava/security/spec/PKCS8EncodedKeySpec;", arg0);

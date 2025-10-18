@@ -73,8 +73,8 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public MLet(Java.Net.URL[] arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -82,9 +82,9 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -92,10 +92,10 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg2"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -103,9 +103,9 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg2"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
             : base(arg0, arg1, arg2)
         {
@@ -113,8 +113,8 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
             : base(arg0, arg1)
         {
@@ -122,7 +122,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public MLet(Java.Net.URL[] arg0)
             : base(arg0)
         {
@@ -132,15 +132,15 @@ namespace Javax.Management.Loading
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Loading.MLet"/> to <see cref="Javax.Management.Loading.MLetMBean"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Loading.MLetMBean(Javax.Management.Loading.MLet t) => t.Cast<Javax.Management.Loading.MLetMBean>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Loading.MLet"/> to <see cref="Javax.Management.MBeanRegistration"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Loading.MLet t) => t.Cast<Javax.Management.MBeanRegistration>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Loading.MLet"/> to <see cref="Java.Io.Externalizable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Externalizable(Javax.Management.Loading.MLet t) => t.Cast<Java.Io.Externalizable>();
 
@@ -165,30 +165,30 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#getMBeansFromURL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
-        public Java.Util.Set<object> GetMBeansFromURL(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Set GetMBeansFromURL(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Set<object>>("getMBeansFromURL", "(Ljava/lang/String;)Ljava/util/Set;", arg0);
+            return IExecuteWithSignature<Java.Util.Set>("getMBeansFromURL", "(Ljava/lang/String;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#getMBeansFromURL(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
-        public Java.Util.Set<object> GetMBeansFromURL(Java.Net.URL arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Util.Set GetMBeansFromURL(Java.Net.URL arg0)
         {
-            return IExecuteWithSignature<Java.Util.Set<object>>("getMBeansFromURL", "(Ljava/net/URL;)Ljava/util/Set;", arg0);
+            return IExecuteWithSignature<Java.Util.Set>("getMBeansFromURL", "(Ljava/net/URL;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
             return IExecuteWithSignature<Javax.Management.ObjectName>("preRegister", "(Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", arg0, arg1);
@@ -196,10 +196,10 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#loadClass(java.lang.String,javax.management.loading.ClassLoaderRepository)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.Loading.ClassLoaderRepository"/></param>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Class LoadClass(Java.Lang.String arg0, Javax.Management.Loading.ClassLoaderRepository arg1)
         {
             return IExecuteWithSignature<Java.Lang.Class>("loadClass", "(Ljava/lang/String;Ljavax/management/loading/ClassLoaderRepository;)Ljava/lang/Class;", arg0, arg1);
@@ -207,8 +207,8 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#addURL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddURL(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addURL", "(Ljava/lang/String;)V", arg0);
@@ -216,7 +216,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#addURL(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddURL(Java.Net.URL arg0)
         {
             IExecuteWithSignature("addURL", "(Ljava/net/URL;)V", arg0);
@@ -231,7 +231,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PostRegister(Java.Lang.Boolean arg0)
         {
             IExecuteWithSignature("postRegister", "(Ljava/lang/Boolean;)V", arg0);
@@ -239,7 +239,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#preDeregister()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <exception cref=""/>
         public void PreDeregister()
         {
             IExecuteWithSignature("preDeregister", "()V");
@@ -247,10 +247,10 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#readExternal(java.io.ObjectInput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectInput"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void ReadExternal(Java.Io.ObjectInput arg0)
         {
             IExecuteWithSignature("readExternal", "(Ljava/io/ObjectInput;)V", arg0);
@@ -258,9 +258,9 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#writeExternal(java.io.ObjectOutput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void WriteExternal(Java.Io.ObjectOutput arg0)
         {
             IExecuteWithSignature("writeExternal", "(Ljava/io/ObjectOutput;)V", arg0);

@@ -66,7 +66,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html"/>
         /// </summary>
-        public partial class ModalExclusionType : Java.Lang.Enum<Java.Awt.Dialog.ModalExclusionType>
+        public partial class ModalExclusionType : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.awt.Dialog$ModalExclusionType";
             /// <summary>
@@ -107,7 +107,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html"/>
         /// </summary>
-        public partial class ModalityType : Java.Lang.Enum<Java.Awt.Dialog.ModalityType>
+        public partial class ModalityType : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.awt.Dialog$ModalityType";
             /// <summary>
@@ -155,10 +155,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public Dialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -166,9 +166,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public Dialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -176,8 +176,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Dialog(Java.Awt.Dialog arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -185,7 +185,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Dialog)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Dialog(Java.Awt.Dialog arg0)
             : base(arg0)
         {
@@ -193,8 +193,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Frame,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Dialog(Java.Awt.Frame arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -202,10 +202,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public Dialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -213,9 +213,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public Dialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -223,8 +223,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Dialog(Java.Awt.Frame arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -232,7 +232,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Frame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Dialog(Java.Awt.Frame arg0)
             : base(arg0)
         {
@@ -240,8 +240,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Window,java.awt.Dialog.ModalityType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Dialog.ModalityType"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Dialog(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
             : base(arg0, arg1)
         {
@@ -249,10 +249,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Window,java.lang.String,java.awt.Dialog.ModalityType,java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Dialog.ModalityType"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public Dialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -260,9 +260,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Window,java.lang.String,java.awt.Dialog.ModalityType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Dialog.ModalityType"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public Dialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
             : base(arg0, arg1, arg2)
         {
@@ -270,8 +270,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Window,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Dialog(Java.Awt.Window arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -279,7 +279,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Window)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Dialog(Java.Awt.Window arg0)
             : base(arg0)
         {
@@ -323,7 +323,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isModal()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsModal()
         {
             return IExecuteWithSignature<bool>("isModal", "()Z");
@@ -331,7 +331,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isResizable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsResizable()
         {
             return IExecuteWithSignature<bool>("isResizable", "()Z");
@@ -339,7 +339,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isUndecorated()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsUndecorated()
         {
             return IExecuteWithSignature<bool>("isUndecorated", "()Z");
@@ -347,7 +347,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setModal(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetModal(bool arg0)
         {
             IExecuteWithSignature("setModal", "(Z)V", arg0);
@@ -355,7 +355,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setModalityType(java.awt.Dialog.ModalityType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dialog.ModalityType"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetModalityType(Java.Awt.Dialog.ModalityType arg0)
         {
             IExecuteWithSignature("setModalityType", "(Ljava/awt/Dialog$ModalityType;)V", arg0);
@@ -363,7 +363,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setResizable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetResizable(bool arg0)
         {
             IExecuteWithSignature("setResizable", "(Z)V", arg0);
@@ -371,7 +371,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setUndecorated(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUndecorated(bool arg0)
         {
             IExecuteWithSignature("setUndecorated", "(Z)V", arg0);
@@ -417,8 +417,8 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Awt.Dialog.ModalExclusionType"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.Dialog.ModalExclusionType ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Awt.Dialog.ModalExclusionType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/Dialog$ModalExclusionType;", arg0);
@@ -426,7 +426,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Awt.Dialog.ModalExclusionType"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.Dialog.ModalExclusionType[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Awt.Dialog.ModalExclusionType>(LocalBridgeClazz, "values", "()[Ljava/awt/Dialog$ModalExclusionType;");
@@ -489,8 +489,8 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Awt.Dialog.ModalityType"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.Dialog.ModalityType ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/Dialog$ModalityType;", arg0);
@@ -498,7 +498,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Awt.Dialog.ModalityType"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.Dialog.ModalityType[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "values", "()[Ljava/awt/Dialog$ModalityType;");

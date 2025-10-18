@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerListModel.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public SpinnerListModel(Java.Util.List<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public SpinnerListModel(Java.Util.List arg0)
             : base(arg0)
         {
         }
@@ -97,9 +97,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerListModel.html#getList()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerListModel.html#setList(java.util.List)"/>
         /// </summary>
-        public Java.Util.List<object> List
+        public Java.Util.List List
         {
-            get { return IExecuteWithSignature<Java.Util.List<object>>("getList", "()Ljava/util/List;"); } set { IExecuteWithSignature("setList", "(Ljava/util/List;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.List>("getList", "()Ljava/util/List;"); } set { IExecuteWithSignature("setList", "(Ljava/util/List;)V", value); }
         }
 
         #endregion

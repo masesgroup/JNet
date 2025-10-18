@@ -73,24 +73,24 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#%3Cinit%3E(int,float,int,int,long,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="long"/></param>
-        /// <param name="arg5"><see cref="Java.Util.Map"/></param>
-        public MidiFileFormat(int arg0, float arg1, int arg2, int arg3, long arg4, Java.Util.Map<Java.Lang.String, object> arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        public MidiFileFormat(int arg0, float arg1, int arg2, int arg3, long arg4, Java.Util.Map<, > arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#%3Cinit%3E(int,float,int,int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public MidiFileFormat(int arg0, float arg1, int arg2, int arg3, long arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -155,8 +155,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -164,10 +164,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#properties()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<Java.Lang.String, object> Properties()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Map<, > Properties()
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, object>>("properties", "()Ljava/util/Map;");
+            return IExecuteWithSignature<Java.Util.Map<, >>("properties", "()Ljava/util/Map;");
         }
 
         #endregion

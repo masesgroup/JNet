@@ -78,23 +78,23 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#dispatchEvent(org.w3c.dom.events.Event)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Org.W3c.Dom.Events.EventException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool DispatchEvent(Org.W3c.Dom.Events.Event arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#addEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Events.EventListener"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         void AddEventListener(Java.Lang.String arg0, Org.W3c.Dom.Events.EventListener arg1, bool arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#removeEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Events.EventListener"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         void RemoveEventListener(Java.Lang.String arg0, Org.W3c.Dom.Events.EventListener arg1, bool arg2);
 
         #endregion
@@ -130,9 +130,9 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#dispatchEvent(org.w3c.dom.events.Event)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Org.W3c.Dom.Events.EventException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool DispatchEvent(Org.W3c.Dom.Events.Event arg0)
         {
             return IExecuteWithSignature<bool>("dispatchEvent", "(Lorg/w3c/dom/events/Event;)Z", arg0);
@@ -140,9 +140,9 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#addEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Events.EventListener"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void AddEventListener(Java.Lang.String arg0, Org.W3c.Dom.Events.EventListener arg1, bool arg2)
         {
             IExecuteWithSignature("addEventListener", "(Ljava/lang/String;Lorg/w3c/dom/events/EventListener;Z)V", arg0, arg1, arg2);
@@ -150,9 +150,9 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#removeEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Events.EventListener"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void RemoveEventListener(Java.Lang.String arg0, Org.W3c.Dom.Events.EventListener arg1, bool arg2)
         {
             IExecuteWithSignature("removeEventListener", "(Ljava/lang/String;Lorg/w3c/dom/events/EventListener;Z)V", arg0, arg1, arg2);

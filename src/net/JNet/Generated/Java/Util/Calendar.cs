@@ -118,15 +118,15 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Calendar"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Calendar t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Calendar"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Calendar t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Calendar"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Util.Calendar t) => t.Cast<Java.Lang.Comparable>();
 
@@ -447,9 +447,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getAvailableCalendarTypes()"/> 
         /// </summary>
-        public static Java.Util.Set<Java.Lang.String> GetAvailableCalendarTypes
+        public static Java.Util.Set GetAvailableCalendarTypes
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableCalendarTypes", "()Ljava/util/Set;"); }
+            get { return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "getAvailableCalendarTypes", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance()"/> 
@@ -461,8 +461,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Util.Calendar"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/util/Calendar;", arg0);
@@ -470,9 +470,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Util.Calendar"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
         {
             return SExecuteWithSignature<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", "(Ljava/util/TimeZone;Ljava/util/Locale;)Ljava/util/Calendar;", arg0, arg1);
@@ -480,8 +480,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
-        /// <returns><see cref="Java.Util.Calendar"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.TimeZone arg0)
         {
             return SExecuteWithSignature<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", "(Ljava/util/TimeZone;)Ljava/util/Calendar;", arg0);
@@ -549,8 +549,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getGreatestMinimum(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetGreatestMinimum(int arg0)
         {
             return IExecuteWithSignature<int>("getGreatestMinimum", "(I)I", arg0);
@@ -558,8 +558,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getLeastMaximum(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetLeastMaximum(int arg0)
         {
             return IExecuteWithSignature<int>("getLeastMaximum", "(I)I", arg0);
@@ -567,8 +567,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMaximum(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetMaximum(int arg0)
         {
             return IExecuteWithSignature<int>("getMaximum", "(I)I", arg0);
@@ -576,8 +576,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMinimum(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetMinimum(int arg0)
         {
             return IExecuteWithSignature<int>("getMinimum", "(I)I", arg0);
@@ -585,8 +585,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#add(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Add(int arg0, int arg1)
         {
             IExecuteWithSignature("add", "(II)V", arg0, arg1);
@@ -594,8 +594,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#roll(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Roll(int arg0, bool arg1)
         {
             IExecuteWithSignature("roll", "(IZ)V", arg0, arg1);
@@ -603,8 +603,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#after(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool After(object arg0)
         {
             return IExecuteWithSignature<bool>("after", "(Ljava/lang/Object;)Z", arg0);
@@ -612,8 +612,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#before(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Before(object arg0)
         {
             return IExecuteWithSignature<bool>("before", "(Ljava/lang/Object;)Z", arg0);
@@ -621,7 +621,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isLenient()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsLenient()
         {
             return IExecuteWithSignature<bool>("isLenient", "()Z");
@@ -629,7 +629,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isWeekDateSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsWeekDateSupported()
         {
             return IExecuteWithSignature<bool>("isWeekDateSupported", "()Z");
@@ -637,8 +637,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isSet(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSet(int arg0)
         {
             return IExecuteWithSignature<bool>("isSet", "(I)Z", arg0);
@@ -646,7 +646,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#toInstant()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Instant"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Instant ToInstant()
         {
             return IExecuteWithSignature<Java.Time.Instant>("toInstant", "()Ljava/time/Instant;");
@@ -661,7 +661,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#clear(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Clear(int arg0)
         {
             IExecuteWithSignature("clear", "(I)V", arg0);
@@ -669,12 +669,12 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void Set(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("set", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -682,11 +682,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void Set(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("set", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
@@ -694,9 +694,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Set(int arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("set", "(III)V", arg0, arg1, arg2);
@@ -704,8 +704,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -713,8 +713,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#compareTo(java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Calendar"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Util.Calendar arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/util/Calendar;)I", arg0);
@@ -722,8 +722,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Get(int arg0)
         {
             return IExecuteWithSignature<int>("get", "(I)I", arg0);
@@ -731,8 +731,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getActualMaximum(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetActualMaximum(int arg0)
         {
             return IExecuteWithSignature<int>("getActualMaximum", "(I)I", arg0);
@@ -740,8 +740,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getActualMinimum(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetActualMinimum(int arg0)
         {
             return IExecuteWithSignature<int>("getActualMinimum", "(I)I", arg0);
@@ -749,10 +749,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getDisplayName(int,int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDisplayName(int arg0, int arg1, Java.Util.Locale arg2)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(IILjava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2);
@@ -760,19 +760,19 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getDisplayNames(int,int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.Integer> GetDisplayNames(int arg0, int arg1, Java.Util.Locale arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Map<, > GetDisplayNames(int arg0, int arg1, Java.Util.Locale arg2)
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Integer>>("getDisplayNames", "(IILjava/util/Locale;)Ljava/util/Map;", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Map<, >>("getDisplayNames", "(IILjava/util/Locale;)Ljava/util/Map;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#roll(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Roll(int arg0, int arg1)
         {
             IExecuteWithSignature("roll", "(II)V", arg0, arg1);
@@ -780,8 +780,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Set(int arg0, int arg1)
         {
             IExecuteWithSignature("set", "(II)V", arg0, arg1);
@@ -789,7 +789,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setLenient(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetLenient(bool arg0)
         {
             IExecuteWithSignature("setLenient", "(Z)V", arg0);
@@ -797,9 +797,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setWeekDate(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void SetWeekDate(int arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("setWeekDate", "(III)V", arg0, arg1, arg2);
@@ -831,7 +831,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#build()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Calendar"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar Build()
             {
                 return IExecuteWithSignature<Java.Util.Calendar>("build", "()Ljava/util/Calendar;");
@@ -839,9 +839,9 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#set(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder Set(int arg0, int arg1)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("set", "(II)Ljava/util/Calendar$Builder;", arg0, arg1);
@@ -849,8 +849,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setCalendarType(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetCalendarType(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setCalendarType", "(Ljava/lang/String;)Ljava/util/Calendar$Builder;", arg0);
@@ -858,10 +858,10 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setDate(int,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetDate(int arg0, int arg1, int arg2)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setDate", "(III)Ljava/util/Calendar$Builder;", arg0, arg1, arg2);
@@ -869,8 +869,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setFields(int...)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetFields(params int[] arg0)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setFields", "([I)Ljava/util/Calendar$Builder;", arg0);
@@ -878,8 +878,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setInstant(java.util.Date)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Date"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetInstant(Java.Util.Date arg0)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setInstant", "(Ljava/util/Date;)Ljava/util/Calendar$Builder;", arg0);
@@ -887,8 +887,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setInstant(long)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="long"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetInstant(long arg0)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setInstant", "(J)Ljava/util/Calendar$Builder;", arg0);
@@ -896,8 +896,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setLenient(boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="bool"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetLenient(bool arg0)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setLenient", "(Z)Ljava/util/Calendar$Builder;", arg0);
@@ -905,8 +905,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setLocale(java.util.Locale)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetLocale(Java.Util.Locale arg0)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setLocale", "(Ljava/util/Locale;)Ljava/util/Calendar$Builder;", arg0);
@@ -914,11 +914,11 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setTimeOfDay(int,int,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="int"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetTimeOfDay(int arg0, int arg1, int arg2, int arg3)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setTimeOfDay", "(IIII)Ljava/util/Calendar$Builder;", arg0, arg1, arg2, arg3);
@@ -926,10 +926,10 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setTimeOfDay(int,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetTimeOfDay(int arg0, int arg1, int arg2)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setTimeOfDay", "(III)Ljava/util/Calendar$Builder;", arg0, arg1, arg2);
@@ -937,8 +937,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setTimeZone(java.util.TimeZone)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetTimeZone(Java.Util.TimeZone arg0)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setTimeZone", "(Ljava/util/TimeZone;)Ljava/util/Calendar$Builder;", arg0);
@@ -946,10 +946,10 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setWeekDate(int,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetWeekDate(int arg0, int arg1, int arg2)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setWeekDate", "(III)Ljava/util/Calendar$Builder;", arg0, arg1, arg2);
@@ -957,9 +957,9 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setWeekDefinition(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Calendar.Builder SetWeekDefinition(int arg0, int arg1)
             {
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setWeekDefinition", "(II)Ljava/util/Calendar$Builder;", arg0, arg1);

@@ -66,13 +66,13 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleAnnotationValueVisitor6<R, P> declaration
+    #region SimpleAnnotationValueVisitor6<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor6.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class SimpleAnnotationValueVisitor6<R, P> : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6<R, P>
+    public partial class SimpleAnnotationValueVisitor6<, > : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6<, >
     {
         const string _bridgeClassName = "javax.lang.model.util.SimpleAnnotationValueVisitor6";
         /// <summary>
@@ -140,8 +140,8 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleAnnotationValueVisitor6<R, P> implementation
-    public partial class SimpleAnnotationValueVisitor6<R, P>
+    #region SimpleAnnotationValueVisitor6<, > implementation
+    public partial class SimpleAnnotationValueVisitor6<, >
     {
         #region Constructors
 
@@ -149,9 +149,9 @@ namespace Javax.Lang.Model.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6(Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6<R, P> t) => t.Cast<Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6>();
+        public static implicit operator Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6(Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6<, > t) => t.Cast<Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6>();
 
         #endregion
 

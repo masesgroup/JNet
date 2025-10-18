@@ -77,11 +77,11 @@ namespace Java.Io
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Io.Reader"/> to <see cref="Java.Lang.Readable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Readable(Java.Io.Reader t) => t.Cast<Java.Lang.Readable>();
         /// <summary>
-        /// Converter from <see cref="Java.Io.Reader"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.Reader t) => t.Cast<Java.Io.Closeable>();
 
@@ -95,7 +95,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#nullReader()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.Reader"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Io.Reader NullReader()
         {
             return SExecuteWithSignature<Java.Io.Reader>(LocalBridgeClazz, "nullReader", "()Ljava/io/Reader;");
@@ -107,11 +107,11 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read(char[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("read", "([CII)I", arg0, arg1, arg2);
@@ -119,7 +119,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -127,7 +127,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#markSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool MarkSupported()
         {
             return IExecuteWithSignature<bool>("markSupported", "()Z");
@@ -135,8 +135,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#ready()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool Ready()
         {
             return IExecuteWithSignature<bool>("ready", "()Z");
@@ -144,8 +144,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read()
         {
             return IExecuteWithSignature<int>("read", "()I");
@@ -153,9 +153,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read(char[] arg0)
         {
             return IExecuteWithSignature<int>("read", "([C)I", new object[] { arg0 });
@@ -163,9 +163,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(java.nio.CharBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read(Java.Nio.CharBuffer arg0)
         {
             return IExecuteWithSignature<int>("read", "(Ljava/nio/CharBuffer;)I", arg0);
@@ -173,9 +173,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#skip(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Skip(long arg0)
         {
             return IExecuteWithSignature<long>("skip", "(J)J", arg0);
@@ -183,9 +183,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long TransferTo(Java.Io.Writer arg0)
         {
             return IExecuteWithSignature<long>("transferTo", "(Ljava/io/Writer;)J", arg0);
@@ -193,8 +193,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#mark(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Mark(int arg0)
         {
             IExecuteWithSignature("mark", "(I)V", arg0);
@@ -202,7 +202,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#reset()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");

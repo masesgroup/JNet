@@ -47,7 +47,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html"/>
         /// </summary>
-        public partial class BasicReason : Java.Lang.Enum<Java.Security.Cert.CertPathValidatorException.BasicReason>
+        public partial class BasicReason : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.security.cert.CertPathValidatorException$BasicReason";
             /// <summary>
@@ -216,8 +216,8 @@ namespace Java.Security.Cert
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/cert/CertPathValidatorException$BasicReason;", arg0);
@@ -225,7 +225,7 @@ namespace Java.Security.Cert
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "values", "()[Ljava/security/cert/CertPathValidatorException$BasicReason;");

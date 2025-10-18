@@ -85,8 +85,8 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#isProxyClass(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsProxyClass(Java.Lang.Class arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isProxyClass", "(Ljava/lang/Class;)Z", arg0);
@@ -94,10 +94,10 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#newProxyInstance(java.lang.ClassLoader,java.lang.Class[],java.lang.reflect.InvocationHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Reflect.InvocationHandler"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static object NewProxyInstance(Java.Lang.ClassLoader arg0, Java.Lang.Class[] arg1, Java.Lang.Reflect.InvocationHandler arg2)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "newProxyInstance", "(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;", arg0, arg1, arg2);
@@ -105,9 +105,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#getInvocationHandler(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.Reflect.InvocationHandler"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.Reflect.InvocationHandler GetInvocationHandler(object arg0)
         {
             return SExecuteWithSignature<Java.Lang.Reflect.InvocationHandler>(LocalBridgeClazz, "getInvocationHandler", "(Ljava/lang/Object;)Ljava/lang/reflect/InvocationHandler;", arg0);

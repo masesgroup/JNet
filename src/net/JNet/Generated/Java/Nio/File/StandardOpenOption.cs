@@ -29,7 +29,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html"/>
     /// </summary>
-    public partial class StandardOpenOption : Java.Lang.Enum<Java.Nio.File.StandardOpenOption>
+    public partial class StandardOpenOption : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.nio.file.StandardOpenOption";
         /// <summary>
@@ -75,7 +75,7 @@ namespace Java.Nio.File
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.StandardOpenOption"/> to <see cref="Java.Nio.File.OpenOption"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.File.OpenOption(Java.Nio.File.StandardOpenOption t) => t.Cast<Java.Nio.File.OpenOption>();
 
@@ -149,8 +149,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.StandardOpenOption"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.StandardOpenOption ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.StandardOpenOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/StandardOpenOption;", arg0);
@@ -158,7 +158,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.StandardOpenOption"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.StandardOpenOption[] Values()
         {
             return SExecuteWithSignatureArray<Java.Nio.File.StandardOpenOption>(LocalBridgeClazz, "values", "()[Ljava/nio/file/StandardOpenOption;");

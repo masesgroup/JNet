@@ -92,8 +92,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#findEditor(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Beans.PropertyEditor"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Beans.PropertyEditor FindEditor(Java.Lang.Class arg0)
         {
             return SExecuteWithSignature<Java.Beans.PropertyEditor>(LocalBridgeClazz, "findEditor", "(Ljava/lang/Class;)Ljava/beans/PropertyEditor;", arg0);
@@ -101,8 +101,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#registerEditor(java.lang.Class,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public static void RegisterEditor(Java.Lang.Class arg0, Java.Lang.Class arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "registerEditor", "(Ljava/lang/Class;Ljava/lang/Class;)V", arg0, arg1);

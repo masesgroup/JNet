@@ -133,8 +133,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.html#getAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Text.Html.CSS.Attribute GetAttribute(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "getAttribute", "(Ljava/lang/String;)Ljavax/swing/text/html/CSS$Attribute;", arg0);
@@ -543,7 +543,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#isInherited()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsInherited()
             {
                 return IExecuteWithSignature<bool>("isInherited", "()Z");

@@ -94,7 +94,7 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getOptions()"/> 
         /// </summary>
-        Java.Util.Map<Java.Lang.String, Java.Lang.String> Options { get; }
+        Java.Util.Map<, > Options { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getSourceVersion()"/> 
         /// </summary>
@@ -165,9 +165,9 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getOptions()"/> 
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.String> Options
+        public Java.Util.Map<, > Options
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getOptions", "()Ljava/util/Map;"); }
+            get { return IExecuteWithSignature<Java.Util.Map<, >>("getOptions", "()Ljava/util/Map;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getSourceVersion()"/> 

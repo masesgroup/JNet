@@ -73,7 +73,7 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html#%3Cinit%3E(org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DOMStructure(Org.W3c.Dom.Node arg0)
             : base(arg0)
         {
@@ -104,8 +104,8 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html#isFeatureSupported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFeatureSupported(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isFeatureSupported", "(Ljava/lang/String;)Z", arg0);

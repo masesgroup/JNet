@@ -98,9 +98,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval(javax.script.ScriptContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Script.ScriptContext"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Eval(Javax.Script.ScriptContext arg0)
         {
             return IExecuteWithSignature("eval", "(Ljavax/script/ScriptContext;)Ljava/lang/Object;", arg0);
@@ -108,8 +108,8 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Eval()
         {
             return IExecuteWithSignature("eval", "()Ljava/lang/Object;");
@@ -117,9 +117,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval(javax.script.Bindings)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Script.Bindings"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Eval(Javax.Script.Bindings arg0)
         {
             return IExecuteWithSignature("eval", "(Ljavax/script/Bindings;)Ljava/lang/Object;", arg0);

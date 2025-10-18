@@ -73,9 +73,9 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#%3Cinit%3E(java.awt.image.Raster,java.util.List,javax.imageio.metadata.IIOMetadata)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
-        /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <param name="arg2"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public IIOImage(Java.Awt.ImageNs.Raster arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,9 +83,9 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#%3Cinit%3E(java.awt.image.RenderedImage,java.util.List,javax.imageio.metadata.IIOMetadata)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
-        /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <param name="arg2"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public IIOImage(Java.Awt.ImageNs.RenderedImage arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
             : base(arg0, arg1, arg2)
         {
@@ -144,7 +144,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#hasRaster()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasRaster()
         {
             return IExecuteWithSignature<bool>("hasRaster", "()Z");
@@ -152,8 +152,8 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html#getThumbnail(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.BufferedImage GetThumbnail(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("getThumbnail", "(I)Ljava/awt/image/BufferedImage;", arg0);

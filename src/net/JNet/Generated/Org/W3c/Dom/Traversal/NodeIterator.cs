@@ -94,14 +94,14 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#nextNode()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.Node NextNode();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#previousNode()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.Node PreviousNode();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#detach()"/>
@@ -169,8 +169,8 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#nextNode()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Node NextNode()
         {
             return IExecuteWithSignature<Org.W3c.Dom.Node>("nextNode", "()Lorg/w3c/dom/Node;");
@@ -178,8 +178,8 @@ namespace Org.W3c.Dom.Traversal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#previousNode()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Node PreviousNode()
         {
             return IExecuteWithSignature<Org.W3c.Dom.Node>("previousNode", "()Lorg/w3c/dom/Node;");

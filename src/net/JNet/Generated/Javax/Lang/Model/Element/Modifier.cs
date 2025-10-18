@@ -29,7 +29,7 @@ namespace Javax.Lang.Model.Element
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html"/>
     /// </summary>
-    public partial class Modifier : Java.Lang.Enum<Javax.Lang.Model.Element.Modifier>
+    public partial class Modifier : Java.Lang.Enum
     {
         const string _bridgeClassName = "javax.lang.model.element.Modifier";
         /// <summary>
@@ -157,8 +157,8 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.Modifier"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.Element.Modifier ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/element/Modifier;", arg0);
@@ -166,7 +166,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.Element.Modifier"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.Element.Modifier[] Values()
         {
             return SExecuteWithSignatureArray<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/element/Modifier;");

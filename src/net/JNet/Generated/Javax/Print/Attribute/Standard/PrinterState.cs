@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.PrinterState"/> to <see cref="Javax.Print.Attribute.PrintServiceAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintServiceAttribute(Javax.Print.Attribute.Standard.PrinterState t) => t.Cast<Javax.Print.Attribute.PrintServiceAttribute>();
 

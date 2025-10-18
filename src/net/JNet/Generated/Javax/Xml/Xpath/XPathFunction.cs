@@ -78,10 +78,10 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunction.html#evaluate(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Xml.Xpath.XPathFunctionException"/>
-        object Evaluate(Java.Util.List<object> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        object Evaluate(Java.Util.List arg0);
 
         #endregion
 
@@ -116,10 +116,10 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunction.html#evaluate(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Xml.Xpath.XPathFunctionException"/>
-        public object Evaluate(Java.Util.List<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public object Evaluate(Java.Util.List arg0)
         {
             return IExecuteWithSignature("evaluate", "(Ljava/util/List;)Ljava/lang/Object;", arg0);
         }

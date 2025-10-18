@@ -75,9 +75,9 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public ResolutionSyntax(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -87,11 +87,11 @@ namespace Javax.Print.Attribute
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.ResolutionSyntax"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.ResolutionSyntax t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.ResolutionSyntax"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Print.Attribute.ResolutionSyntax t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -121,8 +121,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html#lessThanOrEquals(javax.print.attribute.ResolutionSyntax)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.ResolutionSyntax"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool LessThanOrEquals(Javax.Print.Attribute.ResolutionSyntax arg0)
         {
             return IExecuteWithSignature<bool>("lessThanOrEquals", "(Ljavax/print/attribute/ResolutionSyntax;)Z", arg0);
@@ -130,8 +130,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html#getCrossFeedResolution(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetCrossFeedResolution(int arg0)
         {
             return IExecuteWithSignature<int>("getCrossFeedResolution", "(I)I", arg0);
@@ -139,8 +139,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html#getFeedResolution(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetFeedResolution(int arg0)
         {
             return IExecuteWithSignature<int>("getFeedResolution", "(I)I", arg0);
@@ -148,8 +148,8 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html#getResolution(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetResolution(int arg0)
         {
             return IExecuteWithSignatureArray<int>("getResolution", "(I)[I", arg0);
@@ -157,9 +157,9 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html#toString(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToString(int arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("toString", "(ILjava/lang/String;)Ljava/lang/String;", arg0, arg1);

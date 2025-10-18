@@ -86,7 +86,7 @@ namespace Javax.Lang.Model.Type
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.Element AsElement();
 
         #endregion
@@ -136,7 +136,7 @@ namespace Javax.Lang.Model.Type
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.Element AsElement()
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.Element>("asElement", "()Ljavax/lang/model/element/Element;");

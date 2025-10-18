@@ -94,7 +94,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getSources()"/> 
         /// </summary>
-        Java.Util.Vector<Java.Awt.ImageNs.Renderable.RenderableImage> Sources { get; }
+        Java.Util.Vector Sources { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getWidth()"/> 
         /// </summary>
@@ -102,32 +102,32 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#isDynamic()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsDynamic();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createDefaultRendering()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Awt.ImageNs.RenderedImage CreateDefaultRendering();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createRendering(java.awt.image.renderable.RenderContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.ImageNs.RenderedImage CreateRendering(Java.Awt.ImageNs.Renderable.RenderContext arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createScaledRendering(int,int,java.awt.RenderingHints)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.ImageNs.RenderedImage CreateScaledRendering(int arg0, int arg1, Java.Awt.RenderingHints arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         object GetProperty(Java.Lang.String arg0);
 
         #endregion
@@ -197,9 +197,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getSources()"/> 
         /// </summary>
-        public Java.Util.Vector<Java.Awt.ImageNs.Renderable.RenderableImage> Sources
+        public Java.Util.Vector Sources
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Java.Awt.ImageNs.Renderable.RenderableImage>>("getSources", "()Ljava/util/Vector;"); }
+            get { return IExecuteWithSignature<Java.Util.Vector>("getSources", "()Ljava/util/Vector;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getWidth()"/> 
@@ -211,7 +211,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#isDynamic()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDynamic()
         {
             return IExecuteWithSignature<bool>("isDynamic", "()Z");
@@ -219,7 +219,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createDefaultRendering()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.RenderedImage CreateDefaultRendering()
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("createDefaultRendering", "()Ljava/awt/image/RenderedImage;");
@@ -227,8 +227,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createRendering(java.awt.image.renderable.RenderContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.RenderedImage CreateRendering(Java.Awt.ImageNs.Renderable.RenderContext arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("createRendering", "(Ljava/awt/image/renderable/RenderContext;)Ljava/awt/image/RenderedImage;", arg0);
@@ -236,10 +236,10 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createScaledRendering(int,int,java.awt.RenderingHints)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.RenderedImage CreateScaledRendering(int arg0, int arg1, Java.Awt.RenderingHints arg2)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("createScaledRendering", "(IILjava/awt/RenderingHints;)Ljava/awt/image/RenderedImage;", arg0, arg1, arg2);
@@ -247,8 +247,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);

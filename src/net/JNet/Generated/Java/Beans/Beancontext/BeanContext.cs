@@ -78,36 +78,36 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#getResourceAsStream(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Io.InputStream GetResourceAsStream(Java.Lang.String arg0, Java.Beans.Beancontext.BeanContextChild arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#instantiateChild(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         object InstantiateChild(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#getResource(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
-        /// <returns><see cref="Java.Net.URL"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Net.URL GetResource(Java.Lang.String arg0, Java.Beans.Beancontext.BeanContextChild arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddBeanContextMembershipListener(Java.Beans.Beancontext.BeanContextMembershipListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveBeanContextMembershipListener(Java.Beans.Beancontext.BeanContextMembershipListener arg0);
 
         #endregion
@@ -129,19 +129,19 @@ namespace Java.Beans.Beancontext
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Beans.Beancontext.BeanContext"/> to <see cref="Java.Beans.Beancontext.BeanContextChild"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Beans.Beancontext.BeanContextChild(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Beans.Beancontext.BeanContextChild>();
         /// <summary>
-        /// Converter from <see cref="Java.Beans.Beancontext.BeanContext"/> to <see cref="Java.Util.Collection"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Collection(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Util.Collection>();
         /// <summary>
-        /// Converter from <see cref="Java.Beans.Beancontext.BeanContext"/> to <see cref="Java.Beans.DesignMode"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Beans.DesignMode(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Beans.DesignMode>();
         /// <summary>
-        /// Converter from <see cref="Java.Beans.Beancontext.BeanContext"/> to <see cref="Java.Beans.Visibility"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Beans.Visibility(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Beans.Visibility>();
 
@@ -165,10 +165,10 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#getResourceAsStream(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.InputStream GetResourceAsStream(Java.Lang.String arg0, Java.Beans.Beancontext.BeanContextChild arg1)
         {
             return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;Ljava/beans/beancontext/BeanContextChild;)Ljava/io/InputStream;", arg0, arg1);
@@ -176,10 +176,10 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#instantiateChild(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object InstantiateChild(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("instantiateChild", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -187,10 +187,10 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#getResource(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
-        /// <returns><see cref="Java.Net.URL"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.URL GetResource(Java.Lang.String arg0, Java.Beans.Beancontext.BeanContextChild arg1)
         {
             return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;Ljava/beans/beancontext/BeanContextChild;)Ljava/net/URL;", arg0, arg1);
@@ -198,7 +198,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddBeanContextMembershipListener(Java.Beans.Beancontext.BeanContextMembershipListener arg0)
         {
             IExecuteWithSignature("addBeanContextMembershipListener", "(Ljava/beans/beancontext/BeanContextMembershipListener;)V", arg0);
@@ -206,7 +206,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveBeanContextMembershipListener(Java.Beans.Beancontext.BeanContextMembershipListener arg0)
         {
             IExecuteWithSignature("removeBeanContextMembershipListener", "(Ljava/beans/beancontext/BeanContextMembershipListener;)V", arg0);

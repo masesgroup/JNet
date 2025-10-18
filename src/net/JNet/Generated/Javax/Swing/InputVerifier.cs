@@ -91,8 +91,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#verify(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Verify(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<bool>("verify", "(Ljavax/swing/JComponent;)Z", arg0);
@@ -100,9 +100,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#shouldYieldFocus(javax.swing.JComponent,javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ShouldYieldFocus(Javax.Swing.JComponent arg0, Javax.Swing.JComponent arg1)
         {
             return IExecuteWithSignature<bool>("shouldYieldFocus", "(Ljavax/swing/JComponent;Ljavax/swing/JComponent;)Z", arg0, arg1);
@@ -110,8 +110,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#verifyTarget(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool VerifyTarget(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<bool>("verifyTarget", "(Ljavax/swing/JComponent;)Z", arg0);

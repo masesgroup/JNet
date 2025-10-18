@@ -99,7 +99,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#isDispatchThread()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public static bool IsDispatchThread()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDispatchThread", "()Z");
@@ -107,9 +107,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#invokeAndWait(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void InvokeAndWait(Java.Lang.Runnable arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "invokeAndWait", "(Ljava/lang/Runnable;)V", arg0);
@@ -117,7 +117,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#invokeLater(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void InvokeLater(Java.Lang.Runnable arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "invokeLater", "(Ljava/lang/Runnable;)V", arg0);
@@ -136,7 +136,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#peekEvent()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.AWTEvent"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.AWTEvent PeekEvent()
         {
             return IExecuteWithSignature<Java.Awt.AWTEvent>("peekEvent", "()Ljava/awt/AWTEvent;");
@@ -144,8 +144,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#peekEvent(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.AWTEvent"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.AWTEvent PeekEvent(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.AWTEvent>("peekEvent", "(I)Ljava/awt/AWTEvent;", arg0);
@@ -153,7 +153,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#createSecondaryLoop()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.SecondaryLoop"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.SecondaryLoop CreateSecondaryLoop()
         {
             return IExecuteWithSignature<Java.Awt.SecondaryLoop>("createSecondaryLoop", "()Ljava/awt/SecondaryLoop;");
@@ -161,7 +161,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#postEvent(java.awt.AWTEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PostEvent(Java.Awt.AWTEvent arg0)
         {
             IExecuteWithSignature("postEvent", "(Ljava/awt/AWTEvent;)V", arg0);
@@ -169,7 +169,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#push(java.awt.EventQueue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventQueue"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Push(Java.Awt.EventQueue arg0)
         {
             IExecuteWithSignature("push", "(Ljava/awt/EventQueue;)V", arg0);

@@ -108,7 +108,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void UndoableEditHappened(Javax.Swing.Event.UndoableEditEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void UndoableEditHappened(Javax.Swing.Event.UndoableEditEvent arg0)
         {
             hasOverrideUndoableEditHappened = false;
@@ -207,7 +207,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void UndoableEditHappened(Javax.Swing.Event.UndoableEditEvent arg0)
         {
             IExecuteWithSignature("undoableEditHappened", "(Ljavax/swing/event/UndoableEditEvent;)V", arg0);

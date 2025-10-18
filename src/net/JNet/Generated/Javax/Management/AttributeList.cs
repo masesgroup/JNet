@@ -29,7 +29,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html"/>
     /// </summary>
-    public partial class AttributeList : Java.Util.ArrayList<object>
+    public partial class AttributeList : Java.Util.ArrayList
     {
         const string _bridgeClassName = "javax.management.AttributeList";
         /// <summary>
@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AttributeList(int arg0)
             : base(arg0)
         {
@@ -81,15 +81,15 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public AttributeList(Java.Util.List<Javax.Management.Attribute> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public AttributeList(Java.Util.List arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#%3Cinit%3E(javax.management.AttributeList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.AttributeList"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AttributeList(Javax.Management.AttributeList arg0)
             : base(arg0)
         {
@@ -113,9 +113,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#addAll(int,javax.management.AttributeList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.AttributeList"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddAll(int arg0, Javax.Management.AttributeList arg1)
         {
             return IExecuteWithSignature<bool>("addAll", "(ILjavax/management/AttributeList;)Z", arg0, arg1);
@@ -123,8 +123,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#addAll(javax.management.AttributeList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.AttributeList"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddAll(Javax.Management.AttributeList arg0)
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljavax/management/AttributeList;)Z", arg0);
@@ -132,16 +132,16 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#asList()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<Javax.Management.Attribute> AsList()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List AsList()
         {
-            return IExecuteWithSignature<Java.Util.List<Javax.Management.Attribute>>("asList", "()Ljava/util/List;");
+            return IExecuteWithSignature<Java.Util.List>("asList", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#add(int,javax.management.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.Attribute"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Add(int arg0, Javax.Management.Attribute arg1)
         {
             IExecuteWithSignature("add", "(ILjavax/management/Attribute;)V", arg0, arg1);
@@ -149,7 +149,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#add(javax.management.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Attribute"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Add(Javax.Management.Attribute arg0)
         {
             IExecuteWithSignature("add", "(Ljavax/management/Attribute;)V", arg0);
@@ -157,8 +157,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#set(int,javax.management.Attribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.Attribute"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Set(int arg0, Javax.Management.Attribute arg1)
         {
             IExecuteWithSignature("set", "(ILjavax/management/Attribute;)V", arg0, arg1);

@@ -29,7 +29,7 @@ namespace Java.Time.Chrono
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html"/>
     /// </summary>
-    public partial class IsoEra : Java.Lang.Enum<Java.Time.Chrono.IsoEra>
+    public partial class IsoEra : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.time.chrono.IsoEra";
         /// <summary>
@@ -75,7 +75,7 @@ namespace Java.Time.Chrono
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Time.Chrono.IsoEra"/> to <see cref="Java.Time.Chrono.Era"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Time.Chrono.Era(Java.Time.Chrono.IsoEra t) => t.Cast<Java.Time.Chrono.Era>();
 
@@ -101,8 +101,8 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#of(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Chrono.IsoEra Of(int arg0)
         {
             return SExecuteWithSignature<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "of", "(I)Ljava/time/chrono/IsoEra;", arg0);
@@ -110,8 +110,8 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Chrono.IsoEra ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/chrono/IsoEra;", arg0);
@@ -119,7 +119,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Chrono.IsoEra[] Values()
         {
             return SExecuteWithSignatureArray<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "values", "()[Ljava/time/chrono/IsoEra;");

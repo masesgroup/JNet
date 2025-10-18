@@ -103,8 +103,8 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTemplatesHandler()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Transform.Sax.TemplatesHandler"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Transform.Sax.TemplatesHandler NewTemplatesHandler()
         {
             return IExecuteWithSignature<Javax.Xml.Transform.Sax.TemplatesHandler>("newTemplatesHandler", "()Ljavax/xml/transform/sax/TemplatesHandler;");
@@ -112,8 +112,8 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Transform.Sax.TransformerHandler"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Transform.Sax.TransformerHandler NewTransformerHandler()
         {
             return IExecuteWithSignature<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", "()Ljavax/xml/transform/sax/TransformerHandler;");
@@ -121,9 +121,9 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler(javax.xml.transform.Source)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
-        /// <returns><see cref="Javax.Xml.Transform.Sax.TransformerHandler"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Transform.Sax.TransformerHandler NewTransformerHandler(Javax.Xml.Transform.Source arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/sax/TransformerHandler;", arg0);
@@ -131,9 +131,9 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler(javax.xml.transform.Templates)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Templates"/></param>
-        /// <returns><see cref="Javax.Xml.Transform.Sax.TransformerHandler"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Transform.Sax.TransformerHandler NewTransformerHandler(Javax.Xml.Transform.Templates arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Transform.Sax.TransformerHandler>("newTransformerHandler", "(Ljavax/xml/transform/Templates;)Ljavax/xml/transform/sax/TransformerHandler;", arg0);
@@ -141,9 +141,9 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newXMLFilter(javax.xml.transform.Source)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
-        /// <returns><see cref="Org.Xml.Sax.XMLFilter"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Xml.Sax.XMLFilter NewXMLFilter(Javax.Xml.Transform.Source arg0)
         {
             return IExecuteWithSignature<Org.Xml.Sax.XMLFilter>("newXMLFilter", "(Ljavax/xml/transform/Source;)Lorg/xml/sax/XMLFilter;", arg0);
@@ -151,9 +151,9 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newXMLFilter(javax.xml.transform.Templates)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Templates"/></param>
-        /// <returns><see cref="Org.Xml.Sax.XMLFilter"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Xml.Sax.XMLFilter NewXMLFilter(Javax.Xml.Transform.Templates arg0)
         {
             return IExecuteWithSignature<Org.Xml.Sax.XMLFilter>("newXMLFilter", "(Ljavax/xml/transform/Templates;)Lorg/xml/sax/XMLFilter;", arg0);

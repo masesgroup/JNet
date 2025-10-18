@@ -73,7 +73,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public UndoableEditSupport(object arg0)
             : base(arg0)
         {
@@ -111,7 +111,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html#addUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
             IExecuteWithSignature("addUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
@@ -133,7 +133,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html#postEdit(javax.swing.undo.UndoableEdit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PostEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
             IExecuteWithSignature("postEdit", "(Ljavax/swing/undo/UndoableEdit;)V", arg0);
@@ -141,7 +141,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html#removeUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
             IExecuteWithSignature("removeUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);

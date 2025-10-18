@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Supplier<T> declaration
+    #region Supplier declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class Supplier<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class Supplier : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region SupplierDirect<T> declaration
+    #region SupplierDirect declaration
     /// <summary>
     /// Direct override of <see cref="Supplier"/> or its generic type if there is one
     /// </summary>
-    public partial class SupplierDirect<T> : Supplier<T>
+    public partial class SupplierDirect : Supplier
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,7 +219,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public virtual object Get()
         {
             hasOverrideGet = false; return default;
@@ -258,7 +258,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public override object Get()
         {
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
@@ -274,17 +274,17 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ISupplier<T>
+    #region ISupplier
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.Supplier implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html"/>
     /// </summary>
-    public partial interface ISupplier<T>
+    public partial interface ISupplier
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         T Get();
 
         #endregion
@@ -297,8 +297,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region Supplier<T> implementation
-    public partial class Supplier<T> : Java.Util.Function.ISupplier<T>
+    #region Supplier implementation
+    public partial class Supplier : Java.Util.Function.ISupplier
     {
         #region Constructors
 
@@ -344,7 +344,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         public virtual T Get()
         {
             hasOverrideGet = false; return default;
@@ -360,8 +360,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region SupplierDirect<T> implementation
-    public partial class SupplierDirect<T> : Java.Util.Function.ISupplier<T>
+    #region SupplierDirect implementation
+    public partial class SupplierDirect : Java.Util.Function.ISupplier
     {
         #region Constructors
 
@@ -383,7 +383,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         public override T Get()
         {
             return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");

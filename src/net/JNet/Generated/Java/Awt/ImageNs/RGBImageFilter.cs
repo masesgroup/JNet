@@ -91,10 +91,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RGBImageFilter.html#filterRGB(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int FilterRGB(int arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("filterRGB", "(III)I", arg0, arg1, arg2);
@@ -102,8 +102,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RGBImageFilter.html#filterIndexColorModel(java.awt.image.IndexColorModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.IndexColorModel"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.IndexColorModel"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.IndexColorModel FilterIndexColorModel(Java.Awt.ImageNs.IndexColorModel arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.IndexColorModel>("filterIndexColorModel", "(Ljava/awt/image/IndexColorModel;)Ljava/awt/image/IndexColorModel;", arg0);
@@ -111,13 +111,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RGBImageFilter.html#filterRGBPixels(int,int,int,int,int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void FilterRGBPixels(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("filterRGBPixels", "(IIII[III)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -125,8 +125,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RGBImageFilter.html#substituteColorModel(java.awt.image.ColorModel,java.awt.image.ColorModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SubstituteColorModel(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.ColorModel arg1)
         {
             IExecuteWithSignature("substituteColorModel", "(Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;)V", arg0, arg1);

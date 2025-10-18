@@ -75,7 +75,7 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ContainerOrderFocusTraversalPolicy"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ContainerOrderFocusTraversalPolicy t) => t.Cast<Java.Io.Serializable>();
 

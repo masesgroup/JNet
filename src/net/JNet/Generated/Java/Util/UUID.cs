@@ -73,8 +73,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#%3Cinit%3E(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public UUID(long arg0, long arg1)
             : base(arg0, arg1)
         {
@@ -84,11 +84,11 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.UUID"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.UUID t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.UUID"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Util.UUID t) => t.Cast<Java.Lang.Comparable>();
 
@@ -102,8 +102,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#fromString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.UUID"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.UUID FromString(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Util.UUID>(LocalBridgeClazz, "fromString", "(Ljava/lang/String;)Ljava/util/UUID;", arg0);
@@ -111,8 +111,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#nameUUIDFromBytes(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Util.UUID"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.UUID NameUUIDFromBytes(byte[] arg0)
         {
             return SExecuteWithSignature<Java.Util.UUID>(LocalBridgeClazz, "nameUUIDFromBytes", "([B)Ljava/util/UUID;", new object[] { arg0 });
@@ -120,7 +120,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#randomUUID()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.UUID"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.UUID RandomUUID()
         {
             return SExecuteWithSignature<Java.Util.UUID>(LocalBridgeClazz, "randomUUID", "()Ljava/util/UUID;");
@@ -146,7 +146,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#clockSequence()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int ClockSequence()
         {
             return IExecuteWithSignature<int>("clockSequence", "()I");
@@ -154,8 +154,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -163,8 +163,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#compareTo(java.util.UUID)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Util.UUID arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/util/UUID;)I", arg0);
@@ -172,7 +172,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#variant()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Variant()
         {
             return IExecuteWithSignature<int>("variant", "()I");
@@ -180,7 +180,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#version()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Version()
         {
             return IExecuteWithSignature<int>("version", "()I");
@@ -188,7 +188,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#node()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long Node()
         {
             return IExecuteWithSignature<long>("node", "()J");
@@ -196,7 +196,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#timestamp()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long Timestamp()
         {
             return IExecuteWithSignature<long>("timestamp", "()J");

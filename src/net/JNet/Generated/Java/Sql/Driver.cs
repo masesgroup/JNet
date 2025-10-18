@@ -90,30 +90,30 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#acceptsURL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool AcceptsURL(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#jdbcCompliant()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool JdbcCompliant();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#connect(java.lang.String,java.util.Properties)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
-        /// <returns><see cref="Java.Sql.Connection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.Connection Connect(Java.Lang.String arg0, Java.Util.Properties arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getPropertyInfo(java.lang.String,java.util.Properties)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
-        /// <returns><see cref="Java.Sql.DriverPropertyInfo"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.DriverPropertyInfo[] GetPropertyInfo(Java.Lang.String arg0, Java.Util.Properties arg1);
 
         #endregion
@@ -170,9 +170,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#acceptsURL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool AcceptsURL(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("acceptsURL", "(Ljava/lang/String;)Z", arg0);
@@ -180,7 +180,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#jdbcCompliant()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool JdbcCompliant()
         {
             return IExecuteWithSignature<bool>("jdbcCompliant", "()Z");
@@ -188,10 +188,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#connect(java.lang.String,java.util.Properties)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
-        /// <returns><see cref="Java.Sql.Connection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.Connection Connect(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
             return IExecuteWithSignature<Java.Sql.Connection>("connect", "(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;", arg0, arg1);
@@ -199,10 +199,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getPropertyInfo(java.lang.String,java.util.Properties)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
-        /// <returns><see cref="Java.Sql.DriverPropertyInfo"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.DriverPropertyInfo[] GetPropertyInfo(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
             return IExecuteWithSignatureArray<Java.Sql.DriverPropertyInfo>("getPropertyInfo", "(Ljava/lang/String;Ljava/util/Properties;)[Ljava/sql/DriverPropertyInfo;", arg0, arg1);

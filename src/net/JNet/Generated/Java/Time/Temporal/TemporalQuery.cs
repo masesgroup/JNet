@@ -68,12 +68,12 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region TemporalQuery<R> declaration
+    #region TemporalQuery declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
-    public partial class TemporalQuery<R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQuery<R>>
+    public partial class TemporalQuery : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQuery>
     {
         const string _bridgeClassName = "java.time.temporal.TemporalQuery";
         /// <summary>
@@ -135,8 +135,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html#queryFrom(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object QueryFrom(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return IExecuteWithSignature("queryFrom", "(Ljava/time/temporal/TemporalAccessor;)Ljava/lang/Object;", arg0);
@@ -152,18 +152,18 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region ITemporalQuery<R>
+    #region ITemporalQuery
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html"/>
     /// </summary>
-    public partial interface ITemporalQuery<R>
+    public partial interface ITemporalQuery
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html#queryFrom(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R QueryFrom(Java.Time.Temporal.TemporalAccessor arg0);
 
         #endregion
@@ -176,8 +176,8 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region TemporalQuery<R> implementation
-    public partial class TemporalQuery<R> : Java.Time.Temporal.ITemporalQuery<R>
+    #region TemporalQuery implementation
+    public partial class TemporalQuery : Java.Time.Temporal.ITemporalQuery
     {
         #region Constructors
 
@@ -185,9 +185,9 @@ namespace Java.Time.Temporal
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Time.Temporal.TemporalQuery{R}"/> to <see cref="Java.Time.Temporal.TemporalQuery"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Time.Temporal.TemporalQuery(Java.Time.Temporal.TemporalQuery<R> t) => t.Cast<Java.Time.Temporal.TemporalQuery>();
+        public static implicit operator Java.Time.Temporal.TemporalQuery(Java.Time.Temporal.TemporalQuery t) => t.Cast<Java.Time.Temporal.TemporalQuery>();
 
         #endregion
 
@@ -203,8 +203,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html#queryFrom(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R QueryFrom(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return IExecuteWithSignature<R>("queryFrom", "(Ljava/time/temporal/TemporalAccessor;)Ljava/lang/Object;", arg0);

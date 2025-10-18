@@ -68,7 +68,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html"/>
         /// </summary>
-        public partial class WindowTranslucency : Java.Lang.Enum<Java.Awt.GraphicsDevice.WindowTranslucency>
+        public partial class WindowTranslucency : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.awt.GraphicsDevice$WindowTranslucency";
             /// <summary>
@@ -206,7 +206,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isDisplayChangeSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDisplayChangeSupported()
         {
             return IExecuteWithSignature<bool>("isDisplayChangeSupported", "()Z");
@@ -214,7 +214,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isFullScreenSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFullScreenSupported()
         {
             return IExecuteWithSignature<bool>("isFullScreenSupported", "()Z");
@@ -222,8 +222,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isWindowTranslucencySupported(java.awt.GraphicsDevice.WindowTranslucency)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.GraphicsDevice.WindowTranslucency"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsWindowTranslucencySupported(Java.Awt.GraphicsDevice.WindowTranslucency arg0)
         {
             return IExecuteWithSignature<bool>("isWindowTranslucencySupported", "(Ljava/awt/GraphicsDevice$WindowTranslucency;)Z", arg0);
@@ -231,8 +231,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getBestConfiguration(java.awt.GraphicsConfigTemplate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfigTemplate"/></param>
-        /// <returns><see cref="Java.Awt.GraphicsConfiguration"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.GraphicsConfiguration GetBestConfiguration(Java.Awt.GraphicsConfigTemplate arg0)
         {
             return IExecuteWithSignature<Java.Awt.GraphicsConfiguration>("getBestConfiguration", "(Ljava/awt/GraphicsConfigTemplate;)Ljava/awt/GraphicsConfiguration;", arg0);
@@ -278,8 +278,8 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Awt.GraphicsDevice.WindowTranslucency"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.GraphicsDevice.WindowTranslucency ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Awt.GraphicsDevice.WindowTranslucency>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/GraphicsDevice$WindowTranslucency;", arg0);
@@ -287,7 +287,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Awt.GraphicsDevice.WindowTranslucency"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.GraphicsDevice.WindowTranslucency[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Awt.GraphicsDevice.WindowTranslucency>(LocalBridgeClazz, "values", "()[Ljava/awt/GraphicsDevice$WindowTranslucency;");

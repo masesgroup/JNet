@@ -108,7 +108,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void EventDispatched(Java.Awt.AWTEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void EventDispatched(Java.Awt.AWTEvent arg0)
         {
             hasOverrideEventDispatched = false;
@@ -207,7 +207,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void EventDispatched(Java.Awt.AWTEvent arg0)
         {
             IExecuteWithSignature("eventDispatched", "(Ljava/awt/AWTEvent;)V", arg0);

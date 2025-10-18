@@ -91,8 +91,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InternalFrameFocusTraversalPolicy.html#getInitialComponent(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetInitialComponent(Javax.Swing.JInternalFrame arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getInitialComponent", "(Ljavax/swing/JInternalFrame;)Ljava/awt/Component;", arg0);

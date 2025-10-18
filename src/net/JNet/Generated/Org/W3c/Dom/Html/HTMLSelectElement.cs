@@ -122,9 +122,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#add(org.w3c.dom.html.HTMLElement,org.w3c.dom.html.HTMLElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Html.HTMLElement"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Html.HTMLElement"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void Add(Org.W3c.Dom.Html.HTMLElement arg0, Org.W3c.Dom.Html.HTMLElement arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#blur()"/>
@@ -137,7 +137,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Remove(int arg0);
 
         #endregion
@@ -250,9 +250,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#add(org.w3c.dom.html.HTMLElement,org.w3c.dom.html.HTMLElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Html.HTMLElement"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Html.HTMLElement"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Add(Org.W3c.Dom.Html.HTMLElement arg0, Org.W3c.Dom.Html.HTMLElement arg1)
         {
             IExecuteWithSignature("add", "(Lorg/w3c/dom/html/HTMLElement;Lorg/w3c/dom/html/HTMLElement;)V", arg0, arg1);
@@ -274,7 +274,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(int arg0)
         {
             IExecuteWithSignature("remove", "(I)V", arg0);

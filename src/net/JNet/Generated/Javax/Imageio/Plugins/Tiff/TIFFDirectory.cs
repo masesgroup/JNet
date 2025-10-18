@@ -73,8 +73,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#%3Cinit%3E(javax.imageio.plugins.tiff.TIFFTagSet[],javax.imageio.plugins.tiff.TIFFTag)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
-        /// <param name="arg1"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public TIFFDirectory(Javax.Imageio.Plugins.Tiff.TIFFTagSet[] arg0, Javax.Imageio.Plugins.Tiff.TIFFTag arg1)
             : base(arg0, arg1)
         {
@@ -94,9 +94,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#createFromMetadata(javax.imageio.metadata.IIOMetadata)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFDirectory"/></returns>
-        /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Imageio.Plugins.Tiff.TIFFDirectory CreateFromMetadata(Javax.Imageio.Metadata.IIOMetadata arg0)
         {
             return SExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFDirectory>(LocalBridgeClazz, "createFromMetadata", "(Ljavax/imageio/metadata/IIOMetadata;)Ljavax/imageio/plugins/tiff/TIFFDirectory;", arg0);
@@ -143,8 +143,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#containsTIFFField(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsTIFFField(int arg0)
         {
             return IExecuteWithSignature<bool>("containsTIFFField", "(I)Z", arg0);
@@ -152,8 +152,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#clone()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFDirectory"/></returns>
-        /// <exception cref="Java.Lang.CloneNotSupportedException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Imageio.Plugins.Tiff.TIFFDirectory Clone()
         {
             return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFDirectory>("clone", "()Ljavax/imageio/plugins/tiff/TIFFDirectory;");
@@ -161,8 +161,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getTIFFField(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFField"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Imageio.Plugins.Tiff.TIFFField GetTIFFField(int arg0)
         {
             return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFField>("getTIFFField", "(I)Ljavax/imageio/plugins/tiff/TIFFField;", arg0);
@@ -170,8 +170,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getTag(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Imageio.Plugins.Tiff.TIFFTag GetTag(int arg0)
         {
             return IExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag", "(I)Ljavax/imageio/plugins/tiff/TIFFTag;", arg0);
@@ -179,7 +179,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#addTagSet(javax.imageio.plugins.tiff.TIFFTagSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddTagSet(Javax.Imageio.Plugins.Tiff.TIFFTagSet arg0)
         {
             IExecuteWithSignature("addTagSet", "(Ljavax/imageio/plugins/tiff/TIFFTagSet;)V", arg0);
@@ -187,7 +187,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#addTIFFField(javax.imageio.plugins.tiff.TIFFField)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFField"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddTIFFField(Javax.Imageio.Plugins.Tiff.TIFFField arg0)
         {
             IExecuteWithSignature("addTIFFField", "(Ljavax/imageio/plugins/tiff/TIFFField;)V", arg0);
@@ -195,7 +195,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#removeTagSet(javax.imageio.plugins.tiff.TIFFTagSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveTagSet(Javax.Imageio.Plugins.Tiff.TIFFTagSet arg0)
         {
             IExecuteWithSignature("removeTagSet", "(Ljavax/imageio/plugins/tiff/TIFFTagSet;)V", arg0);
@@ -203,7 +203,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#removeTIFFField(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveTIFFField(int arg0)
         {
             IExecuteWithSignature("removeTIFFField", "(I)V", arg0);

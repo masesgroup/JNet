@@ -73,8 +73,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DeflaterOutputStream(Java.Io.OutputStream arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -82,9 +82,9 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.zip.Deflater,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Zip.Deflater"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -92,10 +92,10 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.zip.Deflater,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Zip.Deflater"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, int arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -103,9 +103,9 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.zip.Deflater,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Zip.Deflater"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -113,8 +113,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.zip.Deflater)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Zip.Deflater"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1)
             : base(arg0, arg1)
         {
@@ -122,7 +122,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DeflaterOutputStream(Java.Io.OutputStream arg0)
             : base(arg0)
         {
@@ -146,7 +146,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#finish()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Finish()
         {
             IExecuteWithSignature("finish", "()V");

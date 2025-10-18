@@ -94,8 +94,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#of(java.net.InetSocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetSocketAddress"/></param>
-        /// <returns><see cref="Java.Net.ProxySelector"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Net.ProxySelector Of(Java.Net.InetSocketAddress arg0)
         {
             return SExecuteWithSignature<Java.Net.ProxySelector>(LocalBridgeClazz, "of", "(Ljava/net/InetSocketAddress;)Ljava/net/ProxySelector;", arg0);
@@ -107,18 +107,18 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#select(java.net.URI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<Java.Net.Proxy> Select(Java.Net.URI arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List Select(Java.Net.URI arg0)
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Net.Proxy>>("select", "(Ljava/net/URI;)Ljava/util/List;", arg0);
+            return IExecuteWithSignature<Java.Util.List>("select", "(Ljava/net/URI;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#connectFailed(java.net.URI,java.net.SocketAddress,java.io.IOException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <param name="arg1"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg2"><see cref="Java.Io.IOException"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void ConnectFailed(Java.Net.URI arg0, Java.Net.SocketAddress arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
             IExecuteWithSignature("connectFailed", "(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V", arg0, arg1, arg2);

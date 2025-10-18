@@ -105,8 +105,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getAnonymousLogger(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Logging.Logger"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Logging.Logger GetAnonymousLogger(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Util.Logging.Logger>(LocalBridgeClazz, "getAnonymousLogger", "(Ljava/lang/String;)Ljava/util/logging/Logger;", arg0);
@@ -114,9 +114,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getLogger(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Logging.Logger"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Logging.Logger GetLogger(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Java.Util.Logging.Logger>(LocalBridgeClazz, "getLogger", "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/logging/Logger;", arg0, arg1);
@@ -124,8 +124,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#getLogger(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Logging.Logger"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Logging.Logger GetLogger(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Util.Logging.Logger>(LocalBridgeClazz, "getLogger", "(Ljava/lang/String;)Ljava/util/logging/Logger;", arg0);
@@ -193,8 +193,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#isLoggable(java.util.logging.Level)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsLoggable(Java.Util.Logging.Level arg0)
         {
             return IExecuteWithSignature<bool>("isLoggable", "(Ljava/util/logging/Level;)Z", arg0);
@@ -202,8 +202,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#addHandler(java.util.logging.Handler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddHandler(Java.Util.Logging.Handler arg0)
         {
             IExecuteWithSignature("addHandler", "(Ljava/util/logging/Handler;)V", arg0);
@@ -211,7 +211,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#config(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Config(Java.Lang.String arg0)
         {
             IExecuteWithSignature("config", "(Ljava/lang/String;)V", arg0);
@@ -219,17 +219,17 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#config(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Config(Java.Util.Function.Supplier<Java.Lang.String> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void Config(Java.Util.Function.Supplier arg0)
         {
             IExecuteWithSignature("config", "(Ljava/util/function/Supplier;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#entering(java.lang.String,java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Entering(Java.Lang.String arg0, Java.Lang.String arg1, object arg2)
         {
             IExecuteWithSignature("entering", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -237,9 +237,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#entering(java.lang.String,java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Entering(Java.Lang.String arg0, Java.Lang.String arg1, object[] arg2)
         {
             IExecuteWithSignature("entering", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -247,8 +247,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#entering(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Entering(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("entering", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -256,9 +256,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#exiting(java.lang.String,java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Exiting(Java.Lang.String arg0, Java.Lang.String arg1, object arg2)
         {
             IExecuteWithSignature("exiting", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -266,8 +266,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#exiting(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Exiting(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("exiting", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -275,7 +275,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#fine(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Fine(Java.Lang.String arg0)
         {
             IExecuteWithSignature("fine", "(Ljava/lang/String;)V", arg0);
@@ -283,15 +283,15 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#fine(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Fine(Java.Util.Function.Supplier<Java.Lang.String> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void Fine(Java.Util.Function.Supplier arg0)
         {
             IExecuteWithSignature("fine", "(Ljava/util/function/Supplier;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#finer(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Finer(Java.Lang.String arg0)
         {
             IExecuteWithSignature("finer", "(Ljava/lang/String;)V", arg0);
@@ -299,15 +299,15 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#finer(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Finer(Java.Util.Function.Supplier<Java.Lang.String> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void Finer(Java.Util.Function.Supplier arg0)
         {
             IExecuteWithSignature("finer", "(Ljava/util/function/Supplier;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#finest(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Finest(Java.Lang.String arg0)
         {
             IExecuteWithSignature("finest", "(Ljava/lang/String;)V", arg0);
@@ -315,15 +315,15 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#finest(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Finest(Java.Util.Function.Supplier<Java.Lang.String> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void Finest(Java.Util.Function.Supplier arg0)
         {
             IExecuteWithSignature("finest", "(Ljava/util/function/Supplier;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#info(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Info(Java.Lang.String arg0)
         {
             IExecuteWithSignature("info", "(Ljava/lang/String;)V", arg0);
@@ -331,17 +331,17 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#info(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Info(Java.Util.Function.Supplier<Java.Lang.String> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void Info(Java.Util.Function.Supplier arg0)
         {
             IExecuteWithSignature("info", "(Ljava/util/function/Supplier;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#log(java.util.logging.Level,java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Log(Java.Util.Logging.Level arg0, Java.Lang.String arg1, object arg2)
         {
             IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -349,9 +349,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#log(java.util.logging.Level,java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Log(Java.Util.Logging.Level arg0, Java.Lang.String arg1, object[] arg2)
         {
             IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2);
@@ -359,9 +359,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#log(java.util.logging.Level,java.lang.String,java.lang.Throwable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Log(Java.Util.Logging.Level arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
             IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2);
@@ -369,8 +369,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#log(java.util.logging.Level,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Log(Java.Util.Logging.Level arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/lang/String;)V", arg0, arg1);
@@ -378,26 +378,26 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#log(java.util.logging.Level,java.lang.Throwable,java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Log(Java.Util.Logging.Level arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1, Java.Util.Function.Supplier<Java.Lang.String> arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        public void Log(Java.Util.Logging.Level arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1, Java.Util.Function.Supplier arg2)
         {
             IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/lang/Throwable;Ljava/util/function/Supplier;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#log(java.util.logging.Level,java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Log(Java.Util.Logging.Level arg0, Java.Util.Function.Supplier<Java.Lang.String> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public void Log(Java.Util.Logging.Level arg0, Java.Util.Function.Supplier arg1)
         {
             IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/util/function/Supplier;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#log(java.util.logging.LogRecord)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Log(Java.Util.Logging.LogRecord arg0)
         {
             IExecuteWithSignature("log", "(Ljava/util/logging/LogRecord;)V", arg0);
@@ -405,11 +405,11 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, object arg4)
         {
             IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4);
@@ -417,11 +417,11 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, object[] arg4)
         {
             IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4);
@@ -429,11 +429,11 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.Throwable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, MASES.JCOBridge.C2JBridge.JVMBridgeException arg4)
         {
             IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2, arg3, arg4);
@@ -441,10 +441,10 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
@@ -452,35 +452,35 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.Throwable,java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.Throwable"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, MASES.JCOBridge.C2JBridge.JVMBridgeException arg3, Java.Util.Function.Supplier<Java.Lang.String> arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, MASES.JCOBridge.C2JBridge.JVMBridgeException arg3, Java.Util.Function.Supplier arg4)
         {
             IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/function/Supplier;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.Function.Supplier<Java.Lang.String> arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.Function.Supplier arg3)
         {
             IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Supplier;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.util.ResourceBundle,java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Util.ResourceBundle"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.ResourceBundle arg3, Java.Lang.String arg4, params object[] arg5)
         {
             IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)V", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg5, arg0, arg1, arg2, arg3, arg4));
@@ -488,12 +488,12 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Util.ResourceBundle"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.ResourceBundle arg3, Java.Lang.String arg4, MASES.JCOBridge.C2JBridge.JVMBridgeException arg5)
         {
             IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/util/ResourceBundle;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -501,10 +501,10 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.util.ResourceBundle,java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void Logrb(Java.Util.Logging.Level arg0, Java.Util.ResourceBundle arg1, Java.Lang.String arg2, params object[] arg3)
         {
             IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)V", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg3, arg0, arg1, arg2));
@@ -512,10 +512,10 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void Logrb(Java.Util.Logging.Level arg0, Java.Util.ResourceBundle arg1, Java.Lang.String arg2, MASES.JCOBridge.C2JBridge.JVMBridgeException arg3)
         {
             IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/util/ResourceBundle;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2, arg3);
@@ -523,8 +523,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#removeHandler(java.util.logging.Handler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void RemoveHandler(Java.Util.Logging.Handler arg0)
         {
             IExecuteWithSignature("removeHandler", "(Ljava/util/logging/Handler;)V", arg0);
@@ -532,7 +532,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#severe(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Severe(Java.Lang.String arg0)
         {
             IExecuteWithSignature("severe", "(Ljava/lang/String;)V", arg0);
@@ -540,17 +540,17 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#severe(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Severe(Java.Util.Function.Supplier<Java.Lang.String> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void Severe(Java.Util.Function.Supplier arg0)
         {
             IExecuteWithSignature("severe", "(Ljava/util/function/Supplier;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#throwing(java.lang.String,java.lang.String,java.lang.Throwable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Throwing(Java.Lang.String arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
             IExecuteWithSignature("throwing", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2);
@@ -558,7 +558,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#warning(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Warning(Java.Lang.String arg0)
         {
             IExecuteWithSignature("warning", "(Ljava/lang/String;)V", arg0);
@@ -566,8 +566,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#warning(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Warning(Java.Util.Function.Supplier<Java.Lang.String> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void Warning(Java.Util.Function.Supplier arg0)
         {
             IExecuteWithSignature("warning", "(Ljava/util/function/Supplier;)V", arg0);
         }

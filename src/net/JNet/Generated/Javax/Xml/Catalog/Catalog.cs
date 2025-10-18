@@ -78,26 +78,26 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchPublic(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String MatchPublic(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchSystem(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String MatchSystem(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String MatchURI(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#catalogs()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<Javax.Xml.Catalog.Catalog> Catalogs();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Stream.Stream Catalogs();
 
         #endregion
 
@@ -132,8 +132,8 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchPublic(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String MatchPublic(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("matchPublic", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -141,8 +141,8 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchSystem(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String MatchSystem(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("matchSystem", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -150,8 +150,8 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#matchURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String MatchURI(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("matchURI", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -159,10 +159,10 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#catalogs()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Javax.Xml.Catalog.Catalog> Catalogs()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Stream.Stream Catalogs()
         {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Javax.Xml.Catalog.Catalog>>("catalogs", "()Ljava/util/stream/Stream;");
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("catalogs", "()Ljava/util/stream/Stream;");
         }
 
         #endregion

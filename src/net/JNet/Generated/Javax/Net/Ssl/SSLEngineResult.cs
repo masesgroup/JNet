@@ -66,7 +66,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html"/>
         /// </summary>
-        public partial class HandshakeStatus : Java.Lang.Enum<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>
+        public partial class HandshakeStatus : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.net.ssl.SSLEngineResult$HandshakeStatus";
             /// <summary>
@@ -107,7 +107,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html"/>
         /// </summary>
-        public partial class Status : Java.Lang.Enum<Javax.Net.Ssl.SSLEngineResult.Status>
+        public partial class Status : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.net.ssl.SSLEngineResult$Status";
             /// <summary>
@@ -155,11 +155,11 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#%3Cinit%3E(javax.net.ssl.SSLEngineResult.Status,javax.net.ssl.SSLEngineResult.HandshakeStatus,int,int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></param>
-        /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public SSLEngineResult(Javax.Net.Ssl.SSLEngineResult.Status arg0, Javax.Net.Ssl.SSLEngineResult.HandshakeStatus arg1, int arg2, int arg3, long arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -167,10 +167,10 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#%3Cinit%3E(javax.net.ssl.SSLEngineResult.Status,javax.net.ssl.SSLEngineResult.HandshakeStatus,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></param>
-        /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public SSLEngineResult(Javax.Net.Ssl.SSLEngineResult.Status arg0, Javax.Net.Ssl.SSLEngineResult.HandshakeStatus arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -208,7 +208,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesConsumed()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int BytesConsumed()
         {
             return IExecuteWithSignature<int>("bytesConsumed", "()I");
@@ -216,7 +216,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesProduced()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int BytesProduced()
         {
             return IExecuteWithSignature<int>("bytesProduced", "()I");
@@ -224,7 +224,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#sequenceNumber()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long SequenceNumber()
         {
             return IExecuteWithSignature<long>("sequenceNumber", "()J");
@@ -288,8 +288,8 @@ namespace Javax.Net.Ssl
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;", arg0);
@@ -297,7 +297,7 @@ namespace Javax.Net.Ssl
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>(LocalBridgeClazz, "values", "()[Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;");
@@ -360,8 +360,8 @@ namespace Javax.Net.Ssl
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.Status ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Net.Ssl.SSLEngineResult.Status>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/net/ssl/SSLEngineResult$Status;", arg0);
@@ -369,7 +369,7 @@ namespace Javax.Net.Ssl
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.Status[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Net.Ssl.SSLEngineResult.Status>(LocalBridgeClazz, "values", "()[Ljavax/net/ssl/SSLEngineResult$Status;");

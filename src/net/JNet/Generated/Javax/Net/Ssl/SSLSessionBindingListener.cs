@@ -108,12 +108,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ValueBound(Javax.Net.Ssl.SSLSessionBindingEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ValueUnbound(Javax.Net.Ssl.SSLSessionBindingEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ValueBound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
         {
             hasOverrideValueBound = false;
@@ -198,7 +198,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ValueUnbound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
         {
             hasOverrideValueUnbound = false;
@@ -237,7 +237,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ValueBound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
         {
             IExecuteWithSignature("valueBound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ValueUnbound(Javax.Net.Ssl.SSLSessionBindingEvent arg0)
         {
             IExecuteWithSignature("valueUnbound", "(Ljavax/net/ssl/SSLSessionBindingEvent;)V", arg0);

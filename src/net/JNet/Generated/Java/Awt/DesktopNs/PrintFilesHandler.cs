@@ -78,7 +78,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PrintFilesHandler.html#printFiles(java.awt.desktop.PrintFilesEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PrintFilesEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PrintFiles(Java.Awt.DesktopNs.PrintFilesEvent arg0);
 
         #endregion
@@ -114,7 +114,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PrintFilesHandler.html#printFiles(java.awt.desktop.PrintFilesEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PrintFilesEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PrintFiles(Java.Awt.DesktopNs.PrintFilesEvent arg0)
         {
             IExecuteWithSignature("printFiles", "(Ljava/awt/desktop/PrintFilesEvent;)V", arg0);

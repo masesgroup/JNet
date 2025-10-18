@@ -75,11 +75,11 @@ namespace Java.Time.Chrono
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Time.Chrono.JapaneseDate"/> to <see cref="Java.Time.Chrono.ChronoLocalDate"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Time.Chrono.ChronoLocalDate(Java.Time.Chrono.JapaneseDate t) => t.Cast<Java.Time.Chrono.ChronoLocalDate>();
         /// <summary>
-        /// Converter from <see cref="Java.Time.Chrono.JapaneseDate"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Chrono.JapaneseDate t) => t.Cast<Java.Io.Serializable>();
 
@@ -93,7 +93,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#now()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Chrono.JapaneseDate Now()
         {
             return SExecuteWithSignature<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "now", "()Ljava/time/chrono/JapaneseDate;");
@@ -101,8 +101,8 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#now(java.time.Clock)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
-        /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Chrono.JapaneseDate Now(Java.Time.Clock arg0)
         {
             return SExecuteWithSignature<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/chrono/JapaneseDate;", arg0);
@@ -110,8 +110,8 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#now(java.time.ZoneId)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Chrono.JapaneseDate Now(Java.Time.ZoneId arg0)
         {
             return SExecuteWithSignature<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/chrono/JapaneseDate;", arg0);
@@ -119,10 +119,10 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#of(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Chrono.JapaneseDate Of(int arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "of", "(III)Ljava/time/chrono/JapaneseDate;", arg0, arg1, arg2);
@@ -130,11 +130,11 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#of(java.time.chrono.JapaneseEra,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Chrono.JapaneseEra"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Chrono.JapaneseDate Of(Java.Time.Chrono.JapaneseEra arg0, int arg1, int arg2, int arg3)
         {
             return SExecuteWithSignature<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "of", "(Ljava/time/chrono/JapaneseEra;III)Ljava/time/chrono/JapaneseDate;", arg0, arg1, arg2, arg3);

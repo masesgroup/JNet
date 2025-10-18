@@ -73,9 +73,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#%3Cinit%3E(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Javax.Naming.InvalidNameException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public Rdn(Java.Lang.String arg0, object arg1)
             : base(arg0, arg1)
         {
@@ -83,8 +83,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Naming.InvalidNameException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public Rdn(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -92,8 +92,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#%3Cinit%3E(javax.naming.directory.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Directory.Attributes"/></param>
-        /// <exception cref="Javax.Naming.InvalidNameException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public Rdn(Javax.Naming.Directory.Attributes arg0)
             : base(arg0)
         {
@@ -101,7 +101,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#%3Cinit%3E(javax.naming.ldap.Rdn)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Ldap.Rdn"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Rdn(Javax.Naming.Ldap.Rdn arg0)
             : base(arg0)
         {
@@ -111,11 +111,11 @@ namespace Javax.Naming.Ldap
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Naming.Ldap.Rdn"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Ldap.Rdn t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Naming.Ldap.Rdn"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Javax.Naming.Ldap.Rdn t) => t.Cast<Java.Lang.Comparable>();
 
@@ -129,8 +129,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#unescapeValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static object UnescapeValue(Java.Lang.String arg0)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "unescapeValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -138,8 +138,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#escapeValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String EscapeValue(object arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "escapeValue", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
@@ -165,8 +165,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -174,7 +174,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -182,7 +182,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#toAttributes()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Naming.Directory.Attributes"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Naming.Directory.Attributes ToAttributes()
         {
             return IExecuteWithSignature<Javax.Naming.Directory.Attributes>("toAttributes", "()Ljavax/naming/directory/Attributes;");

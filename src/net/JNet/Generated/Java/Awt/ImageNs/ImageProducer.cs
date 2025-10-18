@@ -78,28 +78,28 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#isConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsConsumer(Java.Awt.ImageNs.ImageConsumer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#addConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddConsumer(Java.Awt.ImageNs.ImageConsumer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#removeConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveConsumer(Java.Awt.ImageNs.ImageConsumer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RequestTopDownLeftRightResend(Java.Awt.ImageNs.ImageConsumer arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#startProduction(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void StartProduction(Java.Awt.ImageNs.ImageConsumer arg0);
 
         #endregion
@@ -135,8 +135,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#isConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             return IExecuteWithSignature<bool>("isConsumer", "(Ljava/awt/image/ImageConsumer;)Z", arg0);
@@ -144,7 +144,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#addConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("addConsumer", "(Ljava/awt/image/ImageConsumer;)V", arg0);
@@ -152,7 +152,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#removeConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("removeConsumer", "(Ljava/awt/image/ImageConsumer;)V", arg0);
@@ -160,7 +160,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RequestTopDownLeftRightResend(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("requestTopDownLeftRightResend", "(Ljava/awt/image/ImageConsumer;)V", arg0);
@@ -168,7 +168,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#startProduction(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void StartProduction(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("startProduction", "(Ljava/awt/image/ImageConsumer;)V", arg0);

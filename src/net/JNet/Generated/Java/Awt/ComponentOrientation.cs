@@ -103,8 +103,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#getOrientation(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Awt.ComponentOrientation"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ComponentOrientation GetOrientation(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Awt.ComponentOrientation>(LocalBridgeClazz, "getOrientation", "(Ljava/util/Locale;)Ljava/awt/ComponentOrientation;", arg0);
@@ -116,7 +116,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isHorizontal()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsHorizontal()
         {
             return IExecuteWithSignature<bool>("isHorizontal", "()Z");
@@ -124,7 +124,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isLeftToRight()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsLeftToRight()
         {
             return IExecuteWithSignature<bool>("isLeftToRight", "()Z");

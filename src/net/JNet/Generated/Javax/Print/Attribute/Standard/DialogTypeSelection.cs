@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.DialogTypeSelection"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.DialogTypeSelection t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
 

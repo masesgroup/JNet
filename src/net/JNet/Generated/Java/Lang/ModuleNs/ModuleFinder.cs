@@ -78,14 +78,14 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#find(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(Java.Lang.String arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Optional Find(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Set FindAll();
 
         #endregion
 
@@ -116,8 +116,8 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#compose(java.lang.module.ModuleFinder...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleFinder"/></param>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder Compose(params Java.Lang.ModuleNs.ModuleFinder[] arg0)
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "compose", "([Ljava/lang/module/ModuleFinder;)Ljava/lang/module/ModuleFinder;", arg0);
@@ -125,8 +125,8 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#of(java.nio.file.Path...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder Of(params Java.Nio.File.Path[] arg0)
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "of", "([Ljava/nio/file/Path;)Ljava/lang/module/ModuleFinder;", arg0);
@@ -134,7 +134,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#ofSystem()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder OfSystem()
         {
             return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "ofSystem", "()Ljava/lang/module/ModuleFinder;");
@@ -146,19 +146,19 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#find(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional Find(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference>>("find", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
+            return IExecuteWithSignature<Java.Util.Optional>("find", "(Ljava/lang/String;)Ljava/util/Optional;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set FindAll()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ModuleReference>>("findAll", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("findAll", "()Ljava/util/Set;");
         }
 
         #endregion

@@ -68,7 +68,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html"/>
         /// </summary>
-        public partial class Kind : Java.Lang.Enum<Javax.Tools.JavaFileObject.Kind>
+        public partial class Kind : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.tools.JavaFileObject$Kind";
             /// <summary>
@@ -131,9 +131,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#isNameCompatible(java.lang.String,javax.tools.JavaFileObject.Kind)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject.Kind"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsNameCompatible(Java.Lang.String arg0, Javax.Tools.JavaFileObject.Kind arg1);
 
         #endregion
@@ -190,9 +190,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#isNameCompatible(java.lang.String,javax.tools.JavaFileObject.Kind)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject.Kind"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsNameCompatible(Java.Lang.String arg0, Javax.Tools.JavaFileObject.Kind arg1)
         {
             return IExecuteWithSignature<bool>("isNameCompatible", "(Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;)Z", arg0, arg1);
@@ -250,8 +250,8 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Tools.JavaFileObject.Kind"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Tools.JavaFileObject.Kind ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/tools/JavaFileObject$Kind;", arg0);
@@ -259,7 +259,7 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Tools.JavaFileObject.Kind"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Tools.JavaFileObject.Kind[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "values", "()[Ljavax/tools/JavaFileObject$Kind;");

@@ -78,9 +78,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html#create(java.awt.image.renderable.ParameterBlock,java.awt.RenderingHints)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.RenderingHints"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.ImageNs.RenderedImage Create(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, Java.Awt.RenderingHints arg1);
 
         #endregion
@@ -116,9 +116,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html#create(java.awt.image.renderable.ParameterBlock,java.awt.RenderingHints)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.RenderingHints"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.RenderedImage Create(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, Java.Awt.RenderingHints arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("create", "(Ljava/awt/image/renderable/ParameterBlock;Ljava/awt/RenderingHints;)Ljava/awt/image/RenderedImage;", arg0, arg1);

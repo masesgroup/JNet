@@ -161,10 +161,10 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#characters(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public virtual void Characters(char[] arg0, int arg1, int arg2)
         {
             hasOverrideCharacters = false;
@@ -188,7 +188,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endDocument()"/>
         /// </summary>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref=""/>
         public virtual void EndDocument()
         {
             hasOverrideEndDocument = false;
@@ -212,10 +212,10 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public virtual void EndElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             hasOverrideEndElement = false;
@@ -239,7 +239,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endPrefixMapping(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void EndPrefixMapping(Java.Lang.String arg0)
         {
             hasOverrideEndPrefixMapping = false;
@@ -263,10 +263,10 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public virtual void IgnorableWhitespace(char[] arg0, int arg1, int arg2)
         {
             hasOverrideIgnorableWhitespace = false;
@@ -290,9 +290,9 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public virtual void Parse(Java.Lang.String arg0)
         {
             hasOverrideParse = false;
@@ -316,9 +316,9 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public virtual void Parse(Org.Xml.Sax.InputSource arg0)
         {
             hasOverrideParse1 = false;
@@ -342,9 +342,9 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public virtual void ProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             hasOverrideProcessingInstruction = false;
@@ -368,7 +368,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
         {
             hasOverrideSetDocumentLocator = false;
@@ -392,7 +392,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.DTDHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void SetDTDHandler(Org.Xml.Sax.DTDHandler arg0)
         {
             hasOverrideSetDTDHandler = false;
@@ -416,7 +416,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
         {
             hasOverrideSetEntityResolver = false;
@@ -440,7 +440,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
         {
             hasOverrideSetErrorHandler = false;
@@ -464,8 +464,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setLocale(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public virtual void SetLocale(Java.Util.Locale arg0)
         {
             hasOverrideSetLocale = false;
@@ -489,8 +489,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#skippedEntity(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public virtual void SkippedEntity(Java.Lang.String arg0)
         {
             hasOverrideSkippedEntity = false;
@@ -514,7 +514,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startDocument()"/>
         /// </summary>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref=""/>
         public virtual void StartDocument()
         {
             hasOverrideStartDocument = false;
@@ -538,11 +538,11 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Org.Xml.Sax.Attributes"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public virtual void StartElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Org.Xml.Sax.Attributes arg3)
         {
             hasOverrideStartElement = false;
@@ -566,8 +566,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void StartPrefixMapping(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             hasOverrideStartPrefixMapping = false;
@@ -606,10 +606,10 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#characters(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public override void Characters(char[] arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("characters", "([CII)V", arg0, arg1, arg2);
@@ -617,7 +617,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endDocument()"/>
         /// </summary>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref=""/>
         public override void EndDocument()
         {
             IExecuteWithSignature("endDocument", "()V");
@@ -625,10 +625,10 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public override void EndElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             IExecuteWithSignature("endElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
@@ -636,7 +636,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endPrefixMapping(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void EndPrefixMapping(Java.Lang.String arg0)
         {
             IExecuteWithSignature("endPrefixMapping", "(Ljava/lang/String;)V", arg0);
@@ -644,10 +644,10 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public override void IgnorableWhitespace(char[] arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("ignorableWhitespace", "([CII)V", arg0, arg1, arg2);
@@ -655,9 +655,9 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public override void Parse(Java.Lang.String arg0)
         {
             IExecuteWithSignature("parse", "(Ljava/lang/String;)V", arg0);
@@ -665,9 +665,9 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public override void Parse(Org.Xml.Sax.InputSource arg0)
         {
             IExecuteWithSignature("parse", "(Lorg/xml/sax/InputSource;)V", arg0);
@@ -675,9 +675,9 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public override void ProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("processingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -685,7 +685,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
         {
             IExecuteWithSignature("setDocumentLocator", "(Lorg/xml/sax/Locator;)V", arg0);
@@ -693,7 +693,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.DTDHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void SetDTDHandler(Org.Xml.Sax.DTDHandler arg0)
         {
             IExecuteWithSignature("setDTDHandler", "(Lorg/xml/sax/DTDHandler;)V", arg0);
@@ -701,7 +701,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
         {
             IExecuteWithSignature("setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", arg0);
@@ -709,7 +709,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
         {
             IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
@@ -717,8 +717,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setLocale(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public override void SetLocale(Java.Util.Locale arg0)
         {
             IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", arg0);
@@ -726,8 +726,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#skippedEntity(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public override void SkippedEntity(Java.Lang.String arg0)
         {
             IExecuteWithSignature("skippedEntity", "(Ljava/lang/String;)V", arg0);
@@ -735,7 +735,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startDocument()"/>
         /// </summary>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref=""/>
         public override void StartDocument()
         {
             IExecuteWithSignature("startDocument", "()V");
@@ -743,11 +743,11 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Org.Xml.Sax.Attributes"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public override void StartElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Org.Xml.Sax.Attributes arg3)
         {
             IExecuteWithSignature("startElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V", arg0, arg1, arg2, arg3);
@@ -755,8 +755,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void StartPrefixMapping(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("startPrefixMapping", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);

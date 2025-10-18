@@ -73,8 +73,8 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OutputDeviceAssigned.html#%3Cinit%3E(java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public OutputDeviceAssigned(Java.Lang.String arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
@@ -84,7 +84,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.OutputDeviceAssigned"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.OutputDeviceAssigned t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
 

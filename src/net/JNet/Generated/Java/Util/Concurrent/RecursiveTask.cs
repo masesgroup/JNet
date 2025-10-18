@@ -68,12 +68,12 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RecursiveTask<V> declaration
+    #region RecursiveTask declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RecursiveTask.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class RecursiveTask<V> : Java.Util.Concurrent.ForkJoinTask<V>
+    public partial class RecursiveTask : Java.Util.Concurrent.ForkJoinTask
     {
         const string _bridgeClassName = "java.util.concurrent.RecursiveTask";
         /// <summary>
@@ -143,8 +143,8 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region RecursiveTask<V> implementation
-    public partial class RecursiveTask<V>
+    #region RecursiveTask implementation
+    public partial class RecursiveTask
     {
         #region Constructors
 
@@ -152,9 +152,9 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.RecursiveTask{V}"/> to <see cref="Java.Util.Concurrent.RecursiveTask"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.RecursiveTask(Java.Util.Concurrent.RecursiveTask<V> t) => t.Cast<Java.Util.Concurrent.RecursiveTask>();
+        public static implicit operator Java.Util.Concurrent.RecursiveTask(Java.Util.Concurrent.RecursiveTask t) => t.Cast<Java.Util.Concurrent.RecursiveTask>();
 
         #endregion
 

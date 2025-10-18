@@ -29,7 +29,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html"/>
     /// </summary>
-    public partial class StringTokenizer : Java.Util.Enumeration<object>
+    public partial class StringTokenizer : Java.Util.Enumeration
     {
         const string _bridgeClassName = "java.util.StringTokenizer";
         /// <summary>
@@ -73,9 +73,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public StringTokenizer(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public StringTokenizer(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -92,7 +92,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StringTokenizer(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -116,7 +116,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreElements()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasMoreElements()
         {
             return IExecuteWithSignature<bool>("hasMoreElements", "()Z");
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreTokens()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasMoreTokens()
         {
             return IExecuteWithSignature<bool>("hasMoreTokens", "()Z");
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#countTokens()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int CountTokens()
         {
             return IExecuteWithSignature<int>("countTokens", "()I");
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextElement()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object NextElement()
         {
             return IExecuteWithSignature("nextElement", "()Ljava/lang/Object;");
@@ -148,7 +148,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextToken()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String NextToken()
         {
             return IExecuteWithSignature<Java.Lang.String>("nextToken", "()Ljava/lang/String;");
@@ -156,8 +156,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextToken(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String NextToken(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("nextToken", "(Ljava/lang/String;)Ljava/lang/String;", arg0);

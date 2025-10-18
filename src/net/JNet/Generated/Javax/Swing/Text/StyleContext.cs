@@ -157,7 +157,7 @@ namespace Javax.Swing.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.StyleContext"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.StyleContext t) => t.Cast<Java.Io.Serializable>();
 
@@ -184,8 +184,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStaticAttribute(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static object GetStaticAttribute(object arg0)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "getStaticAttribute", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -193,8 +193,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStaticAttributeKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static object GetStaticAttributeKey(object arg0)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "getStaticAttributeKey", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -202,10 +202,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#readAttributeSet(java.io.ObjectInputStream,javax.swing.text.MutableAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectInputStream"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void ReadAttributeSet(Java.Io.ObjectInputStream arg0, Javax.Swing.Text.MutableAttributeSet arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "readAttributeSet", "(Ljava/io/ObjectInputStream;Ljavax/swing/text/MutableAttributeSet;)V", arg0, arg1);
@@ -213,7 +213,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#registerStaticAttributeKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void RegisterStaticAttributeKey(object arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "registerStaticAttributeKey", "(Ljava/lang/Object;)V", arg0);
@@ -221,9 +221,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#writeAttributeSet(java.io.ObjectOutputStream,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectOutputStream"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void WriteAttributeSet(Java.Io.ObjectOutputStream arg0, Javax.Swing.Text.AttributeSet arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "writeAttributeSet", "(Ljava/io/ObjectOutputStream;Ljavax/swing/text/AttributeSet;)V", arg0, arg1);
@@ -249,15 +249,15 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStyleNames()"/> 
         /// </summary>
-        public Java.Util.Enumeration<object> StyleNames
+        public Java.Util.Enumeration StyleNames
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<object>>("getStyleNames", "()Ljava/util/Enumeration;"); }
+            get { return IExecuteWithSignature<Java.Util.Enumeration>("getStyleNames", "()Ljava/util/Enumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getBackground(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Color GetBackground(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecuteWithSignature<Java.Awt.Color>("getBackground", "(Ljavax/swing/text/AttributeSet;)Ljava/awt/Color;", arg0);
@@ -265,8 +265,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getForeground(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Color GetForeground(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecuteWithSignature<Java.Awt.Color>("getForeground", "(Ljavax/swing/text/AttributeSet;)Ljava/awt/Color;", arg0);
@@ -274,10 +274,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getFont(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Font GetFont(Java.Lang.String arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Awt.Font>("getFont", "(Ljava/lang/String;II)Ljava/awt/Font;", arg0, arg1, arg2);
@@ -285,8 +285,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getFont(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Font GetFont(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecuteWithSignature<Java.Awt.Font>("getFont", "(Ljavax/swing/text/AttributeSet;)Ljava/awt/Font;", arg0);
@@ -294,8 +294,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getFontMetrics(java.awt.Font)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Font"/></param>
-        /// <returns><see cref="Java.Awt.FontMetrics"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.FontMetrics GetFontMetrics(Java.Awt.Font arg0)
         {
             return IExecuteWithSignature<Java.Awt.FontMetrics>("getFontMetrics", "(Ljava/awt/Font;)Ljava/awt/FontMetrics;", arg0);
@@ -303,9 +303,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#addStyle(java.lang.String,javax.swing.text.Style)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Style"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Style AddStyle(Java.Lang.String arg0, Javax.Swing.Text.Style arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Style>("addStyle", "(Ljava/lang/String;Ljavax/swing/text/Style;)Ljavax/swing/text/Style;", arg0, arg1);
@@ -313,8 +313,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStyle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Style GetStyle(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Style>("getStyle", "(Ljava/lang/String;)Ljavax/swing/text/Style;", arg0);
@@ -322,10 +322,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#addAttribute(javax.swing.text.AttributeSet,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.AttributeSet AddAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1, object arg2)
         {
             return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("addAttribute", "(Ljavax/swing/text/AttributeSet;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/AttributeSet;", arg0, arg1, arg2);
@@ -333,9 +333,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#addAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.AttributeSet AddAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("addAttributes", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
@@ -343,9 +343,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeAttribute(javax.swing.text.AttributeSet,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.AttributeSet RemoveAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttribute", "(Ljavax/swing/text/AttributeSet;Ljava/lang/Object;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
@@ -353,19 +353,19 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeAttributes(javax.swing.text.AttributeSet,java.util.Enumeration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Enumeration"/></param>
-        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
-        public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration<object> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttributes", "(Ljavax/swing/text/AttributeSet;Ljava/util/Enumeration;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttributes", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
@@ -373,7 +373,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -381,10 +381,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#readAttributes(java.io.ObjectInputStream,javax.swing.text.MutableAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectInputStream"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void ReadAttributes(Java.Io.ObjectInputStream arg0, Javax.Swing.Text.MutableAttributeSet arg1)
         {
             IExecuteWithSignature("readAttributes", "(Ljava/io/ObjectInputStream;Ljavax/swing/text/MutableAttributeSet;)V", arg0, arg1);
@@ -392,7 +392,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#reclaim(javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Reclaim(Javax.Swing.Text.AttributeSet arg0)
         {
             IExecuteWithSignature("reclaim", "(Ljavax/swing/text/AttributeSet;)V", arg0);
@@ -400,7 +400,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -408,7 +408,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeStyle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveStyle(Java.Lang.String arg0)
         {
             IExecuteWithSignature("removeStyle", "(Ljava/lang/String;)V", arg0);
@@ -416,9 +416,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#writeAttributes(java.io.ObjectOutputStream,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectOutputStream"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteAttributes(Java.Io.ObjectOutputStream arg0, Javax.Swing.Text.AttributeSet arg1)
         {
             IExecuteWithSignature("writeAttributes", "(Ljava/io/ObjectOutputStream;Ljavax/swing/text/AttributeSet;)V", arg0, arg1);
@@ -434,9 +434,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#%3Cinit%3E(javax.swing.text.StyleContext,java.lang.String,javax.swing.text.Style)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.StyleContext"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg2"><see cref="Javax.Swing.Text.Style"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public NamedStyle(Javax.Swing.Text.StyleContext arg0, Java.Lang.String arg1, Javax.Swing.Text.Style arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -444,8 +444,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#%3Cinit%3E(javax.swing.text.StyleContext,javax.swing.text.Style)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.StyleContext"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.Style"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public NamedStyle(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.Style arg1)
                 : base(arg0, arg1)
             {
@@ -453,7 +453,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#%3Cinit%3E(javax.swing.text.StyleContext)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.StyleContext"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public NamedStyle(Javax.Swing.Text.StyleContext arg0)
                 : base(arg0)
             {
@@ -463,11 +463,11 @@ namespace Javax.Swing.Text
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.StyleContext.NamedStyle"/> to <see cref="Javax.Swing.Text.Style"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Text.Style(Javax.Swing.Text.StyleContext.NamedStyle t) => t.Cast<Javax.Swing.Text.Style>();
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.StyleContext.NamedStyle"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.StyleContext.NamedStyle t) => t.Cast<Java.Io.Serializable>();
 
@@ -492,9 +492,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getAttributeNames()"/> 
             /// </summary>
-            public Java.Util.Enumeration<object> AttributeNames
+            public Java.Util.Enumeration AttributeNames
             {
-                get { return IExecuteWithSignature<Java.Util.Enumeration<object>>("getAttributeNames", "()Ljava/util/Enumeration;"); }
+                get { return IExecuteWithSignature<Java.Util.Enumeration>("getAttributeNames", "()Ljava/util/Enumeration;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getChangeListeners()"/> 
@@ -520,19 +520,19 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getListeners(java.lang.Class)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-            /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-            /// <returns><typeparamref name="T"/></returns>
-            public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener, new()
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="T"></typeparam>
+            /// <returns><see cref=""/></returns>
+            public T[] GetListeners(Java.Lang.Class arg0)
             {
                 return IExecuteArray<T>("getListeners", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#containsAttribute(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool ContainsAttribute(object arg0, object arg1)
             {
                 return IExecuteWithSignature<bool>("containsAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
@@ -540,8 +540,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#containsAttributes(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool ContainsAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
                 return IExecuteWithSignature<bool>("containsAttributes", "(Ljavax/swing/text/AttributeSet;)Z", arg0);
@@ -549,8 +549,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#isDefined(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool IsDefined(object arg0)
             {
                 return IExecuteWithSignature<bool>("isDefined", "(Ljava/lang/Object;)Z", arg0);
@@ -558,8 +558,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#isEqual(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool IsEqual(Javax.Swing.Text.AttributeSet arg0)
             {
                 return IExecuteWithSignature<bool>("isEqual", "(Ljavax/swing/text/AttributeSet;)Z", arg0);
@@ -567,8 +567,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getAttribute(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object GetAttribute(object arg0)
             {
                 return IExecuteWithSignature("getAttribute", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -576,7 +576,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#copyAttributes()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Text.AttributeSet CopyAttributes()
             {
                 return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("copyAttributes", "()Ljavax/swing/text/AttributeSet;");
@@ -584,8 +584,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#addAttribute(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void AddAttribute(object arg0, object arg1)
             {
                 IExecuteWithSignature("addAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -593,7 +593,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#addAttributes(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void AddAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
                 IExecuteWithSignature("addAttributes", "(Ljavax/swing/text/AttributeSet;)V", arg0);
@@ -601,7 +601,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#addChangeListener(javax.swing.event.ChangeListener)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
             {
                 IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -609,7 +609,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#removeAttribute(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void RemoveAttribute(object arg0)
             {
                 IExecuteWithSignature("removeAttribute", "(Ljava/lang/Object;)V", arg0);
@@ -617,15 +617,15 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#removeAttributes(java.util.Enumeration)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
-            public void RemoveAttributes(Java.Util.Enumeration<object> arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            public void RemoveAttributes(Java.Util.Enumeration arg0)
             {
                 IExecuteWithSignature("removeAttributes", "(Ljava/util/Enumeration;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#removeAttributes(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void RemoveAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
                 IExecuteWithSignature("removeAttributes", "(Ljavax/swing/text/AttributeSet;)V", arg0);
@@ -633,7 +633,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
             {
                 IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -656,8 +656,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#%3Cinit%3E(javax.swing.text.StyleContext,javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.StyleContext"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public SmallAttributeSet(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.AttributeSet arg1)
                 : base(arg0, arg1)
             {
@@ -688,9 +688,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttributeNames()"/> 
             /// </summary>
-            public Java.Util.Enumeration<object> AttributeNames
+            public Java.Util.Enumeration AttributeNames
             {
-                get { return IExecuteWithSignature<Java.Util.Enumeration<object>>("getAttributeNames", "()Ljava/util/Enumeration;"); }
+                get { return IExecuteWithSignature<Java.Util.Enumeration>("getAttributeNames", "()Ljava/util/Enumeration;"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getResolveParent()"/> 
@@ -702,9 +702,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#containsAttribute(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool ContainsAttribute(object arg0, object arg1)
             {
                 return IExecuteWithSignature<bool>("containsAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
@@ -712,8 +712,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#containsAttributes(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool ContainsAttributes(Javax.Swing.Text.AttributeSet arg0)
             {
                 return IExecuteWithSignature<bool>("containsAttributes", "(Ljavax/swing/text/AttributeSet;)Z", arg0);
@@ -721,8 +721,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#isDefined(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool IsDefined(object arg0)
             {
                 return IExecuteWithSignature<bool>("isDefined", "(Ljava/lang/Object;)Z", arg0);
@@ -730,8 +730,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#isEqual(javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool IsEqual(Javax.Swing.Text.AttributeSet arg0)
             {
                 return IExecuteWithSignature<bool>("isEqual", "(Ljavax/swing/text/AttributeSet;)Z", arg0);
@@ -739,8 +739,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttribute(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object GetAttribute(object arg0)
             {
                 return IExecuteWithSignature("getAttribute", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -748,7 +748,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#copyAttributes()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            /// <returns><see cref=""/></returns>
             public Javax.Swing.Text.AttributeSet CopyAttributes()
             {
                 return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("copyAttributes", "()Ljavax/swing/text/AttributeSet;");

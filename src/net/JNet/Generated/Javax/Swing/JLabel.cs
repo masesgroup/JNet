@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JLabel(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -82,9 +82,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#%3Cinit%3E(java.lang.String,javax.swing.Icon,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JLabel(Java.Lang.String arg0, Javax.Swing.Icon arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -92,7 +92,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JLabel(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -100,8 +100,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#%3Cinit%3E(javax.swing.Icon,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JLabel(Javax.Swing.Icon arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -109,7 +109,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#%3Cinit%3E(javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JLabel(Javax.Swing.Icon arg0)
             : base(arg0)
         {
@@ -119,11 +119,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JLabel"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JLabel t) => t.Cast<Javax.Swing.SwingConstants>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JLabel"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JLabel t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -218,7 +218,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setDisplayedMnemonic(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDisplayedMnemonic(char arg0)
         {
             IExecuteWithSignature("setDisplayedMnemonic", "(C)V", arg0);
@@ -226,7 +226,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setDisplayedMnemonic(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDisplayedMnemonic(int arg0)
         {
             IExecuteWithSignature("setDisplayedMnemonic", "(I)V", arg0);
@@ -234,7 +234,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#setUI(javax.swing.plaf.LabelUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.LabelUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.LabelUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/LabelUI;)V", arg0);

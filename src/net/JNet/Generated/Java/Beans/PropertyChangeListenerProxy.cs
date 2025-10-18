@@ -29,7 +29,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html"/>
     /// </summary>
-    public partial class PropertyChangeListenerProxy : Java.Util.EventListenerProxy<Java.Beans.PropertyChangeListener>
+    public partial class PropertyChangeListenerProxy : Java.Util.EventListenerProxy
     {
         const string _bridgeClassName = "java.beans.PropertyChangeListenerProxy";
         /// <summary>
@@ -73,8 +73,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html#%3Cinit%3E(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public PropertyChangeListenerProxy(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
             : base(arg0, arg1)
         {
@@ -84,7 +84,7 @@ namespace Java.Beans
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Beans.PropertyChangeListenerProxy"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Java.Beans.PropertyChangeListenerProxy t) => t.Cast<Java.Beans.PropertyChangeListener>();
 
@@ -109,7 +109,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);

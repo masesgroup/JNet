@@ -73,33 +73,33 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.MBeanServer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.MBeanServer"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1, Javax.Management.MBeanServer arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<, > arg1, Javax.Management.MBeanServer arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.remote.rmi.RMIServerImpl,javax.management.MBeanServer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Remote.Rmi.RMIServerImpl"/></param>
-        /// <param name="arg3"><see cref="Javax.Management.MBeanServer"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1, Javax.Management.Remote.Rmi.RMIServerImpl arg2, Javax.Management.MBeanServer arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
+        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<, > arg1, Javax.Management.Remote.Rmi.RMIServerImpl arg2, Javax.Management.MBeanServer arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#%3Cinit%3E(javax.management.remote.JMXServiceURL,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<, > arg1)
             : base(arg0, arg1)
         {
         }

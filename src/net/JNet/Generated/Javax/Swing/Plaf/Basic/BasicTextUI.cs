@@ -159,7 +159,7 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTextUI"/> to <see cref="Javax.Swing.Text.ViewFactory"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.ViewFactory(Javax.Swing.Plaf.Basic.BasicTextUI t) => t.Cast<Javax.Swing.Text.ViewFactory>();
 
@@ -177,10 +177,10 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html#create(javax.swing.text.Element,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Text.View"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Javax.Swing.Text.View>("create", "(Ljavax/swing/text/Element;II)Ljavax/swing/text/View;", arg0, arg1, arg2);
@@ -188,8 +188,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html#create(javax.swing.text.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <returns><see cref="Javax.Swing.Text.View"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.View>("create", "(Ljavax/swing/text/Element;)Ljavax/swing/text/View;", arg0);
@@ -207,7 +207,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTextUI.BasicCaret"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicTextUI.BasicCaret t) => t.Cast<Javax.Swing.Plaf.UIResource>();
 
@@ -242,7 +242,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTextUI.BasicHighlighter"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicTextUI.BasicHighlighter t) => t.Cast<Javax.Swing.Plaf.UIResource>();
 

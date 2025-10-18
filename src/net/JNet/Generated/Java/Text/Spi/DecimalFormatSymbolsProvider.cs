@@ -91,8 +91,8 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DecimalFormatSymbolsProvider.html#getInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.DecimalFormatSymbols"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.DecimalFormatSymbols GetInstance(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Text.DecimalFormatSymbols>("getInstance", "(Ljava/util/Locale;)Ljava/text/DecimalFormatSymbols;", arg0);

@@ -91,12 +91,12 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CalendarNameProvider.html#getDisplayName(java.lang.String,int,int,int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDisplayName(Java.Lang.String arg0, int arg1, int arg2, int arg3, Java.Util.Locale arg4)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/lang/String;IIILjava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4);
@@ -104,14 +104,14 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CalendarNameProvider.html#getDisplayNames(java.lang.String,int,int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.Integer> GetDisplayNames(Java.Lang.String arg0, int arg1, int arg2, Java.Util.Locale arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Map<, > GetDisplayNames(Java.Lang.String arg0, int arg1, int arg2, Java.Util.Locale arg3)
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Integer>>("getDisplayNames", "(Ljava/lang/String;IILjava/util/Locale;)Ljava/util/Map;", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.Map<, >>("getDisplayNames", "(Ljava/lang/String;IILjava/util/Locale;)Ljava/util/Map;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

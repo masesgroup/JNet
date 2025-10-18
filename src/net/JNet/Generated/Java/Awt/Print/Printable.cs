@@ -78,11 +78,11 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#print(java.awt.Graphics,java.awt.print.PageFormat,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Awt.Print.PrinterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         int Print(Java.Awt.Graphics arg0, Java.Awt.Print.PageFormat arg1, int arg2);
 
         #endregion
@@ -130,11 +130,11 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#print(java.awt.Graphics,java.awt.print.PageFormat,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Awt.Print.PrinterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Print(Java.Awt.Graphics arg0, Java.Awt.Print.PageFormat arg1, int arg2)
         {
             return IExecuteWithSignature<int>("print", "(Ljava/awt/Graphics;Ljava/awt/print/PageFormat;I)I", arg0, arg1, arg2);

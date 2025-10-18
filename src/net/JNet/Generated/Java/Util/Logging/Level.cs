@@ -139,9 +139,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Logging.Level"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Util.Logging.Level Parse(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Util.Logging.Level>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)Ljava/util/logging/Level;", arg0);
@@ -174,7 +174,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#intValue()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int IntValue()
         {
             return IExecuteWithSignature<int>("intValue", "()I");

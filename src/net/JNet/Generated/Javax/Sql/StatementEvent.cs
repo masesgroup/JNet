@@ -73,9 +73,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.PreparedStatement,java.sql.SQLException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.PreparedStatement"/></param>
-        /// <param name="arg2"><see cref="Java.Sql.SQLException"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public StatementEvent(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1, Java.Sql.SQLException arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.PreparedStatement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.PreparedStatement"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public StatementEvent(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1)
             : base(arg0, arg1)
         {

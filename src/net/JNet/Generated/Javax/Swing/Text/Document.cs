@@ -98,77 +98,77 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getProperty(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         object GetProperty(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getText(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Lang.String GetText(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#createPosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Position"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Swing.Text.Position CreatePosition(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#addDocumentListener(javax.swing.event.DocumentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddDocumentListener(Javax.Swing.Event.DocumentListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#addUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getText(int,int,javax.swing.text.Segment)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Segment"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void GetText(int arg0, int arg1, Javax.Swing.Text.Segment arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#insertString(int,java.lang.String,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void InsertString(int arg0, Java.Lang.String arg1, Javax.Swing.Text.AttributeSet arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#putProperty(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void PutProperty(object arg0, object arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#remove(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void Remove(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#removeDocumentListener(javax.swing.event.DocumentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveDocumentListener(Javax.Swing.Event.DocumentListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#removeUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#render(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Render(Java.Lang.Runnable arg0);
 
         #endregion
@@ -251,8 +251,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getProperty(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetProperty(object arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -260,10 +260,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getText(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String GetText(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("getText", "(II)Ljava/lang/String;", arg0, arg1);
@@ -271,9 +271,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#createPosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Position"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Swing.Text.Position CreatePosition(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Position>("createPosition", "(I)Ljavax/swing/text/Position;", arg0);
@@ -281,7 +281,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#addDocumentListener(javax.swing.event.DocumentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddDocumentListener(Javax.Swing.Event.DocumentListener arg0)
         {
             IExecuteWithSignature("addDocumentListener", "(Ljavax/swing/event/DocumentListener;)V", arg0);
@@ -289,7 +289,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#addUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
             IExecuteWithSignature("addUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
@@ -297,10 +297,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#getText(int,int,javax.swing.text.Segment)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.Segment"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void GetText(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
         {
             IExecuteWithSignature("getText", "(IILjavax/swing/text/Segment;)V", arg0, arg1, arg2);
@@ -308,10 +308,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#insertString(int,java.lang.String,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void InsertString(int arg0, Java.Lang.String arg1, Javax.Swing.Text.AttributeSet arg2)
         {
             IExecuteWithSignature("insertString", "(ILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2);
@@ -319,8 +319,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#putProperty(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void PutProperty(object arg0, object arg1)
         {
             IExecuteWithSignature("putProperty", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -328,9 +328,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#remove(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Remove(int arg0, int arg1)
         {
             IExecuteWithSignature("remove", "(II)V", arg0, arg1);
@@ -338,7 +338,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#removeDocumentListener(javax.swing.event.DocumentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveDocumentListener(Javax.Swing.Event.DocumentListener arg0)
         {
             IExecuteWithSignature("removeDocumentListener", "(Ljavax/swing/event/DocumentListener;)V", arg0);
@@ -346,7 +346,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#removeUndoableEditListener(javax.swing.event.UndoableEditListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveUndoableEditListener(Javax.Swing.Event.UndoableEditListener arg0)
         {
             IExecuteWithSignature("removeUndoableEditListener", "(Ljavax/swing/event/UndoableEditListener;)V", arg0);
@@ -354,7 +354,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Document.html#render(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Render(Java.Lang.Runnable arg0)
         {
             IExecuteWithSignature("render", "(Ljava/lang/Runnable;)V", arg0);

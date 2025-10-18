@@ -85,8 +85,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#getClassLoaderRepository(javax.management.MBeanServer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
-        /// <returns><see cref="Javax.Management.Loading.ClassLoaderRepository"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.Loading.ClassLoaderRepository GetClassLoaderRepository(Javax.Management.MBeanServer arg0)
         {
             return SExecuteWithSignature<Javax.Management.Loading.ClassLoaderRepository>(LocalBridgeClazz, "getClassLoaderRepository", "(Ljavax/management/MBeanServer;)Ljavax/management/loading/ClassLoaderRepository;", arg0);
@@ -94,7 +94,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#createMBeanServer()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.MBeanServer CreateMBeanServer()
         {
             return SExecuteWithSignature<Javax.Management.MBeanServer>(LocalBridgeClazz, "createMBeanServer", "()Ljavax/management/MBeanServer;");
@@ -102,8 +102,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#createMBeanServer(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.MBeanServer CreateMBeanServer(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Management.MBeanServer>(LocalBridgeClazz, "createMBeanServer", "(Ljava/lang/String;)Ljavax/management/MBeanServer;", arg0);
@@ -111,7 +111,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#newMBeanServer()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.MBeanServer NewMBeanServer()
         {
             return SExecuteWithSignature<Javax.Management.MBeanServer>(LocalBridgeClazz, "newMBeanServer", "()Ljavax/management/MBeanServer;");
@@ -119,8 +119,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#newMBeanServer(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.MBeanServer NewMBeanServer(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Management.MBeanServer>(LocalBridgeClazz, "newMBeanServer", "(Ljava/lang/String;)Ljavax/management/MBeanServer;", arg0);
@@ -128,16 +128,16 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#findMBeanServer(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.ArrayList"/></returns>
-        public static Java.Util.ArrayList<Javax.Management.MBeanServer> FindMBeanServer(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.ArrayList FindMBeanServer(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.ArrayList<Javax.Management.MBeanServer>>(LocalBridgeClazz, "findMBeanServer", "(Ljava/lang/String;)Ljava/util/ArrayList;", arg0);
+            return SExecuteWithSignature<Java.Util.ArrayList>(LocalBridgeClazz, "findMBeanServer", "(Ljava/lang/String;)Ljava/util/ArrayList;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#releaseMBeanServer(javax.management.MBeanServer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void ReleaseMBeanServer(Javax.Management.MBeanServer arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "releaseMBeanServer", "(Ljavax/management/MBeanServer;)V", arg0);

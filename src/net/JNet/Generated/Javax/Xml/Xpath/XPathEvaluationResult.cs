@@ -68,7 +68,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html"/>
         /// </summary>
-        public partial class XPathResultType : Java.Lang.Enum<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>
+        public partial class XPathResultType : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.xml.xpath.XPathEvaluationResult$XPathResultType";
             /// <summary>
@@ -109,12 +109,12 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathEvaluationResult<T> declaration
+    #region XPathEvaluationResult declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class XPathEvaluationResult<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathEvaluationResult<T>>
+    public partial class XPathEvaluationResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathEvaluationResult>
     {
         const string _bridgeClassName = "javax.xml.xpath.XPathEvaluationResult";
         /// <summary>
@@ -176,7 +176,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type()
         {
             return IExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type", "()Ljavax/xml/xpath/XPathEvaluationResult$XPathResultType;");
@@ -184,7 +184,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Value()
         {
             return IExecuteWithSignature("value", "()Ljava/lang/Object;");
@@ -248,8 +248,8 @@ namespace Javax.Xml.Xpath
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#getQNameType(java.lang.Class)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-            /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Xml.Namespace.QName GetQNameType(Java.Lang.Class arg0)
             {
                 return SExecuteWithSignature<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "getQNameType", "(Ljava/lang/Class;)Ljavax/xml/namespace/QName;", arg0);
@@ -257,8 +257,8 @@ namespace Javax.Xml.Xpath
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/xml/xpath/XPathEvaluationResult$XPathResultType;", arg0);
@@ -266,7 +266,7 @@ namespace Javax.Xml.Xpath
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "values", "()[Ljavax/xml/xpath/XPathEvaluationResult$XPathResultType;");
@@ -293,22 +293,22 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region IXPathEvaluationResult<T>
+    #region IXPathEvaluationResult
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html"/>
     /// </summary>
-    public partial interface IXPathEvaluationResult<T>
+    public partial interface IXPathEvaluationResult
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+        /// <returns><see cref=""/></returns>
         Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         T Value();
 
         #endregion
@@ -321,8 +321,8 @@ namespace Javax.Xml.Xpath
     }
     #endregion
 
-    #region XPathEvaluationResult<T> implementation
-    public partial class XPathEvaluationResult<T> : Javax.Xml.Xpath.IXPathEvaluationResult<T>
+    #region XPathEvaluationResult implementation
+    public partial class XPathEvaluationResult : Javax.Xml.Xpath.IXPathEvaluationResult
     {
         #region Constructors
 
@@ -330,9 +330,9 @@ namespace Javax.Xml.Xpath
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Xpath.XPathEvaluationResult{T}"/> to <see cref="Javax.Xml.Xpath.XPathEvaluationResult"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Xml.Xpath.XPathEvaluationResult(Javax.Xml.Xpath.XPathEvaluationResult<T> t) => t.Cast<Javax.Xml.Xpath.XPathEvaluationResult>();
+        public static implicit operator Javax.Xml.Xpath.XPathEvaluationResult(Javax.Xml.Xpath.XPathEvaluationResult t) => t.Cast<Javax.Xml.Xpath.XPathEvaluationResult>();
 
         #endregion
 
@@ -348,7 +348,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type()
         {
             return IExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type", "()Ljavax/xml/xpath/XPathEvaluationResult$XPathResultType;");
@@ -356,7 +356,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <returns><see cref=""/></returns>
         public T Value()
         {
             return IExecuteWithSignature<T>("value", "()Ljava/lang/Object;");

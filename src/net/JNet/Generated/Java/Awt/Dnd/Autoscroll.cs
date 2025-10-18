@@ -82,7 +82,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html#autoscroll(java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AutoscrollMethod(Java.Awt.Point arg0);
 
         #endregion
@@ -125,7 +125,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html#autoscroll(java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AutoscrollMethod(Java.Awt.Point arg0)
         {
             IExecuteWithSignature("autoscroll", "(Ljava/awt/Point;)V", arg0);

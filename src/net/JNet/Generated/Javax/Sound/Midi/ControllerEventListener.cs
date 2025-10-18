@@ -108,7 +108,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.ShortMessage"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ControlChange(Javax.Sound.Midi.ShortMessage arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.ShortMessage"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ControlChange(Javax.Sound.Midi.ShortMessage arg0)
         {
             hasOverrideControlChange = false;
@@ -207,7 +207,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.ShortMessage"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ControlChange(Javax.Sound.Midi.ShortMessage arg0)
         {
             IExecuteWithSignature("controlChange", "(Ljavax/sound/midi/ShortMessage;)V", arg0);

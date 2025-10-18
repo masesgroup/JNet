@@ -138,7 +138,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalTabbedPaneUI.TabbedPaneLayout.html#%3Cinit%3E(javax.swing.plaf.metal.MetalTabbedPaneUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Metal.MetalTabbedPaneUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public TabbedPaneLayout(Javax.Swing.Plaf.Metal.MetalTabbedPaneUI arg0)
                 : base(arg0)
             {

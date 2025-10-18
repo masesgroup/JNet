@@ -106,12 +106,12 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#addAdjustmentListener(java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#removeAdjustmentListener(java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0);
 
         #endregion
@@ -214,7 +214,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#addAdjustmentListener(java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
             IExecuteWithSignature("addAdjustmentListener", "(Ljava/awt/event/AdjustmentListener;)V", arg0);
@@ -222,7 +222,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#removeAdjustmentListener(java.awt.event.AdjustmentListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
             IExecuteWithSignature("removeAdjustmentListener", "(Ljava/awt/event/AdjustmentListener;)V", arg0);

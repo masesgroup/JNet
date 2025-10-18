@@ -182,8 +182,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrencyInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.NumberFormat GetCurrencyInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getCurrencyInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
@@ -191,8 +191,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.NumberFormat GetInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
@@ -200,8 +200,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getIntegerInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.NumberFormat GetIntegerInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getIntegerInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
@@ -209,8 +209,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getNumberInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.NumberFormat GetNumberInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getNumberInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
@@ -218,8 +218,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getPercentInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.NumberFormat GetPercentInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getPercentInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
@@ -273,9 +273,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
-        /// <returns><see cref="Java.Lang.Number"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Number Parse(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
             return IExecuteWithSignature<Java.Lang.Number>("parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Number;", arg0, arg1);
@@ -283,10 +283,10 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(double,java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.StringBuffer"/></param>
-        /// <param name="arg2"><see cref="Java.Text.FieldPosition"/></param>
-        /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.StringBuffer Format(double arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
             return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
@@ -294,10 +294,10 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(long,java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.StringBuffer"/></param>
-        /// <param name="arg2"><see cref="Java.Text.FieldPosition"/></param>
-        /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.StringBuffer Format(long arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
             return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "(JLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
@@ -305,7 +305,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isGroupingUsed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsGroupingUsed()
         {
             return IExecuteWithSignature<bool>("isGroupingUsed", "()Z");
@@ -313,7 +313,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isParseIntegerOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsParseIntegerOnly()
         {
             return IExecuteWithSignature<bool>("isParseIntegerOnly", "()Z");
@@ -321,8 +321,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Format(double arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("format", "(D)Ljava/lang/String;", arg0);
@@ -330,8 +330,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Format(long arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("format", "(J)Ljava/lang/String;", arg0);
@@ -339,9 +339,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Number"/></returns>
-        /// <exception cref="Java.Text.ParseException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Number Parse(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.Number>("parse", "(Ljava/lang/String;)Ljava/lang/Number;", arg0);
@@ -349,7 +349,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setGroupingUsed(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetGroupingUsed(bool arg0)
         {
             IExecuteWithSignature("setGroupingUsed", "(Z)V", arg0);
@@ -357,7 +357,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setParseIntegerOnly(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetParseIntegerOnly(bool arg0)
         {
             IExecuteWithSignature("setParseIntegerOnly", "(Z)V", arg0);

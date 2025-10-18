@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumer<T> declaration
+    #region ObjIntConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class ObjIntConsumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ObjIntConsumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumerDirect<T> declaration
+    #region ObjIntConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ObjIntConsumer"/> or its generic type if there is one
     /// </summary>
-    public partial class ObjIntConsumerDirect<T> : ObjIntConsumer<T>
+    public partial class ObjIntConsumerDirect : ObjIntConsumer
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,8 +219,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html#accept(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void Accept(object arg0, int arg1)
         {
             hasOverrideAccept = false;
@@ -259,8 +259,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html#accept(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void Accept(object arg0, int arg1)
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -276,18 +276,18 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IObjIntConsumer<T>
+    #region IObjIntConsumer
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ObjIntConsumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html"/>
     /// </summary>
-    public partial interface IObjIntConsumer<T>
+    public partial interface IObjIntConsumer
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html#accept(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void Accept(T arg0, int arg1);
 
         #endregion
@@ -300,8 +300,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumer<T> implementation
-    public partial class ObjIntConsumer<T> : Java.Util.Function.IObjIntConsumer<T>
+    #region ObjIntConsumer implementation
+    public partial class ObjIntConsumer : Java.Util.Function.IObjIntConsumer
     {
         #region Constructors
 
@@ -347,8 +347,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html#accept(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void Accept(T arg0, int arg1)
         {
             hasOverrideAccept = false;
@@ -364,8 +364,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjIntConsumerDirect<T> implementation
-    public partial class ObjIntConsumerDirect<T> : Java.Util.Function.IObjIntConsumer<T>
+    #region ObjIntConsumerDirect implementation
+    public partial class ObjIntConsumerDirect : Java.Util.Function.IObjIntConsumer
     {
         #region Constructors
 
@@ -387,8 +387,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html#accept(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void Accept(T arg0, int arg1)
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;I)V", arg0, arg1);

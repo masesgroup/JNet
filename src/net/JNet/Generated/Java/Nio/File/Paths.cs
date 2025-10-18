@@ -85,9 +85,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Paths.html#get(java.lang.String,java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Path Get(Java.Lang.String arg0, params Java.Lang.String[] arg1)
         {
             return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "get", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -95,8 +95,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Paths.html#get(java.net.URI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Path Get(Java.Net.URI arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "get", "(Ljava/net/URI;)Ljava/nio/file/Path;", arg0);

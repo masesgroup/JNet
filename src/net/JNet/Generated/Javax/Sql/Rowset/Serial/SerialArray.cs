@@ -73,20 +73,20 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#%3Cinit%3E(java.sql.Array,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Array"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public SerialArray(Java.Sql.Array arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        public SerialArray(Java.Sql.Array arg0, Java.Util.Map<, > arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#%3Cinit%3E(java.sql.Array)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Array"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public SerialArray(Java.Sql.Array arg0)
             : base(arg0)
         {
@@ -96,15 +96,15 @@ namespace Javax.Sql.Rowset.Serial
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialArray"/> to <see cref="Java.Sql.Array"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Sql.Array(Javax.Sql.Rowset.Serial.SerialArray t) => t.Cast<Java.Sql.Array>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialArray"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.Serial.SerialArray t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialArray"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialArray t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -150,32 +150,32 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object GetArray(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public object GetArray(Java.Util.Map<, > arg0)
         {
             return IExecuteWithSignature("getArray", "(Ljava/util/Map;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(long,int,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object GetArray(long arg0, int arg1, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public object GetArray(long arg0, int arg1, Java.Util.Map<, > arg2)
         {
             return IExecuteWithSignature("getArray", "(JILjava/util/Map;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object GetArray(long arg0, int arg1)
         {
             return IExecuteWithSignature("getArray", "(JI)Ljava/lang/Object;", arg0, arg1);
@@ -183,32 +183,32 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public Java.Sql.ResultSet GetResultSet(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Sql.ResultSet GetResultSet(Java.Util.Map<, > arg0)
         {
             return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "(Ljava/util/Map;)Ljava/sql/ResultSet;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(long,int,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map<, > arg2)
         {
             return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "(JILjava/util/Map;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.ResultSet GetResultSet(long arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "(JI)Ljava/sql/ResultSet;", arg0, arg1);
@@ -216,7 +216,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#free()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Free()
         {
             IExecuteWithSignature("free", "()V");

@@ -73,10 +73,10 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#%3Cinit%3E(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Spec.ECField"/></param>
-        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
-        /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
-        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public EllipticCurve(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, byte[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,9 +84,9 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#%3Cinit%3E(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Spec.ECField"/></param>
-        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
-        /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public EllipticCurve(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
             : base(arg0, arg1, arg2)
         {

@@ -78,8 +78,8 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLStructure.html#isFeatureSupported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsFeatureSupported(Java.Lang.String arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLStructure.html#isFeatureSupported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFeatureSupported(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isFeatureSupported", "(Ljava/lang/String;)Z", arg0);

@@ -98,11 +98,11 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#write(javax.sound.midi.Sequence,int,java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Write(Javax.Sound.Midi.Sequence arg0, int arg1, Java.Io.File arg2)
         {
             return IExecuteWithSignature<int>("write", "(Ljavax/sound/midi/Sequence;ILjava/io/File;)I", arg0, arg1, arg2);
@@ -110,11 +110,11 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#write(javax.sound.midi.Sequence,int,java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Write(Javax.Sound.Midi.Sequence arg0, int arg1, Java.Io.OutputStream arg2)
         {
             return IExecuteWithSignature<int>("write", "(Ljavax/sound/midi/Sequence;ILjava/io/OutputStream;)I", arg0, arg1, arg2);
@@ -122,8 +122,8 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#getMidiFileTypes(javax.sound.midi.Sequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetMidiFileTypes(Javax.Sound.Midi.Sequence arg0)
         {
             return IExecuteWithSignatureArray<int>("getMidiFileTypes", "(Ljavax/sound/midi/Sequence;)[I", arg0);
@@ -131,9 +131,9 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#isFileTypeSupported(int,javax.sound.midi.Sequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFileTypeSupported(int arg0, Javax.Sound.Midi.Sequence arg1)
         {
             return IExecuteWithSignature<bool>("isFileTypeSupported", "(ILjavax/sound/midi/Sequence;)Z", arg0, arg1);
@@ -141,8 +141,8 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#isFileTypeSupported(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFileTypeSupported(int arg0)
         {
             return IExecuteWithSignature<bool>("isFileTypeSupported", "(I)Z", arg0);

@@ -73,7 +73,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorEvent.html#%3Cinit%3E(java.awt.datatransfer.Clipboard)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.Clipboard"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public FlavorEvent(Java.Awt.Datatransfer.Clipboard arg0)
             : base(arg0)
         {

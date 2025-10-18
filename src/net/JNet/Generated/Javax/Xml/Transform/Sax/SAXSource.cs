@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#%3Cinit%3E(org.xml.sax.InputSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public SAXSource(Org.Xml.Sax.InputSource arg0)
             : base(arg0)
         {
@@ -81,8 +81,8 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#%3Cinit%3E(org.xml.sax.XMLReader,org.xml.sax.InputSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.XMLReader"/></param>
-        /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public SAXSource(Org.Xml.Sax.XMLReader arg0, Org.Xml.Sax.InputSource arg1)
             : base(arg0, arg1)
         {
@@ -108,8 +108,8 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#sourceToInputSource(javax.xml.transform.Source)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
-        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Org.Xml.Sax.InputSource SourceToInputSource(Javax.Xml.Transform.Source arg0)
         {
             return SExecuteWithSignature<Org.Xml.Sax.InputSource>(LocalBridgeClazz, "sourceToInputSource", "(Ljavax/xml/transform/Source;)Lorg/xml/sax/InputSource;", arg0);
@@ -142,7 +142,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");

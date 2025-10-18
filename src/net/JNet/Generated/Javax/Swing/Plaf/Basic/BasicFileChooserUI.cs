@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#%3Cinit%3E(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BasicFileChooserUI(Javax.Swing.JFileChooser arg0)
             : base(arg0)
         {
@@ -174,8 +174,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonMnemonic(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetApproveButtonMnemonic(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<int>("getApproveButtonMnemonic", "(Ljavax/swing/JFileChooser;)I", arg0);
@@ -183,8 +183,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createPropertyChangeListener(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Beans.PropertyChangeListener CreatePropertyChangeListener(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "(Ljavax/swing/JFileChooser;)Ljava/beans/PropertyChangeListener;", arg0);
@@ -192,8 +192,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createPropertyChangeListener(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Beans.PropertyChangeListener CreatePropertyChangeListenerDirect(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Java.Beans.PropertyChangeListenerDirect, Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "(Ljavax/swing/JFileChooser;)Ljava/beans/PropertyChangeListener;", arg0);
@@ -201,8 +201,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonToolTipText(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetApproveButtonToolTipText(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getApproveButtonToolTipText", "(Ljavax/swing/JFileChooser;)Ljava/lang/String;", arg0);
@@ -210,8 +210,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createListSelectionListener(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="Javax.Swing.Event.ListSelectionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Event.ListSelectionListener CreateListSelectionListener(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Event.ListSelectionListener>("createListSelectionListener", "(Ljavax/swing/JFileChooser;)Ljavax/swing/event/ListSelectionListener;", arg0);
@@ -219,8 +219,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createListSelectionListener(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="Javax.Swing.Event.ListSelectionListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Event.ListSelectionListener CreateListSelectionListenerDirect(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Event.ListSelectionListenerDirect, Javax.Swing.Event.ListSelectionListener>("createListSelectionListener", "(Ljavax/swing/JFileChooser;)Ljavax/swing/event/ListSelectionListener;", arg0);
@@ -235,7 +235,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#installComponents(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void InstallComponents(Javax.Swing.JFileChooser arg0)
         {
             IExecuteWithSignature("installComponents", "(Ljavax/swing/JFileChooser;)V", arg0);
@@ -243,7 +243,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallComponents(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void UninstallComponents(Javax.Swing.JFileChooser arg0)
         {
             IExecuteWithSignature("uninstallComponents", "(Ljavax/swing/JFileChooser;)V", arg0);

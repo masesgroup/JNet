@@ -66,12 +66,12 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region PhantomReference<T> declaration
+    #region PhantomReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class PhantomReference<T> : Java.Lang.Ref.Reference<T>
+    public partial class PhantomReference : Java.Lang.Ref.Reference
     {
         const string _bridgeClassName = "java.lang.ref.PhantomReference";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Ref.ReferenceQueue"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public PhantomReference(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
             : base(arg0, arg1)
         {
@@ -148,16 +148,16 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region PhantomReference<T> implementation
-    public partial class PhantomReference<T>
+    #region PhantomReference implementation
+    public partial class PhantomReference
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/PhantomReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Ref.ReferenceQueue"/></param>
-        public PhantomReference(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public PhantomReference(T arg0, Java.Lang.Ref.ReferenceQueue arg1)
             : base(arg0, arg1)
         {
         }
@@ -166,9 +166,9 @@ namespace Java.Lang.Ref
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Ref.PhantomReference{T}"/> to <see cref="Java.Lang.Ref.PhantomReference"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Ref.PhantomReference(Java.Lang.Ref.PhantomReference<T> t) => t.Cast<Java.Lang.Ref.PhantomReference>();
+        public static implicit operator Java.Lang.Ref.PhantomReference(Java.Lang.Ref.PhantomReference t) => t.Cast<Java.Lang.Ref.PhantomReference>();
 
         #endregion
 

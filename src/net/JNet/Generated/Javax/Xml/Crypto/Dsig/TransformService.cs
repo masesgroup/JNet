@@ -87,12 +87,12 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.TransformService"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/TransformService;", arg0, arg1, arg2);
@@ -100,11 +100,11 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.TransformService"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Security.Provider arg2)
         {
             return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;Ljava/security/Provider;)Ljavax/xml/crypto/dsig/TransformService;", arg0, arg1, arg2);
@@ -112,10 +112,10 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.TransformService"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/TransformService;", arg0, arg1);
@@ -148,8 +148,8 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#init(javax.xml.crypto.dsig.spec.TransformParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec"/></param>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec arg0)
         {
             IExecuteWithSignature("init", "(Ljavax/xml/crypto/dsig/spec/TransformParameterSpec;)V", arg0);
@@ -157,9 +157,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#init(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
             IExecuteWithSignature("init", "(Ljavax/xml/crypto/XMLStructure;Ljavax/xml/crypto/XMLCryptoContext;)V", arg0, arg1);
@@ -167,9 +167,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#marshalParams(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void MarshalParams(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
             IExecuteWithSignature("marshalParams", "(Ljavax/xml/crypto/XMLStructure;Ljavax/xml/crypto/XMLCryptoContext;)V", arg0, arg1);

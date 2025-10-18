@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StreamSource(Java.Io.File arg0)
             : base(arg0)
         {
@@ -81,8 +81,8 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.InputStream,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public StreamSource(Java.Io.InputStream arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -90,7 +90,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StreamSource(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -98,8 +98,8 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.Reader,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public StreamSource(Java.Io.Reader arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -107,7 +107,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StreamSource(Java.Io.Reader arg0)
             : base(arg0)
         {
@@ -115,7 +115,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StreamSource(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -173,7 +173,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -181,7 +181,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSystemId(Java.Io.File arg0)
         {
             IExecuteWithSignature("setSystemId", "(Ljava/io/File;)V", arg0);
@@ -189,7 +189,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetSystemId(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);

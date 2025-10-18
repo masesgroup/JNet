@@ -87,7 +87,7 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newDefaultInstance()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Validation.SchemaFactory NewDefaultInstance()
         {
             return SExecuteWithSignature<Javax.Xml.Validation.SchemaFactory>(LocalBridgeClazz, "newDefaultInstance", "()Ljavax/xml/validation/SchemaFactory;");
@@ -95,10 +95,10 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Validation.SchemaFactory NewInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecuteWithSignature<Javax.Xml.Validation.SchemaFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/xml/validation/SchemaFactory;", arg0, arg1, arg2);
@@ -106,8 +106,8 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Validation.SchemaFactory NewInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Xml.Validation.SchemaFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;)Ljavax/xml/validation/SchemaFactory;", arg0);
@@ -133,8 +133,8 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#isSchemaLanguageSupported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSchemaLanguageSupported(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isSchemaLanguageSupported", "(Ljava/lang/String;)Z", arg0);
@@ -142,8 +142,8 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newSchema()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Validation.Schema"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Validation.Schema NewSchema()
         {
             return IExecuteWithSignature<Javax.Xml.Validation.Schema>("newSchema", "()Ljavax/xml/validation/Schema;");
@@ -151,9 +151,9 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newSchema(javax.xml.transform.Source[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
-        /// <returns><see cref="Javax.Xml.Validation.Schema"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Validation.Schema NewSchema(Javax.Xml.Transform.Source[] arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Validation.Schema>("newSchema", "([Ljavax/xml/transform/Source;)Ljavax/xml/validation/Schema;", new object[] { arg0 });
@@ -161,10 +161,10 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public bool GetFeature(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
@@ -172,10 +172,10 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -183,9 +183,9 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newSchema(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Xml.Validation.Schema"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Validation.Schema NewSchema(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Validation.Schema>("newSchema", "(Ljava/io/File;)Ljavax/xml/validation/Schema;", arg0);
@@ -193,9 +193,9 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newSchema(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="Javax.Xml.Validation.Schema"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Validation.Schema NewSchema(Java.Net.URL arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Validation.Schema>("newSchema", "(Ljava/net/URL;)Ljavax/xml/validation/Schema;", arg0);
@@ -203,9 +203,9 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#newSchema(javax.xml.transform.Source)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
-        /// <returns><see cref="Javax.Xml.Validation.Schema"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Validation.Schema NewSchema(Javax.Xml.Transform.Source arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Validation.Schema>("newSchema", "(Ljavax/xml/transform/Source;)Ljavax/xml/validation/Schema;", arg0);
@@ -213,10 +213,10 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
             IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
@@ -224,10 +224,10 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
             IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);

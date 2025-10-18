@@ -119,7 +119,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#dispatchEvent(java.awt.AWTEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DispatchEvent(Java.Awt.AWTEvent arg0)
         {
             IExecuteWithSignature("dispatchEvent", "(Ljava/awt/AWTEvent;)V", arg0);

@@ -82,16 +82,16 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPageFormat(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
-        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Awt.Print.PageFormat GetPageFormat(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPrintable(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Print.Printable"/></returns>
-        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Awt.Print.Printable GetPrintable(int arg0);
 
         #endregion
@@ -140,9 +140,9 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPageFormat(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
-        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Awt.Print.PageFormat GetPageFormat(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Print.PageFormat>("getPageFormat", "(I)Ljava/awt/print/PageFormat;", arg0);
@@ -150,9 +150,9 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPrintable(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Print.Printable"/></returns>
-        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Awt.Print.Printable GetPrintable(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Print.Printable>("getPrintable", "(I)Ljava/awt/print/Printable;", arg0);

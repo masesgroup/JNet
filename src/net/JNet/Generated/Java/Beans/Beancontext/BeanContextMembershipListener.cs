@@ -108,12 +108,12 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ChildrenAdded(Java.Beans.Beancontext.BeanContextMembershipEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ChildrenRemoved(Java.Beans.Beancontext.BeanContextMembershipEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ChildrenAdded(Java.Beans.Beancontext.BeanContextMembershipEvent arg0)
         {
             hasOverrideChildrenAdded = false;
@@ -198,7 +198,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ChildrenRemoved(Java.Beans.Beancontext.BeanContextMembershipEvent arg0)
         {
             hasOverrideChildrenRemoved = false;
@@ -237,7 +237,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ChildrenAdded(Java.Beans.Beancontext.BeanContextMembershipEvent arg0)
         {
             IExecuteWithSignature("childrenAdded", "(Ljava/beans/beancontext/BeanContextMembershipEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ChildrenRemoved(Java.Beans.Beancontext.BeanContextMembershipEvent arg0)
         {
             IExecuteWithSignature("childrenRemoved", "(Ljava/beans/beancontext/BeanContextMembershipEvent;)V", arg0);

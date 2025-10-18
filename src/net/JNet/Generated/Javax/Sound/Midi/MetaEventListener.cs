@@ -108,7 +108,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html#meta(javax.sound.midi.MetaMessage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaMessage"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Meta(Javax.Sound.Midi.MetaMessage arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html#meta(javax.sound.midi.MetaMessage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaMessage"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void Meta(Javax.Sound.Midi.MetaMessage arg0)
         {
             hasOverrideMeta = false;
@@ -207,7 +207,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html#meta(javax.sound.midi.MetaMessage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaMessage"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void Meta(Javax.Sound.Midi.MetaMessage arg0)
         {
             IExecuteWithSignature("meta", "(Ljavax/sound/midi/MetaMessage;)V", arg0);

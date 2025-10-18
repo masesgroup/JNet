@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#%3Cinit%3E(org.xml.sax.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.Attributes"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Attributes2Impl(Org.Xml.Sax.Attributes arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Org.Xml.Sax.Ext
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Org.Xml.Sax.Ext.Attributes2Impl"/> to <see cref="Org.Xml.Sax.Ext.Attributes2"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.Attributes2(Org.Xml.Sax.Ext.Attributes2Impl t) => t.Cast<Org.Xml.Sax.Ext.Attributes2>();
 
@@ -101,8 +101,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isDeclared(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDeclared(int arg0)
         {
             return IExecuteWithSignature<bool>("isDeclared", "(I)Z", arg0);
@@ -110,9 +110,9 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isDeclared(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDeclared(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<bool>("isDeclared", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
@@ -120,8 +120,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isDeclared(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDeclared(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isDeclared", "(Ljava/lang/String;)Z", arg0);
@@ -129,8 +129,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isSpecified(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSpecified(int arg0)
         {
             return IExecuteWithSignature<bool>("isSpecified", "(I)Z", arg0);
@@ -138,9 +138,9 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isSpecified(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSpecified(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<bool>("isSpecified", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
@@ -148,8 +148,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#isSpecified(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSpecified(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isSpecified", "(Ljava/lang/String;)Z", arg0);
@@ -157,8 +157,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#setDeclared(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetDeclared(int arg0, bool arg1)
         {
             IExecuteWithSignature("setDeclared", "(IZ)V", arg0, arg1);
@@ -166,8 +166,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2Impl.html#setSpecified(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetSpecified(int arg0, bool arg1)
         {
             IExecuteWithSignature("setSpecified", "(IZ)V", arg0, arg1);

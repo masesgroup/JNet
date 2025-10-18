@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Locator2Impl.html#%3Cinit%3E(org.xml.sax.Locator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Locator2Impl(Org.Xml.Sax.Locator arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Org.Xml.Sax.Ext
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Org.Xml.Sax.Ext.Locator2Impl"/> to <see cref="Org.Xml.Sax.Ext.Locator2"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.Locator2(Org.Xml.Sax.Ext.Locator2Impl t) => t.Cast<Org.Xml.Sax.Ext.Locator2>();
 

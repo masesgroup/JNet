@@ -130,7 +130,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#createPropertyChangeListener()"/>
         /// </summary>
-        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Beans.PropertyChangeListener CreatePropertyChangeListener()
         {
             return IExecuteWithSignature<Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "()Ljava/beans/PropertyChangeListener;");
@@ -138,7 +138,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#createPropertyChangeListener()"/>
         /// </summary>
-        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Beans.PropertyChangeListener CreatePropertyChangeListenerDirect()
         {
             return IExecuteWithSignature<Java.Beans.PropertyChangeListenerDirect, Java.Beans.PropertyChangeListener>("createPropertyChangeListener", "()Ljava/beans/PropertyChangeListener;");
@@ -153,8 +153,8 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#layoutComboBox(java.awt.Container,javax.swing.plaf.metal.MetalComboBoxUI.MetalComboBoxLayoutManager)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboBoxLayoutManager"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void LayoutComboBox(Java.Awt.Container arg0, Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboBoxLayoutManager arg1)
         {
             IExecuteWithSignature("layoutComboBox", "(Ljava/awt/Container;Ljavax/swing/plaf/metal/MetalComboBoxUI$MetalComboBoxLayoutManager;)V", arg0, arg1);
@@ -177,7 +177,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboBoxLayoutManager.html#%3Cinit%3E(javax.swing.plaf.metal.MetalComboBoxUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Metal.MetalComboBoxUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public MetalComboBoxLayoutManager(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0)
                 : base(arg0)
             {
@@ -201,7 +201,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboBoxLayoutManager.html#superLayout(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void SuperLayout(Java.Awt.Container arg0)
             {
                 IExecuteWithSignature("superLayout", "(Ljava/awt/Container;)V", arg0);

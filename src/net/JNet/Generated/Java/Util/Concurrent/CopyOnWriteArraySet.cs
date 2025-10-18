@@ -66,12 +66,12 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CopyOnWriteArraySet<E> declaration
+    #region CopyOnWriteArraySet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArraySet.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class CopyOnWriteArraySet<E> : Java.Util.AbstractSet<E>
+    public partial class CopyOnWriteArraySet : Java.Util.AbstractSet
     {
         const string _bridgeClassName = "java.util.concurrent.CopyOnWriteArraySet";
         /// <summary>
@@ -115,7 +115,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArraySet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public CopyOnWriteArraySet(Java.Util.Collection arg0)
             : base(arg0)
         {
@@ -125,7 +125,7 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArraySet"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.CopyOnWriteArraySet t) => t.Cast<Java.Io.Serializable>();
 
@@ -151,15 +151,15 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region CopyOnWriteArraySet<E> implementation
-    public partial class CopyOnWriteArraySet<E>
+    #region CopyOnWriteArraySet implementation
+    public partial class CopyOnWriteArraySet
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArraySet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public CopyOnWriteArraySet(Java.Util.Collection<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public CopyOnWriteArraySet(Java.Util.Collection arg0)
             : base(arg0)
         {
         }
@@ -168,13 +168,13 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArraySet{E}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.CopyOnWriteArraySet<E> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.CopyOnWriteArraySet t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArraySet{E}"/> to <see cref="Java.Util.Concurrent.CopyOnWriteArraySet"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.CopyOnWriteArraySet(Java.Util.Concurrent.CopyOnWriteArraySet<E> t) => t.Cast<Java.Util.Concurrent.CopyOnWriteArraySet>();
+        public static implicit operator Java.Util.Concurrent.CopyOnWriteArraySet(Java.Util.Concurrent.CopyOnWriteArraySet t) => t.Cast<Java.Util.Concurrent.CopyOnWriteArraySet>();
 
         #endregion
 

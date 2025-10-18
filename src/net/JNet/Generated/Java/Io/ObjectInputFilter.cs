@@ -152,7 +152,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html"/>
         /// </summary>
-        public partial class Status : Java.Lang.Enum<Java.Io.ObjectInputFilter.Status>
+        public partial class Status : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.io.ObjectInputFilter$Status";
             /// <summary>
@@ -203,8 +203,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.html#checkInput(java.io.ObjectInputFilter.FilterInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectInputFilter.FilterInfo"/></param>
-        /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Io.ObjectInputFilter.Status CheckInput(Java.Io.ObjectInputFilter.FilterInfo arg0);
 
         #endregion
@@ -240,8 +240,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.html#checkInput(java.io.ObjectInputFilter.FilterInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.ObjectInputFilter.FilterInfo"/></param>
-        /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.ObjectInputFilter.Status CheckInput(Java.Io.ObjectInputFilter.FilterInfo arg0)
         {
             return IExecuteWithSignature<Java.Io.ObjectInputFilter.Status>("checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;", arg0);
@@ -276,8 +276,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Config.html#createFilter(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Io.ObjectInputFilter"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Io.ObjectInputFilter CreateFilter(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Io.ObjectInputFilter>(LocalBridgeClazz, "createFilter", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter;", arg0);
@@ -320,7 +320,7 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#serialClass()"/>
             /// </summary>
-            /// <returns><see cref="Java.Lang.Class"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.Class SerialClass()
             {
                 return IExecuteWithSignature<Java.Lang.Class>("serialClass", "()Ljava/lang/Class;");
@@ -328,7 +328,7 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()"/>
             /// </summary>
-            /// <returns><see cref="long"/></returns>
+            /// <returns><see cref=""/></returns>
             public long ArrayLength()
             {
                 return IExecuteWithSignature<long>("arrayLength", "()J");
@@ -336,7 +336,7 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#depth()"/>
             /// </summary>
-            /// <returns><see cref="long"/></returns>
+            /// <returns><see cref=""/></returns>
             public long Depth()
             {
                 return IExecuteWithSignature<long>("depth", "()J");
@@ -344,7 +344,7 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#references()"/>
             /// </summary>
-            /// <returns><see cref="long"/></returns>
+            /// <returns><see cref=""/></returns>
             public long References()
             {
                 return IExecuteWithSignature<long>("references", "()J");
@@ -352,7 +352,7 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#streamBytes()"/>
             /// </summary>
-            /// <returns><see cref="long"/></returns>
+            /// <returns><see cref=""/></returns>
             public long StreamBytes()
             {
                 return IExecuteWithSignature<long>("streamBytes", "()J");
@@ -405,8 +405,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Io.ObjectInputFilter.Status ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Io.ObjectInputFilter.Status>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter$Status;", arg0);
@@ -414,7 +414,7 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Io.ObjectInputFilter.Status[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Io.ObjectInputFilter.Status>(LocalBridgeClazz, "values", "()[Ljava/io/ObjectInputFilter$Status;");

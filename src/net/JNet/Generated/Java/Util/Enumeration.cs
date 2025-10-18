@@ -68,12 +68,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region Enumeration<E> declaration
+    #region Enumeration declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class Enumeration<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Enumeration<E>>
+    public partial class Enumeration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Enumeration>
     {
         const string _bridgeClassName = "java.util.Enumeration";
         /// <summary>
@@ -135,7 +135,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#hasMoreElements()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasMoreElements()
         {
             return IExecuteWithSignature<bool>("hasMoreElements", "()Z");
@@ -143,7 +143,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object NextElement()
         {
             return IExecuteWithSignature("nextElement", "()Ljava/lang/Object;");
@@ -151,7 +151,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Iterator AsIterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("asIterator", "()Ljava/util/Iterator;");
@@ -167,28 +167,28 @@ namespace Java.Util
     }
     #endregion
 
-    #region IEnumeration<E>
+    #region IEnumeration
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html"/>
     /// </summary>
-    public partial interface IEnumeration<E>
+    public partial interface IEnumeration
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#hasMoreElements()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool HasMoreElements();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         E NextElement();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<E> AsIterator();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Iterator AsIterator();
 
         #endregion
 
@@ -200,8 +200,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region Enumeration<E> implementation
-    public partial class Enumeration<E> : Java.Util.IEnumeration<E>
+    #region Enumeration implementation
+    public partial class Enumeration : Java.Util.IEnumeration
     {
         #region Constructors
 
@@ -209,9 +209,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Enumeration{E}"/> to <see cref="Java.Util.Enumeration"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Enumeration(Java.Util.Enumeration<E> t) => t.Cast<Java.Util.Enumeration>();
+        public static implicit operator Java.Util.Enumeration(Java.Util.Enumeration t) => t.Cast<Java.Util.Enumeration>();
 
         #endregion
 
@@ -227,7 +227,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#hasMoreElements()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasMoreElements()
         {
             return IExecuteWithSignature<bool>("hasMoreElements", "()Z");
@@ -235,7 +235,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E NextElement()
         {
             return IExecuteWithSignature<E>("nextElement", "()Ljava/lang/Object;");
@@ -243,10 +243,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> AsIterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator AsIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("asIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("asIterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

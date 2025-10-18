@@ -29,7 +29,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html"/>
     /// </summary>
-    public partial class LinkOption : Java.Lang.Enum<Java.Nio.File.LinkOption>
+    public partial class LinkOption : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.nio.file.LinkOption";
         /// <summary>
@@ -75,11 +75,11 @@ namespace Java.Nio.File
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.LinkOption"/> to <see cref="Java.Nio.File.OpenOption"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.File.OpenOption(Java.Nio.File.LinkOption t) => t.Cast<Java.Nio.File.OpenOption>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.LinkOption"/> to <see cref="Java.Nio.File.CopyOption"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.File.CopyOption(Java.Nio.File.LinkOption t) => t.Cast<Java.Nio.File.CopyOption>();
 
@@ -99,8 +99,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.LinkOption"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.LinkOption ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.LinkOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/LinkOption;", arg0);
@@ -108,7 +108,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.LinkOption"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.LinkOption[] Values()
         {
             return SExecuteWithSignatureArray<Java.Nio.File.LinkOption>(LocalBridgeClazz, "values", "()[Ljava/nio/file/LinkOption;");

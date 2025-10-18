@@ -73,8 +73,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public HttpCookie(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -94,9 +94,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#domainMatches(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool DomainMatches(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "domainMatches", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
@@ -104,11 +104,11 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<Java.Net.HttpCookie> Parse(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.List Parse(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.List<Java.Net.HttpCookie>>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)Ljava/util/List;", arg0);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)Ljava/util/List;", arg0);
         }
 
         #endregion
@@ -194,7 +194,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#hasExpired()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasExpired()
         {
             return IExecuteWithSignature<bool>("hasExpired", "()Z");
@@ -202,7 +202,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#isHttpOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsHttpOnly()
         {
             return IExecuteWithSignature<bool>("isHttpOnly", "()Z");
@@ -210,7 +210,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setHttpOnly(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetHttpOnly(bool arg0)
         {
             IExecuteWithSignature("setHttpOnly", "(Z)V", arg0);

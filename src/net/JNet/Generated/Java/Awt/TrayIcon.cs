@@ -66,7 +66,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html"/>
         /// </summary>
-        public partial class MessageType : Java.Lang.Enum<Java.Awt.TrayIcon.MessageType>
+        public partial class MessageType : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.awt.TrayIcon$MessageType";
             /// <summary>
@@ -114,9 +114,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#%3Cinit%3E(java.awt.Image,java.lang.String,java.awt.PopupMenu)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.PopupMenu"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public TrayIcon(Java.Awt.Image arg0, Java.Lang.String arg1, Java.Awt.PopupMenu arg2)
             : base(arg0, arg1, arg2)
         {
@@ -124,8 +124,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#%3Cinit%3E(java.awt.Image,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public TrayIcon(Java.Awt.Image arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -133,7 +133,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#%3Cinit%3E(java.awt.Image)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TrayIcon(Java.Awt.Image arg0)
             : base(arg0)
         {
@@ -213,7 +213,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#isImageAutoSize()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsImageAutoSize()
         {
             return IExecuteWithSignature<bool>("isImageAutoSize", "()Z");
@@ -221,7 +221,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -229,7 +229,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#addMouseListener(java.awt.event.MouseListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddMouseListener(Java.Awt.EventNs.MouseListener arg0)
         {
             IExecuteWithSignature("addMouseListener", "(Ljava/awt/event/MouseListener;)V", arg0);
@@ -237,7 +237,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#addMouseMotionListener(java.awt.event.MouseMotionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddMouseMotionListener(Java.Awt.EventNs.MouseMotionListener arg0)
         {
             IExecuteWithSignature("addMouseMotionListener", "(Ljava/awt/event/MouseMotionListener;)V", arg0);
@@ -245,7 +245,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -253,7 +253,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#removeMouseListener(java.awt.event.MouseListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveMouseListener(Java.Awt.EventNs.MouseListener arg0)
         {
             IExecuteWithSignature("removeMouseListener", "(Ljava/awt/event/MouseListener;)V", arg0);
@@ -261,7 +261,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#removeMouseMotionListener(java.awt.event.MouseMotionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveMouseMotionListener(Java.Awt.EventNs.MouseMotionListener arg0)
         {
             IExecuteWithSignature("removeMouseMotionListener", "(Ljava/awt/event/MouseMotionListener;)V", arg0);
@@ -269,9 +269,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#displayMessage(java.lang.String,java.lang.String,java.awt.TrayIcon.MessageType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.TrayIcon.MessageType"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void DisplayMessage(Java.Lang.String arg0, Java.Lang.String arg1, Java.Awt.TrayIcon.MessageType arg2)
         {
             IExecuteWithSignature("displayMessage", "(Ljava/lang/String;Ljava/lang/String;Ljava/awt/TrayIcon$MessageType;)V", arg0, arg1, arg2);
@@ -279,7 +279,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#setImageAutoSize(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetImageAutoSize(bool arg0)
         {
             IExecuteWithSignature("setImageAutoSize", "(Z)V", arg0);
@@ -331,8 +331,8 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Awt.TrayIcon.MessageType"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.TrayIcon.MessageType ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/TrayIcon$MessageType;", arg0);
@@ -340,7 +340,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Awt.TrayIcon.MessageType"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.TrayIcon.MessageType[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "values", "()[Ljava/awt/TrayIcon$MessageType;");

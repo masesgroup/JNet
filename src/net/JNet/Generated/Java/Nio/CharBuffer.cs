@@ -77,19 +77,19 @@ namespace Java.Nio
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.CharBuffer"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.Comparable>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.CharBuffer"/> to <see cref="Java.Lang.Appendable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Appendable(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.Appendable>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.CharBuffer"/> to <see cref="Java.Lang.CharSequence"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.CharSequence>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.CharBuffer"/> to <see cref="Java.Lang.Readable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Readable(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.Readable>();
 
@@ -103,8 +103,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#allocate(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.CharBuffer Allocate(int arg0)
         {
             return SExecuteWithSignature<Java.Nio.CharBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/CharBuffer;", arg0);
@@ -112,10 +112,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#wrap(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.CharBuffer Wrap(char[] arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Nio.CharBuffer>(LocalBridgeClazz, "wrap", "([CII)Ljava/nio/CharBuffer;", arg0, arg1, arg2);
@@ -123,8 +123,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#wrap(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.CharBuffer Wrap(char[] arg0)
         {
             return SExecuteWithSignature<Java.Nio.CharBuffer>(LocalBridgeClazz, "wrap", "([C)Ljava/nio/CharBuffer;", new object[] { arg0 });
@@ -132,10 +132,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#wrap(java.lang.CharSequence,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.CharBuffer Wrap(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Nio.CharBuffer>(LocalBridgeClazz, "wrap", "(Ljava/lang/CharSequence;II)Ljava/nio/CharBuffer;", arg0, arg1, arg2);
@@ -143,8 +143,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#wrap(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.CharBuffer Wrap(Java.Lang.CharSequence arg0)
         {
             return SExecuteWithSignature<Java.Nio.CharBuffer>(LocalBridgeClazz, "wrap", "(Ljava/lang/CharSequence;)Ljava/nio/CharBuffer;", arg0);
@@ -156,7 +156,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#get()"/>
         /// </summary>
-        /// <returns><see cref="char"/></returns>
+        /// <returns><see cref=""/></returns>
         public char Get()
         {
             return IExecuteWithSignature<char>("get", "()C");
@@ -164,8 +164,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public char Get(int arg0)
         {
             return IExecuteWithSignature<char>("get", "(I)C", arg0);
@@ -173,7 +173,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#order()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ByteOrder Order()
         {
             return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
@@ -181,7 +181,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer AsReadOnlyBuffer()
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("asReadOnlyBuffer", "()Ljava/nio/CharBuffer;");
@@ -189,7 +189,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#compact()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer Compact()
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("compact", "()Ljava/nio/CharBuffer;");
@@ -197,8 +197,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer Put(char arg0)
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "(C)Ljava/nio/CharBuffer;", arg0);
@@ -206,9 +206,9 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(int,char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="char"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer Put(int arg0, char arg1)
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "(IC)Ljava/nio/CharBuffer;", arg0, arg1);
@@ -216,8 +216,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#charAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public char CharAt(int arg0)
         {
             return IExecuteWithSignature<char>("charAt", "(I)C", arg0);
@@ -225,7 +225,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#length()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Length()
         {
             return IExecuteWithSignature<int>("length", "()I");
@@ -233,8 +233,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer Put(char[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "([C)Ljava/nio/CharBuffer;", new object[] { arg0 });
@@ -242,8 +242,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer Put(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "(Ljava/lang/String;)Ljava/nio/CharBuffer;", arg0);
@@ -251,8 +251,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -260,8 +260,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#compareTo(java.nio.CharBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Nio.CharBuffer arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/CharBuffer;)I", arg0);
@@ -269,8 +269,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#mismatch(java.nio.CharBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Mismatch(Java.Nio.CharBuffer arg0)
         {
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/CharBuffer;)I", arg0);
@@ -278,9 +278,9 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#read(java.nio.CharBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read(Java.Nio.CharBuffer arg0)
         {
             return IExecuteWithSignature<int>("read", "(Ljava/nio/CharBuffer;)I", arg0);
@@ -288,9 +288,9 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#append(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Appendable Append(char arg0)
         {
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(C)Ljava/lang/Appendable;", arg0);
@@ -298,11 +298,11 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#append(java.lang.CharSequence,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;", arg0, arg1, arg2);
@@ -310,9 +310,9 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#append(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;", arg0);
@@ -320,9 +320,9 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#subSequence(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("subSequence", "(II)Ljava/lang/CharSequence;", arg0, arg1);
@@ -330,10 +330,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#get(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer Get(char[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("get", "([CII)Ljava/nio/CharBuffer;", arg0, arg1, arg2);
@@ -341,8 +341,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#get(char[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer Get(char[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("get", "([C)Ljava/nio/CharBuffer;", new object[] { arg0 });
@@ -350,10 +350,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer Put(char[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "([CII)Ljava/nio/CharBuffer;", arg0, arg1, arg2);
@@ -361,10 +361,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer Put(Java.Lang.String arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "(Ljava/lang/String;II)Ljava/nio/CharBuffer;", arg0, arg1, arg2);
@@ -372,8 +372,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#put(java.nio.CharBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.CharBuffer Put(Java.Nio.CharBuffer arg0)
         {
             return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "(Ljava/nio/CharBuffer;)Ljava/nio/CharBuffer;", arg0);
@@ -381,7 +381,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/CharBuffer.html#chars()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.IntStream Chars()
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("chars", "()Ljava/util/stream/IntStream;");

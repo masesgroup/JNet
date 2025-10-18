@@ -78,9 +78,9 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunctionResolver.html#resolveFunction(javax.xml.namespace.QName,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathFunction"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Xml.Xpath.XPathFunction ResolveFunction(Javax.Xml.Namespace.QName arg0, int arg1);
 
         #endregion
@@ -116,9 +116,9 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunctionResolver.html#resolveFunction(javax.xml.namespace.QName,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathFunction"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Xpath.XPathFunction ResolveFunction(Javax.Xml.Namespace.QName arg0, int arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Xpath.XPathFunction>("resolveFunction", "(Ljavax/xml/namespace/QName;I)Ljavax/xml/xpath/XPathFunction;", arg0, arg1);

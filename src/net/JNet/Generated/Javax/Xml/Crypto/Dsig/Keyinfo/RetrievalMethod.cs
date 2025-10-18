@@ -78,7 +78,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getTransforms()"/> 
         /// </summary>
-        Java.Util.List<Javax.Xml.Crypto.Dsig.Transform> Transforms { get; }
+        Java.Util.List Transforms { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getURI()"/> 
         /// </summary>
@@ -86,9 +86,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#dereference(javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.URIReferenceException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Xml.Crypto.Data Dereference(Javax.Xml.Crypto.XMLCryptoContext arg0);
 
         #endregion
@@ -110,11 +110,11 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod"/> to <see cref="Javax.Xml.Crypto.URIReference"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.URIReference(Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod t) => t.Cast<Javax.Xml.Crypto.URIReference>();
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
 
@@ -132,9 +132,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getTransforms()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Xml.Crypto.Dsig.Transform> Transforms
+        public Java.Util.List Transforms
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.Dsig.Transform>>("getTransforms", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getTransforms", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getURI()"/> 
@@ -146,9 +146,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#dereference(javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.URIReferenceException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Data Dereference(Javax.Xml.Crypto.XMLCryptoContext arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Data>("dereference", "(Ljavax/xml/crypto/XMLCryptoContext;)Ljavax/xml/crypto/Data;", arg0);

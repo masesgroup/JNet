@@ -73,7 +73,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationID.html#%3Cinit%3E(java.rmi.activation.Activator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.Activator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ActivationID(Java.Rmi.Activation.Activator arg0)
             : base(arg0)
         {
@@ -97,11 +97,11 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationID.html#activate(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Rmi.Remote"/></returns>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Rmi.Remote Activate(bool arg0)
         {
             return IExecute<Java.Rmi.Remote>("activate", arg0);

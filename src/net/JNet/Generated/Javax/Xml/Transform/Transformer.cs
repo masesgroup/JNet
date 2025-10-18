@@ -112,8 +112,8 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getParameter(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetParameter(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getParameter", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -121,9 +121,9 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getOutputProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String GetOutputProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getOutputProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -138,9 +138,9 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setOutputProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetOutputProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("setOutputProperty", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
@@ -148,8 +148,8 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setParameter(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetParameter(Java.Lang.String arg0, object arg1)
         {
             IExecuteWithSignature("setParameter", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
@@ -157,9 +157,9 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#transform(javax.xml.transform.Source,javax.xml.transform.Result)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Transform.Result"/></param>
-        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Transform(Javax.Xml.Transform.Source arg0, Javax.Xml.Transform.Result arg1)
         {
             IExecuteWithSignature("transform", "(Ljavax/xml/transform/Source;Ljavax/xml/transform/Result;)V", arg0, arg1);

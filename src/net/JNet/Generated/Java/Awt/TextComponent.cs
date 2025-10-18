@@ -75,7 +75,7 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.TextComponent"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.TextComponent t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -135,7 +135,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#isEditable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEditable()
         {
             return IExecuteWithSignature<bool>("isEditable", "()Z");
@@ -143,7 +143,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#addTextListener(java.awt.event.TextListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddTextListener(Java.Awt.EventNs.TextListener arg0)
         {
             IExecuteWithSignature("addTextListener", "(Ljava/awt/event/TextListener;)V", arg0);
@@ -151,7 +151,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#removeTextListener(java.awt.event.TextListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveTextListener(Java.Awt.EventNs.TextListener arg0)
         {
             IExecuteWithSignature("removeTextListener", "(Ljava/awt/event/TextListener;)V", arg0);
@@ -159,8 +159,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#select(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Select(int arg0, int arg1)
         {
             IExecuteWithSignature("select", "(II)V", arg0, arg1);
@@ -175,7 +175,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setEditable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetEditable(bool arg0)
         {
             IExecuteWithSignature("setEditable", "(Z)V", arg0);

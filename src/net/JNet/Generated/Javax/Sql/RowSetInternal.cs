@@ -94,8 +94,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#setMetaData(javax.sql.RowSetMetaData)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetMetaData"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetMetaData(Javax.Sql.RowSetMetaData arg0);
 
         #endregion
@@ -159,8 +159,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#setMetaData(javax.sql.RowSetMetaData)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetMetaData"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetMetaData(Javax.Sql.RowSetMetaData arg0)
         {
             IExecuteWithSignature("setMetaData", "(Ljavax/sql/RowSetMetaData;)V", arg0);

@@ -86,7 +86,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getExpectedPolicies()"/> 
         /// </summary>
-        Java.Util.Set<Java.Lang.String> ExpectedPolicies { get; }
+        Java.Util.Set ExpectedPolicies { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getParent()"/> 
         /// </summary>
@@ -102,7 +102,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsCritical();
 
         #endregion
@@ -152,9 +152,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getExpectedPolicies()"/> 
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> ExpectedPolicies
+        public Java.Util.Set ExpectedPolicies
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getExpectedPolicies", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getExpectedPolicies", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getParent()"/> 
@@ -180,7 +180,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsCritical()
         {
             return IExecuteWithSignature<bool>("isCritical", "()Z");

@@ -107,13 +107,13 @@ namespace Java.Util
         }
         #endregion
 
-        #region Entry<K, V> declaration
+        #region Entry<, > declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html"/>
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        public partial class Entry<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entry<K, V>>
+        public partial class Entry<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entry<, >>
         {
             const string _bridgeClassName = "java.util.Map$Entry";
             /// <summary>
@@ -156,13 +156,13 @@ namespace Java.Util
     }
     #endregion
 
-    #region Map<K, V> declaration
+    #region Map<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class Map<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Map<K, V>>
+    public partial class Map<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Map<, >>
     {
         const string _bridgeClassName = "java.util.Map";
         /// <summary>
@@ -220,8 +220,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#copyOf(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map CopyOf(Java.Util.Map arg0)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "copyOf", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
@@ -229,7 +229,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of()
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "()Ljava/util/Map;");
@@ -237,27 +237,27 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <param name="arg8"><see cref="object"/></param>
-        /// <param name="arg9"><see cref="object"/></param>
-        /// <param name="arg10"><see cref="object"/></param>
-        /// <param name="arg11"><see cref="object"/></param>
-        /// <param name="arg12"><see cref="object"/></param>
-        /// <param name="arg13"><see cref="object"/></param>
-        /// <param name="arg14"><see cref="object"/></param>
-        /// <param name="arg15"><see cref="object"/></param>
-        /// <param name="arg16"><see cref="object"/></param>
-        /// <param name="arg17"><see cref="object"/></param>
-        /// <param name="arg18"><see cref="object"/></param>
-        /// <param name="arg19"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <param name="arg12"><see cref=""/></param>
+        /// <param name="arg13"><see cref=""/></param>
+        /// <param name="arg14"><see cref=""/></param>
+        /// <param name="arg15"><see cref=""/></param>
+        /// <param name="arg16"><see cref=""/></param>
+        /// <param name="arg17"><see cref=""/></param>
+        /// <param name="arg18"><see cref=""/></param>
+        /// <param name="arg19"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9, object arg10, object arg11, object arg12, object arg13, object arg14, object arg15, object arg16, object arg17, object arg18, object arg19)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
@@ -265,25 +265,25 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <param name="arg8"><see cref="object"/></param>
-        /// <param name="arg9"><see cref="object"/></param>
-        /// <param name="arg10"><see cref="object"/></param>
-        /// <param name="arg11"><see cref="object"/></param>
-        /// <param name="arg12"><see cref="object"/></param>
-        /// <param name="arg13"><see cref="object"/></param>
-        /// <param name="arg14"><see cref="object"/></param>
-        /// <param name="arg15"><see cref="object"/></param>
-        /// <param name="arg16"><see cref="object"/></param>
-        /// <param name="arg17"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <param name="arg12"><see cref=""/></param>
+        /// <param name="arg13"><see cref=""/></param>
+        /// <param name="arg14"><see cref=""/></param>
+        /// <param name="arg15"><see cref=""/></param>
+        /// <param name="arg16"><see cref=""/></param>
+        /// <param name="arg17"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9, object arg10, object arg11, object arg12, object arg13, object arg14, object arg15, object arg16, object arg17)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
@@ -291,23 +291,23 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <param name="arg8"><see cref="object"/></param>
-        /// <param name="arg9"><see cref="object"/></param>
-        /// <param name="arg10"><see cref="object"/></param>
-        /// <param name="arg11"><see cref="object"/></param>
-        /// <param name="arg12"><see cref="object"/></param>
-        /// <param name="arg13"><see cref="object"/></param>
-        /// <param name="arg14"><see cref="object"/></param>
-        /// <param name="arg15"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <param name="arg12"><see cref=""/></param>
+        /// <param name="arg13"><see cref=""/></param>
+        /// <param name="arg14"><see cref=""/></param>
+        /// <param name="arg15"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9, object arg10, object arg11, object arg12, object arg13, object arg14, object arg15)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
@@ -315,21 +315,21 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <param name="arg8"><see cref="object"/></param>
-        /// <param name="arg9"><see cref="object"/></param>
-        /// <param name="arg10"><see cref="object"/></param>
-        /// <param name="arg11"><see cref="object"/></param>
-        /// <param name="arg12"><see cref="object"/></param>
-        /// <param name="arg13"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <param name="arg12"><see cref=""/></param>
+        /// <param name="arg13"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9, object arg10, object arg11, object arg12, object arg13)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
@@ -337,19 +337,19 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <param name="arg8"><see cref="object"/></param>
-        /// <param name="arg9"><see cref="object"/></param>
-        /// <param name="arg10"><see cref="object"/></param>
-        /// <param name="arg11"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9, object arg10, object arg11)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
@@ -357,17 +357,17 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <param name="arg8"><see cref="object"/></param>
-        /// <param name="arg9"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -375,15 +375,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -391,13 +391,13 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -405,11 +405,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3);
@@ -417,9 +417,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map Of(object arg0, object arg1)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1);
@@ -427,8 +427,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map OfEntries(params Java.Util.Map.Entry[] arg0)
         {
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;", arg0);
@@ -436,9 +436,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entry(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Map.Entry EntryMethod(object arg0, object arg1)
         {
             return SExecuteWithSignature<Java.Util.Map.Entry>(LocalBridgeClazz, "entry", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0, arg1);
@@ -450,8 +450,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
@@ -459,8 +459,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
@@ -468,7 +468,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -476,7 +476,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -484,7 +484,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Collection Values()
         {
             return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
@@ -492,7 +492,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entrySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Set EntrySet()
         {
             return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
@@ -500,7 +500,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#keySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Set KeySet()
         {
             return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
@@ -508,8 +508,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(object arg0)
         {
             return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -517,9 +517,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Put(object arg0, object arg1)
         {
             return IExecuteWithSignature("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -527,8 +527,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Remove(object arg0)
         {
             return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -543,7 +543,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putAll(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PutAll(Java.Util.Map arg0)
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
@@ -551,9 +551,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(object arg0, object arg1)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
@@ -561,10 +561,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Replace(object arg0, object arg1, object arg2)
         {
             return IExecuteWithSignature<bool>("replace", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
@@ -572,9 +572,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Compute(object arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecuteWithSignature("compute", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
@@ -582,9 +582,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object ComputeIfAbsent(object arg0, Java.Util.Function.Function arg1)
         {
             return IExecuteWithSignature("computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
@@ -592,9 +592,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object ComputeIfPresent(object arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecuteWithSignature("computeIfPresent", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
@@ -602,9 +602,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetOrDefault(object arg0, object arg1)
         {
             return IExecuteWithSignature("getOrDefault", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -612,10 +612,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Merge(object arg0, object arg1, Java.Util.Function.BiFunction arg2)
         {
             return IExecuteWithSignature("merge", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1, arg2);
@@ -623,9 +623,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object PutIfAbsent(object arg0, object arg1)
         {
             return IExecuteWithSignature("putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -633,9 +633,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Replace(object arg0, object arg1)
         {
             return IExecuteWithSignature("replace", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -643,7 +643,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ForEach(Java.Util.Function.BiConsumer arg0)
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
@@ -651,7 +651,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ReplaceAll(Java.Util.Function.BiFunction arg0)
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
@@ -679,7 +679,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByKey()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Util.Comparator ComparingByKey()
             {
                 return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "comparingByKey");
@@ -687,8 +687,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByKey(java.util.Comparator)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Util.Comparator ComparingByKey(Java.Util.Comparator arg0)
             {
                 return SExecuteWithSignature<Java.Util.Comparator>(LocalBridgeClazz, "comparingByKey", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
@@ -696,7 +696,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Util.Comparator ComparingByValue()
             {
                 return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "comparingByValue");
@@ -704,8 +704,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue(java.util.Comparator)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Util.Comparator ComparingByValue(Java.Util.Comparator arg0)
             {
                 return SExecuteWithSignature<Java.Util.Comparator>(LocalBridgeClazz, "comparingByValue", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
@@ -731,8 +731,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#setValue(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object SetValue(object arg0)
             {
                 return IExecuteWithSignature("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -748,8 +748,8 @@ namespace Java.Util
         }
         #endregion
 
-        #region Entry<K, V> implementation
-        public partial class Entry<K, V>
+        #region Entry<, > implementation
+        public partial class Entry<, >
         {
             #region Constructors
 
@@ -757,9 +757,9 @@ namespace Java.Util
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Util.Map.Entry{K, V}"/> to <see cref="Java.Util.Map.Entry"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Util.Map.Entry(Java.Util.Map.Entry<K, V> t) => t.Cast<Java.Util.Map.Entry>();
+            public static implicit operator Java.Util.Map.Entry(Java.Util.Map.Entry<, > t) => t.Cast<Java.Util.Map.Entry>();
 
             #endregion
 
@@ -771,38 +771,38 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByKey()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Comparator"/></returns>
-            public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByKey()
+            /// <returns><see cref=""/></returns>
+            public static Java.Util.Comparator ComparingByKey()
             {
-                return SExecute<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByKey");
+                return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "comparingByKey");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByKey(java.util.Comparator)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-            /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-            /// <returns><see cref="Java.Util.Comparator"/></returns>
-            public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByKey<Arg0objectSuperK>(Java.Util.Comparator<Arg0objectSuperK> arg0) where Arg0objectSuperK : K
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Util.Comparator ComparingByKey(Java.Util.Comparator arg0) where Arg0objectSuperK : K
             {
-                return SExecuteWithSignature<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByKey", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
+                return SExecuteWithSignature<Java.Util.Comparator>(LocalBridgeClazz, "comparingByKey", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Comparator"/></returns>
-            public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByValue()
+            /// <returns><see cref=""/></returns>
+            public static Java.Util.Comparator ComparingByValue()
             {
-                return SExecute<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByValue");
+                return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "comparingByValue");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue(java.util.Comparator)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-            /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-            /// <returns><see cref="Java.Util.Comparator"/></returns>
-            public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByValue<Arg0objectSuperV>(Java.Util.Comparator<Arg0objectSuperV> arg0) where Arg0objectSuperV : V
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+            /// <returns><see cref=""/></returns>
+            public static Java.Util.Comparator ComparingByValue(Java.Util.Comparator arg0) where Arg0objectSuperV : V
             {
-                return SExecuteWithSignature<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByValue", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
+                return SExecuteWithSignature<Java.Util.Comparator>(LocalBridgeClazz, "comparingByValue", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
             }
 
             #endregion
@@ -825,8 +825,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#setValue(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="V"/></param>
-            /// <returns><typeparamref name="V"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public V SetValue(V arg0)
             {
                 return IExecuteWithSignature<V>("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -849,68 +849,68 @@ namespace Java.Util
     }
     #endregion
 
-    #region IMap<K, V>
+    #region IMap<, >
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html"/>
     /// </summary>
-    public partial interface IMap<K, V>
+    public partial interface IMap<, >
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool ContainsKey(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool ContainsValue(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsEmpty();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         int Size();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        Java.Util.Collection<V> Values();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Collection Values();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entrySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Set EntrySet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#keySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<K> KeySet();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Set KeySet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         V Get(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         V Put(K arg0, V arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         V Remove(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#clear()"/>
@@ -919,100 +919,100 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putAll(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        void PutAll<, >(Java.Util.Map<, > arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Remove(object arg0, object arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="V"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Replace(K arg0, V arg1, V arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        V Compute<, , >(K arg0, Java.Util.Function.BiFunction<, , > arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        V ComputeIfAbsent<, >(K arg0, Java.Util.Function.Function<, > arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        V ComputeIfPresent<, , >(K arg0, Java.Util.Function.BiFunction<, , > arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         V GetOrDefault(object arg0, V arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg2objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg2ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg2objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg2ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        V Merge<, >(K arg0, V arg1, Java.Util.Function.BiFunction<, , > arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         V PutIfAbsent(K arg0, V arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         V Replace(K arg0, V arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        void ForEach<, >(Java.Util.Function.BiConsumer<, > arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        void ReplaceAll<, , >(Java.Util.Function.BiFunction<, , > arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V;
 
         #endregion
 
@@ -1024,8 +1024,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region Map<K, V> implementation
-    public partial class Map<K, V> : Java.Util.IMap<K, V>
+    #region Map<, > implementation
+    public partial class Map<, > : Java.Util.IMap<, >
     {
         #region Constructors
 
@@ -1033,9 +1033,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Map{K, V}"/> to <see cref="Java.Util.Map"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Map(Java.Util.Map<K, V> t) => t.Cast<Java.Util.Map>();
+        public static implicit operator Java.Util.Map(Java.Util.Map<, > t) => t.Cast<Java.Util.Map>();
 
         #endregion
 
@@ -1047,232 +1047,232 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#copyOf(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> CopyOf<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > CopyOf<, >(Java.Util.Map<, > arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "copyOf", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "copyOf", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of()
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of()
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "()Ljava/util/Map;");
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="K"/></param>
-        /// <param name="arg3"><typeparamref name="V"/></param>
-        /// <param name="arg4"><typeparamref name="K"/></param>
-        /// <param name="arg5"><typeparamref name="V"/></param>
-        /// <param name="arg6"><typeparamref name="K"/></param>
-        /// <param name="arg7"><typeparamref name="V"/></param>
-        /// <param name="arg8"><typeparamref name="K"/></param>
-        /// <param name="arg9"><typeparamref name="V"/></param>
-        /// <param name="arg10"><typeparamref name="K"/></param>
-        /// <param name="arg11"><typeparamref name="V"/></param>
-        /// <param name="arg12"><typeparamref name="K"/></param>
-        /// <param name="arg13"><typeparamref name="V"/></param>
-        /// <param name="arg14"><typeparamref name="K"/></param>
-        /// <param name="arg15"><typeparamref name="V"/></param>
-        /// <param name="arg16"><typeparamref name="K"/></param>
-        /// <param name="arg17"><typeparamref name="V"/></param>
-        /// <param name="arg18"><typeparamref name="K"/></param>
-        /// <param name="arg19"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13, K arg14, V arg15, K arg16, V arg17, K arg18, V arg19)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <param name="arg12"><see cref=""/></param>
+        /// <param name="arg13"><see cref=""/></param>
+        /// <param name="arg14"><see cref=""/></param>
+        /// <param name="arg15"><see cref=""/></param>
+        /// <param name="arg16"><see cref=""/></param>
+        /// <param name="arg17"><see cref=""/></param>
+        /// <param name="arg18"><see cref=""/></param>
+        /// <param name="arg19"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13, K arg14, V arg15, K arg16, V arg17, K arg18, V arg19)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="K"/></param>
-        /// <param name="arg3"><typeparamref name="V"/></param>
-        /// <param name="arg4"><typeparamref name="K"/></param>
-        /// <param name="arg5"><typeparamref name="V"/></param>
-        /// <param name="arg6"><typeparamref name="K"/></param>
-        /// <param name="arg7"><typeparamref name="V"/></param>
-        /// <param name="arg8"><typeparamref name="K"/></param>
-        /// <param name="arg9"><typeparamref name="V"/></param>
-        /// <param name="arg10"><typeparamref name="K"/></param>
-        /// <param name="arg11"><typeparamref name="V"/></param>
-        /// <param name="arg12"><typeparamref name="K"/></param>
-        /// <param name="arg13"><typeparamref name="V"/></param>
-        /// <param name="arg14"><typeparamref name="K"/></param>
-        /// <param name="arg15"><typeparamref name="V"/></param>
-        /// <param name="arg16"><typeparamref name="K"/></param>
-        /// <param name="arg17"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13, K arg14, V arg15, K arg16, V arg17)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <param name="arg12"><see cref=""/></param>
+        /// <param name="arg13"><see cref=""/></param>
+        /// <param name="arg14"><see cref=""/></param>
+        /// <param name="arg15"><see cref=""/></param>
+        /// <param name="arg16"><see cref=""/></param>
+        /// <param name="arg17"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13, K arg14, V arg15, K arg16, V arg17)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="K"/></param>
-        /// <param name="arg3"><typeparamref name="V"/></param>
-        /// <param name="arg4"><typeparamref name="K"/></param>
-        /// <param name="arg5"><typeparamref name="V"/></param>
-        /// <param name="arg6"><typeparamref name="K"/></param>
-        /// <param name="arg7"><typeparamref name="V"/></param>
-        /// <param name="arg8"><typeparamref name="K"/></param>
-        /// <param name="arg9"><typeparamref name="V"/></param>
-        /// <param name="arg10"><typeparamref name="K"/></param>
-        /// <param name="arg11"><typeparamref name="V"/></param>
-        /// <param name="arg12"><typeparamref name="K"/></param>
-        /// <param name="arg13"><typeparamref name="V"/></param>
-        /// <param name="arg14"><typeparamref name="K"/></param>
-        /// <param name="arg15"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13, K arg14, V arg15)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <param name="arg12"><see cref=""/></param>
+        /// <param name="arg13"><see cref=""/></param>
+        /// <param name="arg14"><see cref=""/></param>
+        /// <param name="arg15"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13, K arg14, V arg15)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="K"/></param>
-        /// <param name="arg3"><typeparamref name="V"/></param>
-        /// <param name="arg4"><typeparamref name="K"/></param>
-        /// <param name="arg5"><typeparamref name="V"/></param>
-        /// <param name="arg6"><typeparamref name="K"/></param>
-        /// <param name="arg7"><typeparamref name="V"/></param>
-        /// <param name="arg8"><typeparamref name="K"/></param>
-        /// <param name="arg9"><typeparamref name="V"/></param>
-        /// <param name="arg10"><typeparamref name="K"/></param>
-        /// <param name="arg11"><typeparamref name="V"/></param>
-        /// <param name="arg12"><typeparamref name="K"/></param>
-        /// <param name="arg13"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <param name="arg12"><see cref=""/></param>
+        /// <param name="arg13"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="K"/></param>
-        /// <param name="arg3"><typeparamref name="V"/></param>
-        /// <param name="arg4"><typeparamref name="K"/></param>
-        /// <param name="arg5"><typeparamref name="V"/></param>
-        /// <param name="arg6"><typeparamref name="K"/></param>
-        /// <param name="arg7"><typeparamref name="V"/></param>
-        /// <param name="arg8"><typeparamref name="K"/></param>
-        /// <param name="arg9"><typeparamref name="V"/></param>
-        /// <param name="arg10"><typeparamref name="K"/></param>
-        /// <param name="arg11"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="K"/></param>
-        /// <param name="arg3"><typeparamref name="V"/></param>
-        /// <param name="arg4"><typeparamref name="K"/></param>
-        /// <param name="arg5"><typeparamref name="V"/></param>
-        /// <param name="arg6"><typeparamref name="K"/></param>
-        /// <param name="arg7"><typeparamref name="V"/></param>
-        /// <param name="arg8"><typeparamref name="K"/></param>
-        /// <param name="arg9"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="K"/></param>
-        /// <param name="arg3"><typeparamref name="V"/></param>
-        /// <param name="arg4"><typeparamref name="K"/></param>
-        /// <param name="arg5"><typeparamref name="V"/></param>
-        /// <param name="arg6"><typeparamref name="K"/></param>
-        /// <param name="arg7"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="K"/></param>
-        /// <param name="arg3"><typeparamref name="V"/></param>
-        /// <param name="arg4"><typeparamref name="K"/></param>
-        /// <param name="arg5"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="K"/></param>
-        /// <param name="arg3"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of(K arg0, V arg1, K arg2, V arg3)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> Of(K arg0, V arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > Of(K arg0, V arg1)
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
-        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public static Java.Util.Map<K, V> OfEntries<Arg0ExtendsK, Arg0ExtendsV>(params Java.Util.Map.Entry<Arg0ExtendsK, Arg0ExtendsV>[] arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map<, > OfEntries<, >(params Java.Util.Map.Entry<, >[] arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
-            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;", arg0);
+            return SExecuteWithSignature<Java.Util.Map<, >>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entry(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
-        public static Java.Util.Map.Entry<K, V> EntryMethod(K arg0, V arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Map.Entry<, > EntryMethod(K arg0, V arg1)
         {
-            return SExecuteWithSignature<Java.Util.Map.Entry<K, V>>(LocalBridgeClazz, "entry", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Map.Entry<, >>(LocalBridgeClazz, "entry", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0, arg1);
         }
 
         #endregion
@@ -1281,8 +1281,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
@@ -1290,8 +1290,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsValue(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
@@ -1299,7 +1299,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -1307,7 +1307,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -1315,32 +1315,32 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        public Java.Util.Collection<V> Values()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Collection Values()
         {
-            return IExecuteWithSignature<Java.Util.Collection<V>>("values", "()Ljava/util/Collection;");
+            return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entrySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set EntrySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#keySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<K> KeySet()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<K>>("keySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Get(object arg0)
         {
             return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -1348,9 +1348,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Put(K arg0, V arg1)
         {
             return IExecuteWithSignature<V>("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -1358,8 +1358,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Remove(object arg0)
         {
             return IExecuteWithSignature<V>("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -1374,19 +1374,19 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putAll(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        public void PutAll<, >(Java.Util.Map<, > arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(object arg0, object arg1)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
@@ -1394,10 +1394,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="V"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Replace(K arg0, V arg1, V arg2)
         {
             return IExecuteWithSignature<bool>("replace", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
@@ -1405,47 +1405,47 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V Compute<, , >(K arg0, Java.Util.Function.BiFunction<, , > arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecuteWithSignature<V>("compute", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V ComputeIfAbsent<, >(K arg0, Java.Util.Function.Function<, > arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V
         {
             return IExecuteWithSignature<V>("computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V ComputeIfPresent<, , >(K arg0, Java.Util.Function.BiFunction<, , > arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecuteWithSignature<V>("computeIfPresent", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V GetOrDefault(object arg0, V arg1)
         {
             return IExecuteWithSignature<V>("getOrDefault", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -1453,22 +1453,22 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg2objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg2ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg2objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg2ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V Merge<, >(K arg0, V arg1, Java.Util.Function.BiFunction<, , > arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V
         {
             return IExecuteWithSignature<V>("merge", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V PutIfAbsent(K arg0, V arg1)
         {
             return IExecuteWithSignature<V>("putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -1476,9 +1476,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Replace(K arg0, V arg1)
         {
             return IExecuteWithSignature<V>("replace", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -1486,21 +1486,21 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        public void ForEach<, >(Java.Util.Function.BiConsumer<, > arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        public void ReplaceAll<, , >(Java.Util.Function.BiFunction<, , > arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
         }

@@ -92,11 +92,11 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#createRegistry(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
-        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Registry.Registry CreateRegistry(int arg0, Java.Rmi.Server.RMIClientSocketFactory arg1, Java.Rmi.Server.RMIServerSocketFactory arg2)
         {
             return SExecuteWithSignature<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "createRegistry", "(ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;)Ljava/rmi/registry/Registry;", arg0, arg1, arg2);
@@ -104,9 +104,9 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#createRegistry(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Registry.Registry CreateRegistry(int arg0)
         {
             return SExecuteWithSignature<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "createRegistry", "(I)Ljava/rmi/registry/Registry;", arg0);
@@ -114,9 +114,9 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Registry.Registry GetRegistry(int arg0)
         {
             return SExecuteWithSignature<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "getRegistry", "(I)Ljava/rmi/registry/Registry;", arg0);
@@ -124,11 +124,11 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String,int,java.rmi.server.RMIClientSocketFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
-        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Registry.Registry GetRegistry(Java.Lang.String arg0, int arg1, Java.Rmi.Server.RMIClientSocketFactory arg2)
         {
             return SExecuteWithSignature<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "getRegistry", "(Ljava/lang/String;ILjava/rmi/server/RMIClientSocketFactory;)Ljava/rmi/registry/Registry;", arg0, arg1, arg2);
@@ -136,10 +136,10 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Registry.Registry GetRegistry(Java.Lang.String arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "getRegistry", "(Ljava/lang/String;I)Ljava/rmi/registry/Registry;", arg0, arg1);
@@ -147,9 +147,9 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Registry.Registry GetRegistry(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "getRegistry", "(Ljava/lang/String;)Ljava/rmi/registry/Registry;", arg0);

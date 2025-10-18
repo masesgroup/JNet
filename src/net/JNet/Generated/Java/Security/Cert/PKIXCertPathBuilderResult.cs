@@ -73,10 +73,10 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathBuilderResult.html#%3Cinit%3E(java.security.cert.CertPath,java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CertPath"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Cert.TrustAnchor"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Cert.PolicyNode"/></param>
-        /// <param name="arg3"><see cref="Java.Security.PublicKey"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public PKIXCertPathBuilderResult(Java.Security.Cert.CertPath arg0, Java.Security.Cert.TrustAnchor arg1, Java.Security.Cert.PolicyNode arg2, Java.Security.PublicKey arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -86,7 +86,7 @@ namespace Java.Security.Cert
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.PKIXCertPathBuilderResult"/> to <see cref="Java.Security.Cert.CertPathBuilderResult"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Cert.CertPathBuilderResult(Java.Security.Cert.PKIXCertPathBuilderResult t) => t.Cast<Java.Security.Cert.CertPathBuilderResult>();
 

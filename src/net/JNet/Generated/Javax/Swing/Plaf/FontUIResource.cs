@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FontUIResource.html#%3Cinit%3E(java.awt.Font)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Font"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public FontUIResource(Java.Awt.Font arg0)
             : base(arg0)
         {
@@ -81,9 +81,9 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FontUIResource.html#%3Cinit%3E(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public FontUIResource(Java.Lang.String arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -93,7 +93,7 @@ namespace Javax.Swing.Plaf
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.FontUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.FontUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
 

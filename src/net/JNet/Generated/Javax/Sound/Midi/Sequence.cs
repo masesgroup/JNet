@@ -73,10 +73,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#%3Cinit%3E(float,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public Sequence(float arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -84,9 +84,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#%3Cinit%3E(float,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public Sequence(float arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -182,8 +182,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#deleteTrack(javax.sound.midi.Track)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Track"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool DeleteTrack(Javax.Sound.Midi.Track arg0)
         {
             return IExecuteWithSignature<bool>("deleteTrack", "(Ljavax/sound/midi/Track;)Z", arg0);
@@ -191,7 +191,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#createTrack()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Sound.Midi.Track"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Midi.Track CreateTrack()
         {
             return IExecuteWithSignature<Javax.Sound.Midi.Track>("createTrack", "()Ljavax/sound/midi/Track;");

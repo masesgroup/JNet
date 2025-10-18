@@ -89,9 +89,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#getAllowedTagSets()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Imageio.Plugins.Tiff.TIFFTagSet> AllowedTagSets
+        public Java.Util.List AllowedTagSets
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Imageio.Plugins.Tiff.TIFFTagSet>>("getAllowedTagSets", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getAllowedTagSets", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#getReadUnknownTags()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#setReadUnknownTags(boolean)"/>
@@ -103,7 +103,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#addAllowedTagSet(javax.imageio.plugins.tiff.TIFFTagSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddAllowedTagSet(Javax.Imageio.Plugins.Tiff.TIFFTagSet arg0)
         {
             IExecuteWithSignature("addAllowedTagSet", "(Ljavax/imageio/plugins/tiff/TIFFTagSet;)V", arg0);
@@ -111,7 +111,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#removeAllowedTagSet(javax.imageio.plugins.tiff.TIFFTagSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveAllowedTagSet(Javax.Imageio.Plugins.Tiff.TIFFTagSet arg0)
         {
             IExecuteWithSignature("removeAllowedTagSet", "(Ljavax/imageio/plugins/tiff/TIFFTagSet;)V", arg0);

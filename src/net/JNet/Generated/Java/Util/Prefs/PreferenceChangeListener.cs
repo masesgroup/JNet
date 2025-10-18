@@ -108,7 +108,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0)
         {
             hasOverridePreferenceChange = false;
@@ -207,7 +207,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0)
         {
             IExecuteWithSignature("preferenceChange", "(Ljava/util/prefs/PreferenceChangeEvent;)V", arg0);

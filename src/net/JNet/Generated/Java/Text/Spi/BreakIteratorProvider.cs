@@ -91,8 +91,8 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getCharacterInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.BreakIterator GetCharacterInstance(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Text.BreakIterator>("getCharacterInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
@@ -100,8 +100,8 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getLineInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.BreakIterator GetLineInstance(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Text.BreakIterator>("getLineInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
@@ -109,8 +109,8 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getSentenceInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.BreakIterator GetSentenceInstance(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Text.BreakIterator>("getSentenceInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
@@ -118,8 +118,8 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getWordInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.BreakIterator GetWordInstance(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Text.BreakIterator>("getWordInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);

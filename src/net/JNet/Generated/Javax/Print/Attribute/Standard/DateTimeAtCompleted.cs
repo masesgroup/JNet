@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtCompleted.html#%3Cinit%3E(java.util.Date)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DateTimeAtCompleted(Java.Util.Date arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.DateTimeAtCompleted"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.DateTimeAtCompleted t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
 

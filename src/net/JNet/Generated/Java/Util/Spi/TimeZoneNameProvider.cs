@@ -91,11 +91,11 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/TimeZoneNameProvider.html#getDisplayName(java.lang.String,boolean,int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDisplayName(Java.Lang.String arg0, bool arg1, int arg2, Java.Util.Locale arg3)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/lang/String;ZILjava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
@@ -103,10 +103,10 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/TimeZoneNameProvider.html#getGenericDisplayName(java.lang.String,int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetGenericDisplayName(Java.Lang.String arg0, int arg1, Java.Util.Locale arg2)
         {
             return IExecuteWithSignature<Java.Lang.String>("getGenericDisplayName", "(Ljava/lang/String;ILjava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2);

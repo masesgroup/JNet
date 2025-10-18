@@ -91,7 +91,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleBundle.html#toDisplayString()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToDisplayString()
         {
             return IExecuteWithSignature<Java.Lang.String>("toDisplayString", "()Ljava/lang/String;");
@@ -99,8 +99,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleBundle.html#toDisplayString(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToDisplayString(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("toDisplayString", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);

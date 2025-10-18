@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#%3Cinit%3E(java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Frame(Java.Awt.GraphicsConfiguration arg0)
             : base(arg0)
         {
@@ -81,8 +81,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#%3Cinit%3E(java.lang.String,java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Frame(Java.Lang.String arg0, Java.Awt.GraphicsConfiguration arg1)
             : base(arg0, arg1)
         {
@@ -90,8 +90,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public Frame(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -101,7 +101,7 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Frame"/> to <see cref="Java.Awt.MenuContainer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.MenuContainer(Java.Awt.Frame t) => t.Cast<Java.Awt.MenuContainer>();
 
@@ -198,7 +198,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isResizable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsResizable()
         {
             return IExecuteWithSignature<bool>("isResizable", "()Z");
@@ -206,7 +206,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isUndecorated()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsUndecorated()
         {
             return IExecuteWithSignature<bool>("isUndecorated", "()Z");
@@ -214,7 +214,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setResizable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetResizable(bool arg0)
         {
             IExecuteWithSignature("setResizable", "(Z)V", arg0);
@@ -222,7 +222,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setUndecorated(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUndecorated(bool arg0)
         {
             IExecuteWithSignature("setUndecorated", "(Z)V", arg0);

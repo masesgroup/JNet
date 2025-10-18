@@ -103,12 +103,12 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#altMetafactory(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodType"/></param>
-        /// <param name="arg3"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.Invoke.CallSite"/></returns>
-        /// <exception cref="Java.Lang.Invoke.LambdaConversionException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.Invoke.CallSite AltMetafactory(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Invoke.MethodType arg2, params object[] arg3)
         {
             return SExecuteWithSignature<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "altMetafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg3, arg0, arg1, arg2));
@@ -116,14 +116,14 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#metafactory(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.invoke.MethodType,java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodType"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodType"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <param name="arg5"><see cref="Java.Lang.Invoke.MethodType"/></param>
-        /// <returns><see cref="Java.Lang.Invoke.CallSite"/></returns>
-        /// <exception cref="Java.Lang.Invoke.LambdaConversionException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Lang.Invoke.CallSite Metafactory(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Invoke.MethodType arg2, Java.Lang.Invoke.MethodType arg3, Java.Lang.Invoke.MethodHandle arg4, Java.Lang.Invoke.MethodType arg5)
         {
             return SExecuteWithSignature<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", arg0, arg1, arg2, arg3, arg4, arg5);

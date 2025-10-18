@@ -29,7 +29,7 @@ namespace Java.Time.Format
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html"/>
     /// </summary>
-    public partial class ResolverStyle : Java.Lang.Enum<Java.Time.Format.ResolverStyle>
+    public partial class ResolverStyle : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.time.format.ResolverStyle";
         /// <summary>
@@ -103,8 +103,8 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Time.Format.ResolverStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Format.ResolverStyle ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/format/ResolverStyle;", arg0);
@@ -112,7 +112,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Format.ResolverStyle"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Format.ResolverStyle[] Values()
         {
             return SExecuteWithSignatureArray<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "values", "()[Ljava/time/format/ResolverStyle;");

@@ -102,15 +102,15 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLoggerNames()"/> 
         /// </summary>
-        public Java.Util.Enumeration<Java.Lang.String> LoggerNames
+        public Java.Util.Enumeration LoggerNames
         {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getLoggerNames", "()Ljava/util/Enumeration;"); }
+            get { return IExecuteWithSignature<Java.Util.Enumeration>("getLoggerNames", "()Ljava/util/Enumeration;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#addLogger(java.util.logging.Logger)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Logger"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddLogger(Java.Util.Logging.Logger arg0)
         {
             return IExecuteWithSignature<bool>("addLogger", "(Ljava/util/logging/Logger;)Z", arg0);
@@ -118,8 +118,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -127,8 +127,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLogger(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Logging.Logger"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Logging.Logger GetLogger(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Util.Logging.Logger>("getLogger", "(Ljava/lang/String;)Ljava/util/logging/Logger;", arg0);
@@ -136,8 +136,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#addConfigurationListener(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <returns><see cref="Java.Util.Logging.LogManager"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Logging.LogManager AddConfigurationListener(Java.Lang.Runnable arg0)
         {
             return IExecuteWithSignature<Java.Util.Logging.LogManager>("addConfigurationListener", "(Ljava/lang/Runnable;)Ljava/util/logging/LogManager;", arg0);
@@ -145,7 +145,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#checkAccess()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <exception cref=""/>
         public void CheckAccess()
         {
             IExecuteWithSignature("checkAccess", "()V");
@@ -153,8 +153,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#readConfiguration()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void ReadConfiguration()
         {
             IExecuteWithSignature("readConfiguration", "()V");
@@ -162,9 +162,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#readConfiguration(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void ReadConfiguration(Java.Io.InputStream arg0)
         {
             IExecuteWithSignature("readConfiguration", "(Ljava/io/InputStream;)V", arg0);
@@ -172,7 +172,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#removeConfigurationListener(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveConfigurationListener(Java.Lang.Runnable arg0)
         {
             IExecuteWithSignature("removeConfigurationListener", "(Ljava/lang/Runnable;)V", arg0);
@@ -180,7 +180,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#reset()"/>
         /// </summary>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <exception cref=""/>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
@@ -188,19 +188,19 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#updateConfiguration(java.io.InputStream,java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public void UpdateConfiguration(Java.Io.InputStream arg0, Java.Util.Function.Function<Java.Lang.String, Java.Util.Function.BiFunction<Java.Lang.String, Java.Lang.String, Java.Lang.String>> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        public void UpdateConfiguration(Java.Io.InputStream arg0, Java.Util.Function.Function<, > arg1)
         {
             IExecuteWithSignature("updateConfiguration", "(Ljava/io/InputStream;Ljava/util/function/Function;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#updateConfiguration(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public void UpdateConfiguration(Java.Util.Function.Function<Java.Lang.String, Java.Util.Function.BiFunction<Java.Lang.String, Java.Lang.String, Java.Lang.String>> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        public void UpdateConfiguration(Java.Util.Function.Function<, > arg0)
         {
             IExecuteWithSignature("updateConfiguration", "(Ljava/util/function/Function;)V", arg0);
         }

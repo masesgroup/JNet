@@ -87,9 +87,9 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#lookupStreamPrintServiceFactories(javax.print.DocFlavor,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.DocFlavor"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Print.StreamPrintServiceFactory"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Print.StreamPrintServiceFactory[] LookupStreamPrintServiceFactories(Javax.Print.DocFlavor arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignatureArray<Javax.Print.StreamPrintServiceFactory>(LocalBridgeClazz, "lookupStreamPrintServiceFactories", "(Ljavax/print/DocFlavor;Ljava/lang/String;)[Ljavax/print/StreamPrintServiceFactory;", arg0, arg1);
@@ -115,8 +115,8 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getPrintService(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see cref="Javax.Print.StreamPrintService"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Print.StreamPrintService GetPrintService(Java.Io.OutputStream arg0)
         {
             return IExecuteWithSignature<Javax.Print.StreamPrintService>("getPrintService", "(Ljava/io/OutputStream;)Ljavax/print/StreamPrintService;", arg0);

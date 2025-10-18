@@ -68,12 +68,12 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region AbstractListModel<E> declaration
+    #region AbstractListModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class AbstractListModel<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractListModel<E>>
+    public partial class AbstractListModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractListModel>
     {
         const string _bridgeClassName = "javax.swing.AbstractListModel";
         /// <summary>
@@ -121,11 +121,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.AbstractListModel"/> to <see cref="Javax.Swing.ListModel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.ListModel(Javax.Swing.AbstractListModel t) => t.Cast<Javax.Swing.ListModel>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.AbstractListModel"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.AbstractListModel t) => t.Cast<Java.Io.Serializable>();
 
@@ -150,8 +150,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListeners(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.EventListener"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
         {
             return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
@@ -159,7 +159,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecuteWithSignature("addListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);
@@ -167,7 +167,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#removeListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecuteWithSignature("removeListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);
@@ -183,8 +183,8 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region AbstractListModel<E> implementation
-    public partial class AbstractListModel<E>
+    #region AbstractListModel implementation
+    public partial class AbstractListModel
     {
         #region Constructors
 
@@ -192,17 +192,17 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.AbstractListModel{E}"/> to <see cref="Javax.Swing.ListModel{E}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.ListModel<E>(Javax.Swing.AbstractListModel<E> t) => t.Cast<Javax.Swing.ListModel<E>>();
+        public static implicit operator Javax.Swing.ListModel(Javax.Swing.AbstractListModel t) => t.Cast<Javax.Swing.ListModel>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.AbstractListModel{E}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Swing.AbstractListModel<E> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.AbstractListModel t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.AbstractListModel{E}"/> to <see cref="Javax.Swing.AbstractListModel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.AbstractListModel(Javax.Swing.AbstractListModel<E> t) => t.Cast<Javax.Swing.AbstractListModel>();
+        public static implicit operator Javax.Swing.AbstractListModel(Javax.Swing.AbstractListModel t) => t.Cast<Javax.Swing.AbstractListModel>();
 
         #endregion
 
@@ -225,17 +225,17 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListeners(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public T[] GetListeners(Java.Lang.Class arg0)
         {
             return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecuteWithSignature("addListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);
@@ -243,7 +243,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#removeListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecuteWithSignature("removeListDataListener", "(Ljavax/swing/event/ListDataListener;)V", arg0);

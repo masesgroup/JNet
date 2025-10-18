@@ -89,10 +89,10 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerBuilder.html#newMBeanServer(java.lang.String,javax.management.MBeanServer,javax.management.MBeanServerDelegate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.MBeanServer"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.MBeanServerDelegate"/></param>
-        /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Management.MBeanServer NewMBeanServer(Java.Lang.String arg0, Javax.Management.MBeanServer arg1, Javax.Management.MBeanServerDelegate arg2)
         {
             return IExecuteWithSignature<Javax.Management.MBeanServer>("newMBeanServer", "(Ljava/lang/String;Ljavax/management/MBeanServer;Ljavax/management/MBeanServerDelegate;)Ljavax/management/MBeanServer;", arg0, arg1, arg2);
@@ -100,7 +100,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerBuilder.html#newMBeanServerDelegate()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Management.MBeanServerDelegate"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Management.MBeanServerDelegate NewMBeanServerDelegate()
         {
             return IExecuteWithSignature<Javax.Management.MBeanServerDelegate>("newMBeanServerDelegate", "()Ljavax/management/MBeanServerDelegate;");

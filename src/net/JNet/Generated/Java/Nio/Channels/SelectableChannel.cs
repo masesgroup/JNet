@@ -91,7 +91,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#isBlocking()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsBlocking()
         {
             return IExecuteWithSignature<bool>("isBlocking", "()Z");
@@ -99,7 +99,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#isRegistered()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRegistered()
         {
             return IExecuteWithSignature<bool>("isRegistered", "()Z");
@@ -107,7 +107,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#validOps()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int ValidOps()
         {
             return IExecuteWithSignature<int>("validOps", "()I");
@@ -115,7 +115,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#blockingLock()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object BlockingLock()
         {
             return IExecuteWithSignature("blockingLock", "()Ljava/lang/Object;");
@@ -123,9 +123,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#configureBlocking(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Nio.Channels.SelectableChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.SelectableChannel ConfigureBlocking(bool arg0)
         {
             return IExecuteWithSignature<Java.Nio.Channels.SelectableChannel>("configureBlocking", "(Z)Ljava/nio/channels/SelectableChannel;", arg0);
@@ -133,8 +133,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#keyFor(java.nio.channels.Selector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Channels.Selector"/></param>
-        /// <returns><see cref="Java.Nio.Channels.SelectionKey"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.Channels.SelectionKey KeyFor(Java.Nio.Channels.Selector arg0)
         {
             return IExecuteWithSignature<Java.Nio.Channels.SelectionKey>("keyFor", "(Ljava/nio/channels/Selector;)Ljava/nio/channels/SelectionKey;", arg0);
@@ -142,11 +142,11 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Channels.Selector"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="Java.Nio.Channels.SelectionKey"/></returns>
-        /// <exception cref="Java.Nio.Channels.ClosedChannelException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.SelectionKey Register(Java.Nio.Channels.Selector arg0, int arg1, object arg2)
         {
             return IExecuteWithSignature<Java.Nio.Channels.SelectionKey>("register", "(Ljava/nio/channels/Selector;ILjava/lang/Object;)Ljava/nio/channels/SelectionKey;", arg0, arg1, arg2);
@@ -154,7 +154,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#provider()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.Spi.SelectorProvider"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.Channels.Spi.SelectorProvider Provider()
         {
             return IExecuteWithSignature<Java.Nio.Channels.Spi.SelectorProvider>("provider", "()Ljava/nio/channels/spi/SelectorProvider;");
@@ -162,10 +162,10 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Channels.Selector"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.Channels.SelectionKey"/></returns>
-        /// <exception cref="Java.Nio.Channels.ClosedChannelException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.SelectionKey Register(Java.Nio.Channels.Selector arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Nio.Channels.SelectionKey>("register", "(Ljava/nio/channels/Selector;I)Ljava/nio/channels/SelectionKey;", arg0, arg1);

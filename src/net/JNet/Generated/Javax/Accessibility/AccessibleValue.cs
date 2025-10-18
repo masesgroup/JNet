@@ -90,8 +90,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#setCurrentAccessibleValue(java.lang.Number)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool SetCurrentAccessibleValue(Java.Lang.Number arg0);
 
         #endregion
@@ -148,8 +148,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#setCurrentAccessibleValue(java.lang.Number)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SetCurrentAccessibleValue(Java.Lang.Number arg0)
         {
             return IExecuteWithSignature<bool>("setCurrentAccessibleValue", "(Ljava/lang/Number;)Z", arg0);

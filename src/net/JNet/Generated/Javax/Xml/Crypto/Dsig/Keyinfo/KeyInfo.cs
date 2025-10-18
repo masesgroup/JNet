@@ -78,7 +78,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#getContent()"/> 
         /// </summary>
-        Java.Util.List<Javax.Xml.Crypto.XMLStructure> Content { get; }
+        Java.Util.List Content { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#getId()"/> 
         /// </summary>
@@ -86,9 +86,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#marshal(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void Marshal(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1);
 
         #endregion
@@ -124,9 +124,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#getContent()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Xml.Crypto.XMLStructure> Content
+        public Java.Util.List Content
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.XMLStructure>>("getContent", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getContent", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#getId()"/> 
@@ -138,9 +138,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#marshal(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Marshal(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
             IExecuteWithSignature("marshal", "(Ljavax/xml/crypto/XMLStructure;Ljavax/xml/crypto/XMLCryptoContext;)V", arg0, arg1);

@@ -66,7 +66,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html"/>
         /// </summary>
-        public partial class TimeDefinition : Java.Lang.Enum<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>
+        public partial class TimeDefinition : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition";
             /// <summary>
@@ -126,16 +126,16 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#of(java.time.Month,int,java.time.DayOfWeek,java.time.LocalTime,boolean,java.time.zone.ZoneOffsetTransitionRule.TimeDefinition,java.time.ZoneOffset,java.time.ZoneOffset,java.time.ZoneOffset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Month"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Time.DayOfWeek"/></param>
-        /// <param name="arg3"><see cref="Java.Time.LocalTime"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <param name="arg5"><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></param>
-        /// <param name="arg6"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <param name="arg7"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <param name="arg8"><see cref="Java.Time.ZoneOffset"/></param>
-        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Zone.ZoneOffsetTransitionRule Of(Java.Time.Month arg0, int arg1, Java.Time.DayOfWeek arg2, Java.Time.LocalTime arg3, bool arg4, Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition arg5, Java.Time.ZoneOffset arg6, Java.Time.ZoneOffset arg7, Java.Time.ZoneOffset arg8)
         {
             return SExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransitionRule>(LocalBridgeClazz, "of", "(Ljava/time/Month;ILjava/time/DayOfWeek;Ljava/time/LocalTime;ZLjava/time/zone/ZoneOffsetTransitionRule$TimeDefinition;Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;)Ljava/time/zone/ZoneOffsetTransitionRule;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
@@ -203,7 +203,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#isMidnightEndOfDay()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMidnightEndOfDay()
         {
             return IExecuteWithSignature<bool>("isMidnightEndOfDay", "()Z");
@@ -211,8 +211,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#createTransition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Zone.ZoneOffsetTransition CreateTransition(int arg0)
         {
             return IExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransition>("createTransition", "(I)Ljava/time/zone/ZoneOffsetTransition;", arg0);
@@ -258,8 +258,8 @@ namespace Java.Time.Zone
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/zone/ZoneOffsetTransitionRule$TimeDefinition;", arg0);
@@ -267,7 +267,7 @@ namespace Java.Time.Zone
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>(LocalBridgeClazz, "values", "()[Ljava/time/zone/ZoneOffsetTransitionRule$TimeDefinition;");
@@ -279,10 +279,10 @@ namespace Java.Time.Zone
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#createDateTime(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
-            /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
-            /// <param name="arg2"><see cref="Java.Time.ZoneOffset"/></param>
-            /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Time.LocalDateTime CreateDateTime(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1, Java.Time.ZoneOffset arg2)
             {
                 return IExecuteWithSignature<Java.Time.LocalDateTime>("createDateTime", "(Ljava/time/LocalDateTime;Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;)Ljava/time/LocalDateTime;", arg0, arg1, arg2);

@@ -73,9 +73,9 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#%3Cinit%3E(java.security.cert.X509Certificate,java.security.PrivateKey,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PrivateKey"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#%3Cinit%3E(java.security.cert.X509Certificate,java.security.PrivateKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PrivateKey"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1)
             : base(arg0, arg1)
         {
@@ -129,7 +129,7 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#isDestroyed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDestroyed()
         {
             return IExecuteWithSignature<bool>("isDestroyed", "()Z");

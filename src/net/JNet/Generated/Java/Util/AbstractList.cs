@@ -68,12 +68,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractList<E> declaration
+    #region AbstractList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class AbstractList<E> : Java.Util.AbstractCollection<E>
+    public partial class AbstractList : Java.Util.AbstractCollection
     {
         const string _bridgeClassName = "java.util.AbstractList";
         /// <summary>
@@ -121,7 +121,7 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractList"/> to <see cref="Java.Util.List"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.List(Java.Util.AbstractList t) => t.Cast<Java.Util.List>();
 
@@ -139,8 +139,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(int arg0)
         {
             return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
@@ -148,9 +148,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#addAll(int,java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddAll(int arg0, Java.Util.Collection arg1)
         {
             return IExecuteWithSignature<bool>("addAll", "(ILjava/util/Collection;)Z", arg0, arg1);
@@ -158,8 +158,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Remove(int arg0)
         {
             return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
@@ -167,9 +167,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#set(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Set(int arg0, object arg1)
         {
             return IExecuteWithSignature("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -177,8 +177,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#indexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
@@ -186,8 +186,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
@@ -195,9 +195,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#subList(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.List SubListMethod(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Util.List>("subList", "(II)Ljava/util/List;", arg0, arg1);
@@ -205,7 +205,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.ListIterator ListIterator()
         {
             return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "()Ljava/util/ListIterator;");
@@ -213,8 +213,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.ListIterator ListIterator(int arg0)
         {
             return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
@@ -222,8 +222,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#add(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Add(int arg0, object arg1)
         {
             IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
@@ -239,8 +239,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractList<E> implementation
-    public partial class AbstractList<E>
+    #region AbstractList implementation
+    public partial class AbstractList
     {
         #region Constructors
 
@@ -248,13 +248,13 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractList{E}"/> to <see cref="Java.Util.List{E}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.List<E>(Java.Util.AbstractList<E> t) => t.Cast<Java.Util.List<E>>();
+        public static implicit operator Java.Util.List(Java.Util.AbstractList t) => t.Cast<Java.Util.List>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractList{E}"/> to <see cref="Java.Util.AbstractList"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.AbstractList(Java.Util.AbstractList<E> t) => t.Cast<Java.Util.AbstractList>();
+        public static implicit operator Java.Util.AbstractList(Java.Util.AbstractList t) => t.Cast<Java.Util.AbstractList>();
 
         #endregion
 
@@ -270,8 +270,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Get(int arg0)
         {
             return IExecuteWithSignature<E>("get", "(I)Ljava/lang/Object;", arg0);
@@ -279,19 +279,19 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#addAll(int,java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1ExtendsE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public bool AddAll(int arg0, Java.Util.Collection arg1) where Arg1ExtendsE : E
         {
             return IExecuteWithSignature<bool>("addAll", "(ILjava/util/Collection;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Remove(int arg0)
         {
             return IExecuteWithSignature<E>("remove", "(I)Ljava/lang/Object;", arg0);
@@ -299,9 +299,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#set(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Set(int arg0, E arg1)
         {
             return IExecuteWithSignature<E>("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -309,8 +309,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#indexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int IndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
@@ -318,8 +318,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int LastIndexOf(object arg0)
         {
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
@@ -327,35 +327,35 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#subList(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<E> SubListMethod(int arg0, int arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List SubListMethod(int arg0, int arg1)
         {
-            return IExecuteWithSignature<Java.Util.List<E>>("subList", "(II)Ljava/util/List;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List>("subList", "(II)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
-        public Java.Util.ListIterator<E> ListIterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.ListIterator ListIterator()
         {
-            return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "()Ljava/util/ListIterator;");
+            return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "()Ljava/util/ListIterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.ListIterator"/></returns>
-        public Java.Util.ListIterator<E> ListIterator(int arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.ListIterator ListIterator(int arg0)
         {
-            return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
+            return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#add(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Add(int arg0, E arg1)
         {
             IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);

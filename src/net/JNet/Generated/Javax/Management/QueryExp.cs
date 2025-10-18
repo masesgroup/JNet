@@ -78,17 +78,17 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryExp.html#apply(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Management.BadStringOperationException"/>
-        /// <exception cref="Javax.Management.BadBinaryOpValueExpException"/>
-        /// <exception cref="Javax.Management.BadAttributeValueExpException"/>
-        /// <exception cref="Javax.Management.InvalidApplicationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         bool Apply(Javax.Management.ObjectName arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryExp.html#setMBeanServer(javax.management.MBeanServer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetMBeanServer(Javax.Management.MBeanServer arg0);
 
         #endregion
@@ -124,12 +124,12 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryExp.html#apply(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Management.BadStringOperationException"/>
-        /// <exception cref="Javax.Management.BadBinaryOpValueExpException"/>
-        /// <exception cref="Javax.Management.BadAttributeValueExpException"/>
-        /// <exception cref="Javax.Management.InvalidApplicationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public bool Apply(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<bool>("apply", "(Ljavax/management/ObjectName;)Z", arg0);
@@ -137,7 +137,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryExp.html#setMBeanServer(javax.management.MBeanServer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMBeanServer(Javax.Management.MBeanServer arg0)
         {
             IExecuteWithSignature("setMBeanServer", "(Ljavax/management/MBeanServer;)V", arg0);

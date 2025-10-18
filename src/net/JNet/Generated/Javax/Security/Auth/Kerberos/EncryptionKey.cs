@@ -73,8 +73,8 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public EncryptionKey(byte[] arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -126,7 +126,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#isDestroyed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDestroyed()
         {
             return IExecuteWithSignature<bool>("isDestroyed", "()Z");
@@ -134,7 +134,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#destroy()"/>
         /// </summary>
-        /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
+        /// <exception cref=""/>
         public void Destroy()
         {
             IExecuteWithSignature("destroy", "()V");

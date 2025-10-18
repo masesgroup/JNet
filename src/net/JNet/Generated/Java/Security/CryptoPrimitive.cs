@@ -29,7 +29,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html"/>
     /// </summary>
-    public partial class CryptoPrimitive : Java.Lang.Enum<Java.Security.CryptoPrimitive>
+    public partial class CryptoPrimitive : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.security.CryptoPrimitive";
         /// <summary>
@@ -145,8 +145,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.CryptoPrimitive"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Security.CryptoPrimitive ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/CryptoPrimitive;", arg0);
@@ -154,7 +154,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Security.CryptoPrimitive"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Security.CryptoPrimitive[] Values()
         {
             return SExecuteWithSignatureArray<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "values", "()[Ljava/security/CryptoPrimitive;");

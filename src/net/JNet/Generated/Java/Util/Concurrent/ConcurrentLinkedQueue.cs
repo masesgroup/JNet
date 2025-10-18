@@ -66,12 +66,12 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentLinkedQueue<E> declaration
+    #region ConcurrentLinkedQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class ConcurrentLinkedQueue<E> : Java.Util.AbstractQueue<E>
+    public partial class ConcurrentLinkedQueue : Java.Util.AbstractQueue
     {
         const string _bridgeClassName = "java.util.concurrent.ConcurrentLinkedQueue";
         /// <summary>
@@ -115,7 +115,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ConcurrentLinkedQueue(Java.Util.Collection arg0)
             : base(arg0)
         {
@@ -125,7 +125,7 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ConcurrentLinkedQueue"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ConcurrentLinkedQueue t) => t.Cast<Java.Io.Serializable>();
 
@@ -151,15 +151,15 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentLinkedQueue<E> implementation
-    public partial class ConcurrentLinkedQueue<E>
+    #region ConcurrentLinkedQueue implementation
+    public partial class ConcurrentLinkedQueue
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public ConcurrentLinkedQueue(Java.Util.Collection<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public ConcurrentLinkedQueue(Java.Util.Collection arg0)
             : base(arg0)
         {
         }
@@ -168,13 +168,13 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ConcurrentLinkedQueue{E}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ConcurrentLinkedQueue<E> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ConcurrentLinkedQueue t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ConcurrentLinkedQueue{E}"/> to <see cref="Java.Util.Concurrent.ConcurrentLinkedQueue"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.ConcurrentLinkedQueue(Java.Util.Concurrent.ConcurrentLinkedQueue<E> t) => t.Cast<Java.Util.Concurrent.ConcurrentLinkedQueue>();
+        public static implicit operator Java.Util.Concurrent.ConcurrentLinkedQueue(Java.Util.Concurrent.ConcurrentLinkedQueue t) => t.Cast<Java.Util.Concurrent.ConcurrentLinkedQueue>();
 
         #endregion
 

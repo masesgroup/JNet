@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DateFormatter.html#%3Cinit%3E(java.text.DateFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.DateFormat"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DateFormatter(Java.Text.DateFormat arg0)
             : base(arg0)
         {
@@ -97,7 +97,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DateFormatter.html#setFormat(java.text.DateFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.DateFormat"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetFormat(Java.Text.DateFormat arg0)
         {
             IExecuteWithSignature("setFormat", "(Ljava/text/DateFormat;)V", arg0);

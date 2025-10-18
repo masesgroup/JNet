@@ -89,7 +89,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalRadioButtonUI.html#installDefaults(javax.swing.AbstractButton)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void InstallDefaults(Javax.Swing.AbstractButton arg0)
         {
             IExecuteWithSignature("installDefaults", "(Ljavax/swing/AbstractButton;)V", arg0);

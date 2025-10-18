@@ -114,8 +114,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#%3Cinit%3E(javax.swing.JComboBox)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
-        public BasicComboPopup(Javax.Swing.JComboBox<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public BasicComboPopup(Javax.Swing.JComboBox arg0)
             : base(arg0)
         {
         }
@@ -124,7 +124,7 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboPopup"/> to <see cref="Javax.Swing.Plaf.Basic.ComboPopup"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Plaf.Basic.ComboPopup(Javax.Swing.Plaf.Basic.BasicComboPopup t) => t.Cast<Javax.Swing.Plaf.Basic.ComboPopup>();
 
@@ -149,9 +149,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getList()"/> 
         /// </summary>
-        public Javax.Swing.JList<object> List
+        public Javax.Swing.JList List
         {
-            get { return IExecuteWithSignature<Javax.Swing.JList<object>>("getList", "()Ljavax/swing/JList;"); }
+            get { return IExecuteWithSignature<Javax.Swing.JList>("getList", "()Ljavax/swing/JList;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getMouseListener()"/> 
@@ -185,7 +185,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicComboPopup)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicComboPopup"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public ListDataHandler(Javax.Swing.Plaf.Basic.BasicComboPopup arg0)
                 : base(arg0)
             {
@@ -195,7 +195,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboPopup.ListDataHandler"/> to <see cref="Javax.Swing.Event.ListDataListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicComboPopup.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
 
@@ -213,7 +213,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecuteWithSignature("contentsChanged", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
@@ -221,7 +221,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecuteWithSignature("intervalAdded", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
@@ -229,7 +229,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecuteWithSignature("intervalRemoved", "(Ljavax/swing/event/ListDataEvent;)V", arg0);

@@ -98,11 +98,11 @@ namespace Javax.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ServerSocketFactory.html#createServerSocket(int,int,java.net.InetAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
-        /// <returns><see cref="Java.Net.ServerSocket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0, int arg1, Java.Net.InetAddress arg2)
         {
             return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(IILjava/net/InetAddress;)Ljava/net/ServerSocket;", arg0, arg1, arg2);
@@ -110,10 +110,10 @@ namespace Javax.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ServerSocketFactory.html#createServerSocket(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Net.ServerSocket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(II)Ljava/net/ServerSocket;", arg0, arg1);
@@ -121,9 +121,9 @@ namespace Javax.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ServerSocketFactory.html#createServerSocket(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Net.ServerSocket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0)
         {
             return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(I)Ljava/net/ServerSocket;", arg0);
@@ -131,8 +131,8 @@ namespace Javax.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ServerSocketFactory.html#createServerSocket()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.ServerSocket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.ServerSocket CreateServerSocket()
         {
             return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "()Ljava/net/ServerSocket;");

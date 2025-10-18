@@ -75,7 +75,7 @@ namespace Java.Time.Chrono
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Time.Chrono.IsoChronology"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Chrono.IsoChronology t) => t.Cast<Java.Io.Serializable>();
 

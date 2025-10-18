@@ -77,7 +77,7 @@ namespace Java.Nio
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.IntBuffer"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.IntBuffer t) => t.Cast<Java.Lang.Comparable>();
 
@@ -91,8 +91,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#allocate(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.IntBuffer Allocate(int arg0)
         {
             return SExecuteWithSignature<Java.Nio.IntBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/IntBuffer;", arg0);
@@ -100,10 +100,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#wrap(int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.IntBuffer Wrap(int[] arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Nio.IntBuffer>(LocalBridgeClazz, "wrap", "([III)Ljava/nio/IntBuffer;", arg0, arg1, arg2);
@@ -111,8 +111,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#wrap(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.IntBuffer Wrap(int[] arg0)
         {
             return SExecuteWithSignature<Java.Nio.IntBuffer>(LocalBridgeClazz, "wrap", "([I)Ljava/nio/IntBuffer;", new object[] { arg0 });
@@ -124,7 +124,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Get()
         {
             return IExecuteWithSignature<int>("get", "()I");
@@ -132,8 +132,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Get(int arg0)
         {
             return IExecuteWithSignature<int>("get", "(I)I", arg0);
@@ -141,7 +141,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#order()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ByteOrder Order()
         {
             return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
@@ -149,7 +149,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.IntBuffer AsReadOnlyBuffer()
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("asReadOnlyBuffer", "()Ljava/nio/IntBuffer;");
@@ -157,7 +157,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compact()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.IntBuffer Compact()
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("compact", "()Ljava/nio/IntBuffer;");
@@ -165,9 +165,9 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.IntBuffer Put(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "(II)Ljava/nio/IntBuffer;", arg0, arg1);
@@ -175,8 +175,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.IntBuffer Put(int arg0)
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "(I)Ljava/nio/IntBuffer;", arg0);
@@ -184,8 +184,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.IntBuffer Put(int[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "([I)Ljava/nio/IntBuffer;", new object[] { arg0 });
@@ -193,8 +193,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -202,8 +202,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compareTo(java.nio.IntBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.IntBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Nio.IntBuffer arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/IntBuffer;)I", arg0);
@@ -211,8 +211,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#mismatch(java.nio.IntBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.IntBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Mismatch(Java.Nio.IntBuffer arg0)
         {
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/IntBuffer;)I", arg0);
@@ -220,10 +220,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get(int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.IntBuffer Get(int[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("get", "([III)Ljava/nio/IntBuffer;", arg0, arg1, arg2);
@@ -231,8 +231,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.IntBuffer Get(int[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("get", "([I)Ljava/nio/IntBuffer;", new object[] { arg0 });
@@ -240,10 +240,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.IntBuffer Put(int[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "([III)Ljava/nio/IntBuffer;", arg0, arg1, arg2);
@@ -251,8 +251,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(java.nio.IntBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.IntBuffer"/></param>
-        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.IntBuffer Put(Java.Nio.IntBuffer arg0)
         {
             return IExecuteWithSignature<Java.Nio.IntBuffer>("put", "(Ljava/nio/IntBuffer;)Ljava/nio/IntBuffer;", arg0);

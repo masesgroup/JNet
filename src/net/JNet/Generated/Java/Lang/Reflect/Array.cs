@@ -85,11 +85,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#newInstance(java.lang.Class,int...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.NegativeArraySizeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static object NewInstance(Java.Lang.Class arg0, params int[] arg1)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "newInstance", "(Ljava/lang/Class;[I)Ljava/lang/Object;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -97,10 +97,10 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#newInstance(java.lang.Class,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.NegativeArraySizeException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static object NewInstance(Java.Lang.Class arg0, int arg1)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "newInstance", "(Ljava/lang/Class;I)Ljava/lang/Object;", arg0, arg1);
@@ -108,11 +108,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getBoolean(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static bool GetBoolean(object arg0, int arg1)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "getBoolean", "(Ljava/lang/Object;I)Z", arg0, arg1);
@@ -120,11 +120,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getByte(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static byte GetByte(object arg0, int arg1)
         {
             return SExecuteWithSignature<byte>(LocalBridgeClazz, "getByte", "(Ljava/lang/Object;I)B", arg0, arg1);
@@ -132,11 +132,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getChar(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static char GetChar(object arg0, int arg1)
         {
             return SExecuteWithSignature<char>(LocalBridgeClazz, "getChar", "(Ljava/lang/Object;I)C", arg0, arg1);
@@ -144,11 +144,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getDouble(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="double"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static double GetDouble(object arg0, int arg1)
         {
             return SExecuteWithSignature<double>(LocalBridgeClazz, "getDouble", "(Ljava/lang/Object;I)D", arg0, arg1);
@@ -156,11 +156,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getFloat(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="float"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static float GetFloat(object arg0, int arg1)
         {
             return SExecuteWithSignature<float>(LocalBridgeClazz, "getFloat", "(Ljava/lang/Object;I)F", arg0, arg1);
@@ -168,11 +168,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getInt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static int GetInt(object arg0, int arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getInt", "(Ljava/lang/Object;I)I", arg0, arg1);
@@ -180,9 +180,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getLength(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static int GetLength(object arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getLength", "(Ljava/lang/Object;)I", arg0);
@@ -190,11 +190,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#get(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static object Get(object arg0, int arg1)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "get", "(Ljava/lang/Object;I)Ljava/lang/Object;", arg0, arg1);
@@ -202,11 +202,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getLong(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static long GetLong(object arg0, int arg1)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getLong", "(Ljava/lang/Object;I)J", arg0, arg1);
@@ -214,11 +214,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getShort(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="short"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static short GetShort(object arg0, int arg1)
         {
             return SExecuteWithSignature<short>(LocalBridgeClazz, "getShort", "(Ljava/lang/Object;I)S", arg0, arg1);
@@ -226,11 +226,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#set(java.lang.Object,int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void Set(object arg0, int arg1, object arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "set", "(Ljava/lang/Object;ILjava/lang/Object;)V", arg0, arg1, arg2);
@@ -238,11 +238,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setBoolean(java.lang.Object,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void SetBoolean(object arg0, int arg1, bool arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setBoolean", "(Ljava/lang/Object;IZ)V", arg0, arg1, arg2);
@@ -250,11 +250,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setByte(java.lang.Object,int,byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void SetByte(object arg0, int arg1, byte arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setByte", "(Ljava/lang/Object;IB)V", arg0, arg1, arg2);
@@ -262,11 +262,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setChar(java.lang.Object,int,char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="char"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void SetChar(object arg0, int arg1, char arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setChar", "(Ljava/lang/Object;IC)V", arg0, arg1, arg2);
@@ -274,11 +274,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setDouble(java.lang.Object,int,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void SetDouble(object arg0, int arg1, double arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDouble", "(Ljava/lang/Object;ID)V", arg0, arg1, arg2);
@@ -286,11 +286,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setFloat(java.lang.Object,int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void SetFloat(object arg0, int arg1, float arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setFloat", "(Ljava/lang/Object;IF)V", arg0, arg1, arg2);
@@ -298,11 +298,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setInt(java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void SetInt(object arg0, int arg1, int arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setInt", "(Ljava/lang/Object;II)V", arg0, arg1, arg2);
@@ -310,11 +310,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setLong(java.lang.Object,int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void SetLong(object arg0, int arg1, long arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setLong", "(Ljava/lang/Object;IJ)V", arg0, arg1, arg2);
@@ -322,11 +322,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setShort(java.lang.Object,int,short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="short"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static void SetShort(object arg0, int arg1, short arg2)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setShort", "(Ljava/lang/Object;IS)V", arg0, arg1, arg2);

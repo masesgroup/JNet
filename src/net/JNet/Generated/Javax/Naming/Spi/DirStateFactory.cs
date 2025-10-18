@@ -119,14 +119,14 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.html#getStateToBind(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.DirStateFactory.Result"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3, Javax.Naming.Directory.Attributes arg4);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<, > arg3, Javax.Naming.Directory.Attributes arg4);
 
         #endregion
 
@@ -161,14 +161,14 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.html#getStateToBind(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.DirStateFactory.Result"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3, Javax.Naming.Directory.Attributes arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<, > arg3, Javax.Naming.Directory.Attributes arg4)
         {
             return IExecuteWithSignature<Javax.Naming.Spi.DirStateFactory.Result>("getStateToBind", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;Ljavax/naming/directory/Attributes;)Ljavax/naming/spi/DirStateFactory$Result;", arg0, arg1, arg2, arg3, arg4);
         }
@@ -183,8 +183,8 @@ namespace Javax.Naming.Spi
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html#%3Cinit%3E(java.lang.Object,javax.naming.directory.Attributes)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="Javax.Naming.Directory.Attributes"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public Result(object arg0, Javax.Naming.Directory.Attributes arg1)
                 : base(arg0, arg1)
             {

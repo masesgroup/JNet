@@ -29,7 +29,7 @@ namespace Java.Math
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html"/>
     /// </summary>
-    public partial class RoundingMode : Java.Lang.Enum<Java.Math.RoundingMode>
+    public partial class RoundingMode : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.math.RoundingMode";
         /// <summary>
@@ -133,8 +133,8 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#valueOf(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Math.RoundingMode"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Math.RoundingMode ValueOf(int arg0)
         {
             return SExecuteWithSignature<Java.Math.RoundingMode>(LocalBridgeClazz, "valueOf", "(I)Ljava/math/RoundingMode;", arg0);
@@ -142,8 +142,8 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Math.RoundingMode"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Math.RoundingMode ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Math.RoundingMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/math/RoundingMode;", arg0);
@@ -151,7 +151,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Math.RoundingMode"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Math.RoundingMode[] Values()
         {
             return SExecuteWithSignatureArray<Java.Math.RoundingMode>(LocalBridgeClazz, "values", "()[Ljava/math/RoundingMode;");

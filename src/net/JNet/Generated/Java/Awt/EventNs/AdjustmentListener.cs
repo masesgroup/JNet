@@ -108,7 +108,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AdjustmentValueChanged(Java.Awt.EventNs.AdjustmentEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void AdjustmentValueChanged(Java.Awt.EventNs.AdjustmentEvent arg0)
         {
             hasOverrideAdjustmentValueChanged = false;
@@ -207,7 +207,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void AdjustmentValueChanged(Java.Awt.EventNs.AdjustmentEvent arg0)
         {
             IExecuteWithSignature("adjustmentValueChanged", "(Ljava/awt/event/AdjustmentEvent;)V", arg0);

@@ -226,7 +226,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngleStart(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetAngleStart(double arg0)
         {
             IExecuteWithSignature("setAngleStart", "(D)V", arg0);
@@ -234,13 +234,13 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(double,double,double,double,double,double,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <param name="arg5"><see cref="double"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void SetArc(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, int arg6)
         {
             IExecuteWithSignature("setArc", "(DDDDDDI)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -248,8 +248,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#containsAngle(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsAngle(double arg0)
         {
             return IExecuteWithSignature<bool>("containsAngle", "(D)Z", arg0);
@@ -257,10 +257,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngles(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetAngles(double arg0, double arg1, double arg2, double arg3)
         {
             IExecuteWithSignature("setAngles", "(DDDD)V", arg0, arg1, arg2, arg3);
@@ -268,8 +268,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngles(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetAngles(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             IExecuteWithSignature("setAngles", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)V", arg0, arg1);
@@ -277,7 +277,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngleStart(java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetAngleStart(Java.Awt.Geom.Point2D arg0)
         {
             IExecuteWithSignature("setAngleStart", "(Ljava/awt/geom/Point2D;)V", arg0);
@@ -285,7 +285,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Arc2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Arc2D"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetArc(Java.Awt.Geom.Arc2D arg0)
         {
             IExecuteWithSignature("setArc", "(Ljava/awt/geom/Arc2D;)V", arg0);
@@ -293,11 +293,11 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Point2D,java.awt.geom.Dimension2D,double,double,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Dimension2D"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void SetArc(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Dimension2D arg1, double arg2, double arg3, int arg4)
         {
             IExecuteWithSignature("setArc", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Dimension2D;DDI)V", arg0, arg1, arg2, arg3, arg4);
@@ -305,10 +305,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Rectangle2D,double,double,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetArc(Java.Awt.Geom.Rectangle2D arg0, double arg1, double arg2, int arg3)
         {
             IExecuteWithSignature("setArc", "(Ljava/awt/geom/Rectangle2D;DDI)V", arg0, arg1, arg2, arg3);
@@ -316,12 +316,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArcByCenter(double,double,double,double,double,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void SetArcByCenter(double arg0, double arg1, double arg2, double arg3, double arg4, int arg5)
         {
             IExecuteWithSignature("setArcByCenter", "(DDDDDI)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -329,10 +329,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArcByTangent(java.awt.geom.Point2D,java.awt.geom.Point2D,java.awt.geom.Point2D,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetArcByTangent(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, Java.Awt.Geom.Point2D arg2, double arg3)
         {
             IExecuteWithSignature("setArcByTangent", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;D)V", arg0, arg1, arg2, arg3);
@@ -348,13 +348,13 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#%3Cinit%3E(double,double,double,double,double,double,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="double"/></param>
-            /// <param name="arg1"><see cref="double"/></param>
-            /// <param name="arg2"><see cref="double"/></param>
-            /// <param name="arg3"><see cref="double"/></param>
-            /// <param name="arg4"><see cref="double"/></param>
-            /// <param name="arg5"><see cref="double"/></param>
-            /// <param name="arg6"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <param name="arg5"><see cref=""/></param>
+            /// <param name="arg6"><see cref=""/></param>
             public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, int arg6)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
             {
@@ -362,7 +362,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#%3Cinit%3E(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public Double(int arg0)
                 : base(arg0)
             {
@@ -370,10 +370,10 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#%3Cinit%3E(java.awt.geom.Rectangle2D,double,double,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-            /// <param name="arg1"><see cref="double"/></param>
-            /// <param name="arg2"><see cref="double"/></param>
-            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public Double(Java.Awt.Geom.Rectangle2D arg0, double arg1, double arg2, int arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -383,7 +383,7 @@ namespace Java.Awt.Geom
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Awt.Geom.Arc2D.Double"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Arc2D.Double t) => t.Cast<Java.Io.Serializable>();
 
@@ -440,13 +440,13 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#%3Cinit%3E(float,float,float,float,float,float,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="float"/></param>
-            /// <param name="arg1"><see cref="float"/></param>
-            /// <param name="arg2"><see cref="float"/></param>
-            /// <param name="arg3"><see cref="float"/></param>
-            /// <param name="arg4"><see cref="float"/></param>
-            /// <param name="arg5"><see cref="float"/></param>
-            /// <param name="arg6"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
+            /// <param name="arg4"><see cref=""/></param>
+            /// <param name="arg5"><see cref=""/></param>
+            /// <param name="arg6"><see cref=""/></param>
             public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, int arg6)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
             {
@@ -454,7 +454,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#%3Cinit%3E(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public Float(int arg0)
                 : base(arg0)
             {
@@ -462,10 +462,10 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#%3Cinit%3E(java.awt.geom.Rectangle2D,float,float,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-            /// <param name="arg1"><see cref="float"/></param>
-            /// <param name="arg2"><see cref="float"/></param>
-            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public Float(Java.Awt.Geom.Rectangle2D arg0, float arg1, float arg2, int arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -475,7 +475,7 @@ namespace Java.Awt.Geom
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Awt.Geom.Arc2D.Float"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Arc2D.Float t) => t.Cast<Java.Io.Serializable>();
 

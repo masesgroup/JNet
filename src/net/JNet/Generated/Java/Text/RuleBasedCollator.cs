@@ -73,8 +73,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Text.ParseException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public RuleBasedCollator(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -105,8 +105,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Text.CollationElementIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.CollationElementIterator GetCollationElementIterator(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Text.CollationElementIterator>("getCollationElementIterator", "(Ljava/lang/String;)Ljava/text/CollationElementIterator;", arg0);
@@ -114,8 +114,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.text.CharacterIterator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
-        /// <returns><see cref="Java.Text.CollationElementIterator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.CollationElementIterator GetCollationElementIterator(Java.Text.CharacterIterator arg0)
         {
             return IExecuteWithSignature<Java.Text.CollationElementIterator>("getCollationElementIterator", "(Ljava/text/CharacterIterator;)Ljava/text/CollationElementIterator;", arg0);

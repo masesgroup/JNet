@@ -82,11 +82,11 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getEntities()"/> 
         /// </summary>
-        Java.Util.List<Javax.Xml.Stream.Events.EntityDeclaration> Entities { get; }
+        Java.Util.List Entities { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getNotations()"/> 
         /// </summary>
-        Java.Util.List<Javax.Xml.Stream.Events.NotationDeclaration> Notations { get; }
+        Java.Util.List Notations { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getProcessedDTD()"/> 
         /// </summary>
@@ -132,16 +132,16 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getEntities()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Xml.Stream.Events.EntityDeclaration> Entities
+        public Java.Util.List Entities
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Stream.Events.EntityDeclaration>>("getEntities", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getEntities", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getNotations()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Xml.Stream.Events.NotationDeclaration> Notations
+        public Java.Util.List Notations
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Stream.Events.NotationDeclaration>>("getNotations", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getNotations", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getProcessedDTD()"/> 

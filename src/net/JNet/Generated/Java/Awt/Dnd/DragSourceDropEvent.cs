@@ -73,11 +73,11 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#%3Cinit%3E(java.awt.dnd.DragSourceContext,int,boolean,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -85,9 +85,9 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#%3Cinit%3E(java.awt.dnd.DragSourceContext,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -95,7 +95,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#%3Cinit%3E(java.awt.dnd.DragSourceContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0)
             : base(arg0)
         {

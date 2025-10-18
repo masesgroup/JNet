@@ -110,10 +110,10 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Beans.BeanInfo"/></returns>
-        /// <exception cref="Java.Beans.IntrospectionException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", "(Ljava/lang/Class;I)Ljava/beans/BeanInfo;", arg0, arg1);
@@ -121,11 +121,11 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class,java.lang.Class,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Beans.BeanInfo"/></returns>
-        /// <exception cref="Java.Beans.IntrospectionException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0, Java.Lang.Class arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", "(Ljava/lang/Class;Ljava/lang/Class;I)Ljava/beans/BeanInfo;", arg0, arg1, arg2);
@@ -133,10 +133,10 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Beans.BeanInfo"/></returns>
-        /// <exception cref="Java.Beans.IntrospectionException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0, Java.Lang.Class arg1)
         {
             return SExecuteWithSignature<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", "(Ljava/lang/Class;Ljava/lang/Class;)Ljava/beans/BeanInfo;", arg0, arg1);
@@ -144,9 +144,9 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Beans.BeanInfo"/></returns>
-        /// <exception cref="Java.Beans.IntrospectionException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0)
         {
             return SExecuteWithSignature<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", "(Ljava/lang/Class;)Ljava/beans/BeanInfo;", arg0);
@@ -154,8 +154,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#decapitalize(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Decapitalize(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "decapitalize", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -170,7 +170,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#flushFromCaches(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void FlushFromCaches(Java.Lang.Class arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "flushFromCaches", "(Ljava/lang/Class;)V", arg0);

@@ -73,7 +73,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObjectInvocationHandler.html#%3Cinit%3E(java.rmi.server.RemoteRef)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public RemoteObjectInvocationHandler(Java.Rmi.Server.RemoteRef arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Java.Rmi.Server
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Rmi.Server.RemoteObjectInvocationHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.InvocationHandler(Java.Rmi.Server.RemoteObjectInvocationHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
 
@@ -101,11 +101,11 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObjectInvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Throwable"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {
             return IExecuteWithSignature("invoke", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);

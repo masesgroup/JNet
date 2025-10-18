@@ -98,15 +98,15 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Reflect.IMember"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T : Java.Lang.Reflect.IMember, new();
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        T ReflectAs(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsVarArgs();
 
         #endregion
@@ -192,8 +192,8 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#referenceKindToString(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ReferenceKindToString(int arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "referenceKindToString", "(I)Ljava/lang/String;", arg0);
@@ -201,11 +201,11 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#toString(int,java.lang.Class,java.lang.String,java.lang.invoke.MethodType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodType"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String ToString(int arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.Invoke.MethodType arg3)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
@@ -252,18 +252,18 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Reflect.IMember"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T : Java.Lang.Reflect.IMember, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public T ReflectAs(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1)
         {
             return IExecute<T>("reflectAs", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsVarArgs()
         {
             return IExecuteWithSignature<bool>("isVarArgs", "()Z");

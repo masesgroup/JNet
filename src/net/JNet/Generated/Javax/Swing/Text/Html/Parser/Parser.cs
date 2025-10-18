@@ -73,7 +73,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#%3Cinit%3E(javax.swing.text.html.parser.DTD)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.Parser.DTD"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Parser(Javax.Swing.Text.Html.Parser.DTD arg0)
             : base(arg0)
         {
@@ -97,8 +97,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parseDTDMarkup()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String ParseDTDMarkup()
         {
             return IExecuteWithSignature<Java.Lang.String>("parseDTDMarkup", "()Ljava/lang/String;");
@@ -106,8 +106,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parse(java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Parse(Java.Io.Reader arg0)
         {
             IExecuteWithSignature("parse", "(Ljava/io/Reader;)V", arg0);

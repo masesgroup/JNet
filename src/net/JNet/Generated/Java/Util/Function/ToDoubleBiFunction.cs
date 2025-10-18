@@ -98,13 +98,13 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunction<T, U> declaration
+    #region ToDoubleBiFunction<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
-    public partial class ToDoubleBiFunction<T, U> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ToDoubleBiFunction<, > : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -133,11 +133,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunctionDirect<T, U> declaration
+    #region ToDoubleBiFunctionDirect<, > declaration
     /// <summary>
     /// Direct override of <see cref="ToDoubleBiFunction"/> or its generic type if there is one
     /// </summary>
-    public partial class ToDoubleBiFunctionDirect<T, U> : ToDoubleBiFunction<T, U>
+    public partial class ToDoubleBiFunctionDirect<, > : ToDoubleBiFunction<, >
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -220,9 +220,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html#applyAsDouble(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual double ApplyAsDouble(object arg0, object arg1)
         {
             hasOverrideApplyAsDouble = false; return default;
@@ -261,9 +261,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html#applyAsDouble(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override double ApplyAsDouble(object arg0, object arg1)
         {
             return IExecuteWithSignature<double>("applyAsDouble", "(Ljava/lang/Object;Ljava/lang/Object;)D", arg0, arg1);
@@ -279,19 +279,19 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IToDoubleBiFunction<T, U>
+    #region IToDoubleBiFunction<, >
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ToDoubleBiFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html"/>
     /// </summary>
-    public partial interface IToDoubleBiFunction<T, U>
+    public partial interface IToDoubleBiFunction<, >
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html#applyAsDouble(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         double ApplyAsDouble(T arg0, U arg1);
 
         #endregion
@@ -304,8 +304,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunction<T, U> implementation
-    public partial class ToDoubleBiFunction<T, U> : Java.Util.Function.IToDoubleBiFunction<T, U>
+    #region ToDoubleBiFunction<, > implementation
+    public partial class ToDoubleBiFunction<, > : Java.Util.Function.IToDoubleBiFunction<, >
     {
         #region Constructors
 
@@ -351,9 +351,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html#applyAsDouble(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual double ApplyAsDouble(T arg0, U arg1)
         {
             hasOverrideApplyAsDouble = false; return default;
@@ -369,8 +369,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToDoubleBiFunctionDirect<T, U> implementation
-    public partial class ToDoubleBiFunctionDirect<T, U> : Java.Util.Function.IToDoubleBiFunction<T, U>
+    #region ToDoubleBiFunctionDirect<, > implementation
+    public partial class ToDoubleBiFunctionDirect<, > : Java.Util.Function.IToDoubleBiFunction<, >
     {
         #region Constructors
 
@@ -392,9 +392,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html#applyAsDouble(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override double ApplyAsDouble(T arg0, U arg1)
         {
             return IExecuteWithSignature<double>("applyAsDouble", "(Ljava/lang/Object;Ljava/lang/Object;)D", arg0, arg1);

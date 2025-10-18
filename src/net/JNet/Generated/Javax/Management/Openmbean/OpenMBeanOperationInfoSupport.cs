@@ -73,25 +73,25 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.openmbean.OpenType,int,javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/></param>
-        /// <param name="arg3"><see cref="Javax.Management.Openmbean.OpenType"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Javax.Management.Descriptor"/></param>
-        public OpenMBeanOperationInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Openmbean.OpenType<object> arg3, int arg4, Javax.Management.Descriptor arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        public OpenMBeanOperationInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Openmbean.OpenType arg3, int arg4, Javax.Management.Descriptor arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.openmbean.OpenType,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/></param>
-        /// <param name="arg3"><see cref="Javax.Management.Openmbean.OpenType"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        public OpenMBeanOperationInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Openmbean.OpenType<object> arg3, int arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        public OpenMBeanOperationInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Openmbean.OpenType arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
@@ -100,7 +100,7 @@ namespace Javax.Management.Openmbean
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Openmbean.OpenMBeanOperationInfoSupport"/> to <see cref="Javax.Management.Openmbean.OpenMBeanOperationInfo"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Openmbean.OpenMBeanOperationInfo(Javax.Management.Openmbean.OpenMBeanOperationInfoSupport t) => t.Cast<Javax.Management.Openmbean.OpenMBeanOperationInfo>();
 
@@ -118,9 +118,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfoSupport.html#getReturnOpenType()"/> 
         /// </summary>
-        public Javax.Management.Openmbean.OpenType<object> ReturnOpenType
+        public Javax.Management.Openmbean.OpenType ReturnOpenType
         {
-            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType<object>>("getReturnOpenType", "()Ljavax/management/openmbean/OpenType;"); }
+            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType>("getReturnOpenType", "()Ljavax/management/openmbean/OpenType;"); }
         }
 
         #endregion

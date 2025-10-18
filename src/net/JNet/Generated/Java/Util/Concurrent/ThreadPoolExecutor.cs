@@ -237,52 +237,52 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
-        /// <param name="arg5"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
-        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
-        /// <param name="arg5"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
-        /// <param name="arg6"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
-        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
-        /// <param name="arg5"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
-        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4, Java.Util.Concurrent.ThreadFactory arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
-        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
@@ -347,9 +347,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getQueue()"/> 
         /// </summary>
-        public Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> Queue
+        public Java.Util.Concurrent.BlockingQueue Queue
         {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable>>("getQueue", "()Ljava/util/concurrent/BlockingQueue;"); }
+            get { return IExecuteWithSignature<Java.Util.Concurrent.BlockingQueue>("getQueue", "()Ljava/util/concurrent/BlockingQueue;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getRejectedExecutionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)"/>
@@ -375,7 +375,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool AllowsCoreThreadTimeOut()
         {
             return IExecuteWithSignature<bool>("allowsCoreThreadTimeOut", "()Z");
@@ -383,7 +383,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsTerminating()
         {
             return IExecuteWithSignature<bool>("isTerminating", "()Z");
@@ -391,7 +391,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool PrestartCoreThread()
         {
             return IExecuteWithSignature<bool>("prestartCoreThread", "()Z");
@@ -399,8 +399,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#remove(java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(Java.Lang.Runnable arg0)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Runnable;)Z", arg0);
@@ -408,7 +408,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int PrestartAllCoreThreads()
         {
             return IExecuteWithSignature<int>("prestartAllCoreThreads", "()I");
@@ -416,8 +416,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getKeepAliveTime(java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long GetKeepAliveTime(Java.Util.Concurrent.TimeUnit arg0)
         {
             return IExecuteWithSignature<long>("getKeepAliveTime", "(Ljava/util/concurrent/TimeUnit;)J", arg0);
@@ -425,7 +425,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowCoreThreadTimeOut(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AllowCoreThreadTimeOut(bool arg0)
         {
             IExecuteWithSignature("allowCoreThreadTimeOut", "(Z)V", arg0);
@@ -440,8 +440,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setKeepAliveTime(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetKeepAliveTime(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             IExecuteWithSignature("setKeepAliveTime", "(JLjava/util/concurrent/TimeUnit;)V", arg0, arg1);
@@ -473,8 +473,8 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
                 IExecuteWithSignature("rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V", arg0, arg1);
@@ -513,8 +513,8 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
                 IExecuteWithSignature("rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V", arg0, arg1);
@@ -553,8 +553,8 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
                 IExecuteWithSignature("rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V", arg0, arg1);
@@ -593,8 +593,8 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
                 IExecuteWithSignature("rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V", arg0, arg1);

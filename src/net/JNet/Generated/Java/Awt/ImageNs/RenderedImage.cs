@@ -122,7 +122,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getSources()"/> 
         /// </summary>
-        Java.Util.Vector<Java.Awt.ImageNs.RenderedImage> Sources { get; }
+        Java.Util.Vector Sources { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileGridXOffset()"/> 
         /// </summary>
@@ -146,27 +146,27 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getData(java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.ImageNs.Raster GetData(Java.Awt.Rectangle arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTile(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.ImageNs.Raster GetTile(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#copyData(java.awt.image.WritableRaster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.ImageNs.WritableRaster CopyData(Java.Awt.ImageNs.WritableRaster arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         object GetProperty(Java.Lang.String arg0);
 
         #endregion
@@ -279,9 +279,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getSources()"/> 
         /// </summary>
-        public Java.Util.Vector<Java.Awt.ImageNs.RenderedImage> Sources
+        public Java.Util.Vector Sources
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Java.Awt.ImageNs.RenderedImage>>("getSources", "()Ljava/util/Vector;"); }
+            get { return IExecuteWithSignature<Java.Util.Vector>("getSources", "()Ljava/util/Vector;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileGridXOffset()"/> 
@@ -321,8 +321,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getData(java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Raster GetData(Java.Awt.Rectangle arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getData", "(Ljava/awt/Rectangle;)Ljava/awt/image/Raster;", arg0);
@@ -330,9 +330,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTile(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Raster GetTile(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getTile", "(II)Ljava/awt/image/Raster;", arg0, arg1);
@@ -340,8 +340,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#copyData(java.awt.image.WritableRaster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.WritableRaster CopyData(Java.Awt.ImageNs.WritableRaster arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("copyData", "(Ljava/awt/image/WritableRaster;)Ljava/awt/image/WritableRaster;", arg0);
@@ -349,8 +349,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);

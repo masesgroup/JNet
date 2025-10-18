@@ -75,11 +75,11 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalComboBoxIcon"/> to <see cref="Javax.Swing.Icon"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalComboBoxIcon t) => t.Cast<Javax.Swing.Icon>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalComboBoxIcon"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalComboBoxIcon t) => t.Cast<Java.Io.Serializable>();
 
@@ -111,10 +111,10 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("paintIcon", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);

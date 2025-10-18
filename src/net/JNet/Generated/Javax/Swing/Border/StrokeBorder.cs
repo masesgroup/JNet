@@ -73,8 +73,8 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#%3Cinit%3E(java.awt.BasicStroke,java.awt.Paint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.BasicStroke"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Paint"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public StrokeBorder(Java.Awt.BasicStroke arg0, Java.Awt.Paint arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#%3Cinit%3E(java.awt.BasicStroke)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.BasicStroke"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StrokeBorder(Java.Awt.BasicStroke arg0)
             : base(arg0)
         {

@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperator<T> declaration
+    #region BinaryOperator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class BinaryOperator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class BinaryOperator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperatorDirect<T> declaration
+    #region BinaryOperatorDirect declaration
     /// <summary>
     /// Direct override of <see cref="BinaryOperator"/> or its generic type if there is one
     /// </summary>
-    public partial class BinaryOperatorDirect<T> : BinaryOperator<T>
+    public partial class BinaryOperatorDirect : BinaryOperator
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -191,8 +191,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#maxBy(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.BinaryOperator MaxBy(Java.Util.Comparator arg0)
         {
@@ -201,8 +201,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#minBy(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
         public static Java.Util.Function.BinaryOperator MinBy(Java.Util.Comparator arg0)
         {
@@ -240,9 +240,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual object Apply(object arg0, object arg1)
         {
             hasOverrideApply = false; return default;
@@ -250,8 +250,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.BiFunction AndThenDefault(Java.Util.Function.Function arg0)
         {
@@ -276,8 +276,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
         {
@@ -317,9 +317,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override object Apply(object arg0, object arg1)
         {
             return IExecuteWithSignature("apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -327,8 +327,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect, Java.Util.Function.BiFunction>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
@@ -344,33 +344,33 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IBinaryOperator<T>
+    #region IBinaryOperator
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.BinaryOperator implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html"/>
     /// </summary>
-    public partial interface IBinaryOperator<T>
+    public partial interface IBinaryOperator
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="U"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        R Apply<R, U>(T arg0, U arg1);
+        /// <returns><see cref=""/></returns>
+        R Apply<, >(T arg0, U arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V;
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Function.BiFunction<, , > AndThen<, , , , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V;
 
         #endregion
 
@@ -382,8 +382,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperator<T> implementation
-    public partial class BinaryOperator<T> : Java.Util.Function.IBinaryOperator<T>
+    #region BinaryOperator implementation
+    public partial class BinaryOperator : Java.Util.Function.IBinaryOperator
     {
         #region Constructors
 
@@ -401,24 +401,24 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#maxBy(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
-        public static Java.Util.Function.BinaryOperator<T> MaxBy<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        public static Java.Util.Function.BinaryOperator MaxBy(Java.Util.Comparator arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Function.BinaryOperator<T>>(LocalBridgeClazz, "maxBy", "(Ljava/util/Comparator;)Ljava/util/function/BinaryOperator;", arg0);
+            return SExecuteWithSignature<Java.Util.Function.BinaryOperator>(LocalBridgeClazz, "maxBy", "(Ljava/util/Comparator;)Ljava/util/function/BinaryOperator;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#minBy(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
-        public static Java.Util.Function.BinaryOperator<T> MinBy<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        public static Java.Util.Function.BinaryOperator MinBy(Java.Util.Comparator arg0) where Arg0objectSuperT : T
         {
-            return SExecuteWithSignature<Java.Util.Function.BinaryOperator<T>>(LocalBridgeClazz, "minBy", "(Ljava/util/Comparator;)Ljava/util/function/BinaryOperator;", arg0);
+            return SExecuteWithSignature<Java.Util.Function.BinaryOperator>(LocalBridgeClazz, "minBy", "(Ljava/util/Comparator;)Ljava/util/function/BinaryOperator;", arg0);
         }
 
         #endregion
@@ -429,83 +429,83 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Apply<R, U>EventHandler));
-            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Apply<, >EventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(AndThen<, , , , >EventHandler));
 
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnApply<R, U>"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<T, U, R> OnApply<R, U> { get; set; } = null;
+        /// <remarks>If <see cref="OnApply<, >"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<T, U, R> OnApply<, > { get; set; } = null;
 
-        bool hasOverrideApply<R, U> = true;
-        void Apply<R, U>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        bool hasOverrideApply<, > = true;
+        void Apply<, >EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
-            hasOverrideApply<R, U> = true;
-            var methodToExecute = (OnApply<R, U> != null) ? OnApply<R, U> : Apply<R, U>;
+            hasOverrideApply<, > = true;
+            var methodToExecute = (OnApply<, > != null) ? OnApply<, > : Apply<, >;
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0), data.EventData.GetAt<U>(1));
-            data.EventData.TypedEventData.SetReturnData(hasOverrideApply<R, U>, executionResult);
+            data.EventData.TypedEventData.SetReturnData(hasOverrideApply<, >, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="U"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        public virtual R Apply<R, U>(T arg0, U arg1)
+        /// <returns><see cref=""/></returns>
+        public virtual R Apply<, >(T arg0, U arg1)
         {
-            hasOverrideApply<R, U> = false; return default;
+            hasOverrideApply<, > = false; return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
+        public Java.Util.Function.BiFunction<, , > AndThen<, , , , >Default(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecuteWithSignature<Java.Util.Function.BiFunction<T, U, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiFunction<, , >>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>"/> has a value it takes precedence over corresponding class method</remarks>
-        public global::System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.BiFunction<T, U, V>> OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> { get; set; } = null;
+        /// <remarks>If <see cref="OnAndThen<, , , , >"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<Java.Util.Function.Function<, >, Java.Util.Function.BiFunction<, , >> OnAndThen<, , , , > { get; set; } = null;
 
-        bool hasOverrideAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> = true;
-        void AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        bool hasOverrideAndThen<, , , , > = true;
+        void AndThen<, , , , >EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
-            hasOverrideAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> = true;
-            var methodToExecute = (OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> != null) ? OnAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> : AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>;
-            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>(0));
-            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>, executionResult);
+            hasOverrideAndThen<, , , , > = true;
+            var methodToExecute = (OnAndThen<, , , , > != null) ? OnAndThen<, , , , > : AndThen<, , , , >;
+            var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<, >>(0));
+            data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<, , , , >, executionResult);
         }
 
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<, , , , >Default"/>; override the method to implement a different behavior</remarks>
+        public virtual Java.Util.Function.BiFunction<, , > AndThen<, , , , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            hasOverrideAndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV> = false; return default;
+            hasOverrideAndThen<, , , , > = false; return default;
         }
 
         #endregion
@@ -518,8 +518,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region BinaryOperatorDirect<T> implementation
-    public partial class BinaryOperatorDirect<T> : Java.Util.Function.IBinaryOperator<T>
+    #region BinaryOperatorDirect implementation
+    public partial class BinaryOperatorDirect : Java.Util.Function.IBinaryOperator
     {
         #region Constructors
 
@@ -541,28 +541,28 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="U"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        public override R Apply<R, U>(T arg0, U arg1)
+        /// <returns><see cref=""/></returns>
+        public override R Apply<, >(T arg0, U arg1)
         {
             return IExecuteWithSignature<R>("apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><see cref=""/></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        public override Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public override Java.Util.Function.BiFunction<, , > AndThen<, , , , >(Java.Util.Function.Function<, > arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect<T, U, V>, Java.Util.Function.BiFunction<T, U, V>>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect<, , >, Java.Util.Function.BiFunction<, , >>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
 
         #endregion

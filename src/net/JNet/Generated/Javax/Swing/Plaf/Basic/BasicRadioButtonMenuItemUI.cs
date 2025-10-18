@@ -89,10 +89,10 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicRadioButtonMenuItemUI.html#processMouseEvent(javax.swing.JMenuItem,java.awt.event.MouseEvent,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JMenuItem"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.MenuElement"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.MenuSelectionManager"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void ProcessMouseEvent(Javax.Swing.JMenuItem arg0, Java.Awt.EventNs.MouseEvent arg1, Javax.Swing.MenuElement[] arg2, Javax.Swing.MenuSelectionManager arg3)
         {
             IExecuteWithSignature("processMouseEvent", "(Ljavax/swing/JMenuItem;Ljava/awt/event/MouseEvent;[Ljavax/swing/MenuElement;Ljavax/swing/MenuSelectionManager;)V", arg0, arg1, arg2, arg3);

@@ -73,10 +73,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatterFactory.html#%3Cinit%3E(javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2, Javax.Swing.JFormattedTextField.AbstractFormatter arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,9 +84,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatterFactory.html#%3Cinit%3E(javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2)
             : base(arg0, arg1, arg2)
         {
@@ -94,8 +94,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatterFactory.html#%3Cinit%3E(javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1)
             : base(arg0, arg1)
         {
@@ -103,7 +103,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultFormatterFactory.html#%3Cinit%3E(javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0)
             : base(arg0)
         {
@@ -113,7 +113,7 @@ namespace Javax.Swing.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.DefaultFormatterFactory"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.DefaultFormatterFactory t) => t.Cast<Java.Io.Serializable>();
 

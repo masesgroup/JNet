@@ -75,11 +75,11 @@ namespace Java.Awt.ImageNs
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.ImageFilter"/> to <see cref="Java.Awt.ImageNs.ImageConsumer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.ImageConsumer(Java.Awt.ImageNs.ImageFilter t) => t.Cast<Java.Awt.ImageNs.ImageConsumer>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.ImageFilter"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.ImageFilter t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -97,8 +97,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#getFilterInstance(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.ImageFilter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.ImageFilter GetFilterInstance(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.ImageFilter>("getFilterInstance", "(Ljava/awt/image/ImageConsumer;)Ljava/awt/image/ImageFilter;", arg0);
@@ -106,7 +106,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#imageComplete(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ImageComplete(int arg0)
         {
             IExecuteWithSignature("imageComplete", "(I)V", arg0);
@@ -114,7 +114,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#resendTopDownLeftRight(java.awt.image.ImageProducer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageProducer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ResendTopDownLeftRight(Java.Awt.ImageNs.ImageProducer arg0)
         {
             IExecuteWithSignature("resendTopDownLeftRight", "(Ljava/awt/image/ImageProducer;)V", arg0);
@@ -122,7 +122,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setColorModel(java.awt.image.ColorModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetColorModel(Java.Awt.ImageNs.ColorModel arg0)
         {
             IExecuteWithSignature("setColorModel", "(Ljava/awt/image/ColorModel;)V", arg0);
@@ -130,8 +130,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setDimensions(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetDimensions(int arg0, int arg1)
         {
             IExecuteWithSignature("setDimensions", "(II)V", arg0, arg1);
@@ -139,7 +139,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setHints(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetHints(int arg0)
         {
             IExecuteWithSignature("setHints", "(I)V", arg0);
@@ -147,14 +147,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setPixels(int,int,int,int,java.awt.image.ColorModel,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg5"><see cref="byte"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.ColorModel arg4, byte[] arg5, int arg6, int arg7)
         {
             IExecuteWithSignature("setPixels", "(IIIILjava/awt/image/ColorModel;[BII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -162,14 +162,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setPixels(int,int,int,int,java.awt.image.ColorModel,int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.ColorModel arg4, int[] arg5, int arg6, int arg7)
         {
             IExecuteWithSignature("setPixels", "(IIIILjava/awt/image/ColorModel;[III)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -177,8 +177,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setProperties(java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        public void SetProperties(Java.Util.Hashtable<object, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void SetProperties(Java.Util.Hashtable<, > arg0)
         {
             IExecuteWithSignature("setProperties", "(Ljava/util/Hashtable;)V", arg0);
         }

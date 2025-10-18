@@ -73,20 +73,20 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#%3Cinit%3E(java.sql.SQLData,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.SQLData"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public SerialStruct(Java.Sql.SQLData arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        public SerialStruct(Java.Sql.SQLData arg0, Java.Util.Map<, > arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#%3Cinit%3E(java.sql.Struct,java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Struct"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public SerialStruct(Java.Sql.Struct arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        public SerialStruct(Java.Sql.Struct arg0, Java.Util.Map<, > arg1)
             : base(arg0, arg1)
         {
         }
@@ -95,15 +95,15 @@ namespace Javax.Sql.Rowset.Serial
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialStruct"/> to <see cref="Java.Sql.Struct"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Sql.Struct(Javax.Sql.Rowset.Serial.SerialStruct t) => t.Cast<Java.Sql.Struct>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialStruct"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.Serial.SerialStruct t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialStruct"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialStruct t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -135,10 +135,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getAttributes(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object[] GetAttributes(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public object[] GetAttributes(Java.Util.Map<, > arg0)
         {
             return IExecuteWithSignatureArray<object>("getAttributes", "(Ljava/util/Map;)[Ljava/lang/Object;", arg0);
         }

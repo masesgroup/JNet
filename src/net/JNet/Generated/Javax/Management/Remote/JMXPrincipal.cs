@@ -73,7 +73,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXPrincipal.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JMXPrincipal(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -83,11 +83,11 @@ namespace Javax.Management.Remote
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.JMXPrincipal"/> to <see cref="Java.Security.Principal"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Principal(Javax.Management.Remote.JMXPrincipal t) => t.Cast<Java.Security.Principal>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.JMXPrincipal"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Remote.JMXPrincipal t) => t.Cast<Java.Io.Serializable>();
 

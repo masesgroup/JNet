@@ -77,7 +77,7 @@ namespace Java.Nio
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.LongBuffer"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.LongBuffer t) => t.Cast<Java.Lang.Comparable>();
 
@@ -91,8 +91,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#allocate(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.LongBuffer Allocate(int arg0)
         {
             return SExecuteWithSignature<Java.Nio.LongBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/LongBuffer;", arg0);
@@ -100,10 +100,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#wrap(long[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.LongBuffer Wrap(long[] arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Nio.LongBuffer>(LocalBridgeClazz, "wrap", "([JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2);
@@ -111,8 +111,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#wrap(long[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.LongBuffer Wrap(long[] arg0)
         {
             return SExecuteWithSignature<Java.Nio.LongBuffer>(LocalBridgeClazz, "wrap", "([J)Ljava/nio/LongBuffer;", new object[] { arg0 });
@@ -124,7 +124,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#order()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ByteOrder Order()
         {
             return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
@@ -132,7 +132,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.LongBuffer AsReadOnlyBuffer()
         {
             return IExecuteWithSignature<Java.Nio.LongBuffer>("asReadOnlyBuffer", "()Ljava/nio/LongBuffer;");
@@ -140,7 +140,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#compact()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.LongBuffer Compact()
         {
             return IExecuteWithSignature<Java.Nio.LongBuffer>("compact", "()Ljava/nio/LongBuffer;");
@@ -148,9 +148,9 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.LongBuffer Put(int arg0, long arg1)
         {
             return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "(IJ)Ljava/nio/LongBuffer;", arg0, arg1);
@@ -158,8 +158,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.LongBuffer Put(long arg0)
         {
             return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "(J)Ljava/nio/LongBuffer;", arg0);
@@ -167,7 +167,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#get()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long Get()
         {
             return IExecuteWithSignature<long>("get", "()J");
@@ -175,8 +175,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long Get(int arg0)
         {
             return IExecuteWithSignature<long>("get", "(I)J", arg0);
@@ -184,8 +184,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(long[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.LongBuffer Put(long[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "([J)Ljava/nio/LongBuffer;", new object[] { arg0 });
@@ -193,8 +193,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -202,8 +202,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#compareTo(java.nio.LongBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.LongBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Nio.LongBuffer arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/LongBuffer;)I", arg0);
@@ -211,8 +211,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#mismatch(java.nio.LongBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.LongBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Mismatch(Java.Nio.LongBuffer arg0)
         {
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/LongBuffer;)I", arg0);
@@ -220,10 +220,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#get(long[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.LongBuffer Get(long[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.LongBuffer>("get", "([JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2);
@@ -231,8 +231,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#get(long[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.LongBuffer Get(long[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.LongBuffer>("get", "([J)Ljava/nio/LongBuffer;", new object[] { arg0 });
@@ -240,8 +240,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(java.nio.LongBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.LongBuffer"/></param>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.LongBuffer Put(Java.Nio.LongBuffer arg0)
         {
             return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "(Ljava/nio/LongBuffer;)Ljava/nio/LongBuffer;", arg0);
@@ -249,10 +249,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(long[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.LongBuffer Put(long[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.LongBuffer>("put", "([JII)Ljava/nio/LongBuffer;", arg0, arg1, arg2);

@@ -68,12 +68,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region EventListenerProxy<T> declaration
+    #region EventListenerProxy declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html"/>
     /// </summary>
-    /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-    public partial class EventListenerProxy<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventListenerProxy<T>> where T : Java.Util.IEventListener, new()
+    /// <typeparam name="T"></typeparam>
+    public partial class EventListenerProxy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventListenerProxy>
     {
         const string _bridgeClassName = "java.util.EventListenerProxy";
         /// <summary>
@@ -119,7 +119,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html#%3Cinit%3E(java.util.EventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.EventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public EventListenerProxy(Java.Util.EventListener arg0)
             : base(arg0)
         {
@@ -158,14 +158,14 @@ namespace Java.Util
     }
     #endregion
 
-    #region EventListenerProxy<T> implementation
-    public partial class EventListenerProxy<T>
+    #region EventListenerProxy implementation
+    public partial class EventListenerProxy
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html#%3Cinit%3E(java.util.EventListener)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public EventListenerProxy(T arg0)
             : base(arg0)
         {
@@ -175,9 +175,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.EventListenerProxy{T}"/> to <see cref="Java.Util.EventListenerProxy"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.EventListenerProxy(Java.Util.EventListenerProxy<T> t) => t.Cast<Java.Util.EventListenerProxy>();
+        public static implicit operator Java.Util.EventListenerProxy(Java.Util.EventListenerProxy t) => t.Cast<Java.Util.EventListenerProxy>();
 
         #endregion
 

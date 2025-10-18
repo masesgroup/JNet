@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#%3Cinit%3E(javax.swing.text.StyledDocument)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.StyledDocument"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JTextPane(Javax.Swing.Text.StyledDocument arg0)
             : base(arg0)
         {
@@ -132,9 +132,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#addStyle(java.lang.String,javax.swing.text.Style)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Style"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Style AddStyle(Java.Lang.String arg0, Javax.Swing.Text.Style arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Style>("addStyle", "(Ljava/lang/String;Ljavax/swing/text/Style;)Ljavax/swing/text/Style;", arg0, arg1);
@@ -142,8 +142,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#getStyle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.Style GetStyle(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.Style>("getStyle", "(Ljava/lang/String;)Ljavax/swing/text/Style;", arg0);
@@ -151,7 +151,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#insertComponent(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void InsertComponent(Java.Awt.Component arg0)
         {
             IExecuteWithSignature("insertComponent", "(Ljava/awt/Component;)V", arg0);
@@ -159,7 +159,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#insertIcon(javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void InsertIcon(Javax.Swing.Icon arg0)
         {
             IExecuteWithSignature("insertIcon", "(Ljavax/swing/Icon;)V", arg0);
@@ -167,7 +167,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#removeStyle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveStyle(Java.Lang.String arg0)
         {
             IExecuteWithSignature("removeStyle", "(Ljava/lang/String;)V", arg0);
@@ -175,8 +175,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#setCharacterAttributes(javax.swing.text.AttributeSet,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetCharacterAttributes(Javax.Swing.Text.AttributeSet arg0, bool arg1)
         {
             IExecuteWithSignature("setCharacterAttributes", "(Ljavax/swing/text/AttributeSet;Z)V", arg0, arg1);
@@ -184,8 +184,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextPane.html#setParagraphAttributes(javax.swing.text.AttributeSet,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetParagraphAttributes(Javax.Swing.Text.AttributeSet arg0, bool arg1)
         {
             IExecuteWithSignature("setParagraphAttributes", "(Ljavax/swing/text/AttributeSet;Z)V", arg0, arg1);

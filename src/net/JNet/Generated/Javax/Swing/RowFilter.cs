@@ -68,7 +68,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html"/>
         /// </summary>
-        public partial class ComparisonType : Java.Lang.Enum<Javax.Swing.RowFilter.ComparisonType>
+        public partial class ComparisonType : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.swing.RowFilter$ComparisonType";
             /// <summary>
@@ -148,13 +148,13 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region Entry<M, I> declaration
+        #region Entry<, > declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html"/>
         /// </summary>
         /// <typeparam name="M"></typeparam>
         /// <typeparam name="I"></typeparam>
-        public partial class Entry<M, I> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entry<M, I>>
+        public partial class Entry<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entry<, >>
         {
             const string _bridgeClassName = "javax.swing.RowFilter$Entry";
             /// <summary>
@@ -197,13 +197,13 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region RowFilter<M, I> declaration
+    #region RowFilter<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html"/>
     /// </summary>
     /// <typeparam name="M"></typeparam>
     /// <typeparam name="I"></typeparam>
-    public partial class RowFilter<M, I> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowFilter<M, I>>
+    public partial class RowFilter<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowFilter<, >>
     {
         const string _bridgeClassName = "javax.swing.RowFilter";
         /// <summary>
@@ -261,8 +261,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#andFilter(java.lang.Iterable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.RowFilter AndFilterMethod(Java.Lang.Iterable arg0)
         {
             return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "andFilter", "(Ljava/lang/Iterable;)Ljavax/swing/RowFilter;", arg0);
@@ -270,10 +270,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#dateFilter(javax.swing.RowFilter.ComparisonType,java.util.Date,int...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RowFilter.ComparisonType"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Date"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.RowFilter DateFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Util.Date arg1, params int[] arg2)
         {
             return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "dateFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/util/Date;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
@@ -281,8 +281,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#notFilter(javax.swing.RowFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RowFilter"/></param>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.RowFilter NotFilterMethod(Javax.Swing.RowFilter arg0)
         {
             return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "notFilter", "(Ljavax/swing/RowFilter;)Ljavax/swing/RowFilter;", arg0);
@@ -290,10 +290,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#numberFilter(javax.swing.RowFilter.ComparisonType,java.lang.Number,int...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RowFilter.ComparisonType"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Number"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.RowFilter NumberFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Lang.Number arg1, params int[] arg2)
         {
             return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "numberFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/lang/Number;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
@@ -301,8 +301,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#orFilter(java.lang.Iterable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.RowFilter OrFilterMethod(Java.Lang.Iterable arg0)
         {
             return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "orFilter", "(Ljava/lang/Iterable;)Ljavax/swing/RowFilter;", arg0);
@@ -310,9 +310,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#regexFilter(java.lang.String,int...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.RowFilter RegexFilterMethod(Java.Lang.String arg0, params int[] arg1)
         {
             return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "regexFilter", "(Ljava/lang/String;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -324,8 +324,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#include(javax.swing.RowFilter.Entry)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RowFilter.Entry"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Include(Javax.Swing.RowFilter.Entry arg0)
         {
             return IExecuteWithSignature<bool>("include", "(Ljavax/swing/RowFilter$Entry;)Z", arg0);
@@ -377,8 +377,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Swing.RowFilter.ComparisonType"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Swing.RowFilter.ComparisonType ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Swing.RowFilter.ComparisonType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/RowFilter$ComparisonType;", arg0);
@@ -386,7 +386,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Swing.RowFilter.ComparisonType"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Swing.RowFilter.ComparisonType[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Swing.RowFilter.ComparisonType>(LocalBridgeClazz, "values", "()[Ljavax/swing/RowFilter$ComparisonType;");
@@ -450,8 +450,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValue(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object GetValue(int arg0)
             {
                 return IExecuteWithSignature("getValue", "(I)Ljava/lang/Object;", arg0);
@@ -459,8 +459,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Java.Lang.String"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.String GetStringValue(int arg0)
             {
                 return IExecuteWithSignature<Java.Lang.String>("getStringValue", "(I)Ljava/lang/String;", arg0);
@@ -476,8 +476,8 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region Entry<M, I> implementation
-        public partial class Entry<M, I>
+        #region Entry<, > implementation
+        public partial class Entry<, >
         {
             #region Constructors
 
@@ -485,9 +485,9 @@ namespace Javax.Swing
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.RowFilter.Entry{M, I}"/> to <see cref="Javax.Swing.RowFilter.Entry"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Javax.Swing.RowFilter.Entry(Javax.Swing.RowFilter.Entry<M, I> t) => t.Cast<Javax.Swing.RowFilter.Entry>();
+            public static implicit operator Javax.Swing.RowFilter.Entry(Javax.Swing.RowFilter.Entry<, > t) => t.Cast<Javax.Swing.RowFilter.Entry>();
 
             #endregion
 
@@ -524,8 +524,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValue(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object GetValue(int arg0)
             {
                 return IExecuteWithSignature("getValue", "(I)Ljava/lang/Object;", arg0);
@@ -533,8 +533,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Java.Lang.String"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Lang.String GetStringValue(int arg0)
             {
                 return IExecuteWithSignature<Java.Lang.String>("getStringValue", "(I)Ljava/lang/String;", arg0);
@@ -557,8 +557,8 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region RowFilter<M, I> implementation
-    public partial class RowFilter<M, I>
+    #region RowFilter<, > implementation
+    public partial class RowFilter<, >
     {
         #region Constructors
 
@@ -566,9 +566,9 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.RowFilter{M, I}"/> to <see cref="Javax.Swing.RowFilter"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.RowFilter(Javax.Swing.RowFilter<M, I> t) => t.Cast<Javax.Swing.RowFilter>();
+        public static implicit operator Javax.Swing.RowFilter(Javax.Swing.RowFilter<, > t) => t.Cast<Javax.Swing.RowFilter>();
 
         #endregion
 
@@ -580,67 +580,67 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#andFilter(java.lang.Iterable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-        /// <typeparam name="Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_"><see cref="Javax.Swing.RowFilter{Arg0objectSuperM, Arg0objectSuperI}"/></typeparam>
-        /// <typeparam name="Arg0objectSuperM"><typeparamref name="M"/></typeparam>
-        /// <typeparam name="Arg0objectSuperI"><typeparamref name="I"/></typeparam>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
-        public static Javax.Swing.RowFilter<M, I> AndFilterMethod<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_, Arg0objectSuperM, Arg0objectSuperI>(Java.Lang.Iterable<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_> arg0) where Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_ : Javax.Swing.RowFilter<Arg0objectSuperM, Arg0objectSuperI> where Arg0objectSuperM : M where Arg0objectSuperI : I
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Swing_RowFilter___"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperM"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperI"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Javax.Swing.RowFilter<, > AndFilterMethod<, , >(Java.Lang.Iterable arg0) where Arg0ExtendsJavax_Swing_RowFilter___ : Javax.Swing.RowFilter<, > where Arg0objectSuperM : M where Arg0objectSuperI : I
         {
-            return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "andFilter", "(Ljava/lang/Iterable;)Ljavax/swing/RowFilter;", arg0);
+            return SExecuteWithSignature<Javax.Swing.RowFilter<, >>(LocalBridgeClazz, "andFilter", "(Ljava/lang/Iterable;)Ljavax/swing/RowFilter;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#dateFilter(javax.swing.RowFilter.ComparisonType,java.util.Date,int...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RowFilter.ComparisonType"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Date"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
-        public static Javax.Swing.RowFilter<M, I> DateFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Util.Date arg1, params int[] arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Javax.Swing.RowFilter<, > DateFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Util.Date arg1, params int[] arg2)
         {
-            return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "dateFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/util/Date;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
+            return SExecuteWithSignature<Javax.Swing.RowFilter<, >>(LocalBridgeClazz, "dateFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/util/Date;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#notFilter(javax.swing.RowFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RowFilter"/></param>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
-        public static Javax.Swing.RowFilter<M, I> NotFilterMethod(Javax.Swing.RowFilter<M, I> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Javax.Swing.RowFilter<, > NotFilterMethod(Javax.Swing.RowFilter<, > arg0)
         {
-            return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "notFilter", "(Ljavax/swing/RowFilter;)Ljavax/swing/RowFilter;", arg0);
+            return SExecuteWithSignature<Javax.Swing.RowFilter<, >>(LocalBridgeClazz, "notFilter", "(Ljavax/swing/RowFilter;)Ljavax/swing/RowFilter;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#numberFilter(javax.swing.RowFilter.ComparisonType,java.lang.Number,int...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RowFilter.ComparisonType"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Number"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
-        public static Javax.Swing.RowFilter<M, I> NumberFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Lang.Number arg1, params int[] arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Javax.Swing.RowFilter<, > NumberFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Lang.Number arg1, params int[] arg2)
         {
-            return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "numberFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/lang/Number;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
+            return SExecuteWithSignature<Javax.Swing.RowFilter<, >>(LocalBridgeClazz, "numberFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/lang/Number;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#orFilter(java.lang.Iterable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-        /// <typeparam name="Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_"><see cref="Javax.Swing.RowFilter{Arg0objectSuperM, Arg0objectSuperI}"/></typeparam>
-        /// <typeparam name="Arg0objectSuperM"><typeparamref name="M"/></typeparam>
-        /// <typeparam name="Arg0objectSuperI"><typeparamref name="I"/></typeparam>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
-        public static Javax.Swing.RowFilter<M, I> OrFilterMethod<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_, Arg0objectSuperM, Arg0objectSuperI>(Java.Lang.Iterable<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_> arg0) where Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_ : Javax.Swing.RowFilter<Arg0objectSuperM, Arg0objectSuperI> where Arg0objectSuperM : M where Arg0objectSuperI : I
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Swing_RowFilter___"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperM"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperI"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Javax.Swing.RowFilter<, > OrFilterMethod<, , >(Java.Lang.Iterable arg0) where Arg0ExtendsJavax_Swing_RowFilter___ : Javax.Swing.RowFilter<, > where Arg0objectSuperM : M where Arg0objectSuperI : I
         {
-            return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "orFilter", "(Ljava/lang/Iterable;)Ljavax/swing/RowFilter;", arg0);
+            return SExecuteWithSignature<Javax.Swing.RowFilter<, >>(LocalBridgeClazz, "orFilter", "(Ljava/lang/Iterable;)Ljavax/swing/RowFilter;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#regexFilter(java.lang.String,int...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
-        public static Javax.Swing.RowFilter<M, I> RegexFilterMethod(Java.Lang.String arg0, params int[] arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Javax.Swing.RowFilter<, > RegexFilterMethod(Java.Lang.String arg0, params int[] arg1)
         {
-            return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "regexFilter", "(Ljava/lang/String;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
+            return SExecuteWithSignature<Javax.Swing.RowFilter<, >>(LocalBridgeClazz, "regexFilter", "(Ljava/lang/String;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
 
         #endregion
@@ -649,11 +649,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#include(javax.swing.RowFilter.Entry)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RowFilter.Entry"/></param>
-        /// <typeparam name="Arg0ExtendsM"><typeparamref name="M"/></typeparam>
-        /// <typeparam name="Arg0ExtendsI"><typeparamref name="I"/></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        public bool Include<Arg0ExtendsM, Arg0ExtendsI>(Javax.Swing.RowFilter.Entry<Arg0ExtendsM, Arg0ExtendsI> arg0) where Arg0ExtendsM : M where Arg0ExtendsI : I
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsM"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsI"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public bool Include<, >(Javax.Swing.RowFilter.Entry<, > arg0) where Arg0ExtendsM : M where Arg0ExtendsI : I
         {
             return IExecuteWithSignature<bool>("include", "(Ljavax/swing/RowFilter$Entry;)Z", arg0);
         }

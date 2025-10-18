@@ -89,13 +89,13 @@ namespace Javax.Swing.Plaf.Nimbus
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusLookAndFeel.html#getDerivedColor(java.lang.String,float,float,float,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Color GetDerivedColor(Java.Lang.String arg0, float arg1, float arg2, float arg3, int arg4, bool arg5)
         {
             return IExecuteWithSignature<Java.Awt.Color>("getDerivedColor", "(Ljava/lang/String;FFFIZ)Ljava/awt/Color;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -103,8 +103,8 @@ namespace Javax.Swing.Plaf.Nimbus
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusLookAndFeel.html#register(javax.swing.plaf.synth.Region,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.Region"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Register(Javax.Swing.Plaf.Synth.Region arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("register", "(Ljavax/swing/plaf/synth/Region;Ljava/lang/String;)V", arg0, arg1);

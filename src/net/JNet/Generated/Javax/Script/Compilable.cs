@@ -78,16 +78,16 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <returns><see cref="Javax.Script.CompiledScript"/></returns>
-        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Script.CompiledScript Compile(Java.Io.Reader arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Script.CompiledScript"/></returns>
-        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Script.CompiledScript Compile(Java.Lang.String arg0);
 
         #endregion
@@ -123,9 +123,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <returns><see cref="Javax.Script.CompiledScript"/></returns>
-        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Script.CompiledScript Compile(Java.Io.Reader arg0)
         {
             return IExecuteWithSignature<Javax.Script.CompiledScript>("compile", "(Ljava/io/Reader;)Ljavax/script/CompiledScript;", arg0);
@@ -133,9 +133,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Script.CompiledScript"/></returns>
-        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Script.CompiledScript Compile(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Script.CompiledScript>("compile", "(Ljava/lang/String;)Ljavax/script/CompiledScript;", arg0);

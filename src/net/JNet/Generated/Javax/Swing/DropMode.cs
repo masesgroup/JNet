@@ -29,7 +29,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html"/>
     /// </summary>
-    public partial class DropMode : Java.Lang.Enum<Javax.Swing.DropMode>
+    public partial class DropMode : Java.Lang.Enum
     {
         const string _bridgeClassName = "javax.swing.DropMode";
         /// <summary>
@@ -133,8 +133,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.DropMode"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.DropMode ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Swing.DropMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/DropMode;", arg0);
@@ -142,7 +142,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.DropMode"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.DropMode[] Values()
         {
             return SExecuteWithSignatureArray<Javax.Swing.DropMode>(LocalBridgeClazz, "values", "()[Ljavax/swing/DropMode;");

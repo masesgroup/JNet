@@ -73,9 +73,9 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#%3Cinit%3E(javax.security.auth.kerberos.KerberosPrincipal,javax.security.auth.kerberos.KerberosPrincipal,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public KerberosCredMessage(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, Javax.Security.Auth.Kerberos.KerberosPrincipal arg1, byte[] arg2)
             : base(arg0, arg1, arg2)
         {
@@ -120,7 +120,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#isDestroyed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDestroyed()
         {
             return IExecuteWithSignature<bool>("isDestroyed", "()Z");

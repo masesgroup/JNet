@@ -94,7 +94,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadless()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public static bool IsHeadless()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isHeadless", "()Z");
@@ -148,8 +148,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#createGraphics(java.awt.image.BufferedImage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
-        /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Graphics2D CreateGraphics(Java.Awt.ImageNs.BufferedImage arg0)
         {
             return IExecuteWithSignature<Java.Awt.Graphics2D>("createGraphics", "(Ljava/awt/image/BufferedImage;)Ljava/awt/Graphics2D;", arg0);
@@ -157,8 +157,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String[] GetAvailableFontFamilyNames(Java.Util.Locale arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("getAvailableFontFamilyNames", "(Ljava/util/Locale;)[Ljava/lang/String;", arg0);
@@ -166,7 +166,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadlessInstance()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsHeadlessInstance()
         {
             return IExecuteWithSignature<bool>("isHeadlessInstance", "()Z");
@@ -174,8 +174,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#registerFont(java.awt.Font)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Font"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RegisterFont(Java.Awt.Font arg0)
         {
             return IExecuteWithSignature<bool>("registerFont", "(Ljava/awt/Font;)Z", arg0);

@@ -82,8 +82,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html#send(javax.sound.midi.MidiMessage,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiMessage"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void Send(Javax.Sound.Midi.MidiMessage arg0, long arg1);
 
         #endregion
@@ -126,8 +126,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html#send(javax.sound.midi.MidiMessage,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiMessage"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Send(Javax.Sound.Midi.MidiMessage arg0, long arg1)
         {
             IExecuteWithSignature("send", "(Ljavax/sound/midi/MidiMessage;J)V", arg0, arg1);

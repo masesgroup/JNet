@@ -108,7 +108,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
         {
             hasOverrideItemStateChanged = false;
@@ -207,7 +207,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
         {
             IExecuteWithSignature("itemStateChanged", "(Ljava/awt/event/ItemEvent;)V", arg0);

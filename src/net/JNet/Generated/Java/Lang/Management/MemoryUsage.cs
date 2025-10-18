@@ -73,10 +73,10 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#%3Cinit%3E(long,long,long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public MemoryUsage(long arg0, long arg1, long arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -96,8 +96,8 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#from(javax.management.openmbean.CompositeData)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
-        /// <returns><see cref="Java.Lang.Management.MemoryUsage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Management.MemoryUsage From(Javax.Management.Openmbean.CompositeData arg0)
         {
             return SExecuteWithSignature<Java.Lang.Management.MemoryUsage>(LocalBridgeClazz, "from", "(Ljavax/management/openmbean/CompositeData;)Ljava/lang/management/MemoryUsage;", arg0);

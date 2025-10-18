@@ -73,10 +73,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#%3Cinit%3E(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public SpinnerNumberModel(double arg0, double arg1, double arg2, double arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,10 +84,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public SpinnerNumberModel(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -95,11 +95,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#%3Cinit%3E(java.lang.Number,java.lang.Comparable,java.lang.Comparable,java.lang.Number)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Comparable"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Comparable"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.Number"/></param>
-        public SpinnerNumberModel(Java.Lang.Number arg0, Java.Lang.Comparable<object> arg1, Java.Lang.Comparable<object> arg2, Java.Lang.Number arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        public SpinnerNumberModel(Java.Lang.Number arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, Java.Lang.Number arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -122,16 +122,16 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#setMaximum(java.lang.Comparable)"/>
         /// </summary>
-        public Java.Lang.Comparable<object> Maximum
+        public Java.Lang.Comparable Maximum
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMaximum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMaximum", "(Ljava/lang/Comparable;)V", value); }
+            get { return IExecuteWithSignature<Java.Lang.Comparable>("getMaximum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMaximum", "(Ljava/lang/Comparable;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#setMinimum(java.lang.Comparable)"/>
         /// </summary>
-        public Java.Lang.Comparable<object> Minimum
+        public Java.Lang.Comparable Minimum
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMinimum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMinimum", "(Ljava/lang/Comparable;)V", value); }
+            get { return IExecuteWithSignature<Java.Lang.Comparable>("getMinimum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMinimum", "(Ljava/lang/Comparable;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#getNumber()"/> 

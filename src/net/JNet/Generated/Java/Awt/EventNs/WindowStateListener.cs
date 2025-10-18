@@ -108,7 +108,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
         {
             hasOverrideWindowStateChanged = false;
@@ -207,7 +207,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecuteWithSignature("windowStateChanged", "(Ljava/awt/event/WindowEvent;)V", arg0);

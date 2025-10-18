@@ -73,8 +73,8 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialJavaObject.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public SerialJavaObject(object arg0)
             : base(arg0)
         {
@@ -84,11 +84,11 @@ namespace Javax.Sql.Rowset.Serial
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialJavaObject"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.Serial.SerialJavaObject t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialJavaObject"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialJavaObject t) => t.Cast<Java.Lang.Cloneable>();
 

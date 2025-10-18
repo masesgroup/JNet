@@ -82,11 +82,11 @@ namespace Java.Awt.Dnd.Peer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#startDrag(java.awt.dnd.DragSourceContext,java.awt.Cursor,java.awt.Image,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Cursor"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Point"/></param>
-        /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         void StartDrag(Java.Awt.Dnd.DragSourceContext arg0, Java.Awt.Cursor arg1, Java.Awt.Image arg2, Java.Awt.Point arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#transferablesFlavorsChanged()"/>
@@ -133,11 +133,11 @@ namespace Java.Awt.Dnd.Peer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#startDrag(java.awt.dnd.DragSourceContext,java.awt.Cursor,java.awt.Image,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Cursor"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Point"/></param>
-        /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public void StartDrag(Java.Awt.Dnd.DragSourceContext arg0, Java.Awt.Cursor arg1, Java.Awt.Image arg2, Java.Awt.Point arg3)
         {
             IExecuteWithSignature("startDrag", "(Ljava/awt/dnd/DragSourceContext;Ljava/awt/Cursor;Ljava/awt/Image;Ljava/awt/Point;)V", arg0, arg1, arg2, arg3);

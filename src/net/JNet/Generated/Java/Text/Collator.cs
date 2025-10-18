@@ -77,11 +77,11 @@ namespace Java.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Text.Collator"/> to <see cref="Java.Util.Comparator"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Comparator(Java.Text.Collator t) => t.Cast<Java.Util.Comparator>();
         /// <summary>
-        /// Converter from <see cref="Java.Text.Collator"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.Collator t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -151,8 +151,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.Collator"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Text.Collator GetInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Text.Collator>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/text/Collator;", arg0);
@@ -178,9 +178,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#compare(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Compare(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<int>("compare", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
@@ -188,8 +188,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getCollationKey(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Text.CollationKey"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.CollationKey GetCollationKey(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Text.CollationKey>("getCollationKey", "(Ljava/lang/String;)Ljava/text/CollationKey;", arg0);
@@ -197,9 +197,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#equals(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Equals(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<bool>("equals", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
@@ -207,9 +207,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#compare(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Compare(object arg0, object arg1)
         {
             return IExecuteWithSignature<int>("compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", arg0, arg1);

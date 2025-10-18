@@ -29,7 +29,7 @@ namespace Java.Lang.Annotation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html"/>
     /// </summary>
-    public partial class ElementType : Java.Lang.Enum<Java.Lang.Annotation.ElementType>
+    public partial class ElementType : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.lang.annotation.ElementType";
         /// <summary>
@@ -151,8 +151,8 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Annotation.ElementType ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.Annotation.ElementType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/annotation/ElementType;", arg0);
@@ -160,7 +160,7 @@ namespace Java.Lang.Annotation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Annotation.ElementType[] Values()
         {
             return SExecuteWithSignatureArray<Java.Lang.Annotation.ElementType>(LocalBridgeClazz, "values", "()[Ljava/lang/annotation/ElementType;");

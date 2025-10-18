@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#%3Cinit%3E(java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JColorChooser(Java.Awt.Color arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#%3Cinit%3E(javax.swing.colorchooser.ColorSelectionModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Colorchooser.ColorSelectionModel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JColorChooser(Javax.Swing.Colorchooser.ColorSelectionModel arg0)
             : base(arg0)
         {
@@ -91,7 +91,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JColorChooser"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JColorChooser t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -123,12 +123,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Awt.Color ShowDialog(Java.Awt.Component arg0, Java.Lang.String arg1, Java.Awt.Color arg2, bool arg3)
         {
             return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "showDialog", "(Ljava/awt/Component;Ljava/lang/String;Ljava/awt/Color;Z)Ljava/awt/Color;", arg0, arg1, arg2, arg3);
@@ -136,11 +136,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Awt.Color ShowDialog(Java.Awt.Component arg0, Java.Lang.String arg1, Java.Awt.Color arg2)
         {
             return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "showDialog", "(Ljava/awt/Component;Ljava/lang/String;Ljava/awt/Color;)Ljava/awt/Color;", arg0, arg1, arg2);
@@ -148,14 +148,14 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#createDialog(java.awt.Component,java.lang.String,boolean,javax.swing.JColorChooser,java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.JColorChooser"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <returns><see cref="Javax.Swing.JDialog"/></returns>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Swing.JDialog CreateDialog(Java.Awt.Component arg0, Java.Lang.String arg1, bool arg2, Javax.Swing.JColorChooser arg3, Java.Awt.EventNs.ActionListener arg4, Java.Awt.EventNs.ActionListener arg5)
         {
             return SExecuteWithSignature<Javax.Swing.JDialog>(LocalBridgeClazz, "createDialog", "(Ljava/awt/Component;Ljava/lang/String;ZLjavax/swing/JColorChooser;Ljava/awt/event/ActionListener;Ljava/awt/event/ActionListener;)Ljavax/swing/JDialog;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -202,8 +202,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#removeChooserPanel(javax.swing.colorchooser.AbstractColorChooserPanel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Colorchooser.AbstractColorChooserPanel"/></param>
-        /// <returns><see cref="Javax.Swing.Colorchooser.AbstractColorChooserPanel"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Colorchooser.AbstractColorChooserPanel RemoveChooserPanel(Javax.Swing.Colorchooser.AbstractColorChooserPanel arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Colorchooser.AbstractColorChooserPanel>("removeChooserPanel", "(Ljavax/swing/colorchooser/AbstractColorChooserPanel;)Ljavax/swing/colorchooser/AbstractColorChooserPanel;", arg0);
@@ -211,7 +211,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#addChooserPanel(javax.swing.colorchooser.AbstractColorChooserPanel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Colorchooser.AbstractColorChooserPanel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChooserPanel(Javax.Swing.Colorchooser.AbstractColorChooserPanel arg0)
         {
             IExecuteWithSignature("addChooserPanel", "(Ljavax/swing/colorchooser/AbstractColorChooserPanel;)V", arg0);
@@ -219,9 +219,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void SetColor(int arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("setColor", "(III)V", arg0, arg1, arg2);
@@ -229,7 +229,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetColor(int arg0)
         {
             IExecuteWithSignature("setColor", "(I)V", arg0);
@@ -237,7 +237,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetColor(Java.Awt.Color arg0)
         {
             IExecuteWithSignature("setColor", "(Ljava/awt/Color;)V", arg0);
@@ -245,7 +245,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setUI(javax.swing.plaf.ColorChooserUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ColorChooserUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.ColorChooserUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ColorChooserUI;)V", arg0);

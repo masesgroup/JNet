@@ -91,7 +91,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#isValid()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsValid()
         {
             return IExecuteWithSignature<bool>("isValid", "()Z");
@@ -99,7 +99,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#release()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Release()
         {
             IExecuteWithSignature("release", "()V");
@@ -107,7 +107,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#isShared()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsShared()
         {
             return IExecuteWithSignature<bool>("isShared", "()Z");
@@ -115,9 +115,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#overlaps(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Overlaps(long arg0, long arg1)
         {
             return IExecuteWithSignature<bool>("overlaps", "(JJ)Z", arg0, arg1);
@@ -125,7 +125,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#channel()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.Channels.FileChannel Channel()
         {
             return IExecuteWithSignature<Java.Nio.Channels.FileChannel>("channel", "()Ljava/nio/channels/FileChannel;");
@@ -133,7 +133,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#position()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long Position()
         {
             return IExecuteWithSignature<long>("position", "()J");
@@ -141,7 +141,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#size()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long Size()
         {
             return IExecuteWithSignature<long>("size", "()J");
@@ -149,7 +149,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -157,7 +157,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#acquiredBy()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.Channels.Channel AcquiredBy()
         {
             return IExecuteWithSignature<Java.Nio.Channels.Channel>("acquiredBy", "()Ljava/nio/channels/Channel;");

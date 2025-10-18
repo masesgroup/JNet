@@ -73,7 +73,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#%3Cinit%3E(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Date(long arg0)
             : base(arg0)
         {
@@ -93,8 +93,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Date"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.Date ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Sql.Date>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/Date;", arg0);
@@ -102,8 +102,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#valueOf(java.time.LocalDate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.LocalDate"/></param>
-        /// <returns><see cref="Java.Sql.Date"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.Date ValueOf(Java.Time.LocalDate arg0)
         {
             return SExecuteWithSignature<Java.Sql.Date>(LocalBridgeClazz, "valueOf", "(Ljava/time/LocalDate;)Ljava/sql/Date;", arg0);
@@ -115,7 +115,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#toLocalDate()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.LocalDate"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Time.LocalDate ToLocalDate()
         {
             return IExecuteWithSignature<Java.Time.LocalDate>("toLocalDate", "()Ljava/time/LocalDate;");

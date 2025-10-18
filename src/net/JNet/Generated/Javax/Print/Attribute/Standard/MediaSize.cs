@@ -278,10 +278,10 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.html#%3Cinit%3E(float,float,int,javax.print.attribute.standard.MediaSizeName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Javax.Print.Attribute.Standard.MediaSizeName"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public MediaSize(float arg0, float arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -289,9 +289,9 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.html#%3Cinit%3E(float,float,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public MediaSize(float arg0, float arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -299,10 +299,10 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.html#%3Cinit%3E(int,int,int,javax.print.attribute.standard.MediaSizeName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Javax.Print.Attribute.Standard.MediaSizeName"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public MediaSize(int arg0, int arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -310,9 +310,9 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public MediaSize(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -322,7 +322,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.MediaSize"/> to <see cref="Javax.Print.Attribute.Attribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.Standard.MediaSize t) => t.Cast<Javax.Print.Attribute.Attribute>();
 
@@ -336,8 +336,8 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.html#getMediaSizeForName(javax.print.attribute.standard.MediaSizeName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.Standard.MediaSizeName"/></param>
-        /// <returns><see cref="Javax.Print.Attribute.Standard.MediaSize"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Print.Attribute.Standard.MediaSize GetMediaSizeForName(Javax.Print.Attribute.Standard.MediaSizeName arg0)
         {
             return SExecuteWithSignature<Javax.Print.Attribute.Standard.MediaSize>(LocalBridgeClazz, "getMediaSizeForName", "(Ljavax/print/attribute/standard/MediaSizeName;)Ljavax/print/attribute/standard/MediaSize;", arg0);
@@ -345,10 +345,10 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.html#findMedia(float,float,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Print.Attribute.Standard.MediaSizeName"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Print.Attribute.Standard.MediaSizeName FindMedia(float arg0, float arg1, int arg2)
         {
             return SExecuteWithSignature<Javax.Print.Attribute.Standard.MediaSizeName>(LocalBridgeClazz, "findMedia", "(FFI)Ljavax/print/attribute/standard/MediaSizeName;", arg0, arg1, arg2);

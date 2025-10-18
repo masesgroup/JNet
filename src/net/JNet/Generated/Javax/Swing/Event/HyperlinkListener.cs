@@ -108,7 +108,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void HyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void HyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent arg0)
         {
             hasOverrideHyperlinkUpdate = false;
@@ -207,7 +207,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void HyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent arg0)
         {
             IExecuteWithSignature("hyperlinkUpdate", "(Ljavax/swing/event/HyperlinkEvent;)V", arg0);

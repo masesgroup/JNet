@@ -66,12 +66,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region PriorityQueue<E> declaration
+    #region PriorityQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class PriorityQueue<E> : Java.Util.AbstractQueue<E>
+    public partial class PriorityQueue : Java.Util.AbstractQueue
     {
         const string _bridgeClassName = "java.util.PriorityQueue";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(int,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public PriorityQueue(int arg0, Java.Util.Comparator arg1)
             : base(arg0, arg1)
         {
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PriorityQueue(int arg0)
             : base(arg0)
         {
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PriorityQueue(Java.Util.Collection arg0)
             : base(arg0)
         {
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PriorityQueue(Java.Util.Comparator arg0)
             : base(arg0)
         {
@@ -148,7 +148,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.PriorityQueue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.PriorityQueue"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PriorityQueue(Java.Util.PriorityQueue arg0)
             : base(arg0)
         {
@@ -156,7 +156,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.SortedSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PriorityQueue(Java.Util.SortedSet arg0)
             : base(arg0)
         {
@@ -166,7 +166,7 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.PriorityQueue"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.PriorityQueue t) => t.Cast<Java.Io.Serializable>();
 
@@ -184,7 +184,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#comparator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Comparator Comparator()
         {
             return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
@@ -200,23 +200,23 @@ namespace Java.Util
     }
     #endregion
 
-    #region PriorityQueue<E> implementation
-    public partial class PriorityQueue<E>
+    #region PriorityQueue implementation
+    public partial class PriorityQueue
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(int,java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
-        public PriorityQueue(int arg0, Java.Util.Comparator<E> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public PriorityQueue(int arg0, Java.Util.Comparator arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PriorityQueue(int arg0)
             : base(arg0)
         {
@@ -224,32 +224,32 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public PriorityQueue(Java.Util.Collection<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public PriorityQueue(Java.Util.Collection arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        public PriorityQueue(Java.Util.Comparator<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public PriorityQueue(Java.Util.Comparator arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.PriorityQueue)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.PriorityQueue"/></param>
-        public PriorityQueue(Java.Util.PriorityQueue<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public PriorityQueue(Java.Util.PriorityQueue arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.SortedSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
-        public PriorityQueue(Java.Util.SortedSet<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public PriorityQueue(Java.Util.SortedSet arg0)
             : base(arg0)
         {
         }
@@ -258,13 +258,13 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.PriorityQueue{E}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.PriorityQueue<E> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.PriorityQueue t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.PriorityQueue{E}"/> to <see cref="Java.Util.PriorityQueue"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.PriorityQueue(Java.Util.PriorityQueue<E> t) => t.Cast<Java.Util.PriorityQueue>();
+        public static implicit operator Java.Util.PriorityQueue(Java.Util.PriorityQueue t) => t.Cast<Java.Util.PriorityQueue>();
 
         #endregion
 
@@ -280,11 +280,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#comparator()"/>
         /// </summary>
-        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE : E
+        /// <typeparam name="ReturnobjectSuperE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Comparator Comparator() where ReturnobjectSuperE : E
         {
-            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperE>>("comparator", "()Ljava/util/Comparator;");
+            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
         }
 
         #endregion

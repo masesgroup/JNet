@@ -106,12 +106,12 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsDefault();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isVarArgs()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsVarArgs();
 
         #endregion
@@ -133,11 +133,11 @@ namespace Javax.Lang.Model.Element
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Element.ExecutableElement"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.ExecutableElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Element.ExecutableElement"/> to <see cref="Javax.Lang.Model.Element.Parameterizable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Parameterizable(Javax.Lang.Model.Element.ExecutableElement t) => t.Cast<Javax.Lang.Model.Element.Parameterizable>();
 
@@ -204,7 +204,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDefault()
         {
             return IExecuteWithSignature<bool>("isDefault", "()Z");
@@ -212,7 +212,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isVarArgs()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsVarArgs()
         {
             return IExecuteWithSignature<bool>("isVarArgs", "()Z");

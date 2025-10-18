@@ -68,7 +68,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html"/>
         /// </summary>
-        public partial class ColorSpaceType : Java.Lang.Enum<Java.Awt.MultipleGradientPaint.ColorSpaceType>
+        public partial class ColorSpaceType : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.awt.MultipleGradientPaint$ColorSpaceType";
             /// <summary>
@@ -109,7 +109,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html"/>
         /// </summary>
-        public partial class CycleMethod : Java.Lang.Enum<Java.Awt.MultipleGradientPaint.CycleMethod>
+        public partial class CycleMethod : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.awt.MultipleGradientPaint$CycleMethod";
             /// <summary>
@@ -247,8 +247,8 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Awt.MultipleGradientPaint.ColorSpaceType"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.MultipleGradientPaint.ColorSpaceType ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/MultipleGradientPaint$ColorSpaceType;", arg0);
@@ -256,7 +256,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Awt.MultipleGradientPaint.ColorSpaceType"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.MultipleGradientPaint.ColorSpaceType[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalBridgeClazz, "values", "()[Ljava/awt/MultipleGradientPaint$ColorSpaceType;");
@@ -313,8 +313,8 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Awt.MultipleGradientPaint.CycleMethod"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.MultipleGradientPaint.CycleMethod ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/MultipleGradientPaint$CycleMethod;", arg0);
@@ -322,7 +322,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Awt.MultipleGradientPaint.CycleMethod"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.MultipleGradientPaint.CycleMethod[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalBridgeClazz, "values", "()[Ljava/awt/MultipleGradientPaint$CycleMethod;");

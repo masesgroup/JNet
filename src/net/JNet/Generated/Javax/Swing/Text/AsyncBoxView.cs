@@ -155,8 +155,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#%3Cinit%3E(javax.swing.text.Element,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public AsyncBoxView(Javax.Swing.Text.Element arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -230,7 +230,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#%3Cinit%3E(javax.swing.text.AsyncBoxView)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AsyncBoxView"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public ChildLocator(Javax.Swing.Text.AsyncBoxView arg0)
                 : base(arg0)
             {
@@ -254,10 +254,10 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getViewIndexAtPoint(float,float,java.awt.Shape)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="float"/></param>
-            /// <param name="arg1"><see cref="float"/></param>
-            /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
-            /// <returns><see cref="int"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public int GetViewIndexAtPoint(float arg0, float arg1, Java.Awt.Shape arg2)
             {
                 return IExecuteWithSignature<int>("getViewIndexAtPoint", "(FFLjava/awt/Shape;)I", arg0, arg1, arg2);
@@ -265,9 +265,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getChildAllocation(int,java.awt.Shape)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
-            /// <returns><see cref="Java.Awt.Shape"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Shape GetChildAllocation(int arg0, Java.Awt.Shape arg1)
             {
                 return IExecuteWithSignature<Java.Awt.Shape>("getChildAllocation", "(ILjava/awt/Shape;)Ljava/awt/Shape;", arg0, arg1);
@@ -275,7 +275,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#childChanged(javax.swing.text.AsyncBoxView.ChildState)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AsyncBoxView.ChildState"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ChildChanged(Javax.Swing.Text.AsyncBoxView.ChildState arg0)
             {
                 IExecuteWithSignature("childChanged", "(Ljavax/swing/text/AsyncBoxView$ChildState;)V", arg0);
@@ -283,7 +283,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#paintChildren(java.awt.Graphics)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void PaintChildren(Java.Awt.Graphics arg0)
             {
                 IExecuteWithSignature("paintChildren", "(Ljava/awt/Graphics;)V", arg0);
@@ -306,8 +306,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#%3Cinit%3E(javax.swing.text.AsyncBoxView,javax.swing.text.View)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.AsyncBoxView"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.View"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public ChildState(Javax.Swing.Text.AsyncBoxView arg0, Javax.Swing.Text.View arg1)
                 : base(arg0, arg1)
             {
@@ -317,7 +317,7 @@ namespace Javax.Swing.Text
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.AsyncBoxView.ChildState"/> to <see cref="Java.Lang.Runnable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Lang.Runnable(Javax.Swing.Text.AsyncBoxView.ChildState t) => t.Cast<Java.Lang.Runnable>();
 
@@ -370,7 +370,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#isLayoutValid()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsLayoutValid()
             {
                 return IExecuteWithSignature<bool>("isLayoutValid", "()Z");
@@ -378,8 +378,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#preferenceChanged(boolean,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="bool"/></param>
-            /// <param name="arg1"><see cref="bool"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void PreferenceChanged(bool arg0, bool arg1)
             {
                 IExecuteWithSignature("preferenceChanged", "(ZZ)V", arg0, arg1);

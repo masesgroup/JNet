@@ -108,7 +108,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0)
         {
             hasOverrideHandshakeCompleted = false;
@@ -207,7 +207,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0)
         {
             IExecuteWithSignature("handshakeCompleted", "(Ljavax/net/ssl/HandshakeCompletedEvent;)V", arg0);

@@ -66,12 +66,12 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicMarkableReference<V> declaration
+    #region AtomicMarkableReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class AtomicMarkableReference<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicMarkableReference<V>>
+    public partial class AtomicMarkableReference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicMarkableReference>
     {
         const string _bridgeClassName = "java.util.concurrent.atomic.AtomicMarkableReference";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#%3Cinit%3E(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public AtomicMarkableReference(object arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -147,9 +147,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#attemptMark(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AttemptMark(object arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("attemptMark", "(Ljava/lang/Object;Z)Z", arg0, arg1);
@@ -157,11 +157,11 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#compareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareAndSet(object arg0, object arg1, bool arg2, bool arg3)
         {
             return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;ZZ)Z", arg0, arg1, arg2, arg3);
@@ -169,7 +169,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMarked()
         {
             return IExecuteWithSignature<bool>("isMarked", "()Z");
@@ -177,11 +177,11 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool WeakCompareAndSet(object arg0, object arg1, bool arg2, bool arg3)
         {
             return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;ZZ)Z", arg0, arg1, arg2, arg3);
@@ -189,8 +189,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#get(boolean[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(bool[] arg0)
         {
             return IExecuteWithSignature("get", "([Z)Ljava/lang/Object;", new object[] { arg0 });
@@ -198,8 +198,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#set(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Set(object arg0, bool arg1)
         {
             IExecuteWithSignature("set", "(Ljava/lang/Object;Z)V", arg0, arg1);
@@ -215,15 +215,15 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicMarkableReference<V> implementation
-    public partial class AtomicMarkableReference<V>
+    #region AtomicMarkableReference implementation
+    public partial class AtomicMarkableReference
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#%3Cinit%3E(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public AtomicMarkableReference(V arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -233,9 +233,9 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicMarkableReference{V}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicMarkableReference"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.Atomic.AtomicMarkableReference(Java.Util.Concurrent.Atomic.AtomicMarkableReference<V> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicMarkableReference>();
+        public static implicit operator Java.Util.Concurrent.Atomic.AtomicMarkableReference(Java.Util.Concurrent.Atomic.AtomicMarkableReference t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicMarkableReference>();
 
         #endregion
 
@@ -258,9 +258,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#attemptMark(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AttemptMark(V arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("attemptMark", "(Ljava/lang/Object;Z)Z", arg0, arg1);
@@ -268,11 +268,11 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#compareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareAndSet(V arg0, V arg1, bool arg2, bool arg3)
         {
             return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;ZZ)Z", arg0, arg1, arg2, arg3);
@@ -280,7 +280,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMarked()
         {
             return IExecuteWithSignature<bool>("isMarked", "()Z");
@@ -288,11 +288,11 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool WeakCompareAndSet(V arg0, V arg1, bool arg2, bool arg3)
         {
             return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;ZZ)Z", arg0, arg1, arg2, arg3);
@@ -300,8 +300,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#get(boolean[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Get(bool[] arg0)
         {
             return IExecuteWithSignature<V>("get", "([Z)Ljava/lang/Object;", new object[] { arg0 });
@@ -309,8 +309,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#set(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Set(V arg0, bool arg1)
         {
             IExecuteWithSignature("set", "(Ljava/lang/Object;Z)V", arg0, arg1);

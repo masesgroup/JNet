@@ -68,12 +68,12 @@ namespace Java.Security
     }
     #endregion
 
-    #region PrivilegedExceptionAction<T> declaration
+    #region PrivilegedExceptionAction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedExceptionAction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class PrivilegedExceptionAction<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivilegedExceptionAction<T>>
+    public partial class PrivilegedExceptionAction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivilegedExceptionAction>
     {
         const string _bridgeClassName = "java.security.PrivilegedExceptionAction";
         /// <summary>
@@ -135,8 +135,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedExceptionAction.html#run()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Run()
         {
             return IExecuteWithSignature("run", "()Ljava/lang/Object;");
@@ -152,18 +152,18 @@ namespace Java.Security
     }
     #endregion
 
-    #region IPrivilegedExceptionAction<T>
+    #region IPrivilegedExceptionAction
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedExceptionAction.html"/>
     /// </summary>
-    public partial interface IPrivilegedExceptionAction<T>
+    public partial interface IPrivilegedExceptionAction
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedExceptionAction.html#run()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         T Run();
 
         #endregion
@@ -176,8 +176,8 @@ namespace Java.Security
     }
     #endregion
 
-    #region PrivilegedExceptionAction<T> implementation
-    public partial class PrivilegedExceptionAction<T> : Java.Security.IPrivilegedExceptionAction<T>
+    #region PrivilegedExceptionAction implementation
+    public partial class PrivilegedExceptionAction : Java.Security.IPrivilegedExceptionAction
     {
         #region Constructors
 
@@ -185,9 +185,9 @@ namespace Java.Security
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.PrivilegedExceptionAction{T}"/> to <see cref="Java.Security.PrivilegedExceptionAction"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Security.PrivilegedExceptionAction(Java.Security.PrivilegedExceptionAction<T> t) => t.Cast<Java.Security.PrivilegedExceptionAction>();
+        public static implicit operator Java.Security.PrivilegedExceptionAction(Java.Security.PrivilegedExceptionAction t) => t.Cast<Java.Security.PrivilegedExceptionAction>();
 
         #endregion
 
@@ -203,8 +203,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedExceptionAction.html#run()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public T Run()
         {
             return IExecuteWithSignature<T>("run", "()Ljava/lang/Object;");

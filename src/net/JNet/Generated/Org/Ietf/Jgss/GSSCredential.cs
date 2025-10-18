@@ -94,45 +94,45 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingAcceptLifetime(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         int GetRemainingAcceptLifetime(Org.Ietf.Jgss.Oid arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingInitLifetime(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         int GetRemainingInitLifetime(Org.Ietf.Jgss.Oid arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         int GetUsage(Org.Ietf.Jgss.Oid arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getName(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.Ietf.Jgss.GSSName GetName(Org.Ietf.Jgss.Oid arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#add(org.ietf.jgss.GSSName,int,int,org.ietf.jgss.Oid,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.GSSName"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         void Add(Org.Ietf.Jgss.GSSName arg0, int arg1, int arg2, Org.Ietf.Jgss.Oid arg3, int arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#dispose()"/>
         /// </summary>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <exception cref=""/>
         void DisposeJVM();
 
         #endregion
@@ -226,9 +226,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingAcceptLifetime(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int GetRemainingAcceptLifetime(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecuteWithSignature<int>("getRemainingAcceptLifetime", "(Lorg/ietf/jgss/Oid;)I", arg0);
@@ -236,9 +236,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingInitLifetime(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int GetRemainingInitLifetime(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecuteWithSignature<int>("getRemainingInitLifetime", "(Lorg/ietf/jgss/Oid;)I", arg0);
@@ -246,9 +246,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int GetUsage(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecuteWithSignature<int>("getUsage", "(Lorg/ietf/jgss/Oid;)I", arg0);
@@ -256,9 +256,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getName(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSName GetName(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("getName", "(Lorg/ietf/jgss/Oid;)Lorg/ietf/jgss/GSSName;", arg0);
@@ -266,12 +266,12 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#add(org.ietf.jgss.GSSName,int,int,org.ietf.jgss.Oid,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.GSSName"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Add(Org.Ietf.Jgss.GSSName arg0, int arg1, int arg2, Org.Ietf.Jgss.Oid arg3, int arg4)
         {
             IExecuteWithSignature("add", "(Lorg/ietf/jgss/GSSName;IILorg/ietf/jgss/Oid;I)V", arg0, arg1, arg2, arg3, arg4);
@@ -279,7 +279,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#dispose()"/>
         /// </summary>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <exception cref=""/>
         public void DisposeJVM()
         {
             IExecuteWithSignature("dispose", "()V");

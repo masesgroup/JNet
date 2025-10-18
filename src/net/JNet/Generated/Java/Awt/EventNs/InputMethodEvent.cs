@@ -73,10 +73,10 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#%3Cinit%3E(java.awt.Component,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public InputMethodEvent(Java.Awt.Component arg0, int arg1, Java.Awt.FontNs.TextHitInfo arg2, Java.Awt.FontNs.TextHitInfo arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,12 +84,12 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#%3Cinit%3E(java.awt.Component,int,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Text.AttributedCharacterIterator"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public InputMethodEvent(Java.Awt.Component arg0, int arg1, Java.Text.AttributedCharacterIterator arg2, int arg3, Java.Awt.FontNs.TextHitInfo arg4, Java.Awt.FontNs.TextHitInfo arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -97,13 +97,13 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#%3Cinit%3E(java.awt.Component,int,long,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="Java.Text.AttributedCharacterIterator"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public InputMethodEvent(Java.Awt.Component arg0, int arg1, long arg2, Java.Text.AttributedCharacterIterator arg3, int arg4, Java.Awt.FontNs.TextHitInfo arg5, Java.Awt.FontNs.TextHitInfo arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -186,7 +186,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#isConsumed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsConsumed()
         {
             return IExecuteWithSignature<bool>("isConsumed", "()Z");

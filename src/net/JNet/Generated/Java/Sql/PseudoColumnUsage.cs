@@ -29,7 +29,7 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html"/>
     /// </summary>
-    public partial class PseudoColumnUsage : Java.Lang.Enum<Java.Sql.PseudoColumnUsage>
+    public partial class PseudoColumnUsage : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.sql.PseudoColumnUsage";
         /// <summary>
@@ -109,8 +109,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.PseudoColumnUsage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.PseudoColumnUsage ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/PseudoColumnUsage;", arg0);
@@ -118,7 +118,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.PseudoColumnUsage"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.PseudoColumnUsage[] Values()
         {
             return SExecuteWithSignatureArray<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "values", "()[Ljava/sql/PseudoColumnUsage;");

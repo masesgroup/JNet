@@ -78,8 +78,8 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathVariableResolver.html#resolveVariable(javax.xml.namespace.QName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         object ResolveVariable(Javax.Xml.Namespace.QName arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathVariableResolver.html#resolveVariable(javax.xml.namespace.QName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object ResolveVariable(Javax.Xml.Namespace.QName arg0)
         {
             return IExecuteWithSignature("resolveVariable", "(Ljavax/xml/namespace/QName;)Ljava/lang/Object;", arg0);

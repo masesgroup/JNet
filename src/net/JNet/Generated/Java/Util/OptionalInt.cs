@@ -85,7 +85,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#empty()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.OptionalInt Empty()
         {
             return SExecuteWithSignature<Java.Util.OptionalInt>(LocalBridgeClazz, "empty", "()Ljava/util/OptionalInt;");
@@ -93,8 +93,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#of(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.OptionalInt Of(int arg0)
         {
             return SExecuteWithSignature<Java.Util.OptionalInt>(LocalBridgeClazz, "of", "(I)Ljava/util/OptionalInt;", arg0);
@@ -113,19 +113,19 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <typeparam name="Arg0ExtendsX"><typeparamref name="X"/></typeparam>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsX"><see cref=""/></typeparam>
         /// <typeparam name="X"></typeparam>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Lang.Throwable"/>
-        public int OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public int OrElseThrow<, >(Java.Util.Function.Supplier arg0) where Arg0ExtendsX : X
         {
             return IExecute<int>("orElseThrow", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -133,7 +133,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isPresent()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPresent()
         {
             return IExecuteWithSignature<bool>("isPresent", "()Z");
@@ -141,8 +141,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElse(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int OrElse(int arg0)
         {
             return IExecuteWithSignature<int>("orElse", "(I)I", arg0);
@@ -150,8 +150,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseGet(java.util.function.IntSupplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntSupplier"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int OrElseGet(Java.Util.Function.IntSupplier arg0)
         {
             return IExecuteWithSignature<int>("orElseGet", "(Ljava/util/function/IntSupplier;)I", arg0);
@@ -159,7 +159,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int OrElseThrow()
         {
             return IExecuteWithSignature<int>("orElseThrow", "()I");
@@ -167,7 +167,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#stream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.IntStream Stream()
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("stream", "()Ljava/util/stream/IntStream;");
@@ -175,7 +175,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#ifPresent(java.util.function.IntConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void IfPresent(Java.Util.Function.IntConsumer arg0)
         {
             IExecuteWithSignature("ifPresent", "(Ljava/util/function/IntConsumer;)V", arg0);
@@ -183,8 +183,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#ifPresentOrElse(java.util.function.IntConsumer,java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void IfPresentOrElse(Java.Util.Function.IntConsumer arg0, Java.Lang.Runnable arg1)
         {
             IExecuteWithSignature("ifPresentOrElse", "(Ljava/util/function/IntConsumer;Ljava/lang/Runnable;)V", arg0, arg1);

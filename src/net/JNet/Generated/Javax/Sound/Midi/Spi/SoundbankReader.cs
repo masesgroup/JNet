@@ -91,10 +91,10 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html#getSoundbank(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.Soundbank"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Sound.Midi.Soundbank GetSoundbank(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Midi.Soundbank>("getSoundbank", "(Ljava/io/File;)Ljavax/sound/midi/Soundbank;", arg0);
@@ -102,10 +102,10 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html#getSoundbank(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.Soundbank"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Sound.Midi.Soundbank GetSoundbank(Java.Io.InputStream arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Midi.Soundbank>("getSoundbank", "(Ljava/io/InputStream;)Ljavax/sound/midi/Soundbank;", arg0);
@@ -113,10 +113,10 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/SoundbankReader.html#getSoundbank(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.Soundbank"/></returns>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Sound.Midi.Soundbank GetSoundbank(Java.Net.URL arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Midi.Soundbank>("getSoundbank", "(Ljava/net/URL;)Ljavax/sound/midi/Soundbank;", arg0);

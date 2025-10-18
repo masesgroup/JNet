@@ -799,8 +799,8 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Awt.ColorNs.ICC_Profile"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(byte[] arg0)
         {
             return SExecuteWithSignature<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", "([B)Ljava/awt/color/ICC_Profile;", new object[] { arg0 });
@@ -808,8 +808,8 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ColorNs.ICC_Profile"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", "(I)Ljava/awt/color/ICC_Profile;", arg0);
@@ -817,9 +817,9 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Java.Awt.ColorNs.ICC_Profile"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(Java.Io.InputStream arg0)
         {
             return SExecuteWithSignature<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", "(Ljava/io/InputStream;)Ljava/awt/color/ICC_Profile;", arg0);
@@ -827,9 +827,9 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Awt.ColorNs.ICC_Profile"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Awt.ColorNs.ICC_Profile GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Awt.ColorNs.ICC_Profile>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/awt/color/ICC_Profile;", arg0);
@@ -890,8 +890,8 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#getData(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="byte"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public byte[] GetData(int arg0)
         {
             return IExecuteWithSignatureArray<byte>("getData", "(I)[B", arg0);
@@ -899,8 +899,8 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#setData(int,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetData(int arg0, byte[] arg1)
         {
             IExecuteWithSignature("setData", "(I[B)V", arg0, arg1);
@@ -908,8 +908,8 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#write(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(Java.Io.OutputStream arg0)
         {
             IExecuteWithSignature("write", "(Ljava/io/OutputStream;)V", arg0);
@@ -917,8 +917,8 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#write(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(Java.Lang.String arg0)
         {
             IExecuteWithSignature("write", "(Ljava/lang/String;)V", arg0);

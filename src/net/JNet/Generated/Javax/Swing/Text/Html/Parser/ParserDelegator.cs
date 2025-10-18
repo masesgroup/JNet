@@ -75,7 +75,7 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Html.Parser.ParserDelegator"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.Parser.ParserDelegator t) => t.Cast<Java.Io.Serializable>();
 

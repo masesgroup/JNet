@@ -78,7 +78,7 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getAttributes()"/> 
         /// </summary>
-        Java.Util.Iterator<Javax.Xml.Stream.Events.Attribute> Attributes { get; }
+        Java.Util.Iterator Attributes { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getName()"/> 
         /// </summary>
@@ -90,18 +90,18 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaces()"/> 
         /// </summary>
-        Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace> Namespaces { get; }
+        Java.Util.Iterator Namespaces { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String GetNamespaceURI(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getAttributeByName(javax.xml.namespace.QName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.Events.Attribute"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Xml.Stream.Events.Attribute GetAttributeByName(Javax.Xml.Namespace.QName arg0);
 
         #endregion
@@ -137,9 +137,9 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getAttributes()"/> 
         /// </summary>
-        public Java.Util.Iterator<Javax.Xml.Stream.Events.Attribute> Attributes
+        public Java.Util.Iterator Attributes
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Javax.Xml.Stream.Events.Attribute>>("getAttributes", "()Ljava/util/Iterator;"); }
+            get { return IExecuteWithSignature<Java.Util.Iterator>("getAttributes", "()Ljava/util/Iterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getName()"/> 
@@ -158,15 +158,15 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaces()"/> 
         /// </summary>
-        public Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace> Namespaces
+        public Java.Util.Iterator Namespaces
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace>>("getNamespaces", "()Ljava/util/Iterator;"); }
+            get { return IExecuteWithSignature<Java.Util.Iterator>("getNamespaces", "()Ljava/util/Iterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetNamespaceURI(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -174,8 +174,8 @@ namespace Javax.Xml.Stream.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getAttributeByName(javax.xml.namespace.QName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
-        /// <returns><see cref="Javax.Xml.Stream.Events.Attribute"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Stream.Events.Attribute GetAttributeByName(Javax.Xml.Namespace.QName arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Stream.Events.Attribute>("getAttributeByName", "(Ljavax/xml/namespace/QName;)Ljavax/xml/stream/events/Attribute;", arg0);

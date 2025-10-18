@@ -91,9 +91,9 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyleFactory.html#getStyle(javax.swing.JComponent,javax.swing.plaf.synth.Region)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.Region"/></param>
-        /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Plaf.Synth.SynthStyle GetStyle(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthStyle>("getStyle", "(Ljavax/swing/JComponent;Ljavax/swing/plaf/synth/Region;)Ljavax/swing/plaf/synth/SynthStyle;", arg0, arg1);

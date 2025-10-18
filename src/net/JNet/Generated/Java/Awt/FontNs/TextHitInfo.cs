@@ -85,8 +85,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#afterOffset(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.FontNs.TextHitInfo AfterOffset(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>(LocalBridgeClazz, "afterOffset", "(I)Ljava/awt/font/TextHitInfo;", arg0);
@@ -94,8 +94,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#beforeOffset(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.FontNs.TextHitInfo BeforeOffset(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>(LocalBridgeClazz, "beforeOffset", "(I)Ljava/awt/font/TextHitInfo;", arg0);
@@ -103,8 +103,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#leading(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.FontNs.TextHitInfo Leading(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>(LocalBridgeClazz, "leading", "(I)Ljava/awt/font/TextHitInfo;", arg0);
@@ -112,8 +112,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#trailing(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.FontNs.TextHitInfo Trailing(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>(LocalBridgeClazz, "trailing", "(I)Ljava/awt/font/TextHitInfo;", arg0);
@@ -146,7 +146,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#isLeadingEdge()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsLeadingEdge()
         {
             return IExecuteWithSignature<bool>("isLeadingEdge", "()Z");
@@ -154,8 +154,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#getOffsetHit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.FontNs.TextHitInfo GetOffsetHit(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>("getOffsetHit", "(I)Ljava/awt/font/TextHitInfo;", arg0);

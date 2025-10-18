@@ -78,13 +78,13 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#restoreState(java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        void RestoreState(Java.Util.Hashtable<object, object> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        void RestoreState(Java.Util.Hashtable<, > arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#storeState(java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        void StoreState(Java.Util.Hashtable<object, object> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        void StoreState(Java.Util.Hashtable<, > arg0);
 
         #endregion
 
@@ -125,16 +125,16 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#restoreState(java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        public void RestoreState(Java.Util.Hashtable<object, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void RestoreState(Java.Util.Hashtable<, > arg0)
         {
             IExecuteWithSignature("restoreState", "(Ljava/util/Hashtable;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#storeState(java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        public void StoreState(Java.Util.Hashtable<object, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void StoreState(Java.Util.Hashtable<, > arg0)
         {
             IExecuteWithSignature("storeState", "(Ljava/util/Hashtable;)V", arg0);
         }

@@ -73,9 +73,9 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAParameterSpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
-        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
-        /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public DSAParameterSpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
             : base(arg0, arg1, arg2)
         {
@@ -85,11 +85,11 @@ namespace Java.Security.Spec
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Spec.DSAParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Java.Security.Spec.DSAParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
         /// <summary>
-        /// Converter from <see cref="Java.Security.Spec.DSAParameterSpec"/> to <see cref="Java.Security.Interfaces.DSAParams"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Interfaces.DSAParams(Java.Security.Spec.DSAParameterSpec t) => t.Cast<Java.Security.Interfaces.DSAParams>();
 

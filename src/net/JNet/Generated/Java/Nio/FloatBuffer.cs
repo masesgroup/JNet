@@ -77,7 +77,7 @@ namespace Java.Nio
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.FloatBuffer"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.FloatBuffer t) => t.Cast<Java.Lang.Comparable>();
 
@@ -91,8 +91,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#allocate(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.FloatBuffer Allocate(int arg0)
         {
             return SExecuteWithSignature<Java.Nio.FloatBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/FloatBuffer;", arg0);
@@ -100,10 +100,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#wrap(float[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.FloatBuffer Wrap(float[] arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Nio.FloatBuffer>(LocalBridgeClazz, "wrap", "([FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2);
@@ -111,8 +111,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#wrap(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.FloatBuffer Wrap(float[] arg0)
         {
             return SExecuteWithSignature<Java.Nio.FloatBuffer>(LocalBridgeClazz, "wrap", "([F)Ljava/nio/FloatBuffer;", new object[] { arg0 });
@@ -124,7 +124,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#get()"/>
         /// </summary>
-        /// <returns><see cref="float"/></returns>
+        /// <returns><see cref=""/></returns>
         public float Get()
         {
             return IExecuteWithSignature<float>("get", "()F");
@@ -132,8 +132,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float Get(int arg0)
         {
             return IExecuteWithSignature<float>("get", "(I)F", arg0);
@@ -141,7 +141,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#order()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ByteOrder Order()
         {
             return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
@@ -149,7 +149,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.FloatBuffer AsReadOnlyBuffer()
         {
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("asReadOnlyBuffer", "()Ljava/nio/FloatBuffer;");
@@ -157,7 +157,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#compact()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.FloatBuffer Compact()
         {
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("compact", "()Ljava/nio/FloatBuffer;");
@@ -165,8 +165,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.FloatBuffer Put(float arg0)
         {
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(F)Ljava/nio/FloatBuffer;", arg0);
@@ -174,9 +174,9 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.FloatBuffer Put(int arg0, float arg1)
         {
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(IF)Ljava/nio/FloatBuffer;", arg0, arg1);
@@ -184,8 +184,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.FloatBuffer Put(float[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "([F)Ljava/nio/FloatBuffer;", new object[] { arg0 });
@@ -193,8 +193,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -202,8 +202,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#compareTo(java.nio.FloatBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.FloatBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Nio.FloatBuffer arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/FloatBuffer;)I", arg0);
@@ -211,8 +211,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#mismatch(java.nio.FloatBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.FloatBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Mismatch(Java.Nio.FloatBuffer arg0)
         {
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/FloatBuffer;)I", arg0);
@@ -220,10 +220,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#get(float[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.FloatBuffer Get(float[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("get", "([FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2);
@@ -231,8 +231,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#get(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.FloatBuffer Get(float[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("get", "([F)Ljava/nio/FloatBuffer;", new object[] { arg0 });
@@ -240,10 +240,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(float[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.FloatBuffer Put(float[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "([FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2);
@@ -251,8 +251,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(java.nio.FloatBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.FloatBuffer"/></param>
-        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.FloatBuffer Put(Java.Nio.FloatBuffer arg0)
         {
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(Ljava/nio/FloatBuffer;)Ljava/nio/FloatBuffer;", arg0);

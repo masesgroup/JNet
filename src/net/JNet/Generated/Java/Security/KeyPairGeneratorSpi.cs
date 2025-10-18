@@ -91,7 +91,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#generateKeyPair()"/>
         /// </summary>
-        /// <returns><see cref="Java.Security.KeyPair"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Security.KeyPair GenerateKeyPair()
         {
             return IExecuteWithSignature<Java.Security.KeyPair>("generateKeyPair", "()Ljava/security/KeyPair;");
@@ -99,8 +99,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#initialize(int,java.security.SecureRandom)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Initialize(int arg0, Java.Security.SecureRandom arg1)
         {
             IExecuteWithSignature("initialize", "(ILjava/security/SecureRandom;)V", arg0, arg1);
@@ -108,9 +108,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#initialize(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
-        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Initialize(Java.Security.Spec.AlgorithmParameterSpec arg0, Java.Security.SecureRandom arg1)
         {
             IExecuteWithSignature("initialize", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", arg0, arg1);

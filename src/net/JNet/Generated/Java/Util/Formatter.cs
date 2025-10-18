@@ -66,7 +66,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html"/>
         /// </summary>
-        public partial class BigDecimalLayoutForm : Java.Lang.Enum<Java.Util.Formatter.BigDecimalLayoutForm>
+        public partial class BigDecimalLayoutForm : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.util.Formatter$BigDecimalLayoutForm";
             /// <summary>
@@ -114,11 +114,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Formatter(Java.Io.File arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
             : base(arg0, arg1, arg2)
         {
@@ -126,10 +126,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Formatter(Java.Io.File arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -137,10 +137,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public Formatter(Java.Io.File arg0, Java.Nio.Charset.Charset arg1, Java.Util.Locale arg2)
             : base(arg0, arg1, arg2)
         {
@@ -148,8 +148,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public Formatter(Java.Io.File arg0)
             : base(arg0)
         {
@@ -157,10 +157,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public Formatter(Java.Io.OutputStream arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
             : base(arg0, arg1, arg2)
         {
@@ -168,9 +168,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public Formatter(Java.Io.OutputStream arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -178,9 +178,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.Charset,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public Formatter(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1, Java.Util.Locale arg2)
             : base(arg0, arg1, arg2)
         {
@@ -188,7 +188,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Formatter(Java.Io.OutputStream arg0)
             : base(arg0)
         {
@@ -196,7 +196,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.PrintStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Formatter(Java.Io.PrintStream arg0)
             : base(arg0)
         {
@@ -204,8 +204,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.Appendable,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Appendable"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Formatter(Java.Lang.Appendable arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
@@ -213,7 +213,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.Appendable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Appendable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Formatter(Java.Lang.Appendable arg0)
             : base(arg0)
         {
@@ -221,11 +221,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Formatter(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
             : base(arg0, arg1, arg2)
         {
@@ -233,10 +233,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
-        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Formatter(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -244,10 +244,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public Formatter(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1, Java.Util.Locale arg2)
             : base(arg0, arg1, arg2)
         {
@@ -255,8 +255,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public Formatter(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -264,7 +264,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Formatter(Java.Util.Locale arg0)
             : base(arg0)
         {
@@ -274,11 +274,11 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Formatter"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Util.Formatter t) => t.Cast<Java.Io.Closeable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Formatter"/> to <see cref="Java.Io.Flushable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Util.Formatter t) => t.Cast<Java.Io.Flushable>();
 
@@ -296,7 +296,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#ioException()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.IOException"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Io.IOException IoException()
         {
             var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("ioException", "()Ljava/io/IOException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Io.IOException>(obj);
@@ -304,7 +304,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#out()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Appendable Out()
         {
             return IExecuteWithSignature<Java.Lang.Appendable>("out", "()Ljava/lang/Appendable;");
@@ -312,9 +312,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Formatter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Formatter Format(Java.Lang.String arg0, params object[] arg1)
         {
             return IExecuteWithSignature<Java.Util.Formatter>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -322,10 +322,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.util.Locale,java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.Formatter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Formatter Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
             return IExecuteWithSignature<Java.Util.Formatter>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
@@ -333,7 +333,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#locale()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Locale"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Locale Locale()
         {
             return IExecuteWithSignature<Java.Util.Locale>("locale", "()Ljava/util/Locale;");
@@ -387,8 +387,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Util.Formatter.BigDecimalLayoutForm"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Util.Formatter.BigDecimalLayoutForm ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/Formatter$BigDecimalLayoutForm;", arg0);
@@ -396,7 +396,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Formatter.BigDecimalLayoutForm"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Util.Formatter.BigDecimalLayoutForm[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "values", "()[Ljava/util/Formatter$BigDecimalLayoutForm;");

@@ -278,7 +278,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#%3Cinit%3E(java.awt.PageAttributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.PageAttributes"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PageAttributes(Java.Awt.PageAttributes arg0)
             : base(arg0)
         {
@@ -286,12 +286,12 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#%3Cinit%3E(java.awt.PageAttributes.ColorType,java.awt.PageAttributes.MediaType,java.awt.PageAttributes.OrientationRequestedType,java.awt.PageAttributes.OriginType,java.awt.PageAttributes.PrintQualityType,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.PageAttributes.ColorType"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.PageAttributes.MediaType"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.PageAttributes.OrientationRequestedType"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.PageAttributes.OriginType"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.PageAttributes.PrintQualityType"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public PageAttributes(Java.Awt.PageAttributes.ColorType arg0, Java.Awt.PageAttributes.MediaType arg1, Java.Awt.PageAttributes.OrientationRequestedType arg2, Java.Awt.PageAttributes.OriginType arg3, Java.Awt.PageAttributes.PrintQualityType arg4, int[] arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -357,7 +357,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#set(java.awt.PageAttributes)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.PageAttributes"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Set(Java.Awt.PageAttributes arg0)
         {
             IExecuteWithSignature("set", "(Ljava/awt/PageAttributes;)V", arg0);
@@ -372,7 +372,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#setOrientationRequested(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetOrientationRequested(int arg0)
         {
             IExecuteWithSignature("setOrientationRequested", "(I)V", arg0);
@@ -380,7 +380,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#setOrientationRequested(java.awt.PageAttributes.OrientationRequestedType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.PageAttributes.OrientationRequestedType"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetOrientationRequested(Java.Awt.PageAttributes.OrientationRequestedType arg0)
         {
             IExecuteWithSignature("setOrientationRequested", "(Ljava/awt/PageAttributes$OrientationRequestedType;)V", arg0);
@@ -395,7 +395,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#setPrinterResolution(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetPrinterResolution(int arg0)
         {
             IExecuteWithSignature("setPrinterResolution", "(I)V", arg0);
@@ -403,7 +403,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#setPrinterResolution(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetPrinterResolution(int[] arg0)
         {
             IExecuteWithSignature("setPrinterResolution", "([I)V", new object[] { arg0 });
@@ -418,7 +418,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#setPrintQuality(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetPrintQuality(int arg0)
         {
             IExecuteWithSignature("setPrintQuality", "(I)V", arg0);
@@ -426,7 +426,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#setPrintQuality(java.awt.PageAttributes.PrintQualityType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.PageAttributes.PrintQualityType"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetPrintQuality(Java.Awt.PageAttributes.PrintQualityType arg0)
         {
             IExecuteWithSignature("setPrintQuality", "(Ljava/awt/PageAttributes$PrintQualityType;)V", arg0);

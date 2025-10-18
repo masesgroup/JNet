@@ -91,7 +91,7 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidator()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Validation.Validator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Validation.Validator NewValidator()
         {
             return IExecuteWithSignature<Javax.Xml.Validation.Validator>("newValidator", "()Ljavax/xml/validation/Validator;");
@@ -99,7 +99,7 @@ namespace Javax.Xml.Validation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidatorHandler()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Xml.Validation.ValidatorHandler"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Validation.ValidatorHandler NewValidatorHandler()
         {
             return IExecuteWithSignature<Javax.Xml.Validation.ValidatorHandler>("newValidatorHandler", "()Ljavax/xml/validation/ValidatorHandler;");

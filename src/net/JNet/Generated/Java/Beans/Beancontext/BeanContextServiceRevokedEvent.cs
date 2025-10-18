@@ -73,9 +73,9 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.lang.Class,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public BeanContextServiceRevokedEvent(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -113,7 +113,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsCurrentServiceInvalidNow()
         {
             return IExecuteWithSignature<bool>("isCurrentServiceInvalidNow", "()Z");
@@ -121,8 +121,8 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isServiceClass(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsServiceClass(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<bool>("isServiceClass", "(Ljava/lang/Class;)Z", arg0);

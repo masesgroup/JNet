@@ -97,7 +97,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#nativeOrder()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.ByteOrder NativeOrder()
         {
             return SExecuteWithSignature<Java.Nio.ByteOrder>(LocalBridgeClazz, "nativeOrder", "()Ljava/nio/ByteOrder;");

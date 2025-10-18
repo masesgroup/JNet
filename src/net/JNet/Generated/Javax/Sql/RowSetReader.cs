@@ -78,8 +78,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetReader.html#readData(javax.sql.RowSetInternal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void ReadData(Javax.Sql.RowSetInternal arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetReader.html#readData(javax.sql.RowSetInternal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void ReadData(Javax.Sql.RowSetInternal arg0)
         {
             IExecuteWithSignature("readData", "(Ljavax/sql/RowSetInternal;)V", arg0);

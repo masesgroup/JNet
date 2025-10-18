@@ -73,11 +73,11 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.event.HyperlinkEvent.EventType,java.net.URL,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
-        /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Java.Lang.String arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -85,13 +85,13 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.event.HyperlinkEvent.EventType,java.net.URL,java.lang.String,javax.swing.text.Element,java.awt.event.InputEvent,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
-        /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.EventNs.InputEvent"/></param>
-        /// <param name="arg6"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5, Java.Lang.String arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -99,12 +99,12 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.event.HyperlinkEvent.EventType,java.net.URL,java.lang.String,javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
-        /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Lang.String arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -112,10 +112,10 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.event.HyperlinkEvent.EventType,java.net.URL,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
-        /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -123,11 +123,11 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.event.HyperlinkEvent.EventType,java.net.URL,javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
-        /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Javax.Swing.Text.Element arg3, Java.Lang.String arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {

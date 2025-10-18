@@ -73,8 +73,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/WrappedPlainView.html#%3Cinit%3E(javax.swing.text.Element,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public WrappedPlainView(Javax.Swing.Text.Element arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/WrappedPlainView.html#%3Cinit%3E(javax.swing.text.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public WrappedPlainView(Javax.Swing.Text.Element arg0)
             : base(arg0)
         {
@@ -92,7 +92,7 @@ namespace Javax.Swing.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.WrappedPlainView"/> to <see cref="Javax.Swing.Text.TabExpander"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Text.TabExpander(Javax.Swing.Text.WrappedPlainView t) => t.Cast<Javax.Swing.Text.TabExpander>();
 
@@ -110,9 +110,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/WrappedPlainView.html#nextTabStop(float,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float NextTabStop(float arg0, int arg1)
         {
             return IExecuteWithSignature<float>("nextTabStop", "(FI)F", arg0, arg1);

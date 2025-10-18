@@ -77,7 +77,7 @@ namespace Java.Nio
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.ShortBuffer"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.ShortBuffer t) => t.Cast<Java.Lang.Comparable>();
 
@@ -91,8 +91,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#allocate(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.ShortBuffer Allocate(int arg0)
         {
             return SExecuteWithSignature<Java.Nio.ShortBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/ShortBuffer;", arg0);
@@ -100,10 +100,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#wrap(short[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.ShortBuffer Wrap(short[] arg0, int arg1, int arg2)
         {
             return SExecuteWithSignature<Java.Nio.ShortBuffer>(LocalBridgeClazz, "wrap", "([SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2);
@@ -111,8 +111,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#wrap(short[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.ShortBuffer Wrap(short[] arg0)
         {
             return SExecuteWithSignature<Java.Nio.ShortBuffer>(LocalBridgeClazz, "wrap", "([S)Ljava/nio/ShortBuffer;", new object[] { arg0 });
@@ -124,7 +124,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#order()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ByteOrder Order()
         {
             return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
@@ -132,7 +132,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ShortBuffer AsReadOnlyBuffer()
         {
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("asReadOnlyBuffer", "()Ljava/nio/ShortBuffer;");
@@ -140,7 +140,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#compact()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ShortBuffer Compact()
         {
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("compact", "()Ljava/nio/ShortBuffer;");
@@ -148,9 +148,9 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(int,short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ShortBuffer Put(int arg0, short arg1)
         {
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "(IS)Ljava/nio/ShortBuffer;", arg0, arg1);
@@ -158,8 +158,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ShortBuffer Put(short arg0)
         {
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "(S)Ljava/nio/ShortBuffer;", arg0);
@@ -167,7 +167,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#get()"/>
         /// </summary>
-        /// <returns><see cref="short"/></returns>
+        /// <returns><see cref=""/></returns>
         public short Get()
         {
             return IExecuteWithSignature<short>("get", "()S");
@@ -175,8 +175,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="short"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public short Get(int arg0)
         {
             return IExecuteWithSignature<short>("get", "(I)S", arg0);
@@ -184,8 +184,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(short[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ShortBuffer Put(short[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "([S)Ljava/nio/ShortBuffer;", new object[] { arg0 });
@@ -193,8 +193,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -202,8 +202,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#compareTo(java.nio.ShortBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ShortBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Nio.ShortBuffer arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/ShortBuffer;)I", arg0);
@@ -211,8 +211,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#mismatch(java.nio.ShortBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ShortBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Mismatch(Java.Nio.ShortBuffer arg0)
         {
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/ShortBuffer;)I", arg0);
@@ -220,10 +220,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#get(short[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ShortBuffer Get(short[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("get", "([SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2);
@@ -231,8 +231,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#get(short[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ShortBuffer Get(short[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("get", "([S)Ljava/nio/ShortBuffer;", new object[] { arg0 });
@@ -240,8 +240,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(java.nio.ShortBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ShortBuffer"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ShortBuffer Put(Java.Nio.ShortBuffer arg0)
         {
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "(Ljava/nio/ShortBuffer;)Ljava/nio/ShortBuffer;", arg0);
@@ -249,10 +249,10 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(short[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.ShortBuffer Put(short[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "([SII)Ljava/nio/ShortBuffer;", arg0, arg1, arg2);

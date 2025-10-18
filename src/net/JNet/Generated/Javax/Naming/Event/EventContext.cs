@@ -78,30 +78,30 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#targetMustExist()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool TargetMustExist();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(java.lang.String,int,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void AddNamingListener(Java.Lang.String arg0, int arg1, Javax.Naming.Event.NamingListener arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(javax.naming.Name,int,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         void AddNamingListener(Javax.Naming.Name arg0, int arg1, Javax.Naming.Event.NamingListener arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#removeNamingListener(javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void RemoveNamingListener(Javax.Naming.Event.NamingListener arg0);
 
         #endregion
@@ -155,8 +155,8 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#targetMustExist()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool TargetMustExist()
         {
             return IExecuteWithSignature<bool>("targetMustExist", "()Z");
@@ -164,10 +164,10 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(java.lang.String,int,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddNamingListener(Java.Lang.String arg0, int arg1, Javax.Naming.Event.NamingListener arg2)
         {
             IExecuteWithSignature("addNamingListener", "(Ljava/lang/String;ILjavax/naming/event/NamingListener;)V", arg0, arg1, arg2);
@@ -175,10 +175,10 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(javax.naming.Name,int,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddNamingListener(Javax.Naming.Name arg0, int arg1, Javax.Naming.Event.NamingListener arg2)
         {
             IExecuteWithSignature("addNamingListener", "(Ljavax/naming/Name;ILjavax/naming/event/NamingListener;)V", arg0, arg1, arg2);
@@ -186,8 +186,8 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#removeNamingListener(javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void RemoveNamingListener(Javax.Naming.Event.NamingListener arg0)
         {
             IExecuteWithSignature("removeNamingListener", "(Ljavax/naming/event/NamingListener;)V", arg0);

@@ -73,7 +73,7 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html#%3Cinit%3E(javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public SubjectDomainCombiner(Javax.Security.Auth.Subject arg0)
             : base(arg0)
         {
@@ -104,9 +104,9 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <param name="arg1"><see cref="Java.Security.ProtectionDomain"/></param>
-        /// <returns><see cref="Java.Security.ProtectionDomain"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Security.ProtectionDomain[] Combine(Java.Security.ProtectionDomain[] arg0, Java.Security.ProtectionDomain[] arg1)
         {
             return IExecuteWithSignatureArray<Java.Security.ProtectionDomain>("combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;", arg0, arg1);

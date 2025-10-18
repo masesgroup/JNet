@@ -73,8 +73,8 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/CipherInputStream.html#%3Cinit%3E(java.io.InputStream,javax.crypto.Cipher)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Javax.Crypto.Cipher"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public CipherInputStream(Java.Io.InputStream arg0, Javax.Crypto.Cipher arg1)
             : base(arg0, arg1)
         {

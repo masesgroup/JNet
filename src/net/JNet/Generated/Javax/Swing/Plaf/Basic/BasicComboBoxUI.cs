@@ -308,9 +308,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.html#paintCurrentValue(java.awt.Graphics,java.awt.Rectangle,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void PaintCurrentValue(Java.Awt.Graphics arg0, Java.Awt.Rectangle arg1, bool arg2)
         {
             IExecuteWithSignature("paintCurrentValue", "(Ljava/awt/Graphics;Ljava/awt/Rectangle;Z)V", arg0, arg1, arg2);
@@ -318,9 +318,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.html#paintCurrentValueBackground(java.awt.Graphics,java.awt.Rectangle,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void PaintCurrentValueBackground(Java.Awt.Graphics arg0, Java.Awt.Rectangle arg1, bool arg2)
         {
             IExecuteWithSignature("paintCurrentValueBackground", "(Ljava/awt/Graphics;Ljava/awt/Rectangle;Z)V", arg0, arg1, arg2);
@@ -350,7 +350,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ComboBoxLayoutManager.html#%3Cinit%3E(javax.swing.plaf.basic.BasicComboBoxUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public ComboBoxLayoutManager(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
                 : base(arg0)
             {
@@ -374,8 +374,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ComboBoxLayoutManager.html#minimumLayoutSize(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-            /// <returns><see cref="Java.Awt.Dimension"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
@@ -383,8 +383,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ComboBoxLayoutManager.html#preferredLayoutSize(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-            /// <returns><see cref="Java.Awt.Dimension"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
@@ -392,8 +392,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ComboBoxLayoutManager.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
             {
                 IExecuteWithSignature("addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
@@ -401,7 +401,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ComboBoxLayoutManager.html#layoutContainer(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void LayoutContainer(Java.Awt.Container arg0)
             {
                 IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
@@ -409,7 +409,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ComboBoxLayoutManager.html#removeLayoutComponent(java.awt.Component)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);
@@ -432,7 +432,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicComboBoxUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public FocusHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
                 : base(arg0)
             {
@@ -442,7 +442,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI.FocusHandler"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
 
@@ -460,7 +460,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -468,7 +468,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -491,7 +491,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ItemHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicComboBoxUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public ItemHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
                 : base(arg0)
             {
@@ -501,7 +501,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI.ItemHandler"/> to <see cref="Java.Awt.EventNs.ItemListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.ItemListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.ItemHandler t) => t.Cast<Java.Awt.EventNs.ItemListener>();
 
@@ -519,7 +519,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ItemHandler.html#itemStateChanged(java.awt.event.ItemEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
             {
                 IExecuteWithSignature("itemStateChanged", "(Ljava/awt/event/ItemEvent;)V", arg0);
@@ -542,7 +542,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ListDataHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicComboBoxUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public ListDataHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
                 : base(arg0)
             {
@@ -552,7 +552,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI.ListDataHandler"/> to <see cref="Javax.Swing.Event.ListDataListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
 
@@ -570,7 +570,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecuteWithSignature("contentsChanged", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
@@ -578,7 +578,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecuteWithSignature("intervalAdded", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
@@ -586,7 +586,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecuteWithSignature("intervalRemoved", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
@@ -609,7 +609,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.PropertyChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicComboBoxUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
                 : base(arg0)
             {
@@ -619,7 +619,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
 
@@ -637,7 +637,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);

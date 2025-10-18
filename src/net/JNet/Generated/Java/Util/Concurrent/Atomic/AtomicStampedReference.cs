@@ -66,12 +66,12 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicStampedReference<V> declaration
+    #region AtomicStampedReference declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class AtomicStampedReference<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicStampedReference<V>>
+    public partial class AtomicStampedReference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicStampedReference>
     {
         const string _bridgeClassName = "java.util.concurrent.atomic.AtomicStampedReference";
         /// <summary>
@@ -115,8 +115,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#%3Cinit%3E(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public AtomicStampedReference(object arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -154,9 +154,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#attemptStamp(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AttemptStamp(object arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("attemptStamp", "(Ljava/lang/Object;I)Z", arg0, arg1);
@@ -164,11 +164,11 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#compareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareAndSet(object arg0, object arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z", arg0, arg1, arg2, arg3);
@@ -176,11 +176,11 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool WeakCompareAndSet(object arg0, object arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z", arg0, arg1, arg2, arg3);
@@ -188,8 +188,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#get(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(int[] arg0)
         {
             return IExecuteWithSignature("get", "([I)Ljava/lang/Object;", new object[] { arg0 });
@@ -197,8 +197,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#set(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Set(object arg0, int arg1)
         {
             IExecuteWithSignature("set", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -214,15 +214,15 @@ namespace Java.Util.Concurrent.Atomic
     }
     #endregion
 
-    #region AtomicStampedReference<V> implementation
-    public partial class AtomicStampedReference<V>
+    #region AtomicStampedReference implementation
+    public partial class AtomicStampedReference
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#%3Cinit%3E(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public AtomicStampedReference(V arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -232,9 +232,9 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicStampedReference{V}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicStampedReference"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.Atomic.AtomicStampedReference(Java.Util.Concurrent.Atomic.AtomicStampedReference<V> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicStampedReference>();
+        public static implicit operator Java.Util.Concurrent.Atomic.AtomicStampedReference(Java.Util.Concurrent.Atomic.AtomicStampedReference t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicStampedReference>();
 
         #endregion
 
@@ -264,9 +264,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#attemptStamp(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AttemptStamp(V arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("attemptStamp", "(Ljava/lang/Object;I)Z", arg0, arg1);
@@ -274,11 +274,11 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#compareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CompareAndSet(V arg0, V arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z", arg0, arg1, arg2, arg3);
@@ -286,11 +286,11 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool WeakCompareAndSet(V arg0, V arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;II)Z", arg0, arg1, arg2, arg3);
@@ -298,8 +298,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#get(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Get(int[] arg0)
         {
             return IExecuteWithSignature<V>("get", "([I)Ljava/lang/Object;", new object[] { arg0 });
@@ -307,8 +307,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#set(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Set(V arg0, int arg1)
         {
             IExecuteWithSignature("set", "(Ljava/lang/Object;I)V", arg0, arg1);

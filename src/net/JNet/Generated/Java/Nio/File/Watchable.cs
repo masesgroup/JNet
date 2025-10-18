@@ -78,20 +78,20 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind<object>[] arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.File.WatchEvent.Modifier"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<object>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2);
 
         #endregion
 
@@ -126,23 +126,23 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind<object>[] arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind[] arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;)Ljava/nio/file/WatchKey;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.File.WatchEvent.Modifier"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<object>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
         {
             return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;[Ljava/nio/file/WatchEvent$Modifier;)Ljava/nio/file/WatchKey;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }

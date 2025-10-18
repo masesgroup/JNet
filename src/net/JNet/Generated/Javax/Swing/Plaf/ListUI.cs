@@ -91,31 +91,31 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ListUI.html#locationToIndex(javax.swing.JList,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="int"/></returns>
-        public int LocationToIndex(Javax.Swing.JList<object> arg0, Java.Awt.Point arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public int LocationToIndex(Javax.Swing.JList arg0, Java.Awt.Point arg1)
         {
             return IExecuteWithSignature<int>("locationToIndex", "(Ljavax/swing/JList;Ljava/awt/Point;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ListUI.html#indexToLocation(javax.swing.JList,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Point"/></returns>
-        public Java.Awt.Point IndexToLocation(Javax.Swing.JList<object> arg0, int arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Awt.Point IndexToLocation(Javax.Swing.JList arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.Point>("indexToLocation", "(Ljavax/swing/JList;I)Ljava/awt/Point;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ListUI.html#getCellBounds(javax.swing.JList,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
-        public Java.Awt.Rectangle GetCellBounds(Javax.Swing.JList<object> arg0, int arg1, int arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Awt.Rectangle GetCellBounds(Javax.Swing.JList arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getCellBounds", "(Ljavax/swing/JList;II)Ljava/awt/Rectangle;", arg0, arg1, arg2);
         }

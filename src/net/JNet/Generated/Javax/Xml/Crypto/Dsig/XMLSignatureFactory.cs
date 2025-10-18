@@ -94,10 +94,10 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/XMLSignatureFactory;", arg0, arg1);
@@ -105,9 +105,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljavax/xml/crypto/dsig/XMLSignatureFactory;", arg0, arg1);
@@ -115,8 +115,8 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/xml/crypto/dsig/XMLSignatureFactory;", arg0);
@@ -156,8 +156,8 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#isFeatureSupported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFeatureSupported(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isFeatureSupported", "(Ljava/lang/String;)Z", arg0);
@@ -165,11 +165,11 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newCanonicalizationMethod(java.lang.String,javax.xml.crypto.dsig.spec.C14NMethodParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.CanonicalizationMethod"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Dsig.CanonicalizationMethod NewCanonicalizationMethod(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.CanonicalizationMethod>("newCanonicalizationMethod", "(Ljava/lang/String;Ljavax/xml/crypto/dsig/spec/C14NMethodParameterSpec;)Ljavax/xml/crypto/dsig/CanonicalizationMethod;", arg0, arg1);
@@ -177,11 +177,11 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newCanonicalizationMethod(java.lang.String,javax.xml.crypto.XMLStructure)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.CanonicalizationMethod"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Dsig.CanonicalizationMethod NewCanonicalizationMethod(Java.Lang.String arg0, Javax.Xml.Crypto.XMLStructure arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.CanonicalizationMethod>("newCanonicalizationMethod", "(Ljava/lang/String;Ljavax/xml/crypto/XMLStructure;)Ljavax/xml/crypto/dsig/CanonicalizationMethod;", arg0, arg1);
@@ -189,11 +189,11 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newDigestMethod(java.lang.String,javax.xml.crypto.dsig.spec.DigestMethodParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.DigestMethodParameterSpec"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.DigestMethod"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Dsig.DigestMethod NewDigestMethod(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.DigestMethodParameterSpec arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.DigestMethod>("newDigestMethod", "(Ljava/lang/String;Ljavax/xml/crypto/dsig/spec/DigestMethodParameterSpec;)Ljavax/xml/crypto/dsig/DigestMethod;", arg0, arg1);
@@ -201,76 +201,76 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newManifest(java.util.List,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference"><see cref="Javax.Xml.Crypto.Dsig.Reference"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Manifest"/></returns>
-        public Javax.Xml.Crypto.Dsig.Manifest NewManifest<Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference> arg0, Java.Lang.String arg1) where Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference : Javax.Xml.Crypto.Dsig.Reference
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Manifest NewManifest(Java.Util.List arg0, Java.Lang.String arg1) where Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference : Javax.Xml.Crypto.Dsig.Reference
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Manifest>("newManifest", "(Ljava/util/List;Ljava/lang/String;)Ljavax/xml/crypto/dsig/Manifest;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newManifest(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference"><see cref="Javax.Xml.Crypto.Dsig.Reference"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Manifest"/></returns>
-        public Javax.Xml.Crypto.Dsig.Manifest NewManifest<Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference> arg0) where Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference : Javax.Xml.Crypto.Dsig.Reference
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Manifest NewManifest(Java.Util.List arg0) where Arg0ExtendsJavax_Xml_Crypto_Dsig_Reference : Javax.Xml.Crypto.Dsig.Reference
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Manifest>("newManifest", "(Ljava/util/List;)Ljavax/xml/crypto/dsig/Manifest;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newReference(java.lang.String,javax.xml.crypto.dsig.DigestMethod,java.util.List,java.lang.String,java.lang.String,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.DigestMethod"/></param>
-        /// <param name="arg2"><see cref="Java.Util.List"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="byte"/></param>
-        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref="Javax.Xml.Crypto.Dsig.Transform"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Reference"/></returns>
-        public Javax.Xml.Crypto.Dsig.Reference NewReference<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform>(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform> arg2, Java.Lang.String arg3, Java.Lang.String arg4, byte[] arg5) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Reference NewReference(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List arg2, Java.Lang.String arg3, Java.Lang.String arg4, byte[] arg5) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Reference>("newReference", "(Ljava/lang/String;Ljavax/xml/crypto/dsig/DigestMethod;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;[B)Ljavax/xml/crypto/dsig/Reference;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newReference(java.lang.String,javax.xml.crypto.dsig.DigestMethod,java.util.List,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.DigestMethod"/></param>
-        /// <param name="arg2"><see cref="Java.Util.List"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref="Javax.Xml.Crypto.Dsig.Transform"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Reference"/></returns>
-        public Javax.Xml.Crypto.Dsig.Reference NewReference<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform>(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform> arg2, Java.Lang.String arg3, Java.Lang.String arg4) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Reference NewReference(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List arg2, Java.Lang.String arg3, Java.Lang.String arg4) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Reference>("newReference", "(Ljava/lang/String;Ljavax/xml/crypto/dsig/DigestMethod;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/Reference;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newReference(java.lang.String,javax.xml.crypto.dsig.DigestMethod,java.util.List,javax.xml.crypto.Data,java.util.List,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.DigestMethod"/></param>
-        /// <param name="arg2"><see cref="Java.Util.List"/></param>
-        /// <param name="arg3"><see cref="Javax.Xml.Crypto.Data"/></param>
-        /// <param name="arg4"><see cref="Java.Util.List"/></param>
-        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg6"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref="Javax.Xml.Crypto.Dsig.Transform"/></typeparam>
-        /// <typeparam name="Arg4ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref="Javax.Xml.Crypto.Dsig.Transform"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Reference"/></returns>
-        public Javax.Xml.Crypto.Dsig.Reference NewReference<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform, Arg4ExtendsJavax_Xml_Crypto_Dsig_Transform>(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform> arg2, Javax.Xml.Crypto.Data arg3, Java.Util.List<Arg4ExtendsJavax_Xml_Crypto_Dsig_Transform> arg4, Java.Lang.String arg5, Java.Lang.String arg6) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform where Arg4ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref=""/></typeparam>
+        /// <typeparam name="Arg4ExtendsJavax_Xml_Crypto_Dsig_Transform"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.Reference NewReference<, >(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1, Java.Util.List arg2, Javax.Xml.Crypto.Data arg3, Java.Util.List arg4, Java.Lang.String arg5, Java.Lang.String arg6) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform where Arg4ExtendsJavax_Xml_Crypto_Dsig_Transform : Javax.Xml.Crypto.Dsig.Transform
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Reference>("newReference", "(Ljava/lang/String;Ljavax/xml/crypto/dsig/DigestMethod;Ljava/util/List;Ljavax/xml/crypto/Data;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/Reference;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newReference(java.lang.String,javax.xml.crypto.dsig.DigestMethod)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.DigestMethod"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Reference"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Crypto.Dsig.Reference NewReference(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Reference>("newReference", "(Ljava/lang/String;Ljavax/xml/crypto/dsig/DigestMethod;)Ljavax/xml/crypto/dsig/Reference;", arg0, arg1);
@@ -278,11 +278,11 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newSignatureMethod(java.lang.String,javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.SignatureMethod"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Dsig.SignatureMethod NewSignatureMethod(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.SignatureMethod>("newSignatureMethod", "(Ljava/lang/String;Ljavax/xml/crypto/dsig/spec/SignatureMethodParameterSpec;)Ljavax/xml/crypto/dsig/SignatureMethod;", arg0, arg1);
@@ -290,59 +290,59 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newSignatureProperties(java.util.List,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_Dsig_SignatureProperty"><see cref="Javax.Xml.Crypto.Dsig.SignatureProperty"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.SignatureProperties"/></returns>
-        public Javax.Xml.Crypto.Dsig.SignatureProperties NewSignatureProperties<Arg0ExtendsJavax_Xml_Crypto_Dsig_SignatureProperty>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_Dsig_SignatureProperty> arg0, Java.Lang.String arg1) where Arg0ExtendsJavax_Xml_Crypto_Dsig_SignatureProperty : Javax.Xml.Crypto.Dsig.SignatureProperty
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_Dsig_SignatureProperty"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.SignatureProperties NewSignatureProperties(Java.Util.List arg0, Java.Lang.String arg1) where Arg0ExtendsJavax_Xml_Crypto_Dsig_SignatureProperty : Javax.Xml.Crypto.Dsig.SignatureProperty
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.SignatureProperties>("newSignatureProperties", "(Ljava/util/List;Ljava/lang/String;)Ljavax/xml/crypto/dsig/SignatureProperties;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newSignatureProperty(java.util.List,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.SignatureProperty"/></returns>
-        public Javax.Xml.Crypto.Dsig.SignatureProperty NewSignatureProperty<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0, Java.Lang.String arg1, Java.Lang.String arg2) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.SignatureProperty NewSignatureProperty(Java.Util.List arg0, Java.Lang.String arg1, Java.Lang.String arg2) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.SignatureProperty>("newSignatureProperty", "(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/SignatureProperty;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newSignedInfo(javax.xml.crypto.dsig.CanonicalizationMethod,javax.xml.crypto.dsig.SignatureMethod,java.util.List,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.CanonicalizationMethod"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.SignatureMethod"/></param>
-        /// <param name="arg2"><see cref="Java.Util.List"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference"><see cref="Javax.Xml.Crypto.Dsig.Reference"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.SignedInfo"/></returns>
-        public Javax.Xml.Crypto.Dsig.SignedInfo NewSignedInfo<Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference>(Javax.Xml.Crypto.Dsig.CanonicalizationMethod arg0, Javax.Xml.Crypto.Dsig.SignatureMethod arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference> arg2, Java.Lang.String arg3) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference : Javax.Xml.Crypto.Dsig.Reference
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.SignedInfo NewSignedInfo(Javax.Xml.Crypto.Dsig.CanonicalizationMethod arg0, Javax.Xml.Crypto.Dsig.SignatureMethod arg1, Java.Util.List arg2, Java.Lang.String arg3) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference : Javax.Xml.Crypto.Dsig.Reference
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.SignedInfo>("newSignedInfo", "(Ljavax/xml/crypto/dsig/CanonicalizationMethod;Ljavax/xml/crypto/dsig/SignatureMethod;Ljava/util/List;Ljava/lang/String;)Ljavax/xml/crypto/dsig/SignedInfo;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newSignedInfo(javax.xml.crypto.dsig.CanonicalizationMethod,javax.xml.crypto.dsig.SignatureMethod,java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.CanonicalizationMethod"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.SignatureMethod"/></param>
-        /// <param name="arg2"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference"><see cref="Javax.Xml.Crypto.Dsig.Reference"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.SignedInfo"/></returns>
-        public Javax.Xml.Crypto.Dsig.SignedInfo NewSignedInfo<Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference>(Javax.Xml.Crypto.Dsig.CanonicalizationMethod arg0, Javax.Xml.Crypto.Dsig.SignatureMethod arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference> arg2) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference : Javax.Xml.Crypto.Dsig.Reference
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.SignedInfo NewSignedInfo(Javax.Xml.Crypto.Dsig.CanonicalizationMethod arg0, Javax.Xml.Crypto.Dsig.SignatureMethod arg1, Java.Util.List arg2) where Arg2ExtendsJavax_Xml_Crypto_Dsig_Reference : Javax.Xml.Crypto.Dsig.Reference
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.SignedInfo>("newSignedInfo", "(Ljavax/xml/crypto/dsig/CanonicalizationMethod;Ljavax/xml/crypto/dsig/SignatureMethod;Ljava/util/List;)Ljavax/xml/crypto/dsig/SignedInfo;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newTransform(java.lang.String,javax.xml.crypto.dsig.spec.TransformParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Transform"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Dsig.Transform NewTransform(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Transform>("newTransform", "(Ljava/lang/String;Ljavax/xml/crypto/dsig/spec/TransformParameterSpec;)Ljavax/xml/crypto/dsig/Transform;", arg0, arg1);
@@ -350,11 +350,11 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newTransform(java.lang.String,javax.xml.crypto.XMLStructure)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Transform"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Dsig.Transform NewTransform(Java.Lang.String arg0, Javax.Xml.Crypto.XMLStructure arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.Transform>("newTransform", "(Ljava/lang/String;Ljavax/xml/crypto/XMLStructure;)Ljavax/xml/crypto/dsig/Transform;", arg0, arg1);
@@ -362,36 +362,36 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newXMLObject(java.util.List,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref="Javax.Xml.Crypto.XMLStructure"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLObject"/></returns>
-        public Javax.Xml.Crypto.Dsig.XMLObject NewXMLObject<Arg0ExtendsJavax_Xml_Crypto_XMLStructure>(Java.Util.List<Arg0ExtendsJavax_Xml_Crypto_XMLStructure> arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Xml_Crypto_XMLStructure"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.XMLObject NewXMLObject(Java.Util.List arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3) where Arg0ExtendsJavax_Xml_Crypto_XMLStructure : Javax.Xml.Crypto.XMLStructure
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLObject>("newXMLObject", "(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/XMLObject;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newXMLSignature(javax.xml.crypto.dsig.SignedInfo,javax.xml.crypto.dsig.keyinfo.KeyInfo,java.util.List,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.SignedInfo"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></param>
-        /// <param name="arg2"><see cref="Java.Util.List"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_XMLObject"><see cref="Javax.Xml.Crypto.Dsig.XMLObject"/></typeparam>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignature"/></returns>
-        public Javax.Xml.Crypto.Dsig.XMLSignature NewXMLSignature<Arg2ExtendsJavax_Xml_Crypto_Dsig_XMLObject>(Javax.Xml.Crypto.Dsig.SignedInfo arg0, Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo arg1, Java.Util.List<Arg2ExtendsJavax_Xml_Crypto_Dsig_XMLObject> arg2, Java.Lang.String arg3, Java.Lang.String arg4) where Arg2ExtendsJavax_Xml_Crypto_Dsig_XMLObject : Javax.Xml.Crypto.Dsig.XMLObject
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <typeparam name="Arg2ExtendsJavax_Xml_Crypto_Dsig_XMLObject"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Javax.Xml.Crypto.Dsig.XMLSignature NewXMLSignature(Javax.Xml.Crypto.Dsig.SignedInfo arg0, Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo arg1, Java.Util.List arg2, Java.Lang.String arg3, Java.Lang.String arg4) where Arg2ExtendsJavax_Xml_Crypto_Dsig_XMLObject : Javax.Xml.Crypto.Dsig.XMLObject
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignature>("newXMLSignature", "(Ljavax/xml/crypto/dsig/SignedInfo;Ljavax/xml/crypto/dsig/keyinfo/KeyInfo;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/XMLSignature;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newXMLSignature(javax.xml.crypto.dsig.SignedInfo,javax.xml.crypto.dsig.keyinfo.KeyInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.SignedInfo"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignature"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Xml.Crypto.Dsig.XMLSignature NewXMLSignature(Javax.Xml.Crypto.Dsig.SignedInfo arg0, Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignature>("newXMLSignature", "(Ljavax/xml/crypto/dsig/SignedInfo;Ljavax/xml/crypto/dsig/keyinfo/KeyInfo;)Ljavax/xml/crypto/dsig/XMLSignature;", arg0, arg1);
@@ -399,9 +399,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#unmarshalXMLSignature(javax.xml.crypto.dsig.XMLValidateContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.XMLValidateContext"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignature"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Dsig.XMLSignature UnmarshalXMLSignature(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignature>("unmarshalXMLSignature", "(Ljavax/xml/crypto/dsig/XMLValidateContext;)Ljavax/xml/crypto/dsig/XMLSignature;", arg0);
@@ -409,9 +409,9 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#unmarshalXMLSignature(javax.xml.crypto.XMLStructure)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignature"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Dsig.XMLSignature UnmarshalXMLSignature(Javax.Xml.Crypto.XMLStructure arg0)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Dsig.XMLSignature>("unmarshalXMLSignature", "(Ljavax/xml/crypto/XMLStructure;)Ljavax/xml/crypto/dsig/XMLSignature;", arg0);

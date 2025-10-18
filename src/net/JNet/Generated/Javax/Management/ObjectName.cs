@@ -73,10 +73,10 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public ObjectName(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -84,18 +84,18 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#%3Cinit%3E(java.lang.String,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
-        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
-        public ObjectName(Java.Lang.String arg0, Java.Util.Hashtable<Java.Lang.String, Java.Lang.String> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        public ObjectName(Java.Lang.String arg0, Java.Util.Hashtable<, > arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public ObjectName(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -105,11 +105,11 @@ namespace Javax.Management
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.ObjectName"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Javax.Management.ObjectName t) => t.Cast<Java.Lang.Comparable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.ObjectName"/> to <see cref="Javax.Management.QueryExp"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.QueryExp(Javax.Management.ObjectName t) => t.Cast<Javax.Management.QueryExp>();
 
@@ -129,8 +129,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#quote(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Quote(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "quote", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -138,8 +138,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#unquote(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Unquote(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "unquote", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -147,11 +147,11 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
-        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Management.ObjectName GetInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return SExecuteWithSignature<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", arg0, arg1, arg2);
@@ -159,21 +159,21 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
-        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
-        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
-        public static Javax.Management.ObjectName GetInstance(Java.Lang.String arg0, Java.Util.Hashtable<Java.Lang.String, Java.Lang.String> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Javax.Management.ObjectName GetInstance(Java.Lang.String arg0, Java.Util.Hashtable<, > arg1)
         {
             return SExecuteWithSignature<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/util/Hashtable;)Ljavax/management/ObjectName;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
-        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
-        /// <exception cref="Java.Lang.NullPointerException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Management.ObjectName GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/management/ObjectName;", arg0);
@@ -181,8 +181,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ObjectName GetInstance(Javax.Management.ObjectName arg0)
         {
             return SExecuteWithSignature<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", "(Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", arg0);
@@ -215,9 +215,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyPropertyList()"/> 
         /// </summary>
-        public Java.Util.Hashtable<Java.Lang.String, Java.Lang.String> KeyPropertyList
+        public Java.Util.Hashtable<, > KeyPropertyList
         {
-            get { return IExecuteWithSignature<Java.Util.Hashtable<Java.Lang.String, Java.Lang.String>>("getKeyPropertyList", "()Ljava/util/Hashtable;"); }
+            get { return IExecuteWithSignature<Java.Util.Hashtable<, >>("getKeyPropertyList", "()Ljava/util/Hashtable;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyPropertyListString()"/> 
@@ -229,8 +229,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#apply(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Apply(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<bool>("apply", "(Ljavax/management/ObjectName;)Z", arg0);
@@ -238,7 +238,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isDomainPattern()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDomainPattern()
         {
             return IExecuteWithSignature<bool>("isDomainPattern", "()Z");
@@ -246,7 +246,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPattern()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPattern()
         {
             return IExecuteWithSignature<bool>("isPattern", "()Z");
@@ -254,7 +254,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyListPattern()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPropertyListPattern()
         {
             return IExecuteWithSignature<bool>("isPropertyListPattern", "()Z");
@@ -262,7 +262,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyPattern()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPropertyPattern()
         {
             return IExecuteWithSignature<bool>("isPropertyPattern", "()Z");
@@ -270,7 +270,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPropertyValuePattern()
         {
             return IExecuteWithSignature<bool>("isPropertyValuePattern", "()Z");
@@ -278,8 +278,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsPropertyValuePattern(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isPropertyValuePattern", "(Ljava/lang/String;)Z", arg0);
@@ -287,8 +287,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -296,8 +296,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#compareTo(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljavax/management/ObjectName;)I", arg0);
@@ -305,8 +305,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetKeyProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getKeyProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -314,7 +314,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#setMBeanServer(javax.management.MBeanServer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMBeanServer(Javax.Management.MBeanServer arg0)
         {
             IExecuteWithSignature("setMBeanServer", "(Ljavax/management/MBeanServer;)V", arg0);

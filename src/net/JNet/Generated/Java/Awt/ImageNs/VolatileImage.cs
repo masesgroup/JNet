@@ -77,7 +77,7 @@ namespace Java.Awt.ImageNs
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.VolatileImage"/> to <see cref="Java.Awt.Transparency"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.Transparency(Java.Awt.ImageNs.VolatileImage t) => t.Cast<Java.Awt.Transparency>();
 
@@ -148,7 +148,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#contentsLost()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool ContentsLost()
         {
             return IExecuteWithSignature<bool>("contentsLost", "()Z");
@@ -156,8 +156,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#validate(java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Validate(Java.Awt.GraphicsConfiguration arg0)
         {
             return IExecuteWithSignature<int>("validate", "(Ljava/awt/GraphicsConfiguration;)I", arg0);
@@ -165,7 +165,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#createGraphics()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Graphics2D CreateGraphics()
         {
             return IExecuteWithSignature<Java.Awt.Graphics2D>("createGraphics", "()Ljava/awt/Graphics2D;");

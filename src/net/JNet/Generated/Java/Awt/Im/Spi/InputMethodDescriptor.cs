@@ -82,26 +82,26 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#hasDynamicLocaleList()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool HasDynamicLocaleList();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#createInputMethod()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Im.Spi.InputMethod"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Awt.Im.Spi.InputMethod CreateInputMethod();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#getInputMethodIcon(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Awt.Image"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.Image GetInputMethodIcon(Java.Util.Locale arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#getInputMethodDisplayName(java.util.Locale,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String GetInputMethodDisplayName(Java.Util.Locale arg0, Java.Util.Locale arg1);
 
         #endregion
@@ -144,7 +144,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#hasDynamicLocaleList()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasDynamicLocaleList()
         {
             return IExecuteWithSignature<bool>("hasDynamicLocaleList", "()Z");
@@ -152,8 +152,8 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#createInputMethod()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Im.Spi.InputMethod"/></returns>
-        /// <exception cref="Java.Lang.Exception"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Awt.Im.Spi.InputMethod CreateInputMethod()
         {
             return IExecuteWithSignature<Java.Awt.Im.Spi.InputMethod>("createInputMethod", "()Ljava/awt/im/spi/InputMethod;");
@@ -161,8 +161,8 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#getInputMethodIcon(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Awt.Image"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Image GetInputMethodIcon(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Awt.Image>("getInputMethodIcon", "(Ljava/util/Locale;)Ljava/awt/Image;", arg0);
@@ -170,9 +170,9 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#getInputMethodDisplayName(java.util.Locale,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetInputMethodDisplayName(Java.Util.Locale arg0, Java.Util.Locale arg1)
         {
             return IExecuteWithSignature<Java.Lang.String>("getInputMethodDisplayName", "(Ljava/util/Locale;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);

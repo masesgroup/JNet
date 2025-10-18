@@ -128,8 +128,8 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.html#singletonKeySelector(java.security.Key)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.KeySelector"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Xml.Crypto.KeySelector SingletonKeySelectorMethod(Java.Security.Key arg0)
         {
             return SExecuteWithSignature<Javax.Xml.Crypto.KeySelector>(LocalBridgeClazz, "singletonKeySelector", "(Ljava/security/Key;)Ljavax/xml/crypto/KeySelector;", arg0);
@@ -141,12 +141,12 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.html#select(javax.xml.crypto.dsig.keyinfo.KeyInfo,javax.xml.crypto.KeySelector.Purpose,javax.xml.crypto.AlgorithmMethod,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.KeySelector.Purpose"/></param>
-        /// <param name="arg2"><see cref="Javax.Xml.Crypto.AlgorithmMethod"/></param>
-        /// <param name="arg3"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.KeySelectorResult"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.KeySelectorException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.KeySelectorResult Select(Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo arg0, Javax.Xml.Crypto.KeySelector.Purpose arg1, Javax.Xml.Crypto.AlgorithmMethod arg2, Javax.Xml.Crypto.XMLCryptoContext arg3)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.KeySelectorResult>("select", "(Ljavax/xml/crypto/dsig/keyinfo/KeyInfo;Ljavax/xml/crypto/KeySelector$Purpose;Ljavax/xml/crypto/AlgorithmMethod;Ljavax/xml/crypto/XMLCryptoContext;)Ljavax/xml/crypto/KeySelectorResult;", arg0, arg1, arg2, arg3);

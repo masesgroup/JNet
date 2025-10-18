@@ -91,8 +91,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#lookup(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Io.ObjectStreamClass Lookup(Java.Lang.Class arg0)
         {
             return SExecuteWithSignature<Java.Io.ObjectStreamClass>(LocalBridgeClazz, "lookup", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;", arg0);
@@ -100,8 +100,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#lookupAny(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Io.ObjectStreamClass LookupAny(Java.Lang.Class arg0)
         {
             return SExecuteWithSignature<Java.Io.ObjectStreamClass>(LocalBridgeClazz, "lookupAny", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;", arg0);
@@ -134,8 +134,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#getField(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Io.ObjectStreamField"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.ObjectStreamField GetField(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Io.ObjectStreamField>("getField", "(Ljava/lang/String;)Ljava/io/ObjectStreamField;", arg0);
@@ -143,7 +143,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#forClass()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Class ForClass()
         {
             return IExecuteWithSignature<Java.Lang.Class>("forClass", "()Ljava/lang/Class;");

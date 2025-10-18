@@ -73,10 +73,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#%3Cinit%3E(int,boolean,java.awt.Component,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public JSplitPane(int arg0, bool arg1, Java.Awt.Component arg2, Java.Awt.Component arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,8 +84,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#%3Cinit%3E(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JSplitPane(int arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -93,9 +93,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#%3Cinit%3E(int,java.awt.Component,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JSplitPane(int arg0, Java.Awt.Component arg1, Java.Awt.Component arg2)
             : base(arg0, arg1, arg2)
         {
@@ -103,7 +103,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JSplitPane(int arg0)
             : base(arg0)
         {
@@ -113,7 +113,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JSplitPane"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JSplitPane t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -292,7 +292,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#isContinuousLayout()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsContinuousLayout()
         {
             return IExecuteWithSignature<bool>("isContinuousLayout", "()Z");
@@ -300,7 +300,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#isOneTouchExpandable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOneTouchExpandable()
         {
             return IExecuteWithSignature<bool>("isOneTouchExpandable", "()Z");
@@ -315,7 +315,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setContinuousLayout(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetContinuousLayout(bool arg0)
         {
             IExecuteWithSignature("setContinuousLayout", "(Z)V", arg0);
@@ -323,7 +323,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setDividerLocation(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDividerLocation(double arg0)
         {
             IExecuteWithSignature("setDividerLocation", "(D)V", arg0);
@@ -331,7 +331,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setDividerLocation(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDividerLocation(int arg0)
         {
             IExecuteWithSignature("setDividerLocation", "(I)V", arg0);
@@ -339,7 +339,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setOneTouchExpandable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetOneTouchExpandable(bool arg0)
         {
             IExecuteWithSignature("setOneTouchExpandable", "(Z)V", arg0);
@@ -347,7 +347,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setUI(javax.swing.plaf.SplitPaneUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.SplitPaneUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.SplitPaneUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/SplitPaneUI;)V", arg0);

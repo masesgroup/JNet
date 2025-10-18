@@ -73,9 +73,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#%3Cinit%3E(java.lang.String,java.lang.management.MemoryUsage,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Management.MemoryUsage"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public MemoryNotificationInfo(Java.Lang.String arg0, Java.Lang.Management.MemoryUsage arg1, long arg2)
             : base(arg0, arg1, arg2)
         {
@@ -107,8 +107,8 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#from(javax.management.openmbean.CompositeData)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
-        /// <returns><see cref="Java.Lang.Management.MemoryNotificationInfo"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Management.MemoryNotificationInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
             return SExecuteWithSignature<Java.Lang.Management.MemoryNotificationInfo>(LocalBridgeClazz, "from", "(Ljavax/management/openmbean/CompositeData;)Ljava/lang/management/MemoryNotificationInfo;", arg0);

@@ -68,12 +68,12 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ClassValue<T> declaration
+    #region ClassValue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassValue.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class ClassValue<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClassValue<T>>
+    public partial class ClassValue : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClassValue>
     {
         const string _bridgeClassName = "java.lang.ClassValue";
         /// <summary>
@@ -135,8 +135,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassValue.html#get(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature("get", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
@@ -144,7 +144,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassValue.html#remove(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(Java.Lang.Class arg0)
         {
             IExecuteWithSignature("remove", "(Ljava/lang/Class;)V", arg0);
@@ -160,8 +160,8 @@ namespace Java.Lang
     }
     #endregion
 
-    #region ClassValue<T> implementation
-    public partial class ClassValue<T>
+    #region ClassValue implementation
+    public partial class ClassValue
     {
         #region Constructors
 
@@ -169,9 +169,9 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.ClassValue{T}"/> to <see cref="Java.Lang.ClassValue"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.ClassValue(Java.Lang.ClassValue<T> t) => t.Cast<Java.Lang.ClassValue>();
+        public static implicit operator Java.Lang.ClassValue(Java.Lang.ClassValue t) => t.Cast<Java.Lang.ClassValue>();
 
         #endregion
 
@@ -187,8 +187,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassValue.html#get(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><typeparamref name="T"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public T Get(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<T>("get", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
@@ -196,7 +196,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassValue.html#remove(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(Java.Lang.Class arg0)
         {
             IExecuteWithSignature("remove", "(Ljava/lang/Class;)V", arg0);

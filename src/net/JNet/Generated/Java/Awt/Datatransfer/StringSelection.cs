@@ -73,7 +73,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public StringSelection(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -83,11 +83,11 @@ namespace Java.Awt.Datatransfer
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Datatransfer.StringSelection"/> to <see cref="Java.Awt.Datatransfer.Transferable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.Datatransfer.Transferable(Java.Awt.Datatransfer.StringSelection t) => t.Cast<Java.Awt.Datatransfer.Transferable>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Datatransfer.StringSelection"/> to <see cref="Java.Awt.Datatransfer.ClipboardOwner"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.Datatransfer.ClipboardOwner(Java.Awt.Datatransfer.StringSelection t) => t.Cast<Java.Awt.Datatransfer.ClipboardOwner>();
 
@@ -112,8 +112,8 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecuteWithSignature<bool>("isDataFlavorSupported", "(Ljava/awt/datatransfer/DataFlavor;)Z", arg0);
@@ -121,10 +121,10 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html#getTransferData(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Awt.Datatransfer.UnsupportedFlavorException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object GetTransferData(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecuteWithSignature("getTransferData", "(Ljava/awt/datatransfer/DataFlavor;)Ljava/lang/Object;", arg0);
@@ -132,8 +132,8 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html#lostOwnership(java.awt.datatransfer.Clipboard,java.awt.datatransfer.Transferable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.Clipboard"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void LostOwnership(Java.Awt.Datatransfer.Clipboard arg0, Java.Awt.Datatransfer.Transferable arg1)
         {
             IExecuteWithSignature("lostOwnership", "(Ljava/awt/datatransfer/Clipboard;Ljava/awt/datatransfer/Transferable;)V", arg0, arg1);

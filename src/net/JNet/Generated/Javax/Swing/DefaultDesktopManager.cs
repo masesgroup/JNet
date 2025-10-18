@@ -75,11 +75,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.DefaultDesktopManager"/> to <see cref="Javax.Swing.DesktopManager"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.DesktopManager(Javax.Swing.DefaultDesktopManager t) => t.Cast<Javax.Swing.DesktopManager>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.DefaultDesktopManager"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultDesktopManager t) => t.Cast<Java.Io.Serializable>();
 
@@ -97,7 +97,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#activateFrame(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ActivateFrame(Javax.Swing.JInternalFrame arg0)
         {
             IExecuteWithSignature("activateFrame", "(Ljavax/swing/JInternalFrame;)V", arg0);
@@ -105,7 +105,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#beginDraggingFrame(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void BeginDraggingFrame(Javax.Swing.JComponent arg0)
         {
             IExecuteWithSignature("beginDraggingFrame", "(Ljavax/swing/JComponent;)V", arg0);
@@ -113,8 +113,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#beginResizingFrame(javax.swing.JComponent,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void BeginResizingFrame(Javax.Swing.JComponent arg0, int arg1)
         {
             IExecuteWithSignature("beginResizingFrame", "(Ljavax/swing/JComponent;I)V", arg0, arg1);
@@ -122,7 +122,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#closeFrame(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void CloseFrame(Javax.Swing.JInternalFrame arg0)
         {
             IExecuteWithSignature("closeFrame", "(Ljavax/swing/JInternalFrame;)V", arg0);
@@ -130,7 +130,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#deactivateFrame(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DeactivateFrame(Javax.Swing.JInternalFrame arg0)
         {
             IExecuteWithSignature("deactivateFrame", "(Ljavax/swing/JInternalFrame;)V", arg0);
@@ -138,7 +138,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#deiconifyFrame(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DeiconifyFrame(Javax.Swing.JInternalFrame arg0)
         {
             IExecuteWithSignature("deiconifyFrame", "(Ljavax/swing/JInternalFrame;)V", arg0);
@@ -146,9 +146,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#dragFrame(javax.swing.JComponent,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void DragFrame(Javax.Swing.JComponent arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("dragFrame", "(Ljavax/swing/JComponent;II)V", arg0, arg1, arg2);
@@ -156,7 +156,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#endDraggingFrame(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EndDraggingFrame(Javax.Swing.JComponent arg0)
         {
             IExecuteWithSignature("endDraggingFrame", "(Ljavax/swing/JComponent;)V", arg0);
@@ -164,7 +164,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#endResizingFrame(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EndResizingFrame(Javax.Swing.JComponent arg0)
         {
             IExecuteWithSignature("endResizingFrame", "(Ljavax/swing/JComponent;)V", arg0);
@@ -172,7 +172,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#iconifyFrame(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void IconifyFrame(Javax.Swing.JInternalFrame arg0)
         {
             IExecuteWithSignature("iconifyFrame", "(Ljavax/swing/JInternalFrame;)V", arg0);
@@ -180,7 +180,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#maximizeFrame(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MaximizeFrame(Javax.Swing.JInternalFrame arg0)
         {
             IExecuteWithSignature("maximizeFrame", "(Ljavax/swing/JInternalFrame;)V", arg0);
@@ -188,7 +188,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#minimizeFrame(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MinimizeFrame(Javax.Swing.JInternalFrame arg0)
         {
             IExecuteWithSignature("minimizeFrame", "(Ljavax/swing/JInternalFrame;)V", arg0);
@@ -196,7 +196,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#openFrame(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void OpenFrame(Javax.Swing.JInternalFrame arg0)
         {
             IExecuteWithSignature("openFrame", "(Ljavax/swing/JInternalFrame;)V", arg0);
@@ -204,11 +204,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#resizeFrame(javax.swing.JComponent,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void ResizeFrame(Javax.Swing.JComponent arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("resizeFrame", "(Ljavax/swing/JComponent;IIII)V", arg0, arg1, arg2, arg3, arg4);
@@ -216,11 +216,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultDesktopManager.html#setBoundsForFrame(javax.swing.JComponent,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void SetBoundsForFrame(Javax.Swing.JComponent arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecuteWithSignature("setBoundsForFrame", "(Ljavax/swing/JComponent;IIII)V", arg0, arg1, arg2, arg3, arg4);

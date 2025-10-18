@@ -97,8 +97,8 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#malformedForLength(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.Charset.CoderResult MalformedForLength(int arg0)
         {
             return SExecuteWithSignature<Java.Nio.Charset.CoderResult>(LocalBridgeClazz, "malformedForLength", "(I)Ljava/nio/charset/CoderResult;", arg0);
@@ -106,8 +106,8 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#unmappableForLength(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.Charset.CoderResult UnmappableForLength(int arg0)
         {
             return SExecuteWithSignature<Java.Nio.Charset.CoderResult>(LocalBridgeClazz, "unmappableForLength", "(I)Ljava/nio/charset/CoderResult;", arg0);
@@ -119,7 +119,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isError()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsError()
         {
             return IExecuteWithSignature<bool>("isError", "()Z");
@@ -127,7 +127,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isMalformed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMalformed()
         {
             return IExecuteWithSignature<bool>("isMalformed", "()Z");
@@ -135,7 +135,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isOverflow()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOverflow()
         {
             return IExecuteWithSignature<bool>("isOverflow", "()Z");
@@ -143,7 +143,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isUnderflow()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsUnderflow()
         {
             return IExecuteWithSignature<bool>("isUnderflow", "()Z");
@@ -151,7 +151,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isUnmappable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsUnmappable()
         {
             return IExecuteWithSignature<bool>("isUnmappable", "()Z");
@@ -159,7 +159,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#length()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Length()
         {
             return IExecuteWithSignature<int>("length", "()I");
@@ -167,7 +167,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#throwException()"/>
         /// </summary>
-        /// <exception cref="Java.Nio.Charset.CharacterCodingException"/>
+        /// <exception cref=""/>
         public void ThrowException()
         {
             IExecuteWithSignature("throwException", "()V");

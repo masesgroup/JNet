@@ -77,11 +77,11 @@ namespace Java.Io
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Io.OutputStream"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.OutputStream t) => t.Cast<Java.Io.Closeable>();
         /// <summary>
-        /// Converter from <see cref="Java.Io.OutputStream"/> to <see cref="Java.Io.Flushable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Io.OutputStream t) => t.Cast<Java.Io.Flushable>();
 
@@ -95,7 +95,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#nullOutputStream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Io.OutputStream NullOutputStream()
         {
             return SExecuteWithSignature<Java.Io.OutputStream>(LocalBridgeClazz, "nullOutputStream", "()Ljava/io/OutputStream;");
@@ -107,8 +107,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#write(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(int arg0)
         {
             IExecuteWithSignature("write", "(I)V", arg0);
@@ -116,7 +116,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -124,7 +124,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#flush()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Flush()
         {
             IExecuteWithSignature("flush", "()V");
@@ -132,10 +132,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#write(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(byte[] arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("write", "([BII)V", arg0, arg1, arg2);
@@ -143,8 +143,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#write(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(byte[] arg0)
         {
             IExecuteWithSignature("write", "([B)V", new object[] { arg0 });

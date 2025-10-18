@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/NumberFormatter.html#%3Cinit%3E(java.text.NumberFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.NumberFormat"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public NumberFormatter(Java.Text.NumberFormat arg0)
             : base(arg0)
         {

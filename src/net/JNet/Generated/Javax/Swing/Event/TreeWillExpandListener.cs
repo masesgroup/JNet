@@ -108,14 +108,14 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
-        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void TreeWillCollapse(Javax.Swing.Event.TreeExpansionEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
-        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void TreeWillExpand(Javax.Swing.Event.TreeExpansionEvent arg0);
 
         #endregion
@@ -176,8 +176,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
-        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public virtual void TreeWillCollapse(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
             hasOverrideTreeWillCollapse = false;
@@ -201,8 +201,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
-        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public virtual void TreeWillExpand(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
             hasOverrideTreeWillExpand = false;
@@ -241,8 +241,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
-        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public override void TreeWillCollapse(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
             IExecuteWithSignature("treeWillCollapse", "(Ljavax/swing/event/TreeExpansionEvent;)V", arg0);
@@ -250,8 +250,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
-        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public override void TreeWillExpand(Javax.Swing.Event.TreeExpansionEvent arg0)
         {
             IExecuteWithSignature("treeWillExpand", "(Ljavax/swing/event/TreeExpansionEvent;)V", arg0);

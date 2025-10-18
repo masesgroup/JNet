@@ -68,7 +68,7 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html"/>
         /// </summary>
-        public partial class Origin : Java.Lang.Enum<Javax.Lang.Model.Util.Elements.Origin>
+        public partial class Origin : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.lang.model.util.Elements$Origin";
             /// <summary>
@@ -123,165 +123,165 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#hides(javax.lang.model.element.Element,javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Hides(Javax.Lang.Model.Element.Element arg0, Javax.Lang.Model.Element.Element arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isDeprecated(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsDeprecated(Javax.Lang.Model.Element.Element arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isFunctionalInterface(javax.lang.model.element.TypeElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsFunctionalInterface(Javax.Lang.Model.Element.TypeElement arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#overrides(javax.lang.model.element.ExecutableElement,javax.lang.model.element.ExecutableElement,javax.lang.model.element.TypeElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg2"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Overrides(Javax.Lang.Model.Element.ExecutableElement arg0, Javax.Lang.Model.Element.ExecutableElement arg1, Javax.Lang.Model.Element.TypeElement arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getConstantExpression(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String GetConstantExpression(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getDocComment(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String GetDocComment(Javax.Lang.Model.Element.Element arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllAnnotationMirrors(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror> GetAllAnnotationMirrors<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>(Javax.Lang.Model.Element.Element arg0) where ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror : Javax.Lang.Model.Element.AnnotationMirror;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.List GetAllAnnotationMirrors(Javax.Lang.Model.Element.Element arg0) where ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror : Javax.Lang.Model.Element.AnnotationMirror;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllMembers(javax.lang.model.element.TypeElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element> GetAllMembers<ReturnExtendsJavax_Lang_Model_Element_Element>(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_Element"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.List GetAllMembers(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getElementValuesWithDefaults(javax.lang.model.element.AnnotationMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_ExecutableElement"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></typeparam>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationValue"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></typeparam>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue> GetElementValuesWithDefaults<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>(Javax.Lang.Model.Element.AnnotationMirror arg0) where ReturnExtendsJavax_Lang_Model_Element_ExecutableElement : Javax.Lang.Model.Element.ExecutableElement where ReturnExtendsJavax_Lang_Model_Element_AnnotationValue : Javax.Lang.Model.Element.AnnotationValue;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_ExecutableElement"><see cref=""/></typeparam>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationValue"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Map<, > GetElementValuesWithDefaults<, >(Javax.Lang.Model.Element.AnnotationMirror arg0) where ReturnExtendsJavax_Lang_Model_Element_ExecutableElement : Javax.Lang.Model.Element.ExecutableElement where ReturnExtendsJavax_Lang_Model_Element_AnnotationValue : Javax.Lang.Model.Element.AnnotationValue;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getBinaryName(javax.lang.model.element.TypeElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.Name"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.Name GetBinaryName(Javax.Lang.Model.Element.TypeElement arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getName(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.Name"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.Name GetName(Java.Lang.CharSequence arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageElement(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.PackageElement GetPackageElement(Java.Lang.CharSequence arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageOf(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.PackageElement GetPackageOf(Javax.Lang.Model.Element.Element arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getTypeElement(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.TypeElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.TypeElement GetTypeElement(Java.Lang.CharSequence arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#printElements(java.io.Writer,javax.lang.model.element.Element...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void PrintElements(Java.Io.Writer arg0, params Javax.Lang.Model.Element.Element[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isBridge(javax.lang.model.element.ExecutableElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsBridge(Javax.Lang.Model.Element.ExecutableElement arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllPackageElements(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_PackageElement"><see cref="Javax.Lang.Model.Element.PackageElement"/></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement> GetAllPackageElements<ReturnExtendsJavax_Lang_Model_Element_PackageElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_PackageElement : Javax.Lang.Model.Element.PackageElement;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_PackageElement"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Set GetAllPackageElements(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_PackageElement : Javax.Lang.Model.Element.PackageElement;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllTypeElements(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_TypeElement"><see cref="Javax.Lang.Model.Element.TypeElement"/></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement> GetAllTypeElements<ReturnExtendsJavax_Lang_Model_Element_TypeElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_TypeElement : Javax.Lang.Model.Element.TypeElement;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_TypeElement"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Util.Set GetAllTypeElements(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_TypeElement : Javax.Lang.Model.Element.TypeElement;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleElement(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.ModuleElement GetModuleElement(Java.Lang.CharSequence arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleOf(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.ModuleElement GetModuleOf(Javax.Lang.Model.Element.Element arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageElement(javax.lang.model.element.ModuleElement,java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.PackageElement GetPackageElement(Javax.Lang.Model.Element.ModuleElement arg0, Java.Lang.CharSequence arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getTypeElement(javax.lang.model.element.ModuleElement,java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.TypeElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Element.TypeElement GetTypeElement(Javax.Lang.Model.Element.ModuleElement arg0, Java.Lang.CharSequence arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.AnnotatedConstruct,javax.lang.model.element.AnnotationMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.AnnotatedConstruct"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Util.Elements.Origin GetOrigin(Javax.Lang.Model.AnnotatedConstruct arg0, Javax.Lang.Model.Element.AnnotationMirror arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Util.Elements.Origin GetOrigin(Javax.Lang.Model.Element.Element arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.element.ModuleElement,javax.lang.model.element.ModuleElement.Directive)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Util.Elements.Origin GetOrigin(Javax.Lang.Model.Element.ModuleElement arg0, Javax.Lang.Model.Element.ModuleElement.Directive arg1);
 
         #endregion
@@ -324,9 +324,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#hides(javax.lang.model.element.Element,javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Hides(Javax.Lang.Model.Element.Element arg0, Javax.Lang.Model.Element.Element arg1)
         {
             return IExecuteWithSignature<bool>("hides", "(Ljavax/lang/model/element/Element;Ljavax/lang/model/element/Element;)Z", arg0, arg1);
@@ -334,8 +334,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isDeprecated(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDeprecated(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecuteWithSignature<bool>("isDeprecated", "(Ljavax/lang/model/element/Element;)Z", arg0);
@@ -343,8 +343,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isFunctionalInterface(javax.lang.model.element.TypeElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFunctionalInterface(Javax.Lang.Model.Element.TypeElement arg0)
         {
             return IExecuteWithSignature<bool>("isFunctionalInterface", "(Ljavax/lang/model/element/TypeElement;)Z", arg0);
@@ -352,10 +352,10 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#overrides(javax.lang.model.element.ExecutableElement,javax.lang.model.element.ExecutableElement,javax.lang.model.element.TypeElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <param name="arg2"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Overrides(Javax.Lang.Model.Element.ExecutableElement arg0, Javax.Lang.Model.Element.ExecutableElement arg1, Javax.Lang.Model.Element.TypeElement arg2)
         {
             return IExecuteWithSignature<bool>("overrides", "(Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/TypeElement;)Z", arg0, arg1, arg2);
@@ -363,8 +363,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getConstantExpression(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetConstantExpression(object arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getConstantExpression", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
@@ -372,8 +372,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getDocComment(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDocComment(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDocComment", "(Ljavax/lang/model/element/Element;)Ljava/lang/String;", arg0);
@@ -381,39 +381,39 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllAnnotationMirrors(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror> GetAllAnnotationMirrors<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>(Javax.Lang.Model.Element.Element arg0) where ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror : Javax.Lang.Model.Element.AnnotationMirror
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List GetAllAnnotationMirrors(Javax.Lang.Model.Element.Element arg0) where ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror : Javax.Lang.Model.Element.AnnotationMirror
         {
-            return IExecuteWithSignature<Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_AnnotationMirror>>("getAllAnnotationMirrors", "(Ljavax/lang/model/element/Element;)Ljava/util/List;", arg0);
+            return IExecuteWithSignature<Java.Util.List>("getAllAnnotationMirrors", "(Ljavax/lang/model/element/Element;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllMembers(javax.lang.model.element.TypeElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element> GetAllMembers<ReturnExtendsJavax_Lang_Model_Element_Element>(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_Element"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List GetAllMembers(Javax.Lang.Model.Element.TypeElement arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return IExecuteWithSignature<Java.Util.List<ReturnExtendsJavax_Lang_Model_Element_Element>>("getAllMembers", "(Ljavax/lang/model/element/TypeElement;)Ljava/util/List;", arg0);
+            return IExecuteWithSignature<Java.Util.List>("getAllMembers", "(Ljavax/lang/model/element/TypeElement;)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getElementValuesWithDefaults(javax.lang.model.element.AnnotationMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_ExecutableElement"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></typeparam>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationValue"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></typeparam>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue> GetElementValuesWithDefaults<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>(Javax.Lang.Model.Element.AnnotationMirror arg0) where ReturnExtendsJavax_Lang_Model_Element_ExecutableElement : Javax.Lang.Model.Element.ExecutableElement where ReturnExtendsJavax_Lang_Model_Element_AnnotationValue : Javax.Lang.Model.Element.AnnotationValue
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_ExecutableElement"><see cref=""/></typeparam>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_AnnotationValue"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Map<, > GetElementValuesWithDefaults<, >(Javax.Lang.Model.Element.AnnotationMirror arg0) where ReturnExtendsJavax_Lang_Model_Element_ExecutableElement : Javax.Lang.Model.Element.ExecutableElement where ReturnExtendsJavax_Lang_Model_Element_AnnotationValue : Javax.Lang.Model.Element.AnnotationValue
         {
-            return IExecuteWithSignature<Java.Util.Map<ReturnExtendsJavax_Lang_Model_Element_ExecutableElement, ReturnExtendsJavax_Lang_Model_Element_AnnotationValue>>("getElementValuesWithDefaults", "(Ljavax/lang/model/element/AnnotationMirror;)Ljava/util/Map;", arg0);
+            return IExecuteWithSignature<Java.Util.Map<, >>("getElementValuesWithDefaults", "(Ljavax/lang/model/element/AnnotationMirror;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getBinaryName(javax.lang.model.element.TypeElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.Name"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.Name GetBinaryName(Javax.Lang.Model.Element.TypeElement arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getBinaryName", "(Ljavax/lang/model/element/TypeElement;)Ljavax/lang/model/element/Name;", arg0);
@@ -421,8 +421,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getName(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.Name"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.Name GetName(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.Name>("getName", "(Ljava/lang/CharSequence;)Ljavax/lang/model/element/Name;", arg0);
@@ -430,8 +430,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageElement(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.PackageElement GetPackageElement(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.PackageElement>("getPackageElement", "(Ljava/lang/CharSequence;)Ljavax/lang/model/element/PackageElement;", arg0);
@@ -439,8 +439,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageOf(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.PackageElement GetPackageOf(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.PackageElement>("getPackageOf", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/PackageElement;", arg0);
@@ -448,8 +448,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getTypeElement(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.TypeElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.TypeElement GetTypeElement(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.TypeElement>("getTypeElement", "(Ljava/lang/CharSequence;)Ljavax/lang/model/element/TypeElement;", arg0);
@@ -457,8 +457,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#printElements(java.io.Writer,javax.lang.model.element.Element...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void PrintElements(Java.Io.Writer arg0, params Javax.Lang.Model.Element.Element[] arg1)
         {
             IExecuteWithSignature("printElements", "(Ljava/io/Writer;[Ljavax/lang/model/element/Element;)V", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -466,8 +466,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isBridge(javax.lang.model.element.ExecutableElement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsBridge(Javax.Lang.Model.Element.ExecutableElement arg0)
         {
             return IExecuteWithSignature<bool>("isBridge", "(Ljavax/lang/model/element/ExecutableElement;)Z", arg0);
@@ -475,28 +475,28 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllPackageElements(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_PackageElement"><see cref="Javax.Lang.Model.Element.PackageElement"/></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement> GetAllPackageElements<ReturnExtendsJavax_Lang_Model_Element_PackageElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_PackageElement : Javax.Lang.Model.Element.PackageElement
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_PackageElement"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set GetAllPackageElements(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_PackageElement : Javax.Lang.Model.Element.PackageElement
         {
-            return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_PackageElement>>("getAllPackageElements", "(Ljava/lang/CharSequence;)Ljava/util/Set;", arg0);
+            return IExecuteWithSignature<Java.Util.Set>("getAllPackageElements", "(Ljava/lang/CharSequence;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getAllTypeElements(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_TypeElement"><see cref="Javax.Lang.Model.Element.TypeElement"/></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement> GetAllTypeElements<ReturnExtendsJavax_Lang_Model_Element_TypeElement>(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_TypeElement : Javax.Lang.Model.Element.TypeElement
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_TypeElement"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set GetAllTypeElements(Java.Lang.CharSequence arg0) where ReturnExtendsJavax_Lang_Model_Element_TypeElement : Javax.Lang.Model.Element.TypeElement
         {
-            return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_TypeElement>>("getAllTypeElements", "(Ljava/lang/CharSequence;)Ljava/util/Set;", arg0);
+            return IExecuteWithSignature<Java.Util.Set>("getAllTypeElements", "(Ljava/lang/CharSequence;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleElement(java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.ModuleElement GetModuleElement(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.ModuleElement>("getModuleElement", "(Ljava/lang/CharSequence;)Ljavax/lang/model/element/ModuleElement;", arg0);
@@ -504,8 +504,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleOf(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.ModuleElement GetModuleOf(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.ModuleElement>("getModuleOf", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/ModuleElement;", arg0);
@@ -513,9 +513,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageElement(javax.lang.model.element.ModuleElement,java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.PackageElement GetPackageElement(Javax.Lang.Model.Element.ModuleElement arg0, Java.Lang.CharSequence arg1)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.PackageElement>("getPackageElement", "(Ljavax/lang/model/element/ModuleElement;Ljava/lang/CharSequence;)Ljavax/lang/model/element/PackageElement;", arg0, arg1);
@@ -523,9 +523,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getTypeElement(javax.lang.model.element.ModuleElement,java.lang.CharSequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.TypeElement"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Element.TypeElement GetTypeElement(Javax.Lang.Model.Element.ModuleElement arg0, Java.Lang.CharSequence arg1)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Element.TypeElement>("getTypeElement", "(Ljavax/lang/model/element/ModuleElement;Ljava/lang/CharSequence;)Ljavax/lang/model/element/TypeElement;", arg0, arg1);
@@ -533,9 +533,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.AnnotatedConstruct,javax.lang.model.element.AnnotationMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.AnnotatedConstruct"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Util.Elements.Origin GetOrigin(Javax.Lang.Model.AnnotatedConstruct arg0, Javax.Lang.Model.Element.AnnotationMirror arg1)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Util.Elements.Origin>("getOrigin", "(Ljavax/lang/model/AnnotatedConstruct;Ljavax/lang/model/element/AnnotationMirror;)Ljavax/lang/model/util/Elements$Origin;", arg0, arg1);
@@ -543,8 +543,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Util.Elements.Origin GetOrigin(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Util.Elements.Origin>("getOrigin", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/util/Elements$Origin;", arg0);
@@ -552,9 +552,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getOrigin(javax.lang.model.element.ModuleElement,javax.lang.model.element.ModuleElement.Directive)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
-        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Util.Elements.Origin GetOrigin(Javax.Lang.Model.Element.ModuleElement arg0, Javax.Lang.Model.Element.ModuleElement.Directive arg1)
         {
             return IExecuteWithSignature<Javax.Lang.Model.Util.Elements.Origin>("getOrigin", "(Ljavax/lang/model/element/ModuleElement;Ljavax/lang/model/element/ModuleElement$Directive;)Ljavax/lang/model/util/Elements$Origin;", arg0, arg1);
@@ -600,8 +600,8 @@ namespace Javax.Lang.Model.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Lang.Model.Util.Elements.Origin ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Lang.Model.Util.Elements.Origin>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/util/Elements$Origin;", arg0);
@@ -609,7 +609,7 @@ namespace Javax.Lang.Model.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Lang.Model.Util.Elements.Origin[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Lang.Model.Util.Elements.Origin>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/util/Elements$Origin;");
@@ -621,7 +621,7 @@ namespace Javax.Lang.Model.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#isDeclared()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsDeclared()
             {
                 return IExecuteWithSignature<bool>("isDeclared", "()Z");

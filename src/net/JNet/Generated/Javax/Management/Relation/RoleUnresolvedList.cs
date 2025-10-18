@@ -29,7 +29,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html"/>
     /// </summary>
-    public partial class RoleUnresolvedList : Java.Util.ArrayList<object>
+    public partial class RoleUnresolvedList : Java.Util.ArrayList
     {
         const string _bridgeClassName = "javax.management.relation.RoleUnresolvedList";
         /// <summary>
@@ -73,7 +73,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public RoleUnresolvedList(int arg0)
             : base(arg0)
         {
@@ -81,9 +81,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public RoleUnresolvedList(Java.Util.List<Javax.Management.Relation.RoleUnresolved> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        public RoleUnresolvedList(Java.Util.List arg0)
             : base(arg0)
         {
         }
@@ -106,11 +106,11 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#addAll(int,javax.management.relation.RoleUnresolvedList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.Relation.RoleUnresolvedList"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public bool AddAll(int arg0, Javax.Management.Relation.RoleUnresolvedList arg1)
         {
             return IExecuteWithSignature<bool>("addAll", "(ILjavax/management/relation/RoleUnresolvedList;)Z", arg0, arg1);
@@ -118,9 +118,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#addAll(javax.management.relation.RoleUnresolvedList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Relation.RoleUnresolvedList"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool AddAll(Javax.Management.Relation.RoleUnresolvedList arg0)
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljavax/management/relation/RoleUnresolvedList;)Z", arg0);
@@ -128,18 +128,18 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#asList()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<Javax.Management.Relation.RoleUnresolved> AsList()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List AsList()
         {
-            return IExecuteWithSignature<Java.Util.List<Javax.Management.Relation.RoleUnresolved>>("asList", "()Ljava/util/List;");
+            return IExecuteWithSignature<Java.Util.List>("asList", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#add(int,javax.management.relation.RoleUnresolved)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.Relation.RoleUnresolved"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Add(int arg0, Javax.Management.Relation.RoleUnresolved arg1)
         {
             IExecuteWithSignature("add", "(ILjavax/management/relation/RoleUnresolved;)V", arg0, arg1);
@@ -147,8 +147,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#add(javax.management.relation.RoleUnresolved)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Relation.RoleUnresolved"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Add(Javax.Management.Relation.RoleUnresolved arg0)
         {
             IExecuteWithSignature("add", "(Ljavax/management/relation/RoleUnresolved;)V", arg0);
@@ -156,10 +156,10 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#set(int,javax.management.relation.RoleUnresolved)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.Relation.RoleUnresolved"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Set(int arg0, Javax.Management.Relation.RoleUnresolved arg1)
         {
             IExecuteWithSignature("set", "(ILjavax/management/relation/RoleUnresolved;)V", arg0, arg1);

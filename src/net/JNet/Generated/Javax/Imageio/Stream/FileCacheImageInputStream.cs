@@ -73,9 +73,9 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html#%3Cinit%3E(java.io.InputStream,java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Io.File"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public FileCacheImageInputStream(Java.Io.InputStream arg0, Java.Io.File arg1)
             : base(arg0, arg1)
         {

@@ -163,9 +163,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#draw(java.awt.Graphics2D,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void Draw(Java.Awt.Graphics2D arg0, float arg1, float arg2)
         {
             IExecuteWithSignature("draw", "(Ljava/awt/Graphics2D;FF)V", arg0, arg1, arg2);
@@ -173,8 +173,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getOutline(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <returns><see cref="Java.Awt.Shape"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Shape GetOutline(Java.Awt.Geom.AffineTransform arg0)
         {
             return IExecuteWithSignature<Java.Awt.Shape>("getOutline", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/Shape;", arg0);

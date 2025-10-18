@@ -91,10 +91,10 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getBoolean(javax.swing.plaf.synth.SynthContext,java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool GetBoolean(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, bool arg2)
         {
             return IExecuteWithSignature<bool>("getBoolean", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;Z)Z", arg0, arg1, arg2);
@@ -102,8 +102,8 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#isOpaque(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsOpaque(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecuteWithSignature<bool>("isOpaque", "(Ljavax/swing/plaf/synth/SynthContext;)Z", arg0);
@@ -111,10 +111,10 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getInt(javax.swing.plaf.synth.SynthContext,java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetInt(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getInt", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;I)I", arg0, arg1, arg2);
@@ -122,9 +122,9 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getColor(javax.swing.plaf.synth.SynthContext,javax.swing.plaf.synth.ColorType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.ColorType"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Color GetColor(Javax.Swing.Plaf.Synth.SynthContext arg0, Javax.Swing.Plaf.Synth.ColorType arg1)
         {
             return IExecuteWithSignature<Java.Awt.Color>("getColor", "(Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/ColorType;)Ljava/awt/Color;", arg0, arg1);
@@ -132,8 +132,8 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getFont(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Font GetFont(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecuteWithSignature<Java.Awt.Font>("getFont", "(Ljavax/swing/plaf/synth/SynthContext;)Ljava/awt/Font;", arg0);
@@ -141,9 +141,9 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getInsets(javax.swing.plaf.synth.SynthContext,java.awt.Insets)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Insets"/></param>
-        /// <returns><see cref="Java.Awt.Insets"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Insets GetInsets(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Insets arg1)
         {
             return IExecuteWithSignature<Java.Awt.Insets>("getInsets", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Insets;)Ljava/awt/Insets;", arg0, arg1);
@@ -151,9 +151,9 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#get(javax.swing.plaf.synth.SynthContext,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1)
         {
             return IExecuteWithSignature("get", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -161,10 +161,10 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getString(javax.swing.plaf.synth.SynthContext,java.lang.Object,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetString(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, Java.Lang.String arg2)
         {
             return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
@@ -172,9 +172,9 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getIcon(javax.swing.plaf.synth.SynthContext,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Icon GetIcon(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1)
         {
             return IExecuteWithSignature<Javax.Swing.Icon>("getIcon", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;)Ljavax/swing/Icon;", arg0, arg1);
@@ -182,8 +182,8 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getGraphicsUtils(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthGraphicsUtils"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Plaf.Synth.SynthGraphicsUtils GetGraphicsUtils(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthGraphicsUtils>("getGraphicsUtils", "(Ljavax/swing/plaf/synth/SynthContext;)Ljavax/swing/plaf/synth/SynthGraphicsUtils;", arg0);
@@ -191,8 +191,8 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getPainter(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthPainter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Plaf.Synth.SynthPainter GetPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthPainter>("getPainter", "(Ljavax/swing/plaf/synth/SynthContext;)Ljavax/swing/plaf/synth/SynthPainter;", arg0);
@@ -200,7 +200,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#installDefaults(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void InstallDefaults(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             IExecuteWithSignature("installDefaults", "(Ljavax/swing/plaf/synth/SynthContext;)V", arg0);
@@ -208,7 +208,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#uninstallDefaults(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void UninstallDefaults(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             IExecuteWithSignature("uninstallDefaults", "(Ljavax/swing/plaf/synth/SynthContext;)V", arg0);

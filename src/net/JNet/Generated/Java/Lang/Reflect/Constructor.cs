@@ -66,12 +66,12 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Constructor<T> declaration
+    #region Constructor declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Constructor.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class Constructor<T> : Java.Lang.Reflect.Executable
+    public partial class Constructor : Java.Lang.Reflect.Executable
     {
         const string _bridgeClassName = "java.lang.reflect.Constructor";
         /// <summary>
@@ -131,12 +131,12 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Constructor.html#newInstance(java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.InstantiationException"/>
-        /// <exception cref="Java.Lang.IllegalAccessException"/>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public object NewInstance(params object[] arg0)
         {
             return IExecuteWithSignature("newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -152,8 +152,8 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Constructor<T> implementation
-    public partial class Constructor<T>
+    #region Constructor implementation
+    public partial class Constructor
     {
         #region Constructors
 
@@ -161,9 +161,9 @@ namespace Java.Lang.Reflect
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Reflect.Constructor{T}"/> to <see cref="Java.Lang.Reflect.Constructor"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Reflect.Constructor(Java.Lang.Reflect.Constructor<T> t) => t.Cast<Java.Lang.Reflect.Constructor>();
+        public static implicit operator Java.Lang.Reflect.Constructor(Java.Lang.Reflect.Constructor t) => t.Cast<Java.Lang.Reflect.Constructor>();
 
         #endregion
 
@@ -179,12 +179,12 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Constructor.html#newInstance(java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Lang.InstantiationException"/>
-        /// <exception cref="Java.Lang.IllegalAccessException"/>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public T NewInstance(params object[] arg0)
         {
             return IExecuteWithSignature<T>("newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);

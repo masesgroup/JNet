@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JMenuItem(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -82,8 +82,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#%3Cinit%3E(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1)
             : base(arg0, arg1)
         {
@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JMenuItem(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -99,7 +99,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#%3Cinit%3E(javax.swing.Action)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JMenuItem(Javax.Swing.Action arg0)
             : base(arg0)
         {
@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#%3Cinit%3E(javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JMenuItem(Javax.Swing.Icon arg0)
             : base(arg0)
         {
@@ -117,11 +117,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JMenuItem"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JMenuItem t) => t.Cast<Javax.Accessibility.Accessible>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JMenuItem"/> to <see cref="Javax.Swing.MenuElement"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.MenuElement(Javax.Swing.JMenuItem t) => t.Cast<Javax.Swing.MenuElement>();
 
@@ -174,7 +174,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#isArmed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsArmed()
         {
             return IExecuteWithSignature<bool>("isArmed", "()Z");
@@ -182,7 +182,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#addMenuDragMouseListener(javax.swing.event.MenuDragMouseListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddMenuDragMouseListener(Javax.Swing.Event.MenuDragMouseListener arg0)
         {
             IExecuteWithSignature("addMenuDragMouseListener", "(Ljavax/swing/event/MenuDragMouseListener;)V", arg0);
@@ -190,7 +190,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#addMenuKeyListener(javax.swing.event.MenuKeyListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuKeyListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddMenuKeyListener(Javax.Swing.Event.MenuKeyListener arg0)
         {
             IExecuteWithSignature("addMenuKeyListener", "(Ljavax/swing/event/MenuKeyListener;)V", arg0);
@@ -198,7 +198,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#menuSelectionChanged(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void MenuSelectionChanged(bool arg0)
         {
             IExecuteWithSignature("menuSelectionChanged", "(Z)V", arg0);
@@ -206,9 +206,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#processKeyEvent(java.awt.event.KeyEvent,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.MenuElement"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.MenuSelectionManager"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void ProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0, Javax.Swing.MenuElement[] arg1, Javax.Swing.MenuSelectionManager arg2)
         {
             IExecuteWithSignature("processKeyEvent", "(Ljava/awt/event/KeyEvent;[Ljavax/swing/MenuElement;Ljavax/swing/MenuSelectionManager;)V", arg0, arg1, arg2);
@@ -216,7 +216,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#processMenuDragMouseEvent(javax.swing.event.MenuDragMouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ProcessMenuDragMouseEvent(Javax.Swing.Event.MenuDragMouseEvent arg0)
         {
             IExecuteWithSignature("processMenuDragMouseEvent", "(Ljavax/swing/event/MenuDragMouseEvent;)V", arg0);
@@ -224,7 +224,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#processMenuKeyEvent(javax.swing.event.MenuKeyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuKeyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ProcessMenuKeyEvent(Javax.Swing.Event.MenuKeyEvent arg0)
         {
             IExecuteWithSignature("processMenuKeyEvent", "(Ljavax/swing/event/MenuKeyEvent;)V", arg0);
@@ -232,9 +232,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#processMouseEvent(java.awt.event.MouseEvent,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.MenuElement"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.MenuSelectionManager"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void ProcessMouseEvent(Java.Awt.EventNs.MouseEvent arg0, Javax.Swing.MenuElement[] arg1, Javax.Swing.MenuSelectionManager arg2)
         {
             IExecuteWithSignature("processMouseEvent", "(Ljava/awt/event/MouseEvent;[Ljavax/swing/MenuElement;Ljavax/swing/MenuSelectionManager;)V", arg0, arg1, arg2);
@@ -242,7 +242,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#removeMenuDragMouseListener(javax.swing.event.MenuDragMouseListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveMenuDragMouseListener(Javax.Swing.Event.MenuDragMouseListener arg0)
         {
             IExecuteWithSignature("removeMenuDragMouseListener", "(Ljavax/swing/event/MenuDragMouseListener;)V", arg0);
@@ -250,7 +250,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#removeMenuKeyListener(javax.swing.event.MenuKeyListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuKeyListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveMenuKeyListener(Javax.Swing.Event.MenuKeyListener arg0)
         {
             IExecuteWithSignature("removeMenuKeyListener", "(Ljavax/swing/event/MenuKeyListener;)V", arg0);
@@ -258,7 +258,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#setArmed(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetArmed(bool arg0)
         {
             IExecuteWithSignature("setArmed", "(Z)V", arg0);
@@ -266,7 +266,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#setUI(javax.swing.plaf.MenuItemUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.MenuItemUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.MenuItemUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/MenuItemUI;)V", arg0);

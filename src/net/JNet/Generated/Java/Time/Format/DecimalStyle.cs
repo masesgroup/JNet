@@ -91,15 +91,15 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#getAvailableLocales()"/> 
         /// </summary>
-        public static Java.Util.Set<Java.Util.Locale> AvailableLocales
+        public static Java.Util.Set AvailableLocales
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Util.Locale>>(LocalBridgeClazz, "getAvailableLocales", "()Ljava/util/Set;"); }
+            get { return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "getAvailableLocales", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#of(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Format.DecimalStyle Of(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Java.Time.Format.DecimalStyle>(LocalBridgeClazz, "of", "(Ljava/util/Locale;)Ljava/time/format/DecimalStyle;", arg0);
@@ -107,7 +107,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#ofDefaultLocale()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Format.DecimalStyle OfDefaultLocale()
         {
             return SExecuteWithSignature<Java.Time.Format.DecimalStyle>(LocalBridgeClazz, "ofDefaultLocale", "()Ljava/time/format/DecimalStyle;");
@@ -147,8 +147,8 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#withDecimalSeparator(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Format.DecimalStyle WithDecimalSeparator(char arg0)
         {
             return IExecuteWithSignature<Java.Time.Format.DecimalStyle>("withDecimalSeparator", "(C)Ljava/time/format/DecimalStyle;", arg0);
@@ -156,8 +156,8 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#withNegativeSign(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Format.DecimalStyle WithNegativeSign(char arg0)
         {
             return IExecuteWithSignature<Java.Time.Format.DecimalStyle>("withNegativeSign", "(C)Ljava/time/format/DecimalStyle;", arg0);
@@ -165,8 +165,8 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#withPositiveSign(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Format.DecimalStyle WithPositiveSign(char arg0)
         {
             return IExecuteWithSignature<Java.Time.Format.DecimalStyle>("withPositiveSign", "(C)Ljava/time/format/DecimalStyle;", arg0);
@@ -174,8 +174,8 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#withZeroDigit(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Format.DecimalStyle WithZeroDigit(char arg0)
         {
             return IExecuteWithSignature<Java.Time.Format.DecimalStyle>("withZeroDigit", "(C)Ljava/time/format/DecimalStyle;", arg0);

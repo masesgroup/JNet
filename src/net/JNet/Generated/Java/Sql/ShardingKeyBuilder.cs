@@ -78,15 +78,15 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#build()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.ShardingKey"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Sql.ShardingKey Build();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#subkey(java.lang.Object,java.sql.SQLType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.SQLType"/></param>
-        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Sql.ShardingKeyBuilder Subkey(object arg0, Java.Sql.SQLType arg1);
 
         #endregion
@@ -122,8 +122,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#build()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.ShardingKey"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Sql.ShardingKey Build()
         {
             return IExecuteWithSignature<Java.Sql.ShardingKey>("build", "()Ljava/sql/ShardingKey;");
@@ -131,9 +131,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#subkey(java.lang.Object,java.sql.SQLType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.SQLType"/></param>
-        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Sql.ShardingKeyBuilder Subkey(object arg0, Java.Sql.SQLType arg1)
         {
             return IExecuteWithSignature<Java.Sql.ShardingKeyBuilder>("subkey", "(Ljava/lang/Object;Ljava/sql/SQLType;)Ljava/sql/ShardingKeyBuilder;", arg0, arg1);

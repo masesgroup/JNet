@@ -105,9 +105,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getEncodings()"/> 
         /// </summary>
-        public Java.Util.Iterator<Java.Lang.String> Encodings
+        public Java.Util.Iterator Encodings
         {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getEncodings", "()Ljava/util/Iterator;"); }
+            get { return IExecuteWithSignature<Java.Util.Iterator>("getEncodings", "()Ljava/util/Iterator;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getType()"/> 
@@ -119,9 +119,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getEncoded(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Security.Cert.CertificateEncodingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] GetEncoded(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<byte>("getEncoded", "(Ljava/lang/String;)[B", arg0);

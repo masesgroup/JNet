@@ -87,8 +87,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#createUI(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Plaf.ComponentUI CreateUI(Javax.Swing.JComponent arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Plaf.ComponentUI>(LocalBridgeClazz, "createUI", "(Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;", arg0);
@@ -100,10 +100,10 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#contains(javax.swing.JComponent,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Contains(Javax.Swing.JComponent arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljavax/swing/JComponent;II)Z", arg0, arg1, arg2);
@@ -111,8 +111,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getAccessibleChildrenCount(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetAccessibleChildrenCount(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<int>("getAccessibleChildrenCount", "(Ljavax/swing/JComponent;)I", arg0);
@@ -120,10 +120,10 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getBaseline(javax.swing.JComponent,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetBaseline(Javax.Swing.JComponent arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("getBaseline", "(Ljavax/swing/JComponent;II)I", arg0, arg1, arg2);
@@ -131,8 +131,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getBaselineResizeBehavior(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component.BaselineResizeBehavior GetBaselineResizeBehavior(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component.BaselineResizeBehavior>("getBaselineResizeBehavior", "(Ljavax/swing/JComponent;)Ljava/awt/Component$BaselineResizeBehavior;", arg0);
@@ -140,8 +140,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getMaximumSize(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Dimension GetMaximumSize(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("getMaximumSize", "(Ljavax/swing/JComponent;)Ljava/awt/Dimension;", arg0);
@@ -149,8 +149,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getMinimumSize(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Dimension GetMinimumSize(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("getMinimumSize", "(Ljavax/swing/JComponent;)Ljava/awt/Dimension;", arg0);
@@ -158,8 +158,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getPreferredSize(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Dimension GetPreferredSize(Javax.Swing.JComponent arg0)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "(Ljavax/swing/JComponent;)Ljava/awt/Dimension;", arg0);
@@ -167,9 +167,9 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getAccessibleChild(javax.swing.JComponent,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Accessibility.Accessible GetAccessibleChild(Javax.Swing.JComponent arg0, int arg1)
         {
             return IExecuteWithSignature<Javax.Accessibility.Accessible>("getAccessibleChild", "(Ljavax/swing/JComponent;I)Ljavax/accessibility/Accessible;", arg0, arg1);
@@ -177,7 +177,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#installUI(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void InstallUI(Javax.Swing.JComponent arg0)
         {
             IExecuteWithSignature("installUI", "(Ljavax/swing/JComponent;)V", arg0);
@@ -185,8 +185,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#paint(java.awt.Graphics,javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Paint(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
             IExecuteWithSignature("paint", "(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V", arg0, arg1);
@@ -194,7 +194,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#uninstallUI(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void UninstallUI(Javax.Swing.JComponent arg0)
         {
             IExecuteWithSignature("uninstallUI", "(Ljavax/swing/JComponent;)V", arg0);
@@ -202,8 +202,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#update(java.awt.Graphics,javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Update(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
             IExecuteWithSignature("update", "(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V", arg0, arg1);

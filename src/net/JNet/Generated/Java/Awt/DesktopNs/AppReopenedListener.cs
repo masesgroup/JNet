@@ -108,7 +108,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html#appReopened(java.awt.desktop.AppReopenedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppReopenedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AppReopened(Java.Awt.DesktopNs.AppReopenedEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html#appReopened(java.awt.desktop.AppReopenedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppReopenedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void AppReopened(Java.Awt.DesktopNs.AppReopenedEvent arg0)
         {
             hasOverrideAppReopened = false;
@@ -207,7 +207,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html#appReopened(java.awt.desktop.AppReopenedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppReopenedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void AppReopened(Java.Awt.DesktopNs.AppReopenedEvent arg0)
         {
             IExecuteWithSignature("appReopened", "(Ljava/awt/desktop/AppReopenedEvent;)V", arg0);

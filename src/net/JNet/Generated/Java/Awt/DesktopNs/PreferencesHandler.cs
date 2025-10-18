@@ -78,7 +78,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PreferencesHandler.html#handlePreferences(java.awt.desktop.PreferencesEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PreferencesEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void HandlePreferences(Java.Awt.DesktopNs.PreferencesEvent arg0);
 
         #endregion
@@ -114,7 +114,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PreferencesHandler.html#handlePreferences(java.awt.desktop.PreferencesEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PreferencesEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void HandlePreferences(Java.Awt.DesktopNs.PreferencesEvent arg0)
         {
             IExecuteWithSignature("handlePreferences", "(Ljava/awt/desktop/PreferencesEvent;)V", arg0);

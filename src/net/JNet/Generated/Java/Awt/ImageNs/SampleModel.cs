@@ -75,10 +75,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public SampleModel(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -151,11 +151,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSample(int,int,int,java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetSample(int arg0, int arg1, int arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecuteWithSignature<int>("getSample", "(IIILjava/awt/image/DataBuffer;)I", arg0, arg1, arg2, arg3);
@@ -163,8 +163,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetSampleSize(int arg0)
         {
             return IExecuteWithSignature<int>("getSampleSize", "(I)I", arg0);
@@ -172,7 +172,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createDataBuffer()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.ImageNs.DataBuffer"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.DataBuffer CreateDataBuffer()
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.DataBuffer>("createDataBuffer", "()Ljava/awt/image/DataBuffer;");
@@ -180,9 +180,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createCompatibleSampleModel(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.SampleModel"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.SampleModel CreateCompatibleSampleModel(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.SampleModel>("createCompatibleSampleModel", "(II)Ljava/awt/image/SampleModel;", arg0, arg1);
@@ -190,8 +190,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createSubsetSampleModel(int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.SampleModel"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.SampleModel CreateSubsetSampleModel(int[] arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.SampleModel>("createSubsetSampleModel", "([I)Ljava/awt/image/SampleModel;", new object[] { arg0 });
@@ -199,11 +199,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataElements(int,int,java.lang.Object,java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetDataElements(int arg0, int arg1, object arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecuteWithSignature("getDataElements", "(IILjava/lang/Object;Ljava/awt/image/DataBuffer;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
@@ -211,10 +211,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setDataElements(int,int,java.lang.Object,java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetDataElements(int arg0, int arg1, object arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             IExecuteWithSignature("setDataElements", "(IILjava/lang/Object;Ljava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3);
@@ -222,11 +222,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSample(int,int,int,int,java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void SetSample(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.DataBuffer arg4)
         {
             IExecuteWithSignature("setSample", "(IIIILjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3, arg4);
@@ -234,11 +234,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleDouble(int,int,int,java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double GetSampleDouble(int arg0, int arg1, int arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecuteWithSignature<double>("getSampleDouble", "(IIILjava/awt/image/DataBuffer;)D", arg0, arg1, arg2, arg3);
@@ -246,11 +246,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixel(int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double[] GetPixel(int arg0, int arg1, double[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecuteWithSignatureArray<double>("getPixel", "(II[DLjava/awt/image/DataBuffer;)[D", arg0, arg1, arg2, arg3);
@@ -258,13 +258,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixels(int,int,int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double[] GetPixels(int arg0, int arg1, int arg2, int arg3, double[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             return IExecuteWithSignatureArray<double>("getPixels", "(IIII[DLjava/awt/image/DataBuffer;)[D", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -272,14 +272,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSamples(int,int,int,int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="double"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double[] GetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, double[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             return IExecuteWithSignatureArray<double>("getSamples", "(IIIII[DLjava/awt/image/DataBuffer;)[D", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -287,11 +287,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleFloat(int,int,int,java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float GetSampleFloat(int arg0, int arg1, int arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecuteWithSignature<float>("getSampleFloat", "(IIILjava/awt/image/DataBuffer;)F", arg0, arg1, arg2, arg3);
@@ -299,11 +299,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixel(int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetPixel(int arg0, int arg1, float[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecuteWithSignatureArray<float>("getPixel", "(II[FLjava/awt/image/DataBuffer;)[F", arg0, arg1, arg2, arg3);
@@ -311,13 +311,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixels(int,int,int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="float"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetPixels(int arg0, int arg1, int arg2, int arg3, float[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             return IExecuteWithSignatureArray<float>("getPixels", "(IIII[FLjava/awt/image/DataBuffer;)[F", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -325,14 +325,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSamples(int,int,int,int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="float"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, float[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             return IExecuteWithSignatureArray<float>("getSamples", "(IIIII[FLjava/awt/image/DataBuffer;)[F", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -340,11 +340,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixel(int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetPixel(int arg0, int arg1, int[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecuteWithSignatureArray<int>("getPixel", "(II[ILjava/awt/image/DataBuffer;)[I", arg0, arg1, arg2, arg3);
@@ -352,13 +352,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixels(int,int,int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetPixels(int arg0, int arg1, int arg2, int arg3, int[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             return IExecuteWithSignatureArray<int>("getPixels", "(IIII[ILjava/awt/image/DataBuffer;)[I", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -366,14 +366,14 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSamples(int,int,int,int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] GetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             return IExecuteWithSignatureArray<int>("getSamples", "(IIIII[ILjava/awt/image/DataBuffer;)[I", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -381,13 +381,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataElements(int,int,int,int,java.lang.Object,java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetDataElements(int arg0, int arg1, int arg2, int arg3, object arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             return IExecuteWithSignature("getDataElements", "(IIIILjava/lang/Object;Ljava/awt/image/DataBuffer;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -395,12 +395,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setDataElements(int,int,int,int,java.lang.Object,java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="object"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void SetDataElements(int arg0, int arg1, int arg2, int arg3, object arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             IExecuteWithSignature("setDataElements", "(IIIILjava/lang/Object;Ljava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -408,10 +408,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixel(int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetPixel(int arg0, int arg1, double[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             IExecuteWithSignature("setPixel", "(II[DLjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3);
@@ -419,10 +419,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixel(int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetPixel(int arg0, int arg1, float[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             IExecuteWithSignature("setPixel", "(II[FLjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3);
@@ -430,10 +430,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixel(int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void SetPixel(int arg0, int arg1, int[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             IExecuteWithSignature("setPixel", "(II[ILjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3);
@@ -441,12 +441,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixels(int,int,int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="double"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, double[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             IExecuteWithSignature("setPixels", "(IIII[DLjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -454,12 +454,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixels(int,int,int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="float"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, float[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             IExecuteWithSignature("setPixels", "(IIII[FLjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -467,12 +467,12 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixels(int,int,int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, int[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             IExecuteWithSignature("setPixels", "(IIII[ILjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -480,11 +480,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSample(int,int,int,double,java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void SetSample(int arg0, int arg1, int arg2, double arg3, Java.Awt.ImageNs.DataBuffer arg4)
         {
             IExecuteWithSignature("setSample", "(IIIDLjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3, arg4);
@@ -492,11 +492,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSample(int,int,int,float,java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void SetSample(int arg0, int arg1, int arg2, float arg3, Java.Awt.ImageNs.DataBuffer arg4)
         {
             IExecuteWithSignature("setSample", "(IIIFLjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3, arg4);
@@ -504,13 +504,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSamples(int,int,int,int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="double"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void SetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, double[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             IExecuteWithSignature("setSamples", "(IIIII[DLjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -518,13 +518,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSamples(int,int,int,int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="float"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void SetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, float[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             IExecuteWithSignature("setSamples", "(IIIII[FLjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -532,13 +532,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSamples(int,int,int,int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void SetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             IExecuteWithSignature("setSamples", "(IIIII[ILjava/awt/image/DataBuffer;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);

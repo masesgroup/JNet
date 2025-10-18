@@ -29,7 +29,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html"/>
     /// </summary>
-    public partial class Path : Java.Lang.Iterable<Java.Nio.File.Path>
+    public partial class Path : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Path>
     {
         const string _bridgeClassName = "java.nio.file.Path";
         /// <summary>
@@ -98,136 +98,136 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#endsWith(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool EndsWith(Java.Nio.File.Path arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#isAbsolute()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsAbsolute();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#startsWith(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool StartsWith(Java.Nio.File.Path arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#compareTo(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int CompareTo(Java.Nio.File.Path arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toUri()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Net.URI ToUri();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#getName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Path GetName(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#normalize()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Path Normalize();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#relativize(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Path Relativize(Java.Nio.File.Path arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolve(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Path Resolve(Java.Nio.File.Path arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#subpath(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Path Subpath(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toAbsolutePath()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Path ToAbsolutePath();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toRealPath(java.nio.file.LinkOption...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.LinkOption"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Nio.File.Path ToRealPath(params Java.Nio.File.LinkOption[] arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.File.WatchEvent.Modifier"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<object>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#endsWith(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool EndsWith(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#startsWith(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool StartsWith(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int CompareTo(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toFile()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Io.File ToFile();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolve(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Path Resolve(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolveSibling(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Path ResolveSibling(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolveSibling(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Path ResolveSibling(Java.Nio.File.Path arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind<object>[] arg1);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<Java.Nio.File.Path> Iterator();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Iterator Iterator();
 
         #endregion
 
@@ -248,11 +248,11 @@ namespace Java.Nio.File
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.Path"/> to <see cref="Java.Lang.Comparable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Nio.File.Path t) => t.Cast<Java.Lang.Comparable>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.Path"/> to <see cref="Java.Nio.File.Watchable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.File.Watchable(Java.Nio.File.Path t) => t.Cast<Java.Nio.File.Watchable>();
 
@@ -266,9 +266,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#of(java.lang.String,java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Path Of(Java.Lang.String arg0, params Java.Lang.String[] arg1)
         {
             return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "of", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -276,8 +276,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#of(java.net.URI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.Path Of(Java.Net.URI arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "of", "(Ljava/net/URI;)Ljava/nio/file/Path;", arg0);
@@ -324,8 +324,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#endsWith(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool EndsWith(Java.Nio.File.Path arg0)
         {
             return IExecuteWithSignature<bool>("endsWith", "(Ljava/nio/file/Path;)Z", arg0);
@@ -333,7 +333,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#isAbsolute()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsAbsolute()
         {
             return IExecuteWithSignature<bool>("isAbsolute", "()Z");
@@ -341,8 +341,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#startsWith(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool StartsWith(Java.Nio.File.Path arg0)
         {
             return IExecuteWithSignature<bool>("startsWith", "(Ljava/nio/file/Path;)Z", arg0);
@@ -350,8 +350,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#compareTo(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Nio.File.Path arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/file/Path;)I", arg0);
@@ -359,7 +359,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toUri()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.URI ToUri()
         {
             return IExecuteWithSignature<Java.Net.URI>("toUri", "()Ljava/net/URI;");
@@ -367,8 +367,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#getName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path GetName(int arg0)
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("getName", "(I)Ljava/nio/file/Path;", arg0);
@@ -376,7 +376,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#normalize()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path Normalize()
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("normalize", "()Ljava/nio/file/Path;");
@@ -384,8 +384,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#relativize(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path Relativize(Java.Nio.File.Path arg0)
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("relativize", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
@@ -393,8 +393,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolve(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path Resolve(Java.Nio.File.Path arg0)
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("resolve", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
@@ -402,9 +402,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#subpath(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path Subpath(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("subpath", "(II)Ljava/nio/file/Path;", arg0, arg1);
@@ -412,7 +412,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toAbsolutePath()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path ToAbsolutePath()
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("toAbsolutePath", "()Ljava/nio/file/Path;");
@@ -420,9 +420,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toRealPath(java.nio.file.LinkOption...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.LinkOption"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.Path ToRealPath(params Java.Nio.File.LinkOption[] arg0)
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("toRealPath", "([Ljava/nio/file/LinkOption;)Ljava/nio/file/Path;", arg0);
@@ -430,20 +430,20 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.File.WatchEvent.Modifier"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<object>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
         {
             return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;[Ljava/nio/file/WatchEvent$Modifier;)Ljava/nio/file/WatchKey;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#endsWith(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool EndsWith(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("endsWith", "(Ljava/lang/String;)Z", arg0);
@@ -451,8 +451,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#startsWith(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool StartsWith(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("startsWith", "(Ljava/lang/String;)Z", arg0);
@@ -460,8 +460,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
@@ -469,7 +469,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toFile()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Io.File ToFile()
         {
             return IExecuteWithSignature<Java.Io.File>("toFile", "()Ljava/io/File;");
@@ -477,8 +477,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolve(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path Resolve(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("resolve", "(Ljava/lang/String;)Ljava/nio/file/Path;", arg0);
@@ -486,8 +486,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolveSibling(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path ResolveSibling(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("resolveSibling", "(Ljava/lang/String;)Ljava/nio/file/Path;", arg0);
@@ -495,8 +495,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#resolveSibling(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Path ResolveSibling(Java.Nio.File.Path arg0)
         {
             return IExecuteWithSignature<Java.Nio.File.Path>("resolveSibling", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
@@ -504,21 +504,21 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind<object>[] arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind[] arg1)
         {
             return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;)Ljava/nio/file/WatchKey;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Nio.File.Path> Iterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Nio.File.Path>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

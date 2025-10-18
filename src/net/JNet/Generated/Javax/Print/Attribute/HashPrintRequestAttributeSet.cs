@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.html#%3Cinit%3E(javax.print.attribute.PrintRequestAttribute)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttribute"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttribute arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.html#%3Cinit%3E(javax.print.attribute.PrintRequestAttribute[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttribute"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttribute[] arg0)
             : base(arg0)
         {
@@ -89,7 +89,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.html#%3Cinit%3E(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
             : base(arg0)
         {
@@ -99,7 +99,7 @@ namespace Javax.Print.Attribute
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.HashPrintRequestAttributeSet"/> to <see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttributeSet(Javax.Print.Attribute.HashPrintRequestAttributeSet t) => t.Cast<Javax.Print.Attribute.PrintRequestAttributeSet>();
 

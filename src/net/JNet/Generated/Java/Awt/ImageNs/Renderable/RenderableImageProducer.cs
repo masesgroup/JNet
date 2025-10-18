@@ -73,8 +73,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#%3Cinit%3E(java.awt.image.renderable.RenderableImage,java.awt.image.renderable.RenderContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public RenderableImageProducer(Java.Awt.ImageNs.Renderable.RenderableImage arg0, Java.Awt.ImageNs.Renderable.RenderContext arg1)
             : base(arg0, arg1)
         {
@@ -84,11 +84,11 @@ namespace Java.Awt.ImageNs.Renderable
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.Renderable.RenderableImageProducer"/> to <see cref="Java.Awt.ImageNs.ImageProducer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.ImageProducer(Java.Awt.ImageNs.Renderable.RenderableImageProducer t) => t.Cast<Java.Awt.ImageNs.ImageProducer>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.Renderable.RenderableImageProducer"/> to <see cref="Java.Lang.Runnable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Runnable(Java.Awt.ImageNs.Renderable.RenderableImageProducer t) => t.Cast<Java.Lang.Runnable>();
 
@@ -106,8 +106,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#isConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             return IExecuteWithSignature<bool>("isConsumer", "(Ljava/awt/image/ImageConsumer;)Z", arg0);
@@ -115,7 +115,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#addConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("addConsumer", "(Ljava/awt/image/ImageConsumer;)V", arg0);
@@ -123,7 +123,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#removeConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("removeConsumer", "(Ljava/awt/image/ImageConsumer;)V", arg0);
@@ -131,7 +131,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#setRenderContext(java.awt.image.renderable.RenderContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRenderContext(Java.Awt.ImageNs.Renderable.RenderContext arg0)
         {
             IExecuteWithSignature("setRenderContext", "(Ljava/awt/image/renderable/RenderContext;)V", arg0);
@@ -139,7 +139,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#startProduction(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void StartProduction(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("startProduction", "(Ljava/awt/image/ImageConsumer;)V", arg0);
@@ -147,7 +147,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RequestTopDownLeftRightResend(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("requestTopDownLeftRightResend", "(Ljava/awt/image/ImageConsumer;)V", arg0);

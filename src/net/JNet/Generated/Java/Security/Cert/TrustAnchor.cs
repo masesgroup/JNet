@@ -73,9 +73,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#%3Cinit%3E(java.lang.String,java.security.PublicKey,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PublicKey"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public TrustAnchor(Java.Lang.String arg0, Java.Security.PublicKey arg1, byte[] arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#%3Cinit%3E(java.security.cert.X509Certificate,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public TrustAnchor(Java.Security.Cert.X509Certificate arg0, byte[] arg1)
             : base(arg0, arg1)
         {
@@ -92,9 +92,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#%3Cinit%3E(javax.security.auth.x500.X500Principal,java.security.PublicKey,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.X500.X500Principal"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PublicKey"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public TrustAnchor(Javax.Security.Auth.X500.X500Principal arg0, Java.Security.PublicKey arg1, byte[] arg2)
             : base(arg0, arg1, arg2)
         {

@@ -85,7 +85,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#defaultManager()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.MenuSelectionManager"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.MenuSelectionManager DefaultManager()
         {
             return SExecuteWithSignature<Javax.Swing.MenuSelectionManager>(LocalBridgeClazz, "defaultManager", "()Ljavax/swing/MenuSelectionManager;");
@@ -111,8 +111,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#isComponentPartOfCurrentMenu(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsComponentPartOfCurrentMenu(Java.Awt.Component arg0)
         {
             return IExecuteWithSignature<bool>("isComponentPartOfCurrentMenu", "(Ljava/awt/Component;)Z", arg0);
@@ -120,9 +120,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#componentForPoint(java.awt.Component,java.awt.Point)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component ComponentForPoint(Java.Awt.Component arg0, Java.Awt.Point arg1)
         {
             return IExecuteWithSignature<Java.Awt.Component>("componentForPoint", "(Ljava/awt/Component;Ljava/awt/Point;)Ljava/awt/Component;", arg0, arg1);
@@ -130,7 +130,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -145,7 +145,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#processKeyEvent(java.awt.event.KeyEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
             IExecuteWithSignature("processKeyEvent", "(Ljava/awt/event/KeyEvent;)V", arg0);
@@ -153,7 +153,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#processMouseEvent(java.awt.event.MouseEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ProcessMouseEvent(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecuteWithSignature("processMouseEvent", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -161,7 +161,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MenuSelectionManager.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);

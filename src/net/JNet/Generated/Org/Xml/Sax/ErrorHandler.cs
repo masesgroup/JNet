@@ -78,20 +78,20 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#error(org.xml.sax.SAXParseException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Error(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#fatalError(org.xml.sax.SAXParseException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void FatalError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#warning(org.xml.sax.SAXParseException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Warning(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
 
         #endregion
@@ -127,8 +127,8 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#error(org.xml.sax.SAXParseException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Error(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecuteWithSignature("error", "(Lorg/xml/sax/SAXParseException;)V", arg0);
@@ -136,8 +136,8 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#fatalError(org.xml.sax.SAXParseException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void FatalError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecuteWithSignature("fatalError", "(Lorg/xml/sax/SAXParseException;)V", arg0);
@@ -145,8 +145,8 @@ namespace Org.Xml.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#warning(org.xml.sax.SAXParseException)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Warning(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecuteWithSignature("warning", "(Lorg/xml/sax/SAXParseException;)V", arg0);

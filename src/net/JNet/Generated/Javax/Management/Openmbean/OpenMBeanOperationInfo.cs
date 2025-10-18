@@ -90,7 +90,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnOpenType()"/> 
         /// </summary>
-        Javax.Management.Openmbean.OpenType<object> ReturnOpenType { get; }
+        Javax.Management.Openmbean.OpenType ReturnOpenType { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnType()"/> 
         /// </summary>
@@ -154,9 +154,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnOpenType()"/> 
         /// </summary>
-        public Javax.Management.Openmbean.OpenType<object> ReturnOpenType
+        public Javax.Management.Openmbean.OpenType ReturnOpenType
         {
-            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType<object>>("getReturnOpenType", "()Ljavax/management/openmbean/OpenType;"); }
+            get { return IExecuteWithSignature<Javax.Management.Openmbean.OpenType>("getReturnOpenType", "()Ljavax/management/openmbean/OpenType;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnType()"/> 

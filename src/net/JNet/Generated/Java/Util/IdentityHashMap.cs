@@ -66,13 +66,13 @@ namespace Java.Util
     }
     #endregion
 
-    #region IdentityHashMap<K, V> declaration
+    #region IdentityHashMap<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IdentityHashMap.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class IdentityHashMap<K, V> : Java.Util.AbstractMap<K, V>
+    public partial class IdentityHashMap<, > : Java.Util.AbstractMap<, >
     {
         const string _bridgeClassName = "java.util.IdentityHashMap";
         /// <summary>
@@ -116,7 +116,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IdentityHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public IdentityHashMap(int arg0)
             : base(arg0)
         {
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IdentityHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public IdentityHashMap(Java.Util.Map arg0)
             : base(arg0)
         {
@@ -134,11 +134,11 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.IdentityHashMap"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.IdentityHashMap t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.IdentityHashMap"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.IdentityHashMap t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -164,14 +164,14 @@ namespace Java.Util
     }
     #endregion
 
-    #region IdentityHashMap<K, V> implementation
-    public partial class IdentityHashMap<K, V>
+    #region IdentityHashMap<, > implementation
+    public partial class IdentityHashMap<, >
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IdentityHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public IdentityHashMap(int arg0)
             : base(arg0)
         {
@@ -179,8 +179,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/IdentityHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public IdentityHashMap(Java.Util.Map<K, V> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public IdentityHashMap(Java.Util.Map<, > arg0)
             : base(arg0)
         {
         }
@@ -189,17 +189,17 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.IdentityHashMap{K, V}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.IdentityHashMap<K, V> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.IdentityHashMap<, > t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.IdentityHashMap{K, V}"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Util.IdentityHashMap<K, V> t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Lang.Cloneable(Java.Util.IdentityHashMap<, > t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.IdentityHashMap{K, V}"/> to <see cref="Java.Util.IdentityHashMap"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.IdentityHashMap(Java.Util.IdentityHashMap<K, V> t) => t.Cast<Java.Util.IdentityHashMap>();
+        public static implicit operator Java.Util.IdentityHashMap(Java.Util.IdentityHashMap<, > t) => t.Cast<Java.Util.IdentityHashMap>();
 
         #endregion
 

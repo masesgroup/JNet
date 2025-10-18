@@ -73,7 +73,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#%3Cinit%3E(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Timestamp(long arg0)
             : base(arg0)
         {
@@ -93,8 +93,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Timestamp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.Timestamp ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Sql.Timestamp>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/Timestamp;", arg0);
@@ -102,8 +102,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#valueOf(java.time.LocalDateTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
-        /// <returns><see cref="Java.Sql.Timestamp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.Timestamp ValueOf(Java.Time.LocalDateTime arg0)
         {
             return SExecuteWithSignature<Java.Sql.Timestamp>(LocalBridgeClazz, "valueOf", "(Ljava/time/LocalDateTime;)Ljava/sql/Timestamp;", arg0);
@@ -122,8 +122,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#after(java.sql.Timestamp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool After(Java.Sql.Timestamp arg0)
         {
             return IExecuteWithSignature<bool>("after", "(Ljava/sql/Timestamp;)Z", arg0);
@@ -131,8 +131,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#before(java.sql.Timestamp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Before(Java.Sql.Timestamp arg0)
         {
             return IExecuteWithSignature<bool>("before", "(Ljava/sql/Timestamp;)Z", arg0);
@@ -140,8 +140,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#compareTo(java.sql.Timestamp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Timestamp"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CompareTo(Java.Sql.Timestamp arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/sql/Timestamp;)I", arg0);
@@ -149,7 +149,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#toLocalDateTime()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Time.LocalDateTime ToLocalDateTime()
         {
             return IExecuteWithSignature<Java.Time.LocalDateTime>("toLocalDateTime", "()Ljava/time/LocalDateTime;");

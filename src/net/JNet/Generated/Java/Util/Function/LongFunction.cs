@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunction<R> declaration
+    #region LongFunction declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
-    public partial class LongFunction<R> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class LongFunction : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunctionDirect<R> declaration
+    #region LongFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="LongFunction"/> or its generic type if there is one
     /// </summary>
-    public partial class LongFunctionDirect<R> : LongFunction<R>
+    public partial class LongFunctionDirect : LongFunction
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,8 +219,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual object Apply(long arg0)
         {
             hasOverrideApply = false; return default;
@@ -259,8 +259,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override object Apply(long arg0)
         {
             return IExecuteWithSignature("apply", "(J)Ljava/lang/Object;", arg0);
@@ -276,18 +276,18 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ILongFunction<R>
+    #region ILongFunction
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.LongFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html"/>
     /// </summary>
-    public partial interface ILongFunction<R>
+    public partial interface ILongFunction
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         R Apply(long arg0);
 
         #endregion
@@ -300,8 +300,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunction<R> implementation
-    public partial class LongFunction<R> : Java.Util.Function.ILongFunction<R>
+    #region LongFunction implementation
+    public partial class LongFunction : Java.Util.Function.ILongFunction
     {
         #region Constructors
 
@@ -347,8 +347,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual R Apply(long arg0)
         {
             hasOverrideApply = false; return default;
@@ -364,8 +364,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region LongFunctionDirect<R> implementation
-    public partial class LongFunctionDirect<R> : Java.Util.Function.ILongFunction<R>
+    #region LongFunctionDirect implementation
+    public partial class LongFunctionDirect : Java.Util.Function.ILongFunction
     {
         #region Constructors
 
@@ -387,8 +387,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override R Apply(long arg0)
         {
             return IExecuteWithSignature<R>("apply", "(J)Ljava/lang/Object;", arg0);

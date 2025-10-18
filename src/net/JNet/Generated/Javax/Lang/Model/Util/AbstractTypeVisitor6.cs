@@ -68,13 +68,13 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractTypeVisitor6<R, P> declaration
+    #region AbstractTypeVisitor6<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class AbstractTypeVisitor6<R, P> : Javax.Lang.Model.Type.TypeVisitor<R, P>
+    public partial class AbstractTypeVisitor6<, > : Javax.Lang.Model.Type.TypeVisitor<, >
     {
         const string _bridgeClassName = "javax.lang.model.util.AbstractTypeVisitor6";
         /// <summary>
@@ -136,9 +136,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visit(javax.lang.model.type.TypeMirror,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Visit(Javax.Lang.Model.Type.TypeMirror arg0, object arg1)
         {
             return IExecuteWithSignature("visit", "(Ljavax/lang/model/type/TypeMirror;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -146,8 +146,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visit(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Visit(Javax.Lang.Model.Type.TypeMirror arg0)
         {
             return IExecuteWithSignature("visit", "(Ljavax/lang/model/type/TypeMirror;)Ljava/lang/Object;", arg0);
@@ -155,9 +155,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitIntersection(javax.lang.model.type.IntersectionType,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.IntersectionType"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitIntersection(Javax.Lang.Model.Type.IntersectionType arg0, object arg1)
         {
             return IExecuteWithSignature("visitIntersection", "(Ljavax/lang/model/type/IntersectionType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -165,9 +165,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitUnion(javax.lang.model.type.UnionType,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.UnionType"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitUnion(Javax.Lang.Model.Type.UnionType arg0, object arg1)
         {
             return IExecuteWithSignature("visitUnion", "(Ljavax/lang/model/type/UnionType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -175,9 +175,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitUnknown(javax.lang.model.type.TypeMirror,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object VisitUnknown(Javax.Lang.Model.Type.TypeMirror arg0, object arg1)
         {
             return IExecuteWithSignature("visitUnknown", "(Ljavax/lang/model/type/TypeMirror;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -193,8 +193,8 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractTypeVisitor6<R, P> implementation
-    public partial class AbstractTypeVisitor6<R, P>
+    #region AbstractTypeVisitor6<, > implementation
+    public partial class AbstractTypeVisitor6<, >
     {
         #region Constructors
 
@@ -202,9 +202,9 @@ namespace Javax.Lang.Model.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.AbstractTypeVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Util.AbstractTypeVisitor6"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Lang.Model.Util.AbstractTypeVisitor6(Javax.Lang.Model.Util.AbstractTypeVisitor6<R, P> t) => t.Cast<Javax.Lang.Model.Util.AbstractTypeVisitor6>();
+        public static implicit operator Javax.Lang.Model.Util.AbstractTypeVisitor6(Javax.Lang.Model.Util.AbstractTypeVisitor6<, > t) => t.Cast<Javax.Lang.Model.Util.AbstractTypeVisitor6>();
 
         #endregion
 
@@ -220,9 +220,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visit(javax.lang.model.type.TypeMirror,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R Visit(Javax.Lang.Model.Type.TypeMirror arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/type/TypeMirror;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -230,8 +230,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visit(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R Visit(Javax.Lang.Model.Type.TypeMirror arg0)
         {
             return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/type/TypeMirror;)Ljava/lang/Object;", arg0);
@@ -239,9 +239,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitIntersection(javax.lang.model.type.IntersectionType,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.IntersectionType"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitIntersection(Javax.Lang.Model.Type.IntersectionType arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitIntersection", "(Ljavax/lang/model/type/IntersectionType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -249,9 +249,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitUnion(javax.lang.model.type.UnionType,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.UnionType"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitUnion(Javax.Lang.Model.Type.UnionType arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitUnion", "(Ljavax/lang/model/type/UnionType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -259,9 +259,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitUnknown(javax.lang.model.type.TypeMirror,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R VisitUnknown(Javax.Lang.Model.Type.TypeMirror arg0, P arg1)
         {
             return IExecuteWithSignature<R>("visitUnknown", "(Ljavax/lang/model/type/TypeMirror;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);

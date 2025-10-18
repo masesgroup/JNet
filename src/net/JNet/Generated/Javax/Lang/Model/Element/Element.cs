@@ -94,7 +94,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getModifiers()"/> 
         /// </summary>
-        Java.Util.Set<Javax.Lang.Model.Element.Modifier> Modifiers { get; }
+        Java.Util.Set Modifiers { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getSimpleName()"/> 
         /// </summary>
@@ -102,23 +102,23 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new();
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <returns><see cref=""/></returns>
+        A GetAnnotation(Java.Lang.Class arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#accept(javax.lang.model.element.ElementVisitor,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ElementVisitor"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="P"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        R Accept<R, P>(Javax.Lang.Model.Element.ElementVisitor<R, P> arg0, P arg1);
+        /// <returns><see cref=""/></returns>
+        R Accept<, >(Javax.Lang.Model.Element.ElementVisitor<, > arg0, P arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
+        /// <returns><see cref=""/></returns>
         Javax.Lang.Model.Type.TypeMirror AsType();
 
         #endregion
@@ -182,9 +182,9 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getModifiers()"/> 
         /// </summary>
-        public Java.Util.Set<Javax.Lang.Model.Element.Modifier> Modifiers
+        public Java.Util.Set Modifiers
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Javax.Lang.Model.Element.Modifier>>("getModifiers", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getModifiers", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getSimpleName()"/> 
@@ -196,29 +196,29 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        public A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="A"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public A GetAnnotation(Java.Lang.Class arg0)
         {
             return IExecute<A>("getAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#accept(javax.lang.model.element.ElementVisitor,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ElementVisitor"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="P"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        public R Accept<R, P>(Javax.Lang.Model.Element.ElementVisitor<R, P> arg0, P arg1)
+        /// <returns><see cref=""/></returns>
+        public R Accept<, >(Javax.Lang.Model.Element.ElementVisitor<, > arg0, P arg1)
         {
             return IExecuteWithSignature<R>("accept", "(Ljavax/lang/model/element/ElementVisitor;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Lang.Model.Type.TypeMirror AsType()
         {
             return IExecuteWithSignature<Javax.Lang.Model.Type.TypeMirror>("asType", "()Ljavax/lang/model/type/TypeMirror;");

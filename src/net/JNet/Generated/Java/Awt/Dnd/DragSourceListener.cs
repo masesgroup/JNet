@@ -108,27 +108,27 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDropEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void DragDropEnd(Java.Awt.Dnd.DragSourceDropEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void DragEnter(Java.Awt.Dnd.DragSourceDragEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void DragExit(Java.Awt.Dnd.DragSourceEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void DragOver(Java.Awt.Dnd.DragSourceDragEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void DropActionChanged(Java.Awt.Dnd.DragSourceDragEvent arg0);
 
         #endregion
@@ -192,7 +192,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDropEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void DragDropEnd(Java.Awt.Dnd.DragSourceDropEvent arg0)
         {
             hasOverrideDragDropEnd = false;
@@ -216,7 +216,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void DragEnter(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             hasOverrideDragEnter = false;
@@ -240,7 +240,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void DragExit(Java.Awt.Dnd.DragSourceEvent arg0)
         {
             hasOverrideDragExit = false;
@@ -264,7 +264,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void DragOver(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             hasOverrideDragOver = false;
@@ -288,7 +288,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void DropActionChanged(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             hasOverrideDropActionChanged = false;
@@ -327,7 +327,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDropEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void DragDropEnd(Java.Awt.Dnd.DragSourceDropEvent arg0)
         {
             IExecuteWithSignature("dragDropEnd", "(Ljava/awt/dnd/DragSourceDropEvent;)V", arg0);
@@ -335,7 +335,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void DragEnter(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             IExecuteWithSignature("dragEnter", "(Ljava/awt/dnd/DragSourceDragEvent;)V", arg0);
@@ -343,7 +343,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void DragExit(Java.Awt.Dnd.DragSourceEvent arg0)
         {
             IExecuteWithSignature("dragExit", "(Ljava/awt/dnd/DragSourceEvent;)V", arg0);
@@ -351,7 +351,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void DragOver(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             IExecuteWithSignature("dragOver", "(Ljava/awt/dnd/DragSourceDragEvent;)V", arg0);
@@ -359,7 +359,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void DropActionChanged(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             IExecuteWithSignature("dropActionChanged", "(Ljava/awt/dnd/DragSourceDragEvent;)V", arg0);

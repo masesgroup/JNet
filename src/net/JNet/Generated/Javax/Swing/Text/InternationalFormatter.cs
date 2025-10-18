@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#%3Cinit%3E(java.text.Format)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Text.Format"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public InternationalFormatter(Java.Text.Format arg0)
             : base(arg0)
         {
@@ -104,22 +104,22 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#setMaximum(java.lang.Comparable)"/>
         /// </summary>
-        public Java.Lang.Comparable<object> Maximum
+        public Java.Lang.Comparable Maximum
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMaximum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMaximum", "(Ljava/lang/Comparable;)V", value); }
+            get { return IExecuteWithSignature<Java.Lang.Comparable>("getMaximum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMaximum", "(Ljava/lang/Comparable;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#setMinimum(java.lang.Comparable)"/>
         /// </summary>
-        public Java.Lang.Comparable<object> Minimum
+        public Java.Lang.Comparable Minimum
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<object>>("getMinimum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMinimum", "(Ljava/lang/Comparable;)V", value); }
+            get { return IExecuteWithSignature<Java.Lang.Comparable>("getMinimum", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setMinimum", "(Ljava/lang/Comparable;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getFields(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Text.Format.Field"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.Format.Field[] GetFields(int arg0)
         {
             return IExecuteWithSignatureArray<Java.Text.Format.Field>("getFields", "(I)[Ljava/text/Format$Field;", arg0);

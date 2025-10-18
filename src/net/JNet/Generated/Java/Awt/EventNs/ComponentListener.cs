@@ -108,22 +108,22 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentHidden(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentMoved(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentResized(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentShown(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0);
 
         #endregion
@@ -186,7 +186,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentHidden(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0)
         {
             hasOverrideComponentHidden = false;
@@ -210,7 +210,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentMoved(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0)
         {
             hasOverrideComponentMoved = false;
@@ -234,7 +234,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentResized(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0)
         {
             hasOverrideComponentResized = false;
@@ -258,7 +258,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentShown(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0)
         {
             hasOverrideComponentShown = false;
@@ -297,7 +297,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentHidden(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecuteWithSignature("componentHidden", "(Ljava/awt/event/ComponentEvent;)V", arg0);
@@ -305,7 +305,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentMoved(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecuteWithSignature("componentMoved", "(Ljava/awt/event/ComponentEvent;)V", arg0);
@@ -313,7 +313,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentResized(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecuteWithSignature("componentResized", "(Ljava/awt/event/ComponentEvent;)V", arg0);
@@ -321,7 +321,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentShown(java.awt.event.ComponentEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecuteWithSignature("componentShown", "(Ljava/awt/event/ComponentEvent;)V", arg0);

@@ -85,11 +85,11 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Crypto.KeyAgreement"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Crypto.KeyAgreement GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Javax.Crypto.KeyAgreement>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/crypto/KeyAgreement;", arg0, arg1);
@@ -97,10 +97,10 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Javax.Crypto.KeyAgreement"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Crypto.KeyAgreement GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
             return SExecuteWithSignature<Javax.Crypto.KeyAgreement>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljavax/crypto/KeyAgreement;", arg0, arg1);
@@ -108,9 +108,9 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Crypto.KeyAgreement"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Crypto.KeyAgreement GetInstance(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Crypto.KeyAgreement>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/crypto/KeyAgreement;", arg0);
@@ -136,8 +136,8 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret()"/>
         /// </summary>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] GenerateSecret()
         {
             return IExecuteWithSignatureArray<byte>("generateSecret", "()[B");
@@ -145,11 +145,11 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret(byte[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Lang.IllegalStateException"/>
-        /// <exception cref="Javax.Crypto.ShortBufferException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public int GenerateSecret(byte[] arg0, int arg1)
         {
             return IExecuteWithSignature<int>("generateSecret", "([BI)I", arg0, arg1);
@@ -157,11 +157,11 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#doPhase(java.security.Key,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Security.Key"/></returns>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
-        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Security.Key DoPhase(Java.Security.Key arg0, bool arg1)
         {
             return IExecuteWithSignature<Java.Security.Key>("doPhase", "(Ljava/security/Key;Z)Ljava/security/Key;", arg0, arg1);
@@ -169,11 +169,11 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Crypto.SecretKey"/></returns>
-        /// <exception cref="Java.Lang.IllegalStateException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Crypto.SecretKey GenerateSecret(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Crypto.SecretKey>("generateSecret", "(Ljava/lang/String;)Ljavax/crypto/SecretKey;", arg0);
@@ -181,9 +181,9 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.SecureRandom)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(Java.Security.Key arg0, Java.Security.SecureRandom arg1)
         {
             IExecuteWithSignature("init", "(Ljava/security/Key;Ljava/security/SecureRandom;)V", arg0, arg1);
@@ -191,11 +191,11 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
-        /// <param name="arg2"><see cref="Java.Security.SecureRandom"/></param>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Init(Java.Security.Key arg0, Java.Security.Spec.AlgorithmParameterSpec arg1, Java.Security.SecureRandom arg2)
         {
             IExecuteWithSignature("init", "(Ljava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", arg0, arg1, arg2);
@@ -203,10 +203,10 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
-        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Init(Java.Security.Key arg0, Java.Security.Spec.AlgorithmParameterSpec arg1)
         {
             IExecuteWithSignature("init", "(Ljava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V", arg0, arg1);
@@ -214,8 +214,8 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Init(Java.Security.Key arg0)
         {
             IExecuteWithSignature("init", "(Ljava/security/Key;)V", arg0);

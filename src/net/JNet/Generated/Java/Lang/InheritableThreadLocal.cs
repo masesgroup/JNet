@@ -66,12 +66,12 @@ namespace Java.Lang
     }
     #endregion
 
-    #region InheritableThreadLocal<T> declaration
+    #region InheritableThreadLocal declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/InheritableThreadLocal.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class InheritableThreadLocal<T> : Java.Lang.ThreadLocal<T>
+    public partial class InheritableThreadLocal : Java.Lang.ThreadLocal
     {
         const string _bridgeClassName = "java.lang.InheritableThreadLocal";
         /// <summary>
@@ -139,8 +139,8 @@ namespace Java.Lang
     }
     #endregion
 
-    #region InheritableThreadLocal<T> implementation
-    public partial class InheritableThreadLocal<T>
+    #region InheritableThreadLocal implementation
+    public partial class InheritableThreadLocal
     {
         #region Constructors
 
@@ -148,9 +148,9 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.InheritableThreadLocal{T}"/> to <see cref="Java.Lang.InheritableThreadLocal"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.InheritableThreadLocal(Java.Lang.InheritableThreadLocal<T> t) => t.Cast<Java.Lang.InheritableThreadLocal>();
+        public static implicit operator Java.Lang.InheritableThreadLocal(Java.Lang.InheritableThreadLocal t) => t.Cast<Java.Lang.InheritableThreadLocal>();
 
         #endregion
 

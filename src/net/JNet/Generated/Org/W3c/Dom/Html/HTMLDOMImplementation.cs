@@ -78,8 +78,8 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDOMImplementation.html#createHTMLDocument(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLDocument"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Org.W3c.Dom.Html.HTMLDocument CreateHTMLDocument(Java.Lang.String arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDOMImplementation.html#createHTMLDocument(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLDocument"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.Html.HTMLDocument CreateHTMLDocument(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLDocument>("createHTMLDocument", "(Ljava/lang/String;)Lorg/w3c/dom/html/HTMLDocument;", arg0);

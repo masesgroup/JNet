@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#%3Cinit%3E(java.io.File,javax.swing.filechooser.FileSystemView)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Filechooser.FileSystemView"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JFileChooser(Java.Io.File arg0, Javax.Swing.Filechooser.FileSystemView arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JFileChooser(Java.Io.File arg0)
             : base(arg0)
         {
@@ -90,8 +90,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#%3Cinit%3E(java.lang.String,javax.swing.filechooser.FileSystemView)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Filechooser.FileSystemView"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JFileChooser(Java.Lang.String arg0, Javax.Swing.Filechooser.FileSystemView arg1)
             : base(arg0, arg1)
         {
@@ -99,7 +99,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JFileChooser(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#%3Cinit%3E(javax.swing.filechooser.FileSystemView)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Filechooser.FileSystemView"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JFileChooser(Javax.Swing.Filechooser.FileSystemView arg0)
             : base(arg0)
         {
@@ -117,7 +117,7 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JFileChooser"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JFileChooser t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -435,8 +435,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#accept(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Accept(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("accept", "(Ljava/io/File;)Z", arg0);
@@ -444,7 +444,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isAcceptAllFileFilterUsed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsAcceptAllFileFilterUsed()
         {
             return IExecuteWithSignature<bool>("isAcceptAllFileFilterUsed", "()Z");
@@ -452,7 +452,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isDirectorySelectionEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDirectorySelectionEnabled()
         {
             return IExecuteWithSignature<bool>("isDirectorySelectionEnabled", "()Z");
@@ -460,7 +460,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isFileHidingEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFileHidingEnabled()
         {
             return IExecuteWithSignature<bool>("isFileHidingEnabled", "()Z");
@@ -468,7 +468,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isFileSelectionEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFileSelectionEnabled()
         {
             return IExecuteWithSignature<bool>("isFileSelectionEnabled", "()Z");
@@ -476,7 +476,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isMultiSelectionEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMultiSelectionEnabled()
         {
             return IExecuteWithSignature<bool>("isMultiSelectionEnabled", "()Z");
@@ -484,8 +484,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#isTraversable(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsTraversable(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("isTraversable", "(Ljava/io/File;)Z", arg0);
@@ -493,8 +493,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#removeChoosableFileFilter(javax.swing.filechooser.FileFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Filechooser.FileFilter"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveChoosableFileFilter(Javax.Swing.Filechooser.FileFilter arg0)
         {
             return IExecuteWithSignature<bool>("removeChoosableFileFilter", "(Ljavax/swing/filechooser/FileFilter;)Z", arg0);
@@ -502,10 +502,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#showDialog(java.awt.Component,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int ShowDialog(Java.Awt.Component arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<int>("showDialog", "(Ljava/awt/Component;Ljava/lang/String;)I", arg0, arg1);
@@ -513,9 +513,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#showOpenDialog(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int ShowOpenDialog(Java.Awt.Component arg0)
         {
             return IExecuteWithSignature<int>("showOpenDialog", "(Ljava/awt/Component;)I", arg0);
@@ -523,9 +523,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#showSaveDialog(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int ShowSaveDialog(Java.Awt.Component arg0)
         {
             return IExecuteWithSignature<int>("showSaveDialog", "(Ljava/awt/Component;)I", arg0);
@@ -533,8 +533,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#getDescription(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDescription(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDescription", "(Ljava/io/File;)Ljava/lang/String;", arg0);
@@ -542,8 +542,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#getName(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetName(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "(Ljava/io/File;)Ljava/lang/String;", arg0);
@@ -551,8 +551,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#getTypeDescription(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetTypeDescription(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getTypeDescription", "(Ljava/io/File;)Ljava/lang/String;", arg0);
@@ -560,8 +560,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#getIcon(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Icon GetIcon(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Icon>("getIcon", "(Ljava/io/File;)Ljavax/swing/Icon;", arg0);
@@ -569,7 +569,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -577,7 +577,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#addChoosableFileFilter(javax.swing.filechooser.FileFilter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Filechooser.FileFilter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChoosableFileFilter(Javax.Swing.Filechooser.FileFilter arg0)
         {
             IExecuteWithSignature("addChoosableFileFilter", "(Ljavax/swing/filechooser/FileFilter;)V", arg0);
@@ -606,7 +606,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ensureFileIsVisible(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void EnsureFileIsVisible(Java.Io.File arg0)
         {
             IExecuteWithSignature("ensureFileIsVisible", "(Ljava/io/File;)V", arg0);
@@ -614,7 +614,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
@@ -636,7 +636,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setAcceptAllFileFilterUsed(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetAcceptAllFileFilterUsed(bool arg0)
         {
             IExecuteWithSignature("setAcceptAllFileFilterUsed", "(Z)V", arg0);
@@ -644,7 +644,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setApproveButtonMnemonic(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetApproveButtonMnemonic(char arg0)
         {
             IExecuteWithSignature("setApproveButtonMnemonic", "(C)V", arg0);
@@ -652,7 +652,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setApproveButtonMnemonic(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetApproveButtonMnemonic(int arg0)
         {
             IExecuteWithSignature("setApproveButtonMnemonic", "(I)V", arg0);
@@ -660,7 +660,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setFileHidingEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetFileHidingEnabled(bool arg0)
         {
             IExecuteWithSignature("setFileHidingEnabled", "(Z)V", arg0);
@@ -668,7 +668,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setMultiSelectionEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMultiSelectionEnabled(bool arg0)
         {
             IExecuteWithSignature("setMultiSelectionEnabled", "(Z)V", arg0);

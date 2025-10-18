@@ -66,7 +66,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html"/>
         /// </summary>
-        public partial class Form : Java.Lang.Enum<Java.Text.Normalizer.Form>
+        public partial class Form : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.text.Normalizer$Form";
             /// <summary>
@@ -126,9 +126,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.html#isNormalized(java.lang.CharSequence,java.text.Normalizer.Form)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="Java.Text.Normalizer.Form"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static bool IsNormalized(Java.Lang.CharSequence arg0, Java.Text.Normalizer.Form arg1)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNormalized", "(Ljava/lang/CharSequence;Ljava/text/Normalizer$Form;)Z", arg0, arg1);
@@ -136,9 +136,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.html#normalize(java.lang.CharSequence,java.text.Normalizer.Form)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="Java.Text.Normalizer.Form"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Normalize(Java.Lang.CharSequence arg0, Java.Text.Normalizer.Form arg1)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "normalize", "(Ljava/lang/CharSequence;Ljava/text/Normalizer$Form;)Ljava/lang/String;", arg0, arg1);
@@ -194,8 +194,8 @@ namespace Java.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Text.Normalizer.Form"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Text.Normalizer.Form ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Text.Normalizer.Form>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/text/Normalizer$Form;", arg0);
@@ -203,7 +203,7 @@ namespace Java.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Text.Normalizer.Form"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Text.Normalizer.Form[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Text.Normalizer.Form>(LocalBridgeClazz, "values", "()[Ljava/text/Normalizer$Form;");

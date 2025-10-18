@@ -73,8 +73,8 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public KerberosPrincipal(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public KerberosPrincipal(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -92,11 +92,11 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/> to <see cref="Java.Security.Principal"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Principal(Javax.Security.Auth.Kerberos.KerberosPrincipal t) => t.Cast<Java.Security.Principal>();
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Kerberos.KerberosPrincipal t) => t.Cast<Java.Io.Serializable>();
 

@@ -73,7 +73,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ZipEntry(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#%3Cinit%3E(java.util.zip.ZipEntry)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ZipEntry(Java.Util.Zip.ZipEntry arg0)
             : base(arg0)
         {
@@ -91,7 +91,7 @@ namespace Java.Util.Zip
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Zip.ZipEntry"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Zip.ZipEntry t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -205,7 +205,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#isDirectory()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDirectory()
         {
             return IExecuteWithSignature<bool>("isDirectory", "()Z");
@@ -213,8 +213,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setCreationTime(java.nio.file.attribute.FileTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Zip.ZipEntry SetCreationTime(Java.Nio.File.Attribute.FileTime arg0)
         {
             return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("setCreationTime", "(Ljava/nio/file/attribute/FileTime;)Ljava/util/zip/ZipEntry;", arg0);
@@ -222,8 +222,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setLastAccessTime(java.nio.file.attribute.FileTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Zip.ZipEntry SetLastAccessTime(Java.Nio.File.Attribute.FileTime arg0)
         {
             return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("setLastAccessTime", "(Ljava/nio/file/attribute/FileTime;)Ljava/util/zip/ZipEntry;", arg0);
@@ -231,8 +231,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setLastModifiedTime(java.nio.file.attribute.FileTime)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
-        /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Zip.ZipEntry SetLastModifiedTime(Java.Nio.File.Attribute.FileTime arg0)
         {
             return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("setLastModifiedTime", "(Ljava/nio/file/attribute/FileTime;)Ljava/util/zip/ZipEntry;", arg0);

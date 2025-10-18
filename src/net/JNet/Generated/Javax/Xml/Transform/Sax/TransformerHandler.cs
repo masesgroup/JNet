@@ -86,8 +86,8 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#setResult(javax.xml.transform.Result)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Result"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetResult(Javax.Xml.Transform.Result arg0);
 
         #endregion
@@ -109,15 +109,15 @@ namespace Javax.Xml.Transform.Sax
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Transform.Sax.TransformerHandler"/> to <see cref="Org.Xml.Sax.ContentHandler"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.ContentHandler(Javax.Xml.Transform.Sax.TransformerHandler t) => t.Cast<Org.Xml.Sax.ContentHandler>();
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Transform.Sax.TransformerHandler"/> to <see cref="Org.Xml.Sax.Ext.LexicalHandler"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.LexicalHandler(Javax.Xml.Transform.Sax.TransformerHandler t) => t.Cast<Org.Xml.Sax.Ext.LexicalHandler>();
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Transform.Sax.TransformerHandler"/> to <see cref="Org.Xml.Sax.DTDHandler"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.DTDHandler(Javax.Xml.Transform.Sax.TransformerHandler t) => t.Cast<Org.Xml.Sax.DTDHandler>();
 
@@ -149,8 +149,8 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#setResult(javax.xml.transform.Result)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Result"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetResult(Javax.Xml.Transform.Result arg0)
         {
             IExecuteWithSignature("setResult", "(Ljavax/xml/transform/Result;)V", arg0);

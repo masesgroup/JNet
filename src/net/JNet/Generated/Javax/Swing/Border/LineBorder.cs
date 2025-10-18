@@ -73,9 +73,9 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#%3Cinit%3E(java.awt.Color,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public LineBorder(Java.Awt.Color arg0, int arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#%3Cinit%3E(java.awt.Color,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public LineBorder(Java.Awt.Color arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -92,7 +92,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#%3Cinit%3E(java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public LineBorder(Java.Awt.Color arg0)
             : base(arg0)
         {
@@ -112,7 +112,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#createBlackLineBorder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateBlackLineBorder()
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createBlackLineBorder", "()Ljavax/swing/border/Border;");
@@ -120,7 +120,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#createGrayLineBorder()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Border.Border CreateGrayLineBorder()
         {
             return SExecuteWithSignature<Javax.Swing.Border.Border>(LocalBridgeClazz, "createGrayLineBorder", "()Ljavax/swing/border/Border;");

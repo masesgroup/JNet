@@ -108,7 +108,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void DragMouseMoved(Java.Awt.Dnd.DragSourceDragEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void DragMouseMoved(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             hasOverrideDragMouseMoved = false;
@@ -207,7 +207,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void DragMouseMoved(Java.Awt.Dnd.DragSourceDragEvent arg0)
         {
             IExecuteWithSignature("dragMouseMoved", "(Ljava/awt/dnd/DragSourceDragEvent;)V", arg0);

@@ -66,7 +66,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html"/>
         /// </summary>
-        public partial class Type : Java.Lang.Enum<Javax.Swing.Event.RowSorterEvent.Type>
+        public partial class Type : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.swing.event.RowSorterEvent$Type";
             /// <summary>
@@ -114,18 +114,18 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#%3Cinit%3E(javax.swing.RowSorter,javax.swing.event.RowSorterEvent.Type,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RowSorter"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Event.RowSorterEvent.Type"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        public RowSorterEvent(Javax.Swing.RowSorter<object> arg0, Javax.Swing.Event.RowSorterEvent.Type arg1, int[] arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        public RowSorterEvent(Javax.Swing.RowSorter arg0, Javax.Swing.Event.RowSorterEvent.Type arg1, int[] arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#%3Cinit%3E(javax.swing.RowSorter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.RowSorter"/></param>
-        public RowSorterEvent(Javax.Swing.RowSorter<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public RowSorterEvent(Javax.Swing.RowSorter arg0)
             : base(arg0)
         {
         }
@@ -162,8 +162,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#convertPreviousRowIndexToModel(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int ConvertPreviousRowIndexToModel(int arg0)
         {
             return IExecuteWithSignature<int>("convertPreviousRowIndexToModel", "(I)I", arg0);
@@ -203,8 +203,8 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Swing.Event.RowSorterEvent.Type"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Swing.Event.RowSorterEvent.Type ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Swing.Event.RowSorterEvent.Type>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/swing/event/RowSorterEvent$Type;", arg0);
@@ -212,7 +212,7 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Swing.Event.RowSorterEvent.Type"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Swing.Event.RowSorterEvent.Type[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Swing.Event.RowSorterEvent.Type>(LocalBridgeClazz, "values", "()[Ljavax/swing/event/RowSorterEvent$Type;");

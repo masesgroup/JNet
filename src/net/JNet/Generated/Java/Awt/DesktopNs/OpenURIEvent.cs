@@ -73,7 +73,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIEvent.html#%3Cinit%3E(java.net.URI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public OpenURIEvent(Java.Net.URI arg0)
             : base(arg0)
         {

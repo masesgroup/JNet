@@ -73,10 +73,10 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#%3Cinit%3E(java.security.CodeSource,java.security.PermissionCollection,java.lang.ClassLoader,java.security.Principal[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PermissionCollection"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg3"><see cref="Java.Security.Principal"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public ProtectionDomain(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1, Java.Lang.ClassLoader arg2, Java.Security.Principal[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,8 +84,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#%3Cinit%3E(java.security.CodeSource,java.security.PermissionCollection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PermissionCollection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ProtectionDomain(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1)
             : base(arg0, arg1)
         {
@@ -137,8 +137,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#implies(java.security.Permission)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Implies(Java.Security.Permission arg0)
         {
             return IExecuteWithSignature<bool>("implies", "(Ljava/security/Permission;)Z", arg0);
@@ -146,7 +146,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#staticPermissionsOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool StaticPermissionsOnly()
         {
             return IExecuteWithSignature<bool>("staticPermissionsOnly", "()Z");

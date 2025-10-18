@@ -73,7 +73,7 @@ namespace Javax.Swing.Colorchooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/DefaultColorSelectionModel.html#%3Cinit%3E(java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DefaultColorSelectionModel(Java.Awt.Color arg0)
             : base(arg0)
         {
@@ -83,11 +83,11 @@ namespace Javax.Swing.Colorchooser
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Colorchooser.DefaultColorSelectionModel"/> to <see cref="Javax.Swing.Colorchooser.ColorSelectionModel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Colorchooser.ColorSelectionModel(Javax.Swing.Colorchooser.DefaultColorSelectionModel t) => t.Cast<Javax.Swing.Colorchooser.ColorSelectionModel>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Colorchooser.DefaultColorSelectionModel"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Colorchooser.DefaultColorSelectionModel t) => t.Cast<Java.Io.Serializable>();
 
@@ -119,7 +119,7 @@ namespace Javax.Swing.Colorchooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/DefaultColorSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("addChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
@@ -127,7 +127,7 @@ namespace Javax.Swing.Colorchooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/DefaultColorSelectionModel.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);

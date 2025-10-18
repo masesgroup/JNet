@@ -108,12 +108,12 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appMovedToBackground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AppMovedToBackground(Java.Awt.DesktopNs.AppForegroundEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appRaisedToForeground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AppRaisedToForeground(Java.Awt.DesktopNs.AppForegroundEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appMovedToBackground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void AppMovedToBackground(Java.Awt.DesktopNs.AppForegroundEvent arg0)
         {
             hasOverrideAppMovedToBackground = false;
@@ -198,7 +198,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appRaisedToForeground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void AppRaisedToForeground(Java.Awt.DesktopNs.AppForegroundEvent arg0)
         {
             hasOverrideAppRaisedToForeground = false;
@@ -237,7 +237,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appMovedToBackground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void AppMovedToBackground(Java.Awt.DesktopNs.AppForegroundEvent arg0)
         {
             IExecuteWithSignature("appMovedToBackground", "(Ljava/awt/desktop/AppForegroundEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appRaisedToForeground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void AppRaisedToForeground(Java.Awt.DesktopNs.AppForegroundEvent arg0)
         {
             IExecuteWithSignature("appRaisedToForeground", "(Ljava/awt/desktop/AppForegroundEvent;)V", arg0);

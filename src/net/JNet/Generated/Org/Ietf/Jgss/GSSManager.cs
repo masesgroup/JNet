@@ -105,9 +105,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createContext(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSContext"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSContext CreateContext(byte[] arg0)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSContext>("createContext", "([B)Lorg/ietf/jgss/GSSContext;", new object[] { arg0 });
@@ -115,9 +115,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createContext(org.ietf.jgss.GSSCredential)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.GSSCredential"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSContext"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSContext CreateContext(Org.Ietf.Jgss.GSSCredential arg0)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSContext>("createContext", "(Lorg/ietf/jgss/GSSCredential;)Lorg/ietf/jgss/GSSContext;", arg0);
@@ -125,12 +125,12 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createContext(org.ietf.jgss.GSSName,org.ietf.jgss.Oid,org.ietf.jgss.GSSCredential,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.GSSName"/></param>
-        /// <param name="arg1"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <param name="arg2"><see cref="Org.Ietf.Jgss.GSSCredential"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSContext"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSContext CreateContext(Org.Ietf.Jgss.GSSName arg0, Org.Ietf.Jgss.Oid arg1, Org.Ietf.Jgss.GSSCredential arg2, int arg3)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSContext>("createContext", "(Lorg/ietf/jgss/GSSName;Lorg/ietf/jgss/Oid;Lorg/ietf/jgss/GSSCredential;I)Lorg/ietf/jgss/GSSContext;", arg0, arg1, arg2, arg3);
@@ -138,9 +138,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createCredential(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSCredential"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSCredential CreateCredential(int arg0)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSCredential>("createCredential", "(I)Lorg/ietf/jgss/GSSCredential;", arg0);
@@ -148,12 +148,12 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createCredential(org.ietf.jgss.GSSName,int,org.ietf.jgss.Oid,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.GSSName"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSCredential"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSCredential CreateCredential(Org.Ietf.Jgss.GSSName arg0, int arg1, Org.Ietf.Jgss.Oid arg2, int arg3)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSCredential>("createCredential", "(Lorg/ietf/jgss/GSSName;ILorg/ietf/jgss/Oid;I)Lorg/ietf/jgss/GSSCredential;", arg0, arg1, arg2, arg3);
@@ -161,12 +161,12 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createCredential(org.ietf.jgss.GSSName,int,org.ietf.jgss.Oid[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.GSSName"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSCredential"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSCredential CreateCredential(Org.Ietf.Jgss.GSSName arg0, int arg1, Org.Ietf.Jgss.Oid[] arg2, int arg3)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSCredential>("createCredential", "(Lorg/ietf/jgss/GSSName;I[Lorg/ietf/jgss/Oid;I)Lorg/ietf/jgss/GSSCredential;", arg0, arg1, arg2, arg3);
@@ -174,11 +174,11 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createName(byte[],org.ietf.jgss.Oid,org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <param name="arg2"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSName CreateName(byte[] arg0, Org.Ietf.Jgss.Oid arg1, Org.Ietf.Jgss.Oid arg2)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("createName", "([BLorg/ietf/jgss/Oid;Lorg/ietf/jgss/Oid;)Lorg/ietf/jgss/GSSName;", arg0, arg1, arg2);
@@ -186,10 +186,10 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createName(byte[],org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSName CreateName(byte[] arg0, Org.Ietf.Jgss.Oid arg1)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("createName", "([BLorg/ietf/jgss/Oid;)Lorg/ietf/jgss/GSSName;", arg0, arg1);
@@ -197,11 +197,11 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createName(java.lang.String,org.ietf.jgss.Oid,org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <param name="arg2"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSName CreateName(Java.Lang.String arg0, Org.Ietf.Jgss.Oid arg1, Org.Ietf.Jgss.Oid arg2)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("createName", "(Ljava/lang/String;Lorg/ietf/jgss/Oid;Lorg/ietf/jgss/Oid;)Lorg/ietf/jgss/GSSName;", arg0, arg1, arg2);
@@ -209,10 +209,10 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#createName(java.lang.String,org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.GSSName CreateName(Java.Lang.String arg0, Org.Ietf.Jgss.Oid arg1)
         {
             return IExecuteWithSignature<Org.Ietf.Jgss.GSSName>("createName", "(Ljava/lang/String;Lorg/ietf/jgss/Oid;)Lorg/ietf/jgss/GSSName;", arg0, arg1);
@@ -220,8 +220,8 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#getMechsForName(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.Oid"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.Ietf.Jgss.Oid[] GetMechsForName(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecuteWithSignatureArray<Org.Ietf.Jgss.Oid>("getMechsForName", "(Lorg/ietf/jgss/Oid;)[Lorg/ietf/jgss/Oid;", arg0);
@@ -229,9 +229,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#getNamesForMech(org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="Org.Ietf.Jgss.Oid"/></returns>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.Ietf.Jgss.Oid[] GetNamesForMech(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecuteWithSignatureArray<Org.Ietf.Jgss.Oid>("getNamesForMech", "(Lorg/ietf/jgss/Oid;)[Lorg/ietf/jgss/Oid;", arg0);
@@ -239,9 +239,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#addProviderAtEnd(java.security.Provider,org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
-        /// <param name="arg1"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddProviderAtEnd(Java.Security.Provider arg0, Org.Ietf.Jgss.Oid arg1)
         {
             IExecuteWithSignature("addProviderAtEnd", "(Ljava/security/Provider;Lorg/ietf/jgss/Oid;)V", arg0, arg1);
@@ -249,9 +249,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#addProviderAtFront(java.security.Provider,org.ietf.jgss.Oid)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
-        /// <param name="arg1"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddProviderAtFront(Java.Security.Provider arg0, Org.Ietf.Jgss.Oid arg1)
         {
             IExecuteWithSignature("addProviderAtFront", "(Ljava/security/Provider;Lorg/ietf/jgss/Oid;)V", arg0, arg1);

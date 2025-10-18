@@ -85,45 +85,45 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#stream(java.util.function.Supplier,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Spliterator_T_"><see cref="Java.Util.Spliterator{T}"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream<T> Stream<T, Arg0ExtendsJava_Util_Spliterator_T_>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_T_> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_T_ : Java.Util.Spliterator<T>
+        /// <typeparam name="Arg0ExtendsJava_Util_Spliterator"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Stream.Stream Stream<, >(Java.Util.Function.Supplier arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator : Java.Util.Spliterator
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", "(Ljava/util/function/Supplier;IZ)Ljava/util/stream/Stream;", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "stream", "(Ljava/util/function/Supplier;IZ)Ljava/util/stream/Stream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#stream(java.util.Spliterator,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Spliterator"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public static Java.Util.Stream.Stream<T> Stream<T>(Java.Util.Spliterator<T> arg0, bool arg1)
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Stream.Stream Stream(Java.Util.Spliterator arg0, bool arg1)
         {
-            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", "(Ljava/util/Spliterator;Z)Ljava/util/stream/Stream;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "stream", "(Ljava/util/Spliterator;Z)Ljava/util/stream/Stream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#doubleStream(java.util.function.Supplier,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Util_Spliterator_OfDouble"><see cref="Java.Util.Spliterator.OfDouble"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public static Java.Util.Stream.DoubleStream DoubleStream<Arg0ExtendsJava_Util_Spliterator_OfDouble>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_OfDouble> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfDouble : Java.Util.Spliterator.OfDouble
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Util_Spliterator_OfDouble"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Stream.DoubleStream DoubleStream(Java.Util.Function.Supplier arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfDouble : Java.Util.Spliterator.OfDouble
         {
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "doubleStream", "(Ljava/util/function/Supplier;IZ)Ljava/util/stream/DoubleStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#doubleStream(java.util.Spliterator.OfDouble,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Spliterator.OfDouble"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Stream.DoubleStream DoubleStream(Java.Util.Spliterator.OfDouble arg0, bool arg1)
         {
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "doubleStream", "(Ljava/util/Spliterator$OfDouble;Z)Ljava/util/stream/DoubleStream;", arg0, arg1);
@@ -131,21 +131,21 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#intStream(java.util.function.Supplier,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Util_Spliterator_OfInt"><see cref="Java.Util.Spliterator.OfInt"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public static Java.Util.Stream.IntStream IntStream<Arg0ExtendsJava_Util_Spliterator_OfInt>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_OfInt> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfInt : Java.Util.Spliterator.OfInt
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Util_Spliterator_OfInt"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Stream.IntStream IntStream(Java.Util.Function.Supplier arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfInt : Java.Util.Spliterator.OfInt
         {
             return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "intStream", "(Ljava/util/function/Supplier;IZ)Ljava/util/stream/IntStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#intStream(java.util.Spliterator.OfInt,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Spliterator.OfInt"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Stream.IntStream IntStream(Java.Util.Spliterator.OfInt arg0, bool arg1)
         {
             return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "intStream", "(Ljava/util/Spliterator$OfInt;Z)Ljava/util/stream/IntStream;", arg0, arg1);
@@ -153,21 +153,21 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#longStream(java.util.function.Supplier,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <typeparam name="Arg0ExtendsJava_Util_Spliterator_OfLong"><see cref="Java.Util.Spliterator.OfLong"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        public static Java.Util.Stream.LongStream LongStream<Arg0ExtendsJava_Util_Spliterator_OfLong>(Java.Util.Function.Supplier<Arg0ExtendsJava_Util_Spliterator_OfLong> arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfLong : Java.Util.Spliterator.OfLong
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJava_Util_Spliterator_OfLong"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Stream.LongStream LongStream(Java.Util.Function.Supplier arg0, int arg1, bool arg2) where Arg0ExtendsJava_Util_Spliterator_OfLong : Java.Util.Spliterator.OfLong
         {
             return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "longStream", "(Ljava/util/function/Supplier;IZ)Ljava/util/stream/LongStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/StreamSupport.html#longStream(java.util.Spliterator.OfLong,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Spliterator.OfLong"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Stream.LongStream LongStream(Java.Util.Spliterator.OfLong arg0, bool arg1)
         {
             return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "longStream", "(Ljava/util/Spliterator$OfLong;Z)Ljava/util/stream/LongStream;", arg0, arg1);

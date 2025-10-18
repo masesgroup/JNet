@@ -483,8 +483,8 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameAltMaximizeIcon(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Icon GetInternalFrameAltMaximizeIcon(int arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getInternalFrameAltMaximizeIcon", "(I)Ljavax/swing/Icon;", arg0);
@@ -492,8 +492,8 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameCloseIcon(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Icon GetInternalFrameCloseIcon(int arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getInternalFrameCloseIcon", "(I)Ljavax/swing/Icon;", arg0);
@@ -501,8 +501,8 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameMaximizeIcon(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Icon GetInternalFrameMaximizeIcon(int arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getInternalFrameMaximizeIcon", "(I)Ljavax/swing/Icon;", arg0);
@@ -510,8 +510,8 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameMinimizeIcon(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Icon GetInternalFrameMinimizeIcon(int arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getInternalFrameMinimizeIcon", "(I)Ljavax/swing/Icon;", arg0);
@@ -519,8 +519,8 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeControlIcon(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Icon GetTreeControlIcon(bool arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Icon>(LocalBridgeClazz, "getTreeControlIcon", "(Z)Ljavax/swing/Icon;", arg0);
@@ -542,11 +542,11 @@ namespace Javax.Swing.Plaf.Metal
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16"/> to <see cref="Javax.Swing.Icon"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16 t) => t.Cast<Javax.Swing.Icon>();
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16 t) => t.Cast<Java.Io.Serializable>();
 
@@ -592,10 +592,10 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecuteWithSignature("paintIcon", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);
@@ -620,11 +620,11 @@ namespace Javax.Swing.Plaf.Metal
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16"/> to <see cref="Javax.Swing.Icon"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Javax.Swing.Icon>();
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Java.Io.Serializable>();
 
@@ -670,10 +670,10 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecuteWithSignature("paintIcon", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);
@@ -698,15 +698,15 @@ namespace Javax.Swing.Plaf.Metal
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon"/> to <see cref="Javax.Swing.Icon"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon t) => t.Cast<Javax.Swing.Icon>();
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon t) => t.Cast<Java.Io.Serializable>();
 
@@ -738,10 +738,10 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.PaletteCloseIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecuteWithSignature("paintIcon", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);
@@ -764,7 +764,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#%3Cinit%3E(boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="bool"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public TreeControlIcon(bool arg0)
                 : base(arg0)
             {
@@ -774,11 +774,11 @@ namespace Javax.Swing.Plaf.Metal
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon"/> to <see cref="Javax.Swing.Icon"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon t) => t.Cast<Javax.Swing.Icon>();
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon t) => t.Cast<Java.Io.Serializable>();
 
@@ -810,10 +810,10 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecuteWithSignature("paintIcon", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);
@@ -821,10 +821,10 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintMe(java.awt.Component,java.awt.Graphics,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public void PaintMe(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecuteWithSignature("paintMe", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);

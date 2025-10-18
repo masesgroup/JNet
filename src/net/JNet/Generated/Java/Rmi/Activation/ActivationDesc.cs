@@ -73,46 +73,46 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#%3Cinit%3E(java.lang.String,java.lang.String,java.rmi.MarshalledObject,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        public ActivationDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2, bool arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
+        public ActivationDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#%3Cinit%3E(java.lang.String,java.lang.String,java.rmi.MarshalledObject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        public ActivationDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        public ActivationDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#%3Cinit%3E(java.rmi.activation.ActivationGroupID,java.lang.String,java.lang.String,java.rmi.MarshalledObject,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Rmi.MarshalledObject<object> arg3, bool arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Rmi.MarshalledObject arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#%3Cinit%3E(java.rmi.activation.ActivationGroupID,java.lang.String,java.lang.String,java.rmi.MarshalledObject)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
-        public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Rmi.MarshalledObject<object> arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Rmi.MarshalledObject arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -142,9 +142,9 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getData()"/> 
         /// </summary>
-        public Java.Rmi.MarshalledObject<object> Data
+        public Java.Rmi.MarshalledObject Data
         {
-            get { return IExecuteWithSignature<Java.Rmi.MarshalledObject<object>>("getData", "()Ljava/rmi/MarshalledObject;"); }
+            get { return IExecuteWithSignature<Java.Rmi.MarshalledObject>("getData", "()Ljava/rmi/MarshalledObject;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getGroupID()"/> 

@@ -78,7 +78,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html#createRange()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
+        /// <returns><see cref=""/></returns>
         Org.W3c.Dom.Ranges.Range CreateRange();
 
         #endregion
@@ -114,7 +114,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html#createRange()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.Ranges.Range CreateRange()
         {
             return IExecuteWithSignature<Org.W3c.Dom.Ranges.Range>("createRange", "()Lorg/w3c/dom/ranges/Range;");

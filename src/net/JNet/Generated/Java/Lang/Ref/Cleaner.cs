@@ -128,7 +128,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#create()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Ref.Cleaner Create()
         {
             return SExecuteWithSignature<Java.Lang.Ref.Cleaner>(LocalBridgeClazz, "create", "()Ljava/lang/ref/Cleaner;");
@@ -136,8 +136,8 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#create(java.util.concurrent.ThreadFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
-        /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Ref.Cleaner Create(Java.Util.Concurrent.ThreadFactory arg0)
         {
             return SExecuteWithSignature<Java.Lang.Ref.Cleaner>(LocalBridgeClazz, "create", "(Ljava/util/concurrent/ThreadFactory;)Ljava/lang/ref/Cleaner;", arg0);
@@ -149,9 +149,9 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#register(java.lang.Object,java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <returns><see cref="Java.Lang.Ref.Cleaner.Cleanable"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Ref.Cleaner.Cleanable Register(object arg0, Java.Lang.Runnable arg1)
         {
             return IExecuteWithSignature<Java.Lang.Ref.Cleaner.Cleanable>("register", "(Ljava/lang/Object;Ljava/lang/Runnable;)Ljava/lang/ref/Cleaner$Cleanable;", arg0, arg1);

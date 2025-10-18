@@ -98,12 +98,12 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumer<T> declaration
+    #region ObjLongConsumer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class ObjLongConsumer<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ObjLongConsumer : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -132,11 +132,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumerDirect<T> declaration
+    #region ObjLongConsumerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ObjLongConsumer"/> or its generic type if there is one
     /// </summary>
-    public partial class ObjLongConsumerDirect<T> : ObjLongConsumer<T>
+    public partial class ObjLongConsumerDirect : ObjLongConsumer
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,8 +219,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void Accept(object arg0, long arg1)
         {
             hasOverrideAccept = false;
@@ -259,8 +259,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void Accept(object arg0, long arg1)
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;J)V", arg0, arg1);
@@ -276,18 +276,18 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IObjLongConsumer<T>
+    #region IObjLongConsumer
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ObjLongConsumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html"/>
     /// </summary>
-    public partial interface IObjLongConsumer<T>
+    public partial interface IObjLongConsumer
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void Accept(T arg0, long arg1);
 
         #endregion
@@ -300,8 +300,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumer<T> implementation
-    public partial class ObjLongConsumer<T> : Java.Util.Function.IObjLongConsumer<T>
+    #region ObjLongConsumer implementation
+    public partial class ObjLongConsumer : Java.Util.Function.IObjLongConsumer
     {
         #region Constructors
 
@@ -347,8 +347,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void Accept(T arg0, long arg1)
         {
             hasOverrideAccept = false;
@@ -364,8 +364,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ObjLongConsumerDirect<T> implementation
-    public partial class ObjLongConsumerDirect<T> : Java.Util.Function.IObjLongConsumer<T>
+    #region ObjLongConsumerDirect implementation
+    public partial class ObjLongConsumerDirect : Java.Util.Function.IObjLongConsumer
     {
         #region Constructors
 
@@ -387,8 +387,8 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void Accept(T arg0, long arg1)
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;J)V", arg0, arg1);

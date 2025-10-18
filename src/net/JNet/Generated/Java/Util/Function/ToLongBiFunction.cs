@@ -98,13 +98,13 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunction<T, U> declaration
+    #region ToLongBiFunction<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
-    public partial class ToLongBiFunction<T, U> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ToLongBiFunction<, > : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -133,11 +133,11 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunctionDirect<T, U> declaration
+    #region ToLongBiFunctionDirect<, > declaration
     /// <summary>
     /// Direct override of <see cref="ToLongBiFunction"/> or its generic type if there is one
     /// </summary>
-    public partial class ToLongBiFunctionDirect<T, U> : ToLongBiFunction<T, U>
+    public partial class ToLongBiFunctionDirect<, > : ToLongBiFunction<, >
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -220,9 +220,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual long ApplyAsLong(object arg0, object arg1)
         {
             hasOverrideApplyAsLong = false; return default;
@@ -261,9 +261,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override long ApplyAsLong(object arg0, object arg1)
         {
             return IExecuteWithSignature<long>("applyAsLong", "(Ljava/lang/Object;Ljava/lang/Object;)J", arg0, arg1);
@@ -279,19 +279,19 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region IToLongBiFunction<T, U>
+    #region IToLongBiFunction<, >
     /// <summary>
     /// .NET interface for org.mases.jnet.generated.java.util.function.ToLongBiFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html"/>
     /// </summary>
-    public partial interface IToLongBiFunction<T, U>
+    public partial interface IToLongBiFunction<, >
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         long ApplyAsLong(T arg0, U arg1);
 
         #endregion
@@ -304,8 +304,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunction<T, U> implementation
-    public partial class ToLongBiFunction<T, U> : Java.Util.Function.IToLongBiFunction<T, U>
+    #region ToLongBiFunction<, > implementation
+    public partial class ToLongBiFunction<, > : Java.Util.Function.IToLongBiFunction<, >
     {
         #region Constructors
 
@@ -351,9 +351,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public virtual long ApplyAsLong(T arg0, U arg1)
         {
             hasOverrideApplyAsLong = false; return default;
@@ -369,8 +369,8 @@ namespace Java.Util.Function
     }
     #endregion
 
-    #region ToLongBiFunctionDirect<T, U> implementation
-    public partial class ToLongBiFunctionDirect<T, U> : Java.Util.Function.IToLongBiFunction<T, U>
+    #region ToLongBiFunctionDirect<, > implementation
+    public partial class ToLongBiFunctionDirect<, > : Java.Util.Function.IToLongBiFunction<, >
     {
         #region Constructors
 
@@ -392,9 +392,9 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public override long ApplyAsLong(T arg0, U arg1)
         {
             return IExecuteWithSignature<long>("applyAsLong", "(Ljava/lang/Object;Ljava/lang/Object;)J", arg0, arg1);

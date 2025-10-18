@@ -78,18 +78,18 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#group()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Attribute.GroupPrincipal Group();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#owner()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Nio.File.Attribute.UserPrincipal Owner();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#permissions()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> Permissions();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Set Permissions();
 
         #endregion
 
@@ -124,7 +124,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#group()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Attribute.GroupPrincipal Group()
         {
             return IExecuteWithSignature<Java.Nio.File.Attribute.GroupPrincipal>("group", "()Ljava/nio/file/attribute/GroupPrincipal;");
@@ -132,7 +132,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#owner()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.File.Attribute.UserPrincipal Owner()
         {
             return IExecuteWithSignature<Java.Nio.File.Attribute.UserPrincipal>("owner", "()Ljava/nio/file/attribute/UserPrincipal;");
@@ -140,10 +140,10 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#permissions()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> Permissions()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set Permissions()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>("permissions", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("permissions", "()Ljava/util/Set;");
         }
 
         #endregion

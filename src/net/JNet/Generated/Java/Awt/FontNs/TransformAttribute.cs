@@ -73,7 +73,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TransformAttribute.html#%3Cinit%3E(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TransformAttribute(Java.Awt.Geom.AffineTransform arg0)
             : base(arg0)
         {
@@ -110,7 +110,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TransformAttribute.html#isIdentity()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsIdentity()
         {
             return IExecuteWithSignature<bool>("isIdentity", "()Z");

@@ -91,10 +91,10 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioFileFormat(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioFileFormat"/></returns>
-        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", "(Ljava/io/File;)Ljavax/sound/sampled/AudioFileFormat;", arg0);
@@ -102,10 +102,10 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioFileFormat(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioFileFormat"/></returns>
-        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Io.InputStream arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", "(Ljava/io/InputStream;)Ljavax/sound/sampled/AudioFileFormat;", arg0);
@@ -113,10 +113,10 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioFileFormat(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioFileFormat"/></returns>
-        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Net.URL arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", "(Ljava/net/URL;)Ljavax/sound/sampled/AudioFileFormat;", arg0);
@@ -124,10 +124,10 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioInputStream(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
-        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", "(Ljava/io/File;)Ljavax/sound/sampled/AudioInputStream;", arg0);
@@ -135,10 +135,10 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioInputStream(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
-        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Io.InputStream arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", "(Ljava/io/InputStream;)Ljavax/sound/sampled/AudioInputStream;", arg0);
@@ -146,10 +146,10 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileReader.html#getAudioInputStream(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
-        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Net.URL arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", "(Ljava/net/URL;)Ljavax/sound/sampled/AudioInputStream;", arg0);

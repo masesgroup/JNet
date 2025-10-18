@@ -85,8 +85,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#getBlocker(java.lang.Thread)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static object GetBlocker(Java.Lang.Thread arg0)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "getBlocker", "(Ljava/lang/Thread;)Ljava/lang/Object;", arg0);
@@ -101,7 +101,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#park(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void Park(object arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "park", "(Ljava/lang/Object;)V", arg0);
@@ -109,8 +109,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(java.lang.Object,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public static void ParkNanos(object arg0, long arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "parkNanos", "(Ljava/lang/Object;J)V", arg0, arg1);
@@ -118,7 +118,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void ParkNanos(long arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "parkNanos", "(J)V", arg0);
@@ -126,8 +126,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(java.lang.Object,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public static void ParkUntil(object arg0, long arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "parkUntil", "(Ljava/lang/Object;J)V", arg0, arg1);
@@ -135,7 +135,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void ParkUntil(long arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "parkUntil", "(J)V", arg0);
@@ -143,7 +143,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#unpark(java.lang.Thread)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void Unpark(Java.Lang.Thread arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "unpark", "(Ljava/lang/Thread;)V", arg0);

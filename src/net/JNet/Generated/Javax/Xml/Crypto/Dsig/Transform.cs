@@ -82,19 +82,19 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext,java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Data"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.Dsig.TransformException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Xml.Crypto.Data TransformMethod(Javax.Xml.Crypto.Data arg0, Javax.Xml.Crypto.XMLCryptoContext arg1, Java.Io.OutputStream arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Data"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.Dsig.TransformException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Xml.Crypto.Data TransformMethod(Javax.Xml.Crypto.Data arg0, Javax.Xml.Crypto.XMLCryptoContext arg1);
 
         #endregion
@@ -116,11 +116,11 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Transform"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Transform t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Transform"/> to <see cref="Javax.Xml.Crypto.AlgorithmMethod"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.AlgorithmMethod(Javax.Xml.Crypto.Dsig.Transform t) => t.Cast<Javax.Xml.Crypto.AlgorithmMethod>();
 
@@ -175,11 +175,11 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext,java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Data"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.Dsig.TransformException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Data TransformMethod(Javax.Xml.Crypto.Data arg0, Javax.Xml.Crypto.XMLCryptoContext arg1, Java.Io.OutputStream arg2)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Data>("transform", "(Ljavax/xml/crypto/Data;Ljavax/xml/crypto/XMLCryptoContext;Ljava/io/OutputStream;)Ljavax/xml/crypto/Data;", arg0, arg1, arg2);
@@ -187,10 +187,10 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Data"/></param>
-        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
-        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
-        /// <exception cref="Javax.Xml.Crypto.Dsig.TransformException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Xml.Crypto.Data TransformMethod(Javax.Xml.Crypto.Data arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
             return IExecuteWithSignature<Javax.Xml.Crypto.Data>("transform", "(Ljavax/xml/crypto/Data;Ljavax/xml/crypto/XMLCryptoContext;)Ljavax/xml/crypto/Data;", arg0, arg1);

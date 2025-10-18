@@ -77,11 +77,11 @@ namespace Java.Nio.Channels
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/> to <see cref="Java.Nio.Channels.AsynchronousChannel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.AsynchronousChannel(Java.Nio.Channels.AsynchronousServerSocketChannel t) => t.Cast<Java.Nio.Channels.AsynchronousChannel>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/> to <see cref="Java.Nio.Channels.NetworkChannel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.NetworkChannel(Java.Nio.Channels.AsynchronousServerSocketChannel t) => t.Cast<Java.Nio.Channels.NetworkChannel>();
 
@@ -95,8 +95,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#open()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Nio.Channels.AsynchronousServerSocketChannel Open()
         {
             return SExecuteWithSignature<Java.Nio.Channels.AsynchronousServerSocketChannel>(LocalBridgeClazz, "open", "()Ljava/nio/channels/AsynchronousServerSocketChannel;");
@@ -104,9 +104,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#open(java.nio.channels.AsynchronousChannelGroup)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></param>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Nio.Channels.AsynchronousServerSocketChannel Open(Java.Nio.Channels.AsynchronousChannelGroup arg0)
         {
             return SExecuteWithSignature<Java.Nio.Channels.AsynchronousServerSocketChannel>(LocalBridgeClazz, "open", "(Ljava/nio/channels/AsynchronousChannelGroup;)Ljava/nio/channels/AsynchronousServerSocketChannel;", arg0);
@@ -125,21 +125,21 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#accept(java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="A"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg1objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Accept<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.AsynchronousSocketChannel, Arg1objectSuperA> arg1) where Arg1objectSuperA : A
+        /// <typeparam name="Arg1objectSuperA"><see cref=""/></typeparam>
+        public void Accept<, >(A arg0, Java.Nio.Channels.CompletionHandler<, > arg1) where Arg1objectSuperA : A
         {
             IExecuteWithSignature("accept", "(Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#bind(java.net.SocketAddress,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.AsynchronousServerSocketChannel Bind(Java.Net.SocketAddress arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Nio.Channels.AsynchronousServerSocketChannel>("bind", "(Ljava/net/SocketAddress;I)Ljava/nio/channels/AsynchronousServerSocketChannel;", arg0, arg1);
@@ -147,15 +147,15 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#accept()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<Java.Nio.Channels.AsynchronousSocketChannel> Accept()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.Future Accept()
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Nio.Channels.AsynchronousSocketChannel>>("accept", "()Ljava/util/concurrent/Future;");
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("accept", "()Ljava/util/concurrent/Future;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#provider()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
         {
             return IExecuteWithSignature<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider", "()Ljava/nio/channels/spi/AsynchronousChannelProvider;");
@@ -163,9 +163,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#bind(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
             return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
@@ -173,10 +173,10 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.NetworkChannel SetOption(Java.Net.SocketOption arg0, object arg1)
         {
             return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/nio/channels/NetworkChannel;", arg0, arg1);

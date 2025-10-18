@@ -108,7 +108,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void TableChanged(Javax.Swing.Event.TableModelEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void TableChanged(Javax.Swing.Event.TableModelEvent arg0)
         {
             hasOverrideTableChanged = false;
@@ -207,7 +207,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void TableChanged(Javax.Swing.Event.TableModelEvent arg0)
         {
             IExecuteWithSignature("tableChanged", "(Ljavax/swing/event/TableModelEvent;)V", arg0);

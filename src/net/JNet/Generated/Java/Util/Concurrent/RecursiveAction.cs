@@ -29,7 +29,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RecursiveAction.html"/>
     /// </summary>
-    public partial class RecursiveAction : Java.Util.Concurrent.ForkJoinTask<Java.Lang.Void>
+    public partial class RecursiveAction : Java.Util.Concurrent.ForkJoinTask
     {
         const string _bridgeClassName = "java.util.concurrent.RecursiveAction";
         /// <summary>

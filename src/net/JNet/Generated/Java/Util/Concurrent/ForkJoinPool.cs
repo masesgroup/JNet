@@ -159,7 +159,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ForkJoinPool(int arg0)
             : base(arg0)
         {
@@ -192,7 +192,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#commonPool()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.ForkJoinPool"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.Concurrent.ForkJoinPool CommonPool()
         {
             return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool>(LocalBridgeClazz, "commonPool", "()Ljava/util/concurrent/ForkJoinPool;");
@@ -200,8 +200,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#managedBlock(java.util.concurrent.ForkJoinPool.ManagedBlocker)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinPool.ManagedBlocker"/></param>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public static void ManagedBlock(Java.Util.Concurrent.ForkJoinPool.ManagedBlocker arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "managedBlock", "(Ljava/util/concurrent/ForkJoinPool$ManagedBlocker;)V", arg0);
@@ -276,29 +276,29 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#submit(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
-        public Java.Util.Concurrent.ForkJoinTask<T> Submit<T>(Java.Util.Concurrent.ForkJoinTask<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Concurrent.ForkJoinTask Submit(Java.Util.Concurrent.ForkJoinTask arg0)
         {
-            return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask<T>>("submit", "(Ljava/util/concurrent/ForkJoinTask;)Ljava/util/concurrent/ForkJoinTask;", arg0);
+            return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask>("submit", "(Ljava/util/concurrent/ForkJoinTask;)Ljava/util/concurrent/ForkJoinTask;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#invoke(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T Invoke<T>(Java.Util.Concurrent.ForkJoinTask<T> arg0)
+        /// <returns><see cref=""/></returns>
+        public T Invoke(Java.Util.Concurrent.ForkJoinTask arg0)
         {
             return IExecuteWithSignature<T>("invoke", "(Ljava/util/concurrent/ForkJoinTask;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#awaitQuiescence(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AwaitQuiescence(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecuteWithSignature<bool>("awaitQuiescence", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
@@ -306,7 +306,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#hasQueuedSubmissions()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasQueuedSubmissions()
         {
             return IExecuteWithSignature<bool>("hasQueuedSubmissions", "()Z");
@@ -314,7 +314,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#isQuiescent()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsQuiescent()
         {
             return IExecuteWithSignature<bool>("isQuiescent", "()Z");
@@ -322,7 +322,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#isTerminating()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsTerminating()
         {
             return IExecuteWithSignature<bool>("isTerminating", "()Z");
@@ -330,8 +330,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#execute(java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
-        public void Execute(Java.Util.Concurrent.ForkJoinTask<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public void Execute(Java.Util.Concurrent.ForkJoinTask arg0)
         {
             IExecuteWithSignature("execute", "(Ljava/util/concurrent/ForkJoinTask;)V", arg0);
         }
@@ -362,8 +362,8 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html#newThread(java.util.concurrent.ForkJoinPool)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinPool"/></param>
-            /// <returns><see cref="Java.Util.Concurrent.ForkJoinWorkerThread"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Util.Concurrent.ForkJoinWorkerThread NewThread(Java.Util.Concurrent.ForkJoinPool arg0)
             {
                 return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinWorkerThread>("newThread", "(Ljava/util/concurrent/ForkJoinPool;)Ljava/util/concurrent/ForkJoinWorkerThread;", arg0);
@@ -402,8 +402,8 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html#block()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
-            /// <exception cref="Java.Lang.InterruptedException"/>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public bool Block()
             {
                 return IExecuteWithSignature<bool>("block", "()Z");
@@ -411,7 +411,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html#isReleasable()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsReleasable()
             {
                 return IExecuteWithSignature<bool>("isReleasable", "()Z");

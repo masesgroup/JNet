@@ -98,8 +98,8 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/LocaleServiceProvider.html#isSupportedLocale(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSupportedLocale(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<bool>("isSupportedLocale", "(Ljava/util/Locale;)Z", arg0);

@@ -78,8 +78,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataView.html#toCompositeData(javax.management.openmbean.CompositeType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeType"/></param>
-        /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Management.Openmbean.CompositeData ToCompositeData(Javax.Management.Openmbean.CompositeType arg0);
 
         #endregion
@@ -115,8 +115,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataView.html#toCompositeData(javax.management.openmbean.CompositeType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeType"/></param>
-        /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Management.Openmbean.CompositeData ToCompositeData(Javax.Management.Openmbean.CompositeType arg0)
         {
             return IExecuteWithSignature<Javax.Management.Openmbean.CompositeData>("toCompositeData", "(Ljavax/management/openmbean/CompositeType;)Ljavax/management/openmbean/CompositeData;", arg0);

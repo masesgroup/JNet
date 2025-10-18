@@ -78,9 +78,9 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlWriter.html#writeXML(javax.sql.rowset.WebRowSet,java.io.Writer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.Rowset.WebRowSet"/></param>
-        /// <param name="arg1"><see cref="Java.Io.Writer"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void WriteXML(Javax.Sql.Rowset.WebRowSet arg0, Java.Io.Writer arg1);
 
         #endregion
@@ -116,9 +116,9 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlWriter.html#writeXML(javax.sql.rowset.WebRowSet,java.io.Writer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.Rowset.WebRowSet"/></param>
-        /// <param name="arg1"><see cref="Java.Io.Writer"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void WriteXML(Javax.Sql.Rowset.WebRowSet arg0, Java.Io.Writer arg1)
         {
             IExecuteWithSignature("writeXML", "(Ljavax/sql/rowset/WebRowSet;Ljava/io/Writer;)V", arg0, arg1);

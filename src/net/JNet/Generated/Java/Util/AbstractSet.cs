@@ -68,12 +68,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractSet<E> declaration
+    #region AbstractSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractSet.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class AbstractSet<E> : Java.Util.AbstractCollection<E>
+    public partial class AbstractSet : Java.Util.AbstractCollection
     {
         const string _bridgeClassName = "java.util.AbstractSet";
         /// <summary>
@@ -121,7 +121,7 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractSet"/> to <see cref="Java.Util.Set"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Set(Java.Util.AbstractSet t) => t.Cast<Java.Util.Set>();
 
@@ -147,8 +147,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractSet<E> implementation
-    public partial class AbstractSet<E>
+    #region AbstractSet implementation
+    public partial class AbstractSet
     {
         #region Constructors
 
@@ -156,13 +156,13 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractSet{E}"/> to <see cref="Java.Util.Set{E}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Set<E>(Java.Util.AbstractSet<E> t) => t.Cast<Java.Util.Set<E>>();
+        public static implicit operator Java.Util.Set(Java.Util.AbstractSet t) => t.Cast<Java.Util.Set>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractSet{E}"/> to <see cref="Java.Util.AbstractSet"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.AbstractSet(Java.Util.AbstractSet<E> t) => t.Cast<Java.Util.AbstractSet>();
+        public static implicit operator Java.Util.AbstractSet(Java.Util.AbstractSet t) => t.Cast<Java.Util.AbstractSet>();
 
         #endregion
 

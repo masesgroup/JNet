@@ -94,7 +94,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#isUnnamed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsUnnamed();
 
         #endregion
@@ -116,11 +116,11 @@ namespace Javax.Lang.Model.Element
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Element.PackageElement"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.PackageElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Element.PackageElement"/> to <see cref="Javax.Lang.Model.Element.QualifiedNameable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.QualifiedNameable(Javax.Lang.Model.Element.PackageElement t) => t.Cast<Javax.Lang.Model.Element.QualifiedNameable>();
 
@@ -166,7 +166,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#isUnnamed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsUnnamed()
         {
             return IExecuteWithSignature<bool>("isUnnamed", "()Z");

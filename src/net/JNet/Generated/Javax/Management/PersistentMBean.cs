@@ -78,16 +78,16 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#load()"/>
         /// </summary>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void Load();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#store()"/>
         /// </summary>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void Store();
 
         #endregion
@@ -123,9 +123,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#load()"/>
         /// </summary>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Load()
         {
             IExecuteWithSignature("load", "()V");
@@ -133,9 +133,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#store()"/>
         /// </summary>
-        /// <exception cref="Javax.Management.MBeanException"/>
-        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Store()
         {
             IExecuteWithSignature("store", "()V");

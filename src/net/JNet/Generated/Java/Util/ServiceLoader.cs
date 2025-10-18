@@ -66,12 +66,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region ServiceLoader<S> declaration
+    #region ServiceLoader declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html"/>
     /// </summary>
     /// <typeparam name="S"></typeparam>
-    public partial class ServiceLoader<S> : Java.Lang.Iterable<S>
+    public partial class ServiceLoader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ServiceLoader>
     {
         const string _bridgeClassName = "java.util.ServiceLoader";
         /// <summary>
@@ -127,9 +127,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/ServiceLoader;", arg0, arg1);
@@ -137,8 +137,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0)
         {
             return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
@@ -146,9 +146,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.ModuleLayer,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ModuleLayer"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.ServiceLoader Load(Java.Lang.ModuleLayer arg0, Java.Lang.Class arg1)
         {
             return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/ModuleLayer;Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0, arg1);
@@ -156,8 +156,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.ServiceLoader LoadInstalled(Java.Lang.Class arg0)
         {
             return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "loadInstalled", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
@@ -169,7 +169,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Iterator Iterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
@@ -177,7 +177,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#findFirst()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Optional FindFirst()
         {
             return IExecuteWithSignature<Java.Util.Optional>("findFirst", "()Ljava/util/Optional;");
@@ -200,8 +200,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region ServiceLoader<S> implementation
-    public partial class ServiceLoader<S>
+    #region ServiceLoader implementation
+    public partial class ServiceLoader
     {
         #region Constructors
 
@@ -209,9 +209,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.ServiceLoader{S}"/> to <see cref="Java.Util.ServiceLoader"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.ServiceLoader(Java.Util.ServiceLoader<S> t) => t.Cast<Java.Util.ServiceLoader>();
+        public static implicit operator Java.Util.ServiceLoader(Java.Util.ServiceLoader t) => t.Cast<Java.Util.ServiceLoader>();
 
         #endregion
 
@@ -223,40 +223,40 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
-        public static Java.Util.ServiceLoader<S> Load(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", "(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/ServiceLoader;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/ServiceLoader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
-        public static Java.Util.ServiceLoader<S> Load(Java.Lang.Class arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
+            return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.ModuleLayer,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ModuleLayer"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
-        public static Java.Util.ServiceLoader<S> Load(Java.Lang.ModuleLayer arg0, Java.Lang.Class arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.ServiceLoader Load(Java.Lang.ModuleLayer arg0, Java.Lang.Class arg1)
         {
-            return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", "(Ljava/lang/ModuleLayer;Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/ModuleLayer;Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
-        public static Java.Util.ServiceLoader<S> LoadInstalled(Java.Lang.Class arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.ServiceLoader LoadInstalled(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "loadInstalled", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
+            return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "loadInstalled", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
 
         #endregion
@@ -265,18 +265,18 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<S> Iterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<S>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#findFirst()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<S> FindFirst()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional FindFirst()
         {
-            return IExecuteWithSignature<Java.Util.Optional<S>>("findFirst", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("findFirst", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#reload()"/>

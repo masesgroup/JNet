@@ -68,12 +68,12 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region MutableComboBoxModel<E> declaration
+    #region MutableComboBoxModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class MutableComboBoxModel<E> : Javax.Swing.ComboBoxModel<E>
+    public partial class MutableComboBoxModel : Javax.Swing.ComboBoxModel
     {
         const string _bridgeClassName = "javax.swing.MutableComboBoxModel";
         /// <summary>
@@ -135,7 +135,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#addElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddElement(object arg0)
         {
             IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
@@ -143,8 +143,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void InsertElementAt(object arg0, int arg1)
         {
             IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -152,7 +152,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#removeElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveElement(object arg0)
         {
             IExecuteWithSignature("removeElement", "(Ljava/lang/Object;)V", arg0);
@@ -160,7 +160,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#removeElementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveElementAt(int arg0)
         {
             IExecuteWithSignature("removeElementAt", "(I)V", arg0);
@@ -176,33 +176,33 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region IMutableComboBoxModel<E>
+    #region IMutableComboBoxModel
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html"/>
     /// </summary>
-    public partial interface IMutableComboBoxModel<E> : Javax.Swing.IComboBoxModel<E>
+    public partial interface IMutableComboBoxModel : Javax.Swing.IComboBoxModel
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#addElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AddElement(E arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void InsertElementAt(E arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#removeElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveElement(object arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#removeElementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveElementAt(int arg0);
 
         #endregion
@@ -215,8 +215,8 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region MutableComboBoxModel<E> implementation
-    public partial class MutableComboBoxModel<E> : Javax.Swing.IMutableComboBoxModel<E>
+    #region MutableComboBoxModel implementation
+    public partial class MutableComboBoxModel : Javax.Swing.IMutableComboBoxModel
     {
         #region Constructors
 
@@ -224,9 +224,9 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.MutableComboBoxModel{E}"/> to <see cref="Javax.Swing.MutableComboBoxModel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.MutableComboBoxModel(Javax.Swing.MutableComboBoxModel<E> t) => t.Cast<Javax.Swing.MutableComboBoxModel>();
+        public static implicit operator Javax.Swing.MutableComboBoxModel(Javax.Swing.MutableComboBoxModel t) => t.Cast<Javax.Swing.MutableComboBoxModel>();
 
         #endregion
 
@@ -242,7 +242,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#addElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddElement(E arg0)
         {
             IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
@@ -250,8 +250,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void InsertElementAt(E arg0, int arg1)
         {
             IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
@@ -259,7 +259,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#removeElement(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveElement(object arg0)
         {
             IExecuteWithSignature("removeElement", "(Ljava/lang/Object;)V", arg0);
@@ -267,7 +267,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#removeElementAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveElementAt(int arg0)
         {
             IExecuteWithSignature("removeElementAt", "(I)V", arg0);

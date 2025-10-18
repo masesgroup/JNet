@@ -78,7 +78,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AboutHandler.html#handleAbout(java.awt.desktop.AboutEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AboutEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void HandleAbout(Java.Awt.DesktopNs.AboutEvent arg0);
 
         #endregion
@@ -114,7 +114,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AboutHandler.html#handleAbout(java.awt.desktop.AboutEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AboutEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void HandleAbout(Java.Awt.DesktopNs.AboutEvent arg0)
         {
             IExecuteWithSignature("handleAbout", "(Ljava/awt/desktop/AboutEvent;)V", arg0);

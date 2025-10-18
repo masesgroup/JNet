@@ -29,7 +29,7 @@ namespace Javax.Lang.Model.Element
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html"/>
     /// </summary>
-    public partial class NestingKind : Java.Lang.Enum<Javax.Lang.Model.Element.NestingKind>
+    public partial class NestingKind : Java.Lang.Enum
     {
         const string _bridgeClassName = "javax.lang.model.element.NestingKind";
         /// <summary>
@@ -109,8 +109,8 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Element.NestingKind"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.Element.NestingKind ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/element/NestingKind;", arg0);
@@ -118,7 +118,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.Element.NestingKind"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.Element.NestingKind[] Values()
         {
             return SExecuteWithSignatureArray<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/element/NestingKind;");
@@ -130,7 +130,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#isNested()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsNested()
         {
             return IExecuteWithSignature<bool>("isNested", "()Z");

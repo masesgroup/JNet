@@ -73,8 +73,8 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/PrivateMLet.html#%3Cinit%3E(java.net.URL[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public PrivateMLet(Java.Net.URL[] arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -82,9 +82,9 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/PrivateMLet.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public PrivateMLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -92,10 +92,10 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/PrivateMLet.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg2"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public PrivateMLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -105,7 +105,7 @@ namespace Javax.Management.Loading
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Loading.PrivateMLet"/> to <see cref="Javax.Management.Loading.PrivateClassLoader"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Loading.PrivateClassLoader(Javax.Management.Loading.PrivateMLet t) => t.Cast<Javax.Management.Loading.PrivateClassLoader>();
 

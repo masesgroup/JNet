@@ -87,7 +87,7 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#provider()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
         {
             return SExecuteWithSignature<Java.Nio.Channels.Spi.AsynchronousChannelProvider>(LocalBridgeClazz, "provider", "()Ljava/nio/channels/spi/AsynchronousChannelProvider;");
@@ -99,10 +99,10 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousChannelGroup(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.AsynchronousChannelGroup OpenAsynchronousChannelGroup(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
             return IExecuteWithSignature<Java.Nio.Channels.AsynchronousChannelGroup>("openAsynchronousChannelGroup", "(ILjava/util/concurrent/ThreadFactory;)Ljava/nio/channels/AsynchronousChannelGroup;", arg0, arg1);
@@ -110,10 +110,10 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousChannelGroup(java.util.concurrent.ExecutorService,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.AsynchronousChannelGroup OpenAsynchronousChannelGroup(Java.Util.Concurrent.ExecutorService arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Nio.Channels.AsynchronousChannelGroup>("openAsynchronousChannelGroup", "(Ljava/util/concurrent/ExecutorService;I)Ljava/nio/channels/AsynchronousChannelGroup;", arg0, arg1);
@@ -121,9 +121,9 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousServerSocketChannel(java.nio.channels.AsynchronousChannelGroup)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></param>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.AsynchronousServerSocketChannel OpenAsynchronousServerSocketChannel(Java.Nio.Channels.AsynchronousChannelGroup arg0)
         {
             return IExecuteWithSignature<Java.Nio.Channels.AsynchronousServerSocketChannel>("openAsynchronousServerSocketChannel", "(Ljava/nio/channels/AsynchronousChannelGroup;)Ljava/nio/channels/AsynchronousServerSocketChannel;", arg0);
@@ -131,9 +131,9 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousSocketChannel(java.nio.channels.AsynchronousChannelGroup)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></param>
-        /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.AsynchronousSocketChannel OpenAsynchronousSocketChannel(Java.Nio.Channels.AsynchronousChannelGroup arg0)
         {
             return IExecuteWithSignature<Java.Nio.Channels.AsynchronousSocketChannel>("openAsynchronousSocketChannel", "(Ljava/nio/channels/AsynchronousChannelGroup;)Ljava/nio/channels/AsynchronousSocketChannel;", arg0);

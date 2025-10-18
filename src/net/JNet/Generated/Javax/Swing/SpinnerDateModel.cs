@@ -73,11 +73,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#%3Cinit%3E(java.util.Date,java.lang.Comparable,java.lang.Comparable,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Comparable"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Comparable"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        public SpinnerDateModel(Java.Util.Date arg0, Java.Lang.Comparable<Java.Util.Date> arg1, Java.Lang.Comparable<Java.Util.Date> arg2, int arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        public SpinnerDateModel(Java.Util.Date arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -114,16 +114,16 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getEnd()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#setEnd(java.lang.Comparable)"/>
         /// </summary>
-        public Java.Lang.Comparable<Java.Util.Date> End
+        public Java.Lang.Comparable End
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<Java.Util.Date>>("getEnd", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setEnd", "(Ljava/lang/Comparable;)V", value); }
+            get { return IExecuteWithSignature<Java.Lang.Comparable>("getEnd", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setEnd", "(Ljava/lang/Comparable;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getStart()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#setStart(java.lang.Comparable)"/>
         /// </summary>
-        public Java.Lang.Comparable<Java.Util.Date> Start
+        public Java.Lang.Comparable Start
         {
-            get { return IExecuteWithSignature<Java.Lang.Comparable<Java.Util.Date>>("getStart", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setStart", "(Ljava/lang/Comparable;)V", value); }
+            get { return IExecuteWithSignature<Java.Lang.Comparable>("getStart", "()Ljava/lang/Comparable;"); } set { IExecuteWithSignature("setStart", "(Ljava/lang/Comparable;)V", value); }
         }
 
         #endregion

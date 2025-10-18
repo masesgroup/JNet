@@ -112,13 +112,13 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Security.Cert.CertificateException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Verify(Java.Security.PublicKey arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("verify", "(Ljava/security/PublicKey;Ljava/lang/String;)V", arg0, arg1);
@@ -126,12 +126,12 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <exception cref="Java.Security.Cert.CertificateException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Verify(Java.Security.PublicKey arg0)
         {
             IExecuteWithSignature("verify", "(Ljava/security/PublicKey;)V", arg0);
@@ -139,12 +139,12 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <exception cref="Java.Security.Cert.CertificateException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Verify(Java.Security.PublicKey arg0, Java.Security.Provider arg1)
         {
             IExecuteWithSignature("verify", "(Ljava/security/PublicKey;Ljava/security/Provider;)V", arg0, arg1);

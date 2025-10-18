@@ -73,8 +73,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public GeneralPath(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public GeneralPath(int arg0)
             : base(arg0)
         {
@@ -90,7 +90,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#%3Cinit%3E(java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public GeneralPath(Java.Awt.Shape arg0)
             : base(arg0)
         {

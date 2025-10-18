@@ -108,7 +108,7 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html#handleEvent(org.w3c.dom.events.Event)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void HandleEvent(Org.W3c.Dom.Events.Event arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html#handleEvent(org.w3c.dom.events.Event)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void HandleEvent(Org.W3c.Dom.Events.Event arg0)
         {
             hasOverrideHandleEvent = false;
@@ -207,7 +207,7 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html#handleEvent(org.w3c.dom.events.Event)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void HandleEvent(Org.W3c.Dom.Events.Event arg0)
         {
             IExecuteWithSignature("handleEvent", "(Lorg/w3c/dom/events/Event;)V", arg0);

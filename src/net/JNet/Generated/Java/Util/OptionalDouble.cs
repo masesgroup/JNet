@@ -85,7 +85,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#empty()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.OptionalDouble Empty()
         {
             return SExecuteWithSignature<Java.Util.OptionalDouble>(LocalBridgeClazz, "empty", "()Ljava/util/OptionalDouble;");
@@ -93,8 +93,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#of(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Util.OptionalDouble Of(double arg0)
         {
             return SExecuteWithSignature<Java.Util.OptionalDouble>(LocalBridgeClazz, "of", "(D)Ljava/util/OptionalDouble;", arg0);
@@ -113,19 +113,19 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
-        /// <typeparam name="Arg0ExtendsX"><typeparamref name="X"/></typeparam>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsX"><see cref=""/></typeparam>
         /// <typeparam name="X"></typeparam>
-        /// <returns><see cref="double"/></returns>
-        /// <exception cref="Java.Lang.Throwable"/>
-        public double OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public double OrElseThrow<, >(Java.Util.Function.Supplier arg0) where Arg0ExtendsX : X
         {
             return IExecute<double>("orElseThrow", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#isEmpty()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
@@ -133,7 +133,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#isPresent()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPresent()
         {
             return IExecuteWithSignature<bool>("isPresent", "()Z");
@@ -141,8 +141,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElse(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double OrElse(double arg0)
         {
             return IExecuteWithSignature<double>("orElse", "(D)D", arg0);
@@ -150,8 +150,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElseGet(java.util.function.DoubleSupplier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleSupplier"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double OrElseGet(Java.Util.Function.DoubleSupplier arg0)
         {
             return IExecuteWithSignature<double>("orElseGet", "(Ljava/util/function/DoubleSupplier;)D", arg0);
@@ -159,7 +159,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElseThrow()"/>
         /// </summary>
-        /// <returns><see cref="double"/></returns>
+        /// <returns><see cref=""/></returns>
         public double OrElseThrow()
         {
             return IExecuteWithSignature<double>("orElseThrow", "()D");
@@ -167,7 +167,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#stream()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Stream.DoubleStream Stream()
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("stream", "()Ljava/util/stream/DoubleStream;");
@@ -175,7 +175,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#ifPresent(java.util.function.DoubleConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void IfPresent(Java.Util.Function.DoubleConsumer arg0)
         {
             IExecuteWithSignature("ifPresent", "(Ljava/util/function/DoubleConsumer;)V", arg0);
@@ -183,8 +183,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#ifPresentOrElse(java.util.function.DoubleConsumer,java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void IfPresentOrElse(Java.Util.Function.DoubleConsumer arg0, Java.Lang.Runnable arg1)
         {
             IExecuteWithSignature("ifPresentOrElse", "(Ljava/util/function/DoubleConsumer;Ljava/lang/Runnable;)V", arg0, arg1);

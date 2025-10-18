@@ -68,12 +68,12 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ListCellRenderer<E> declaration
+    #region ListCellRenderer declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class ListCellRenderer<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ListCellRenderer<E>>
+    public partial class ListCellRenderer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ListCellRenderer>
     {
         const string _bridgeClassName = "javax.swing.ListCellRenderer";
         /// <summary>
@@ -135,12 +135,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html#getListCellRendererComponent(javax.swing.JList,java.lang.Object,int,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetListCellRendererComponent(Javax.Swing.JList arg0, object arg1, int arg2, bool arg3, bool arg4)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getListCellRendererComponent", "(Ljavax/swing/JList;Ljava/lang/Object;IZZ)Ljava/awt/Component;", arg0, arg1, arg2, arg3, arg4);
@@ -156,24 +156,24 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region IListCellRenderer<E>
+    #region IListCellRenderer
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html"/>
     /// </summary>
-    public partial interface IListCellRenderer<E>
+    public partial interface IListCellRenderer
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html#getListCellRendererComponent(javax.swing.JList,java.lang.Object,int,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
-        Java.Awt.Component GetListCellRendererComponent<Arg0ExtendsE>(Javax.Swing.JList<Arg0ExtendsE> arg0, E arg1, int arg2, bool arg3, bool arg4) where Arg0ExtendsE : E;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        Java.Awt.Component GetListCellRendererComponent(Javax.Swing.JList arg0, E arg1, int arg2, bool arg3, bool arg4) where Arg0ExtendsE : E;
 
         #endregion
 
@@ -185,8 +185,8 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ListCellRenderer<E> implementation
-    public partial class ListCellRenderer<E> : Javax.Swing.IListCellRenderer<E>
+    #region ListCellRenderer implementation
+    public partial class ListCellRenderer : Javax.Swing.IListCellRenderer
     {
         #region Constructors
 
@@ -194,9 +194,9 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.ListCellRenderer{E}"/> to <see cref="Javax.Swing.ListCellRenderer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.ListCellRenderer(Javax.Swing.ListCellRenderer<E> t) => t.Cast<Javax.Swing.ListCellRenderer>();
+        public static implicit operator Javax.Swing.ListCellRenderer(Javax.Swing.ListCellRenderer t) => t.Cast<Javax.Swing.ListCellRenderer>();
 
         #endregion
 
@@ -212,14 +212,14 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html#getListCellRendererComponent(javax.swing.JList,java.lang.Object,int,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JList"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
-        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
-        public Java.Awt.Component GetListCellRendererComponent<Arg0ExtendsE>(Javax.Swing.JList<Arg0ExtendsE> arg0, E arg1, int arg2, bool arg3, bool arg4) where Arg0ExtendsE : E
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Awt.Component GetListCellRendererComponent(Javax.Swing.JList arg0, E arg1, int arg2, bool arg3, bool arg4) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<Java.Awt.Component>("getListCellRendererComponent", "(Ljavax/swing/JList;Ljava/lang/Object;IZZ)Ljava/awt/Component;", arg0, arg1, arg2, arg3, arg4);
         }

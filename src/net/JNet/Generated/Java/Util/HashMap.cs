@@ -66,13 +66,13 @@ namespace Java.Util
     }
     #endregion
 
-    #region HashMap<K, V> declaration
+    #region HashMap<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class HashMap<K, V> : Java.Util.AbstractMap<K, V>
+    public partial class HashMap<, > : Java.Util.AbstractMap<, >
     {
         const string _bridgeClassName = "java.util.HashMap";
         /// <summary>
@@ -116,8 +116,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public HashMap(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -125,7 +125,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashMap(int arg0)
             : base(arg0)
         {
@@ -133,7 +133,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashMap(Java.Util.Map arg0)
             : base(arg0)
         {
@@ -143,11 +143,11 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.HashMap"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.HashMap t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.HashMap"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.HashMap t) => t.Cast<Java.Io.Serializable>();
 
@@ -173,15 +173,15 @@ namespace Java.Util
     }
     #endregion
 
-    #region HashMap<K, V> implementation
-    public partial class HashMap<K, V>
+    #region HashMap<, > implementation
+    public partial class HashMap<, >
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public HashMap(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -189,7 +189,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public HashMap(int arg0)
             : base(arg0)
         {
@@ -197,8 +197,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public HashMap(Java.Util.Map<K, V> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public HashMap(Java.Util.Map<, > arg0)
             : base(arg0)
         {
         }
@@ -207,17 +207,17 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.HashMap{K, V}"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Util.HashMap<K, V> t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Lang.Cloneable(Java.Util.HashMap<, > t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.HashMap{K, V}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.HashMap<K, V> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.HashMap<, > t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.HashMap{K, V}"/> to <see cref="Java.Util.HashMap"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.HashMap(Java.Util.HashMap<K, V> t) => t.Cast<Java.Util.HashMap>();
+        public static implicit operator Java.Util.HashMap(Java.Util.HashMap<, > t) => t.Cast<Java.Util.HashMap>();
 
         #endregion
 

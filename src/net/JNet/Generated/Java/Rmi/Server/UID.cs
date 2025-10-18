@@ -73,7 +73,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UID.html#%3Cinit%3E(short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public UID(short arg0)
             : base(arg0)
         {
@@ -93,9 +93,9 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UID.html#read(java.io.DataInput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.DataInput"/></param>
-        /// <returns><see cref="Java.Rmi.Server.UID"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Rmi.Server.UID Read(Java.Io.DataInput arg0)
         {
             return SExecuteWithSignature<Java.Rmi.Server.UID>(LocalBridgeClazz, "read", "(Ljava/io/DataInput;)Ljava/rmi/server/UID;", arg0);
@@ -107,8 +107,8 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UID.html#write(java.io.DataOutput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.DataOutput"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Write(Java.Io.DataOutput arg0)
         {
             IExecuteWithSignature("write", "(Ljava/io/DataOutput;)V", arg0);

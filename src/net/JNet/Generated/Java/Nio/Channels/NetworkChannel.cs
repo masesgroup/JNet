@@ -82,32 +82,32 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.Channels.NetworkChannel SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1);
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        Java.Nio.Channels.NetworkChannel SetOption(Java.Net.SocketOption arg0, T arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#getOption(java.net.SocketOption)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        T GetOption<T>(Java.Net.SocketOption<T> arg0);
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        T GetOption(Java.Net.SocketOption arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#bind(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#supportedOptions()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Set SupportedOptions();
 
         #endregion
 
@@ -149,32 +149,32 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.Channels.NetworkChannel SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Nio.Channels.NetworkChannel SetOption(Java.Net.SocketOption arg0, T arg1)
         {
             return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/nio/channels/NetworkChannel;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#getOption(java.net.SocketOption)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public T GetOption<T>(Java.Net.SocketOption<T> arg0)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public T GetOption(Java.Net.SocketOption arg0)
         {
             return IExecuteWithSignature<T>("getOption", "(Ljava/net/SocketOption;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#bind(java.net.SocketAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
             return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
@@ -182,10 +182,10 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#supportedOptions()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set SupportedOptions()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("supportedOptions", "()Ljava/util/Set;");
         }
 
         #endregion

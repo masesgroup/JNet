@@ -91,8 +91,8 @@ namespace Java.Nio.Charset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/spi/CharsetProvider.html#charsetForName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Nio.Charset.Charset CharsetForName(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Nio.Charset.Charset>("charsetForName", "(Ljava/lang/String;)Ljava/nio/charset/Charset;", arg0);
@@ -100,10 +100,10 @@ namespace Java.Nio.Charset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/spi/CharsetProvider.html#charsets()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Nio.Charset.Charset> Charsets()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator Charsets()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Nio.Charset.Charset>>("charsets", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("charsets", "()Ljava/util/Iterator;");
         }
 
         #endregion

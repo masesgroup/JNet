@@ -78,9 +78,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Readable.html#read(java.nio.CharBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         int Read(Java.Nio.CharBuffer arg0);
 
         #endregion
@@ -116,9 +116,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Readable.html#read(java.nio.CharBuffer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public int Read(Java.Nio.CharBuffer arg0)
         {
             return IExecuteWithSignature<int>("read", "(Ljava/nio/CharBuffer;)I", arg0);

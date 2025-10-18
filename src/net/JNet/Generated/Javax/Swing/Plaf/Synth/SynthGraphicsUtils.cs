@@ -85,9 +85,9 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#getIconHeight(javax.swing.Icon,javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int GetIconHeight(Javax.Swing.Icon arg0, Javax.Swing.Plaf.Synth.SynthContext arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getIconHeight", "(Ljavax/swing/Icon;Ljavax/swing/plaf/synth/SynthContext;)I", arg0, arg1);
@@ -95,9 +95,9 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#getIconWidth(javax.swing.Icon,javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int GetIconWidth(Javax.Swing.Icon arg0, Javax.Swing.Plaf.Synth.SynthContext arg1)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getIconWidth", "(Ljavax/swing/Icon;Ljavax/swing/plaf/synth/SynthContext;)I", arg0, arg1);
@@ -105,13 +105,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#paintIcon(javax.swing.Icon,javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public static void PaintIcon(Javax.Swing.Icon arg0, Javax.Swing.Plaf.Synth.SynthContext arg1, Java.Awt.Graphics arg2, int arg3, int arg4, int arg5, int arg6)
         {
             SExecuteWithSignature(LocalBridgeClazz, "paintIcon", "(Ljavax/swing/Icon;Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -123,11 +123,11 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#computeStringWidth(javax.swing.plaf.synth.SynthContext,java.awt.Font,java.awt.FontMetrics,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Font"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.FontMetrics"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int ComputeStringWidth(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Font arg1, Java.Awt.FontMetrics arg2, Java.Lang.String arg3)
         {
             return IExecuteWithSignature<int>("computeStringWidth", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Font;Ljava/awt/FontMetrics;Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
@@ -135,8 +135,8 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#getMaximumCharHeight(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetMaximumCharHeight(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecuteWithSignature<int>("getMaximumCharHeight", "(Ljavax/swing/plaf/synth/SynthContext;)I", arg0);
@@ -144,17 +144,17 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#getMaximumSize(javax.swing.plaf.synth.SynthContext,java.awt.Font,java.lang.String,javax.swing.Icon,int,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Font"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
-        /// <param name="arg8"><see cref="int"/></param>
-        /// <param name="arg9"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Dimension GetMaximumSize(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Font arg1, Java.Lang.String arg2, Javax.Swing.Icon arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("getMaximumSize", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Font;Ljava/lang/String;Ljavax/swing/Icon;IIIIII)Ljava/awt/Dimension;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -162,17 +162,17 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#getMinimumSize(javax.swing.plaf.synth.SynthContext,java.awt.Font,java.lang.String,javax.swing.Icon,int,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Font"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
-        /// <param name="arg8"><see cref="int"/></param>
-        /// <param name="arg9"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Dimension GetMinimumSize(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Font arg1, Java.Lang.String arg2, Javax.Swing.Icon arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("getMinimumSize", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Font;Ljava/lang/String;Ljavax/swing/Icon;IIIIII)Ljava/awt/Dimension;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -180,17 +180,17 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#getPreferredSize(javax.swing.plaf.synth.SynthContext,java.awt.Font,java.lang.String,javax.swing.Icon,int,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Font"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
-        /// <param name="arg8"><see cref="int"/></param>
-        /// <param name="arg9"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Dimension GetPreferredSize(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Font arg1, Java.Lang.String arg2, Javax.Swing.Icon arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Font;Ljava/lang/String;Ljavax/swing/Icon;IIIIII)Ljava/awt/Dimension;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -198,19 +198,19 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#layoutText(javax.swing.plaf.synth.SynthContext,java.awt.FontMetrics,java.lang.String,javax.swing.Icon,int,int,int,int,java.awt.Rectangle,java.awt.Rectangle,java.awt.Rectangle,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
-        /// <param name="arg8"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg9"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg10"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg11"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
+        /// <param name="arg11"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String LayoutText(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.FontMetrics arg1, Java.Lang.String arg2, Javax.Swing.Icon arg3, int arg4, int arg5, int arg6, int arg7, Java.Awt.Rectangle arg8, Java.Awt.Rectangle arg9, Java.Awt.Rectangle arg10, int arg11)
         {
             return IExecuteWithSignature<Java.Lang.String>("layoutText", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/FontMetrics;Ljava/lang/String;Ljavax/swing/Icon;IIIILjava/awt/Rectangle;Ljava/awt/Rectangle;Ljava/awt/Rectangle;I)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
@@ -218,14 +218,14 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#drawLine(javax.swing.plaf.synth.SynthContext,java.lang.Object,java.awt.Graphics,int,int,int,int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
         public void DrawLine(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, Java.Awt.Graphics arg2, int arg3, int arg4, int arg5, int arg6, object arg7)
         {
             IExecuteWithSignature("drawLine", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;Ljava/awt/Graphics;IIIILjava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -233,13 +233,13 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#drawLine(javax.swing.plaf.synth.SynthContext,java.lang.Object,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
         public void DrawLine(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, Java.Awt.Graphics arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecuteWithSignature("drawLine", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/lang/Object;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -247,12 +247,12 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#paintText(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public void PaintText(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, Java.Lang.String arg2, int arg3, int arg4, int arg5)
         {
             IExecuteWithSignature("paintText", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;Ljava/lang/String;III)V", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -260,11 +260,11 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#paintText(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,java.lang.String,java.awt.Rectangle,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void PaintText(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, Java.Lang.String arg2, Java.Awt.Rectangle arg3, int arg4)
         {
             IExecuteWithSignature("paintText", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;Ljava/lang/String;Ljava/awt/Rectangle;I)V", arg0, arg1, arg2, arg3, arg4);
@@ -272,17 +272,17 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthGraphicsUtils.html#paintText(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,java.lang.String,javax.swing.Icon,int,int,int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="int"/></param>
-        /// <param name="arg8"><see cref="int"/></param>
-        /// <param name="arg9"><see cref="int"/></param>
-        /// <param name="arg10"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        /// <param name="arg7"><see cref=""/></param>
+        /// <param name="arg8"><see cref=""/></param>
+        /// <param name="arg9"><see cref=""/></param>
+        /// <param name="arg10"><see cref=""/></param>
         public void PaintText(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, Java.Lang.String arg2, Javax.Swing.Icon arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10)
         {
             IExecuteWithSignature("paintText", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;Ljava/lang/String;Ljavax/swing/Icon;IIIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);

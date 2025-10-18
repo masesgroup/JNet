@@ -73,10 +73,10 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationInfo.html#%3Cinit%3E(java.lang.String[],java.lang.String,java.lang.String,javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Javax.Management.Descriptor"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public ModelMBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,9 +84,9 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationInfo.html#%3Cinit%3E(java.lang.String[],java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public ModelMBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -94,7 +94,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationInfo.html#%3Cinit%3E(javax.management.modelmbean.ModelMBeanNotificationInfo)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Modelmbean.ModelMBeanNotificationInfo"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ModelMBeanNotificationInfo(Javax.Management.Modelmbean.ModelMBeanNotificationInfo arg0)
             : base(arg0)
         {
@@ -104,7 +104,7 @@ namespace Javax.Management.Modelmbean
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Modelmbean.ModelMBeanNotificationInfo"/> to <see cref="Javax.Management.DescriptorAccess"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.DescriptorAccess(Javax.Management.Modelmbean.ModelMBeanNotificationInfo t) => t.Cast<Javax.Management.DescriptorAccess>();
 
@@ -122,7 +122,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationInfo.html#setDescriptor(javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDescriptor(Javax.Management.Descriptor arg0)
         {
             IExecuteWithSignature("setDescriptor", "(Ljavax/management/Descriptor;)V", arg0);

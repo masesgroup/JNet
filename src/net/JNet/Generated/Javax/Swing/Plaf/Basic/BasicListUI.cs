@@ -302,7 +302,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicListUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicListUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public FocusHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
@@ -312,7 +312,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicListUI.FocusHandler"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicListUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
 
@@ -330,7 +330,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecuteWithSignature("focusGained", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -338,7 +338,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecuteWithSignature("focusLost", "(Ljava/awt/event/FocusEvent;)V", arg0);
@@ -361,7 +361,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicListUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicListUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public ListDataHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
@@ -371,7 +371,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicListUI.ListDataHandler"/> to <see cref="Javax.Swing.Event.ListDataListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicListUI.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
 
@@ -389,7 +389,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecuteWithSignature("contentsChanged", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
@@ -397,7 +397,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecuteWithSignature("intervalAdded", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
@@ -405,7 +405,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecuteWithSignature("intervalRemoved", "(Ljavax/swing/event/ListDataEvent;)V", arg0);
@@ -428,7 +428,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicListUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicListUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public ListSelectionHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
@@ -438,7 +438,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicListUI.ListSelectionHandler"/> to <see cref="Javax.Swing.Event.ListSelectionListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.ListSelectionListener(Javax.Swing.Plaf.Basic.BasicListUI.ListSelectionHandler t) => t.Cast<Javax.Swing.Event.ListSelectionListener>();
 
@@ -456,7 +456,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html#valueChanged(javax.swing.event.ListSelectionEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void ValueChanged(Javax.Swing.Event.ListSelectionEvent arg0)
             {
                 IExecuteWithSignature("valueChanged", "(Ljavax/swing/event/ListSelectionEvent;)V", arg0);
@@ -479,7 +479,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicListUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicListUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public MouseInputHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
@@ -489,7 +489,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicListUI.MouseInputHandler"/> to <see cref="Javax.Swing.Event.MouseInputListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicListUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
 
@@ -507,7 +507,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseClicked(java.awt.event.MouseEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecuteWithSignature("mouseClicked", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -515,7 +515,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecuteWithSignature("mouseDragged", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -523,7 +523,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecuteWithSignature("mouseEntered", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -531,7 +531,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecuteWithSignature("mouseExited", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -539,7 +539,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecuteWithSignature("mouseMoved", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -547,7 +547,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecuteWithSignature("mousePressed", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -555,7 +555,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecuteWithSignature("mouseReleased", "(Ljava/awt/event/MouseEvent;)V", arg0);
@@ -578,7 +578,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicListUI)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicListUI"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
@@ -588,7 +588,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicListUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicListUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
 
@@ -606,7 +606,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);

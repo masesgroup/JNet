@@ -68,12 +68,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region ListIterator<E> declaration
+    #region ListIterator declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class ListIterator<E> : Java.Util.Iterator<E>
+    public partial class ListIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ListIterator>
     {
         const string _bridgeClassName = "java.util.ListIterator";
         /// <summary>
@@ -135,7 +135,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasNext()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
@@ -143,7 +143,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasPrevious()
         {
             return IExecuteWithSignature<bool>("hasPrevious", "()Z");
@@ -151,7 +151,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Next()
         {
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
@@ -159,7 +159,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Previous()
         {
             return IExecuteWithSignature("previous", "()Ljava/lang/Object;");
@@ -167,7 +167,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int NextIndex()
         {
             return IExecuteWithSignature<int>("nextIndex", "()I");
@@ -175,7 +175,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int PreviousIndex()
         {
             return IExecuteWithSignature<int>("previousIndex", "()I");
@@ -183,7 +183,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Add(object arg0)
         {
             IExecuteWithSignature("add", "(Ljava/lang/Object;)V", arg0);
@@ -198,7 +198,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#set(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Set(object arg0)
         {
             IExecuteWithSignature("set", "(Ljava/lang/Object;)V", arg0);
@@ -214,47 +214,47 @@ namespace Java.Util
     }
     #endregion
 
-    #region IListIterator<E>
+    #region IListIterator
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html"/>
     /// </summary>
-    public partial interface IListIterator<E>
+    public partial interface IListIterator
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool HasNext();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool HasPrevious();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         E Next();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         E Previous();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         int NextIndex();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         int PreviousIndex();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Add(E arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#remove()"/>
@@ -263,7 +263,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#set(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Set(E arg0);
 
         #endregion
@@ -276,8 +276,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region ListIterator<E> implementation
-    public partial class ListIterator<E> : Java.Util.IListIterator<E>
+    #region ListIterator implementation
+    public partial class ListIterator : Java.Util.IListIterator
     {
         #region Constructors
 
@@ -285,9 +285,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.ListIterator{E}"/> to <see cref="Java.Util.ListIterator"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.ListIterator(Java.Util.ListIterator<E> t) => t.Cast<Java.Util.ListIterator>();
+        public static implicit operator Java.Util.ListIterator(Java.Util.ListIterator t) => t.Cast<Java.Util.ListIterator>();
 
         #endregion
 
@@ -303,7 +303,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasNext()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
@@ -311,7 +311,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasPrevious()
         {
             return IExecuteWithSignature<bool>("hasPrevious", "()Z");
@@ -319,7 +319,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Next()
         {
             return IExecuteWithSignature<E>("next", "()Ljava/lang/Object;");
@@ -327,7 +327,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Previous()
         {
             return IExecuteWithSignature<E>("previous", "()Ljava/lang/Object;");
@@ -335,7 +335,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int NextIndex()
         {
             return IExecuteWithSignature<int>("nextIndex", "()I");
@@ -343,7 +343,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int PreviousIndex()
         {
             return IExecuteWithSignature<int>("previousIndex", "()I");
@@ -351,7 +351,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Add(E arg0)
         {
             IExecuteWithSignature("add", "(Ljava/lang/Object;)V", arg0);
@@ -366,7 +366,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#set(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Set(E arg0)
         {
             IExecuteWithSignature("set", "(Ljava/lang/Object;)V", arg0);

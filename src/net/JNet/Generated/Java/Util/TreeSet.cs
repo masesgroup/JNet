@@ -66,12 +66,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region TreeSet<E> declaration
+    #region TreeSet declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class TreeSet<E> : Java.Util.AbstractSet<E>
+    public partial class TreeSet : Java.Util.AbstractSet
     {
         const string _bridgeClassName = "java.util.TreeSet";
         /// <summary>
@@ -115,7 +115,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TreeSet(Java.Util.Collection arg0)
             : base(arg0)
         {
@@ -123,7 +123,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TreeSet(Java.Util.Comparator arg0)
             : base(arg0)
         {
@@ -131,7 +131,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.SortedSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TreeSet(Java.Util.SortedSet arg0)
             : base(arg0)
         {
@@ -141,15 +141,15 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.TreeSet"/> to <see cref="Java.Util.NavigableSet"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.NavigableSet(Java.Util.TreeSet t) => t.Cast<Java.Util.NavigableSet>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.TreeSet"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.TreeSet t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.TreeSet"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.TreeSet t) => t.Cast<Java.Io.Serializable>();
 
@@ -167,8 +167,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#ceiling(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Ceiling(object arg0)
         {
             return IExecuteWithSignature("ceiling", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -176,7 +176,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#first()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object First()
         {
             return IExecuteWithSignature("first", "()Ljava/lang/Object;");
@@ -184,8 +184,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#floor(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Floor(object arg0)
         {
             return IExecuteWithSignature("floor", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -193,8 +193,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#higher(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Higher(object arg0)
         {
             return IExecuteWithSignature("higher", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -202,7 +202,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#last()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Last()
         {
             return IExecuteWithSignature("last", "()Ljava/lang/Object;");
@@ -210,8 +210,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#lower(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Lower(object arg0)
         {
             return IExecuteWithSignature("lower", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -219,7 +219,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollFirst()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object PollFirst()
         {
             return IExecuteWithSignature("pollFirst", "()Ljava/lang/Object;");
@@ -227,7 +227,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollLast()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object PollLast()
         {
             return IExecuteWithSignature("pollLast", "()Ljava/lang/Object;");
@@ -235,7 +235,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#comparator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Comparator Comparator()
         {
             return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
@@ -243,7 +243,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Iterator DescendingIterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
@@ -251,7 +251,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingSet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.NavigableSet DescendingSet()
         {
             return IExecuteWithSignature<Java.Util.NavigableSet>("descendingSet", "()Ljava/util/NavigableSet;");
@@ -259,9 +259,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#headSet(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.NavigableSet HeadSet(object arg0, bool arg1)
         {
             return IExecuteWithSignature<Java.Util.NavigableSet>("headSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
@@ -269,11 +269,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.NavigableSet SubSet(object arg0, bool arg1, object arg2, bool arg3)
         {
             return IExecuteWithSignature<Java.Util.NavigableSet>("subSet", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1, arg2, arg3);
@@ -281,9 +281,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#tailSet(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.NavigableSet TailSet(object arg0, bool arg1)
         {
             return IExecuteWithSignature<Java.Util.NavigableSet>("tailSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
@@ -291,8 +291,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#headSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.SortedSet HeadSet(object arg0)
         {
             return IExecuteWithSignature<Java.Util.SortedSet>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
@@ -300,9 +300,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.SortedSet SubSet(object arg0, object arg1)
         {
             return IExecuteWithSignature<Java.Util.SortedSet>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
@@ -310,8 +310,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Util.SortedSet TailSet(object arg0)
         {
             return IExecuteWithSignature<Java.Util.SortedSet>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
@@ -327,31 +327,31 @@ namespace Java.Util
     }
     #endregion
 
-    #region TreeSet<E> implementation
-    public partial class TreeSet<E>
+    #region TreeSet implementation
+    public partial class TreeSet
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public TreeSet(Java.Util.Collection<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public TreeSet(Java.Util.Collection arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.Comparator)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        public TreeSet(Java.Util.Comparator<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public TreeSet(Java.Util.Comparator arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.SortedSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
-        public TreeSet(Java.Util.SortedSet<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public TreeSet(Java.Util.SortedSet arg0)
             : base(arg0)
         {
         }
@@ -360,21 +360,21 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.TreeSet{E}"/> to <see cref="Java.Util.NavigableSet{E}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.NavigableSet<E>(Java.Util.TreeSet<E> t) => t.Cast<Java.Util.NavigableSet<E>>();
+        public static implicit operator Java.Util.NavigableSet(Java.Util.TreeSet t) => t.Cast<Java.Util.NavigableSet>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.TreeSet{E}"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Util.TreeSet<E> t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Lang.Cloneable(Java.Util.TreeSet t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.TreeSet{E}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.TreeSet<E> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.TreeSet t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.TreeSet{E}"/> to <see cref="Java.Util.TreeSet"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.TreeSet(Java.Util.TreeSet<E> t) => t.Cast<Java.Util.TreeSet>();
+        public static implicit operator Java.Util.TreeSet(Java.Util.TreeSet t) => t.Cast<Java.Util.TreeSet>();
 
         #endregion
 
@@ -390,8 +390,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#ceiling(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Ceiling(E arg0)
         {
             return IExecuteWithSignature<E>("ceiling", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -399,7 +399,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#first()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E First()
         {
             return IExecuteWithSignature<E>("first", "()Ljava/lang/Object;");
@@ -407,8 +407,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#floor(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Floor(E arg0)
         {
             return IExecuteWithSignature<E>("floor", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -416,8 +416,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#higher(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Higher(E arg0)
         {
             return IExecuteWithSignature<E>("higher", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -425,7 +425,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#last()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Last()
         {
             return IExecuteWithSignature<E>("last", "()Ljava/lang/Object;");
@@ -433,8 +433,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#lower(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public E Lower(E arg0)
         {
             return IExecuteWithSignature<E>("lower", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -442,7 +442,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollFirst()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E PollFirst()
         {
             return IExecuteWithSignature<E>("pollFirst", "()Ljava/lang/Object;");
@@ -450,7 +450,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollLast()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E PollLast()
         {
             return IExecuteWithSignature<E>("pollLast", "()Ljava/lang/Object;");
@@ -458,87 +458,87 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#comparator()"/>
         /// </summary>
-        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE : E
+        /// <typeparam name="ReturnobjectSuperE"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Comparator Comparator() where ReturnobjectSuperE : E
         {
-            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperE>>("comparator", "()Ljava/util/Comparator;");
+            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> DescendingIterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator DescendingIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("descendingIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingSet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public Java.Util.NavigableSet<E> DescendingSet()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.NavigableSet DescendingSet()
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("descendingSet", "()Ljava/util/NavigableSet;");
+            return IExecuteWithSignature<Java.Util.NavigableSet>("descendingSet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#headSet(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public Java.Util.NavigableSet<E> HeadSet(E arg0, bool arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.NavigableSet HeadSet(E arg0, bool arg1)
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("headSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableSet>("headSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><typeparamref name="E"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public Java.Util.NavigableSet<E> SubSet(E arg0, bool arg1, E arg2, bool arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.NavigableSet SubSet(E arg0, bool arg1, E arg2, bool arg3)
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("subSet", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableSet>("subSet", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#tailSet(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        public Java.Util.NavigableSet<E> TailSet(E arg0, bool arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.NavigableSet TailSet(E arg0, bool arg1)
         {
-            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("tailSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableSet>("tailSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#headSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public Java.Util.SortedSet<E> HeadSet(E arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.SortedSet HeadSet(E arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedSet<E>>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
+            return IExecuteWithSignature<Java.Util.SortedSet>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public Java.Util.SortedSet<E> SubSet(E arg0, E arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.SortedSet SubSet(E arg0, E arg1)
         {
-            return IExecuteWithSignature<Java.Util.SortedSet<E>>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedSet>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        public Java.Util.SortedSet<E> TailSet(E arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.SortedSet TailSet(E arg0)
         {
-            return IExecuteWithSignature<Java.Util.SortedSet<E>>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
+            return IExecuteWithSignature<Java.Util.SortedSet>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
 
         #endregion

@@ -114,8 +114,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public MessageFormat(Java.Lang.String arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
@@ -123,7 +123,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public MessageFormat(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -143,9 +143,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.String Format(Java.Lang.String arg0, params object[] arg1)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
@@ -178,10 +178,10 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#format(java.lang.Object[],java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.StringBuffer"/></param>
-        /// <param name="arg2"><see cref="Java.Text.FieldPosition"/></param>
-        /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.StringBuffer Format(object[] arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
             return IExecuteWithSignature<Java.Lang.StringBuffer>("format", "([Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;", arg0, arg1, arg2);
@@ -189,9 +189,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object[] Parse(Java.Lang.String arg0, Java.Text.ParsePosition arg1)
         {
             return IExecuteWithSignatureArray<object>("parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)[Ljava/lang/Object;", arg0, arg1);
@@ -199,9 +199,9 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Text.ParseException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object[] Parse(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<object>("parse", "(Ljava/lang/String;)[Ljava/lang/Object;", arg0);
@@ -209,7 +209,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#toPattern()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String ToPattern()
         {
             return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
@@ -217,7 +217,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#applyPattern(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ApplyPattern(Java.Lang.String arg0)
         {
             IExecuteWithSignature("applyPattern", "(Ljava/lang/String;)V", arg0);
@@ -225,8 +225,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormat(int,java.text.Format)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Text.Format"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetFormat(int arg0, Java.Text.Format arg1)
         {
             IExecuteWithSignature("setFormat", "(ILjava/text/Format;)V", arg0, arg1);
@@ -234,8 +234,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormatByArgumentIndex(int,java.text.Format)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Text.Format"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetFormatByArgumentIndex(int arg0, Java.Text.Format arg1)
         {
             IExecuteWithSignature("setFormatByArgumentIndex", "(ILjava/text/Format;)V", arg0, arg1);

@@ -91,27 +91,27 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#isFocusTraversable(javax.swing.JComboBox)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public bool IsFocusTraversable(Javax.Swing.JComboBox<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public bool IsFocusTraversable(Javax.Swing.JComboBox arg0)
         {
             return IExecuteWithSignature<bool>("isFocusTraversable", "(Ljavax/swing/JComboBox;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#isPopupVisible(javax.swing.JComboBox)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public bool IsPopupVisible(Javax.Swing.JComboBox<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public bool IsPopupVisible(Javax.Swing.JComboBox arg0)
         {
             return IExecuteWithSignature<bool>("isPopupVisible", "(Ljavax/swing/JComboBox;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#setPopupVisible(javax.swing.JComboBox,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        public void SetPopupVisible(Javax.Swing.JComboBox<object> arg0, bool arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public void SetPopupVisible(Javax.Swing.JComboBox arg0, bool arg1)
         {
             IExecuteWithSignature("setPopupVisible", "(Ljavax/swing/JComboBox;Z)V", arg0, arg1);
         }

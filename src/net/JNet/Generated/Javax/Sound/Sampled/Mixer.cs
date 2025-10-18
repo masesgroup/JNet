@@ -139,51 +139,51 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isLineSupported(javax.sound.sampled.Line.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsLineSupported(Javax.Sound.Sampled.Line.Info arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isSynchronizationSupported(javax.sound.sampled.Line[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool IsSynchronizationSupported(Javax.Sound.Sampled.Line[] arg0, bool arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getMaxLines(javax.sound.sampled.Line.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int GetMaxLines(Javax.Sound.Sampled.Line.Info arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getLine(javax.sound.sampled.Line.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.Line"/></returns>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Sound.Sampled.Line GetLine(Javax.Sound.Sampled.Line.Info arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLineInfo(javax.sound.sampled.Line.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Sound.Sampled.Line.Info[] GetSourceLineInfo(Javax.Sound.Sampled.Line.Info arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLineInfo(javax.sound.sampled.Line.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Javax.Sound.Sampled.Line.Info[] GetTargetLineInfo(Javax.Sound.Sampled.Line.Info arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#synchronize(javax.sound.sampled.Line[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void Synchronize(Javax.Sound.Sampled.Line[] arg0, bool arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#unsynchronize(javax.sound.sampled.Line[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Unsynchronize(Javax.Sound.Sampled.Line[] arg0);
 
         #endregion
@@ -254,8 +254,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isLineSupported(javax.sound.sampled.Line.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsLineSupported(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecuteWithSignature<bool>("isLineSupported", "(Ljavax/sound/sampled/Line$Info;)Z", arg0);
@@ -263,9 +263,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isSynchronizationSupported(javax.sound.sampled.Line[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSynchronizationSupported(Javax.Sound.Sampled.Line[] arg0, bool arg1)
         {
             return IExecuteWithSignature<bool>("isSynchronizationSupported", "([Ljavax/sound/sampled/Line;Z)Z", arg0, arg1);
@@ -273,8 +273,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getMaxLines(javax.sound.sampled.Line.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetMaxLines(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecuteWithSignature<int>("getMaxLines", "(Ljavax/sound/sampled/Line$Info;)I", arg0);
@@ -282,9 +282,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getLine(javax.sound.sampled.Line.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.Line"/></returns>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Sound.Sampled.Line GetLine(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Sampled.Line>("getLine", "(Ljavax/sound/sampled/Line$Info;)Ljavax/sound/sampled/Line;", arg0);
@@ -292,8 +292,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLineInfo(javax.sound.sampled.Line.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Sampled.Line.Info[] GetSourceLineInfo(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecuteWithSignatureArray<Javax.Sound.Sampled.Line.Info>("getSourceLineInfo", "(Ljavax/sound/sampled/Line$Info;)[Ljavax/sound/sampled/Line$Info;", arg0);
@@ -301,8 +301,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLineInfo(javax.sound.sampled.Line.Info)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
-        /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Sound.Sampled.Line.Info[] GetTargetLineInfo(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecuteWithSignatureArray<Javax.Sound.Sampled.Line.Info>("getTargetLineInfo", "(Ljavax/sound/sampled/Line$Info;)[Ljavax/sound/sampled/Line$Info;", arg0);
@@ -310,8 +310,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#synchronize(javax.sound.sampled.Line[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Synchronize(Javax.Sound.Sampled.Line[] arg0, bool arg1)
         {
             IExecuteWithSignature("synchronize", "([Ljavax/sound/sampled/Line;Z)V", arg0, arg1);
@@ -319,7 +319,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#unsynchronize(javax.sound.sampled.Line[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Unsynchronize(Javax.Sound.Sampled.Line[] arg0)
         {
             IExecuteWithSignature("unsynchronize", "([Ljavax/sound/sampled/Line;)V", new object[] { arg0 });

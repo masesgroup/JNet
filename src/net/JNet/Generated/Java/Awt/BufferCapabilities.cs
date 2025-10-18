@@ -114,9 +114,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#%3Cinit%3E(java.awt.ImageCapabilities,java.awt.ImageCapabilities,java.awt.BufferCapabilities.FlipContents)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageCapabilities"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageCapabilities"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.BufferCapabilities.FlipContents"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public BufferCapabilities(Java.Awt.ImageCapabilities arg0, Java.Awt.ImageCapabilities arg1, Java.Awt.BufferCapabilities.FlipContents arg2)
             : base(arg0, arg1, arg2)
         {
@@ -161,7 +161,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isFullScreenRequired()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFullScreenRequired()
         {
             return IExecuteWithSignature<bool>("isFullScreenRequired", "()Z");
@@ -169,7 +169,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isMultiBufferAvailable()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsMultiBufferAvailable()
         {
             return IExecuteWithSignature<bool>("isMultiBufferAvailable", "()Z");
@@ -177,7 +177,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isPageFlipping()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPageFlipping()
         {
             return IExecuteWithSignature<bool>("isPageFlipping", "()Z");

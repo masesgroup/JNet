@@ -66,12 +66,12 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region DiagnosticCollector<S> declaration
+    #region DiagnosticCollector declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html"/>
     /// </summary>
     /// <typeparam name="S"></typeparam>
-    public partial class DiagnosticCollector<S> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DiagnosticCollector<S>>
+    public partial class DiagnosticCollector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DiagnosticCollector>
     {
         const string _bridgeClassName = "javax.tools.DiagnosticCollector";
         /// <summary>
@@ -138,7 +138,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html#report(javax.tools.Diagnostic)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Tools.Diagnostic"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Report(Javax.Tools.Diagnostic arg0)
         {
             IExecuteWithSignature("report", "(Ljavax/tools/Diagnostic;)V", arg0);
@@ -154,8 +154,8 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region DiagnosticCollector<S> implementation
-    public partial class DiagnosticCollector<S>
+    #region DiagnosticCollector implementation
+    public partial class DiagnosticCollector
     {
         #region Constructors
 
@@ -163,9 +163,9 @@ namespace Javax.Tools
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Tools.DiagnosticCollector{S}"/> to <see cref="Javax.Tools.DiagnosticCollector"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Tools.DiagnosticCollector(Javax.Tools.DiagnosticCollector<S> t) => t.Cast<Javax.Tools.DiagnosticCollector>();
+        public static implicit operator Javax.Tools.DiagnosticCollector(Javax.Tools.DiagnosticCollector t) => t.Cast<Javax.Tools.DiagnosticCollector>();
 
         #endregion
 
@@ -188,9 +188,9 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html#report(javax.tools.Diagnostic)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Tools.Diagnostic"/></param>
-        /// <typeparam name="Arg0ExtendsS"><typeparamref name="S"/></typeparam>
-        public void Report<Arg0ExtendsS>(Javax.Tools.Diagnostic<Arg0ExtendsS> arg0) where Arg0ExtendsS : S
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsS"><see cref=""/></typeparam>
+        public void Report(Javax.Tools.Diagnostic arg0) where Arg0ExtendsS : S
         {
             IExecuteWithSignature("report", "(Ljavax/tools/Diagnostic;)V", arg0);
         }

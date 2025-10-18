@@ -73,9 +73,9 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/InflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Inflater,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Zip.Inflater"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public InflaterInputStream(Java.Io.InputStream arg0, Java.Util.Zip.Inflater arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/InflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Inflater)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Zip.Inflater"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public InflaterInputStream(Java.Io.InputStream arg0, Java.Util.Zip.Inflater arg1)
             : base(arg0, arg1)
         {
@@ -92,7 +92,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/InflaterInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public InflaterInputStream(Java.Io.InputStream arg0)
             : base(arg0)
         {

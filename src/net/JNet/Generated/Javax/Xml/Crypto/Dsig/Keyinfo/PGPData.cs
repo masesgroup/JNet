@@ -78,7 +78,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getExternalElements()"/> 
         /// </summary>
-        Java.Util.List<Javax.Xml.Crypto.XMLStructure> ExternalElements { get; }
+        Java.Util.List ExternalElements { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getKeyId()"/> 
         /// </summary>
@@ -127,9 +127,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getExternalElements()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Xml.Crypto.XMLStructure> ExternalElements
+        public Java.Util.List ExternalElements
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Xml.Crypto.XMLStructure>>("getExternalElements", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getExternalElements", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getKeyId()"/> 

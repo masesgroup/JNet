@@ -111,7 +111,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html"/>
         /// </summary>
-        public partial class DirectiveKind : Java.Lang.Enum<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>
+        public partial class DirectiveKind : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.lang.model.element.ModuleElement$DirectiveKind";
             /// <summary>
@@ -191,13 +191,13 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region DirectiveVisitor<R, P> declaration
+        #region DirectiveVisitor<, > declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html"/>
         /// </summary>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="P"></typeparam>
-        public partial class DirectiveVisitor<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirectiveVisitor<R, P>>
+        public partial class DirectiveVisitor<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirectiveVisitor<, >>
         {
             const string _bridgeClassName = "javax.lang.model.element.ModuleElement$DirectiveVisitor";
             /// <summary>
@@ -485,12 +485,12 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isOpen()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsOpen();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isUnnamed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsUnnamed();
 
         #endregion
@@ -512,11 +512,11 @@ namespace Javax.Lang.Model.Element
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Element.ModuleElement"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.ModuleElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Element.ModuleElement"/> to <see cref="Javax.Lang.Model.Element.QualifiedNameable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Lang.Model.Element.QualifiedNameable(Javax.Lang.Model.Element.ModuleElement t) => t.Cast<Javax.Lang.Model.Element.QualifiedNameable>();
 
@@ -569,7 +569,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isOpen()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOpen()
         {
             return IExecuteWithSignature<bool>("isOpen", "()Z");
@@ -577,7 +577,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isUnnamed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsUnnamed()
         {
             return IExecuteWithSignature<bool>("isUnnamed", "()Z");
@@ -616,12 +616,12 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html#accept(javax.lang.model.element.ModuleElement.DirectiveVisitor,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor"/></param>
-            /// <param name="arg1"><typeparamref name="P"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             /// <typeparam name="R"></typeparam>
             /// <typeparam name="P"></typeparam>
-            /// <returns><typeparamref name="R"/></returns>
-            public R Accept<R, P>(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor<R, P> arg0, P arg1)
+            /// <returns><see cref=""/></returns>
+            public R Accept<, >(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor<, > arg0, P arg1)
             {
                 return IExecuteWithSignature<R>("accept", "(Ljavax/lang/model/element/ModuleElement$DirectiveVisitor;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
             }
@@ -685,8 +685,8 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveKind"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/element/ModuleElement$DirectiveKind;", arg0);
@@ -694,7 +694,7 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveKind"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/element/ModuleElement$DirectiveKind;");
@@ -737,9 +737,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitExports(javax.lang.model.element.ModuleElement.ExportsDirective,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.ExportsDirective"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object VisitExports(Javax.Lang.Model.Element.ModuleElement.ExportsDirective arg0, object arg1)
             {
                 return IExecuteWithSignature("visitExports", "(Ljavax/lang/model/element/ModuleElement$ExportsDirective;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -747,9 +747,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitOpens(javax.lang.model.element.ModuleElement.OpensDirective,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.OpensDirective"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object VisitOpens(Javax.Lang.Model.Element.ModuleElement.OpensDirective arg0, object arg1)
             {
                 return IExecuteWithSignature("visitOpens", "(Ljavax/lang/model/element/ModuleElement$OpensDirective;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -757,9 +757,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitProvides(javax.lang.model.element.ModuleElement.ProvidesDirective,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.ProvidesDirective"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object VisitProvides(Javax.Lang.Model.Element.ModuleElement.ProvidesDirective arg0, object arg1)
             {
                 return IExecuteWithSignature("visitProvides", "(Ljavax/lang/model/element/ModuleElement$ProvidesDirective;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -767,9 +767,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitRequires(javax.lang.model.element.ModuleElement.RequiresDirective,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.RequiresDirective"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object VisitRequires(Javax.Lang.Model.Element.ModuleElement.RequiresDirective arg0, object arg1)
             {
                 return IExecuteWithSignature("visitRequires", "(Ljavax/lang/model/element/ModuleElement$RequiresDirective;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -777,9 +777,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUses(javax.lang.model.element.ModuleElement.UsesDirective,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.UsesDirective"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object VisitUses(Javax.Lang.Model.Element.ModuleElement.UsesDirective arg0, object arg1)
             {
                 return IExecuteWithSignature("visitUses", "(Ljavax/lang/model/element/ModuleElement$UsesDirective;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -787,9 +787,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement.Directive,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0, object arg1)
             {
                 return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/ModuleElement$Directive;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -797,8 +797,8 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement.Directive)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0)
             {
                 return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/ModuleElement$Directive;)Ljava/lang/Object;", arg0);
@@ -806,9 +806,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUnknown(javax.lang.model.element.ModuleElement.Directive,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="object"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public object VisitUnknown(Javax.Lang.Model.Element.ModuleElement.Directive arg0, object arg1)
             {
                 return IExecuteWithSignature("visitUnknown", "(Ljavax/lang/model/element/ModuleElement$Directive;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -824,8 +824,8 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region DirectiveVisitor<R, P> implementation
-        public partial class DirectiveVisitor<R, P>
+        #region DirectiveVisitor<, > implementation
+        public partial class DirectiveVisitor<, >
         {
             #region Constructors
 
@@ -833,9 +833,9 @@ namespace Javax.Lang.Model.Element
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor{R, P}"/> to <see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor<R, P> t) => t.Cast<Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor>();
+            public static implicit operator Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor(Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor<, > t) => t.Cast<Javax.Lang.Model.Element.ModuleElement.DirectiveVisitor>();
 
             #endregion
 
@@ -851,9 +851,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitExports(javax.lang.model.element.ModuleElement.ExportsDirective,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.ExportsDirective"/></param>
-            /// <param name="arg1"><typeparamref name="P"/></param>
-            /// <returns><typeparamref name="R"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public R VisitExports(Javax.Lang.Model.Element.ModuleElement.ExportsDirective arg0, P arg1)
             {
                 return IExecuteWithSignature<R>("visitExports", "(Ljavax/lang/model/element/ModuleElement$ExportsDirective;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -861,9 +861,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitOpens(javax.lang.model.element.ModuleElement.OpensDirective,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.OpensDirective"/></param>
-            /// <param name="arg1"><typeparamref name="P"/></param>
-            /// <returns><typeparamref name="R"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public R VisitOpens(Javax.Lang.Model.Element.ModuleElement.OpensDirective arg0, P arg1)
             {
                 return IExecuteWithSignature<R>("visitOpens", "(Ljavax/lang/model/element/ModuleElement$OpensDirective;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -871,9 +871,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitProvides(javax.lang.model.element.ModuleElement.ProvidesDirective,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.ProvidesDirective"/></param>
-            /// <param name="arg1"><typeparamref name="P"/></param>
-            /// <returns><typeparamref name="R"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public R VisitProvides(Javax.Lang.Model.Element.ModuleElement.ProvidesDirective arg0, P arg1)
             {
                 return IExecuteWithSignature<R>("visitProvides", "(Ljavax/lang/model/element/ModuleElement$ProvidesDirective;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -881,9 +881,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitRequires(javax.lang.model.element.ModuleElement.RequiresDirective,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.RequiresDirective"/></param>
-            /// <param name="arg1"><typeparamref name="P"/></param>
-            /// <returns><typeparamref name="R"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public R VisitRequires(Javax.Lang.Model.Element.ModuleElement.RequiresDirective arg0, P arg1)
             {
                 return IExecuteWithSignature<R>("visitRequires", "(Ljavax/lang/model/element/ModuleElement$RequiresDirective;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -891,9 +891,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUses(javax.lang.model.element.ModuleElement.UsesDirective,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.UsesDirective"/></param>
-            /// <param name="arg1"><typeparamref name="P"/></param>
-            /// <returns><typeparamref name="R"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public R VisitUses(Javax.Lang.Model.Element.ModuleElement.UsesDirective arg0, P arg1)
             {
                 return IExecuteWithSignature<R>("visitUses", "(Ljavax/lang/model/element/ModuleElement$UsesDirective;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -901,9 +901,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement.Directive,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <param name="arg1"><typeparamref name="P"/></param>
-            /// <returns><typeparamref name="R"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public R Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0, P arg1)
             {
                 return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/ModuleElement$Directive;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -911,8 +911,8 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement.Directive)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <returns><typeparamref name="R"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public R Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0)
             {
                 return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/ModuleElement$Directive;)Ljava/lang/Object;", arg0);
@@ -920,9 +920,9 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUnknown(javax.lang.model.element.ModuleElement.Directive,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <param name="arg1"><typeparamref name="P"/></param>
-            /// <returns><typeparamref name="R"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public R VisitUnknown(Javax.Lang.Model.Element.ModuleElement.Directive arg0, P arg1)
             {
                 return IExecuteWithSignature<R>("visitUnknown", "(Ljavax/lang/model/element/ModuleElement$Directive;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -1103,7 +1103,7 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isStatic()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsStatic()
             {
                 return IExecuteWithSignature<bool>("isStatic", "()Z");
@@ -1111,7 +1111,7 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isTransitive()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsTransitive()
             {
                 return IExecuteWithSignature<bool>("isTransitive", "()Z");

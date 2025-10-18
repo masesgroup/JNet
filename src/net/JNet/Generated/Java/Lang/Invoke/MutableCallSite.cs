@@ -73,7 +73,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MutableCallSite.html#%3Cinit%3E(java.lang.invoke.MethodHandle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public MutableCallSite(Java.Lang.Invoke.MethodHandle arg0)
             : base(arg0)
         {
@@ -81,7 +81,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MutableCallSite.html#%3Cinit%3E(java.lang.invoke.MethodType)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public MutableCallSite(Java.Lang.Invoke.MethodType arg0)
             : base(arg0)
         {
@@ -101,7 +101,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MutableCallSite.html#syncAll(java.lang.invoke.MutableCallSite[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MutableCallSite"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void SyncAll(Java.Lang.Invoke.MutableCallSite[] arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "syncAll", "([Ljava/lang/invoke/MutableCallSite;)V", new object[] { arg0 });

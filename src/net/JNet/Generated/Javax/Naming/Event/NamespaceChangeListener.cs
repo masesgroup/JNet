@@ -108,22 +108,22 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectAdded(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ObjectAdded(Javax.Naming.Event.NamingEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRemoved(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ObjectRemoved(Javax.Naming.Event.NamingEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRenamed(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ObjectRenamed(Javax.Naming.Event.NamingEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0);
 
         #endregion
@@ -186,7 +186,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectAdded(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ObjectAdded(Javax.Naming.Event.NamingEvent arg0)
         {
             hasOverrideObjectAdded = false;
@@ -210,7 +210,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRemoved(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ObjectRemoved(Javax.Naming.Event.NamingEvent arg0)
         {
             hasOverrideObjectRemoved = false;
@@ -234,7 +234,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRenamed(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ObjectRenamed(Javax.Naming.Event.NamingEvent arg0)
         {
             hasOverrideObjectRenamed = false;
@@ -258,7 +258,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
         {
             hasOverrideNamingExceptionThrown = false;
@@ -297,7 +297,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectAdded(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ObjectAdded(Javax.Naming.Event.NamingEvent arg0)
         {
             IExecuteWithSignature("objectAdded", "(Ljavax/naming/event/NamingEvent;)V", arg0);
@@ -305,7 +305,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRemoved(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ObjectRemoved(Javax.Naming.Event.NamingEvent arg0)
         {
             IExecuteWithSignature("objectRemoved", "(Ljavax/naming/event/NamingEvent;)V", arg0);
@@ -313,7 +313,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRenamed(javax.naming.event.NamingEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ObjectRenamed(Javax.Naming.Event.NamingEvent arg0)
         {
             IExecuteWithSignature("objectRenamed", "(Ljavax/naming/event/NamingEvent;)V", arg0);
@@ -321,7 +321,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
         {
             IExecuteWithSignature("namingExceptionThrown", "(Ljavax/naming/event/NamingExceptionEvent;)V", arg0);

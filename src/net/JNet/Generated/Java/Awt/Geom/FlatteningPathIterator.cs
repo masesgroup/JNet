@@ -73,9 +73,9 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#%3Cinit%3E(java.awt.geom.PathIterator,double,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#%3Cinit%3E(java.awt.geom.PathIterator,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1)
             : base(arg0, arg1)
         {
@@ -129,7 +129,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#isDone()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDone()
         {
             return IExecuteWithSignature<bool>("isDone", "()Z");
@@ -137,8 +137,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#currentSegment(double[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CurrentSegment(double[] arg0)
         {
             return IExecuteWithSignature<int>("currentSegment", "([D)I", new object[] { arg0 });
@@ -146,8 +146,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#currentSegment(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CurrentSegment(float[] arg0)
         {
             return IExecuteWithSignature<int>("currentSegment", "([F)I", new object[] { arg0 });

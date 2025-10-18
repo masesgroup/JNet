@@ -68,7 +68,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html"/>
         /// </summary>
-        public partial class DocumentationTask : Java.Util.Concurrent.Callable<Java.Lang.Boolean>
+        public partial class DocumentationTask : Java.Util.Concurrent.Callable
         {
             const string _bridgeClassName = "javax.tools.DocumentationTool$DocumentationTask";
             /// <summary>
@@ -111,7 +111,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html"/>
         /// </summary>
-        public partial class Location : Java.Lang.Enum<Javax.Tools.DocumentationTool.Location>
+        public partial class Location : Java.Lang.Enum
         {
             const string _bridgeClassName = "javax.tools.DocumentationTool$Location";
             /// <summary>
@@ -179,11 +179,11 @@ namespace Javax.Tools
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Tools.DocumentationTool"/> to <see cref="Javax.Tools.Tool"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Tools.Tool(Javax.Tools.DocumentationTool t) => t.Cast<Javax.Tools.Tool>();
         /// <summary>
-        /// Converter from <see cref="Javax.Tools.DocumentationTool"/> to <see cref="Javax.Tools.OptionChecker"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Tools.OptionChecker(Javax.Tools.DocumentationTool t) => t.Cast<Javax.Tools.OptionChecker>();
 
@@ -225,15 +225,15 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#addModules(java.lang.Iterable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-            public void AddModules(Java.Lang.Iterable<Java.Lang.String> arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            public void AddModules(Java.Lang.Iterable arg0)
             {
                 IExecuteWithSignature("addModules", "(Ljava/lang/Iterable;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#setLocale(java.util.Locale)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void SetLocale(Java.Util.Locale arg0)
             {
                 IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", arg0);
@@ -241,8 +241,8 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#call()"/>
             /// </summary>
-            /// <returns><see cref="object"/></returns>
-            /// <exception cref="Java.Lang.Exception"/>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public object Call()
             {
                 return IExecuteWithSignature("call", "()Ljava/lang/Object;");
@@ -295,8 +295,8 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Javax.Tools.DocumentationTool.Location"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Javax.Tools.DocumentationTool.Location ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/tools/DocumentationTool$Location;", arg0);
@@ -304,7 +304,7 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Javax.Tools.DocumentationTool.Location"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Javax.Tools.DocumentationTool.Location[] Values()
             {
                 return SExecuteWithSignatureArray<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "values", "()[Ljavax/tools/DocumentationTool$Location;");
@@ -323,7 +323,7 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#isOutputLocation()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsOutputLocation()
             {
                 return IExecuteWithSignature<bool>("isOutputLocation", "()Z");

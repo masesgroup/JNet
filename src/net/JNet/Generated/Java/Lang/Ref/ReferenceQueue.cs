@@ -66,12 +66,12 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region ReferenceQueue<T> declaration
+    #region ReferenceQueue declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class ReferenceQueue<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReferenceQueue<T>>
+    public partial class ReferenceQueue : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReferenceQueue>
     {
         const string _bridgeClassName = "java.lang.ref.ReferenceQueue";
         /// <summary>
@@ -131,7 +131,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#poll()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Ref.Reference Poll()
         {
             return IExecuteWithSignature<Java.Lang.Ref.Reference>("poll", "()Ljava/lang/ref/Reference;");
@@ -139,8 +139,8 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Ref.Reference Remove()
         {
             return IExecuteWithSignature<Java.Lang.Ref.Reference>("remove", "()Ljava/lang/ref/Reference;");
@@ -148,10 +148,10 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Lang.Ref.Reference Remove(long arg0)
         {
             return IExecuteWithSignature<Java.Lang.Ref.Reference>("remove", "(J)Ljava/lang/ref/Reference;", arg0);
@@ -167,8 +167,8 @@ namespace Java.Lang.Ref
     }
     #endregion
 
-    #region ReferenceQueue<T> implementation
-    public partial class ReferenceQueue<T>
+    #region ReferenceQueue implementation
+    public partial class ReferenceQueue
     {
         #region Constructors
 
@@ -176,9 +176,9 @@ namespace Java.Lang.Ref
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Ref.ReferenceQueue{T}"/> to <see cref="Java.Lang.Ref.ReferenceQueue"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Ref.ReferenceQueue(Java.Lang.Ref.ReferenceQueue<T> t) => t.Cast<Java.Lang.Ref.ReferenceQueue>();
+        public static implicit operator Java.Lang.Ref.ReferenceQueue(Java.Lang.Ref.ReferenceQueue t) => t.Cast<Java.Lang.Ref.ReferenceQueue>();
 
         #endregion
 
@@ -194,33 +194,33 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#poll()"/>
         /// </summary>
-        /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
-        public Java.Lang.Ref.Reference<ReturnExtendsT> Poll<ReturnExtendsT>() where ReturnExtendsT : T
+        /// <typeparam name="ReturnExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Lang.Ref.Reference Poll() where ReturnExtendsT : T
         {
-            return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("poll", "()Ljava/lang/ref/Reference;");
+            return IExecuteWithSignature<Java.Lang.Ref.Reference>("poll", "()Ljava/lang/ref/Reference;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
         /// </summary>
-        /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>() where ReturnExtendsT : T
+        /// <typeparam name="ReturnExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public Java.Lang.Ref.Reference Remove() where ReturnExtendsT : T
         {
-            return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove", "()Ljava/lang/ref/Reference;");
+            return IExecuteWithSignature<Java.Lang.Ref.Reference>("remove", "()Ljava/lang/ref/Reference;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/ReferenceQueue.html#remove(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>(long arg0) where ReturnExtendsT : T
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="ReturnExtendsT"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        public Java.Lang.Ref.Reference Remove(long arg0) where ReturnExtendsT : T
         {
-            return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove", "(J)Ljava/lang/ref/Reference;", arg0);
+            return IExecuteWithSignature<Java.Lang.Ref.Reference>("remove", "(J)Ljava/lang/ref/Reference;", arg0);
         }
 
         #endregion

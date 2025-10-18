@@ -73,9 +73,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitorInputStream.html#%3Cinit%3E(java.awt.Component,java.lang.Object,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public ProgressMonitorInputStream(Java.Awt.Component arg0, object arg1, Java.Io.InputStream arg2)
             : base(arg0, arg1, arg2)
         {

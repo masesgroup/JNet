@@ -68,12 +68,12 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ScheduledFuture<V> declaration
+    #region ScheduledFuture declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledFuture.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class ScheduledFuture<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScheduledFuture<V>>
+    public partial class ScheduledFuture : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScheduledFuture>
     {
         const string _bridgeClassName = "java.util.concurrent.ScheduledFuture";
         /// <summary>
@@ -121,11 +121,11 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ScheduledFuture"/> to <see cref="Java.Util.Concurrent.Delayed"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Delayed(Java.Util.Concurrent.ScheduledFuture t) => t.Cast<Java.Util.Concurrent.Delayed>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ScheduledFuture"/> to <see cref="Java.Util.Concurrent.Future"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Future(Java.Util.Concurrent.ScheduledFuture t) => t.Cast<Java.Util.Concurrent.Future>();
 
@@ -151,11 +151,11 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region IScheduledFuture<V>
+    #region IScheduledFuture
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledFuture.html"/>
     /// </summary>
-    public partial interface IScheduledFuture<V>
+    public partial interface IScheduledFuture
     {
         #region Instance methods
 
@@ -169,8 +169,8 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ScheduledFuture<V> implementation
-    public partial class ScheduledFuture<V> : Java.Util.Concurrent.IScheduledFuture<V>
+    #region ScheduledFuture implementation
+    public partial class ScheduledFuture : Java.Util.Concurrent.IScheduledFuture
     {
         #region Constructors
 
@@ -178,17 +178,17 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ScheduledFuture{V}"/> to <see cref="Java.Util.Concurrent.Delayed"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.Delayed(Java.Util.Concurrent.ScheduledFuture<V> t) => t.Cast<Java.Util.Concurrent.Delayed>();
+        public static implicit operator Java.Util.Concurrent.Delayed(Java.Util.Concurrent.ScheduledFuture t) => t.Cast<Java.Util.Concurrent.Delayed>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ScheduledFuture{V}"/> to <see cref="Java.Util.Concurrent.Future{V}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.Future<V>(Java.Util.Concurrent.ScheduledFuture<V> t) => t.Cast<Java.Util.Concurrent.Future<V>>();
+        public static implicit operator Java.Util.Concurrent.Future(Java.Util.Concurrent.ScheduledFuture t) => t.Cast<Java.Util.Concurrent.Future>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ScheduledFuture{V}"/> to <see cref="Java.Util.Concurrent.ScheduledFuture"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.ScheduledFuture(Java.Util.Concurrent.ScheduledFuture<V> t) => t.Cast<Java.Util.Concurrent.ScheduledFuture>();
+        public static implicit operator Java.Util.Concurrent.ScheduledFuture(Java.Util.Concurrent.ScheduledFuture t) => t.Cast<Java.Util.Concurrent.ScheduledFuture>();
 
         #endregion
 

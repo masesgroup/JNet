@@ -228,10 +228,10 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getIntegerAttributeValue(javax.swing.text.AttributeSet,javax.swing.text.html.HTML.Attribute,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.HTML.Attribute"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int GetIntegerAttributeValue(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.Html.HTML.Attribute arg1, int arg2)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getIntegerAttributeValue", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/html/HTML$Attribute;I)I", arg0, arg1, arg2);
@@ -239,8 +239,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getAttributeKey(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.HTML.Attribute"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Text.Html.HTML.Attribute GetAttributeKey(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Text.Html.HTML.Attribute>(LocalBridgeClazz, "getAttributeKey", "(Ljava/lang/String;)Ljavax/swing/text/html/HTML$Attribute;", arg0);
@@ -248,8 +248,8 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getTag(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Swing.Text.Html.HTML.Tag"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Text.Html.HTML.Tag GetTag(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Text.Html.HTML.Tag>(LocalBridgeClazz, "getTag", "(Ljava/lang/String;)Ljavax/swing/text/html/HTML$Tag;", arg0);
@@ -1252,7 +1252,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#breaksFlow()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool BreaksFlow()
             {
                 return IExecuteWithSignature<bool>("breaksFlow", "()Z");
@@ -1260,7 +1260,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isBlock()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsBlock()
             {
                 return IExecuteWithSignature<bool>("isBlock", "()Z");
@@ -1268,7 +1268,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.Tag.html#isPreformatted()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool IsPreformatted()
             {
                 return IExecuteWithSignature<bool>("isPreformatted", "()Z");
@@ -1291,7 +1291,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.UnknownTag.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public UnknownTag(Java.Lang.String arg0)
                 : base(arg0)
             {
@@ -1301,7 +1301,7 @@ namespace Javax.Swing.Text.Html
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.Html.HTML.UnknownTag"/> to <see cref="Java.Io.Serializable"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.HTML.UnknownTag t) => t.Cast<Java.Io.Serializable>();
 

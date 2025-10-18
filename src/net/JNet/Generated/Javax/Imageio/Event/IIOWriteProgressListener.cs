@@ -108,42 +108,42 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ImageComplete(Javax.Imageio.ImageWriter arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageProgress(javax.imageio.ImageWriter,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void ImageProgress(Javax.Imageio.ImageWriter arg0, float arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageStarted(javax.imageio.ImageWriter,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void ImageStarted(Javax.Imageio.ImageWriter arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ThumbnailComplete(Javax.Imageio.ImageWriter arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailProgress(javax.imageio.ImageWriter,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void ThumbnailProgress(Javax.Imageio.ImageWriter arg0, float arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailStarted(javax.imageio.ImageWriter,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         void ThumbnailStarted(Javax.Imageio.ImageWriter arg0, int arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#writeAborted(javax.imageio.ImageWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void WriteAborted(Javax.Imageio.ImageWriter arg0);
 
         #endregion
@@ -209,7 +209,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ImageComplete(Javax.Imageio.ImageWriter arg0)
         {
             hasOverrideImageComplete = false;
@@ -233,8 +233,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageProgress(javax.imageio.ImageWriter,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void ImageProgress(Javax.Imageio.ImageWriter arg0, float arg1)
         {
             hasOverrideImageProgress = false;
@@ -258,8 +258,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageStarted(javax.imageio.ImageWriter,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void ImageStarted(Javax.Imageio.ImageWriter arg0, int arg1)
         {
             hasOverrideImageStarted = false;
@@ -283,7 +283,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ThumbnailComplete(Javax.Imageio.ImageWriter arg0)
         {
             hasOverrideThumbnailComplete = false;
@@ -307,8 +307,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailProgress(javax.imageio.ImageWriter,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void ThumbnailProgress(Javax.Imageio.ImageWriter arg0, float arg1)
         {
             hasOverrideThumbnailProgress = false;
@@ -332,9 +332,9 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailStarted(javax.imageio.ImageWriter,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public virtual void ThumbnailStarted(Javax.Imageio.ImageWriter arg0, int arg1, int arg2)
         {
             hasOverrideThumbnailStarted = false;
@@ -358,7 +358,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#writeAborted(javax.imageio.ImageWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void WriteAborted(Javax.Imageio.ImageWriter arg0)
         {
             hasOverrideWriteAborted = false;
@@ -397,7 +397,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ImageComplete(Javax.Imageio.ImageWriter arg0)
         {
             IExecuteWithSignature("imageComplete", "(Ljavax/imageio/ImageWriter;)V", arg0);
@@ -405,8 +405,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageProgress(javax.imageio.ImageWriter,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void ImageProgress(Javax.Imageio.ImageWriter arg0, float arg1)
         {
             IExecuteWithSignature("imageProgress", "(Ljavax/imageio/ImageWriter;F)V", arg0, arg1);
@@ -414,8 +414,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageStarted(javax.imageio.ImageWriter,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void ImageStarted(Javax.Imageio.ImageWriter arg0, int arg1)
         {
             IExecuteWithSignature("imageStarted", "(Ljavax/imageio/ImageWriter;I)V", arg0, arg1);
@@ -423,7 +423,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ThumbnailComplete(Javax.Imageio.ImageWriter arg0)
         {
             IExecuteWithSignature("thumbnailComplete", "(Ljavax/imageio/ImageWriter;)V", arg0);
@@ -431,8 +431,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailProgress(javax.imageio.ImageWriter,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void ThumbnailProgress(Javax.Imageio.ImageWriter arg0, float arg1)
         {
             IExecuteWithSignature("thumbnailProgress", "(Ljavax/imageio/ImageWriter;F)V", arg0, arg1);
@@ -440,9 +440,9 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailStarted(javax.imageio.ImageWriter,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public override void ThumbnailStarted(Javax.Imageio.ImageWriter arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("thumbnailStarted", "(Ljavax/imageio/ImageWriter;II)V", arg0, arg1, arg2);
@@ -450,7 +450,7 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#writeAborted(javax.imageio.ImageWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void WriteAborted(Javax.Imageio.ImageWriter arg0)
         {
             IExecuteWithSignature("writeAborted", "(Ljavax/imageio/ImageWriter;)V", arg0);

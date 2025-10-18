@@ -73,11 +73,11 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#%3Cinit%3E(java.lang.String,java.util.List,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public RoleUnresolved(Java.Lang.String arg0, Java.Util.List<Javax.Management.ObjectName> arg1, int arg2)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
+        public RoleUnresolved(Java.Lang.String arg0, Java.Util.List arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -114,9 +114,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#getRoleValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html#setRoleValue(java.util.List)"/>
         /// </summary>
-        public Java.Util.List<Javax.Management.ObjectName> RoleValue
+        public Java.Util.List RoleValue
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Management.ObjectName>>("getRoleValue", "()Ljava/util/List;"); } set { IExecuteWithSignature("setRoleValue", "(Ljava/util/List;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.List>("getRoleValue", "()Ljava/util/List;"); } set { IExecuteWithSignature("setRoleValue", "(Ljava/util/List;)V", value); }
         }
 
         #endregion

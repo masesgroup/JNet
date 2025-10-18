@@ -73,9 +73,9 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ShapeGraphicAttribute.html#%3Cinit%3E(java.awt.Shape,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public ShapeGraphicAttribute(Java.Awt.Shape arg0, int arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {

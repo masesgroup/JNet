@@ -73,8 +73,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#%3Cinit%3E(javax.swing.JInternalFrame,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public InternalFrameEvent(Javax.Swing.JInternalFrame arg0, int arg1)
             : base(arg0, arg1)
         {

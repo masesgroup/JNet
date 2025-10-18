@@ -96,8 +96,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#getPersistenceDelegate(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Beans.PersistenceDelegate"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Beans.PersistenceDelegate GetPersistenceDelegate(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<Java.Beans.PersistenceDelegate>("getPersistenceDelegate", "(Ljava/lang/Class;)Ljava/beans/PersistenceDelegate;", arg0);
@@ -105,8 +105,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Get(object arg0)
         {
             return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -114,8 +114,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Remove(object arg0)
         {
             return IExecuteWithSignature("remove", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
@@ -123,8 +123,8 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#setPersistenceDelegate(java.lang.Class,java.beans.PersistenceDelegate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Beans.PersistenceDelegate"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetPersistenceDelegate(Java.Lang.Class arg0, Java.Beans.PersistenceDelegate arg1)
         {
             IExecuteWithSignature("setPersistenceDelegate", "(Ljava/lang/Class;Ljava/beans/PersistenceDelegate;)V", arg0, arg1);
@@ -132,7 +132,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#writeExpression(java.beans.Expression)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Expression"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WriteExpression(Java.Beans.Expression arg0)
         {
             IExecuteWithSignature("writeExpression", "(Ljava/beans/Expression;)V", arg0);
@@ -140,7 +140,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#writeStatement(java.beans.Statement)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Statement"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void WriteStatement(Java.Beans.Statement arg0)
         {
             IExecuteWithSignature("writeStatement", "(Ljava/beans/Statement;)V", arg0);

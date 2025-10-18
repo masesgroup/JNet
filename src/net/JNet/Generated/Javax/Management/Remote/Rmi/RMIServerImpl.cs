@@ -75,8 +75,8 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public RMIServerImpl(Java.Util.Map<Java.Lang.String, object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public RMIServerImpl(Java.Util.Map<, > arg0)
             : base(arg0)
         {
         }
@@ -85,11 +85,11 @@ namespace Javax.Management.Remote.Rmi
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIServerImpl"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Javax.Management.Remote.Rmi.RMIServerImpl t) => t.Cast<Java.Io.Closeable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIServerImpl"/> to <see cref="Javax.Management.Remote.Rmi.RMIServer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Management.Remote.Rmi.RMIServer(Javax.Management.Remote.Rmi.RMIServerImpl t) => t.Cast<Javax.Management.Remote.Rmi.RMIServer>();
 
@@ -128,8 +128,8 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html#toStub()"/>
         /// </summary>
-        /// <returns><see cref="Java.Rmi.Remote"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Rmi.Remote ToStub()
         {
             return IExecute<Java.Rmi.Remote>("toStub");
@@ -137,9 +137,9 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html#newClient(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Management.Remote.Rmi.RMIConnection"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Management.Remote.Rmi.RMIConnection NewClient(object arg0)
         {
             return IExecute<Javax.Management.Remote.Rmi.RMIConnection>("newClient", arg0);
@@ -147,7 +147,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecute("close");

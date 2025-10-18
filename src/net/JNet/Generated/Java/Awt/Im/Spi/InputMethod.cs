@@ -86,13 +86,13 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#isCompositionEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsCompositionEnabled();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setLocale(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool SetLocale(Java.Util.Locale arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#activate()"/>
@@ -101,12 +101,12 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#deactivate(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void Deactivate(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#dispatchEvent(java.awt.AWTEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void DispatchEvent(Java.Awt.AWTEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#dispose()"/>
@@ -123,7 +123,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#notifyClientWindowChange(java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void NotifyClientWindowChange(Java.Awt.Rectangle arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#reconvert()"/>
@@ -136,17 +136,17 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setCharacterSubsets(java.lang.Character.Subset[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Character.Subset"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetCharacterSubsets(Java.Lang.Character.Subset[] arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setCompositionEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetCompositionEnabled(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setInputMethodContext(java.awt.im.spi.InputMethodContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Im.Spi.InputMethodContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SetInputMethodContext(Java.Awt.Im.Spi.InputMethodContext arg0);
 
         #endregion
@@ -196,7 +196,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#isCompositionEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsCompositionEnabled()
         {
             return IExecuteWithSignature<bool>("isCompositionEnabled", "()Z");
@@ -204,8 +204,8 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setLocale(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool SetLocale(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<bool>("setLocale", "(Ljava/util/Locale;)Z", arg0);
@@ -220,7 +220,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#deactivate(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Deactivate(bool arg0)
         {
             IExecuteWithSignature("deactivate", "(Z)V", arg0);
@@ -228,7 +228,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#dispatchEvent(java.awt.AWTEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void DispatchEvent(Java.Awt.AWTEvent arg0)
         {
             IExecuteWithSignature("dispatchEvent", "(Ljava/awt/AWTEvent;)V", arg0);
@@ -257,7 +257,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#notifyClientWindowChange(java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void NotifyClientWindowChange(Java.Awt.Rectangle arg0)
         {
             IExecuteWithSignature("notifyClientWindowChange", "(Ljava/awt/Rectangle;)V", arg0);
@@ -279,7 +279,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setCharacterSubsets(java.lang.Character.Subset[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Character.Subset"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetCharacterSubsets(Java.Lang.Character.Subset[] arg0)
         {
             IExecuteWithSignature("setCharacterSubsets", "([Ljava/lang/Character$Subset;)V", new object[] { arg0 });
@@ -287,7 +287,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setCompositionEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetCompositionEnabled(bool arg0)
         {
             IExecuteWithSignature("setCompositionEnabled", "(Z)V", arg0);
@@ -295,7 +295,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setInputMethodContext(java.awt.im.spi.InputMethodContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Im.Spi.InputMethodContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetInputMethodContext(Java.Awt.Im.Spi.InputMethodContext arg0)
         {
             IExecuteWithSignature("setInputMethodContext", "(Ljava/awt/im/spi/InputMethodContext;)V", arg0);

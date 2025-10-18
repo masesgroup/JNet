@@ -179,85 +179,85 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#addMetaEventListener(javax.sound.midi.MetaEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaEventListener"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool AddMetaEventListener(Javax.Sound.Midi.MetaEventListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTrackMute(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool GetTrackMute(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTrackSolo(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool GetTrackSolo(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRecording()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsRecording();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRunning()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsRunning();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#addControllerEventListener(javax.sound.midi.ControllerEventListener,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.ControllerEventListener"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int[] AddControllerEventListener(Javax.Sound.Midi.ControllerEventListener arg0, int[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#removeControllerEventListener(javax.sound.midi.ControllerEventListener,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.ControllerEventListener"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int[] RemoveControllerEventListener(Javax.Sound.Midi.ControllerEventListener arg0, int[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#recordDisable(javax.sound.midi.Track)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Track"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RecordDisable(Javax.Sound.Midi.Track arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#recordEnable(javax.sound.midi.Track,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Track"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void RecordEnable(Javax.Sound.Midi.Track arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#removeMetaEventListener(javax.sound.midi.MetaEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void RemoveMetaEventListener(Javax.Sound.Midi.MetaEventListener arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setSequence(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         void SetSequence(Java.Io.InputStream arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setSequence(javax.sound.midi.Sequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetSequence(Javax.Sound.Midi.Sequence arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTrackMute(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void SetTrackMute(int arg0, bool arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTrackSolo(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void SetTrackSolo(int arg0, bool arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#start()"/>
@@ -420,8 +420,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#addMetaEventListener(javax.sound.midi.MetaEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaEventListener"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool AddMetaEventListener(Javax.Sound.Midi.MetaEventListener arg0)
         {
             return IExecuteWithSignature<bool>("addMetaEventListener", "(Ljavax/sound/midi/MetaEventListener;)Z", arg0);
@@ -429,8 +429,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTrackMute(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool GetTrackMute(int arg0)
         {
             return IExecuteWithSignature<bool>("getTrackMute", "(I)Z", arg0);
@@ -438,8 +438,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTrackSolo(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool GetTrackSolo(int arg0)
         {
             return IExecuteWithSignature<bool>("getTrackSolo", "(I)Z", arg0);
@@ -447,7 +447,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRecording()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRecording()
         {
             return IExecuteWithSignature<bool>("isRecording", "()Z");
@@ -455,7 +455,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRunning()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRunning()
         {
             return IExecuteWithSignature<bool>("isRunning", "()Z");
@@ -463,9 +463,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#addControllerEventListener(javax.sound.midi.ControllerEventListener,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.ControllerEventListener"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] AddControllerEventListener(Javax.Sound.Midi.ControllerEventListener arg0, int[] arg1)
         {
             return IExecuteWithSignatureArray<int>("addControllerEventListener", "(Ljavax/sound/midi/ControllerEventListener;[I)[I", arg0, arg1);
@@ -473,9 +473,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#removeControllerEventListener(javax.sound.midi.ControllerEventListener,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.ControllerEventListener"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int[] RemoveControllerEventListener(Javax.Sound.Midi.ControllerEventListener arg0, int[] arg1)
         {
             return IExecuteWithSignatureArray<int>("removeControllerEventListener", "(Ljavax/sound/midi/ControllerEventListener;[I)[I", arg0, arg1);
@@ -483,7 +483,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#recordDisable(javax.sound.midi.Track)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Track"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RecordDisable(Javax.Sound.Midi.Track arg0)
         {
             IExecuteWithSignature("recordDisable", "(Ljavax/sound/midi/Track;)V", arg0);
@@ -491,8 +491,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#recordEnable(javax.sound.midi.Track,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Track"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RecordEnable(Javax.Sound.Midi.Track arg0, int arg1)
         {
             IExecuteWithSignature("recordEnable", "(Ljavax/sound/midi/Track;I)V", arg0, arg1);
@@ -500,7 +500,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#removeMetaEventListener(javax.sound.midi.MetaEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaEventListener"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveMetaEventListener(Javax.Sound.Midi.MetaEventListener arg0)
         {
             IExecuteWithSignature("removeMetaEventListener", "(Ljavax/sound/midi/MetaEventListener;)V", arg0);
@@ -508,9 +508,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setSequence(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void SetSequence(Java.Io.InputStream arg0)
         {
             IExecuteWithSignature("setSequence", "(Ljava/io/InputStream;)V", arg0);
@@ -518,8 +518,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setSequence(javax.sound.midi.Sequence)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetSequence(Javax.Sound.Midi.Sequence arg0)
         {
             IExecuteWithSignature("setSequence", "(Ljavax/sound/midi/Sequence;)V", arg0);
@@ -527,8 +527,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTrackMute(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetTrackMute(int arg0, bool arg1)
         {
             IExecuteWithSignature("setTrackMute", "(IZ)V", arg0, arg1);
@@ -536,8 +536,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTrackSolo(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetTrackSolo(int arg0, bool arg1)
         {
             IExecuteWithSignature("setTrackSolo", "(IZ)V", arg0, arg1);

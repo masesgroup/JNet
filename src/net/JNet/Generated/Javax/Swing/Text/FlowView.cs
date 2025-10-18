@@ -116,8 +116,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.html#%3Cinit%3E(javax.swing.text.Element,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public FlowView(Javax.Swing.Text.Element arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -148,8 +148,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.html#getFlowSpan(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetFlowSpan(int arg0)
         {
             return IExecuteWithSignature<int>("getFlowSpan", "(I)I", arg0);
@@ -157,8 +157,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.html#getFlowStart(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetFlowStart(int arg0)
         {
             return IExecuteWithSignature<int>("getFlowStart", "(I)I", arg0);
@@ -190,9 +190,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.FlowStrategy.html#changedUpdate(javax.swing.text.FlowView,javax.swing.event.DocumentEvent,java.awt.Rectangle)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.FlowView"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
-            /// <param name="arg2"><see cref="Java.Awt.Rectangle"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public void ChangedUpdate(Javax.Swing.Text.FlowView arg0, Javax.Swing.Event.DocumentEvent arg1, Java.Awt.Rectangle arg2)
             {
                 IExecuteWithSignature("changedUpdate", "(Ljavax/swing/text/FlowView;Ljavax/swing/event/DocumentEvent;Ljava/awt/Rectangle;)V", arg0, arg1, arg2);
@@ -200,9 +200,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.FlowStrategy.html#insertUpdate(javax.swing.text.FlowView,javax.swing.event.DocumentEvent,java.awt.Rectangle)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.FlowView"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
-            /// <param name="arg2"><see cref="Java.Awt.Rectangle"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public void InsertUpdate(Javax.Swing.Text.FlowView arg0, Javax.Swing.Event.DocumentEvent arg1, Java.Awt.Rectangle arg2)
             {
                 IExecuteWithSignature("insertUpdate", "(Ljavax/swing/text/FlowView;Ljavax/swing/event/DocumentEvent;Ljava/awt/Rectangle;)V", arg0, arg1, arg2);
@@ -210,7 +210,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.FlowStrategy.html#layout(javax.swing.text.FlowView)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.FlowView"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void Layout(Javax.Swing.Text.FlowView arg0)
             {
                 IExecuteWithSignature("layout", "(Ljavax/swing/text/FlowView;)V", arg0);
@@ -218,9 +218,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/FlowView.FlowStrategy.html#removeUpdate(javax.swing.text.FlowView,javax.swing.event.DocumentEvent,java.awt.Rectangle)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.FlowView"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
-            /// <param name="arg2"><see cref="Java.Awt.Rectangle"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public void RemoveUpdate(Javax.Swing.Text.FlowView arg0, Javax.Swing.Event.DocumentEvent arg1, Java.Awt.Rectangle arg2)
             {
                 IExecuteWithSignature("removeUpdate", "(Ljavax/swing/text/FlowView;Ljavax/swing/event/DocumentEvent;Ljava/awt/Rectangle;)V", arg0, arg1, arg2);

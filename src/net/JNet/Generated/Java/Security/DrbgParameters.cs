@@ -66,7 +66,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html"/>
         /// </summary>
-        public partial class Capability : Java.Lang.Enum<Java.Security.DrbgParameters.Capability>
+        public partial class Capability : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.security.DrbgParameters$Capability";
             /// <summary>
@@ -249,10 +249,10 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#instantiation(int,java.security.DrbgParameters.Capability,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Security.DrbgParameters.Capability"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Security.DrbgParameters.Instantiation"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Security.DrbgParameters.Instantiation InstantiationMethod(int arg0, Java.Security.DrbgParameters.Capability arg1, byte[] arg2)
         {
             return SExecuteWithSignature<Java.Security.DrbgParameters.Instantiation>(LocalBridgeClazz, "instantiation", "(ILjava/security/DrbgParameters$Capability;[B)Ljava/security/DrbgParameters$Instantiation;", arg0, arg1, arg2);
@@ -260,10 +260,10 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#nextBytes(int,boolean,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Security.DrbgParameters.NextBytes"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Security.DrbgParameters.NextBytes NextBytesMethod(int arg0, bool arg1, byte[] arg2)
         {
             return SExecuteWithSignature<Java.Security.DrbgParameters.NextBytes>(LocalBridgeClazz, "nextBytes", "(IZ[B)Ljava/security/DrbgParameters$NextBytes;", arg0, arg1, arg2);
@@ -271,9 +271,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#reseed(boolean,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Security.DrbgParameters.Reseed"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Security.DrbgParameters.Reseed ReseedMethod(bool arg0, byte[] arg1)
         {
             return SExecuteWithSignature<Java.Security.DrbgParameters.Reseed>(LocalBridgeClazz, "reseed", "(Z[B)Ljava/security/DrbgParameters$Reseed;", arg0, arg1);
@@ -323,8 +323,8 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Security.DrbgParameters.Capability"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Security.DrbgParameters.Capability ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/DrbgParameters$Capability;", arg0);
@@ -332,7 +332,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Security.DrbgParameters.Capability"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Security.DrbgParameters.Capability[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "values", "()[Ljava/security/DrbgParameters$Capability;");
@@ -344,7 +344,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsPredictionResistance()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool SupportsPredictionResistance()
             {
                 return IExecuteWithSignature<bool>("supportsPredictionResistance", "()Z");
@@ -352,7 +352,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsReseeding()"/>
             /// </summary>
-            /// <returns><see cref="bool"/></returns>
+            /// <returns><see cref=""/></returns>
             public bool SupportsReseeding()
             {
                 return IExecuteWithSignature<bool>("supportsReseeding", "()Z");

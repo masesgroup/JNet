@@ -108,7 +108,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void AttributeUpdate(Javax.Print.Event.PrintServiceAttributeEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void AttributeUpdate(Javax.Print.Event.PrintServiceAttributeEvent arg0)
         {
             hasOverrideAttributeUpdate = false;
@@ -207,7 +207,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void AttributeUpdate(Javax.Print.Event.PrintServiceAttributeEvent arg0)
         {
             IExecuteWithSignature("attributeUpdate", "(Ljavax/print/event/PrintServiceAttributeEvent;)V", arg0);

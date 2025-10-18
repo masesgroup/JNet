@@ -73,8 +73,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedWriter.html#%3Cinit%3E(java.io.PipedReader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PipedReader"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public PipedWriter(Java.Io.PipedReader arg0)
             : base(arg0)
         {
@@ -98,8 +98,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedWriter.html#connect(java.io.PipedReader)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PipedReader"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Connect(Java.Io.PipedReader arg0)
         {
             IExecuteWithSignature("connect", "(Ljava/io/PipedReader;)V", arg0);

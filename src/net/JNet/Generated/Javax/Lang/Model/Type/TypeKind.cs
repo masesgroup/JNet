@@ -29,7 +29,7 @@ namespace Javax.Lang.Model.Type
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html"/>
     /// </summary>
-    public partial class TypeKind : Java.Lang.Enum<Javax.Lang.Model.Type.TypeKind>
+    public partial class TypeKind : Java.Lang.Enum
     {
         const string _bridgeClassName = "javax.lang.model.type.TypeKind";
         /// <summary>
@@ -217,8 +217,8 @@ namespace Javax.Lang.Model.Type
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeKind"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.Type.TypeKind ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljavax/lang/model/type/TypeKind;", arg0);
@@ -226,7 +226,7 @@ namespace Javax.Lang.Model.Type
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Lang.Model.Type.TypeKind"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Lang.Model.Type.TypeKind[] Values()
         {
             return SExecuteWithSignatureArray<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "values", "()[Ljavax/lang/model/type/TypeKind;");
@@ -238,7 +238,7 @@ namespace Javax.Lang.Model.Type
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#isPrimitive()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsPrimitive()
         {
             return IExecuteWithSignature<bool>("isPrimitive", "()Z");

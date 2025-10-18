@@ -78,9 +78,9 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintJob.html#print(javax.print.MultiDoc,javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.MultiDoc"/></param>
-        /// <param name="arg1"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
-        /// <exception cref="Javax.Print.PrintException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void Print(Javax.Print.MultiDoc arg0, Javax.Print.Attribute.PrintRequestAttributeSet arg1);
 
         #endregion
@@ -116,9 +116,9 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintJob.html#print(javax.print.MultiDoc,javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.MultiDoc"/></param>
-        /// <param name="arg1"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
-        /// <exception cref="Javax.Print.PrintException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Print(Javax.Print.MultiDoc arg0, Javax.Print.Attribute.PrintRequestAttributeSet arg1)
         {
             IExecuteWithSignature("print", "(Ljavax/print/MultiDoc;Ljavax/print/attribute/PrintRequestAttributeSet;)V", arg0, arg1);

@@ -78,18 +78,18 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html#resolveToClass(java.lang.String,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.ResolveResult"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Naming.Spi.ResolveResult ResolveToClass(Java.Lang.String arg0, Java.Lang.Class arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html#resolveToClass(javax.naming.Name,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.ResolveResult"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Javax.Naming.Spi.ResolveResult ResolveToClass(Javax.Naming.Name arg0, Java.Lang.Class arg1);
 
         #endregion
@@ -125,10 +125,10 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html#resolveToClass(java.lang.String,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.ResolveResult"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Naming.Spi.ResolveResult ResolveToClass(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
             return IExecuteWithSignature<Javax.Naming.Spi.ResolveResult>("resolveToClass", "(Ljava/lang/String;Ljava/lang/Class;)Ljavax/naming/spi/ResolveResult;", arg0, arg1);
@@ -136,10 +136,10 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html#resolveToClass(javax.naming.Name,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Javax.Naming.Spi.ResolveResult"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Naming.Spi.ResolveResult ResolveToClass(Javax.Naming.Name arg0, Java.Lang.Class arg1)
         {
             return IExecuteWithSignature<Javax.Naming.Spi.ResolveResult>("resolveToClass", "(Ljavax/naming/Name;Ljava/lang/Class;)Ljavax/naming/spi/ResolveResult;", arg0, arg1);

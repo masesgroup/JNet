@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#%3Cinit%3E(javax.swing.text.TabStop[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.TabStop"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public TabSet(Javax.Swing.Text.TabStop[] arg0)
             : base(arg0)
         {
@@ -104,8 +104,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabIndex(javax.swing.text.TabStop)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Text.TabStop"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetTabIndex(Javax.Swing.Text.TabStop arg0)
         {
             return IExecuteWithSignature<int>("getTabIndex", "(Ljavax/swing/text/TabStop;)I", arg0);
@@ -113,8 +113,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabIndexAfter(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetTabIndexAfter(float arg0)
         {
             return IExecuteWithSignature<int>("getTabIndexAfter", "(F)I", arg0);
@@ -122,8 +122,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTab(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Text.TabStop"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.TabStop GetTab(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.TabStop>("getTab", "(I)Ljavax/swing/text/TabStop;", arg0);
@@ -131,8 +131,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabAfter(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Javax.Swing.Text.TabStop"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Text.TabStop GetTabAfter(float arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Text.TabStop>("getTabAfter", "(F)Ljavax/swing/text/TabStop;", arg0);

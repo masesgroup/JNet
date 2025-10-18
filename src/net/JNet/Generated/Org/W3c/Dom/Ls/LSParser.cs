@@ -94,28 +94,28 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parse(org.w3c.dom.ls.LSInput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Org.W3c.Dom.Document Parse(Org.W3c.Dom.Ls.LSInput arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Org.W3c.Dom.Document ParseURI(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg2"><see cref="short"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Org.W3c.Dom.Node ParseWithContext(Org.W3c.Dom.Ls.LSInput arg0, Org.W3c.Dom.Node arg1, short arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#abort()"/>
@@ -213,10 +213,10 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parse(org.w3c.dom.ls.LSInput)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Document Parse(Org.W3c.Dom.Ls.LSInput arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Lorg/w3c/dom/ls/LSInput;)Lorg/w3c/dom/Document;", arg0);
@@ -224,10 +224,10 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Document ParseURI(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parseURI", "(Ljava/lang/String;)Lorg/w3c/dom/Document;", arg0);
@@ -235,12 +235,12 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg2"><see cref="short"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Node ParseWithContext(Org.W3c.Dom.Ls.LSInput arg0, Org.W3c.Dom.Node arg1, short arg2)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Node>("parseWithContext", "(Lorg/w3c/dom/ls/LSInput;Lorg/w3c/dom/Node;S)Lorg/w3c/dom/Node;", arg0, arg1, arg2);

@@ -108,32 +108,32 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printDataTransferCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PrintDataTransferCompleted(Javax.Print.Event.PrintJobEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobCanceled(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PrintJobCanceled(Javax.Print.Event.PrintJobEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PrintJobCompleted(Javax.Print.Event.PrintJobEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobFailed(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PrintJobFailed(Javax.Print.Event.PrintJobEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobNoMoreEvents(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PrintJobNoMoreEvents(Javax.Print.Event.PrintJobEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobRequiresAttention(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void PrintJobRequiresAttention(Javax.Print.Event.PrintJobEvent arg0);
 
         #endregion
@@ -198,7 +198,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printDataTransferCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PrintDataTransferCompleted(Javax.Print.Event.PrintJobEvent arg0)
         {
             hasOverridePrintDataTransferCompleted = false;
@@ -222,7 +222,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobCanceled(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PrintJobCanceled(Javax.Print.Event.PrintJobEvent arg0)
         {
             hasOverridePrintJobCanceled = false;
@@ -246,7 +246,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PrintJobCompleted(Javax.Print.Event.PrintJobEvent arg0)
         {
             hasOverridePrintJobCompleted = false;
@@ -270,7 +270,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobFailed(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PrintJobFailed(Javax.Print.Event.PrintJobEvent arg0)
         {
             hasOverridePrintJobFailed = false;
@@ -294,7 +294,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobNoMoreEvents(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PrintJobNoMoreEvents(Javax.Print.Event.PrintJobEvent arg0)
         {
             hasOverridePrintJobNoMoreEvents = false;
@@ -318,7 +318,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobRequiresAttention(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void PrintJobRequiresAttention(Javax.Print.Event.PrintJobEvent arg0)
         {
             hasOverridePrintJobRequiresAttention = false;
@@ -357,7 +357,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printDataTransferCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PrintDataTransferCompleted(Javax.Print.Event.PrintJobEvent arg0)
         {
             IExecuteWithSignature("printDataTransferCompleted", "(Ljavax/print/event/PrintJobEvent;)V", arg0);
@@ -365,7 +365,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobCanceled(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PrintJobCanceled(Javax.Print.Event.PrintJobEvent arg0)
         {
             IExecuteWithSignature("printJobCanceled", "(Ljavax/print/event/PrintJobEvent;)V", arg0);
@@ -373,7 +373,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PrintJobCompleted(Javax.Print.Event.PrintJobEvent arg0)
         {
             IExecuteWithSignature("printJobCompleted", "(Ljavax/print/event/PrintJobEvent;)V", arg0);
@@ -381,7 +381,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobFailed(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PrintJobFailed(Javax.Print.Event.PrintJobEvent arg0)
         {
             IExecuteWithSignature("printJobFailed", "(Ljavax/print/event/PrintJobEvent;)V", arg0);
@@ -389,7 +389,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobNoMoreEvents(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PrintJobNoMoreEvents(Javax.Print.Event.PrintJobEvent arg0)
         {
             IExecuteWithSignature("printJobNoMoreEvents", "(Ljavax/print/event/PrintJobEvent;)V", arg0);
@@ -397,7 +397,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobRequiresAttention(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void PrintJobRequiresAttention(Javax.Print.Event.PrintJobEvent arg0)
         {
             IExecuteWithSignature("printJobRequiresAttention", "(Ljavax/print/event/PrintJobEvent;)V", arg0);

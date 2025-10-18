@@ -29,7 +29,7 @@ namespace Java.Lang.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html"/>
     /// </summary>
-    public partial class MemoryType : Java.Lang.Enum<Java.Lang.Management.MemoryType>
+    public partial class MemoryType : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.lang.management.MemoryType";
         /// <summary>
@@ -97,8 +97,8 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Management.MemoryType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Management.MemoryType ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.Management.MemoryType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/management/MemoryType;", arg0);
@@ -106,7 +106,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Management.MemoryType"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Lang.Management.MemoryType[] Values()
         {
             return SExecuteWithSignatureArray<Java.Lang.Management.MemoryType>(LocalBridgeClazz, "values", "()[Ljava/lang/management/MemoryType;");

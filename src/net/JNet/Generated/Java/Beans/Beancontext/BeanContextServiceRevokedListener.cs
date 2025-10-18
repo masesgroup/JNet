@@ -108,7 +108,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0);
 
         #endregion
@@ -168,7 +168,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
         {
             hasOverrideServiceRevoked = false;
@@ -207,7 +207,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
         {
             IExecuteWithSignature("serviceRevoked", "(Ljava/beans/beancontext/BeanContextServiceRevokedEvent;)V", arg0);

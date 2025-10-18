@@ -91,8 +91,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#format(java.util.logging.LogRecord)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Format(Java.Util.Logging.LogRecord arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;", arg0);
@@ -100,8 +100,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#formatMessage(java.util.logging.LogRecord)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String FormatMessage(Java.Util.Logging.LogRecord arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("formatMessage", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;", arg0);
@@ -109,8 +109,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#getHead(java.util.logging.Handler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetHead(Java.Util.Logging.Handler arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getHead", "(Ljava/util/logging/Handler;)Ljava/lang/String;", arg0);
@@ -118,8 +118,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html#getTail(java.util.logging.Handler)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetTail(Java.Util.Logging.Handler arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getTail", "(Ljava/util/logging/Handler;)Ljava/lang/String;", arg0);

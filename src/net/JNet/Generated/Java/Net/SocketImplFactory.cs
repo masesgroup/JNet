@@ -78,7 +78,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImplFactory.html#createSocketImpl()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.SocketImpl"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Net.SocketImpl CreateSocketImpl();
 
         #endregion
@@ -114,7 +114,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImplFactory.html#createSocketImpl()"/>
         /// </summary>
-        /// <returns><see cref="Java.Net.SocketImpl"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Net.SocketImpl CreateSocketImpl()
         {
             return IExecuteWithSignature<Java.Net.SocketImpl>("createSocketImpl", "()Ljava/net/SocketImpl;");

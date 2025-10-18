@@ -89,7 +89,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#configuration()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ModuleNs.Configuration Configuration()
         {
             return IExecuteWithSignature<Java.Lang.ModuleNs.Configuration>("configuration", "()Ljava/lang/module/Configuration;");
@@ -97,7 +97,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reference()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleReference"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ModuleNs.ModuleReference Reference()
         {
             return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleReference>("reference", "()Ljava/lang/module/ModuleReference;");
@@ -105,7 +105,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -113,10 +113,10 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reads()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule> Reads()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set Reads()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule>>("reads", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("reads", "()Ljava/util/Set;");
         }
 
         #endregion

@@ -77,7 +77,7 @@ namespace Java.Security.Cert
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.X509CRL"/> to <see cref="Java.Security.Cert.X509Extension"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Cert.X509Extension(Java.Security.Cert.X509CRL t) => t.Cast<Java.Security.Cert.X509Extension>();
 
@@ -179,8 +179,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getRevokedCertificate(java.math.BigInteger)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
-        /// <returns><see cref="Java.Security.Cert.X509CRLEntry"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Security.Cert.X509CRLEntry GetRevokedCertificate(Java.Math.BigInteger arg0)
         {
             return IExecuteWithSignature<Java.Security.Cert.X509CRLEntry>("getRevokedCertificate", "(Ljava/math/BigInteger;)Ljava/security/cert/X509CRLEntry;", arg0);
@@ -188,13 +188,13 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#verify(java.security.PublicKey,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Security.Cert.CRLException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Verify(Java.Security.PublicKey arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("verify", "(Ljava/security/PublicKey;Ljava/lang/String;)V", arg0, arg1);
@@ -202,12 +202,12 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#verify(java.security.PublicKey)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <exception cref="Java.Security.Cert.CRLException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Verify(Java.Security.PublicKey arg0)
         {
             IExecuteWithSignature("verify", "(Ljava/security/PublicKey;)V", arg0);
@@ -215,8 +215,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#getRevokedCertificate(java.security.cert.X509Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        /// <returns><see cref="Java.Security.Cert.X509CRLEntry"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Security.Cert.X509CRLEntry GetRevokedCertificate(Java.Security.Cert.X509Certificate arg0)
         {
             return IExecuteWithSignature<Java.Security.Cert.X509CRLEntry>("getRevokedCertificate", "(Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509CRLEntry;", arg0);
@@ -224,12 +224,12 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#verify(java.security.PublicKey,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
-        /// <exception cref="Java.Security.Cert.CRLException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.InvalidKeyException"/>
-        /// <exception cref="Java.Security.SignatureException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Verify(Java.Security.PublicKey arg0, Java.Security.Provider arg1)
         {
             IExecuteWithSignature("verify", "(Ljava/security/PublicKey;Ljava/security/Provider;)V", arg0, arg1);

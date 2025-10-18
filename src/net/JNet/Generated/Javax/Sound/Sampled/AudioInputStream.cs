@@ -73,9 +73,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#%3Cinit%3E(java.io.InputStream,javax.sound.sampled.AudioFormat,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public AudioInputStream(Java.Io.InputStream arg0, Javax.Sound.Sampled.AudioFormat arg1, long arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,7 +83,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#%3Cinit%3E(javax.sound.sampled.TargetDataLine)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.TargetDataLine"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public AudioInputStream(Javax.Sound.Sampled.TargetDataLine arg0)
             : base(arg0)
         {

@@ -73,10 +73,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#%3Cinit%3E(float,float,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public Color(float arg0, float arg1, float arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -84,9 +84,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#%3Cinit%3E(float,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public Color(float arg0, float arg1, float arg2)
             : base(arg0, arg1, arg2)
         {
@@ -94,8 +94,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#%3Cinit%3E(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public Color(int arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -103,10 +103,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public Color(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -114,9 +114,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public Color(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -124,7 +124,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Color(int arg0)
             : base(arg0)
         {
@@ -132,9 +132,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#%3Cinit%3E(java.awt.color.ColorSpace,float[],float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public Color(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1, float arg2)
             : base(arg0, arg1, arg2)
         {
@@ -144,11 +144,11 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Color"/> to <see cref="Java.Awt.Paint"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.Paint(Java.Awt.Color t) => t.Cast<Java.Awt.Paint>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Color"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Color t) => t.Cast<Java.Io.Serializable>();
 
@@ -318,11 +318,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#RGBtoHSB(int,int,int,float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static float[] RGBtoHSB(int arg0, int arg1, int arg2, float[] arg3)
         {
             return SExecuteWithSignatureArray<float>(LocalBridgeClazz, "RGBtoHSB", "(III[F)[F", arg0, arg1, arg2, arg3);
@@ -330,10 +330,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#HSBtoRGB(float,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static int HSBtoRGB(float arg0, float arg1, float arg2)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "HSBtoRGB", "(FFF)I", arg0, arg1, arg2);
@@ -341,9 +341,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#decode(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
-        /// <exception cref="Java.Lang.NumberFormatException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Java.Awt.Color Decode(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/awt/Color;", arg0);
@@ -351,9 +351,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Color GetColor(Java.Lang.String arg0, int arg1)
         {
             return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "getColor", "(Ljava/lang/String;I)Ljava/awt/Color;", arg0, arg1);
@@ -361,9 +361,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Color GetColor(Java.Lang.String arg0, Java.Awt.Color arg1)
         {
             return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "getColor", "(Ljava/lang/String;Ljava/awt/Color;)Ljava/awt/Color;", arg0, arg1);
@@ -371,8 +371,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Color GetColor(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "getColor", "(Ljava/lang/String;)Ljava/awt/Color;", arg0);
@@ -380,10 +380,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getHSBColor(float,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Color GetHSBColor(float arg0, float arg1, float arg2)
         {
             return SExecuteWithSignature<Java.Awt.Color>(LocalBridgeClazz, "getHSBColor", "(FFF)Ljava/awt/Color;", arg0, arg1, arg2);
@@ -444,8 +444,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColorComponents(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetColorComponents(float[] arg0)
         {
             return IExecuteWithSignatureArray<float>("getColorComponents", "([F)[F", new object[] { arg0 });
@@ -453,9 +453,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColorComponents(java.awt.color.ColorSpace,float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetColorComponents(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1)
         {
             return IExecuteWithSignatureArray<float>("getColorComponents", "(Ljava/awt/color/ColorSpace;[F)[F", arg0, arg1);
@@ -463,8 +463,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getComponents(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetComponents(float[] arg0)
         {
             return IExecuteWithSignatureArray<float>("getComponents", "([F)[F", new object[] { arg0 });
@@ -472,9 +472,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getComponents(java.awt.color.ColorSpace,float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetComponents(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1)
         {
             return IExecuteWithSignatureArray<float>("getComponents", "(Ljava/awt/color/ColorSpace;[F)[F", arg0, arg1);
@@ -482,8 +482,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getRGBColorComponents(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetRGBColorComponents(float[] arg0)
         {
             return IExecuteWithSignatureArray<float>("getRGBColorComponents", "([F)[F", new object[] { arg0 });
@@ -491,8 +491,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getRGBComponents(float[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float[] GetRGBComponents(float[] arg0)
         {
             return IExecuteWithSignatureArray<float>("getRGBComponents", "([F)[F", new object[] { arg0 });
@@ -500,7 +500,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#brighter()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Color Brighter()
         {
             return IExecuteWithSignature<Java.Awt.Color>("brighter", "()Ljava/awt/Color;");
@@ -508,7 +508,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#darker()"/>
         /// </summary>
-        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Color Darker()
         {
             return IExecuteWithSignature<Java.Awt.Color>("darker", "()Ljava/awt/Color;");
@@ -516,12 +516,12 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
-        /// <param name="arg3"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <param name="arg4"><see cref="Java.Awt.RenderingHints"/></param>
-        /// <returns><see cref="Java.Awt.PaintContext"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.PaintContext CreateContext(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.Rectangle arg1, Java.Awt.Geom.Rectangle2D arg2, Java.Awt.Geom.AffineTransform arg3, Java.Awt.RenderingHints arg4)
         {
             return IExecuteWithSignature<Java.Awt.PaintContext>("createContext", "(Ljava/awt/image/ColorModel;Ljava/awt/Rectangle;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/AffineTransform;Ljava/awt/RenderingHints;)Ljava/awt/PaintContext;", arg0, arg1, arg2, arg3, arg4);

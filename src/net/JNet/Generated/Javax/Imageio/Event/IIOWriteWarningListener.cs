@@ -108,9 +108,9 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteWarningListener.html#warningOccurred(javax.imageio.ImageWriter,int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         void WarningOccurred(Javax.Imageio.ImageWriter arg0, int arg1, Java.Lang.String arg2);
 
         #endregion
@@ -170,9 +170,9 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteWarningListener.html#warningOccurred(javax.imageio.ImageWriter,int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public virtual void WarningOccurred(Javax.Imageio.ImageWriter arg0, int arg1, Java.Lang.String arg2)
         {
             hasOverrideWarningOccurred = false;
@@ -211,9 +211,9 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteWarningListener.html#warningOccurred(javax.imageio.ImageWriter,int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public override void WarningOccurred(Javax.Imageio.ImageWriter arg0, int arg1, Java.Lang.String arg2)
         {
             IExecuteWithSignature("warningOccurred", "(Ljavax/imageio/ImageWriter;ILjava/lang/String;)V", arg0, arg1, arg2);

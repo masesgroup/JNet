@@ -68,12 +68,12 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ComboBoxModel<E> declaration
+    #region ComboBoxModel declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class ComboBoxModel<E> : Javax.Swing.ListModel<E>
+    public partial class ComboBoxModel : Javax.Swing.ListModel
     {
         const string _bridgeClassName = "javax.swing.ComboBoxModel";
         /// <summary>
@@ -150,11 +150,11 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region IComboBoxModel<E>
+    #region IComboBoxModel
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html"/>
     /// </summary>
-    public partial interface IComboBoxModel<E> : Javax.Swing.IListModel<E>
+    public partial interface IComboBoxModel : Javax.Swing.IListModel
     {
         #region Instance methods
         /// <summary>
@@ -172,8 +172,8 @@ namespace Javax.Swing
     }
     #endregion
 
-    #region ComboBoxModel<E> implementation
-    public partial class ComboBoxModel<E> : Javax.Swing.IComboBoxModel<E>
+    #region ComboBoxModel implementation
+    public partial class ComboBoxModel : Javax.Swing.IComboBoxModel
     {
         #region Constructors
 
@@ -181,9 +181,9 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.ComboBoxModel{E}"/> to <see cref="Javax.Swing.ComboBoxModel"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Swing.ComboBoxModel(Javax.Swing.ComboBoxModel<E> t) => t.Cast<Javax.Swing.ComboBoxModel>();
+        public static implicit operator Javax.Swing.ComboBoxModel(Javax.Swing.ComboBoxModel t) => t.Cast<Javax.Swing.ComboBoxModel>();
 
         #endregion
 

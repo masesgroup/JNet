@@ -87,14 +87,14 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getAvailableZoneIds()"/> 
         /// </summary>
-        public static Java.Util.Set<Java.Lang.String> AvailableZoneIds
+        public static Java.Util.Set AvailableZoneIds
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableZoneIds", "()Ljava/util/Set;"); }
+            get { return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "getAvailableZoneIds", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#refresh()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public static bool Refresh()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "refresh", "()Z");
@@ -102,9 +102,9 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getRules(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Zone.ZoneRules GetRules(Java.Lang.String arg0, bool arg1)
         {
             return SExecuteWithSignature<Java.Time.Zone.ZoneRules>(LocalBridgeClazz, "getRules", "(Ljava/lang/String;Z)Ljava/time/zone/ZoneRules;", arg0, arg1);
@@ -112,16 +112,16 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getVersions(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        public static Java.Util.NavigableMap<Java.Lang.String, Java.Time.Zone.ZoneRules> GetVersions(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.NavigableMap<, > GetVersions(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.NavigableMap<Java.Lang.String, Java.Time.Zone.ZoneRules>>(LocalBridgeClazz, "getVersions", "(Ljava/lang/String;)Ljava/util/NavigableMap;", arg0);
+            return SExecuteWithSignature<Java.Util.NavigableMap<, >>(LocalBridgeClazz, "getVersions", "(Ljava/lang/String;)Ljava/util/NavigableMap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#registerProvider(java.time.zone.ZoneRulesProvider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Zone.ZoneRulesProvider"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void RegisterProvider(Java.Time.Zone.ZoneRulesProvider arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "registerProvider", "(Ljava/time/zone/ZoneRulesProvider;)V", arg0);

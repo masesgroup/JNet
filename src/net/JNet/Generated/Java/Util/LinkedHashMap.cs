@@ -66,13 +66,13 @@ namespace Java.Util
     }
     #endregion
 
-    #region LinkedHashMap<K, V> declaration
+    #region LinkedHashMap<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class LinkedHashMap<K, V> : Java.Util.HashMap<K, V>
+    public partial class LinkedHashMap<, > : Java.Util.HashMap<, >
     {
         const string _bridgeClassName = "java.util.LinkedHashMap";
         /// <summary>
@@ -116,9 +116,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#%3Cinit%3E(int,float,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public LinkedHashMap(int arg0, float arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -126,8 +126,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public LinkedHashMap(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -135,7 +135,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public LinkedHashMap(int arg0)
             : base(arg0)
         {
@@ -143,7 +143,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public LinkedHashMap(Java.Util.Map arg0)
             : base(arg0)
         {
@@ -175,16 +175,16 @@ namespace Java.Util
     }
     #endregion
 
-    #region LinkedHashMap<K, V> implementation
-    public partial class LinkedHashMap<K, V>
+    #region LinkedHashMap<, > implementation
+    public partial class LinkedHashMap<, >
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#%3Cinit%3E(int,float,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public LinkedHashMap(int arg0, float arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -192,8 +192,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public LinkedHashMap(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -201,7 +201,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public LinkedHashMap(int arg0)
             : base(arg0)
         {
@@ -209,8 +209,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public LinkedHashMap(Java.Util.Map<K, V> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public LinkedHashMap(Java.Util.Map<, > arg0)
             : base(arg0)
         {
         }
@@ -219,9 +219,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.LinkedHashMap{K, V}"/> to <see cref="Java.Util.LinkedHashMap"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.LinkedHashMap(Java.Util.LinkedHashMap<K, V> t) => t.Cast<Java.Util.LinkedHashMap>();
+        public static implicit operator Java.Util.LinkedHashMap(Java.Util.LinkedHashMap<, > t) => t.Cast<Java.Util.LinkedHashMap>();
 
         #endregion
 

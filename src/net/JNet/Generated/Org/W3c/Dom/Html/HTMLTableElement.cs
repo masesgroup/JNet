@@ -134,24 +134,24 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createCaption()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        /// <returns><see cref=""/></returns>
         Org.W3c.Dom.Html.HTMLElement CreateCaption();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTFoot()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        /// <returns><see cref=""/></returns>
         Org.W3c.Dom.Html.HTMLElement CreateTFoot();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTHead()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        /// <returns><see cref=""/></returns>
         Org.W3c.Dom.Html.HTMLElement CreateTHead();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#insertRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Org.W3c.Dom.Html.HTMLElement InsertRow(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteCaption()"/>
@@ -160,8 +160,8 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void DeleteRow(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteTFoot()"/>
@@ -303,7 +303,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createCaption()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.Html.HTMLElement CreateCaption()
         {
             return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLElement>("createCaption", "()Lorg/w3c/dom/html/HTMLElement;");
@@ -311,7 +311,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTFoot()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.Html.HTMLElement CreateTFoot()
         {
             return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLElement>("createTFoot", "()Lorg/w3c/dom/html/HTMLElement;");
@@ -319,7 +319,7 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTHead()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.Html.HTMLElement CreateTHead()
         {
             return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLElement>("createTHead", "()Lorg/w3c/dom/html/HTMLElement;");
@@ -327,9 +327,9 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#insertRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Org.W3c.Dom.Html.HTMLElement InsertRow(int arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.Html.HTMLElement>("insertRow", "(I)Lorg/w3c/dom/html/HTMLElement;", arg0);
@@ -344,8 +344,8 @@ namespace Org.W3c.Dom.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void DeleteRow(int arg0)
         {
             IExecuteWithSignature("deleteRow", "(I)V", arg0);

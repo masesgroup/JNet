@@ -75,7 +75,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Permission(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -85,11 +85,11 @@ namespace Java.Security
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Permission"/> to <see cref="Java.Security.Guard"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Guard(Java.Security.Permission t) => t.Cast<Java.Security.Guard>();
         /// <summary>
-        /// Converter from <see cref="Java.Security.Permission"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.Permission t) => t.Cast<Java.Io.Serializable>();
 
@@ -121,8 +121,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#implies(java.security.Permission)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Implies(Java.Security.Permission arg0)
         {
             return IExecuteWithSignature<bool>("implies", "(Ljava/security/Permission;)Z", arg0);
@@ -130,7 +130,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#newPermissionCollection()"/>
         /// </summary>
-        /// <returns><see cref="Java.Security.PermissionCollection"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Security.PermissionCollection NewPermissionCollection()
         {
             return IExecuteWithSignature<Java.Security.PermissionCollection>("newPermissionCollection", "()Ljava/security/PermissionCollection;");
@@ -138,8 +138,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html#checkGuard(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <exception cref="Java.Lang.SecurityException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void CheckGuard(object arg0)
         {
             IExecuteWithSignature("checkGuard", "(Ljava/lang/Object;)V", arg0);

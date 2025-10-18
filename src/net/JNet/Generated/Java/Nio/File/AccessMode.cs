@@ -29,7 +29,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html"/>
     /// </summary>
-    public partial class AccessMode : Java.Lang.Enum<Java.Nio.File.AccessMode>
+    public partial class AccessMode : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.nio.file.AccessMode";
         /// <summary>
@@ -103,8 +103,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Nio.File.AccessMode"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.AccessMode ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Nio.File.AccessMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/AccessMode;", arg0);
@@ -112,7 +112,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.AccessMode"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Nio.File.AccessMode[] Values()
         {
             return SExecuteWithSignatureArray<Java.Nio.File.AccessMode>(LocalBridgeClazz, "values", "()[Ljava/nio/file/AccessMode;");

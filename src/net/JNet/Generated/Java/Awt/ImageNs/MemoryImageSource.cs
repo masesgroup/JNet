@@ -73,24 +73,24 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#%3Cinit%3E(int,int,int[],int,int,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="Java.Util.Hashtable"/></param>
-        public MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Util.Hashtable<object, object> arg5)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        public MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Util.Hashtable<, > arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#%3Cinit%3E(int,int,int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -98,26 +98,26 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#%3Cinit%3E(int,int,java.awt.image.ColorModel,byte[],int,int,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg3"><see cref="byte"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="Java.Util.Hashtable"/></param>
-        public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5, Java.Util.Hashtable<, > arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#%3Cinit%3E(int,int,java.awt.image.ColorModel,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg3"><see cref="byte"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -125,26 +125,26 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#%3Cinit%3E(int,int,java.awt.image.ColorModel,int[],int,int,java.util.Hashtable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="Java.Util.Hashtable"/></param>
-        public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
+        /// <param name="arg6"><see cref=""/></param>
+        public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5, Java.Util.Hashtable<, > arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#%3Cinit%3E(int,int,java.awt.image.ColorModel,int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <param name="arg5"><see cref=""/></param>
         public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -168,8 +168,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#isConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             return IExecuteWithSignature<bool>("isConsumer", "(Ljava/awt/image/ImageConsumer;)Z", arg0);
@@ -177,7 +177,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#addConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("addConsumer", "(Ljava/awt/image/ImageConsumer;)V", arg0);
@@ -185,10 +185,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(byte[],java.awt.image.ColorModel,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void NewPixels(byte[] arg0, Java.Awt.ImageNs.ColorModel arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("newPixels", "([BLjava/awt/image/ColorModel;II)V", arg0, arg1, arg2, arg3);
@@ -196,11 +196,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(int,int,int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
         public void NewPixels(int arg0, int arg1, int arg2, int arg3, bool arg4)
         {
             IExecuteWithSignature("newPixels", "(IIIIZ)V", arg0, arg1, arg2, arg3, arg4);
@@ -208,10 +208,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void NewPixels(int arg0, int arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("newPixels", "(IIII)V", arg0, arg1, arg2, arg3);
@@ -219,10 +219,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(int[],java.awt.image.ColorModel,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public void NewPixels(int[] arg0, Java.Awt.ImageNs.ColorModel arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("newPixels", "([ILjava/awt/image/ColorModel;II)V", arg0, arg1, arg2, arg3);
@@ -230,7 +230,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#removeConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RemoveConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("removeConsumer", "(Ljava/awt/image/ImageConsumer;)V", arg0);
@@ -238,7 +238,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#setAnimated(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetAnimated(bool arg0)
         {
             IExecuteWithSignature("setAnimated", "(Z)V", arg0);
@@ -246,7 +246,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#setFullBufferUpdates(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetFullBufferUpdates(bool arg0)
         {
             IExecuteWithSignature("setFullBufferUpdates", "(Z)V", arg0);
@@ -261,7 +261,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RequestTopDownLeftRightResend(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("requestTopDownLeftRightResend", "(Ljava/awt/image/ImageConsumer;)V", arg0);
@@ -269,7 +269,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#startProduction(java.awt.image.ImageConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void StartProduction(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecuteWithSignature("startProduction", "(Ljava/awt/image/ImageConsumer;)V", arg0);

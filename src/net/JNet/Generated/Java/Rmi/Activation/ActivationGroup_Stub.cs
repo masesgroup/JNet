@@ -73,7 +73,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup_Stub.html#%3Cinit%3E(java.rmi.server.RemoteRef)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ActivationGroup_Stub(Java.Rmi.Server.RemoteRef arg0)
             : base(arg0)
         {
@@ -83,11 +83,11 @@ namespace Java.Rmi.Activation
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Rmi.Activation.ActivationGroup_Stub"/> to <see cref="Java.Rmi.Activation.ActivationInstantiator"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Rmi.Activation.ActivationInstantiator(Java.Rmi.Activation.ActivationGroup_Stub t) => t.Cast<Java.Rmi.Activation.ActivationInstantiator>();
         /// <summary>
-        /// Converter from <see cref="Java.Rmi.Activation.ActivationGroup_Stub"/> to <see cref="Java.Rmi.Remote"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Rmi.Remote(Java.Rmi.Activation.ActivationGroup_Stub t) => t.Cast<Java.Rmi.Remote>();
 
@@ -105,11 +105,11 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup_Stub.html#newInstance(java.rmi.activation.ActivationID,java.rmi.activation.ActivationDesc)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
-        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationDesc"/></param>
-        /// <returns><see cref="Java.Rmi.MarshalledObject"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Rmi.MarshalledObject NewInstance(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Activation.ActivationDesc arg1)
         {
             return IExecute<Java.Rmi.MarshalledObject>("newInstance", arg0, arg1);

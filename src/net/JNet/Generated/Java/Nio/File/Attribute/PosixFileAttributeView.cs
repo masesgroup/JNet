@@ -78,25 +78,25 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.String Name();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setGroup(java.nio.file.attribute.GroupPrincipal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetGroup(Java.Nio.File.Attribute.GroupPrincipal arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setPermissions(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void SetPermissions(Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg0);
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        void SetPermissions(Java.Util.Set arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#readAttributes()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes();
 
         #endregion
@@ -118,11 +118,11 @@ namespace Java.Nio.File.Attribute
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.Attribute.PosixFileAttributeView"/> to <see cref="Java.Nio.File.Attribute.BasicFileAttributeView"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.File.Attribute.BasicFileAttributeView(Java.Nio.File.Attribute.PosixFileAttributeView t) => t.Cast<Java.Nio.File.Attribute.BasicFileAttributeView>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.Attribute.PosixFileAttributeView"/> to <see cref="Java.Nio.File.Attribute.FileOwnerAttributeView"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Nio.File.Attribute.FileOwnerAttributeView(Java.Nio.File.Attribute.PosixFileAttributeView t) => t.Cast<Java.Nio.File.Attribute.FileOwnerAttributeView>();
 
@@ -140,7 +140,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#name()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
@@ -148,8 +148,8 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setGroup(java.nio.file.attribute.GroupPrincipal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetGroup(Java.Nio.File.Attribute.GroupPrincipal arg0)
         {
             IExecuteWithSignature("setGroup", "(Ljava/nio/file/attribute/GroupPrincipal;)V", arg0);
@@ -157,17 +157,17 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setPermissions(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public void SetPermissions(Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        public void SetPermissions(Java.Util.Set arg0)
         {
             IExecuteWithSignature("setPermissions", "(Ljava/util/Set;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#readAttributes()"/>
         /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes()
         {
             return IExecuteWithSignature<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;");

@@ -143,17 +143,17 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsActive();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsRunning();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         int Available();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#drain()"/>
@@ -247,7 +247,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsActive()
         {
             return IExecuteWithSignature<bool>("isActive", "()Z");
@@ -255,7 +255,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRunning()
         {
             return IExecuteWithSignature<bool>("isRunning", "()Z");
@@ -263,7 +263,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Available()
         {
             return IExecuteWithSignature<int>("available", "()I");
@@ -307,9 +307,9 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#%3Cinit%3E(java.lang.Class,javax.sound.sampled.AudioFormat,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-            /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
             public Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -317,8 +317,8 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#%3Cinit%3E(java.lang.Class,javax.sound.sampled.AudioFormat)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-            /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1)
                 : base(arg0, arg1)
             {
@@ -326,10 +326,10 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#%3Cinit%3E(java.lang.Class,javax.sound.sampled.AudioFormat[],int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-            /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-            /// <param name="arg2"><see cref="int"/></param>
-            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
+            /// <param name="arg2"><see cref=""/></param>
+            /// <param name="arg3"><see cref=""/></param>
             public Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat[] arg1, int arg2, int arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -374,8 +374,8 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#isFormatSupported(javax.sound.sampled.AudioFormat)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-            /// <returns><see cref="bool"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public bool IsFormatSupported(Javax.Sound.Sampled.AudioFormat arg0)
             {
                 return IExecuteWithSignature<bool>("isFormatSupported", "(Ljavax/sound/sampled/AudioFormat;)Z", arg0);

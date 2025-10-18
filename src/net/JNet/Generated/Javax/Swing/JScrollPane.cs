@@ -73,8 +73,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JScrollPane(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -82,9 +82,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#%3Cinit%3E(java.awt.Component,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public JScrollPane(Java.Awt.Component arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -92,7 +92,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#%3Cinit%3E(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JScrollPane(Java.Awt.Component arg0)
             : base(arg0)
         {
@@ -102,11 +102,11 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JScrollPane"/> to <see cref="Javax.Swing.ScrollPaneConstants"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.ScrollPaneConstants(Javax.Swing.JScrollPane t) => t.Cast<Javax.Swing.ScrollPaneConstants>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.JScrollPane"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JScrollPane t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -187,7 +187,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#isWheelScrollingEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsWheelScrollingEnabled()
         {
             return IExecuteWithSignature<bool>("isWheelScrollingEnabled", "()Z");
@@ -195,8 +195,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#getCorner(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Component GetCorner(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getCorner", "(Ljava/lang/String;)Ljava/awt/Component;", arg0);
@@ -204,7 +204,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#createHorizontalScrollBar()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.JScrollBar"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JScrollBar CreateHorizontalScrollBar()
         {
             return IExecuteWithSignature<Javax.Swing.JScrollBar>("createHorizontalScrollBar", "()Ljavax/swing/JScrollBar;");
@@ -212,7 +212,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#createVerticalScrollBar()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Swing.JScrollBar"/></returns>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JScrollBar CreateVerticalScrollBar()
         {
             return IExecuteWithSignature<Javax.Swing.JScrollBar>("createVerticalScrollBar", "()Ljavax/swing/JScrollBar;");
@@ -220,7 +220,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#setColumnHeaderView(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetColumnHeaderView(Java.Awt.Component arg0)
         {
             IExecuteWithSignature("setColumnHeaderView", "(Ljava/awt/Component;)V", arg0);
@@ -228,8 +228,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#setCorner(java.lang.String,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetCorner(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
             IExecuteWithSignature("setCorner", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
@@ -237,7 +237,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#setRowHeaderView(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetRowHeaderView(Java.Awt.Component arg0)
         {
             IExecuteWithSignature("setRowHeaderView", "(Ljava/awt/Component;)V", arg0);
@@ -245,7 +245,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#setUI(javax.swing.plaf.ScrollPaneUI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ScrollPaneUI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetUI(Javax.Swing.Plaf.ScrollPaneUI arg0)
         {
             IExecuteWithSignature("setUI", "(Ljavax/swing/plaf/ScrollPaneUI;)V", arg0);
@@ -253,7 +253,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#setViewportView(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetViewportView(Java.Awt.Component arg0)
         {
             IExecuteWithSignature("setViewportView", "(Ljava/awt/Component;)V", arg0);
@@ -261,7 +261,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#setWheelScrollingEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetWheelScrollingEnabled(bool arg0)
         {
             IExecuteWithSignature("setWheelScrollingEnabled", "(Z)V", arg0);

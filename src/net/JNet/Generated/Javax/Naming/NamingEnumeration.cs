@@ -68,12 +68,12 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NamingEnumeration<T> declaration
+    #region NamingEnumeration declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class NamingEnumeration<T> : Java.Util.Enumeration<T>
+    public partial class NamingEnumeration : Java.Util.Enumeration
     {
         const string _bridgeClassName = "javax.naming.NamingEnumeration";
         /// <summary>
@@ -135,8 +135,8 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool HasMore()
         {
             return IExecuteWithSignature<bool>("hasMore", "()Z");
@@ -144,8 +144,8 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public object Next()
         {
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
@@ -153,7 +153,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
         /// </summary>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -169,29 +169,29 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region INamingEnumeration<T>
+    #region INamingEnumeration
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html"/>
     /// </summary>
-    public partial interface INamingEnumeration<T> : Java.Util.IEnumeration<T>
+    public partial interface INamingEnumeration : Java.Util.IEnumeration
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool HasMore();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         T Next();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
         /// </summary>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <exception cref=""/>
         void Close();
 
         #endregion
@@ -204,8 +204,8 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NamingEnumeration<T> implementation
-    public partial class NamingEnumeration<T> : Javax.Naming.INamingEnumeration<T>
+    #region NamingEnumeration implementation
+    public partial class NamingEnumeration : Javax.Naming.INamingEnumeration
     {
         #region Constructors
 
@@ -213,9 +213,9 @@ namespace Javax.Naming
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Naming.NamingEnumeration{T}"/> to <see cref="Javax.Naming.NamingEnumeration"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Naming.NamingEnumeration(Javax.Naming.NamingEnumeration<T> t) => t.Cast<Javax.Naming.NamingEnumeration>();
+        public static implicit operator Javax.Naming.NamingEnumeration(Javax.Naming.NamingEnumeration t) => t.Cast<Javax.Naming.NamingEnumeration>();
 
         #endregion
 
@@ -231,8 +231,8 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool HasMore()
         {
             return IExecuteWithSignature<bool>("hasMore", "()Z");
@@ -240,8 +240,8 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
         /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public T Next()
         {
             return IExecuteWithSignature<T>("next", "()Ljava/lang/Object;");
@@ -249,7 +249,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
         /// </summary>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");

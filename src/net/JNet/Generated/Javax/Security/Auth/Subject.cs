@@ -73,11 +73,11 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#%3Cinit%3E(boolean,java.util.Set,java.util.Set,java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Set"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Set"/></param>
-        public Subject(bool arg0, Java.Util.Set arg1, Java.Util.Set<object> arg2, Java.Util.Set<object> arg3)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        public Subject(bool arg0, Java.Util.Set arg1, Java.Util.Set arg2, Java.Util.Set arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -96,56 +96,56 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedAction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T DoAs<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1)
+        /// <returns><see cref=""/></returns>
+        public static T DoAs(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction arg1)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doAs", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedAction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.PrivilegedActionException"/>
-        public static T DoAs<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static T DoAs(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction arg1)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doAs", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
-        /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1, Java.Security.AccessControlContext arg2)
+        /// <returns><see cref=""/></returns>
+        public static T DoAsPrivileged(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction arg1, Java.Security.AccessControlContext arg2)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doAsPrivileged", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
-        /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.PrivilegedActionException"/>
-        public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1, Java.Security.AccessControlContext arg2)
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static T DoAsPrivileged(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction arg1, Java.Security.AccessControlContext arg2)
         {
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doAsPrivileged", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Security.Auth.Subject GetSubject(Java.Security.AccessControlContext arg0)
         {
             return SExecuteWithSignature<Javax.Security.Auth.Subject>(LocalBridgeClazz, "getSubject", "(Ljava/security/AccessControlContext;)Ljavax/security/auth/Subject;", arg0);
@@ -157,58 +157,58 @@ namespace Javax.Security.Auth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrincipals()"/> 
         /// </summary>
-        public Java.Util.Set<Java.Security.Principal> Principals
+        public Java.Util.Set Principals
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Security.Principal>>("getPrincipals", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getPrincipals", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrivateCredentials()"/> 
         /// </summary>
-        public Java.Util.Set<object> PrivateCredentials
+        public Java.Util.Set PrivateCredentials
         {
-            get { return IExecuteWithSignature<Java.Util.Set<object>>("getPrivateCredentials", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getPrivateCredentials", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPublicCredentials()"/> 
         /// </summary>
-        public Java.Util.Set<object> PublicCredentials
+        public Java.Util.Set PublicCredentials
         {
-            get { return IExecuteWithSignature<Java.Util.Set<object>>("getPublicCredentials", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getPublicCredentials", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrincipals(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Security.IPrincipal"/></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<T> GetPrincipals<T>(Java.Lang.Class arg0) where T : Java.Security.IPrincipal, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set GetPrincipals(Java.Lang.Class arg0)
         {
-            return IExecute<Java.Util.Set<T>>("getPrincipals", arg0);
+            return IExecute<Java.Util.Set>("getPrincipals", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrivateCredentials(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<T> GetPrivateCredentials<T>(Java.Lang.Class arg0)
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set GetPrivateCredentials(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<Java.Util.Set<T>>("getPrivateCredentials", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
+            return IExecuteWithSignature<Java.Util.Set>("getPrivateCredentials", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPublicCredentials(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<T> GetPublicCredentials<T>(Java.Lang.Class arg0)
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set GetPublicCredentials(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<Java.Util.Set<T>>("getPublicCredentials", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
+            return IExecuteWithSignature<Java.Util.Set>("getPublicCredentials", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#isReadOnly()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsReadOnly()
         {
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");

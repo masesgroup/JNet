@@ -442,7 +442,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#%3Cinit%3E(javax.swing.JInternalFrame)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public BasicInternalFrameTitlePane(Javax.Swing.JInternalFrame arg0)
             : base(arg0)
         {
@@ -466,7 +466,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.html#paintComponent(java.awt.Graphics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PaintComponent(Java.Awt.Graphics arg0)
         {
             IExecuteWithSignature("paintComponent", "(Ljava/awt/Graphics;)V", arg0);
@@ -482,7 +482,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.CloseAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameTitlePane)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public CloseAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
@@ -521,7 +521,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.IconifyAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameTitlePane)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public IconifyAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
@@ -560,7 +560,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.MaximizeAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameTitlePane)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public MaximizeAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
@@ -599,7 +599,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.MoveAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameTitlePane)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public MoveAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
@@ -638,7 +638,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.PropertyChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameTitlePane)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
@@ -648,7 +648,7 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
 
@@ -666,7 +666,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
@@ -689,7 +689,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.RestoreAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameTitlePane)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public RestoreAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
@@ -728,7 +728,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.SizeAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameTitlePane)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public SizeAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
@@ -767,7 +767,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.SystemMenuBar.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameTitlePane)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public SystemMenuBar(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
@@ -806,7 +806,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.TitlePaneLayout.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameTitlePane)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public TitlePaneLayout(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
@@ -830,8 +830,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.TitlePaneLayout.html#minimumLayoutSize(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-            /// <returns><see cref="Java.Awt.Dimension"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecuteWithSignature<Java.Awt.Dimension>("minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
@@ -839,8 +839,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.TitlePaneLayout.html#preferredLayoutSize(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
-            /// <returns><see cref="Java.Awt.Dimension"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
@@ -848,8 +848,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.TitlePaneLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <param name="arg1"><see cref=""/></param>
             public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
             {
                 IExecuteWithSignature("addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
@@ -857,7 +857,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.TitlePaneLayout.html#layoutContainer(java.awt.Container)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void LayoutContainer(Java.Awt.Container arg0)
             {
                 IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
@@ -865,7 +865,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.TitlePaneLayout.html#removeLayoutComponent(java.awt.Component)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecuteWithSignature("removeLayoutComponent", "(Ljava/awt/Component;)V", arg0);

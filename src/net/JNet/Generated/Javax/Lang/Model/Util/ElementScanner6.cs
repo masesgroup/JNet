@@ -66,13 +66,13 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region ElementScanner6<R, P> declaration
+    #region ElementScanner6<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class ElementScanner6<R, P> : Javax.Lang.Model.Util.AbstractElementVisitor6<R, P>
+    public partial class ElementScanner6<, > : Javax.Lang.Model.Util.AbstractElementVisitor6<, >
     {
         const string _bridgeClassName = "javax.lang.model.util.ElementScanner6";
         /// <summary>
@@ -132,9 +132,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(java.lang.Iterable,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Scan(Java.Lang.Iterable arg0, object arg1)
         {
             return IExecuteWithSignature("scan", "(Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -142,8 +142,8 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Scan(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecuteWithSignature("scan", "(Ljavax/lang/model/element/Element;)Ljava/lang/Object;", arg0);
@@ -151,9 +151,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(javax.lang.model.element.Element,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Scan(Javax.Lang.Model.Element.Element arg0, object arg1)
         {
             return IExecuteWithSignature("scan", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -169,8 +169,8 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region ElementScanner6<R, P> implementation
-    public partial class ElementScanner6<R, P>
+    #region ElementScanner6<, > implementation
+    public partial class ElementScanner6<, >
     {
         #region Constructors
 
@@ -178,9 +178,9 @@ namespace Javax.Lang.Model.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.ElementScanner6{R, P}"/> to <see cref="Javax.Lang.Model.Util.ElementScanner6"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Lang.Model.Util.ElementScanner6(Javax.Lang.Model.Util.ElementScanner6<R, P> t) => t.Cast<Javax.Lang.Model.Util.ElementScanner6>();
+        public static implicit operator Javax.Lang.Model.Util.ElementScanner6(Javax.Lang.Model.Util.ElementScanner6<, > t) => t.Cast<Javax.Lang.Model.Util.ElementScanner6>();
 
         #endregion
 
@@ -196,19 +196,19 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(java.lang.Iterable,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        public R Scan<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg0ExtendsJavax_Lang_Model_Element_Element"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public R Scan(Java.Lang.Iterable arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
             return IExecuteWithSignature<R>("scan", "(Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(javax.lang.model.element.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R Scan(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecuteWithSignature<R>("scan", "(Ljavax/lang/model/element/Element;)Ljava/lang/Object;", arg0);
@@ -216,9 +216,9 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(javax.lang.model.element.Element,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><typeparamref name="P"/></param>
-        /// <returns><typeparamref name="R"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public R Scan(Javax.Lang.Model.Element.Element arg0, P arg1)
         {
             return IExecuteWithSignature<R>("scan", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);

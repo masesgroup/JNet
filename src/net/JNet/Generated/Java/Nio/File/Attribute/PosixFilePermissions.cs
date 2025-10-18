@@ -85,29 +85,29 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermissions.html#toString(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        public static Java.Lang.String ToString(Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Lang.String ToString(Java.Util.Set arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(Ljava/util/Set;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermissions.html#asFileAttribute(java.util.Set)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <returns><see cref="Java.Nio.File.Attribute.FileAttribute"/></returns>
-        public static Java.Nio.File.Attribute.FileAttribute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>> AsFileAttribute(Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Nio.File.Attribute.FileAttribute AsFileAttribute(Java.Util.Set arg0)
         {
-            return SExecuteWithSignature<Java.Nio.File.Attribute.FileAttribute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>>(LocalBridgeClazz, "asFileAttribute", "(Ljava/util/Set;)Ljava/nio/file/attribute/FileAttribute;", arg0);
+            return SExecuteWithSignature<Java.Nio.File.Attribute.FileAttribute>(LocalBridgeClazz, "asFileAttribute", "(Ljava/util/Set;)Ljava/nio/file/attribute/FileAttribute;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermissions.html#fromString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> FromString(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public static Java.Util.Set FromString(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>(LocalBridgeClazz, "fromString", "(Ljava/lang/String;)Ljava/util/Set;", arg0);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "fromString", "(Ljava/lang/String;)Ljava/util/Set;", arg0);
         }
 
         #endregion

@@ -78,13 +78,13 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        /// <returns><see cref=""/></returns>
         Java.Lang.Boolean IsInRelationService();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void SetRelationServiceManagementFlag(Java.Lang.Boolean arg0);
 
         #endregion
@@ -120,7 +120,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Boolean IsInRelationService()
         {
             return IExecuteWithSignature<Java.Lang.Boolean>("isInRelationService", "()Ljava/lang/Boolean;");
@@ -128,8 +128,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void SetRelationServiceManagementFlag(Java.Lang.Boolean arg0)
         {
             IExecuteWithSignature("setRelationServiceManagementFlag", "(Ljava/lang/Boolean;)V", arg0);

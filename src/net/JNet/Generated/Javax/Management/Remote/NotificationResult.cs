@@ -73,9 +73,9 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#%3Cinit%3E(long,long,javax.management.remote.TargetedNotification[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.Remote.TargetedNotification"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public NotificationResult(long arg0, long arg1, Javax.Management.Remote.TargetedNotification[] arg2)
             : base(arg0, arg1, arg2)
         {

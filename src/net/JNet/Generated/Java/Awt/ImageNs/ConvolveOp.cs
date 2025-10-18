@@ -73,9 +73,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#%3Cinit%3E(java.awt.image.Kernel,int,java.awt.RenderingHints)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Kernel"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public ConvolveOp(Java.Awt.ImageNs.Kernel arg0, int arg1, Java.Awt.RenderingHints arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,7 +83,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#%3Cinit%3E(java.awt.image.Kernel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Kernel"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ConvolveOp(Java.Awt.ImageNs.Kernel arg0)
             : base(arg0)
         {
@@ -93,11 +93,11 @@ namespace Java.Awt.ImageNs
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.ConvolveOp"/> to <see cref="Java.Awt.ImageNs.BufferedImageOp"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.BufferedImageOp(Java.Awt.ImageNs.ConvolveOp t) => t.Cast<Java.Awt.ImageNs.BufferedImageOp>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.ConvolveOp"/> to <see cref="Java.Awt.ImageNs.RasterOp"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Awt.ImageNs.RasterOp(Java.Awt.ImageNs.ConvolveOp t) => t.Cast<Java.Awt.ImageNs.RasterOp>();
 
@@ -148,9 +148,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#getPoint2D(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Point2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Point2D GetPoint2D(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Point2D>("getPoint2D", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;", arg0, arg1);
@@ -158,8 +158,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#getBounds2D(java.awt.image.BufferedImage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.BufferedImage arg0)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds2D", "(Ljava/awt/image/BufferedImage;)Ljava/awt/geom/Rectangle2D;", arg0);
@@ -167,8 +167,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#getBounds2D(java.awt.image.Raster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
-        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.Raster arg0)
         {
             return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getBounds2D", "(Ljava/awt/image/Raster;)Ljava/awt/geom/Rectangle2D;", arg0);
@@ -176,9 +176,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#filter(java.awt.image.BufferedImage,java.awt.image.BufferedImage)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.BufferedImage Filter(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.ImageNs.BufferedImage arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("filter", "(Ljava/awt/image/BufferedImage;Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;", arg0, arg1);
@@ -186,9 +186,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#filter(java.awt.image.Raster,java.awt.image.WritableRaster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.WritableRaster Filter(Java.Awt.ImageNs.Raster arg0, Java.Awt.ImageNs.WritableRaster arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("filter", "(Ljava/awt/image/Raster;Ljava/awt/image/WritableRaster;)Ljava/awt/image/WritableRaster;", arg0, arg1);
@@ -196,9 +196,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#createCompatibleDestImage(java.awt.image.BufferedImage,java.awt.image.ColorModel)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateCompatibleDestImage(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.ImageNs.ColorModel arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("createCompatibleDestImage", "(Ljava/awt/image/BufferedImage;Ljava/awt/image/ColorModel;)Ljava/awt/image/BufferedImage;", arg0, arg1);
@@ -206,8 +206,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#createCompatibleDestRaster(java.awt.image.Raster)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleDestRaster(Java.Awt.ImageNs.Raster arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createCompatibleDestRaster", "(Ljava/awt/image/Raster;)Ljava/awt/image/WritableRaster;", arg0);

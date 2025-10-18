@@ -66,12 +66,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region ArrayDeque<E> declaration
+    #region ArrayDeque declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class ArrayDeque<E> : Java.Util.AbstractCollection<E>
+    public partial class ArrayDeque : Java.Util.AbstractCollection
     {
         const string _bridgeClassName = "java.util.ArrayDeque";
         /// <summary>
@@ -115,7 +115,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ArrayDeque(int arg0)
             : base(arg0)
         {
@@ -123,7 +123,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ArrayDeque(Java.Util.Collection arg0)
             : base(arg0)
         {
@@ -133,15 +133,15 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayDeque"/> to <see cref="Java.Util.Deque"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Deque(Java.Util.ArrayDeque t) => t.Cast<Java.Util.Deque>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayDeque"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.ArrayDeque t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayDeque"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.ArrayDeque t) => t.Cast<Java.Io.Serializable>();
 
@@ -173,8 +173,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offer(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Offer(object arg0)
         {
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
@@ -182,8 +182,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offerFirst(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool OfferFirst(object arg0)
         {
             return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
@@ -191,8 +191,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offerLast(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool OfferLast(object arg0)
         {
             return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
@@ -200,8 +200,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeFirstOccurrence(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveFirstOccurrence(object arg0)
         {
             return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
@@ -209,8 +209,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeLastOccurrence(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveLastOccurrence(object arg0)
         {
             return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
@@ -218,7 +218,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#element()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Element()
         {
             return IExecuteWithSignature("element", "()Ljava/lang/Object;");
@@ -226,7 +226,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peek()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Peek()
         {
             return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
@@ -234,7 +234,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekFirst()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object PeekFirst()
         {
             return IExecuteWithSignature("peekFirst", "()Ljava/lang/Object;");
@@ -242,7 +242,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekLast()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object PeekLast()
         {
             return IExecuteWithSignature("peekLast", "()Ljava/lang/Object;");
@@ -250,7 +250,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#poll()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Poll()
         {
             return IExecuteWithSignature("poll", "()Ljava/lang/Object;");
@@ -258,7 +258,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollFirst()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object PollFirst()
         {
             return IExecuteWithSignature("pollFirst", "()Ljava/lang/Object;");
@@ -266,7 +266,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollLast()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object PollLast()
         {
             return IExecuteWithSignature("pollLast", "()Ljava/lang/Object;");
@@ -274,7 +274,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pop()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Pop()
         {
             return IExecuteWithSignature("pop", "()Ljava/lang/Object;");
@@ -282,7 +282,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#remove()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object Remove()
         {
             return IExecuteWithSignature("remove", "()Ljava/lang/Object;");
@@ -290,7 +290,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeFirst()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object RemoveFirst()
         {
             return IExecuteWithSignature("removeFirst", "()Ljava/lang/Object;");
@@ -298,7 +298,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeLast()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object RemoveLast()
         {
             return IExecuteWithSignature("removeLast", "()Ljava/lang/Object;");
@@ -306,7 +306,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#clone()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.ArrayDeque"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.ArrayDeque Clone()
         {
             return IExecuteWithSignature<Java.Util.ArrayDeque>("clone", "()Ljava/util/ArrayDeque;");
@@ -314,7 +314,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#descendingIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Iterator DescendingIteratorMethod()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
@@ -322,7 +322,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#addFirst(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddFirst(object arg0)
         {
             IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
@@ -330,7 +330,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#addLast(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddLast(object arg0)
         {
             IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
@@ -338,7 +338,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#push(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Push(object arg0)
         {
             IExecuteWithSignature("push", "(Ljava/lang/Object;)V", arg0);
@@ -354,14 +354,14 @@ namespace Java.Util
     }
     #endregion
 
-    #region ArrayDeque<E> implementation
-    public partial class ArrayDeque<E>
+    #region ArrayDeque implementation
+    public partial class ArrayDeque
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ArrayDeque(int arg0)
             : base(arg0)
         {
@@ -369,8 +369,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public ArrayDeque(Java.Util.Collection<E> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public ArrayDeque(Java.Util.Collection arg0)
             : base(arg0)
         {
         }
@@ -379,21 +379,21 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayDeque{E}"/> to <see cref="Java.Util.Deque{E}"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Deque<E>(Java.Util.ArrayDeque<E> t) => t.Cast<Java.Util.Deque<E>>();
+        public static implicit operator Java.Util.Deque(Java.Util.ArrayDeque t) => t.Cast<Java.Util.Deque>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayDeque{E}"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Util.ArrayDeque<E> t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Lang.Cloneable(Java.Util.ArrayDeque t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayDeque{E}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.ArrayDeque<E> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.ArrayDeque t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.ArrayDeque{E}"/> to <see cref="Java.Util.ArrayDeque"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.ArrayDeque(Java.Util.ArrayDeque<E> t) => t.Cast<Java.Util.ArrayDeque>();
+        public static implicit operator Java.Util.ArrayDeque(Java.Util.ArrayDeque t) => t.Cast<Java.Util.ArrayDeque>();
 
         #endregion
 
@@ -423,8 +423,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offer(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Offer(E arg0)
         {
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
@@ -432,8 +432,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offerFirst(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool OfferFirst(E arg0)
         {
             return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
@@ -441,8 +441,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offerLast(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool OfferLast(E arg0)
         {
             return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
@@ -450,8 +450,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeFirstOccurrence(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveFirstOccurrence(object arg0)
         {
             return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
@@ -459,8 +459,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeLastOccurrence(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool RemoveLastOccurrence(object arg0)
         {
             return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
@@ -468,7 +468,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#element()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Element()
         {
             return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
@@ -476,7 +476,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peek()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Peek()
         {
             return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
@@ -484,7 +484,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekFirst()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E PeekFirst()
         {
             return IExecuteWithSignature<E>("peekFirst", "()Ljava/lang/Object;");
@@ -492,7 +492,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekLast()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E PeekLast()
         {
             return IExecuteWithSignature<E>("peekLast", "()Ljava/lang/Object;");
@@ -500,7 +500,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#poll()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Poll()
         {
             return IExecuteWithSignature<E>("poll", "()Ljava/lang/Object;");
@@ -508,7 +508,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollFirst()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E PollFirst()
         {
             return IExecuteWithSignature<E>("pollFirst", "()Ljava/lang/Object;");
@@ -516,7 +516,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollLast()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E PollLast()
         {
             return IExecuteWithSignature<E>("pollLast", "()Ljava/lang/Object;");
@@ -524,7 +524,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pop()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Pop()
         {
             return IExecuteWithSignature<E>("pop", "()Ljava/lang/Object;");
@@ -532,7 +532,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#remove()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E Remove()
         {
             return IExecuteWithSignature<E>("remove", "()Ljava/lang/Object;");
@@ -540,7 +540,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeFirst()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E RemoveFirst()
         {
             return IExecuteWithSignature<E>("removeFirst", "()Ljava/lang/Object;");
@@ -548,7 +548,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeLast()"/>
         /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
+        /// <returns><see cref=""/></returns>
         public E RemoveLast()
         {
             return IExecuteWithSignature<E>("removeLast", "()Ljava/lang/Object;");
@@ -556,23 +556,23 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#clone()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.ArrayDeque"/></returns>
-        public Java.Util.ArrayDeque<E> Clone()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.ArrayDeque Clone()
         {
-            return IExecuteWithSignature<Java.Util.ArrayDeque<E>>("clone", "()Ljava/util/ArrayDeque;");
+            return IExecuteWithSignature<Java.Util.ArrayDeque>("clone", "()Ljava/util/ArrayDeque;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#descendingIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> DescendingIteratorMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator DescendingIteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("descendingIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#addFirst(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddFirst(E arg0)
         {
             IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
@@ -580,7 +580,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#addLast(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddLast(E arg0)
         {
             IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
@@ -588,7 +588,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#push(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Push(E arg0)
         {
             IExecuteWithSignature("push", "(Ljava/lang/Object;)V", arg0);

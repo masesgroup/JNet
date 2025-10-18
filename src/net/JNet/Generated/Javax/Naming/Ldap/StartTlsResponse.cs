@@ -111,8 +111,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#negotiate()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Net.Ssl.SSLSession Negotiate()
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("negotiate", "()Ljavax/net/ssl/SSLSession;");
@@ -120,9 +120,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#negotiate(javax.net.ssl.SSLSocketFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSocketFactory"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Net.Ssl.SSLSession Negotiate(Javax.Net.Ssl.SSLSocketFactory arg0)
         {
             return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("negotiate", "(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/SSLSession;", arg0);
@@ -130,7 +130,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#close()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -138,7 +138,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#setEnabledCipherSuites(java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetEnabledCipherSuites(Java.Lang.String[] arg0)
         {
             IExecuteWithSignature("setEnabledCipherSuites", "([Ljava/lang/String;)V", new object[] { arg0 });
@@ -146,7 +146,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.HostnameVerifier"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetHostnameVerifier(Javax.Net.Ssl.HostnameVerifier arg0)
         {
             IExecuteWithSignature("setHostnameVerifier", "(Ljavax/net/ssl/HostnameVerifier;)V", arg0);

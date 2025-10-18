@@ -82,14 +82,14 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfos()"/> 
         /// </summary>
-        Java.Util.List<Javax.Management.Relation.RoleInfo> RoleInfos { get; }
+        Java.Util.List RoleInfos { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfo(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Relation.RoleInfo"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Javax.Management.Relation.RoleInfoNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.Relation.RoleInfo GetRoleInfo(Java.Lang.String arg0);
 
         #endregion
@@ -132,17 +132,17 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfos()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Management.Relation.RoleInfo> RoleInfos
+        public Java.Util.List RoleInfos
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Management.Relation.RoleInfo>>("getRoleInfos", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getRoleInfos", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfo(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Relation.RoleInfo"/></returns>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        /// <exception cref="Javax.Management.Relation.RoleInfoNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.Relation.RoleInfo GetRoleInfo(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Javax.Management.Relation.RoleInfo>("getRoleInfo", "(Ljava/lang/String;)Ljavax/management/relation/RoleInfo;", arg0);

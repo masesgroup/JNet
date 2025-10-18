@@ -73,8 +73,8 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/Oid.html#%3Cinit%3E(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public Oid(byte[] arg0)
             : base(arg0)
         {
@@ -82,8 +82,8 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/Oid.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public Oid(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -91,8 +91,8 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/Oid.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public Oid(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -123,8 +123,8 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/Oid.html#containedIn(org.ietf.jgss.Oid[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainedIn(Org.Ietf.Jgss.Oid[] arg0)
         {
             return IExecuteWithSignature<bool>("containedIn", "([Lorg/ietf/jgss/Oid;)Z", new object[] { arg0 });

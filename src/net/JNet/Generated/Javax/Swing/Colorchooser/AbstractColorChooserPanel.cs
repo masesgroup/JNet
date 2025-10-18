@@ -146,7 +146,7 @@ namespace Javax.Swing.Colorchooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#isColorTransparencySelectionEnabled()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsColorTransparencySelectionEnabled()
         {
             return IExecuteWithSignature<bool>("isColorTransparencySelectionEnabled", "()Z");
@@ -154,7 +154,7 @@ namespace Javax.Swing.Colorchooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#installChooserPanel(javax.swing.JColorChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JColorChooser"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void InstallChooserPanel(Javax.Swing.JColorChooser arg0)
         {
             IExecuteWithSignature("installChooserPanel", "(Ljavax/swing/JColorChooser;)V", arg0);
@@ -162,7 +162,7 @@ namespace Javax.Swing.Colorchooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#setColorTransparencySelectionEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetColorTransparencySelectionEnabled(bool arg0)
         {
             IExecuteWithSignature("setColorTransparencySelectionEnabled", "(Z)V", arg0);
@@ -170,7 +170,7 @@ namespace Javax.Swing.Colorchooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#uninstallChooserPanel(javax.swing.JColorChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JColorChooser"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void UninstallChooserPanel(Javax.Swing.JColorChooser arg0)
         {
             IExecuteWithSignature("uninstallChooserPanel", "(Ljavax/swing/JColorChooser;)V", arg0);

@@ -78,23 +78,23 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#read(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         int Read(byte[] arg0, int arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#open(javax.sound.sampled.AudioFormat,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         void Open(Javax.Sound.Sampled.AudioFormat arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#open(javax.sound.sampled.AudioFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Open(Javax.Sound.Sampled.AudioFormat arg0);
 
         #endregion
@@ -130,10 +130,10 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#read(byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Read(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<int>("read", "([BII)I", arg0, arg1, arg2);
@@ -141,9 +141,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#open(javax.sound.sampled.AudioFormat,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Open(Javax.Sound.Sampled.AudioFormat arg0, int arg1)
         {
             IExecuteWithSignature("open", "(Ljavax/sound/sampled/AudioFormat;I)V", arg0, arg1);
@@ -151,8 +151,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#open(javax.sound.sampled.AudioFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
-        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Open(Javax.Sound.Sampled.AudioFormat arg0)
         {
             IExecuteWithSignature("open", "(Ljavax/sound/sampled/AudioFormat;)V", arg0);

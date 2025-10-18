@@ -108,12 +108,12 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAboutToSleep(java.awt.desktop.SystemSleepEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SystemAboutToSleep(Java.Awt.DesktopNs.SystemSleepEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAwoke(java.awt.desktop.SystemSleepEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void SystemAwoke(Java.Awt.DesktopNs.SystemSleepEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAboutToSleep(java.awt.desktop.SystemSleepEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void SystemAboutToSleep(Java.Awt.DesktopNs.SystemSleepEvent arg0)
         {
             hasOverrideSystemAboutToSleep = false;
@@ -198,7 +198,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAwoke(java.awt.desktop.SystemSleepEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void SystemAwoke(Java.Awt.DesktopNs.SystemSleepEvent arg0)
         {
             hasOverrideSystemAwoke = false;
@@ -237,7 +237,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAboutToSleep(java.awt.desktop.SystemSleepEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void SystemAboutToSleep(Java.Awt.DesktopNs.SystemSleepEvent arg0)
         {
             IExecuteWithSignature("systemAboutToSleep", "(Ljava/awt/desktop/SystemSleepEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAwoke(java.awt.desktop.SystemSleepEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void SystemAwoke(Java.Awt.DesktopNs.SystemSleepEvent arg0)
         {
             IExecuteWithSignature("systemAwoke", "(Ljava/awt/desktop/SystemSleepEvent;)V", arg0);

@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Cursor(int arg0)
             : base(arg0)
         {
@@ -190,8 +190,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getPredefinedCursor(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Cursor"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Awt.Cursor GetPredefinedCursor(int arg0)
         {
             return SExecuteWithSignature<Java.Awt.Cursor>(LocalBridgeClazz, "getPredefinedCursor", "(I)Ljava/awt/Cursor;", arg0);
@@ -199,10 +199,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getSystemCustomCursor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Awt.Cursor"/></returns>
-        /// <exception cref="Java.Awt.AWTException"/>
-        /// <exception cref="Java.Awt.HeadlessException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Java.Awt.Cursor GetSystemCustomCursor(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Awt.Cursor>(LocalBridgeClazz, "getSystemCustomCursor", "(Ljava/lang/String;)Ljava/awt/Cursor;", arg0);

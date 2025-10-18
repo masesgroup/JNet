@@ -108,12 +108,12 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceAvailableEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void ServiceAvailable(Java.Beans.Beancontext.BeanContextServiceAvailableEvent arg0);
 
         #endregion
@@ -174,7 +174,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
         {
             hasOverrideServiceRevoked = false;
@@ -198,7 +198,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceAvailableEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void ServiceAvailable(Java.Beans.Beancontext.BeanContextServiceAvailableEvent arg0)
         {
             hasOverrideServiceAvailable = false;
@@ -237,7 +237,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
         {
             IExecuteWithSignature("serviceRevoked", "(Ljava/beans/beancontext/BeanContextServiceRevokedEvent;)V", arg0);
@@ -245,7 +245,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceAvailableEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void ServiceAvailable(Java.Beans.Beancontext.BeanContextServiceAvailableEvent arg0)
         {
             IExecuteWithSignature("serviceAvailable", "(Ljava/beans/beancontext/BeanContextServiceAvailableEvent;)V", arg0);

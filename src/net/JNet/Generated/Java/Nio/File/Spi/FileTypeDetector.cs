@@ -91,9 +91,9 @@ namespace Java.Nio.File.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileTypeDetector.html#probeContentType(java.nio.file.Path)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.String ProbeContentType(Java.Nio.File.Path arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("probeContentType", "(Ljava/nio/file/Path;)Ljava/lang/String;", arg0);

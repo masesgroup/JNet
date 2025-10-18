@@ -89,16 +89,16 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#getDisabledObjectNames()"/> 
         /// </summary>
-        public Java.Util.Vector<Javax.Management.ObjectName> DisabledObjectNames
+        public Java.Util.Vector DisabledObjectNames
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Javax.Management.ObjectName>>("getDisabledObjectNames", "()Ljava/util/Vector;"); }
+            get { return IExecuteWithSignature<Java.Util.Vector>("getDisabledObjectNames", "()Ljava/util/Vector;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#getEnabledObjectNames()"/> 
         /// </summary>
-        public Java.Util.Vector<Javax.Management.ObjectName> EnabledObjectNames
+        public Java.Util.Vector EnabledObjectNames
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<Javax.Management.ObjectName>>("getEnabledObjectNames", "()Ljava/util/Vector;"); }
+            get { return IExecuteWithSignature<Java.Util.Vector>("getEnabledObjectNames", "()Ljava/util/Vector;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#disableAllObjectNames()"/>
@@ -110,8 +110,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#disableObjectName(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void DisableObjectName(Javax.Management.ObjectName arg0)
         {
             IExecuteWithSignature("disableObjectName", "(Ljavax/management/ObjectName;)V", arg0);
@@ -126,8 +126,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#enableObjectName(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void EnableObjectName(Javax.Management.ObjectName arg0)
         {
             IExecuteWithSignature("enableObjectName", "(Ljavax/management/ObjectName;)V", arg0);

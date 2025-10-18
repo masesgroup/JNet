@@ -68,13 +68,13 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region CompletionHandler<V, A> declaration
+    #region CompletionHandler<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     /// <typeparam name="A"></typeparam>
-    public partial class CompletionHandler<V, A> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionHandler<V, A>>
+    public partial class CompletionHandler<, > : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionHandler<, >>
     {
         const string _bridgeClassName = "java.nio.channels.CompletionHandler";
         /// <summary>
@@ -136,8 +136,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Completed(object arg0, object arg1)
         {
             IExecuteWithSignature("completed", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -145,8 +145,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, object arg1)
         {
             IExecuteWithSignature("failed", "(Ljava/lang/Throwable;Ljava/lang/Object;)V", arg0, arg1);
@@ -162,24 +162,24 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region ICompletionHandler<V, A>
+    #region ICompletionHandler<, >
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html"/>
     /// </summary>
-    public partial interface ICompletionHandler<V, A>
+    public partial interface ICompletionHandler<, >
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void Completed(V arg0, A arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, A arg1);
 
         #endregion
@@ -192,8 +192,8 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region CompletionHandler<V, A> implementation
-    public partial class CompletionHandler<V, A> : Java.Nio.Channels.ICompletionHandler<V, A>
+    #region CompletionHandler<, > implementation
+    public partial class CompletionHandler<, > : Java.Nio.Channels.ICompletionHandler<, >
     {
         #region Constructors
 
@@ -201,9 +201,9 @@ namespace Java.Nio.Channels
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.CompletionHandler{V, A}"/> to <see cref="Java.Nio.Channels.CompletionHandler"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Nio.Channels.CompletionHandler(Java.Nio.Channels.CompletionHandler<V, A> t) => t.Cast<Java.Nio.Channels.CompletionHandler>();
+        public static implicit operator Java.Nio.Channels.CompletionHandler(Java.Nio.Channels.CompletionHandler<, > t) => t.Cast<Java.Nio.Channels.CompletionHandler>();
 
         #endregion
 
@@ -219,8 +219,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Completed(V arg0, A arg1)
         {
             IExecuteWithSignature("completed", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
@@ -228,8 +228,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, A arg1)
         {
             IExecuteWithSignature("failed", "(Ljava/lang/Throwable;Ljava/lang/Object;)V", arg0, arg1);

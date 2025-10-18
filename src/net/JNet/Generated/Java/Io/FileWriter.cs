@@ -73,9 +73,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public FileWriter(Java.Io.File arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -83,10 +83,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public FileWriter(Java.Io.File arg0, Java.Nio.Charset.Charset arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -94,9 +94,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public FileWriter(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
@@ -104,8 +104,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public FileWriter(Java.Io.File arg0)
             : base(arg0)
         {
@@ -113,7 +113,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.FileDescriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public FileWriter(Java.Io.FileDescriptor arg0)
             : base(arg0)
         {
@@ -121,9 +121,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public FileWriter(Java.Lang.String arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -131,10 +131,10 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <exception cref=""/>
         public FileWriter(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -142,9 +142,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public FileWriter(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
@@ -152,8 +152,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public FileWriter(Java.Lang.String arg0)
             : base(arg0)
         {

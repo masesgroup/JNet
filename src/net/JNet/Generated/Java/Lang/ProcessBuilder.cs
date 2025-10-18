@@ -116,7 +116,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#%3Cinit%3E(java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ProcessBuilder(params Java.Lang.String[] arg0)
             : base(arg0)
         {
@@ -124,8 +124,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public ProcessBuilder(Java.Util.List<Java.Lang.String> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public ProcessBuilder(Java.Util.List arg0)
             : base(arg0)
         {
         }
@@ -144,12 +144,12 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#startPipeline(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public static Java.Util.List<Java.Lang.Process> StartPipeline(Java.Util.List<Java.Lang.ProcessBuilder> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        public static Java.Util.List StartPipeline(Java.Util.List arg0)
         {
-            return SExecuteWithSignature<Java.Util.List<Java.Lang.Process>>(LocalBridgeClazz, "startPipeline", "(Ljava/util/List;)Ljava/util/List;", arg0);
+            return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "startPipeline", "(Ljava/util/List;)Ljava/util/List;", arg0);
         }
 
         #endregion
@@ -158,7 +158,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectErrorStream()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool RedirectErrorStream()
         {
             return IExecuteWithSignature<bool>("redirectErrorStream", "()Z");
@@ -166,7 +166,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#directory()"/>
         /// </summary>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Io.File Directory()
         {
             return IExecuteWithSignature<Java.Io.File>("directory", "()Ljava/io/File;");
@@ -174,8 +174,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#start()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.Process"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.Process Start()
         {
             return IExecuteWithSignature<Java.Lang.Process>("start", "()Ljava/lang/Process;");
@@ -183,8 +183,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#command(java.lang.String...)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder Command(params Java.Lang.String[] arg0)
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("command", "([Ljava/lang/String;)Ljava/lang/ProcessBuilder;", arg0);
@@ -192,17 +192,17 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#command(java.util.List)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
-        public Java.Lang.ProcessBuilder Command(Java.Util.List<Java.Lang.String> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Lang.ProcessBuilder Command(Java.Util.List arg0)
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("command", "(Ljava/util/List;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#directory(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder Directory(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("directory", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;", arg0);
@@ -210,7 +210,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#inheritIO()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder InheritIO()
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("inheritIO", "()Ljava/lang/ProcessBuilder;");
@@ -218,8 +218,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectError(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder RedirectError(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectError", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;", arg0);
@@ -227,8 +227,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectError(java.lang.ProcessBuilder.Redirect)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ProcessBuilder.Redirect"/></param>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder RedirectError(Java.Lang.ProcessBuilder.Redirect arg0)
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectError", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;", arg0);
@@ -236,8 +236,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectErrorStream(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder RedirectErrorStream(bool arg0)
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectErrorStream", "(Z)Ljava/lang/ProcessBuilder;", arg0);
@@ -245,8 +245,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectInput(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder RedirectInput(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectInput", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;", arg0);
@@ -254,8 +254,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectInput(java.lang.ProcessBuilder.Redirect)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ProcessBuilder.Redirect"/></param>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder RedirectInput(Java.Lang.ProcessBuilder.Redirect arg0)
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectInput", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;", arg0);
@@ -263,8 +263,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectOutput(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder RedirectOutput(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectOutput", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;", arg0);
@@ -272,8 +272,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectOutput(java.lang.ProcessBuilder.Redirect)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ProcessBuilder.Redirect"/></param>
-        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder RedirectOutput(Java.Lang.ProcessBuilder.Redirect arg0)
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder>("redirectOutput", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;", arg0);
@@ -281,7 +281,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectError()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder.Redirect RedirectError()
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>("redirectError", "()Ljava/lang/ProcessBuilder$Redirect;");
@@ -289,7 +289,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectInput()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder.Redirect RedirectInput()
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>("redirectInput", "()Ljava/lang/ProcessBuilder$Redirect;");
@@ -297,7 +297,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectOutput()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ProcessBuilder.Redirect RedirectOutput()
         {
             return IExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>("redirectOutput", "()Ljava/lang/ProcessBuilder$Redirect;");
@@ -305,18 +305,18 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#command()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<Java.Lang.String> Command()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.List Command()
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("command", "()Ljava/util/List;");
+            return IExecuteWithSignature<Java.Util.List>("command", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#environment()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.String> Environment()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Map<, > Environment()
         {
-            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("environment", "()Ljava/util/Map;");
+            return IExecuteWithSignature<Java.Util.Map<, >>("environment", "()Ljava/util/Map;");
         }
 
         #endregion
@@ -359,8 +359,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#appendTo(java.io.File)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Io.File"/></param>
-            /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.ProcessBuilder.Redirect AppendTo(Java.Io.File arg0)
             {
                 return SExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>(LocalBridgeClazz, "appendTo", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;", arg0);
@@ -368,8 +368,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#from(java.io.File)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Io.File"/></param>
-            /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.ProcessBuilder.Redirect From(Java.Io.File arg0)
             {
                 return SExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>(LocalBridgeClazz, "from", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;", arg0);
@@ -377,8 +377,8 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#to(java.io.File)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Io.File"/></param>
-            /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Lang.ProcessBuilder.Redirect To(Java.Io.File arg0)
             {
                 return SExecuteWithSignature<Java.Lang.ProcessBuilder.Redirect>(LocalBridgeClazz, "to", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;", arg0);
@@ -390,7 +390,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#file()"/>
             /// </summary>
-            /// <returns><see cref="Java.Io.File"/></returns>
+            /// <returns><see cref=""/></returns>
             public Java.Io.File File()
             {
                 return IExecuteWithSignature<Java.Io.File>("file", "()Ljava/io/File;");

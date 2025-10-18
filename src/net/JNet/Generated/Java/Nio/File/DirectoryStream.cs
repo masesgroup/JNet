@@ -107,12 +107,12 @@ namespace Java.Nio.File
         }
         #endregion
 
-        #region Filter<T> declaration
+        #region Filter declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        public partial class Filter<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Filter<T>>
+        public partial class Filter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Filter>
         {
             const string _bridgeClassName = "java.nio.file.DirectoryStream$Filter";
             /// <summary>
@@ -155,12 +155,12 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region DirectoryStream<T> declaration
+    #region DirectoryStream declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class DirectoryStream<T> : Java.Lang.Iterable<T>
+    public partial class DirectoryStream : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirectoryStream>
     {
         const string _bridgeClassName = "java.nio.file.DirectoryStream";
         /// <summary>
@@ -208,7 +208,7 @@ namespace Java.Nio.File
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.DirectoryStream"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Nio.File.DirectoryStream t) => t.Cast<Java.Io.Closeable>();
 
@@ -226,7 +226,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Iterator Iterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
@@ -258,9 +258,9 @@ namespace Java.Nio.File
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html#accept(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="bool"/></returns>
-            /// <exception cref="Java.Io.IOException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public bool Accept(object arg0)
             {
                 return IExecuteWithSignature<bool>("accept", "(Ljava/lang/Object;)Z", arg0);
@@ -276,8 +276,8 @@ namespace Java.Nio.File
         }
         #endregion
 
-        #region Filter<T> implementation
-        public partial class Filter<T>
+        #region Filter implementation
+        public partial class Filter
         {
             #region Constructors
 
@@ -285,9 +285,9 @@ namespace Java.Nio.File
 
             #region Class/Interface conversion operators
             /// <summary>
-            /// Converter from <see cref="Java.Nio.File.DirectoryStream.Filter{T}"/> to <see cref="Java.Nio.File.DirectoryStream.Filter"/>
+            /// Converter from <see cref=""/> to <see cref=""/>
             /// </summary>
-            public static implicit operator Java.Nio.File.DirectoryStream.Filter(Java.Nio.File.DirectoryStream.Filter<T> t) => t.Cast<Java.Nio.File.DirectoryStream.Filter>();
+            public static implicit operator Java.Nio.File.DirectoryStream.Filter(Java.Nio.File.DirectoryStream.Filter t) => t.Cast<Java.Nio.File.DirectoryStream.Filter>();
 
             #endregion
 
@@ -303,9 +303,9 @@ namespace Java.Nio.File
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html#accept(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><typeparamref name="T"/></param>
-            /// <returns><see cref="bool"/></returns>
-            /// <exception cref="Java.Io.IOException"/>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public bool Accept(T arg0)
             {
                 return IExecuteWithSignature<bool>("accept", "(Ljava/lang/Object;)Z", arg0);
@@ -328,18 +328,18 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region IDirectoryStream<T>
+    #region IDirectoryStream
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html"/>
     /// </summary>
-    public partial interface IDirectoryStream<T>
+    public partial interface IDirectoryStream
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<T> Iterator();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Iterator Iterator();
 
         #endregion
 
@@ -351,8 +351,8 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region DirectoryStream<T> implementation
-    public partial class DirectoryStream<T> : Java.Nio.File.IDirectoryStream<T>
+    #region DirectoryStream implementation
+    public partial class DirectoryStream : Java.Nio.File.IDirectoryStream
     {
         #region Constructors
 
@@ -360,13 +360,13 @@ namespace Java.Nio.File
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.DirectoryStream{T}"/> to <see cref="Java.Io.Closeable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Closeable(Java.Nio.File.DirectoryStream<T> t) => t.Cast<Java.Io.Closeable>();
+        public static implicit operator Java.Io.Closeable(Java.Nio.File.DirectoryStream t) => t.Cast<Java.Io.Closeable>();
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.DirectoryStream{T}"/> to <see cref="Java.Nio.File.DirectoryStream"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Nio.File.DirectoryStream(Java.Nio.File.DirectoryStream<T> t) => t.Cast<Java.Nio.File.DirectoryStream>();
+        public static implicit operator Java.Nio.File.DirectoryStream(Java.Nio.File.DirectoryStream t) => t.Cast<Java.Nio.File.DirectoryStream>();
 
         #endregion
 
@@ -382,10 +382,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<T> Iterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<T>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

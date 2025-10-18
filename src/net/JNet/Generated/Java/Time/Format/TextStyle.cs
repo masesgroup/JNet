@@ -29,7 +29,7 @@ namespace Java.Time.Format
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html"/>
     /// </summary>
-    public partial class TextStyle : Java.Lang.Enum<Java.Time.Format.TextStyle>
+    public partial class TextStyle : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.time.format.TextStyle";
         /// <summary>
@@ -121,8 +121,8 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Format.TextStyle ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Time.Format.TextStyle>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/format/TextStyle;", arg0);
@@ -130,7 +130,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Format.TextStyle[] Values()
         {
             return SExecuteWithSignatureArray<Java.Time.Format.TextStyle>(LocalBridgeClazz, "values", "()[Ljava/time/format/TextStyle;");
@@ -142,7 +142,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#isStandalone()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsStandalone()
         {
             return IExecuteWithSignature<bool>("isStandalone", "()Z");
@@ -150,7 +150,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#asNormal()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Format.TextStyle AsNormal()
         {
             return IExecuteWithSignature<Java.Time.Format.TextStyle>("asNormal", "()Ljava/time/format/TextStyle;");
@@ -158,7 +158,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#asStandalone()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Time.Format.TextStyle AsStandalone()
         {
             return IExecuteWithSignature<Java.Time.Format.TextStyle>("asStandalone", "()Ljava/time/format/TextStyle;");

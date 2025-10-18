@@ -91,11 +91,11 @@ namespace Org.W3c.Dom.Bootstrap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#newInstance()"/>
         /// </summary>
-        /// <returns><see cref="Org.W3c.Dom.Bootstrap.DOMImplementationRegistry"/></returns>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Java.Lang.InstantiationException"/>
-        /// <exception cref="Java.Lang.IllegalAccessException"/>
-        /// <exception cref="Java.Lang.ClassCastException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Org.W3c.Dom.Bootstrap.DOMImplementationRegistry NewInstance()
         {
             return SExecuteWithSignature<Org.W3c.Dom.Bootstrap.DOMImplementationRegistry>(LocalBridgeClazz, "newInstance", "()Lorg/w3c/dom/bootstrap/DOMImplementationRegistry;");
@@ -107,8 +107,8 @@ namespace Org.W3c.Dom.Bootstrap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#getDOMImplementation(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.DOMImplementation GetDOMImplementation(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("getDOMImplementation", "(Ljava/lang/String;)Lorg/w3c/dom/DOMImplementation;", arg0);
@@ -116,8 +116,8 @@ namespace Org.W3c.Dom.Bootstrap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#getDOMImplementationList(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.DOMImplementationList"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Org.W3c.Dom.DOMImplementationList GetDOMImplementationList(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Org.W3c.Dom.DOMImplementationList>("getDOMImplementationList", "(Ljava/lang/String;)Lorg/w3c/dom/DOMImplementationList;", arg0);
@@ -125,7 +125,7 @@ namespace Org.W3c.Dom.Bootstrap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#addSource(org.w3c.dom.DOMImplementationSource)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.DOMImplementationSource"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void AddSource(Org.W3c.Dom.DOMImplementationSource arg0)
         {
             IExecuteWithSignature("addSource", "(Lorg/w3c/dom/DOMImplementationSource;)V", arg0);

@@ -73,8 +73,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html#%3Cinit%3E(java.security.cert.CertPath,java.security.Timestamp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.CertPath"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Timestamp"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public CodeSigner(Java.Security.Cert.CertPath arg0, Java.Security.Timestamp arg1)
             : base(arg0, arg1)
         {

@@ -108,17 +108,17 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuCanceled(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void MenuCanceled(Javax.Swing.Event.MenuEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuDeselected(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void MenuDeselected(Javax.Swing.Event.MenuEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuSelected(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         void MenuSelected(Javax.Swing.Event.MenuEvent arg0);
 
         #endregion
@@ -180,7 +180,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuCanceled(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MenuCanceled(Javax.Swing.Event.MenuEvent arg0)
         {
             hasOverrideMenuCanceled = false;
@@ -204,7 +204,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuDeselected(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MenuDeselected(Javax.Swing.Event.MenuEvent arg0)
         {
             hasOverrideMenuDeselected = false;
@@ -228,7 +228,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuSelected(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public virtual void MenuSelected(Javax.Swing.Event.MenuEvent arg0)
         {
             hasOverrideMenuSelected = false;
@@ -267,7 +267,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuCanceled(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MenuCanceled(Javax.Swing.Event.MenuEvent arg0)
         {
             IExecuteWithSignature("menuCanceled", "(Ljavax/swing/event/MenuEvent;)V", arg0);
@@ -275,7 +275,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuDeselected(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MenuDeselected(Javax.Swing.Event.MenuEvent arg0)
         {
             IExecuteWithSignature("menuDeselected", "(Ljavax/swing/event/MenuEvent;)V", arg0);
@@ -283,7 +283,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuSelected(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public override void MenuSelected(Javax.Swing.Event.MenuEvent arg0)
         {
             IExecuteWithSignature("menuSelected", "(Ljavax/swing/event/MenuEvent;)V", arg0);

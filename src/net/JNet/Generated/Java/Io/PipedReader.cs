@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedReader.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public PipedReader(int arg0)
             : base(arg0)
         {
@@ -81,9 +81,9 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedReader.html#%3Cinit%3E(java.io.PipedWriter,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PipedWriter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public PipedReader(Java.Io.PipedWriter arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -91,8 +91,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedReader.html#%3Cinit%3E(java.io.PipedWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PipedWriter"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public PipedReader(Java.Io.PipedWriter arg0)
             : base(arg0)
         {
@@ -116,8 +116,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedReader.html#connect(java.io.PipedWriter)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PipedWriter"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Connect(Java.Io.PipedWriter arg0)
         {
             IExecuteWithSignature("connect", "(Ljava/io/PipedWriter;)V", arg0);

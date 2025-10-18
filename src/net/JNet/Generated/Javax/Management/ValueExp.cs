@@ -78,12 +78,12 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ValueExp.html#apply(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
-        /// <exception cref="Javax.Management.BadStringOperationException"/>
-        /// <exception cref="Javax.Management.BadBinaryOpValueExpException"/>
-        /// <exception cref="Javax.Management.BadAttributeValueExpException"/>
-        /// <exception cref="Javax.Management.InvalidApplicationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         Javax.Management.ValueExp Apply(Javax.Management.ObjectName arg0);
 
         #endregion
@@ -119,12 +119,12 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ValueExp.html#apply(javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
-        /// <exception cref="Javax.Management.BadStringOperationException"/>
-        /// <exception cref="Javax.Management.BadBinaryOpValueExpException"/>
-        /// <exception cref="Javax.Management.BadAttributeValueExpException"/>
-        /// <exception cref="Javax.Management.InvalidApplicationException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Javax.Management.ValueExp Apply(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<Javax.Management.ValueExp>("apply", "(Ljavax/management/ObjectName;)Ljavax/management/ValueExp;", arg0);

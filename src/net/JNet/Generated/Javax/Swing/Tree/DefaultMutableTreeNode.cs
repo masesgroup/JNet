@@ -73,8 +73,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#%3Cinit%3E(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DefaultMutableTreeNode(object arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public DefaultMutableTreeNode(object arg0)
             : base(arg0)
         {
@@ -92,15 +92,15 @@ namespace Javax.Swing.Tree
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Swing.Tree.DefaultMutableTreeNode t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/> to <see cref="Javax.Swing.Tree.MutableTreeNode"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Swing.Tree.MutableTreeNode(Javax.Swing.Tree.DefaultMutableTreeNode t) => t.Cast<Javax.Swing.Tree.MutableTreeNode>();
         /// <summary>
-        /// Converter from <see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Tree.DefaultMutableTreeNode t) => t.Cast<Java.Io.Serializable>();
 
@@ -271,7 +271,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isLeaf()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsLeaf()
         {
             return IExecuteWithSignature<bool>("isLeaf", "()Z");
@@ -279,8 +279,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeAncestor(javax.swing.tree.TreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsNodeAncestor(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecuteWithSignature<bool>("isNodeAncestor", "(Ljavax/swing/tree/TreeNode;)Z", arg0);
@@ -288,8 +288,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeChild(javax.swing.tree.TreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsNodeChild(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecuteWithSignature<bool>("isNodeChild", "(Ljavax/swing/tree/TreeNode;)Z", arg0);
@@ -297,8 +297,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeDescendant(javax.swing.tree.DefaultMutableTreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsNodeDescendant(Javax.Swing.Tree.DefaultMutableTreeNode arg0)
         {
             return IExecuteWithSignature<bool>("isNodeDescendant", "(Ljavax/swing/tree/DefaultMutableTreeNode;)Z", arg0);
@@ -306,8 +306,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeRelated(javax.swing.tree.DefaultMutableTreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsNodeRelated(Javax.Swing.Tree.DefaultMutableTreeNode arg0)
         {
             return IExecuteWithSignature<bool>("isNodeRelated", "(Ljavax/swing/tree/DefaultMutableTreeNode;)Z", arg0);
@@ -315,8 +315,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isNodeSibling(javax.swing.tree.TreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsNodeSibling(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecuteWithSignature<bool>("isNodeSibling", "(Ljavax/swing/tree/TreeNode;)Z", arg0);
@@ -324,7 +324,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#isRoot()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsRoot()
         {
             return IExecuteWithSignature<bool>("isRoot", "()Z");
@@ -332,8 +332,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getIndex(javax.swing.tree.TreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetIndex(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecuteWithSignature<int>("getIndex", "(Ljavax/swing/tree/TreeNode;)I", arg0);
@@ -341,57 +341,57 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#breadthFirstEnumeration()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> BreadthFirstEnumerationMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration BreadthFirstEnumerationMethod()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("breadthFirstEnumeration", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("breadthFirstEnumeration", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#children()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> Children()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration Children()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("children", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("children", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#depthFirstEnumeration()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> DepthFirstEnumeration()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration DepthFirstEnumeration()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("depthFirstEnumeration", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("depthFirstEnumeration", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#pathFromAncestorEnumeration(javax.swing.tree.TreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> PathFromAncestorEnumeration(Javax.Swing.Tree.TreeNode arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration PathFromAncestorEnumeration(Javax.Swing.Tree.TreeNode arg0)
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("pathFromAncestorEnumeration", "(Ljavax/swing/tree/TreeNode;)Ljava/util/Enumeration;", arg0);
+            return IExecuteWithSignature<Java.Util.Enumeration>("pathFromAncestorEnumeration", "(Ljavax/swing/tree/TreeNode;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#postorderEnumeration()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> PostorderEnumerationMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration PostorderEnumerationMethod()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("postorderEnumeration", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("postorderEnumeration", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#preorderEnumeration()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> PreorderEnumerationMethod()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Enumeration PreorderEnumerationMethod()
         {
-            return IExecuteWithSignature<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("preorderEnumeration", "()Ljava/util/Enumeration;");
+            return IExecuteWithSignature<Java.Util.Enumeration>("preorderEnumeration", "()Ljava/util/Enumeration;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getChildAfter(javax.swing.tree.TreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreeNode GetChildAfter(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreeNode>("getChildAfter", "(Ljavax/swing/tree/TreeNode;)Ljavax/swing/tree/TreeNode;", arg0);
@@ -399,8 +399,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getChildAt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreeNode GetChildAt(int arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreeNode>("getChildAt", "(I)Ljavax/swing/tree/TreeNode;", arg0);
@@ -408,8 +408,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getChildBefore(javax.swing.tree.TreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreeNode GetChildBefore(Javax.Swing.Tree.TreeNode arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreeNode>("getChildBefore", "(Ljavax/swing/tree/TreeNode;)Ljavax/swing/tree/TreeNode;", arg0);
@@ -417,8 +417,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getSharedAncestor(javax.swing.tree.DefaultMutableTreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/></param>
-        /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Tree.TreeNode GetSharedAncestor(Javax.Swing.Tree.DefaultMutableTreeNode arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Tree.TreeNode>("getSharedAncestor", "(Ljavax/swing/tree/DefaultMutableTreeNode;)Ljavax/swing/tree/TreeNode;", arg0);
@@ -426,7 +426,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#add(javax.swing.tree.MutableTreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Add(Javax.Swing.Tree.MutableTreeNode arg0)
         {
             IExecuteWithSignature("add", "(Ljavax/swing/tree/MutableTreeNode;)V", arg0);
@@ -434,8 +434,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#insert(javax.swing.tree.MutableTreeNode,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void Insert(Javax.Swing.Tree.MutableTreeNode arg0, int arg1)
         {
             IExecuteWithSignature("insert", "(Ljavax/swing/tree/MutableTreeNode;I)V", arg0, arg1);
@@ -443,7 +443,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(int arg0)
         {
             IExecuteWithSignature("remove", "(I)V", arg0);
@@ -451,7 +451,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#remove(javax.swing.tree.MutableTreeNode)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Remove(Javax.Swing.Tree.MutableTreeNode arg0)
         {
             IExecuteWithSignature("remove", "(Ljavax/swing/tree/MutableTreeNode;)V", arg0);

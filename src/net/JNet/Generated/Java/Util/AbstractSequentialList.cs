@@ -68,12 +68,12 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractSequentialList<E> declaration
+    #region AbstractSequentialList declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractSequentialList.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class AbstractSequentialList<E> : Java.Util.AbstractList<E>
+    public partial class AbstractSequentialList : Java.Util.AbstractList
     {
         const string _bridgeClassName = "java.util.AbstractSequentialList";
         /// <summary>
@@ -143,8 +143,8 @@ namespace Java.Util
     }
     #endregion
 
-    #region AbstractSequentialList<E> implementation
-    public partial class AbstractSequentialList<E>
+    #region AbstractSequentialList implementation
+    public partial class AbstractSequentialList
     {
         #region Constructors
 
@@ -152,9 +152,9 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractSequentialList{E}"/> to <see cref="Java.Util.AbstractSequentialList"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.AbstractSequentialList(Java.Util.AbstractSequentialList<E> t) => t.Cast<Java.Util.AbstractSequentialList>();
+        public static implicit operator Java.Util.AbstractSequentialList(Java.Util.AbstractSequentialList t) => t.Cast<Java.Util.AbstractSequentialList>();
 
         #endregion
 

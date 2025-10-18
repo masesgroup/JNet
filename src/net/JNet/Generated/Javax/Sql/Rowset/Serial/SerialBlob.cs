@@ -73,9 +73,9 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#%3Cinit%3E(byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public SerialBlob(byte[] arg0)
             : base(arg0)
         {
@@ -83,9 +83,9 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#%3Cinit%3E(java.sql.Blob)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public SerialBlob(Java.Sql.Blob arg0)
             : base(arg0)
         {
@@ -95,15 +95,15 @@ namespace Javax.Sql.Rowset.Serial
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialBlob"/> to <see cref="Java.Sql.Blob"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Sql.Blob(Javax.Sql.Rowset.Serial.SerialBlob t) => t.Cast<Java.Sql.Blob>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialBlob"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.Serial.SerialBlob t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialBlob"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialBlob t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -128,10 +128,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#getBytes(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public byte[] GetBytes(long arg0, int arg1)
         {
             return IExecuteWithSignatureArray<byte>("getBytes", "(JI)[B", arg0, arg1);
@@ -139,13 +139,13 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#setBytes(long,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public int SetBytes(long arg0, byte[] arg1, int arg2, int arg3)
         {
             return IExecuteWithSignature<int>("setBytes", "(J[BII)I", arg0, arg1, arg2, arg3);
@@ -153,11 +153,11 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#setBytes(long,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public int SetBytes(long arg0, byte[] arg1)
         {
             return IExecuteWithSignature<int>("setBytes", "(J[B)I", arg0, arg1);
@@ -165,10 +165,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#getBinaryStream(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.InputStream GetBinaryStream(long arg0, long arg1)
         {
             return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "(JJ)Ljava/io/InputStream;", arg0, arg1);
@@ -176,10 +176,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#setBinaryStream(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public Java.Io.OutputStream SetBinaryStream(long arg0)
         {
             return IExecuteWithSignature<Java.Io.OutputStream>("setBinaryStream", "(J)Ljava/io/OutputStream;", arg0);
@@ -187,8 +187,8 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#length()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public long Length()
         {
             return IExecuteWithSignature<long>("length", "()J");
@@ -196,11 +196,11 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#position(byte[],long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public long Position(byte[] arg0, long arg1)
         {
             return IExecuteWithSignature<long>("position", "([BJ)J", arg0, arg1);
@@ -208,11 +208,11 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#position(java.sql.Blob,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public long Position(Java.Sql.Blob arg0, long arg1)
         {
             return IExecuteWithSignature<long>("position", "(Ljava/sql/Blob;J)J", arg0, arg1);
@@ -220,7 +220,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#free()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Free()
         {
             IExecuteWithSignature("free", "()V");
@@ -228,8 +228,8 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#truncate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Truncate(long arg0)
         {
             IExecuteWithSignature("truncate", "(J)V", arg0);

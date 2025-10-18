@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Destination.html#%3Cinit%3E(java.net.URI)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Destination(Java.Net.URI arg0)
             : base(arg0)
         {
@@ -83,11 +83,11 @@ namespace Javax.Print.Attribute.Standard
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.Destination"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.Destination t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.Destination"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.Destination t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
 

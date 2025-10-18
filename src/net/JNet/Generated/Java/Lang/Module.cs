@@ -131,25 +131,25 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getPackages()"/> 
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> Packages
+        public Java.Util.Set Packages
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPackages", "()Ljava/util/Set;"); }
+            get { return IExecuteWithSignature<Java.Util.Set>("getPackages", "()Ljava/util/Set;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T GetAnnotation<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref=""/></returns>
+        public T GetAnnotation(Java.Lang.Class arg0)
         {
             return IExecute<T>("getAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canRead(java.lang.Module)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CanRead(Java.Lang.Module arg0)
         {
             return IExecuteWithSignature<bool>("canRead", "(Ljava/lang/Module;)Z", arg0);
@@ -157,8 +157,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canUse(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool CanUse(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<bool>("canUse", "(Ljava/lang/Class;)Z", arg0);
@@ -166,9 +166,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String,java.lang.Module)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsExported(Java.Lang.String arg0, Java.Lang.Module arg1)
         {
             return IExecuteWithSignature<bool>("isExported", "(Ljava/lang/String;Ljava/lang/Module;)Z", arg0, arg1);
@@ -176,8 +176,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsExported(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isExported", "(Ljava/lang/String;)Z", arg0);
@@ -185,7 +185,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isNamed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsNamed()
         {
             return IExecuteWithSignature<bool>("isNamed", "()Z");
@@ -193,9 +193,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String,java.lang.Module)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsOpen(Java.Lang.String arg0, Java.Lang.Module arg1)
         {
             return IExecuteWithSignature<bool>("isOpen", "(Ljava/lang/String;Ljava/lang/Module;)Z", arg0, arg1);
@@ -203,8 +203,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsOpen(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isOpen", "(Ljava/lang/String;)Z", arg0);
@@ -212,9 +212,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getResourceAsStream(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.InputStream GetResourceAsStream(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
@@ -222,9 +222,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addExports(java.lang.String,java.lang.Module)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
-        /// <returns><see cref="Java.Lang.Module"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Module AddExports(Java.Lang.String arg0, Java.Lang.Module arg1)
         {
             return IExecuteWithSignature<Java.Lang.Module>("addExports", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/Module;", arg0, arg1);
@@ -232,9 +232,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addOpens(java.lang.String,java.lang.Module)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
-        /// <returns><see cref="Java.Lang.Module"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Module AddOpens(Java.Lang.String arg0, Java.Lang.Module arg1)
         {
             return IExecuteWithSignature<Java.Lang.Module>("addOpens", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/Module;", arg0, arg1);
@@ -242,8 +242,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addReads(java.lang.Module)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
-        /// <returns><see cref="Java.Lang.Module"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Module AddReads(Java.Lang.Module arg0)
         {
             return IExecuteWithSignature<Java.Lang.Module>("addReads", "(Ljava/lang/Module;)Ljava/lang/Module;", arg0);
@@ -251,8 +251,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addUses(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Lang.Module"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Module AddUses(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<Java.Lang.Module>("addUses", "(Ljava/lang/Class;)Ljava/lang/Module;", arg0);

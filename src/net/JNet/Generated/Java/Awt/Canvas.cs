@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#%3Cinit%3E(java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public Canvas(Java.Awt.GraphicsConfiguration arg0)
             : base(arg0)
         {
@@ -83,7 +83,7 @@ namespace Java.Awt
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.Canvas"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Canvas t) => t.Cast<Javax.Accessibility.Accessible>();
 
@@ -108,9 +108,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#createBufferStrategy(int,java.awt.BufferCapabilities)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.BufferCapabilities"/></param>
-        /// <exception cref="Java.Awt.AWTException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void CreateBufferStrategy(int arg0, Java.Awt.BufferCapabilities arg1)
         {
             IExecuteWithSignature("createBufferStrategy", "(ILjava/awt/BufferCapabilities;)V", arg0, arg1);
@@ -118,7 +118,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#createBufferStrategy(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void CreateBufferStrategy(int arg0)
         {
             IExecuteWithSignature("createBufferStrategy", "(I)V", arg0);

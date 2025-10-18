@@ -73,7 +73,7 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ColorSpace.html#%3Cinit%3E(java.awt.color.ICC_Profile)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.ColorNs.ICC_Profile"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ICC_ColorSpace(Java.Awt.ColorNs.ICC_Profile arg0)
             : base(arg0)
         {

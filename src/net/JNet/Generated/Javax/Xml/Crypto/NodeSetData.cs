@@ -68,12 +68,12 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region NodeSetData<T> declaration
+    #region NodeSetData declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class NodeSetData<T> : Java.Lang.Iterable<T>
+    public partial class NodeSetData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NodeSetData>
     {
         const string _bridgeClassName = "javax.xml.crypto.NodeSetData";
         /// <summary>
@@ -121,7 +121,7 @@ namespace Javax.Xml.Crypto
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.NodeSetData"/> to <see cref="Javax.Xml.Crypto.Data"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Data(Javax.Xml.Crypto.NodeSetData t) => t.Cast<Javax.Xml.Crypto.Data>();
 
@@ -139,7 +139,7 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.Iterator Iterator()
         {
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
@@ -155,18 +155,18 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region INodeSetData<T>
+    #region INodeSetData
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html"/>
     /// </summary>
-    public partial interface INodeSetData<T>
+    public partial interface INodeSetData
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<T> Iterator();
+        /// <returns><see cref=""/></returns>
+        Java.Util.Iterator Iterator();
 
         #endregion
 
@@ -178,8 +178,8 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
-    #region NodeSetData<T> implementation
-    public partial class NodeSetData<T> : Javax.Xml.Crypto.INodeSetData<T>
+    #region NodeSetData implementation
+    public partial class NodeSetData : Javax.Xml.Crypto.INodeSetData
     {
         #region Constructors
 
@@ -187,13 +187,13 @@ namespace Javax.Xml.Crypto
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.NodeSetData{T}"/> to <see cref="Javax.Xml.Crypto.Data"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Xml.Crypto.Data(Javax.Xml.Crypto.NodeSetData<T> t) => t.Cast<Javax.Xml.Crypto.Data>();
+        public static implicit operator Javax.Xml.Crypto.Data(Javax.Xml.Crypto.NodeSetData t) => t.Cast<Javax.Xml.Crypto.Data>();
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.NodeSetData{T}"/> to <see cref="Javax.Xml.Crypto.NodeSetData"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Xml.Crypto.NodeSetData(Javax.Xml.Crypto.NodeSetData<T> t) => t.Cast<Javax.Xml.Crypto.NodeSetData>();
+        public static implicit operator Javax.Xml.Crypto.NodeSetData(Javax.Xml.Crypto.NodeSetData t) => t.Cast<Javax.Xml.Crypto.NodeSetData>();
 
         #endregion
 
@@ -209,10 +209,10 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<T> Iterator()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<T>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

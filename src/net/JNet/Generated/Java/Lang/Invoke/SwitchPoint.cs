@@ -85,7 +85,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html#invalidateAll(java.lang.invoke.SwitchPoint[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.SwitchPoint"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void InvalidateAll(Java.Lang.Invoke.SwitchPoint[] arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "invalidateAll", "([Ljava/lang/invoke/SwitchPoint;)V", new object[] { arg0 });
@@ -97,7 +97,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html#hasBeenInvalidated()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool HasBeenInvalidated()
         {
             return IExecuteWithSignature<bool>("hasBeenInvalidated", "()Z");
@@ -105,9 +105,9 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html#guardWithTest(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Invoke.MethodHandle GuardWithTest(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1)
         {
             return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("guardWithTest", "(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;", arg0, arg1);

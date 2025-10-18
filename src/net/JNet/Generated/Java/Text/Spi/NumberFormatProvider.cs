@@ -91,8 +91,8 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/NumberFormatProvider.html#getCurrencyInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.NumberFormat GetCurrencyInstance(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Text.NumberFormat>("getCurrencyInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
@@ -100,8 +100,8 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/NumberFormatProvider.html#getIntegerInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.NumberFormat GetIntegerInstance(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Text.NumberFormat>("getIntegerInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
@@ -109,8 +109,8 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/NumberFormatProvider.html#getNumberInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.NumberFormat GetNumberInstance(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Text.NumberFormat>("getNumberInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);
@@ -118,8 +118,8 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/NumberFormatProvider.html#getPercentInstance(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Text.NumberFormat GetPercentInstance(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Text.NumberFormat>("getPercentInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;", arg0);

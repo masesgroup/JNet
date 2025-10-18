@@ -98,9 +98,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getLocalCertificateChain()"/> 
         /// </summary>
-        public Java.Util.List<Java.Security.Cert.Certificate> LocalCertificateChain
+        public Java.Util.List LocalCertificateChain
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getLocalCertificateChain", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getLocalCertificateChain", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getLocalPrincipal()"/> 
@@ -119,9 +119,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getServerCertificateChain()"/> 
         /// </summary>
-        public Java.Util.List<Java.Security.Cert.Certificate> ServerCertificateChain
+        public Java.Util.List ServerCertificateChain
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getServerCertificateChain", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getServerCertificateChain", "()Ljava/util/List;"); }
         }
 
         #endregion

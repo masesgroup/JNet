@@ -73,11 +73,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#%3Cinit%3E(long,long,long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="long"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public LongSummaryStatistics(long arg0, long arg1, long arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -87,11 +87,11 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.LongSummaryStatistics"/> to <see cref="Java.Util.Function.LongConsumer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Function.LongConsumer(Java.Util.LongSummaryStatistics t) => t.Cast<Java.Util.Function.LongConsumer>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.LongSummaryStatistics"/> to <see cref="Java.Util.Function.IntConsumer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Function.IntConsumer(Java.Util.LongSummaryStatistics t) => t.Cast<Java.Util.Function.IntConsumer>();
 
@@ -144,7 +144,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#accept(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Accept(int arg0)
         {
             IExecuteWithSignature("accept", "(I)V", arg0);
@@ -152,7 +152,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#accept(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Accept(long arg0)
         {
             IExecuteWithSignature("accept", "(J)V", arg0);
@@ -160,7 +160,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#combine(java.util.LongSummaryStatistics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.LongSummaryStatistics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Combine(Java.Util.LongSummaryStatistics arg0)
         {
             IExecuteWithSignature("combine", "(Ljava/util/LongSummaryStatistics;)V", arg0);

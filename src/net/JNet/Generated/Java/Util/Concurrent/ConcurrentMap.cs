@@ -68,13 +68,13 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentMap<K, V> declaration
+    #region ConcurrentMap<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class ConcurrentMap<K, V> : Java.Util.Map<K, V>
+    public partial class ConcurrentMap<, > : Java.Util.Map<, >
     {
         const string _bridgeClassName = "java.util.concurrent.ConcurrentMap";
         /// <summary>
@@ -136,9 +136,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(object arg0, object arg1)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
@@ -146,10 +146,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Replace(object arg0, object arg1, object arg2)
         {
             return IExecuteWithSignature<bool>("replace", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
@@ -157,9 +157,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object PutIfAbsent(object arg0, object arg1)
         {
             return IExecuteWithSignature("putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -167,9 +167,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Replace(object arg0, object arg1)
         {
             return IExecuteWithSignature("replace", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -177,9 +177,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Compute(object arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecuteWithSignature("compute", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
@@ -187,9 +187,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object ComputeIfAbsent(object arg0, Java.Util.Function.Function arg1)
         {
             return IExecuteWithSignature("computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
@@ -197,9 +197,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object ComputeIfPresent(object arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecuteWithSignature("computeIfPresent", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
@@ -207,9 +207,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetOrDefault(object arg0, object arg1)
         {
             return IExecuteWithSignature("getOrDefault", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -217,10 +217,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Merge(object arg0, object arg1, Java.Util.Function.BiFunction arg2)
         {
             return IExecuteWithSignature("merge", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1, arg2);
@@ -228,7 +228,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ForEach(Java.Util.Function.BiConsumer arg0)
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
@@ -236,7 +236,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ReplaceAll(Java.Util.Function.BiFunction arg0)
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
@@ -252,103 +252,103 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region IConcurrentMap<K, V>
+    #region IConcurrentMap<, >
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html"/>
     /// </summary>
-    public partial interface IConcurrentMap<K, V> : Java.Util.IMap<K, V>
+    public partial interface IConcurrentMap<, > : Java.Util.IMap<, >
     {
         #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Remove(object arg0, object arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="V"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Replace(K arg0, V arg1, V arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         V PutIfAbsent(K arg0, V arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         V Replace(K arg0, V arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        V Compute<, , >(K arg0, Java.Util.Function.BiFunction<, , > arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        V ComputeIfAbsent<, >(K arg0, Java.Util.Function.Function<, > arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        V ComputeIfPresent<, , >(K arg0, Java.Util.Function.BiFunction<, , > arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         V GetOrDefault(object arg0, V arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg2objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg2ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg2objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg2ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        V Merge<, >(K arg0, V arg1, Java.Util.Function.BiFunction<, , > arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        void ForEach<, >(Java.Util.Function.BiConsumer<, > arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V;
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        void ReplaceAll<, , >(Java.Util.Function.BiFunction<, , > arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V;
 
         #endregion
 
@@ -360,8 +360,8 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
-    #region ConcurrentMap<K, V> implementation
-    public partial class ConcurrentMap<K, V> : Java.Util.Concurrent.IConcurrentMap<K, V>
+    #region ConcurrentMap<, > implementation
+    public partial class ConcurrentMap<, > : Java.Util.Concurrent.IConcurrentMap<, >
     {
         #region Constructors
 
@@ -369,9 +369,9 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ConcurrentMap{K, V}"/> to <see cref="Java.Util.Concurrent.ConcurrentMap"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.ConcurrentMap(Java.Util.Concurrent.ConcurrentMap<K, V> t) => t.Cast<Java.Util.Concurrent.ConcurrentMap>();
+        public static implicit operator Java.Util.Concurrent.ConcurrentMap(Java.Util.Concurrent.ConcurrentMap<, > t) => t.Cast<Java.Util.Concurrent.ConcurrentMap>();
 
         #endregion
 
@@ -387,9 +387,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(object arg0, object arg1)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
@@ -397,10 +397,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><typeparamref name="V"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Replace(K arg0, V arg1, V arg2)
         {
             return IExecuteWithSignature<bool>("replace", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
@@ -408,9 +408,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V PutIfAbsent(K arg0, V arg1)
         {
             return IExecuteWithSignature<V>("putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -418,9 +418,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Replace(K arg0, V arg1)
         {
             return IExecuteWithSignature<V>("replace", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -428,47 +428,47 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V Compute<, , >(K arg0, Java.Util.Function.BiFunction<, , > arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecuteWithSignature<V>("compute", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V ComputeIfAbsent<, >(K arg0, Java.Util.Function.Function<, > arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V
         {
             return IExecuteWithSignature<V>("computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <typeparam name="Arg1objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V ComputeIfPresent<, , >(K arg0, Java.Util.Function.BiFunction<, , > arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecuteWithSignature<V>("computeIfPresent", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V GetOrDefault(object arg0, V arg1)
         {
             return IExecuteWithSignature<V>("getOrDefault", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -476,34 +476,34 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg2objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg2ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><typeparamref name="V"/></returns>
-        public V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <typeparam name="Arg2objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg2ExtendsV"><see cref=""/></typeparam>
+        /// <returns><see cref=""/></returns>
+        public V Merge<, >(K arg0, V arg1, Java.Util.Function.BiFunction<, , > arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V
         {
             return IExecuteWithSignature<V>("merge", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        public void ForEach<, >(Java.Util.Function.BiConsumer<, > arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
-        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V
+        /// <param name="arg0"><see cref=""/></param>
+        /// <typeparam name="Arg0objectSuperK"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><see cref=""/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><see cref=""/></typeparam>
+        public void ReplaceAll<, , >(Java.Util.Function.BiFunction<, , > arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
         }

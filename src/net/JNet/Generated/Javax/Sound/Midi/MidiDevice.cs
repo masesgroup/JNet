@@ -139,7 +139,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getReceivers()"/> 
         /// </summary>
-        Java.Util.List<Javax.Sound.Midi.Receiver> Receivers { get; }
+        Java.Util.List Receivers { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitter()"/> 
         /// </summary>
@@ -147,11 +147,11 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitters()"/> 
         /// </summary>
-        Java.Util.List<Javax.Sound.Midi.Transmitter> Transmitters { get; }
+        Java.Util.List Transmitters { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         bool IsOpen();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#close()"/>
@@ -160,7 +160,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#open()"/>
         /// </summary>
-        /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
+        /// <exception cref=""/>
         void Open();
 
         #endregion
@@ -231,9 +231,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getReceivers()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Sound.Midi.Receiver> Receivers
+        public Java.Util.List Receivers
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Sound.Midi.Receiver>>("getReceivers", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getReceivers", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitter()"/> 
@@ -245,14 +245,14 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitters()"/> 
         /// </summary>
-        public Java.Util.List<Javax.Sound.Midi.Transmitter> Transmitters
+        public Java.Util.List Transmitters
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Sound.Midi.Transmitter>>("getTransmitters", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getTransmitters", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsOpen()
         {
             return IExecuteWithSignature<bool>("isOpen", "()Z");
@@ -267,7 +267,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#open()"/>
         /// </summary>
-        /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
+        /// <exception cref=""/>
         public void Open()
         {
             IExecuteWithSignature("open", "()V");

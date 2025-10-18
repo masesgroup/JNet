@@ -73,10 +73,10 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/InitialLdapContext.html#%3Cinit%3E(java.util.Hashtable,javax.naming.ldap.Control[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        /// <param name="arg1"><see cref="Javax.Naming.Ldap.Control"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
-        public InitialLdapContext(Java.Util.Hashtable<object, object> arg0, Javax.Naming.Ldap.Control[] arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
+        public InitialLdapContext(Java.Util.Hashtable<, > arg0, Javax.Naming.Ldap.Control[] arg1)
             : base(arg0, arg1)
         {
         }
@@ -85,7 +85,7 @@ namespace Javax.Naming.Ldap
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Naming.Ldap.InitialLdapContext"/> to <see cref="Javax.Naming.Ldap.LdapContext"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Naming.Ldap.LdapContext(Javax.Naming.Ldap.InitialLdapContext t) => t.Cast<Javax.Naming.Ldap.LdapContext>();
 
@@ -124,9 +124,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/InitialLdapContext.html#extendedOperation(javax.naming.ldap.ExtendedRequest)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Ldap.ExtendedRequest"/></param>
-        /// <returns><see cref="Javax.Naming.Ldap.ExtendedResponse"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Naming.Ldap.ExtendedResponse ExtendedOperation(Javax.Naming.Ldap.ExtendedRequest arg0)
         {
             return IExecuteWithSignature<Javax.Naming.Ldap.ExtendedResponse>("extendedOperation", "(Ljavax/naming/ldap/ExtendedRequest;)Ljavax/naming/ldap/ExtendedResponse;", arg0);
@@ -134,9 +134,9 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/InitialLdapContext.html#newInstance(javax.naming.ldap.Control[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Ldap.Control"/></param>
-        /// <returns><see cref="Javax.Naming.Ldap.LdapContext"/></returns>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Naming.Ldap.LdapContext NewInstance(Javax.Naming.Ldap.Control[] arg0)
         {
             return IExecuteWithSignature<Javax.Naming.Ldap.LdapContext>("newInstance", "([Ljavax/naming/ldap/Control;)Ljavax/naming/ldap/LdapContext;", new object[] { arg0 });
@@ -144,8 +144,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/InitialLdapContext.html#reconnect(javax.naming.ldap.Control[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Ldap.Control"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Reconnect(Javax.Naming.Ldap.Control[] arg0)
         {
             IExecuteWithSignature("reconnect", "([Ljavax/naming/ldap/Control;)V", new object[] { arg0 });

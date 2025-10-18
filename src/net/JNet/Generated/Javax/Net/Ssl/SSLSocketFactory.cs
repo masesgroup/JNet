@@ -105,12 +105,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#createSocket(java.net.Socket,java.lang.String,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.Socket"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Net.Socket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.Socket CreateSocket(Java.Net.Socket arg0, Java.Lang.String arg1, int arg2, bool arg3)
         {
             return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;", arg0, arg1, arg2, arg3);
@@ -118,11 +118,11 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#createSocket(java.net.Socket,java.io.InputStream,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.Socket"/></param>
-        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Net.Socket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Net.Socket CreateSocket(Java.Net.Socket arg0, Java.Io.InputStream arg1, bool arg2)
         {
             return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/net/Socket;Ljava/io/InputStream;Z)Ljava/net/Socket;", arg0, arg1, arg2);

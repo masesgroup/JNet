@@ -73,7 +73,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public JPEGImageWriteParam(Java.Util.Locale arg0)
             : base(arg0)
         {
@@ -125,7 +125,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#areTablesSet()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool AreTablesSet()
         {
             return IExecuteWithSignature<bool>("areTablesSet", "()Z");
@@ -133,9 +133,9 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#setEncodeTables(javax.imageio.plugins.jpeg.JPEGQTable[],javax.imageio.plugins.jpeg.JPEGHuffmanTable[],javax.imageio.plugins.jpeg.JPEGHuffmanTable[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Jpeg.JPEGQTable"/></param>
-        /// <param name="arg1"><see cref="Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable"/></param>
-        /// <param name="arg2"><see cref="Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public void SetEncodeTables(Javax.Imageio.Plugins.Jpeg.JPEGQTable[] arg0, Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] arg1, Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] arg2)
         {
             IExecuteWithSignature("setEncodeTables", "([Ljavax/imageio/plugins/jpeg/JPEGQTable;[Ljavax/imageio/plugins/jpeg/JPEGHuffmanTable;[Ljavax/imageio/plugins/jpeg/JPEGHuffmanTable;)V", arg0, arg1, arg2);

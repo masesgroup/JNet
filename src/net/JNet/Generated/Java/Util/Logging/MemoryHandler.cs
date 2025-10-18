@@ -73,9 +73,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html#%3Cinit%3E(java.util.logging.Handler,int,java.util.logging.Level)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Util.Logging.Level"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public MemoryHandler(Java.Util.Logging.Handler arg0, int arg1, Java.Util.Logging.Level arg2)
             : base(arg0, arg1, arg2)
         {

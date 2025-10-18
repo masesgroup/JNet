@@ -89,8 +89,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#add(javax.sound.midi.MidiEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiEvent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Add(Javax.Sound.Midi.MidiEvent arg0)
         {
             return IExecuteWithSignature<bool>("add", "(Ljavax/sound/midi/MidiEvent;)Z", arg0);
@@ -98,8 +98,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#remove(javax.sound.midi.MidiEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiEvent"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Remove(Javax.Sound.Midi.MidiEvent arg0)
         {
             return IExecuteWithSignature<bool>("remove", "(Ljavax/sound/midi/MidiEvent;)Z", arg0);
@@ -107,7 +107,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#size()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
@@ -115,9 +115,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Sound.Midi.MidiEvent"/></returns>
-        /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Javax.Sound.Midi.MidiEvent Get(int arg0)
         {
             return IExecuteWithSignature<Javax.Sound.Midi.MidiEvent>("get", "(I)Ljavax/sound/midi/MidiEvent;", arg0);
@@ -125,7 +125,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#ticks()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long Ticks()
         {
             return IExecuteWithSignature<long>("ticks", "()J");

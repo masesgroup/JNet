@@ -73,8 +73,8 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#%3Cinit%3E(short[],short[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public JPEGHuffmanTable(short[] arg0, short[] arg1)
             : base(arg0, arg1)
         {

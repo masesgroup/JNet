@@ -73,9 +73,9 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html#%3Cinit%3E(java.security.Key,org.w3c.dom.Node,org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg2"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public DOMSignContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
             : base(arg0, arg1, arg2)
         {
@@ -83,8 +83,8 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html#%3Cinit%3E(java.security.Key,org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DOMSignContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
             : base(arg0, arg1)
         {
@@ -92,9 +92,9 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html#%3Cinit%3E(javax.xml.crypto.KeySelector,org.w3c.dom.Node,org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.KeySelector"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg2"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
             : base(arg0, arg1, arg2)
         {
@@ -102,8 +102,8 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html#%3Cinit%3E(javax.xml.crypto.KeySelector,org.w3c.dom.Node)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Crypto.KeySelector"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
             : base(arg0, arg1)
         {
@@ -113,7 +113,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Dom.DOMSignContext"/> to <see cref="Javax.Xml.Crypto.Dsig.XMLSignContext"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.XMLSignContext(Javax.Xml.Crypto.Dsig.Dom.DOMSignContext t) => t.Cast<Javax.Xml.Crypto.Dsig.XMLSignContext>();
 

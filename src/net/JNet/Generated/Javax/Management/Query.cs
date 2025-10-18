@@ -139,9 +139,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#attr(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.AttributeValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.AttributeValueExp Attr(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteWithSignature<Javax.Management.AttributeValueExp>(LocalBridgeClazz, "attr", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/AttributeValueExp;", arg0, arg1);
@@ -149,8 +149,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#attr(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.AttributeValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.AttributeValueExp Attr(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Management.AttributeValueExp>(LocalBridgeClazz, "attr", "(Ljava/lang/String;)Ljavax/management/AttributeValueExp;", arg0);
@@ -158,7 +158,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#classattr()"/>
         /// </summary>
-        /// <returns><see cref="Javax.Management.AttributeValueExp"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.AttributeValueExp Classattr()
         {
             return SExecute<Javax.Management.AttributeValueExp>(LocalBridgeClazz, "classattr");
@@ -166,9 +166,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#and(javax.management.QueryExp,javax.management.QueryExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.QueryExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.QueryExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp And(Javax.Management.QueryExp arg0, Javax.Management.QueryExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "and", "(Ljavax/management/QueryExp;Ljavax/management/QueryExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -176,9 +176,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#anySubString(javax.management.AttributeValueExp,javax.management.StringValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.AttributeValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.StringValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp AnySubString(Javax.Management.AttributeValueExp arg0, Javax.Management.StringValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "anySubString", "(Ljavax/management/AttributeValueExp;Ljavax/management/StringValueExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -186,10 +186,10 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#between(javax.management.ValueExp,javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg2"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp Between(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1, Javax.Management.ValueExp arg2)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "between", "(Ljavax/management/ValueExp;Ljavax/management/ValueExp;Ljavax/management/ValueExp;)Ljavax/management/QueryExp;", arg0, arg1, arg2);
@@ -197,9 +197,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#eq(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp Eq(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "eq", "(Ljavax/management/ValueExp;Ljavax/management/ValueExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -207,9 +207,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#finalSubString(javax.management.AttributeValueExp,javax.management.StringValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.AttributeValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.StringValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp FinalSubString(Javax.Management.AttributeValueExp arg0, Javax.Management.StringValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "finalSubString", "(Ljavax/management/AttributeValueExp;Ljavax/management/StringValueExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -217,9 +217,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#geq(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp Geq(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "geq", "(Ljavax/management/ValueExp;Ljavax/management/ValueExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -227,9 +227,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#gt(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp Gt(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "gt", "(Ljavax/management/ValueExp;Ljavax/management/ValueExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -237,9 +237,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#in(javax.management.ValueExp,javax.management.ValueExp[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp In(Javax.Management.ValueExp arg0, Javax.Management.ValueExp[] arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "in", "(Ljavax/management/ValueExp;[Ljavax/management/ValueExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -247,9 +247,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#initialSubString(javax.management.AttributeValueExp,javax.management.StringValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.AttributeValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.StringValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp InitialSubString(Javax.Management.AttributeValueExp arg0, Javax.Management.StringValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "initialSubString", "(Ljavax/management/AttributeValueExp;Ljavax/management/StringValueExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -257,8 +257,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#isInstanceOf(javax.management.StringValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.StringValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp IsInstanceOf(Javax.Management.StringValueExp arg0)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "isInstanceOf", "(Ljavax/management/StringValueExp;)Ljavax/management/QueryExp;", arg0);
@@ -266,9 +266,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#leq(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp Leq(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "leq", "(Ljavax/management/ValueExp;Ljavax/management/ValueExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -276,9 +276,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#lt(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp Lt(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "lt", "(Ljavax/management/ValueExp;Ljavax/management/ValueExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -286,9 +286,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#match(javax.management.AttributeValueExp,javax.management.StringValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.AttributeValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.StringValueExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp Match(Javax.Management.AttributeValueExp arg0, Javax.Management.StringValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "match", "(Ljavax/management/AttributeValueExp;Ljavax/management/StringValueExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -296,8 +296,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#not(javax.management.QueryExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.QueryExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp Not(Javax.Management.QueryExp arg0)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "not", "(Ljavax/management/QueryExp;)Ljavax/management/QueryExp;", arg0);
@@ -305,9 +305,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#or(javax.management.QueryExp,javax.management.QueryExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.QueryExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.QueryExp"/></param>
-        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.QueryExp Or(Javax.Management.QueryExp arg0, Javax.Management.QueryExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.QueryExp>(LocalBridgeClazz, "or", "(Ljavax/management/QueryExp;Ljavax/management/QueryExp;)Ljavax/management/QueryExp;", arg0, arg1);
@@ -315,8 +315,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.StringValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.StringValueExp Value(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Javax.Management.StringValueExp>(LocalBridgeClazz, "value", "(Ljava/lang/String;)Ljavax/management/StringValueExp;", arg0);
@@ -324,9 +324,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#div(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ValueExp Div(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "div", "(Ljavax/management/ValueExp;Ljavax/management/ValueExp;)Ljavax/management/ValueExp;", arg0, arg1);
@@ -334,9 +334,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#minus(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ValueExp Minus(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "minus", "(Ljavax/management/ValueExp;Ljavax/management/ValueExp;)Ljavax/management/ValueExp;", arg0, arg1);
@@ -344,9 +344,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#plus(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ValueExp Plus(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "plus", "(Ljavax/management/ValueExp;Ljavax/management/ValueExp;)Ljavax/management/ValueExp;", arg0, arg1);
@@ -354,9 +354,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#times(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ValueExp Times(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "times", "(Ljavax/management/ValueExp;Ljavax/management/ValueExp;)Ljavax/management/ValueExp;", arg0, arg1);
@@ -364,8 +364,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ValueExp Value(bool arg0)
         {
             return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(Z)Ljavax/management/ValueExp;", arg0);
@@ -373,8 +373,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ValueExp Value(double arg0)
         {
             return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(D)Ljavax/management/ValueExp;", arg0);
@@ -382,8 +382,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ValueExp Value(float arg0)
         {
             return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(F)Ljavax/management/ValueExp;", arg0);
@@ -391,8 +391,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ValueExp Value(int arg0)
         {
             return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(I)Ljavax/management/ValueExp;", arg0);
@@ -400,8 +400,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(java.lang.Number)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ValueExp Value(Java.Lang.Number arg0)
         {
             return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(Ljava/lang/Number;)Ljavax/management/ValueExp;", arg0);
@@ -409,8 +409,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Management.ValueExp Value(long arg0)
         {
             return SExecuteWithSignature<Javax.Management.ValueExp>(LocalBridgeClazz, "value", "(J)Ljavax/management/ValueExp;", arg0);

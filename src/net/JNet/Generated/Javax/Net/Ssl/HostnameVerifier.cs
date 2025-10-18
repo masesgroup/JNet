@@ -78,9 +78,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HostnameVerifier.html#verify(java.lang.String,javax.net.ssl.SSLSession)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSession"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         bool Verify(Java.Lang.String arg0, Javax.Net.Ssl.SSLSession arg1);
 
         #endregion
@@ -116,9 +116,9 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HostnameVerifier.html#verify(java.lang.String,javax.net.ssl.SSLSession)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSession"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool Verify(Java.Lang.String arg0, Javax.Net.Ssl.SSLSession arg1)
         {
             return IExecuteWithSignature<bool>("verify", "(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z", arg0, arg1);

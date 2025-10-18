@@ -73,8 +73,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleResult.html#%3Cinit%3E(javax.management.relation.RoleList,javax.management.relation.RoleUnresolvedList)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.Relation.RoleList"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.Relation.RoleUnresolvedList"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public RoleResult(Javax.Management.Relation.RoleList arg0, Javax.Management.Relation.RoleUnresolvedList arg1)
             : base(arg0, arg1)
         {

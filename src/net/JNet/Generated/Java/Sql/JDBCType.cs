@@ -29,7 +29,7 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html"/>
     /// </summary>
-    public partial class JDBCType : Java.Lang.Enum<Java.Sql.JDBCType>
+    public partial class JDBCType : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.sql.JDBCType";
         /// <summary>
@@ -75,7 +75,7 @@ namespace Java.Sql
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Sql.JDBCType"/> to <see cref="Java.Sql.SQLType"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Sql.SQLType(Java.Sql.JDBCType t) => t.Cast<Java.Sql.SQLType>();
 
@@ -323,8 +323,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#valueOf(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Sql.JDBCType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.JDBCType ValueOf(int arg0)
         {
             return SExecuteWithSignature<Java.Sql.JDBCType>(LocalBridgeClazz, "valueOf", "(I)Ljava/sql/JDBCType;", arg0);
@@ -332,8 +332,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.JDBCType"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.JDBCType ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Sql.JDBCType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/JDBCType;", arg0);
@@ -341,7 +341,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Sql.JDBCType"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Sql.JDBCType[] Values()
         {
             return SExecuteWithSignatureArray<Java.Sql.JDBCType>(LocalBridgeClazz, "values", "()[Ljava/sql/JDBCType;");

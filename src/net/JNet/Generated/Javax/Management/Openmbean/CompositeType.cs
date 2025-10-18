@@ -29,7 +29,7 @@ namespace Javax.Management.Openmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html"/>
     /// </summary>
-    public partial class CompositeType : Javax.Management.Openmbean.OpenType<Javax.Management.Openmbean.CompositeData>
+    public partial class CompositeType : Javax.Management.Openmbean.OpenType
     {
         const string _bridgeClassName = "javax.management.openmbean.CompositeType";
         /// <summary>
@@ -73,13 +73,13 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],javax.management.openmbean.OpenType[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Javax.Management.Openmbean.OpenType"/></param>
-        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
-        public CompositeType(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Javax.Management.Openmbean.OpenType<object>[] arg4)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
+        public CompositeType(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Javax.Management.Openmbean.OpenType[] arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
@@ -102,8 +102,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#containsKey(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ContainsKey(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/String;)Z", arg0);
@@ -111,8 +111,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getDescription(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDescription(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDescription", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -120,19 +120,19 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#keySet()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Java.Lang.String> KeySet()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Set KeySet()
         {
-            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("keySet", "()Ljava/util/Set;");
+            return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Management.Openmbean.OpenType"/></returns>
-        public Javax.Management.Openmbean.OpenType<object> GetType(Java.Lang.String arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        public Javax.Management.Openmbean.OpenType GetType(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Javax.Management.Openmbean.OpenType<object>>("getType", "(Ljava/lang/String;)Ljavax/management/openmbean/OpenType;", arg0);
+            return IExecuteWithSignature<Javax.Management.Openmbean.OpenType>("getType", "(Ljava/lang/String;)Ljavax/management/openmbean/OpenType;", arg0);
         }
 
         #endregion

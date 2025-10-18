@@ -137,12 +137,12 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration.Parameters,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Login.Configuration.Parameters"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Security.Auth.Login.Configuration"/></returns>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public static Javax.Security.Auth.Login.Configuration GetInstance(Java.Lang.String arg0, Javax.Security.Auth.Login.Configuration.Parameters arg1, Java.Lang.String arg2)
         {
             return SExecuteWithSignature<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljavax/security/auth/login/Configuration$Parameters;Ljava/lang/String;)Ljavax/security/auth/login/Configuration;", arg0, arg1, arg2);
@@ -150,11 +150,11 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration.Parameters,java.security.Provider)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Login.Configuration.Parameters"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Javax.Security.Auth.Login.Configuration"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Security.Auth.Login.Configuration GetInstance(Java.Lang.String arg0, Javax.Security.Auth.Login.Configuration.Parameters arg1, Java.Security.Provider arg2)
         {
             return SExecuteWithSignature<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljavax/security/auth/login/Configuration$Parameters;Ljava/security/Provider;)Ljavax/security/auth/login/Configuration;", arg0, arg1, arg2);
@@ -162,10 +162,10 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration.Parameters)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Security.Auth.Login.Configuration.Parameters"/></param>
-        /// <returns><see cref="Javax.Security.Auth.Login.Configuration"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public static Javax.Security.Auth.Login.Configuration GetInstance(Java.Lang.String arg0, Javax.Security.Auth.Login.Configuration.Parameters arg1)
         {
             return SExecuteWithSignature<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljavax/security/auth/login/Configuration$Parameters;)Ljavax/security/auth/login/Configuration;", arg0, arg1);
@@ -173,7 +173,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#setConfiguration(javax.security.auth.login.Configuration)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Login.Configuration"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void SetConfiguration(Javax.Security.Auth.Login.Configuration arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setConfiguration", "(Ljavax/security/auth/login/Configuration;)V", arg0);
@@ -206,8 +206,8 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getAppConfigurationEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Security.Auth.Login.AppConfigurationEntry"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Security.Auth.Login.AppConfigurationEntry[] GetAppConfigurationEntry(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Javax.Security.Auth.Login.AppConfigurationEntry>("getAppConfigurationEntry", "(Ljava/lang/String;)[Ljavax/security/auth/login/AppConfigurationEntry;", arg0);

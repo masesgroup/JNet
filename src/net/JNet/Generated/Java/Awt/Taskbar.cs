@@ -66,7 +66,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html"/>
         /// </summary>
-        public partial class Feature : Java.Lang.Enum<Java.Awt.Taskbar.Feature>
+        public partial class Feature : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.awt.Taskbar$Feature";
             /// <summary>
@@ -107,7 +107,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html"/>
         /// </summary>
-        public partial class State : Java.Lang.Enum<Java.Awt.Taskbar.State>
+        public partial class State : Java.Lang.Enum
         {
             const string _bridgeClassName = "java.awt.Taskbar$State";
             /// <summary>
@@ -174,7 +174,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public static bool IsTaskbarSupported()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isTaskbarSupported", "()Z");
@@ -200,8 +200,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isSupported(java.awt.Taskbar.Feature)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Taskbar.Feature"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsSupported(Java.Awt.Taskbar.Feature arg0)
         {
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/awt/Taskbar$Feature;)Z", arg0);
@@ -209,8 +209,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#requestUserAttention(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void RequestUserAttention(bool arg0, bool arg1)
         {
             IExecuteWithSignature("requestUserAttention", "(ZZ)V", arg0, arg1);
@@ -218,7 +218,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#requestWindowUserAttention(java.awt.Window)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RequestWindowUserAttention(Java.Awt.Window arg0)
         {
             IExecuteWithSignature("requestWindowUserAttention", "(Ljava/awt/Window;)V", arg0);
@@ -226,7 +226,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setIconBadge(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetIconBadge(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setIconBadge", "(Ljava/lang/String;)V", arg0);
@@ -234,7 +234,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setProgressValue(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetProgressValue(int arg0)
         {
             IExecuteWithSignature("setProgressValue", "(I)V", arg0);
@@ -242,8 +242,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowIconBadge(java.awt.Window,java.awt.Image)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetWindowIconBadge(Java.Awt.Window arg0, Java.Awt.Image arg1)
         {
             IExecuteWithSignature("setWindowIconBadge", "(Ljava/awt/Window;Ljava/awt/Image;)V", arg0, arg1);
@@ -251,8 +251,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressState(java.awt.Window,java.awt.Taskbar.State)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Taskbar.State"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetWindowProgressState(Java.Awt.Window arg0, Java.Awt.Taskbar.State arg1)
         {
             IExecuteWithSignature("setWindowProgressState", "(Ljava/awt/Window;Ljava/awt/Taskbar$State;)V", arg0, arg1);
@@ -260,8 +260,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressValue(java.awt.Window,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void SetWindowProgressValue(Java.Awt.Window arg0, int arg1)
         {
             IExecuteWithSignature("setWindowProgressValue", "(Ljava/awt/Window;I)V", arg0, arg1);
@@ -349,8 +349,8 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Awt.Taskbar.Feature"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.Taskbar.Feature ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Awt.Taskbar.Feature>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/Taskbar$Feature;", arg0);
@@ -358,7 +358,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Awt.Taskbar.Feature"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.Taskbar.Feature[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Awt.Taskbar.Feature>(LocalBridgeClazz, "values", "()[Ljava/awt/Taskbar$Feature;");
@@ -427,8 +427,8 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#valueOf(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            /// <returns><see cref="Java.Awt.Taskbar.State"/></returns>
+            /// <param name="arg0"><see cref=""/></param>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.Taskbar.State ValueOf(Java.Lang.String arg0)
             {
                 return SExecuteWithSignature<Java.Awt.Taskbar.State>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/awt/Taskbar$State;", arg0);
@@ -436,7 +436,7 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()"/>
             /// </summary>
-            /// <returns><see cref="Java.Awt.Taskbar.State"/></returns>
+            /// <returns><see cref=""/></returns>
             public static Java.Awt.Taskbar.State[] Values()
             {
                 return SExecuteWithSignatureArray<Java.Awt.Taskbar.State>(LocalBridgeClazz, "values", "()[Ljava/awt/Taskbar$State;");

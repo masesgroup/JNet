@@ -73,8 +73,8 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeEvent.html#%3Cinit%3E(javax.print.DocPrintJob,javax.print.attribute.PrintJobAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Print.DocPrintJob"/></param>
-        /// <param name="arg1"><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public PrintJobAttributeEvent(Javax.Print.DocPrintJob arg0, Javax.Print.Attribute.PrintJobAttributeSet arg1)
             : base(arg0, arg1)
         {

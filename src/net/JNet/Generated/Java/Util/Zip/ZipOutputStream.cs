@@ -73,8 +73,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.Charset)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ZipOutputStream(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
@@ -82,7 +82,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ZipOutputStream(Java.Io.OutputStream arg0)
             : base(arg0)
         {
@@ -118,7 +118,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#closeEntry()"/>
         /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref=""/>
         public void CloseEntry()
         {
             IExecuteWithSignature("closeEntry", "()V");
@@ -126,8 +126,8 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#putNextEntry(java.util.zip.ZipEntry)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void PutNextEntry(Java.Util.Zip.ZipEntry arg0)
         {
             IExecuteWithSignature("putNextEntry", "(Ljava/util/zip/ZipEntry;)V", arg0);
@@ -135,7 +135,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#setComment(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetComment(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setComment", "(Ljava/lang/String;)V", arg0);
@@ -143,7 +143,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#setLevel(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetLevel(int arg0)
         {
             IExecuteWithSignature("setLevel", "(I)V", arg0);
@@ -151,7 +151,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html#setMethod(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetMethod(int arg0)
         {
             IExecuteWithSignature("setMethod", "(I)V", arg0);

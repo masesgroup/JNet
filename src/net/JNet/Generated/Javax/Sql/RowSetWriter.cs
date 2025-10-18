@@ -78,9 +78,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetWriter.html#writeData(javax.sql.RowSetInternal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         bool WriteData(Javax.Sql.RowSetInternal arg0);
 
         #endregion
@@ -116,9 +116,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetWriter.html#writeData(javax.sql.RowSetInternal)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public bool WriteData(Javax.Sql.RowSetInternal arg0)
         {
             return IExecuteWithSignature<bool>("writeData", "(Ljavax/sql/RowSetInternal;)Z", arg0);

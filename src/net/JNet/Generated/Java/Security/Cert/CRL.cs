@@ -98,8 +98,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRL.html#isRevoked(java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsRevoked(Java.Security.Cert.Certificate arg0)
         {
             return IExecuteWithSignature<bool>("isRevoked", "(Ljava/security/cert/Certificate;)Z", arg0);

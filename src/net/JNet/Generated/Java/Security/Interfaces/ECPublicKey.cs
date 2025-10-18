@@ -99,11 +99,11 @@ namespace Java.Security.Interfaces
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Security.Interfaces.ECPublicKey"/> to <see cref="Java.Security.PublicKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.PublicKey(Java.Security.Interfaces.ECPublicKey t) => t.Cast<Java.Security.PublicKey>();
         /// <summary>
-        /// Converter from <see cref="Java.Security.Interfaces.ECPublicKey"/> to <see cref="Java.Security.Interfaces.ECKey"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Security.Interfaces.ECKey(Java.Security.Interfaces.ECPublicKey t) => t.Cast<Java.Security.Interfaces.ECKey>();
 

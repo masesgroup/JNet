@@ -73,10 +73,10 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthContext.html#%3Cinit%3E(javax.swing.JComponent,javax.swing.plaf.synth.Region,javax.swing.plaf.synth.SynthStyle,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.Region"/></param>
-        /// <param name="arg2"><see cref="Javax.Swing.Plaf.Synth.SynthStyle"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
         public SynthContext(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1, Javax.Swing.Plaf.Synth.SynthStyle arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {

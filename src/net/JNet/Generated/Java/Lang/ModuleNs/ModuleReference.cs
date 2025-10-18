@@ -91,8 +91,8 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReference.html#open()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleReader"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Lang.ModuleNs.ModuleReader Open()
         {
             return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleReader>("open", "()Ljava/lang/module/ModuleReader;");
@@ -100,7 +100,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReference.html#descriptor()"/>
         /// </summary>
-        /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.ModuleNs.ModuleDescriptor Descriptor()
         {
             return IExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor>("descriptor", "()Ljava/lang/module/ModuleDescriptor;");
@@ -108,10 +108,10 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReference.html#location()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Net.URI> Location()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.Optional Location()
         {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Net.URI>>("location", "()Ljava/util/Optional;");
+            return IExecuteWithSignature<Java.Util.Optional>("location", "()Ljava/util/Optional;");
         }
 
         #endregion

@@ -85,11 +85,11 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long,long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="long"/></param>
-        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1, long arg2, long arg3)
         {
             return SExecuteWithSignature<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", "(JJJJ)Ljava/time/temporal/ValueRange;", arg0, arg1, arg2, arg3);
@@ -97,10 +97,10 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1, long arg2)
         {
             return SExecuteWithSignature<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", "(JJJ)Ljava/time/temporal/ValueRange;", arg0, arg1, arg2);
@@ -108,9 +108,9 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1)
         {
             return SExecuteWithSignature<Java.Time.Temporal.ValueRange>(LocalBridgeClazz, "of", "(JJ)Ljava/time/temporal/ValueRange;", arg0, arg1);
@@ -150,7 +150,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isFixed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsFixed()
         {
             return IExecuteWithSignature<bool>("isFixed", "()Z");
@@ -158,7 +158,7 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isIntValue()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsIntValue()
         {
             return IExecuteWithSignature<bool>("isIntValue", "()Z");
@@ -166,8 +166,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidIntValue(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsValidIntValue(long arg0)
         {
             return IExecuteWithSignature<bool>("isValidIntValue", "(J)Z", arg0);
@@ -175,8 +175,8 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidValue(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsValidValue(long arg0)
         {
             return IExecuteWithSignature<bool>("isValidValue", "(J)Z", arg0);
@@ -184,9 +184,9 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#checkValidIntValue(long,java.time.temporal.TemporalField)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int CheckValidIntValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
             return IExecuteWithSignature<int>("checkValidIntValue", "(JLjava/time/temporal/TemporalField;)I", arg0, arg1);
@@ -194,9 +194,9 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#checkValidValue(long,java.time.temporal.TemporalField)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long CheckValidValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
             return IExecuteWithSignature<long>("checkValidValue", "(JLjava/time/temporal/TemporalField;)J", arg0, arg1);

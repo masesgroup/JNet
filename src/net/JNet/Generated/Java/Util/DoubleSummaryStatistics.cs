@@ -73,11 +73,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#%3Cinit%3E(long,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <param name="arg2"><see cref="double"/></param>
-        /// <param name="arg3"><see cref="double"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public DoubleSummaryStatistics(long arg0, double arg1, double arg2, double arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -87,7 +87,7 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.DoubleSummaryStatistics"/> to <see cref="Java.Util.Function.DoubleConsumer"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Util.Function.DoubleConsumer(Java.Util.DoubleSummaryStatistics t) => t.Cast<Java.Util.Function.DoubleConsumer>();
 
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#accept(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Accept(double arg0)
         {
             IExecuteWithSignature("accept", "(D)V", arg0);
@@ -148,7 +148,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#combine(java.util.DoubleSummaryStatistics)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.DoubleSummaryStatistics"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void Combine(Java.Util.DoubleSummaryStatistics arg0)
         {
             IExecuteWithSignature("combine", "(Ljava/util/DoubleSummaryStatistics;)V", arg0);

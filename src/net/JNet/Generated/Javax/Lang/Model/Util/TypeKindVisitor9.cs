@@ -66,13 +66,13 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region TypeKindVisitor9<R, P> declaration
+    #region TypeKindVisitor9<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor9.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class TypeKindVisitor9<R, P> : Javax.Lang.Model.Util.TypeKindVisitor8<R, P>
+    public partial class TypeKindVisitor9<, > : Javax.Lang.Model.Util.TypeKindVisitor8<, >
     {
         const string _bridgeClassName = "javax.lang.model.util.TypeKindVisitor9";
         /// <summary>
@@ -140,8 +140,8 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region TypeKindVisitor9<R, P> implementation
-    public partial class TypeKindVisitor9<R, P>
+    #region TypeKindVisitor9<, > implementation
+    public partial class TypeKindVisitor9<, >
     {
         #region Constructors
 
@@ -149,9 +149,9 @@ namespace Javax.Lang.Model.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.TypeKindVisitor9{R, P}"/> to <see cref="Javax.Lang.Model.Util.TypeKindVisitor9"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Javax.Lang.Model.Util.TypeKindVisitor9(Javax.Lang.Model.Util.TypeKindVisitor9<R, P> t) => t.Cast<Javax.Lang.Model.Util.TypeKindVisitor9>();
+        public static implicit operator Javax.Lang.Model.Util.TypeKindVisitor9(Javax.Lang.Model.Util.TypeKindVisitor9<, > t) => t.Cast<Javax.Lang.Model.Util.TypeKindVisitor9>();
 
         #endregion
 

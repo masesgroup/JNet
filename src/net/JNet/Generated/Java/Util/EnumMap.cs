@@ -66,13 +66,13 @@ namespace Java.Util
     }
     #endregion
 
-    #region EnumMap<K, V> declaration
+    #region EnumMap<, > declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html"/>
     /// </summary>
-    /// <typeparam name="K"><see cref="Java.Lang.Enum{K}"/></typeparam>
+    /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class EnumMap<K, V> : Java.Util.AbstractMap<K, V> where K : Java.Lang.Enum<K>
+    public partial class EnumMap<, > : Java.Util.AbstractMap<, >
     {
         const string _bridgeClassName = "java.util.EnumMap";
         /// <summary>
@@ -116,7 +116,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public EnumMap(Java.Lang.Class arg0)
             : base(arg0)
         {
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.EnumMap)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.EnumMap"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public EnumMap(Java.Util.EnumMap arg0)
             : base(arg0)
         {
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public EnumMap(Java.Util.Map arg0)
             : base(arg0)
         {
@@ -142,11 +142,11 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.EnumMap"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.EnumMap t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.EnumMap"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.EnumMap t) => t.Cast<Java.Lang.Cloneable>();
 
@@ -164,7 +164,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#clone()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.EnumMap"/></returns>
+        /// <returns><see cref=""/></returns>
         public Java.Util.EnumMap Clone()
         {
             return IExecuteWithSignature<Java.Util.EnumMap>("clone", "()Ljava/util/EnumMap;");
@@ -172,9 +172,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#put(java.lang.Enum,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object Put(Java.Lang.Enum arg0, object arg1)
         {
             return IExecuteWithSignature("put", "(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
@@ -190,14 +190,14 @@ namespace Java.Util
     }
     #endregion
 
-    #region EnumMap<K, V> implementation
-    public partial class EnumMap<K, V>
+    #region EnumMap<, > implementation
+    public partial class EnumMap<, >
     {
         #region Constructors
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public EnumMap(Java.Lang.Class arg0)
             : base(arg0)
         {
@@ -205,16 +205,16 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.EnumMap)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.EnumMap"/></param>
-        public EnumMap(Java.Util.EnumMap<K, V> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public EnumMap(Java.Util.EnumMap<, > arg0)
             : base(arg0)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public EnumMap(Java.Util.Map<K, V> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public EnumMap(Java.Util.Map<, > arg0)
             : base(arg0)
         {
         }
@@ -223,17 +223,17 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.EnumMap{K, V}"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.EnumMap<K, V> t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.EnumMap<, > t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.EnumMap{K, V}"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Util.EnumMap<K, V> t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Lang.Cloneable(Java.Util.EnumMap<, > t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Util.EnumMap{K, V}"/> to <see cref="Java.Util.EnumMap"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
-        public static implicit operator Java.Util.EnumMap(Java.Util.EnumMap<K, V> t) => t.Cast<Java.Util.EnumMap>();
+        public static implicit operator Java.Util.EnumMap(Java.Util.EnumMap<, > t) => t.Cast<Java.Util.EnumMap>();
 
         #endregion
 
@@ -249,17 +249,17 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#clone()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.EnumMap"/></returns>
-        public Java.Util.EnumMap Clone()
+        /// <returns><see cref=""/></returns>
+        public Java.Util.EnumMap<, > Clone()
         {
-            return IExecuteWithSignature<Java.Util.EnumMap>("clone", "()Ljava/util/EnumMap;");
+            return IExecuteWithSignature<Java.Util.EnumMap<, >>("clone", "()Ljava/util/EnumMap;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#put(java.lang.Enum,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="V"/></param>
-        /// <returns><typeparamref name="V"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public V Put(K arg0, V arg1)
         {
             return IExecuteWithSignature<V>("put", "(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);

@@ -91,8 +91,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#getApproveButtonText(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetApproveButtonText(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getApproveButtonText", "(Ljavax/swing/JFileChooser;)Ljava/lang/String;", arg0);
@@ -100,8 +100,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#getDialogTitle(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetDialogTitle(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDialogTitle", "(Ljavax/swing/JFileChooser;)Ljava/lang/String;", arg0);
@@ -109,8 +109,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#getAcceptAllFileFilter(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="Javax.Swing.Filechooser.FileFilter"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Filechooser.FileFilter GetAcceptAllFileFilter(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Filechooser.FileFilter>("getAcceptAllFileFilter", "(Ljavax/swing/JFileChooser;)Ljavax/swing/filechooser/FileFilter;", arg0);
@@ -118,8 +118,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#getFileView(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="Javax.Swing.Filechooser.FileView"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Filechooser.FileView GetFileView(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Filechooser.FileView>("getFileView", "(Ljavax/swing/JFileChooser;)Ljavax/swing/filechooser/FileView;", arg0);
@@ -127,8 +127,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#ensureFileIsVisible(javax.swing.JFileChooser,java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <param name="arg1"><see cref="Java.Io.File"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void EnsureFileIsVisible(Javax.Swing.JFileChooser arg0, Java.Io.File arg1)
         {
             IExecuteWithSignature("ensureFileIsVisible", "(Ljavax/swing/JFileChooser;Ljava/io/File;)V", arg0, arg1);
@@ -136,7 +136,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#rescanCurrentDirectory(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void RescanCurrentDirectory(Javax.Swing.JFileChooser arg0)
         {
             IExecuteWithSignature("rescanCurrentDirectory", "(Ljavax/swing/JFileChooser;)V", arg0);
@@ -144,8 +144,8 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#getDefaultButton(javax.swing.JFileChooser)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
-        /// <returns><see cref="Javax.Swing.JButton"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.JButton GetDefaultButton(Javax.Swing.JFileChooser arg0)
         {
             return IExecuteWithSignature<Javax.Swing.JButton>("getDefaultButton", "(Ljavax/swing/JFileChooser;)Ljavax/swing/JButton;", arg0);

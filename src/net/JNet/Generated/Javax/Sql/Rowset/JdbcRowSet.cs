@@ -90,18 +90,18 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#commit()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Commit();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#rollback()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         void Rollback();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#rollback(java.sql.Savepoint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         void Rollback(Java.Sql.Savepoint arg0);
 
         #endregion
@@ -123,11 +123,11 @@ namespace Javax.Sql.Rowset
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.JdbcRowSet"/> to <see cref="Javax.Sql.RowSet"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Sql.RowSet(Javax.Sql.Rowset.JdbcRowSet t) => t.Cast<Javax.Sql.RowSet>();
         /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.JdbcRowSet"/> to <see cref="Javax.Sql.Rowset.Joinable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Sql.Rowset.Joinable(Javax.Sql.Rowset.JdbcRowSet t) => t.Cast<Javax.Sql.Rowset.Joinable>();
 
@@ -166,7 +166,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#commit()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Commit()
         {
             IExecuteWithSignature("commit", "()V");
@@ -174,7 +174,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#rollback()"/>
         /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref=""/>
         public void Rollback()
         {
             IExecuteWithSignature("rollback", "()V");
@@ -182,8 +182,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#rollback(java.sql.Savepoint)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Rollback(Java.Sql.Savepoint arg0)
         {
             IExecuteWithSignature("rollback", "(Ljava/sql/Savepoint;)V", arg0);

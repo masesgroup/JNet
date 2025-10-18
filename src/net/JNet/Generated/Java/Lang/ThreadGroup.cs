@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public ThreadGroup(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -81,8 +81,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public ThreadGroup(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -127,7 +127,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDaemon()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDaemon()
         {
             return IExecuteWithSignature<bool>("isDaemon", "()Z");
@@ -135,8 +135,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#parentOf(java.lang.ThreadGroup)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool ParentOf(Java.Lang.ThreadGroup arg0)
         {
             return IExecuteWithSignature<bool>("parentOf", "(Ljava/lang/ThreadGroup;)Z", arg0);
@@ -165,7 +165,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#setDaemon(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void SetDaemon(bool arg0)
         {
             IExecuteWithSignature("setDaemon", "(Z)V", arg0);
@@ -173,7 +173,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeCount()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int ActiveCount()
         {
             return IExecuteWithSignature<int>("activeCount", "()I");
@@ -181,7 +181,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeGroupCount()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref=""/></returns>
         public int ActiveGroupCount()
         {
             return IExecuteWithSignature<int>("activeGroupCount", "()I");
@@ -189,9 +189,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Enumerate(Java.Lang.Thread[] arg0, bool arg1)
         {
             return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/Thread;Z)I", arg0, arg1);
@@ -199,8 +199,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Enumerate(Java.Lang.Thread[] arg0)
         {
             return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/Thread;)I", new object[] { arg0 });
@@ -208,9 +208,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Enumerate(Java.Lang.ThreadGroup[] arg0, bool arg1)
         {
             return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/ThreadGroup;Z)I", arg0, arg1);
@@ -218,8 +218,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[])"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int Enumerate(Java.Lang.ThreadGroup[] arg0)
         {
             return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/ThreadGroup;)I", new object[] { arg0 });
@@ -227,7 +227,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDestroyed()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool IsDestroyed()
         {
             return IExecuteWithSignature<bool>("isDestroyed", "()Z");
@@ -242,8 +242,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#uncaughtException(java.lang.Thread,java.lang.Throwable)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public void UncaughtException(Java.Lang.Thread arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             IExecuteWithSignature("uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V", arg0, arg1);

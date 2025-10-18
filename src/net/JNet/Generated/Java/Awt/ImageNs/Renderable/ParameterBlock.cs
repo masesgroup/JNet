@@ -73,17 +73,17 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#%3Cinit%3E(java.util.Vector,java.util.Vector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
-        public ParameterBlock(Java.Util.Vector<object> arg0, Java.Util.Vector<object> arg1)
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        public ParameterBlock(Java.Util.Vector arg0, Java.Util.Vector arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#%3Cinit%3E(java.util.Vector)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        public ParameterBlock(Java.Util.Vector<object> arg0)
+        /// <param name="arg0"><see cref=""/></param>
+        public ParameterBlock(Java.Util.Vector arg0)
             : base(arg0)
         {
         }
@@ -92,11 +92,11 @@ namespace Java.Awt.ImageNs.Renderable
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/> to <see cref="Java.Lang.Cloneable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.Renderable.ParameterBlock t) => t.Cast<Java.Lang.Cloneable>();
         /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/> to <see cref="Java.Io.Serializable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ImageNs.Renderable.ParameterBlock t) => t.Cast<Java.Io.Serializable>();
 
@@ -135,22 +135,22 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getParameters()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setParameters(java.util.Vector)"/>
         /// </summary>
-        public Java.Util.Vector<object> Parameters
+        public Java.Util.Vector Parameters
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<object>>("getParameters", "()Ljava/util/Vector;"); } set { IExecuteWithSignature("setParameters", "(Ljava/util/Vector;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Vector>("getParameters", "()Ljava/util/Vector;"); } set { IExecuteWithSignature("setParameters", "(Ljava/util/Vector;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getSources()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setSources(java.util.Vector)"/>
         /// </summary>
-        public Java.Util.Vector<object> Sources
+        public Java.Util.Vector Sources
         {
-            get { return IExecuteWithSignature<Java.Util.Vector<object>>("getSources", "()Ljava/util/Vector;"); } set { IExecuteWithSignature("setSources", "(Ljava/util/Vector;)V", value); }
+            get { return IExecuteWithSignature<Java.Util.Vector>("getSources", "()Ljava/util/Vector;"); } set { IExecuteWithSignature("setSources", "(Ljava/util/Vector;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getByteParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="byte"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public byte GetByteParameter(int arg0)
         {
             return IExecuteWithSignature<byte>("getByteParameter", "(I)B", arg0);
@@ -158,8 +158,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getCharParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public char GetCharParameter(int arg0)
         {
             return IExecuteWithSignature<char>("getCharParameter", "(I)C", arg0);
@@ -167,8 +167,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getDoubleParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public double GetDoubleParameter(int arg0)
         {
             return IExecuteWithSignature<double>("getDoubleParameter", "(I)D", arg0);
@@ -176,8 +176,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getFloatParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public float GetFloatParameter(int arg0)
         {
             return IExecuteWithSignature<float>("getFloatParameter", "(I)F", arg0);
@@ -185,8 +185,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getIntParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public int GetIntParameter(int arg0)
         {
             return IExecuteWithSignature<int>("getIntParameter", "(I)I", arg0);
@@ -194,8 +194,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(byte arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(B)Ljava/awt/image/renderable/ParameterBlock;", arg0);
@@ -203,8 +203,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(char)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(char arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(C)Ljava/awt/image/renderable/ParameterBlock;", arg0);
@@ -212,8 +212,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(double arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(D)Ljava/awt/image/renderable/ParameterBlock;", arg0);
@@ -221,8 +221,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(float arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(F)Ljava/awt/image/renderable/ParameterBlock;", arg0);
@@ -230,8 +230,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(I)Ljava/awt/image/renderable/ParameterBlock;", arg0);
@@ -239,8 +239,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(object arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(Ljava/lang/Object;)Ljava/awt/image/renderable/ParameterBlock;", arg0);
@@ -248,8 +248,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(long arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(J)Ljava/awt/image/renderable/ParameterBlock;", arg0);
@@ -257,8 +257,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(short)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(short arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("add", "(S)Ljava/awt/image/renderable/ParameterBlock;", arg0);
@@ -266,8 +266,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#addSource(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock AddSource(object arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("addSource", "(Ljava/lang/Object;)Ljava/awt/image/renderable/ParameterBlock;", arg0);
@@ -275,9 +275,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(byte,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(byte arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(BI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
@@ -285,9 +285,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(char,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(char arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(CI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
@@ -295,9 +295,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(double,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(double arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(DI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
@@ -305,9 +305,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(float,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(float arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(FI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
@@ -315,9 +315,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(II)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
@@ -325,9 +325,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(object arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(Ljava/lang/Object;I)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
@@ -335,9 +335,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(long arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(JI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
@@ -345,9 +345,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(short,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(short arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(SI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
@@ -355,9 +355,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setSource(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock SetSource(object arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("setSource", "(Ljava/lang/Object;I)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
@@ -365,8 +365,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getRenderableSource(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.Renderable.RenderableImage GetRenderableSource(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.RenderableImage>("getRenderableSource", "(I)Ljava/awt/image/renderable/RenderableImage;", arg0);
@@ -374,8 +374,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getRenderedSource(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.ImageNs.RenderedImage GetRenderedSource(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("getRenderedSource", "(I)Ljava/awt/image/RenderedImage;", arg0);
@@ -383,8 +383,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getObjectParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetObjectParameter(int arg0)
         {
             return IExecuteWithSignature("getObjectParameter", "(I)Ljava/lang/Object;", arg0);
@@ -392,8 +392,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getSource(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public object GetSource(int arg0)
         {
             return IExecuteWithSignature("getSource", "(I)Ljava/lang/Object;", arg0);
@@ -401,7 +401,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#shallowClone()"/>
         /// </summary>
-        /// <returns><see cref="object"/></returns>
+        /// <returns><see cref=""/></returns>
         public object ShallowClone()
         {
             return IExecuteWithSignature("shallowClone", "()Ljava/lang/Object;");
@@ -409,8 +409,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getLongParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public long GetLongParameter(int arg0)
         {
             return IExecuteWithSignature<long>("getLongParameter", "(I)J", arg0);
@@ -418,8 +418,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getShortParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="short"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public short GetShortParameter(int arg0)
         {
             return IExecuteWithSignature<short>("getShortParameter", "(I)S", arg0);

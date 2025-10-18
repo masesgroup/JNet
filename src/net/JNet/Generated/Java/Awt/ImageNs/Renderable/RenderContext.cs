@@ -73,8 +73,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#%3Cinit%3E(java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.RenderingHints"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
             : base(arg0, arg1)
         {
@@ -82,9 +82,9 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#%3Cinit%3E(java.awt.geom.AffineTransform,java.awt.Shape,java.awt.RenderingHints)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
         public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1, Java.Awt.RenderingHints arg2)
             : base(arg0, arg1, arg2)
         {
@@ -92,8 +92,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#%3Cinit%3E(java.awt.geom.AffineTransform,java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1)
             : base(arg0, arg1)
         {
@@ -101,7 +101,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#%3Cinit%3E(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public RenderContext(Java.Awt.Geom.AffineTransform arg0)
             : base(arg0)
         {
@@ -146,7 +146,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#concatenateTransform(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void ConcatenateTransform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecuteWithSignature("concatenateTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
@@ -154,7 +154,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#preConcatenateTransform(java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public void PreConcatenateTransform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecuteWithSignature("preConcatenateTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);

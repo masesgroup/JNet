@@ -126,9 +126,9 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#createNewFolder(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.File CreateNewFolder(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Io.File>("createNewFolder", "(Ljava/io/File;)Ljava/io/File;", arg0);
@@ -136,8 +136,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isComputerNode(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsComputerNode(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("isComputerNode", "(Ljava/io/File;)Z", arg0);
@@ -145,8 +145,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isDrive(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsDrive(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("isDrive", "(Ljava/io/File;)Z", arg0);
@@ -154,8 +154,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isFileSystem(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFileSystem(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("isFileSystem", "(Ljava/io/File;)Z", arg0);
@@ -163,8 +163,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isFileSystemRoot(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFileSystemRoot(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("isFileSystemRoot", "(Ljava/io/File;)Z", arg0);
@@ -172,8 +172,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isFloppyDrive(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsFloppyDrive(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("isFloppyDrive", "(Ljava/io/File;)Z", arg0);
@@ -181,8 +181,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isHiddenFile(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsHiddenFile(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("isHiddenFile", "(Ljava/io/File;)Z", arg0);
@@ -190,8 +190,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isLink(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsLink(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("isLink", "(Ljava/io/File;)Z", arg0);
@@ -199,9 +199,9 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isParent(java.io.File,java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsParent(Java.Io.File arg0, Java.Io.File arg1)
         {
             return IExecuteWithSignature<bool>("isParent", "(Ljava/io/File;Ljava/io/File;)Z", arg0, arg1);
@@ -209,8 +209,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isRoot(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public bool IsRoot(Java.Io.File arg0)
         {
             return IExecuteWithSignature<bool>("isRoot", "(Ljava/io/File;)Z", arg0);
@@ -218,9 +218,9 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#createFileObject(java.io.File,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.File CreateFileObject(Java.Io.File arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Java.Io.File>("createFileObject", "(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;", arg0, arg1);
@@ -228,8 +228,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#createFileObject(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.File CreateFileObject(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Io.File>("createFileObject", "(Ljava/lang/String;)Ljava/io/File;", arg0);
@@ -237,9 +237,9 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getChild(java.io.File,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.File GetChild(Java.Io.File arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Java.Io.File>("getChild", "(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;", arg0, arg1);
@@ -247,9 +247,9 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getLinkLocation(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
-        /// <exception cref="Java.Io.FileNotFoundException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
+        /// <exception cref=""/>
         public Java.Io.File GetLinkLocation(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Io.File>("getLinkLocation", "(Ljava/io/File;)Ljava/io/File;", arg0);
@@ -257,8 +257,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getParentDirectory(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.File GetParentDirectory(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Io.File>("getParentDirectory", "(Ljava/io/File;)Ljava/io/File;", arg0);
@@ -266,9 +266,9 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getFiles(java.io.File,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Io.File[] GetFiles(Java.Io.File arg0, bool arg1)
         {
             return IExecuteWithSignatureArray<Java.Io.File>("getFiles", "(Ljava/io/File;Z)[Ljava/io/File;", arg0, arg1);
@@ -276,8 +276,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isTraversable(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.Boolean IsTraversable(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.Boolean>("isTraversable", "(Ljava/io/File;)Ljava/lang/Boolean;", arg0);
@@ -285,8 +285,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemDisplayName(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetSystemDisplayName(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getSystemDisplayName", "(Ljava/io/File;)Ljava/lang/String;", arg0);
@@ -294,8 +294,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemTypeDescription(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Lang.String GetSystemTypeDescription(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getSystemTypeDescription", "(Ljava/io/File;)Ljava/lang/String;", arg0);
@@ -303,8 +303,8 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemIcon(java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Javax.Swing.Icon GetSystemIcon(Java.Io.File arg0)
         {
             return IExecuteWithSignature<Javax.Swing.Icon>("getSystemIcon", "(Ljava/io/File;)Ljavax/swing/Icon;", arg0);

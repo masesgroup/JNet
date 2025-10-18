@@ -77,7 +77,7 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.TimerTask"/> to <see cref="Java.Lang.Runnable"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Java.Lang.Runnable(Java.Util.TimerTask t) => t.Cast<Java.Lang.Runnable>();
 
@@ -102,7 +102,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#cancel()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool Cancel()
         {
             return IExecuteWithSignature<bool>("cancel", "()Z");
@@ -110,7 +110,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#scheduledExecutionTime()"/>
         /// </summary>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref=""/></returns>
         public long ScheduledExecutionTime()
         {
             return IExecuteWithSignature<long>("scheduledExecutionTime", "()J");

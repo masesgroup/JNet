@@ -78,13 +78,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariants()"/> 
         /// </summary>
-        Java.Util.List<Java.Awt.Image> ResolutionVariants { get; }
+        Java.Util.List ResolutionVariants { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariant(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Image"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         Java.Awt.Image GetResolutionVariant(double arg0, double arg1);
 
         #endregion
@@ -120,16 +120,16 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariants()"/> 
         /// </summary>
-        public Java.Util.List<Java.Awt.Image> ResolutionVariants
+        public Java.Util.List ResolutionVariants
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Awt.Image>>("getResolutionVariants", "()Ljava/util/List;"); }
+            get { return IExecuteWithSignature<Java.Util.List>("getResolutionVariants", "()Ljava/util/List;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariant(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="Java.Awt.Image"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public Java.Awt.Image GetResolutionVariant(double arg0, double arg1)
         {
             return IExecuteWithSignature<Java.Awt.Image>("getResolutionVariant", "(DD)Ljava/awt/Image;", arg0, arg1);

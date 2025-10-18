@@ -108,8 +108,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         void WarningOccurred(Javax.Imageio.ImageReader arg0, Java.Lang.String arg1);
 
         #endregion
@@ -169,8 +169,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public virtual void WarningOccurred(Javax.Imageio.ImageReader arg0, Java.Lang.String arg1)
         {
             hasOverrideWarningOccurred = false;
@@ -209,8 +209,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
         public override void WarningOccurred(Javax.Imageio.ImageReader arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("warningOccurred", "(Ljavax/imageio/ImageReader;Ljava/lang/String;)V", arg0, arg1);

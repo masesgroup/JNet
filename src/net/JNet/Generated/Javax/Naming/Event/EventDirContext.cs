@@ -78,40 +78,40 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(java.lang.String,java.lang.String,java.lang.Object[],javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="Javax.Naming.Directory.SearchControls"/></param>
-        /// <param name="arg4"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         void AddNamingListener(Java.Lang.String arg0, Java.Lang.String arg1, object[] arg2, Javax.Naming.Directory.SearchControls arg3, Javax.Naming.Event.NamingListener arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(java.lang.String,java.lang.String,javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Directory.SearchControls"/></param>
-        /// <param name="arg3"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         void AddNamingListener(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Naming.Directory.SearchControls arg2, Javax.Naming.Event.NamingListener arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(javax.naming.Name,java.lang.String,java.lang.Object[],javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="Javax.Naming.Directory.SearchControls"/></param>
-        /// <param name="arg4"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         void AddNamingListener(Javax.Naming.Name arg0, Java.Lang.String arg1, object[] arg2, Javax.Naming.Directory.SearchControls arg3, Javax.Naming.Event.NamingListener arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(javax.naming.Name,java.lang.String,javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Directory.SearchControls"/></param>
-        /// <param name="arg3"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         void AddNamingListener(Javax.Naming.Name arg0, Java.Lang.String arg1, Javax.Naming.Directory.SearchControls arg2, Javax.Naming.Event.NamingListener arg3);
 
         #endregion
@@ -133,11 +133,11 @@ namespace Javax.Naming.Event
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Naming.Event.EventDirContext"/> to <see cref="Javax.Naming.Event.EventContext"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Naming.Event.EventContext(Javax.Naming.Event.EventDirContext t) => t.Cast<Javax.Naming.Event.EventContext>();
         /// <summary>
-        /// Converter from <see cref="Javax.Naming.Event.EventDirContext"/> to <see cref="Javax.Naming.Directory.DirContext"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Naming.Directory.DirContext(Javax.Naming.Event.EventDirContext t) => t.Cast<Javax.Naming.Directory.DirContext>();
 
@@ -155,12 +155,12 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(java.lang.String,java.lang.String,java.lang.Object[],javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="Javax.Naming.Directory.SearchControls"/></param>
-        /// <param name="arg4"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddNamingListener(Java.Lang.String arg0, Java.Lang.String arg1, object[] arg2, Javax.Naming.Directory.SearchControls arg3, Javax.Naming.Event.NamingListener arg4)
         {
             IExecuteWithSignature("addNamingListener", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;Ljavax/naming/directory/SearchControls;Ljavax/naming/event/NamingListener;)V", arg0, arg1, arg2, arg3, arg4);
@@ -168,11 +168,11 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(java.lang.String,java.lang.String,javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Directory.SearchControls"/></param>
-        /// <param name="arg3"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddNamingListener(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Naming.Directory.SearchControls arg2, Javax.Naming.Event.NamingListener arg3)
         {
             IExecuteWithSignature("addNamingListener", "(Ljava/lang/String;Ljava/lang/String;Ljavax/naming/directory/SearchControls;Ljavax/naming/event/NamingListener;)V", arg0, arg1, arg2, arg3);
@@ -180,12 +180,12 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(javax.naming.Name,java.lang.String,java.lang.Object[],javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="Javax.Naming.Directory.SearchControls"/></param>
-        /// <param name="arg4"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <param name="arg4"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddNamingListener(Javax.Naming.Name arg0, Java.Lang.String arg1, object[] arg2, Javax.Naming.Directory.SearchControls arg3, Javax.Naming.Event.NamingListener arg4)
         {
             IExecuteWithSignature("addNamingListener", "(Ljavax/naming/Name;Ljava/lang/String;[Ljava/lang/Object;Ljavax/naming/directory/SearchControls;Ljavax/naming/event/NamingListener;)V", arg0, arg1, arg2, arg3, arg4);
@@ -193,11 +193,11 @@ namespace Javax.Naming.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(javax.naming.Name,java.lang.String,javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Javax.Naming.Directory.SearchControls"/></param>
-        /// <param name="arg3"><see cref="Javax.Naming.Event.NamingListener"/></param>
-        /// <exception cref="Javax.Naming.NamingException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <param name="arg2"><see cref=""/></param>
+        /// <param name="arg3"><see cref=""/></param>
+        /// <exception cref=""/>
         public void AddNamingListener(Javax.Naming.Name arg0, Java.Lang.String arg1, Javax.Naming.Directory.SearchControls arg2, Javax.Naming.Event.NamingListener arg3)
         {
             IExecuteWithSignature("addNamingListener", "(Ljavax/naming/Name;Ljava/lang/String;Ljavax/naming/directory/SearchControls;Ljavax/naming/event/NamingListener;)V", arg0, arg1, arg2, arg3);

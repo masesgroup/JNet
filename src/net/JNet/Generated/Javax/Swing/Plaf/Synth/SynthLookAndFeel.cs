@@ -92,8 +92,8 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#createUI(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Plaf.ComponentUI CreateUI(Javax.Swing.JComponent arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Plaf.ComponentUI>(LocalBridgeClazz, "createUI", "(Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;", arg0);
@@ -101,8 +101,8 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getRegion(javax.swing.JComponent)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <returns><see cref="Javax.Swing.Plaf.Synth.Region"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Plaf.Synth.Region GetRegion(Javax.Swing.JComponent arg0)
         {
             return SExecuteWithSignature<Javax.Swing.Plaf.Synth.Region>(LocalBridgeClazz, "getRegion", "(Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/Region;", arg0);
@@ -110,9 +110,9 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getStyle(javax.swing.JComponent,javax.swing.plaf.synth.Region)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.Region"/></param>
-        /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Javax.Swing.Plaf.Synth.SynthStyle GetStyle(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1)
         {
             return SExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthStyle>(LocalBridgeClazz, "getStyle", "(Ljavax/swing/JComponent;Ljavax/swing/plaf/synth/Region;)Ljavax/swing/plaf/synth/SynthStyle;", arg0, arg1);
@@ -120,7 +120,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#updateStyles(java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg0"><see cref=""/></param>
         public static void UpdateStyles(Java.Awt.Component arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "updateStyles", "(Ljava/awt/Component;)V", arg0);
@@ -132,7 +132,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#shouldUpdateStyleOnAncestorChanged()"/>
         /// </summary>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref=""/></returns>
         public bool ShouldUpdateStyleOnAncestorChanged()
         {
             return IExecuteWithSignature<bool>("shouldUpdateStyleOnAncestorChanged", "()Z");
@@ -140,9 +140,9 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.io.InputStream,java.lang.Class)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <exception cref="Java.Text.ParseException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <param name="arg1"><see cref=""/></param>
+        /// <exception cref=""/>
         public void Load(Java.Io.InputStream arg0, Java.Lang.Class arg1)
         {
             IExecuteWithSignature("load", "(Ljava/io/InputStream;Ljava/lang/Class;)V", arg0, arg1);
@@ -150,9 +150,9 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <exception cref="Java.Text.ParseException"/>
-        /// <exception cref="Java.Io.IOException"/>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <exception cref=""/>
+        /// <exception cref=""/>
         public void Load(Java.Net.URL arg0)
         {
             IExecuteWithSignature("load", "(Ljava/net/URL;)V", arg0);

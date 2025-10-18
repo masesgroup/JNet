@@ -68,7 +68,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html"/>
         /// </summary>
-        public partial class CompilationTask : Java.Util.Concurrent.Callable<Java.Lang.Boolean>
+        public partial class CompilationTask : Java.Util.Concurrent.Callable
         {
             const string _bridgeClassName = "javax.tools.JavaCompiler$CompilationTask";
             /// <summary>
@@ -138,11 +138,11 @@ namespace Javax.Tools
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Tools.JavaCompiler"/> to <see cref="Javax.Tools.Tool"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Tools.Tool(Javax.Tools.JavaCompiler t) => t.Cast<Javax.Tools.Tool>();
         /// <summary>
-        /// Converter from <see cref="Javax.Tools.JavaCompiler"/> to <see cref="Javax.Tools.OptionChecker"/>
+        /// Converter from <see cref=""/> to <see cref=""/>
         /// </summary>
         public static implicit operator Javax.Tools.OptionChecker(Javax.Tools.JavaCompiler t) => t.Cast<Javax.Tools.OptionChecker>();
 
@@ -184,15 +184,15 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#addModules(java.lang.Iterable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-            public void AddModules(Java.Lang.Iterable<Java.Lang.String> arg0)
+            /// <param name="arg0"><see cref=""/></param>
+            public void AddModules(Java.Lang.Iterable arg0)
             {
                 IExecuteWithSignature("addModules", "(Ljava/lang/Iterable;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#setLocale(java.util.Locale)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+            /// <param name="arg0"><see cref=""/></param>
             public void SetLocale(Java.Util.Locale arg0)
             {
                 IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", arg0);
@@ -200,17 +200,17 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#setProcessors(java.lang.Iterable)"/>
             /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
-            /// <typeparam name="Arg0ExtendsJavax_Annotation_Processing_Processor"><see cref="Javax.Annotation.Processing.Processor"/></typeparam>
-            public void SetProcessors<Arg0ExtendsJavax_Annotation_Processing_Processor>(Java.Lang.Iterable<Arg0ExtendsJavax_Annotation_Processing_Processor> arg0) where Arg0ExtendsJavax_Annotation_Processing_Processor : Javax.Annotation.Processing.Processor
+            /// <param name="arg0"><see cref=""/></param>
+            /// <typeparam name="Arg0ExtendsJavax_Annotation_Processing_Processor"><see cref=""/></typeparam>
+            public void SetProcessors(Java.Lang.Iterable arg0) where Arg0ExtendsJavax_Annotation_Processing_Processor : Javax.Annotation.Processing.Processor
             {
                 IExecuteWithSignature("setProcessors", "(Ljava/lang/Iterable;)V", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#call()"/>
             /// </summary>
-            /// <returns><see cref="object"/></returns>
-            /// <exception cref="Java.Lang.Exception"/>
+            /// <returns><see cref=""/></returns>
+            /// <exception cref=""/>
             public object Call()
             {
                 return IExecuteWithSignature("call", "()Ljava/lang/Object;");

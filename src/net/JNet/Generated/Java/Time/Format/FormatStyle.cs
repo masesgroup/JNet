@@ -29,7 +29,7 @@ namespace Java.Time.Format
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html"/>
     /// </summary>
-    public partial class FormatStyle : Java.Lang.Enum<Java.Time.Format.FormatStyle>
+    public partial class FormatStyle : Java.Lang.Enum
     {
         const string _bridgeClassName = "java.time.format.FormatStyle";
         /// <summary>
@@ -109,8 +109,8 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Time.Format.FormatStyle"/></returns>
+        /// <param name="arg0"><see cref=""/></param>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Format.FormatStyle ValueOf(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/format/FormatStyle;", arg0);
@@ -118,7 +118,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#values()"/>
         /// </summary>
-        /// <returns><see cref="Java.Time.Format.FormatStyle"/></returns>
+        /// <returns><see cref=""/></returns>
         public static Java.Time.Format.FormatStyle[] Values()
         {
             return SExecuteWithSignatureArray<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "values", "()[Ljava/time/format/FormatStyle;");
