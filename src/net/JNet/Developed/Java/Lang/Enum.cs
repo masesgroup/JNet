@@ -91,6 +91,11 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <inheritdoc/>
+        public override int GetHashCode() // fix warning
+        {
+            return base.GetHashCode();
+        }
+        /// <inheritdoc/>
         public bool Equals(Enum<E> other)
         {
             if (ReferenceEquals(other, null))
