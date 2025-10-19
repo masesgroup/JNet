@@ -94,7 +94,7 @@ namespace Java.Sql
         /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        T GetSource<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.ISource, new();
+        T GetSource<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.ISource;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setResult(java.lang.Class)"/>
         /// </summary>
@@ -102,7 +102,7 @@ namespace Java.Sql
         /// <typeparam name="T"><see cref="Javax.Xml.Transform.IResult"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        T SetResult<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.IResult, new();
+        T SetResult<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.IResult;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/>
         /// </summary>
@@ -179,7 +179,7 @@ namespace Java.Sql
         /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public T GetSource<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.ISource, new()
+        public T GetSource<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.ISource
         {
             return IExecute<T>("getSource", arg0);
         }
@@ -190,7 +190,7 @@ namespace Java.Sql
         /// <typeparam name="T"><see cref="Javax.Xml.Transform.IResult"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public T SetResult<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.IResult, new()
+        public T SetResult<T>(Java.Lang.Class arg0) where T : Javax.Xml.Transform.IResult
         {
             return IExecute<T>("setResult", arg0);
         }
