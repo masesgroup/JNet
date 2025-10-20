@@ -1,4 +1,4 @@
-﻿﻿/*
+﻿/*
 *  Copyright 2025 MASES s.r.l.
 *
 *  Licensed under the Apache License, Version 2.0 (the "License");
@@ -677,7 +677,7 @@ namespace MASES.JNetTest
                     var mean = items.Mean();
                     var stdDev = items.PopulationStandardDeviation();
 
-                    System.Console.WriteLine($"Test {executionData[0][i].Item1} Mean {System.TimeSpan.FromTicks((long)mean)} StdDev {stdDev} avoiding first {howManyIterationAvoid} iterations");
+                    System.Console.WriteLine($"Test {executionData[0][i].Item1} Mean {System.TimeSpan.FromTicks((long)mean)} StdDev {System.TimeSpan.FromTicks((long)stdDev)} avoiding first {howManyIterationAvoid} iterations");
                 }
             }
         }
