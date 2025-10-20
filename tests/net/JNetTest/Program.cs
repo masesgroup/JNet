@@ -558,14 +558,24 @@ namespace MASES.JNetTest
             {
                 System.Collections.Generic.List<long> singleExecutionData = new System.Collections.Generic.List<long>();
                 Stopwatch w = Stopwatch.StartNew();
-                Java.Util.ArrayList<int> alist = new Java.Util.ArrayList<int>();
+                Java.Util.ArrayList<int> rawIntArraylist = new Java.Util.ArrayList<int>();
+                for (int i = 0; i < execution; i++)
+                {
+                    rawIntArraylist.Add(i);
+                }
+                w.Stop();
+                singleExecutionData.Add(w.Elapsed.Ticks);
+                System.Console.WriteLine($"ArrayList Raw int Add Elapsed ticks: {w.Elapsed.Ticks}");
+
+                w.Restart();
+                Java.Util.ArrayList<Integer> alist = new Java.Util.ArrayList<Integer>();
                 for (int i = 0; i < execution; i++)
                 {
                     alist.Add(i);
                 }
                 w.Stop();
                 singleExecutionData.Add(w.Elapsed.Ticks);
-                System.Console.WriteLine($"ArrayList Elapsed ticks: {w.Elapsed.Ticks}");
+                System.Console.WriteLine($"ArrayList Integer Add Elapsed ticks: {w.Elapsed.Ticks}");
 
                 w.Restart();
                 System.Collections.Generic.List<int> nlist = new System.Collections.Generic.List<int>();
@@ -582,7 +592,7 @@ namespace MASES.JNetTest
 
                 w.Restart();
                 var tmpJList = JNetHelper.ListFrom(tmpArray);
-                alist = new Java.Util.ArrayList<int>(tmpJList);
+                alist = new Java.Util.ArrayList<Integer>(tmpJList);
                 w.Stop();
                 singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
@@ -591,24 +601,27 @@ namespace MASES.JNetTest
                 var intBuffer = IntBuffer.From(tmpArray, false, false);
                 w.Stop();
                 singleExecutionData.Add(w.Elapsed.Ticks);
-                System.Console.WriteLine($"IntBuffer.From from array Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                System.Console.WriteLine($"IntBuffer.From from raw array Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 var tmpJList2 = JNetHelper.ListFrom(intBuffer);
-                alist = new Java.Util.ArrayList<int>(tmpJList2);
+                alist = new Java.Util.ArrayList<Integer>(tmpJList2);
                 w.Stop();
                 singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array premade buffer Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 var tmpJList3 = JNetHelper.ListFrom(tmpArray, true);
-                alist = new Java.Util.ArrayList<int>(tmpJList3);
+                alist = new Java.Util.ArrayList<Integer>(tmpJList3);
                 w.Stop();
                 singleExecutionData.Add(w.Elapsed.Ticks);
-                System.Console.WriteLine($"Java.Util.ArrayList from array buffered Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
-                //var collection = newDict.Values.ToJCollection();
-                //var intermediate = collection.ToList<Map.Entry<string, string>>();
-                var list = ((List<int>)alist).ToList();
+                System.Console.WriteLine($"Java.Util.ArrayList from raw array buffered Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+
+                w.Restart();
+                var list = ((List<Integer>)alist).ToList();
+                w.Stop();
+                singleExecutionData.Add(w.Elapsed.Ticks);
+                System.Console.WriteLine($"Java.Util.ArrayList ToList Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 executionData.Add(singleExecutionData);
             }
