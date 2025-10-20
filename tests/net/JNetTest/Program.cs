@@ -26,6 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 using MASES.JNet.Specific;
 using MASES.JNet.Specific.Extensions;
 using MASES.JNetTest.Common;
+using MathNet.Numerics.Statistics;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -668,11 +669,15 @@ namespace MASES.JNetTest
                 for (int howManyIterationAvoid = 0; howManyIterationAvoid < 10; howManyIterationAvoid++)
                 {
                     long total = 0;
+                    System.Collections.Generic.List<double> items = new();
                     for (int index = howManyIterationAvoid; index < numRepetition; index++)
                     {
-                        total += executionData[index][i].Item2;
+                        items.Add(executionData[index][i].Item2);
                     }
-                    System.Console.WriteLine($"Test {executionData[0][i].Item1} Mean {System.TimeSpan.FromTicks(total / (numRepetition - howManyIterationAvoid))} avoiding first {howManyIterationAvoid} iterations");
+                    var mean = items.Mean();
+                    var stdDev = items.StandardDeviation();
+
+                    System.Console.WriteLine($"Test {executionData[0][i].Item1} Mean {System.TimeSpan.FromTicks((long)mean)} StdDev {stdDev} avoiding first {howManyIterationAvoid} iterations");
                 }
             }
         }
