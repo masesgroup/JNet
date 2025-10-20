@@ -34,11 +34,14 @@ namespace MASES.JNetTest
 {
     class Program
     {
+        static bool printVerbose = false;
+
         static void Main(string[] args)
         {
             System.Console.WriteLine("Starting JNetTest");
 
 #if DEBUG
+            printVerbose = true;
             if (!System.Diagnostics.Debugger.IsAttached)
             {
                 System.Console.WriteLine("Press a button to start");
@@ -550,43 +553,50 @@ namespace MASES.JNetTest
             var map = dict.ToJVMMap<HashMap<Java.Lang.String, Java.Lang.Boolean>, Java.Lang.String, Java.Lang.Boolean, string, bool>();
             var newDict = map.ToNetDictiony<string, bool, Java.Lang.String, Java.Lang.Boolean>();
 
-            const int execution = 10000;
-            const int numRepetition = 10;
-            System.Collections.Generic.List<System.Collections.Generic.List<long>> executionData = new System.Collections.Generic.List<System.Collections.Generic.List<long>>();
+            const int elementsInexecution = 10000;
+            int numRepetition = 100;
+#if DEBUG
+            numRepetition = 10;
+#endif
+            System.Collections.Generic.List<System.Collections.Generic.List<System.Tuple<string, long>>> executionData = new();
 
             for (int index = 0; index < numRepetition; index++)
             {
-                System.Collections.Generic.List<long> singleExecutionData = new System.Collections.Generic.List<long>();
+                System.Tuple<string, long> tuple;
+                System.Collections.Generic.List<System.Tuple<string, long>> singleExecutionData = new();
                 Stopwatch w = Stopwatch.StartNew();
                 Java.Util.ArrayList<int> rawIntArraylist = new Java.Util.ArrayList<int>();
-                for (int i = 0; i < execution; i++)
+                for (int i = 0; i < elementsInexecution; i++)
                 {
                     rawIntArraylist.Add(i);
                 }
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
-                System.Console.WriteLine($"ArrayList Raw int Add Elapsed ticks: {w.Elapsed.Ticks}");
+                tuple = new System.Tuple<string, long>("ArrayList Raw int Add", w.Elapsed.Ticks);
+                singleExecutionData.Add(tuple);
+                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed ticks: {w.Elapsed.Ticks}");
 
                 w.Restart();
                 Java.Util.ArrayList<Integer> alist = new Java.Util.ArrayList<Integer>();
-                for (int i = 0; i < execution; i++)
+                for (int i = 0; i < elementsInexecution; i++)
                 {
                     alist.Add(i);
                 }
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
-                System.Console.WriteLine($"ArrayList Integer Add Elapsed ticks: {w.Elapsed.Ticks}");
+                tuple = new System.Tuple<string, long>("ArrayList Integer Add", w.Elapsed.Ticks);
+                singleExecutionData.Add(tuple);
+                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed ticks: {w.Elapsed.Ticks}");
 
                 w.Restart();
                 System.Collections.Generic.List<int> nlist = new System.Collections.Generic.List<int>();
-                for (int i = 0; i < execution; i++)
+                for (int i = 0; i < elementsInexecution; i++)
                 {
                     nlist.Add(i);
                 }
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
+                tuple = new System.Tuple<string, long>("System.Collections.Generic.List", w.Elapsed.Ticks);
+                singleExecutionData.Add(tuple);
                 var referenceValue = w.Elapsed.Ticks;
-                System.Console.WriteLine($"System.Collections.Generic.List Elapsed {w.Elapsed} - ticks: {referenceValue}");
+                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {referenceValue}");
 
                 var tmpArray = nlist.ToArray();
 
@@ -594,34 +604,39 @@ namespace MASES.JNetTest
                 var tmpJList = JNetHelper.ListFrom(tmpArray);
                 alist = new Java.Util.ArrayList<Integer>(tmpJList);
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
-                System.Console.WriteLine($"Java.Util.ArrayList from array Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                tuple = new System.Tuple<string, long>("Java.Util.ArrayList from array", w.Elapsed.Ticks);
+                singleExecutionData.Add(tuple);
+                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 var intBuffer = IntBuffer.From(tmpArray, false, false);
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
-                System.Console.WriteLine($"IntBuffer.From from raw array Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                tuple = new System.Tuple<string, long>("IntBuffer.From from raw array", w.Elapsed.Ticks);
+                singleExecutionData.Add(tuple);
+                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 var tmpJList2 = JNetHelper.ListFrom(intBuffer);
                 alist = new Java.Util.ArrayList<Integer>(tmpJList2);
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
-                System.Console.WriteLine($"Java.Util.ArrayList from array premade buffer Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                tuple = new System.Tuple<string, long>("Java.Util.ArrayList from array premade buffer", w.Elapsed.Ticks);
+                singleExecutionData.Add(tuple);
+                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 var tmpJList3 = JNetHelper.ListFrom(tmpArray, true);
                 alist = new Java.Util.ArrayList<Integer>(tmpJList3);
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
-                System.Console.WriteLine($"Java.Util.ArrayList from raw array buffered Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                tuple = new System.Tuple<string, long>("Java.Util.ArrayList from raw array buffered", w.Elapsed.Ticks);
+                singleExecutionData.Add(tuple);
+                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 var list = ((List<Integer>)alist).ToList();
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
-                System.Console.WriteLine($"Java.Util.ArrayList ToList Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                tuple = new System.Tuple<string, long>("Java.Util.ArrayList ToList", w.Elapsed.Ticks);
+                singleExecutionData.Add(tuple);
+                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 executionData.Add(singleExecutionData);
             }
@@ -633,9 +648,9 @@ namespace MASES.JNetTest
                 long total = 0;
                 for (int index = 1; index < numRepetition; index++)
                 {
-                    total += executionData[index][i];
+                    total += executionData[index][i].Item2;
                 }
-                System.Console.WriteLine($"Test {i} Mean {System.TimeSpan.FromTicks(total / (numRepetition - 1))}");
+                System.Console.WriteLine($"Test {executionData[0][0].Item1} Mean {System.TimeSpan.FromTicks(total / (numRepetition - 1))}");
             }
         }
     }
