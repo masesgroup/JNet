@@ -62,10 +62,22 @@ public class JNetHelper {
 			return l;
 		}
 		else if (input instanceof int[]) {
+            final List<Integer> l = new ArrayList<Integer>();
+            for (final int s : (int[])input) {
+                l.add(s);
+            }
+            return l;
+
 			Integer[] array = Arrays.stream((int[])input).boxed().toArray(Integer[]::new);
 			return Arrays.asList(array);
 		}
 		else if (input instanceof long[]) {
+            final List<Long> l = new ArrayList<Long>();
+            for (final long s : (long[])input) {
+                l.add(s);
+            }
+            return l;
+
 			Long[] array = Arrays.stream((long[])input).boxed().toArray(Long[]::new);
 			return Arrays.asList(array);
 		}
@@ -77,6 +89,12 @@ public class JNetHelper {
 			return l;
 		}
 		else if (input instanceof double[]) {
+            final List<Double> l = new ArrayList<Double>();
+            for (final double s : (double[])input) {
+                l.add(s);
+            }
+            return l;
+
 			Double[] array = Arrays.stream((double[])input).boxed().toArray(Double[]::new);
 			return Arrays.asList(array);
 		}
