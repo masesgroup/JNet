@@ -656,7 +656,7 @@ namespace MASES.JNetTest
                     var mean = items.Mean();
                     var stdDev = items.PopulationStandardDeviation();
 
-                    System.Console.WriteLine($"Test {executionData[0][i].Item1} Mean {System.TimeSpan.FromTicks((long)mean)} StdDev {stdDev} avoiding first {howManyIterationAvoid} iterations");
+                    System.Console.WriteLine($"Test {executionData[0][i].Item1} Mean {System.TimeSpan.FromTicks((long)mean)} StdDev {System.TimeSpan.FromTicks((long)stdDev)} avoiding first {howManyIterationAvoid} iterations");
                 }
             }
         }
