@@ -642,15 +642,17 @@ namespace MASES.JNetTest
             }
 
             int numOfTests = executionData[0].Count;
-
             for (int i = 0; i < numOfTests; i++)
             {
-                long total = 0;
-                for (int index = 1; index < numRepetition; index++)
+                for (int howManyIterationAvoid = 0; howManyIterationAvoid < 10; howManyIterationAvoid++)
                 {
-                    total += executionData[index][i].Item2;
+                    long total = 0;
+                    for (int index = howManyIterationAvoid; index < numRepetition; index++)
+                    {
+                        total += executionData[index][i].Item2;
+                    }
+                    System.Console.WriteLine($"Test {executionData[0][i].Item1} Mean {System.TimeSpan.FromTicks(total / (numRepetition - howManyIterationAvoid))} avoiding first {howManyIterationAvoid} iterations");
                 }
-                System.Console.WriteLine($"Test {executionData[0][0].Item1} Mean {System.TimeSpan.FromTicks(total / (numRepetition - 1))}");
             }
         }
     }
