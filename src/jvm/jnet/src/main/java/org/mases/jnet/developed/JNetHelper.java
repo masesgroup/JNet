@@ -67,9 +67,6 @@ public class JNetHelper {
                 l.add(s);
             }
             return l;
-
-			Integer[] array = Arrays.stream((int[])input).boxed().toArray(Integer[]::new);
-			return Arrays.asList(array);
 		}
 		else if (input instanceof long[]) {
             final List<Long> l = new ArrayList<Long>();
@@ -77,9 +74,6 @@ public class JNetHelper {
                 l.add(s);
             }
             return l;
-
-			Long[] array = Arrays.stream((long[])input).boxed().toArray(Long[]::new);
-			return Arrays.asList(array);
 		}
 		else if (input instanceof float[]) {
 			final List<Float> l = new ArrayList<Float>();
@@ -94,9 +88,6 @@ public class JNetHelper {
                 l.add(s);
             }
             return l;
-
-			Double[] array = Arrays.stream((double[])input).boxed().toArray(Double[]::new);
-			return Arrays.asList(array);
 		}
 
 		if(!input.getClass().isArray()) throw new IllegalArgumentException("Input parameter is not an array");
