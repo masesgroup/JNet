@@ -666,16 +666,16 @@ namespace MASES.JNetTest
             int numOfTests = executionData[0].Count;
             for (int i = 0; i < numOfTests; i++)
             {
-                for (int howManyIterationAvoid = 0; howManyIterationAvoid < 10; howManyIterationAvoid++)
+                // seems that after 10 repetitions the value is more stable 
+                for (int howManyIterationAvoid = 9; howManyIterationAvoid < 10; howManyIterationAvoid++)
                 {
-                    long total = 0;
                     System.Collections.Generic.List<double> items = new();
                     for (int index = howManyIterationAvoid; index < numRepetition; index++)
                     {
                         items.Add(executionData[index][i].Item2);
                     }
                     var mean = items.Mean();
-                    var stdDev = items.StandardDeviation();
+                    var stdDev = items.PopulationStandardDeviation();
 
                     System.Console.WriteLine($"Test {executionData[0][i].Item1} Mean {System.TimeSpan.FromTicks((long)mean)} StdDev {stdDev} avoiding first {howManyIterationAvoid} iterations");
                 }
