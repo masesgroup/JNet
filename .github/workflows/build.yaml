@@ -344,22 +344,12 @@ jobs:
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
         exclude:
-          - os: ubuntu-22.04
-            framework: net462
-          - os: ubuntu-24.04
-            framework: net462
-          - os: ubuntu-24.04-arm
-            framework: net462
-          - os: macos-13
-            framework: net462
-          - os: macos-14
-            framework: net462
-          - os: macos-15
-            framework: net462
-          - jdk_vendor: oracle
-            jdk_version: 11
-          - jdk_vendor: graalvm
-            jdk_version: 11
+          - framework: net462
+            os: [ ubuntu-22.04, ubuntu-24.04, ubuntu-24.04-arm, macos-13, macos-14, macos-15 ]
+          - jdk_version: 11
+            jdk_vendor: oracle, graalvm
+          - jdk_version: 25
+            jdk_vendor: microsoft
         
     runs-on: ${{ matrix.os }}
     env:
@@ -461,10 +451,10 @@ jobs:
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
         exclude:
-          - jdk_vendor: oracle
-            jdk_version: 11
-          - jdk_vendor: graalvm
-            jdk_version: 11
+          - jdk_version: 11
+            jdk_vendor: oracle, graalvm
+          - jdk_version: 25
+            jdk_vendor: microsoft
             
     runs-on: ${{ matrix.os }}
     env:
