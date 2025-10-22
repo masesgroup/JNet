@@ -339,13 +339,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-22.04', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ]
+        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ]
         framework: [ 'net462', 'net8.0', 'net9.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
         exclude:
           - framework: net462
-            os: [ ubuntu-22.04, ubuntu-24.04, ubuntu-24.04-arm, macos-13, macos-14, macos-15 ]
+            os: [ ubuntu-22.04, ubuntu-22.04-arm, ubuntu-24.04, ubuntu-24.04-arm, macos-13, macos-14, macos-15 ]
           - jdk_version: 11
             jdk_vendor: oracle, graalvm
           - jdk_version: 25
@@ -451,7 +451,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-22.04', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ]
+        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
         exclude:
