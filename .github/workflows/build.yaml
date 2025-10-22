@@ -339,7 +339,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-22.04', 'ubuntu-24.04', 'windows-2022', 'windows-2025', 'macos-13', 'macos-14', 'macos-15' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
+        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
         framework: [ 'net462', 'net8.0', 'net9.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21' ] # only LTS versions
@@ -380,13 +380,13 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v5
-        if: ${{ matrix.os == 'ubuntu-22.04' || matrix.os == 'ubuntu-24.04' || matrix.os == 'macos-15' || matrix.os == 'macos-14' || matrix.os == 'macos-13' }}
+        if: ${{ !startsWith(matrix.os, 'windows-') }}
         with:
           dotnet-version: |
             9.x
 
       - name: Download Procdump and prepare
-        if: ${{ ( matrix.os == 'windows-2022' || matrix.os == 'windows-2025' ) && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
+        if: ${{ startsWith(matrix.os, 'windows-') && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
         continue-on-error: true
         run: |
           C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
@@ -428,7 +428,7 @@ jobs:
         run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
 
       - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os == 'windows-2022' || matrix.os == 'windows-2025' }}
+        if: ${{ startsWith(matrix.os, 'windows-') }}
         with:
           if-no-files-found: ignore
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
@@ -436,7 +436,7 @@ jobs:
           retention-days: 7
 
       - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os != 'windows-2022' && matrix.os != 'windows-2025' }}
+        if: ${{!startsWith(matrix.os, 'windows-') }}
         with:
           if-no-files-found: ignore
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
@@ -455,7 +455,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-22.04', 'ubuntu-24.04', 'windows-2022', 'windows-2025', 'macos-13', 'macos-14', 'macos-15' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
+        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
@@ -483,7 +483,7 @@ jobs:
             9.x
 
       - name: Download Procdump and prepare
-        if: ${{ ( matrix.os == 'windows-2022' || matrix.os == 'windows-2025' ) && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
+        if: ${{ startsWith(matrix.os, 'windows-') && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
         continue-on-error: true
         run: |
           C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
@@ -519,32 +519,32 @@ jobs:
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
 
-      - if: ${{ matrix.os != 'windows-2022' && matrix.os != 'windows-2025' }}
+      - if: ${{ !startsWith(matrix.os, 'windows-') }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1
 
-      - if: ${{ matrix.os == 'windows-2022' || matrix.os == 'windows-2025' }}
+      - if: ${{ startsWith(matrix.os, 'windows-') }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
 
-      - if: ${{ matrix.os == 'windows-2022' || matrix.os == 'windows-2025' }}
+      - if: ${{ startsWith(matrix.os, 'windows-') }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: powershell
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
           
-      - if: ${{ matrix.os == 'windows-2022' || matrix.os == 'windows-2025' }}
+      - if: ${{ startsWith(matrix.os, 'windows-') }}
         run: (Get-EventLog -LogName Application -Newest 5).Message
 
       - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os == 'windows-2022' || matrix.os == 'windows-2025' }}
+        if: ${{ startsWith(matrix.os, 'windows-') }}
         with:
           if-no-files-found: ignore
           name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
@@ -552,7 +552,7 @@ jobs:
           retention-days: 7
 
       - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os != 'windows-2022' && matrix.os != 'windows-2025' }}
+        if: ${{ !startsWith(matrix.os, 'windows-') }}
         with:
           if-no-files-found: ignore
           name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
