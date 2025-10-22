@@ -334,19 +334,23 @@ jobs:
           name: JNetBin
           path: .\bin\
           
-  execute_tests:
+  tests:
     needs: build_windows
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
+        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ]
         framework: [ 'net462', 'net8.0', 'net9.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
           - os: ubuntu-22.04
             framework: net462
+          - os: ubuntu-22.04-arm
+            framework: net462
           - os: ubuntu-24.04
+            framework: net462
+          - os: ubuntu-24.04-arm
             framework: net462
           - os: macos-13
             framework: net462
@@ -450,12 +454,12 @@ jobs:
           path: ${{ github.workspace }}/**/hs_err_*
           retention-days: 7
 
-  execute_tests_powershell:
+  tests_ps:
     needs: build_windows
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
+        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
@@ -567,7 +571,7 @@ jobs:
           retention-days: 7
 
   final_cleanup:
-    needs: [ execute_tests, execute_tests_powershell ]
+    needs: [ tests, tests_ps ]
     if: "always()"
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
