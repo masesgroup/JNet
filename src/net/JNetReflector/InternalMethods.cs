@@ -563,7 +563,30 @@ namespace MASES.JNet.Reflector
                 List<Class> nesting = new List<Class>();
                 foreach (var item in entry.Classes)
                 {
-                    if (item.JVMNestingLevels() > entry.JVMNestingLevels()) nesting.Add(item);
+                    if (item.JVMNestingLevels() > entry.JVMNestingLevels())
+                    {
+                        if (item.MustBeAvoided())
+                        {
+                            ReportTrace(ReflectionTraceLevel.Debug, "Discarding avoided class {0}", item.GenericString);
+                            continue;
+                        }
+
+                        bool jSubClassIsDepracated = item.IsDeprecated();
+                        if (!JNetReflectorCore.ReflectDeprecated && jSubClassIsDepracated)
+                        {
+                            ReportTrace(ReflectionTraceLevel.Debug, "Discarding deprecated class {0}", item.GenericString);
+                            continue;
+                        }
+
+                        bool jSubClassIsOrFromGeneric = item.IsOrInheritFromJVMGenericClass();
+                        if (JNetReflectorCore.DisableGenerics && jSubClassIsOrFromGeneric)
+                        {
+                            ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", item.GenericString);
+                            continue;
+                        }
+
+                        nesting.Add(item);
+                    }
                 }
                 if (nesting.Count > 0)
                 {
@@ -743,7 +766,7 @@ namespace MASES.JNet.Reflector
                                                      .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false, false))
                                                      .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric, false))
                                                      .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
-                                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false, JNetReflectorCore.UseCamel))
+                                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false, JNetReflectorCore.UseCamel, out _))
                                                      .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, string.Empty);
             }
             else
@@ -756,7 +779,7 @@ namespace MASES.JNet.Reflector
                                                 .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, false))
                                                 .Replace(AllPackageClasses.ClassStub.CLASS_DIRECT, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, true))
                                                 .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
-                                                .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel) + (isMainClass ? SpecialNames.MainClassPlaceHolder : string.Empty))
+                                                .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel, out bool baseClassIsJVMBridgeBase) + (isMainClass ? SpecialNames.MainClassPlaceHolder : string.Empty))
                                                 .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric, JNetReflectorCore.UseCamel))
                                                 .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
                                                 .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
@@ -765,7 +788,7 @@ namespace MASES.JNet.Reflector
 
                 if (!jClassIsListener)
                 {
-                    constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true).AddTabLevel(1);
+                    constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true, baseClassIsJVMBridgeBase).AddTabLevel(1);
                     operatorClassBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
                     fieldClassBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
                     staticMethodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
@@ -908,7 +931,7 @@ namespace MASES.JNet.Reflector
             }
         }
 
-        static string AnalyzeConstructors(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric, bool isNested)
+        static string AnalyzeConstructors(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric, bool isNested, bool baseClassIsJVMBridgeBase)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Constructors of {0} *******************", classDefinition.GenericString);
 
@@ -1040,12 +1063,13 @@ namespace MASES.JNet.Reflector
                     if (item.IsVarArgs)
                     {
                         constructorParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");
+                        if (!baseClassIsJVMBridgeBase) constructorExecutionParamsBuilder.AppendFormat($"{item.Name()}, ");
                     }
                     else
                     {
                         constructorParamsBuilder.AppendFormat($"{typeStr} {item.Name()}, ");
+                        constructorExecutionParamsBuilder.AppendFormat($"{item.Name()}, ");
                     }
-                    constructorExecutionParamsBuilder.AppendFormat($"{item.Name()}, ");
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing constructor {0}", constructor.GenericString);
@@ -1056,6 +1080,12 @@ namespace MASES.JNet.Reflector
                 {
                     if (paramsString.EndsWith(", ")) paramsString = paramsString.Substring(0, paramsString.Length - 2); // remove last occurrence of ", "
                     if (executionParamsString.EndsWith(", ")) executionParamsString = executionParamsString.Substring(0, executionParamsString.Length - 2); // remove last occurrence of ", "
+                }
+
+                if (hasVarArg && baseClassIsJVMBridgeBase)
+                {
+                    executionParamsString = executionParamsString.Length == 0 ? $"{varArg.Name()}"
+                                                                              : $"MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}, {executionParamsString})";
                 }
 
                 var exceptions = constructor.ExceptionTypes;
@@ -1844,8 +1874,8 @@ namespace MASES.JNet.Reflector
                                                                 execStub,
                                                                 methodNameOrigin,
                                                                 string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                + executionParamsString + ", " + varArg.Name(),
+                                                                executionParamsString.Length == 0 ? $", {varArg.Name()}"
+                                                                                                  : $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}, {executionParamsString})",
                                                                 returnType);
                     }
                     else
@@ -1864,8 +1894,9 @@ namespace MASES.JNet.Reflector
                                                                 isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : executeGenType,
                                                                 methodNameOrigin,
                                                                 string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                + executionParamsString + ", " + varArg.Name());
+                                                                executionParamsString.Length == 0 ? $", {varArg.Name()}"
+                                                                                                  : $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}, {executionParamsString})"
+                                                                );
 
                         if (isListenerReturnType && isDirectListener == false)
                         {
@@ -1875,12 +1906,15 @@ namespace MASES.JNet.Reflector
                                                                           isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : executeGenTypeDirect,
                                                                           methodNameOrigin,
                                                                           string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                          (executionParamsString.Length == 0 ? string.Empty : ", ")
-                                                                          + executionParamsString + ", " + varArg.Name());
+                                                                          executionParamsString.Length == 0 ? $", {varArg.Name()}"
+                                                                                                            : $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}, {executionParamsString})"
+
+                                                                          );
                         }
                     }
-                    executionStub = $"if ({varArg.Name()}.Length == 0) {executionStub} else {executionStubWithVarArg}";
-                    executionStubDirect = $"if ({varArg.Name()}.Length == 0) {executionStubDirect} else {executionStubWithVarArgDirect}";
+
+                    executionStub = executionStubWithVarArg;
+                    executionStubDirect = executionStubWithVarArgDirect;
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing method {0}", genString);

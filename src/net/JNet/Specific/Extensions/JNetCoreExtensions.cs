@@ -30,6 +30,26 @@ namespace MASES.JNet.Specific.Extensions
     public static class JNetCoreExtensions
     {
         /// <summary>
+        /// Builds a new var-arg result starting from fixed parameters stored in <paramref name="fixedParameters"/> and the <see langword="params"/> argument available in <paramref name="varArg"/>
+        /// </summary>
+        /// <typeparam name="T">A supporting type if <see langword="params"/> has a type different from <see langword="object"/></typeparam>
+        /// <param name="varArg">The <see langword="params"/> parameter reported as array</param>
+        /// <param name="fixedParameters">The fixed parameters listed as <see langword="params"/></param>
+        /// <returns>A new array to be passed to the <see langword="params"/> argument with <paramref name="fixedParameters"/> concatedned with <paramref name="varArg"/></returns>
+        public static object[] VarArgRebuild<T>(this T[] varArg, params object[] fixedParameters)
+        {
+            List<object> varArgs = new List<object>(fixedParameters);
+            if (varArg != null)
+            {
+                foreach (var item in varArg)
+                {
+                    varArgs.Add(item);
+                }
+            }
+            return varArgs.ToArray();
+        }
+
+        /// <summary>
         /// Retrieve the <see cref="Java.Lang.Class{TClass}"/> from the <typeparamref name="TClass"/>
         /// </summary>
         /// <typeparam name="TClass">A class extending <see cref="IJVMBridgeBase"/></typeparam>

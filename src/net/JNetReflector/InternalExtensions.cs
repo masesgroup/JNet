@@ -1418,8 +1418,9 @@ namespace MASES.JNet.Reflector
             }
         }
 
-        public static string JVMBaseClassName(this Class entry, bool usedInGenerics, bool isListener, bool camel)
+        public static string JVMBaseClassName(this Class entry, bool usedInGenerics, bool isListener, bool camel, out bool baseClassIsJVMBridgeBase)
         {
+            baseClassIsJVMBridgeBase = false;
             if (isListener)
             {
                 if (entry.ContainsEventListener())
@@ -1430,6 +1431,7 @@ namespace MASES.JNet.Reflector
             }
             else if (entry.TypeName.IsJVMListenerClassesToRemoveAsListener())
             {
+                baseClassIsJVMBridgeBase = true;
                 string className = entry.JVMClassName(null, usedInGenerics, false);
                 return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
             }
@@ -1506,6 +1508,7 @@ namespace MASES.JNet.Reflector
                     }
                     else
                     {
+                        baseClassIsJVMBridgeBase = true;
                         string innerName = entry.JVMClassName(null, usedInGenerics, false);
                         return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
                     }
@@ -1518,6 +1521,7 @@ namespace MASES.JNet.Reflector
             }
             catch
             {
+                baseClassIsJVMBridgeBase = true;
                 string className = entry.JVMClassName(null, usedInGenerics, false);
                 return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
             }
@@ -1527,7 +1531,7 @@ namespace MASES.JNet.Reflector
         {
             if (!entry.HasJVMBaseClassName(usedInGenerics, isListener, camel)) return string.Empty;
 
-            var fName = entry.JVMBaseClassName(usedInGenerics, isListener, camel);
+            var fName = entry.JVMBaseClassName(usedInGenerics, isListener, camel, out _);
             return ToFullQualifiedInterfaceName(fName, camel);
         }
 
