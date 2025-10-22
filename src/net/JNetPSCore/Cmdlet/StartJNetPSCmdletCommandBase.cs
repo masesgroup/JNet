@@ -161,66 +161,47 @@ namespace MASES.JNet.PowerShell.Cmdlet
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            try
+            JNetPSHelper<TCore>.SetLicensePath(LicensePath);
+            JNetPSHelper<TCore>.SetJDKHome(JDKHome);
+            JNetPSHelper<TCore>.SetJVMPath(JVMPath);
+            JNetPSHelper<TCore>.SetJNIVerbosity(JNIVerbosity);
+            JNetPSHelper<TCore>.SetJNIOutputFile(JNIOutputFile);
+            JNetPSHelper<TCore>.SetJmxPort(JmxPort);
+            JNetPSHelper<TCore>.SetEnableDebug(EnableDebug.IsPresent);
+            JNetPSHelper<TCore>.SetJavaDebugPort(JavaDebugPort);
+            JNetPSHelper<TCore>.SetDebugSuspendFlag(DebugSuspendFlag);
+            JNetPSHelper<TCore>.SetJavaDebugOpts(JavaDebugOpts);
+            JNetPSHelper<TCore>.SetHeapSize(HeapSize);
+            JNetPSHelper<TCore>.SetInitialHeapSize(InitialHeapSize);
+            JNetPSHelper<TCore>.SetLogClassPath(LogClassPath.IsPresent);
+            JNetPSHelper<TCore>.SetWriteEventOrExceptionOnCmdLine(WriteEventOrExceptionOnCmdLine.IsPresent);
+            if (ExtraJVMOptions != null)
             {
-                JNetPSHelper<TCore>.SetLicensePath(LicensePath);
-                JNetPSHelper<TCore>.SetJDKHome(JDKHome);
-                JNetPSHelper<TCore>.SetJVMPath(JVMPath);
-                JNetPSHelper<TCore>.SetJNIVerbosity(JNIVerbosity);
-                JNetPSHelper<TCore>.SetJNIOutputFile(JNIOutputFile);
-                JNetPSHelper<TCore>.SetJmxPort(JmxPort);
-                JNetPSHelper<TCore>.SetEnableDebug(EnableDebug.IsPresent);
-                JNetPSHelper<TCore>.SetJavaDebugPort(JavaDebugPort);
-                JNetPSHelper<TCore>.SetDebugSuspendFlag(DebugSuspendFlag);
-                JNetPSHelper<TCore>.SetJavaDebugOpts(JavaDebugOpts);
-                JNetPSHelper<TCore>.SetHeapSize(HeapSize);
-                JNetPSHelper<TCore>.SetInitialHeapSize(InitialHeapSize);
-                JNetPSHelper<TCore>.SetLogClassPath(LogClassPath.IsPresent);
-                JNetPSHelper<TCore>.SetWriteEventOrExceptionOnCmdLine(WriteEventOrExceptionOnCmdLine.IsPresent);
-                if (ExtraJVMOptions != null)
+                foreach (var item in ExtraJVMOptions)
                 {
-                    foreach (var item in ExtraJVMOptions)
+                    if (string.IsNullOrWhiteSpace(item)) continue;
+                    AddJVMOption(item);
+                }
+            }
+            if (ExtraJVMKVOptions != null)
+            {
+                foreach (var item in ExtraJVMKVOptions)
+                {
+                    if (string.IsNullOrWhiteSpace(item)) continue;
+                    var index = item.IndexOf("=");
+
+                    if (index != -1)
                     {
-                        if (string.IsNullOrWhiteSpace(item)) continue;
-                        AddJVMOption(item);
+                        var key = item.Substring(index);
+                        var value = item.Substring(index + 1, item.Length);
+                        AddJVMOption(key, value);
                     }
                 }
-                if (ExtraJVMKVOptions != null)
-                {
-                    foreach (var item in ExtraJVMKVOptions)
-                    {
-                        if (string.IsNullOrWhiteSpace(item)) continue;
-                        var index = item.IndexOf("=");
+            }
 
-                        if (index != -1)
-                        {
-                            var key = item.Substring(index);
-                            var value = item.Substring(index + 1, item.Length);
-                            AddJVMOption(key, value);
-                        }
-                    }
-                }
-
-                OnBeforeCreateGlobalInstance();
-                CreateGlobalInstance();
-                OnAfterCreateGlobalInstance();
-            }
-            catch (System.Reflection.TargetInvocationException tie)
-            {
-                this.WriteExtendedError(tie.InnerException);
-                throw;
-            }
-            catch (JCOBridge.C2JBridge.JVMInterop.JavaException je)
-            {
-                var newEx = je.Convert();
-                this.WriteExtendedError(newEx);
-                throw newEx;
-            }
-            catch (JVMBridgeException je)
-            {
-                this.WriteExtendedError(je);
-                throw;
-            }
+            OnBeforeCreateGlobalInstance();
+            CreateGlobalInstance();
+            OnAfterCreateGlobalInstance();
         }
         /// <summary>
         /// Adds <paramref name="jvmOptionName"/>, with optional <paramref name="jvmOptionValue"/>, to <see cref="ApplicationJVMExtraOptions"/>
