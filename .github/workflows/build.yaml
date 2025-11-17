@@ -152,8 +152,8 @@ jobs:
       - uses: actions/setup-dotnet@v5
         with:
           dotnet-version: |
-            6.x
             9.x
+            10.x
 
       - name: Pre compile
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src/net/JNet/JNet.csproj
@@ -239,6 +239,12 @@ jobs:
         with:
           fetch-depth: '1'
           submodules: 'true'
+
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            9.x
+            10.x
 
       - name: Pre compile
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNet\JNet.csproj
@@ -340,7 +346,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ 'ubuntu-latest', 'windows-2022', 'macos-14' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
-        framework: [ 'net462', 'net8.0', 'net9.0' ]
+        framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
@@ -378,6 +384,7 @@ jobs:
         with:
           dotnet-version: |
             9.x
+            10.x
 
       - name: Download Procdump and prepare
         if: ${{ matrix.os == 'windows-2022' && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
@@ -475,6 +482,7 @@ jobs:
         with:
           dotnet-version: |
             9.x
+            10.x
 
       - name: Download Procdump and prepare
         if: ${{ matrix.os == 'windows-2022' && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
