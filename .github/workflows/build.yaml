@@ -344,18 +344,23 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     outputs:
-      matrix_win: ${{ steps.set-matrix-win.outputs.matrix }}
+      matrix_win_os: ${{ steps.set-matrix-win-os.outputs.matrix_win }}
+      matrix_linux_os: ${{ steps.set-matrix-linux-os.outputs.matrix_linux }}
+      matrix_mac_os: ${{ steps.set-matrix-mac-os.outputs.matrix_mac }}
     steps:
-      - id: set-matrix-win
-        run: echo "matrix={\"os\":[\"windows-2022\", \"windows-2025\", \"windows-11-arm\"]}" >> $GITHUB_OUTPUT
-
-         
+      - id: set-matrix-win-os
+        run: echo "matrix_win={\"os\":[\"windows-2022\", \"windows-2025\", \"windows-11-arm\"]}" >> $GITHUB_OUTPUT
+      - id: set-matrix-linux-os
+        run: echo "matrix_linux={\"os\":[\"ubuntu-22.04\", \"ubuntu-22.04-arm\", \"ubuntu-24.04\", \"ubuntu-24.04-arm\"]}" >> $GITHUB_OUTPUT
+      - id: set-matrix-mac-os
+        run: echo "matrix_mac={\"os\":[\"macos-13\", \"macos-14\", \"macos-15\"]}" >> $GITHUB_OUTPUT
+        
   tests_win:
     needs: prepare_for_matrix
     strategy:
       fail-fast: false
       matrix:
-        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_win) }} # [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
+        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_win_os) }} # [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
         framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
@@ -494,11 +499,11 @@ jobs:
           retention-days: 7
 
   tests_linux:
-    needs: build
+    needs: prepare_for_matrix
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
+        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_linux_os) }} # [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
@@ -637,11 +642,11 @@ jobs:
           retention-days: 7
 
   tests_mac:
-    needs: build
+    needs: prepare_for_matrix
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'macos-13', 'macos-14', 'macos-15' ]
+        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_mac_os) }} # [ 'macos-13', 'macos-14', 'macos-15' ]
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
