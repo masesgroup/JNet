@@ -132,47 +132,6 @@ jobs:
       - name: Get run_build
         run: echo "The selected run_build is ${{ steps.check_files.outputs.run_build }}"
 
-  # prepare matrix info
-  prepare_for_matrix_test:
-    needs: check_changes
-    runs-on: ubuntu-latest
-    outputs:
-      matrix_win_os: ${{ steps.set-matrix-win-os.outputs.matrix_win }}
-      matrix_linux_os: ${{ steps.set-matrix-linux-os.outputs.matrix_linux }}
-      matrix_mac_os: ${{ steps.set-matrix-mac-os.outputs.matrix_mac }}
-    steps:
-      - id: set-matrix-win-os
-        run: echo "matrix_win=['windows-2022', 'windows-2025', 'windows-11-arm']" >> $GITHUB_OUTPUT
-      - id: set-matrix-linux-os
-        run: echo "matrix_linux=['ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm']" >> $GITHUB_OUTPUT
-      - id: set-matrix-mac-os
-        run: echo "matrix_mac=['macos-13', 'macos-14', 'macos-15']" >> $GITHUB_OUTPUT
-
-  tests_win_test:
-    needs: prepare_for_matrix_test
-    strategy:
-      fail-fast: false
-      matrix:
-        os: ${{ fromJSON(needs.prepare_for_matrix_test.outputs.matrix_win_os) }} # [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
-        framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
-        jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
-        jdk_version: [ '17', '21', '25' ] # only LTS versions
-       
-    runs-on: ${{ matrix.os }}
-    env:
-      DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
-      DOTNET_DbgMiniDumpType: ${{ inputs.ProcessDumpType }}
-      DOTNET_DbgMiniDumpName: ${{ github.workspace }}/coredump.%p
-      DOTNET_CreateDumpDiagnostics: ${{ inputs.EnableProcessDump }}
-      DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
-      DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
-      DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
-    
-    steps:   
-      - run: echo "Matrix - framework ${{ matrix.framework }}, jdk_vendor ${{ matrix.jdk_vendor }}"
-
-
   build_container:
     needs: check_changes
     if: "always() && needs.check_changes.outputs.run_build == 'true'"
@@ -402,7 +361,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ${{ needs.prepare_for_matrix.outputs.matrix_win_os }} # [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
+        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_win_os) }} # [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
         framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
@@ -545,7 +504,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ${{ needs.prepare_for_matrix.outputs.matrix_linux_os }} # [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
+        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_linux_os) }} # [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
@@ -688,7 +647,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ${{ needs.prepare_for_matrix.outputs.matrix_mac_os }} # [ 'macos-13', 'macos-14', 'macos-15' ]
+        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_mac_os) }} # [ 'macos-13', 'macos-14', 'macos-15' ]
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
