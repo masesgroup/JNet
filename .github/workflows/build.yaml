@@ -349,11 +349,11 @@ jobs:
       matrix_mac_os: ${{ steps.set-matrix-mac-os.outputs.matrix_mac }}
     steps:
       - id: set-matrix-win-os
-        run: echo "matrix_win=[\"windows-2022\", \"windows-2025\", \"windows-11-arm\"]" >> $GITHUB_OUTPUT
+        run: echo "matrix_win=['windows-2022', 'windows-2025', 'windows-11-arm']" >> $GITHUB_OUTPUT
       - id: set-matrix-linux-os
-        run: echo "matrix_linux=[\"ubuntu-22.04\", \"ubuntu-22.04-arm\", \"ubuntu-24.04\", \"ubuntu-24.04-arm\"]" >> $GITHUB_OUTPUT
+        run: echo "matrix_linux=['ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm']" >> $GITHUB_OUTPUT
       - id: set-matrix-mac-os
-        run: echo "matrix_mac=[\"macos-13\", \"macos-14\", \"macos-15\"]" >> $GITHUB_OUTPUT
+        run: echo "matrix_mac=['macos-13', 'macos-14', 'macos-15']" >> $GITHUB_OUTPUT
         
   tests_win:
     needs: prepare_for_matrix
