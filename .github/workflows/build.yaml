@@ -346,7 +346,7 @@ jobs:
           path: .\bin\
 
   # prepare matrix info
-  prepare_for_matrix:
+  prepare_matrix_data:
     needs: build
     runs-on: ubuntu-latest
     outputs:
@@ -374,11 +374,11 @@ jobs:
         run: echo "matrix_mac=['macos-13', 'macos-14', 'macos-15']" >> $GITHUB_OUTPUT
 
   tests_win:
-    needs: prepare_for_matrix
+    needs: prepare_matrix_data
     strategy:
       fail-fast: false
       matrix:
-        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_win_os) }} # [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
+        os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_win_os) }} # [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
         framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
@@ -517,11 +517,11 @@ jobs:
           retention-days: 7
 
   tests_linux:
-    needs: prepare_for_matrix
+    needs: prepare_matrix_data
     strategy:
       fail-fast: false
       matrix:
-        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_linux_os) }} # [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
+        os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_linux_os) }} # [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
@@ -660,11 +660,11 @@ jobs:
           retention-days: 7
 
   tests_mac:
-    needs: prepare_for_matrix
+    needs: prepare_matrix_data
     strategy:
       fail-fast: false
       matrix:
-        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_mac_os) }} # [ 'macos-13', 'macos-14', 'macos-15' ]
+        os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_mac_os) }} # [ 'macos-13', 'macos-14', 'macos-15' ]
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
