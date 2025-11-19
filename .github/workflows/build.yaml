@@ -350,8 +350,8 @@ jobs:
         run: echo "matrix={\"os\":[\"windows-2022\", \"windows-2025\", \"windows-11-arm\"]}" >> $GITHUB_OUTPUT
 
          
-  prepare_for_matrix:
-    needs: build
+  tests_win:
+    needs: prepare_for_matrix
     strategy:
       fail-fast: false
       matrix:
