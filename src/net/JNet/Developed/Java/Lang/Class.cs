@@ -69,7 +69,7 @@ namespace Java.Lang
         /// </summary>
         /// <typeparam name="T">The type implementing <see cref="IJVMBridgeBase"/></typeparam>
         /// <returns>The <see cref="Class{T}"/> object for the class with the specified name.</returns>
-        public static Class<T> Of<T>() where T : IJVMBridgeBase, new()
+        public static Class<T> Of<T>() where T : IJVMBridgeBase
         {
             return SExecute<Class<T>>("forName", ClassNameOf<T>(), true, SystemClassLoader);
         }
@@ -81,7 +81,7 @@ namespace Java.Lang
         /// <typeparam name="U">The type implementing <see cref="IJVMBridgeBase"/></typeparam>
         /// <param name="clazz">The class of the type to cast this class object to</param>
         /// <returns>This <see cref="Class"/> object, cast to represent a subclass of the specified class object.</returns>
-        public Class<U> AsSubclass<U>(Class<U> clazz) where U : IJVMBridgeBase, new() => IExecute<Class<U>>("asSubclass", clazz);
+        public Class<U> AsSubclass<U>(Class<U> clazz) where U : IJVMBridgeBase => IExecute<Class<U>>("asSubclass", clazz);
         /// <summary>
         /// Returns the assertion status that would be assigned to this class if it were to be initialized at the time this method is invoked. 
         /// If this class has had its assertion status set, the most recent setting will be returned; 
@@ -250,7 +250,7 @@ namespace Java.Lang
         /// <param name="annotationClass">the <see cref="Class"/> object corresponding to the annotation type</param>
         /// <returns><see langword="true"/> if an annotation for the specified annotation type is present on this element, else <see langword="false"/></returns>
         public bool IsAnnotationPresent<TAnnotation>(Class<TAnnotation> annotationClass)
-            where TAnnotation : Annotation.Annotation, IJVMBridgeBase, new()
+            where TAnnotation : Annotation.Annotation, IJVMBridgeBase
         {
             return IExecute<bool>("isAnnotationPresent", annotationClass);
         }
@@ -343,35 +343,35 @@ namespace Java.Lang
         /// <typeparam name="T">The type implementing <see cref="IJVMBridgeBase"/></typeparam>
         /// <param name="loader">The <see cref="Java.Lang.ClassLoader"/> to be used, default will use <see cref="SystemClassLoader"/></param>
         /// <returns>The <see cref="Class{T}"/> object for the class with the specified name.</returns>
-        public static Class<T> Of<T>(Java.Lang.ClassLoader loader = null) where T : IJVMBridgeBase, new()
+        public static Class<T> Of<T>(Java.Lang.ClassLoader loader = null) where T : IJVMBridgeBase
         {
             return SExecute<Class<T>>("forName", ClassNameOf<T>(), true, loader != null ? loader : SystemClassLoader);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
-        public T GetAnnotation<T>(Class arg0) where T : IAnnotation, new()
+        public T GetAnnotation<T>(Class arg0) where T : IAnnotation
         {
             return IExecute<T>("getAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
-        public T[] GetAnnotationsByType<T>(Class arg0) where T : IAnnotation, new()
+        public T[] GetAnnotationsByType<T>(Class arg0) where T : IAnnotation
         {
             return IExecuteArray<T>("getAnnotationsByType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getDeclaredAnnotation(java.lang.Class)"/>
         /// </summary>
-        public T GetDeclaredAnnotation<T>(Class arg0) where T : IAnnotation, new()
+        public T GetDeclaredAnnotation<T>(Class arg0) where T : IAnnotation
         {
             return IExecute<T>("getDeclaredAnnotation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
-        public T[] GetDeclaredAnnotationsByType<T>(Class arg0) where T : IAnnotation, new()
+        public T[] GetDeclaredAnnotationsByType<T>(Class arg0) where T : IAnnotation
         {
             return IExecuteArray<T>("getDeclaredAnnotationsByType", arg0);
         }

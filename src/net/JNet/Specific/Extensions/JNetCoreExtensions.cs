@@ -54,7 +54,7 @@ namespace MASES.JNet.Specific.Extensions
         /// </summary>
         /// <typeparam name="TClass">A class extending <see cref="IJVMBridgeBase"/></typeparam>
         /// <returns>The <see cref="Java.Lang.Class{TClass}"/></returns>
-        public static Java.Lang.Class<TClass> Class<TClass>(this TClass _) where TClass : IJVMBridgeBase, new()
+        public static Java.Lang.Class<TClass> Class<TClass>(this TClass _) where TClass : IJVMBridgeBase
         {
             return Java.Lang.Class.Of<TClass>();
         }
@@ -72,7 +72,7 @@ namespace MASES.JNet.Specific.Extensions
         /// <param name="timeToLive">The time to live, expressed in milliseconds, the underlying memory shall remain available; if the time to live expires the pinned memory is retired leaving potentially the JVM under the possibility of an access violation.</param>
         /// <param name="converter">A <see cref="Func{T, TResult}"/> that receives the prepared <see cref="ByteBuffer"/> and shall return <typeparamref name="TWrap"/></param>
         /// <returns>The <typeparamref name="TWrap"/> instance</returns>
-        public static TWrap DirectBufferWithWrap<TData, TWrap>(this TData[] data, bool useMemoryControlBlock = true, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite, Func<ByteBuffer, TWrap> converter = null) where TWrap : IJVMBridgeBase, new()
+        public static TWrap DirectBufferWithWrap<TData, TWrap>(this TData[] data, bool useMemoryControlBlock = true, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite, Func<ByteBuffer, TWrap> converter = null) where TWrap : IJVMBridgeBase
         {
             var buf = JCOBridge.C2JBridge.JCOBridge.Global.JVM.NewDirectBuffer(data, useMemoryControlBlock, arrangeCapacity, timeToLive);
             if (data is byte[]) return JVMBridgeBase.WrapsDirect<TWrap>(buf.DisableCleanupAndReturn());

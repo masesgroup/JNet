@@ -81,18 +81,6 @@ jobs:
           name: JNetReflector report
           path: .\JNetReflector.txt
 
-      - name: Try Java compilation
-        continue-on-error: true
-        run: mvn "-DbinFolderName=binReflector" --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
-        env:
-          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
-          MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
-          MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
-
-      - name: Try C# compilation
-        continue-on-error: true
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNet.sln
- 
       - name: Extract commit SHA
         if: ${{ inputs.GeneratePR == true }}
         run: |
@@ -112,3 +100,16 @@ jobs:
           reviewers: masesdevelopers
           assignees: masesdevelopers
           labels: java, .NET, enhancement 
+
+      - name: Try Java compilation
+        continue-on-error: true
+        run: mvn "-DbinFolderName=binReflector" --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
+        env:
+          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
+
+      - name: Try C# compilation
+        continue-on-error: true
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNet.sln
+ 
