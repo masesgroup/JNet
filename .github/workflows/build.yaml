@@ -84,13 +84,13 @@ jobs:
     #needs: build_macos_native
     name: Check changed files
     outputs:
-      run_build_windows: ${{ steps.check_files.outputs.run_build_windows || steps.force_execute.outputs.run_build_windows }}
+      run_build: ${{ steps.check_files.outputs.run_build || steps.force_execute.outputs.run_build }}
     runs-on: ubuntu-latest
     steps:
       - name: Force check on true
         id: force_execute
         if: ${{ github.event_name != 'push' }}
-        run: echo "run_build_windows=true" >> $GITHUB_OUTPUT
+        run: echo "run_build=true" >> $GITHUB_OUTPUT
       - name: Create modified file list
         if: ${{ github.event_name == 'push' }}
         id: get_changed_files
@@ -105,36 +105,36 @@ jobs:
           for added_modified_file in "${added_modified_files[@]}"; do
               if [[ $added_modified_file == ".github/workflows/build.yaml"* ]]; then
                 echo "$added_modified_file is myself."
-                echo "run_build_windows=true" >> $GITHUB_OUTPUT
+                echo "run_build=true" >> $GITHUB_OUTPUT
                 break
               fi
               if [[ $added_modified_file == "src/container/"* ]]; then
                 echo "$added_modified_file file is under the directory 'src/'."
-                echo "run_build_windows=true" >> $GITHUB_OUTPUT
+                echo "run_build=true" >> $GITHUB_OUTPUT
                 break
               fi
               if [[ $added_modified_file == "src/jvm/"* ]]; then
                 echo "$added_modified_file file is under the directory 'src/'."
-                echo "run_build_windows=true" >> $GITHUB_OUTPUT
+                echo "run_build=true" >> $GITHUB_OUTPUT
                 break
               fi
               if [[ $added_modified_file == "src/net/"* ]]; then
                 echo "$added_modified_file file is under the directory 'src/'."
-                echo "run_build_windows=true" >> $GITHUB_OUTPUT
+                echo "run_build=true" >> $GITHUB_OUTPUT
                 break
               fi
               if [[ $added_modified_file == "tests/"* ]]; then
                 echo "$added_modified_file file is under the directory 'src/'."
-                echo "run_build_windows=true" >> $GITHUB_OUTPUT
+                echo "run_build=true" >> $GITHUB_OUTPUT
                 break
               fi
           done
-      - name: Get run_build_windows
-        run: echo "The selected run_build_windows is ${{ steps.check_files.outputs.run_build_windows }}"
+      - name: Get run_build
+        run: echo "The selected run_build is ${{ steps.check_files.outputs.run_build }}"
 
-  build_container_jnet:
+  build_container:
     needs: check_changes
-    if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
+    if: "always() && needs.check_changes.outputs.run_build == 'true'"
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -220,10 +220,10 @@ jobs:
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
         
-  # Now run "build_windows"
-  build_windows:
+  # Now run "build"
+  build:
     needs: check_changes
-    if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
+    if: "always() && needs.check_changes.outputs.run_build == 'true'"
     # The type of runner that the job will run on
     runs-on: windows-2022
 
@@ -334,19 +334,19 @@ jobs:
           name: JNetBin
           path: .\bin\
           
-  execute_tests:
-    needs: build_windows
+  tests:
+    needs: build
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-2022', 'macos-latest' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
+        os: [ 'ubuntu-latest', 'windows-2022', 'macos-14' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
         framework: [ 'net462', 'net8.0', 'net9.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
-        jdk_version: [ '11', '17', '21' ] # only LTS versions
+        jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
         exclude:
           - os: ubuntu-latest
             framework: net462
-          - os: macos-latest
+          - os: macos-14
             framework: net462
           - jdk_vendor: oracle
             jdk_version: 11
@@ -374,7 +374,7 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v5
-        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
+        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-14' || matrix.os == 'macos-13' }}
         with:
           dotnet-version: |
             9.x
@@ -405,17 +405,22 @@ jobs:
           distribution: 'graalvm' # See 'Supported distributions' for available options
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' || (matrix.os == 'windows-2022' && matrix.framework != 'net462') }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: |
-          dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
-          dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
+        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
+
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
           
-      - if: ${{ matrix.os == 'windows-2022' && matrix.framework == 'net462' }}
+      - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: |
           .\bin\${{ matrix.framework }}\JNetTest.exe
-          .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
+
+      - if: ${{ matrix.framework == 'net462' }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
 
       - uses: actions/upload-artifact@v5
         if: ${{ matrix.os == 'windows-2022' }}
@@ -440,14 +445,14 @@ jobs:
           path: ${{ github.workspace }}/**/hs_err_*
           retention-days: 7
 
-  execute_tests_powershell:
-    needs: build_windows
+  tests_ps:
+    needs: build
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-2022', 'macos-latest' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
+        os: [ 'ubuntu-latest', 'windows-2022', 'macos-14' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
-        jdk_version: [ '11', '17', '21' ] # only LTS versions
+        jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
         exclude:
           - jdk_vendor: oracle
             jdk_version: 11
@@ -557,7 +562,7 @@ jobs:
           retention-days: 7
 
   final_cleanup:
-    needs: [ execute_tests, execute_tests_powershell ]
+    needs: [ tests, tests_ps ]
     if: "always()"
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
