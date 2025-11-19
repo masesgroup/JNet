@@ -148,7 +148,7 @@ jobs:
       - id: set-matrix-mac-os
         run: echo "matrix_mac=['macos-13', 'macos-14', 'macos-15']" >> $GITHUB_OUTPUT
 
-  tests_win:
+  tests_win_test:
     needs: prepare_for_matrix_test
     strategy:
       fail-fast: false
