@@ -339,13 +339,23 @@ jobs:
           if-no-files-found: ignore
           name: JNetBin
           path: .\bin\
-          
-  tests_win:
+
+  prepare_for_matrix:
+    needs: build
+    runs-on: ubuntu-latest
+    outputs:
+      matrix_win: ${{ steps.set-matrix-win.outputs.matrix }}
+    steps:
+      - id: set-matrix-win
+        run: echo "matrix={\"os\":[\"windows-2022\", \"windows-2025\", \"windows-11-arm\"]}" >> $GITHUB_OUTPUT
+
+         
+  prepare_for_matrix:
     needs: build
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
+        os: ${{ fromJSON(needs.prepare_for_matrix.outputs.matrix_win) }} # [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
         framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
