@@ -382,7 +382,21 @@ jobs:
         framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '17', '21', '25' ] # only LTS versions
-        
+    #   exclude:
+    #     - os: windows-11-arm
+    #       jdk_vendor: temurin
+    #     - os: windows-11-arm
+    #       jdk_vendor: zulu
+    #     - os: windows-11-arm
+    #       jdk_vendor: microsoft
+    #     - os: windows-11-arm
+    #       jdk_vendor: corretto
+    #     - os: windows-11-arm
+    #       jdk_vendor: oracle
+    #     - os: windows-11-arm
+    #       jdk_vendor: graalvm
+            
+     
     runs-on: ${{ matrix.os }}
     env:
       DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
