@@ -352,8 +352,6 @@ jobs:
             jdk_version: 11
           - jdk_vendor: graalvm
             jdk_version: 11
-          - jdk_vendor: microsoft
-            jdk_version: 25
         
     runs-on: ${{ matrix.os }}
     env:
@@ -459,8 +457,6 @@ jobs:
             jdk_version: 11
           - jdk_vendor: graalvm
             jdk_version: 11
-          - jdk_vendor: microsoft
-            jdk_version: 25
             
     runs-on: ${{ matrix.os }}
     env:
