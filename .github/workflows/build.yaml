@@ -348,12 +348,7 @@ jobs:
         os: [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
         framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
-        jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
-        exclude:
-          - jdk_vendor: oracle
-            jdk_version: 11
-          - jdk_vendor: graalvm
-            jdk_version: 11
+        jdk_version: [ '17', '21', '25' ] # only LTS versions
         
     runs-on: ${{ matrix.os }}
     env:
@@ -496,12 +491,7 @@ jobs:
         os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
-        jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
-        exclude:
-          - jdk_vendor: oracle
-            jdk_version: 11
-          - jdk_vendor: graalvm
-            jdk_version: 11
+        jdk_version: [ '17', '21', '25' ] # only LTS versions
         
     runs-on: ${{ matrix.os }}
     env:
@@ -644,12 +634,7 @@ jobs:
         os: [ 'macos-13', 'macos-14', 'macos-15' ]
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
-        jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
-        exclude:
-          - jdk_vendor: oracle
-            jdk_version: 11
-          - jdk_vendor: graalvm
-            jdk_version: 11
+        jdk_version: [ '17', '21', '25' ] # only LTS versions
         
     runs-on: ${{ matrix.os }}
     env:
