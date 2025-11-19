@@ -340,25 +340,16 @@ jobs:
           name: JNetBin
           path: .\bin\
           
-  tests:
+  tests_win:
     needs: build
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ]
+        os: [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
         framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
         exclude:
-          - framework: net462
-            os:
-              - ubuntu-22.04
-              - ubuntu-22.04-arm
-              - ubuntu-24.04 
-              - ubuntu-24.04-arm
-              - macos-13
-              - macos-14
-              - macos-15
           - jdk_vendor: oracle
             jdk_version: 11
           - jdk_vendor: graalvm
@@ -400,6 +391,10 @@ jobs:
         with:
           dotnet-version: |
             10.x
+
+      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
+        if: ${{ matrix.os == 'windows-11-arm' }}
+        run: choco install zstandard
 
       - name: Download Procdump and prepare
         if: ${{ startsWith(matrix.os, 'windows-') && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
@@ -443,103 +438,9 @@ jobs:
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
 
-      - uses: actions/upload-artifact@v5
-        if: ${{ startsWith(matrix.os, 'windows-') }}
-        with:
-          if-no-files-found: ignore
-          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: .\CrashDumpsDir\*
-          retention-days: 7
-
-      - uses: actions/upload-artifact@v5
-        if: ${{!startsWith(matrix.os, 'windows-') }}
-        with:
-          if-no-files-found: ignore
-          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: ${{ github.workspace }}/coredump.*
-          retention-days: 7
-
-      - uses: actions/upload-artifact@v5
-        with:
-          if-no-files-found: ignore
-          name: Crash_tests_hs_err__${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: ${{ github.workspace }}/**/hs_err_*
-          retention-days: 7
-
-  tests_ps:
-    needs: build
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'windows-2022', 'windows-2025', 'windows-11-arm', 'macos-13', 'macos-14', 'macos-15' ]
-        jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
-        jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
-        exclude:
-          - jdk_vendor: oracle
-            jdk_version: 11
-          - jdk_vendor: graalvm
-            jdk_version: 11
-            
-    runs-on: ${{ matrix.os }}
-    env:
-      DOTNET_CLI_UI_LANGUAGE: en_US
-      DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
-      DOTNET_DbgMiniDumpType: ${{ inputs.ProcessDumpType }}
-      DOTNET_DbgMiniDumpName: ${{ github.workspace }}/coredump.%p
-      DOTNET_CreateDumpDiagnostics: ${{ inputs.EnableProcessDump }}
-      DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
-      DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
-      DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
-
-    steps:
-      - uses: actions/setup-dotnet@v5
-        with:
-          dotnet-version: |
-            9.x
-            10.x
-
-      - name: Download Procdump and prepare
-        if: ${{ startsWith(matrix.os, 'windows-') && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
-        continue-on-error: true
-        run: |
-          C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
-          Expand-Archive -LiteralPath '${{ github.workspace }}\Procdump.zip' -DestinationPath ${{ github.workspace }}\Procdump -Force
-          dir .\Procdump
-          ${{ github.workspace }}\Procdump\procdump.exe -accepteula
-          mkdir CrashDumpsDir
-          ${{ github.workspace }}\Procdump\procdump.exe -ma -i ${{ github.workspace }}\CrashDumpsDir
-
-      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
-        if: ${{ matrix.os == 'windows-11-arm' }}
-        run: choco install zstandard
-
-      - name: Restore JNet bin from cache
-        uses: actions/cache/restore@v4
-        with:
-          fail-on-cache-miss: true
-          enableCrossOsArchive: true
-          path: ./bin/
-          key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
- 
-      - name: Set up JDK distribution
-        if: ${{ matrix.jdk_vendor != 'graalvm' }}
-        uses: actions/setup-java@v5
-        with: # running setup-java again overwrites the settings.xml
-          distribution: ${{ matrix.jdk_vendor }}
-          java-version: ${{ matrix.jdk_version }}
-
-      - name: Set up GraalVM distribution
-        if: ${{ matrix.jdk_vendor == 'graalvm' }}
-        uses: graalvm/setup-graalvm@v1
-        with:
-          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
-          distribution: 'graalvm' # See 'Supported distributions' for available options
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
-
+        
       - if: ${{ !startsWith(matrix.os, 'windows-') }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
@@ -568,27 +469,323 @@ jobs:
         if: ${{ startsWith(matrix.os, 'windows-') }}
         with:
           if-no-files-found: ignore
-          name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: .\CrashDumpsDir\*
           retention-days: 7
 
       - uses: actions/upload-artifact@v5
-        if: ${{ !startsWith(matrix.os, 'windows-') }}
+        if: ${{!startsWith(matrix.os, 'windows-') }}
         with:
           if-no-files-found: ignore
-          name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/coredump.*
           retention-days: 7
 
       - uses: actions/upload-artifact@v5
         with:
           if-no-files-found: ignore
-          name: Crash_powershell_hs_err_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          name: Crash_tests_hs_err__${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/**/hs_err_*
+          retention-days: 7
+
+  tests_linux:
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
+        framework: [ 'net8.0', 'net9.0', 'net10.0' ]
+        jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
+        jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
+        exclude:
+          - jdk_vendor: oracle
+            jdk_version: 11
+          - jdk_vendor: graalvm
+            jdk_version: 11
+        
+    runs-on: ${{ matrix.os }}
+    env:
+      DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
+      DOTNET_DbgMiniDumpType: ${{ inputs.ProcessDumpType }}
+      DOTNET_DbgMiniDumpName: ${{ github.workspace }}/coredump.%p
+      DOTNET_CreateDumpDiagnostics: ${{ inputs.EnableProcessDump }}
+      DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
+      DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
+      DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
+    
+    steps:     
+      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
+        if: ${{ matrix.os == 'windows-11-arm' }}
+        run: choco install zstandard
+
+      - name: Restore JNet bin from cache
+        uses: actions/cache/restore@v4
+        with:
+          fail-on-cache-miss: true
+          enableCrossOsArchive: true
+          path: ./bin/
+          key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
+
+      - uses: actions/setup-dotnet@v5
+        if: ${{ !startsWith(matrix.os, 'windows-') }}
+        with:
+          dotnet-version: |
+            9.x
+            10.x
+
+      - uses: actions/setup-dotnet@v5
+        if: ${{ startsWith(matrix.os, 'windows-') }}
+        with:
+          dotnet-version: |
+            10.x
+
+      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
+        if: ${{ matrix.os == 'windows-11-arm' }}
+        run: choco install zstandard
+
+      - name: Download Procdump and prepare
+        if: ${{ startsWith(matrix.os, 'windows-') && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
+        continue-on-error: true
+        run: |
+          C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
+          Expand-Archive -LiteralPath '${{ github.workspace }}\Procdump.zip' -DestinationPath ${{ github.workspace }}\Procdump -Force
+          dir .\Procdump
+          ${{ github.workspace }}\Procdump\procdump.exe -accepteula
+          mkdir CrashDumpsDir
+          ${{ github.workspace }}\Procdump\procdump.exe -ma -i ${{ github.workspace }}\CrashDumpsDir
+
+      - name: Set up JDK distribution
+        if: ${{ matrix.jdk_vendor != 'graalvm' }}
+        uses: actions/setup-java@v5
+        with: # running setup-java again overwrites the settings.xml
+          distribution: ${{ matrix.jdk_vendor }}
+          java-version: ${{ matrix.jdk_version }}
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
+          distribution: 'graalvm' # See 'Supported distributions' for available options
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
+
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
+          
+      - if: ${{ matrix.framework == 'net462' }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: .\bin\${{ matrix.framework }}\JNetTest.exe
+
+      - if: ${{ matrix.framework == 'net462' }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
+
+      - shell: pwsh
+        run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
+        
+      - if: ${{ !startsWith(matrix.os, 'windows-') }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        shell: pwsh
+        run: |
+          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
+          ${{ github.workspace }}/bin/JNetPSTest.ps1
+
+      - if: ${{ startsWith(matrix.os, 'windows-') }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        shell: pwsh
+        run: |
+          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
+          ${{ github.workspace }}\bin\JNetPSTest.ps1
+
+      - if: ${{ startsWith(matrix.os, 'windows-') }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        shell: powershell
+        run: |
+          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
+          ${{ github.workspace }}\bin\JNetPSTest.ps1
+          
+      - if: ${{ startsWith(matrix.os, 'windows-') }}
+        run: (Get-EventLog -LogName Application -Newest 5).Message
+
+      - uses: actions/upload-artifact@v5
+        if: ${{ startsWith(matrix.os, 'windows-') }}
+        with:
+          if-no-files-found: ignore
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: .\CrashDumpsDir\*
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v5
+        if: ${{!startsWith(matrix.os, 'windows-') }}
+        with:
+          if-no-files-found: ignore
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/coredump.*
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v5
+        with:
+          if-no-files-found: ignore
+          name: Crash_tests_hs_err__${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/**/hs_err_*
+          retention-days: 7
+
+  tests_mac:
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ 'macos-13', 'macos-14', 'macos-15' ]
+        framework: [ 'net8.0', 'net9.0', 'net10.0' ]
+        jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
+        jdk_version: [ '11', '17', '21', '25' ] # only LTS versions
+        exclude:
+          - jdk_vendor: oracle
+            jdk_version: 11
+          - jdk_vendor: graalvm
+            jdk_version: 11
+        
+    runs-on: ${{ matrix.os }}
+    env:
+      DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
+      DOTNET_DbgMiniDumpType: ${{ inputs.ProcessDumpType }}
+      DOTNET_DbgMiniDumpName: ${{ github.workspace }}/coredump.%p
+      DOTNET_CreateDumpDiagnostics: ${{ inputs.EnableProcessDump }}
+      DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
+      DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
+      DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
+    
+    steps:     
+      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
+        if: ${{ matrix.os == 'windows-11-arm' }}
+        run: choco install zstandard
+
+      - name: Restore JNet bin from cache
+        uses: actions/cache/restore@v4
+        with:
+          fail-on-cache-miss: true
+          enableCrossOsArchive: true
+          path: ./bin/
+          key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
+
+      - uses: actions/setup-dotnet@v5
+        if: ${{ !startsWith(matrix.os, 'windows-') }}
+        with:
+          dotnet-version: |
+            9.x
+            10.x
+
+      - uses: actions/setup-dotnet@v5
+        if: ${{ startsWith(matrix.os, 'windows-') }}
+        with:
+          dotnet-version: |
+            10.x
+
+      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
+        if: ${{ matrix.os == 'windows-11-arm' }}
+        run: choco install zstandard
+
+      - name: Download Procdump and prepare
+        if: ${{ startsWith(matrix.os, 'windows-') && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
+        continue-on-error: true
+        run: |
+          C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
+          Expand-Archive -LiteralPath '${{ github.workspace }}\Procdump.zip' -DestinationPath ${{ github.workspace }}\Procdump -Force
+          dir .\Procdump
+          ${{ github.workspace }}\Procdump\procdump.exe -accepteula
+          mkdir CrashDumpsDir
+          ${{ github.workspace }}\Procdump\procdump.exe -ma -i ${{ github.workspace }}\CrashDumpsDir
+
+      - name: Set up JDK distribution
+        if: ${{ matrix.jdk_vendor != 'graalvm' }}
+        uses: actions/setup-java@v5
+        with: # running setup-java again overwrites the settings.xml
+          distribution: ${{ matrix.jdk_vendor }}
+          java-version: ${{ matrix.jdk_version }}
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
+          distribution: 'graalvm' # See 'Supported distributions' for available options
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
+
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
+          
+      - if: ${{ matrix.framework == 'net462' }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: .\bin\${{ matrix.framework }}\JNetTest.exe
+
+      - if: ${{ matrix.framework == 'net462' }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
+
+      - shell: pwsh
+        run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
+        
+      - if: ${{ !startsWith(matrix.os, 'windows-') }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        shell: pwsh
+        run: |
+          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
+          ${{ github.workspace }}/bin/JNetPSTest.ps1
+
+      - if: ${{ startsWith(matrix.os, 'windows-') }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        shell: pwsh
+        run: |
+          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
+          ${{ github.workspace }}\bin\JNetPSTest.ps1
+
+      - if: ${{ startsWith(matrix.os, 'windows-') }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        shell: powershell
+        run: |
+          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
+          ${{ github.workspace }}\bin\JNetPSTest.ps1
+          
+      - if: ${{ startsWith(matrix.os, 'windows-') }}
+        run: (Get-EventLog -LogName Application -Newest 5).Message
+
+      - uses: actions/upload-artifact@v5
+        if: ${{ startsWith(matrix.os, 'windows-') }}
+        with:
+          if-no-files-found: ignore
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: .\CrashDumpsDir\*
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v5
+        if: ${{!startsWith(matrix.os, 'windows-') }}
+        with:
+          if-no-files-found: ignore
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/coredump.*
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v5
+        with:
+          if-no-files-found: ignore
+          name: Crash_tests_hs_err__${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/**/hs_err_*
           retention-days: 7
 
   final_cleanup:
-    needs: [ tests, tests_ps ]
+    needs: [ tests_win, tests_linux, tests_mac ]
     if: "always()"
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
