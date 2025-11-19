@@ -86,7 +86,7 @@ namespace Java.Time.Temporal
         /// <param name="arg1"><see cref="long"/></param>
         /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        R AddTo<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new();
+        R AddTo<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Java.Time.Temporal
         /// <param name="arg1"><see cref="long"/></param>
         /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R AddTo<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new()
+        public R AddTo<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal
         {
             return IExecute<R>("addTo", arg0, arg1);
         }

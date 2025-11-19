@@ -71,7 +71,7 @@ namespace Javax.Tools
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html"/>
     /// </summary>
     /// <typeparam name="F"><see cref="Javax.Tools.IFileObject"/></typeparam>
-    public partial class ForwardingFileObject<F> : Javax.Tools.FileObject where F : Javax.Tools.IFileObject, new()
+    public partial class ForwardingFileObject<F> : Javax.Tools.FileObject where F : Javax.Tools.IFileObject
     {
         const string _bridgeClassName = "javax.tools.ForwardingFileObject";
         /// <summary>
