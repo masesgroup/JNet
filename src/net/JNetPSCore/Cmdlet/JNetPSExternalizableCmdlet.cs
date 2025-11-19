@@ -85,6 +85,11 @@ namespace MASES.JNet.PowerShell.Cmdlet
             {
                 this.WriteExtendedError(je);
             }
+            catch (Exception e)
+            {
+                this.WriteExtendedError(e);
+                throw;
+            }
         }
 
         protected abstract void ProcessCommand();
