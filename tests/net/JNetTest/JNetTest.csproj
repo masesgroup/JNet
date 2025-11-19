@@ -10,4 +10,10 @@
 	<ItemGroup>
 		<Compile Include="..\Common\Initializer.cs" Link="Initializer.cs" />
 	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<PackageReference Include="MathNet.Numerics.Signed" Version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' != 'net462'">
+	  <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+	</ItemGroup>
 </Project>
