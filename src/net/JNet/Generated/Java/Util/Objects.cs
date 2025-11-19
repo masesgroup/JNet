@@ -227,7 +227,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Hash(params object[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<int>(LocalBridgeClazz, "hash", "([Ljava/lang/Object;)I"); else return SExecuteWithSignature<int>(LocalBridgeClazz, "hash", "([Ljava/lang/Object;)I", arg0);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "hash", "([Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#hashCode(java.lang.Object)"/>

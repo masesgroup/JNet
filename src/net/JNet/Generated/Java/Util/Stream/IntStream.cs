@@ -366,7 +366,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Of(params int[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "of", "([I)Ljava/util/stream/IntStream;"); else return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "of", "([I)Ljava/util/stream/IntStream;", arg0);
+            return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "of", "([I)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#of(int)"/>

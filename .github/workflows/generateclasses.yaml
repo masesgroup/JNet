@@ -25,7 +25,7 @@ jobs:
       DOTNET_CreateDumpDiagnostics: 1
       DOTNET_CreateDumpVerboseDiagnostics: 1
       DOTNET_EnableCrashReport: 1
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_4 }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
       
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -76,23 +76,11 @@ jobs:
           cd binReflector\net8.0
           MASES.JNetReflector.exe -TraceLevel 1 -TraceTo %GITHUB_WORKSPACE%\JNetReflector.txt -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: JNetReflector report
           path: .\JNetReflector.txt
 
-      - name: Try Java compilation
-        continue-on-error: true
-        run: mvn "-DbinFolderName=binReflector" --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
-        env:
-          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
-          MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
-          MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
-
-      - name: Try C# compilation
-        continue-on-error: true
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNet.sln
- 
       - name: Extract commit SHA
         if: ${{ inputs.GeneratePR == true }}
         run: |
@@ -112,3 +100,16 @@ jobs:
           reviewers: masesdevelopers
           assignees: masesdevelopers
           labels: java, .NET, enhancement 
+
+      - name: Try Java compilation
+        continue-on-error: true
+        run: mvn "-DbinFolderName=binReflector" --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
+        env:
+          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
+
+      - name: Try C# compilation
+        continue-on-error: true
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNet.sln
+ 

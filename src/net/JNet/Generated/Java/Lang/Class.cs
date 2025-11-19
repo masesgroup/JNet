@@ -565,7 +565,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor GetConstructor(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
+            return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class...)"/>
@@ -576,7 +576,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor GetDeclaredConstructor(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
+            return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)"/>
@@ -610,7 +610,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Method GetDeclaredMethod(Java.Lang.String arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0); else return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class...)"/>
@@ -622,7 +622,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Method GetMethod(Java.Lang.String arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0); else return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#toGenericString()"/>
@@ -1170,7 +1170,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor<T> GetConstructor(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
+            return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class...)"/>
@@ -1181,7 +1181,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Constructor<T> GetDeclaredConstructor(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
+            return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredField(java.lang.String)"/>
@@ -1215,7 +1215,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Method GetDeclaredMethod(Java.Lang.String arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0); else return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class...)"/>
@@ -1227,7 +1227,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Method GetMethod(Java.Lang.String arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0); else return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#toGenericString()"/>

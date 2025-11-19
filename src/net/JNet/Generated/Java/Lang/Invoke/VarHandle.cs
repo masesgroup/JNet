@@ -214,7 +214,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<bool>("compareAndSet", "([Ljava/lang/Object;)Z"); else return IExecuteWithSignature<bool>("compareAndSet", "([Ljava/lang/Object;)Z", arg0);
+            return IExecuteWithSignature<bool>("compareAndSet", "([Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSet(java.lang.Object...)"/>
@@ -223,7 +223,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSet(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<bool>("weakCompareAndSet", "([Ljava/lang/Object;)Z"); else return IExecuteWithSignature<bool>("weakCompareAndSet", "([Ljava/lang/Object;)Z", arg0);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "([Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetAcquire(java.lang.Object...)"/>
@@ -232,7 +232,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "([Ljava/lang/Object;)Z"); else return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "([Ljava/lang/Object;)Z", arg0);
+            return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "([Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(java.lang.Object...)"/>
@@ -241,7 +241,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "([Ljava/lang/Object;)Z"); else return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "([Ljava/lang/Object;)Z", arg0);
+            return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "([Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetRelease(java.lang.Object...)"/>
@@ -250,7 +250,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "([Ljava/lang/Object;)Z"); else return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "([Ljava/lang/Object;)Z", arg0);
+            return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "([Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchange(java.lang.Object...)"/>
@@ -259,7 +259,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object CompareAndExchange(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("compareAndExchange", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("compareAndExchange", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("compareAndExchange", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchangeAcquire(java.lang.Object...)"/>
@@ -268,7 +268,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object CompareAndExchangeAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("compareAndExchangeAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("compareAndExchangeAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("compareAndExchangeAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchangeRelease(java.lang.Object...)"/>
@@ -277,7 +277,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object CompareAndExchangeRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("compareAndExchangeRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("compareAndExchangeRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("compareAndExchangeRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#get(java.lang.Object...)"/>
@@ -286,7 +286,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object Get(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("get", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("get", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("get", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAcquire(java.lang.Object...)"/>
@@ -295,7 +295,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAdd(java.lang.Object...)"/>
@@ -304,7 +304,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndAdd(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndAdd", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndAdd", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndAdd", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAddAcquire(java.lang.Object...)"/>
@@ -313,7 +313,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndAddAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndAddAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndAddAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndAddAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAddRelease(java.lang.Object...)"/>
@@ -322,7 +322,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndAddRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndAddRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndAddRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndAddRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAnd(java.lang.Object...)"/>
@@ -331,7 +331,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseAnd(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseAnd", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseAnd", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndBitwiseAnd", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAndAcquire(java.lang.Object...)"/>
@@ -340,7 +340,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseAndAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseAndAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseAndAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndBitwiseAndAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAndRelease(java.lang.Object...)"/>
@@ -349,7 +349,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseAndRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseAndRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseAndRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndBitwiseAndRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOr(java.lang.Object...)"/>
@@ -358,7 +358,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseOr(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseOr", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseOr", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndBitwiseOr", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOrAcquire(java.lang.Object...)"/>
@@ -367,7 +367,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseOrAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseOrAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseOrAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndBitwiseOrAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOrRelease(java.lang.Object...)"/>
@@ -376,7 +376,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseOrRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseOrRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseOrRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndBitwiseOrRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXor(java.lang.Object...)"/>
@@ -385,7 +385,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseXor(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseXor", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseXor", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndBitwiseXor", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXorAcquire(java.lang.Object...)"/>
@@ -394,7 +394,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseXorAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseXorAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseXorAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndBitwiseXorAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXorRelease(java.lang.Object...)"/>
@@ -403,7 +403,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndBitwiseXorRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndBitwiseXorRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndBitwiseXorRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndBitwiseXorRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSet(java.lang.Object...)"/>
@@ -412,7 +412,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndSet(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndSet", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndSet", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndSet", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSetAcquire(java.lang.Object...)"/>
@@ -421,7 +421,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndSetAcquire(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndSetAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndSetAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndSetAcquire", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSetRelease(java.lang.Object...)"/>
@@ -430,7 +430,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetAndSetRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getAndSetRelease", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getAndSetRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getAndSetRelease", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getOpaque(java.lang.Object...)"/>
@@ -439,7 +439,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetOpaque(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getOpaque", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getOpaque", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getOpaque", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getVolatile(java.lang.Object...)"/>
@@ -448,7 +448,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="object"/></returns>
         public object GetVolatile(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("getVolatile", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("getVolatile", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("getVolatile", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#set(java.lang.Object...)"/>
@@ -456,7 +456,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="object"/></param>
         public void Set(params object[] arg0)
         {
-            if (arg0.Length == 0) IExecuteWithSignature("set", "([Ljava/lang/Object;)V"); else IExecuteWithSignature("set", "([Ljava/lang/Object;)V", arg0);
+            IExecuteWithSignature("set", "([Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setOpaque(java.lang.Object...)"/>
@@ -464,7 +464,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="object"/></param>
         public void SetOpaque(params object[] arg0)
         {
-            if (arg0.Length == 0) IExecuteWithSignature("setOpaque", "([Ljava/lang/Object;)V"); else IExecuteWithSignature("setOpaque", "([Ljava/lang/Object;)V", arg0);
+            IExecuteWithSignature("setOpaque", "([Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setRelease(java.lang.Object...)"/>
@@ -472,7 +472,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="object"/></param>
         public void SetRelease(params object[] arg0)
         {
-            if (arg0.Length == 0) IExecuteWithSignature("setRelease", "([Ljava/lang/Object;)V"); else IExecuteWithSignature("setRelease", "([Ljava/lang/Object;)V", arg0);
+            IExecuteWithSignature("setRelease", "([Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setVolatile(java.lang.Object...)"/>
@@ -480,7 +480,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="object"/></param>
         public void SetVolatile(params object[] arg0)
         {
-            if (arg0.Length == 0) IExecuteWithSignature("setVolatile", "([Ljava/lang/Object;)V"); else IExecuteWithSignature("setVolatile", "([Ljava/lang/Object;)V", arg0);
+            IExecuteWithSignature("setVolatile", "([Ljava/lang/Object;)V", arg0);
         }
 
         #endregion

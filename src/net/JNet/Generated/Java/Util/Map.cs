@@ -431,7 +431,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map OfEntries(params Java.Util.Map.Entry[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;"); else return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;", arg0);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entry(java.lang.Object,java.lang.Object)"/>
@@ -1262,7 +1262,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> OfEntries<Arg0ExtendsK, Arg0ExtendsV>(params Java.Util.Map.Entry<Arg0ExtendsK, Arg0ExtendsV>[] arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;"); else return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;", arg0);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entry(java.lang.Object,java.lang.Object)"/>
