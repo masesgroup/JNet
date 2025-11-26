@@ -389,7 +389,12 @@ jobs:
         framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
-    #   exclude:
+        exclude:
+          - jdk_version: 11
+            jdk_vendor: oracle
+          - jdk_version: 11
+            jdk_vendor: graalvm
+              
     #     - os: windows-11-arm
     #       jdk_vendor: temurin
     #     - os: windows-11-arm
@@ -546,7 +551,12 @@ jobs:
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
-        
+        exclude:
+          - jdk_version: 11
+            jdk_vendor: oracle
+          - jdk_version: 11
+            jdk_vendor: graalvm
+              
     runs-on: ${{ matrix.os }}
     env:
       DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
@@ -689,7 +699,12 @@ jobs:
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
-        
+        exclude:
+          - jdk_version: 11
+            jdk_vendor: oracle
+          - jdk_version: 11
+            jdk_vendor: graalvm
+              
     runs-on: ${{ matrix.os }}
     env:
       DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
