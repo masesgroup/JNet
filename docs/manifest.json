@@ -12752,20 +12752,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Java.Lang.ProcessBuilder.Redirect.Type.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Java.Lang.ProcessBuilder.Redirect.Type.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Java.Lang.ProcessBuilder.Redirect.Type",
-      "Summary": "<p sourcefile=\"api/Java.Lang.ProcessBuilder.Redirect.Type.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html</a></p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Java.Lang.ProcessBuilder.Redirect.yml",
       "output": {
         ".html": {
