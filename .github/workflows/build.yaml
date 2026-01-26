@@ -418,7 +418,7 @@ jobs:
       DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_6 }}
     
     steps:     
       - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
@@ -566,7 +566,7 @@ jobs:
       DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_6 }}
     
     steps:     
       - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
@@ -714,7 +714,7 @@ jobs:
       DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_6 }}
     
     steps:     
       - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
