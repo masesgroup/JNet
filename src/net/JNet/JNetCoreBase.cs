@@ -94,6 +94,10 @@ namespace MASES.JNet
         /// </summary>
         public static string ApplicationInitialHeapSize { get; set; }
         /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper.IgnoreUnrecognized" />
+        /// </summary>
+        public static bool? ApplicationIgnoreUnrecognized { get; set; }
+        /// <summary>
         /// Sets the value of <see cref="SetupJVMWrapper.DisableOpenOnJavaNio" />
         /// </summary>
         public static bool? ApplicationDisableOpenOnJavaNio { get; set; }
@@ -138,6 +142,8 @@ namespace MASES.JNet
         public override string GlobalHeapSize { get { return string.IsNullOrEmpty(base.GlobalHeapSize) ? ApplicationHeapSize : base.GlobalHeapSize; } }
         /// <inheritdoc/>
         public override string InitialHeapSize { get { return string.IsNullOrEmpty(base.InitialHeapSize) ? ApplicationInitialHeapSize : base.InitialHeapSize; } }
+        /// <inheritdoc/>
+        public override bool IgnoreUnrecognized { get { return ApplicationIgnoreUnrecognized ?? base.IgnoreUnrecognized; } }
         /// <inheritdoc/>
         public override bool DisableOpenOnJavaNio { get { return ApplicationDisableOpenOnJavaNio ?? base.DisableOpenOnJavaNio; } }
         /// <inheritdoc/>
