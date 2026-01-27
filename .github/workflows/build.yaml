@@ -378,7 +378,7 @@ jobs:
         run: echo "matrix_mac=[ 'macos-15' ]" >> $GITHUB_OUTPUT
       - id: set-matrix-mac-os-ext
         if: ${{ inputs.ExecuteOnMoreOSes == true }}
-        run: echo "matrix_mac=[ 'macos-13', 'macos-14', 'macos-15' ]" >> $GITHUB_OUTPUT
+        run: echo "matrix_mac=[ 'macos-14', 'macos-15', 'macos-26' ]" >> $GITHUB_OUTPUT
 
   tests_win:
     needs: prepare_matrix_data
@@ -418,7 +418,7 @@ jobs:
       DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_6 }}
     
     steps:     
       - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
@@ -566,7 +566,7 @@ jobs:
       DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_6 }}
     
     steps:     
       - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
@@ -714,7 +714,7 @@ jobs:
       DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_5 }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_6 }}
     
     steps:     
       - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
