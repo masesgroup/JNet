@@ -22,7 +22,7 @@
 			<PrivateAssets>None</PrivateAssets>
 		</ProjectReference>
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="5.0.0" />
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.102" PrivateAssets="All" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Update="DotnetToolSettings.xml">
