@@ -59,6 +59,24 @@ namespace MASES.JNet.PowerShell.Cmdlet
         {
             WriteVerbose("Begin of JNetPSExternalizableCmdlet");
             WriteVerbose(MyInvocation.Line);
+            var parameters = MyInvocation.BoundParameters;
+
+            var sb = new System.Text.StringBuilder();
+            sb.Append("Start-JNetPS");
+
+            foreach (var kvp in parameters)
+            {
+                sb.Append(" -");
+                sb.Append(kvp.Key);
+
+                if (kvp.Value != null)
+                {
+                    sb.Append(" ");
+                    sb.Append(kvp.Value);
+                }
+            }
+
+            WriteVerbose(sb.ToString());
         }
 
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called

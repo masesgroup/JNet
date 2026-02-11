@@ -1,5 +1,10 @@
+param(
+    [string]$JVMPath
+)
+
 $PSVersionTable.PSVersion
-Start-JNetPS -Verbose -IgnoreUnrecognized -JVMPath $args[0]
+Write-Host "Executing using JVM in $JVMPath"
+Start-JNetPS -Verbose -JVMPath $JVMPath
 $var = New-JObject -Class java.lang.String -Arguments "Hello from"
 $var.ToString()
 $var = $var.concat(" JNetPS")
