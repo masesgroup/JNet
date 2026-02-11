@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.masesgroup</groupId>
-	<artifactId>jnet</artifactId>
+	<artifactId>jnetreflector</artifactId>
 	<name>mases.jnet</name>
 	<description>JNet-Java interface bridging implementation</description>
 	<url>https://github.com/masesgroup/JNet</url>
@@ -206,5 +206,10 @@
 			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency-->
+		<dependency>
+			<groupId>org.burningwave</groupId>
+			<artifactId>core</artifactId>
+			<version>12.66.2</version>
+		</dependency>
 	</dependencies>
 </project>

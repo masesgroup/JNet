@@ -92,6 +92,8 @@ public class JNetReflectorHelper {
         ComponentSupplier componentSupplier = ComponentContainer.getInstance();
 
         if (isModule) {
+            throw new java.lang.UnsupportedOperationException("Module was disabled since never used.");
+            /*
             PathHelper pathHelper = componentSupplier.getPathHelper();
             ClassHunter classHunter = componentSupplier.getClassHunter();
             try (ClassHunter.SearchResult searchResult = classHunter.findBy(
@@ -107,6 +109,7 @@ public class JNetReflectorHelper {
             ) {
                 return searchResult.getClasses();
             }
+            */
         } else {
             ClassHunter classHunter = componentSupplier.getClassHunter();
             SearchConfig searchConfig = SearchConfig.byCriteria(

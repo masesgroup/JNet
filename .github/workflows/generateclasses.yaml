@@ -56,7 +56,7 @@ jobs:
           cache: 'maven'
   
       - name: Create Jars for JNet
-        run: mvn "-DbinFolderName=binReflector" --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
+        run: mvn "-DbinFolderName=binReflector" --file ./src/jvm/jnetreflector/pom.xml --no-transfer-progress package
 
       - name: Clear C# generated files
         run: Remove-Item .\src\net\JNet\Generated\* -Recurse -Force -Exclude README.md
