@@ -676,7 +676,7 @@ jobs:
         run: echo "EXTRA_ARGUMENT=--JVMDisableOpenOnJavaNio --JVMPath:${{ env.JAVA_HOME }}/lib/amd64/server/libjvm.so" >> $GITHUB_ENV
 
       - name: Prepare PowerShell extra argument
-        if: matrix.jdk_version == '15'
+        if: matrix.jdk_version == '8'
         shell: bash
         run: echo "PS_EXTRA_ARGUMENT=${{ env.JAVA_HOME }}/lib/amd64/server/libjvm.so" >> $GITHUB_ENV
 
