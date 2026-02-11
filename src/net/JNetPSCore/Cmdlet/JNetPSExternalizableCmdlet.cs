@@ -65,7 +65,7 @@ namespace MASES.JNet.PowerShell.Cmdlet
                 var parameters = MyInvocation.BoundParameters;
 
                 var sb = new System.Text.StringBuilder();
-                sb.Append(JNetPSHelper.NounName<T>());
+                sb.Append($"{JNetPSHelper.VerbName<T>()}-{JNetPSHelper.NounName<T>()}");
 
                 foreach (var kvp in parameters)
                 {
@@ -82,7 +82,7 @@ namespace MASES.JNet.PowerShell.Cmdlet
             }
             catch (Exception e) { expandedArgs = $"Failed with error: {e.Message}"; }
 
-            WriteVerbose($"Begin of JNetPSExternalizableCmdlet{Environment.NewLine}Input -> {MyInvocation.Line}{Environment.NewLine}Expanded -> {expandedArgs}");
+            WriteVerbose($"Begin of JNetPSExternalizableCmdlet{Environment.NewLine}Input -> {MyInvocation.Line}{(MyInvocation.Line.EndsWith(Environment.NewLine) ? string.Empty : Environment.NewLine)}Expands to -> {expandedArgs}");
         }
 
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
