@@ -16,10 +16,12 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Sql;
 using MASES.JCOBridge.C2JBridge;
 using System;
 using System.Management.Automation;
 using System.Reflection;
+using System.Text.RegularExpressions;
 
 namespace MASES.JNet.PowerShell.Cmdlet
 {
@@ -57,8 +59,30 @@ namespace MASES.JNet.PowerShell.Cmdlet
         // This method gets called once for each cmdlet in the pipeline when the pipeline starts executing
         protected override void BeginProcessing()
         {
-            WriteVerbose("Begin of JNetPSExternalizableCmdlet");
-            WriteVerbose(MyInvocation.Line);
+            string expandedArgs = string.Empty;
+            try
+            {
+                var parameters = MyInvocation.BoundParameters;
+
+                var sb = new System.Text.StringBuilder();
+                sb.Append($"{JNetPSHelper.VerbName<T>()}-{JNetPSHelper.NounName<T>()}");
+
+                foreach (var kvp in parameters)
+                {
+                    sb.Append(" -");
+                    sb.Append(kvp.Key);
+
+                    if (kvp.Value != null)
+                    {
+                        sb.Append(" ");
+                        sb.Append(kvp.Value);
+                    }
+                }
+                expandedArgs = sb.ToString();
+            }
+            catch (Exception e) { expandedArgs = $"Failed with error: {e.Message}"; }
+
+            WriteVerbose($"Begin of JNetPSExternalizableCmdlet{Environment.NewLine}Input -> {MyInvocation.Line}{(MyInvocation.Line.EndsWith(Environment.NewLine) ? string.Empty : Environment.NewLine)}Expands to -> {expandedArgs}");
         }
 
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
@@ -75,19 +99,23 @@ namespace MASES.JNet.PowerShell.Cmdlet
             catch (TargetInvocationException tie)
             {
                 this.WriteExtendedError(tie.InnerException);
+                this.WriteVerbose($"{tie}");
             }
             catch (JCOBridge.C2JBridge.JVMInterop.JavaException je)
             {
                 var newEx = je.Convert();
                 this.WriteExtendedError(newEx);
+                this.WriteVerbose($"{newEx}");
             }
             catch (JVMBridgeException je)
             {
                 this.WriteExtendedError(je);
+                this.WriteVerbose($"{je}");
             }
             catch (Exception e)
             {
                 this.WriteExtendedError(e);
+                this.WriteVerbose($"{e}");
                 throw;
             }
         }

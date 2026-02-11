@@ -36,6 +36,7 @@ jobs:
           submodules: 'true'
 
       - run: (Get-Content ${{ github.workspace }}\src\jvm\jnet\pom.xml).Replace('<jnetversion>${{ inputs.CurrentVersion }}.0</jnetversion>', '<jnetversion>${{ inputs.NewVersion }}.0</jnetversion>') | Set-Content ${{ github.workspace }}\src\jvm\jnet\pom.xml
+      - run: (Get-Content ${{ github.workspace }}\src\jvm\jnetreflector\pom.xml).Replace('<jnetversion>${{ inputs.CurrentVersion }}.0</jnetversion>', '<jnetversion>${{ inputs.NewVersion }}.0</jnetversion>') | Set-Content ${{ github.workspace }}\src\jvm\jnetreflector\pom.xml
       
       - run: (Get-Content ${{ github.workspace }}\src\net\Common\Common.props).Replace('<Version>${{ inputs.CurrentVersion }}.0</Version>', '<Version>${{ inputs.NewVersion }}.0</Version>') | Set-Content ${{ github.workspace }}\src\net\Common\Common.props
 

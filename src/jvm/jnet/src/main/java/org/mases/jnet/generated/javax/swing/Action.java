@@ -105,14 +105,5 @@ public final class Action implements org.mases.jcobridge.IJCListener, javax.swin
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         raiseEvent("setEnabled", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
-    //@Override
-    public boolean accept(java.lang.Object arg0) {
-        org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("accept", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = javax.swing.Action.super.accept(arg0); else retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
-    }
-    //@Override
-    public boolean acceptDefault(java.lang.Object arg0) {
-        return javax.swing.Action.super.accept(arg0);
-    }
 
 }

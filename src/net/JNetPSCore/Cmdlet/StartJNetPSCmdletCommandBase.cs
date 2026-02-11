@@ -126,6 +126,30 @@ namespace MASES.JNet.PowerShell.Cmdlet
             HelpMessage = "The initial Heap size (-Xms) to be set when JVM will be created")]
         public string InitialHeapSize { get; set; }
 
+        /// <inheritdoc cref="JNetCoreBase{TCore}.ApplicationIgnoreUnrecognized" />
+        [Parameter(
+            // Mandatory = true,
+            ValueFromPipeline = true,
+            ValueFromPipelineByPropertyName = true,
+            HelpMessage = "Set on command-line to inform the JVM to ignore unrecognized options")]
+        public SwitchParameter IgnoreUnrecognized { get; set; }
+
+        /// <inheritdoc cref="JNetCoreBase{TCore}.ApplicationDisableOpenOnJavaNio" />
+        [Parameter(
+            // Mandatory = true,
+            ValueFromPipeline = true,
+            ValueFromPipelineByPropertyName = true,
+            HelpMessage = "Set on command-line to close access to java.nio module i.e. removes --add-opens=java.base/java.nio=ALL-UNNAMED on JVM parameters")]
+        public SwitchParameter DisableOpenOnJavaNio { get; set; }
+
+        /// <inheritdoc cref="JNetCoreBase{TCore}.ApplicationEnableNativeAccess" />
+        [Parameter(
+            // Mandatory = true,
+            ValueFromPipeline = true,
+            ValueFromPipelineByPropertyName = true,
+            HelpMessage = "Set on command-line to enable native access as defined in https://openjdk.org/jeps/472, default value is disabled for compatibility with JDK 11")]
+        public SwitchParameter EnableNativeAccess { get; set; }
+
         /// <inheritdoc cref="JNetCoreBase{TCore}.ApplicationLogClassPath" />
         [Parameter(
             // Mandatory = true,
@@ -173,6 +197,9 @@ namespace MASES.JNet.PowerShell.Cmdlet
             JNetPSHelper<TCore>.SetJavaDebugOpts(JavaDebugOpts);
             JNetPSHelper<TCore>.SetHeapSize(HeapSize);
             JNetPSHelper<TCore>.SetInitialHeapSize(InitialHeapSize);
+            JNetPSHelper<TCore>.SetIgnoreUnrecognized(IgnoreUnrecognized);
+            JNetPSHelper<TCore>.SetDisableOpenOnJavaNio(DisableOpenOnJavaNio);
+            JNetPSHelper<TCore>.SetEnableNativeAccess(EnableNativeAccess);
             JNetPSHelper<TCore>.SetLogClassPath(LogClassPath.IsPresent);
             JNetPSHelper<TCore>.SetWriteEventOrExceptionOnCmdLine(WriteEventOrExceptionOnCmdLine.IsPresent);
             if (ExtraJVMOptions != null)

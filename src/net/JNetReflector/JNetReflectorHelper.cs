@@ -40,7 +40,7 @@ namespace Org.Mases.Jnet
         /// <inheritdoc/>
         public JNetReflectorHelper(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
 
-        public override string BridgeClassName => "org.mases.jnet.developed.JNetReflectorHelper";
+        public override string BridgeClassName => "org.mases.jnet.reflector.JNetReflectorHelper";
 
         /// <summary>
         /// Enable or disable logging

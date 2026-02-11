@@ -4,12 +4,15 @@
   "JavaListenerBasePackage": "org.mases.jnet.generated",
   "PreferMethodWithSignature": true,
   "OnlyPropertiesForGetterSetter": true,
-  "ModulesToParse": [
-    "org.*",
-    "java.*"
+  "JarList": [
+    "rt.jar"
   ],
-  "OriginJavadocUrl": "https://docs.oracle.com/en/java/javase/11/docs/api/",
-  "JavadocVersion": 11,
+  "OriginJavadocJARVersionAndUrls": [
+    {
+      "Version": 8,
+      "Url": "https://docs.oracle.com/javase/8/docs/api/"
+    }
+  ],
   "NamespacesToAvoid": [
     "org.jcp.xml.dsig.internal",
     "com.oracle",

@@ -29,7 +29,7 @@ public class TestSwing {
         UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
         // Define the panel to hold the components
-        var jPanel = new JPanel();
+        JPanel jPanel = new JPanel();
         // Contains all the chat components
         chatPanel = new JPanel();
         messagePanel = new JPanel();
@@ -77,12 +77,12 @@ public class TestSwing {
         chatPanel.setSize(100, 100);
 
         // Add spinner
-        var zoomModel = new SpinnerNumberModel(100, //initial value
+        SpinnerNumberModel zoomModel = new SpinnerNumberModel(100, //initial value
                 25,  //min
                 200, //max
                 25); //step
         spinner = new JSpinner(zoomModel);
-        var labelZoom = new JLabel("Zoom X");
+        JLabel labelZoom = new JLabel("Zoom X");
 
         //Add table
         data = new String[][]{new String[]{"101", "Amit", "670000"},
@@ -91,7 +91,7 @@ public class TestSwing {
                 new String[]{"103", "New Row", "0"}};
 
         String[] columns = {"ID", "NAME", "SALARY"};
-        var jt = new JTable(0, 3);
+        JTable jt = new JTable(0, 3);
         tableModel = jt.getModel();
         if (tableModel instanceof javax.swing.table.DefaultTableModel) {
             javax.swing.table.DefaultTableModel tModel = (javax.swing.table.DefaultTableModel) tableModel;
@@ -119,7 +119,7 @@ public class TestSwing {
 
         jt.setBounds(30, 40, 200, 300);
         // Put table in a scroll panel
-        var scrollPane = new JScrollPane(jt);
+        JScrollPane scrollPane = new JScrollPane(jt);
 
         //configure panel
         jPanel.setSize(500, 600);
