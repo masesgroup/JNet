@@ -480,6 +480,7 @@ jobs:
         with: # running setup-java again overwrites the settings.xml
           distribution: ${{ matrix.jdk_vendor }}
           java-version: ${{ matrix.jdk_version }}
+          java-package: jre
 
       - name: Set up GraalVM distribution
         if: ${{ matrix.jdk_vendor == 'graalvm' }}
@@ -639,6 +640,7 @@ jobs:
         with: # running setup-java again overwrites the settings.xml
           distribution: ${{ matrix.jdk_vendor }}
           java-version: ${{ matrix.jdk_version }}
+          java-package: jre
 
       - name: Set up GraalVM distribution
         if: ${{ matrix.jdk_vendor == 'graalvm' }}
@@ -807,6 +809,7 @@ jobs:
         with: # running setup-java again overwrites the settings.xml
           distribution: ${{ matrix.jdk_vendor }}
           java-version: ${{ matrix.jdk_version }}
+          java-package: jre
 
       - name: Set up GraalVM distribution
         if: ${{ matrix.jdk_vendor == 'graalvm' }}
