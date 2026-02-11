@@ -29,6 +29,9 @@ jobs:
       
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - run: echo $JAVA_HOME_8_X64
+        shell: bash
+
       - run: Get-ChildItem -Recurse -Directory -Path C:\hostedtoolcache\windows\Java_Adopt_jdk\
 
       # Runs a set of commands using the runners shell
