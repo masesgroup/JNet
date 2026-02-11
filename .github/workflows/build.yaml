@@ -582,6 +582,8 @@ jobs:
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
+          - jdk_vendor: corretto
+            jdk_version: 8
           - jdk_vendor: microsoft
             jdk_version: 8
           - jdk_vendor: oracle
