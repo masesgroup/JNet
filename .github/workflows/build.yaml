@@ -674,8 +674,14 @@ jobs:
         run: echo "EXTRA_ARGUMENT=--JVMDisableOpenOnJavaNio --JVMPath:${{ env.JAVA_HOME }}/lib/amd64/server/libjvm.so" >> $GITHUB_ENV
 
       - name: Prepare PowerShell extra argument
+        if: matrix.jdk_version == '8'
         shell: bash
         run: echo "PS_EXTRA_ARGUMENT=${{ env.JAVA_HOME }}/lib/amd64/server/libjvm.so" >> $GITHUB_ENV
+
+      - name: Prepare PowerShell extra argument
+        if: matrix.jdk_version != '8'
+        shell: bash
+        run: echo "PS_EXTRA_ARGUMENT=${{ env.JAVA_HOME }}" >> $GITHUB_ENV
 
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
