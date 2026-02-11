@@ -16,7 +16,7 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.developed;
+package org.mases.jnet.reflector;
 
 import org.burningwave.core.assembler.ComponentContainer;
 import org.burningwave.core.assembler.ComponentSupplier;
