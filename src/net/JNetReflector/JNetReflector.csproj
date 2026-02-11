@@ -19,7 +19,7 @@
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
 	<ItemGroup>
-		<jnetreflector_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
+		<jnetreflector_jars Include="$(ProjectDir)\..\..\..\jars\*.*" Exclude="$(ProjectDir)\..\..\..\jars\jnet-*.jar" />
 		<None Include="..\..\documentation\articles\usageReflector.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
