@@ -8,7 +8,7 @@
     "org.*",
     "java.*"
   ],
-  "OriginJavadocUrl": "https://docs.oracle.com/en/java/javase/11/docs/api/",
+  "OriginJavadocUrl": "https://docs.oracle.com/en/java/javase/25/docs/api/",
   "JavadocVersion": 11,
   "NamespacesToAvoid": [
     "org.jcp.xml.dsig.internal",
