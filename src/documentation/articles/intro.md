@@ -7,7 +7,22 @@ _description: Introduction to .NET suite for Java™/JVM™
 
 JNet is a comprehensive suite of libraries and tools to use Java™/JVM™ APIs (Java, Scala, Kotlin, ...) and .NET side-by-side.
 
+## Key Features
+
+- ✅ **Java 8+ Support** - Works with legacy Java 8 systems through modern Java 25
+- ✅ **Zero Migration Required** - Integrate existing Java 8 code with .NET applications
+- ✅ **Direct API Access** - Call any Java API directly from C#/VB.NET
+- ✅ **Bidirectional** - Java can call .NET and vice versa (see [JCOReflector](https://github.com/masesgroup/JCOReflector))
+- ✅ **Production Ready** - Trusted in enterprise environments
+
+> **💡 Legacy Integration:** Still running Java 8 in production? JNet enables 
+> integration with modern .NET applications without requiring Java upgrades—saving 
+> months of migration work and significant costs.
+
 ### Libraries and Tools
+
+[![Java 8+](https://img.shields.io/badge/Java-8%2B-blue)](https://www.oracle.com/java/)
+[![.NET 8+](https://img.shields.io/badge/.NET-8%2B-purple)](https://dotnet.microsoft.com/)
 
 |JNet | JNet.Templates| JNetCLICore | JNetPSCore | JNetCLI | JNetReflector | JNetPS |
 |:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|

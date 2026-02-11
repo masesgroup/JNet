@@ -2,7 +2,22 @@
 
 JNet is a comprehensive suite of libraries and tools to use Java™/JVM™ APIs (Java, Scala, Kotlin, ...) and .NET side-by-side.
 
+## Key Features
+
+- ✅ **Java 8+ Support** - Works with legacy Java 8 systems through modern Java 25
+- ✅ **Zero Migration Required** - Integrate existing Java 8 code with .NET applications
+- ✅ **Direct API Access** - Call any Java API directly from C#/VB.NET
+- ✅ **Bidirectional** - Java can call .NET and vice versa (see [JCOReflector](https://github.com/masesgroup/JCOReflector))
+- ✅ **Production Ready** - Trusted in enterprise environments
+
+> **💡 Legacy Integration:** Still running Java 8 in production? JNet enables 
+> integration with modern .NET applications without requiring Java upgrades—saving 
+> months of migration work and significant costs.
+
 ### Libraries and Tools
+
+[![Java 8+](https://img.shields.io/badge/Java-8%2B-blue)](https://www.oracle.com/java/)
+[![.NET 8+](https://img.shields.io/badge/.NET-8%2B-purple)](https://dotnet.microsoft.com/)
 
 |JNet | JNet.Templates| JNetCLICore | JNetPSCore | JNetCLI | JNetReflector | JNetPS |
 |:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
@@ -96,7 +111,56 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
     * speed-up array/list conversion
 * V2.5.11: updates to JCOBridge 2.5.21 and adds management of [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) on recent Intel CPU due to [latest change on .NET 9](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support): usage explanation on [this](src/documentation/articles/usage.md#intel-cet-and-jnet)
 * V2.5.13: adds [JNetCLICore](https://www.nuget.org/packages/MASES.JNetCLICore) to help CLI operations across projects based on JNet
-* V2.6.0: aligns to JCOBridge 2.6.* series
+* V2.6.x: aligns to JCOBridge 2.6.* series
+  * V2.6.6: adds support for JavaSE 8
+
+## Frequently Asked Questions
+
+### Does JNet support Java 8?
+
+**Yes!** JNet fully supports Java 8 (JRE 1.8.0_161 or later) through Java 25. 
+This is critical for enterprises with legacy Java 8 systems in production.
+
+### Do I need to upgrade my Java 8 code to use JNet?
+
+**No!** JNet works with your existing Java 8 bytecode without any modifications. 
+You can integrate legacy Java 8 systems with modern .NET applications immediately.
+
+### What about Java 8 End of Life?
+
+Oracle provides Extended Support for Java 8 until December 2030. Many vendors 
+(Amazon Corretto, Azul, Red Hat) provide free long-term support. JNet gives you 
+flexibility: integrate now with Java 8, migrate Java when your timeline permits.
+
+### Can I mix different Java versions in my application?
+
+**Yes!** Java is backward compatible. A newer JVM can execute bytecode 
+compiled with older Java versions.
+
+**Example:** Using Java 17 JVM, you can call:
+- Java 8 libraries ✅
+- Java 11 libraries ✅  
+- Java 17 libraries ✅
+
+All in the same .NET process, with zero migration needed for older code!
+
+**Simple rule:** Use the highest Java version required by any of your 
+dependencies. That JVM will run all older bytecode versions.
+
+### Do I need to upgrade my Java 8 code to use newer Java libraries?
+
+**No!** Just upgrade the JVM to Java 17 (or whatever version the new 
+library requires). Your Java 8 bytecode will continue working without 
+any code changes.
+
+This is Java's backward compatibility guarantee in action.
+
+### What if I try to use Java 17 bytecode with Java 8 JVM?
+
+You'll get an `UnsupportedClassVersionError`. Java doesn't support 
+forward compatibility - older JVMs cannot run newer bytecode.
+
+**Solution:** Upgrade to Java 17 JVM. Your Java 8 code will still work!
 
 ---
 
@@ -116,6 +180,24 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
 * **Dynamic code**: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this [simple example](https://www.jcobridge.com/net-examples/dotnet-examples/) and [JNet APIs extensibility](src/documentation/articles/API_extensibility.md).
 
 [JCOBridge 2.6.*](https://www.jcobridge.com) can be used for free without any obligations; you need to purchase a commercial license, or uninstall the software, if you have direct or indirect incomes from the product usage.
+
+### Supported Versions
+
+**Java:**
+- ✅ Java 8 (JRE 1.8.0_161 or later)
+- ✅ Java 11 (LTS)
+- ✅ Java 17 (LTS)
+- ✅ Java 21 (LTS)
+- ✅ Java 25 (LTS)
+
+**Note:** Works with Oracle JDK, OpenJDK, Amazon Corretto, Azul Zulu, and other compatible distributions.
+
+**.NET:**
+- .NET Framework 4.6.2+
+- .NET 6, 8, 9, 10
+
+> **Java 8 Extended Support** runs until December 2030. JNet provides a migration 
+> path: integrate Java 8 systems with modern .NET now, migrate Java when ready.
 
 ### JCOBridge resources
 
