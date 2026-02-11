@@ -66,6 +66,14 @@ jobs:
 
       - run: dotnet build --no-incremental --configuration Release src\net\JNetReflector\JNetReflector.csproj
 
+      - name: Set up Apache Maven Central
+        uses: actions/setup-java@v5
+        with: # running setup-java again overwrites the settings.xml
+          distribution: temurin
+          java-version: 8
+          java-package: jre
+          cache: 'maven'
+
       - name: Build classes
         shell: cmd
         run: |
