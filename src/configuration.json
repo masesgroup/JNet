@@ -7,8 +7,12 @@
   "JarList": [
     "rt.jar"
   ],
-  "OriginJavadocUrl": "https://docs.oracle.com/javase/8/docs/api/",
-  "JavadocVersion": 8,
+  "OriginJavadocJARVersionAndUrls": [
+    {
+      "Version": 8,
+      "Url": "https://docs.oracle.com/javase/8/docs/api/"
+    }
+  ],
   "NamespacesToAvoid": [
     "org.jcp.xml.dsig.internal",
     "com.oracle",
