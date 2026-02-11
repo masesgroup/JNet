@@ -502,6 +502,10 @@ jobs:
         shell: bash
         run: echo "EXTRA_ARGUMENT=--JVMDisableOpenOnJavaNio" >> $GITHUB_ENV
 
+      - name: Prepare PowerShell extra argument
+        shell: bash
+        run: echo "PS_EXTRA_ARGUMENT=${{ env.JAVA_HOME }}" >> $GITHUB_ENV
+
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
@@ -526,21 +530,21 @@ jobs:
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}/bin/JNetPSTest.ps1
+          ${{ github.workspace }}/bin/JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
 
       - if: ${{ startsWith(matrix.os, 'windows-') }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}\bin\JNetPSTest.ps1
+          ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
 
       - if: ${{ startsWith(matrix.os, 'windows-') }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: powershell
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}\bin\JNetPSTest.ps1
+          ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
           
       - if: ${{ startsWith(matrix.os, 'windows-') }}
         run: (Get-EventLog -LogName Application -Newest 5).Message
@@ -669,6 +673,10 @@ jobs:
         shell: bash
         run: echo "EXTRA_ARGUMENT=--JVMDisableOpenOnJavaNio --JVMPath:${{ env.JAVA_HOME }}/lib/amd64/server/libjvm.so" >> $GITHUB_ENV
 
+      - name: Prepare PowerShell extra argument
+        shell: bash
+        run: echo "PS_EXTRA_ARGUMENT=${{ env.JAVA_HOME }}/lib/amd64/server/libjvm.so" >> $GITHUB_ENV
+
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
@@ -693,21 +701,21 @@ jobs:
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}/bin/JNetPSTest.ps1
+          ${{ github.workspace }}/bin/JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
 
       - if: ${{ startsWith(matrix.os, 'windows-') }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}\bin\JNetPSTest.ps1
+          ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
 
       - if: ${{ startsWith(matrix.os, 'windows-') }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: powershell
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}\bin\JNetPSTest.ps1
+          ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
           
       - if: ${{ startsWith(matrix.os, 'windows-') }}
         run: (Get-EventLog -LogName Application -Newest 5).Message
@@ -854,6 +862,10 @@ jobs:
         shell: bash
         run: echo "EXTRA_ARGUMENT=--JVMDisableOpenOnJavaNio" >> $GITHUB_ENV
 
+      - name: Prepare PowerShell extra argument
+        shell: bash
+        run: echo "PS_EXTRA_ARGUMENT=${{ env.JAVA_HOME }}" >> $GITHUB_ENV
+
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
@@ -878,21 +890,21 @@ jobs:
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}/bin/JNetPSTest.ps1
+          ${{ github.workspace }}/bin/JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
 
       - if: ${{ startsWith(matrix.os, 'windows-') }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}\bin\JNetPSTest.ps1
+          ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
 
       - if: ${{ startsWith(matrix.os, 'windows-') }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: powershell
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}\bin\JNetPSTest.ps1
+          ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
           
       - if: ${{ startsWith(matrix.os, 'windows-') }}
         run: (Get-EventLog -LogName Application -Newest 5).Message
