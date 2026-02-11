@@ -169,7 +169,7 @@ jobs:
         uses: actions/setup-java@v5
         with: # running setup-java again overwrites the settings.xml
           distribution: temurin
-          java-version: 11
+          java-version: 8
           cache: 'maven'
           server-id: ossrh # Value of the distributionManagement/repository/id field of the pom.xml
           server-username: MAVEN_USERNAME # env variable for username in deploy
@@ -260,7 +260,7 @@ jobs:
         uses: actions/setup-java@v5
         with: # running setup-java again overwrites the settings.xml
           distribution: temurin
-          java-version: 11
+          java-version: 8
           cache: 'maven'
           server-id: ossrh # Value of the distributionManagement/repository/id field of the pom.xml
           server-username: MAVEN_USERNAME # env variable for username in deploy
@@ -270,6 +270,13 @@ jobs:
 
       - name: Create Jars for JNet
         run: mvn --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
+        env:
+          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
+
+      - name: Create Jars for JNetReflector
+        run: mvn --file ./src/jvm/jnetreflector/pom.xml --no-transfer-progress package
         env:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
@@ -357,7 +364,7 @@ jobs:
     steps:
       - id: set-jdk-version
         if: ${{ inputs.ExecuteOnMoreOSes == false }}
-        run: echo "matrix_jdk_version=[ '11', '17', '21', '25' ]" >> $GITHUB_OUTPUT
+        run: echo "matrix_jdk_version=[ '8', '11', '17', '21', '25' ]" >> $GITHUB_OUTPUT
       - id: set-jdk-version-ext
         if: ${{ inputs.ExecuteOnMoreOSes == true }}
         run: echo "matrix_jdk_version=[ '17', '21', '25' ]" >> $GITHUB_OUTPUT
@@ -390,10 +397,16 @@ jobs:
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
-          - jdk_version: 11
-            jdk_vendor: oracle
-          - jdk_version: 11
-            jdk_vendor: graalvm
+          - jdk_vendor: microsoft
+            jdk_version: 8
+          - jdk_vendor: oracle
+            jdk_version: 8
+          - jdk_vendor: oracle
+            jdk_version: 11
+          - jdk_vendor: graalvm
+            jdk_version: 8
+          - jdk_vendor: graalvm
+            jdk_version: 11
               
     #     - os: windows-11-arm
     #       jdk_vendor: temurin
@@ -476,21 +489,26 @@ jobs:
           distribution: 'graalvm' # See 'Supported distributions' for available options
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
+      - name: Prepare extra argument
+        if: matrix.jdk_version == '8'
+        shell: bash
+        run: echo "EXTRA_ARGUMENT=--JVMDisableOpenOnJavaNio" >> $GITHUB_ENV
 
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
+        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
+
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll ${{ env.EXTRA_ARGUMENT }}
           
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetTest.exe
+        run: .\bin\${{ matrix.framework }}\JNetTest.exe ${{ env.EXTRA_ARGUMENT }}
 
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
+        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe ${{ env.EXTRA_ARGUMENT }}
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
@@ -552,10 +570,16 @@ jobs:
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
-          - jdk_version: 11
-            jdk_vendor: oracle
-          - jdk_version: 11
-            jdk_vendor: graalvm
+          - jdk_vendor: microsoft
+            jdk_version: 8
+          - jdk_vendor: oracle
+            jdk_version: 8
+          - jdk_vendor: oracle
+            jdk_version: 11
+          - jdk_vendor: graalvm
+            jdk_version: 8
+          - jdk_vendor: graalvm
+            jdk_version: 11
               
     runs-on: ${{ matrix.os }}
     env:
@@ -624,21 +648,26 @@ jobs:
           distribution: 'graalvm' # See 'Supported distributions' for available options
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
+      - name: Prepare extra argument
+        if: matrix.jdk_version == '8'
+        shell: bash
+        run: echo "EXTRA_ARGUMENT=--JVMDisableOpenOnJavaNio" >> $GITHUB_ENV
 
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
+        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
+
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll ${{ env.EXTRA_ARGUMENT }}
           
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetTest.exe
+        run: .\bin\${{ matrix.framework }}\JNetTest.exe ${{ env.EXTRA_ARGUMENT }}
 
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
+        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe ${{ env.EXTRA_ARGUMENT }}
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
@@ -700,10 +729,25 @@ jobs:
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
-          - jdk_version: 11
-            jdk_vendor: oracle
-          - jdk_version: 11
-            jdk_vendor: graalvm
+          - os: macos-14
+            jdk_vendor: temurin
+            jdk_version: 8
+          - os: macos-15
+            jdk_vendor: temurin
+            jdk_version: 8
+          - os: macos-26
+            jdk_vendor: temurin
+            jdk_version: 8
+          - jdk_vendor: microsoft
+            jdk_version: 8
+          - jdk_vendor: oracle
+            jdk_version: 8
+          - jdk_vendor: oracle
+            jdk_version: 11
+          - jdk_vendor: graalvm
+            jdk_version: 8
+          - jdk_vendor: graalvm
+            jdk_version: 11
               
     runs-on: ${{ matrix.os }}
     env:
@@ -772,21 +816,26 @@ jobs:
           distribution: 'graalvm' # See 'Supported distributions' for available options
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
+      - name: Prepare extra argument
+        if: matrix.jdk_version == '8'
+        shell: bash
+        run: echo "EXTRA_ARGUMENT=--JVMDisableOpenOnJavaNio" >> $GITHUB_ENV
 
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
+        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
+
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll ${{ env.EXTRA_ARGUMENT }}
           
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetTest.exe
+        run: .\bin\${{ matrix.framework }}\JNetTest.exe ${{ env.EXTRA_ARGUMENT }}
 
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
+        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe ${{ env.EXTRA_ARGUMENT }}
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
