@@ -109,12 +109,14 @@ The options used are:
     "com.oracle",
     "com.sun",
     "java.awt.peer",
+    "javax.crypto",
     "jdk",
     "org.mases",
     "org.junit",
     "org.hamcrest",
     "org.burningwave",
     "org.graalvm",
+    "org.omg",
     "org.slf4j",
     "sun"
   ],
@@ -158,7 +160,8 @@ The options used are:
     "javax.swing.plaf.basic.BasicScrollPaneUI$VSBChangeListener",
     "javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener",
     "javax.tools.DiagnosticListener",
-    "javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter"
+    "javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter",
+    "javax.xml.soap.SAAJResult"
   ],
   "NamespacesInConflict": [
     "java.lang.module",
