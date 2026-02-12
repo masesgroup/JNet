@@ -95,13 +95,6 @@ namespace Javax.Rmi.CORBA
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String ToString(Javax.Rmi.CORBA.Stub arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/StubDelegate.html#connect-javax.rmi.CORBA.Stub-org.omg.CORBA.ORB-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Rmi.CORBA.Stub"/></param>
-        /// <param name="arg1"><see cref="Org.Omg.CORBA.ORB"/></param>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        void Connect(Javax.Rmi.CORBA.Stub arg0, Org.Omg.CORBA.ORB arg1);
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/StubDelegate.html#readObject-javax.rmi.CORBA.Stub-java.io.ObjectInputStream-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Rmi.CORBA.Stub"/></param>
@@ -174,16 +167,6 @@ namespace Javax.Rmi.CORBA
         public Java.Lang.String ToString(Javax.Rmi.CORBA.Stub arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("toString", "(Ljavax/rmi/CORBA/Stub;)Ljava/lang/String;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/StubDelegate.html#connect-javax.rmi.CORBA.Stub-org.omg.CORBA.ORB-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Rmi.CORBA.Stub"/></param>
-        /// <param name="arg1"><see cref="Org.Omg.CORBA.ORB"/></param>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        public void Connect(Javax.Rmi.CORBA.Stub arg0, Org.Omg.CORBA.ORB arg1)
-        {
-            IExecuteWithSignature("connect", "(Ljavax/rmi/CORBA/Stub;Lorg/omg/CORBA/ORB;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/StubDelegate.html#readObject-javax.rmi.CORBA.Stub-java.io.ObjectInputStream-"/>

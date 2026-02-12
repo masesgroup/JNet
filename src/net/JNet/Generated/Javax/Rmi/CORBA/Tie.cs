@@ -29,7 +29,7 @@ namespace Javax.Rmi.CORBA
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Tie.html"/>
     /// </summary>
-    public partial class Tie : Org.Omg.CORBA.Portable.InvokeHandler
+    public partial class Tie : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Tie>
     {
         const string _bridgeClassName = "javax.rmi.CORBA.Tie";
         /// <summary>
@@ -72,7 +72,7 @@ namespace Javax.Rmi.CORBA
     /// <summary>
     /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Tie.html"/>
     /// </summary>
-    public partial interface ITie : Org.Omg.CORBA.Portable.IInvokeHandler
+    public partial interface ITie
     {
         #region Instance methods
         /// <summary>
@@ -80,25 +80,10 @@ namespace Javax.Rmi.CORBA
         /// </summary>
         Java.Rmi.Remote Target { get; set; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Tie.html#thisObject--"/>
-        /// </summary>
-        /// <returns><see cref="Org.Omg.CORBA.Object"/></returns>
-        Org.Omg.CORBA.Object ThisObject();
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Tie.html#orb--"/>
-        /// </summary>
-        /// <returns><see cref="Org.Omg.CORBA.ORB"/></returns>
-        Org.Omg.CORBA.ORB Orb();
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Tie.html#deactivate--"/>
         /// </summary>
         /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         void Deactivate();
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Tie.html#orb-org.omg.CORBA.ORB-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.ORB"/></param>
-        void Orb(Org.Omg.CORBA.ORB arg0);
 
         #endregion
 
@@ -138,36 +123,12 @@ namespace Javax.Rmi.CORBA
             get { return IExecuteWithSignature<Java.Rmi.Remote>("getTarget", "()Ljava/rmi/Remote;"); } set { IExecuteWithSignature("setTarget", "(Ljava/rmi/Remote;)V", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Tie.html#thisObject--"/>
-        /// </summary>
-        /// <returns><see cref="Org.Omg.CORBA.Object"/></returns>
-        public Org.Omg.CORBA.Object ThisObject()
-        {
-            return IExecuteWithSignature<Org.Omg.CORBA.Object>("thisObject", "()Lorg/omg/CORBA/Object;");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Tie.html#orb--"/>
-        /// </summary>
-        /// <returns><see cref="Org.Omg.CORBA.ORB"/></returns>
-        public Org.Omg.CORBA.ORB Orb()
-        {
-            return IExecuteWithSignature<Org.Omg.CORBA.ORB>("orb", "()Lorg/omg/CORBA/ORB;");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Tie.html#deactivate--"/>
         /// </summary>
         /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         public void Deactivate()
         {
             IExecuteWithSignature("deactivate", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Tie.html#orb-org.omg.CORBA.ORB-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.ORB"/></param>
-        public void Orb(Org.Omg.CORBA.ORB arg0)
-        {
-            IExecuteWithSignature("orb", "(Lorg/omg/CORBA/ORB;)V", arg0);
         }
 
         #endregion
