@@ -334,7 +334,7 @@ namespace MASES.JNet
             }
         }
 
-        string classPath = string.Empty;
+        string _classPath = string.Empty;
         /// <inheritdoc/>
 #if JNETREFLECTOR
         public override string ClassPath => buildClassPath();
@@ -348,23 +348,17 @@ namespace MASES.JNet
 
         string buildClassPath()
         {
-            ClassPathBuilder builder = new();
-
-            var pathToParse = PathToParse;
-
-            if (pathToParse != null) builder.Add(pathToParse.ToArray());
-
-            classPath = builder.Build();
+            _classPath = ClassPathBuilder.BuildFrom(PathToParse);
 
             if (LogClassPath)
             {
                 Console.WriteLine("ClassPath is defined from:");
-                foreach (var item in classPath.Split(ClassPathBuilder.PathSeparator))
+                foreach (var item in _classPath.Split(ClassPathBuilder.PathSeparator))
                 {
                     Console.WriteLine(item);
                 }
             }
-            return classPath;
+            return _classPath;
         }
 
         #endregion
