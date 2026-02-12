@@ -69,7 +69,8 @@
     "javax.swing.plaf.basic.BasicScrollPaneUI$VSBChangeListener",
     "javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener",
     "javax.tools.DiagnosticListener",
-    "javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter"
+    "javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter",
+    "javax.xml.soap.SAAJResult"
   ],
   "NamespacesInConflict": [
     "java.lang.module",
