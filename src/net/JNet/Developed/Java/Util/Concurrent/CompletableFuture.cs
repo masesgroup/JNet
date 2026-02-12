@@ -27,24 +27,6 @@ namespace Java.Util.Concurrent
     public partial class CompletableFuture
     {
         /// <summary>
-        /// Specific version of <see cref="FailedFuture​(JVMBridgeException)"/>
-        /// </summary>
-        /// <typeparam name="TException">The exception type extending <see cref="Throwable"/></typeparam>
-        /// <returns>The same value returned from <see cref="FailedFuture​(JVMBridgeException)"/></returns>
-        public static CompletableFuture FailedFuture​<TException>() where TException : Throwable
-        {
-            return CompletableFuture.FailedFuture(JVMBridgeException<TException>.Create());
-        }
-        /// <summary>
-        /// Specific version of <see cref="FailedStage(JVMBridgeException)"/>
-        /// </summary>
-        /// <typeparam name="TException">The exception type extending <see cref="Throwable"/></typeparam>
-        /// <returns>The same value returned from <see cref="FailedStage(JVMBridgeException)"/></returns>
-        public static CompletionStage FailedStage<TException>() where TException : Throwable
-        {
-            return CompletableFuture.FailedStage(JVMBridgeException<TException>.Create());
-        }
-        /// <summary>
         /// Executes <see cref="Get()"/> in <see langword="async"/>/<see langword="await"/> fashion
         /// </summary>
         /// <param name="token">The optional <see cref="CancellationToken"/> can be passed</param>
@@ -86,7 +68,7 @@ namespace Java.Util.Concurrent
         /// <returns>The same value returned from <see cref="CompleteExceptionally(JVMBridgeException)"/></returns>
         public bool CompleteExceptionally<TException>() where TException : Throwable
         {
-            return this.CompleteExceptionally(JVMBridgeException<TException>.Create());
+            return this.CompleteExceptionally(JVMBridgeException.Create<TException>());
         }
 
         /// <summary>
@@ -95,30 +77,12 @@ namespace Java.Util.Concurrent
         /// <typeparam name="TException">The exception type extending <see cref="Throwable"/></typeparam>
         public void ObtrudeException<TException>() where TException : Throwable
         {
-            this.ObtrudeException(JVMBridgeException<TException>.Create());
+            this.ObtrudeException(JVMBridgeException.Create<TException>());
         }
     }
 
     public partial class CompletableFuture<T>
     {
-        /// <summary>
-        /// Specific version of <see cref="FailedFuture​(JVMBridgeException)"/>
-        /// </summary>
-        /// <typeparam name="TException">The exception type extending <see cref="Throwable"/></typeparam>
-        /// <returns>The same value returned from <see cref="FailedFuture​(JVMBridgeException)"/></returns>
-        public static CompletableFuture<T> FailedFuture​<TException>() where TException : Throwable
-        {
-            return CompletableFuture<T>.FailedFuture<T>(JVMBridgeException<TException>.Create());
-        }
-        /// <summary>
-        /// Specific version of <see cref="FailedStage(JVMBridgeException)"/>
-        /// </summary>
-        /// <typeparam name="TException">The exception type extending <see cref="Throwable"/></typeparam>
-        /// <returns>The same value returned from <see cref="FailedStage(JVMBridgeException)"/></returns>
-        public static CompletionStage<T> FailedStage<TException>() where TException : Throwable
-        {
-            return CompletableFuture<T>.FailedStage<T>(JVMBridgeException<TException>.Create());
-        }
         /// <summary>
         /// Executes <see cref="Get()"/> in <see langword="async"/>/<see langword="await"/> fashion
         /// </summary>
@@ -156,7 +120,7 @@ namespace Java.Util.Concurrent
         /// <returns>The same value returned from <see cref="CompleteExceptionally(JVMBridgeException)"/></returns>
         public bool CompleteExceptionally<TException>() where TException : Throwable
         {
-            return this.CompleteExceptionally(JVMBridgeException<TException>.Create());
+            return this.CompleteExceptionally(JVMBridgeException.Create<TException>());
         }
 
         /// <summary>
@@ -165,7 +129,7 @@ namespace Java.Util.Concurrent
         /// <typeparam name="TException">The exception type extending <see cref="Throwable"/></typeparam>
         public void ObtrudeException<TException>() where TException : Throwable
         {
-            this.ObtrudeException(JVMBridgeException<TException>.Create());
+            this.ObtrudeException(JVMBridgeException.Create<TException>());
         }
     }
 }
