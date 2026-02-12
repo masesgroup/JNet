@@ -21,32 +21,32 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.Dnd
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceAdapter.html"/>
     /// </summary>
     public interface IDragSourceAdapter : IJVMBridgeBase
     {
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceAdapter.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
         void DragEnter(DragSourceDragEvent dtde);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceAdapter.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
         void DragOver(DragSourceDragEvent dtde);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceAdapter.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
         void DropActionChanged(DragSourceDragEvent dtde);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceAdapter.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
         /// </summary>
         void DragExit(DragSourceEvent dte);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceAdapter.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
         /// </summary>
         void DragDropEnd(DragSourceDropEvent dsde);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceAdapter.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
         void DragMouseMoved(DragSourceDragEvent dsde);
     }

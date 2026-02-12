@@ -22,23 +22,23 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html"/>
     /// </summary>
     /// <typeparam name="T">The comparator type</typeparam>
     public partial interface IComparator<T> : IJVMBridgeBase
     {
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         int Compare(T arg0, T arg1);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#equals(java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#equals(java.lang.Object)"/>
         /// </summary>
         public bool Equals(object obj);
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IComparator{T}"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IComparator{T}"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class Comparator : JVMBridgeListener
@@ -99,7 +99,7 @@ namespace Java.Util
         public static Comparator<SuperT> NullsLast<SuperT>(Comparator<SuperT> comparator) => SExecute<Comparator<SuperT>>("nullsLast", comparator);
 
         /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
+        /// Handler for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         public System.Func<T, T, int> OnCompare { get; set; }
 
@@ -113,7 +113,7 @@ namespace Java.Util
         }
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
@@ -124,7 +124,7 @@ namespace Java.Util
         }
 
         /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#equals(java.lang.Object)"/>
+        /// Handler for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#equals(java.lang.Object)"/>
         /// </summary>
         public System.Func<object, bool> OnEquals { get; set; }
 

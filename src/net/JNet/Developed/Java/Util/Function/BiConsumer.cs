@@ -79,7 +79,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -88,7 +88,7 @@ namespace Java.Util.Function
             IExecute("accept", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
@@ -155,7 +155,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
@@ -164,7 +164,7 @@ namespace Java.Util.Function
             IExecute("accept", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>

@@ -66,7 +66,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#test(long)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html#test(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -75,7 +75,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<bool>("test", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
@@ -84,7 +84,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("and", "(Ljava/util/function/LongPredicate;)Ljava/util/function/LongPredicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
         public Java.Util.Function.LongPredicate Negate()
@@ -92,7 +92,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.LongPredicateDirect, Java.Util.Function.LongPredicate>("negate", "()Ljava/util/function/LongPredicate;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>

@@ -24,7 +24,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Module.html"/>
     /// </summary>
     public sealed class Module : JVMBridgeBase<Module>
     {

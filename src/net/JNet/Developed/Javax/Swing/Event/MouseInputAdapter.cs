@@ -22,46 +22,46 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Event
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/MouseInputAdapter.html"/>
     /// </summary>
     public interface IMouseInputAdapter : IJVMBridgeBase
     {
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
         public void MouseClicked(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseEntered(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseListener.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
         public void MouseEntered(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseExited(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseListener.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
         public void MouseExited(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mousePressed(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseListener.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
         public void MousePressed(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseReleased(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseListener.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
         public void MouseReleased(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseDragged(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseAdapter.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
         public void MouseDragged(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseMoved(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseAdapter.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>
         public void MouseMoved(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseAdapter.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
         /// </summary>
         public void MouseWheelMoved(MouseWheelEvent e);
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IMouseInputAdapter"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/MouseInputAdapter.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IMouseInputAdapter"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class MouseInputAdapter : IMouseInputAdapter

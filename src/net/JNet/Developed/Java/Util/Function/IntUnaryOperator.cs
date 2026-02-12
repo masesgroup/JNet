@@ -103,7 +103,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#applyAsInt(int)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html#applyAsInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -112,7 +112,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<int>("applyAsInt", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
@@ -121,7 +121,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.IntUnaryOperatorDirect, Java.Util.Function.IntUnaryOperator>("andThen", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>

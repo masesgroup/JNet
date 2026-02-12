@@ -100,7 +100,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#accept(double)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html#accept(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public override void Accept(double arg0)
@@ -108,7 +108,7 @@ namespace Java.Util.Function
             IExecuteWithSignature("accept", "(D)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>

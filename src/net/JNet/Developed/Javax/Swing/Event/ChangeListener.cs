@@ -21,7 +21,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Event
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/ChangeListener.html"/>
     /// </summary>
     public partial interface IChangeListener : IJVMBridgeBase
     {
@@ -29,7 +29,7 @@ namespace Javax.Swing.Event
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IChangeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/ChangeListener.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IChangeListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ChangeListener : IChangeListener

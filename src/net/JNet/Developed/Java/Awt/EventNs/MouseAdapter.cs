@@ -21,40 +21,40 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.EventNs
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseAdapter.html"/>
     /// </summary>
     public interface IMouseAdapter : IJVMBridgeBase
     {
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
         void MouseClicked(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseEntered(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseListener.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
         void MouseEntered(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseExited(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseListener.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
         void MouseExited(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mousePressed(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseListener.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
         void MousePressed(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseReleased(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseListener.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
         void MouseReleased(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseDragged(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseAdapter.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
         void MouseDragged(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseMoved(java.awt.event.MouseEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseAdapter.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>
         void MouseMoved(MouseEvent e);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseAdapter.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
         /// </summary>
         void MouseWheelMoved(MouseWheelEvent e);
     }

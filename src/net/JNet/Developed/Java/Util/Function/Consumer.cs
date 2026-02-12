@@ -76,7 +76,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Accept(object arg0)
@@ -84,7 +84,7 @@ namespace Java.Util.Function
             IExecuteWithSignature("accept", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
@@ -154,7 +154,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         public override void Accept(T arg0)
@@ -162,7 +162,7 @@ namespace Java.Util.Function
             IExecuteWithSignature("accept", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>

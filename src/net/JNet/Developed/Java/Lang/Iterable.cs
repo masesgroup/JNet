@@ -22,7 +22,7 @@ namespace Java.Lang
 {
     #region IIterable
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html"/>
+    /// .NET interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/>
     /// </summary>
     public partial interface IIterable
     {
@@ -62,7 +62,7 @@ namespace Java.Lang
 
     #region IIterable<E>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html"/>
+    /// .NET interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/>
     /// </summary>
     public partial interface IIterable<T>
     {

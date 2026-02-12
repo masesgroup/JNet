@@ -21,7 +21,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.EventNs
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/AdjustmentListener.html"/>
     /// </summary>
     public partial interface IAdjustmentListener : IJVMBridgeBase
     {

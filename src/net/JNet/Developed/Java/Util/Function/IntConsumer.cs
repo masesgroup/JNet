@@ -66,7 +66,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#accept(int)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public override void Accept(int arg0)
@@ -74,7 +74,7 @@ namespace Java.Util.Function
             IExecuteWithSignature("accept", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>

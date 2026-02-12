@@ -19,7 +19,7 @@
 namespace Java.Lang.ModuleNs
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/module/ModuleDescriptor.html"/>
     /// </summary>
 #if JNETREFLECTOR
     public sealed class ModuleDescriptor : JVMBridgeBase<ModuleDescriptor>

@@ -71,7 +71,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="object"/></returns>
@@ -143,7 +143,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><typeparamref name="R"/></returns>

@@ -66,7 +66,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#test(int)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntPredicate.html#test(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -75,7 +75,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<bool>("test", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
@@ -84,7 +84,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("and", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         public Java.Util.Function.IntPredicate Negate()
@@ -92,7 +92,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("negate", "()Ljava/util/function/IntPredicate;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
