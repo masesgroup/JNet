@@ -96,10 +96,6 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosKey"/> to <see cref="Javax.Crypto.SecretKey"/>
-        /// </summary>
-        public static implicit operator Javax.Crypto.SecretKey(Javax.Security.Auth.Kerberos.KerberosKey t) => t.Cast<Javax.Crypto.SecretKey>();
-        /// <summary>
         /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosKey"/> to <see cref="Javax.Security.Auth.Destroyable"/>
         /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Javax.Security.Auth.Kerberos.KerberosKey t) => t.Cast<Javax.Security.Auth.Destroyable>();

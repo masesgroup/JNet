@@ -76,25 +76,11 @@ namespace Javax.Rmi.CORBA
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandler.html#getRunTimeCodeBase--"/> 
-        /// </summary>
-        Org.Omg.SendingContext.RunTime RunTimeCodeBase { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandler.html#isCustomMarshaled-java.lang.Class-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
         bool IsCustomMarshaled(Java.Lang.Class arg0);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandler.html#readValue-org.omg.CORBA.portable.InputStream-int-java.lang.Class-java.lang.String-org.omg.SendingContext.RunTime-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.Portable.InputStream"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Org.Omg.SendingContext.RunTime"/></param>
-        /// <returns><see cref="Java.Io.Serializable"/></returns>
-        Java.Io.Serializable ReadValue(Org.Omg.CORBA.Portable.InputStream arg0, int arg1, Java.Lang.Class arg2, Java.Lang.String arg3, Org.Omg.SendingContext.RunTime arg4);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandler.html#writeReplace-java.io.Serializable-"/>
         /// </summary>
@@ -107,12 +93,6 @@ namespace Javax.Rmi.CORBA
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String GetRMIRepositoryID(Java.Lang.Class arg0);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandler.html#writeValue-org.omg.CORBA.portable.OutputStream-java.io.Serializable-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.Portable.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Io.Serializable"/></param>
-        void WriteValue(Org.Omg.CORBA.Portable.OutputStream arg0, Java.Io.Serializable arg1);
 
         #endregion
 
@@ -145,13 +125,6 @@ namespace Javax.Rmi.CORBA
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandler.html#getRunTimeCodeBase--"/> 
-        /// </summary>
-        public Org.Omg.SendingContext.RunTime RunTimeCodeBase
-        {
-            get { return IExecuteWithSignature<Org.Omg.SendingContext.RunTime>("getRunTimeCodeBase", "()Lorg/omg/SendingContext/RunTime;"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandler.html#isCustomMarshaled-java.lang.Class-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -159,19 +132,6 @@ namespace Javax.Rmi.CORBA
         public bool IsCustomMarshaled(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<bool>("isCustomMarshaled", "(Ljava/lang/Class;)Z", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandler.html#readValue-org.omg.CORBA.portable.InputStream-int-java.lang.Class-java.lang.String-org.omg.SendingContext.RunTime-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.Portable.InputStream"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Org.Omg.SendingContext.RunTime"/></param>
-        /// <returns><see cref="Java.Io.Serializable"/></returns>
-        public Java.Io.Serializable ReadValue(Org.Omg.CORBA.Portable.InputStream arg0, int arg1, Java.Lang.Class arg2, Java.Lang.String arg3, Org.Omg.SendingContext.RunTime arg4)
-        {
-            return IExecuteWithSignature<Java.Io.Serializable>("readValue", "(Lorg/omg/CORBA/portable/InputStream;ILjava/lang/Class;Ljava/lang/String;Lorg/omg/SendingContext/RunTime;)Ljava/io/Serializable;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandler.html#writeReplace-java.io.Serializable-"/>
@@ -190,15 +150,6 @@ namespace Javax.Rmi.CORBA
         public Java.Lang.String GetRMIRepositoryID(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getRMIRepositoryID", "(Ljava/lang/Class;)Ljava/lang/String;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandler.html#writeValue-org.omg.CORBA.portable.OutputStream-java.io.Serializable-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.Portable.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Io.Serializable"/></param>
-        public void WriteValue(Org.Omg.CORBA.Portable.OutputStream arg0, Java.Io.Serializable arg1)
-        {
-            IExecuteWithSignature("writeValue", "(Lorg/omg/CORBA/portable/OutputStream;Ljava/io/Serializable;)V", arg0, arg1);
         }
 
         #endregion

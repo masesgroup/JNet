@@ -105,37 +105,6 @@ namespace Javax.Rmi.CORBA
             return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "loadClass", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Util.html#copyObject-java.lang.Object-org.omg.CORBA.ORB-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Org.Omg.CORBA.ORB"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        public static object CopyObject(object arg0, Org.Omg.CORBA.ORB arg1)
-        {
-            return SExecuteWithSignature(LocalBridgeClazz, "copyObject", "(Ljava/lang/Object;Lorg/omg/CORBA/ORB;)Ljava/lang/Object;", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Util.html#readAny-org.omg.CORBA.portable.InputStream-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.Portable.InputStream"/></param>
-        /// <returns><see cref="object"/></returns>
-        public static object ReadAny(Org.Omg.CORBA.Portable.InputStream arg0)
-        {
-            return SExecuteWithSignature(LocalBridgeClazz, "readAny", "(Lorg/omg/CORBA/portable/InputStream;)Ljava/lang/Object;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Util.html#copyObjects-java.lang.Object[]-org.omg.CORBA.ORB-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Org.Omg.CORBA.ORB"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        public static object[] CopyObjects(object[] arg0, Org.Omg.CORBA.ORB arg1)
-        {
-            return SExecuteWithSignatureArray<object>(LocalBridgeClazz, "copyObjects", "([Ljava/lang/Object;Lorg/omg/CORBA/ORB;)[Ljava/lang/Object;", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Util.html#getCodebase-java.lang.Class-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -143,15 +112,6 @@ namespace Javax.Rmi.CORBA
         public static Java.Lang.String GetCodebase(Java.Lang.Class arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getCodebase", "(Ljava/lang/Class;)Ljava/lang/String;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Util.html#mapSystemException-org.omg.CORBA.SystemException-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.SystemException"/></param>
-        /// <returns><see cref="Java.Rmi.RemoteException"/></returns>
-        public static Java.Rmi.RemoteException MapSystemException(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
-        {
-            var obj = SExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(LocalBridgeClazz, "mapSystemException", "(Lorg/omg/CORBA/SystemException;)Ljava/rmi/RemoteException;", arg0); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Rmi.RemoteException>(obj);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Util.html#wrapException-java.lang.Throwable-"/>
@@ -196,33 +156,6 @@ namespace Javax.Rmi.CORBA
         public static void UnexportObject(Java.Rmi.Remote arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "unexportObject", "(Ljava/rmi/Remote;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Util.html#writeAbstractObject-org.omg.CORBA.portable.OutputStream-java.lang.Object-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.Portable.OutputStream"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        public static void WriteAbstractObject(Org.Omg.CORBA.Portable.OutputStream arg0, object arg1)
-        {
-            SExecuteWithSignature(LocalBridgeClazz, "writeAbstractObject", "(Lorg/omg/CORBA/portable/OutputStream;Ljava/lang/Object;)V", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Util.html#writeAny-org.omg.CORBA.portable.OutputStream-java.lang.Object-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.Portable.OutputStream"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        public static void WriteAny(Org.Omg.CORBA.Portable.OutputStream arg0, object arg1)
-        {
-            SExecuteWithSignature(LocalBridgeClazz, "writeAny", "(Lorg/omg/CORBA/portable/OutputStream;Ljava/lang/Object;)V", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Util.html#writeRemoteObject-org.omg.CORBA.portable.OutputStream-java.lang.Object-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.Portable.OutputStream"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        public static void WriteRemoteObject(Org.Omg.CORBA.Portable.OutputStream arg0, object arg1)
-        {
-            SExecuteWithSignature(LocalBridgeClazz, "writeRemoteObject", "(Lorg/omg/CORBA/portable/OutputStream;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion
