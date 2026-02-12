@@ -60,10 +60,6 @@ namespace Java.Lang.Reflect
         /// </summary>
         public T[] GetDeclaredAnnotationsByType<T>(Class<T> annotationClass) where T : Annotation.Annotation => IExecuteArray<T>("getDeclaredAnnotationsByType", annotationClass);
         /// <summary>
-        /// Get the value of the accessible flag for this object.
-        /// </summary>
-        public bool IsAccessible => IExecute<bool>("isAccessible");
-        /// <summary>
         /// Returns <see langword="true"/> if an annotation for the specified type is present on this element, else <see langword="false"/>.
         /// </summary>
         public bool IsAnnotationPresent<T>(Class<T> annotationClass) where T : Annotation.Annotation => IExecute<bool>("isAnnotationPresent", annotationClass);
