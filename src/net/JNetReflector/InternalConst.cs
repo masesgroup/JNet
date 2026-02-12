@@ -245,7 +245,7 @@ namespace MASES.JNet.Reflector
 
         static IEnumerable<string> CreateNumberStartNames()
         {
-            List<string> lst = new List<string>();
+            var lst = new List<string>();
             for (int i = 0; i < 10; i++)
             {
                 lst.Add(i.ToString());
