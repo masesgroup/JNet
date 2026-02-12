@@ -17,13 +17,15 @@
     "org.jcp.xml.dsig.internal",
     "com.oracle",
     "com.sun",
+    "java.awt.peer",
+    "jdk",
     "org.mases",
     "org.junit",
     "org.hamcrest",
     "org.burningwave",
     "org.graalvm",
     "org.slf4j",
-    "java.awt.peer"
+    "sun"
   ],
   "ClassesToBeListener": [
     "java.lang.Runnable",

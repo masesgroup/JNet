@@ -210,6 +210,7 @@ namespace MASES.JNet.Reflector
             List<string> lst = new List<string>();
             lst.Add("in");
             lst.Add("out");
+            lst.Add("ref");
             lst.Add("base");
             lst.Add("event");
             lst.Add("interface");
@@ -222,6 +223,7 @@ namespace MASES.JNet.Reflector
             lst.Add("unsafe");
             lst.Add("bool");
             lst.Add("string");
+            lst.Add("params");
             return lst;
         }
 
