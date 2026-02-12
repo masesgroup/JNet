@@ -21,7 +21,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming.Event
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/event/NamingListener.html"/>
     /// </summary>
     public partial interface INamingListener : IJVMBridgeBase
     {

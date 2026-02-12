@@ -103,7 +103,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -112,7 +112,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<bool>("test", "(D)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
@@ -121,7 +121,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("and", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         public Java.Util.Function.DoublePredicate Negate()
@@ -129,7 +129,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("negate", "()Ljava/util/function/DoublePredicate;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>

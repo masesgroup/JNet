@@ -79,7 +79,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -89,7 +89,7 @@ namespace Java.Util.Function
             return IExecute<bool>("test", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
@@ -98,7 +98,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect, Java.Util.Function.BiPredicate>("and", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public Java.Util.Function.BiPredicate Negate()
@@ -106,7 +106,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect, Java.Util.Function.BiPredicate>("negate", "()Ljava/util/function/BiPredicate;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
@@ -180,7 +180,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
@@ -190,7 +190,7 @@ namespace Java.Util.Function
             return IExecute<bool>("test", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
@@ -201,7 +201,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("and", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public Java.Util.Function.BiPredicate<T, U> Negate()
@@ -209,7 +209,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("negate", "()Ljava/util/function/BiPredicate;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>

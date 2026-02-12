@@ -35,7 +35,7 @@ namespace Java.Util
             return p;
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#get(java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#get(java.lang.Object)"/>
         /// </summary>
         public virtual V Get​(K key) { return IExecute<V>("get", key); }
     }

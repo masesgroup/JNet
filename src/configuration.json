@@ -17,13 +17,17 @@
     "org.jcp.xml.dsig.internal",
     "com.oracle",
     "com.sun",
+    "java.awt.peer",
+    "javax.crypto",
+    "jdk",
     "org.mases",
     "org.junit",
     "org.hamcrest",
     "org.burningwave",
     "org.graalvm",
+    "org.omg",
     "org.slf4j",
-    "java.awt.peer"
+    "sun"
   ],
   "ClassesToBeListener": [
     "java.lang.Runnable",
@@ -64,7 +68,9 @@
     "javax.swing.plaf.basic.BasicSliderUI$TrackListener",
     "javax.swing.plaf.basic.BasicScrollPaneUI$VSBChangeListener",
     "javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener",
-    "javax.tools.DiagnosticListener"
+    "javax.tools.DiagnosticListener",
+    "javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter",
+    "javax.xml.soap.SAAJResult"
   ],
   "NamespacesInConflict": [
     "java.lang.module",

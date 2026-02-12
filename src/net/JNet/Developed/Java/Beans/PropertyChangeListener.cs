@@ -21,7 +21,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Beans
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/PropertyChangeListener.html"/>
     /// </summary>
     public partial interface IPropertyChangeListener : IJVMBridgeBase
     {

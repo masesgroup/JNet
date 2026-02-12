@@ -24,7 +24,7 @@ namespace Java.Util
 {
     #region IEventListener
     /// <summary>
-    /// .NET interface for org.mases.jnet.util.EventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListener.html"/>
+    /// .NET interface for org.mases.jnet.util.EventListener implementing <see href="https://docs.oracle.com/javase/8/docs/api/java/util/EventListener.html"/>
     /// </summary>
     public partial interface IEventListener
     {
@@ -34,7 +34,7 @@ namespace Java.Util
 
     #region EventListener
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListener.html"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/EventListener.html"/>
     /// </summary>
     public partial class EventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener, Java.Util.IEventListener
     {

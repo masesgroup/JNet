@@ -21,7 +21,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.Dnd
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceListener.html"/>
     /// </summary>
     public partial interface IDragSourceListener : IJVMBridgeBase
     {
@@ -29,7 +29,7 @@ namespace Java.Awt.Dnd
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IDragSourceListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceListener.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IDragSourceListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class DragSourceListener : IDragSourceListener

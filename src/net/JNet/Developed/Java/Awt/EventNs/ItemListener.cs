@@ -21,7 +21,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.EventNs
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/ItemListener.html"/>
     /// </summary>
     public partial interface IItemListener : IJVMBridgeBase
     {
@@ -29,7 +29,7 @@ namespace Java.Awt.EventNs
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IItemListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/ItemListener.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IItemListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ItemListener : IItemListener

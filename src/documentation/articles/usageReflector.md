@@ -95,26 +95,34 @@ The options used are:
   "JavaListenerBasePackage": "org.mases.jnet.generated",
   "PreferMethodWithSignature": true,
   "OnlyPropertiesForGetterSetter": true,
-  "ModulesToParse": [
-    "org.*",
-    "java.*"
+  "JarList": [
+    "rt.jar"
   ],
-  "OriginJavadocUrl": "https://docs.oracle.com/en/java/javase/11/docs/api/",
-  "JavadocVersion": 11,
+  "OriginJavadocJARVersionAndUrls": [
+    {
+      "Version": 8,
+      "Url": "https://docs.oracle.com/javase/8/docs/api/"
+    }
+  ],
   "NamespacesToAvoid": [
     "org.jcp.xml.dsig.internal",
     "com.oracle",
     "com.sun",
+    "java.awt.peer",
+    "javax.crypto",
+    "jdk",
     "org.mases",
     "org.junit",
     "org.hamcrest",
     "org.burningwave",
     "org.graalvm",
+    "org.omg",
     "org.slf4j",
-    "java.awt.peer"
+    "sun"
   ],
   "ClassesToBeListener": [
     "java.lang.Runnable",
+    "java.util.concurrent.Callable",
     "javax.swing.Action",
     "javax.management.NotificationFilter"
   ],
@@ -151,7 +159,9 @@ The options used are:
     "javax.swing.plaf.basic.BasicSliderUI$TrackListener",
     "javax.swing.plaf.basic.BasicScrollPaneUI$VSBChangeListener",
     "javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener",
-    "javax.tools.DiagnosticListener"
+    "javax.tools.DiagnosticListener",
+    "javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter",
+    "javax.xml.soap.SAAJResult"
   ],
   "NamespacesInConflict": [
     "java.lang.module",

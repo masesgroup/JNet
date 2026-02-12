@@ -34,12 +34,5 @@ namespace Java.Util
         /// <param name="o"></param>
         /// <returns></returns>
         public int LastIndexOf(Object o) => IExecute<int>("lastIndexOf", o);
-        /// <summary>
-        /// Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
-        /// </summary>
-        /// <param name="fromIndex"></param>
-        /// <param name="toIndex"></param>
-        /// <returns></returns>
-        public List<E> SubList(int fromIndex, int toIndex) => IExecute<List<E>>("subList", fromIndex, toIndex);
     }
 }

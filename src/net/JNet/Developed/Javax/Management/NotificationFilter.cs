@@ -21,7 +21,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     /// <summary>
-    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html"/>
+    /// Interface for <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/NotificationFilter.html"/>
     /// </summary>
     public partial interface INotificationFilter : IJVMBridgeBase
     {

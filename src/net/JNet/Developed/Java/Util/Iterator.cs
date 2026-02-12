@@ -23,7 +23,7 @@ namespace Java.Util
 {
     #region Iterator
     /// <summary>
-    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
+    /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html"/>
     /// </summary>
     public partial class Iterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterator>
     {
@@ -42,16 +42,16 @@ namespace Java.Util
         /// </summary>
         public Iterator(params object[] args) : base(args) { }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/> 
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#hasNext()"/> 
         /// </summary>
         public bool HasNext() => IExecute<bool>("hasNext");
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/> 
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#next()"/> 
         /// </summary>
         public object Next() => IExecute("next");
 #if !JNETREFLECTOR
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         public void ForEachRemaining(Java.Util.Function.Consumer arg0)
@@ -59,7 +59,7 @@ namespace Java.Util
             IExecute("forEachRemaining", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#remove()"/>
         /// </summary>
         public void Remove()
         {
@@ -71,34 +71,34 @@ namespace Java.Util
 
     #region IIterator<E>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
+    /// .NET interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html"/>
     /// </summary>
     public partial interface IIterator<E>
     {
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/> 
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#hasNext()"/> 
         /// </summary>
         bool HasNext();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/> 
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#next()"/> 
         /// </summary>
         E Next();
 #if !JNETREFLECTOR
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         void ForEachRemaining<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE : E;
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#remove()"/>
         /// </summary>
         void Remove();
 #endif
     }
     #endregion
     /// <summary>
-    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
+    /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html"/>
     /// </summary>
     public partial class Iterator<E> : JVMBridgeBase<Iterator<E>>, IIterator<E>
     {
@@ -125,16 +125,16 @@ namespace Java.Util
         /// </summary>
         public IEnumerator<E> ToIEnumerator() => new JVMBridgeBaseEnumerator<E>(this.BridgeInstance);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/> 
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#hasNext()"/> 
         /// </summary>
         public bool HasNext() => IExecute<bool>("hasNext");
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/> 
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#next()"/> 
         /// </summary>
         public E Next() => IExecute<E>("next");
 #if !JNETREFLECTOR
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
@@ -143,7 +143,7 @@ namespace Java.Util
             IExecute("forEachRemaining", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#remove()"/>
         /// </summary>
         public void Remove()
         {

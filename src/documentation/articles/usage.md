@@ -133,7 +133,7 @@ namespace MASES.JNetExample
             }
             // if the Add is invoked the operation on java.util.Set<String> cannot be performed 
             // because Collections.Singleton returns an immutable java.util.Set<String>
-            // see https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(T))
+            // see https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singleton(T))
             catch (UnsupportedOperationException) 
             {
                 // so we enter here because the engine translates the Java exception in an equivalent exception managed from C#

@@ -73,7 +73,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -82,7 +82,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<bool>("test", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
@@ -91,7 +91,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public Java.Util.Function.Predicate Negate()
@@ -99,7 +99,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("negate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
@@ -166,7 +166,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -175,7 +175,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<bool>("test", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
@@ -185,7 +185,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("and", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
         public Java.Util.Function.Predicate<T> Negate()
@@ -193,7 +193,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("negate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
