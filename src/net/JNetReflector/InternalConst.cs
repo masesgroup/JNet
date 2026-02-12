@@ -231,7 +231,7 @@ namespace MASES.JNet.Reflector
 
         static IEnumerable<string> CreateReservedJNetNames()
         {
-            List<string> lst = new List<string>();
+            var lst = new List<string>();
             lst.Add("BridgeInstance");
             lst.Add("BridgeClassName");
             lst.Add("IsBridgeAbstract");
