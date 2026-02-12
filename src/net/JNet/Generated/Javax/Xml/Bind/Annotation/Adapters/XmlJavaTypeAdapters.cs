@@ -75,11 +75,6 @@ namespace Javax.Xml.Bind.Annotation.Adapters
     public partial interface IXmlJavaTypeAdapters : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/adapters/XmlJavaTypeAdapters.html#value--"/>
-        /// </summary>
-        /// <returns><see cref="Javax.Xml.Bind.Annotation.Adapters.XmlJavaTypeAdapter"/></returns>
-        Javax.Xml.Bind.Annotation.Adapters.XmlJavaTypeAdapter[] Value();
 
         #endregion
 
@@ -111,14 +106,6 @@ namespace Javax.Xml.Bind.Annotation.Adapters
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/adapters/XmlJavaTypeAdapters.html#value--"/>
-        /// </summary>
-        /// <returns><see cref="Javax.Xml.Bind.Annotation.Adapters.XmlJavaTypeAdapter"/></returns>
-        public Javax.Xml.Bind.Annotation.Adapters.XmlJavaTypeAdapter[] Value()
-        {
-            return IExecuteWithSignatureArray<Javax.Xml.Bind.Annotation.Adapters.XmlJavaTypeAdapter>("value", "()[Ljavax/xml/bind/annotation/adapters/XmlJavaTypeAdapter;");
-        }
 
         #endregion
 

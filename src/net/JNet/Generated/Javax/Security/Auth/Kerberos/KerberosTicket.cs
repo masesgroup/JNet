@@ -173,13 +173,6 @@ namespace Javax.Security.Auth.Kerberos
             get { return IExecuteWithSignature<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getServer", "()Ljavax/security/auth/kerberos/KerberosPrincipal;"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getSessionKey--"/> 
-        /// </summary>
-        public Javax.Crypto.SecretKey SessionKey
-        {
-            get { return IExecuteWithSignature<Javax.Crypto.SecretKey>("getSessionKey", "()Ljavax/crypto/SecretKey;"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/kerberos/KerberosTicket.html#getSessionKeyType--"/> 
         /// </summary>
         public int SessionKeyType

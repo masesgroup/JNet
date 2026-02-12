@@ -29,7 +29,7 @@ namespace Javax.Management.Remote.Rmi
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/_RMIServerImpl_Tie.html"/>
     /// </summary>
-    public partial class _RMIServerImpl_Tie : Org.Omg.CORBA_2_3.Portable.ObjectImpl
+    public partial class _RMIServerImpl_Tie : Javax.Rmi.CORBA.Tie
     {
         const string _bridgeClassName = "javax.management.remote.rmi._RMIServerImpl_Tie";
         /// <summary>
@@ -74,10 +74,6 @@ namespace Javax.Management.Remote.Rmi
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.Rmi._RMIServerImpl_Tie"/> to <see cref="Javax.Rmi.CORBA.Tie"/>
-        /// </summary>
-        public static implicit operator Javax.Rmi.CORBA.Tie(Javax.Management.Remote.Rmi._RMIServerImpl_Tie t) => t.Cast<Javax.Rmi.CORBA.Tie>();
 
         #endregion
 
@@ -98,47 +94,11 @@ namespace Javax.Management.Remote.Rmi
             get { return IExecute<Java.Rmi.Remote>("getTarget"); } set { IExecute("setTarget", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/_RMIServerImpl_Tie.html#thisObject--"/>
-        /// </summary>
-        /// <returns><see cref="Org.Omg.CORBA.Object"/></returns>
-        public Org.Omg.CORBA.Object ThisObject()
-        {
-            return IExecute<Org.Omg.CORBA.Object>("thisObject");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/_RMIServerImpl_Tie.html#orb--"/>
-        /// </summary>
-        /// <returns><see cref="Org.Omg.CORBA.ORB"/></returns>
-        public Org.Omg.CORBA.ORB Orb()
-        {
-            return IExecute<Org.Omg.CORBA.ORB>("orb");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/_RMIServerImpl_Tie.html#_invoke-java.lang.String-org.omg.CORBA.portable.InputStream-org.omg.CORBA.portable.ResponseHandler-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Org.Omg.CORBA.Portable.InputStream"/></param>
-        /// <param name="arg2"><see cref="Org.Omg.CORBA.Portable.ResponseHandler"/></param>
-        /// <returns><see cref="Org.Omg.CORBA.Portable.OutputStream"/></returns>
-        /// <exception cref="Org.Omg.CORBA.SystemException"/>
-        public Org.Omg.CORBA.Portable.OutputStream _invoke(Java.Lang.String arg0, Org.Omg.CORBA.Portable.InputStream arg1, Org.Omg.CORBA.Portable.ResponseHandler arg2)
-        {
-            return IExecute<Org.Omg.CORBA.Portable.OutputStream>("_invoke", arg0, arg1, arg2);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/_RMIServerImpl_Tie.html#deactivate--"/>
         /// </summary>
         public void Deactivate()
         {
             IExecute("deactivate");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/_RMIServerImpl_Tie.html#orb-org.omg.CORBA.ORB-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.ORB"/></param>
-        public void Orb(Org.Omg.CORBA.ORB arg0)
-        {
-            IExecute("orb", arg0);
         }
 
         #endregion

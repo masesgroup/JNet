@@ -1241,23 +1241,6 @@ namespace Java.Security
         public partial class SecretKeyEntry
         {
             #region Constructors
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.SecretKeyEntry.html#java.security.KeyStore$SecretKeyEntry(javax.crypto.SecretKey,java.util.Set)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
-            /// <param name="arg1"><see cref="Java.Util.Set"/></param>
-            public SecretKeyEntry(Javax.Crypto.SecretKey arg0, Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> arg1)
-                : base(arg0, arg1)
-            {
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.SecretKeyEntry.html#java.security.KeyStore$SecretKeyEntry(javax.crypto.SecretKey)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
-            public SecretKeyEntry(Javax.Crypto.SecretKey arg0)
-                : base(arg0)
-            {
-            }
 
             #endregion
 
@@ -1280,13 +1263,6 @@ namespace Java.Security
             public Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> Attributes
             {
                 get { return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.SecretKeyEntry.html#getSecretKey--"/> 
-            /// </summary>
-            public Javax.Crypto.SecretKey SecretKey
-            {
-                get { return IExecuteWithSignature<Javax.Crypto.SecretKey>("getSecretKey", "()Ljavax/crypto/SecretKey;"); }
             }
 
             #endregion

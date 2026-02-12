@@ -79,13 +79,6 @@ namespace Javax.Rmi.CORBA
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandlerMultiFormat.html#getMaximumStreamFormatVersion--"/> 
         /// </summary>
         byte MaximumStreamFormatVersion { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandlerMultiFormat.html#writeValue-org.omg.CORBA.portable.OutputStream-java.io.Serializable-byte-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.Portable.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Io.Serializable"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        void WriteValue(Org.Omg.CORBA.Portable.OutputStream arg0, Java.Io.Serializable arg1, byte arg2);
 
         #endregion
 
@@ -123,16 +116,6 @@ namespace Javax.Rmi.CORBA
         public byte MaximumStreamFormatVersion
         {
             get { return IExecuteWithSignature<byte>("getMaximumStreamFormatVersion", "()B"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ValueHandlerMultiFormat.html#writeValue-org.omg.CORBA.portable.OutputStream-java.io.Serializable-byte-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.Portable.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Io.Serializable"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        public void WriteValue(Org.Omg.CORBA.Portable.OutputStream arg0, Java.Io.Serializable arg1, byte arg2)
-        {
-            IExecuteWithSignature("writeValue", "(Lorg/omg/CORBA/portable/OutputStream;Ljava/io/Serializable;B)V", arg0, arg1, arg2);
         }
 
         #endregion

@@ -29,7 +29,7 @@ namespace Javax.Rmi.CORBA
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Stub.html"/>
     /// </summary>
-    public partial class Stub : Org.Omg.CORBA_2_3.Portable.ObjectImpl
+    public partial class Stub : Java.Io.Serializable
     {
         const string _bridgeClassName = "javax.rmi.CORBA.Stub";
         /// <summary>
@@ -76,10 +76,6 @@ namespace Javax.Rmi.CORBA
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Rmi.CORBA.Stub"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Rmi.CORBA.Stub t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 
@@ -92,15 +88,6 @@ namespace Javax.Rmi.CORBA
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Stub.html#connect-org.omg.CORBA.ORB-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Omg.CORBA.ORB"/></param>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        public void Connect(Org.Omg.CORBA.ORB arg0)
-        {
-            IExecuteWithSignature("connect", "(Lorg/omg/CORBA/ORB;)V", arg0);
-        }
 
         #endregion
 
