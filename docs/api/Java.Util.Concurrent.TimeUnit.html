@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TimeUnit | MASES Group - JNet ">
       <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
-      <meta name="description" content="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html">
+      <meta name="description" content="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Util_Concurrent_TimeUnit" data-uid="Java.Util.Concurrent.TimeUnit" class="text-break">
-Class TimeUnit  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L70"><i class="bi bi-code-slash"></i></a>
+Class TimeUnit  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class TimeUnit  <a class="header-action link-secondary" title="View source" href
   <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html</a></p>
+  <div class="markdown summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -466,6 +466,12 @@ Class TimeUnit  <a class="header-action link-secondary" title="View source" href
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
     </div>
     <div>
@@ -558,7 +564,8 @@ Class TimeUnit  <a class="header-action link-secondary" title="View source" href
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TimeUnit()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;TimeUnit class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public TimeUnit()</code></pre>
   </div>
 
 
@@ -577,7 +584,7 @@ Class TimeUnit  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Java_Util_Concurrent_TimeUnit__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Util.Concurrent.TimeUnit.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
   TimeUnit(IJVMBridgeBaseInitializer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
@@ -610,7 +617,7 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit__ctor_System_Object___" data-uid="Java.Util.Concurrent.TimeUnit.#ctor(System.Object[])">
   TimeUnit(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -618,7 +625,8 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TimeUnit(params object[] args)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;TimeUnit class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public TimeUnit(params object[] args)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -646,7 +654,7 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_BridgeClassName" data-uid="Java.Util.Concurrent.TimeUnit.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -678,10 +686,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_DAYS" data-uid="Java.Util.Concurrent.TimeUnit.DAYS">
   DAYS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#DAYS">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#DAYS</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#DAYS">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#DAYS</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -710,10 +718,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_HOURS" data-uid="Java.Util.Concurrent.TimeUnit.HOURS">
   HOURS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#HOURS">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#HOURS</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#HOURS">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#HOURS</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -742,7 +750,7 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_IsBridgeAbstract" data-uid="Java.Util.Concurrent.TimeUnit.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -774,7 +782,7 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_IsBridgeCloseable" data-uid="Java.Util.Concurrent.TimeUnit.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -806,7 +814,7 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_IsBridgeInterface" data-uid="Java.Util.Concurrent.TimeUnit.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -838,7 +846,7 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_IsBridgeStatic" data-uid="Java.Util.Concurrent.TimeUnit.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -870,10 +878,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_MICROSECONDS" data-uid="Java.Util.Concurrent.TimeUnit.MICROSECONDS">
   MICROSECONDS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MICROSECONDS">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MICROSECONDS</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#MICROSECONDS">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#MICROSECONDS</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -902,10 +910,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_MILLISECONDS" data-uid="Java.Util.Concurrent.TimeUnit.MILLISECONDS">
   MILLISECONDS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MILLISECONDS">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MILLISECONDS</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#MILLISECONDS">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#MILLISECONDS</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -934,10 +942,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_MINUTES" data-uid="Java.Util.Concurrent.TimeUnit.MINUTES">
   MINUTES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MINUTES">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MINUTES</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#MINUTES">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#MINUTES</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -966,10 +974,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_NANOSECONDS" data-uid="Java.Util.Concurrent.TimeUnit.NANOSECONDS">
   NANOSECONDS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#NANOSECONDS">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#NANOSECONDS</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#NANOSECONDS">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#NANOSECONDS</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -998,10 +1006,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_SECONDS" data-uid="Java.Util.Concurrent.TimeUnit.SECONDS">
   SECONDS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#SECONDS">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#SECONDS</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#SECONDS">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#SECONDS</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1032,51 +1040,12 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <a id="Java_Util_Concurrent_TimeUnit_Convert_" data-uid="Java.Util.Concurrent.TimeUnit.Convert*"></a>
 
-  <h3 id="Java_Util_Concurrent_TimeUnit_Convert_Java_Time_Duration_" data-uid="Java.Util.Concurrent.TimeUnit.Convert(Java.Time.Duration)">
-  Convert(Duration)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L170"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(java.time.Duration)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(java.time.Duration)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long Convert(Duration arg0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Time.Duration.html">Duration</a></dt>
-    <dd><p><a class="xref" href="Java.Time.Duration.html">Duration</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Util_Concurrent_TimeUnit_Convert_" data-uid="Java.Util.Concurrent.TimeUnit.Convert*"></a>
-
   <h3 id="Java_Util_Concurrent_TimeUnit_Convert_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.TimeUnit.Convert(System.Int64,Java.Util.Concurrent.TimeUnit)">
   Convert(long, TimeUnit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(long,java.util.concurrent.TimeUnit)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(long,java.util.concurrent.TimeUnit)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#convert-long-java.util.concurrent.TimeUnit-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#convert-long-java.util.concurrent.TimeUnit-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1111,53 +1080,14 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
-  <a id="Java_Util_Concurrent_TimeUnit_Of_" data-uid="Java.Util.Concurrent.TimeUnit.Of*"></a>
-
-  <h3 id="Java_Util_Concurrent_TimeUnit_Of_Java_Time_Temporal_ChronoUnit_" data-uid="Java.Util.Concurrent.TimeUnit.Of(Java.Time.Temporal.ChronoUnit)">
-  Of(ChronoUnit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L132"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#of(java.time.temporal.ChronoUnit)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#of(java.time.temporal.ChronoUnit)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TimeUnit Of(ChronoUnit arg0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.ChronoUnit.html">ChronoUnit</a></dt>
-    <dd><p><a class="xref" href="Java.Time.Temporal.ChronoUnit.html">ChronoUnit</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></dt>
-    <dd><p><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Java_Util_Concurrent_TimeUnit_Sleep_" data-uid="Java.Util.Concurrent.TimeUnit.Sleep*"></a>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_Sleep_System_Int64_" data-uid="Java.Util.Concurrent.TimeUnit.Sleep(System.Int64)">
   Sleep(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#sleep(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#sleep(long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#sleep-long-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#sleep-long-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1192,10 +1122,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_TimedJoin_Java_Lang_Thread_System_Int64_" data-uid="Java.Util.Concurrent.TimeUnit.TimedJoin(Java.Lang.Thread,System.Int64)">
   TimedJoin(Thread, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L238"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#timedJoin(java.lang.Thread,long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#timedJoin(java.lang.Thread,long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#timedJoin-java.lang.Thread-long-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#timedJoin-java.lang.Thread-long-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1233,10 +1163,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_TimedWait_System_Object_System_Int64_" data-uid="Java.Util.Concurrent.TimeUnit.TimedWait(System.Object,System.Int64)">
   TimedWait(object, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#timedWait(java.lang.Object,long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#timedWait(java.lang.Object,long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#timedWait-java.lang.Object-long-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#timedWait-java.lang.Object-long-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1270,47 +1200,14 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
-  <a id="Java_Util_Concurrent_TimeUnit_ToChronoUnit_" data-uid="Java.Util.Concurrent.TimeUnit.ToChronoUnit*"></a>
-
-  <h3 id="Java_Util_Concurrent_TimeUnit_ToChronoUnit" data-uid="Java.Util.Concurrent.TimeUnit.ToChronoUnit">
-  ToChronoUnit()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L161"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toChronoUnit()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toChronoUnit()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ChronoUnit ToChronoUnit()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Time.Temporal.ChronoUnit.html">ChronoUnit</a></dt>
-    <dd><p><a class="xref" href="Java.Time.Temporal.ChronoUnit.html">ChronoUnit</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Java_Util_Concurrent_TimeUnit_ToDays_" data-uid="Java.Util.Concurrent.TimeUnit.ToDays*"></a>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_ToDays_System_Int64_" data-uid="Java.Util.Concurrent.TimeUnit.ToDays(System.Int64)">
   ToDays(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toDays(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toDays(long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toDays-long-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toDays-long-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1346,10 +1243,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_ToHours_System_Int64_" data-uid="Java.Util.Concurrent.TimeUnit.ToHours(System.Int64)">
   ToHours(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toHours(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toHours(long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toHours-long-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toHours-long-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1385,10 +1282,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_ToMicros_System_Int64_" data-uid="Java.Util.Concurrent.TimeUnit.ToMicros(System.Int64)">
   ToMicros(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMicros(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMicros(long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toMicros-long-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toMicros-long-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1424,10 +1321,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_ToMillis_System_Int64_" data-uid="Java.Util.Concurrent.TimeUnit.ToMillis(System.Int64)">
   ToMillis(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMillis(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMillis(long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toMillis-long-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toMillis-long-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1463,10 +1360,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_ToMinutes_System_Int64_" data-uid="Java.Util.Concurrent.TimeUnit.ToMinutes(System.Int64)">
   ToMinutes(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMinutes(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMinutes(long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toMinutes-long-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toMinutes-long-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1502,10 +1399,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_ToNanos_System_Int64_" data-uid="Java.Util.Concurrent.TimeUnit.ToNanos(System.Int64)">
   ToNanos(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toNanos(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toNanos(long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toNanos-long-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toNanos-long-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1541,10 +1438,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_ToSeconds_System_Int64_" data-uid="Java.Util.Concurrent.TimeUnit.ToSeconds(System.Int64)">
   ToSeconds(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toSeconds(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toSeconds(long)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toSeconds-long-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#toSeconds-long-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1580,10 +1477,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_ValueOf_Java_Lang_String_" data-uid="Java.Util.Concurrent.TimeUnit.ValueOf(Java.Lang.String)">
   ValueOf(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#valueOf(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#valueOf(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#valueOf-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#valueOf-java.lang.String-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1619,10 +1516,10 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_TimeUnit_Values" data-uid="Java.Util.Concurrent.TimeUnit.Values">
   Values()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#values()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#values()</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#values--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html#values--</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1652,7 +1549,7 @@ public TimeUnit(IJVMBridgeBaseInitializer initializer)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L70" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TimeUnit.cs/#L72" class="edit-link">Edit this page</a>
         </div>
 
 

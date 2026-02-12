@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ClassFileTransformer | MASES Group - JNet ">
       <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
-      <meta name="description" content="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html">
+      <meta name="description" content="https://docs.oracle.com/javase/8/docs/api/java/lang/instrument/ClassFileTransformer.html">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Lang_Instrument_ClassFileTransformer" data-uid="Java.Lang.Instrument.ClassFileTransformer" class="text-break">
-Class ClassFileTransformer  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/ClassFileTransformer.cs/#L113"><i class="bi bi-code-slash"></i></a>
+Class ClassFileTransformer  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/ClassFileTransformer.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class ClassFileTransformer  <a class="header-action link-secondary" title="View 
   <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html</a></p>
+  <div class="markdown summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/instrument/ClassFileTransformer.html">https://docs.oracle.com/javase/8/docs/api/java/lang/instrument/ClassFileTransformer.html</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -442,6 +442,12 @@ Class ClassFileTransformer  <a class="header-action link-secondary" title="View 
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
@@ -790,10 +796,10 @@ public ClassFileTransformer(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Instrument_ClassFileTransformer_Transform_Java_Lang_ClassLoader_Java_Lang_String_Java_Lang_Class_Java_Security_ProtectionDomain_System_Byte___" data-uid="Java.Lang.Instrument.ClassFileTransformer.Transform(Java.Lang.ClassLoader,Java.Lang.String,Java.Lang.Class,Java.Security.ProtectionDomain,System.Byte[])">
   Transform(ClassLoader, String, Class, ProtectionDomain, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/ClassFileTransformer.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/ClassFileTransformer.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html#transform(java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html#transform(java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/instrument/ClassFileTransformer.html#transform-java.lang.ClassLoader-java.lang.String-java.lang.Class-java.security.ProtectionDomain-byte[]-">https://docs.oracle.com/javase/8/docs/api/java/lang/instrument/ClassFileTransformer.html#transform-java.lang.ClassLoader-java.lang.String-java.lang.Class-java.security.ProtectionDomain-byte[]-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -842,70 +848,11 @@ public ClassFileTransformer(params object[] args)</code></pre>
 
 
 
-  <a id="Java_Lang_Instrument_ClassFileTransformer_Transform_" data-uid="Java.Lang.Instrument.ClassFileTransformer.Transform*"></a>
-
-  <h3 id="Java_Lang_Instrument_ClassFileTransformer_Transform_Java_Lang_Module_Java_Lang_ClassLoader_Java_Lang_String_Java_Lang_Class_Java_Security_ProtectionDomain_System_Byte___" data-uid="Java.Lang.Instrument.ClassFileTransformer.Transform(Java.Lang.Module,Java.Lang.ClassLoader,Java.Lang.String,Java.Lang.Class,Java.Security.ProtectionDomain,System.Byte[])">
-  Transform(Module, ClassLoader, String, Class, ProtectionDomain, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/ClassFileTransformer.cs/#L157"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html#transform(java.lang.Module,java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html#transform(java.lang.Module,java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[] Transform(Module arg0, ClassLoader arg1, String arg2, Class arg3, ProtectionDomain arg4, byte[] arg5)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
-</dd>
-    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
-</dd>
-    <dt><code>arg3</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
-</dd>
-    <dt><code>arg4</code> <a class="xref" href="Java.Security.ProtectionDomain.html">ProtectionDomain</a></dt>
-    <dd><p><a class="xref" href="Java.Security.ProtectionDomain.html">ProtectionDomain</a></p>
-</dd>
-    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Lang.Instrument.IllegalClassFormatException.html">IllegalClassFormatException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/ClassFileTransformer.cs/#L113" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/ClassFileTransformer.cs/#L101" class="edit-link">Edit this page</a>
         </div>
 
 

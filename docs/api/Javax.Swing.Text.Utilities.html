@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Utilities | MASES Group - JNet ">
       <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
-      <meta name="description" content="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html">
+      <meta name="description" content="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class Utilities  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html</a></p>
+  <div class="markdown summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -443,6 +443,12 @@ Class Utilities  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
     </div>
     <div>
@@ -785,17 +791,17 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <a id="Javax_Swing_Text_Utilities_DrawTabbedText_" data-uid="Javax.Swing.Text.Utilities.DrawTabbedText*"></a>
 
-  <h3 id="Javax_Swing_Text_Utilities_DrawTabbedText_Javax_Swing_Text_Segment_System_Single_System_Single_Java_Awt_Graphics2D_Javax_Swing_Text_TabExpander_System_Int32_" data-uid="Javax.Swing.Text.Utilities.DrawTabbedText(Javax.Swing.Text.Segment,System.Single,System.Single,Java.Awt.Graphics2D,Javax.Swing.Text.TabExpander,System.Int32)">
-  DrawTabbedText(Segment, float, float, Graphics2D, TabExpander, int)
+  <h3 id="Javax_Swing_Text_Utilities_DrawTabbedText_Javax_Swing_Text_Segment_System_Int32_System_Int32_Java_Awt_Graphics_Javax_Swing_Text_TabExpander_System_Int32_" data-uid="Javax.Swing.Text.Utilities.DrawTabbedText(Javax.Swing.Text.Segment,System.Int32,System.Int32,Java.Awt.Graphics,Javax.Swing.Text.TabExpander,System.Int32)">
+  DrawTabbedText(Segment, int, int, Graphics, TabExpander, int)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#drawTabbedText(javax.swing.text.Segment,float,float,java.awt.Graphics2D,javax.swing.text.TabExpander,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#drawTabbedText(javax.swing.text.Segment,float,float,java.awt.Graphics2D,javax.swing.text.TabExpander,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#drawTabbedText-javax.swing.text.Segment-int-int-java.awt.Graphics-javax.swing.text.TabExpander-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#drawTabbedText-javax.swing.text.Segment-int-int-java.awt.Graphics-javax.swing.text.TabExpander-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float DrawTabbedText(Segment arg0, float arg1, float arg2, Graphics2D arg3, TabExpander arg4, int arg5)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int DrawTabbedText(Segment arg0, int arg1, int arg2, Graphics arg3, TabExpander arg4, int arg5)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -803,14 +809,14 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
     <dt><code>arg0</code> <a class="xref" href="Javax.Swing.Text.Segment.html">Segment</a></dt>
     <dd><p><a class="xref" href="Javax.Swing.Text.Segment.html">Segment</a></p>
 </dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
-    <dt><code>arg3</code> <a class="xref" href="Java.Awt.Graphics2D.html">Graphics2D</a></dt>
-    <dd><p><a class="xref" href="Java.Awt.Graphics2D.html">Graphics2D</a></p>
+    <dt><code>arg3</code> <a class="xref" href="Java.Awt.Graphics.html">Graphics</a></dt>
+    <dd><p><a class="xref" href="Java.Awt.Graphics.html">Graphics</a></p>
 </dd>
     <dt><code>arg4</code> <a class="xref" href="Javax.Swing.Text.TabExpander.html">TabExpander</a></dt>
     <dd><p><a class="xref" href="Javax.Swing.Text.TabExpander.html">TabExpander</a></p>
@@ -822,8 +828,8 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
   </dl>
 
@@ -839,17 +845,17 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <a id="Javax_Swing_Text_Utilities_GetBreakLocation_" data-uid="Javax.Swing.Text.Utilities.GetBreakLocation*"></a>
 
-  <h3 id="Javax_Swing_Text_Utilities_GetBreakLocation_Javax_Swing_Text_Segment_Java_Awt_FontMetrics_System_Single_System_Single_Javax_Swing_Text_TabExpander_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetBreakLocation(Javax.Swing.Text.Segment,Java.Awt.FontMetrics,System.Single,System.Single,Javax.Swing.Text.TabExpander,System.Int32)">
-  GetBreakLocation(Segment, FontMetrics, float, float, TabExpander, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Javax_Swing_Text_Utilities_GetBreakLocation_Javax_Swing_Text_Segment_Java_Awt_FontMetrics_System_Int32_System_Int32_Javax_Swing_Text_TabExpander_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetBreakLocation(Javax.Swing.Text.Segment,Java.Awt.FontMetrics,System.Int32,System.Int32,Javax.Swing.Text.TabExpander,System.Int32)">
+  GetBreakLocation(Segment, FontMetrics, int, int, TabExpander, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getBreakLocation(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getBreakLocation(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getBreakLocation-javax.swing.text.Segment-java.awt.FontMetrics-int-int-javax.swing.text.TabExpander-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getBreakLocation-javax.swing.text.Segment-java.awt.FontMetrics-int-int-javax.swing.text.TabExpander-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetBreakLocation(Segment arg0, FontMetrics arg1, float arg2, float arg3, TabExpander arg4, int arg5)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetBreakLocation(Segment arg0, FontMetrics arg1, int arg2, int arg3, TabExpander arg4, int arg5)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -860,11 +866,11 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
     <dt><code>arg1</code> <a class="xref" href="Java.Awt.FontMetrics.html">FontMetrics</a></dt>
     <dd><p><a class="xref" href="Java.Awt.FontMetrics.html">FontMetrics</a></p>
 </dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
-    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
     <dt><code>arg4</code> <a class="xref" href="Javax.Swing.Text.TabExpander.html">TabExpander</a></dt>
     <dd><p><a class="xref" href="Javax.Swing.Text.TabExpander.html">TabExpander</a></p>
@@ -895,10 +901,10 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Text_Utilities_GetNextWord_Javax_Swing_Text_JTextComponent_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetNextWord(Javax.Swing.Text.JTextComponent,System.Int32)">
   GetNextWord(JTextComponent, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getNextWord(javax.swing.text.JTextComponent,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getNextWord(javax.swing.text.JTextComponent,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getNextWord-javax.swing.text.JTextComponent-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getNextWord-javax.swing.text.JTextComponent-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -942,10 +948,10 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Text_Utilities_GetParagraphElement_Javax_Swing_Text_JTextComponent_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetParagraphElement(Javax.Swing.Text.JTextComponent,System.Int32)">
   GetParagraphElement(JTextComponent, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getParagraphElement(javax.swing.text.JTextComponent,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getParagraphElement(javax.swing.text.JTextComponent,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getParagraphElement-javax.swing.text.JTextComponent-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getParagraphElement-javax.swing.text.JTextComponent-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -982,17 +988,17 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <a id="Javax_Swing_Text_Utilities_GetPositionAbove_" data-uid="Javax.Swing.Text.Utilities.GetPositionAbove*"></a>
 
-  <h3 id="Javax_Swing_Text_Utilities_GetPositionAbove_Javax_Swing_Text_JTextComponent_System_Int32_System_Single_" data-uid="Javax.Swing.Text.Utilities.GetPositionAbove(Javax.Swing.Text.JTextComponent,System.Int32,System.Single)">
-  GetPositionAbove(JTextComponent, int, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Javax_Swing_Text_Utilities_GetPositionAbove_Javax_Swing_Text_JTextComponent_System_Int32_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetPositionAbove(Javax.Swing.Text.JTextComponent,System.Int32,System.Int32)">
+  GetPositionAbove(JTextComponent, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionAbove(javax.swing.text.JTextComponent,int,float)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionAbove(javax.swing.text.JTextComponent,int,float)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getPositionAbove-javax.swing.text.JTextComponent-int-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getPositionAbove-javax.swing.text.JTextComponent-int-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetPositionAbove(JTextComponent arg0, int arg1, float arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetPositionAbove(JTextComponent arg0, int arg1, int arg2)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1003,8 +1009,8 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
     <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
   </dl>
 
@@ -1032,17 +1038,17 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <a id="Javax_Swing_Text_Utilities_GetPositionBelow_" data-uid="Javax.Swing.Text.Utilities.GetPositionBelow*"></a>
 
-  <h3 id="Javax_Swing_Text_Utilities_GetPositionBelow_Javax_Swing_Text_JTextComponent_System_Int32_System_Single_" data-uid="Javax.Swing.Text.Utilities.GetPositionBelow(Javax.Swing.Text.JTextComponent,System.Int32,System.Single)">
-  GetPositionBelow(JTextComponent, int, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Javax_Swing_Text_Utilities_GetPositionBelow_Javax_Swing_Text_JTextComponent_System_Int32_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetPositionBelow(Javax.Swing.Text.JTextComponent,System.Int32,System.Int32)">
+  GetPositionBelow(JTextComponent, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionBelow(javax.swing.text.JTextComponent,int,float)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionBelow(javax.swing.text.JTextComponent,int,float)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getPositionBelow-javax.swing.text.JTextComponent-int-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getPositionBelow-javax.swing.text.JTextComponent-int-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetPositionBelow(JTextComponent arg0, int arg1, float arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetPositionBelow(JTextComponent arg0, int arg1, int arg2)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1053,8 +1059,8 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
     <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
   </dl>
 
@@ -1084,10 +1090,10 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Text_Utilities_GetPreviousWord_Javax_Swing_Text_JTextComponent_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetPreviousWord(Javax.Swing.Text.JTextComponent,System.Int32)">
   GetPreviousWord(JTextComponent, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPreviousWord(javax.swing.text.JTextComponent,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPreviousWord(javax.swing.text.JTextComponent,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getPreviousWord-javax.swing.text.JTextComponent-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getPreviousWord-javax.swing.text.JTextComponent-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1131,10 +1137,10 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Text_Utilities_GetRowEnd_Javax_Swing_Text_JTextComponent_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetRowEnd(Javax.Swing.Text.JTextComponent,System.Int32)">
   GetRowEnd(JTextComponent, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getRowEnd(javax.swing.text.JTextComponent,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getRowEnd(javax.swing.text.JTextComponent,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getRowEnd-javax.swing.text.JTextComponent-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getRowEnd-javax.swing.text.JTextComponent-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1178,10 +1184,10 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Text_Utilities_GetRowStart_Javax_Swing_Text_JTextComponent_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetRowStart(Javax.Swing.Text.JTextComponent,System.Int32)">
   GetRowStart(JTextComponent, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getRowStart(javax.swing.text.JTextComponent,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getRowStart(javax.swing.text.JTextComponent,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getRowStart-javax.swing.text.JTextComponent-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getRowStart-javax.swing.text.JTextComponent-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1223,17 +1229,17 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <a id="Javax_Swing_Text_Utilities_GetTabbedTextOffset_" data-uid="Javax.Swing.Text.Utilities.GetTabbedTextOffset*"></a>
 
-  <h3 id="Javax_Swing_Text_Utilities_GetTabbedTextOffset_Javax_Swing_Text_Segment_Java_Awt_FontMetrics_System_Single_System_Single_Javax_Swing_Text_TabExpander_System_Int32_System_Boolean_" data-uid="Javax.Swing.Text.Utilities.GetTabbedTextOffset(Javax.Swing.Text.Segment,Java.Awt.FontMetrics,System.Single,System.Single,Javax.Swing.Text.TabExpander,System.Int32,System.Boolean)">
-  GetTabbedTextOffset(Segment, FontMetrics, float, float, TabExpander, int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Javax_Swing_Text_Utilities_GetTabbedTextOffset_Javax_Swing_Text_Segment_Java_Awt_FontMetrics_System_Int32_System_Int32_Javax_Swing_Text_TabExpander_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetTabbedTextOffset(Javax.Swing.Text.Segment,Java.Awt.FontMetrics,System.Int32,System.Int32,Javax.Swing.Text.TabExpander,System.Int32)">
+  GetTabbedTextOffset(Segment, FontMetrics, int, int, TabExpander, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextOffset(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextOffset(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int,boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getTabbedTextOffset-javax.swing.text.Segment-java.awt.FontMetrics-int-int-javax.swing.text.TabExpander-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getTabbedTextOffset-javax.swing.text.Segment-java.awt.FontMetrics-int-int-javax.swing.text.TabExpander-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetTabbedTextOffset(Segment arg0, FontMetrics arg1, float arg2, float arg3, TabExpander arg4, int arg5, bool arg6)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetTabbedTextOffset(Segment arg0, FontMetrics arg1, int arg2, int arg3, TabExpander arg4, int arg5)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1244,11 +1250,65 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
     <dt><code>arg1</code> <a class="xref" href="Java.Awt.FontMetrics.html">FontMetrics</a></dt>
     <dd><p><a class="xref" href="Java.Awt.FontMetrics.html">FontMetrics</a></p>
 </dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
-    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Javax.Swing.Text.TabExpander.html">TabExpander</a></dt>
+    <dd><p><a class="xref" href="Javax.Swing.Text.TabExpander.html">TabExpander</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_Utilities_GetTabbedTextOffset_" data-uid="Javax.Swing.Text.Utilities.GetTabbedTextOffset*"></a>
+
+  <h3 id="Javax_Swing_Text_Utilities_GetTabbedTextOffset_Javax_Swing_Text_Segment_Java_Awt_FontMetrics_System_Int32_System_Int32_Javax_Swing_Text_TabExpander_System_Int32_System_Boolean_" data-uid="Javax.Swing.Text.Utilities.GetTabbedTextOffset(Javax.Swing.Text.Segment,Java.Awt.FontMetrics,System.Int32,System.Int32,Javax.Swing.Text.TabExpander,System.Int32,System.Boolean)">
+  GetTabbedTextOffset(Segment, FontMetrics, int, int, TabExpander, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getTabbedTextOffset-javax.swing.text.Segment-java.awt.FontMetrics-int-int-javax.swing.text.TabExpander-int-boolean-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getTabbedTextOffset-javax.swing.text.Segment-java.awt.FontMetrics-int-int-javax.swing.text.TabExpander-int-boolean-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetTabbedTextOffset(Segment arg0, FontMetrics arg1, int arg2, int arg3, TabExpander arg4, int arg5, bool arg6)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Swing.Text.Segment.html">Segment</a></dt>
+    <dd><p><a class="xref" href="Javax.Swing.Text.Segment.html">Segment</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Awt.FontMetrics.html">FontMetrics</a></dt>
+    <dd><p><a class="xref" href="Java.Awt.FontMetrics.html">FontMetrics</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
     <dt><code>arg4</code> <a class="xref" href="Javax.Swing.Text.TabExpander.html">TabExpander</a></dt>
     <dd><p><a class="xref" href="Javax.Swing.Text.TabExpander.html">TabExpander</a></p>
@@ -1280,17 +1340,17 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <a id="Javax_Swing_Text_Utilities_GetTabbedTextWidth_" data-uid="Javax.Swing.Text.Utilities.GetTabbedTextWidth*"></a>
 
-  <h3 id="Javax_Swing_Text_Utilities_GetTabbedTextWidth_Javax_Swing_Text_Segment_Java_Awt_FontMetrics_System_Single_Javax_Swing_Text_TabExpander_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetTabbedTextWidth(Javax.Swing.Text.Segment,Java.Awt.FontMetrics,System.Single,Javax.Swing.Text.TabExpander,System.Int32)">
-  GetTabbedTextWidth(Segment, FontMetrics, float, TabExpander, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Javax_Swing_Text_Utilities_GetTabbedTextWidth_Javax_Swing_Text_Segment_Java_Awt_FontMetrics_System_Int32_Javax_Swing_Text_TabExpander_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetTabbedTextWidth(Javax.Swing.Text.Segment,Java.Awt.FontMetrics,System.Int32,Javax.Swing.Text.TabExpander,System.Int32)">
+  GetTabbedTextWidth(Segment, FontMetrics, int, TabExpander, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextWidth(javax.swing.text.Segment,java.awt.FontMetrics,float,javax.swing.text.TabExpander,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextWidth(javax.swing.text.Segment,java.awt.FontMetrics,float,javax.swing.text.TabExpander,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getTabbedTextWidth-javax.swing.text.Segment-java.awt.FontMetrics-int-javax.swing.text.TabExpander-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getTabbedTextWidth-javax.swing.text.Segment-java.awt.FontMetrics-int-javax.swing.text.TabExpander-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float GetTabbedTextWidth(Segment arg0, FontMetrics arg1, float arg2, TabExpander arg3, int arg4)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetTabbedTextWidth(Segment arg0, FontMetrics arg1, int arg2, TabExpander arg3, int arg4)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1301,8 +1361,8 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
     <dt><code>arg1</code> <a class="xref" href="Java.Awt.FontMetrics.html">FontMetrics</a></dt>
     <dd><p><a class="xref" href="Java.Awt.FontMetrics.html">FontMetrics</a></p>
 </dd>
-    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
     <dt><code>arg3</code> <a class="xref" href="Javax.Swing.Text.TabExpander.html">TabExpander</a></dt>
     <dd><p><a class="xref" href="Javax.Swing.Text.TabExpander.html">TabExpander</a></p>
@@ -1314,8 +1374,8 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
   </dl>
 
@@ -1333,10 +1393,10 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Text_Utilities_GetWordEnd_Javax_Swing_Text_JTextComponent_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetWordEnd(Javax.Swing.Text.JTextComponent,System.Int32)">
   GetWordEnd(JTextComponent, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L230"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getWordEnd(javax.swing.text.JTextComponent,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getWordEnd(javax.swing.text.JTextComponent,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getWordEnd-javax.swing.text.JTextComponent-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getWordEnd-javax.swing.text.JTextComponent-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1380,10 +1440,10 @@ public Utilities(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Text_Utilities_GetWordStart_Javax_Swing_Text_JTextComponent_System_Int32_" data-uid="Javax.Swing.Text.Utilities.GetWordStart(Javax.Swing.Text.JTextComponent,System.Int32)">
   GetWordStart(JTextComponent, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/Utilities.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getWordStart(javax.swing.text.JTextComponent,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getWordStart(javax.swing.text.JTextComponent,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getWordStart-javax.swing.text.JTextComponent-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#getWordStart-javax.swing.text.JTextComponent-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

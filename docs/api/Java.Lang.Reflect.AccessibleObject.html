@@ -452,6 +452,12 @@ Class AccessibleObject  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
     </div>
     <div>
@@ -632,10 +638,10 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Reflect_AccessibleObject_Annotations" data-uid="Java.Lang.Reflect.AccessibleObject.Annotations">
   Annotations
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotations()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotations()</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getAnnotations--">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getAnnotations--</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -696,10 +702,10 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Reflect_AccessibleObject_DeclaredAnnotations" data-uid="Java.Lang.Reflect.AccessibleObject.DeclaredAnnotations">
   DeclaredAnnotations
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotations()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotations()</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotations--">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotations--</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -714,38 +720,6 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Java.Lang.Annotation.Annotation.html">Annotation</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Reflect_AccessibleObject_IsAccessible_" data-uid="Java.Lang.Reflect.AccessibleObject.IsAccessible*"></a>
-
-  <h3 id="Java_Lang_Reflect_AccessibleObject_IsAccessible" data-uid="Java.Lang.Reflect.AccessibleObject.IsAccessible">
-  IsAccessible
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Reflect/AccessibleObject.cs/#L65"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Get the value of the accessible flag for this object.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsAccessible { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -888,53 +862,14 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 </h2>
 
 
-  <a id="Java_Lang_Reflect_AccessibleObject_CanAccess_" data-uid="Java.Lang.Reflect.AccessibleObject.CanAccess*"></a>
-
-  <h3 id="Java_Lang_Reflect_AccessibleObject_CanAccess_System_Object_" data-uid="Java.Lang.Reflect.AccessibleObject.CanAccess(System.Object)">
-  CanAccess(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L166"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#canAccess(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#canAccess(java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanAccess(object arg0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Java_Lang_Reflect_AccessibleObject_GetAnnotation_" data-uid="Java.Lang.Reflect.AccessibleObject.GetAnnotation*"></a>
 
   <h3 id="Java_Lang_Reflect_AccessibleObject_GetAnnotation__1_Java_Lang_Class_" data-uid="Java.Lang.Reflect.AccessibleObject.GetAnnotation``1(Java.Lang.Class)">
   GetAnnotation&lt;T&gt;(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotation(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotation(java.lang.Class)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getAnnotation-java.lang.Class-">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getAnnotation-java.lang.Class-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1018,10 +953,10 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Reflect_AccessibleObject_GetAnnotationsByType__1_Java_Lang_Class_" data-uid="Java.Lang.Reflect.AccessibleObject.GetAnnotationsByType``1(Java.Lang.Class)">
   GetAnnotationsByType&lt;T&gt;(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotationsByType(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotationsByType(java.lang.Class)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getAnnotationsByType-java.lang.Class-">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getAnnotationsByType-java.lang.Class-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1105,10 +1040,10 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Reflect_AccessibleObject_GetDeclaredAnnotation__1_Java_Lang_Class_" data-uid="Java.Lang.Reflect.AccessibleObject.GetDeclaredAnnotation``1(Java.Lang.Class)">
   GetDeclaredAnnotation&lt;T&gt;(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotation(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotation(java.lang.Class)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotation-java.lang.Class-">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotation-java.lang.Class-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1192,10 +1127,10 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Reflect_AccessibleObject_GetDeclaredAnnotationsByType__1_Java_Lang_Class_" data-uid="Java.Lang.Reflect.AccessibleObject.GetDeclaredAnnotationsByType``1(Java.Lang.Class)">
   GetDeclaredAnnotationsByType&lt;T&gt;(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotationsByType(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotationsByType(java.lang.Class)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotationsByType-java.lang.Class-">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotationsByType-java.lang.Class-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1275,14 +1210,47 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
+  <a id="Java_Lang_Reflect_AccessibleObject_IsAccessible_" data-uid="Java.Lang.Reflect.AccessibleObject.IsAccessible*"></a>
+
+  <h3 id="Java_Lang_Reflect_AccessibleObject_IsAccessible" data-uid="Java.Lang.Reflect.AccessibleObject.IsAccessible">
+  IsAccessible()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#isAccessible--">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#isAccessible--</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAccessible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Lang_Reflect_AccessibleObject_IsAnnotationPresent_" data-uid="Java.Lang.Reflect.AccessibleObject.IsAnnotationPresent*"></a>
 
   <h3 id="Java_Lang_Reflect_AccessibleObject_IsAnnotationPresent_Java_Lang_Class_" data-uid="Java.Lang.Reflect.AccessibleObject.IsAnnotationPresent(Java.Lang.Class)">
   IsAnnotationPresent(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#isAnnotationPresent(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#isAnnotationPresent(java.lang.Class)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#isAnnotationPresent-java.lang.Class-">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#isAnnotationPresent-java.lang.Class-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1318,7 +1286,7 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Reflect_AccessibleObject_IsAnnotationPresent__1_Java_Lang_Class___0__" data-uid="Java.Lang.Reflect.AccessibleObject.IsAnnotationPresent``1(Java.Lang.Class{``0})">
   IsAnnotationPresent&lt;T&gt;(Class&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Reflect/AccessibleObject.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Reflect/AccessibleObject.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if an annotation for the specified type is present on this element, else <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
@@ -1360,10 +1328,10 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Reflect_AccessibleObject_SetAccessible_Java_Lang_Reflect_AccessibleObject___System_Boolean_" data-uid="Java.Lang.Reflect.AccessibleObject.SetAccessible(Java.Lang.Reflect.AccessibleObject[],System.Boolean)">
   SetAccessible(AccessibleObject[], bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(java.lang.reflect.AccessibleObject[],boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(java.lang.reflect.AccessibleObject[],boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#setAccessible-java.lang.reflect.AccessibleObject[]-boolean-">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#setAccessible-java.lang.reflect.AccessibleObject[]-boolean-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1389,6 +1357,11 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -1396,10 +1369,10 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Reflect_AccessibleObject_SetAccessible_System_Boolean_" data-uid="Java.Lang.Reflect.AccessibleObject.SetAccessible(System.Boolean)">
   SetAccessible(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#setAccessible-boolean-">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html#setAccessible-boolean-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1422,39 +1395,11 @@ public AccessibleObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
-
-
-
-  <a id="Java_Lang_Reflect_AccessibleObject_TrySetAccessible_" data-uid="Java.Lang.Reflect.AccessibleObject.TrySetAccessible*"></a>
-
-  <h3 id="Java_Lang_Reflect_AccessibleObject_TrySetAccessible" data-uid="Java.Lang.Reflect.AccessibleObject.TrySetAccessible">
-  TrySetAccessible()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/AccessibleObject.cs/#L174"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#trySetAccessible()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#trySetAccessible()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TrySetAccessible()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
+  <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
-</dd>
+    <dt><a class="xref" href="Java.Lang.SecurityException.html">SecurityException</a></dt>
+    <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
 
 
 

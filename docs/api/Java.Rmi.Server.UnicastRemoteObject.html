@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UnicastRemoteObject | MASES Group - JNet ">
       <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
-      <meta name="description" content="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html">
+      <meta name="description" content="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class UnicastRemoteObject  <a class="header-action link-secondary" title="View s
   <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html</a></p>
+  <div class="markdown summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -463,6 +463,12 @@ Class UnicastRemoteObject  <a class="header-action link-secondary" title="View s
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
     </div>
     <div>
@@ -807,10 +813,10 @@ public UnicastRemoteObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Rmi_Server_UnicastRemoteObject_ExportObject_Java_Rmi_Remote_System_Int32_" data-uid="Java.Rmi.Server.UnicastRemoteObject.ExportObject(Java.Rmi.Remote,System.Int32)">
   ExportObject(Remote, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/UnicastRemoteObject.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/UnicastRemoteObject.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html#exportObject-java.rmi.Remote-int-">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html#exportObject-java.rmi.Remote-int-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -852,62 +858,12 @@ public UnicastRemoteObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <a id="Java_Rmi_Server_UnicastRemoteObject_ExportObject_" data-uid="Java.Rmi.Server.UnicastRemoteObject.ExportObject*"></a>
 
-  <h3 id="Java_Rmi_Server_UnicastRemoteObject_ExportObject_Java_Rmi_Remote_System_Int32_Java_Io_ObjectInputFilter_" data-uid="Java.Rmi.Server.UnicastRemoteObject.ExportObject(Java.Rmi.Remote,System.Int32,Java.Io.ObjectInputFilter)">
-  ExportObject(Remote, int, ObjectInputFilter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/UnicastRemoteObject.cs/#L104"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.io.ObjectInputFilter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.io.ObjectInputFilter)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Remote ExportObject(Remote arg0, int arg1, ObjectInputFilter arg2)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Rmi.Remote.html">Remote</a></dt>
-    <dd><p><a class="xref" href="Java.Rmi.Remote.html">Remote</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-    <dt><code>arg2</code> <a class="xref" href="Java.Io.ObjectInputFilter.html">ObjectInputFilter</a></dt>
-    <dd><p><a class="xref" href="Java.Io.ObjectInputFilter.html">ObjectInputFilter</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Rmi.Remote.html">Remote</a></dt>
-    <dd><p><a class="xref" href="Java.Rmi.Remote.html">Remote</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Rmi.RemoteException.html">RemoteException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-  <a id="Java_Rmi_Server_UnicastRemoteObject_ExportObject_" data-uid="Java.Rmi.Server.UnicastRemoteObject.ExportObject*"></a>
-
   <h3 id="Java_Rmi_Server_UnicastRemoteObject_ExportObject_Java_Rmi_Remote_System_Int32_Java_Rmi_Server_RMIClientSocketFactory_Java_Rmi_Server_RMIServerSocketFactory_" data-uid="Java.Rmi.Server.UnicastRemoteObject.ExportObject(Java.Rmi.Remote,System.Int32,Java.Rmi.Server.RMIClientSocketFactory,Java.Rmi.Server.RMIServerSocketFactory)">
   ExportObject(Remote, int, RMIClientSocketFactory, RMIServerSocketFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/UnicastRemoteObject.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/UnicastRemoteObject.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)">https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html#exportObject-java.rmi.Remote-int-java.rmi.server.RMIClientSocketFactory-java.rmi.server.RMIServerSocketFactory-">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html#exportObject-java.rmi.Remote-int-java.rmi.server.RMIClientSocketFactory-java.rmi.server.RMIServerSocketFactory-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -953,62 +909,6 @@ public UnicastRemoteObject(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
-  <a id="Java_Rmi_Server_UnicastRemoteObject_ExportObject_" data-uid="Java.Rmi.Server.UnicastRemoteObject.ExportObject*"></a>
-
-  <h3 id="Java_Rmi_Server_UnicastRemoteObject_ExportObject_Java_Rmi_Remote_System_Int32_Java_Rmi_Server_RMIClientSocketFactory_Java_Rmi_Server_RMIServerSocketFactory_Java_Io_ObjectInputFilter_" data-uid="Java.Rmi.Server.UnicastRemoteObject.ExportObject(Java.Rmi.Remote,System.Int32,Java.Rmi.Server.RMIClientSocketFactory,Java.Rmi.Server.RMIServerSocketFactory,Java.Io.ObjectInputFilter)">
-  ExportObject(Remote, int, RMIClientSocketFactory, RMIServerSocketFactory, ObjectInputFilter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/UnicastRemoteObject.cs/#L118"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.io.ObjectInputFilter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.io.ObjectInputFilter)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Remote ExportObject(Remote arg0, int arg1, RMIClientSocketFactory arg2, RMIServerSocketFactory arg3, ObjectInputFilter arg4)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Rmi.Remote.html">Remote</a></dt>
-    <dd><p><a class="xref" href="Java.Rmi.Remote.html">Remote</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
-</dd>
-    <dt><code>arg2</code> <a class="xref" href="Java.Rmi.Server.RMIClientSocketFactory.html">RMIClientSocketFactory</a></dt>
-    <dd><p><a class="xref" href="Java.Rmi.Server.RMIClientSocketFactory.html">RMIClientSocketFactory</a></p>
-</dd>
-    <dt><code>arg3</code> <a class="xref" href="Java.Rmi.Server.RMIServerSocketFactory.html">RMIServerSocketFactory</a></dt>
-    <dd><p><a class="xref" href="Java.Rmi.Server.RMIServerSocketFactory.html">RMIServerSocketFactory</a></p>
-</dd>
-    <dt><code>arg4</code> <a class="xref" href="Java.Io.ObjectInputFilter.html">ObjectInputFilter</a></dt>
-    <dd><p><a class="xref" href="Java.Io.ObjectInputFilter.html">ObjectInputFilter</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Rmi.Remote.html">Remote</a></dt>
-    <dd><p><a class="xref" href="Java.Rmi.Remote.html">Remote</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Rmi.RemoteException.html">RemoteException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
   <a id="Java_Rmi_Server_UnicastRemoteObject_UnexportObject_" data-uid="Java.Rmi.Server.UnicastRemoteObject.UnexportObject*"></a>
 
   <h3 id="Java_Rmi_Server_UnicastRemoteObject_UnexportObject_Java_Rmi_Remote_System_Boolean_" data-uid="Java.Rmi.Server.UnicastRemoteObject.UnexportObject(Java.Rmi.Remote,System.Boolean)">
@@ -1016,7 +916,7 @@ public UnicastRemoteObject(IJVMBridgeBaseInitializer initializer)</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/UnicastRemoteObject.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#unexportObject(java.rmi.Remote,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#unexportObject(java.rmi.Remote,boolean)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html#unexportObject-java.rmi.Remote-boolean-">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html#unexportObject-java.rmi.Remote-boolean-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

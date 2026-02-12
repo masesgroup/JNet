@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IConnectionPoolDataSource | MASES Group - JNet ">
       <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
-      <meta name="description" content=".NET interface skeleton to be manually developed following https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html">
+      <meta name="description" content=".NET interface skeleton to be manually developed following https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionPoolDataSource.html">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Interface IConnectionPoolDataSource  <a class="header-action link-secondary" tit
   <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>.NET interface skeleton to be manually developed following <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html</a></p>
+  <div class="markdown summary"><p>.NET interface skeleton to be manually developed following <a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionPoolDataSource.html">https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionPoolDataSource.html</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -115,10 +115,13 @@ Interface IConnectionPoolDataSource  <a class="header-action link-secondary" tit
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Javax.Sql.ICommonDataSource.html#Javax_Sql_ICommonDataSource_ParentLogger">ICommonDataSource.ParentLogger</a>
+      <a class="xref" href="Javax.Sql.ICommonDataSource.html#Javax_Sql_ICommonDataSource_LoginTimeout">ICommonDataSource.LoginTimeout</a>
     </div>
     <div>
-      <a class="xref" href="Javax.Sql.ICommonDataSource.html#Javax_Sql_ICommonDataSource_CreateShardingKeyBuilder">ICommonDataSource.CreateShardingKeyBuilder()</a>
+      <a class="xref" href="Javax.Sql.ICommonDataSource.html#Javax_Sql_ICommonDataSource_LogWriter">ICommonDataSource.LogWriter</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Sql.ICommonDataSource.html#Javax_Sql_ICommonDataSource_ParentLogger">ICommonDataSource.ParentLogger</a>
     </div>
   </dd></dl>
 
@@ -131,78 +134,14 @@ Interface IConnectionPoolDataSource  <a class="header-action link-secondary" tit
 </h2>
 
 
-  <a id="Javax_Sql_IConnectionPoolDataSource_LogWriter_" data-uid="Javax.Sql.IConnectionPoolDataSource.LogWriter*"></a>
-
-  <h3 id="Javax_Sql_IConnectionPoolDataSource_LogWriter" data-uid="Javax.Sql.IConnectionPoolDataSource.LogWriter">
-  LogWriter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/ConnectionPoolDataSource.cs/#L85"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getLogWriter()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getLogWriter()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#setLogWriter(java.io.PrintWriter)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#setLogWriter(java.io.PrintWriter)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">PrintWriter LogWriter { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Io.PrintWriter.html">PrintWriter</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Javax_Sql_IConnectionPoolDataSource_LoginTimeout_" data-uid="Javax.Sql.IConnectionPoolDataSource.LoginTimeout*"></a>
-
-  <h3 id="Javax_Sql_IConnectionPoolDataSource_LoginTimeout" data-uid="Javax.Sql.IConnectionPoolDataSource.LoginTimeout">
-  LoginTimeout
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/ConnectionPoolDataSource.cs/#L81"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getLoginTimeout()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getLoginTimeout()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#setLoginTimeout(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#setLoginTimeout(int)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int LoginTimeout { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="Javax_Sql_IConnectionPoolDataSource_PooledConnection_" data-uid="Javax.Sql.IConnectionPoolDataSource.PooledConnection*"></a>
 
   <h3 id="Javax_Sql_IConnectionPoolDataSource_PooledConnection" data-uid="Javax.Sql.IConnectionPoolDataSource.PooledConnection">
   PooledConnection
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/ConnectionPoolDataSource.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/ConnectionPoolDataSource.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection()</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionPoolDataSource.html#getPooledConnection--">https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionPoolDataSource.html#getPooledConnection--</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -231,52 +170,14 @@ Interface IConnectionPoolDataSource  <a class="header-action link-secondary" tit
 </h2>
 
 
-  <a id="Javax_Sql_IConnectionPoolDataSource_CreatePooledConnectionBuilder_" data-uid="Javax.Sql.IConnectionPoolDataSource.CreatePooledConnectionBuilder*"></a>
-
-  <h3 id="Javax_Sql_IConnectionPoolDataSource_CreatePooledConnectionBuilder" data-uid="Javax.Sql.IConnectionPoolDataSource.CreatePooledConnectionBuilder">
-  CreatePooledConnectionBuilder()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/ConnectionPoolDataSource.cs/#L103"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#createPooledConnectionBuilder()">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#createPooledConnectionBuilder()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">PooledConnectionBuilder CreatePooledConnectionBuilder()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Javax.Sql.PooledConnectionBuilder.html">PooledConnectionBuilder</a></dt>
-    <dd><p><a class="xref" href="Javax.Sql.PooledConnectionBuilder.html">PooledConnectionBuilder</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Sql.SQLException.html">SQLException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
   <a id="Javax_Sql_IConnectionPoolDataSource_GetPooledConnection_" data-uid="Javax.Sql.IConnectionPoolDataSource.GetPooledConnection*"></a>
 
   <h3 id="Javax_Sql_IConnectionPoolDataSource_GetPooledConnection_Java_Lang_String_Java_Lang_String_" data-uid="Javax.Sql.IConnectionPoolDataSource.GetPooledConnection(Java.Lang.String,Java.Lang.String)">
   GetPooledConnection(String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/ConnectionPoolDataSource.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/ConnectionPoolDataSource.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection(java.lang.String,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection(java.lang.String,java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionPoolDataSource.html#getPooledConnection-java.lang.String-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionPoolDataSource.html#getPooledConnection-java.lang.String-java.lang.String-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
