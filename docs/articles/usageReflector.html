@@ -164,26 +164,34 @@ The command line interface uses the following command line:</p>
   &quot;JavaListenerBasePackage&quot;: &quot;org.mases.jnet.generated&quot;,
   &quot;PreferMethodWithSignature&quot;: true,
   &quot;OnlyPropertiesForGetterSetter&quot;: true,
-  &quot;ModulesToParse&quot;: [
-    &quot;org.*&quot;,
-    &quot;java.*&quot;
+  &quot;JarList&quot;: [
+    &quot;rt.jar&quot;
   ],
-  &quot;OriginJavadocUrl&quot;: &quot;https://docs.oracle.com/en/java/javase/11/docs/api/&quot;,
-  &quot;JavadocVersion&quot;: 11,
+  &quot;OriginJavadocJARVersionAndUrls&quot;: [
+    {
+      &quot;Version&quot;: 8,
+      &quot;Url&quot;: &quot;https://docs.oracle.com/javase/8/docs/api/&quot;
+    }
+  ],
   &quot;NamespacesToAvoid&quot;: [
     &quot;org.jcp.xml.dsig.internal&quot;,
     &quot;com.oracle&quot;,
     &quot;com.sun&quot;,
+    &quot;java.awt.peer&quot;,
+    &quot;javax.crypto&quot;,
+    &quot;jdk&quot;,
     &quot;org.mases&quot;,
     &quot;org.junit&quot;,
     &quot;org.hamcrest&quot;,
     &quot;org.burningwave&quot;,
     &quot;org.graalvm&quot;,
+    &quot;org.omg&quot;,
     &quot;org.slf4j&quot;,
-    &quot;java.awt.peer&quot;
+    &quot;sun&quot;
   ],
   &quot;ClassesToBeListener&quot;: [
     &quot;java.lang.Runnable&quot;,
+    &quot;java.util.concurrent.Callable&quot;,
     &quot;javax.swing.Action&quot;,
     &quot;javax.management.NotificationFilter&quot;
   ],
@@ -220,7 +228,9 @@ The command line interface uses the following command line:</p>
     &quot;javax.swing.plaf.basic.BasicSliderUI$TrackListener&quot;,
     &quot;javax.swing.plaf.basic.BasicScrollPaneUI$VSBChangeListener&quot;,
     &quot;javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener&quot;,
-    &quot;javax.tools.DiagnosticListener&quot;
+    &quot;javax.tools.DiagnosticListener&quot;,
+    &quot;javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter&quot;,
+    &quot;javax.xml.soap.SAAJResult&quot;
   ],
   &quot;NamespacesInConflict&quot;: [
     &quot;java.lang.module&quot;,

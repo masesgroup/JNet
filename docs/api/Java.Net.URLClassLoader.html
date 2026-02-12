@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class URLClassLoader | MASES Group - JNet ">
       <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
-      <meta name="description" content="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html">
+      <meta name="description" content="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class URLClassLoader  <a class="header-action link-secondary" title="View source
   <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html</a></p>
+  <div class="markdown summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html">https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -145,9 +145,6 @@ Class URLClassLoader  <a class="header-action link-secondary" title="View source
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_PlatformClassLoader">ClassLoader.PlatformClassLoader</a>
-    </div>
-    <div>
       <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_SystemClassLoader">ClassLoader.SystemClassLoader</a>
     </div>
     <div>
@@ -160,22 +157,7 @@ Class URLClassLoader  <a class="header-action link-secondary" title="View source
       <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_GetSystemResources_Java_Lang_String_">ClassLoader.GetSystemResources(String)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_DefinedPackages">ClassLoader.DefinedPackages</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_Name">ClassLoader.Name</a>
-    </div>
-    <div>
       <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_Parent">ClassLoader.Parent</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_UnnamedModule">ClassLoader.UnnamedModule</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_IsRegisteredAsParallelCapable">ClassLoader.IsRegisteredAsParallelCapable()</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_GetDefinedPackage_Java_Lang_String_">ClassLoader.GetDefinedPackage(String)</a>
     </div>
     <div>
       <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_GetResourceAsStream_Java_Lang_String_">ClassLoader.GetResourceAsStream(String)</a>
@@ -188,9 +170,6 @@ Class URLClassLoader  <a class="header-action link-secondary" title="View source
     </div>
     <div>
       <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_GetResources_Java_Lang_String_">ClassLoader.GetResources(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_Resources_Java_Lang_String_">ClassLoader.Resources(String)</a>
     </div>
     <div>
       <a class="xref" href="Java.Lang.ClassLoader.html#Java_Lang_ClassLoader_ClearAssertionStatus">ClassLoader.ClearAssertionStatus()</a>
@@ -511,6 +490,12 @@ Class URLClassLoader  <a class="header-action link-secondary" title="View source
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
     </div>
     <div>
@@ -620,93 +605,12 @@ Class URLClassLoader  <a class="header-action link-secondary" title="View source
 
   <a id="Java_Net_URLClassLoader__ctor_" data-uid="Java.Net.URLClassLoader.#ctor*"></a>
 
-  <h3 id="Java_Net_URLClassLoader__ctor_Java_Lang_String_Java_Net_URL___Java_Lang_ClassLoader_" data-uid="Java.Net.URLClassLoader.#ctor(Java.Lang.String,Java.Net.URL[],Java.Lang.ClassLoader)">
-  URLClassLoader(String, URL[], ClassLoader)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L90"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public URLClassLoader(String arg0, URL[] arg1, ClassLoader arg2)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="Java.Net.URL.html">URL</a>[]</dt>
-    <dd><p><a class="xref" href="Java.Net.URL.html">URL</a></p>
-</dd>
-    <dt><code>arg2</code> <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Net_URLClassLoader__ctor_" data-uid="Java.Net.URLClassLoader.#ctor*"></a>
-
-  <h3 id="Java_Net_URLClassLoader__ctor_Java_Lang_String_Java_Net_URL___Java_Lang_ClassLoader_Java_Net_URLStreamHandlerFactory_" data-uid="Java.Net.URLClassLoader.#ctor(Java.Lang.String,Java.Net.URL[],Java.Lang.ClassLoader,Java.Net.URLStreamHandlerFactory)">
-  URLClassLoader(String, URL[], ClassLoader, URLStreamHandlerFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L80"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public URLClassLoader(String arg0, URL[] arg1, ClassLoader arg2, URLStreamHandlerFactory arg3)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="Java.Net.URL.html">URL</a>[]</dt>
-    <dd><p><a class="xref" href="Java.Net.URL.html">URL</a></p>
-</dd>
-    <dt><code>arg2</code> <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
-</dd>
-    <dt><code>arg3</code> <a class="xref" href="Java.Net.URLStreamHandlerFactory.html">URLStreamHandlerFactory</a></dt>
-    <dd><p><a class="xref" href="Java.Net.URLStreamHandlerFactory.html">URLStreamHandlerFactory</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Net_URLClassLoader__ctor_" data-uid="Java.Net.URLClassLoader.#ctor*"></a>
-
   <h3 id="Java_Net_URLClassLoader__ctor_Java_Net_URL___" data-uid="Java.Net.URLClassLoader.#ctor(Java.Net.URL[])">
   URLClassLoader(URL[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#java.net.URLClassLoader(java.net.URL[])">https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#java.net.URLClassLoader(java.net.URL[])</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -736,10 +640,10 @@ Class URLClassLoader  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Net_URLClassLoader__ctor_Java_Net_URL___Java_Lang_ClassLoader_" data-uid="Java.Net.URLClassLoader.#ctor(Java.Net.URL[],Java.Lang.ClassLoader)">
   URLClassLoader(URL[], ClassLoader)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#java.net.URLClassLoader(java.net.URL[],java.lang.ClassLoader)">https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#java.net.URLClassLoader(java.net.URL[],java.lang.ClassLoader)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -772,10 +676,10 @@ Class URLClassLoader  <a class="header-action link-secondary" title="View source
 
   <h3 id="Java_Net_URLClassLoader__ctor_Java_Net_URL___Java_Lang_ClassLoader_Java_Net_URLStreamHandlerFactory_" data-uid="Java.Net.URLClassLoader.#ctor(Java.Net.URL[],Java.Lang.ClassLoader,Java.Net.URLStreamHandlerFactory)">
   URLClassLoader(URL[], ClassLoader, URLStreamHandlerFactory)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#java.net.URLClassLoader(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)">https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#java.net.URLClassLoader(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1040,10 +944,10 @@ public URLClassLoader(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Net_URLClassLoader_URLs" data-uid="Java.Net.URLClassLoader.URLs">
   URLs
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#getURLs()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#getURLs()</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#getURLs--">https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#getURLs--</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1076,10 +980,10 @@ public URLClassLoader(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Net_URLClassLoader_Close" data-uid="Java.Net.URLClassLoader.Close">
   Close()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#close()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#close()</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#close--">https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#close--</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1108,10 +1012,10 @@ public URLClassLoader(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Net_URLClassLoader_FindResource_Java_Lang_String_" data-uid="Java.Net.URLClassLoader.FindResource(Java.Lang.String)">
   FindResource(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#findResource(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#findResource(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#findResource-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#findResource-java.lang.String-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1147,10 +1051,10 @@ public URLClassLoader(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Net_URLClassLoader_FindResources_Java_Lang_String_" data-uid="Java.Net.URLClassLoader.FindResources(Java.Lang.String)">
   FindResources(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#findResources(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#findResources(java.lang.String)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#findResources-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#findResources-java.lang.String-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1191,10 +1095,10 @@ public URLClassLoader(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Net_URLClassLoader_NewInstance_Java_Net_URL___" data-uid="Java.Net.URLClassLoader.NewInstance(Java.Net.URL[])">
   NewInstance(URL[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#newInstance(java.net.URL[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#newInstance(java.net.URL[])</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#newInstance-java.net.URL[]-">https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#newInstance-java.net.URL[]-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1230,10 +1134,10 @@ public URLClassLoader(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Net_URLClassLoader_NewInstance_Java_Net_URL___Java_Lang_ClassLoader_" data-uid="Java.Net.URLClassLoader.NewInstance(Java.Net.URL[],Java.Lang.ClassLoader)">
   NewInstance(URL[], ClassLoader)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#newInstance(java.net.URL[],java.lang.ClassLoader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#newInstance(java.net.URL[],java.lang.ClassLoader)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#newInstance-java.net.URL[]-java.lang.ClassLoader-">https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#newInstance-java.net.URL[]-java.lang.ClassLoader-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1276,7 +1180,7 @@ public URLClassLoader(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Net_URLClassLoader_op_Implicit_Java_Net_URLClassLoader__Java_Io_Closeable" data-uid="Java.Net.URLClassLoader.op_Implicit(Java.Net.URLClassLoader)~Java.Io.Closeable">
   implicit operator Closeable(URLClassLoader)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Net/URLClassLoader.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Net.URLClassLoader.html">URLClassLoader</a> to <a class="xref" href="Java.Io.Closeable.html">Closeable</a></p>

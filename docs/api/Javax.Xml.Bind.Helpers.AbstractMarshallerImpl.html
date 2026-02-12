@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class AbstractMarshallerImpl | MASES Group - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AbstractMarshallerImpl | MASES Group - JNet ">
+      <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
+      <meta name="description" content="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Xml_Bind_Helpers_AbstractMarshallerImpl.md&amp;value=---%0Auid%3A%20Javax.Xml.Bind.Helpers.AbstractMarshallerImpl%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl">
+
+
+
+  <h1 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl" class="text-break">
+Class AbstractMarshallerImpl  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Javax.html">Javax</a>.<a class="xref" href="Javax.Xml.html">Xml</a>.<a class="xref" href="Javax.Xml.Bind.html">Bind</a>.<a class="xref" href="Javax.Xml.Bind.Helpers.html">Helpers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AbstractMarshallerImpl : Marshaller, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IMarshaller</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Javax.Xml.Bind.Marshaller.html">Marshaller</a>&gt;</div>
+      <div><a class="xref" href="Javax.Xml.Bind.Marshaller.html">Marshaller</a></div>
+      <div><span class="xref">AbstractMarshallerImpl</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+      <div><a class="xref" href="Javax.Xml.Bind.IMarshaller.html">IMarshaller</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Javax.Xml.Bind.Marshaller.html#Javax_Xml_Bind_Marshaller_JAXB_ENCODING">Marshaller.JAXB_ENCODING</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Xml.Bind.Marshaller.html#Javax_Xml_Bind_Marshaller_JAXB_FORMATTED_OUTPUT">Marshaller.JAXB_FORMATTED_OUTPUT</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Xml.Bind.Marshaller.html#Javax_Xml_Bind_Marshaller_JAXB_FRAGMENT">Marshaller.JAXB_FRAGMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Xml.Bind.Marshaller.html#Javax_Xml_Bind_Marshaller_JAXB_NO_NAMESPACE_SCHEMA_LOCATION">Marshaller.JAXB_NO_NAMESPACE_SCHEMA_LOCATION</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Xml.Bind.Marshaller.html#Javax_Xml_Bind_Marshaller_JAXB_SCHEMA_LOCATION">Marshaller.JAXB_SCHEMA_LOCATION</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Xml.Bind.Marshaller.html#Javax_Xml_Bind_Marshaller_GetListener">Marshaller.GetListener</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Xml.Bind.Marshaller.html#Javax_Xml_Bind_Marshaller_Marshal_System_Object_Javax_Xml_Transform_Result_">Marshaller.Marshal(object, Result)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Xml.Bind.Marshaller.html#Javax_Xml_Bind_Marshaller_SetListener_Javax_Xml_Bind_Marshaller_Listener_">Marshaller.SetListener(Marshaller.Listener)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_IsAssignableFrom_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaType_">JVMBridgeBase&lt;Marshaller&gt;.IsAssignableFrom(IJavaType)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_IsAssignableFrom__1">JVMBridgeBase&lt;Marshaller&gt;.IsAssignableFrom&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Marshaller&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Marshaller&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_Execute__1___0___">JVMBridgeBase&lt;Marshaller&gt;.Execute&lt;T&gt;(params T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_DynBridgeClazz">JVMBridgeBase&lt;Marshaller&gt;.DynBridgeClazz</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Marshaller&gt;.BridgeClazz</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassOf__1">JVMBridgeBase.ClassOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_WrapsDirect__1_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wraps__1_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wraps__2_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wraps__3_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_MonitorEnter">JVMBridgeBase.MonitorEnter()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_MonitorExit">JVMBridgeBase.MonitorExit()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInstanceOf_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaType_">JVMBridgeBase.IsInstanceOf(IJavaType)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInstanceOf__1">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeIsInstanceOf__1">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_CastTo__1">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_CastDirect__1">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_GetHashCode">JVMBridgeBase.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Notify">JVMBridgeBase.Notify()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_NotifyAll">JVMBridgeBase.NotifyAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wait">JVMBridgeBase.Wait()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeInstance">JVMBridgeBase.BridgeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeListener">JVMBridgeBase.IsBridgeListener</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl__ctor_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.#ctor*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl__ctor" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.#ctor">
+  AbstractMarshallerImpl()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;AbstractMarshallerImpl class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public AbstractMarshallerImpl()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl__ctor_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.#ctor*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  AbstractMarshallerImpl(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public AbstractMarshallerImpl(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl__ctor_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.#ctor*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl__ctor_System_Object___" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.#ctor(System.Object[])">
+  AbstractMarshallerImpl(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;AbstractMarshallerImpl class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public AbstractMarshallerImpl(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_AttachmentMarshaller_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.AttachmentMarshaller*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_AttachmentMarshaller" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.AttachmentMarshaller">
+  AttachmentMarshaller
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getAttachmentMarshaller--">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getAttachmentMarshaller--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setAttachmentMarshaller-javax.xml.bind.attachment.AttachmentMarshaller-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setAttachmentMarshaller-javax.xml.bind.attachment.AttachmentMarshaller-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttachmentMarshaller AttachmentMarshaller { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.Attachment.AttachmentMarshaller.html">AttachmentMarshaller</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_BridgeClassName_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.BridgeClassName*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_BridgeClassName" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_EventHandler_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.EventHandler*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_EventHandler" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.EventHandler">
+  EventHandler
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getEventHandler--">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getEventHandler--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setEventHandler-javax.xml.bind.ValidationEventHandler-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setEventHandler-javax.xml.bind.ValidationEventHandler-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValidationEventHandler EventHandler { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.ValidationEventHandler.html">ValidationEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_IsBridgeAbstract_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.IsBridgeAbstract*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_IsBridgeAbstract" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_IsBridgeCloseable_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.IsBridgeCloseable*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_IsBridgeCloseable" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_IsBridgeInterface_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.IsBridgeInterface*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_IsBridgeInterface" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_IsBridgeStatic_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.IsBridgeStatic*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_IsBridgeStatic" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Listener_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Listener*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Listener" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Listener">
+  Listener
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getListener--">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getListener--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setListener-javax.xml.bind.Marshaller.Listener-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setListener-javax.xml.bind.Marshaller.Listener-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Marshaller.Listener Listener { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.Marshaller.html">Marshaller</a>.<a class="xref" href="Javax.Xml.Bind.Marshaller.Listener.html">Listener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Schema_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Schema*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Schema" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Schema">
+  Schema
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getSchema--">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getSchema--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setSchema-javax.xml.validation.Schema-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setSchema-javax.xml.validation.Schema-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Schema Schema { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Validation.Schema.html">Schema</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_GetAdapter_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.GetAdapter*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_GetAdapter__1_Java_Lang_Class_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.GetAdapter``1(Java.Lang.Class)">
+  GetAdapter&lt;A&gt;(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getAdapter-java.lang.Class-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getAdapter-java.lang.Class-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public A GetAdapter&lt;A&gt;(Class arg0) where A : XmlAdapter</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">A</span></dt>
+    <dd><p><code class="typeparamref">A</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code></dt>
+    <dd><p><a class="xref" href="Javax.Xml.Bind.Annotation.Adapters.XmlAdapter.html">XmlAdapter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_GetNode_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.GetNode*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_GetNode_System_Object_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.GetNode(System.Object)">
+  GetNode(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getNode-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getNode-java.lang.Object-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node GetNode(object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.JAXBException.html">JAXBException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_GetProperty_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.GetProperty*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_GetProperty_Java_Lang_String_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.GetProperty(Java.Lang.String)">
+  GetProperty(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getProperty-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#getProperty-java.lang.String-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetProperty(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.PropertyException.html">PropertyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_System_Object_Java_Io_File_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal(System.Object,Java.Io.File)">
+  Marshal(object, File)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-java.io.File-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-java.io.File-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Marshal(object arg0, File arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.File.html">File</a></dt>
+    <dd><p><a class="xref" href="Java.Io.File.html">File</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.JAXBException.html">JAXBException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_System_Object_Java_Io_OutputStream_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal(System.Object,Java.Io.OutputStream)">
+  Marshal(object, OutputStream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-java.io.OutputStream-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-java.io.OutputStream-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Marshal(object arg0, OutputStream arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.OutputStream.html">OutputStream</a></dt>
+    <dd><p><a class="xref" href="Java.Io.OutputStream.html">OutputStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.JAXBException.html">JAXBException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_System_Object_Java_Io_Writer_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal(System.Object,Java.Io.Writer)">
+  Marshal(object, Writer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-java.io.Writer-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-java.io.Writer-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Marshal(object arg0, Writer arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.Writer.html">Writer</a></dt>
+    <dd><p><a class="xref" href="Java.Io.Writer.html">Writer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.JAXBException.html">JAXBException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_System_Object_Javax_Xml_Stream_XMLEventWriter_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal(System.Object,Javax.Xml.Stream.XMLEventWriter)">
+  Marshal(object, XMLEventWriter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-javax.xml.stream.XMLEventWriter-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-javax.xml.stream.XMLEventWriter-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Marshal(object arg0, XMLEventWriter arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Xml.Stream.XMLEventWriter.html">XMLEventWriter</a></dt>
+    <dd><p><a class="xref" href="Javax.Xml.Stream.XMLEventWriter.html">XMLEventWriter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.JAXBException.html">JAXBException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_System_Object_Javax_Xml_Stream_XMLStreamWriter_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal(System.Object,Javax.Xml.Stream.XMLStreamWriter)">
+  Marshal(object, XMLStreamWriter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-javax.xml.stream.XMLStreamWriter-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-javax.xml.stream.XMLStreamWriter-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Marshal(object arg0, XMLStreamWriter arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Xml.Stream.XMLStreamWriter.html">XMLStreamWriter</a></dt>
+    <dd><p><a class="xref" href="Javax.Xml.Stream.XMLStreamWriter.html">XMLStreamWriter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.JAXBException.html">JAXBException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_System_Object_Org_W3c_Dom_Node_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal(System.Object,Org.W3c.Dom.Node)">
+  Marshal(object, Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-org.w3c.dom.Node-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-org.w3c.dom.Node-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Marshal(object arg0, Node arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.JAXBException.html">JAXBException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_Marshal_System_Object_Org_Xml_Sax_ContentHandler_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.Marshal(System.Object,Org.Xml.Sax.ContentHandler)">
+  Marshal(object, ContentHandler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-org.xml.sax.ContentHandler-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#marshal-java.lang.Object-org.xml.sax.ContentHandler-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Marshal(object arg0, ContentHandler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Org.Xml.Sax.ContentHandler.html">ContentHandler</a></dt>
+    <dd><p><a class="xref" href="Org.Xml.Sax.ContentHandler.html">ContentHandler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.JAXBException.html">JAXBException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_SetAdapter_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.SetAdapter*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_SetAdapter_Javax_Xml_Bind_Annotation_Adapters_XmlAdapter_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.SetAdapter(Javax.Xml.Bind.Annotation.Adapters.XmlAdapter)">
+  SetAdapter(XmlAdapter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setAdapter-javax.xml.bind.annotation.adapters.XmlAdapter-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setAdapter-javax.xml.bind.annotation.adapters.XmlAdapter-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAdapter(XmlAdapter arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Xml.Bind.Annotation.Adapters.XmlAdapter.html">XmlAdapter</a></dt>
+    <dd><p><a class="xref" href="Javax.Xml.Bind.Annotation.Adapters.XmlAdapter.html">XmlAdapter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_SetAdapter_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.SetAdapter*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_SetAdapter__1_Java_Lang_Class___0_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.SetAdapter``1(Java.Lang.Class,``0)">
+  SetAdapter&lt;A&gt;(Class, A)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setAdapter-java.lang.Class-javax.xml.bind.annotation.adapters.XmlAdapter-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setAdapter-java.lang.Class-javax.xml.bind.annotation.adapters.XmlAdapter-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAdapter&lt;A&gt;(Class arg0, A arg1) where A : XmlAdapter</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">A</span></dt>
+    <dd><p><code class="typeparamref">A</code></p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code></dt>
+    <dd><p><a class="xref" href="Javax.Xml.Bind.Annotation.Adapters.XmlAdapter.html">XmlAdapter</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_SetProperty_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.SetProperty*"></a>
+
+  <h3 id="Javax_Xml_Bind_Helpers_AbstractMarshallerImpl_SetProperty_Java_Lang_String_System_Object_" data-uid="Javax.Xml.Bind.Helpers.AbstractMarshallerImpl.SetProperty(Java.Lang.String,System.Object)">
+  SetProperty(String, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setProperty-java.lang.String-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#setProperty-java.lang.String-java.lang.Object-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProperty(String arg0, object arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Xml.Bind.PropertyException.html">PropertyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Xml/Bind/Helpers/AbstractMarshallerImpl.cs/#L72" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2022 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

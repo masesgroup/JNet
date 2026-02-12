@@ -74,7 +74,22 @@
 <h1 id="jnet-net-suite-for-javajvm">JNet: .NET suite for Java™/JVM™</h1>
 
 <p>JNet is a comprehensive suite of libraries and tools to use Java™/JVM™ APIs (Java, Scala, Kotlin, ...) and .NET side-by-side.</p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li>✅ <strong>Java 8+ Support</strong> - Works with legacy Java 8 systems through modern Java 25</li>
+<li>✅ <strong>Zero Migration Required</strong> - Integrate existing Java 8 code with .NET applications</li>
+<li>✅ <strong>Direct API Access</strong> - Call any Java API directly from C#/VB.NET</li>
+<li>✅ <strong>Bidirectional</strong> - Java can call .NET and vice versa (see <a href="https://github.com/masesgroup/JCOReflector">JCOReflector</a>)</li>
+<li>✅ <strong>Production Ready</strong> - Trusted in enterprise environments</li>
+</ul>
+<blockquote>
+<p><strong>💡 Legacy Integration:</strong> Still running Java 8 in production? JNet enables
+integration with modern .NET applications without requiring Java upgrades—saving
+months of migration work and significant costs.</p>
+</blockquote>
 <h3 id="libraries-and-tools">Libraries and Tools</h3>
+<p><a href="https://www.oracle.com/java/"><img src="https://img.shields.io/badge/Java-8%2B-blue" alt="Java 8+"></a>
+<a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-8%2B-purple" alt=".NET 8+"></a></p>
 <table>
 <thead>
 <tr>
@@ -188,8 +203,44 @@
 </li>
 <li>V2.5.11: updates to JCOBridge 2.5.21 and adds management of <a href="https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html">CET</a> on recent Intel CPU due to <a href="https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support">latest change on .NET 9</a>: usage explanation on <a href="articles/usage.html#intel-cet-and-jnet">this</a></li>
 <li>V2.5.13: adds <a href="https://www.nuget.org/packages/MASES.JNetCLICore">JNetCLICore</a> to help CLI operations across projects based on JNet</li>
-<li>V2.6.0: aligns to JCOBridge 2.6.* series</li>
+<li>V2.6.x: aligns to JCOBridge 2.6.* series
+<ul>
+<li>V2.6.6: adds support for JavaSE 8</li>
 </ul>
+</li>
+</ul>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="does-jnet-support-java-8">Does JNet support Java 8?</h3>
+<p><strong>Yes!</strong> JNet fully supports Java 8 (JRE 1.8.0_161 or later) through Java 25.
+This is critical for enterprises with legacy Java 8 systems in production.</p>
+<h3 id="do-i-need-to-upgrade-my-java-8-code-to-use-jnet">Do I need to upgrade my Java 8 code to use JNet?</h3>
+<p><strong>No!</strong> JNet works with your existing Java 8 bytecode without any modifications.
+You can integrate legacy Java 8 systems with modern .NET applications immediately.</p>
+<h3 id="what-about-java-8-end-of-life">What about Java 8 End of Life?</h3>
+<p>Oracle provides Extended Support for Java 8 until December 2030. Many vendors
+(Amazon Corretto, Azul, Red Hat) provide free long-term support. JNet gives you
+flexibility: integrate now with Java 8, migrate Java when your timeline permits.</p>
+<h3 id="can-i-mix-different-java-versions-in-my-application">Can I mix different Java versions in my application?</h3>
+<p><strong>Yes!</strong> Java is backward compatible. A newer JVM can execute bytecode
+compiled with older Java versions.</p>
+<p><strong>Example:</strong> Using Java 17 JVM, you can call:</p>
+<ul>
+<li>Java 8 libraries ✅</li>
+<li>Java 11 libraries ✅</li>
+<li>Java 17 libraries ✅</li>
+</ul>
+<p>All in the same .NET process, with zero migration needed for older code!</p>
+<p><strong>Simple rule:</strong> Use the highest Java version required by any of your
+dependencies. That JVM will run all older bytecode versions.</p>
+<h3 id="do-i-need-to-upgrade-my-java-8-code-to-use-newer-java-libraries">Do I need to upgrade my Java 8 code to use newer Java libraries?</h3>
+<p><strong>No!</strong> Just upgrade the JVM to Java 17 (or whatever version the new
+library requires). Your Java 8 bytecode will continue working without
+any code changes.</p>
+<p>This is Java's backward compatibility guarantee in action.</p>
+<h3 id="what-if-i-try-to-use-java-17-bytecode-with-java-8-jvm">What if I try to use Java 17 bytecode with Java 8 JVM?</h3>
+<p>You'll get an <code>UnsupportedClassVersionError</code>. Java doesn't support
+forward compatibility - older JVMs cannot run newer bytecode.</p>
+<p><strong>Solution:</strong> Upgrade to Java 17 JVM. Your Java 8 code will still work!</p>
 <hr>
 <h2 id="runtime-engine">Runtime engine</h2>
 <p>JNet uses <a href="https://www.jcobridge.com">JCOBridge</a>, and its <a href="https://www.jcobridge.com/features/">features</a>, to obtain many benefits:</p>
@@ -213,6 +264,25 @@
 <li><strong>Dynamic code</strong>: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this <a href="https://www.jcobridge.com/net-examples/dotnet-examples/">simple example</a> and <a href="src/documentation/articles/API_extensibility.md">JNet APIs extensibility</a>.</li>
 </ul>
 <p><a href="https://www.jcobridge.com">JCOBridge 2.6.*</a> can be used for free without any obligations; you need to purchase a commercial license, or uninstall the software, if you have direct or indirect incomes from the product usage.</p>
+<h3 id="supported-versions">Supported Versions</h3>
+<p><strong>Java:</strong></p>
+<ul>
+<li>✅ Java 8 (JRE 1.8.0_161 or later)</li>
+<li>✅ Java 11 (LTS)</li>
+<li>✅ Java 17 (LTS)</li>
+<li>✅ Java 21 (LTS)</li>
+<li>✅ Java 25 (LTS)</li>
+</ul>
+<p><strong>Note:</strong> Works with Oracle JDK, OpenJDK, Amazon Corretto, Azul Zulu, and other compatible distributions.</p>
+<p><strong>.NET:</strong></p>
+<ul>
+<li>.NET Framework 4.6.2+</li>
+<li>.NET 6, 8, 9, 10</li>
+</ul>
+<blockquote>
+<p><strong>Java 8 Extended Support</strong> runs until December 2030. JNet provides a migration
+path: integrate Java 8 systems with modern .NET now, migrate Java when ready.</p>
+</blockquote>
 <h3 id="jcobridge-resources">JCOBridge resources</h3>
 <p>Have a look at the following JCOBridge resources:</p>
 <table>

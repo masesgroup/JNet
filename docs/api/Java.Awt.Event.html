@@ -1,0 +1,3466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Event | MASES Group - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Event | MASES Group - JNet ">
+      <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
+      <meta name="description" content="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Event.md&amp;value=---%0Auid%3A%20Java.Awt.Event%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Java.Awt.Event">
+
+
+
+  <h1 id="Java_Awt_Event" data-uid="Java.Awt.Event" class="text-break">
+Class Event  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Awt.html">Awt</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Event : Serializable, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Io.Serializable.html">Serializable</a>&gt;</div>
+      <div><a class="xref" href="Java.Io.Serializable.html">Serializable</a></div>
+      <div><span class="xref">Event</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+      <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_IsAssignableFrom_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaType_">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(IJavaType)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_IsAssignableFrom__1">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Serializable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_Execute__1___0___">JVMBridgeBase&lt;Serializable&gt;.Execute&lt;T&gt;(params T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_DynBridgeClazz">JVMBridgeBase&lt;Serializable&gt;.DynBridgeClazz</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Serializable&gt;.BridgeClazz</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassOf__1">JVMBridgeBase.ClassOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_WrapsDirect__1_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wraps__1_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wraps__2_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wraps__3_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_MonitorEnter">JVMBridgeBase.MonitorEnter()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_MonitorExit">JVMBridgeBase.MonitorExit()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInstanceOf_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaType_">JVMBridgeBase.IsInstanceOf(IJavaType)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInstanceOf__1">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeIsInstanceOf__1">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_CastTo__1">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_CastDirect__1">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_GetHashCode">JVMBridgeBase.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Notify">JVMBridgeBase.Notify()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_NotifyAll">JVMBridgeBase.NotifyAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wait">JVMBridgeBase.Wait()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeInstance">JVMBridgeBase.BridgeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeListener">JVMBridgeBase.IsBridgeListener</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Java_Awt_Event__ctor_" data-uid="Java.Awt.Event.#ctor*"></a>
+
+  <h3 id="Java_Awt_Event__ctor" data-uid="Java.Awt.Event.#ctor">
+  Event()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Event()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event__ctor_" data-uid="Java.Awt.Event.#ctor*"></a>
+
+  <h3 id="Java_Awt_Event__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Awt.Event.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  Event(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Event(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event__ctor_" data-uid="Java.Awt.Event.#ctor*"></a>
+
+  <h3 id="Java_Awt_Event__ctor_System_Object_System_Int32_System_Object_" data-uid="Java.Awt.Event.#ctor(System.Object,System.Int32,System.Object)">
+  Event(object, int, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#java.awt.Event(java.lang.Object,int,java.lang.Object)">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#java.awt.Event(java.lang.Object,int,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Event(object arg0, int arg1, object arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event__ctor_" data-uid="Java.Awt.Event.#ctor*"></a>
+
+  <h3 id="Java_Awt_Event__ctor_System_Object_System_Int64_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Java.Awt.Event.#ctor(System.Object,System.Int64,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+  Event(object, long, int, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#java.awt.Event(java.lang.Object,long,int,int,int,int,int)">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#java.awt.Event(java.lang.Object,long,int,int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Event(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event__ctor_" data-uid="Java.Awt.Event.#ctor*"></a>
+
+  <h3 id="Java_Awt_Event__ctor_System_Object_System_Int64_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Object_" data-uid="Java.Awt.Event.#ctor(System.Object,System.Int64,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Object)">
+  Event(object, long, int, int, int, int, int, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#java.awt.Event(java.lang.Object,long,int,int,int,int,int,java.lang.Object)">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#java.awt.Event(java.lang.Object,long,int,int,int,int,int,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Event(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6, object arg7)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg7</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event__ctor_" data-uid="Java.Awt.Event.#ctor*"></a>
+
+  <h3 id="Java_Awt_Event__ctor_System_Object___" data-uid="Java.Awt.Event.#ctor(System.Object[])">
+  Event(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Event(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Java_Awt_Event_ACTION_EVENT_" data-uid="Java.Awt.Event.ACTION_EVENT*"></a>
+
+  <h3 id="Java_Awt_Event_ACTION_EVENT" data-uid="Java.Awt.Event.ACTION_EVENT">
+  ACTION_EVENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#ACTION_EVENT">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#ACTION_EVENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ACTION_EVENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_ALT_MASK_" data-uid="Java.Awt.Event.ALT_MASK*"></a>
+
+  <h3 id="Java_Awt_Event_ALT_MASK" data-uid="Java.Awt.Event.ALT_MASK">
+  ALT_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#ALT_MASK">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#ALT_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ALT_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_BACK_SPACE_" data-uid="Java.Awt.Event.BACK_SPACE*"></a>
+
+  <h3 id="Java_Awt_Event_BACK_SPACE" data-uid="Java.Awt.Event.BACK_SPACE">
+  BACK_SPACE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#BACK_SPACE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#BACK_SPACE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BACK_SPACE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_BridgeClassName_" data-uid="Java.Awt.Event.BridgeClassName*"></a>
+
+  <h3 id="Java_Awt_Event_BridgeClassName" data-uid="Java.Awt.Event.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_CAPS_LOCK_" data-uid="Java.Awt.Event.CAPS_LOCK*"></a>
+
+  <h3 id="Java_Awt_Event_CAPS_LOCK" data-uid="Java.Awt.Event.CAPS_LOCK">
+  CAPS_LOCK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#CAPS_LOCK">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#CAPS_LOCK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CAPS_LOCK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_CTRL_MASK_" data-uid="Java.Awt.Event.CTRL_MASK*"></a>
+
+  <h3 id="Java_Awt_Event_CTRL_MASK" data-uid="Java.Awt.Event.CTRL_MASK">
+  CTRL_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#CTRL_MASK">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#CTRL_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CTRL_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_DELETE_" data-uid="Java.Awt.Event.DELETE*"></a>
+
+  <h3 id="Java_Awt_Event_DELETE" data-uid="Java.Awt.Event.DELETE">
+  DELETE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#DELETE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#DELETE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DELETE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_DOWN_" data-uid="Java.Awt.Event.DOWN*"></a>
+
+  <h3 id="Java_Awt_Event_DOWN" data-uid="Java.Awt.Event.DOWN">
+  DOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#DOWN">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#DOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_END_" data-uid="Java.Awt.Event.END*"></a>
+
+  <h3 id="Java_Awt_Event_END" data-uid="Java.Awt.Event.END">
+  END
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#END">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#END</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int END { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_ENTER_" data-uid="Java.Awt.Event.ENTER*"></a>
+
+  <h3 id="Java_Awt_Event_ENTER" data-uid="Java.Awt.Event.ENTER">
+  ENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#ENTER">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#ENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_ESCAPE_" data-uid="Java.Awt.Event.ESCAPE*"></a>
+
+  <h3 id="Java_Awt_Event_ESCAPE" data-uid="Java.Awt.Event.ESCAPE">
+  ESCAPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#ESCAPE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#ESCAPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ESCAPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F1_" data-uid="Java.Awt.Event.F1*"></a>
+
+  <h3 id="Java_Awt_Event_F1" data-uid="Java.Awt.Event.F1">
+  F1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F1">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F10_" data-uid="Java.Awt.Event.F10*"></a>
+
+  <h3 id="Java_Awt_Event_F10" data-uid="Java.Awt.Event.F10">
+  F10
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F10">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F10</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F10 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F11_" data-uid="Java.Awt.Event.F11*"></a>
+
+  <h3 id="Java_Awt_Event_F11" data-uid="Java.Awt.Event.F11">
+  F11
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F11">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F11</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F11 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F12_" data-uid="Java.Awt.Event.F12*"></a>
+
+  <h3 id="Java_Awt_Event_F12" data-uid="Java.Awt.Event.F12">
+  F12
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F12">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F12</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F12 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F2_" data-uid="Java.Awt.Event.F2*"></a>
+
+  <h3 id="Java_Awt_Event_F2" data-uid="Java.Awt.Event.F2">
+  F2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F2">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F3_" data-uid="Java.Awt.Event.F3*"></a>
+
+  <h3 id="Java_Awt_Event_F3" data-uid="Java.Awt.Event.F3">
+  F3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F3">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F4_" data-uid="Java.Awt.Event.F4*"></a>
+
+  <h3 id="Java_Awt_Event_F4" data-uid="Java.Awt.Event.F4">
+  F4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F4">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F5_" data-uid="Java.Awt.Event.F5*"></a>
+
+  <h3 id="Java_Awt_Event_F5" data-uid="Java.Awt.Event.F5">
+  F5
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F5">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F5</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F5 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F6_" data-uid="Java.Awt.Event.F6*"></a>
+
+  <h3 id="Java_Awt_Event_F6" data-uid="Java.Awt.Event.F6">
+  F6
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F6">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F6</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F6 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F7_" data-uid="Java.Awt.Event.F7*"></a>
+
+  <h3 id="Java_Awt_Event_F7" data-uid="Java.Awt.Event.F7">
+  F7
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F7">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F7</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F7 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F8_" data-uid="Java.Awt.Event.F8*"></a>
+
+  <h3 id="Java_Awt_Event_F8" data-uid="Java.Awt.Event.F8">
+  F8
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F8">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F8</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F8 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_F9_" data-uid="Java.Awt.Event.F9*"></a>
+
+  <h3 id="Java_Awt_Event_F9" data-uid="Java.Awt.Event.F9">
+  F9
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F9">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#F9</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int F9 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_GOT_FOCUS_" data-uid="Java.Awt.Event.GOT_FOCUS*"></a>
+
+  <h3 id="Java_Awt_Event_GOT_FOCUS" data-uid="Java.Awt.Event.GOT_FOCUS">
+  GOT_FOCUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#GOT_FOCUS">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#GOT_FOCUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GOT_FOCUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_HOME_" data-uid="Java.Awt.Event.HOME*"></a>
+
+  <h3 id="Java_Awt_Event_HOME" data-uid="Java.Awt.Event.HOME">
+  HOME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#HOME">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#HOME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HOME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_INSERT_" data-uid="Java.Awt.Event.INSERT*"></a>
+
+  <h3 id="Java_Awt_Event_INSERT" data-uid="Java.Awt.Event.INSERT">
+  INSERT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#INSERT">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#INSERT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INSERT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_IsBridgeAbstract_" data-uid="Java.Awt.Event.IsBridgeAbstract*"></a>
+
+  <h3 id="Java_Awt_Event_IsBridgeAbstract" data-uid="Java.Awt.Event.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_IsBridgeCloseable_" data-uid="Java.Awt.Event.IsBridgeCloseable*"></a>
+
+  <h3 id="Java_Awt_Event_IsBridgeCloseable" data-uid="Java.Awt.Event.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_IsBridgeInterface_" data-uid="Java.Awt.Event.IsBridgeInterface*"></a>
+
+  <h3 id="Java_Awt_Event_IsBridgeInterface" data-uid="Java.Awt.Event.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_IsBridgeStatic_" data-uid="Java.Awt.Event.IsBridgeStatic*"></a>
+
+  <h3 id="Java_Awt_Event_IsBridgeStatic" data-uid="Java.Awt.Event.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_KEY_ACTION_" data-uid="Java.Awt.Event.KEY_ACTION*"></a>
+
+  <h3 id="Java_Awt_Event_KEY_ACTION" data-uid="Java.Awt.Event.KEY_ACTION">
+  KEY_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#KEY_ACTION">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#KEY_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_KEY_ACTION_RELEASE_" data-uid="Java.Awt.Event.KEY_ACTION_RELEASE*"></a>
+
+  <h3 id="Java_Awt_Event_KEY_ACTION_RELEASE" data-uid="Java.Awt.Event.KEY_ACTION_RELEASE">
+  KEY_ACTION_RELEASE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#KEY_ACTION_RELEASE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#KEY_ACTION_RELEASE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_ACTION_RELEASE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_KEY_PRESS_" data-uid="Java.Awt.Event.KEY_PRESS*"></a>
+
+  <h3 id="Java_Awt_Event_KEY_PRESS" data-uid="Java.Awt.Event.KEY_PRESS">
+  KEY_PRESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#KEY_PRESS">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#KEY_PRESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_PRESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_KEY_RELEASE_" data-uid="Java.Awt.Event.KEY_RELEASE*"></a>
+
+  <h3 id="Java_Awt_Event_KEY_RELEASE" data-uid="Java.Awt.Event.KEY_RELEASE">
+  KEY_RELEASE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#KEY_RELEASE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#KEY_RELEASE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_RELEASE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_LEFT_" data-uid="Java.Awt.Event.LEFT*"></a>
+
+  <h3 id="Java_Awt_Event_LEFT" data-uid="Java.Awt.Event.LEFT">
+  LEFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#LEFT">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#LEFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LEFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_LIST_DESELECT_" data-uid="Java.Awt.Event.LIST_DESELECT*"></a>
+
+  <h3 id="Java_Awt_Event_LIST_DESELECT" data-uid="Java.Awt.Event.LIST_DESELECT">
+  LIST_DESELECT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#LIST_DESELECT">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#LIST_DESELECT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LIST_DESELECT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_LIST_SELECT_" data-uid="Java.Awt.Event.LIST_SELECT*"></a>
+
+  <h3 id="Java_Awt_Event_LIST_SELECT" data-uid="Java.Awt.Event.LIST_SELECT">
+  LIST_SELECT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#LIST_SELECT">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#LIST_SELECT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LIST_SELECT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_LOAD_FILE_" data-uid="Java.Awt.Event.LOAD_FILE*"></a>
+
+  <h3 id="Java_Awt_Event_LOAD_FILE" data-uid="Java.Awt.Event.LOAD_FILE">
+  LOAD_FILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#LOAD_FILE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#LOAD_FILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LOAD_FILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_LOST_FOCUS_" data-uid="Java.Awt.Event.LOST_FOCUS*"></a>
+
+  <h3 id="Java_Awt_Event_LOST_FOCUS" data-uid="Java.Awt.Event.LOST_FOCUS">
+  LOST_FOCUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#LOST_FOCUS">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#LOST_FOCUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LOST_FOCUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_META_MASK_" data-uid="Java.Awt.Event.META_MASK*"></a>
+
+  <h3 id="Java_Awt_Event_META_MASK" data-uid="Java.Awt.Event.META_MASK">
+  META_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#META_MASK">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#META_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int META_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_MOUSE_DOWN_" data-uid="Java.Awt.Event.MOUSE_DOWN*"></a>
+
+  <h3 id="Java_Awt_Event_MOUSE_DOWN" data-uid="Java.Awt.Event.MOUSE_DOWN">
+  MOUSE_DOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_DOWN">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_DOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MOUSE_DOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_MOUSE_DRAG_" data-uid="Java.Awt.Event.MOUSE_DRAG*"></a>
+
+  <h3 id="Java_Awt_Event_MOUSE_DRAG" data-uid="Java.Awt.Event.MOUSE_DRAG">
+  MOUSE_DRAG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_DRAG">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_DRAG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MOUSE_DRAG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_MOUSE_ENTER_" data-uid="Java.Awt.Event.MOUSE_ENTER*"></a>
+
+  <h3 id="Java_Awt_Event_MOUSE_ENTER" data-uid="Java.Awt.Event.MOUSE_ENTER">
+  MOUSE_ENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_ENTER">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_ENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MOUSE_ENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_MOUSE_EXIT_" data-uid="Java.Awt.Event.MOUSE_EXIT*"></a>
+
+  <h3 id="Java_Awt_Event_MOUSE_EXIT" data-uid="Java.Awt.Event.MOUSE_EXIT">
+  MOUSE_EXIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_EXIT">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_EXIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MOUSE_EXIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_MOUSE_MOVE_" data-uid="Java.Awt.Event.MOUSE_MOVE*"></a>
+
+  <h3 id="Java_Awt_Event_MOUSE_MOVE" data-uid="Java.Awt.Event.MOUSE_MOVE">
+  MOUSE_MOVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_MOVE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_MOVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MOUSE_MOVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_MOUSE_UP_" data-uid="Java.Awt.Event.MOUSE_UP*"></a>
+
+  <h3 id="Java_Awt_Event_MOUSE_UP" data-uid="Java.Awt.Event.MOUSE_UP">
+  MOUSE_UP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_UP">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#MOUSE_UP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MOUSE_UP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_NUM_LOCK_" data-uid="Java.Awt.Event.NUM_LOCK*"></a>
+
+  <h3 id="Java_Awt_Event_NUM_LOCK" data-uid="Java.Awt.Event.NUM_LOCK">
+  NUM_LOCK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#NUM_LOCK">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#NUM_LOCK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NUM_LOCK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_PAUSE_" data-uid="Java.Awt.Event.PAUSE*"></a>
+
+  <h3 id="Java_Awt_Event_PAUSE" data-uid="Java.Awt.Event.PAUSE">
+  PAUSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#PAUSE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#PAUSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PAUSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_PGDN_" data-uid="Java.Awt.Event.PGDN*"></a>
+
+  <h3 id="Java_Awt_Event_PGDN" data-uid="Java.Awt.Event.PGDN">
+  PGDN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#PGDN">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#PGDN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PGDN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_PGUP_" data-uid="Java.Awt.Event.PGUP*"></a>
+
+  <h3 id="Java_Awt_Event_PGUP" data-uid="Java.Awt.Event.PGUP">
+  PGUP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#PGUP">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#PGUP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PGUP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_PRINT_SCREEN_" data-uid="Java.Awt.Event.PRINT_SCREEN*"></a>
+
+  <h3 id="Java_Awt_Event_PRINT_SCREEN" data-uid="Java.Awt.Event.PRINT_SCREEN">
+  PRINT_SCREEN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#PRINT_SCREEN">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#PRINT_SCREEN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRINT_SCREEN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_RIGHT_" data-uid="Java.Awt.Event.RIGHT*"></a>
+
+  <h3 id="Java_Awt_Event_RIGHT" data-uid="Java.Awt.Event.RIGHT">
+  RIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#RIGHT">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#RIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_SAVE_FILE_" data-uid="Java.Awt.Event.SAVE_FILE*"></a>
+
+  <h3 id="Java_Awt_Event_SAVE_FILE" data-uid="Java.Awt.Event.SAVE_FILE">
+  SAVE_FILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SAVE_FILE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SAVE_FILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SAVE_FILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_SCROLL_ABSOLUTE_" data-uid="Java.Awt.Event.SCROLL_ABSOLUTE*"></a>
+
+  <h3 id="Java_Awt_Event_SCROLL_ABSOLUTE" data-uid="Java.Awt.Event.SCROLL_ABSOLUTE">
+  SCROLL_ABSOLUTE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_ABSOLUTE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_ABSOLUTE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCROLL_ABSOLUTE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_SCROLL_BEGIN_" data-uid="Java.Awt.Event.SCROLL_BEGIN*"></a>
+
+  <h3 id="Java_Awt_Event_SCROLL_BEGIN" data-uid="Java.Awt.Event.SCROLL_BEGIN">
+  SCROLL_BEGIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_BEGIN">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_BEGIN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCROLL_BEGIN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_SCROLL_END_" data-uid="Java.Awt.Event.SCROLL_END*"></a>
+
+  <h3 id="Java_Awt_Event_SCROLL_END" data-uid="Java.Awt.Event.SCROLL_END">
+  SCROLL_END
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_END">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_END</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCROLL_END { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_SCROLL_LINE_DOWN_" data-uid="Java.Awt.Event.SCROLL_LINE_DOWN*"></a>
+
+  <h3 id="Java_Awt_Event_SCROLL_LINE_DOWN" data-uid="Java.Awt.Event.SCROLL_LINE_DOWN">
+  SCROLL_LINE_DOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_LINE_DOWN">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_LINE_DOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCROLL_LINE_DOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_SCROLL_LINE_UP_" data-uid="Java.Awt.Event.SCROLL_LINE_UP*"></a>
+
+  <h3 id="Java_Awt_Event_SCROLL_LINE_UP" data-uid="Java.Awt.Event.SCROLL_LINE_UP">
+  SCROLL_LINE_UP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_LINE_UP">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_LINE_UP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCROLL_LINE_UP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_SCROLL_LOCK_" data-uid="Java.Awt.Event.SCROLL_LOCK*"></a>
+
+  <h3 id="Java_Awt_Event_SCROLL_LOCK" data-uid="Java.Awt.Event.SCROLL_LOCK">
+  SCROLL_LOCK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_LOCK">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_LOCK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCROLL_LOCK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_SCROLL_PAGE_DOWN_" data-uid="Java.Awt.Event.SCROLL_PAGE_DOWN*"></a>
+
+  <h3 id="Java_Awt_Event_SCROLL_PAGE_DOWN" data-uid="Java.Awt.Event.SCROLL_PAGE_DOWN">
+  SCROLL_PAGE_DOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_PAGE_DOWN">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_PAGE_DOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCROLL_PAGE_DOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_SCROLL_PAGE_UP_" data-uid="Java.Awt.Event.SCROLL_PAGE_UP*"></a>
+
+  <h3 id="Java_Awt_Event_SCROLL_PAGE_UP" data-uid="Java.Awt.Event.SCROLL_PAGE_UP">
+  SCROLL_PAGE_UP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_PAGE_UP">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SCROLL_PAGE_UP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCROLL_PAGE_UP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_SHIFT_MASK_" data-uid="Java.Awt.Event.SHIFT_MASK*"></a>
+
+  <h3 id="Java_Awt_Event_SHIFT_MASK" data-uid="Java.Awt.Event.SHIFT_MASK">
+  SHIFT_MASK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SHIFT_MASK">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#SHIFT_MASK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SHIFT_MASK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_TAB_" data-uid="Java.Awt.Event.TAB*"></a>
+
+  <h3 id="Java_Awt_Event_TAB" data-uid="Java.Awt.Event.TAB">
+  TAB
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#TAB">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#TAB</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAB { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_UP_" data-uid="Java.Awt.Event.UP*"></a>
+
+  <h3 id="Java_Awt_Event_UP" data-uid="Java.Awt.Event.UP">
+  UP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#UP">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#UP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_WINDOW_DEICONIFY_" data-uid="Java.Awt.Event.WINDOW_DEICONIFY*"></a>
+
+  <h3 id="Java_Awt_Event_WINDOW_DEICONIFY" data-uid="Java.Awt.Event.WINDOW_DEICONIFY">
+  WINDOW_DEICONIFY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#WINDOW_DEICONIFY">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#WINDOW_DEICONIFY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOW_DEICONIFY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_WINDOW_DESTROY_" data-uid="Java.Awt.Event.WINDOW_DESTROY*"></a>
+
+  <h3 id="Java_Awt_Event_WINDOW_DESTROY" data-uid="Java.Awt.Event.WINDOW_DESTROY">
+  WINDOW_DESTROY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#WINDOW_DESTROY">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#WINDOW_DESTROY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOW_DESTROY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_WINDOW_EXPOSE_" data-uid="Java.Awt.Event.WINDOW_EXPOSE*"></a>
+
+  <h3 id="Java_Awt_Event_WINDOW_EXPOSE" data-uid="Java.Awt.Event.WINDOW_EXPOSE">
+  WINDOW_EXPOSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#WINDOW_EXPOSE">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#WINDOW_EXPOSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOW_EXPOSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_WINDOW_ICONIFY_" data-uid="Java.Awt.Event.WINDOW_ICONIFY*"></a>
+
+  <h3 id="Java_Awt_Event_WINDOW_ICONIFY" data-uid="Java.Awt.Event.WINDOW_ICONIFY">
+  WINDOW_ICONIFY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#WINDOW_ICONIFY">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#WINDOW_ICONIFY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOW_ICONIFY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_WINDOW_MOVED_" data-uid="Java.Awt.Event.WINDOW_MOVED*"></a>
+
+  <h3 id="Java_Awt_Event_WINDOW_MOVED" data-uid="Java.Awt.Event.WINDOW_MOVED">
+  WINDOW_MOVED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#WINDOW_MOVED">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#WINDOW_MOVED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WINDOW_MOVED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_arg_" data-uid="Java.Awt.Event.arg*"></a>
+
+  <h3 id="Java_Awt_Event_arg" data-uid="Java.Awt.Event.arg">
+  arg
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#arg">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#arg</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object arg { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_clickCount_" data-uid="Java.Awt.Event.clickCount*"></a>
+
+  <h3 id="Java_Awt_Event_clickCount" data-uid="Java.Awt.Event.clickCount">
+  clickCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#clickCount">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#clickCount</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int clickCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_evt_" data-uid="Java.Awt.Event.evt*"></a>
+
+  <h3 id="Java_Awt_Event_evt" data-uid="Java.Awt.Event.evt">
+  evt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#evt">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#evt</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Event evt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Awt.Event.html">Event</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_id_" data-uid="Java.Awt.Event.id*"></a>
+
+  <h3 id="Java_Awt_Event_id" data-uid="Java.Awt.Event.id">
+  id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#id">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#id</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_key_" data-uid="Java.Awt.Event.key*"></a>
+
+  <h3 id="Java_Awt_Event_key" data-uid="Java.Awt.Event.key">
+  key
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#key">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#key</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int key { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_modifiers_" data-uid="Java.Awt.Event.modifiers*"></a>
+
+  <h3 id="Java_Awt_Event_modifiers" data-uid="Java.Awt.Event.modifiers">
+  modifiers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#modifiers">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#modifiers</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int modifiers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_target_" data-uid="Java.Awt.Event.target*"></a>
+
+  <h3 id="Java_Awt_Event_target" data-uid="Java.Awt.Event.target">
+  target
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#target">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#target</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object target { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_when_" data-uid="Java.Awt.Event.when*"></a>
+
+  <h3 id="Java_Awt_Event_when" data-uid="Java.Awt.Event.when">
+  when
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#when">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#when</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long when { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_x_" data-uid="Java.Awt.Event.x*"></a>
+
+  <h3 id="Java_Awt_Event_x" data-uid="Java.Awt.Event.x">
+  x
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#x">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#x</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int x { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_y_" data-uid="Java.Awt.Event.y*"></a>
+
+  <h3 id="Java_Awt_Event_y" data-uid="Java.Awt.Event.y">
+  y
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#y">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#y</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int y { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Awt_Event_ControlDown_" data-uid="Java.Awt.Event.ControlDown*"></a>
+
+  <h3 id="Java_Awt_Event_ControlDown" data-uid="Java.Awt.Event.ControlDown">
+  ControlDown()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#controlDown--">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#controlDown--</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ControlDown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_MetaDown_" data-uid="Java.Awt.Event.MetaDown*"></a>
+
+  <h3 id="Java_Awt_Event_MetaDown" data-uid="Java.Awt.Event.MetaDown">
+  MetaDown()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#metaDown--">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#metaDown--</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MetaDown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_ShiftDown_" data-uid="Java.Awt.Event.ShiftDown*"></a>
+
+  <h3 id="Java_Awt_Event_ShiftDown" data-uid="Java.Awt.Event.ShiftDown">
+  ShiftDown()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#shiftDown--">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#shiftDown--</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShiftDown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_Event_Translate_" data-uid="Java.Awt.Event.Translate*"></a>
+
+  <h3 id="Java_Awt_Event_Translate_System_Int32_System_Int32_" data-uid="Java.Awt.Event.Translate(System.Int32,System.Int32)">
+  Translate(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#translate-int-int-">https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#translate-int-int-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Translate(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Event.cs/#L70" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2022 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

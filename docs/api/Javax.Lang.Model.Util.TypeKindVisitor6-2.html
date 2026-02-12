@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TypeKindVisitor6&lt;R, P&gt; | MASES Group - JNet ">
       <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
-      <meta name="description" content="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html">
+      <meta name="description" content="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Javax_Lang_Model_Util_TypeKindVisitor6_2" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2" class="text-break">
-Class TypeKindVisitor6&lt;R, P&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L264"><i class="bi bi-code-slash"></i></a>
+Class TypeKindVisitor6&lt;R, P&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class TypeKindVisitor6&lt;R, P&gt;  <a class="header-action link-secondary" titl
   <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html</a></p>
+  <div class="markdown summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -217,6 +217,9 @@ Class TypeKindVisitor6&lt;R, P&gt;  <a class="header-action link-secondary" titl
       <a class="xref" href="Javax.Lang.Model.Type.TypeVisitor-2.html#Javax_Lang_Model_Type_TypeVisitor_2_Visit_Javax_Lang_Model_Type_TypeMirror__1_">TypeVisitor&lt;R, P&gt;.Visit(TypeMirror, P)</a>
     </div>
     <div>
+      <a class="xref" href="Javax.Lang.Model.Type.TypeVisitor-2.html#Javax_Lang_Model_Type_TypeVisitor_2_Visit_Javax_Lang_Model_Type_TypeMirror_">TypeVisitor&lt;R, P&gt;.Visit(TypeMirror)</a>
+    </div>
+    <div>
       <a class="xref" href="Javax.Lang.Model.Type.TypeVisitor-2.html#Javax_Lang_Model_Type_TypeVisitor_2_VisitArray_Javax_Lang_Model_Type_ArrayType__1_">TypeVisitor&lt;R, P&gt;.VisitArray(ArrayType, P)</a>
     </div>
     <div>
@@ -251,9 +254,6 @@ Class TypeKindVisitor6&lt;R, P&gt;  <a class="header-action link-secondary" titl
     </div>
     <div>
       <a class="xref" href="Javax.Lang.Model.Type.TypeVisitor-2.html#Javax_Lang_Model_Type_TypeVisitor_2_VisitWildcard_Javax_Lang_Model_Type_WildcardType__1_">TypeVisitor&lt;R, P&gt;.VisitWildcard(WildcardType, P)</a>
-    </div>
-    <div>
-      <a class="xref" href="Javax.Lang.Model.Type.TypeVisitor-2.html#Javax_Lang_Model_Type_TypeVisitor_2_Visit_Javax_Lang_Model_Type_TypeMirror_">TypeVisitor&lt;R, P&gt;.Visit(TypeMirror)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TypeVisitor&lt;R, P&gt;&gt;.SExecute(IJavaType, string, params object[])</a>
@@ -563,6 +563,12 @@ Class TypeKindVisitor6&lt;R, P&gt;  <a class="header-action link-secondary" titl
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
@@ -905,56 +911,14 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 </h2>
 
 
-  <a id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitNoTypeAsModule_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitNoTypeAsModule*"></a>
-
-  <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitNoTypeAsModule_Javax_Lang_Model_Type_NoType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitNoTypeAsModule(Javax.Lang.Model.Type.NoType,`1)">
-  VisitNoTypeAsModule(NoType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L293"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsModule(javax.lang.model.type.NoType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsModule(javax.lang.model.type.NoType,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public R VisitNoTypeAsModule(NoType arg0, P arg1)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Javax.Lang.Model.Type.NoType.html">NoType</a></dt>
-    <dd><p><a class="xref" href="Javax.Lang.Model.Type.NoType.html">NoType</a></p>
-</dd>
-    <dt><code>arg1</code> <span class="xref">P</span></dt>
-    <dd><p><code class="typeparamref">P</code></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">R</span></dt>
-    <dd><p><code class="typeparamref">R</code></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitNoTypeAsNone_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitNoTypeAsNone*"></a>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitNoTypeAsNone_Javax_Lang_Model_Type_NoType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitNoTypeAsNone(Javax.Lang.Model.Type.NoType,`1)">
   VisitNoTypeAsNone(NoType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsNone(javax.lang.model.type.NoType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsNone(javax.lang.model.type.NoType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsNone-javax.lang.model.type.NoType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsNone-javax.lang.model.type.NoType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -993,10 +957,10 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitNoTypeAsPackage_Javax_Lang_Model_Type_NoType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitNoTypeAsPackage(Javax.Lang.Model.Type.NoType,`1)">
   VisitNoTypeAsPackage(NoType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L293"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsPackage(javax.lang.model.type.NoType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsPackage(javax.lang.model.type.NoType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsPackage-javax.lang.model.type.NoType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsPackage-javax.lang.model.type.NoType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1035,10 +999,10 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitNoTypeAsVoid_Javax_Lang_Model_Type_NoType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitNoTypeAsVoid(Javax.Lang.Model.Type.NoType,`1)">
   VisitNoTypeAsVoid(NoType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsVoid(javax.lang.model.type.NoType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsVoid(javax.lang.model.type.NoType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsVoid-javax.lang.model.type.NoType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsVoid-javax.lang.model.type.NoType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1077,10 +1041,10 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitPrimitiveAsBoolean_Javax_Lang_Model_Type_PrimitiveType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitPrimitiveAsBoolean(Javax.Lang.Model.Type.PrimitiveType,`1)">
   VisitPrimitiveAsBoolean(PrimitiveType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsBoolean(javax.lang.model.type.PrimitiveType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsBoolean(javax.lang.model.type.PrimitiveType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsBoolean-javax.lang.model.type.PrimitiveType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsBoolean-javax.lang.model.type.PrimitiveType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1119,10 +1083,10 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitPrimitiveAsByte_Javax_Lang_Model_Type_PrimitiveType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitPrimitiveAsByte(Javax.Lang.Model.Type.PrimitiveType,`1)">
   VisitPrimitiveAsByte(PrimitiveType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsByte(javax.lang.model.type.PrimitiveType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsByte(javax.lang.model.type.PrimitiveType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsByte-javax.lang.model.type.PrimitiveType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsByte-javax.lang.model.type.PrimitiveType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1161,10 +1125,10 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitPrimitiveAsChar_Javax_Lang_Model_Type_PrimitiveType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitPrimitiveAsChar(Javax.Lang.Model.Type.PrimitiveType,`1)">
   VisitPrimitiveAsChar(PrimitiveType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L333"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsChar(javax.lang.model.type.PrimitiveType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsChar(javax.lang.model.type.PrimitiveType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsChar-javax.lang.model.type.PrimitiveType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsChar-javax.lang.model.type.PrimitiveType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1203,10 +1167,10 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitPrimitiveAsDouble_Javax_Lang_Model_Type_PrimitiveType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitPrimitiveAsDouble(Javax.Lang.Model.Type.PrimitiveType,`1)">
   VisitPrimitiveAsDouble(PrimitiveType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L343"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsDouble(javax.lang.model.type.PrimitiveType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsDouble(javax.lang.model.type.PrimitiveType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsDouble-javax.lang.model.type.PrimitiveType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsDouble-javax.lang.model.type.PrimitiveType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1245,10 +1209,10 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitPrimitiveAsFloat_Javax_Lang_Model_Type_PrimitiveType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitPrimitiveAsFloat(Javax.Lang.Model.Type.PrimitiveType,`1)">
   VisitPrimitiveAsFloat(PrimitiveType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L353"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsFloat(javax.lang.model.type.PrimitiveType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsFloat(javax.lang.model.type.PrimitiveType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsFloat-javax.lang.model.type.PrimitiveType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsFloat-javax.lang.model.type.PrimitiveType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1287,10 +1251,10 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitPrimitiveAsInt_Javax_Lang_Model_Type_PrimitiveType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitPrimitiveAsInt(Javax.Lang.Model.Type.PrimitiveType,`1)">
   VisitPrimitiveAsInt(PrimitiveType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L363"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsInt(javax.lang.model.type.PrimitiveType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsInt(javax.lang.model.type.PrimitiveType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsInt-javax.lang.model.type.PrimitiveType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsInt-javax.lang.model.type.PrimitiveType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1329,10 +1293,10 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitPrimitiveAsLong_Javax_Lang_Model_Type_PrimitiveType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitPrimitiveAsLong(Javax.Lang.Model.Type.PrimitiveType,`1)">
   VisitPrimitiveAsLong(PrimitiveType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsLong(javax.lang.model.type.PrimitiveType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsLong(javax.lang.model.type.PrimitiveType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsLong-javax.lang.model.type.PrimitiveType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsLong-javax.lang.model.type.PrimitiveType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1371,10 +1335,10 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_VisitPrimitiveAsShort_Javax_Lang_Model_Type_PrimitiveType__1_" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.VisitPrimitiveAsShort(Javax.Lang.Model.Type.PrimitiveType,`1)">
   VisitPrimitiveAsShort(PrimitiveType, P)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsShort(javax.lang.model.type.PrimitiveType,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsShort(javax.lang.model.type.PrimitiveType,java.lang.Object)</a></p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsShort-javax.lang.model.type.PrimitiveType-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsShort-javax.lang.model.type.PrimitiveType-java.lang.Object-</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1417,7 +1381,7 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Lang_Model_Util_TypeKindVisitor6_2_op_Implicit_Javax_Lang_Model_Util_TypeKindVisitor6__0__1___Javax_Lang_Model_Util_TypeKindVisitor6" data-uid="Javax.Lang.Model.Util.TypeKindVisitor6`2.op_Implicit(Javax.Lang.Model.Util.TypeKindVisitor6{`0,`1})~Javax.Lang.Model.Util.TypeKindVisitor6">
   implicit operator TypeKindVisitor6(TypeKindVisitor6&lt;R, P&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L264"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Lang.Model.Util.TypeKindVisitor6-2.html">TypeKindVisitor6&lt;R, P&gt;</a> to <a class="xref" href="Javax.Lang.Model.Util.TypeKindVisitor6.html">TypeKindVisitor6</a></p>
@@ -1454,7 +1418,7 @@ public TypeKindVisitor6(IJVMBridgeBaseInitializer initializer)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L264" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Util/TypeKindVisitor6.cs/#L254" class="edit-link">Edit this page</a>
         </div>
 
 

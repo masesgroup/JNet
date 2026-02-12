@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Module | MASES Group - JNet ">
       <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
-      <meta name="description" content="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html">
+      <meta name="description" content=".NET implementations of https://docs.oracle.com/javase/8/docs/api/java/lang/Module.html">
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,20 +89,20 @@
 
 
   <h1 id="Java_Lang_Module" data-uid="Java.Lang.Module" class="text-break">
-Class Module  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L70"><i class="bi bi-code-slash"></i></a>
+Class Module  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Lang.html">Lang</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNetReflector.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html</a></p>
+  <div class="markdown summary"><p>.NET implementations of <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Module.html">https://docs.oracle.com/javase/8/docs/api/java/lang/Module.html</a></p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Module : AnnotatedElement, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAnnotatedElement</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class Module : JVMBridgeBase&lt;Module&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -114,8 +114,7 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
-      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html">AnnotatedElement</a>&gt;</div>
-      <div><a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html">AnnotatedElement</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Lang.Module.html">Module</a>&gt;</div>
       <div><span class="xref">Module</span></div>
     </dd>
   </dl>
@@ -130,7 +129,6 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
-      <div><a class="xref" href="Java.Lang.Reflect.IAnnotatedElement.html">IAnnotatedElement</a></div>
     </dd>
   </dl>
 
@@ -139,187 +137,160 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html#Java_Lang_Reflect_AnnotatedElement_GetAnnotation__1_Java_Lang_Class___0__">AnnotatedElement.GetAnnotation&lt;T&gt;(Class&lt;T&gt;)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecute(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html#Java_Lang_Reflect_AnnotatedElement_GetAnnotationsByType__1_Java_Lang_Class___0__">AnnotatedElement.GetAnnotationsByType&lt;T&gt;(Class&lt;T&gt;)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html#Java_Lang_Reflect_AnnotatedElement_GetDeclaredAnnotation__1_Java_Lang_Class___0__">AnnotatedElement.GetDeclaredAnnotation&lt;T&gt;(Class&lt;T&gt;)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecute(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html#Java_Lang_Reflect_AnnotatedElement_GetDeclaredAnnotationsByType__1_Java_Lang_Class___0__">AnnotatedElement.GetDeclaredAnnotationsByType&lt;T&gt;(Class&lt;T&gt;)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html#Java_Lang_Reflect_AnnotatedElement_IsAnnotationPresent__1_Java_Lang_Class___0__">AnnotatedElement.IsAnnotationPresent&lt;T&gt;(Class&lt;T&gt;)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html#Java_Lang_Reflect_AnnotatedElement_GetDeclaredAnnotation__1_Java_Lang_Class_">AnnotatedElement.GetDeclaredAnnotation&lt;T&gt;(Class)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html#Java_Lang_Reflect_AnnotatedElement_GetAnnotationsByType__1_Java_Lang_Class_">AnnotatedElement.GetAnnotationsByType&lt;T&gt;(Class)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html#Java_Lang_Reflect_AnnotatedElement_GetDeclaredAnnotationsByType__1_Java_Lang_Class_">AnnotatedElement.GetDeclaredAnnotationsByType&lt;T&gt;(Class)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html#Java_Lang_Reflect_AnnotatedElement_IsAnnotationPresent_Java_Lang_Class_">AnnotatedElement.IsAnnotationPresent(Class)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecute(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecute(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SGetField(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SGetField(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SGetField&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SSetField(IJavaType, string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SSetField(string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SGetField(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SGetField(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.IsAssignableFrom(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_IsAssignableFrom_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaType_">JVMBridgeBase&lt;Module&gt;.IsAssignableFrom(IJavaType)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SGetField&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_IsAssignableFrom__1">JVMBridgeBase&lt;Module&gt;.IsAssignableFrom&lt;T&gt;()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Module&gt;.New(params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.NewWithSignature(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SSetField(IJavaType, string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SSetField(string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Module&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_Execute__1___0___">JVMBridgeBase&lt;Module&gt;.Execute&lt;T&gt;(params T[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_DynBridgeClazz">JVMBridgeBase&lt;Module&gt;.DynBridgeClazz</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_IsAssignableFrom_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaType_">JVMBridgeBase&lt;AnnotatedElement&gt;.IsAssignableFrom(IJavaType)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_IsAssignableFrom__1">JVMBridgeBase&lt;AnnotatedElement&gt;.IsAssignableFrom&lt;T&gt;()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AnnotatedElement&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotatedElement&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_Execute__1___0___">JVMBridgeBase&lt;AnnotatedElement&gt;.Execute&lt;T&gt;(params T[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_DynBridgeClazz">JVMBridgeBase&lt;AnnotatedElement&gt;.DynBridgeClazz</a>
-    </div>
-    <div>
-      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;AnnotatedElement&gt;.BridgeClazz</a>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Module&gt;.BridgeClazz</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
@@ -397,9 +368,6 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
-    </div>
-    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
@@ -472,49 +440,31 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeInstance">JVMBridgeBase.BridgeInstance</a>
     </div>
     <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface">JVMBridgeBase.IsBridgeInterface</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract">JVMBridgeBase.IsBridgeAbstract</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic">JVMBridgeBase.IsBridgeStatic</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable">JVMBridgeBase.IsBridgeCloseable</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeListener">JVMBridgeBase.IsBridgeListener</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
@@ -523,26 +473,52 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
   </dd></dl>
 
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
-  <div>
-      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
-  </div>
-  </dd></dl>
 
 
 
@@ -556,11 +532,10 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_Module__ctor" data-uid="Java.Lang.Module.#ctor">
   Module()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -583,22 +558,22 @@ Class Module  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Java_Lang_Module__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Lang.Module.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
   Module(IJVMBridgeBaseInitializer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
-public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
+    <pre><code class="lang-csharp hljs">public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
-    <dd></dd>
+    <dd><p>An instance of <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></p>
+</dd>
   </dl>
 
 
@@ -608,38 +583,9 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
-
-
-
-
-  <a id="Java_Lang_Module__ctor_" data-uid="Java.Lang.Module.#ctor*"></a>
-
-  <h3 id="Java_Lang_Module__ctor_System_Object___" data-uid="Java.Lang.Module.#ctor(System.Object[])">
-  Module(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L47"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <h4 class="section" id="Java_Lang_Module__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Shall be available in any class inherited from <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Module(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
 
 
 
@@ -652,10 +598,10 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Module_Annotations" data-uid="Java.Lang.Module.Annotations">
   Annotations
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotations()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotations()</a></p>
+  <div class="markdown level1 summary"><p>Returns annotations that are present on this element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -684,7 +630,7 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Module_BridgeClassName" data-uid="Java.Lang.Module.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -716,10 +662,10 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Module_ClassLoader" data-uid="Java.Lang.Module.ClassLoader">
   ClassLoader
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getClassLoader()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getClassLoader()</a></p>
+  <div class="markdown level1 summary"><p>Returns the ClassLoader for this module.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -748,10 +694,10 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Module_DeclaredAnnotations" data-uid="Java.Lang.Module.DeclaredAnnotations">
   DeclaredAnnotations
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getDeclaredAnnotations()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getDeclaredAnnotations()</a></p>
+  <div class="markdown level1 summary"><p>Returns annotations that are directly present on this element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -776,51 +722,19 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
-  <a id="Java_Lang_Module_Descriptor_" data-uid="Java.Lang.Module.Descriptor*"></a>
+  <a id="Java_Lang_Module_IsNamed_" data-uid="Java.Lang.Module.IsNamed*"></a>
 
-  <h3 id="Java_Lang_Module_Descriptor" data-uid="Java.Lang.Module.Descriptor">
-  Descriptor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Java_Lang_Module_IsNamed" data-uid="Java.Lang.Module.IsNamed">
+  IsNamed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getDescriptor()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getDescriptor()</a></p>
+  <div class="markdown level1 summary"><p>Returns true if this module is a named module.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ModuleDescriptor Descriptor { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Lang.ModuleNs.ModuleDescriptor.html">ModuleDescriptor</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_IsBridgeAbstract_" data-uid="Java.Lang.Module.IsBridgeAbstract*"></a>
-
-  <h3 id="Java_Lang_Module_IsBridgeAbstract" data-uid="Java.Lang.Module.IsBridgeAbstract">
-  IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L56"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsNamed { get; }</code></pre>
   </div>
 
 
@@ -830,134 +744,6 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_IsBridgeCloseable_" data-uid="Java.Lang.Module.IsBridgeCloseable*"></a>
-
-  <h3 id="Java_Lang_Module_IsBridgeCloseable" data-uid="Java.Lang.Module.IsBridgeCloseable">
-  IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L58"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_IsBridgeInterface_" data-uid="Java.Lang.Module.IsBridgeInterface*"></a>
-
-  <h3 id="Java_Lang_Module_IsBridgeInterface" data-uid="Java.Lang.Module.IsBridgeInterface">
-  IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L60"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_IsBridgeStatic_" data-uid="Java.Lang.Module.IsBridgeStatic*"></a>
-
-  <h3 id="Java_Lang_Module_IsBridgeStatic" data-uid="Java.Lang.Module.IsBridgeStatic">
-  IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L62"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_Layer_" data-uid="Java.Lang.Module.Layer*"></a>
-
-  <h3 id="Java_Lang_Module_Layer" data-uid="Java.Lang.Module.Layer">
-  Layer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L120"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getLayer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getLayer()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ModuleLayer Layer { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></dt>
     <dd></dd>
   </dl>
 
@@ -972,15 +758,15 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Module_Name" data-uid="Java.Lang.Module.Name">
   Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getName()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getName()</a></p>
+  <div class="markdown level1 summary"><p>Returns the module name or null if this module is an unnamed module.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String Name { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
   </div>
 
 
@@ -989,39 +775,7 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_Packages_" data-uid="Java.Lang.Module.Packages*"></a>
-
-  <h3 id="Java_Lang_Module_Packages" data-uid="Java.Lang.Module.Packages">
-  Packages
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L134"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getPackages()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getPackages()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Set&lt;String&gt; Packages { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -1034,48 +788,6 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h2 class="section" id="methods">Methods
 </h2>
-
-
-  <a id="Java_Lang_Module_AddExports_" data-uid="Java.Lang.Module.AddExports*"></a>
-
-  <h3 id="Java_Lang_Module_AddExports_Java_Lang_String_Java_Lang_Module_" data-uid="Java.Lang.Module.AddExports(Java.Lang.String,Java.Lang.Module)">
-  AddExports(String, Module)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L228"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addExports(java.lang.String,java.lang.Module)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addExports(java.lang.String,java.lang.Module)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Module AddExports(String arg0, Module arg1)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
 
 
   <a id="Java_Lang_Module_AddExports_" data-uid="Java.Lang.Module.AddExports*"></a>
@@ -1105,48 +817,6 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
   <dl class="parameters">
     <dt><a class="xref" href="Java.Lang.Module.html">Module</a></dt>
     <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_AddOpens_" data-uid="Java.Lang.Module.AddOpens*"></a>
-
-  <h3 id="Java_Lang_Module_AddOpens_Java_Lang_String_Java_Lang_Module_" data-uid="Java.Lang.Module.AddOpens(Java.Lang.String,Java.Lang.Module)">
-  AddOpens(String, Module)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L238"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addOpens(java.lang.String,java.lang.Module)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addOpens(java.lang.String,java.lang.Module)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Module AddOpens(String arg0, Module arg1)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
   </dl>
 
 
@@ -1202,29 +872,27 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Module_AddReads_Java_Lang_Module_" data-uid="Java.Lang.Module.AddReads(Java.Lang.Module)">
   AddReads(Module)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addReads(java.lang.Module)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addReads(java.lang.Module)</a></p>
+  <div class="markdown level1 summary"><p>If the caller's module is this module then update this module to read the given module.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Module AddReads(Module arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public Module AddReads(Module other)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
+    <dt><code>other</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
+    <dd></dd>
   </dl>
 
 
@@ -1241,29 +909,27 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Module_AddUses_Java_Lang_Class_" data-uid="Java.Lang.Module.AddUses(Java.Lang.Class)">
   AddUses(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addUses(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addUses(java.lang.Class)</a></p>
+  <div class="markdown level1 summary"><p>If the caller's module is this module then update this module to add a service dependence on the given service type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Module AddUses(Class arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public Module AddUses(Class service)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
-</dd>
+    <dt><code>service</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
+    <dd></dd>
   </dl>
 
 
@@ -1280,29 +946,27 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Module_CanRead_Java_Lang_Module_" data-uid="Java.Lang.Module.CanRead(Java.Lang.Module)">
   CanRead(Module)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canRead(java.lang.Module)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canRead(java.lang.Module)</a></p>
+  <div class="markdown level1 summary"><p>Indicates if this module reads the given module.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanRead(Module arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool CanRead(Module other)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
+    <dt><code>other</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
-</dd>
+    <dd></dd>
   </dl>
 
 
@@ -1319,76 +983,29 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Lang_Module_CanUse_Java_Lang_Class_" data-uid="Java.Lang.Module.CanUse(Java.Lang.Class)">
   CanUse(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canUse(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canUse(java.lang.Class)</a></p>
+  <div class="markdown level1 summary"><p>Indicates if this module has a service dependence on the given service type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanUse(Class arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool CanUse(Class service)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
-</dd>
+    <dt><code>service</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
-</dd>
+    <dd></dd>
   </dl>
 
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_GetAnnotation_" data-uid="Java.Lang.Module.GetAnnotation*"></a>
-
-  <h3 id="Java_Lang_Module_GetAnnotation__1_Java_Lang_Class_" data-uid="Java.Lang.Module.GetAnnotation``1(Java.Lang.Class)">
-  GetAnnotation&lt;T&gt;(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L144"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotation(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotation(java.lang.Class)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T GetAnnotation&lt;T&gt;(Class arg0) where T : IAnnotation</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
-    <dd><p><code class="typeparamref">T</code></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p><a class="xref" href="Java.Lang.Annotation.IAnnotation.html">IAnnotation</a></p>
-</dd>
-  </dl>
 
 
 
@@ -1431,131 +1048,6 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
     <dt><code>T</code></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_GetResourceAsStream_" data-uid="Java.Lang.Module.GetResourceAsStream*"></a>
-
-  <h3 id="Java_Lang_Module_GetResourceAsStream_Java_Lang_String_" data-uid="Java.Lang.Module.GetResourceAsStream(Java.Lang.String)">
-  GetResourceAsStream(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L218"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getResourceAsStream(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getResourceAsStream(java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InputStream GetResourceAsStream(String arg0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Io.InputStream.html">InputStream</a></dt>
-    <dd><p><a class="xref" href="Java.Io.InputStream.html">InputStream</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-  <a id="Java_Lang_Module_IsExported_" data-uid="Java.Lang.Module.IsExported*"></a>
-
-  <h3 id="Java_Lang_Module_IsExported_Java_Lang_String_" data-uid="Java.Lang.Module.IsExported(Java.Lang.String)">
-  IsExported(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L181"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsExported(String arg0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_IsExported_" data-uid="Java.Lang.Module.IsExported*"></a>
-
-  <h3 id="Java_Lang_Module_IsExported_Java_Lang_String_Java_Lang_Module_" data-uid="Java.Lang.Module.IsExported(Java.Lang.String,Java.Lang.Module)">
-  IsExported(String, Module)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L172"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String,java.lang.Module)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String,java.lang.Module)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsExported(String arg0, Module arg1)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
-</dd>
-  </dl>
-
 
 
 
@@ -1630,120 +1122,6 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_IsNamed_" data-uid="Java.Lang.Module.IsNamed*"></a>
-
-  <h3 id="Java_Lang_Module_IsNamed" data-uid="Java.Lang.Module.IsNamed">
-  IsNamed()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L189"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isNamed()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isNamed()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsNamed()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_IsOpen_" data-uid="Java.Lang.Module.IsOpen*"></a>
-
-  <h3 id="Java_Lang_Module_IsOpen_Java_Lang_String_" data-uid="Java.Lang.Module.IsOpen(Java.Lang.String)">
-  IsOpen(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L208"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsOpen(String arg0)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Lang_Module_IsOpen_" data-uid="Java.Lang.Module.IsOpen*"></a>
-
-  <h3 id="Java_Lang_Module_IsOpen_Java_Lang_String_Java_Lang_Module_" data-uid="Java.Lang.Module.IsOpen(Java.Lang.String,Java.Lang.Module)">
-  IsOpen(String, Module)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L199"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String,java.lang.Module)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String,java.lang.Module)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsOpen(String arg0, Module arg1)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
-</dd>
-    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
-    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
-</dd>
   </dl>
 
 
@@ -1836,7 +1214,7 @@ public Module(IJVMBridgeBaseInitializer initializer)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Module.cs/#L70" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Module.cs/#L29" class="edit-link">Edit this page</a>
         </div>
 
 

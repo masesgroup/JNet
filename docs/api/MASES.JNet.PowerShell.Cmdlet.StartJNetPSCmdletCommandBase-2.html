@@ -364,6 +364,39 @@ public string DebugSuspendFlag { get; set; }</code></pre>
 
 
 
+  <a id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_DisableOpenOnJavaNio_" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.DisableOpenOnJavaNio*"></a>
+
+  <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_DisableOpenOnJavaNio" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.DisableOpenOnJavaNio">
+  DisableOpenOnJavaNio
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.SetupJVMWrapper.html#MASES_JCOBridge_C2JBridge_SetupJVMWrapper_DisableOpenOnJavaNio">DisableOpenOnJavaNio</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Set on command-line to close access to java.nio module i.e. removes --add-opens=java.base/java.nio=ALL-UNNAMED on JVM parameters&quot;)]
+public SwitchParameter DisableOpenOnJavaNio { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.switchparameter">SwitchParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_EnableDebug_" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.EnableDebug*"></a>
 
   <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_EnableDebug" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.EnableDebug">
@@ -397,11 +430,44 @@ public SwitchParameter EnableDebug { get; set; }</code></pre>
 
 
 
+  <a id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_EnableNativeAccess_" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.EnableNativeAccess*"></a>
+
+  <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_EnableNativeAccess" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.EnableNativeAccess">
+  EnableNativeAccess
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.SetupJVMWrapper.html#MASES_JCOBridge_C2JBridge_SetupJVMWrapper_EnableNativeAccess">EnableNativeAccess</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Set on command-line to enable native access as defined in https://openjdk.org/jeps/472, default value is disabled for compatibility with JDK 11&quot;)]
+public SwitchParameter EnableNativeAccess { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.switchparameter">SwitchParameter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_ExtraJVMKVOptions_" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.ExtraJVMKVOptions*"></a>
 
   <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_ExtraJVMKVOptions" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.ExtraJVMKVOptions">
   ExtraJVMKVOptions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic extra options to be used from JVM</p>
@@ -434,7 +500,7 @@ public string[] ExtraJVMKVOptions { get; set; }</code></pre>
 
   <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_ExtraJVMOptions" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.ExtraJVMOptions">
   ExtraJVMOptions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic extra options to be used from JVM</p>
@@ -486,6 +552,39 @@ public string HeapSize { get; set; }</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_IgnoreUnrecognized_" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.IgnoreUnrecognized*"></a>
+
+  <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_IgnoreUnrecognized" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.IgnoreUnrecognized">
+  IgnoreUnrecognized
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.IgnoreUnrecognized</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Set on command-line to inform the JVM to ignore unrecognized options&quot;)]
+public SwitchParameter IgnoreUnrecognized { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.switchparameter">SwitchParameter</a></dt>
     <dd></dd>
   </dl>
 
@@ -797,7 +896,7 @@ public string LicensePath { get; set; }</code></pre>
 
   <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_LogClassPath" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.LogClassPath">
   LogClassPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the global value of the log class path</p>
@@ -830,7 +929,7 @@ public SwitchParameter LogClassPath { get; set; }</code></pre>
 
   <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_WriteEventOrExceptionOnCmdLine" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.WriteEventOrExceptionOnCmdLine">
   WriteEventOrExceptionOnCmdLine
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -866,7 +965,7 @@ public SwitchParameter WriteEventOrExceptionOnCmdLine { get; set; }</code></pre>
 
   <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_AddJVMOption_System_String_System_String_" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.AddJVMOption(System.String,System.String)">
   AddJVMOption(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L238"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds <code class="paramref">jvmOptionName</code>, with optional <code class="paramref">jvmOptionValue</code>, to ApplicationJVMExtraOptions</p>
@@ -902,7 +1001,7 @@ public SwitchParameter WriteEventOrExceptionOnCmdLine { get; set; }</code></pre>
 
   <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_CreateGlobalInstance" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.CreateGlobalInstance">
   CreateGlobalInstance()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L250"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invokes the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.SetupJVMWrapper-1.html#MASES_JCOBridge_C2JBridge_SetupJVMWrapper_1_CreateGlobalInstance">CreateGlobalInstance()</a></p>
@@ -929,7 +1028,7 @@ public SwitchParameter WriteEventOrExceptionOnCmdLine { get; set; }</code></pre>
 
   <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_OnAfterCreateGlobalInstance" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.OnAfterCreateGlobalInstance">
   OnAfterCreateGlobalInstance()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the code after invoke <a class="xref" href="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_CreateGlobalInstance">CreateGlobalInstance()</a></p>
@@ -956,7 +1055,7 @@ public SwitchParameter WriteEventOrExceptionOnCmdLine { get; set; }</code></pre>
 
   <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_OnBeforeCreateGlobalInstance" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.OnBeforeCreateGlobalInstance">
   OnBeforeCreateGlobalInstance()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L246"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the code before invoke <a class="xref" href="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_CreateGlobalInstance">CreateGlobalInstance()</a></p>
@@ -983,7 +1082,7 @@ public SwitchParameter WriteEventOrExceptionOnCmdLine { get; set; }</code></pre>
 
   <h3 id="MASES_JNet_PowerShell_Cmdlet_StartJNetPSCmdletCommandBase_2_ProcessCommand" data-uid="MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase`2.ProcessCommand">
   ProcessCommand()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

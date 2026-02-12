@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class JApplet | MASES Group - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class JApplet | MASES Group - JNet ">
+      <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
+      <meta name="description" content="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JApplet.md&amp;value=---%0Auid%3A%20Javax.Swing.JApplet%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Javax.Swing.JApplet">
+
+
+
+  <h1 id="Javax_Swing_JApplet" data-uid="Javax.Swing.JApplet" class="text-break">
+Class JApplet  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Javax.html">Javax</a>.<a class="xref" href="Javax.Swing.html">Swing</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JApplet : Applet, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Awt.Component.html">Component</a>&gt;</div>
+      <div><a class="xref" href="Java.Awt.Component.html">Component</a></div>
+      <div><a class="xref" href="Java.Awt.Container.html">Container</a></div>
+      <div><a class="xref" href="Java.Awt.Panel.html">Panel</a></div>
+      <div><a class="xref" href="Java.Applet.Applet.html">Applet</a></div>
+      <div><span class="xref">JApplet</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_NewAudioClip_Java_Net_URL_">Applet.NewAudioClip(URL)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_AppletContext">Applet.AppletContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_AppletInfo">Applet.AppletInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_CodeBase">Applet.CodeBase</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_DocumentBase">Applet.DocumentBase</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_ParameterInfo">Applet.ParameterInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_IsActive">Applet.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_SetStub_Java_Applet_AppletStub_">Applet.SetStub(AppletStub)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_GetAudioClip_Java_Net_URL_Java_Lang_String_">Applet.GetAudioClip(URL, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_GetAudioClip_Java_Net_URL_">Applet.GetAudioClip(URL)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_GetImage_Java_Net_URL_Java_Lang_String_">Applet.GetImage(URL, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_GetImage_Java_Net_URL_">Applet.GetImage(URL)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_GetParameter_Java_Lang_String_">Applet.GetParameter(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_Destroy">Applet.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_Init">Applet.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_Play_Java_Net_URL_Java_Lang_String_">Applet.Play(URL, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_Play_Java_Net_URL_">Applet.Play(URL)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_ShowStatus_Java_Lang_String_">Applet.ShowStatus(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_Start">Applet.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Applet.Applet.html#Java_Applet_Applet_Stop">Applet.Stop()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_CreateHostedContainer_System_Boolean_MASES_JCOBridge_C2JBridge_JCWindowsManager_">Container.CreateHostedContainer(bool, JCWindowsManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_HostedContainer">Container.HostedContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Dispose_System_Boolean_">Container.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_ComponentCount">Container.ComponentCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Components">Container.Components</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_ContainerListeners">Container.ContainerListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_FocusTraversalPolicy">Container.FocusTraversalPolicy</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Insets">Container.Insets</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Layout">Container.Layout</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_IsAncestorOf_Java_Awt_Component_">Container.IsAncestorOf(Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_IsFocusCycleRoot">Container.IsFocusCycleRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_IsFocusTraversalPolicySet">Container.IsFocusTraversalPolicySet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_IsValidateRoot">Container.IsValidateRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_IsFocusTraversalPolicyProvider">Container.IsFocusTraversalPolicyProvider()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_SetFocusTraversalPolicyProvider_System_Boolean_">Container.SetFocusTraversalPolicyProvider(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_GetComponentZOrder_Java_Awt_Component_">Container.GetComponentZOrder(Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Add_Java_Awt_Component_System_Int32_">Container.Add(Component, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Add_Java_Awt_Component_">Container.Add(Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Add_Java_Lang_String_Java_Awt_Component_">Container.Add(String, Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_FindComponentAt_System_Int32_System_Int32_">Container.FindComponentAt(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_FindComponentAt_Java_Awt_Point_">Container.FindComponentAt(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_GetComponent_System_Int32_">Container.GetComponent(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_GetMousePosition_System_Boolean_">Container.GetMousePosition(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_AddContainerListener_Java_Awt_EventNs_ContainerListener_">Container.AddContainerListener(ContainerListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_RemoveContainerListener_Java_Awt_EventNs_ContainerListener_">Container.RemoveContainerListener(ContainerListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Add_Java_Awt_Component_System_Object_System_Int32_">Container.Add(Component, object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Add_Java_Awt_Component_System_Object_">Container.Add(Component, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_PaintComponents_Java_Awt_Graphics_">Container.PaintComponents(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_PrintComponents_Java_Awt_Graphics_">Container.PrintComponents(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Remove_System_Int32_">Container.Remove(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Remove_Java_Awt_Component_">Container.Remove(Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_RemoveAll">Container.RemoveAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_SetComponentZOrder_Java_Awt_Component_System_Int32_">Container.SetComponentZOrder(Component, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_SetFocusCycleRoot_System_Boolean_">Container.SetFocusCycleRoot(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_TransferFocusDownCycle">Container.TransferFocusDownCycle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_BOTTOM_ALIGNMENT">Component.BOTTOM_ALIGNMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CENTER_ALIGNMENT">Component.CENTER_ALIGNMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_LEFT_ALIGNMENT">Component.LEFT_ALIGNMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RIGHT_ALIGNMENT">Component.RIGHT_ALIGNMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_TOP_ALIGNMENT">Component.TOP_ALIGNMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AccessibleContext">Component.AccessibleContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AlignmentX">Component.AlignmentX</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AlignmentY">Component.AlignmentY</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Background">Component.Background</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Bounds">Component.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_ColorModel">Component.ColorModel</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_ComponentListeners">Component.ComponentListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_ComponentOrientation">Component.ComponentOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Cursor">Component.Cursor</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_DropTarget">Component.DropTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FocusCycleRootAncestor">Component.FocusCycleRootAncestor</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FocusListeners">Component.FocusListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FocusTraversalKeysEnabled">Component.FocusTraversalKeysEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Font">Component.Font</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Foreground">Component.Foreground</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetBaselineResizeBehavior">Component.GetBaselineResizeBehavior</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Graphics">Component.Graphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GraphicsConfiguration">Component.GraphicsConfiguration</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Height">Component.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_HierarchyBoundsListeners">Component.HierarchyBoundsListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_HierarchyListeners">Component.HierarchyListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IgnoreRepaint">Component.IgnoreRepaint</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_InputContext">Component.InputContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_InputMethodListeners">Component.InputMethodListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_InputMethodRequests">Component.InputMethodRequests</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_KeyListeners">Component.KeyListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Locale">Component.Locale</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Location">Component.Location</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_LocationOnScreen">Component.LocationOnScreen</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MaximumSize">Component.MaximumSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MinimumSize">Component.MinimumSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MouseListeners">Component.MouseListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MouseMotionListeners">Component.MouseMotionListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MousePosition">Component.MousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MouseWheelListeners">Component.MouseWheelListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Name">Component.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Parent">Component.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PreferredSize">Component.PreferredSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PropertyChangeListeners">Component.PropertyChangeListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Size">Component.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Toolkit">Component.Toolkit</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_TreeLock">Component.TreeLock</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Width">Component.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_X">Component.X</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Y">Component.Y</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetListeners__1_Java_Lang_Class_">Component.GetListeners&lt;T&gt;(Class)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AreFocusTraversalKeysSet_System_Int32_">Component.AreFocusTraversalKeysSet(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Contains_System_Int32_System_Int32_">Component.Contains(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Contains_Java_Awt_Point_">Component.Contains(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_HasFocus">Component.HasFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_ImageUpdate_Java_Awt_Image_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">Component.ImageUpdate(Image, int, int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsBackgroundSet">Component.IsBackgroundSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsCursorSet">Component.IsCursorSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsDisplayable">Component.IsDisplayable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsDoubleBuffered">Component.IsDoubleBuffered()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsEnabled">Component.IsEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsFocusable">Component.IsFocusable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsFocusCycleRoot_Java_Awt_Container_">Component.IsFocusCycleRoot(Container)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsFocusOwner">Component.IsFocusOwner()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsFontSet">Component.IsFontSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsForegroundSet">Component.IsForegroundSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsLightweight">Component.IsLightweight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsMaximumSizeSet">Component.IsMaximumSizeSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsMinimumSizeSet">Component.IsMinimumSizeSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsOpaque">Component.IsOpaque()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsPreferredSizeSet">Component.IsPreferredSizeSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsShowing">Component.IsShowing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsValid">Component.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsVisible">Component.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PrepareImage_Java_Awt_Image_System_Int32_System_Int32_Java_Awt_ImageNs_ImageObserver_">Component.PrepareImage(Image, int, int, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PrepareImage_Java_Awt_Image_Java_Awt_ImageNs_ImageObserver_">Component.PrepareImage(Image, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RequestFocusInWindow">Component.RequestFocusInWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_DispatchEvent_Java_Awt_AWTEvent_">Component.DispatchEvent(AWTEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CheckImage_Java_Awt_Image_System_Int32_System_Int32_Java_Awt_ImageNs_ImageObserver_">Component.CheckImage(Image, int, int, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CheckImage_Java_Awt_Image_Java_Awt_ImageNs_ImageObserver_">Component.CheckImage(Image, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetBaseline_System_Int32_System_Int32_">Component.GetBaseline(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetComponentAt_System_Int32_System_Int32_">Component.GetComponentAt(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetComponentAt_Java_Awt_Point_">Component.GetComponentAt(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetSize_Java_Awt_Dimension_">Component.GetSize(Dimension)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetFontMetrics_Java_Awt_Font_">Component.GetFontMetrics(Font)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CreateImage_System_Int32_System_Int32_">Component.CreateImage(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CreateImage_Java_Awt_ImageNs_ImageProducer_">Component.CreateImage(ImageProducer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CreateVolatileImage_System_Int32_System_Int32_Java_Awt_ImageCapabilities_">Component.CreateVolatileImage(int, int, ImageCapabilities)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CreateVolatileImage_System_Int32_System_Int32_">Component.CreateVolatileImage(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetLocation_Java_Awt_Point_">Component.GetLocation(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetBounds_Java_Awt_Rectangle_">Component.GetBounds(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetPropertyChangeListeners_Java_Lang_String_">Component.GetPropertyChangeListeners(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetFocusTraversalKeys_System_Int32_">Component.GetFocusTraversalKeys(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddComponentListener_Java_Awt_EventNs_ComponentListener_">Component.AddComponentListener(ComponentListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddFocusListener_Java_Awt_EventNs_FocusListener_">Component.AddFocusListener(FocusListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddInputMethodListener_Java_Awt_EventNs_InputMethodListener_">Component.AddInputMethodListener(InputMethodListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddKeyListener_Java_Awt_EventNs_KeyListener_">Component.AddKeyListener(KeyListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddMouseListener_Java_Awt_EventNs_MouseListener_">Component.AddMouseListener(MouseListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddMouseMotionListener_Java_Awt_EventNs_MouseMotionListener_">Component.AddMouseMotionListener(MouseMotionListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddMouseWheelListener_Java_Awt_EventNs_MouseWheelListener_">Component.AddMouseWheelListener(MouseWheelListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveComponentListener_Java_Awt_EventNs_ComponentListener_">Component.RemoveComponentListener(ComponentListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveFocusListener_Java_Awt_EventNs_FocusListener_">Component.RemoveFocusListener(FocusListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveInputMethodListener_Java_Awt_EventNs_InputMethodListener_">Component.RemoveInputMethodListener(InputMethodListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveKeyListener_Java_Awt_EventNs_KeyListener_">Component.RemoveKeyListener(KeyListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveMouseListener_Java_Awt_EventNs_MouseListener_">Component.RemoveMouseListener(MouseListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveMouseMotionListener_Java_Awt_EventNs_MouseMotionListener_">Component.RemoveMouseMotionListener(MouseMotionListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveMouseWheelListener_Java_Awt_EventNs_MouseWheelListener_">Component.RemoveMouseWheelListener(MouseWheelListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Add_Java_Awt_PopupMenu_">Component.Add(PopupMenu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddHierarchyBoundsListener_Java_Awt_EventNs_HierarchyBoundsListener_">Component.AddHierarchyBoundsListener(HierarchyBoundsListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddHierarchyListener_Java_Awt_EventNs_HierarchyListener_">Component.AddHierarchyListener(HierarchyListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddNotify">Component.AddNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddPropertyChangeListener_Java_Beans_PropertyChangeListener_">Component.AddPropertyChangeListener(PropertyChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddPropertyChangeListener_Java_Lang_String_Java_Beans_PropertyChangeListener_">Component.AddPropertyChangeListener(String, PropertyChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_ApplyComponentOrientation_Java_Awt_ComponentOrientation_">Component.ApplyComponentOrientation(ComponentOrientation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_DoLayout">Component.DoLayout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_EnableInputMethods_System_Boolean_">Component.EnableInputMethods(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_Java_Lang_String_System_Byte_System_Byte_">Component.FirePropertyChange(String, byte, byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_Java_Lang_String_System_Char_System_Char_">Component.FirePropertyChange(String, char, char)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_Java_Lang_String_System_Double_System_Double_">Component.FirePropertyChange(String, double, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_Java_Lang_String_System_Single_System_Single_">Component.FirePropertyChange(String, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_Java_Lang_String_System_Int64_System_Int64_">Component.FirePropertyChange(String, long, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_Java_Lang_String_System_Int16_System_Int16_">Component.FirePropertyChange(String, short, short)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Invalidate">Component.Invalidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_List">Component.List()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_List_Java_Io_PrintStream_System_Int32_">Component.List(PrintStream, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_List_Java_Io_PrintStream_">Component.List(PrintStream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_List_Java_Io_PrintWriter_System_Int32_">Component.List(PrintWriter, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_List_Java_Io_PrintWriter_">Component.List(PrintWriter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Paint_Java_Awt_Graphics_">Component.Paint(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PaintAll_Java_Awt_Graphics_">Component.PaintAll(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Print_Java_Awt_Graphics_">Component.Print(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PrintAll_Java_Awt_Graphics_">Component.PrintAll(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Remove_Java_Awt_MenuComponent_">Component.Remove(MenuComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveHierarchyBoundsListener_Java_Awt_EventNs_HierarchyBoundsListener_">Component.RemoveHierarchyBoundsListener(HierarchyBoundsListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveHierarchyListener_Java_Awt_EventNs_HierarchyListener_">Component.RemoveHierarchyListener(HierarchyListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveNotify">Component.RemoveNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemovePropertyChangeListener_Java_Beans_PropertyChangeListener_">Component.RemovePropertyChangeListener(PropertyChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemovePropertyChangeListener_Java_Lang_String_Java_Beans_PropertyChangeListener_">Component.RemovePropertyChangeListener(String, PropertyChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Repaint">Component.Repaint()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Repaint_System_Int32_System_Int32_System_Int32_System_Int32_">Component.Repaint(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Repaint_System_Int64_System_Int32_System_Int32_System_Int32_System_Int32_">Component.Repaint(long, int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Repaint_System_Int64_">Component.Repaint(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RequestFocus">Component.RequestFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Revalidate">Component.Revalidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetBounds_System_Int32_System_Int32_System_Int32_System_Int32_">Component.SetBounds(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetEnabled_System_Boolean_">Component.SetEnabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetFocusable_System_Boolean_">Component.SetFocusable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetFocusTraversalKeys__1_System_Int32_Java_Util_Set___0__">Component.SetFocusTraversalKeys&lt;Arg1ExtendsJava_Awt_AWTKeyStroke&gt;(int, Set&lt;Arg1ExtendsJava_Awt_AWTKeyStroke&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetLocation_System_Int32_System_Int32_">Component.SetLocation(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetSize_System_Int32_System_Int32_">Component.SetSize(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetVisible_System_Boolean_">Component.SetVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_TransferFocus">Component.TransferFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_TransferFocusBackward">Component.TransferFocusBackward()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_TransferFocusUpCycle">Component.TransferFocusUpCycle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Update_Java_Awt_Graphics_">Component.Update(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Validate">Component.Validate()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_IsAssignableFrom_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaType_">JVMBridgeBase&lt;Component&gt;.IsAssignableFrom(IJavaType)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_IsAssignableFrom__1">JVMBridgeBase&lt;Component&gt;.IsAssignableFrom&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Component&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_Execute__1___0___">JVMBridgeBase&lt;Component&gt;.Execute&lt;T&gt;(params T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_DynBridgeClazz">JVMBridgeBase&lt;Component&gt;.DynBridgeClazz</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Component&gt;.BridgeClazz</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassOf__1">JVMBridgeBase.ClassOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_WrapsDirect__1_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wraps__1_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wraps__2_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wraps__3_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_MonitorEnter">JVMBridgeBase.MonitorEnter()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_MonitorExit">JVMBridgeBase.MonitorExit()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInstanceOf_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaType_">JVMBridgeBase.IsInstanceOf(IJavaType)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInstanceOf__1">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeIsInstanceOf__1">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_CastTo__1">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_CastDirect__1">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_GetHashCode">JVMBridgeBase.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Notify">JVMBridgeBase.Notify()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_NotifyAll">JVMBridgeBase.NotifyAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Wait">JVMBridgeBase.Wait()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_DynBridgeInstance">JVMBridgeBase.DynBridgeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeInstance">JVMBridgeBase.BridgeInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeListener">JVMBridgeBase.IsBridgeListener</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Javax_Swing_JApplet__ctor_" data-uid="Javax.Swing.JApplet.#ctor*"></a>
+
+  <h3 id="Javax_Swing_JApplet__ctor" data-uid="Javax.Swing.JApplet.#ctor">
+  JApplet()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JApplet()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet__ctor_" data-uid="Javax.Swing.JApplet.#ctor*"></a>
+
+  <h3 id="Javax_Swing_JApplet__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Javax.Swing.JApplet.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  JApplet(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public JApplet(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet__ctor_" data-uid="Javax.Swing.JApplet.#ctor*"></a>
+
+  <h3 id="Javax_Swing_JApplet__ctor_System_Object___" data-uid="Javax.Swing.JApplet.#ctor(System.Object[])">
+  JApplet(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JApplet(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Javax_Swing_JApplet_BridgeClassName_" data-uid="Javax.Swing.JApplet.BridgeClassName*"></a>
+
+  <h3 id="Javax_Swing_JApplet_BridgeClassName" data-uid="Javax.Swing.JApplet.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_ContentPane_" data-uid="Javax.Swing.JApplet.ContentPane*"></a>
+
+  <h3 id="Javax_Swing_JApplet_ContentPane" data-uid="Javax.Swing.JApplet.ContentPane">
+  ContentPane
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getContentPane--">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getContentPane--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#setContentPane-java.awt.Container-">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#setContentPane-java.awt.Container-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Container ContentPane { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Awt.Container.html">Container</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_GlassPane_" data-uid="Javax.Swing.JApplet.GlassPane*"></a>
+
+  <h3 id="Javax_Swing_JApplet_GlassPane" data-uid="Javax.Swing.JApplet.GlassPane">
+  GlassPane
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getGlassPane--">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getGlassPane--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#setGlassPane-java.awt.Component-">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#setGlassPane-java.awt.Component-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Component GlassPane { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Awt.Component.html">Component</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_IsBridgeAbstract_" data-uid="Javax.Swing.JApplet.IsBridgeAbstract*"></a>
+
+  <h3 id="Javax_Swing_JApplet_IsBridgeAbstract" data-uid="Javax.Swing.JApplet.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_IsBridgeCloseable_" data-uid="Javax.Swing.JApplet.IsBridgeCloseable*"></a>
+
+  <h3 id="Javax_Swing_JApplet_IsBridgeCloseable" data-uid="Javax.Swing.JApplet.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_IsBridgeInterface_" data-uid="Javax.Swing.JApplet.IsBridgeInterface*"></a>
+
+  <h3 id="Javax_Swing_JApplet_IsBridgeInterface" data-uid="Javax.Swing.JApplet.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_IsBridgeStatic_" data-uid="Javax.Swing.JApplet.IsBridgeStatic*"></a>
+
+  <h3 id="Javax_Swing_JApplet_IsBridgeStatic" data-uid="Javax.Swing.JApplet.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_JMenuBar_" data-uid="Javax.Swing.JApplet.JMenuBar*"></a>
+
+  <h3 id="Javax_Swing_JApplet_JMenuBar" data-uid="Javax.Swing.JApplet.JMenuBar">
+  JMenuBar
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getJMenuBar--">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getJMenuBar--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#setJMenuBar-javax.swing.JMenuBar-">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#setJMenuBar-javax.swing.JMenuBar-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JMenuBar JMenuBar { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Swing.JMenuBar.html">JMenuBar</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_LayeredPane_" data-uid="Javax.Swing.JApplet.LayeredPane*"></a>
+
+  <h3 id="Javax_Swing_JApplet_LayeredPane" data-uid="Javax.Swing.JApplet.LayeredPane">
+  LayeredPane
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getLayeredPane--">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getLayeredPane--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#setLayeredPane-javax.swing.JLayeredPane-">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#setLayeredPane-javax.swing.JLayeredPane-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JLayeredPane LayeredPane { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Swing.JLayeredPane.html">JLayeredPane</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_RootPane_" data-uid="Javax.Swing.JApplet.RootPane*"></a>
+
+  <h3 id="Javax_Swing_JApplet_RootPane" data-uid="Javax.Swing.JApplet.RootPane">
+  RootPane
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getRootPane--">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getRootPane--</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JRootPane RootPane { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Swing.JRootPane.html">JRootPane</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_TransferHandler_" data-uid="Javax.Swing.JApplet.TransferHandler*"></a>
+
+  <h3 id="Javax_Swing_JApplet_TransferHandler" data-uid="Javax.Swing.JApplet.TransferHandler">
+  TransferHandler
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getTransferHandler--">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#getTransferHandler--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#setTransferHandler-javax.swing.TransferHandler-">https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#setTransferHandler-javax.swing.TransferHandler-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransferHandler TransferHandler { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Swing.TransferHandler.html">TransferHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Javax_Swing_JApplet_op_Implicit_" data-uid="Javax.Swing.JApplet.op_Implicit*"></a>
+
+  <h3 id="Javax_Swing_JApplet_op_Implicit_Javax_Swing_JApplet__Javax_Accessibility_Accessible" data-uid="Javax.Swing.JApplet.op_Implicit(Javax.Swing.JApplet)~Javax.Accessibility.Accessible">
+  implicit operator Accessible(JApplet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Swing.JApplet.html">JApplet</a> to <a class="xref" href="Javax.Accessibility.Accessible.html">Accessible</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Accessible(JApplet t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Javax.Swing.JApplet.html">JApplet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Accessibility.Accessible.html">Accessible</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JApplet_op_Implicit_" data-uid="Javax.Swing.JApplet.op_Implicit*"></a>
+
+  <h3 id="Javax_Swing_JApplet_op_Implicit_Javax_Swing_JApplet__Javax_Swing_RootPaneContainer" data-uid="Javax.Swing.JApplet.op_Implicit(Javax.Swing.JApplet)~Javax.Swing.RootPaneContainer">
+  implicit operator RootPaneContainer(JApplet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Swing.JApplet.html">JApplet</a> to <a class="xref" href="Javax.Swing.RootPaneContainer.html">RootPaneContainer</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator RootPaneContainer(JApplet t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Javax.Swing.JApplet.html">JApplet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Swing.RootPaneContainer.html">RootPaneContainer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JApplet.cs/#L70" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2022 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
