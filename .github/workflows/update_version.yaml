@@ -11,9 +11,17 @@ on:
         description: 'The current version'
         required: true
         type: string
+      PreReleaseCurrentVersion:
+        description: 'The current version pre-release tag'
+        required: false
+        type: string
       NewVersion:
         description: 'The new version'
         required: true
+        type: string
+      PreReleaseNewVersion:
+        description: 'The new version pre-release tag'
+        required: false
         type: string
         
 # This workflow contains one job called "build_documentation"
@@ -38,25 +46,25 @@ jobs:
       - run: (Get-Content ${{ github.workspace }}\src\jvm\jnet\pom.xml).Replace('<jnetversion>${{ inputs.CurrentVersion }}.0</jnetversion>', '<jnetversion>${{ inputs.NewVersion }}.0</jnetversion>') | Set-Content ${{ github.workspace }}\src\jvm\jnet\pom.xml
       - run: (Get-Content ${{ github.workspace }}\src\jvm\jnetreflector\pom.xml).Replace('<jnetversion>${{ inputs.CurrentVersion }}.0</jnetversion>', '<jnetversion>${{ inputs.NewVersion }}.0</jnetversion>') | Set-Content ${{ github.workspace }}\src\jvm\jnetreflector\pom.xml
       
-      - run: (Get-Content ${{ github.workspace }}\src\net\Common\Common.props).Replace('<Version>${{ inputs.CurrentVersion }}.0</Version>', '<Version>${{ inputs.NewVersion }}.0</Version>') | Set-Content ${{ github.workspace }}\src\net\Common\Common.props
+      - run: (Get-Content ${{ github.workspace }}\src\net\Common\Common.props).Replace('<Version>${{ inputs.CurrentVersion }}.0${{ inputs.PreReleaseCurrentVersion }}</Version>', '<Version>${{ inputs.NewVersion }}.0${{ inputs.PreReleaseNewVersion }}</Version>') | Set-Content ${{ github.workspace }}\src\net\Common\Common.props
 
-      - run: (Get-Content ${{ github.workspace }}\src\net\JNetCLI\JNetCLI.nuspec).Replace('<version>${{ inputs.CurrentVersion }}</version>', '<version>${{ inputs.NewVersion }}</version>') | Set-Content ${{ github.workspace }}\src\net\JNetCLI\JNetCLI.nuspec
-      - run: (Get-Content ${{ github.workspace }}\src\net\JNetReflector\JNetReflector.nuspec).Replace('<version>${{ inputs.CurrentVersion }}</version>', '<version>${{ inputs.NewVersion }}</version>') | Set-Content ${{ github.workspace }}\src\net\JNetReflector\JNetReflector.nuspec
+      - run: (Get-Content ${{ github.workspace }}\src\net\JNetCLI\JNetCLI.nuspec).Replace('<version>${{ inputs.CurrentVersion }}${{ inputs.PreReleaseCurrentVersion }}</version>', '<version>${{ inputs.NewVersion }}${{ inputs.PreReleaseNewVersion }}</version>') | Set-Content ${{ github.workspace }}\src\net\JNetCLI\JNetCLI.nuspec
+      - run: (Get-Content ${{ github.workspace }}\src\net\JNetReflector\JNetReflector.nuspec).Replace('<version>${{ inputs.CurrentVersion }}${{ inputs.PreReleaseCurrentVersion }}</version>', '<version>${{ inputs.NewVersion }}${{ inputs.PreReleaseNewVersion }}</version>') | Set-Content ${{ github.workspace }}\src\net\JNetReflector\JNetReflector.nuspec
 
-      - run: (Get-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPS.psd1).Replace('${{ inputs.CurrentVersion }}', '${{ inputs.NewVersion }}') | Set-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPS.psd1
-      - run: (Get-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPSCore.psd1).Replace('${{ inputs.CurrentVersion }}', '${{ inputs.NewVersion }}') | Set-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPSCore.psd1
-      - run: (Get-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPSFramework.psd1).Replace('${{ inputs.CurrentVersion }}', '${{ inputs.NewVersion }}') | Set-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPSFramework.psd1
+      - run: (Get-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPS.psd1).Replace('${{ inputs.CurrentVersion }}${{ inputs.PreReleaseCurrentVersion }}', '${{ inputs.NewVersion }}${{ inputs.PreReleaseNewVersion }}') | Set-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPS.psd1
+      - run: (Get-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPSCore.psd1).Replace('${{ inputs.CurrentVersion }}${{ inputs.PreReleaseCurrentVersion }}', '${{ inputs.NewVersion }}${{ inputs.PreReleaseNewVersion }}') | Set-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPSCore.psd1
+      - run: (Get-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPSFramework.psd1).Replace('${{ inputs.CurrentVersion }}${{ inputs.PreReleaseCurrentVersion }}', '${{ inputs.NewVersion }}${{ inputs.PreReleaseNewVersion }}') | Set-Content ${{ github.workspace }}\src\net\JNetPS\MASES.JNetPSFramework.psd1
 
-      - run: (Get-Content ${{ github.workspace }}\src\net\templates\templates\jnetAWTApp\jnetAWTApp.csproj).Replace('${{ inputs.CurrentVersion }}', '${{ inputs.NewVersion }}') | Set-Content ${{ github.workspace }}\src\net\templates\templates\jnetAWTApp\jnetAWTApp.csproj
-      - run: (Get-Content ${{ github.workspace }}\src\net\templates\templates\jnetApp\jnetApp.csproj).Replace('${{ inputs.CurrentVersion }}', '${{ inputs.NewVersion }}') | Set-Content ${{ github.workspace }}\src\net\templates\templates\jnetApp\jnetApp.csproj
+      - run: (Get-Content ${{ github.workspace }}\src\net\templates\templates\jnetAWTApp\jnetAWTApp.csproj).Replace('${{ inputs.CurrentVersion }}${{ inputs.PreReleaseCurrentVersion }}', '${{ inputs.NewVersion }}${{ inputs.PreReleaseNewVersion }}') | Set-Content ${{ github.workspace }}\src\net\templates\templates\jnetAWTApp\jnetAWTApp.csproj
+      - run: (Get-Content ${{ github.workspace }}\src\net\templates\templates\jnetApp\jnetApp.csproj).Replace('${{ inputs.CurrentVersion }}${{ inputs.PreReleaseCurrentVersion }}', '${{ inputs.NewVersion }}${{ inputs.PreReleaseNewVersion }}') | Set-Content ${{ github.workspace }}\src\net\templates\templates\jnetApp\jnetApp.csproj
       
       - name: Request a PR to commit changes
         uses: peter-evans/create-pull-request@v8
         with:
           branch-suffix: short-commit-hash
           add-paths: src/*.*
-          commit-message: Update version from ${{ inputs.CurrentVersion }} to ${{ inputs.NewVersion }}
-          title: Update version from ${{ inputs.CurrentVersion }} to ${{ inputs.NewVersion }}
+          commit-message: Update version from ${{ inputs.CurrentVersion }}${{ inputs.PreReleaseCurrentVersion }} to ${{ inputs.NewVersion }}${{ inputs.PreReleaseNewVersion }}
+          title: Update version from ${{ inputs.CurrentVersion }}${{ inputs.PreReleaseCurrentVersion }} to ${{ inputs.NewVersion }}${{ inputs.PreReleaseNewVersion }}
           body: |
             Automated changes by GitHub action fix #53
           reviewers: masesdevelopers
