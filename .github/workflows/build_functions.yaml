@@ -154,8 +154,6 @@ jobs:
         
   # Now run "build"
   build:
-    needs: check_changes
-    if: "always() && needs.check_changes.outputs.run_build == 'true'"
     # The type of runner that the job will run on
     runs-on: windows-2022
 
