@@ -49,8 +49,8 @@ on:
           - "0"
           - "1"
 
-   schedule:
-     - cron: "0 4 * * 6"
+  schedule:
+    - cron: "0 4 * * 6"
         
 concurrency:
   group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
