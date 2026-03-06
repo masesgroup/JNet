@@ -117,6 +117,9 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
+      attestations: write
+      packages: write
+      id-token: write
     uses: ./.github/workflows/build_functions.yaml
     with:
       ExecuteOnMoreOSes: ${{ inputs.ExecuteOnMoreOSes || github.event_name == 'schedule' }}
