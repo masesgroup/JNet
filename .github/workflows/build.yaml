@@ -117,7 +117,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    uses: build_functions.yaml
+    uses: ./.github/workflows/build_functions.yaml
     with:
       ExecuteOnMoreOSes: ${{ inputs.ExecuteOnMoreOSes || github.event_name == 'schedule' }}
       ForceContinueOnError: ${{ inputs.ForceContinueOnError }}
