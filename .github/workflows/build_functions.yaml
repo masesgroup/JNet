@@ -35,10 +35,11 @@ on:
     secrets:
       actor:
         required: true
-      GITHUB_TOKEN:
+      GITHUB_TOKEN_INHERITED:
         required: true
       JCOBRIDGE_ENCODED:
         required: true
+        
 concurrency:
   group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
   cancel-in-progress: true
@@ -176,7 +177,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ secrets.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
@@ -459,7 +460,7 @@ jobs:
         with:
           java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
           distribution: 'graalvm' # See 'Supported distributions' for available options
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Prepare extra argument
         if: matrix.jdk_version == '8'
@@ -632,7 +633,7 @@ jobs:
         with:
           java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
           distribution: 'graalvm' # See 'Supported distributions' for available options
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Prepare extra argument
         if: matrix.jdk_version == '8'
@@ -827,7 +828,7 @@ jobs:
         with:
           java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
           distribution: 'graalvm' # See 'Supported distributions' for available options
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Prepare extra argument
         if: matrix.jdk_version == '8'
@@ -929,4 +930,4 @@ jobs:
           done
           echo "Done"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN_INHERITED }}
