@@ -21,14 +21,17 @@ on:
         description: 'Enable .NET process dump'
         required: false
         default: '0'
+        type: string
       ProcessDumpType:
         description: '.NET process dump type'
         required: false
         default: '3'
+        type: string
       EnableVerboseDiagnosticProcessDump:
         description: 'Enables verbose diagnostic logging of the dump process'
         required: false
         default: '0'
+        type: string
     secrets:
       actor:
         required: true
