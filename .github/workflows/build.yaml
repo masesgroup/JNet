@@ -83,6 +83,11 @@ jobs:
                 echo "run_build=true" >> $GITHUB_OUTPUT
                 break
               fi
+              if [[ $added_modified_file == ".github/workflows/build_functions.yaml"* ]]; then
+                echo "$added_modified_file is myself."
+                echo "run_build=true" >> $GITHUB_OUTPUT
+                break
+              fi
               if [[ $added_modified_file == "src/container/"* ]]; then
                 echo "$added_modified_file file is under the directory 'src/'."
                 echo "run_build=true" >> $GITHUB_OUTPUT
