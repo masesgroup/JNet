@@ -32,7 +32,7 @@ namespace Java.Nio
     {
         static readonly ConcurrentDictionary<string, RecyclableMemoryStream> _storer = new();
 
-        static object _configurationLock = new object();
+        static readonly object _configurationLock = new object();
         static bool _enable;
         static RecyclableMemoryStreamManager.Options _options;
         static RecyclableMemoryStreamManager _manager;
