@@ -258,12 +258,6 @@ namespace MASES.JNetByteBufferTest
                 System.GC.Collect();
                 Java.Lang.System.Gc();
 
-                if (jClass == null)
-                {
-                    Console.WriteLine("jClass is null, aborting ByteBuffer insert tests.");
-                    return;
-                }
-
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
                 {
