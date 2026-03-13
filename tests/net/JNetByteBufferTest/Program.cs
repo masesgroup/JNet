@@ -228,6 +228,10 @@ namespace MASES.JNetByteBufferTest
 
                 var bbCast = Java.Nio.ByteBuffer.From(ms);
                 var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+                if (jClass == null)
+                {
+                    throw new InvalidOperationException("Failed to create IJavaObject for org.mases.jnet.TestArrayAndByteBuffer.");
+                }
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
