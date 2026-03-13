@@ -18,14 +18,162 @@
 
 using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet;
 using MASES.JNet.Specific.Extensions;
-using System.IO;
+using Microsoft.IO;
 using System;
+using System.Collections.Concurrent;
+using System.IO;
+using System.Threading;
 
 namespace Java.Nio
 {
-    public partial class ByteBuffer : IDisposable
+    public partial class ByteBuffer
     {
+        static readonly ConcurrentDictionary<string, RecyclableMemoryStream> _storer = new();
+
+        static readonly object _configurationLock = new object();
+        static bool _enable;
+        static RecyclableMemoryStreamManager.Options _options;
+        static RecyclableMemoryStreamManager _manager;
+
+        static long _streamId = 0;
+        static ByteBuffer()
+        {
+            _options = null;
+            _manager = null;
+        }
+
+        static void RemoveRecyclableMemoryStreamManager()
+        {
+            if (_manager != null)
+            {
+                while (!_storer.IsEmpty) System.Threading.Thread.Sleep(1); // wait the queue of current RecyclableMemoryStreamManager is empty
+                _manager.StreamDoubleDisposed -= RecyclableMemoryStreamManager_StreamDoubleDisposed;
+                _manager.StreamDisposed -= RecyclableMemoryStreamManager_StreamDisposed;
+                _manager.UsageReport -= RecyclableMemoryStreamManager_UsageReport;
+                _manager.LargeBufferCreated -= RecyclableMemoryStreamManager_LargeBufferCreated;
+            }
+            _manager = null;
+            _options = null;
+        }
+
+        static void CreateRecyclableMemoryStreamManager(RecyclableMemoryStreamManager.Options options)
+        {
+            _options = options ?? new RecyclableMemoryStreamManager.Options()
+            {
+                BlockSize = 1024,
+                LargeBufferMultiple = 1024 * 1024,
+                MaximumBufferSize = 16 * 1024 * 1024,
+#if DEBUG
+                GenerateCallStacks = true,
+#endif
+                AggressiveBufferReturn = true,
+                MaximumLargePoolFreeBytes = 16 * 1024 * 1024 * 4,
+                MaximumSmallPoolFreeBytes = 100 * 1024,
+            };
+
+            _manager = new RecyclableMemoryStreamManager(_options);
+            _manager.StreamDoubleDisposed += RecyclableMemoryStreamManager_StreamDoubleDisposed;
+            _manager.StreamDisposed += RecyclableMemoryStreamManager_StreamDisposed;
+            _manager.UsageReport += RecyclableMemoryStreamManager_UsageReport;
+            _manager.LargeBufferCreated += RecyclableMemoryStreamManager_LargeBufferCreated;
+        }
+
+        private static void RecyclableMemoryStreamManager_StreamDisposed(object sender, RecyclableMemoryStreamManager.StreamDisposedEventArgs e)
+        {
+            _storer.TryRemove(e.Tag!, out _);
+        }
+
+        private static void RecyclableMemoryStreamManager_StreamDoubleDisposed(object sender, RecyclableMemoryStreamManager.StreamDoubleDisposedEventArgs e)
+        {
+            if (ReportDoubleDisposed)
+            {
+                JCOBridge.RaiseEventOrException($"Stream {e.Tag} disposed twice:");
+                JCOBridge.RaiseEventOrException($"First callstack is {e.DisposeStack1}");
+                JCOBridge.RaiseEventOrException($"Second callstack is {e.DisposeStack2}");
+                JCOBridge.RaiseEventOrException($"Originally allocated from {e.AllocationStack}");
+            }
+        }
+
+        private static void RecyclableMemoryStreamManager_UsageReport(object sender, RecyclableMemoryStreamManager.UsageReportEventArgs e)
+        {
+            if (ReportUsage)
+            {
+                JCOBridge.RaiseEventOrException($"RecyclableMemoryStreamManager LargePoolFreeBytes={e.LargePoolFreeBytes} LargePoolInUseBytes={e.LargePoolInUseBytes} SmallPoolFreeBytes={e.SmallPoolFreeBytes} SmallPoolInUseBytes={e.SmallPoolInUseBytes}");
+            }
+        }
+
+        private static void RecyclableMemoryStreamManager_LargeBufferCreated(object sender, RecyclableMemoryStreamManager.LargeBufferCreatedEventArgs e)
+        {
+            LargeBufferCreated?.Invoke(e);
+        }
+        /// <summary>
+        /// Reports the current <see cref="RecyclableMemoryStreamManager.Options"/> in use, <see langword="null"/> if not enable
+        /// </summary>
+        public static RecyclableMemoryStreamManager.Options CurrentSettings => _options;
+
+        /// <summary>
+        /// <see langword="true"/> to report double-disposed (<see cref="RecyclableMemoryStreamManager.StreamDoubleDisposed"/>) conditions using <see cref="JNetCoreBase{T}.EventOrExceptionEvent"/> or, on command-line, setting to true <see cref="JNetCoreBase{T}.WriteEventOrExceptionOnCmdLine"/>
+        /// </summary>
+        public static bool ReportDoubleDisposed { get; set; }
+        /// <summary>
+        /// <see langword="true"/> to report usage (<see cref="RecyclableMemoryStreamManager.UsageReport"/>) using <see cref="JNetCoreBase{T}.EventOrExceptionEvent"/> or, on command-line, setting to true <see cref="JNetCoreBase{T}.WriteEventOrExceptionOnCmdLine"/>
+        /// </summary>
+        public static bool ReportUsage { get; set; }
+        /// <summary>
+        /// Invoked when a large buffer (<see cref="RecyclableMemoryStreamManager.LargeBufferCreated"/>) is created
+        /// </summary>
+        public static Action<RecyclableMemoryStreamManager.LargeBufferCreatedEventArgs> LargeBufferCreated { get; set; }
+
+        /// <summary>
+        /// Set to <see langword="true"/> to enable, or set to <see langword="false"/> to disable, the usage of <see cref="RecyclableMemoryStream"/>
+        /// </summary>
+        /// <param name="enable"><see langword="true"/> to enable <see cref="RecyclableMemoryStream"/> support with optional <paramref name="options"/></param>
+        /// <param name="options">The <see cref="RecyclableMemoryStreamManager.Options"/> options to use</param>
+        public static void EnableRecyclableMemoryStream(bool enable, RecyclableMemoryStreamManager.Options options = null)
+        {
+            lock (_configurationLock)
+            {
+                bool shallCreate = _enable != enable && enable;
+                _enable = enable;
+                if (shallCreate)
+                {
+                    RemoveRecyclableMemoryStreamManager();
+                    CreateRecyclableMemoryStreamManager(options);
+                }
+                else if (!enable)
+                {
+                    RemoveRecyclableMemoryStreamManager();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Returns a new <see cref="MemoryStream"/> or a preallocated <see cref="MemoryStream"/> which is an implementation  of <see cref="RecyclableMemoryStream"/>
+        /// can be used from <see cref="ByteBuffer.From(MemoryStream, bool, EventHandler{MemoryStream}, int)"/>. When underlying sub-system ends the usage of <see cref="MemoryStream"/>
+        /// the <see cref="IDisposable.Dispose"/> method is automatically invoked and <see cref="MemoryStream"/> id disposed or <see cref="RecyclableMemoryStream"/> is returned back
+        /// to the pool.
+        /// </summary>
+        /// <returns>The requested <see cref="MemoryStream"/></returns>
+        /// <remarks>The same remarks of <see cref="ByteBuffer.From(MemoryStream, bool, EventHandler{MemoryStream}, int)"/> applies: the returned <see cref="MemoryStream"/> shall not be disposed.</remarks>
+        /// <example>
+        /// <code>
+        /// var ms = ByteBuffer.GetMemoryStream(); // never use an using statement
+        /// 
+        /// ByteBuffer bb = ByteBuffer.From(ms);
+        /// </code>
+        /// </example>
+        public static MemoryStream GetMemoryStream()
+        {
+            if (!_enable) return new MemoryStream();
+
+            var tag = Interlocked.Increment(ref _streamId).ToString();
+            var stream = _manager.GetStream(tag);
+            _storer.TryAdd(tag, stream);
+            return stream;
+        }
+
         // can be extended with methods not reflected or not available in Java;
 
         #region Operators
