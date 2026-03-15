@@ -69,7 +69,7 @@ jobs:
       - name: Create modified file list
         if: ${{ github.event_name == 'push' }}
         id: get_changed_files
-        uses: masesgroup/retrieve-changed-files@v3
+        uses: masesgroup/retrieve-changed-files@v4
         with:
           format: 'csv'
       - name: Check modified file list
@@ -121,7 +121,8 @@ jobs:
       attestations: write
       packages: write
       id-token: write
-    uses: ./.github/workflows/build_functions.yaml
+      artifact-metadata: write
+    uses: ./.github/workflows/build_common.yaml
     with:
       ExecuteOnMoreOSes: ${{ inputs.ExecuteOnMoreOSes || github.event_name == 'schedule' }}
       ForceContinueOnError: ${{ inputs.ForceContinueOnError || false }}
