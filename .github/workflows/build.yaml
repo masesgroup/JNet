@@ -52,6 +52,10 @@ on:
   schedule:
     - cron: "0 4 * * 6"
 
+concurrency:
+  group: '${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}'
+  cancel-in-progress: true
+
 # This workflow contains multiple jobs
 jobs:
   # Verify if a build is needed
