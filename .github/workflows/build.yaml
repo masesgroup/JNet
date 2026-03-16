@@ -17,6 +17,26 @@ on:
         required: false
         default: false
         type: boolean
+      ExecuteOnLargerJDKSet:
+        description: 'Executes tests on more JDK'
+        required: false
+        default: false
+        type: boolean
+      EnableLinuxTests:
+        description: 'Enable tests in Linux'
+        required: false
+        default: false
+        type: boolean
+      EnableWindowsTests:
+        description: 'Enable tests in Windows'
+        required: false
+        default: false
+        type: boolean
+      EnableMacOSTests:
+        description: 'Enable tests in MacOS'
+        required: false
+        default: false
+        type: boolean
       ForceContinueOnError:
         description: 'Force continue-on-error'
         required: false
@@ -52,6 +72,10 @@ on:
   schedule:
     - cron: "0 4 * * 6"
 
+concurrency:
+  group: '${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}'
+  cancel-in-progress: true
+
 # This workflow contains multiple jobs
 jobs:
   # Verify if a build is needed
@@ -69,7 +93,7 @@ jobs:
       - name: Create modified file list
         if: ${{ github.event_name == 'push' }}
         id: get_changed_files
-        uses: masesgroup/retrieve-changed-files@v3
+        uses: masesgroup/retrieve-changed-files@v4
         with:
           format: 'csv'
       - name: Check modified file list
@@ -83,7 +107,7 @@ jobs:
                 echo "run_build=true" >> $GITHUB_OUTPUT
                 break
               fi
-              if [[ $added_modified_file == ".github/workflows/build_functions.yaml"* ]]; then
+              if [[ $added_modified_file == ".github/workflows/build_common.yaml"* ]]; then
                 echo "$added_modified_file is myself."
                 echo "run_build=true" >> $GITHUB_OUTPUT
                 break
@@ -121,9 +145,14 @@ jobs:
       attestations: write
       packages: write
       id-token: write
-    uses: ./.github/workflows/build_functions.yaml
+      artifact-metadata: write
+    uses: ./.github/workflows/build_common.yaml
     with:
       ExecuteOnMoreOSes: ${{ inputs.ExecuteOnMoreOSes || github.event_name == 'schedule' }}
+      ExecuteOnLargerJDKSet: ${{ inputs.ExecuteOnLargerJDKSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
+      EnableLinuxTests: true
+      EnableWindowsTests: ${{ inputs.ExecuteOnWindows || github.ref_name == 'master' || github.event_name == 'schedule' }}
+      EnableMacOSTests: ${{ inputs.ExecuteOnMacOS || github.event_name == 'schedule' }}
       ForceContinueOnError: ${{ inputs.ForceContinueOnError || false }}
       EnableProcessDump: ${{ inputs.EnableProcessDump || '0' }}
       ProcessDumpType: ${{ inputs.ProcessDumpType || '3' }}

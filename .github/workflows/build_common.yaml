@@ -12,6 +12,26 @@ on:
         required: false
         default: false
         type: boolean
+      ExecuteOnLargerJDKSet:
+        description: 'Executes tests on more JDK'
+        required: false
+        default: false
+        type: boolean
+      EnableLinuxTests:
+        description: 'Enable tests in Linux'
+        required: false
+        default: false
+        type: boolean
+      EnableWindowsTests:
+        description: 'Enable tests in Windows'
+        required: false
+        default: false
+        type: boolean
+      EnableMacOSTests:
+        description: 'Enable tests in MacOS'
+        required: false
+        default: false
+        type: boolean
       ForceContinueOnError:
         description: 'Force continue-on-error'
         required: false
@@ -41,7 +61,7 @@ on:
         required: true
         
 concurrency:
-  group: '${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}'
+  group: '${{ github.workflow }}-child-${{ github.event.pull_request.number || github.ref }}'
   cancel-in-progress: true
 
 # This workflow contains multiple jobs
@@ -82,6 +102,7 @@ jobs:
       packages: write
       contents: read
       attestations: write
+      artifact-metadata: write
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -265,11 +286,18 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     outputs:
+      matrix_jdk_vendor: ${{ steps.set-jdk-vendor.outputs.matrix_jdk_vendor || steps.set-jdk-vendor-ext.outputs.matrix_jdk_vendor }}
       matrix_jdk_version: ${{ steps.set-jdk-version.outputs.matrix_jdk_version || steps.set-jdk-version-ext.outputs.matrix_jdk_version }}
       matrix_win_os: ${{ steps.set-matrix-win-os.outputs.matrix_win || steps.set-matrix-win-os-ext.outputs.matrix_win }}
       matrix_linux_os: ${{ steps.set-matrix-linux-os.outputs.matrix_linux || steps.set-matrix-linux-os-ext.outputs.matrix_linux }}
       matrix_mac_os: ${{ steps.set-matrix-mac-os.outputs.matrix_mac || steps.set-matrix-mac-os-ext.outputs.matrix_mac }}
     steps:
+      - id: set-jdk-vendor
+        if: ${{ inputs.ExecuteOnLargerJDKSet == false }}
+        run: echo "matrix_jdk_vendor=[ 'temurin' ]" >> $GITHUB_OUTPUT
+      - id: set-jdk-vendor-ext
+        if: ${{ inputs.ExecuteOnLargerJDKSet == true }}
+        run: echo "matrix_jdk_vendor=[ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle' ]" >> $GITHUB_OUTPUT
       - id: set-jdk-version
         if: ${{ inputs.ExecuteOnMoreOSes == false }}
         run: echo "matrix_jdk_version=[ '8', '11', '17', '21', '25' ]" >> $GITHUB_OUTPUT
@@ -296,13 +324,14 @@ jobs:
         run: echo "matrix_mac=[ 'macos-14', 'macos-15', 'macos-26' ]" >> $GITHUB_OUTPUT
 
   tests_win:
+    if: ${{ inputs.EnableWindowsTests == true }}
     needs: prepare_matrix_data
     strategy:
       fail-fast: false
       matrix:
         os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_win_os) }} # [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
         framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
-        jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
+        jdk_vendor: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_vendor) }}
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
           - jdk_vendor: microsoft
@@ -481,13 +510,14 @@ jobs:
           retention-days: 7
 
   tests_linux:
+    if: ${{ inputs.EnableLinuxTests == true }}
     needs: prepare_matrix_data
     strategy:
       fail-fast: false
       matrix:
         os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_linux_os) }} # [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
-        jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
+        jdk_vendor: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_vendor) }}
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
           - jdk_vendor: corretto
@@ -660,13 +690,14 @@ jobs:
           retention-days: 7
 
   tests_mac:
+    if: ${{ inputs.EnableMacOSTests == true }}
     needs: prepare_matrix_data
     strategy:
       fail-fast: false
       matrix:
         os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_mac_os) }} # [ 'macos-13', 'macos-14', 'macos-15' ]
         framework: [ 'net8.0', 'net9.0', 'net10.0' ]
-        jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
+        jdk_vendor: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_vendor) }}
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
           - os: macos-14
