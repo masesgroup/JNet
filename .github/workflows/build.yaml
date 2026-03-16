@@ -17,6 +17,26 @@ on:
         required: false
         default: false
         type: boolean
+      ExecuteOnLargerJDKSet:
+        description: 'Executes tests on more JDK'
+        required: false
+        default: false
+        type: boolean
+      EnableLinuxTests:
+        description: 'Enable tests in Linux'
+        required: false
+        default: false
+        type: boolean
+      EnableWindowsTests:
+        description: 'Enable tests in Windows'
+        required: false
+        default: false
+        type: boolean
+      EnableMacOSTests:
+        description: 'Enable tests in MacOS'
+        required: false
+        default: false
+        type: boolean
       ForceContinueOnError:
         description: 'Force continue-on-error'
         required: false
@@ -129,6 +149,10 @@ jobs:
     uses: ./.github/workflows/build_common.yaml
     with:
       ExecuteOnMoreOSes: ${{ inputs.ExecuteOnMoreOSes || github.event_name == 'schedule' }}
+      ExecuteOnLargerJDKSet: ${{ inputs.ExecuteOnLargerJDKSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
+      EnableLinuxTests: true
+      EnableWindowsTests: ${{ inputs.ExecuteOnWindows || github.ref_name == 'master' || github.event_name == 'schedule' }}
+      EnableMacOSTests: ${{ inputs.ExecuteOnMacOS || github.event_name == 'schedule' }}
       ForceContinueOnError: ${{ inputs.ForceContinueOnError || false }}
       EnableProcessDump: ${{ inputs.EnableProcessDump || '0' }}
       ProcessDumpType: ${{ inputs.ProcessDumpType || '3' }}
