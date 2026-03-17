@@ -1,30 +1,34 @@
 ---
-title: Usage .NET suite for Java™/JVM™
-_description: Describes how to use JNet, set-up environment, identify the JVM™ and write good code
+title: Using JNet — .NET suite for Java™/JVM™
+_description: How to configure the environment, locate the JVM™, and write robust JNet code
 ---
 
 # JNet usage
 
-To use JNet classes the developer can write code in .NET using the same classes available in the official Java™ packages.
-If classes or methods are not available yet it is possible to use the approach synthetized in [What to do if an API was not yet implemented](API_extensibility.md)
+JNet exposes Java™ classes directly in .NET, letting you write C# code against the same types
+available in the official Java™ packages. If a class or method has not been mapped yet, see
+[What to do if an API was not yet implemented](API_extensibility.md).
 
 ## Environment setup
 
-JNet accepts many command-line switches to customize its behavior. The full list is available at [Command line switch](commandlineswitch.md) page.
+JNet accepts many command-line switches to customize its behavior. The full list is available at the [Command line switch](commandlineswitch.md) page.
 
 ### JVM™ identification
 
-One of the most important command-line switch is **JVMPath** and it is available in [JCOBridge switches](https://www.jcobridge.com/net-examples/command-line-options/): it can be used to set-up the location of the JVM™ library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
-If a developer is using JNet within its own product it is possible to override the **JVMPath** property with a snippet like the following one:
+One of the most important command-line switches is **JVMPath**, available in [JCOBridge switches](https://www.jcobridge.com/net-examples/command-line-options/): it can be used to set the location of the JVM™ library (`jvm.dll` / `libjvm.so`) if JCOBridge is not able to identify a suitable JRE installation.
 
-```c#
-class MyJNetCore : JNetCore
+If you are embedding JNet in your own product, you can override the **JVMPath** property as shown below:
+
+```csharp
+class MyJNetCore : JNetCore<MyJNetCore>
 {
+    // Override JVMPath when JCOBridge cannot auto-detect the JRE/JDK installation,
+    // or when you need to pin a specific JVM version in your application.
     public override string JVMPath
     {
         get
         {
-            string pathToJVM = "Set here the path to JVM library or use your own search method";
+            string pathToJVM = "Set here the path to the JVM library (jvm.dll / libjvm.so)";
             return pathToJVM;
         }
     }
@@ -32,71 +36,82 @@ class MyJNetCore : JNetCore
 ```
 
 > [!IMPORTANT]
-> `pathToJVM` shall be escaped
+> `pathToJVM` must be properly escaped:
 > 1. `string pathToJVM = "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.18.10-hotspot\\bin\\server\\jvm.dll";`
 > 2. `string pathToJVM = @"C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\bin\server\jvm.dll";`
 
 ### Special initialization conditions
 
-[JCOBridge](https://www.jcobridge.com/) try to identify a suitable JRE/JDK installation within the system using some standard mechanism of JRE/JDK: `JAVA_HOME` environment variable or Windows registry if available.
-However it is possible, on Windows operating systems, that the library raises an **InvalidOperationException: Missing Java Key in registry: Couldn't find Java installed on the machine**.
-This means that neither `JAVA_HOME` nor Windows registry contains information about a default installed JRE/JDK: some vendors may not setup them.
-If the developer/user encounter this condition can do the following steps:
-1. On a command prompt execute `set | findstr JAVA_HOME` and verify the result;
-2. If something was reported maybe the `JAVA_HOME` environment variable is not set at system level, but at a different level like user level which is not visible from the JNet process that raised the exception;
-3. Try to set `JAVA_HOME` at system level e.g. `JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\`;
-4. Try to set `JCOBRIDGE_JVMPath` at system level e.g. `JCOBRIDGE_JVMPath=C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\`.
+[JCOBridge](https://www.jcobridge.com/) attempts to locate a suitable JRE/JDK installation using standard mechanisms: the `JAVA_HOME` environment variable or the Windows registry (where available).
+
+If the application fails with **InvalidOperationException: Missing Java Key in registry**, neither `JAVA_HOME` nor the Windows registry contains a reference to a JRE/JDK installation.
+
+**Diagnose the issue:**
+1. Open a command prompt and run `set | findstr JAVA_HOME`.
+2. If a value is returned, it may be set at user level rather than system level, making it invisible to the JNet process that raised the exception.
+
+**Fix the issue (choose one):**
+- Set `JAVA_HOME` at system level, e.g. `JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\`
+- Set `JCOBRIDGE_JVMPath` at system level to point directly to the JVM library, e.g. `JCOBRIDGE_JVMPath=C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\bin\server\jvm.dll`
 
 > [!IMPORTANT]
-> - One of `JCOBRIDGE_JVMPath` or `JAVA_HOME` environment variables or Windows registry (on Windows OSes) shall be available
-> - `JCOBRIDGE_JVMPath` environment variable takes precedence over `JAVA_HOME` and Windows registry: you can set `JCOBRIDGE_JVMPath` to `C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\bin\server\jvm.dll` and avoid to override `JVMPath` in your code
-> - After first initialization steps, `JVMPath` takes precedence over `JCOBRIDGE_JVMPath`/`JAVA_HOME` environment variables or Windows registry
+> - At least one of `JCOBRIDGE_JVMPath`, `JAVA_HOME`, or the Windows registry (on Windows) must be available.
+> - `JCOBRIDGE_JVMPath` takes precedence over `JAVA_HOME` and the Windows registry: setting it to the full path of `jvm.dll` avoids the need to override `JVMPath` in code.
+> - After first initialization, `JVMPath` (set in code) takes precedence over both environment variables and the registry.
 
 ### Intel CET and JNet
 
-JNet uses an embedded JVM™ through JCOBridge, however JVM™ initialization is incompatible with [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) because the code used to identify CPU try to modify the return address and this is considered from CET a violation: see [this comment](https://github.com/masesgroup/JNet/issues/573#issuecomment-2544249107).
+JNet uses an embedded JVM™ through JCOBridge. However, JVM™ initialization is incompatible with [CET (Control-flow Enforcement Technology)](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) because the code used to identify the CPU attempts to modify the return address, which CET treats as a violation — see [this issue comment](https://github.com/masesgroup/JNet/issues/573#issuecomment-2544249107).
 
-From .NET 9 preview 6, [CET is enabled by default on supported hardware](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support) when the final stage produce an executable artifact, i.e. the csproj file contains `<OutputType>Exe</OutputType>`.
+From .NET 9 preview 6, [CET is enabled by default on supported hardware](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support) when the build output is an executable (i.e. the `.csproj` contains `<OutputType>Exe</OutputType>`).
 
-If the application, upon startup, fails with the error 0xc0000409 (subcode 0x30) it was compiled with CET enabled and it fails during JVM™ initialization.
+If the application fails at startup with error `0xc0000409` (subcode `0x30`), CET is enabled and conflicting with JVM™ initialization.
 
-To solve the issue there are four possible solutions:
-1. use a .NET version, e.g. 8, that does not enable CET by default
-2. Add the following snippet to disable CET on executable (templates available for JNet are ready made and solve this issue): 
+> [!TIP]
+> Solutions 2 and 3 are the recommended approaches for most projects. Solution 1 requires targeting an older .NET version; solution 4 requires elevated privileges and a registry change.
+
+There are four possible workarounds:
+
+1. Target a .NET version that does not enable CET by default, such as .NET 8.
+
+2. Disable CET for the executable in the `.csproj` (JNet project templates include this automatically):
 
 ```xml
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
-		<!--see https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support-->
-		<CETCompat>false</CETCompat>
-	</PropertyGroup>
+<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
+    <!--see https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support-->
+    <CETCompat>false</CETCompat>
+</PropertyGroup>
 ```
 
-3. Use the `dotnet` app host, as reported in https://github.com/masesgroup/JCOBridgePublic/issues/7#issuecomment-2550031946, with a syntax like:
+3. Run via the `dotnet` app host instead of the native executable, as described in [this comment](https://github.com/masesgroup/JCOBridgePublic/issues/7#issuecomment-2550031946):
 
 ```sh
-	dotnet MyApplication.dll
-```
- instead of the classic:
- ```sh
-	MyApplication.exe
+dotnet MyApplication.dll
 ```
 
-4. If you want to run the classic application execute the following command in an **elevated shell**:
+instead of:
 
- ```sh
-	reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MyApplication.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
+```sh
+MyApplication.exe
 ```
+
+4. Register a CET mitigation for the specific executable from an **elevated shell**:
+
+```sh
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MyApplication.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
+```
+
 then run:
- ```sh
-	MyApplication.exe
+
+```sh
+MyApplication.exe
 ```
 
 ## Basic example
 
-Below a basic example which demonstrates how to create a program based on JNet and some other features available like generics and exception handling.
-Within the program the comments try to explain how the code works.
+Below is a basic example demonstrating how to create a JNet-based program, including generics and exception handling. Comments in the code explain each step.
 
-```c#
+```csharp
 using Java.Util;
 using MASES.JNet.Extensions;
 using System.Diagnostics;
@@ -104,56 +119,55 @@ using Java.Lang;
 
 namespace MASES.JNetExample
 {
-    // this class defines a concrete implementation of JNetCore<>
+    // Define a concrete implementation of JNetCore<> for this application.
     class MyJNetCore : JNetCore<MyJNetCore>
-    { 
+    {
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-            // the first step is mandatory: 
-            // it invokes the method CreateGlobalInstance to allocate the JVM and prepares the environment
+            // Mandatory first step: allocate the JVM and prepare the interop environment.
             MyJNetCore.CreateGlobalInstance();
-            // at the end of initialization the arguments in the command line not used from JNet (and JCOBridge) 
-            // are available to be used like any developer does with the args in the Main 
+
+            // Arguments not consumed by JNet/JCOBridge are available here,
+            // just like standard command-line args.
             var appArgs = MyJNetCore.FilteredArgs;
 
-            // now we go into .NET/JVM interaction based on generics
             try
             {
-                // in the first step the code allocates a java.util.Set<String> within the JVM using the java.util.Collections class
-                // and returns a Java.Util.Set<string> in .NET
+                // Allocate a java.util.Set<String> in the JVM via Collections.Singleton,
+                // returned as a Java.Util.Set<string> on the .NET side.
                 Java.Util.Set<string> set = Collections.Singleton("test");
 
-                // then the code tries to Add a new value if it is available in command-line, 
-                // but we expect the JVM raises an exception
+                // Attempt to add an element if one was passed on the command line.
+                // Collections.Singleton returns an immutable Set, so this will throw.
+                // See: https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singleton(T)
                 if (appArgs.Length != 0) set.Add(appArgs[0]);
             }
-            // if the Add is invoked the operation on java.util.Set<String> cannot be performed 
-            // because Collections.Singleton returns an immutable java.util.Set<String>
-            // see https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singleton(T))
-            catch (UnsupportedOperationException) 
+            // JNet translates Java exceptions into equivalent .NET exceptions,
+            // so UnsupportedOperationException is caught here just like any C# exception.
+            catch (UnsupportedOperationException)
             {
-                // so we enter here because the engine translates the Java exception in an equivalent exception managed from C#
                 System.Console.WriteLine("Operation not supported as expected");
             }
-            // this piece of code is for any convenience because we want a clean close of the application
+            // Catch-all: print any unexpected exception and let the application exit cleanly.
             catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
         }
     }
 }
 ```
 
-## Avoid `Java.Lang.NullPointerException` writing a good code
+## Avoiding `Java.Lang.NullPointerException` — Understanding .NET/JVM GC interaction
 
-Sometime during execution a `Java.Lang.NullPointerException` can be raised and seems there isn't neither a real problem in the .NET code you wrote nor a specific pattern or time when it is raised.
-The problem is behind the scene and it is correlated on how Garbage Collector and code optimizer works.
-In the code of the previous chapter the `Collections.Singleton("test")` creates an object which is used from `set.Add(appArgs[0])` and in this case the Garbage Collector does not retires the object.
-Considering the following code snippet:
+Occasionally, a `Java.Lang.NullPointerException` is raised with no obvious cause in the .NET code. This is a cross-boundary GC issue: the .NET Garbage Collector may collect a JNet wrapper object while the JVM™ is still using the underlying Java object it references.
 
-```c#
+In the basic example above, `Collections.Singleton("test")` creates a wrapper held by `set`, which remains reachable until `set.Add(appArgs[0])` completes — so the GC does not collect it prematurely.
+
+Consider this slightly different snippet:
+
+```csharp
 using Java.Util;
 using MASES.JNet.Extensions;
 using System.Diagnostics;
@@ -172,7 +186,7 @@ namespace MASES.JNetExample
             {
                 Java.Util.Set<string> set = Collections.Singleton("test");
                 ArrayList<string> arrayList = new();
-                arrayList.AddAll(0, set); // this point can raise Java.Lang.NullPointerException
+                arrayList.AddAll(0, set); // Java.Lang.NullPointerException may occur here
             }
             catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
         }
@@ -180,21 +194,22 @@ namespace MASES.JNetExample
 }
 ```
 
-the `Collections.Singleton("test")` ends its life, from .NET point of view, when `arrayList.AddAll(0, set)` is invoked:
-- `Java.Util.Set<string>` is a .NET container for JVM™ `java.util.Set<String>`
-- `arrayList.AddAll(0, set)` receives the `Java.Util.Set<string>` instance and sends to JVM™ the reference to `java.util.Set<String>` of JVM™
-- from .NET point of view `Java.Util.Set<string>` has ended its life and can be retired because does not have any other root referencing it
-- .NET Garbage Collector activates arbitrarily when some conditions meet: https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/
+At the point `arrayList.AddAll(0, set)` is called:
+- `Java.Util.Set<string>` is a .NET wrapper around a JVM™ `java.util.Set<String>`.
+- The call passes the JVM™ reference across the boundary, but from .NET's perspective the wrapper `set` has no further uses and is eligible for collection.
+- If the .NET GC runs at this moment — which it may do arbitrarily based on [memory pressure](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/) — the wrapper is collected and the JVM™ receives a null reference.
 
-Most of the time the code above works without problem, but sometimes the JVM™ can raise a `Java.Lang.NullPointerException` because `Java.Util.Set<string>` was retired from .NET GC.
+Most of the time the code works fine, but the failure is non-deterministic and hard to reproduce. The solutions below prevent it.
 
-To solve the issue, and force the GC to not retire the instance, there are some possible code snippet a developer can follows:
+> [!TIP]
+> The `using` pattern is the most idiomatic approach in modern C# and should be preferred in new code.
+> The `SuppressFinalize`/`ReRegisterForFinalize` pattern is useful when refactoring to `using` blocks is not practical.
 
-### `using` or `try-finally` with `Dispose` patterns
+### `using` or `try-finally` with `Dispose`
 
-All classes implements `IDisposable` interface, the code snippet becomes:
+All JNet classes implement `IDisposable`. Wrapping the object in a `using` block keeps it alive and releases the JVM reference deterministically:
 
-```c#
+```csharp
 using Java.Util;
 using MASES.JNet.Extensions;
 using System.Diagnostics;
@@ -223,9 +238,9 @@ namespace MASES.JNetExample
 }
 ```
 
-or
+Or equivalently with `try-finally`:
 
-```c#
+```csharp
 using Java.Util;
 using MASES.JNet.Extensions;
 using System.Diagnostics;
@@ -259,9 +274,9 @@ namespace MASES.JNetExample
 
 ### `SuppressFinalize`/`ReRegisterForFinalize` pattern
 
-Over every .NET object can be invoke the `SuppressFinalize`, the code snippet becomes:
+When restructuring to `using` is not practical, you can suppress finalization for the duration of the cross-boundary call:
 
-```c#
+```csharp
 using Java.Util;
 using MASES.JNet.Extensions;
 using System.Diagnostics;
