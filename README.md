@@ -8,7 +8,6 @@ JNet is a comprehensive suite of libraries and tools to use Java™/JVM™ APIs 
 - ✅ **Zero Migration Required** - Integrate existing Java 8 code with .NET applications
 - ✅ **Direct API Access** - Call any Java API directly from C#/VB.NET
 - ✅ **Bidirectional** - Java can call .NET and vice versa (see [JCOReflector](https://github.com/masesgroup/JCOReflector))
-- ✅ **Production Ready** - Trusted in enterprise environments
 
 > **💡 Legacy Integration:** Still running Java 8 in production? JNet enables 
 > integration with modern .NET applications without requiring Java upgrades—saving 
@@ -52,11 +51,18 @@ There are many client libraries written to manage communication with Java™. Co
 
 So, for example, do you want an `ArrayList`? Just write in C# a line of code like this:
 
-```c#
-Java.Util.ArrayList<string> alist = new Java.Util.ArrayList<string>();
+For example, to use a Java `ArrayList` directly from C#:
+```csharp
+using Java.Util;
+
+var alist = new ArrayList<string>();
+alist.Add("Hello from JNet");
 ```
 
-See [JNet usage](src/documentation/articles/usage.md) for a comprehensive example.
+JNet maps Java types — including generics — to their C# equivalents, so you can work with them
+using familiar syntax without any manual marshalling or conversion.
+
+See [JNet usage](src/documentation/articles/usage.md) for a comprehensive walkthrough.
 
 ### Community and Contribution
 
