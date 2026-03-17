@@ -80,7 +80,6 @@
 <li>✅ <strong>Zero Migration Required</strong> - Integrate existing Java 8 code with .NET applications</li>
 <li>✅ <strong>Direct API Access</strong> - Call any Java API directly from C#/VB.NET</li>
 <li>✅ <strong>Bidirectional</strong> - Java can call .NET and vice versa (see <a href="https://github.com/masesgroup/JCOReflector">JCOReflector</a>)</li>
-<li>✅ <strong>Production Ready</strong> - Trusted in enterprise environments</li>
 </ul>
 <blockquote>
 <p><strong>💡 Legacy Integration:</strong> Still running Java 8 in production? JNet enables
@@ -128,10 +127,15 @@ months of migration work and significant costs.</p>
 <li>avoids any third party communication protocol implementation;</li>
 <li>access all features made available from Java™ platform.</li>
 </ul>
-<p>So, for example, do you want an <code>ArrayList</code>? Just write in C# a line of code like this:</p>
-<pre><code class="lang-c#">Java.Util.ArrayList&lt;string&gt; alist = new Java.Util.ArrayList&lt;string&gt;();
+<p>For example, to use a Java <code>ArrayList</code> directly from C#:</p>
+<pre><code class="lang-csharp">using Java.Util;
+
+var alist = new ArrayList&lt;string&gt;();
+alist.Add(&quot;Hello from JNet&quot;);
 </code></pre>
-<p>See <a href="articles/usage.html">JNet usage</a> for a comprehensive example.</p>
+<p>JNet maps Java types — including generics — to their C# equivalents, so you can work with them
+using familiar syntax without any manual marshalling or conversion.</p>
+<p>See <a href="articles/usage.html">JNet usage</a> for a comprehensive walkthrough.</p>
 <h3 id="community-and-contribution">Community and Contribution</h3>
 <p>Do you like the project?</p>
 <ul>

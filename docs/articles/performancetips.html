@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Performance tips of .NET suite for Java™/JVM™ | MASES Group - JNet </title>
+      <title>Performance Tips for JNet | MASES Group - JNet </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Performance tips of .NET suite for Java™/JVM™ | MASES Group - JNet ">
-      <meta name="description" content="Describes some tips about performance of .NET suite for Java™/JVM™">
+      <meta name="title" content="Performance Tips for JNet | MASES Group - JNet ">
+      <meta name="description" content="Describes some tips about performance of the .NET suite for Java™/JVM™">
       
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -87,179 +87,200 @@
         <article data-uid="">
 <h1 id="jnet-performance-tips">JNet performance tips</h1>
 
-<p>This article tries to report some tips can be used when the user faces with the performances, meanwhile explains the reasons.</p>
-<h2 id="reduce-clr-jvm-boundary-invocations">Reduce CLR-JVM boundary invocations</h2>
-<p>The library tries to optimize the usage of invocations at CLR-JVM™ boundary, however the user shall avoid an expansive usage of methods if not strictly needed.
-Consider the following code (available in the <strong>tests</strong> folder projects):</p>
-<pre><code class="lang-c#">const int execution = 10000;
+<p>This article covers performance tips for JNet, explains the reasons behind each recommendation, and provides benchmarks to help you decide when to apply them.</p>
+<h2 id="reduce-clr-jvm-boundary-invocations">Reduce CLR-JVM™ boundary invocations</h2>
+<p>The library optimizes boundary invocations where possible, but you should avoid excessive
+method calls across the CLR-JVM™ boundary when performance is a concern.
+Consider the following code (available in the <strong>tests</strong> folder):</p>
+<pre><code class="lang-csharp">const int execution = 10000;
 Java.Util.ArrayList&lt;int&gt; alist = new Java.Util.ArrayList&lt;int&gt;();
 for (int i = 0; i &lt; execution; i++)
 {
     alist.Add(i);
 }
 </code></pre>
-<p>The previous code creates a <code>Java.Util.ArrayList&lt;int&gt;</code> and fills it, within the loop, invoking <code>Add</code> method: the fill operation is very expensive because on every loop the CLR-JVM™ boundary shall be traversed.
-The previous is only an example of the impact of CLR-JVM™ boundary when performance is a key element.</p>
+<p>This code creates a <code>Java.Util.ArrayList&lt;int&gt;</code> and fills it in a loop, crossing the CLR-JVM™ boundary on every <code>Add</code> call. The cumulative cost of those boundary crossings can be significant
+when performance matters.</p>
 <h3 id="jnet-helper-class">JNet helper class</h3>
-<p>The specific previous example can be optimized with some features of JNet available to build <code>java.util.List</code> of primitive types starting from array of primitive types of the CLR.</p>
-<h4 id="jnet-helper-class-based-on-array-transfer">JNet helper class based on array transfer</h4>
-<p>An optimized way to allocate a <code>Java.Util.ArrayList&lt;int&gt;</code> uses the <code>JNetHelper</code> class available in JNet:</p>
-<pre><code class="lang-c#">const int execution = 10000;
+<p>The specific example above can be optimized using <code>JNetHelper</code>, which builds a <code>java.util.List</code>
+of primitive types from a CLR primitive array in a single boundary-efficient operation.</p>
+<h4 id="array-transfer">Array transfer</h4>
+<p>The optimized approach uses <code>JNetHelper.ListFrom</code> to transfer the entire array at once:</p>
+<pre><code class="lang-csharp">const int execution = 10000;
 int[] tmpArray = new int[execution];
 var tmpJList = JNetHelper.ListFrom(tmpArray);
 Java.Util.ArrayList&lt;int&gt; alist = new Java.Util.ArrayList&lt;int&gt;(tmpJList);
 </code></pre>
-<p>the previous code (also available in the <strong>tests</strong> folder projects) move the primitive array using few invocations at CLR-JVM™ boundary, the final job is done in the JVM™ where the <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/util/List.html"><code>java.util.List</code></a> is created and then it is returned to the CLR.</p>
-<h4 id="jnet-helper-class-based-on-javaniobuffer">JNet helper class based on java.nio.*Buffer</h4>
-<p>The previous code can uses a <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> to transfrer data using other overloads of <code>JNetHelper.ListFrom</code>:</p>
-<pre><code class="lang-c#">const int execution = 10000;
+<p>This transfers the primitive array using only a few boundary invocations. The list is constructed
+entirely within the JVM™ and then returned to the CLR.</p>
+<h4 id="transfer-via-javaniobuffer">Transfer via <code>java.nio.*Buffer</code></h4>
+<p>The same result can be achieved using a
+<a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>
+via other overloads of <code>JNetHelper.ListFrom</code>. This uses shared memory to move data from CLR to JVM™:</p>
+<pre><code class="lang-csharp">const int execution = 10000;
 int[] tmpArray = new int[execution];
 var intBuffer = IntBuffer.From(tmpArray, false, false);
 var tmpJList = JNetHelper.ListFrom(intBuffer);
 Java.Util.ArrayList&lt;int&gt; alist = new Java.Util.ArrayList&lt;int&gt;(tmpJList);
 </code></pre>
-<p>or</p>
-<pre><code class="lang-c#">const int execution = 10000;
+<p>or:</p>
+<pre><code class="lang-csharp">const int execution = 10000;
 int[] tmpArray = new int[execution];
 var tmpJList = JNetHelper.ListFrom(tmpArray, true);
 Java.Util.ArrayList&lt;int&gt; alist = new Java.Util.ArrayList&lt;int&gt;(tmpJList);
 </code></pre>
-<p>Both examples uses a shared memory to move memory from CLR to JVM™, the difference is mainly:</p>
+<p>The difference between the two is:</p>
 <ul>
-<li>in the first example the user allocates the <code>IntBuffer</code> and can reuse it for other reasons, e.g. refill it with other data to be sent to the JVM™ removing the need to create a new one</li>
-<li>in the second example an <code>IntBuffer</code> is allocated behind the scene each time the <code>JNetHelper.ListFrom</code> is invoked.</li>
+<li>In the first example, the <code>IntBuffer</code> is allocated explicitly and can be reused — for instance,
+refilled with different data and sent to the JVM™ again without creating a new buffer.</li>
+<li>In the second example, an <code>IntBuffer</code> is allocated internally by <code>JNetHelper.ListFrom</code> on each
+invocation.</li>
 </ul>
 <h3 id="performance-comparison-and-tips">Performance comparison and tips</h3>
-<p>Considering all examples it is possible to highligh how invocations at CLR-JVM™ boundary impacts on performance.
-The JNetTest project (available in the <strong>tests</strong> folder projects) executes a timing comparison and the synthesis of the results is the following:</p>
+<p>The JNetTest project (available in the <strong>tests</strong> folder) measures timing across all approaches.
+Using the loop-based example as a baseline:</p>
 <ul>
-<li>First example is always the most impacted; using it as reference...</li>
-<li>...when the JNet helper, based on array transfer, is used the speed is more or less 100 times higher</li>
-<li>...when the JNet helper, based on java.nio.*Buffer, is used the speed can be 140 times higher</li>
-<li>Building a <code>System.Collections.Generic.List&lt;int&gt;</code> directly in the CLR the speed can be 1000 times higher</li>
+<li>The <code>JNetHelper</code> array transfer approach is approximately <strong>100× faster</strong>.</li>
+<li>The <code>JNetHelper</code> <code>java.nio.*Buffer</code> approach can reach <strong>140× faster</strong>.</li>
+<li>Building a <code>System.Collections.Generic.List&lt;int&gt;</code> entirely in the CLR can be <strong>1000× faster</strong>.</li>
 </ul>
 <div class="TIP">
 <h5>Tip</h5>
-<p>From the previous it is possible to report three things:</p>
+<p>Three key principles follow from these results:</p>
 <ul>
-<li>when it is possible, the user shall avoid the invocation of methods in the JVM™ from the CLR to reduce their impact on performances;</li>
-<li>if it possible the invocations at CLR-JVM™ boundary shall be collapsed just like JNetHelper does;</li>
-<li>if something can be made entirely in CLR or JVM™ try to do it in that environment until invocation at CLR-JVM™ boundary is really needed.</li>
+<li>When possible, avoid invoking JVM™ methods from the CLR in a tight loop.</li>
+<li>Collapse multiple boundary invocations into as few as possible — just as <code>JNetHelper</code> does.</li>
+<li>If a task can be completed entirely in the CLR or entirely in the JVM™, keep it there until a
+boundary crossing is strictly necessary.</li>
 </ul>
 </div>
-<h2 id="memory-transfer-at-clr-jvm-boundary">Memory transfer at CLR-JVM boundary</h2>
-<p>Latest version of JNet comes with many new APIs to manage data exchange at CLR-JVM™ boundary using <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>.</p>
-<p>The <a href="#JNet-helper-class-based-on-java.nio.*Buffer">chapter</a> introduces one of the usage of the new APIs in a specific context behind an helper class, however <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> can be used starting from many types of CLR inputs:</p>
+<h2 id="memory-transfer-at-clr-jvm-boundary">Memory transfer at CLR-JVM™ boundary</h2>
+<p>JNet provides APIs to manage data exchange at the CLR-JVM™ boundary using
+<a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>.</p>
+<p>The <a href="#JNet-helper-class-based-on-java.nio.*Buffer">section above</a> shows one use of these APIs
+via <code>JNetHelper</code>. However, <code>java.nio.ByteBuffer</code> can be constructed directly from many CLR input types:</p>
 <ul>
-<li>from an <code>IntPtr</code></li>
-<li>from a <code>System.IO.MemoryStream</code></li>
-<li>from an array of primitive types (<code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code>, and so on)</li>
+<li>An <code>IntPtr</code> — a native memory pointer, e.g. from COM, unmanaged allocations, or interop scenarios.</li>
+<li>A <code>System.IO.MemoryStream</code> — e.g. the output of a JSON serialization step.</li>
+<li>An array of primitive types (<code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code>, and so on) — e.g. data read from
+disk or a network socket.</li>
 </ul>
-<p>All previous variants are available because there many possible needs, here some examples:</p>
-<ul>
-<li>An <code>IntPtr</code>, representing a generic native memory pointer, can be the address of a memory allocated from COM (Component Object Model), a pointer to a unmanaged memory or other cases</li>
-<li>A <code>System.IO.MemoryStream</code> can be the output of some operations (e.g. a JSON serialization before convert it to an array of bytes)</li>
-<li>An array of <code>byte</code>s can be a file read from the disk, information from a socket and so on</li>
-</ul>
-<p>JNI (CLR-JVM™ boundary) comes with many methods to transfer data using array of primitivess, but in some conditions both CLR and JVM™ can make multiple copies of the memory reducing the performances.
-An example can be a <code>System.IO.MemoryStream</code> holding information to be transferred in the JVM™:</p>
+<p>Without <code>ByteBuffer</code>, transferring a <code>System.IO.MemoryStream</code> to the JVM™ involves multiple copies:</p>
 <ol>
-<li>the data within the <code>System.IO.MemoryStream</code> shall be extracted and converted into an array of <code>byte</code>s;</li>
-<li>the array of <code>byte</code>s shall be allocated from the CLR then the content of <code>System.IO.MemoryStream</code> shall be copied in it;</li>
-<li>the array of <code>byte</code>s shall be transferred to the JVM™ and this operation needs to:
-a. create a new array in the JVM™ with length equals to the CLR array
-b. execute a memory copy from CLR memory to the JVM™ memory</li>
-<li>the operation 3.b can be impacted, depending on the JVM™, from a further copy becuase the JVM™ itself can decide to use a temporary array reference at JNI (CLR-JVM™ boundary) level</li>
-<li>then the JVM™ can use the data sent from the CLR.</li>
+<li>Extract the data from <code>System.IO.MemoryStream</code> into a <code>byte[]</code> in the CLR.</li>
+<li>Allocate the <code>byte[]</code> and copy the stream content into it.</li>
+<li>Transfer the <code>byte[]</code> to the JVM™, which requires:
+<ul>
+<li>a. Allocating a new array in the JVM™ of the same length.</li>
+<li>b. Copying the memory from CLR to JVM™.</li>
+</ul>
+</li>
+<li>Depending on the JVM™ implementation, step 3b may involve an additional temporary copy at the
+JNI boundary.</li>
+<li>The JVM™ can then use the data.</li>
 </ol>
-<p>With the new APIs available in JNet the previous steps becomes:</p>
+<p>With <code>ByteBuffer</code>, the same transfer becomes:</p>
 <ol>
-<li>A <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> is created diretly from <code>System.IO.MemoryStream</code>;</li>
-<li>the reference to <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> is sent to the JVM™, but the memory isn't moved;</li>
-<li>then the JVM™ can directly access the CLR memory using <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get()"><code>public abstract byte get()</code></a> or <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get(int)"><code>public abstract byte get(int index)</code></a> methods.</li>
+<li>A <code>ByteBuffer</code> is created directly from the <code>System.IO.MemoryStream</code> — no copy yet.</li>
+<li>The <code>ByteBuffer</code> reference is passed to the JVM™ — the memory is not moved.</li>
+<li>The JVM™ accesses the CLR memory directly using
+<a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get()"><code>get()</code></a>
+or
+<a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get(int)"><code>get(int index)</code></a>.</li>
 </ol>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Other methods can be used to retrieve an array of <code>byte</code>s if the code needs that kind of type, however it is important to notice that an user shall avoid the <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get(byte%5B%5D)"><code>public ByteBuffer get(byte[] dst)</code></a> method because the underlying implementation executes a byte-to-byte copy, while it is preferable the <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get(byte%5B%5D,int,int)"><code>public ByteBuffer get(byte[] dst, int offset, int length)</code></a> method because it executes a copy based on block of bytes.</p>
+<p>If the JVM™ code needs a <code>byte[]</code>, prefer
+<a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get(byte%5B%5D,int,int)"><code>get(byte[] dst, int offset, int length)</code></a>
+over
+<a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html#get(byte%5B%5D)"><code>get(byte[] dst)</code></a>:
+the former copies in blocks, while the latter copies byte-by-byte.</p>
 </div>
 <h3 id="the-impact-of-array-creation">The impact of array creation</h3>
-<p>In the previous chapter was reported that an user can obtain an array of <code>byte</code>s (or any other primitive) by method parameter or reading data transferred using a <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>.
-If an array of primitives is needed the JVM™ (or the CLR) is heavely impacted because the JVM™ (or the CLR) must execute some work to obtain it.</p>
+<p>Whether data arrives via JNI array transfer or <code>java.nio.ByteBuffer</code>, if the receiving side needs
+to allocate a new primitive array, both the JVM™ and the CLR are heavily impacted by the
+allocation and subsequent garbage collection of that array.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The work mentioned before does not change if the array comes from JNI (CLR-JVM™ boundary) or from <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>.</p>
+<p>The allocation cost is the same regardless of whether the array originates from a JNI boundary
+transfer or from a <code>java.nio.ByteBuffer</code> read.</p>
 </div>
-<p>The JNetByteBufferTest project (available in the <strong>tests</strong> folder projects) executes a set of different tests comparing some cases:</p>
+<p>The JNetByteBufferTest project (available in the <strong>tests</strong> folder) benchmarks the following cases:</p>
 <ol>
-<li>executes a transfer using array of <code>byte</code>s, and it is used as reference</li>
-<li>then executes memory transfer using <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> and reads the data allocating, on each execution, a new array of <code>byte</code>s</li>
-<li>then executes memory transfer using <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> and reads the data reusing, on each execution, a previously allocated array of <code>byte</code>s</li>
-<li>then executes memory transfer using <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> without reads the data</li>
+<li>Transfer using a <code>byte[]</code> — used as the baseline.</li>
+<li>Transfer using <code>java.nio.ByteBuffer</code>, allocating a <strong>new</strong> <code>byte[]</code> on each read.</li>
+<li>Transfer using <code>java.nio.ByteBuffer</code>, <strong>reusing</strong> a previously allocated <code>byte[]</code> on each read.</li>
+<li>Transfer using <code>java.nio.ByteBuffer</code> <strong>without reading</strong> the data — measures pure pointer transfer.</li>
 </ol>
-<p>The previous steps are done both from CLR to the JVM™, then from JVM™ to the CLR, repeating them many times and using different array lengths; from the tests executed it is possible to highlight that:</p>
+<p>Tests run in both directions (CLR → JVM™ and JVM™ → CLR), repeated many times across different
+array lengths. Key findings:</p>
 <ul>
-<li><p>test cases 1 and 2:</p>
-<ul>
-<li>array of <code>byte</code>s performs better than <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> mainly for smallest arrays in both directions</li>
-<li><a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> not always performs better than array of <code>byte</code>s and the reason can be found in the allocation of array of <code>byte</code>s requested from JVM™, and CLR, on each execution</li>
-</ul>
+<li><p><strong>Cases 1 and 2</strong>: raw <code>byte[]</code> outperforms <code>java.nio.ByteBuffer</code> for small arrays in both
+directions, because the cost of allocating a new <code>byte[]</code> on each read offsets the transfer savings.</p>
 </li>
-<li><p>test case 3:</p>
-<ul>
-<li>in general, avoiding array allocation gives an enhancement of 4/5 times than transfer made with array of <code>byte</code>s</li>
-<li>currently, transferring few data (smallest length) from JVM™ to CLR, array of <code>byte</code>s performs better than <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a></li>
-</ul>
+<li><p><strong>Case 3</strong>: reusing the pre-allocated <code>byte[]</code> gives a <strong>4–5× improvement</strong> over <code>byte[]</code>
+transfer in most scenarios. For very small payloads transferred from JVM™ to CLR, <code>byte[]</code> still
+edges ahead.</p>
 </li>
-<li><p>test case 4:</p>
-<ul>
-<li>uncomparable with the other tests, it is useful to measure the transfer of the <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a> which is acting as a pointer to the JVM™ (or CLR) memory</li>
-</ul>
+<li><p><strong>Case 4</strong>: not directly comparable to the others — useful for measuring the cost of the
+<code>ByteBuffer</code> pointer handoff itself, with no data read overhead.</p>
 </li>
 </ul>
 <div class="TIP">
 <h5>Tip</h5>
-<p>For test case 4: if the user implements a sparse access to the memory transferred using a <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>, the code does not need to move memory (or make a copy) with array of <code>byte</code>s, gaining in performance.</p>
+<p>If your code only needs sparse or indexed access to transferred memory, use <code>java.nio.ByteBuffer</code>
+and read individual elements via <code>get(int index)</code> — no array allocation, no memory copy,
+maximum throughput.</p>
 </div>
 <h3 id="performance-and-tips">Performance and tips</h3>
-<p>From the previous chapter it is clear that memory allocation is a key to be considered in performances because the memory shall be found from the JVM™, or CLR, then it shall be released.</p>
+<p>Memory allocation is a key performance factor because both the JVM™ and the CLR must find,
+track, and eventually garbage-collect every allocated array.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>When it is possible, try to reuse the previously allocated arrays to avoid an expansive load on JVM™, or CLR, both during creation and when the arrays are garbage collected.</p>
+<p>Where possible, reuse previously allocated arrays rather than creating new ones on each
+iteration. This reduces allocation pressure on both the JVM™ GC and the CLR GC.</p>
 </div>
 <h2 id="execute-iterations-in-parallel">Execute iterations in parallel</h2>
-<p>The chapter <a href="#Performance-comparison-and-tips">Performance comparison and tips</a> recommends to reduce the number of invocations at CLR-JVM™ boundary to the minimum possible, JNetHelper is a great helper when the user is facing with primitives and <a href="#Memory-transfer-at-CLR-JVM-boundary">Memory transfer at CLR-JVM™ boundary</a> explain how to optimize memory transfer.
-However in many conditions the user shall executes iterations on objects which cannot be managed like primitive types. To explain better, consider the following snippet:</p>
-<pre><code class="lang-c#">ArrayList&lt;Java.Lang.String&gt; alist = GetAnArrayListOfString();
+<p>The <a href="#Performance-comparison-and-tips">Performance comparison and tips</a> section recommends
+minimizing CLR-JVM™ boundary crossings, and <code>JNetHelper</code> addresses this for primitives.
+However, in many real-world scenarios you must iterate over non-primitive objects. To illustrate,
+consider the following snippet:</p>
+<pre><code class="lang-csharp">ArrayList&lt;Java.Lang.String&gt; alist = GetAnArrayListOfString();
 foreach (Java.Lang.String item in alist)
 {
     // EXPENSIVE OPERATION OVER item
 }
 </code></pre>
-<p>the code requests a <code>Java.Lang.String</code> using the <code>Java.Lang.Iterable</code> interface, then executes an EXPENSIVE operation over it: when the CLR is executing the operation the JVM™ does not do anything with the <code>Java.Lang.Iterable</code> interface, the next time the CLR code requests a new item the <code>Java.Lang.Iterable</code> interface is impacted.
-In general this means that:</p>
+<p>With a standard iterator, the CLR requests the next <code>Java.Lang.String</code> via <code>Java.Lang.Iterable</code>,
+executes the expensive operation, then requests the next item — the JVM™ is idle for the entire
+duration of the operation. This means:</p>
 <ol>
-<li>the next <strong>EXPENSIVE OPERATION OVER item</strong> shall wait that the item is received from the JVM™</li>
-<li>while <strong>EXPENSIVE OPERATION OVER item</strong> is executed the JVM™ is idle</li>
+<li>Each <strong>EXPENSIVE OPERATION</strong> must wait for the next item to be fetched from the JVM™.</li>
+<li>While the <strong>EXPENSIVE OPERATION</strong> runs, the JVM™ sits idle.</li>
 </ol>
-<p>To speed up the iteration it is possible to use the <code>WithPrefetch</code> extension method like in the following sinppet:</p>
-<pre><code class="lang-c#">ArrayList&lt;Java.Lang.String&gt; alist = GetAnArrayListOfString();
+<p>The <code>WithPrefetch</code> extension method solves this by fetching the next item from the JVM™ in
+parallel while the current operation is still running:</p>
+<pre><code class="lang-csharp">ArrayList&lt;Java.Lang.String&gt; alist = GetAnArrayListOfString();
 foreach (Java.Lang.String item in alist.WithPrefetch())
 {
     // EXPENSIVE OPERATION OVER item
 }
 </code></pre>
-<p><code>WithPrefetch</code> returns a new iterator that retrieves data from JVM™ in parallel: while <strong>EXPENSIVE OPERATION OVER item</strong> is executed, a new item is received from the JVM™.</p>
-<p>A further improvement can be obtained using <code>WithThread</code> extension method like in:</p>
-<pre><code class="lang-c#">ArrayList&lt;Java.Lang.String&gt; alist = GetAnArrayListOfString();
+<p>For a further improvement, combine <code>WithPrefetch</code> with <code>WithThread</code>, which offloads the prefetch
+to a dedicated native thread:</p>
+<pre><code class="lang-csharp">ArrayList&lt;Java.Lang.String&gt; alist = GetAnArrayListOfString();
 foreach (Java.Lang.String item in alist.WithPrefetch().WithThread())
 {
     // EXPENSIVE OPERATION OVER item
 }
 </code></pre>
-<p><code>WithThread</code> creates an external native thread which executes the retrieve operation.</p>
+<p><code>WithThread</code> creates an external native thread responsible for driving the prefetch loop,
+keeping the fetch pipeline fully independent from the CLR thread executing the operation.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>It is preferable to use <code>WithPrefetch</code> and <code>WithThread</code> when the number of items are high and the operation over item is expensive; otherwise the time spent to allocate the external native thread and manage the second iterator is more than the operation executed with classic iterator.</p>
+<p>Use <code>WithPrefetch</code> and <code>WithThread</code> when the number of items is large <strong>and</strong> the per-item
+operation is expensive. For short iterations or cheap operations, the overhead of allocating
+the native thread and managing the second iterator may exceed the gains from parallelism.</p>
 </div>
 
 </article>
