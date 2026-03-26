@@ -108,7 +108,7 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 * V2.0.0+: major updates:  
   * **JNet**: complete review of all classes based on automatic JNetReflector generation  
   * **JNetReflector**: improvements from .NET interface generation to generics and where clauses (details: <https://github.com/masesgroup/JNet/issues/178>)  
-* V1.5.3+: JNetReflector manages generics and covers almost all Java™ SE 11 classes (see `articles/usageReflector.md`)  
+* V1.5.3+: JNetReflector manages generics and covers almost all Java™ SE 11 classes: see [JNet Reflector usage](articles/usageReflector.md)
 * V1.5.2+: major improvements to JNetReflector; used to generate almost all Java™ 11 classes for that JNet version  
 * V1.4.9+: introduces two new projects:  
   * **JNetPSCore**: core library for PowerShell development  
