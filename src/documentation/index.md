@@ -85,7 +85,7 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 * [JNet PowerShell usage](src/documentation/articles/usagePS.md)
 * [JNet Command-line switches](src/documentation/articles/commandlineswitch.md)
 
-### News
+### Recent changes
 
 * V2.6.x: aligns to JCOBridge 2.6.* series
   * V2.6.6: adds support for JavaSE 8  
