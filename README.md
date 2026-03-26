@@ -90,14 +90,14 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 
 ### News
 
-* **V2.6.x**: aligns to JCOBridge 2.6.* series
-  * **V2.6.6**: adds support for JavaSE 8  
+* V2.6.x: aligns to JCOBridge 2.6.* series
+  * V2.6.6: adds support for JavaSE 8  
 
-* **V2.5.13**: adds [JNetCLICore](https://www.nuget.org/packages/MASES.JNetCLICore) to help CLI operations across projects based on JNet  
+* V2.5.13: adds [JNetCLICore](https://www.nuget.org/packages/MASES.JNetCLICore) to help CLI operations across projects based on JNet  
 
-* **V2.5.11**: updates to JCOBridge 2.5.21 and adds management of [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) on recent Intel CPUs due to [latest change on .NET 9](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support); usage explanation in [this section](articles/usage.md#intel-cet-and-jnet)  
+* V2.5.11: updates to JCOBridge 2.5.21 and adds management of [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) on recent Intel CPUs due to [latest change on .NET 9](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support); usage explanation in [this section](articles/usage.md#intel-cet-and-jnet)  
 
-* **V2.5.0+**: the most notable changes are:  
+* V2.5.0+: the most notable changes are:  
   * Tools and Docker images updated to .NET 8  
   * **JNetReflector**: create side-by-side class for each listener used in case of pure JVM™ interface (see <https://github.com/masesgroup/JNet/issues/393>)  
   * **JNet**:  
@@ -105,28 +105,28 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
     * enhanced ByteBuffer management  
     * speed-up in array/list conversion  
 
-* **V2.4.0+**: the most notable changes are:  
+* V2.4.0+: the most notable changes are:  
   * **JNet**: review of classes based on latest updates of JNetReflector  
   * **JNetReflector**: use native types only when the JVM™ counterpart is a native type (see <https://github.com/masesgroup/JNet/issues/371>)  
   * **JNetReflector**: can use signature to invoke JVM™ methods or fallback to previous behavior (see <https://github.com/masesgroup/JNet/issues/374>)  
 
-* **V2.3.0+**: the most notable changes are:  
+* V2.3.0+: the most notable changes are:  
   * **JNet**: review of classes based on latest updates of JNetReflector  
   * **JNetReflector**: use `Java.Lang.String` by default instead of `string` (`System.String`) (see <https://github.com/masesgroup/JNet/issues/363>)  
 
-* **V2.0.0+**: major updates:  
+* V2.0.0+: major updates:  
   * **JNet**: complete review of all classes based on automatic JNetReflector generation  
   * **JNetReflector**: improvements from .NET interface generation to generics and where clauses (details: <https://github.com/masesgroup/JNet/issues/178>)  
 
-* **V1.5.3+**: JNetReflector manages generics and covers almost all Java™ SE 11 classes (see `articles/usageReflector.md`)  
+* V1.5.3+: JNetReflector manages generics and covers almost all Java™ SE 11 classes (see `articles/usageReflector.md`)  
 
-* **V1.5.2+**: major improvements to JNetReflector; used to generate almost all Java™ 11 classes for that JNet version  
+* V1.5.2+: major improvements to JNetReflector; used to generate almost all Java™ 11 classes for that JNet version  
 
-* **V1.4.9+**: introduces two new projects:  
+* V1.4.9+: introduces two new projects:  
   * **JNetPSCore**: core library for PowerShell development  
   * **JNetPS**: PowerShell module for using JNet in a PowerShell shell  
 
-* **V1.4.8+**: introduces **JNetReflector**, a new project (in development) able to build C# gateway classes from JARs, similar to [JCOReflector](https://github.com/masesgroup/JCOReflector) but for JVM™ classes  
+* V1.4.8+: introduces **JNetReflector**, a new project (in development) able to build C# gateway classes from JARs, similar to [JCOReflector](https://github.com/masesgroup/JCOReflector) but for JVM™ classes  
 
 ## Frequently Asked Questions
 
