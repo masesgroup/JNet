@@ -5,7 +5,7 @@
   homepage: api/index.md
 - name: JNet repository
   items:
-  - name: Browse repository
+  - name: Browse
     href: https://github.com/masesgroup/JNet
   - name: Releases
     href: https://github.com/masesgroup/JNet/releases/
