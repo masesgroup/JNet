@@ -66,13 +66,11 @@ See [JNet usage](src/documentation/articles/usage.md) for a comprehensive walkth
 
 ### Community and Contribution
 
-Do you like the project? 
-- Request your free [community subscription](https://www.jcobridge.com/pricing-25/).
+If you find JNet useful:
 
-Do you want to help us?
-- put a :star: on this project
-- open [issues](https://github.com/masesgroup/JNet/issues) to request features or report bugs :bug:
-- improves the project with Pull Requests
+* Leave a ⭐ on the repository
+* Open [issues](https://github.com/masesgroup/JNet/issues) to report bugs 🐛 or request features
+* Submit Pull Requests to improve the project
 
 This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.
 
@@ -90,35 +88,35 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 * [JNet PowerShell usage](src/documentation/articles/usagePS.md)
 * [JNet Command-line switches](src/documentation/articles/commandlineswitch.md)
 
-### News
+### Recent changes
 
-* V1.4.8+: From version 1.4.8 there is a new project, named JNetReflector (still in development phase), able to build C# gateway classes from JARs containing the JVM™ classes, exactly the same [JCOReflector](https://github.com/masesgroup/JCOReflector) does for .NET in JVM™.
-* V1.4.9+: From version 1.4.9 there are two new projects:
-  * JNetPSCore: the core library for PowerShell development, it can be extended in other projects based on JNet;
-  * JNetPS: a PowerShell module to use JNet within a PowerShell shell.
-* V1.5.2+: strong improvement of JNetReflector; it is used to generate almost all Java™ 11 classes available in the corresponding JNet version
-* V1.5.3+: JNetReflector manages generics and almost all classes of Java™ SE 11 are covered: see [JNet Reflector usage](src/documentation/articles/usageReflector.md)
-* V2.0.0+: the most notable changes in this version are in:
-  * JNet: complete review of all classes based on automatic generation done using JNetReflector
-  * JNetReflector: improvements in many areas from generation of .NET interfaces to generics and where clauses, full story in https://github.com/masesgroup/JNet/issues/178
-* V2.3.0+: the most notable changes in this version are in:
-  * JNet: review of classes based on latest updates of JNetReflector
-  * JNetReflector: use `Java.Lang.String`, by default, instead of `string` (`System.String`) (see https://github.com/masesgroup/JNet/issues/363)
-* V2.4.0+: the most notable changes in this version are in:
-  * JNet: review of classes based on latest updates of JNetReflector
-  * JNetReflector: use native types only when JVM™ counter-part is a native type (see https://github.com/masesgroup/JNet/issues/371)
-  * JNetReflector: can use signature to invoke JVM™ methods (see https://github.com/masesgroup/JNet/issues/374) or fallback to current behavior
-* V2.5.0+: the most notable changes in this version are in:
-  * Tools and Docker images update to .NET 8
-  * JNetReflector: create side-by-side class on each listener used in case of pure JVM™ interface (see https://github.com/masesgroup/JNet/issues/393)
-  * JNet:
-    * review of classes based on latest updates of JNetReflector
-    * enhanced ByteBuffer management
-    * speed-up array/list conversion
-* V2.5.11: updates to JCOBridge 2.5.21 and adds management of [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) on recent Intel CPU due to [latest change on .NET 9](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support): usage explanation on [this](src/documentation/articles/usage.md#intel-cet-and-jnet)
-* V2.5.13: adds [JNetCLICore](https://www.nuget.org/packages/MASES.JNetCLICore) to help CLI operations across projects based on JNet
 * V2.6.x: aligns to JCOBridge 2.6.* series
-  * V2.6.6: adds support for JavaSE 8
+  * V2.6.6: adds support for JavaSE 8  
+* V2.5.13: adds [JNetCLICore](https://www.nuget.org/packages/MASES.JNetCLICore) to help CLI operations across projects based on JNet  
+* V2.5.11: updates to JCOBridge 2.5.21 and adds management of [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) on recent Intel CPUs due to [latest change on .NET 9](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support); usage explanation in [this section](articles/usage.md#intel-cet-and-jnet) 
+* V2.5.0+: the most notable changes are:  
+  * Tools and Docker images updated to .NET 8  
+  * **JNetReflector**: create side-by-side class for each listener used in case of pure JVM™ interface (see <https://github.com/masesgroup/JNet/issues/393>)  
+  * **JNet**:  
+    * review of classes based on latest JNetReflector  
+    * enhanced ByteBuffer management  
+    * speed-up in array/list conversion  
+* V2.4.0+: the most notable changes are:  
+  * **JNet**: review of classes based on latest updates of JNetReflector  
+  * **JNetReflector**: use native types only when the JVM™ counterpart is a native type (see <https://github.com/masesgroup/JNet/issues/371>)  
+  * **JNetReflector**: can use signature to invoke JVM™ methods or fallback to previous behavior (see <https://github.com/masesgroup/JNet/issues/374>)  
+* V2.3.0+: the most notable changes are:  
+  * **JNet**: review of classes based on latest updates of JNetReflector  
+  * **JNetReflector**: use `Java.Lang.String` by default instead of `string` (`System.String`) (see <https://github.com/masesgroup/JNet/issues/363>)  
+* V2.0.0+: major updates:  
+  * **JNet**: complete review of all classes based on automatic JNetReflector generation  
+  * **JNetReflector**: improvements from .NET interface generation to generics and where clauses (details: <https://github.com/masesgroup/JNet/issues/178>)  
+* V1.5.3+: JNetReflector manages generics and covers almost all Java™ SE 11 classes: see [JNet Reflector usage](articles/usageReflector.md)
+* V1.5.2+: major improvements to JNetReflector; used to generate almost all Java™ 11 classes for that JNet version  
+* V1.4.9+: introduces two new projects:  
+  * **JNetPSCore**: core library for PowerShell development  
+  * **JNetPS**: PowerShell module for using JNet in a PowerShell shell  
+* V1.4.8+: introduces **JNetReflector**, a new project (in development) able to build C# gateway classes from JARs, similar to [JCOReflector](https://github.com/masesgroup/JCOReflector) but for JVM™ classes  
 
 ## Frequently Asked Questions
 
@@ -185,7 +183,8 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
   * Documentation is shared;
 * **Dynamic code**: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this [simple example](https://www.jcobridge.com/net-examples/dotnet-examples/) and [JNet APIs extensibility](src/documentation/articles/API_extensibility.md).
 
-[JCOBridge 2.6.*](https://www.jcobridge.com) can be used for free without any obligations; you need to purchase a commercial license, or uninstall the software, if you have direct or indirect incomes from the product usage.
+> [!NOTE]
+> [JCOBridge 2.6.*](https://www.jcobridge.com) can be used for free without any obligations. A commercial license must be purchased — or the software uninstalled — if you derive direct or indirect income from its usage.
 
 ### Supported Versions
 
@@ -200,7 +199,7 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
 
 **.NET:**
 - .NET Framework 4.6.2+
-- .NET 6, 8, 9, 10
+- .NET 8, 9, 10
 
 > **Java 8 Extended Support** runs until December 2030. JNet provides a migration 
 > path: integrate Java 8 systems with modern .NET now, migrate Java when ready.
@@ -213,7 +212,7 @@ Have a look at the following JCOBridge resources:
 |:---:	|:---:	|:---:	|
 |JNet | > 1.5.* series | > 2.6.* series |
 |Release notes|[Link](https://www.jcobridge.com/release-notes/)| [Link](https://www.jcobridge.com/release-notes/)|
-|Community Edition|[Conditions](https://www.jcobridge.com/pricing-25/)|[Conditions](https://www.jcobridge.com/pricing-25/)|
-|Commercial Edition|[Information](https://www.jcobridge.com/pricing-26/)|[Information](https://www.jcobridge.com/pricing-26/)|
+|Community Edition|[Conditions](https://www.jcobridge.com/pricing-25/)|[Conditions](https://www.jcobridge.com/pricing-26/)|
+|Commercial Edition|[Information](https://www.jcobridge.com/pricing-25/)|[Information](https://www.jcobridge.com/pricing-26/)|
 
 Latest release: [![JCOBridge nuget](https://img.shields.io/nuget/v/MASES.JCOBridge)](https://www.nuget.org/packages/MASES.JCOBridge)
