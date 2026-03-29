@@ -796,6 +796,7 @@ namespace MASES.JNet.Reflector
                 }
                 else
                 {
+                    constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true, baseClassIsJVMBridgeBase).AddTabLevel(1);
                     if (jClass.IsJVMClassWithCallbacks())
                     {
                         operatorClassBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
