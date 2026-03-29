@@ -151,8 +151,8 @@ jobs:
       ExecuteOnMoreOSes: ${{ inputs.ExecuteOnMoreOSes || github.event_name == 'schedule' }}
       ExecuteOnLargerJDKSet: ${{ inputs.ExecuteOnLargerJDKSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
       EnableLinuxTests: true
-      EnableWindowsTests: ${{ inputs.ExecuteOnWindows || github.ref_name == 'master' || github.event_name == 'schedule' }}
-      EnableMacOSTests: ${{ inputs.ExecuteOnMacOS || github.event_name == 'schedule' }}
+      EnableWindowsTests: ${{ inputs.EnableWindowsTests || github.ref_name == 'master' || github.event_name == 'schedule' }}
+      EnableMacOSTests: ${{ inputs.EnableMacOSTests || github.event_name == 'schedule' }}
       ForceContinueOnError: ${{ inputs.ForceContinueOnError || false }}
       EnableProcessDump: ${{ inputs.EnableProcessDump || '0' }}
       ProcessDumpType: ${{ inputs.ProcessDumpType || '3' }}
