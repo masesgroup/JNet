@@ -33,10 +33,6 @@ namespace Javax.Swing.Plaf.Basic
     {
         const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI";
         /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public BasicTreeUI() { }
-        /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -47,7 +43,7 @@ namespace Javax.Swing.Plaf.Basic
         public BasicTreeUI(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -66,13 +62,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTreeUI.CellEditorHandler.html"/>
         /// </summary>
-        public partial class CellEditorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CellEditorHandler>
+        public partial class CellEditorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<CellEditorHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$CellEditorHandler";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public CellEditorHandler() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -84,7 +76,7 @@ namespace Javax.Swing.Plaf.Basic
             public CellEditorHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -107,13 +99,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTreeUI.FocusHandler.html"/>
         /// </summary>
-        public partial class FocusHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FocusHandler>
+        public partial class FocusHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<FocusHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$FocusHandler";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public FocusHandler() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -125,7 +113,7 @@ namespace Javax.Swing.Plaf.Basic
             public FocusHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -148,13 +136,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTreeUI.MouseInputHandler.html"/>
         /// </summary>
-        public partial class MouseInputHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MouseInputHandler>
+        public partial class MouseInputHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<MouseInputHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$MouseInputHandler";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public MouseInputHandler() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -166,7 +150,7 @@ namespace Javax.Swing.Plaf.Basic
             public MouseInputHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -193,10 +177,6 @@ namespace Javax.Swing.Plaf.Basic
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$NodeDimensionsHandler";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public NodeDimensionsHandler() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -207,7 +187,7 @@ namespace Javax.Swing.Plaf.Basic
             public NodeDimensionsHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -230,13 +210,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTreeUI.PropertyChangeHandler.html"/>
         /// </summary>
-        public partial class PropertyChangeHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PropertyChangeHandler>
+        public partial class PropertyChangeHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<PropertyChangeHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$PropertyChangeHandler";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public PropertyChangeHandler() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -248,7 +224,7 @@ namespace Javax.Swing.Plaf.Basic
             public PropertyChangeHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -271,13 +247,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTreeUI.SelectionModelPropertyChangeHandler.html"/>
         /// </summary>
-        public partial class SelectionModelPropertyChangeHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SelectionModelPropertyChangeHandler>
+        public partial class SelectionModelPropertyChangeHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<SelectionModelPropertyChangeHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$SelectionModelPropertyChangeHandler";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public SelectionModelPropertyChangeHandler() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -289,7 +261,7 @@ namespace Javax.Swing.Plaf.Basic
             public SelectionModelPropertyChangeHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -316,10 +288,6 @@ namespace Javax.Swing.Plaf.Basic
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$TreeCancelEditingAction";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeCancelEditingAction() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -330,7 +298,7 @@ namespace Javax.Swing.Plaf.Basic
             public TreeCancelEditingAction(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -353,13 +321,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTreeUI.TreeExpansionHandler.html"/>
         /// </summary>
-        public partial class TreeExpansionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeExpansionHandler>
+        public partial class TreeExpansionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<TreeExpansionHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$TreeExpansionHandler";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeExpansionHandler() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -371,7 +335,7 @@ namespace Javax.Swing.Plaf.Basic
             public TreeExpansionHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -398,10 +362,6 @@ namespace Javax.Swing.Plaf.Basic
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$TreeHomeAction";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeHomeAction() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -412,7 +372,7 @@ namespace Javax.Swing.Plaf.Basic
             public TreeHomeAction(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -439,10 +399,6 @@ namespace Javax.Swing.Plaf.Basic
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$TreeIncrementAction";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeIncrementAction() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -453,7 +409,7 @@ namespace Javax.Swing.Plaf.Basic
             public TreeIncrementAction(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -476,13 +432,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTreeUI.TreeModelHandler.html"/>
         /// </summary>
-        public partial class TreeModelHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeModelHandler>
+        public partial class TreeModelHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<TreeModelHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$TreeModelHandler";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeModelHandler() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -494,7 +446,7 @@ namespace Javax.Swing.Plaf.Basic
             public TreeModelHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -521,10 +473,6 @@ namespace Javax.Swing.Plaf.Basic
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$TreePageAction";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreePageAction() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -535,7 +483,7 @@ namespace Javax.Swing.Plaf.Basic
             public TreePageAction(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -558,13 +506,9 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTreeUI.TreeSelectionHandler.html"/>
         /// </summary>
-        public partial class TreeSelectionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeSelectionHandler>
+        public partial class TreeSelectionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<TreeSelectionHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$TreeSelectionHandler";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeSelectionHandler() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -576,7 +520,7 @@ namespace Javax.Swing.Plaf.Basic
             public TreeSelectionHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -603,10 +547,6 @@ namespace Javax.Swing.Plaf.Basic
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$TreeToggleAction";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeToggleAction() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -617,7 +557,7 @@ namespace Javax.Swing.Plaf.Basic
             public TreeToggleAction(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -644,10 +584,6 @@ namespace Javax.Swing.Plaf.Basic
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicTreeUI$TreeTraverseAction";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeTraverseAction() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -658,7 +594,7 @@ namespace Javax.Swing.Plaf.Basic
             public TreeTraverseAction(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

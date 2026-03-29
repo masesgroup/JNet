@@ -29,14 +29,9 @@ namespace Javax.Xml.Validation
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/validation/SchemaFactory.html"/>
     /// </summary>
-    public partial class SchemaFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SchemaFactory>
+    public partial class SchemaFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<SchemaFactory>
     {
         const string _bridgeClassName = "javax.xml.validation.SchemaFactory";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("SchemaFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public SchemaFactory() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Xml.Validation
         public SchemaFactory(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

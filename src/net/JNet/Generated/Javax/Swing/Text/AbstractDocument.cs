@@ -29,14 +29,9 @@ namespace Javax.Swing.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/AbstractDocument.html"/>
     /// </summary>
-    public partial class AbstractDocument : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractDocument>
+    public partial class AbstractDocument : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AbstractDocument>
     {
         const string _bridgeClassName = "javax.swing.text.AbstractDocument";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("AbstractDocument class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public AbstractDocument() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Swing.Text
         public AbstractDocument(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -68,14 +63,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/AbstractDocument.AbstractElement.html"/>
         /// </summary>
-        public partial class AbstractElement : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractElement>
+        public partial class AbstractElement : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AbstractElement>
         {
             const string _bridgeClassName = "javax.swing.text.AbstractDocument$AbstractElement";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("AbstractElement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public AbstractElement() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -88,7 +78,7 @@ namespace Javax.Swing.Text
             public AbstractElement(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -111,14 +101,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/AbstractDocument.AttributeContext.html"/>
         /// </summary>
-        public partial class AttributeContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AttributeContext>
+        public partial class AttributeContext : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AttributeContext>
         {
             const string _bridgeClassName = "javax.swing.text.AbstractDocument$AttributeContext";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("AttributeContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public AttributeContext() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -131,7 +116,7 @@ namespace Javax.Swing.Text
             public AttributeContext(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -158,10 +143,6 @@ namespace Javax.Swing.Text
         {
             const string _bridgeClassName = "javax.swing.text.AbstractDocument$BranchElement";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public BranchElement() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -172,7 +153,7 @@ namespace Javax.Swing.Text
             public BranchElement(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -195,14 +176,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/AbstractDocument.Content.html"/>
         /// </summary>
-        public partial class Content : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Content>
+        public partial class Content : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Content>
         {
             const string _bridgeClassName = "javax.swing.text.AbstractDocument$Content";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("Content class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Content() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -215,7 +191,7 @@ namespace Javax.Swing.Text
             public Content(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -242,10 +218,6 @@ namespace Javax.Swing.Text
         {
             const string _bridgeClassName = "javax.swing.text.AbstractDocument$DefaultDocumentEvent";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public DefaultDocumentEvent() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -256,7 +228,7 @@ namespace Javax.Swing.Text
             public DefaultDocumentEvent(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -283,10 +255,6 @@ namespace Javax.Swing.Text
         {
             const string _bridgeClassName = "javax.swing.text.AbstractDocument$ElementEdit";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ElementEdit() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -297,7 +265,7 @@ namespace Javax.Swing.Text
             public ElementEdit(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -324,10 +292,6 @@ namespace Javax.Swing.Text
         {
             const string _bridgeClassName = "javax.swing.text.AbstractDocument$LeafElement";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public LeafElement() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -338,7 +302,7 @@ namespace Javax.Swing.Text
             public LeafElement(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

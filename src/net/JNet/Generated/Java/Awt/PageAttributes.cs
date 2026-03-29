@@ -33,10 +33,6 @@ namespace Java.Awt
     {
         const string _bridgeClassName = "java.awt.PageAttributes";
         /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PageAttributes() { }
-        /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -47,7 +43,7 @@ namespace Java.Awt
         public PageAttributes(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -66,13 +62,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/PageAttributes.ColorType.html"/>
         /// </summary>
-        public partial class ColorType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ColorType>
+        public partial class ColorType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ColorType>
         {
             const string _bridgeClassName = "java.awt.PageAttributes$ColorType";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ColorType() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -84,7 +76,7 @@ namespace Java.Awt
             public ColorType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -107,13 +99,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/PageAttributes.MediaType.html"/>
         /// </summary>
-        public partial class MediaType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MediaType>
+        public partial class MediaType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<MediaType>
         {
             const string _bridgeClassName = "java.awt.PageAttributes$MediaType";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public MediaType() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -125,7 +113,7 @@ namespace Java.Awt
             public MediaType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -148,13 +136,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/PageAttributes.OrientationRequestedType.html"/>
         /// </summary>
-        public partial class OrientationRequestedType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OrientationRequestedType>
+        public partial class OrientationRequestedType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<OrientationRequestedType>
         {
             const string _bridgeClassName = "java.awt.PageAttributes$OrientationRequestedType";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public OrientationRequestedType() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -166,7 +150,7 @@ namespace Java.Awt
             public OrientationRequestedType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -189,13 +173,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/PageAttributes.OriginType.html"/>
         /// </summary>
-        public partial class OriginType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OriginType>
+        public partial class OriginType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<OriginType>
         {
             const string _bridgeClassName = "java.awt.PageAttributes$OriginType";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public OriginType() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -207,7 +187,7 @@ namespace Java.Awt
             public OriginType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -230,13 +210,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/PageAttributes.PrintQualityType.html"/>
         /// </summary>
-        public partial class PrintQualityType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrintQualityType>
+        public partial class PrintQualityType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<PrintQualityType>
         {
             const string _bridgeClassName = "java.awt.PageAttributes$PrintQualityType";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public PrintQualityType() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -248,7 +224,7 @@ namespace Java.Awt
             public PrintQualityType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

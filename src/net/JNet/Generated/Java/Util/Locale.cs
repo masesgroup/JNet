@@ -29,13 +29,9 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html"/>
     /// </summary>
-    public partial class Locale : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Locale>
+    public partial class Locale : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Locale>
     {
         const string _bridgeClassName = "java.util.Locale";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Locale() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Util
         public Locale(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -66,13 +62,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.Builder.html"/>
         /// </summary>
-        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Builder>
         {
             const string _bridgeClassName = "java.util.Locale$Builder";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Builder() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -84,7 +76,7 @@ namespace Java.Util
             public Builder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -111,10 +103,6 @@ namespace Java.Util
         {
             const string _bridgeClassName = "java.util.Locale$Category";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Category() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -125,7 +113,7 @@ namespace Java.Util
             public Category(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -152,10 +140,6 @@ namespace Java.Util
         {
             const string _bridgeClassName = "java.util.Locale$FilteringMode";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public FilteringMode() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -166,7 +150,7 @@ namespace Java.Util
             public FilteringMode(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -189,13 +173,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.LanguageRange.html"/>
         /// </summary>
-        public partial class LanguageRange : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LanguageRange>
+        public partial class LanguageRange : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<LanguageRange>
         {
             const string _bridgeClassName = "java.util.Locale$LanguageRange";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public LanguageRange() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -207,7 +187,7 @@ namespace Java.Util
             public LanguageRange(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

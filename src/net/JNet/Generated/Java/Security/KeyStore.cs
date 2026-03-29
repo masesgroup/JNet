@@ -29,13 +29,9 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.html"/>
     /// </summary>
-    public partial class KeyStore : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyStore>
+    public partial class KeyStore : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<KeyStore>
     {
         const string _bridgeClassName = "java.security.KeyStore";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public KeyStore() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Security
         public KeyStore(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -66,14 +62,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.Builder.html"/>
         /// </summary>
-        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Builder>
         {
             const string _bridgeClassName = "java.security.KeyStore$Builder";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("Builder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Builder() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -86,7 +77,7 @@ namespace Java.Security
             public Builder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -113,10 +104,6 @@ namespace Java.Security
         {
             const string _bridgeClassName = "java.security.KeyStore$CallbackHandlerProtection";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public CallbackHandlerProtection() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -127,7 +114,7 @@ namespace Java.Security
             public CallbackHandlerProtection(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -150,14 +137,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.Entry.html"/>
         /// </summary>
-        public partial class Entry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entry>
+        public partial class Entry : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Entry>
         {
             const string _bridgeClassName = "java.security.KeyStore$Entry";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("Entry class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Entry() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -170,7 +152,7 @@ namespace Java.Security
             public Entry(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -189,14 +171,9 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.Entry.Attribute.html"/>
             /// </summary>
-            public partial class Attribute : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Attribute>
+            public partial class Attribute : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Attribute>
             {
                 const string _bridgeClassName = "java.security.KeyStore$Entry$Attribute";
-                /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                [global::System.Obsolete("Attribute class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public Attribute() { }
                 /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
@@ -209,7 +186,7 @@ namespace Java.Security
                 public Attribute(params object[] args) : base(args) { }
 
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <inheritdoc/>
@@ -236,14 +213,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.LoadStoreParameter.html"/>
         /// </summary>
-        public partial class LoadStoreParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LoadStoreParameter>
+        public partial class LoadStoreParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<LoadStoreParameter>
         {
             const string _bridgeClassName = "java.security.KeyStore$LoadStoreParameter";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("LoadStoreParameter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public LoadStoreParameter() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -256,7 +228,7 @@ namespace Java.Security
             public LoadStoreParameter(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -279,13 +251,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.PasswordProtection.html"/>
         /// </summary>
-        public partial class PasswordProtection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PasswordProtection>
+        public partial class PasswordProtection : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<PasswordProtection>
         {
             const string _bridgeClassName = "java.security.KeyStore$PasswordProtection";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public PasswordProtection() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -297,7 +265,7 @@ namespace Java.Security
             public PasswordProtection(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -324,10 +292,6 @@ namespace Java.Security
         {
             const string _bridgeClassName = "java.security.KeyStore$PrivateKeyEntry";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public PrivateKeyEntry() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -338,7 +302,7 @@ namespace Java.Security
             public PrivateKeyEntry(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -361,14 +325,9 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.ProtectionParameter.html"/>
         /// </summary>
-        public partial class ProtectionParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProtectionParameter>
+        public partial class ProtectionParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ProtectionParameter>
         {
             const string _bridgeClassName = "java.security.KeyStore$ProtectionParameter";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("ProtectionParameter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public ProtectionParameter() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -381,7 +340,7 @@ namespace Java.Security
             public ProtectionParameter(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -408,10 +367,6 @@ namespace Java.Security
         {
             const string _bridgeClassName = "java.security.KeyStore$SecretKeyEntry";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public SecretKeyEntry() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -422,7 +377,7 @@ namespace Java.Security
             public SecretKeyEntry(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -449,10 +404,6 @@ namespace Java.Security
         {
             const string _bridgeClassName = "java.security.KeyStore$TrustedCertificateEntry";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TrustedCertificateEntry() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -463,7 +414,7 @@ namespace Java.Security
             public TrustedCertificateEntry(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

@@ -29,13 +29,9 @@ namespace Javax.Imageio.Spi
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/ServiceRegistry.html"/>
     /// </summary>
-    public partial class ServiceRegistry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ServiceRegistry>
+    public partial class ServiceRegistry : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ServiceRegistry>
     {
         const string _bridgeClassName = "javax.imageio.spi.ServiceRegistry";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ServiceRegistry() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Imageio.Spi
         public ServiceRegistry(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -66,14 +62,9 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/ServiceRegistry.Filter.html"/>
         /// </summary>
-        public partial class Filter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Filter>
+        public partial class Filter : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Filter>
         {
             const string _bridgeClassName = "javax.imageio.spi.ServiceRegistry$Filter";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Filter() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -86,7 +77,7 @@ namespace Javax.Imageio.Spi
             public Filter(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

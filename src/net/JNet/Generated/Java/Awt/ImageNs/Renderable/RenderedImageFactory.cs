@@ -29,14 +29,9 @@ namespace Java.Awt.ImageNs.Renderable
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/RenderedImageFactory.html"/>
     /// </summary>
-    public partial class RenderedImageFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderedImageFactory>
+    public partial class RenderedImageFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<RenderedImageFactory>
     {
         const string _bridgeClassName = "java.awt.image.renderable.RenderedImageFactory";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("RenderedImageFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public RenderedImageFactory() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Java.Awt.ImageNs.Renderable
         public RenderedImageFactory(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

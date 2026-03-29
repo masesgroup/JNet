@@ -29,14 +29,9 @@ namespace Javax.Sound.Sampled
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/Control.html"/>
     /// </summary>
-    public partial class Control : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Control>
+    public partial class Control : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Control>
     {
         const string _bridgeClassName = "javax.sound.sampled.Control";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("Control class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Control() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Sound.Sampled
         public Control(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -68,13 +63,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/Control.Type.html"/>
         /// </summary>
-        public partial class Type : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Type>
+        public partial class Type : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Type>
         {
             const string _bridgeClassName = "javax.sound.sampled.Control$Type";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Type() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -86,7 +77,7 @@ namespace Javax.Sound.Sampled
             public Type(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

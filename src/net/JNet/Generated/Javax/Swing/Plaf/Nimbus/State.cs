@@ -29,14 +29,9 @@ namespace Javax.Swing.Plaf.Nimbus
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/nimbus/State.html"/>
     /// </summary>
-    public partial class State : MASES.JCOBridge.C2JBridge.JVMBridgeBase<State>
+    public partial class State : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<State>
     {
         const string _bridgeClassName = "javax.swing.plaf.nimbus.State";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("State class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public State() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Swing.Plaf.Nimbus
         public State(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -73,14 +68,9 @@ namespace Javax.Swing.Plaf.Nimbus
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/nimbus/State.html"/>
     /// </summary>
     /// <typeparam name="T"><see cref="Javax.Swing.JComponent"/></typeparam>
-    public partial class State<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<State<T>> where T : Javax.Swing.JComponent
+    public partial class State<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<State<T>> where T : Javax.Swing.JComponent
     {
         const string _bridgeClassName = "javax.swing.plaf.nimbus.State";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("State class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public State() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -93,7 +83,7 @@ namespace Javax.Swing.Plaf.Nimbus
         public State(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
