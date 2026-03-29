@@ -67,6 +67,13 @@ namespace Javax.Swing.Undo
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/undo/UndoableEditSupport.html#javax.swing.undo.UndoableEditSupport()"/>
+        /// </summary>
+        public UndoableEditSupport()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/undo/UndoableEditSupport.html#javax.swing.undo.UndoableEditSupport(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>

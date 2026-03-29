@@ -66,6 +66,13 @@ namespace Java.Lang
     public partial class SecurityManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#java.lang.SecurityManager()"/>
+        /// </summary>
+        public SecurityManager()
+            : base()
+        {
+        }
 
         #endregion
 

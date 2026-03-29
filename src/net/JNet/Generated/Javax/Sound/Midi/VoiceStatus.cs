@@ -66,6 +66,13 @@ namespace Javax.Sound.Midi
     public partial class VoiceStatus
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/VoiceStatus.html#javax.sound.midi.VoiceStatus()"/>
+        /// </summary>
+        public VoiceStatus()
+            : base()
+        {
+        }
 
         #endregion
 

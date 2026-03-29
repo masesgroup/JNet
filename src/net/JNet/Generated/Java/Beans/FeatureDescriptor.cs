@@ -66,6 +66,13 @@ namespace Java.Beans
     public partial class FeatureDescriptor
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/FeatureDescriptor.html#java.beans.FeatureDescriptor()"/>
+        /// </summary>
+        public FeatureDescriptor()
+            : base()
+        {
+        }
 
         #endregion
 

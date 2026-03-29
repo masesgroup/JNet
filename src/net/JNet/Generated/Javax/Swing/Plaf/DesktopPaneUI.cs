@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class DesktopPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/DesktopPaneUI.html#javax.swing.plaf.DesktopPaneUI()"/>
+        /// </summary>
+        public DesktopPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

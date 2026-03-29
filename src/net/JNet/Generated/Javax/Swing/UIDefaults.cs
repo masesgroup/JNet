@@ -217,6 +217,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/UIDefaults.html#javax.swing.UIDefaults()"/>
+        /// </summary>
+        public UIDefaults()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/UIDefaults.html#javax.swing.UIDefaults(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

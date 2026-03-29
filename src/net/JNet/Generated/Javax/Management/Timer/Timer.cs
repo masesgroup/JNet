@@ -66,6 +66,13 @@ namespace Javax.Management.Timer
     public partial class Timer
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#javax.management.timer.Timer()"/>
+        /// </summary>
+        public Timer()
+            : base()
+        {
+        }
 
         #endregion
 

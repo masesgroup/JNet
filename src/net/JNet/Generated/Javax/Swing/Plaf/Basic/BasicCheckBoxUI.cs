@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicCheckBoxUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicCheckBoxUI.html#javax.swing.plaf.basic.BasicCheckBoxUI()"/>
+        /// </summary>
+        public BasicCheckBoxUI()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -143,6 +143,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html#javax.swing.JComboBox()"/>
+        /// </summary>
+        public JComboBox()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html#javax.swing.JComboBox(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
@@ -604,6 +611,13 @@ namespace Javax.Swing
     public partial class JComboBox<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html#javax.swing.JComboBox()"/>
+        /// </summary>
+        public JComboBox()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html#javax.swing.JComboBox(java.lang.Object[])"/>
         /// </summary>

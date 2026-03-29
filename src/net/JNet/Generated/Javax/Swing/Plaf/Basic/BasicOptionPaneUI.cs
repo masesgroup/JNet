@@ -140,6 +140,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicOptionPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicOptionPaneUI.html#javax.swing.plaf.basic.BasicOptionPaneUI()"/>
+        /// </summary>
+        public BasicOptionPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthRadioButtonUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthRadioButtonUI.html#javax.swing.plaf.synth.SynthRadioButtonUI()"/>
+        /// </summary>
+        public SynthRadioButtonUI()
+            : base()
+        {
+        }
 
         #endregion
 

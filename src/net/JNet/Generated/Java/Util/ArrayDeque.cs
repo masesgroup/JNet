@@ -105,6 +105,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html#java.util.ArrayDeque()"/>
+        /// </summary>
+        public ArrayDeque()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html#java.util.ArrayDeque(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -350,6 +357,13 @@ namespace Java.Util
     public partial class ArrayDeque<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html#java.util.ArrayDeque()"/>
+        /// </summary>
+        public ArrayDeque()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html#java.util.ArrayDeque(int)"/>
         /// </summary>

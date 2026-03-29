@@ -67,6 +67,13 @@ namespace Javax.Xml.Datatype
     public partial class XMLGregorianCalendar
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/datatype/XMLGregorianCalendar.html#javax.xml.datatype.XMLGregorianCalendar()"/>
+        /// </summary>
+        public XMLGregorianCalendar()
+            : base()
+        {
+        }
 
         #endregion
 

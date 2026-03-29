@@ -67,6 +67,13 @@ namespace Java.Security
     public partial class KeyFactorySpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyFactorySpi.html#java.security.KeyFactorySpi()"/>
+        /// </summary>
+        public KeyFactorySpi()
+            : base()
+        {
+        }
 
         #endregion
 

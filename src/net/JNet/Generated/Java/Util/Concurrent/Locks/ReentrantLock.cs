@@ -67,6 +67,13 @@ namespace Java.Util.Concurrent.Locks
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html#java.util.concurrent.locks.ReentrantLock()"/>
+        /// </summary>
+        public ReentrantLock()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html#java.util.concurrent.locks.ReentrantLock(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

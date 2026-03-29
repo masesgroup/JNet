@@ -67,6 +67,13 @@ namespace Java.Security
     public partial class KeyStoreSpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStoreSpi.html#java.security.KeyStoreSpi()"/>
+        /// </summary>
+        public KeyStoreSpi()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -104,6 +104,13 @@ namespace Java.Util
     public partial class ResourceBundle
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ResourceBundle.html#java.util.ResourceBundle()"/>
+        /// </summary>
+        public ResourceBundle()
+            : base()
+        {
+        }
 
         #endregion
 

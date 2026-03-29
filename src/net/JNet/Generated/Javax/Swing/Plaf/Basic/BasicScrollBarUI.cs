@@ -103,6 +103,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicScrollBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicScrollBarUI.html#javax.swing.plaf.basic.BasicScrollBarUI()"/>
+        /// </summary>
+        public BasicScrollBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

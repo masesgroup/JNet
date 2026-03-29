@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthStyleFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthStyleFactory.html#javax.swing.plaf.synth.SynthStyleFactory()"/>
+        /// </summary>
+        public SynthStyleFactory()
+            : base()
+        {
+        }
 
         #endregion
 

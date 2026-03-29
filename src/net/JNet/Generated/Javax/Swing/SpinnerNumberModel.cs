@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpinnerNumberModel.html#javax.swing.SpinnerNumberModel()"/>
+        /// </summary>
+        public SpinnerNumberModel()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpinnerNumberModel.html#javax.swing.SpinnerNumberModel(double,double,double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>

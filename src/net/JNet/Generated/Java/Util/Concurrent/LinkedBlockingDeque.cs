@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingDeque.html#java.util.concurrent.LinkedBlockingDeque()"/>
+        /// </summary>
+        public LinkedBlockingDeque()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingDeque.html#java.util.concurrent.LinkedBlockingDeque(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -447,6 +454,13 @@ namespace Java.Util.Concurrent
     public partial class LinkedBlockingDeque<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingDeque.html#java.util.concurrent.LinkedBlockingDeque()"/>
+        /// </summary>
+        public LinkedBlockingDeque()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingDeque.html#java.util.concurrent.LinkedBlockingDeque(int)"/>
         /// </summary>

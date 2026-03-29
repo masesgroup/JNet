@@ -67,6 +67,13 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/StringValueExp.html#javax.management.StringValueExp()"/>
+        /// </summary>
+        public StringValueExp()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/StringValueExp.html#javax.management.StringValueExp(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

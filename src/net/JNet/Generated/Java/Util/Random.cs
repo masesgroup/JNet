@@ -67,6 +67,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html#java.util.Random()"/>
+        /// </summary>
+        public Random()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html#java.util.Random(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>

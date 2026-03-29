@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPanel.html#javax.swing.JPanel()"/>
+        /// </summary>
+        public JPanel()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPanel.html#javax.swing.JPanel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class SplitPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/SplitPaneUI.html#javax.swing.plaf.SplitPaneUI()"/>
+        /// </summary>
+        public SplitPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

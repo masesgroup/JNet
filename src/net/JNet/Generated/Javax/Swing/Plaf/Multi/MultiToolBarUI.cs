@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiToolBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiToolBarUI.html#javax.swing.plaf.multi.MultiToolBarUI()"/>
+        /// </summary>
+        public MultiToolBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

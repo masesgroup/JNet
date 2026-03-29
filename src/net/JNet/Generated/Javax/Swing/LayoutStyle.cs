@@ -104,6 +104,13 @@ namespace Javax.Swing
     public partial class LayoutStyle
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/LayoutStyle.html#javax.swing.LayoutStyle()"/>
+        /// </summary>
+        public LayoutStyle()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf
     public partial class ActionMapUIResource
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ActionMapUIResource.html#javax.swing.plaf.ActionMapUIResource()"/>
+        /// </summary>
+        public ActionMapUIResource()
+            : base()
+        {
+        }
 
         #endregion
 

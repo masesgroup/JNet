@@ -222,6 +222,13 @@ namespace Javax.Swing
     public partial class RowFilter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RowFilter.html#javax.swing.RowFilter()"/>
+        /// </summary>
+        public RowFilter()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -386,6 +393,13 @@ namespace Javax.Swing
         public partial class Entry
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RowFilter.Entry.html#javax.swing.RowFilter$Entry()"/>
+            /// </summary>
+            public Entry()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -456,6 +470,13 @@ namespace Javax.Swing
         public partial class Entry<M, I>
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RowFilter.Entry.html#javax.swing.RowFilter$Entry()"/>
+            /// </summary>
+            public Entry()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -537,6 +558,13 @@ namespace Javax.Swing
     public partial class RowFilter<M, I>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RowFilter.html#javax.swing.RowFilter()"/>
+        /// </summary>
+        public RowFilter()
+            : base()
+        {
+        }
 
         #endregion
 

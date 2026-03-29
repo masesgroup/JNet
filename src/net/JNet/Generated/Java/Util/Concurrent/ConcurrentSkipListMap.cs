@@ -106,6 +106,13 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#java.util.concurrent.ConcurrentSkipListMap()"/>
+        /// </summary>
+        public ConcurrentSkipListMap()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#java.util.concurrent.ConcurrentSkipListMap(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
@@ -392,6 +399,13 @@ namespace Java.Util.Concurrent
     public partial class ConcurrentSkipListMap<K, V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#java.util.concurrent.ConcurrentSkipListMap()"/>
+        /// </summary>
+        public ConcurrentSkipListMap()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#java.util.concurrent.ConcurrentSkipListMap(java.util.Comparator)"/>
         /// </summary>

@@ -67,6 +67,13 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html#java.util.concurrent.atomic.AtomicInteger()"/>
+        /// </summary>
+        public AtomicInteger()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html#java.util.concurrent.atomic.AtomicInteger(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

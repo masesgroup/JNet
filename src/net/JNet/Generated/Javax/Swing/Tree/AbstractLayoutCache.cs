@@ -105,6 +105,13 @@ namespace Javax.Swing.Tree
     public partial class AbstractLayoutCache
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/AbstractLayoutCache.html#javax.swing.tree.AbstractLayoutCache()"/>
+        /// </summary>
+        public AbstractLayoutCache()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -343,6 +350,13 @@ namespace Javax.Swing.Tree
         public partial class NodeDimensions
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html#javax.swing.tree.AbstractLayoutCache$NodeDimensions()"/>
+            /// </summary>
+            public NodeDimensions()
+                : base()
+            {
+            }
 
             #endregion
 

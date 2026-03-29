@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class TreeUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/TreeUI.html#javax.swing.plaf.TreeUI()"/>
+        /// </summary>
+        public TreeUI()
+            : base()
+        {
+        }
 
         #endregion
 

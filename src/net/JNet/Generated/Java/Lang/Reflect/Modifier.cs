@@ -66,6 +66,13 @@ namespace Java.Lang.Reflect
     public partial class Modifier
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Modifier.html#java.lang.reflect.Modifier()"/>
+        /// </summary>
+        public Modifier()
+            : base()
+        {
+        }
 
         #endregion
 

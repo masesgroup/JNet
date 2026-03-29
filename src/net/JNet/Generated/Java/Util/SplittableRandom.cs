@@ -67,6 +67,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/SplittableRandom.html#java.util.SplittableRandom()"/>
+        /// </summary>
+        public SplittableRandom()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/SplittableRandom.html#java.util.SplittableRandom(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>

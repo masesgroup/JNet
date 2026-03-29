@@ -67,6 +67,13 @@ namespace Javax.Print
     public partial class ServiceUIFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/ServiceUIFactory.html#javax.print.ServiceUIFactory()"/>
+        /// </summary>
+        public ServiceUIFactory()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Management.Relation
     public partial class MBeanServerNotificationFilter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/MBeanServerNotificationFilter.html#javax.management.relation.MBeanServerNotificationFilter()"/>
+        /// </summary>
+        public MBeanServerNotificationFilter()
+            : base()
+        {
+        }
 
         #endregion
 

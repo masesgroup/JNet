@@ -67,6 +67,13 @@ namespace Javax.Accessibility
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleStateSet.html#javax.accessibility.AccessibleStateSet()"/>
+        /// </summary>
+        public AccessibleStateSet()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleStateSet.html#javax.accessibility.AccessibleStateSet(javax.accessibility.AccessibleState[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>

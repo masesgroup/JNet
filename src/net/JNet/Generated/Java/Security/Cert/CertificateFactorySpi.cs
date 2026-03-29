@@ -67,6 +67,13 @@ namespace Java.Security.Cert
     public partial class CertificateFactorySpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/CertificateFactorySpi.html#java.security.cert.CertificateFactorySpi()"/>
+        /// </summary>
+        public CertificateFactorySpi()
+            : base()
+        {
+        }
 
         #endregion
 

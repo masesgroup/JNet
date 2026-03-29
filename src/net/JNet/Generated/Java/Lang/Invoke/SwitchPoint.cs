@@ -66,6 +66,13 @@ namespace Java.Lang.Invoke
     public partial class SwitchPoint
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/invoke/SwitchPoint.html#java.lang.invoke.SwitchPoint()"/>
+        /// </summary>
+        public SwitchPoint()
+            : base()
+        {
+        }
 
         #endregion
 

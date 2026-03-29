@@ -251,6 +251,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicListUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicListUI.html#javax.swing.plaf.basic.BasicListUI()"/>
+        /// </summary>
+        public BasicListUI()
+            : base()
+        {
+        }
 
         #endregion
 

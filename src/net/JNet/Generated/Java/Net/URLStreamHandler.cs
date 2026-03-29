@@ -67,6 +67,13 @@ namespace Java.Net
     public partial class URLStreamHandler
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URLStreamHandler.html#java.net.URLStreamHandler()"/>
+        /// </summary>
+        public URLStreamHandler()
+            : base()
+        {
+        }
 
         #endregion
 

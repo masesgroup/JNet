@@ -67,6 +67,13 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/CompoundBorder.html#javax.swing.border.CompoundBorder()"/>
+        /// </summary>
+        public CompoundBorder()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/CompoundBorder.html#javax.swing.border.CompoundBorder(javax.swing.border.Border,javax.swing.border.Border)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>

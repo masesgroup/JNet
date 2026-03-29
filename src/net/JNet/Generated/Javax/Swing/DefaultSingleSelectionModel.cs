@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class DefaultSingleSelectionModel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultSingleSelectionModel.html#javax.swing.DefaultSingleSelectionModel()"/>
+        /// </summary>
+        public DefaultSingleSelectionModel()
+            : base()
+        {
+        }
 
         #endregion
 

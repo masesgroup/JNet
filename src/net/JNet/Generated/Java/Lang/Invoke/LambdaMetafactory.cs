@@ -66,6 +66,13 @@ namespace Java.Lang.Invoke
     public partial class LambdaMetafactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/invoke/LambdaMetafactory.html#java.lang.invoke.LambdaMetafactory()"/>
+        /// </summary>
+        public LambdaMetafactory()
+            : base()
+        {
+        }
 
         #endregion
 

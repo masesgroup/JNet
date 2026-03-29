@@ -66,6 +66,13 @@ namespace Javax.Script
     public partial class SimpleScriptContext
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/script/SimpleScriptContext.html#javax.script.SimpleScriptContext()"/>
+        /// </summary>
+        public SimpleScriptContext()
+            : base()
+        {
+        }
 
         #endregion
 

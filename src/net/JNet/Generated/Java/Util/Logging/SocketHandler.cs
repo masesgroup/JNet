@@ -67,6 +67,15 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/SocketHandler.html#java.util.logging.SocketHandler()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Io.IOException"/>
+        public SocketHandler()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/SocketHandler.html#java.util.logging.SocketHandler(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

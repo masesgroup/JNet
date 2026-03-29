@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class ToolTipUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ToolTipUI.html#javax.swing.plaf.ToolTipUI()"/>
+        /// </summary>
+        public ToolTipUI()
+            : base()
+        {
+        }
 
         #endregion
 

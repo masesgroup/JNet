@@ -143,6 +143,13 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html#java.util.concurrent.ForkJoinPool()"/>
+        /// </summary>
+        public ForkJoinPool()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html#java.util.concurrent.ForkJoinPool(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

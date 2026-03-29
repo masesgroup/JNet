@@ -66,6 +66,13 @@ namespace Javax.Rmi.CORBA
     public partial class ClassDesc
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/ClassDesc.html#javax.rmi.CORBA.ClassDesc()"/>
+        /// </summary>
+        public ClassDesc()
+            : base()
+        {
+        }
 
         #endregion
 

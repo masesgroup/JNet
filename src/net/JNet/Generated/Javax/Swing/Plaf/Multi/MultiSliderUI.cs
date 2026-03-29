@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiSliderUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiSliderUI.html#javax.swing.plaf.multi.MultiSliderUI()"/>
+        /// </summary>
+        public MultiSliderUI()
+            : base()
+        {
+        }
 
         #endregion
 

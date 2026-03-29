@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthGraphicsUtils
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthGraphicsUtils.html#javax.swing.plaf.synth.SynthGraphicsUtils()"/>
+        /// </summary>
+        public SynthGraphicsUtils()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalToolTipUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalToolTipUI.html#javax.swing.plaf.metal.MetalToolTipUI()"/>
+        /// </summary>
+        public MetalToolTipUI()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -215,6 +215,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.html#javax.swing.JSpinner()"/>
+        /// </summary>
+        public JSpinner()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.html#javax.swing.JSpinner(javax.swing.SpinnerModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.SpinnerModel"/></param>

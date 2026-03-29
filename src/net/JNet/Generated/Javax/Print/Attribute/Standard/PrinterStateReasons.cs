@@ -67,6 +67,13 @@ namespace Javax.Print.Attribute.Standard
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/PrinterStateReasons.html#javax.print.attribute.standard.PrinterStateReasons()"/>
+        /// </summary>
+        public PrinterStateReasons()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/PrinterStateReasons.html#javax.print.attribute.standard.PrinterStateReasons(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

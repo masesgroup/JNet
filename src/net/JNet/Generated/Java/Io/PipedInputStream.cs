@@ -67,6 +67,13 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedInputStream.html#java.io.PipedInputStream()"/>
+        /// </summary>
+        public PipedInputStream()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedInputStream.html#java.io.PipedInputStream(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

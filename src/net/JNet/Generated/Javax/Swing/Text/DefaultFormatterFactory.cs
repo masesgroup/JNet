@@ -67,6 +67,13 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultFormatterFactory.html#javax.swing.text.DefaultFormatterFactory()"/>
+        /// </summary>
+        public DefaultFormatterFactory()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultFormatterFactory.html#javax.swing.text.DefaultFormatterFactory(javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>

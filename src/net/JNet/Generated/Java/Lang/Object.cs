@@ -66,6 +66,13 @@ namespace Java.Lang
     public partial class Object
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#java.lang.Object()"/>
+        /// </summary>
+        public Object()
+            : base()
+        {
+        }
 
         #endregion
 

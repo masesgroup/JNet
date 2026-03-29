@@ -67,6 +67,13 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html#java.text.SimpleDateFormat()"/>
+        /// </summary>
+        public SimpleDateFormat()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html#java.text.SimpleDateFormat(java.lang.String,java.text.DateFormatSymbols)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

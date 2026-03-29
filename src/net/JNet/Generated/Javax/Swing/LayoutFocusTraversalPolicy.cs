@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class LayoutFocusTraversalPolicy
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/LayoutFocusTraversalPolicy.html#javax.swing.LayoutFocusTraversalPolicy()"/>
+        /// </summary>
+        public LayoutFocusTraversalPolicy()
+            : base()
+        {
+        }
 
         #endregion
 

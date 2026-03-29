@@ -103,6 +103,13 @@ namespace Javax.Swing
     public partial class ScrollPaneLayout
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ScrollPaneLayout.html#javax.swing.ScrollPaneLayout()"/>
+        /// </summary>
+        public ScrollPaneLayout()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -248,6 +255,13 @@ namespace Javax.Swing
         public partial class UIResource
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ScrollPaneLayout.UIResource.html#javax.swing.ScrollPaneLayout$UIResource()"/>
+            /// </summary>
+            public UIResource()
+                : base()
+            {
+            }
 
             #endregion
 

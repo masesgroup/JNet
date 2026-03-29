@@ -105,6 +105,13 @@ namespace Java.Security
     public partial class Policy
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/Policy.html#java.security.Policy()"/>
+        /// </summary>
+        public Policy()
+            : base()
+        {
+        }
 
         #endregion
 

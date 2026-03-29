@@ -67,6 +67,13 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#java.util.concurrent.atomic.AtomicBoolean()"/>
+        /// </summary>
+        public AtomicBoolean()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#java.util.concurrent.atomic.AtomicBoolean(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

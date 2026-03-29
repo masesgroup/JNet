@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicRootPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicRootPaneUI.html#javax.swing.plaf.basic.BasicRootPaneUI()"/>
+        /// </summary>
+        public BasicRootPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

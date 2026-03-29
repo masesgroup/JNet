@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class LabelUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/LabelUI.html#javax.swing.plaf.LabelUI()"/>
+        /// </summary>
+        public LabelUI()
+            : base()
+        {
+        }
 
         #endregion
 

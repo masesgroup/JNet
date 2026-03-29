@@ -67,6 +67,13 @@ namespace Java.Net
     public partial class DatagramSocketImpl
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramSocketImpl.html#java.net.DatagramSocketImpl()"/>
+        /// </summary>
+        public DatagramSocketImpl()
+            : base()
+        {
+        }
 
         #endregion
 

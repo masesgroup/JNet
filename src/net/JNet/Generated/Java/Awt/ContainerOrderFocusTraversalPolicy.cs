@@ -66,6 +66,13 @@ namespace Java.Awt
     public partial class ContainerOrderFocusTraversalPolicy
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/ContainerOrderFocusTraversalPolicy.html#java.awt.ContainerOrderFocusTraversalPolicy()"/>
+        /// </summary>
+        public ContainerOrderFocusTraversalPolicy()
+            : base()
+        {
+        }
 
         #endregion
 

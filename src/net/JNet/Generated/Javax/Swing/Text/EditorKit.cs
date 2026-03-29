@@ -67,6 +67,13 @@ namespace Javax.Swing.Text
     public partial class EditorKit
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/EditorKit.html#javax.swing.text.EditorKit()"/>
+        /// </summary>
+        public EditorKit()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedWriter.html#java.io.PipedWriter()"/>
+        /// </summary>
+        public PipedWriter()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedWriter.html#java.io.PipedWriter(java.io.PipedReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedReader"/></param>

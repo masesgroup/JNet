@@ -67,6 +67,13 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/CharArrayWriter.html#java.io.CharArrayWriter()"/>
+        /// </summary>
+        public CharArrayWriter()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/CharArrayWriter.html#java.io.CharArrayWriter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

@@ -141,6 +141,13 @@ namespace Java.Util.Concurrent.Locks
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#java.util.concurrent.locks.ReentrantReadWriteLock()"/>
+        /// </summary>
+        public ReentrantReadWriteLock()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#java.util.concurrent.locks.ReentrantReadWriteLock(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

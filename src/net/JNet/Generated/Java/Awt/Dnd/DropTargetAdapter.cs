@@ -98,6 +98,13 @@ namespace Java.Awt.Dnd
     public partial class DropTargetAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DropTargetAdapter.html#java.awt.dnd.DropTargetAdapter()"/>
+        /// </summary>
+        public DropTargetAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

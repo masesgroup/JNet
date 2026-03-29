@@ -178,6 +178,13 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultStyledDocument.html#javax.swing.text.DefaultStyledDocument()"/>
+        /// </summary>
+        public DefaultStyledDocument()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultStyledDocument.html#javax.swing.text.DefaultStyledDocument(javax.swing.text.AbstractDocument.Content,javax.swing.text.StyleContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument.Content"/></param>

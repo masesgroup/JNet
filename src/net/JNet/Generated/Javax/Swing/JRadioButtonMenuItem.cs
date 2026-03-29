@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JRadioButtonMenuItem.html#javax.swing.JRadioButtonMenuItem()"/>
+        /// </summary>
+        public JRadioButtonMenuItem()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JRadioButtonMenuItem.html#javax.swing.JRadioButtonMenuItem(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

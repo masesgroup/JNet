@@ -66,6 +66,13 @@ namespace Javax.Management.Remote.Rmi
     public partial class _RMIServer_Stub
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/_RMIServer_Stub.html#javax.management.remote.rmi._RMIServer_Stub()"/>
+        /// </summary>
+        public _RMIServer_Stub()
+            : base()
+        {
+        }
 
         #endregion
 

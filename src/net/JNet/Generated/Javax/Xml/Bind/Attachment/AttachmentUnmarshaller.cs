@@ -67,6 +67,13 @@ namespace Javax.Xml.Bind.Attachment
     public partial class AttachmentUnmarshaller
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/attachment/AttachmentUnmarshaller.html#javax.xml.bind.attachment.AttachmentUnmarshaller()"/>
+        /// </summary>
+        public AttachmentUnmarshaller()
+            : base()
+        {
+        }
 
         #endregion
 

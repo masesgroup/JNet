@@ -288,6 +288,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalIconFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.html#javax.swing.plaf.metal.MetalIconFactory()"/>
+        /// </summary>
+        public MetalIconFactory()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -509,6 +516,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class FileIcon16
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#javax.swing.plaf.metal.MetalIconFactory$FileIcon16()"/>
+            /// </summary>
+            public FileIcon16()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -587,6 +601,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class FolderIcon16
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#javax.swing.plaf.metal.MetalIconFactory$FolderIcon16()"/>
+            /// </summary>
+            public FolderIcon16()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -665,6 +686,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class PaletteCloseIcon
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.PaletteCloseIcon.html#javax.swing.plaf.metal.MetalIconFactory$PaletteCloseIcon()"/>
+            /// </summary>
+            public PaletteCloseIcon()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -816,6 +844,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class TreeFolderIcon
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeFolderIcon.html#javax.swing.plaf.metal.MetalIconFactory$TreeFolderIcon()"/>
+            /// </summary>
+            public TreeFolderIcon()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -847,6 +882,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class TreeLeafIcon
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeLeafIcon.html#javax.swing.plaf.metal.MetalIconFactory$TreeLeafIcon()"/>
+            /// </summary>
+            public TreeLeafIcon()
+                : base()
+            {
+            }
 
             #endregion
 

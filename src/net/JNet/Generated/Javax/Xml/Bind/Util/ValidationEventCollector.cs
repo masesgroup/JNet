@@ -66,6 +66,13 @@ namespace Javax.Xml.Bind.Util
     public partial class ValidationEventCollector
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/util/ValidationEventCollector.html#javax.xml.bind.util.ValidationEventCollector()"/>
+        /// </summary>
+        public ValidationEventCollector()
+            : base()
+        {
+        }
 
         #endregion
 

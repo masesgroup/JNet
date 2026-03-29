@@ -67,6 +67,13 @@ namespace Javax.Print
     public partial class PrintServiceLookup
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/PrintServiceLookup.html#javax.print.PrintServiceLookup()"/>
+        /// </summary>
+        public PrintServiceLookup()
+            : base()
+        {
+        }
 
         #endregion
 

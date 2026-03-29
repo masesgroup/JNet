@@ -67,6 +67,13 @@ namespace Javax.Xml.Bind.Annotation
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/W3CDomHandler.html#javax.xml.bind.annotation.W3CDomHandler()"/>
+        /// </summary>
+        public W3CDomHandler()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/W3CDomHandler.html#javax.xml.bind.annotation.W3CDomHandler(javax.xml.parsers.DocumentBuilder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Parsers.DocumentBuilder"/></param>

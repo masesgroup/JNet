@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalProgressBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalProgressBarUI.html#javax.swing.plaf.metal.MetalProgressBarUI()"/>
+        /// </summary>
+        public MetalProgressBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

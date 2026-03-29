@@ -67,6 +67,13 @@ namespace Javax.Naming.Directory
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/BasicAttributes.html#javax.naming.directory.BasicAttributes()"/>
+        /// </summary>
+        public BasicAttributes()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/BasicAttributes.html#javax.naming.directory.BasicAttributes(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

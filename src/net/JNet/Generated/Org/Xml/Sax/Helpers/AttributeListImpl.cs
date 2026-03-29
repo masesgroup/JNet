@@ -67,6 +67,13 @@ namespace Org.Xml.Sax.Helpers
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/AttributeListImpl.html#org.xml.sax.helpers.AttributeListImpl()"/>
+        /// </summary>
+        public AttributeListImpl()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/AttributeListImpl.html#org.xml.sax.helpers.AttributeListImpl(org.xml.sax.AttributeList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.AttributeList"/></param>

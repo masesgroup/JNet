@@ -67,6 +67,13 @@ namespace Java.Rmi.Server
     public partial class RMIClassLoaderSpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RMIClassLoaderSpi.html#java.rmi.server.RMIClassLoaderSpi()"/>
+        /// </summary>
+        public RMIClassLoaderSpi()
+            : base()
+        {
+        }
 
         #endregion
 

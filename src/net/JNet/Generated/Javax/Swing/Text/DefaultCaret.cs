@@ -66,6 +66,13 @@ namespace Javax.Swing.Text
     public partial class DefaultCaret
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultCaret.html#javax.swing.text.DefaultCaret()"/>
+        /// </summary>
+        public DefaultCaret()
+            : base()
+        {
+        }
 
         #endregion
 

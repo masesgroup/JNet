@@ -66,6 +66,15 @@ namespace Java.Awt
     public partial class MenuBar
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuBar.html#java.awt.MenuBar()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public MenuBar()
+            : base()
+        {
+        }
 
         #endregion
 

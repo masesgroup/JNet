@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiScrollPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiScrollPaneUI.html#javax.swing.plaf.multi.MultiScrollPaneUI()"/>
+        /// </summary>
+        public MultiScrollPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

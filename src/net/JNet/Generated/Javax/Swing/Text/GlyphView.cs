@@ -249,6 +249,13 @@ namespace Javax.Swing.Text
         public partial class GlyphPainter
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/GlyphView.GlyphPainter.html#javax.swing.text.GlyphView$GlyphPainter()"/>
+            /// </summary>
+            public GlyphPainter()
+                : base()
+            {
+            }
 
             #endregion
 

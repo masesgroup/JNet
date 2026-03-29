@@ -67,6 +67,13 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeList.html#javax.management.AttributeList()"/>
+        /// </summary>
+        public AttributeList()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeList.html#javax.management.AttributeList(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

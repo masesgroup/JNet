@@ -105,6 +105,13 @@ namespace Javax.Swing.Table
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableRowSorter.html#javax.swing.table.TableRowSorter()"/>
+        /// </summary>
+        public TableRowSorter()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableRowSorter.html#javax.swing.table.TableRowSorter(javax.swing.table.TableModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
@@ -158,6 +165,13 @@ namespace Javax.Swing.Table
     public partial class TableRowSorter<M>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableRowSorter.html#javax.swing.table.TableRowSorter()"/>
+        /// </summary>
+        public TableRowSorter()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableRowSorter.html#javax.swing.table.TableRowSorter(javax.swing.table.TableModel)"/>
         /// </summary>

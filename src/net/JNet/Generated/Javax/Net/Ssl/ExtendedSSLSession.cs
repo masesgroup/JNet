@@ -67,6 +67,13 @@ namespace Javax.Net.Ssl
     public partial class ExtendedSSLSession
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/ExtendedSSLSession.html#javax.net.ssl.ExtendedSSLSession()"/>
+        /// </summary>
+        public ExtendedSSLSession()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -105,6 +105,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html#java.util.LinkedList()"/>
+        /// </summary>
+        public LinkedList()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html#java.util.LinkedList(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -338,6 +345,13 @@ namespace Java.Util
     public partial class LinkedList<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html#java.util.LinkedList()"/>
+        /// </summary>
+        public LinkedList()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html#java.util.LinkedList(java.util.Collection)"/>
         /// </summary>

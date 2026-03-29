@@ -67,6 +67,13 @@ namespace Javax.Xml.Soap
     public partial class MessageFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/soap/MessageFactory.html#javax.xml.soap.MessageFactory()"/>
+        /// </summary>
+        public MessageFactory()
+            : base()
+        {
+        }
 
         #endregion
 

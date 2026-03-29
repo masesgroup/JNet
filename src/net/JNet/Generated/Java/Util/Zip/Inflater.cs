@@ -67,6 +67,13 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Inflater.html#java.util.zip.Inflater()"/>
+        /// </summary>
+        public Inflater()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Inflater.html#java.util.zip.Inflater(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

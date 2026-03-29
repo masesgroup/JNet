@@ -67,6 +67,13 @@ namespace Java.Rmi.Server
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ObjID.html#java.rmi.server.ObjID()"/>
+        /// </summary>
+        public ObjID()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ObjID.html#java.rmi.server.ObjID(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

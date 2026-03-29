@@ -67,6 +67,13 @@ namespace Java.Security
     public partial class PermissionCollection
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/PermissionCollection.html#java.security.PermissionCollection()"/>
+        /// </summary>
+        public PermissionCollection()
+            : base()
+        {
+        }
 
         #endregion
 

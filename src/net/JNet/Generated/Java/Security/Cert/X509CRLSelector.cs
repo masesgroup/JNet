@@ -66,6 +66,13 @@ namespace Java.Security.Cert
     public partial class X509CRLSelector
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/X509CRLSelector.html#java.security.cert.X509CRLSelector()"/>
+        /// </summary>
+        public X509CRLSelector()
+            : base()
+        {
+        }
 
         #endregion
 

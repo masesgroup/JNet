@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class DefaultButtonModel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultButtonModel.html#javax.swing.DefaultButtonModel()"/>
+        /// </summary>
+        public DefaultButtonModel()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiLabelUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiLabelUI.html#javax.swing.plaf.multi.MultiLabelUI()"/>
+        /// </summary>
+        public MultiLabelUI()
+            : base()
+        {
+        }
 
         #endregion
 

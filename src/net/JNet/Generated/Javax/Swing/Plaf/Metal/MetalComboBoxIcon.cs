@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalComboBoxIcon
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxIcon.html#javax.swing.plaf.metal.MetalComboBoxIcon()"/>
+        /// </summary>
+        public MetalComboBoxIcon()
+            : base()
+        {
+        }
 
         #endregion
 

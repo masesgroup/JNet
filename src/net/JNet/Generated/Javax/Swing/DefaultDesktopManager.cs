@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class DefaultDesktopManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultDesktopManager.html#javax.swing.DefaultDesktopManager()"/>
+        /// </summary>
+        public DefaultDesktopManager()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Javax.Swing.Colorchooser
     public partial class AbstractColorChooserPanel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/colorchooser/AbstractColorChooserPanel.html#javax.swing.colorchooser.AbstractColorChooserPanel()"/>
+        /// </summary>
+        public AbstractColorChooserPanel()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,15 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramSocket.html#java.net.DatagramSocket()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Net.SocketException"/>
+        public DatagramSocket()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramSocket.html#java.net.DatagramSocket(int,java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

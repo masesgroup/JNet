@@ -67,6 +67,13 @@ namespace Javax.Imageio.Stream
     public partial class ImageOutputStreamImpl
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/stream/ImageOutputStreamImpl.html#javax.imageio.stream.ImageOutputStreamImpl()"/>
+        /// </summary>
+        public ImageOutputStreamImpl()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/GapContent.html#javax.swing.text.GapContent()"/>
+        /// </summary>
+        public GapContent()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/GapContent.html#javax.swing.text.GapContent(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

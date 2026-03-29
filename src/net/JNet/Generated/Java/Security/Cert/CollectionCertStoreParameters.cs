@@ -67,6 +67,13 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/CollectionCertStoreParameters.html#java.security.cert.CollectionCertStoreParameters()"/>
+        /// </summary>
+        public CollectionCertStoreParameters()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/CollectionCertStoreParameters.html#java.security.cert.CollectionCertStoreParameters(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>

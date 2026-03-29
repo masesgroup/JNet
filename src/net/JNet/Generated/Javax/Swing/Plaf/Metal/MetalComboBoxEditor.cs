@@ -103,6 +103,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalComboBoxEditor
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxEditor.html#javax.swing.plaf.metal.MetalComboBoxEditor()"/>
+        /// </summary>
+        public MetalComboBoxEditor()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -127,6 +134,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class UIResource
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxEditor.UIResource.html#javax.swing.plaf.metal.MetalComboBoxEditor$UIResource()"/>
+            /// </summary>
+            public UIResource()
+                : base()
+            {
+            }
 
             #endregion
 

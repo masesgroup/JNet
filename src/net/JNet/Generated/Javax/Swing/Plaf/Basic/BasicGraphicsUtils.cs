@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicGraphicsUtils
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicGraphicsUtils.html#javax.swing.plaf.basic.BasicGraphicsUtils()"/>
+        /// </summary>
+        public BasicGraphicsUtils()
+            : base()
+        {
+        }
 
         #endregion
 

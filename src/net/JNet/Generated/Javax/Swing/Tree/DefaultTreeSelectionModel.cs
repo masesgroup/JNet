@@ -66,6 +66,13 @@ namespace Javax.Swing.Tree
     public partial class DefaultTreeSelectionModel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultTreeSelectionModel.html#javax.swing.tree.DefaultTreeSelectionModel()"/>
+        /// </summary>
+        public DefaultTreeSelectionModel()
+            : base()
+        {
+        }
 
         #endregion
 

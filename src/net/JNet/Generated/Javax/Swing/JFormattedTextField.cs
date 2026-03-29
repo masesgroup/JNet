@@ -143,6 +143,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFormattedTextField.html#javax.swing.JFormattedTextField()"/>
+        /// </summary>
+        public JFormattedTextField()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFormattedTextField.html#javax.swing.JFormattedTextField(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -275,6 +282,13 @@ namespace Javax.Swing
         public partial class AbstractFormatter
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFormattedTextField.AbstractFormatter.html#javax.swing.JFormattedTextField$AbstractFormatter()"/>
+            /// </summary>
+            public AbstractFormatter()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -341,6 +355,13 @@ namespace Javax.Swing
         public partial class AbstractFormatterFactory
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#javax.swing.JFormattedTextField$AbstractFormatterFactory()"/>
+            /// </summary>
+            public AbstractFormatterFactory()
+                : base()
+            {
+            }
 
             #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Management.Relation
     public partial class RoleStatus
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleStatus.html#javax.management.relation.RoleStatus()"/>
+        /// </summary>
+        public RoleStatus()
+            : base()
+        {
+        }
 
         #endregion
 

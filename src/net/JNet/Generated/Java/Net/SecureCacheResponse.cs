@@ -67,6 +67,13 @@ namespace Java.Net
     public partial class SecureCacheResponse
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/SecureCacheResponse.html#java.net.SecureCacheResponse()"/>
+        /// </summary>
+        public SecureCacheResponse()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -363,6 +363,13 @@ namespace Javax.Swing.Text
     public partial class StyledEditorKit
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/StyledEditorKit.html#javax.swing.text.StyledEditorKit()"/>
+        /// </summary>
+        public StyledEditorKit()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -441,6 +448,13 @@ namespace Javax.Swing.Text
         public partial class BoldAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/StyledEditorKit.BoldAction.html#javax.swing.text.StyledEditorKit$BoldAction()"/>
+            /// </summary>
+            public BoldAction()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -592,6 +606,13 @@ namespace Javax.Swing.Text
         public partial class ItalicAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/StyledEditorKit.ItalicAction.html#javax.swing.text.StyledEditorKit$ItalicAction()"/>
+            /// </summary>
+            public ItalicAction()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -662,6 +683,13 @@ namespace Javax.Swing.Text
         public partial class UnderlineAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/StyledEditorKit.UnderlineAction.html#javax.swing.text.StyledEditorKit$UnderlineAction()"/>
+            /// </summary>
+            public UnderlineAction()
+                : base()
+            {
+            }
 
             #endregion
 

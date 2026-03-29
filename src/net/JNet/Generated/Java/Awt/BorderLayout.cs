@@ -67,6 +67,13 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BorderLayout.html#java.awt.BorderLayout()"/>
+        /// </summary>
+        public BorderLayout()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BorderLayout.html#java.awt.BorderLayout(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

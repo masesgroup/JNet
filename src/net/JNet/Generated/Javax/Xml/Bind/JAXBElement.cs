@@ -246,6 +246,13 @@ namespace Javax.Xml.Bind
         public partial class GlobalScope
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/JAXBElement.GlobalScope.html#javax.xml.bind.JAXBElement$GlobalScope()"/>
+            /// </summary>
+            public GlobalScope()
+                : base()
+            {
+            }
 
             #endregion
 

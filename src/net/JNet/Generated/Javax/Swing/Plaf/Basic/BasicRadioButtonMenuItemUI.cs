@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicRadioButtonMenuItemUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicRadioButtonMenuItemUI.html#javax.swing.plaf.basic.BasicRadioButtonMenuItemUI()"/>
+        /// </summary>
+        public BasicRadioButtonMenuItemUI()
+            : base()
+        {
+        }
 
         #endregion
 

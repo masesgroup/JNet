@@ -67,6 +67,13 @@ namespace Org.Xml.Sax.Helpers
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/XMLFilterImpl.html#org.xml.sax.helpers.XMLFilterImpl()"/>
+        /// </summary>
+        public XMLFilterImpl()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/XMLFilterImpl.html#org.xml.sax.helpers.XMLFilterImpl(org.xml.sax.XMLReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.XMLReader"/></param>

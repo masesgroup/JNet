@@ -67,6 +67,15 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuItem.html#java.awt.MenuItem()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public MenuItem()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuItem.html#java.awt.MenuItem(java.lang.String,java.awt.MenuShortcut)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

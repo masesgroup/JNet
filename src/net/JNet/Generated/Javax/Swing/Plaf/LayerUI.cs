@@ -104,6 +104,13 @@ namespace Javax.Swing.Plaf
     public partial class LayerUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/LayerUI.html#javax.swing.plaf.LayerUI()"/>
+        /// </summary>
+        public LayerUI()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -235,6 +242,13 @@ namespace Javax.Swing.Plaf
     public partial class LayerUI<V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/LayerUI.html#javax.swing.plaf.LayerUI()"/>
+        /// </summary>
+        public LayerUI()
+            : base()
+        {
+        }
 
         #endregion
 

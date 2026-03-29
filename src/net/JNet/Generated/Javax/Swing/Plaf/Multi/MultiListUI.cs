@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiListUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiListUI.html#javax.swing.plaf.multi.MultiListUI()"/>
+        /// </summary>
+        public MultiListUI()
+            : base()
+        {
+        }
 
         #endregion
 

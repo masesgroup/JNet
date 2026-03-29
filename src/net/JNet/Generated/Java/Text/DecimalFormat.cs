@@ -67,6 +67,13 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormat.html#java.text.DecimalFormat()"/>
+        /// </summary>
+        public DecimalFormat()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormat.html#java.text.DecimalFormat(java.lang.String,java.text.DecimalFormatSymbols)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

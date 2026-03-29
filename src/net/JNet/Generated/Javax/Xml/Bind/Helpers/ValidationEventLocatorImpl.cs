@@ -67,6 +67,13 @@ namespace Javax.Xml.Bind.Helpers
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#javax.xml.bind.helpers.ValidationEventLocatorImpl()"/>
+        /// </summary>
+        public ValidationEventLocatorImpl()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#javax.xml.bind.helpers.ValidationEventLocatorImpl(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>

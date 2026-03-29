@@ -67,6 +67,13 @@ namespace Java.Beans.Beancontext
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextChildSupport.html#java.beans.beancontext.BeanContextChildSupport()"/>
+        /// </summary>
+        public BeanContextChildSupport()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextChildSupport.html#java.beans.beancontext.BeanContextChildSupport(java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>

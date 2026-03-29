@@ -98,6 +98,13 @@ namespace Java.Awt.EventNs
     public partial class ComponentAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/ComponentAdapter.html#java.awt.event.ComponentAdapter()"/>
+        /// </summary>
+        public ComponentAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

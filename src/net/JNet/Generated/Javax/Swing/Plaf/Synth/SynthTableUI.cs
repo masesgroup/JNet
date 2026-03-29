@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthTableUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthTableUI.html#javax.swing.plaf.synth.SynthTableUI()"/>
+        /// </summary>
+        public SynthTableUI()
+            : base()
+        {
+        }
 
         #endregion
 

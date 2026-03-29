@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class MenuItemUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/MenuItemUI.html#javax.swing.plaf.MenuItemUI()"/>
+        /// </summary>
+        public MenuItemUI()
+            : base()
+        {
+        }
 
         #endregion
 

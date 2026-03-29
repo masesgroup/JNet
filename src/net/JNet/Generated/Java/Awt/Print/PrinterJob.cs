@@ -67,6 +67,13 @@ namespace Java.Awt.Print
     public partial class PrinterJob
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/print/PrinterJob.html#java.awt.print.PrinterJob()"/>
+        /// </summary>
+        public PrinterJob()
+            : base()
+        {
+        }
 
         #endregion
 

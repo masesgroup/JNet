@@ -66,6 +66,13 @@ namespace Java.Beans
     public partial class ParameterDescriptor
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/ParameterDescriptor.html#java.beans.ParameterDescriptor()"/>
+        /// </summary>
+        public ParameterDescriptor()
+            : base()
+        {
+        }
 
         #endregion
 

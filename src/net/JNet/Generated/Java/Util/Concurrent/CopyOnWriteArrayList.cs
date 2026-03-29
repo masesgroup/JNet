@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList()"/>
+        /// </summary>
+        public CopyOnWriteArrayList()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -441,6 +448,13 @@ namespace Java.Util.Concurrent
     public partial class CopyOnWriteArrayList<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList()"/>
+        /// </summary>
+        public CopyOnWriteArrayList()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList(java.lang.Object[])"/>
         /// </summary>

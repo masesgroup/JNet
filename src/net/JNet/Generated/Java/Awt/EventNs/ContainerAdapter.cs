@@ -98,6 +98,13 @@ namespace Java.Awt.EventNs
     public partial class ContainerAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/ContainerAdapter.html#java.awt.event.ContainerAdapter()"/>
+        /// </summary>
+        public ContainerAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

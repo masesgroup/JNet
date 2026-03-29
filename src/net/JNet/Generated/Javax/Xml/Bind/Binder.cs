@@ -106,6 +106,13 @@ namespace Javax.Xml.Bind
     public partial class Binder
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/Binder.html#javax.xml.bind.Binder()"/>
+        /// </summary>
+        public Binder()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -251,6 +258,13 @@ namespace Javax.Xml.Bind
     public partial class Binder<XmlNode>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/Binder.html#javax.xml.bind.Binder()"/>
+        /// </summary>
+        public Binder()
+            : base()
+        {
+        }
 
         #endregion
 

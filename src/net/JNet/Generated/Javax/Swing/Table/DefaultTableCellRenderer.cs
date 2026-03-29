@@ -103,6 +103,13 @@ namespace Javax.Swing.Table
     public partial class DefaultTableCellRenderer
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/DefaultTableCellRenderer.html#javax.swing.table.DefaultTableCellRenderer()"/>
+        /// </summary>
+        public DefaultTableCellRenderer()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -149,6 +156,13 @@ namespace Javax.Swing.Table
         public partial class UIResource
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/DefaultTableCellRenderer.UIResource.html#javax.swing.table.DefaultTableCellRenderer$UIResource()"/>
+            /// </summary>
+            public UIResource()
+                : base()
+            {
+            }
 
             #endregion
 

@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html#java.util.concurrent.PriorityBlockingQueue()"/>
+        /// </summary>
+        public PriorityBlockingQueue()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html#java.util.concurrent.PriorityBlockingQueue(int,java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -242,6 +249,13 @@ namespace Java.Util.Concurrent
     public partial class PriorityBlockingQueue<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html#java.util.concurrent.PriorityBlockingQueue()"/>
+        /// </summary>
+        public PriorityBlockingQueue()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html#java.util.concurrent.PriorityBlockingQueue(int,java.util.Comparator)"/>
         /// </summary>

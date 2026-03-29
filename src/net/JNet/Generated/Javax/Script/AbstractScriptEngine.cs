@@ -68,6 +68,13 @@ namespace Javax.Script
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/script/AbstractScriptEngine.html#javax.script.AbstractScriptEngine()"/>
+        /// </summary>
+        public AbstractScriptEngine()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/script/AbstractScriptEngine.html#javax.script.AbstractScriptEngine(javax.script.Bindings)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Script.Bindings"/></param>

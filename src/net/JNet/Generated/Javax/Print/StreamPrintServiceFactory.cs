@@ -67,6 +67,13 @@ namespace Javax.Print
     public partial class StreamPrintServiceFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/StreamPrintServiceFactory.html#javax.print.StreamPrintServiceFactory()"/>
+        /// </summary>
+        public StreamPrintServiceFactory()
+            : base()
+        {
+        }
 
         #endregion
 

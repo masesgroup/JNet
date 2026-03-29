@@ -67,6 +67,13 @@ namespace Javax.Swing
     public partial class AbstractCellEditor
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractCellEditor.html#javax.swing.AbstractCellEditor()"/>
+        /// </summary>
+        public AbstractCellEditor()
+            : base()
+        {
+        }
 
         #endregion
 

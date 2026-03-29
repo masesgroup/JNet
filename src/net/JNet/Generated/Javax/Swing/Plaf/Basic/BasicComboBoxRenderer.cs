@@ -103,6 +103,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicComboBoxRenderer
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicComboBoxRenderer.html#javax.swing.plaf.basic.BasicComboBoxRenderer()"/>
+        /// </summary>
+        public BasicComboBoxRenderer()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -148,6 +155,13 @@ namespace Javax.Swing.Plaf.Basic
         public partial class UIResource
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicComboBoxRenderer.UIResource.html#javax.swing.plaf.basic.BasicComboBoxRenderer$UIResource()"/>
+            /// </summary>
+            public UIResource()
+                : base()
+            {
+            }
 
             #endregion
 

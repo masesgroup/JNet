@@ -66,6 +66,13 @@ namespace Java.Util
     public partial class DoubleSummaryStatistics
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/DoubleSummaryStatistics.html#java.util.DoubleSummaryStatistics()"/>
+        /// </summary>
+        public DoubleSummaryStatistics()
+            : base()
+        {
+        }
 
         #endregion
 

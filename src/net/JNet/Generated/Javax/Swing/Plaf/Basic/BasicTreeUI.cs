@@ -621,6 +621,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicTreeUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTreeUI.html#javax.swing.plaf.basic.BasicTreeUI()"/>
+        /// </summary>
+        public BasicTreeUI()
+            : base()
+        {
+        }
 
         #endregion
 

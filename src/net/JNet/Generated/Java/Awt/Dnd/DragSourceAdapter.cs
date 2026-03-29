@@ -98,6 +98,13 @@ namespace Java.Awt.Dnd
     public partial class DragSourceAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceAdapter.html#java.awt.dnd.DragSourceAdapter()"/>
+        /// </summary>
+        public DragSourceAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

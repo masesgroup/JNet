@@ -104,6 +104,13 @@ namespace Javax.Tools
     public partial class DiagnosticCollector
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/tools/DiagnosticCollector.html#javax.tools.DiagnosticCollector()"/>
+        /// </summary>
+        public DiagnosticCollector()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -150,6 +157,13 @@ namespace Javax.Tools
     public partial class DiagnosticCollector<S>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/tools/DiagnosticCollector.html#javax.tools.DiagnosticCollector()"/>
+        /// </summary>
+        public DiagnosticCollector()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Javax.Swing.Colorchooser
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/colorchooser/DefaultColorSelectionModel.html#javax.swing.colorchooser.DefaultColorSelectionModel()"/>
+        /// </summary>
+        public DefaultColorSelectionModel()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/colorchooser/DefaultColorSelectionModel.html#javax.swing.colorchooser.DefaultColorSelectionModel(java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Color"/></param>

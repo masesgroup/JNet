@@ -66,6 +66,13 @@ namespace Javax.Imageio.Plugins.Jpeg
     public partial class JPEGImageReadParam
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#javax.imageio.plugins.jpeg.JPEGImageReadParam()"/>
+        /// </summary>
+        public JPEGImageReadParam()
+            : base()
+        {
+        }
 
         #endregion
 

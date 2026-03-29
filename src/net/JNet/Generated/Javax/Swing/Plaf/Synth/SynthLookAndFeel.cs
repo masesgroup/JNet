@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthLookAndFeel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthLookAndFeel.html#javax.swing.plaf.synth.SynthLookAndFeel()"/>
+        /// </summary>
+        public SynthLookAndFeel()
+            : base()
+        {
+        }
 
         #endregion
 

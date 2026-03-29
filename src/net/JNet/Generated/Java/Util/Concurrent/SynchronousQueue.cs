@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/SynchronousQueue.html#java.util.concurrent.SynchronousQueue()"/>
+        /// </summary>
+        public SynchronousQueue()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/SynchronousQueue.html#java.util.concurrent.SynchronousQueue(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -219,6 +226,13 @@ namespace Java.Util.Concurrent
     public partial class SynchronousQueue<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/SynchronousQueue.html#java.util.concurrent.SynchronousQueue()"/>
+        /// </summary>
+        public SynchronousQueue()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/SynchronousQueue.html#java.util.concurrent.SynchronousQueue(boolean)"/>
         /// </summary>

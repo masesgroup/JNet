@@ -67,6 +67,13 @@ namespace Java.Io
     public partial class OutputStream
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html#java.io.OutputStream()"/>
+        /// </summary>
+        public OutputStream()
+            : base()
+        {
+        }
 
         #endregion
 

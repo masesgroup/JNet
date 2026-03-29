@@ -67,6 +67,13 @@ namespace Java.Awt.Geom
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/GeneralPath.html#java.awt.geom.GeneralPath()"/>
+        /// </summary>
+        public GeneralPath()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/GeneralPath.html#java.awt.geom.GeneralPath(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

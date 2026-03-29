@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalRootPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalRootPaneUI.html#javax.swing.plaf.metal.MetalRootPaneUI()"/>
+        /// </summary>
+        public MetalRootPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

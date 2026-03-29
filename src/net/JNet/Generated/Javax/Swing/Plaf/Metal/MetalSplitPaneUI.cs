@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalSplitPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalSplitPaneUI.html#javax.swing.plaf.metal.MetalSplitPaneUI()"/>
+        /// </summary>
+        public MetalSplitPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

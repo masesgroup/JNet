@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class RepaintManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RepaintManager.html#javax.swing.RepaintManager()"/>
+        /// </summary>
+        public RepaintManager()
+            : base()
+        {
+        }
 
         #endregion
 

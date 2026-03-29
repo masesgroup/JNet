@@ -67,6 +67,13 @@ namespace Javax.Sound.Midi.Spi
     public partial class SoundbankReader
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/spi/SoundbankReader.html#javax.sound.midi.spi.SoundbankReader()"/>
+        /// </summary>
+        public SoundbankReader()
+            : base()
+        {
+        }
 
         #endregion
 

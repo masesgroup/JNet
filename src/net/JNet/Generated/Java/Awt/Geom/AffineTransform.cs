@@ -67,6 +67,13 @@ namespace Java.Awt.Geom
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/AffineTransform.html#java.awt.geom.AffineTransform()"/>
+        /// </summary>
+        public AffineTransform()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/AffineTransform.html#java.awt.geom.AffineTransform(double,double,double,double,double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>

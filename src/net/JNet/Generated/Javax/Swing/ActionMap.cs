@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class ActionMap
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ActionMap.html#javax.swing.ActionMap()"/>
+        /// </summary>
+        public ActionMap()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -68,6 +68,13 @@ namespace Javax.Management.Remote
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/JMXConnectorServer.html#javax.management.remote.JMXConnectorServer()"/>
+        /// </summary>
+        public JMXConnectorServer()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/JMXConnectorServer.html#javax.management.remote.JMXConnectorServer(javax.management.MBeanServer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>

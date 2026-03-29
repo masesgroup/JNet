@@ -106,6 +106,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#java.util.Hashtable()"/>
+        /// </summary>
+        public Hashtable()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#java.util.Hashtable(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -347,6 +354,13 @@ namespace Java.Util
     public partial class Hashtable<K, V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#java.util.Hashtable()"/>
+        /// </summary>
+        public Hashtable()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#java.util.Hashtable(int,float)"/>
         /// </summary>

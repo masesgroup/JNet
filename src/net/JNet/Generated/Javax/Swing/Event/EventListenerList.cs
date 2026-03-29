@@ -66,6 +66,13 @@ namespace Javax.Swing.Event
     public partial class EventListenerList
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/EventListenerList.html#javax.swing.event.EventListenerList()"/>
+        /// </summary>
+        public EventListenerList()
+            : base()
+        {
+        }
 
         #endregion
 

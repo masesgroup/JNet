@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class JToolTip
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToolTip.html#javax.swing.JToolTip()"/>
+        /// </summary>
+        public JToolTip()
+            : base()
+        {
+        }
 
         #endregion
 

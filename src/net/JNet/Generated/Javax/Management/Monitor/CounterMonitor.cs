@@ -66,6 +66,13 @@ namespace Javax.Management.Monitor
     public partial class CounterMonitor
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitor.html#javax.management.monitor.CounterMonitor()"/>
+        /// </summary>
+        public CounterMonitor()
+            : base()
+        {
+        }
 
         #endregion
 

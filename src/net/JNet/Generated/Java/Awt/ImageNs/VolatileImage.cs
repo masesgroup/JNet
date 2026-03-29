@@ -67,6 +67,13 @@ namespace Java.Awt.ImageNs
     public partial class VolatileImage
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/VolatileImage.html#java.awt.image.VolatileImage()"/>
+        /// </summary>
+        public VolatileImage()
+            : base()
+        {
+        }
 
         #endregion
 

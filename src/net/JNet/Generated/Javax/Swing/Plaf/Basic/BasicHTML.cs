@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicHTML
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicHTML.html#javax.swing.plaf.basic.BasicHTML()"/>
+        /// </summary>
+        public BasicHTML()
+            : base()
+        {
+        }
 
         #endregion
 

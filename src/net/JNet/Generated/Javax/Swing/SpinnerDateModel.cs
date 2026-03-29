@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpinnerDateModel.html#javax.swing.SpinnerDateModel()"/>
+        /// </summary>
+        public SpinnerDateModel()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpinnerDateModel.html#javax.swing.SpinnerDateModel(java.util.Date,java.lang.Comparable,java.lang.Comparable,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>

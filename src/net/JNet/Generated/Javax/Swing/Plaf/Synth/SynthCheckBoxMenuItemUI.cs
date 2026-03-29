@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthCheckBoxMenuItemUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthCheckBoxMenuItemUI.html#javax.swing.plaf.synth.SynthCheckBoxMenuItemUI()"/>
+        /// </summary>
+        public SynthCheckBoxMenuItemUI()
+            : base()
+        {
+        }
 
         #endregion
 

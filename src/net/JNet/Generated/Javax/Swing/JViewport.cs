@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class JViewport
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JViewport.html#javax.swing.JViewport()"/>
+        /// </summary>
+        public JViewport()
+            : base()
+        {
+        }
 
         #endregion
 

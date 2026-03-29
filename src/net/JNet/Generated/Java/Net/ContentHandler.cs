@@ -67,6 +67,13 @@ namespace Java.Net
     public partial class ContentHandler
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/ContentHandler.html#java.net.ContentHandler()"/>
+        /// </summary>
+        public ContentHandler()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Javax.Swing.Table
     public partial class AbstractTableModel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/AbstractTableModel.html#javax.swing.table.AbstractTableModel()"/>
+        /// </summary>
+        public AbstractTableModel()
+            : base()
+        {
+        }
 
         #endregion
 

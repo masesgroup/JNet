@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicReference.html#java.util.concurrent.atomic.AtomicReference()"/>
+        /// </summary>
+        public AtomicReference()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicReference.html#java.util.concurrent.atomic.AtomicReference(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -234,6 +241,13 @@ namespace Java.Util.Concurrent.Atomic
     public partial class AtomicReference<V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicReference.html#java.util.concurrent.atomic.AtomicReference()"/>
+        /// </summary>
+        public AtomicReference()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicReference.html#java.util.concurrent.atomic.AtomicReference(java.lang.Object)"/>
         /// </summary>

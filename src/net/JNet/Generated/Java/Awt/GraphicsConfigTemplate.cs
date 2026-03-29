@@ -67,6 +67,13 @@ namespace Java.Awt
     public partial class GraphicsConfigTemplate
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/GraphicsConfigTemplate.html#java.awt.GraphicsConfigTemplate()"/>
+        /// </summary>
+        public GraphicsConfigTemplate()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class ButtonUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ButtonUI.html#javax.swing.plaf.ButtonUI()"/>
+        /// </summary>
+        public ButtonUI()
+            : base()
+        {
+        }
 
         #endregion
 

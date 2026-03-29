@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class JRootPane
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JRootPane.html#javax.swing.JRootPane()"/>
+        /// </summary>
+        public JRootPane()
+            : base()
+        {
+        }
 
         #endregion
 

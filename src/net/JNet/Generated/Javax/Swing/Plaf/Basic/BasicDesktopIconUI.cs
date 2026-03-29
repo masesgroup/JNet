@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicDesktopIconUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicDesktopIconUI.html#javax.swing.plaf.basic.BasicDesktopIconUI()"/>
+        /// </summary>
+        public BasicDesktopIconUI()
+            : base()
+        {
+        }
 
         #endregion
 

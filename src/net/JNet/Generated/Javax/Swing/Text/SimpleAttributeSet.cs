@@ -67,6 +67,13 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/SimpleAttributeSet.html#javax.swing.text.SimpleAttributeSet()"/>
+        /// </summary>
+        public SimpleAttributeSet()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/SimpleAttributeSet.html#javax.swing.text.SimpleAttributeSet(javax.swing.text.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>

@@ -67,6 +67,13 @@ namespace Javax.Accessibility
     public partial class AccessibleHyperlink
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleHyperlink.html#javax.accessibility.AccessibleHyperlink()"/>
+        /// </summary>
+        public AccessibleHyperlink()
+            : base()
+        {
+        }
 
         #endregion
 

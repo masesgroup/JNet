@@ -66,6 +66,13 @@ namespace Org.Xml.Sax.Ext
     public partial class DefaultHandler2
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/ext/DefaultHandler2.html#org.xml.sax.ext.DefaultHandler2()"/>
+        /// </summary>
+        public DefaultHandler2()
+            : base()
+        {
+        }
 
         #endregion
 

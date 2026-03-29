@@ -67,6 +67,13 @@ namespace Javax.Xml.Bind
     public partial class SchemaOutputResolver
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/SchemaOutputResolver.html#javax.xml.bind.SchemaOutputResolver()"/>
+        /// </summary>
+        public SchemaOutputResolver()
+            : base()
+        {
+        }
 
         #endregion
 

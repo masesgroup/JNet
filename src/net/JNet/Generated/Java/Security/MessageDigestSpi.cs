@@ -67,6 +67,13 @@ namespace Java.Security
     public partial class MessageDigestSpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/MessageDigestSpi.html#java.security.MessageDigestSpi()"/>
+        /// </summary>
+        public MessageDigestSpi()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalPopupMenuSeparatorUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalPopupMenuSeparatorUI.html#javax.swing.plaf.metal.MetalPopupMenuSeparatorUI()"/>
+        /// </summary>
+        public MetalPopupMenuSeparatorUI()
+            : base()
+        {
+        }
 
         #endregion
 

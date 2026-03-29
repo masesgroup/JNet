@@ -107,6 +107,13 @@ namespace Java.Util
     public partial class Dictionary
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Dictionary.html#java.util.Dictionary()"/>
+        /// </summary>
+        public Dictionary()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -198,6 +205,13 @@ namespace Java.Util
     public partial class Dictionary<K, V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Dictionary.html#java.util.Dictionary()"/>
+        /// </summary>
+        public Dictionary()
+            : base()
+        {
+        }
 
         #endregion
 

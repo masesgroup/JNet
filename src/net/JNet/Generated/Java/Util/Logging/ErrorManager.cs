@@ -66,6 +66,13 @@ namespace Java.Util.Logging
     public partial class ErrorManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/ErrorManager.html#java.util.logging.ErrorManager()"/>
+        /// </summary>
+        public ErrorManager()
+            : base()
+        {
+        }
 
         #endregion
 

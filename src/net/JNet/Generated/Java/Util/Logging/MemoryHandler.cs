@@ -67,6 +67,13 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/MemoryHandler.html#java.util.logging.MemoryHandler()"/>
+        /// </summary>
+        public MemoryHandler()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/MemoryHandler.html#java.util.logging.MemoryHandler(java.util.logging.Handler,int,java.util.logging.Level)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>

@@ -66,6 +66,15 @@ namespace Javax.Swing
     public partial class JApplet
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JApplet.html#javax.swing.JApplet()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public JApplet()
+            : base()
+        {
+        }
 
         #endregion
 

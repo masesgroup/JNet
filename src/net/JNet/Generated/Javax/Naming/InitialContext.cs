@@ -67,6 +67,15 @@ namespace Javax.Naming
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/InitialContext.html#javax.naming.InitialContext()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public InitialContext()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/InitialContext.html#javax.naming.InitialContext(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>

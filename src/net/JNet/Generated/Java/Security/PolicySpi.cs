@@ -67,6 +67,13 @@ namespace Java.Security
     public partial class PolicySpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/PolicySpi.html#java.security.PolicySpi()"/>
+        /// </summary>
+        public PolicySpi()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Javax.Xml.Bind.Attachment
     public partial class AttachmentMarshaller
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/attachment/AttachmentMarshaller.html#javax.xml.bind.attachment.AttachmentMarshaller()"/>
+        /// </summary>
+        public AttachmentMarshaller()
+            : base()
+        {
+        }
 
         #endregion
 

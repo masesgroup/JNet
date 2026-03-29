@@ -106,6 +106,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html#java.util.TreeMap()"/>
+        /// </summary>
+        public TreeMap()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html#java.util.TreeMap(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
@@ -384,6 +391,13 @@ namespace Java.Util
     public partial class TreeMap<K, V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html#java.util.TreeMap()"/>
+        /// </summary>
+        public TreeMap()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html#java.util.TreeMap(java.util.Comparator)"/>
         /// </summary>

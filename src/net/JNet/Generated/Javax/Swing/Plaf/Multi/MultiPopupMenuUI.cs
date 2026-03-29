@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiPopupMenuUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiPopupMenuUI.html#javax.swing.plaf.multi.MultiPopupMenuUI()"/>
+        /// </summary>
+        public MultiPopupMenuUI()
+            : base()
+        {
+        }
 
         #endregion
 

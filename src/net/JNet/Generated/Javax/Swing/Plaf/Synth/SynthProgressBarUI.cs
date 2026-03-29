@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthProgressBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthProgressBarUI.html#javax.swing.plaf.synth.SynthProgressBarUI()"/>
+        /// </summary>
+        public SynthProgressBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Javax.Xml.Transform.Sax
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/sax/SAXSource.html#javax.xml.transform.sax.SAXSource()"/>
+        /// </summary>
+        public SAXSource()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/sax/SAXSource.html#javax.xml.transform.sax.SAXSource(org.xml.sax.InputSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>

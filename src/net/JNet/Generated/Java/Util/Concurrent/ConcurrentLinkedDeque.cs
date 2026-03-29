@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedDeque.html#java.util.concurrent.ConcurrentLinkedDeque()"/>
+        /// </summary>
+        public ConcurrentLinkedDeque()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedDeque.html#java.util.concurrent.ConcurrentLinkedDeque(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -330,6 +337,13 @@ namespace Java.Util.Concurrent
     public partial class ConcurrentLinkedDeque<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedDeque.html#java.util.concurrent.ConcurrentLinkedDeque()"/>
+        /// </summary>
+        public ConcurrentLinkedDeque()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedDeque.html#java.util.concurrent.ConcurrentLinkedDeque(java.util.Collection)"/>
         /// </summary>

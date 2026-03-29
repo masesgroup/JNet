@@ -67,6 +67,13 @@ namespace Javax.Management.Relation
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleList.html#javax.management.relation.RoleList()"/>
+        /// </summary>
+        public RoleList()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleList.html#javax.management.relation.RoleList(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

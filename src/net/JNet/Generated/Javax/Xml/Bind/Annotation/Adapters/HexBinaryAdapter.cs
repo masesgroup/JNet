@@ -66,6 +66,13 @@ namespace Javax.Xml.Bind.Annotation.Adapters
     public partial class HexBinaryAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/adapters/HexBinaryAdapter.html#javax.xml.bind.annotation.adapters.HexBinaryAdapter()"/>
+        /// </summary>
+        public HexBinaryAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

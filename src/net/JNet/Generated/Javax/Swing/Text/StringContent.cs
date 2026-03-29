@@ -67,6 +67,13 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/StringContent.html#javax.swing.text.StringContent()"/>
+        /// </summary>
+        public StringContent()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/StringContent.html#javax.swing.text.StringContent(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

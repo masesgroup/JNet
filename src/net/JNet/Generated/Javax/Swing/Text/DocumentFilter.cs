@@ -104,6 +104,13 @@ namespace Javax.Swing.Text
     public partial class DocumentFilter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DocumentFilter.html#javax.swing.text.DocumentFilter()"/>
+        /// </summary>
+        public DocumentFilter()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -164,6 +171,13 @@ namespace Javax.Swing.Text
         public partial class FilterBypass
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DocumentFilter.FilterBypass.html#javax.swing.text.DocumentFilter$FilterBypass()"/>
+            /// </summary>
+            public FilterBypass()
+                : base()
+            {
+            }
 
             #endregion
 

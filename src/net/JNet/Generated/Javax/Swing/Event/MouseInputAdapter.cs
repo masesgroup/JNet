@@ -98,6 +98,13 @@ namespace Javax.Swing.Event
     public partial class MouseInputAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/MouseInputAdapter.html#javax.swing.event.MouseInputAdapter()"/>
+        /// </summary>
+        public MouseInputAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

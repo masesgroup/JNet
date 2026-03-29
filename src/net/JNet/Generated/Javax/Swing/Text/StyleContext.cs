@@ -140,6 +140,13 @@ namespace Javax.Swing.Text
     public partial class StyleContext
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/StyleContext.html#javax.swing.text.StyleContext()"/>
+        /// </summary>
+        public StyleContext()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class CellRendererPane
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/CellRendererPane.html#javax.swing.CellRendererPane()"/>
+        /// </summary>
+        public CellRendererPane()
+            : base()
+        {
+        }
 
         #endregion
 

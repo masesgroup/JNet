@@ -67,6 +67,13 @@ namespace Javax.Security.Auth
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Subject.html#javax.security.auth.Subject()"/>
+        /// </summary>
+        public Subject()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Subject.html#javax.security.auth.Subject(boolean,java.util.Set,java.util.Set,java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

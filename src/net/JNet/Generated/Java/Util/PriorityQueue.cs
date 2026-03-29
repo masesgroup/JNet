@@ -105,6 +105,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/PriorityQueue.html#java.util.PriorityQueue()"/>
+        /// </summary>
+        public PriorityQueue()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/PriorityQueue.html#java.util.PriorityQueue(int,java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -196,6 +203,13 @@ namespace Java.Util
     public partial class PriorityQueue<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/PriorityQueue.html#java.util.PriorityQueue()"/>
+        /// </summary>
+        public PriorityQueue()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/PriorityQueue.html#java.util.PriorityQueue(int,java.util.Comparator)"/>
         /// </summary>

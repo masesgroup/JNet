@@ -104,6 +104,13 @@ namespace Java.Lang
     public partial class ThreadLocal
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadLocal.html#java.lang.ThreadLocal()"/>
+        /// </summary>
+        public ThreadLocal()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -167,6 +174,13 @@ namespace Java.Lang
     public partial class ThreadLocal<T>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadLocal.html#java.lang.ThreadLocal()"/>
+        /// </summary>
+        public ThreadLocal()
+            : base()
+        {
+        }
 
         #endregion
 

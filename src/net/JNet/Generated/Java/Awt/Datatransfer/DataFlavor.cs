@@ -67,6 +67,13 @@ namespace Java.Awt.Datatransfer
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/datatransfer/DataFlavor.html#java.awt.datatransfer.DataFlavor()"/>
+        /// </summary>
+        public DataFlavor()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/datatransfer/DataFlavor.html#java.awt.datatransfer.DataFlavor(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>

@@ -67,6 +67,13 @@ namespace Javax.Xml.Stream.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/stream/util/StreamReaderDelegate.html#javax.xml.stream.util.StreamReaderDelegate()"/>
+        /// </summary>
+        public StreamReaderDelegate()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/stream/util/StreamReaderDelegate.html#javax.xml.stream.util.StreamReaderDelegate(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>

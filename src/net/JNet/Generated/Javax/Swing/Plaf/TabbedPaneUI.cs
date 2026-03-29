@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class TabbedPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/TabbedPaneUI.html#javax.swing.plaf.TabbedPaneUI()"/>
+        /// </summary>
+        public TabbedPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

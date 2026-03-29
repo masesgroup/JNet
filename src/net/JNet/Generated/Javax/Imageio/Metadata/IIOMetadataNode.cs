@@ -67,6 +67,13 @@ namespace Javax.Imageio.Metadata
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/metadata/IIOMetadataNode.html#javax.imageio.metadata.IIOMetadataNode()"/>
+        /// </summary>
+        public IIOMetadataNode()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/metadata/IIOMetadataNode.html#javax.imageio.metadata.IIOMetadataNode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

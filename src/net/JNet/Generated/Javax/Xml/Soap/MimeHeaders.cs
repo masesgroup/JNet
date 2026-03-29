@@ -66,6 +66,13 @@ namespace Javax.Xml.Soap
     public partial class MimeHeaders
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/soap/MimeHeaders.html#javax.xml.soap.MimeHeaders()"/>
+        /// </summary>
+        public MimeHeaders()
+            : base()
+        {
+        }
 
         #endregion
 

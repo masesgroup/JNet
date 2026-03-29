@@ -67,6 +67,13 @@ namespace Javax.Management
     public partial class QueryEval
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/QueryEval.html#javax.management.QueryEval()"/>
+        /// </summary>
+        public QueryEval()
+            : base()
+        {
+        }
 
         #endregion
 

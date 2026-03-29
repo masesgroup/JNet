@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class ComboBoxUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ComboBoxUI.html#javax.swing.plaf.ComboBoxUI()"/>
+        /// </summary>
+        public ComboBoxUI()
+            : base()
+        {
+        }
 
         #endregion
 

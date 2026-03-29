@@ -98,6 +98,13 @@ namespace Java.Awt.EventNs
     public partial class WindowAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/WindowAdapter.html#java.awt.event.WindowAdapter()"/>
+        /// </summary>
+        public WindowAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

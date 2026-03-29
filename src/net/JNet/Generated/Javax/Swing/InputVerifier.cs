@@ -67,6 +67,13 @@ namespace Javax.Swing
     public partial class InputVerifier
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/InputVerifier.html#javax.swing.InputVerifier()"/>
+        /// </summary>
+        public InputVerifier()
+            : base()
+        {
+        }
 
         #endregion
 

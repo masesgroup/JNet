@@ -98,6 +98,13 @@ namespace Java.Awt.EventNs
     public partial class FocusAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/FocusAdapter.html#java.awt.event.FocusAdapter()"/>
+        /// </summary>
+        public FocusAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

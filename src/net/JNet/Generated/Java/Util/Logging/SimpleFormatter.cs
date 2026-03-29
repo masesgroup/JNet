@@ -66,6 +66,13 @@ namespace Java.Util.Logging
     public partial class SimpleFormatter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/SimpleFormatter.html#java.util.logging.SimpleFormatter()"/>
+        /// </summary>
+        public SimpleFormatter()
+            : base()
+        {
+        }
 
         #endregion
 

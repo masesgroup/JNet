@@ -434,6 +434,13 @@ namespace Java.Util.Concurrent
         public partial class AbortPolicy
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html#java.util.concurrent.ThreadPoolExecutor$AbortPolicy()"/>
+            /// </summary>
+            public AbortPolicy()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -474,6 +481,13 @@ namespace Java.Util.Concurrent
         public partial class CallerRunsPolicy
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html#java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy()"/>
+            /// </summary>
+            public CallerRunsPolicy()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -514,6 +528,13 @@ namespace Java.Util.Concurrent
         public partial class DiscardOldestPolicy
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html#java.util.concurrent.ThreadPoolExecutor$DiscardOldestPolicy()"/>
+            /// </summary>
+            public DiscardOldestPolicy()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -554,6 +575,13 @@ namespace Java.Util.Concurrent
         public partial class DiscardPolicy
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html#java.util.concurrent.ThreadPoolExecutor$DiscardPolicy()"/>
+            /// </summary>
+            public DiscardPolicy()
+                : base()
+            {
+            }
 
             #endregion
 

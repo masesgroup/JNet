@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiToolTipUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiToolTipUI.html#javax.swing.plaf.multi.MultiToolTipUI()"/>
+        /// </summary>
+        public MultiToolTipUI()
+            : base()
+        {
+        }
 
         #endregion
 

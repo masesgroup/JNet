@@ -67,6 +67,13 @@ namespace Javax.Net.Ssl
     public partial class SSLSocketFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLSocketFactory.html#javax.net.ssl.SSLSocketFactory()"/>
+        /// </summary>
+        public SSLSocketFactory()
+            : base()
+        {
+        }
 
         #endregion
 

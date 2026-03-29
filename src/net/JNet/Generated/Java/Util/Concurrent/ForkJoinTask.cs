@@ -106,6 +106,13 @@ namespace Java.Util.Concurrent
     public partial class ForkJoinTask
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#java.util.concurrent.ForkJoinTask()"/>
+        /// </summary>
+        public ForkJoinTask()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -415,6 +422,13 @@ namespace Java.Util.Concurrent
     public partial class ForkJoinTask<V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#java.util.concurrent.ForkJoinTask()"/>
+        /// </summary>
+        public ForkJoinTask()
+            : base()
+        {
+        }
 
         #endregion
 

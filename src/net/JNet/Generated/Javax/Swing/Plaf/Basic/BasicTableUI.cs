@@ -177,6 +177,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicTableUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTableUI.html#javax.swing.plaf.basic.BasicTableUI()"/>
+        /// </summary>
+        public BasicTableUI()
+            : base()
+        {
+        }
 
         #endregion
 

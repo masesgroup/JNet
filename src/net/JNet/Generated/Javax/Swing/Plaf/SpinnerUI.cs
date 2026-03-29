@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class SpinnerUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/SpinnerUI.html#javax.swing.plaf.SpinnerUI()"/>
+        /// </summary>
+        public SpinnerUI()
+            : base()
+        {
+        }
 
         #endregion
 

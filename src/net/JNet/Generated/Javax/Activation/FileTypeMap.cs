@@ -67,6 +67,13 @@ namespace Javax.Activation
     public partial class FileTypeMap
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/FileTypeMap.html#javax.activation.FileTypeMap()"/>
+        /// </summary>
+        public FileTypeMap()
+            : base()
+        {
+        }
 
         #endregion
 

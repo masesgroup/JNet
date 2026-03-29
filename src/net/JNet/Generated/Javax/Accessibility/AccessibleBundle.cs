@@ -67,6 +67,13 @@ namespace Javax.Accessibility
     public partial class AccessibleBundle
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleBundle.html#javax.accessibility.AccessibleBundle()"/>
+        /// </summary>
+        public AccessibleBundle()
+            : base()
+        {
+        }
 
         #endregion
 

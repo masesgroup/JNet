@@ -67,6 +67,16 @@ namespace Javax.Management.Modelmbean
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/RequiredModelMBean.html#javax.management.modelmbean.RequiredModelMBean()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        public RequiredModelMBean()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/RequiredModelMBean.html#javax.management.modelmbean.RequiredModelMBean(javax.management.modelmbean.ModelMBeanInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Modelmbean.ModelMBeanInfo"/></param>

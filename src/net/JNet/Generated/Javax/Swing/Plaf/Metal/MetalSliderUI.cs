@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalSliderUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalSliderUI.html#javax.swing.plaf.metal.MetalSliderUI()"/>
+        /// </summary>
+        public MetalSliderUI()
+            : base()
+        {
+        }
 
         #endregion
 

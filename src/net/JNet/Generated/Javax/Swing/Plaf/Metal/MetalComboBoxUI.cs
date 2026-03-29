@@ -103,6 +103,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalComboBoxUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.html#javax.swing.plaf.metal.MetalComboBoxUI()"/>
+        /// </summary>
+        public MetalComboBoxUI()
+            : base()
+        {
+        }
 
         #endregion
 

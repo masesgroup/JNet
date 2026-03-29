@@ -66,6 +66,13 @@ namespace Javax.Swing.Text
     public partial class LayoutQueue
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/LayoutQueue.html#javax.swing.text.LayoutQueue()"/>
+        /// </summary>
+        public LayoutQueue()
+            : base()
+        {
+        }
 
         #endregion
 

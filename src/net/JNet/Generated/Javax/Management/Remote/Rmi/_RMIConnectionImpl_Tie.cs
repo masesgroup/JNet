@@ -66,6 +66,13 @@ namespace Javax.Management.Remote.Rmi
     public partial class _RMIConnectionImpl_Tie
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/_RMIConnectionImpl_Tie.html#javax.management.remote.rmi._RMIConnectionImpl_Tie()"/>
+        /// </summary>
+        public _RMIConnectionImpl_Tie()
+            : base()
+        {
+        }
 
         #endregion
 

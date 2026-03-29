@@ -67,6 +67,13 @@ namespace Javax.Sound.Sampled.Spi
     public partial class AudioFileReader
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/spi/AudioFileReader.html#javax.sound.sampled.spi.AudioFileReader()"/>
+        /// </summary>
+        public AudioFileReader()
+            : base()
+        {
+        }
 
         #endregion
 

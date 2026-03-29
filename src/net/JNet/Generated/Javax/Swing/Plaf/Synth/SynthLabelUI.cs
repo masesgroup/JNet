@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthLabelUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthLabelUI.html#javax.swing.plaf.synth.SynthLabelUI()"/>
+        /// </summary>
+        public SynthLabelUI()
+            : base()
+        {
+        }
 
         #endregion
 

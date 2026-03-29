@@ -67,6 +67,13 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/PlainDocument.html#javax.swing.text.PlainDocument()"/>
+        /// </summary>
+        public PlainDocument()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/PlainDocument.html#javax.swing.text.PlainDocument(javax.swing.text.AbstractDocument.Content)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument.Content"/></param>

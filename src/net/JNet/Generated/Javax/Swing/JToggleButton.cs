@@ -104,6 +104,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToggleButton.html#javax.swing.JToggleButton()"/>
+        /// </summary>
+        public JToggleButton()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToggleButton.html#javax.swing.JToggleButton(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -192,6 +199,13 @@ namespace Javax.Swing
         public partial class ToggleButtonModel
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToggleButton.ToggleButtonModel.html#javax.swing.JToggleButton$ToggleButtonModel()"/>
+            /// </summary>
+            public ToggleButtonModel()
+                : base()
+            {
+            }
 
             #endregion
 

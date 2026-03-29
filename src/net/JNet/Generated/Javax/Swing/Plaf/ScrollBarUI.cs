@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class ScrollBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ScrollBarUI.html#javax.swing.plaf.ScrollBarUI()"/>
+        /// </summary>
+        public ScrollBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

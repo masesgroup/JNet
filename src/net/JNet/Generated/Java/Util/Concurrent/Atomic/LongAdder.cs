@@ -66,6 +66,13 @@ namespace Java.Util.Concurrent.Atomic
     public partial class LongAdder
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/LongAdder.html#java.util.concurrent.atomic.LongAdder()"/>
+        /// </summary>
+        public LongAdder()
+            : base()
+        {
+        }
 
         #endregion
 

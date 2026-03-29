@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthScrollBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthScrollBarUI.html#javax.swing.plaf.synth.SynthScrollBarUI()"/>
+        /// </summary>
+        public SynthScrollBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

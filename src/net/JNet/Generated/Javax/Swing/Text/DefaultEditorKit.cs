@@ -362,6 +362,13 @@ namespace Javax.Swing.Text
     public partial class DefaultEditorKit
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultEditorKit.html#javax.swing.text.DefaultEditorKit()"/>
+        /// </summary>
+        public DefaultEditorKit()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -680,6 +687,13 @@ namespace Javax.Swing.Text
         public partial class BeepAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultEditorKit.BeepAction.html#javax.swing.text.DefaultEditorKit$BeepAction()"/>
+            /// </summary>
+            public BeepAction()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -711,6 +725,13 @@ namespace Javax.Swing.Text
         public partial class CopyAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultEditorKit.CopyAction.html#javax.swing.text.DefaultEditorKit$CopyAction()"/>
+            /// </summary>
+            public CopyAction()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -742,6 +763,13 @@ namespace Javax.Swing.Text
         public partial class CutAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultEditorKit.CutAction.html#javax.swing.text.DefaultEditorKit$CutAction()"/>
+            /// </summary>
+            public CutAction()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -773,6 +801,13 @@ namespace Javax.Swing.Text
         public partial class DefaultKeyTypedAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultEditorKit.DefaultKeyTypedAction.html#javax.swing.text.DefaultEditorKit$DefaultKeyTypedAction()"/>
+            /// </summary>
+            public DefaultKeyTypedAction()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -804,6 +839,13 @@ namespace Javax.Swing.Text
         public partial class InsertBreakAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultEditorKit.InsertBreakAction.html#javax.swing.text.DefaultEditorKit$InsertBreakAction()"/>
+            /// </summary>
+            public InsertBreakAction()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -835,6 +877,13 @@ namespace Javax.Swing.Text
         public partial class InsertContentAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultEditorKit.InsertContentAction.html#javax.swing.text.DefaultEditorKit$InsertContentAction()"/>
+            /// </summary>
+            public InsertContentAction()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -866,6 +915,13 @@ namespace Javax.Swing.Text
         public partial class InsertTabAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultEditorKit.InsertTabAction.html#javax.swing.text.DefaultEditorKit$InsertTabAction()"/>
+            /// </summary>
+            public InsertTabAction()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -897,6 +953,13 @@ namespace Javax.Swing.Text
         public partial class PasteAction
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultEditorKit.PasteAction.html#javax.swing.text.DefaultEditorKit$PasteAction()"/>
+            /// </summary>
+            public PasteAction()
+                : base()
+            {
+            }
 
             #endregion
 

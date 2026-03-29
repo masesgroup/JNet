@@ -67,6 +67,13 @@ namespace Javax.Swing.Table
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableColumn.html#javax.swing.table.TableColumn()"/>
+        /// </summary>
+        public TableColumn()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableColumn.html#javax.swing.table.TableColumn(int,int,javax.swing.table.TableCellRenderer,javax.swing.table.TableCellEditor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

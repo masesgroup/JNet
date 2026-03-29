@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthPasswordFieldUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthPasswordFieldUI.html#javax.swing.plaf.synth.SynthPasswordFieldUI()"/>
+        /// </summary>
+        public SynthPasswordFieldUI()
+            : base()
+        {
+        }
 
         #endregion
 

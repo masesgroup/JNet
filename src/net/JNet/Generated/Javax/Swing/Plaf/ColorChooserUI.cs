@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class ColorChooserUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ColorChooserUI.html#javax.swing.plaf.ColorChooserUI()"/>
+        /// </summary>
+        public ColorChooserUI()
+            : base()
+        {
+        }
 
         #endregion
 

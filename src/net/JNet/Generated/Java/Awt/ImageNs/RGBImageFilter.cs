@@ -67,6 +67,13 @@ namespace Java.Awt.ImageNs
     public partial class RGBImageFilter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/RGBImageFilter.html#java.awt.image.RGBImageFilter()"/>
+        /// </summary>
+        public RGBImageFilter()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -103,6 +103,13 @@ namespace Javax.Swing.Text.Html
     public partial class CSS
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/CSS.html#javax.swing.text.html.CSS()"/>
+        /// </summary>
+        public CSS()
+            : base()
+        {
+        }
 
         #endregion
 

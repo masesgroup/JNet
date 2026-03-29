@@ -67,6 +67,13 @@ namespace Javax.Management.Relation
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleUnresolvedList.html#javax.management.relation.RoleUnresolvedList()"/>
+        /// </summary>
+        public RoleUnresolvedList()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleUnresolvedList.html#javax.management.relation.RoleUnresolvedList(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

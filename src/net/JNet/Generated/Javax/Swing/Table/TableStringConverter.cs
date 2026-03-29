@@ -67,6 +67,13 @@ namespace Javax.Swing.Table
     public partial class TableStringConverter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableStringConverter.html#javax.swing.table.TableStringConverter()"/>
+        /// </summary>
+        public TableStringConverter()
+            : base()
+        {
+        }
 
         #endregion
 

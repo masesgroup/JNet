@@ -67,6 +67,13 @@ namespace Java.Awt.ImageNs
     public partial class BufferStrategy
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/BufferStrategy.html#java.awt.image.BufferStrategy()"/>
+        /// </summary>
+        public BufferStrategy()
+            : base()
+        {
+        }
 
         #endregion
 

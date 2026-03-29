@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class TextUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/TextUI.html#javax.swing.plaf.TextUI()"/>
+        /// </summary>
+        public TextUI()
+            : base()
+        {
+        }
 
         #endregion
 

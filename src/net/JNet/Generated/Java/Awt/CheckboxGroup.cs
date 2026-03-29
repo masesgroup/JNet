@@ -66,6 +66,13 @@ namespace Java.Awt
     public partial class CheckboxGroup
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CheckboxGroup.html#java.awt.CheckboxGroup()"/>
+        /// </summary>
+        public CheckboxGroup()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Java.Security
     public partial class AlgorithmParameterGeneratorSpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/AlgorithmParameterGeneratorSpi.html#java.security.AlgorithmParameterGeneratorSpi()"/>
+        /// </summary>
+        public AlgorithmParameterGeneratorSpi()
+            : base()
+        {
+        }
 
         #endregion
 

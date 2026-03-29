@@ -142,6 +142,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#javax.swing.JList()"/>
+        /// </summary>
+        public JList()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#javax.swing.JList(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
@@ -631,6 +638,13 @@ namespace Javax.Swing
     public partial class JList<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#javax.swing.JList()"/>
+        /// </summary>
+        public JList()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#javax.swing.JList(java.lang.Object[])"/>
         /// </summary>

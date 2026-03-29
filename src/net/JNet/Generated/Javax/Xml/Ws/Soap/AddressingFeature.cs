@@ -104,6 +104,13 @@ namespace Javax.Xml.Ws.Soap
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/soap/AddressingFeature.html#javax.xml.ws.soap.AddressingFeature()"/>
+        /// </summary>
+        public AddressingFeature()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/soap/AddressingFeature.html#javax.xml.ws.soap.AddressingFeature(boolean,boolean,javax.xml.ws.soap.AddressingFeature.Responses)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

@@ -67,6 +67,13 @@ namespace Java.Util.Concurrent
     public partial class RecursiveAction
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RecursiveAction.html#java.util.concurrent.RecursiveAction()"/>
+        /// </summary>
+        public RecursiveAction()
+            : base()
+        {
+        }
 
         #endregion
 

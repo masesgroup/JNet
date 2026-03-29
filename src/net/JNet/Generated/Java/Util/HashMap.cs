@@ -106,6 +106,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#java.util.HashMap()"/>
+        /// </summary>
+        public HashMap()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#java.util.HashMap(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -169,6 +176,13 @@ namespace Java.Util
     public partial class HashMap<K, V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#java.util.HashMap()"/>
+        /// </summary>
+        public HashMap()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#java.util.HashMap(int,float)"/>
         /// </summary>

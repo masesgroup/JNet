@@ -67,6 +67,13 @@ namespace Javax.Activation
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimeTypeParameterList.html#javax.activation.MimeTypeParameterList()"/>
+        /// </summary>
+        public MimeTypeParameterList()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimeTypeParameterList.html#javax.activation.MimeTypeParameterList(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

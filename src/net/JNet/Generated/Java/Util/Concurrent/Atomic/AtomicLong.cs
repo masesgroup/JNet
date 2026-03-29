@@ -67,6 +67,13 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicLong.html#java.util.concurrent.atomic.AtomicLong()"/>
+        /// </summary>
+        public AtomicLong()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicLong.html#java.util.concurrent.atomic.AtomicLong(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>

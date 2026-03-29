@@ -67,6 +67,13 @@ namespace Javax.Sound.Sampled.Spi
     public partial class MixerProvider
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/spi/MixerProvider.html#javax.sound.sampled.spi.MixerProvider()"/>
+        /// </summary>
+        public MixerProvider()
+            : base()
+        {
+        }
 
         #endregion
 

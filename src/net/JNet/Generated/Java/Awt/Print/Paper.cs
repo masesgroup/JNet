@@ -66,6 +66,13 @@ namespace Java.Awt.Print
     public partial class Paper
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/print/Paper.html#java.awt.print.Paper()"/>
+        /// </summary>
+        public Paper()
+            : base()
+        {
+        }
 
         #endregion
 

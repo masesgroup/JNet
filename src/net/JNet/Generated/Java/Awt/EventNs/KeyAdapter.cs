@@ -98,6 +98,13 @@ namespace Java.Awt.EventNs
     public partial class KeyAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/KeyAdapter.html#java.awt.event.KeyAdapter()"/>
+        /// </summary>
+        public KeyAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

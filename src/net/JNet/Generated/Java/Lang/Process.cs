@@ -67,6 +67,13 @@ namespace Java.Lang
     public partial class Process
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Process.html#java.lang.Process()"/>
+        /// </summary>
+        public Process()
+            : base()
+        {
+        }
 
         #endregion
 

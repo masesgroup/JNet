@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTextPane.html#javax.swing.JTextPane()"/>
+        /// </summary>
+        public JTextPane()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTextPane.html#javax.swing.JTextPane(javax.swing.text.StyledDocument)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.StyledDocument"/></param>

@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalTheme
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalTheme.html#javax.swing.plaf.metal.MetalTheme()"/>
+        /// </summary>
+        public MetalTheme()
+            : base()
+        {
+        }
 
         #endregion
 

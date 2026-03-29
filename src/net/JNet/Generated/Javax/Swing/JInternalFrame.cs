@@ -104,6 +104,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#javax.swing.JInternalFrame()"/>
+        /// </summary>
+        public JInternalFrame()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#javax.swing.JInternalFrame(java.lang.String,boolean,boolean,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

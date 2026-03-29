@@ -67,6 +67,13 @@ namespace Javax.Swing
     public partial class AbstractSpinnerModel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractSpinnerModel.html#javax.swing.AbstractSpinnerModel()"/>
+        /// </summary>
+        public AbstractSpinnerModel()
+            : base()
+        {
+        }
 
         #endregion
 

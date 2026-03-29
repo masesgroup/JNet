@@ -252,6 +252,13 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/JobAttributes.html#java.awt.JobAttributes()"/>
+        /// </summary>
+        public JobAttributes()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/JobAttributes.html#java.awt.JobAttributes(int,java.awt.JobAttributes.DefaultSelectionType,java.awt.JobAttributes.DestinationType,java.awt.JobAttributes.DialogType,java.lang.String,int,int,java.awt.JobAttributes.MultipleDocumentHandlingType,int[][],java.lang.String,java.awt.JobAttributes.SidesType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

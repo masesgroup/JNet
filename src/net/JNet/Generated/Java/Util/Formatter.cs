@@ -104,6 +104,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter()"/>
+        /// </summary>
+        public Formatter()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.io.File,java.lang.String,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>

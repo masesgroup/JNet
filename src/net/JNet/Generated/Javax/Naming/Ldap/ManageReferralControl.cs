@@ -67,6 +67,13 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/ManageReferralControl.html#javax.naming.ldap.ManageReferralControl()"/>
+        /// </summary>
+        public ManageReferralControl()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/ManageReferralControl.html#javax.naming.ldap.ManageReferralControl(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

@@ -66,6 +66,13 @@ namespace Javax.Xml.Bind.Annotation.Adapters
     public partial class NormalizedStringAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/adapters/NormalizedStringAdapter.html#javax.xml.bind.annotation.adapters.NormalizedStringAdapter()"/>
+        /// </summary>
+        public NormalizedStringAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

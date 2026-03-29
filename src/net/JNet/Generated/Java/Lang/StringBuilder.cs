@@ -67,6 +67,13 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html#java.lang.StringBuilder()"/>
+        /// </summary>
+        public StringBuilder()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html#java.lang.StringBuilder(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
