@@ -29,13 +29,9 @@ namespace Javax.Print.Attribute.Standard
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/MediaPrintableArea.html"/>
     /// </summary>
-    public partial class MediaPrintableArea : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MediaPrintableArea>
+    public partial class MediaPrintableArea : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<MediaPrintableArea>
     {
         const string _bridgeClassName = "javax.print.attribute.standard.MediaPrintableArea";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MediaPrintableArea() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Print.Attribute.Standard
         public MediaPrintableArea(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

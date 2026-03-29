@@ -29,13 +29,9 @@ namespace Javax.Sound.Sampled
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/AudioFormat.html"/>
     /// </summary>
-    public partial class AudioFormat : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AudioFormat>
+    public partial class AudioFormat : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AudioFormat>
     {
         const string _bridgeClassName = "javax.sound.sampled.AudioFormat";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AudioFormat() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Sound.Sampled
         public AudioFormat(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -66,13 +62,9 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/AudioFormat.Encoding.html"/>
         /// </summary>
-        public partial class Encoding : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Encoding>
+        public partial class Encoding : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Encoding>
         {
             const string _bridgeClassName = "javax.sound.sampled.AudioFormat$Encoding";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Encoding() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -84,7 +76,7 @@ namespace Javax.Sound.Sampled
             public Encoding(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

@@ -29,14 +29,9 @@ namespace Javax.Net.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/KeyManagerFactorySpi.html"/>
     /// </summary>
-    public partial class KeyManagerFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyManagerFactorySpi>
+    public partial class KeyManagerFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<KeyManagerFactorySpi>
     {
         const string _bridgeClassName = "javax.net.ssl.KeyManagerFactorySpi";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("KeyManagerFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public KeyManagerFactorySpi() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Net.Ssl
         public KeyManagerFactorySpi(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

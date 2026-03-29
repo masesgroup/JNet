@@ -29,13 +29,9 @@ namespace Java.Lang.Ref
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/ReferenceQueue.html"/>
     /// </summary>
-    public partial class ReferenceQueue : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReferenceQueue>
+    public partial class ReferenceQueue : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ReferenceQueue>
     {
         const string _bridgeClassName = "java.lang.ref.ReferenceQueue";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ReferenceQueue() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Lang.Ref
         public ReferenceQueue(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -71,13 +67,9 @@ namespace Java.Lang.Ref
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/ReferenceQueue.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class ReferenceQueue<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReferenceQueue<T>>
+    public partial class ReferenceQueue<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ReferenceQueue<T>>
     {
         const string _bridgeClassName = "java.lang.ref.ReferenceQueue";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ReferenceQueue() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -89,7 +81,7 @@ namespace Java.Lang.Ref
         public ReferenceQueue(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

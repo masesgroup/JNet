@@ -33,10 +33,6 @@ namespace Java.Awt
     {
         const string _bridgeClassName = "java.awt.JobAttributes";
         /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public JobAttributes() { }
-        /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -47,7 +43,7 @@ namespace Java.Awt
         public JobAttributes(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -66,13 +62,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/JobAttributes.DefaultSelectionType.html"/>
         /// </summary>
-        public partial class DefaultSelectionType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultSelectionType>
+        public partial class DefaultSelectionType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DefaultSelectionType>
         {
             const string _bridgeClassName = "java.awt.JobAttributes$DefaultSelectionType";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public DefaultSelectionType() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -84,7 +76,7 @@ namespace Java.Awt
             public DefaultSelectionType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -107,13 +99,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/JobAttributes.DestinationType.html"/>
         /// </summary>
-        public partial class DestinationType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DestinationType>
+        public partial class DestinationType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DestinationType>
         {
             const string _bridgeClassName = "java.awt.JobAttributes$DestinationType";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public DestinationType() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -125,7 +113,7 @@ namespace Java.Awt
             public DestinationType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -148,13 +136,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/JobAttributes.DialogType.html"/>
         /// </summary>
-        public partial class DialogType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DialogType>
+        public partial class DialogType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DialogType>
         {
             const string _bridgeClassName = "java.awt.JobAttributes$DialogType";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public DialogType() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -166,7 +150,7 @@ namespace Java.Awt
             public DialogType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -189,13 +173,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/JobAttributes.MultipleDocumentHandlingType.html"/>
         /// </summary>
-        public partial class MultipleDocumentHandlingType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MultipleDocumentHandlingType>
+        public partial class MultipleDocumentHandlingType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<MultipleDocumentHandlingType>
         {
             const string _bridgeClassName = "java.awt.JobAttributes$MultipleDocumentHandlingType";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public MultipleDocumentHandlingType() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -207,7 +187,7 @@ namespace Java.Awt
             public MultipleDocumentHandlingType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -230,13 +210,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/JobAttributes.SidesType.html"/>
         /// </summary>
-        public partial class SidesType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SidesType>
+        public partial class SidesType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<SidesType>
         {
             const string _bridgeClassName = "java.awt.JobAttributes$SidesType";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public SidesType() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -248,7 +224,7 @@ namespace Java.Awt
             public SidesType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
