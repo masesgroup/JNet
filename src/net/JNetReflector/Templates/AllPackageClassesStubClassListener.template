@@ -32,7 +32,7 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKA
     /// <summary>
     /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
     /// </summary>
-    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(params object[] args) : base(args) { }
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERDirect(params object[] args) : base(args) { }
 
     /// <inheritdoc/>
     public override bool AutoInit => false;
