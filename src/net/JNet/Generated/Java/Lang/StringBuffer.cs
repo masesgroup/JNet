@@ -67,6 +67,13 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html#java.lang.StringBuffer()"/>
+        /// </summary>
+        public StringBuffer()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html#java.lang.StringBuffer(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

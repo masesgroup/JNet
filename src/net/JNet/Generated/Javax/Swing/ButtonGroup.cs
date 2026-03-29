@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class ButtonGroup
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ButtonGroup.html#javax.swing.ButtonGroup()"/>
+        /// </summary>
+        public ButtonGroup()
+            : base()
+        {
+        }
 
         #endregion
 

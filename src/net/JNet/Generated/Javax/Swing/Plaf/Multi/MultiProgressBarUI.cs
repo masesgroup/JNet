@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiProgressBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiProgressBarUI.html#javax.swing.plaf.multi.MultiProgressBarUI()"/>
+        /// </summary>
+        public MultiProgressBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

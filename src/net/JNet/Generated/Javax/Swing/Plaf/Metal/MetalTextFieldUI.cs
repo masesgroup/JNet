@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalTextFieldUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalTextFieldUI.html#javax.swing.plaf.metal.MetalTextFieldUI()"/>
+        /// </summary>
+        public MetalTextFieldUI()
+            : base()
+        {
+        }
 
         #endregion
 

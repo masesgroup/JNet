@@ -67,6 +67,13 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Deflater.html#java.util.zip.Deflater()"/>
+        /// </summary>
+        public Deflater()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Deflater.html#java.util.zip.Deflater(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

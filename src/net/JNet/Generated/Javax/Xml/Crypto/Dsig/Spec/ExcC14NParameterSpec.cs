@@ -67,6 +67,13 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#javax.xml.crypto.dsig.spec.ExcC14NParameterSpec()"/>
+        /// </summary>
+        public ExcC14NParameterSpec()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#javax.xml.crypto.dsig.spec.ExcC14NParameterSpec(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>

@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicToolBarSeparatorUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicToolBarSeparatorUI.html#javax.swing.plaf.basic.BasicToolBarSeparatorUI()"/>
+        /// </summary>
+        public BasicToolBarSeparatorUI()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthViewportUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthViewportUI.html#javax.swing.plaf.synth.SynthViewportUI()"/>
+        /// </summary>
+        public SynthViewportUI()
+            : base()
+        {
+        }
 
         #endregion
 

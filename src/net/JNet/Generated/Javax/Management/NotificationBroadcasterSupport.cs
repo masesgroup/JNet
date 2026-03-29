@@ -67,6 +67,13 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/NotificationBroadcasterSupport.html#javax.management.NotificationBroadcasterSupport()"/>
+        /// </summary>
+        public NotificationBroadcasterSupport()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/NotificationBroadcasterSupport.html#javax.management.NotificationBroadcasterSupport(java.util.concurrent.Executor,javax.management.MBeanNotificationInfo...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>

@@ -67,6 +67,13 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/StringWriter.html#java.io.StringWriter()"/>
+        /// </summary>
+        public StringWriter()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/StringWriter.html#java.io.StringWriter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

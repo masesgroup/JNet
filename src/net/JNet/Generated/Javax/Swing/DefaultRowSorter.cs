@@ -107,6 +107,13 @@ namespace Javax.Swing
     public partial class DefaultRowSorter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultRowSorter.html#javax.swing.DefaultRowSorter()"/>
+        /// </summary>
+        public DefaultRowSorter()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -202,6 +209,13 @@ namespace Javax.Swing
     public partial class DefaultRowSorter<M, I>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultRowSorter.html#javax.swing.DefaultRowSorter()"/>
+        /// </summary>
+        public DefaultRowSorter()
+            : base()
+        {
+        }
 
         #endregion
 

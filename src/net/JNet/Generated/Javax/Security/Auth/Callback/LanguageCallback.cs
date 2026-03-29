@@ -66,6 +66,13 @@ namespace Javax.Security.Auth.Callback
     public partial class LanguageCallback
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/callback/LanguageCallback.html#javax.security.auth.callback.LanguageCallback()"/>
+        /// </summary>
+        public LanguageCallback()
+            : base()
+        {
+        }
 
         #endregion
 

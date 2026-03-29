@@ -66,6 +66,13 @@ namespace Java.Awt.ImageNs
     public partial class ImageFilter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/ImageFilter.html#java.awt.image.ImageFilter()"/>
+        /// </summary>
+        public ImageFilter()
+            : base()
+        {
+        }
 
         #endregion
 

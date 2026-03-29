@@ -66,6 +66,13 @@ namespace Javax.Management
     public partial class NotificationFilterSupport
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/NotificationFilterSupport.html#javax.management.NotificationFilterSupport()"/>
+        /// </summary>
+        public NotificationFilterSupport()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Management.Monitor
     public partial class StringMonitor
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/StringMonitor.html#javax.management.monitor.StringMonitor()"/>
+        /// </summary>
+        public StringMonitor()
+            : base()
+        {
+        }
 
         #endregion
 

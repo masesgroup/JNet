@@ -67,6 +67,13 @@ namespace Javax.Script
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/script/SimpleBindings.html#javax.script.SimpleBindings()"/>
+        /// </summary>
+        public SimpleBindings()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/script/SimpleBindings.html#javax.script.SimpleBindings(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>

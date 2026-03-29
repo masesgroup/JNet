@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiTableUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiTableUI.html#javax.swing.plaf.multi.MultiTableUI()"/>
+        /// </summary>
+        public MultiTableUI()
+            : base()
+        {
+        }
 
         #endregion
 

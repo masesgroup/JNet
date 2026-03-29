@@ -104,6 +104,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToolBar.html#javax.swing.JToolBar()"/>
+        /// </summary>
+        public JToolBar()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToolBar.html#javax.swing.JToolBar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -271,6 +278,13 @@ namespace Javax.Swing
         public partial class Separator
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToolBar.Separator.html#javax.swing.JToolBar$Separator()"/>
+            /// </summary>
+            public Separator()
+                : base()
+            {
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToolBar.Separator.html#javax.swing.JToolBar$Separator(java.awt.Dimension)"/>
             /// </summary>

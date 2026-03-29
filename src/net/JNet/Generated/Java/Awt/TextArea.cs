@@ -67,6 +67,15 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextArea.html#java.awt.TextArea()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public TextArea()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextArea.html#java.awt.TextArea(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

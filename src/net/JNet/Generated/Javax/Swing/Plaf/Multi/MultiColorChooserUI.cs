@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiColorChooserUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiColorChooserUI.html#javax.swing.plaf.multi.MultiColorChooserUI()"/>
+        /// </summary>
+        public MultiColorChooserUI()
+            : base()
+        {
+        }
 
         #endregion
 

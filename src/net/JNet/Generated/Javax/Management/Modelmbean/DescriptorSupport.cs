@@ -67,6 +67,13 @@ namespace Javax.Management.Modelmbean
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/DescriptorSupport.html#javax.management.modelmbean.DescriptorSupport()"/>
+        /// </summary>
+        public DescriptorSupport()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/DescriptorSupport.html#javax.management.modelmbean.DescriptorSupport(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

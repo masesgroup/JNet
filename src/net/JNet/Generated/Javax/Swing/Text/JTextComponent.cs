@@ -178,6 +178,13 @@ namespace Javax.Swing.Text
     public partial class JTextComponent
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/JTextComponent.html#javax.swing.text.JTextComponent()"/>
+        /// </summary>
+        public JTextComponent()
+            : base()
+        {
+        }
 
         #endregion
 

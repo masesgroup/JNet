@@ -98,6 +98,13 @@ namespace Java.Awt.EventNs
     public partial class MouseAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseAdapter.html#java.awt.event.MouseAdapter()"/>
+        /// </summary>
+        public MouseAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

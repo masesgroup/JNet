@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthPainter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthPainter.html#javax.swing.plaf.synth.SynthPainter()"/>
+        /// </summary>
+        public SynthPainter()
+            : base()
+        {
+        }
 
         #endregion
 

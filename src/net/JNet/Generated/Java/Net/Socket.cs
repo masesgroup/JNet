@@ -67,6 +67,13 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket()"/>
+        /// </summary>
+        public Socket()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.lang.String,int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

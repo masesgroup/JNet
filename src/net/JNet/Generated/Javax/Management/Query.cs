@@ -66,6 +66,13 @@ namespace Javax.Management
     public partial class Query
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/Query.html#javax.management.Query()"/>
+        /// </summary>
+        public Query()
+            : base()
+        {
+        }
 
         #endregion
 

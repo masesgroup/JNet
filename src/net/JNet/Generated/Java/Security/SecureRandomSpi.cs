@@ -67,6 +67,13 @@ namespace Java.Security
     public partial class SecureRandomSpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandomSpi.html#java.security.SecureRandomSpi()"/>
+        /// </summary>
+        public SecureRandomSpi()
+            : base()
+        {
+        }
 
         #endregion
 

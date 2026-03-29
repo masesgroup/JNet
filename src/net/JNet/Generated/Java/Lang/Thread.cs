@@ -104,6 +104,13 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#java.lang.Thread()"/>
+        /// </summary>
+        public Thread()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#java.lang.Thread(java.lang.Runnable,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>

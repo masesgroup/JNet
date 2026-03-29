@@ -66,6 +66,15 @@ namespace Java.Awt.Dnd
     public partial class DragSource
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSource.html#java.awt.dnd.DragSource()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public DragSource()
+            : base()
+        {
+        }
 
         #endregion
 

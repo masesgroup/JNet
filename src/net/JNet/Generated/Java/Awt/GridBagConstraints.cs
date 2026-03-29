@@ -67,6 +67,13 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/GridBagConstraints.html#java.awt.GridBagConstraints()"/>
+        /// </summary>
+        public GridBagConstraints()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/GridBagConstraints.html#java.awt.GridBagConstraints(int,int,int,int,double,double,int,int,java.awt.Insets,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

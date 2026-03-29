@@ -177,6 +177,13 @@ namespace Javax.Swing.Text.Html
     public partial class HTML
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTML.html#javax.swing.text.html.HTML()"/>
+        /// </summary>
+        public HTML()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -761,6 +768,13 @@ namespace Javax.Swing.Text.Html
         public partial class Tag
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTML.Tag.html#javax.swing.text.html.HTML$Tag()"/>
+            /// </summary>
+            public Tag()
+                : base()
+            {
+            }
 
             #endregion
 

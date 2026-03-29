@@ -66,6 +66,13 @@ namespace Java.Awt
     public partial class DefaultKeyboardFocusManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/DefaultKeyboardFocusManager.html#java.awt.DefaultKeyboardFocusManager()"/>
+        /// </summary>
+        public DefaultKeyboardFocusManager()
+            : base()
+        {
+        }
 
         #endregion
 

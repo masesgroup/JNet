@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicTextAreaUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTextAreaUI.html#javax.swing.plaf.basic.BasicTextAreaUI()"/>
+        /// </summary>
+        public BasicTextAreaUI()
+            : base()
+        {
+        }
 
         #endregion
 

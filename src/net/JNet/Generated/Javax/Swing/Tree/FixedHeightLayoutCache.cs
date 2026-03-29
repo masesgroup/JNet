@@ -66,6 +66,13 @@ namespace Javax.Swing.Tree
     public partial class FixedHeightLayoutCache
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/FixedHeightLayoutCache.html#javax.swing.tree.FixedHeightLayoutCache()"/>
+        /// </summary>
+        public FixedHeightLayoutCache()
+            : base()
+        {
+        }
 
         #endregion
 

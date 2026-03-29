@@ -67,6 +67,13 @@ namespace Javax.Security.Auth.Login
     public partial class ConfigurationSpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/login/ConfigurationSpi.html#javax.security.auth.login.ConfigurationSpi()"/>
+        /// </summary>
+        public ConfigurationSpi()
+            : base()
+        {
+        }
 
         #endregion
 

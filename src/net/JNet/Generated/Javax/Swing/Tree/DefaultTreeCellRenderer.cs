@@ -66,6 +66,13 @@ namespace Javax.Swing.Tree
     public partial class DefaultTreeCellRenderer
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultTreeCellRenderer.html#javax.swing.tree.DefaultTreeCellRenderer()"/>
+        /// </summary>
+        public DefaultTreeCellRenderer()
+            : base()
+        {
+        }
 
         #endregion
 

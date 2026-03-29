@@ -67,6 +67,13 @@ namespace Javax.Security.Cert
     public partial class Certificate
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/cert/Certificate.html#javax.security.cert.Certificate()"/>
+        /// </summary>
+        public Certificate()
+            : base()
+        {
+        }
 
         #endregion
 

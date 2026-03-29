@@ -67,6 +67,13 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLParameters.html#javax.net.ssl.SSLParameters()"/>
+        /// </summary>
+        public SSLParameters()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLParameters.html#javax.net.ssl.SSLParameters(java.lang.String[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

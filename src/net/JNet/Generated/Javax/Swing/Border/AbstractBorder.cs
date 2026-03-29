@@ -67,6 +67,13 @@ namespace Javax.Swing.Border
     public partial class AbstractBorder
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/AbstractBorder.html#javax.swing.border.AbstractBorder()"/>
+        /// </summary>
+        public AbstractBorder()
+            : base()
+        {
+        }
 
         #endregion
 

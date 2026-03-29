@@ -66,6 +66,13 @@ namespace Java.Beans
     public partial class Encoder
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/Encoder.html#java.beans.Encoder()"/>
+        /// </summary>
+        public Encoder()
+            : base()
+        {
+        }
 
         #endregion
 

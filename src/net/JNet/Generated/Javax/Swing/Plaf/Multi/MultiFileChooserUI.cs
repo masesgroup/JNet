@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiFileChooserUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiFileChooserUI.html#javax.swing.plaf.multi.MultiFileChooserUI()"/>
+        /// </summary>
+        public MultiFileChooserUI()
+            : base()
+        {
+        }
 
         #endregion
 

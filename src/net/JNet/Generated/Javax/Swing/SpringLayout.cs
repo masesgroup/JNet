@@ -103,6 +103,13 @@ namespace Javax.Swing
     public partial class SpringLayout
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpringLayout.html#javax.swing.SpringLayout()"/>
+        /// </summary>
+        public SpringLayout()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -311,6 +318,13 @@ namespace Javax.Swing
         public partial class Constraints
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpringLayout.Constraints.html#javax.swing.SpringLayout$Constraints()"/>
+            /// </summary>
+            public Constraints()
+                : base()
+            {
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpringLayout.Constraints.html#javax.swing.SpringLayout$Constraints(java.awt.Component)"/>
             /// </summary>

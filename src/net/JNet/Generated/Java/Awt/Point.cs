@@ -67,6 +67,13 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Point.html#java.awt.Point()"/>
+        /// </summary>
+        public Point()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Point.html#java.awt.Point(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

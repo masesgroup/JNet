@@ -67,6 +67,13 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String()"/>
+        /// </summary>
+        public String()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],int,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>

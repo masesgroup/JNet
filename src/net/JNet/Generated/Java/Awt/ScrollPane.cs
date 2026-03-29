@@ -67,6 +67,15 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/ScrollPane.html#java.awt.ScrollPane()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public ScrollPane()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/ScrollPane.html#java.awt.ScrollPane(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

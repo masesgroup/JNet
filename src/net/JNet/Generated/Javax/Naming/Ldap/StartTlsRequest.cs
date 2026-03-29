@@ -66,6 +66,13 @@ namespace Javax.Naming.Ldap
     public partial class StartTlsRequest
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/StartTlsRequest.html#javax.naming.ldap.StartTlsRequest()"/>
+        /// </summary>
+        public StartTlsRequest()
+            : base()
+        {
+        }
 
         #endregion
 

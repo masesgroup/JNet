@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog()"/>
+        /// </summary>
+        public JDialog()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Dialog,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>

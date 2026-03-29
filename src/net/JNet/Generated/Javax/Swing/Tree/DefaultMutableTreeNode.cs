@@ -67,6 +67,13 @@ namespace Javax.Swing.Tree
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultMutableTreeNode.html#javax.swing.tree.DefaultMutableTreeNode()"/>
+        /// </summary>
+        public DefaultMutableTreeNode()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultMutableTreeNode.html#javax.swing.tree.DefaultMutableTreeNode(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>

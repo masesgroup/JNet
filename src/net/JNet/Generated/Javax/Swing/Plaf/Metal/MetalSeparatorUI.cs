@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalSeparatorUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalSeparatorUI.html#javax.swing.plaf.metal.MetalSeparatorUI()"/>
+        /// </summary>
+        public MetalSeparatorUI()
+            : base()
+        {
+        }
 
         #endregion
 

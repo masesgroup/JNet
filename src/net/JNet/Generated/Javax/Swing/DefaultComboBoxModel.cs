@@ -105,6 +105,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultComboBoxModel.html#javax.swing.DefaultComboBoxModel()"/>
+        /// </summary>
+        public DefaultComboBoxModel()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultComboBoxModel.html#javax.swing.DefaultComboBoxModel(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
@@ -203,6 +210,13 @@ namespace Javax.Swing
     public partial class DefaultComboBoxModel<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultComboBoxModel.html#javax.swing.DefaultComboBoxModel()"/>
+        /// </summary>
+        public DefaultComboBoxModel()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultComboBoxModel.html#javax.swing.DefaultComboBoxModel(java.lang.Object[])"/>
         /// </summary>

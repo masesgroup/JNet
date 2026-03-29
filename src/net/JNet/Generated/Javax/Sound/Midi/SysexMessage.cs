@@ -67,6 +67,13 @@ namespace Javax.Sound.Midi
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/SysexMessage.html#javax.sound.midi.SysexMessage()"/>
+        /// </summary>
+        public SysexMessage()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/SysexMessage.html#javax.sound.midi.SysexMessage(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>

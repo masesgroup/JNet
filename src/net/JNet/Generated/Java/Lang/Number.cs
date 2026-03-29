@@ -67,6 +67,13 @@ namespace Java.Lang
     public partial class Number
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html#java.lang.Number()"/>
+        /// </summary>
+        public Number()
+            : base()
+        {
+        }
 
         #endregion
 

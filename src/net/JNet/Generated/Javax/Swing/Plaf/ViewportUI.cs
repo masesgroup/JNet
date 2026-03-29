@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class ViewportUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ViewportUI.html#javax.swing.plaf.ViewportUI()"/>
+        /// </summary>
+        public ViewportUI()
+            : base()
+        {
+        }
 
         #endregion
 

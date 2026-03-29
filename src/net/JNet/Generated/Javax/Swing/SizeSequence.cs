@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SizeSequence.html#javax.swing.SizeSequence()"/>
+        /// </summary>
+        public SizeSequence()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SizeSequence.html#javax.swing.SizeSequence(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

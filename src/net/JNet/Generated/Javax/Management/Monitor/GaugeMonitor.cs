@@ -66,6 +66,13 @@ namespace Javax.Management.Monitor
     public partial class GaugeMonitor
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitor.html#javax.management.monitor.GaugeMonitor()"/>
+        /// </summary>
+        public GaugeMonitor()
+            : base()
+        {
+        }
 
         #endregion
 

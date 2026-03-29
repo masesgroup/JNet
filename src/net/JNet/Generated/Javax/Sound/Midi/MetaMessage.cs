@@ -67,6 +67,13 @@ namespace Javax.Sound.Midi
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/MetaMessage.html#javax.sound.midi.MetaMessage()"/>
+        /// </summary>
+        public MetaMessage()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/MetaMessage.html#javax.sound.midi.MetaMessage(int,byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

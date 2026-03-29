@@ -67,6 +67,13 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/ByteArrayOutputStream.html#java.io.ByteArrayOutputStream()"/>
+        /// </summary>
+        public ByteArrayOutputStream()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/ByteArrayOutputStream.html#java.io.ByteArrayOutputStream(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

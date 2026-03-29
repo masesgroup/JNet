@@ -67,6 +67,13 @@ namespace Javax.Sound.Sampled.Spi
     public partial class AudioFileWriter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/spi/AudioFileWriter.html#javax.sound.sampled.spi.AudioFileWriter()"/>
+        /// </summary>
+        public AudioFileWriter()
+            : base()
+        {
+        }
 
         #endregion
 

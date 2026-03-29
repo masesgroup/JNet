@@ -67,6 +67,13 @@ namespace Javax.Xml.Soap
     public partial class SOAPFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/soap/SOAPFactory.html#javax.xml.soap.SOAPFactory()"/>
+        /// </summary>
+        public SOAPFactory()
+            : base()
+        {
+        }
 
         #endregion
 

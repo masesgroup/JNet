@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicEditorPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicEditorPaneUI.html#javax.swing.plaf.basic.BasicEditorPaneUI()"/>
+        /// </summary>
+        public BasicEditorPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

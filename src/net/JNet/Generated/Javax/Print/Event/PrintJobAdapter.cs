@@ -98,6 +98,13 @@ namespace Javax.Print.Event
     public partial class PrintJobAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/event/PrintJobAdapter.html#javax.print.event.PrintJobAdapter()"/>
+        /// </summary>
+        public PrintJobAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

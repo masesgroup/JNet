@@ -66,6 +66,13 @@ namespace Java.Util
     public partial class LongSummaryStatistics
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LongSummaryStatistics.html#java.util.LongSummaryStatistics()"/>
+        /// </summary>
+        public LongSummaryStatistics()
+            : base()
+        {
+        }
 
         #endregion
 

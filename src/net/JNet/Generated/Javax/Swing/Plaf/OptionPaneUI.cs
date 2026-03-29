@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class OptionPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/OptionPaneUI.html#javax.swing.plaf.OptionPaneUI()"/>
+        /// </summary>
+        public OptionPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

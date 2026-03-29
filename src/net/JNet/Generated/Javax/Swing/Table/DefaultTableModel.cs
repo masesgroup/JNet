@@ -67,6 +67,13 @@ namespace Javax.Swing.Table
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/DefaultTableModel.html#javax.swing.table.DefaultTableModel()"/>
+        /// </summary>
+        public DefaultTableModel()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/DefaultTableModel.html#javax.swing.table.DefaultTableModel(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

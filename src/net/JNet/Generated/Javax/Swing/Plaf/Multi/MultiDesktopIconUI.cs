@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiDesktopIconUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiDesktopIconUI.html#javax.swing.plaf.multi.MultiDesktopIconUI()"/>
+        /// </summary>
+        public MultiDesktopIconUI()
+            : base()
+        {
+        }
 
         #endregion
 

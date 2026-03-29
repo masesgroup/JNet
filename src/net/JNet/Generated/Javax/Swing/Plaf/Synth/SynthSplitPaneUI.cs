@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthSplitPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthSplitPaneUI.html#javax.swing.plaf.synth.SynthSplitPaneUI()"/>
+        /// </summary>
+        public SynthSplitPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

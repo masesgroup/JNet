@@ -66,6 +66,13 @@ namespace Java.Io
     public partial class FileDescriptor
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/FileDescriptor.html#java.io.FileDescriptor()"/>
+        /// </summary>
+        public FileDescriptor()
+            : base()
+        {
+        }
 
         #endregion
 

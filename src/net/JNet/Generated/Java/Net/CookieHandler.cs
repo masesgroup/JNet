@@ -67,6 +67,13 @@ namespace Java.Net
     public partial class CookieHandler
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/CookieHandler.html#java.net.CookieHandler()"/>
+        /// </summary>
+        public CookieHandler()
+            : base()
+        {
+        }
 
         #endregion
 

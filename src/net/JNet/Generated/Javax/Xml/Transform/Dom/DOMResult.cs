@@ -67,6 +67,13 @@ namespace Javax.Xml.Transform.Dom
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/dom/DOMResult.html#javax.xml.transform.dom.DOMResult()"/>
+        /// </summary>
+        public DOMResult()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/dom/DOMResult.html#javax.xml.transform.dom.DOMResult(org.w3c.dom.Node,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>

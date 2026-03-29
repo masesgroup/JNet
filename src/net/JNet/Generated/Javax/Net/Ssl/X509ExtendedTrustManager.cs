@@ -67,6 +67,13 @@ namespace Javax.Net.Ssl
     public partial class X509ExtendedTrustManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/X509ExtendedTrustManager.html#javax.net.ssl.X509ExtendedTrustManager()"/>
+        /// </summary>
+        public X509ExtendedTrustManager()
+            : base()
+        {
+        }
 
         #endregion
 

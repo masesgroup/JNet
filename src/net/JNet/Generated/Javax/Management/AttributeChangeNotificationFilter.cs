@@ -66,6 +66,13 @@ namespace Javax.Management
     public partial class AttributeChangeNotificationFilter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeChangeNotificationFilter.html#javax.management.AttributeChangeNotificationFilter()"/>
+        /// </summary>
+        public AttributeChangeNotificationFilter()
+            : base()
+        {
+        }
 
         #endregion
 

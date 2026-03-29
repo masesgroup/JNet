@@ -66,6 +66,13 @@ namespace Java.Beans
     public partial class Beans
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/Beans.html#java.beans.Beans()"/>
+        /// </summary>
+        public Beans()
+            : base()
+        {
+        }
 
         #endregion
 

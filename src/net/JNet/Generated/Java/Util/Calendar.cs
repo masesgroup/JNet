@@ -803,6 +803,13 @@ namespace Java.Util
         public partial class Builder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.Builder.html#java.util.Calendar$Builder()"/>
+            /// </summary>
+            public Builder()
+                : base()
+            {
+            }
 
             #endregion
 

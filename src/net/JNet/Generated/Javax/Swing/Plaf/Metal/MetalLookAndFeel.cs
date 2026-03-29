@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalLookAndFeel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#javax.swing.plaf.metal.MetalLookAndFeel()"/>
+        /// </summary>
+        public MetalLookAndFeel()
+            : base()
+        {
+        }
 
         #endregion
 

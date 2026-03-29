@@ -67,6 +67,13 @@ namespace Javax.Xml.Bind
     public partial class JAXBIntrospector
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/JAXBIntrospector.html#javax.xml.bind.JAXBIntrospector()"/>
+        /// </summary>
+        public JAXBIntrospector()
+            : base()
+        {
+        }
 
         #endregion
 

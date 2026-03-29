@@ -67,6 +67,13 @@ namespace Javax.Xml.Ws.Soap
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/soap/MTOMFeature.html#javax.xml.ws.soap.MTOMFeature()"/>
+        /// </summary>
+        public MTOMFeature()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/soap/MTOMFeature.html#javax.xml.ws.soap.MTOMFeature(boolean,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

@@ -67,6 +67,13 @@ namespace Java.Awt
     public partial class FocusTraversalPolicy
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FocusTraversalPolicy.html#java.awt.FocusTraversalPolicy()"/>
+        /// </summary>
+        public FocusTraversalPolicy()
+            : base()
+        {
+        }
 
         #endregion
 

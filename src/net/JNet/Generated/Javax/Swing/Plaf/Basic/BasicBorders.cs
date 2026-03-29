@@ -362,6 +362,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicBorders
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicBorders.html#javax.swing.plaf.basic.BasicBorders()"/>
+        /// </summary>
+        public BasicBorders()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -541,6 +548,13 @@ namespace Javax.Swing.Plaf.Basic
         public partial class MarginBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicBorders.MarginBorder.html#javax.swing.plaf.basic.BasicBorders$MarginBorder()"/>
+            /// </summary>
+            public MarginBorder()
+                : base()
+            {
+            }
 
             #endregion
 

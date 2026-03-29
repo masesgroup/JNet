@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalToggleButtonUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalToggleButtonUI.html#javax.swing.plaf.metal.MetalToggleButtonUI()"/>
+        /// </summary>
+        public MetalToggleButtonUI()
+            : base()
+        {
+        }
 
         #endregion
 

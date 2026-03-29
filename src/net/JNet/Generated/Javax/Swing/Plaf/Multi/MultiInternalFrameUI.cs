@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiInternalFrameUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiInternalFrameUI.html#javax.swing.plaf.multi.MultiInternalFrameUI()"/>
+        /// </summary>
+        public MultiInternalFrameUI()
+            : base()
+        {
+        }
 
         #endregion
 

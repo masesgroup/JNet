@@ -67,6 +67,15 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Button.html#java.awt.Button()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public Button()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Button.html#java.awt.Button(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

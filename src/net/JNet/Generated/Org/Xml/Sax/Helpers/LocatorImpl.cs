@@ -67,6 +67,13 @@ namespace Org.Xml.Sax.Helpers
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/LocatorImpl.html#org.xml.sax.helpers.LocatorImpl()"/>
+        /// </summary>
+        public LocatorImpl()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/LocatorImpl.html#org.xml.sax.helpers.LocatorImpl(org.xml.sax.Locator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>

@@ -67,6 +67,13 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/StreamHandler.html#java.util.logging.StreamHandler()"/>
+        /// </summary>
+        public StreamHandler()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/StreamHandler.html#java.util.logging.StreamHandler(java.io.OutputStream,java.util.logging.Formatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>

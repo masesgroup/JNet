@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalCheckBoxIcon
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalCheckBoxIcon.html#javax.swing.plaf.metal.MetalCheckBoxIcon()"/>
+        /// </summary>
+        public MetalCheckBoxIcon()
+            : base()
+        {
+        }
 
         #endregion
 

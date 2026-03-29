@@ -142,6 +142,13 @@ namespace Java.Util.Concurrent
     public partial class CompletableFuture
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#java.util.concurrent.CompletableFuture()"/>
+        /// </summary>
+        public CompletableFuture()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -762,6 +769,13 @@ namespace Java.Util.Concurrent
     public partial class CompletableFuture<T>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#java.util.concurrent.CompletableFuture()"/>
+        /// </summary>
+        public CompletableFuture()
+            : base()
+        {
+        }
 
         #endregion
 

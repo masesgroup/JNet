@@ -67,6 +67,13 @@ namespace Javax.Xml.Ws.Spi.Http
     public partial class HttpHandler
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/spi/http/HttpHandler.html#javax.xml.ws.spi.http.HttpHandler()"/>
+        /// </summary>
+        public HttpHandler()
+            : base()
+        {
+        }
 
         #endregion
 

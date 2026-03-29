@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class DefaultFocusManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultFocusManager.html#javax.swing.DefaultFocusManager()"/>
+        /// </summary>
+        public DefaultFocusManager()
+            : base()
+        {
+        }
 
         #endregion
 

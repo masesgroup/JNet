@@ -66,6 +66,13 @@ namespace Java.Awt
     public partial class EventQueue
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/EventQueue.html#java.awt.EventQueue()"/>
+        /// </summary>
+        public EventQueue()
+            : base()
+        {
+        }
 
         #endregion
 

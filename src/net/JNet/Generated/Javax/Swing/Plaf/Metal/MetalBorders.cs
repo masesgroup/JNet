@@ -584,6 +584,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalBorders
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.html#javax.swing.plaf.metal.MetalBorders()"/>
+        /// </summary>
+        public MetalBorders()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -643,6 +650,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class ButtonBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.ButtonBorder.html#javax.swing.plaf.metal.MetalBorders$ButtonBorder()"/>
+            /// </summary>
+            public ButtonBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -678,6 +692,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class Flush3DBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.Flush3DBorder.html#javax.swing.plaf.metal.MetalBorders$Flush3DBorder()"/>
+            /// </summary>
+            public Flush3DBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -713,6 +734,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class InternalFrameBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.InternalFrameBorder.html#javax.swing.plaf.metal.MetalBorders$InternalFrameBorder()"/>
+            /// </summary>
+            public InternalFrameBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -748,6 +776,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class MenuBarBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.MenuBarBorder.html#javax.swing.plaf.metal.MetalBorders$MenuBarBorder()"/>
+            /// </summary>
+            public MenuBarBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -783,6 +818,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class MenuItemBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.MenuItemBorder.html#javax.swing.plaf.metal.MetalBorders$MenuItemBorder()"/>
+            /// </summary>
+            public MenuItemBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -818,6 +860,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class OptionDialogBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.OptionDialogBorder.html#javax.swing.plaf.metal.MetalBorders$OptionDialogBorder()"/>
+            /// </summary>
+            public OptionDialogBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -853,6 +902,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class PaletteBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.PaletteBorder.html#javax.swing.plaf.metal.MetalBorders$PaletteBorder()"/>
+            /// </summary>
+            public PaletteBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -888,6 +944,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class PopupMenuBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.PopupMenuBorder.html#javax.swing.plaf.metal.MetalBorders$PopupMenuBorder()"/>
+            /// </summary>
+            public PopupMenuBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -923,6 +986,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class RolloverButtonBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.RolloverButtonBorder.html#javax.swing.plaf.metal.MetalBorders$RolloverButtonBorder()"/>
+            /// </summary>
+            public RolloverButtonBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -954,6 +1024,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class ScrollPaneBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.ScrollPaneBorder.html#javax.swing.plaf.metal.MetalBorders$ScrollPaneBorder()"/>
+            /// </summary>
+            public ScrollPaneBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -989,6 +1066,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class TableHeaderBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.TableHeaderBorder.html#javax.swing.plaf.metal.MetalBorders$TableHeaderBorder()"/>
+            /// </summary>
+            public TableHeaderBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -1020,6 +1104,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class TextFieldBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.TextFieldBorder.html#javax.swing.plaf.metal.MetalBorders$TextFieldBorder()"/>
+            /// </summary>
+            public TextFieldBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -1051,6 +1142,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class ToggleButtonBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.ToggleButtonBorder.html#javax.swing.plaf.metal.MetalBorders$ToggleButtonBorder()"/>
+            /// </summary>
+            public ToggleButtonBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -1082,6 +1180,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class ToolBarBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.ToolBarBorder.html#javax.swing.plaf.metal.MetalBorders$ToolBarBorder()"/>
+            /// </summary>
+            public ToolBarBorder()
+                : base()
+            {
+            }
 
             #endregion
 

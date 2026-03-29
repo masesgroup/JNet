@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class FileChooserUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/FileChooserUI.html#javax.swing.plaf.FileChooserUI()"/>
+        /// </summary>
+        public FileChooserUI()
+            : base()
+        {
+        }
 
         #endregion
 

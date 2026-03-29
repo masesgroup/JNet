@@ -104,6 +104,13 @@ namespace Java.Lang
     public partial class InheritableThreadLocal
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/InheritableThreadLocal.html#java.lang.InheritableThreadLocal()"/>
+        /// </summary>
+        public InheritableThreadLocal()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -135,6 +142,13 @@ namespace Java.Lang
     public partial class InheritableThreadLocal<T>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/InheritableThreadLocal.html#java.lang.InheritableThreadLocal()"/>
+        /// </summary>
+        public InheritableThreadLocal()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Javax.Xml.Ws
     public partial class EndpointContext
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/EndpointContext.html#javax.xml.ws.EndpointContext()"/>
+        /// </summary>
+        public EndpointContext()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Org.Ietf.Jgss
     public partial class GSSManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/org/ietf/jgss/GSSManager.html#org.ietf.jgss.GSSManager()"/>
+        /// </summary>
+        public GSSManager()
+            : base()
+        {
+        }
 
         #endregion
 

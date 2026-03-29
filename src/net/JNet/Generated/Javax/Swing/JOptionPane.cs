@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JOptionPane.html#javax.swing.JOptionPane()"/>
+        /// </summary>
+        public JOptionPane()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JOptionPane.html#javax.swing.JOptionPane(java.lang.Object,int,int,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>

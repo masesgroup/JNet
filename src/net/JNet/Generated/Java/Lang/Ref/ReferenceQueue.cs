@@ -104,6 +104,13 @@ namespace Java.Lang.Ref
     public partial class ReferenceQueue
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/ReferenceQueue.html#java.lang.ref.ReferenceQueue()"/>
+        /// </summary>
+        public ReferenceQueue()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -163,6 +170,13 @@ namespace Java.Lang.Ref
     public partial class ReferenceQueue<T>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/ReferenceQueue.html#java.lang.ref.ReferenceQueue()"/>
+        /// </summary>
+        public ReferenceQueue()
+            : base()
+        {
+        }
 
         #endregion
 

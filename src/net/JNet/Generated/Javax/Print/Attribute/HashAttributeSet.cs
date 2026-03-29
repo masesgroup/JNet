@@ -67,6 +67,13 @@ namespace Javax.Print.Attribute
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashAttributeSet.html#javax.print.attribute.HashAttributeSet()"/>
+        /// </summary>
+        public HashAttributeSet()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashAttributeSet.html#javax.print.attribute.HashAttributeSet(javax.print.attribute.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>

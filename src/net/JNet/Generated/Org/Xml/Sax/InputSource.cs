@@ -67,6 +67,13 @@ namespace Org.Xml.Sax
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/InputSource.html#org.xml.sax.InputSource()"/>
+        /// </summary>
+        public InputSource()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/InputSource.html#org.xml.sax.InputSource(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>

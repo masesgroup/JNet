@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class ComponentUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ComponentUI.html#javax.swing.plaf.ComponentUI()"/>
+        /// </summary>
+        public ComponentUI()
+            : base()
+        {
+        }
 
         #endregion
 

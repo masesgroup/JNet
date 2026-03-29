@@ -67,6 +67,15 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CheckboxMenuItem.html#java.awt.CheckboxMenuItem()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public CheckboxMenuItem()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CheckboxMenuItem.html#java.awt.CheckboxMenuItem(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

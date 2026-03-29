@@ -67,6 +67,15 @@ namespace Javax.Naming.Directory
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/InitialDirContext.html#javax.naming.directory.InitialDirContext()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public InitialDirContext()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/InitialDirContext.html#javax.naming.directory.InitialDirContext(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>

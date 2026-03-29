@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthToolTipUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthToolTipUI.html#javax.swing.plaf.synth.SynthToolTipUI()"/>
+        /// </summary>
+        public SynthToolTipUI()
+            : base()
+        {
+        }
 
         #endregion
 

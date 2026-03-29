@@ -67,6 +67,13 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#java.awt.Rectangle()"/>
+        /// </summary>
+        public Rectangle()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#java.awt.Rectangle(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

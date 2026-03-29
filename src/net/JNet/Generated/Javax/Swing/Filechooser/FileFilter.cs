@@ -67,6 +67,13 @@ namespace Javax.Swing.Filechooser
     public partial class FileFilter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/filechooser/FileFilter.html#javax.swing.filechooser.FileFilter()"/>
+        /// </summary>
+        public FileFilter()
+            : base()
+        {
+        }
 
         #endregion
 

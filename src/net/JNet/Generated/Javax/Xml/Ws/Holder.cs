@@ -105,6 +105,13 @@ namespace Javax.Xml.Ws
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/Holder.html#javax.xml.ws.Holder()"/>
+        /// </summary>
+        public Holder()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/Holder.html#javax.xml.ws.Holder(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -147,6 +154,13 @@ namespace Javax.Xml.Ws
     public partial class Holder<T>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/Holder.html#javax.xml.ws.Holder()"/>
+        /// </summary>
+        public Holder()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/Holder.html#javax.xml.ws.Holder(java.lang.Object)"/>
         /// </summary>

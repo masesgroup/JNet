@@ -67,6 +67,13 @@ namespace Javax.Xml.Soap
     public partial class AttachmentPart
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/soap/AttachmentPart.html#javax.xml.soap.AttachmentPart()"/>
+        /// </summary>
+        public AttachmentPart()
+            : base()
+        {
+        }
 
         #endregion
 

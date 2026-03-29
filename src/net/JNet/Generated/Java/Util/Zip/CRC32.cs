@@ -66,6 +66,13 @@ namespace Java.Util.Zip
     public partial class CRC32
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/CRC32.html#java.util.zip.CRC32()"/>
+        /// </summary>
+        public CRC32()
+            : base()
+        {
+        }
 
         #endregion
 

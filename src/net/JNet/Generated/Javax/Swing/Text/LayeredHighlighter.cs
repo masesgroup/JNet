@@ -105,6 +105,13 @@ namespace Javax.Swing.Text
     public partial class LayeredHighlighter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/LayeredHighlighter.html#javax.swing.text.LayeredHighlighter()"/>
+        /// </summary>
+        public LayeredHighlighter()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -142,6 +149,13 @@ namespace Javax.Swing.Text
         public partial class LayerPainter
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/LayeredHighlighter.LayerPainter.html#javax.swing.text.LayeredHighlighter$LayerPainter()"/>
+            /// </summary>
+            public LayerPainter()
+                : base()
+            {
+            }
 
             #endregion
 

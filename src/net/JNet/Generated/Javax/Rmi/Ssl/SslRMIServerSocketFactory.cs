@@ -67,6 +67,13 @@ namespace Javax.Rmi.Ssl
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/ssl/SslRMIServerSocketFactory.html#javax.rmi.ssl.SslRMIServerSocketFactory()"/>
+        /// </summary>
+        public SslRMIServerSocketFactory()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/ssl/SslRMIServerSocketFactory.html#javax.rmi.ssl.SslRMIServerSocketFactory(java.lang.String[],java.lang.String[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

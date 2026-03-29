@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class SeparatorUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/SeparatorUI.html#javax.swing.plaf.SeparatorUI()"/>
+        /// </summary>
+        public SeparatorUI()
+            : base()
+        {
+        }
 
         #endregion
 

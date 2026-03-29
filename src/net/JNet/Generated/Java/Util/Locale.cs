@@ -719,6 +719,13 @@ namespace Java.Util
         public partial class Builder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.Builder.html#java.util.Locale$Builder()"/>
+            /// </summary>
+            public Builder()
+                : base()
+            {
+            }
 
             #endregion
 

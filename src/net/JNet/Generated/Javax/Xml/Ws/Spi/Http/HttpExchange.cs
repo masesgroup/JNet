@@ -67,6 +67,13 @@ namespace Javax.Xml.Ws.Spi.Http
     public partial class HttpExchange
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/spi/http/HttpExchange.html#javax.xml.ws.spi.http.HttpExchange()"/>
+        /// </summary>
+        public HttpExchange()
+            : base()
+        {
+        }
 
         #endregion
 

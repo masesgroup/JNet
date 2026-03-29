@@ -67,6 +67,13 @@ namespace Javax.Script
     public partial class CompiledScript
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/script/CompiledScript.html#javax.script.CompiledScript()"/>
+        /// </summary>
+        public CompiledScript()
+            : base()
+        {
+        }
 
         #endregion
 

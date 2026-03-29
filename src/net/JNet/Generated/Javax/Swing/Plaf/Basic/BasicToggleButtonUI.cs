@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicToggleButtonUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicToggleButtonUI.html#javax.swing.plaf.basic.BasicToggleButtonUI()"/>
+        /// </summary>
+        public BasicToggleButtonUI()
+            : base()
+        {
+        }
 
         #endregion
 

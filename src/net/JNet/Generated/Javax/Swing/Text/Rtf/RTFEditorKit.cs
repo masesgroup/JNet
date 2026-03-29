@@ -66,6 +66,13 @@ namespace Javax.Swing.Text.Rtf
     public partial class RTFEditorKit
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/rtf/RTFEditorKit.html#javax.swing.text.rtf.RTFEditorKit()"/>
+        /// </summary>
+        public RTFEditorKit()
+            : base()
+        {
+        }
 
         #endregion
 

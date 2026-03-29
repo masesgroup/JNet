@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalScrollBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalScrollBarUI.html#javax.swing.plaf.metal.MetalScrollBarUI()"/>
+        /// </summary>
+        public MetalScrollBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

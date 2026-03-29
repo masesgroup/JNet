@@ -66,6 +66,13 @@ namespace Javax.Swing.Undo
     public partial class UndoManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/undo/UndoManager.html#javax.swing.undo.UndoManager()"/>
+        /// </summary>
+        public UndoManager()
+            : base()
+        {
+        }
 
         #endregion
 

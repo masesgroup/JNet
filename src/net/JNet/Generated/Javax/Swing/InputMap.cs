@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class InputMap
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/InputMap.html#javax.swing.InputMap()"/>
+        /// </summary>
+        public InputMap()
+            : base()
+        {
+        }
 
         #endregion
 

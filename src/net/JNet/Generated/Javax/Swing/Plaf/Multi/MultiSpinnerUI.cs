@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiSpinnerUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiSpinnerUI.html#javax.swing.plaf.multi.MultiSpinnerUI()"/>
+        /// </summary>
+        public MultiSpinnerUI()
+            : base()
+        {
+        }
 
         #endregion
 

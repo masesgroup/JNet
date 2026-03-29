@@ -66,6 +66,13 @@ namespace Javax.Swing.Tree
     public partial class VariableHeightLayoutCache
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/VariableHeightLayoutCache.html#javax.swing.tree.VariableHeightLayoutCache()"/>
+        /// </summary>
+        public VariableHeightLayoutCache()
+            : base()
+        {
+        }
 
         #endregion
 

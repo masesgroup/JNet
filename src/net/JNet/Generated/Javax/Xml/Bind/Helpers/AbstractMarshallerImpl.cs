@@ -67,6 +67,13 @@ namespace Javax.Xml.Bind.Helpers
     public partial class AbstractMarshallerImpl
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractMarshallerImpl.html#javax.xml.bind.helpers.AbstractMarshallerImpl()"/>
+        /// </summary>
+        public AbstractMarshallerImpl()
+            : base()
+        {
+        }
 
         #endregion
 

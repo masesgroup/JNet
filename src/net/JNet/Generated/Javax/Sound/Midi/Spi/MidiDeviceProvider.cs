@@ -67,6 +67,13 @@ namespace Javax.Sound.Midi.Spi
     public partial class MidiDeviceProvider
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/spi/MidiDeviceProvider.html#javax.sound.midi.spi.MidiDeviceProvider()"/>
+        /// </summary>
+        public MidiDeviceProvider()
+            : base()
+        {
+        }
 
         #endregion
 

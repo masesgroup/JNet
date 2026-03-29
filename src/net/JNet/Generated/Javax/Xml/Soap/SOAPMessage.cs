@@ -67,6 +67,13 @@ namespace Javax.Xml.Soap
     public partial class SOAPMessage
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/soap/SOAPMessage.html#javax.xml.soap.SOAPMessage()"/>
+        /// </summary>
+        public SOAPMessage()
+            : base()
+        {
+        }
 
         #endregion
 

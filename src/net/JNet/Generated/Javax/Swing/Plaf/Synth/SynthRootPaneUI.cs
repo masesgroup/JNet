@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthRootPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthRootPaneUI.html#javax.swing.plaf.synth.SynthRootPaneUI()"/>
+        /// </summary>
+        public SynthRootPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicMenuBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicMenuBarUI.html#javax.swing.plaf.basic.BasicMenuBarUI()"/>
+        /// </summary>
+        public BasicMenuBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

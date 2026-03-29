@@ -67,6 +67,13 @@ namespace Java.Net
     public partial class SocketAddress
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html#java.net.SocketAddress()"/>
+        /// </summary>
+        public SocketAddress()
+            : base()
+        {
+        }
 
         #endregion
 

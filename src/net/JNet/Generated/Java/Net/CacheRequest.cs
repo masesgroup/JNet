@@ -67,6 +67,13 @@ namespace Java.Net
     public partial class CacheRequest
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/CacheRequest.html#java.net.CacheRequest()"/>
+        /// </summary>
+        public CacheRequest()
+            : base()
+        {
+        }
 
         #endregion
 

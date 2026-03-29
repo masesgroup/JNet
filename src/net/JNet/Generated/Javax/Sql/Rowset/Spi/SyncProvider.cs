@@ -67,6 +67,13 @@ namespace Javax.Sql.Rowset.Spi
     public partial class SyncProvider
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/spi/SyncProvider.html#javax.sql.rowset.spi.SyncProvider()"/>
+        /// </summary>
+        public SyncProvider()
+            : base()
+        {
+        }
 
         #endregion
 

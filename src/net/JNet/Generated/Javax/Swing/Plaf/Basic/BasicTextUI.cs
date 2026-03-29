@@ -141,6 +141,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicTextUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTextUI.html#javax.swing.plaf.basic.BasicTextUI()"/>
+        /// </summary>
+        public BasicTextUI()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -189,6 +196,13 @@ namespace Javax.Swing.Plaf.Basic
         public partial class BasicCaret
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTextUI.BasicCaret.html#javax.swing.plaf.basic.BasicTextUI$BasicCaret()"/>
+            /// </summary>
+            public BasicCaret()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -224,6 +238,13 @@ namespace Javax.Swing.Plaf.Basic
         public partial class BasicHighlighter
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicTextUI.BasicHighlighter.html#javax.swing.plaf.basic.BasicTextUI$BasicHighlighter()"/>
+            /// </summary>
+            public BasicHighlighter()
+                : base()
+            {
+            }
 
             #endregion
 

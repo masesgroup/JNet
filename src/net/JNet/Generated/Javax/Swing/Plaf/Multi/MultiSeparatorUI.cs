@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiSeparatorUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiSeparatorUI.html#javax.swing.plaf.multi.MultiSeparatorUI()"/>
+        /// </summary>
+        public MultiSeparatorUI()
+            : base()
+        {
+        }
 
         #endregion
 

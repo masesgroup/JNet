@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class PopupFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/PopupFactory.html#javax.swing.PopupFactory()"/>
+        /// </summary>
+        public PopupFactory()
+            : base()
+        {
+        }
 
         #endregion
 

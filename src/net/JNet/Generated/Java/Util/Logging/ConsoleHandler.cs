@@ -66,6 +66,13 @@ namespace Java.Util.Logging
     public partial class ConsoleHandler
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/ConsoleHandler.html#java.util.logging.ConsoleHandler()"/>
+        /// </summary>
+        public ConsoleHandler()
+            : base()
+        {
+        }
 
         #endregion
 

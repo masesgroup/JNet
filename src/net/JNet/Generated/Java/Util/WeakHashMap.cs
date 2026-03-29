@@ -106,6 +106,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html#java.util.WeakHashMap()"/>
+        /// </summary>
+        public WeakHashMap()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html#java.util.WeakHashMap(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -161,6 +168,13 @@ namespace Java.Util
     public partial class WeakHashMap<K, V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html#java.util.WeakHashMap()"/>
+        /// </summary>
+        public WeakHashMap()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html#java.util.WeakHashMap(int,float)"/>
         /// </summary>

@@ -67,6 +67,13 @@ namespace Java.Security
     public partial class SignatureSpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/SignatureSpi.html#java.security.SignatureSpi()"/>
+        /// </summary>
+        public SignatureSpi()
+            : base()
+        {
+        }
 
         #endregion
 

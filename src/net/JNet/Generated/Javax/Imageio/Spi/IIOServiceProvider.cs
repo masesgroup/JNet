@@ -68,6 +68,13 @@ namespace Javax.Imageio.Spi
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/IIOServiceProvider.html#javax.imageio.spi.IIOServiceProvider()"/>
+        /// </summary>
+        public IIOServiceProvider()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/IIOServiceProvider.html#javax.imageio.spi.IIOServiceProvider(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

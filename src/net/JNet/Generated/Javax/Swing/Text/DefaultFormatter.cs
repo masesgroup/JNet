@@ -66,6 +66,13 @@ namespace Javax.Swing.Text
     public partial class DefaultFormatter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultFormatter.html#javax.swing.text.DefaultFormatter()"/>
+        /// </summary>
+        public DefaultFormatter()
+            : base()
+        {
+        }
 
         #endregion
 

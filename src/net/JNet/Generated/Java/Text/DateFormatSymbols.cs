@@ -67,6 +67,13 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DateFormatSymbols.html#java.text.DateFormatSymbols()"/>
+        /// </summary>
+        public DateFormatSymbols()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DateFormatSymbols.html#java.text.DateFormatSymbols(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>

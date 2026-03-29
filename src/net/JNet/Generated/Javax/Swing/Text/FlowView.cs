@@ -162,6 +162,13 @@ namespace Javax.Swing.Text
         public partial class FlowStrategy
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/FlowView.FlowStrategy.html#javax.swing.text.FlowView$FlowStrategy()"/>
+            /// </summary>
+            public FlowStrategy()
+                : base()
+            {
+            }
 
             #endregion
 

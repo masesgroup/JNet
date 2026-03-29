@@ -66,6 +66,13 @@ namespace Java.Net
     public partial class URLDecoder
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URLDecoder.html#java.net.URLDecoder()"/>
+        /// </summary>
+        public URLDecoder()
+            : base()
+        {
+        }
 
         #endregion
 

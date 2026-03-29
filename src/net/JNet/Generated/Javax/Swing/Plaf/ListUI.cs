@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class ListUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ListUI.html#javax.swing.plaf.ListUI()"/>
+        /// </summary>
+        public ListUI()
+            : base()
+        {
+        }
 
         #endregion
 

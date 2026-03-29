@@ -67,6 +67,13 @@ namespace Javax.Sound.Midi.Spi
     public partial class MidiFileReader
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/spi/MidiFileReader.html#javax.sound.midi.spi.MidiFileReader()"/>
+        /// </summary>
+        public MidiFileReader()
+            : base()
+        {
+        }
 
         #endregion
 

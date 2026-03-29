@@ -144,6 +144,13 @@ namespace Javax.Swing
     public partial class SwingWorker
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SwingWorker.html#javax.swing.SwingWorker()"/>
+        /// </summary>
+        public SwingWorker()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -350,6 +357,13 @@ namespace Javax.Swing
     public partial class SwingWorker<T, V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SwingWorker.html#javax.swing.SwingWorker()"/>
+        /// </summary>
+        public SwingWorker()
+            : base()
+        {
+        }
 
         #endregion
 

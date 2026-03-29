@@ -105,6 +105,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html#java.util.HashSet()"/>
+        /// </summary>
+        public HashSet()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html#java.util.HashSet(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -168,6 +175,13 @@ namespace Java.Util
     public partial class HashSet<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html#java.util.HashSet()"/>
+        /// </summary>
+        public HashSet()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html#java.util.HashSet(int,float)"/>
         /// </summary>

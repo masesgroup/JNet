@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class ToolBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ToolBarUI.html#javax.swing.plaf.ToolBarUI()"/>
+        /// </summary>
+        public ToolBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

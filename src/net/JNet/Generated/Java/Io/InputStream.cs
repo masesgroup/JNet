@@ -67,6 +67,13 @@ namespace Java.Io
     public partial class InputStream
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html#java.io.InputStream()"/>
+        /// </summary>
+        public InputStream()
+            : base()
+        {
+        }
 
         #endregion
 

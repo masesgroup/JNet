@@ -67,6 +67,13 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/PropertyEditorSupport.html#java.beans.PropertyEditorSupport()"/>
+        /// </summary>
+        public PropertyEditorSupport()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/PropertyEditorSupport.html#java.beans.PropertyEditorSupport(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>

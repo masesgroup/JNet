@@ -67,6 +67,13 @@ namespace Java.Awt.FontNs
     public partial class LineMetrics
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/font/LineMetrics.html#java.awt.font.LineMetrics()"/>
+        /// </summary>
+        public LineMetrics()
+            : base()
+        {
+        }
 
         #endregion
 

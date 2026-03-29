@@ -67,6 +67,13 @@ namespace Javax.Sql.Rowset
     public partial class BaseRowSet
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/BaseRowSet.html#javax.sql.rowset.BaseRowSet()"/>
+        /// </summary>
+        public BaseRowSet()
+            : base()
+        {
+        }
 
         #endregion
 

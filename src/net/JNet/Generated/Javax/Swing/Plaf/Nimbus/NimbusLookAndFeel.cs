@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Nimbus
     public partial class NimbusLookAndFeel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/nimbus/NimbusLookAndFeel.html#javax.swing.plaf.nimbus.NimbusLookAndFeel()"/>
+        /// </summary>
+        public NimbusLookAndFeel()
+            : base()
+        {
+        }
 
         #endregion
 

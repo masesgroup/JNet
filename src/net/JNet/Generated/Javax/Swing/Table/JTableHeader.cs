@@ -67,6 +67,13 @@ namespace Javax.Swing.Table
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/JTableHeader.html#javax.swing.table.JTableHeader()"/>
+        /// </summary>
+        public JTableHeader()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/JTableHeader.html#javax.swing.table.JTableHeader(javax.swing.table.TableColumnModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableColumnModel"/></param>

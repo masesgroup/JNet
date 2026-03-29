@@ -66,6 +66,13 @@ namespace Javax.Swing.Text.Html.Parser
     public partial class ParserDelegator
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/parser/ParserDelegator.html#javax.swing.text.html.parser.ParserDelegator()"/>
+        /// </summary>
+        public ParserDelegator()
+            : base()
+        {
+        }
 
         #endregion
 

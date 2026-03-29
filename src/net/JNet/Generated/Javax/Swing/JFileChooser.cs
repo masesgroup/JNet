@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFileChooser.html#javax.swing.JFileChooser()"/>
+        /// </summary>
+        public JFileChooser()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFileChooser.html#javax.swing.JFileChooser(java.io.File,javax.swing.filechooser.FileSystemView)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>

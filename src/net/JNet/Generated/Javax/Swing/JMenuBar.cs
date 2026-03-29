@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class JMenuBar
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JMenuBar.html#javax.swing.JMenuBar()"/>
+        /// </summary>
+        public JMenuBar()
+            : base()
+        {
+        }
 
         #endregion
 

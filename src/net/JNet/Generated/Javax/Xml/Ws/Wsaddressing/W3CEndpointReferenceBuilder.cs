@@ -66,6 +66,13 @@ namespace Javax.Xml.Ws.Wsaddressing
     public partial class W3CEndpointReferenceBuilder
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder.html#javax.xml.ws.wsaddressing.W3CEndpointReferenceBuilder()"/>
+        /// </summary>
+        public W3CEndpointReferenceBuilder()
+            : base()
+        {
+        }
 
         #endregion
 

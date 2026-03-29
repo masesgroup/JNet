@@ -67,6 +67,13 @@ namespace Javax.Management.Loading
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/loading/MLet.html#javax.management.loading.MLet()"/>
+        /// </summary>
+        public MLet()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/loading/MLet.html#javax.management.loading.MLet(java.net.URL[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>

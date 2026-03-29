@@ -66,6 +66,13 @@ namespace Java.Awt
     public partial class DefaultFocusTraversalPolicy
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/DefaultFocusTraversalPolicy.html#java.awt.DefaultFocusTraversalPolicy()"/>
+        /// </summary>
+        public DefaultFocusTraversalPolicy()
+            : base()
+        {
+        }
 
         #endregion
 

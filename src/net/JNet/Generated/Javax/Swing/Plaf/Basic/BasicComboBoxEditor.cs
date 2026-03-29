@@ -103,6 +103,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicComboBoxEditor
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicComboBoxEditor.html#javax.swing.plaf.basic.BasicComboBoxEditor()"/>
+        /// </summary>
+        public BasicComboBoxEditor()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -188,6 +195,13 @@ namespace Javax.Swing.Plaf.Basic
         public partial class UIResource
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicComboBoxEditor.UIResource.html#javax.swing.plaf.basic.BasicComboBoxEditor$UIResource()"/>
+            /// </summary>
+            public UIResource()
+                : base()
+            {
+            }
 
             #endregion
 

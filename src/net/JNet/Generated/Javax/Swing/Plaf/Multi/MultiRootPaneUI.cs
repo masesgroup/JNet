@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiRootPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiRootPaneUI.html#javax.swing.plaf.multi.MultiRootPaneUI()"/>
+        /// </summary>
+        public MultiRootPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

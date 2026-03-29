@@ -103,6 +103,13 @@ namespace Javax.Swing
     public partial class DefaultListCellRenderer
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultListCellRenderer.html#javax.swing.DefaultListCellRenderer()"/>
+        /// </summary>
+        public DefaultListCellRenderer()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -148,6 +155,13 @@ namespace Javax.Swing
         public partial class UIResource
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultListCellRenderer.UIResource.html#javax.swing.DefaultListCellRenderer$UIResource()"/>
+            /// </summary>
+            public UIResource()
+                : base()
+            {
+            }
 
             #endregion
 

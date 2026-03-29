@@ -66,6 +66,13 @@ namespace Javax.Swing.Undo
     public partial class AbstractUndoableEdit
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/undo/AbstractUndoableEdit.html#javax.swing.undo.AbstractUndoableEdit()"/>
+        /// </summary>
+        public AbstractUndoableEdit()
+            : base()
+        {
+        }
 
         #endregion
 

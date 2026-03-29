@@ -66,6 +66,13 @@ namespace Javax.Swing.Table
     public partial class DefaultTableColumnModel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/DefaultTableColumnModel.html#javax.swing.table.DefaultTableColumnModel()"/>
+        /// </summary>
+        public DefaultTableColumnModel()
+            : base()
+        {
+        }
 
         #endregion
 

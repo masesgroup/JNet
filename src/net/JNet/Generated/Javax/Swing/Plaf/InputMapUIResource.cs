@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf
     public partial class InputMapUIResource
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/InputMapUIResource.html#javax.swing.plaf.InputMapUIResource()"/>
+        /// </summary>
+        public InputMapUIResource()
+            : base()
+        {
+        }
 
         #endregion
 

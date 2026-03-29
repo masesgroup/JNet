@@ -104,6 +104,13 @@ namespace Java.Net
     public partial class Authenticator
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Authenticator.html#java.net.Authenticator()"/>
+        /// </summary>
+        public Authenticator()
+            : base()
+        {
+        }
 
         #endregion
 

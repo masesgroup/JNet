@@ -67,6 +67,13 @@ namespace Java.Net
     public partial class SocketImpl
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketImpl.html#java.net.SocketImpl()"/>
+        /// </summary>
+        public SocketImpl()
+            : base()
+        {
+        }
 
         #endregion
 

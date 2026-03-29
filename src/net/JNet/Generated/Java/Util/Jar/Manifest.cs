@@ -67,6 +67,13 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Manifest.html#java.util.jar.Manifest()"/>
+        /// </summary>
+        public Manifest()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Manifest.html#java.util.jar.Manifest(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>

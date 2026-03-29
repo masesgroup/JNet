@@ -67,6 +67,13 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Segment.html#javax.swing.text.Segment()"/>
+        /// </summary>
+        public Segment()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Segment.html#javax.swing.text.Segment(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>

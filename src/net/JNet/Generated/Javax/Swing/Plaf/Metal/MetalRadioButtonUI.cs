@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalRadioButtonUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalRadioButtonUI.html#javax.swing.plaf.metal.MetalRadioButtonUI()"/>
+        /// </summary>
+        public MetalRadioButtonUI()
+            : base()
+        {
+        }
 
         #endregion
 

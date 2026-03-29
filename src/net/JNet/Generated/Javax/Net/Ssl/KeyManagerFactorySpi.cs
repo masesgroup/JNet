@@ -67,6 +67,13 @@ namespace Javax.Net.Ssl
     public partial class KeyManagerFactorySpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/KeyManagerFactorySpi.html#javax.net.ssl.KeyManagerFactorySpi()"/>
+        /// </summary>
+        public KeyManagerFactorySpi()
+            : base()
+        {
+        }
 
         #endregion
 

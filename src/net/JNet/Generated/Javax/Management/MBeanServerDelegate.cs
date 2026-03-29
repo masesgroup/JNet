@@ -66,6 +66,13 @@ namespace Javax.Management
     public partial class MBeanServerDelegate
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServerDelegate.html#javax.management.MBeanServerDelegate()"/>
+        /// </summary>
+        public MBeanServerDelegate()
+            : base()
+        {
+        }
 
         #endregion
 

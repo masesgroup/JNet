@@ -67,6 +67,13 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/AllPermission.html#java.security.AllPermission()"/>
+        /// </summary>
+        public AllPermission()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/AllPermission.html#java.security.AllPermission(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

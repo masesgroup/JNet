@@ -66,6 +66,13 @@ namespace Java.Awt.Print
     public partial class PageFormat
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/print/PageFormat.html#java.awt.print.PageFormat()"/>
+        /// </summary>
+        public PageFormat()
+            : base()
+        {
+        }
 
         #endregion
 

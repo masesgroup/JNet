@@ -67,6 +67,13 @@ namespace Java.Awt
     public partial class Toolkit
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Toolkit.html#java.awt.Toolkit()"/>
+        /// </summary>
+        public Toolkit()
+            : base()
+        {
+        }
 
         #endregion
 

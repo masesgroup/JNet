@@ -67,6 +67,13 @@ namespace Java.Net
     public partial class ProxySelector
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/ProxySelector.html#java.net.ProxySelector()"/>
+        /// </summary>
+        public ProxySelector()
+            : base()
+        {
+        }
 
         #endregion
 

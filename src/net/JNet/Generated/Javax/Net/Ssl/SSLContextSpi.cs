@@ -67,6 +67,13 @@ namespace Javax.Net.Ssl
     public partial class SSLContextSpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLContextSpi.html#javax.net.ssl.SSLContextSpi()"/>
+        /// </summary>
+        public SSLContextSpi()
+            : base()
+        {
+        }
 
         #endregion
 

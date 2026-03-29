@@ -106,6 +106,13 @@ namespace Java.Util.Concurrent
     public partial class RecursiveTask
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RecursiveTask.html#java.util.concurrent.RecursiveTask()"/>
+        /// </summary>
+        public RecursiveTask()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -137,6 +144,13 @@ namespace Java.Util.Concurrent
     public partial class RecursiveTask<V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RecursiveTask.html#java.util.concurrent.RecursiveTask()"/>
+        /// </summary>
+        public RecursiveTask()
+            : base()
+        {
+        }
 
         #endregion
 

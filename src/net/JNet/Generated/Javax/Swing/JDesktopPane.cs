@@ -66,6 +66,13 @@ namespace Javax.Swing
     public partial class JDesktopPane
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDesktopPane.html#javax.swing.JDesktopPane()"/>
+        /// </summary>
+        public JDesktopPane()
+            : base()
+        {
+        }
 
         #endregion
 

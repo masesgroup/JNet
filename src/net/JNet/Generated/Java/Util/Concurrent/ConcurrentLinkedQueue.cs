@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html#java.util.concurrent.ConcurrentLinkedQueue()"/>
+        /// </summary>
+        public ConcurrentLinkedQueue()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html#java.util.concurrent.ConcurrentLinkedQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -147,6 +154,13 @@ namespace Java.Util.Concurrent
     public partial class ConcurrentLinkedQueue<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html#java.util.concurrent.ConcurrentLinkedQueue()"/>
+        /// </summary>
+        public ConcurrentLinkedQueue()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html#java.util.concurrent.ConcurrentLinkedQueue(java.util.Collection)"/>
         /// </summary>

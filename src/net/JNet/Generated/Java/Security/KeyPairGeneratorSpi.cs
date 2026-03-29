@@ -67,6 +67,13 @@ namespace Java.Security
     public partial class KeyPairGeneratorSpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyPairGeneratorSpi.html#java.security.KeyPairGeneratorSpi()"/>
+        /// </summary>
+        public KeyPairGeneratorSpi()
+            : base()
+        {
+        }
 
         #endregion
 

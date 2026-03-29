@@ -67,6 +67,13 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CardLayout.html#java.awt.CardLayout()"/>
+        /// </summary>
+        public CardLayout()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CardLayout.html#java.awt.CardLayout(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

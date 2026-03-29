@@ -67,6 +67,13 @@ namespace Java.Awt.FontNs
     public partial class LayoutPath
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/font/LayoutPath.html#java.awt.font.LayoutPath()"/>
+        /// </summary>
+        public LayoutPath()
+            : base()
+        {
+        }
 
         #endregion
 

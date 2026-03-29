@@ -66,6 +66,13 @@ namespace Java.Util.Concurrent.Atomic
     public partial class DoubleAdder
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/DoubleAdder.html#java.util.concurrent.atomic.DoubleAdder()"/>
+        /// </summary>
+        public DoubleAdder()
+            : base()
+        {
+        }
 
         #endregion
 

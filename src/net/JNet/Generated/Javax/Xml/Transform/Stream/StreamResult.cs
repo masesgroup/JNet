@@ -67,6 +67,13 @@ namespace Javax.Xml.Transform.Stream
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamResult.html#javax.xml.transform.stream.StreamResult()"/>
+        /// </summary>
+        public StreamResult()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamResult.html#javax.xml.transform.stream.StreamResult(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>

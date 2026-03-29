@@ -185,6 +185,13 @@ namespace Javax.Xml.Bind.Annotation
         public partial class DEFAULT
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/XmlSchemaType.DEFAULT.html#javax.xml.bind.annotation.XmlSchemaType$DEFAULT()"/>
+            /// </summary>
+            public DEFAULT()
+                : base()
+            {
+            }
 
             #endregion
 

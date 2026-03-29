@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class InternalFrameUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/InternalFrameUI.html#javax.swing.plaf.InternalFrameUI()"/>
+        /// </summary>
+        public InternalFrameUI()
+            : base()
+        {
+        }
 
         #endregion
 

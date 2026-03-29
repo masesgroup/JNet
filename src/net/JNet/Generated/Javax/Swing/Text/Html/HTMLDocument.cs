@@ -549,6 +549,13 @@ namespace Javax.Swing.Text.Html
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.html#javax.swing.text.html.HTMLDocument()"/>
+        /// </summary>
+        public HTMLDocument()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.html#javax.swing.text.html.HTMLDocument(javax.swing.text.AbstractDocument.Content,javax.swing.text.html.StyleSheet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument.Content"/></param>
@@ -1215,6 +1222,13 @@ namespace Javax.Swing.Text.Html
         public partial class Iterator
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.Iterator.html#javax.swing.text.html.HTMLDocument$Iterator()"/>
+            /// </summary>
+            public Iterator()
+                : base()
+            {
+            }
 
             #endregion
 

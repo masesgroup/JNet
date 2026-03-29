@@ -104,6 +104,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPopupMenu.html#javax.swing.JPopupMenu()"/>
+        /// </summary>
+        public JPopupMenu()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPopupMenu.html#javax.swing.JPopupMenu(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -417,6 +424,13 @@ namespace Javax.Swing
         public partial class Separator
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPopupMenu.Separator.html#javax.swing.JPopupMenu$Separator()"/>
+            /// </summary>
+            public Separator()
+                : base()
+            {
+            }
 
             #endregion
 

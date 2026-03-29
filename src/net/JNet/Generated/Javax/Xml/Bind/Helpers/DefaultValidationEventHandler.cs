@@ -66,6 +66,13 @@ namespace Javax.Xml.Bind.Helpers
     public partial class DefaultValidationEventHandler
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/DefaultValidationEventHandler.html#javax.xml.bind.helpers.DefaultValidationEventHandler()"/>
+        /// </summary>
+        public DefaultValidationEventHandler()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Javax.Swing.Plaf
     public partial class SliderUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/SliderUI.html#javax.swing.plaf.SliderUI()"/>
+        /// </summary>
+        public SliderUI()
+            : base()
+        {
+        }
 
         #endregion
 

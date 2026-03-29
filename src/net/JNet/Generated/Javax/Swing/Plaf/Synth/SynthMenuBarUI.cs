@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthMenuBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthMenuBarUI.html#javax.swing.plaf.synth.SynthMenuBarUI()"/>
+        /// </summary>
+        public SynthMenuBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

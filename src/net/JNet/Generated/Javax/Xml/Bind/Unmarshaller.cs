@@ -563,6 +563,13 @@ namespace Javax.Xml.Bind
         public partial class Listener
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/Unmarshaller.Listener.html#javax.xml.bind.Unmarshaller$Listener()"/>
+            /// </summary>
+            public Listener()
+                : base()
+            {
+            }
 
             #endregion
 

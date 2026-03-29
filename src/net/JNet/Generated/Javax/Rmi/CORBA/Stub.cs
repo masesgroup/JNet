@@ -67,6 +67,13 @@ namespace Javax.Rmi.CORBA
     public partial class Stub
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/CORBA/Stub.html#javax.rmi.CORBA.Stub()"/>
+        /// </summary>
+        public Stub()
+            : base()
+        {
+        }
 
         #endregion
 

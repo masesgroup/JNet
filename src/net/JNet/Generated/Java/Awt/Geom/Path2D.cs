@@ -436,6 +436,13 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Double.html#java.awt.geom.Path2D$Double()"/>
+            /// </summary>
+            public Double()
+                : base()
+            {
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Double.html#java.awt.geom.Path2D$Double(int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -504,6 +511,13 @@ namespace Java.Awt.Geom
         public partial class Float
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Float.html#java.awt.geom.Path2D$Float()"/>
+            /// </summary>
+            public Float()
+                : base()
+            {
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Float.html#java.awt.geom.Path2D$Float(int,int)"/>
             /// </summary>

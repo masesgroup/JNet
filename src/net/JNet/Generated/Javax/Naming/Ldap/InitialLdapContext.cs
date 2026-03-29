@@ -67,6 +67,15 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/InitialLdapContext.html#javax.naming.ldap.InitialLdapContext()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public InitialLdapContext()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/InitialLdapContext.html#javax.naming.ldap.InitialLdapContext(java.util.Hashtable,javax.naming.ldap.Control[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>

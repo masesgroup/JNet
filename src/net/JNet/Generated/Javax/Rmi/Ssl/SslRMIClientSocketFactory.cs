@@ -66,6 +66,13 @@ namespace Javax.Rmi.Ssl
     public partial class SslRMIClientSocketFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/ssl/SslRMIClientSocketFactory.html#javax.rmi.ssl.SslRMIClientSocketFactory()"/>
+        /// </summary>
+        public SslRMIClientSocketFactory()
+            : base()
+        {
+        }
 
         #endregion
 

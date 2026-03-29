@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiDesktopPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiDesktopPaneUI.html#javax.swing.plaf.multi.MultiDesktopPaneUI()"/>
+        /// </summary>
+        public MultiDesktopPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

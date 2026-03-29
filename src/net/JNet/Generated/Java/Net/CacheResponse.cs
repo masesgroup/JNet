@@ -67,6 +67,13 @@ namespace Java.Net
     public partial class CacheResponse
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/CacheResponse.html#java.net.CacheResponse()"/>
+        /// </summary>
+        public CacheResponse()
+            : base()
+        {
+        }
 
         #endregion
 

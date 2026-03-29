@@ -67,6 +67,13 @@ namespace Javax.Xml.Datatype
     public partial class Duration
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/datatype/Duration.html#javax.xml.datatype.Duration()"/>
+        /// </summary>
+        public Duration()
+            : base()
+        {
+        }
 
         #endregion
 

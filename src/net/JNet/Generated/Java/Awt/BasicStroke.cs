@@ -67,6 +67,13 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BasicStroke.html#java.awt.BasicStroke()"/>
+        /// </summary>
+        public BasicStroke()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BasicStroke.html#java.awt.BasicStroke(float,int,int,float,float[],float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>

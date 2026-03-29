@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JCheckBoxMenuItem.html#javax.swing.JCheckBoxMenuItem()"/>
+        /// </summary>
+        public JCheckBoxMenuItem()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JCheckBoxMenuItem.html#javax.swing.JCheckBoxMenuItem(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

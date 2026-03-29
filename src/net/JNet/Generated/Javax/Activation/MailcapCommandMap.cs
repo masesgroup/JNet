@@ -67,6 +67,13 @@ namespace Javax.Activation
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MailcapCommandMap.html#javax.activation.MailcapCommandMap()"/>
+        /// </summary>
+        public MailcapCommandMap()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MailcapCommandMap.html#javax.activation.MailcapCommandMap(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>

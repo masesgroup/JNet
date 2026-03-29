@@ -67,6 +67,13 @@ namespace Javax.Xml.Soap
     public partial class SOAPConnection
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/soap/SOAPConnection.html#javax.xml.soap.SOAPConnection()"/>
+        /// </summary>
+        public SOAPConnection()
+            : base()
+        {
+        }
 
         #endregion
 

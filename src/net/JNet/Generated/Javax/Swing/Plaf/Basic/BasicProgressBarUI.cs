@@ -103,6 +103,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicProgressBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicProgressBarUI.html#javax.swing.plaf.basic.BasicProgressBarUI()"/>
+        /// </summary>
+        public BasicProgressBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

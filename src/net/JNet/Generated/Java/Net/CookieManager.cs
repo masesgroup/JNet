@@ -67,6 +67,13 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/CookieManager.html#java.net.CookieManager()"/>
+        /// </summary>
+        public CookieManager()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/CookieManager.html#java.net.CookieManager(java.net.CookieStore,java.net.CookiePolicy)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.CookieStore"/></param>

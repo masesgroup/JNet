@@ -67,6 +67,13 @@ namespace Javax.Management.Monitor
     public partial class Monitor
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/Monitor.html#javax.management.monitor.Monitor()"/>
+        /// </summary>
+        public Monitor()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Javax.Swing.Text
     public partial class Utilities
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Utilities.html#javax.swing.text.Utilities()"/>
+        /// </summary>
+        public Utilities()
+            : base()
+        {
+        }
 
         #endregion
 

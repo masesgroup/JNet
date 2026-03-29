@@ -521,6 +521,13 @@ namespace Java.Awt.FontNs
         public partial class CaretPolicy
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/font/TextLayout.CaretPolicy.html#java.awt.font.TextLayout$CaretPolicy()"/>
+            /// </summary>
+            public CaretPolicy()
+                : base()
+            {
+            }
 
             #endregion
 

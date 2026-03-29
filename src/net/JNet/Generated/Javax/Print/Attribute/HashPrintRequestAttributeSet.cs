@@ -67,6 +67,13 @@ namespace Javax.Print.Attribute
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashPrintRequestAttributeSet.html#javax.print.attribute.HashPrintRequestAttributeSet()"/>
+        /// </summary>
+        public HashPrintRequestAttributeSet()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashPrintRequestAttributeSet.html#javax.print.attribute.HashPrintRequestAttributeSet(javax.print.attribute.PrintRequestAttribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttribute"/></param>

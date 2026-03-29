@@ -67,6 +67,13 @@ namespace Java.Security.Cert
     public partial class CertPathValidatorSpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/CertPathValidatorSpi.html#java.security.cert.CertPathValidatorSpi()"/>
+        /// </summary>
+        public CertPathValidatorSpi()
+            : base()
+        {
+        }
 
         #endregion
 

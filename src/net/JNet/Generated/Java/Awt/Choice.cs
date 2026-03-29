@@ -66,6 +66,15 @@ namespace Java.Awt
     public partial class Choice
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Choice.html#java.awt.Choice()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public Choice()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultBoundedRangeModel.html#javax.swing.DefaultBoundedRangeModel()"/>
+        /// </summary>
+        public DefaultBoundedRangeModel()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultBoundedRangeModel.html#javax.swing.DefaultBoundedRangeModel(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

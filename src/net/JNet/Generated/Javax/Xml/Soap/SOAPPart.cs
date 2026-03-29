@@ -67,6 +67,13 @@ namespace Javax.Xml.Soap
     public partial class SOAPPart
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/soap/SOAPPart.html#javax.xml.soap.SOAPPart()"/>
+        /// </summary>
+        public SOAPPart()
+            : base()
+        {
+        }
 
         #endregion
 

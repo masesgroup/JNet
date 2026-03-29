@@ -253,6 +253,13 @@ namespace Javax.Swing.Text.Html
     public partial class HTMLEditorKit
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLEditorKit.html#javax.swing.text.html.HTMLEditorKit()"/>
+        /// </summary>
+        public HTMLEditorKit()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -418,6 +425,13 @@ namespace Javax.Swing.Text.Html
         public partial class HTMLFactory
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLEditorKit.HTMLFactory.html#javax.swing.text.html.HTMLEditorKit$HTMLFactory()"/>
+            /// </summary>
+            public HTMLFactory()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -552,6 +566,13 @@ namespace Javax.Swing.Text.Html
         public partial class Parser
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLEditorKit.Parser.html#javax.swing.text.html.HTMLEditorKit$Parser()"/>
+            /// </summary>
+            public Parser()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -594,6 +615,13 @@ namespace Javax.Swing.Text.Html
         public partial class ParserCallback
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#javax.swing.text.html.HTMLEditorKit$ParserCallback()"/>
+            /// </summary>
+            public ParserCallback()
+                : base()
+            {
+            }
 
             #endregion
 

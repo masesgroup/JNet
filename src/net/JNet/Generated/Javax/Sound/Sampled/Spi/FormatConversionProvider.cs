@@ -67,6 +67,13 @@ namespace Javax.Sound.Sampled.Spi
     public partial class FormatConversionProvider
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/spi/FormatConversionProvider.html#javax.sound.sampled.spi.FormatConversionProvider()"/>
+        /// </summary>
+        public FormatConversionProvider()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -106,6 +106,13 @@ namespace Javax.Swing
     public partial class AbstractListModel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractListModel.html#javax.swing.AbstractListModel()"/>
+        /// </summary>
+        public AbstractListModel()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -177,6 +184,13 @@ namespace Javax.Swing
     public partial class AbstractListModel<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractListModel.html#javax.swing.AbstractListModel()"/>
+        /// </summary>
+        public AbstractListModel()
+            : base()
+        {
+        }
 
         #endregion
 

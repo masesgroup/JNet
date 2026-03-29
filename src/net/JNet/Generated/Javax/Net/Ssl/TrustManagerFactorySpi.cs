@@ -67,6 +67,13 @@ namespace Javax.Net.Ssl
     public partial class TrustManagerFactorySpi
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/TrustManagerFactorySpi.html#javax.net.ssl.TrustManagerFactorySpi()"/>
+        /// </summary>
+        public TrustManagerFactorySpi()
+            : base()
+        {
+        }
 
         #endregion
 

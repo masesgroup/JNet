@@ -105,6 +105,13 @@ namespace Javax.Swing
     public partial class JComponent
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#javax.swing.JComponent()"/>
+        /// </summary>
+        public JComponent()
+            : base()
+        {
+        }
 
         #endregion
 

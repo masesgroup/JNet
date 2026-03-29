@@ -105,6 +105,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JLayer.html#javax.swing.JLayer()"/>
+        /// </summary>
+        public JLayer()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JLayer.html#javax.swing.JLayer(java.awt.Component,javax.swing.plaf.LayerUI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -251,6 +258,13 @@ namespace Javax.Swing
     public partial class JLayer<V>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JLayer.html#javax.swing.JLayer()"/>
+        /// </summary>
+        public JLayer()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JLayer.html#javax.swing.JLayer(java.awt.Component,javax.swing.plaf.LayerUI)"/>
         /// </summary>

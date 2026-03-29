@@ -67,6 +67,13 @@ namespace Java.Rmi.Server
     public partial class RMISocketFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RMISocketFactory.html#java.rmi.server.RMISocketFactory()"/>
+        /// </summary>
+        public RMISocketFactory()
+            : base()
+        {
+        }
 
         #endregion
 

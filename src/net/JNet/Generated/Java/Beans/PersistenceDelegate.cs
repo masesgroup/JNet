@@ -67,6 +67,13 @@ namespace Java.Beans
     public partial class PersistenceDelegate
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/PersistenceDelegate.html#java.beans.PersistenceDelegate()"/>
+        /// </summary>
+        public PersistenceDelegate()
+            : base()
+        {
+        }
 
         #endregion
 

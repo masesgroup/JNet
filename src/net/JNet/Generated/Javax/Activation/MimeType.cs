@@ -67,6 +67,13 @@ namespace Javax.Activation
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimeType.html#javax.activation.MimeType()"/>
+        /// </summary>
+        public MimeType()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimeType.html#javax.activation.MimeType(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

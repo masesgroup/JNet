@@ -67,6 +67,13 @@ namespace Javax.Xml.Ws.Spi
     public partial class Invoker
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/spi/Invoker.html#javax.xml.ws.spi.Invoker()"/>
+        /// </summary>
+        public Invoker()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Java.Awt.Print
     public partial class Book
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/print/Book.html#java.awt.print.Book()"/>
+        /// </summary>
+        public Book()
+            : base()
+        {
+        }
 
         #endregion
 

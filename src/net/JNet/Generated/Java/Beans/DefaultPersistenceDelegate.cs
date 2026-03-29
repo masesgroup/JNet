@@ -67,6 +67,13 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/DefaultPersistenceDelegate.html#java.beans.DefaultPersistenceDelegate()"/>
+        /// </summary>
+        public DefaultPersistenceDelegate()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/DefaultPersistenceDelegate.html#java.beans.DefaultPersistenceDelegate(java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

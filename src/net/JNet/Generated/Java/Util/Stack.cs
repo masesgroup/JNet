@@ -104,6 +104,13 @@ namespace Java.Util
     public partial class Stack
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html#java.util.Stack()"/>
+        /// </summary>
+        public Stack()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -177,6 +184,13 @@ namespace Java.Util
     public partial class Stack<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html#java.util.Stack()"/>
+        /// </summary>
+        public Stack()
+            : base()
+        {
+        }
 
         #endregion
 

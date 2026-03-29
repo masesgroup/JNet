@@ -67,6 +67,13 @@ namespace Javax.Activation
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimetypesFileTypeMap.html#javax.activation.MimetypesFileTypeMap()"/>
+        /// </summary>
+        public MimetypesFileTypeMap()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimetypesFileTypeMap.html#javax.activation.MimetypesFileTypeMap(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>

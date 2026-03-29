@@ -67,6 +67,13 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Panel.html#java.awt.Panel()"/>
+        /// </summary>
+        public Panel()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Panel.html#java.awt.Panel(java.awt.LayoutManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.LayoutManager"/></param>

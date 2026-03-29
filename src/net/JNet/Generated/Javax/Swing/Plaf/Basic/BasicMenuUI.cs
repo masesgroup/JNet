@@ -103,6 +103,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicMenuUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicMenuUI.html#javax.swing.plaf.basic.BasicMenuUI()"/>
+        /// </summary>
+        public BasicMenuUI()
+            : base()
+        {
+        }
 
         #endregion
 

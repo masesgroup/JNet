@@ -66,6 +66,13 @@ namespace Org.Xml.Sax
     public partial class HandlerBase
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/HandlerBase.html#org.xml.sax.HandlerBase()"/>
+        /// </summary>
+        public HandlerBase()
+            : base()
+        {
+        }
 
         #endregion
 

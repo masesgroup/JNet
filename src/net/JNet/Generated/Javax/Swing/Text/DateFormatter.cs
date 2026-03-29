@@ -67,6 +67,13 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DateFormatter.html#javax.swing.text.DateFormatter()"/>
+        /// </summary>
+        public DateFormatter()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DateFormatter.html#javax.swing.text.DateFormatter(java.text.DateFormat)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.DateFormat"/></param>

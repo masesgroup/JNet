@@ -67,6 +67,13 @@ namespace Java.Awt.ImageNs.Renderable
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/ParameterBlock.html#java.awt.image.renderable.ParameterBlock()"/>
+        /// </summary>
+        public ParameterBlock()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/ParameterBlock.html#java.awt.image.renderable.ParameterBlock(java.util.Vector,java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>

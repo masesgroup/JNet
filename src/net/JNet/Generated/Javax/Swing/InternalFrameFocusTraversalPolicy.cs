@@ -67,6 +67,13 @@ namespace Javax.Swing
     public partial class InternalFrameFocusTraversalPolicy
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/InternalFrameFocusTraversalPolicy.html#javax.swing.InternalFrameFocusTraversalPolicy()"/>
+        /// </summary>
+        public InternalFrameFocusTraversalPolicy()
+            : base()
+        {
+        }
 
         #endregion
 

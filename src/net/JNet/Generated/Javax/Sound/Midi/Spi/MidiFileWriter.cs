@@ -67,6 +67,13 @@ namespace Javax.Sound.Midi.Spi
     public partial class MidiFileWriter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/spi/MidiFileWriter.html#javax.sound.midi.spi.MidiFileWriter()"/>
+        /// </summary>
+        public MidiFileWriter()
+            : base()
+        {
+        }
 
         #endregion
 

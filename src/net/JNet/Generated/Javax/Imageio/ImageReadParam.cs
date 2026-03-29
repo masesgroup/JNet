@@ -66,6 +66,13 @@ namespace Javax.Imageio
     public partial class ImageReadParam
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/ImageReadParam.html#javax.imageio.ImageReadParam()"/>
+        /// </summary>
+        public ImageReadParam()
+            : base()
+        {
+        }
 
         #endregion
 

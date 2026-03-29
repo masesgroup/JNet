@@ -67,6 +67,15 @@ namespace Java.Awt.Dnd
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DropTarget.html#java.awt.dnd.DropTarget()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public DropTarget()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DropTarget.html#java.awt.dnd.DropTarget(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean,java.awt.datatransfer.FlavorMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>

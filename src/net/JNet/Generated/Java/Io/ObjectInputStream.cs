@@ -324,6 +324,13 @@ namespace Java.Io
         public partial class GetField
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectInputStream.GetField.html#java.io.ObjectInputStream$GetField()"/>
+            /// </summary>
+            public GetField()
+                : base()
+            {
+            }
 
             #endregion
 

@@ -66,6 +66,13 @@ namespace Java.Util
     public partial class IntSummaryStatistics
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/IntSummaryStatistics.html#java.util.IntSummaryStatistics()"/>
+        /// </summary>
+        public IntSummaryStatistics()
+            : base()
+        {
+        }
 
         #endregion
 

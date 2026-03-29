@@ -67,6 +67,15 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#java.awt.Frame()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public Frame()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#java.awt.Frame(java.awt.GraphicsConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>

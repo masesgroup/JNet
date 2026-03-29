@@ -67,6 +67,13 @@ namespace Javax.Naming
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/CompositeName.html#javax.naming.CompositeName()"/>
+        /// </summary>
+        public CompositeName()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/CompositeName.html#javax.naming.CompositeName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

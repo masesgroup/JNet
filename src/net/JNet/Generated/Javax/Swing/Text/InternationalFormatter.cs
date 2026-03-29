@@ -67,6 +67,13 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/InternationalFormatter.html#javax.swing.text.InternationalFormatter()"/>
+        /// </summary>
+        public InternationalFormatter()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/InternationalFormatter.html#javax.swing.text.InternationalFormatter(java.text.Format)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.Format"/></param>

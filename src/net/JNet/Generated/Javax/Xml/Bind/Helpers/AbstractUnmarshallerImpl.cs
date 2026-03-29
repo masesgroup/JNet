@@ -67,6 +67,13 @@ namespace Javax.Xml.Bind.Helpers
     public partial class AbstractUnmarshallerImpl
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/AbstractUnmarshallerImpl.html#javax.xml.bind.helpers.AbstractUnmarshallerImpl()"/>
+        /// </summary>
+        public AbstractUnmarshallerImpl()
+            : base()
+        {
+        }
 
         #endregion
 

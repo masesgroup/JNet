@@ -67,6 +67,13 @@ namespace Javax.Xml.Ws.Spi.Http
     public partial class HttpContext
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/spi/http/HttpContext.html#javax.xml.ws.spi.http.HttpContext()"/>
+        /// </summary>
+        public HttpContext()
+            : base()
+        {
+        }
 
         #endregion
 

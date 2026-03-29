@@ -66,6 +66,13 @@ namespace Javax.Xml.Bind.Annotation.Adapters
     public partial class CollapsedStringAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/adapters/CollapsedStringAdapter.html#javax.xml.bind.annotation.adapters.CollapsedStringAdapter()"/>
+        /// </summary>
+        public CollapsedStringAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

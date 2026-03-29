@@ -67,6 +67,13 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/NumberFormatter.html#javax.swing.text.NumberFormatter()"/>
+        /// </summary>
+        public NumberFormatter()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/NumberFormatter.html#javax.swing.text.NumberFormatter(java.text.NumberFormat)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.NumberFormat"/></param>

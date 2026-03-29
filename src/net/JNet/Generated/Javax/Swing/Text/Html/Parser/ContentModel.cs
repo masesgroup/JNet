@@ -67,6 +67,13 @@ namespace Javax.Swing.Text.Html.Parser
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/parser/ContentModel.html#javax.swing.text.html.parser.ContentModel()"/>
+        /// </summary>
+        public ContentModel()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/parser/ContentModel.html#javax.swing.text.html.parser.ContentModel(int,java.lang.Object,javax.swing.text.html.parser.ContentModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

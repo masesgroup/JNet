@@ -66,6 +66,13 @@ namespace Java.Beans
     public partial class PropertyEditorManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/PropertyEditorManager.html#java.beans.PropertyEditorManager()"/>
+        /// </summary>
+        public PropertyEditorManager()
+            : base()
+        {
+        }
 
         #endregion
 

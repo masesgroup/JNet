@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicPopupMenuUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicPopupMenuUI.html#javax.swing.plaf.basic.BasicPopupMenuUI()"/>
+        /// </summary>
+        public BasicPopupMenuUI()
+            : base()
+        {
+        }
 
         #endregion
 

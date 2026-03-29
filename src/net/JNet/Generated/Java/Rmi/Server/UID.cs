@@ -67,6 +67,13 @@ namespace Java.Rmi.Server
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UID.html#java.rmi.server.UID()"/>
+        /// </summary>
+        public UID()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UID.html#java.rmi.server.UID(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>

@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthColorChooserUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthColorChooserUI.html#javax.swing.plaf.synth.SynthColorChooserUI()"/>
+        /// </summary>
+        public SynthColorChooserUI()
+            : base()
+        {
+        }
 
         #endregion
 

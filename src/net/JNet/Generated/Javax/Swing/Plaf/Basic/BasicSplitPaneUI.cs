@@ -362,6 +362,13 @@ namespace Javax.Swing.Plaf.Basic
     public partial class BasicSplitPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.html#javax.swing.plaf.basic.BasicSplitPaneUI()"/>
+        /// </summary>
+        public BasicSplitPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

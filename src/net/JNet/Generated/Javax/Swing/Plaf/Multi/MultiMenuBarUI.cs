@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Multi
     public partial class MultiMenuBarUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/multi/MultiMenuBarUI.html#javax.swing.plaf.multi.MultiMenuBarUI()"/>
+        /// </summary>
+        public MultiMenuBarUI()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,15 @@ namespace Java.Applet
     public partial class Applet
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/applet/Applet.html#java.applet.Applet()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public Applet()
+            : base()
+        {
+        }
 
         #endregion
 

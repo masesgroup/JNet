@@ -66,6 +66,13 @@ namespace Javax.Swing.Undo
     public partial class CompoundEdit
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/undo/CompoundEdit.html#javax.swing.undo.CompoundEdit()"/>
+        /// </summary>
+        public CompoundEdit()
+            : base()
+        {
+        }
 
         #endregion
 

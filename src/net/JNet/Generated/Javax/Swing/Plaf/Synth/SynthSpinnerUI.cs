@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthSpinnerUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthSpinnerUI.html#javax.swing.plaf.synth.SynthSpinnerUI()"/>
+        /// </summary>
+        public SynthSpinnerUI()
+            : base()
+        {
+        }
 
         #endregion
 

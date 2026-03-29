@@ -591,6 +591,13 @@ namespace Javax.Swing.Plaf
         {
             #region Constructors
             /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html#javax.swing.plaf.BorderUIResource$EtchedBorderUIResource()"/>
+            /// </summary>
+            public EtchedBorderUIResource()
+                : base()
+            {
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html#javax.swing.plaf.BorderUIResource$EtchedBorderUIResource(int,java.awt.Color,java.awt.Color)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>

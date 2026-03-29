@@ -67,6 +67,13 @@ namespace Java.Beans.Beancontext
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport()"/>
+        /// </summary>
+        public BeanContextSupport()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext,java.util.Locale,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>

@@ -66,6 +66,13 @@ namespace Java.Util.Concurrent.Locks
     public partial class StampedLock
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/StampedLock.html#java.util.concurrent.locks.StampedLock()"/>
+        /// </summary>
+        public StampedLock()
+            : base()
+        {
+        }
 
         #endregion
 

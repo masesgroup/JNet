@@ -67,6 +67,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Timer.html#java.util.Timer()"/>
+        /// </summary>
+        public Timer()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Timer.html#java.util.Timer(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

@@ -66,6 +66,13 @@ namespace Java.Beans
     public partial class SimpleBeanInfo
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/SimpleBeanInfo.html#java.beans.SimpleBeanInfo()"/>
+        /// </summary>
+        public SimpleBeanInfo()
+            : base()
+        {
+        }
 
         #endregion
 

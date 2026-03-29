@@ -68,6 +68,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractAction.html#javax.swing.AbstractAction()"/>
+        /// </summary>
+        public AbstractAction()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractAction.html#javax.swing.AbstractAction(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

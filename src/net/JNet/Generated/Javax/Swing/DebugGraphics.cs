@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DebugGraphics.html#javax.swing.DebugGraphics()"/>
+        /// </summary>
+        public DebugGraphics()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DebugGraphics.html#javax.swing.DebugGraphics(java.awt.Graphics,javax.swing.JComponent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>

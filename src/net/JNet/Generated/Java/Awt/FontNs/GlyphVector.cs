@@ -67,6 +67,13 @@ namespace Java.Awt.FontNs
     public partial class GlyphVector
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/font/GlyphVector.html#java.awt.font.GlyphVector()"/>
+        /// </summary>
+        public GlyphVector()
+            : base()
+        {
+        }
 
         #endregion
 

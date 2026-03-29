@@ -98,6 +98,13 @@ namespace Javax.Swing.Event
     public partial class InternalFrameAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/InternalFrameAdapter.html#javax.swing.event.InternalFrameAdapter()"/>
+        /// </summary>
+        public InternalFrameAdapter()
+            : base()
+        {
+        }
 
         #endregion
 

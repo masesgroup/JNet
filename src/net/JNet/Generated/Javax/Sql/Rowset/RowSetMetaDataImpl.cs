@@ -66,6 +66,13 @@ namespace Javax.Sql.Rowset
     public partial class RowSetMetaDataImpl
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/RowSetMetaDataImpl.html#javax.sql.rowset.RowSetMetaDataImpl()"/>
+        /// </summary>
+        public RowSetMetaDataImpl()
+            : base()
+        {
+        }
 
         #endregion
 

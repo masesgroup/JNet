@@ -104,6 +104,13 @@ namespace Javax.Swing
     public partial class DefaultListModel
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultListModel.html#javax.swing.DefaultListModel()"/>
+        /// </summary>
+        public DefaultListModel()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -381,6 +388,13 @@ namespace Javax.Swing
     public partial class DefaultListModel<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultListModel.html#javax.swing.DefaultListModel()"/>
+        /// </summary>
+        public DefaultListModel()
+            : base()
+        {
+        }
 
         #endregion
 

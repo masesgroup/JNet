@@ -67,6 +67,13 @@ namespace Javax.Swing.Filechooser
     public partial class FileSystemView
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/filechooser/FileSystemView.html#javax.swing.filechooser.FileSystemView()"/>
+        /// </summary>
+        public FileSystemView()
+            : base()
+        {
+        }
 
         #endregion
 

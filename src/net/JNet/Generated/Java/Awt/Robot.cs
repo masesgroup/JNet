@@ -67,6 +67,15 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Robot.html#java.awt.Robot()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Awt.AWTException"/>
+        public Robot()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Robot.html#java.awt.Robot(java.awt.GraphicsDevice)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.GraphicsDevice"/></param>

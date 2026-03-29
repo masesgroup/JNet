@@ -67,6 +67,16 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/FileHandler.html#java.util.logging.FileHandler()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        public FileHandler()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/FileHandler.html#java.util.logging.FileHandler(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

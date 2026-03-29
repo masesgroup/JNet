@@ -67,6 +67,13 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html#java.security.SecureRandom()"/>
+        /// </summary>
+        public SecureRandom()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html#java.security.SecureRandom(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>

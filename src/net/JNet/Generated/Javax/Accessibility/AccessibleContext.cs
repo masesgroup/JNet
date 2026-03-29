@@ -67,6 +67,13 @@ namespace Javax.Accessibility
     public partial class AccessibleContext
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleContext.html#javax.accessibility.AccessibleContext()"/>
+        /// </summary>
+        public AccessibleContext()
+            : base()
+        {
+        }
 
         #endregion
 

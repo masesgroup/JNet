@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSplitPane.html#javax.swing.JSplitPane()"/>
+        /// </summary>
+        public JSplitPane()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSplitPane.html#javax.swing.JSplitPane(int,boolean,java.awt.Component,java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

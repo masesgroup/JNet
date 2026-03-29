@@ -67,6 +67,13 @@ namespace Java.Security.Cert
     public partial class X509CRLEntry
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/X509CRLEntry.html#java.security.cert.X509CRLEntry()"/>
+        /// </summary>
+        public X509CRLEntry()
+            : base()
+        {
+        }
 
         #endregion
 

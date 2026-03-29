@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthPopupMenuUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthPopupMenuUI.html#javax.swing.plaf.synth.SynthPopupMenuUI()"/>
+        /// </summary>
+        public SynthPopupMenuUI()
+            : base()
+        {
+        }
 
         #endregion
 

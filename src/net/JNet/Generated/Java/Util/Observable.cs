@@ -66,6 +66,13 @@ namespace Java.Util
     public partial class Observable
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Observable.html#java.util.Observable()"/>
+        /// </summary>
+        public Observable()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -66,6 +66,13 @@ namespace Java.Rmi.Dgc
     public partial class VMID
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/dgc/VMID.html#java.rmi.dgc.VMID()"/>
+        /// </summary>
+        public VMID()
+            : base()
+        {
+        }
 
         #endregion
 

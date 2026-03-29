@@ -67,6 +67,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPasswordField.html#javax.swing.JPasswordField()"/>
+        /// </summary>
+        public JPasswordField()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPasswordField.html#javax.swing.JPasswordField(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

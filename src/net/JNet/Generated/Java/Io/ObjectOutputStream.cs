@@ -304,6 +304,13 @@ namespace Java.Io
         public partial class PutField
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectOutputStream.PutField.html#java.io.ObjectOutputStream$PutField()"/>
+            /// </summary>
+            public PutField()
+                : base()
+            {
+            }
 
             #endregion
 

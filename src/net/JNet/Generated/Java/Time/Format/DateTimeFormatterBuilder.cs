@@ -66,6 +66,13 @@ namespace Java.Time.Format
     public partial class DateTimeFormatterBuilder
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatterBuilder.html#java.time.format.DateTimeFormatterBuilder()"/>
+        /// </summary>
+        public DateTimeFormatterBuilder()
+            : base()
+        {
+        }
 
         #endregion
 

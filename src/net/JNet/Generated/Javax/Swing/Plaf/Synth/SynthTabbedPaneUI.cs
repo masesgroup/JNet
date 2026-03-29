@@ -66,6 +66,13 @@ namespace Javax.Swing.Plaf.Synth
     public partial class SynthTabbedPaneUI
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/synth/SynthTabbedPaneUI.html#javax.swing.plaf.synth.SynthTabbedPaneUI()"/>
+        /// </summary>
+        public SynthTabbedPaneUI()
+            : base()
+        {
+        }
 
         #endregion
 

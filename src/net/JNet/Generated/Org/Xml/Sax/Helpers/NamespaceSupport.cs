@@ -66,6 +66,13 @@ namespace Org.Xml.Sax.Helpers
     public partial class NamespaceSupport
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/NamespaceSupport.html#org.xml.sax.helpers.NamespaceSupport()"/>
+        /// </summary>
+        public NamespaceSupport()
+            : base()
+        {
+        }
 
         #endregion
 

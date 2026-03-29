@@ -67,6 +67,13 @@ namespace Java.Awt.Geom
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Area.html#java.awt.geom.Area()"/>
+        /// </summary>
+        public Area()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Area.html#java.awt.geom.Area(java.awt.Shape)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>

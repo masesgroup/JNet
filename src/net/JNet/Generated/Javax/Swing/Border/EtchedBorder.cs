@@ -67,6 +67,13 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/EtchedBorder.html#javax.swing.border.EtchedBorder()"/>
+        /// </summary>
+        public EtchedBorder()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/EtchedBorder.html#javax.swing.border.EtchedBorder(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

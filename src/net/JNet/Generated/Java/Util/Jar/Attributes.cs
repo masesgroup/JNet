@@ -104,6 +104,13 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.html#java.util.jar.Attributes()"/>
+        /// </summary>
+        public Attributes()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.html#java.util.jar.Attributes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

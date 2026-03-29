@@ -67,6 +67,13 @@ namespace Java.Util.Concurrent
     public partial class AbstractExecutorService
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/AbstractExecutorService.html#java.util.concurrent.AbstractExecutorService()"/>
+        /// </summary>
+        public AbstractExecutorService()
+            : base()
+        {
+        }
 
         #endregion
 

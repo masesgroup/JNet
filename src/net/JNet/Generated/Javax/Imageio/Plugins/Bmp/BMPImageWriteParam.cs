@@ -67,6 +67,13 @@ namespace Javax.Imageio.Plugins.Bmp
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/plugins/bmp/BMPImageWriteParam.html#javax.imageio.plugins.bmp.BMPImageWriteParam()"/>
+        /// </summary>
+        public BMPImageWriteParam()
+            : base()
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/plugins/bmp/BMPImageWriteParam.html#javax.imageio.plugins.bmp.BMPImageWriteParam(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
