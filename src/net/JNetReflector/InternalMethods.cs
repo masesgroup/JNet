@@ -950,7 +950,6 @@ namespace MASES.JNet.Reflector
                 var paramCount = constructor.ParameterCount;
                 var methodNameOrigin = constructor.Name;
 
-                if (paramCount == 0) continue; // default constructor managed from AllClasses template as default for any JCOBridge reflected class
                 bool isDeprecated = constructor.IsDeprecated();
                 if (!JNetReflectorCore.ReflectDeprecated && isDeprecated)
                 {
