@@ -37,13 +37,25 @@ public final class ContainerAdapter extends java.awt.event.ContainerAdapter impl
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
     }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -73,12 +85,12 @@ public final class ContainerAdapter extends java.awt.event.ContainerAdapter impl
     //@Override
     public void componentAdded(java.awt.event.ContainerEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("componentAdded", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentAdded(arg0);
+        raiseEvent(0, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentAdded(arg0);
     }
     //@Override
     public void componentRemoved(java.awt.event.ContainerEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("componentRemoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentRemoved(arg0);
+        raiseEvent(1, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentRemoved(arg0);
     }
 
 }

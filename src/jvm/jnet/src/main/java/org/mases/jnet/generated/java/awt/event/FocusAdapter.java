@@ -37,13 +37,25 @@ public final class FocusAdapter extends java.awt.event.FocusAdapter implements o
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
     }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -73,12 +85,12 @@ public final class FocusAdapter extends java.awt.event.FocusAdapter implements o
     //@Override
     public void focusGained(java.awt.event.FocusEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("focusGained", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.focusGained(arg0);
+        raiseEvent(0, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.focusGained(arg0);
     }
     //@Override
     public void focusLost(java.awt.event.FocusEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("focusLost", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.focusLost(arg0);
+        raiseEvent(1, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.focusLost(arg0);
     }
 
 }

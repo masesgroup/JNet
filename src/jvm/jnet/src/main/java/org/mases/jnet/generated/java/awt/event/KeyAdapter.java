@@ -37,13 +37,25 @@ public final class KeyAdapter extends java.awt.event.KeyAdapter implements org.m
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
     }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -73,17 +85,17 @@ public final class KeyAdapter extends java.awt.event.KeyAdapter implements org.m
     //@Override
     public void keyPressed(java.awt.event.KeyEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("keyPressed", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.keyPressed(arg0);
+        raiseEvent(0, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.keyPressed(arg0);
     }
     //@Override
     public void keyReleased(java.awt.event.KeyEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("keyReleased", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.keyReleased(arg0);
+        raiseEvent(1, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.keyReleased(arg0);
     }
     //@Override
     public void keyTyped(java.awt.event.KeyEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("keyTyped", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.keyTyped(arg0);
+        raiseEvent(2, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.keyTyped(arg0);
     }
 
 }

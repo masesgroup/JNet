@@ -37,13 +37,25 @@ public final class DropTargetAdapter extends java.awt.dnd.DropTargetAdapter impl
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
     }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -73,27 +85,27 @@ public final class DropTargetAdapter extends java.awt.dnd.DropTargetAdapter impl
     //@Override
     public void drop(java.awt.dnd.DropTargetDropEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("drop", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        raiseEvent(0, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
     //@Override
     public void dragEnter(java.awt.dnd.DropTargetDragEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("dragEnter", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragEnter(arg0);
+        raiseEvent(1, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragEnter(arg0);
     }
     //@Override
     public void dragExit(java.awt.dnd.DropTargetEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("dragExit", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragExit(arg0);
+        raiseEvent(2, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragExit(arg0);
     }
     //@Override
     public void dragOver(java.awt.dnd.DropTargetDragEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("dragOver", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragOver(arg0);
+        raiseEvent(3, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragOver(arg0);
     }
     //@Override
     public void dropActionChanged(java.awt.dnd.DropTargetDragEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("dropActionChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dropActionChanged(arg0);
+        raiseEvent(4, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dropActionChanged(arg0);
     }
 
 }

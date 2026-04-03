@@ -37,13 +37,25 @@ public final class BiPredicate implements org.mases.jcobridge.IJCListener, java.
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
     }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -73,12 +85,12 @@ public final class BiPredicate implements org.mases.jcobridge.IJCListener, java.
     //@Override
     public boolean test(java.lang.Object arg0, java.lang.Object arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("test", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+        raiseEvent(0, eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
     //@Override
     public java.util.function.BiPredicate and(java.util.function.BiPredicate arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("and", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
+        raiseEvent(1, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
     }
     //@Override
     public java.util.function.BiPredicate andDefault(java.util.function.BiPredicate arg0) {
@@ -87,7 +99,7 @@ public final class BiPredicate implements org.mases.jcobridge.IJCListener, java.
     //@Override
     public java.util.function.BiPredicate negate() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("negate", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
+        raiseEvent(2, eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
     }
     //@Override
     public java.util.function.BiPredicate negateDefault() {
@@ -96,7 +108,7 @@ public final class BiPredicate implements org.mases.jcobridge.IJCListener, java.
     //@Override
     public java.util.function.BiPredicate or(java.util.function.BiPredicate arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("or", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
+        raiseEvent(3, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
     }
     //@Override
     public java.util.function.BiPredicate orDefault(java.util.function.BiPredicate arg0) {
