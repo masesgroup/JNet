@@ -165,7 +165,7 @@ namespace MASES.JNetPerformanceTest
             {
                 var jClass = JNetTestCore.GlobalInstance.JVM.GetClass("org.mases.jnet.TestPerformance");
 
-                Console.WriteLine($"Start executeStaticEmptyMethod Invoke");
+                Console.WriteLine($"Start Invoke executeStaticEmptyMethod");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -176,7 +176,7 @@ namespace MASES.JNetPerformanceTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break executeStaticEmptyMethod Invoke at iteration {i} due to {ex}");
+                        Console.WriteLine($"Break Invoke executeStaticEmptyMethod at iteration {i} due to {ex}");
                         break;
                     }
                 }
@@ -184,7 +184,7 @@ namespace MASES.JNetPerformanceTest
 
                 Console.WriteLine($"End executeStaticEmptyMethod Invoke over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
 
-                Console.WriteLine($"Start executeStaticEmptyMethod InvokeWithSignature");
+                Console.WriteLine($"Start InvokeWithSignature executeStaticEmptyMethod");
 
                 watcher1.Restart();
                 for (i = 0; i < requestedIterations; i++)
@@ -201,7 +201,7 @@ namespace MASES.JNetPerformanceTest
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End executeStaticEmptyMethod InvokeWithSignature over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                Console.WriteLine($"End InvokeWithSignature executeStaticEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
             }
             catch
             {
@@ -218,7 +218,7 @@ namespace MASES.JNetPerformanceTest
             {
                 var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
 
-                Console.WriteLine($"Start executeEmptyMethod Invoke");
+                Console.WriteLine($"Start Invoke executeEmptyMethod");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -229,7 +229,7 @@ namespace MASES.JNetPerformanceTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break executeEmptyMethod Invoke at iteration {i} due to {ex}");
+                        Console.WriteLine($"Break Invoke executeEmptyMethod at iteration {i} due to {ex}");
                         break;
                     }
                 }
@@ -237,7 +237,7 @@ namespace MASES.JNetPerformanceTest
 
                 Console.WriteLine($"End executeEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
 
-                Console.WriteLine($"Start executeEmptyMethod InvokeWithSignature");
+                Console.WriteLine($"Start InvokeWithSignature executeEmptyMethod");
 
                 watcher1.Restart();
                 for (i = 0; i < requestedIterations; i++)
@@ -254,7 +254,7 @@ namespace MASES.JNetPerformanceTest
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End executeEmptyMethod InvokeWithSignature over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                Console.WriteLine($"End InvokeWithSignature executeEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
             }
             catch
             {
@@ -286,7 +286,7 @@ namespace MASES.JNetPerformanceTest
                         jClass.InvokeWithSignature(method, "()Z");
                     }
                     watcher1.Stop();
-                    Console.WriteLine($"End {method} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                    Console.WriteLine($"End TestPredicateRoundTrip {method} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
                 }
             }
             catch
