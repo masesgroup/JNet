@@ -71,17 +71,18 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 
 ## Summary
 
-* [Roadmap](src/documentation/articles/roadmap.md)
-* [Current state](src/documentation/articles/currentstate.md)
-* [JNet usage](src/documentation/articles/usage.md)
-* [JNet performance tips](src/documentation/articles/performancetips.md)
-* [JNet APIs extensibility](src/documentation/articles/API_extensibility.md)
-* [JNet JVM™ callbacks](src/documentation/articles/jvm_callbacks.md)
-* [JNet CLI usage](src/documentation/articles/usageCLI.md)
-* [JNet Docker usage](src/documentation/articles/docker.md)
-* [JNet Reflector usage](src/documentation/articles/usageReflector.md)
-* [JNet PowerShell usage](src/documentation/articles/usagePS.md)
-* [JNet Command-line switches](src/documentation/articles/commandlineswitch.md)
+* [Roadmap](articles/roadmap.md)
+* [Current state](articles/currentstate.md)
+* [JNet usage](articles/usage.md)
+* [JNet performance](articles/performance.md)
+* [JNet performance tips](articles/performancetips.md)
+* [JNet APIs extensibility](articles/API_extensibility.md)
+* [JNet JVM™ callbacks](articles/jvm_callbacks.md)
+* [JNet CLI usage](articles/usageCLI.md)
+* [JNet Docker usage](articles/docker.md)
+* [JNet Reflector usage](articles/usageReflector.md)
+* [JNet PowerShell usage](articles/usagePS.md)
+* [JNet Command-line switches](articles/commandlineswitch.md)
 
 ### Recent changes
 
@@ -176,7 +177,7 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
   * No need to learn new APIs: we try to expose the same APIs in C# style;
   * No extra validation cycle on protocol and functionality: bug fix, improvements, new features are immediately available;
   * Documentation is shared;
-* **Dynamic code**: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this [simple example](https://www.jcobridge.com/net-examples/dotnet-examples/) and [JNet APIs extensibility](src/documentation/articles/API_extensibility.md).
+* **Dynamic code**: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this [simple example](https://www.jcobridge.com/net-examples/dotnet-examples/) and [JNet APIs extensibility](articles/API_extensibility.md).
 
 > [!NOTE]
 > [JCOBridge 2.6.*](https://www.jcobridge.com) can be used for free without any obligations. A commercial license must be purchased — or the software uninstalled — if you derive direct or indirect income from its usage.
