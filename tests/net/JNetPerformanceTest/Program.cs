@@ -134,8 +134,8 @@ namespace MASES.JNetPerformanceTest
 
             TestPredicateRoundTrip(iterations, false, false);
             TestPredicateRoundTrip(iterations, true, false);
-            //TestPredicateRoundTrip(iterations, false, true);
-            //TestPredicateRoundTrip(iterations, true, true);
+            TestPredicateRoundTrip(iterations, false, true);
+            TestPredicateRoundTrip(iterations, true, true);
         }
 
         static void TestStaticMethod(int requestedIterations, bool feedback)
