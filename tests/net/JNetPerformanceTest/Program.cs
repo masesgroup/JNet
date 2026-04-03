@@ -132,9 +132,9 @@ namespace MASES.JNetPerformanceTest
             TestMethod(iterations, false);
             TestMethod(iterations, true);
 
-            TestPredicateRoundTrip(iterations, false, false);
-            TestPredicateRoundTrip(iterations, true, false);
-            //TestPredicateRoundTrip(iterations, false, true);
+            //TestPredicateRoundTrip(iterations, false, false);
+            //TestPredicateRoundTrip(iterations, true, false);
+            TestPredicateRoundTrip(iterations, false, true);
             //TestPredicateRoundTrip(iterations, true, true);
         }
 
