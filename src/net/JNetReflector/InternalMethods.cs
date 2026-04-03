@@ -2338,7 +2338,7 @@ namespace MASES.JNet.Reflector
                     exceptionsThrowed = $" throws {exceptionsThrowed}";
                 }
                 bool raiseOnIndex = true; // default to be added in configuration
-                eventHandlerName = raiseOnIndex ? (globalHandlerIndexer++).ToString() : $"\"{eventHandlerName}\"";
+                eventHandlerName = raiseOnIndex ? (++globalHandlerIndexer).ToString() : $"\"{eventHandlerName}\"";
 
                 string execStub;
                 if (isVoidMethod)
