@@ -182,7 +182,7 @@ namespace MASES.JNetPerformanceTest
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End executeStaticEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.ElapsedTicks / i)}");
+                Console.WriteLine($"End executeStaticEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
 
                 Console.WriteLine($"Start executeStaticEmptyMethod InvokeWithSignature");
 
@@ -201,7 +201,7 @@ namespace MASES.JNetPerformanceTest
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End executeStaticEmptyMethod InvokeWithSignature over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.ElapsedTicks / i)}");
+                Console.WriteLine($"End executeStaticEmptyMethod InvokeWithSignature over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
             }
             catch
             {
@@ -235,7 +235,7 @@ namespace MASES.JNetPerformanceTest
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End executeEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.ElapsedTicks / i)}");
+                Console.WriteLine($"End executeEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
 
                 Console.WriteLine($"Start executeEmptyMethod InvokeWithSignature");
 
@@ -254,7 +254,7 @@ namespace MASES.JNetPerformanceTest
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End executeEmptyMethod InvokeWithSignature over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.ElapsedTicks / i)}");
+                Console.WriteLine($"End executeEmptyMethod InvokeWithSignature over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
             }
             catch
             {
@@ -286,7 +286,7 @@ namespace MASES.JNetPerformanceTest
                         jClass.InvokeWithSignature(method, "(Lorg/mases/jnet/Predicate;)Z");
                     }
                     watcher1.Stop();
-                    Console.WriteLine($"End {method} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.ElapsedTicks / i)}");
+                    Console.WriteLine($"End {method} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
                 }
             }
             catch
