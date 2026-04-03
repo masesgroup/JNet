@@ -188,7 +188,7 @@ namespace MASES.JNetPerformanceTest
                     {
                         if (feedback)
                         {
-                            jClass.InvokeWithSignature(methodName, "(B)V", feedback);
+                            jClass.InvokeWithSignature(methodName, "(Z)Z", feedback);
                         }
                         else jClass.InvokeWithSignature(methodName, "()V");
                     }
@@ -250,7 +250,7 @@ namespace MASES.JNetPerformanceTest
                     {
                         if (feedback)
                         {
-                            jClass.InvokeWithSignature(methodName, "(B)V", feedback);
+                            jClass.InvokeWithSignature(methodName, "(Z)Z", feedback);
                         }
                         else jClass.InvokeWithSignature(methodName, "()V");
                     }
