@@ -46,8 +46,6 @@ namespace Org.Mases.JNet
     /// <typeparam name="TObject">The data type associated to the event</typeparam>
     public class Predicate<TObject> : Predicate
     {
-        readonly bool _readJVM;
-
         /// <summary>
         /// The <see cref="Func{TObject, Boolean}"/> to be executed
         /// </summary>
@@ -55,22 +53,18 @@ namespace Org.Mases.JNet
         /// <summary>
         /// Initialize a new instance of <see cref="Predicate{TObject}"/>
         /// </summary>
-        public Predicate(bool readJVM) : base()
+        public Predicate() : base()
         {
             if (InitHandlers)
             {
                 AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<TObject>>>(TestEventHandler)); OnTest = Test;
             }
-            _readJVM = readJVM;
         }
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<TObject>> data)
         {
-            if (_readJVM)
-            {
-                var retVal = OnTest(data.EventData.TypedEventData);
-                data.SetReturnValue(retVal);
-            }
+            var retVal = OnTest(data.EventData.TypedEventData);
+            data.SetReturnValue(retVal);
         }
         /// <summary>
         /// Executes the Predicate action in the CLR
@@ -270,8 +264,9 @@ namespace MASES.JNetPerformanceTest
             try
             {
                 var method = byIndex ? "executePredicateIndex" : "executePredicate";
-                using (var predicate = new Org.Mases.JNet.Predicate<object>(readJVM)
+                using (var predicate = new Org.Mases.JNet.Predicate<object>()
                 {
+                    ShallManageEventHandler = (o) => readJVM,
                     OnTest = (o) =>
                     {
                         return true;
