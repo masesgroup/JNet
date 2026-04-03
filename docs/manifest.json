@@ -11548,6 +11548,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Lang.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Lang.Record.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Lang.Record",
+      "Summary": "<p sourcefile=\"api/Java.Lang.Record.yml\" sourcestartlinenumber=\"1\">.NET implementations of <a href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\">https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Lang.Ref.PhantomReference-1.yml",
       "output": {
         ".html": {
@@ -77935,6 +77949,16 @@
       "output": {
         ".html": {
           "relative_path": "articles/roadmap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/support.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/support.html"
         }
       },
       "version": ""

@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>JVM™ callbacks within JNet powered code | MASES Group - JNet </title>
+      <title>JVM™ Callbacks in JNet | MASES Group - JNet </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="JVM™ callbacks within JNet powered code | MASES Group - JNet ">
+      <meta name="title" content="JVM™ Callbacks in JNet | MASES Group - JNet ">
       <meta name="description" content="Describes how to manage callbacks from JVM™ using the .NET suite for Java™/JVM™">
       
       <link rel="icon" href="../images/favicon.ico">
@@ -87,15 +87,19 @@
         <article data-uid="">
 <h1 id="jnet-jvm-callbacks">JNet: JVM™ callbacks</h1>
 
-<p>One of the features of <a href="https://www.jcobridge.com/">JCOBridge</a>, used in JNet, is the callback management from JVM™.
-Many applications use the callback mechanism to be informed about events which happens during execution.
-Apache Kakfa exposes many API which have callbacks in the parameters.
-The Java™ code of a callback can be written with lambda expressions, but JNet cannot, it needs an object.</p>
+<p>One of the features of <a href="https://www.jcobridge.com/">JCOBridge</a> is callback management from the JVM™.
+Java™ callbacks are typically expressed as interfaces, which Java™ code can satisfy with lambda expressions.
+Since JNet operates at the JNI boundary, lambdas are not directly usable — a concrete class implementing
+the interface is required instead. This page explains how JNet and JCOBridge handle this transparently.</p>
 <h2 id="jnet-callback-internals">JNet Callback internals</h2>
-<p>JNet is based on <a href="https://www.jcobridge.com/">JCOBridge</a>. JCOBridge as per its name is a bridge between the CLR (CoreCLR) and the JVM™.
-Events, generally are expressed as interfaces in Java™, and a lambda expression is translated into an object at compile time. Otherwise the developer can implement a Java™ class which <strong>implements</strong> the interface: with JCOBridge the developer needs to follow a seamless approach.
-In JNet some callbacks are ready made. In this tutorial the <strong>Predicate</strong> interface (<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html">java.util.function.Predicate</a>) will be taken as an example.
-The concrete class implementing the interface is the following one:</p>
+<p>JNet is based on <a href="https://www.jcobridge.com/">JCOBridge</a>, a bridge between the CLR (CoreCLR) and the JVM™.
+Events are generally expressed as interfaces in Java™, and a lambda expression is compiled into a concrete
+object at build time. Alternatively, a developer can implement a Java™ class that <strong>implements</strong> the
+interface directly — with JCOBridge, this follows a structured but familiar approach.</p>
+<p>In JNet, several callbacks are ready-made. This tutorial uses the <strong>Predicate</strong> interface
+(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html">java.util.function.Predicate</a>)
+as an example.</p>
+<p>The concrete JVM™ class implementing the interface looks like this:</p>
 <pre><code class="lang-java">public final class JNetPredicate extends JCListener implements Predicate {
     public JNetPredicate(String key) throws JCNativeException {
         super(key);
@@ -109,104 +113,118 @@ The concrete class implementing the interface is the following one:</p>
     }
 }
 </code></pre>
-<p>The structure follows the guidelines of JCOBridge:</p>
+<p>The structure follows the JCOBridge guidelines:</p>
 <ul>
-<li>It <strong>must</strong> <code>extends</code> the base class <code>JCListener</code> (or <code>implements</code> the interface <code>IJCListener</code>): this is a constraint of JCOBridge; <code>JCListener</code> has many ready made methods; if the callback is not based on an interface the developer can <code>implements</code> the <code>IJCListener</code>;</li>
-<li>The concrete class <strong>must</strong> have at least a constructor accepting a String;</li>
-<li>Within the implementation of the interface method (in this case the method <code>test</code> of the <code>Predicate</code> interface) the method <code>raiseEvent</code> informs the CLR that a method was raised using the specific key (<strong>test</strong> in this case) along with all associated objects:
+<li>It <strong>must</strong> extend the base class <code>JCListener</code> (or implement the interface <code>IJCListener</code>). This is a
+requirement of JCOBridge. <code>JCListener</code> provides many ready-made methods for event handling. If the
+callback is not based on an interface, the class can implement <code>IJCListener</code> directly.</li>
+<li>The concrete class <strong>must</strong> have at least one constructor accepting a <code>String</code>.</li>
+<li>Within the interface method implementation (here, <code>test</code> from the <code>Predicate</code> interface), the method
+<code>raiseEvent</code> notifies the CLR that the method was invoked, passing the event key (<code>&quot;test&quot;</code>) and all
+associated objects:
 <ul>
-<li>If the interface has many methods each one must have its own <code>raiseEvent</code> call;</li>
-<li>The key used from raiseEvent is not mandatory to be equal to the name of the calling method, it is only a convention for the mapping: this will be more clear looking at the C# code.</li>
+<li>If the interface declares multiple methods, each one must have its own <code>raiseEvent</code> call.</li>
+<li>The key passed to <code>raiseEvent</code> does not need to match the name of the calling method — it is a
+convention for mapping to the CLR side, which will become clearer when looking at the C# code below.</li>
 </ul>
 </li>
 </ul>
-<p>Now there is a concrete class within the JVM™ space.
-Going on to the CLR side a possible concrete class in C# is as the following one:</p>
-<pre><code class="lang-c#">public class Predicate&lt;TObject&gt; : JVMBridgeListener
+<p>With the JVM™-side class in place, the corresponding CLR-side class in C# looks like this:</p>
+<pre><code class="lang-csharp">public class Predicate&lt;TObject&gt; : JVMBridgeListener
 {
-	public override string ClassName =&gt; &quot;org.mases.jnet.util.function.JNetPredicate&quot;;
+    public override string ClassName =&gt; &quot;org.mases.jnet.util.function.JNetPredicate&quot;;
 
-	Func&lt;TObject, bool&gt; executionFunction = null;
-	public virtual Func&lt;TObject, bool&gt; OnTest { get { return executionFunction; } }
-	
-	public Predicate(Func&lt;TObject, bool&gt; func = null, bool attachEventHandler = true)
-	{
-		if (func != null) executionFunction = func;
-		else executionFunction = Test;
+    Func&lt;TObject, bool&gt; executionFunction = null;
+    public virtual Func&lt;TObject, bool&gt; OnTest { get { return executionFunction; } }
 
-		if (attachEventHandler)
-		{
-			AddEventHandler(&quot;test&quot;, new EventHandler&lt;CLRListenerEventArgs&lt;CLREventData&lt;TObject&gt;&gt;&gt;(EventHandler));
-		}
-	}
+    public Predicate(Func&lt;TObject, bool&gt; func = null, bool attachEventHandler = true)
+    {
+        if (func != null) executionFunction = func;
+        else executionFunction = Test;
 
-	void EventHandler(object sender, CLRListenerEventArgs&lt;CLREventData&lt;TObject&gt;&gt; data)
-	{
-		var retVal = OnTest(data.EventData.TypedEventData);
-		data.SetReturnValue(retVal);
-	}
+        if (attachEventHandler)
+        {
+            AddEventHandler(&quot;test&quot;, new EventHandler&lt;CLRListenerEventArgs&lt;CLREventData&lt;TObject&gt;&gt;&gt;(EventHandler));
+        }
+    }
 
-	public virtual bool Test(TObject obj) { return false; }
+    void EventHandler(object sender, CLRListenerEventArgs&lt;CLREventData&lt;TObject&gt;&gt; data)
+    {
+        var retVal = OnTest(data.EventData.TypedEventData);
+        data.SetReturnValue(retVal);
+    }
+
+    public virtual bool Test(TObject obj) { return false; }
 }
 </code></pre>
-<p>The structure follows the guidelines of JCOBridge:</p>
+<p>The structure follows the JCOBridge guidelines:</p>
 <ul>
-<li>It <strong>must</strong> <code>extends</code> the base class <code>JVMBridgeListener</code> : this is a constraint of JCOBridge; <code>JVMBridgeListener</code> contains all the functionality to handle events from the JVM™;</li>
-<li>The <code>ClassName</code> property informs the base class about the concrete class in JVM™ associated to this event handler;</li>
-<li>Within the constructor the method <code>AddEventHandler</code> registers a .NET <code>EventHandler</code> associated to the method in JVM™; look at the key string: <strong>it is the same used from the JVM™</strong>;
+<li>It <strong>must</strong> derive from the base class <code>JVMBridgeListener</code>. This is a requirement of JCOBridge;
+<code>JVMBridgeListener</code> contains all the infrastructure needed to handle events from the JVM™.</li>
+<li>The <code>ClassName</code> property tells the base class which JVM™ class is associated with this event handler.</li>
+<li>In the constructor, <code>AddEventHandler</code> registers a .NET <code>EventHandler</code> for the corresponding JVM™ method.
+Note that the key string <strong>must match the key used in <code>raiseEvent</code> on the JVM™ side</strong>:
 <ul>
-<li>The costructor of the code above accept in input an <code>Func</code> which permits to write lambda expression in C#;</li>
-<li>The code above associate a private handler with specific data type:
+<li>The constructor accepts an optional <code>Func</code>, allowing the caller to pass a lambda expression from C#.</li>
+<li>The handler uses specific data types:
 <ul>
-<li><code>CLRListenerEventArgs</code> is mandatory and it is used from <code>JVMBridgeListener</code>;</li>
-<li><code>TObject</code> represents the CLR version of the corresponding <code>TObject</code> within the JVM™;</li>
+<li><code>CLRListenerEventArgs</code> is mandatory and is used internally by <code>JVMBridgeListener</code>.</li>
+<li><code>TObject</code> represents the CLR equivalent of the corresponding Java type.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>On callback invocation (<code>test</code> in this case) the CLR will invoke <code>EventHandler</code>:
+<li>When the JVM™ invokes the callback (<code>test</code> in this case), the CLR calls <code>EventHandler</code>:
 <ul>
-<li>The first parameter is directly reported using the <code>TypedEventData</code> property;</li>
-<li>On completion the result is reported back to the JVM™ using the <code>SetReturnValue</code> function;</li>
+<li>The first parameter is accessed via the <code>TypedEventData</code> property.</li>
+<li>Once complete, the return value is sent back to the JVM™ via <code>SetReturnValue</code>.</li>
 </ul>
 </li>
-<li>Other pieces of the class are useful in other condition:
+<li>The class also supports two extension points:
 <ul>
-<li>Creating a new class extending <code>Callback</code> class, the method <code>OnTest</code> can be overridden;</li>
-<li>Otherwise to the property <code>OnTest</code> can be associated to an handler;</li>
+<li>Subclassing <code>Predicate&lt;TObject&gt;</code> and overriding <code>OnTest</code> for a class-based approach.</li>
+<li>Assigning a handler directly to the <code>OnTest</code> property without subclassing.</li>
 </ul>
 </li>
 </ul>
 <h2 id="jnet-callback-lifecycle">JNet Callback lifecycle</h2>
-<p>The lifecycle of the callback managed from JCOBridge is slightly different from the standard one.
-To avoid the Garbage Collector collects an instance of <code>JVMBridgeListener</code> it shall be registered. <code>JVMBridgeListener</code> do this automatically within the initialization (this behavior can be avoided using the property <code>AutoInit</code>).
-So at the end of its use it must be disposed to avoid a resource leak. In the example below there is a <strong>using</strong> clause and the class is instantiated only one time.
-A correct approach is like the following:</p>
-<pre><code class="lang-c#">using (var handler = new Predicate&lt;int&gt;((o1) =&gt;
+<p>The lifecycle of a JCOBridge-managed callback differs from standard .NET object lifetime.
+To prevent the .NET Garbage Collector from collecting an active <code>JVMBridgeListener</code> instance —
+which would break the JVM™ callback link — the instance is automatically registered during
+initialization. This automatic registration can be disabled by setting the <code>AutoInit</code> property
+to <code>false</code>, in which case the developer is responsible for managing the registration manually.</p>
+<p>Because of this registration, the instance <strong>must be explicitly disposed</strong> when no longer needed
+to avoid a resource leak. The recommended pattern uses a <code>using</code> block so the instance is
+allocated once and disposed deterministically:</p>
+<pre><code class="lang-csharp">using (var handler = new Predicate&lt;int&gt;((o1) =&gt;
 {
-	if (o1 &gt; 10) return true;
-	return false;
+    if (o1 &gt; 10) return true;
+    return false;
 }))
 {
-	while (!resetEvent.WaitOne(0))
-	{
-		if (o.CanSend(i, handler)) o.Send(i);
-		i++;
-	}
+    while (!resetEvent.WaitOne(0))
+    {
+        if (o.CanSend(i, handler)) o.Send(i);
+        i++;
+    }
 }
 </code></pre>
-<p>while with an approach like the following one:</p>
-<pre><code class="lang-c#">var result = o.CanSend(i, new Predicate&lt;int&gt;((o1) =&gt;
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Avoid instantiating the callback inline at the call site, as in the example below:</p>
+<pre><code class="lang-csharp">var result = o.CanSend(i, new Predicate&lt;int&gt;((o1) =&gt;
 {
-	if (o1 &gt; 10) return true;
-	return false;
+    if (o1 &gt; 10) return true;
+    return false;
 }));
 </code></pre>
-<p>there are two main drawbacks:</p>
+<p>This pattern has two significant drawbacks:</p>
 <ul>
-<li>it creates a resource leak because the object instance related to <code>Predicate&lt;int&gt;</code> cannot be programmatically disposed;</li>
-<li>on each cycle, the engine shall allocate the infrastructure to handle events from the JVM™.</li>
+<li>It creates a <strong>resource leak</strong>: the <code>Predicate&lt;int&gt;</code> instance cannot be programmatically disposed.</li>
+<li>It incurs <strong>unnecessary overhead</strong>: the JVM™ event-handling infrastructure is allocated on every call
+instead of being reused.</li>
 </ul>
+</div>
 
 </article>
 

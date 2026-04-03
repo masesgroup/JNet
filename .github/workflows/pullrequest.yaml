@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: get_changed_files
-        uses: masesgroup/retrieve-changed-files@v3
+        uses: masesgroup/retrieve-changed-files@v4
         with:
           format: 'csv'
       - id: check_files
@@ -177,7 +177,7 @@ jobs:
       - name: Compile JNetPS
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNetPS\JNetPS.csproj
  
-      - uses: nuget/setup-nuget@v2.0.1
+      - uses: nuget/setup-nuget@v2.0.2
         with:
           nuget-version: '5.x'
           

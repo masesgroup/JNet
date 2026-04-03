@@ -1,44 +1,50 @@
 ---
-title: APIs extendibility of .NET suite for Java™/JVM™
-_description: Describes how to extend available APIs with .NET suite for Java™/JVM™
+title: API Extensibility in JNet
+_description: Describes how to extend available APIs with the .NET suite for Java™/JVM™
 ---
 
-# JNet: APIs extendibility
+# JNet: API extensibility
 
-What to do if an API was not yet implemented? The simplest answer is: help us to make this product reacher :smile:
-There is another answer which is not available with other products: Dynamic code and programmatically API access.
+If a Java™ API has not yet been mapped in JNet, there are two options: contribute a mapping upstream,
+or use JCOBridge's **direct and dynamic access** mechanisms to call any JVM™ class or method at
+runtime — without waiting for a ready-made wrapper.
 
-With **JCOBridge** a developer can use some properties to manage objects in the JVM™. 
-Each JNet class implemented contains some methods and two properties: a direct and a dynamic accessor able to analyze the JVM™ class and executes the code.
-So it is not necessary at all to have the methods be ready to be used.
+Every JNet class exposes two accessor properties alongside its ready-made methods, which can
+introspect and invoke the JVM™ class directly:
 
-Let's go to show some possible conditions analyzing the `Hashtable` class (code at https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Hashtable.cs).
+* **`JVM`** — a typed interface exposing properties and methods to interact with the JVM™ in a
+  structured way.
+* **`DynJVM`** — returns a `dynamic` object, enabling fluent method calls without explicit typing.
+
+Let's look at some concrete scenarios using the `Hashtable` class
+(source at https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Hashtable.cs).
 
 ## When a method is not available
 
-The class has a single ready made method:
+The class has a single ready-made method:
 
-```C#
+```csharp
 public void Put(K key, V value) => IExecute("put", key, value);
 ```
 
-This is a void method, using **IExecute** the user of the library can invoke the `Put` method on the class and execute the Java™ counterpart. 
-The developer can, anyway, invoke the `put` method directly from the instance of the `Hashtable` class using two different paradigms: **direct** or **dynamic** access.
-The `put` method can be replaced with any method (with or without parameters) of the `Hashtable` class.
+This is a void method — using `IExecute`, the library invokes the `put` method on the JVM™ counterpart.
+Any method of the `Hashtable` class (with or without parameters) can be called the same way,
+using either **direct** or **dynamic** access.
 
 ### Direct access
 
-The `IExecute` method is public and can be executed using the instance of the `Hashtable` class.
+`IExecute` is public and can be called directly on any JNet instance:
 
-```C#
+```csharp
 Hashtable<string, string> data = new Hashtable<string, string>(...);
 
 data.IExecute("put", "a", "b");
 ```
 
-Anyway other methods can be accessed like in the following example where an overload of `IExecute` method returns a **bool** value:
+Other methods can also be accessed this way. An overload of `IExecute` accepts a type parameter
+to capture the return value:
 
-```C#
+```csharp
 Hashtable<string, string> data = new Hashtable<string, string>(...);
 
 bool isEmpty = data.IExecute<bool>("isEmpty");
@@ -46,95 +52,129 @@ bool isEmpty = data.IExecute<bool>("isEmpty");
 
 ### Dynamic access
 
-```C#
+```csharp
 dynamic data = new Hashtable<string, string>(...);
 
 data.put("a", "b");
 var isEmpty = data.isEmpty();
 ```
 
-The `Hashtable`, and any other ready made class of the library, supports the **dynamic** access to the methods available in Java™ side.
-The previous example demostrates the behavior.
+Every ready-made JNet class supports `dynamic` access to all methods available on the Java™ side.
+The example above demonstrates this behavior.
 
 ## When a class is not available
 
-In a more complex scenario the method can return back objects or can accept input of not ready made classes: no problem, there is a solution.
+In more complex scenarios, a method may return an object or accept a parameter of a type that has
+not yet been mapped in JNet. There is a solution for each case.
 
 ### Return class is not available
 
-To discuss this case we use another class: the [AWT Panel](https://docs.oracle.com/javase/8/docs/api/java/awt/Panel.html), implemented in [Java.Awt.Panel](https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Panel.cs).
-The .NET class does not have any implemented method: we discuss about [createVolatileImage](https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#createVolatileImage-int-int-) inherited from the base class `Component`.
-The method returns a [VolatileImage](https://docs.oracle.com/javase/8/docs/api/java/awt/image/VolatileImage.html) which is not yet implemented; a solution on this problem is to use directly the `createVolatileImage` Java™ method like the following code snippet does:
+To illustrate this, consider the [AWT Panel](https://docs.oracle.com/javase/8/docs/api/java/awt/Panel.html),
+implemented in [Java.Awt.Panel](https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Panel.cs).
+The .NET class has no mapped methods. The example below calls
+[createVolatileImage](https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#createVolatileImage-int-int-)
+(inherited from `Component`), which returns a
+[VolatileImage](https://docs.oracle.com/javase/8/docs/api/java/awt/image/VolatileImage.html) — a class
+not yet mapped in JNet:
 
-```C#
+```csharp
 Java.Awt.Panel panel = new();
-var volImage = panel.IExecute("createVolatileImage", 100, 100); // the returned object is a dynamic object which reference the VolatileImage object in Java
-var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
-var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
+// Returns a dynamic reference to the VolatileImage object in the JVM™
+var volImage = panel.IExecute("createVolatileImage", 100, 100);
+// Returns a dynamic reference to the BufferedImage object in the JVM™
+var snapshot = volImage.getSnapshot();
+// Returns a bool — the Java boolean is automatically converted
+var isContentLost = volImage.contentsLost();
 ```
 
-The example above uses the classes `VolatileImage` and `BufferedImage` which are not implemented yet: the classes exists in JVM™ and can be accessed.
+`VolatileImage` and `BufferedImage` are not mapped in JNet, but they exist in the JVM™ and are
+fully accessible as `dynamic` references.
 
-### Input and Return class are not available
+### Input and return class are not available
 
-If even the input class is not available the solution is like the following:
+If the input class is also not mapped, use the `JVM` property to instantiate it directly in the JVM™:
 
-```C#
+```csharp
 Java.Awt.Panel panel = new();
-var dynImageCapabilities = panel.JVM.New("java.awt.ImageCapabilities", true); // the returned object is a dynamic object which is a reference of the ImageCapabilities object in Java
-var volImage = panel.IExecute("createVolatileImage", 100, 100, dynImageCapabilities); // the returned object is a dynamic object which reference the VolatileImage object in Java
-var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
-var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
+// Creates a new ImageCapabilities instance in the JVM™; returns a dynamic reference
+var dynImageCapabilities = panel.JVM.New("java.awt.ImageCapabilities", true);
+// Returns a dynamic reference to the VolatileImage object in the JVM™
+var volImage = panel.IExecute("createVolatileImage", 100, 100, dynImageCapabilities);
+// Returns a dynamic reference to the BufferedImage object in the JVM™
+var snapshot = volImage.getSnapshot();
+// Returns a bool — the Java boolean is automatically converted
+var isContentLost = volImage.contentsLost();
 ```
 
-In the above example the class `ImageCapabilities` is not implemented yet. Since it exists in the JVM™ it can be allocated and used.
-Each object, like `Panel` instance, exposes (hidden in the editor) two properties:
-* **JVM** which access the JVM™ using methods;
-* **DynJVM** which access the JVM™ using the Dynamic engine.
+`ImageCapabilities` is not mapped in JNet, but since it exists in the JVM™ it can be instantiated
+and passed as an argument without any additional setup.
 
-Using the listed properties it is possible to instruct the JVM™ about the action to be done.
+Each JNet object exposes two properties for direct JVM™ interaction (intentionally hidden in editor
+autocompletion to reduce noise):
+
+* **`JVM`** — a typed interface with properties and methods for structured JVM™ access; use this
+  when you need explicit control (e.g. `JVM.New(...)` to instantiate a class).
+* **`DynJVM`** — returns a `dynamic` object bound to the JVM™ instance; use this for fluent,
+  untyped method calls.
 
 ### Anything is not available
 
-If no classes are available the solution comes from the global accessor available in JCOBridge and the code snippet is like the following one:
+If no classes are mapped at all, use the global accessor available on `JNetCore`:
 
-```C#
-var panel = JNetCore.New("java.awt.Panel"); // the returned object is a dynamic object reference of the Panel object in Java
-var dynImageCapabilities = JNetCore.New("java.awt.ImageCapabilities", true); // the returned object is a dynamic object which is a reference of the ImageCapabilities object in Java
-var volImage = panel.createVolatileImage(100, 100, dynImageCapabilities); // the returned object is a dynamic object which reference the VolatileImage object in Java
-var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
-var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
-
+```csharp
+// Creates a new Panel instance in the JVM™; returns a dynamic reference
+var panel = JNetCore.New("java.awt.Panel");
+// Creates a new ImageCapabilities instance in the JVM™; returns a dynamic reference
+var dynImageCapabilities = JNetCore.New("java.awt.ImageCapabilities", true);
+// Returns a dynamic reference to the VolatileImage object in the JVM™
+var volImage = panel.createVolatileImage(100, 100, dynImageCapabilities);
+// Returns a dynamic reference to the BufferedImage object in the JVM™
+var snapshot = volImage.getSnapshot();
+// Returns a bool — the Java boolean is automatically converted
+var isContentLost = volImage.contentsLost();
 ```
 
-The example above consider that even the class `Panel` is not implemented yet. Since it exists in the JVM™ it can be allocated and used.
-In previous chapter the tutorial reports about two hidden properties in each object; the properties on each class are just an useful reference to the real one available in `JCOBridge.Global`:
-* **JVM** which access the JVM™ using methods;
-* **DynJVM** which access the JVM™ using the Dynamic engine.
+This example assumes even `Panel` is not mapped. Since it exists in the JVM™, it can be instantiated
+and used via `JNetCore.New(...)`.
 
-Using the properties it is possible to instruct the JVM™ about the action to be done.
+The `JVM` and `DynJVM` properties on each object are convenience references to the underlying
+`JCOBridge.Global` accessor:
+
+* **`JVM`** — typed interface with properties and methods for structured JVM™ access.
+* **`DynJVM`** — returns a `dynamic` object for fluent, untyped calls.
 
 ### Call a method dynamically
 
-Look at the simple example below:
+The `DynJVM` property also exposes `DynInstance`, which allows dynamic invocation on the specific
+object instance:
 
-```C#
-
+```csharp
 Java.Awt.Panel panel = new();
-var result = panel.DynInstance.getLayout(); // this line invokes dynamically the getLayout method on the instance of the Panel
 
+// Dynamically invokes getLayout() on the Panel instance
+var result = panel.DynInstance.getLayout();
 ```
 
-As exposed before, each object, like `Panel` instance, exposes (hidden in the editor) two properties.
-
 Explaining the code:
-* The first line creates a JVM™ object in C# style: `Container` lives in the CLR and has its counterpart in the JVM™.
-* The `result` is a **dynamic** object that can be used to extract data or invokes other methods on the result of `getLayout` which is an object of type `LayoutManager`.
+* The first line creates a JVM™ object in C# style: `Container` (the base class of `Panel`) lives
+  in the CLR and has its counterpart in the JVM™.
+* `result` is a `dynamic` object representing a `LayoutManager` instance in the JVM™. It can be
+  used to read properties or invoke further methods.
 
-## API exendibility limitation
+## API extensibility limitations
 
-Starting from the assumption that JCOBridge does not make any code injection, or compilation, within JVM™ side, the actual limitation is related to something missing within the JVM™.
-In the [JVM™ callbacks](jvm_callbacks.md) article there is an explanation of how works callbacks.
-**The callback feature needs a concrete class in the JVM™ and if it does not exist there is no way to use it from JNet.**
+JCOBridge does not perform any code injection or compilation on the JVM™ side. The only hard
+limitation is therefore related to **callbacks**: a callback requires a concrete class in the JVM™
+that implements the target interface and calls back into the CLR.
+
+**If no such concrete class exists in the JVM™, the callback cannot be used from JNet.**
+
+See the [JVM™ Callbacks](jvm_callbacks.md) article for a full explanation of how callbacks work
+and how to implement them.
+
+> [!NOTE]
+> If you need a callback against a Java™ interface that has no concrete JVM™ implementation in
+> JNet yet, consider contributing one following the patterns described in
+> [JVM™ Callbacks](jvm_callbacks.md).

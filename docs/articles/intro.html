@@ -94,7 +94,6 @@
 <li>✅ <strong>Zero Migration Required</strong> - Integrate existing Java 8 code with .NET applications</li>
 <li>✅ <strong>Direct API Access</strong> - Call any Java API directly from C#/VB.NET</li>
 <li>✅ <strong>Bidirectional</strong> - Java can call .NET and vice versa (see <a href="https://github.com/masesgroup/JCOReflector">JCOReflector</a>)</li>
-<li>✅ <strong>Production Ready</strong> - Trusted in enterprise environments</li>
 </ul>
 <blockquote>
 <p><strong>💡 Legacy Integration:</strong> Still running Java 8 in production? JNet enables
@@ -133,10 +132,10 @@ months of migration work and significant costs.</p>
 <a href="https://github.com/masesgroup/JNet/actions/workflows/codeql-analysis.yml"><img src="https://github.com/masesgroup/JNet/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL"></a>
 <a href="https://github.com/masesgroup/JNet/actions/workflows/release.yaml"><img src="https://github.com/masesgroup/JNet/actions/workflows/release.yaml/badge.svg" alt="CI_RELEASE"></a></p>
 <h3 id="project-disclaimer">Project disclaimer</h3>
-<p>JNet is a suite, curated by MASES Group, can be supported by the open-source community.</p>
-<p>Its primary scope is to support other, public or internal, MASES Group projects: open-source community and commercial entities can use it for their needs and support this project, moreover there are dedicated community and commercial subscription plans.</p>
-<p>The repository code and releases may contain bugs, the release cycle depends from critical discovered issues and/or enhancement requested from this or other projects.</p>
-<p>Looking for the help of experts? MASES Group can help you design, build, deploy, and manage applications mixing .NET and JVM™ enabled languages.</p>
+<p>JNet is a suite for Java™/JVM™, maintained by MASES Group and open to community contributions.
+Its primary scope is to support other MASES Group projects — both open-source and commercial — though it is freely available for any use. Dedicated community and commercial subscription plans are available.
+The repository and releases may contain bugs. The release cycle depends on critical issues discovered and/or enhancement requests from this or other dependent projects.</p>
+<p>Looking for expertise in applications mixing .NET and JVM™-enabled languages? MASES Group can help you design, build, deploy, and manage applications that run .NET and Java™/JVM™ side-by-side. <a href="support.html">Find out more.</a></p>
 <hr>
 <h2 id="scope-of-the-project">Scope of the project</h2>
 <p>This project aims to create a set of libraries and tools to direct access, from .NET, all the features available in the Java™ Platform, this is the counterpart of <a href="https://github.com/masesgroup/JCOReflector">JCOReflector</a>.</p>
@@ -146,20 +145,21 @@ months of migration work and significant costs.</p>
 <li>avoids any third party communication protocol implementation;</li>
 <li>access all features made available from Java™ platform.</li>
 </ul>
-<p>So, for example, do you want an <code>ArrayList</code>? Just write in C# a line of code like this:</p>
-<pre><code class="lang-c#">Java.Util.ArrayList&lt;string&gt; alist = new Java.Util.ArrayList&lt;string&gt;();
+<p>For example, to use a Java <code>ArrayList</code> directly from C#:</p>
+<pre><code class="lang-csharp">using Java.Util;
+
+var alist = new ArrayList&lt;string&gt;();
+alist.Add(&quot;Hello from JNet&quot;);
 </code></pre>
-<p>See <a href="usage.html">JNet usage</a> for a comprehensive example.</p>
+<p>JNet maps Java types — including generics — to their C# equivalents, so you can work with them
+using familiar syntax without any manual marshalling or conversion.</p>
+<p>See <a href="usage.html">JNet usage</a> for a comprehensive walkthrough.</p>
 <h3 id="community-and-contribution">Community and Contribution</h3>
-<p>Do you like the project?</p>
+<p>If you find JNet useful:</p>
 <ul>
-<li>Request your free <a href="https://www.jcobridge.com/pricing-25/">community subscription</a>.</li>
-</ul>
-<p>Do you want to help us?</p>
-<ul>
-<li>put a ⭐ on this project</li>
-<li>open <a href="https://github.com/masesgroup/JNet/issues">issues</a> to request features or report bugs 🐛</li>
-<li>improves the project with Pull Requests</li>
+<li>Leave a ⭐ on the repository</li>
+<li>Open <a href="https://github.com/masesgroup/JNet/issues">issues</a> to report bugs 🐛 or request features</li>
+<li>Submit Pull Requests to improve the project</li>
 </ul>
 <p>This project adheres to the Contributor <a href="CODE_OF_CONDUCT.md">Covenant code of conduct</a>. By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.</p>
 

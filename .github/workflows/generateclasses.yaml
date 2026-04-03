@@ -57,7 +57,7 @@ jobs:
         run: Remove-Item .\src\net\JNet\Generated\* -Recurse -Force -Exclude README.md
 
       - name: Clear Java generated files
-        run: Remove-Item .\src\jvm\jnet\src\main\java\org\mases\jnet\generated\* -Recurse -Force -Exclude README.md
+        run: Remove-Item .\src\jvm\jnet\src\main\java\org\mases\jnet\generated\* -Recurse -Force -Exclude README.md,.editorconfig
 
       - run: dotnet build --no-incremental --configuration Release src\net\JNetReflector\JNetReflector.csproj
 
@@ -75,7 +75,7 @@ jobs:
           cd binReflector\net8.0
           MASES.JNetReflector.exe --JVMDisableOpenOnJavaNio -TraceLevel 1 -TraceTo %GITHUB_WORKSPACE%\JNetReflector.txt -OriginRootPath %JAVA_HOME_8_X64%\lib -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
 
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         with:
           name: JNetReflector report
           path: .\JNetReflector.txt

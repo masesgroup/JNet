@@ -13,7 +13,6 @@ JNet is a comprehensive suite of libraries and tools to use Java™/JVM™ APIs 
 - ✅ **Zero Migration Required** - Integrate existing Java 8 code with .NET applications
 - ✅ **Direct API Access** - Call any Java API directly from C#/VB.NET
 - ✅ **Bidirectional** - Java can call .NET and vice versa (see [JCOReflector](https://github.com/masesgroup/JCOReflector))
-- ✅ **Production Ready** - Trusted in enterprise environments
 
 > **💡 Legacy Integration:** Still running Java 8 in production? JNet enables 
 > integration with modern .NET applications without requiring Java upgrades—saving 
@@ -36,13 +35,11 @@ JNet is a comprehensive suite of libraries and tools to use Java™/JVM™ APIs 
 
 ### Project disclaimer
 
-JNet is a suite, curated by MASES Group, can be supported by the open-source community.
+JNet is a suite for Java™/JVM™, maintained by MASES Group and open to community contributions.
+Its primary scope is to support other MASES Group projects — both open-source and commercial — though it is freely available for any use. Dedicated community and commercial subscription plans are available.
+The repository and releases may contain bugs. The release cycle depends on critical issues discovered and/or enhancement requests from this or other dependent projects.
 
-Its primary scope is to support other, public or internal, MASES Group projects: open-source community and commercial entities can use it for their needs and support this project, moreover there are dedicated community and commercial subscription plans.
-
-The repository code and releases may contain bugs, the release cycle depends from critical discovered issues and/or enhancement requested from this or other projects.
-
-Looking for the help of experts? MASES Group can help you design, build, deploy, and manage applications mixing .NET and JVM™ enabled languages.
+Looking for expertise in applications mixing .NET and JVM™-enabled languages? MASES Group can help you design, build, deploy, and manage applications that run .NET and Java™/JVM™ side-by-side. [Find out more.](support.md)
 
 ---
 
@@ -55,22 +52,25 @@ There are many client libraries written to manage communication with Java™. Co
 * avoids any third party communication protocol implementation;
 * access all features made available from Java™ platform.
 
-So, for example, do you want an `ArrayList`? Just write in C# a line of code like this:
+For example, to use a Java `ArrayList` directly from C#:
+```csharp
+using Java.Util;
 
-```c#
-Java.Util.ArrayList<string> alist = new Java.Util.ArrayList<string>();
+var alist = new ArrayList<string>();
+alist.Add("Hello from JNet");
 ```
 
-See [JNet usage](usage.md) for a comprehensive example.
+JNet maps Java types — including generics — to their C# equivalents, so you can work with them
+using familiar syntax without any manual marshalling or conversion.
+
+See [JNet usage](usage.md) for a comprehensive walkthrough.
 
 ### Community and Contribution
 
-Do you like the project? 
-- Request your free [community subscription](https://www.jcobridge.com/pricing-25/).
+If you find JNet useful:
 
-Do you want to help us?
-- put a :star: on this project
-- open [issues](https://github.com/masesgroup/JNet/issues) to request features or report bugs :bug:
-- improves the project with Pull Requests
+* Leave a ⭐ on the repository
+* Open [issues](https://github.com/masesgroup/JNet/issues) to report bugs 🐛 or request features
+* Submit Pull Requests to improve the project
 
 This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.
