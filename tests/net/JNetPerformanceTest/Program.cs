@@ -46,8 +46,6 @@ namespace Org.Mases.JNet
     /// <typeparam name="TObject">The data type associated to the event</typeparam>
     public class Predicate<TObject> : Predicate
     {
-        readonly bool _readJVM;
-
         /// <summary>
         /// The <see cref="Func{TObject, Boolean}"/> to be executed
         /// </summary>
@@ -55,22 +53,18 @@ namespace Org.Mases.JNet
         /// <summary>
         /// Initialize a new instance of <see cref="Predicate{TObject}"/>
         /// </summary>
-        public Predicate(bool readJVM) : base()
+        public Predicate() : base()
         {
             if (InitHandlers)
             {
                 AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<TObject>>>(TestEventHandler)); OnTest = Test;
             }
-            _readJVM = readJVM;
         }
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<TObject>> data)
         {
-            if (_readJVM)
-            {
-                var retVal = OnTest(data.EventData.TypedEventData);
-                data.SetReturnValue(retVal);
-            }
+            var retVal = OnTest(data.EventData.TypedEventData);
+            data.SetReturnValue(retVal);
         }
         /// <summary>
         /// Executes the Predicate action in the CLR
@@ -141,67 +135,72 @@ namespace MASES.JNetPerformanceTest
 
         static void ExecuteTests()
         {
-            Console.WriteLine("Start TestStaticEmptyMethod");
+            TestStaticMethod(iterations, false);
+            TestStaticMethod(iterations, true);
 
-            TestStaticEmptyMethod(iterations);
-
-            Console.WriteLine("Start TestEmptyMethod");
-
-            TestEmptyMethod(iterations);
-
-            Console.WriteLine("Start TestPredicateRoundTrip");
+            TestMethod(iterations, false);
+            TestMethod(iterations, true);
 
             TestPredicateRoundTrip(iterations, false, false);
             TestPredicateRoundTrip(iterations, true, false);
-            TestPredicateRoundTrip(iterations, false, true);
-            TestPredicateRoundTrip(iterations, true, true);
+            //TestPredicateRoundTrip(iterations, false, true);
+            //TestPredicateRoundTrip(iterations, true, true);
         }
 
-        static void TestStaticEmptyMethod(int requestedIterations)
+        static void TestStaticMethod(int requestedIterations, bool feedback)
         {
-            Console.WriteLine($"TestStaticEmptyMethod with {requestedIterations} iterations");
+            string methodName = feedback ? "executeStaticFeedbackMethod" : "executeStaticEmptyMethod";
+            Console.WriteLine($"TestStaticMethod with {requestedIterations} iterations with feedback {feedback} - method={methodName}");
             int i = 0;
             try
             {
                 var jClass = JNetTestCore.GlobalInstance.JVM.GetClass("org.mases.jnet.TestPerformance");
 
-                Console.WriteLine($"Start Invoke executeStaticEmptyMethod");
+                Console.WriteLine($"Start Invoke {methodName}");
 
-                Stopwatch watcher1 = Stopwatch.StartNew();
+                Stopwatch watcher = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
                 {
                     try
                     {
-                        jClass.Invoke("executeStaticEmptyMethod");
+                        if (feedback)
+                        {
+                            jClass.Invoke(methodName, feedback);
+                        }
+                        else jClass.Invoke(methodName);
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break Invoke executeStaticEmptyMethod at iteration {i} due to {ex}");
+                        Console.WriteLine($"Break Invoke {methodName} at iteration {i} due to {ex}");
                         break;
                     }
                 }
-                watcher1.Stop();
+                watcher.Stop();
 
-                Console.WriteLine($"End executeStaticEmptyMethod Invoke over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                Console.WriteLine($"End {methodName} Invoke with feedback={feedback} over {i} iterations - Elapsed {watcher.Elapsed} - Mean time {TimeSpan.FromTicks(watcher.Elapsed.Ticks / i)}");
 
-                Console.WriteLine($"Start InvokeWithSignature executeStaticEmptyMethod");
+                Console.WriteLine($"Start InvokeWithSignature {methodName}");
 
-                watcher1.Restart();
+                watcher.Restart();
                 for (i = 0; i < requestedIterations; i++)
                 {
                     try
                     {
-                        jClass.InvokeWithSignature("executeStaticEmptyMethod", "()V");
+                        if (feedback)
+                        {
+                            jClass.InvokeWithSignature(methodName, "(B)V", feedback);
+                        }
+                        else jClass.InvokeWithSignature(methodName, "()V");
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break executeStaticEmptyMethod at iteration {i} due to {ex}");
+                        Console.WriteLine($"Break {methodName} at iteration {i} due to {ex}");
                         break;
                     }
                 }
-                watcher1.Stop();
+                watcher.Stop();
 
-                Console.WriteLine($"End InvokeWithSignature executeStaticEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                Console.WriteLine($"End InvokeWithSignature {methodName} with feedback={feedback} over {i} iterations - Elapsed {watcher.Elapsed} - Mean time {TimeSpan.FromTicks(watcher.Elapsed.Ticks / i)}");
             }
             catch
             {
@@ -210,51 +209,60 @@ namespace MASES.JNetPerformanceTest
             }
         }
 
-        static void TestEmptyMethod(int requestedIterations)
+        static void TestMethod(int requestedIterations, bool feedback)
         {
-            Console.WriteLine($"TestEmptyMethod with {requestedIterations} iterations");
+            string methodName = feedback ? "executeFeedbackMethod" : "executeEmptyMethod";
+            Console.WriteLine($"TestMethod with {requestedIterations} iterations with feedback {feedback} - method={methodName}");
             int i = 0;
             try
             {
                 var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
 
-                Console.WriteLine($"Start Invoke executeEmptyMethod");
+                Console.WriteLine($"Start Invoke {methodName}");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
                 {
                     try
                     {
-                        jClass.Invoke("executeEmptyMethod");
+                        if (feedback)
+                        {
+                            jClass.Invoke(methodName, feedback);
+                        }
+                        else jClass.Invoke(methodName);
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break Invoke executeEmptyMethod at iteration {i} due to {ex}");
+                        Console.WriteLine($"Break Invoke {methodName} at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End executeEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                Console.WriteLine($"End {methodName} with feedback={feedback} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
 
-                Console.WriteLine($"Start InvokeWithSignature executeEmptyMethod");
+                Console.WriteLine($"Start InvokeWithSignature {methodName}");
 
                 watcher1.Restart();
                 for (i = 0; i < requestedIterations; i++)
                 {
                     try
                     {
-                        jClass.InvokeWithSignature("executeEmptyMethod", "()V");
+                        if (feedback)
+                        {
+                            jClass.InvokeWithSignature(methodName, "(B)V", feedback);
+                        }
+                        else jClass.InvokeWithSignature(methodName, "()V");
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break executeEmptyMethod at iteration {i} due to {ex}");
+                        Console.WriteLine($"Break {methodName} at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End InvokeWithSignature executeEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                Console.WriteLine($"End InvokeWithSignature {methodName} with feedback={feedback} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
             }
             catch
             {
@@ -270,7 +278,7 @@ namespace MASES.JNetPerformanceTest
             try
             {
                 var method = byIndex ? "executePredicateIndex" : "executePredicate";
-                using (var predicate = new Org.Mases.JNet.Predicate<object>(readJVM)
+                using (var predicate = new Org.Mases.JNet.Predicate<object>()
                 {
                     OnTest = (o) =>
                     {
