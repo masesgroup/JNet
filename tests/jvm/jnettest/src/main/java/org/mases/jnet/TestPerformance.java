@@ -17,9 +17,19 @@ public class TestPerformance {
 
 	}
 
+	public static boolean executeStaticFeedbackMethod(boolean value)
+	{
+		return value;
+	}
+
 	public void executeEmptyMethod()
 	{
 
+	}
+
+	public boolean executeFeedbackMethod(boolean value)
+	{
+		return value;
 	}
 
 	public boolean executePredicateIndex()
