@@ -445,12 +445,20 @@ jobs:
 
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetPerformanceTest.dll ${{ env.EXTRA_ARGUMENT }}
+
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
 
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll ${{ env.EXTRA_ARGUMENT }}
-          
+        
+      - if: ${{ matrix.framework == 'net462' }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: .\bin\${{ matrix.framework }}\JNetPerformanceTest.exe ${{ env.EXTRA_ARGUMENT }}
+
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: .\bin\${{ matrix.framework }}\JNetTest.exe ${{ env.EXTRA_ARGUMENT }}
@@ -462,44 +470,25 @@ jobs:
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
         
-      - if: ${{ !startsWith(matrix.os, 'windows-') }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        shell: pwsh
-        run: |
-          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}/bin/JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
-
-      - if: ${{ startsWith(matrix.os, 'windows-') }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
 
-      - if: ${{ startsWith(matrix.os, 'windows-') }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: powershell
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
           
-      - if: ${{ startsWith(matrix.os, 'windows-') }}
-        run: (Get-EventLog -LogName Application -Newest 5).Message
+      - run: (Get-EventLog -LogName Application -Newest 5).Message
 
       - uses: actions/upload-artifact@v7
-        if: ${{ startsWith(matrix.os, 'windows-') }}
         with:
           if-no-files-found: ignore
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: .\CrashDumpsDir\*
-          retention-days: 7
-
-      - uses: actions/upload-artifact@v7
-        if: ${{!startsWith(matrix.os, 'windows-') }}
-        with:
-          if-no-files-found: ignore
-          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: ${{ github.workspace }}/coredump.*
           retention-days: 7
 
       - uses: actions/upload-artifact@v7
@@ -623,59 +612,25 @@ jobs:
         shell: bash
         run: echo "PS_EXTRA_ARGUMENT=${{ env.JAVA_HOME }}" >> $GITHUB_ENV
 
-      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetPerformanceTest.dll ${{ env.EXTRA_ARGUMENT }}
+
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
 
-      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll ${{ env.EXTRA_ARGUMENT }}
-          
-      - if: ${{ matrix.framework == 'net462' }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetTest.exe ${{ env.EXTRA_ARGUMENT }}
-
-      - if: ${{ matrix.framework == 'net462' }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe ${{ env.EXTRA_ARGUMENT }}
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
         
-      - if: ${{ !startsWith(matrix.os, 'windows-') }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
 
-      - if: ${{ startsWith(matrix.os, 'windows-') }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        shell: pwsh
-        run: |
-          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
-
-      - if: ${{ startsWith(matrix.os, 'windows-') }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        shell: powershell
-        run: |
-          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
-          
-      - if: ${{ startsWith(matrix.os, 'windows-') }}
-        run: (Get-EventLog -LogName Application -Newest 5).Message
-
       - uses: actions/upload-artifact@v7
-        if: ${{ startsWith(matrix.os, 'windows-') }}
-        with:
-          if-no-files-found: ignore
-          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: .\CrashDumpsDir\*
-          retention-days: 7
-
-      - uses: actions/upload-artifact@v7
-        if: ${{!startsWith(matrix.os, 'windows-') }}
         with:
           if-no-files-found: ignore
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
@@ -813,59 +768,25 @@ jobs:
         shell: bash
         run: echo "PS_EXTRA_ARGUMENT=${{ env.JAVA_HOME }}" >> $GITHUB_ENV
 
-      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetPerformanceTest.dll ${{ env.EXTRA_ARGUMENT }}
+
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
 
-      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll ${{ env.EXTRA_ARGUMENT }}
-          
-      - if: ${{ matrix.framework == 'net462' }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetTest.exe ${{ env.EXTRA_ARGUMENT }}
-
-      - if: ${{ matrix.framework == 'net462' }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe ${{ env.EXTRA_ARGUMENT }}
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
         
-      - if: ${{ !startsWith(matrix.os, 'windows-') }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
 
-      - if: ${{ startsWith(matrix.os, 'windows-') }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        shell: pwsh
-        run: |
-          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
-
-      - if: ${{ startsWith(matrix.os, 'windows-') }}
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        shell: powershell
-        run: |
-          Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
-          ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
-          
-      - if: ${{ startsWith(matrix.os, 'windows-') }}
-        run: (Get-EventLog -LogName Application -Newest 5).Message
-
       - uses: actions/upload-artifact@v7
-        if: ${{ startsWith(matrix.os, 'windows-') }}
-        with:
-          if-no-files-found: ignore
-          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: .\CrashDumpsDir\*
-          retention-days: 7
-
-      - uses: actions/upload-artifact@v7
-        if: ${{!startsWith(matrix.os, 'windows-') }}
         with:
           if-no-files-found: ignore
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
