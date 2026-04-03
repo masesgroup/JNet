@@ -101,15 +101,6 @@ namespace MASES.JNetPerformanceTest
 
             ExecuteTests();
 
-            Console.WriteLine("Enabling Critical methods");
-
-            var management = JNetTestCore.GlobalInstance.Management;
-
-            management.EnableCriticalMethods = true;
-            management.EnableCriticalMethodsOnGetThreshold = management.EnableCriticalMethodsOnSetThreshold = 0;
-
-            ExecuteTests();
-
             stopwatch.Stop();
             System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
         }
