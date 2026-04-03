@@ -12,7 +12,7 @@ public class TestPerformance {
 		_predicate = predicate;
 	}
 
-	public void executeStaticEmptyMethod()
+	public static void executeStaticEmptyMethod()
 	{
 
 	}
