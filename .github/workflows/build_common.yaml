@@ -384,14 +384,6 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v5
-        if: ${{ !startsWith(matrix.os, 'windows-') }}
-        with:
-          dotnet-version: |
-            9.x
-            10.x
-
-      - uses: actions/setup-dotnet@v5
-        if: ${{ startsWith(matrix.os, 'windows-') }}
         with:
           dotnet-version: |
             10.x
@@ -401,7 +393,7 @@ jobs:
         run: choco install zstandard
 
       - name: Download Procdump and prepare
-        if: ${{ startsWith(matrix.os, 'windows-') && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
+        if: ${{ inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
         continue-on-error: true
         run: |
           C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
@@ -534,10 +526,6 @@ jobs:
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED }}
     
     steps:     
-      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
-        if: ${{ matrix.os == 'windows-11-arm' }}
-        run: choco install zstandard
-
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v5
         with:
@@ -547,32 +535,10 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v5
-        if: ${{ !startsWith(matrix.os, 'windows-') }}
         with:
           dotnet-version: |
             9.x
             10.x
-
-      - uses: actions/setup-dotnet@v5
-        if: ${{ startsWith(matrix.os, 'windows-') }}
-        with:
-          dotnet-version: |
-            10.x
-
-      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
-        if: ${{ matrix.os == 'windows-11-arm' }}
-        run: choco install zstandard
-
-      - name: Download Procdump and prepare
-        if: ${{ startsWith(matrix.os, 'windows-') && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
-        continue-on-error: true
-        run: |
-          C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
-          Expand-Archive -LiteralPath '${{ github.workspace }}\Procdump.zip' -DestinationPath ${{ github.workspace }}\Procdump -Force
-          dir .\Procdump
-          ${{ github.workspace }}\Procdump\procdump.exe -accepteula
-          mkdir CrashDumpsDir
-          ${{ github.workspace }}\Procdump\procdump.exe -ma -i ${{ github.workspace }}\CrashDumpsDir
 
       - name: Set up JDK distribution
         if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version != '8' }}
@@ -696,10 +662,6 @@ jobs:
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED }}
     
     steps:     
-      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
-        if: ${{ matrix.os == 'windows-11-arm' }}
-        run: choco install zstandard
-
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v5
         with:
@@ -709,32 +671,10 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v5
-        if: ${{ !startsWith(matrix.os, 'windows-') }}
         with:
           dotnet-version: |
             9.x
             10.x
-
-      - uses: actions/setup-dotnet@v5
-        if: ${{ startsWith(matrix.os, 'windows-') }}
-        with:
-          dotnet-version: |
-            10.x
-
-      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
-        if: ${{ matrix.os == 'windows-11-arm' }}
-        run: choco install zstandard
-
-      - name: Download Procdump and prepare
-        if: ${{ startsWith(matrix.os, 'windows-') && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
-        continue-on-error: true
-        run: |
-          C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
-          Expand-Archive -LiteralPath '${{ github.workspace }}\Procdump.zip' -DestinationPath ${{ github.workspace }}\Procdump -Force
-          dir .\Procdump
-          ${{ github.workspace }}\Procdump\procdump.exe -accepteula
-          mkdir CrashDumpsDir
-          ${{ github.workspace }}\Procdump\procdump.exe -ma -i ${{ github.workspace }}\CrashDumpsDir
 
       - name: Set up JDK distribution
         if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version != '8' }}
