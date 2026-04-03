@@ -17,6 +17,10 @@ public final class ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER ALLPACKAGE_CL
     public synchronized void release() {
        _internalListener.release();
     }
+
+    public synchronized int getEventIndex(String eventName) {
+       _internalListener.getEventIndex(eventName);
+    }
     
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
