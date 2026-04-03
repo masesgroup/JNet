@@ -182,7 +182,7 @@ namespace MASES.JNetPerformanceTest
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End executeStaticEmptyMethod over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                Console.WriteLine($"End executeStaticEmptyMethod Invoke over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
 
                 Console.WriteLine($"Start executeStaticEmptyMethod InvokeWithSignature");
 
@@ -283,7 +283,7 @@ namespace MASES.JNetPerformanceTest
                     Stopwatch watcher1 = Stopwatch.StartNew();
                     for (i = 0; i < requestedIterations; i++)
                     {
-                        jClass.InvokeWithSignature(method, "(Lorg/mases/jnet/Predicate;)Z");
+                        jClass.InvokeWithSignature(method, "()Z");
                     }
                     watcher1.Stop();
                     Console.WriteLine($"End {method} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
