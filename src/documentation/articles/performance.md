@@ -5,10 +5,10 @@ _description: Benchmark results for JNet — JVM method invocation and callback 
 
 # JNet: performance
 
-This page reports benchmark results for the core JNet interop primitives: JVM method invocation from .NET and .NET↔JVM callback round-trips.
+This page reports benchmark results for the core JNet interop primitives: JVM method invocation from .NET and .NET↔JVM callback latency in both directions.
 All benchmarks run on [GitHub Actions](https://github.com/masesgroup/JNet/actions) runners and are repeated automatically on each release across supported .NET and JDK versions.
 
-Results are reported for two JCOBridge versions — 2.6.6 and 2.6.7-beta6 — and two runtime combinations, to show the progression of the interop layer across both the JCOBridge release cycle and the underlying runtime versions. See [JCOBridge release notes](https://www.jcobridge.com/release-notes/) for details.
+Results are reported for two JCOBridge versions — 2.6.6 and 2.6.7-beta6 — and two runtime combinations. See [JCOBridge release notes](https://www.jcobridge.com/release-notes/) for details.
 
 > [!NOTE]
 > Benchmarks are run on shared GitHub-hosted runners. Absolute numbers reflect that environment and should be read comparatively rather than as absolute throughput figures for a dedicated host.
@@ -30,130 +30,157 @@ Results are reported for two JCOBridge versions — 2.6.6 and 2.6.7-beta6 — an
 
 ### JVM method invocation from .NET
 
-Measures the round-trip latency of calling a JVM method from .NET through JNet, with two resolution strategies:
+Measures the round-trip latency of calling a JVM method from .NET through JNet, with two resolution strategies and two method signatures.
 
-- **Invoke** — the method is identified by .NET-side type matching against the input arguments on every call. The JVM descriptor is cached after the first resolution, but argument type validation is re-evaluated on the .NET side at each invocation. A more articulated test with complex argument types will show additional overhead from this validation step.
-- **InvokeWithSignature** — the method is identified by name and JNI signature string. Argument validation is delegated entirely to the JVM, eliminating the .NET-side type matching cost. Lower and more predictable overhead.
+**Resolution strategies:**
+- **Invoke** — the method is identified by .NET-side type matching against input arguments on every call. The JVM descriptor is cached after first resolution, but argument type validation is re-evaluated on the .NET side at each invocation.
+- **InvokeWithSignature** — the method is identified by name and JNI signature string. Argument validation is delegated to the JVM, eliminating the .NET-side type matching cost.
 
-Two method kinds are tested:
+**Method signatures (`feedback`):**
+- **`feedback = false`** — method takes no arguments and returns `void`. Measures pure invocation overhead.
+- **`feedback = true`** — method takes a `boolean` argument and returns the same `boolean`. Measures the additional cost of argument passing and return value marshalling across the JNI boundary.
 
-- **Static method** — a static JVM method with no arguments and no return value (`void`).
-- **Instance method** — an instance method on a JVM object, same signature.
+Both static and instance method variants are tested.
 
-### Callback round-trip (.NET → JVM → .NET)
+### Callback: `TestPredicateRoundTrip` (.NET → JVM → .NET)
 
-Measures the full round-trip of a .NET-triggered call that activates a JVM callback class, which in turn invokes back into .NET. This is the pattern used by Kafka Streams `TimestampExtractor`, `Predicate`, `KeyValueMapper`, and similar functional interfaces.
+A .NET-initiated test: .NET triggers a JVM call which immediately fires a callback back into .NET, where it is handled and the result is returned to JVM. This provides a controlled start-time marker and measures the full bidirectional round-trip latency. In real usage, the JVM initiates the event — see `TestPredicateSustained` below.
 
-Two axes are combined:
+### Callback: `TestPredicateSustained` (JVM → .NET, sustained)
 
-| Axis | Option | Meaning |
-|---|---|---|
-| Resolution | `byIndex = false` | Legacy mechanism — arguments passed via string key lookup, requires marshalling across the JNI boundary |
-| | `byIndex = true` | Native mechanism — arguments passed as native data, no marshalling. Available from JCOBridge 2.6.7. |
-| Data read | `readJVM = false` | Callback does not read argument data from JVM — measures pure round-trip overhead only |
-| | `readJVM = true` | **Normal JNet behavior** — callback reads argument data from JVM, as in any real implementation |
+A JVM-initiated test: .NET sends a single start command to JVM, which then fires 1 000 000 callback events toward the CLR autonomously without returning control to .NET. After all events are fired, the JVM returns and .NET measures the total elapsed time. Aside from the single startup call, this test measures the pure cost of receiving a sustained stream of JVM-originated callbacks — the scenario that matches real-world usage (e.g. Kafka Streams functional interfaces, AWT event listeners).
 
-> [!NOTE]
-> `readJVM = false` is an artificial condition introduced in a special test class to isolate the pure round-trip cost. In any real JNet callback implementation, argument data is always retrieved from the JVM — `readJVM = true` is the realistic baseline.
+Both callback tests share two configuration axes (2.6.7-beta6 only):
+
+**`byIndex` — event trigger identification:**
+- **`byIndex = false`** — the event is identified by a string key lookup on the CLR side.
+- **`byIndex = true`** — the event is identified by a numeric index resolved on the CLR side without any JVM call. In both cases, JVM object arguments are retrieved as JVM objects after the trigger is received.
+
+**`readJVM` — early-discard filter (`ShallManageEventHandler`, 2.6.7+):**
+
+JCOBridge 2.6.7 introduces `ShallManageEventHandler` (`Func<string, bool>`) and the equivalent virtual method `bool ShallManageEvent(string)` on the JNet callback base class. Before any JVM argument data is read, JNet calls this handler with the event name. The user can:
+- **Return `true`** (default) — proceed normally: argument data is read from JVM and the callback handler is invoked.
+- **Return `false`** — discard the event immediately: no argument data is read and the callback handler is not invoked. The user can still execute logic inside `ShallManageEvent` before returning `false`.
+
+For `byIndex = true`, the event name string passed to `ShallManageEvent` is resolved on the CLR side — no JVM round-trip is needed. For `byIndex = false`, it is resolved via string key lookup.
+
+In the test, `readJVM = true` simulates a handler that always returns `true` (normal flow); `readJVM = false` simulates one that always returns `false` (always discard). Default is `true`.
 
 ---
 
 ## JCOBridge 2.6.6
 
+In 2.6.6, `ShallManageEventHandler` and the native `byIndex` trigger mechanism are not yet available.
+
 ### Static method invocation
 
-| Resolution | .NET 8 / T17 | .NET 10 / T25 |
-|---|---|---|
-| `Invoke` | 0.649 µs | 0.599 µs |
-| `InvokeWithSignature` | 0.496 µs | 0.428 µs |
+| Resolution | `feedback` | .NET 8 / T17 | .NET 10 / T25 |
+|---|---|---|---|
+| `Invoke` | `false` | 0.661 µs | 0.602 µs |
+| `InvokeWithSignature` | `false` | 0.494 µs | 0.414 µs |
+| `Invoke` | `true` | 0.901 µs | 0.803 µs |
+| `InvokeWithSignature` | `true` | 0.686 µs | 0.522 µs |
 
 ### Instance method invocation
 
-| Resolution | .NET 8 / T17 | .NET 10 / T25 |
-|---|---|---|
-| `Invoke` | 0.554 µs | 0.485 µs |
-| `InvokeWithSignature` | 0.456 µs | 0.390 µs |
+| Resolution | `feedback` | .NET 8 / T17 | .NET 10 / T25 |
+|---|---|---|---|
+| `Invoke` | `false` | 0.579 µs | 0.490 µs |
+| `InvokeWithSignature` | `false` | 0.468 µs | 0.379 µs |
+| `Invoke` | `true` | 0.856 µs | 0.764 µs |
+| `InvokeWithSignature` | `true` | 0.638 µs | 0.535 µs |
 
-`InvokeWithSignature` is ~24% faster than `Invoke` on .NET 8 / T17 and ~28% faster on .NET 10 / T25 for static methods; ~18% and ~20% respectively for instance methods.
+Adding a `boolean` argument and return value (`feedback = true`) adds ~45–55% overhead with `Invoke` and ~35–40% with `InvokeWithSignature`, reflecting the JNI argument marshalling cost.
 
-### Callback round-trip (.NET → JVM → .NET)
+### Callback
 
-In JCOBridge 2.6.6 the native `byIndex = true` mechanism is not yet available. The test infrastructure simulates it by invoking a dedicated class method (`testIndex`) instead of the interface `@Override` (`test`). The `byIndex = true` rows are not directly comparable with `byIndex = false`: any timing difference reflects JVM dispatch type (`invokevirtual` vs `invokeinterface`) rather than the argument passing mechanism.
-
-| `byIndex` | `readJVM` | .NET 8 / T17 | .NET 10 / T25 | Note |
+| Test | `byIndex` | `readJVM` | .NET 8 / T17 | .NET 10 / T25 |
 |---|---|---|---|---|
-| `false` | `false` | 1.884 µs | 1.777 µs | |
-| `true` | `false` | 1.744 µs | 1.674 µs | simulation ¹ |
-| `false` | `true` | 7.022 µs | 6.621 µs | realistic baseline |
-| `true` | `true` | 6.926 µs | 6.498 µs | simulation ¹ |
+| `RoundTrip` | `false` | `true` | 6.945 µs | 6.338 µs |
+| `Sustained` | `false` | `true` | 6.116 µs | 5.548 µs |
 
-¹ `byIndex = true` simulated via class method dispatch — see note above.
-
-The **realistic callback baseline** is **7.0 µs** (.NET 8 / T17) and **6.6 µs** (.NET 10 / T25), giving theoretical ceilings of ~143 K and ~151 K callbacks/sec per thread respectively.
+The `Sustained` test — pure JVM-originated events — is ~12% faster than the `RoundTrip` total, confirming that the .NET→JVM startup trigger in `RoundTrip` adds measurable overhead. **The `Sustained` result is the realistic reference for JVM-originated callback cost: ~6.1 µs (.NET 8 / T17) and ~5.5 µs (.NET 10 / T25).**
 
 ---
 
 ## JCOBridge 2.6.7-beta6
 
-JCOBridge 2.6.7 introduces the native `byIndex = true` mechanism on the JNet/.NET side: argument data is now passed as native data without JNI marshalling. The general interop layer also receives performance improvements that reduce baseline overhead across all test types.
+JCOBridge 2.6.7 introduces `ShallManageEventHandler` and the native `byIndex` trigger mechanism. General interop improvements reduce baseline overhead across all test types.
 
 > [!NOTE]
-> In this version `byIndex = true` is still simulated on the JVM side by invoking a dedicated class method (`testIndex`) rather than the interface `@Override` (`test`). The native argument passing path is active on the JNet/.NET side; the JVM dispatch difference (class method vs interface method) remains. The `byIndex = false` rows use the real interface override and are directly comparable between the two versions.
+> `byIndex = true` is still simulated on the JVM side by invoking a dedicated class method rather than the interface `@Override`. The CLR-side numeric index resolution is fully active; the JVM dispatch difference (class method vs interface method) remains. The `byIndex = false` rows use the real interface override and are directly comparable between the two versions.
 
 ### Static method invocation
 
-| Resolution | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
-|---|---|---|---|---|
-| `Invoke` | 0.459 µs | −29% | 0.468 µs | −22% |
-| `InvokeWithSignature` | 0.345 µs | −30% | 0.336 µs | −21% |
+| Resolution | `feedback` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
+|---|---|---|---|---|---|
+| `Invoke` | `false` | 0.498 µs | −25% | 0.471 µs | −22% |
+| `InvokeWithSignature` | `false` | 0.403 µs | −18% | 0.345 µs | −17% |
+| `Invoke` | `true` | 0.608 µs | −33% | 0.562 µs | −30% |
+| `InvokeWithSignature` | `true` | 0.462 µs | −33% | 0.437 µs | −16% |
 
 ### Instance method invocation
 
-| Resolution | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
-|---|---|---|---|---|
-| `Invoke` | 0.332 µs | −40% | 0.307 µs | −37% |
-| `InvokeWithSignature` | 0.283 µs | −38% | 0.283 µs | −27% |
+| Resolution | `feedback` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
+|---|---|---|---|---|---|
+| `Invoke` | `false` | 0.359 µs | −38% | 0.315 µs | −36% |
+| `InvokeWithSignature` | `false` | 0.316 µs | −32% | 0.288 µs | −24% |
+| `Invoke` | `true` | 0.553 µs | −35% | 0.539 µs | −29% |
+| `InvokeWithSignature` | `true` | 0.456 µs | −29% | 0.448 µs | −16% |
 
-`InvokeWithSignature` is ~25% faster than `Invoke` on .NET 8 / T17 and ~28% faster on .NET 10 / T25 for static methods; ~15% and ~8% respectively for instance methods.
+The `feedback = true` overhead over `feedback = false` narrows compared to 2.6.6: `Invoke` pays ~50% extra (down from ~45–55%), `InvokeWithSignature` ~44% (down from ~35–40%) — the interop layer improvements benefit argument-carrying calls proportionally.
 
-### Callback round-trip (.NET → JVM → .NET)
+### Callback: `TestPredicateRoundTrip`
 
 | `byIndex` | `readJVM` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|
-| `false` | `false` | 1.114 µs | −41% | 1.084 µs | −39% |
-| `true` ¹ | `false` | 0.413 µs | −76% | 0.450 µs | −73% |
-| `false` | `true` | 6.177 µs | −12% | 5.640 µs | −15% |
-| `true` ¹ | `true` | 5.516 µs | −20% | 4.866 µs | −25% |
+| `false` | `false` | 1.117 µs | — | 1.037 µs | — |
+| `true` ¹ | `false` | 0.453 µs | — | 0.430 µs | — |
+| `false` | `true` | 6.033 µs | −13% | 5.712 µs | −10% |
+| `true` ¹ | `true` | 5.399 µs | −22% | 4.987 µs | −21% |
 
-¹ `byIndex = true` simulated via class method dispatch — see note above.
+¹ `byIndex = true` simulated on the JVM side — see note above.
 
-The **realistic callback baseline** is **6.2 µs** (.NET 8 / T17) and **5.6 µs** (.NET 10 / T25), giving theoretical ceilings of ~162 K and ~177 K callbacks/sec per thread — improvements of 12% and 17% respectively over 2.6.6.
+### Callback: `TestPredicateSustained`
 
-The `byIndex = true` rows show a dramatic drop in pure round-trip latency (−76% / −73% on `readJVM = false`): the native argument passing eliminates marshalling almost entirely, bringing pure dispatch overhead from ~1.1 µs down to ~0.4 µs. With `readJVM = true` the gain is more contained (−20% / −25%) because JVM data read cost still dominates — and there the newer runtime (T25) shows a larger benefit.
+| `byIndex` | `readJVM` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
+|---|---|---|---|---|---|
+| `false` | `false` | 5.415 µs | −12% | 5.041 µs | −9% |
+| `true` ¹ | `false` | 4.780 µs | −22% | 4.494 µs | −19% |
+| `false` | `true` | 5.419 µs | −11% | 5.052 µs | −9% |
+| `true` ¹ | `true` | 4.757 µs | −22% | 4.493 µs | −19% |
+
+¹ `byIndex = true` simulated on the JVM side — see note above.
+
+**Notable:** in the `Sustained` test, `readJVM = false` and `readJVM = true` produce virtually identical results for the same `byIndex` setting. This reveals that in a sustained JVM-originated event stream, the JVM-side event generation cost dominates — whether or not the CLR reads argument data has negligible impact on the per-event time. The `ShallManageEventHandler` early-discard filter is most effective when events are sporadic or when the JVM fires them at a lower rate, not when the JVM itself is the bottleneck.
+
+The **realistic JVM-originated callback baseline** in 2.6.7-beta6 is **~5.4 µs** (`byIndex = false`, .NET 8 / T17) and **~5.0 µs** (.NET 10 / T25) — improvements of ~11% and ~9% over 2.6.6. With `byIndex = true`, this drops to **~4.8 µs** and **~4.5 µs** (~22% and ~19% better than 2.6.6).
 
 ---
 
-## Summary comparison
+## Summary
 
 | Test | .NET 8 / T17 2.6.6 | .NET 8 / T17 2.6.7-β6 | Δ | .NET 10 / T25 2.6.6 | .NET 10 / T25 2.6.7-β6 | Δ |
 |---|---|---|---|---|---|---|
-| Static `Invoke` | 0.649 µs | 0.459 µs | −29% | 0.599 µs | 0.468 µs | −22% |
-| Static `InvokeWithSignature` | 0.496 µs | 0.345 µs | −30% | 0.428 µs | 0.336 µs | −21% |
-| Instance `Invoke` | 0.554 µs | 0.332 µs | −40% | 0.485 µs | 0.307 µs | −37% |
-| Instance `InvokeWithSignature` | 0.456 µs | 0.283 µs | −38% | 0.390 µs | 0.283 µs | −27% |
-| Callback `byIndex=false`, `readJVM=false` | 1.884 µs | 1.114 µs | −41% | 1.777 µs | 1.084 µs | −39% |
-| Callback `byIndex=true` ¹, `readJVM=false` | 1.744 µs | 0.413 µs | −76% | 1.674 µs | 0.450 µs | −73% |
-| Callback `byIndex=false`, `readJVM=true` | 7.022 µs | 6.177 µs | −12% | 6.621 µs | 5.640 µs | −15% |
-| Callback `byIndex=true` ¹, `readJVM=true` | 6.926 µs | 5.516 µs | −20% | 6.498 µs | 4.866 µs | −25% |
+| Static `Invoke` fb=false | 0.661 µs | 0.498 µs | −25% | 0.602 µs | 0.471 µs | −22% |
+| Static `IWS` fb=false | 0.494 µs | 0.403 µs | −18% | 0.414 µs | 0.345 µs | −17% |
+| Static `Invoke` fb=true | 0.901 µs | 0.608 µs | −33% | 0.803 µs | 0.562 µs | −30% |
+| Static `IWS` fb=true | 0.686 µs | 0.462 µs | −33% | 0.522 µs | 0.437 µs | −16% |
+| Instance `Invoke` fb=false | 0.579 µs | 0.359 µs | −38% | 0.490 µs | 0.315 µs | −36% |
+| Instance `IWS` fb=false | 0.468 µs | 0.316 µs | −32% | 0.379 µs | 0.288 µs | −24% |
+| Instance `Invoke` fb=true | 0.856 µs | 0.553 µs | −35% | 0.764 µs | 0.539 µs | −29% |
+| Instance `IWS` fb=true | 0.638 µs | 0.456 µs | −29% | 0.535 µs | 0.448 µs | −16% |
+| Sustained `byIndex=false` | 6.116 µs | 5.419 µs | −11% | 5.548 µs | 5.052 µs | −9% |
+| Sustained `byIndex=true` ¹ | — | 4.757 µs | — | — | 4.493 µs | — |
 
-¹ `byIndex = true` is simulated on the JVM side in both versions — see notes above.
+¹ `byIndex = true` simulated on the JVM side in 2.6.7-beta6 — see notes above. No baseline in 2.6.6.
 
 ---
 
 ## Guidance
 
-- For **tight loops over JVM methods**, prefer `InvokeWithSignature` — it delegates argument validation to the JVM and avoids the .NET-side type matching cost. The advantage will widen in future tests with complex argument types.
-- The **realistic callback baseline** is the `readJVM = true` row: in any real JNet implementation argument data is always retrieved from the JVM. On 2.6.7-beta6 this stands at ~6.2 µs (.NET 8 / T17) and ~5.6 µs (.NET 10 / T25).
-- The `byIndex = true` native mechanism, fully effective in 2.6.7+, will bring the `readJVM = true` baseline significantly lower once the JVM-side simulation is replaced with the real interface dispatch path.
-- The ~0.3–0.5 µs baseline for direct method invocation reflects the irreducible JNI boundary cost on a GitHub Actions runner. On a dedicated host with pinned cores absolute numbers will be lower, but the relative ordering between strategies holds.
+- **Prefer `InvokeWithSignature`** over `Invoke` in hot paths — it avoids .NET-side type matching on every call. With argument-carrying methods (`feedback = true`), `InvokeWithSignature` is consistently 20–35% faster than `Invoke`.
+- **The realistic JVM-originated callback reference** is `TestPredicateSustained`: ~5.4 µs (`byIndex = false`, .NET 8 / T17) and ~5.0 µs (.NET 10 / T25) in 2.6.7-beta6. The `byIndex = true` trigger reduces this to ~4.8 µs and ~4.5 µs.
+- **`ShallManageEventHandler`** (`readJVM = false`) has negligible impact when the JVM fires events at its own maximum rate — the JVM-side event generation cost dominates. The filter is most valuable in mixed-load scenarios where only a subset of event types have registered handlers, eliminating the CLR-side data read cost for discarded events.
+- **Newer runtimes help**: .NET 10 / Temurin 25 is consistently 5–10% faster than .NET 8 / Temurin 17 across all test types.
 - If your application runs callbacks at sustained high frequency, consider the [JCOBridge HPA edition](https://www.jcobridge.com) — it addresses GC-boundary instability under sustained JVM↔CLR call pressure, which is the primary reliability concern at high call rates.
