@@ -303,7 +303,6 @@ namespace MASES.JNetPerformanceTest
         static void TestPredicateSustained(int requestedIterations, bool byIndex, bool readJVM)
         {
             Console.WriteLine($"TestPredicateRoundTrip with {requestedIterations} iterations - byIndex={byIndex} readJVM={readJVM}");
-            int i = 0;
             try
             {
                 var method = byIndex ? "executePredicateIndex" : "executePredicate";
@@ -320,12 +319,11 @@ namespace MASES.JNetPerformanceTest
                     Stopwatch watcher1 = Stopwatch.StartNew();
                     jClass.InvokeWithSignature(method, "(I)Z", requestedIterations);
                     watcher1.Stop();
-                    Console.WriteLine($"End TestPredicateRoundTrip {method} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                    Console.WriteLine($"End TestPredicateRoundTrip {method} over {requestedIterations} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)}");
                 }
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {i}");
                 throw;
             }
         }
