@@ -309,6 +309,7 @@ namespace MASES.JNetPerformanceTest
                 var method = byIndex ? "executePredicateIndex" : "executePredicate";
                 using (var predicate = new Org.Mases.JNet.Predicate<object>()
                 {
+                    ShallManageEventHandler = (o) => readJVM,
                     OnTest = (o) =>
                     {
                         return true;
