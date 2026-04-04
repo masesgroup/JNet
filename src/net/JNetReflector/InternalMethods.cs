@@ -2251,7 +2251,7 @@ namespace MASES.JNet.Reflector
             }
 
             Dictionary<string, int> methodCounter = new Dictionary<string, int>();
-            int globalHandlerIndexer = 0;
+
             foreach (var item in methods)
             {
                 var method = item.Value;
@@ -2337,8 +2337,6 @@ namespace MASES.JNet.Reflector
                 {
                     exceptionsThrowed = $" throws {exceptionsThrowed}";
                 }
-                bool raiseOnIndex = true; // default to be added in configuration
-                eventHandlerName = raiseOnIndex ? (++globalHandlerIndexer).ToString() : $"\"{eventHandlerName}\"";
 
                 string execStub;
                 if (isVoidMethod)
@@ -2396,7 +2394,8 @@ namespace MASES.JNet.Reflector
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing method {0}", genString);
 
-                var singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                var singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_INDEX_VARIABLE_NAME, eventHandlerName)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.EXTEND_EXCEPTIONS, exceptionsThrowed)
@@ -2409,7 +2408,8 @@ namespace MASES.JNet.Reflector
                     execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_BASE_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_BASE_EXECUTION_FORMAT,
                                              methodNameOrigin, executionParamsString.Length == 0 ? string.Empty : executionParamsString);
 
-                    var singleBaseMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                    var singleBaseMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_INDEX_VARIABLE_NAME, eventHandlerName)
+                                                   .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                                    .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin + SpecialNames.BaseMethodSuffix)
                                                    .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
                                                    .Replace(AllPackageClasses.ClassStub.MethodStub.EXTEND_EXCEPTIONS, exceptionsThrowed)
@@ -2423,7 +2423,8 @@ namespace MASES.JNet.Reflector
                     execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT,
                                              extendingInterface, methodNameOrigin, executionParamsString.Length == 0 ? string.Empty : executionParamsString);
 
-                    var singleDefaultMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                    var singleDefaultMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_INDEX_VARIABLE_NAME, eventHandlerName)
+                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin + SpecialNames.DefaultMethodSuffix)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.EXTEND_EXCEPTIONS, exceptionsThrowed)
