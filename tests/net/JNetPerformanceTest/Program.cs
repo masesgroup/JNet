@@ -146,7 +146,7 @@ namespace MASES.JNetPerformanceTest
         static void TestStaticMethod(int requestedIterations, bool feedback)
         {
             string methodName = feedback ? "executeStaticFeedbackMethod" : "executeStaticEmptyMethod";
-            Console.WriteLine($"TestStaticMethod with {requestedIterations} iterations with feedback {feedback} - method={methodName}");
+            Console.WriteLine($"Start TestStaticMethod with {requestedIterations} iterations with feedback {feedback} - method={methodName}");
             int i = 0;
             try
             {
@@ -208,7 +208,7 @@ namespace MASES.JNetPerformanceTest
         static void TestMethod(int requestedIterations, bool feedback)
         {
             string methodName = feedback ? "executeFeedbackMethod" : "executeEmptyMethod";
-            Console.WriteLine($"TestMethod with {requestedIterations} iterations with feedback {feedback} - method={methodName}");
+            Console.WriteLine($"Start TestMethod with {requestedIterations} iterations with feedback {feedback} - method={methodName}");
             int i = 0;
             try
             {
@@ -269,7 +269,7 @@ namespace MASES.JNetPerformanceTest
 
         static void TestPredicateRoundTrip(int requestedIterations, bool byIndex, bool readJVM)
         {
-            Console.WriteLine($"TestPredicateRoundTrip with {requestedIterations} iterations - byIndex={byIndex} readJVM={readJVM}");
+            Console.WriteLine($"Start TestPredicateRoundTrip with {requestedIterations} iterations - byIndex={byIndex} readJVM={readJVM}");
             int i = 0;
             try
             {
@@ -303,7 +303,7 @@ namespace MASES.JNetPerformanceTest
 
         static void TestPredicateSustained(int requestedIterations, bool byIndex, bool readJVM)
         {
-            Console.WriteLine($"TestPredicateRoundTrip with {requestedIterations} iterations - byIndex={byIndex} readJVM={readJVM}");
+            Console.WriteLine($"Start TestPredicateSustained with {requestedIterations} iterations - byIndex={byIndex} readJVM={readJVM}");
             try
             {
                 var method = byIndex ? "executePredicateIndex" : "executePredicate";
@@ -320,7 +320,7 @@ namespace MASES.JNetPerformanceTest
                     Stopwatch watcher1 = Stopwatch.StartNew();
                     jClass.InvokeWithSignature(method, "(I)Z", requestedIterations);
                     watcher1.Stop();
-                    Console.WriteLine($"End TestPredicateRoundTrip {method} over {requestedIterations} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)}");
+                    Console.WriteLine($"End TestPredicateSustained {method} over {requestedIterations} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)}");
                 }
             }
             catch
