@@ -33,17 +33,33 @@ public final class XMLReaderAdapter extends org.xml.sax.helpers.XMLReaderAdapter
     public synchronized void release() {
        _internalListener.release();
     }
+
+    public synchronized int getEventIndex(String eventName) {
+       _internalListener.getEventIndex(eventName);
+    }
     
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
+    }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
     }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -70,95 +86,131 @@ public final class XMLReaderAdapter extends org.xml.sax.helpers.XMLReaderAdapter
        _internalListener.setReturnData(retData);
     }
 
+    int _charactersIndex = 0;
     //@Override
     public void characters(char[] arg0, int arg1, int arg2) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("characters", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.characters(arg0, arg1, arg2);
+        if (_charactersIndex <= 0) _charactersIndex = getEventIndex("characters");
+        raiseEvent(_charactersIndex, eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.characters(arg0, arg1, arg2);
     }
+    int _endDocumentIndex = 0;
     //@Override
     public void endDocument() throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("endDocument", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.endDocument();
+        if (_endDocumentIndex <= 0) _endDocumentIndex = getEventIndex("endDocument");
+        raiseEvent(_endDocumentIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) super.endDocument();
     }
+    int _endElementIndex = 0;
     //@Override
     public void endElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("endElement", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.endElement(arg0, arg1, arg2);
+        if (_endElementIndex <= 0) _endElementIndex = getEventIndex("endElement");
+        raiseEvent(_endElementIndex, eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.endElement(arg0, arg1, arg2);
     }
+    int _endPrefixMappingIndex = 0;
     //@Override
     public void endPrefixMapping(java.lang.String arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("endPrefixMapping", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.endPrefixMapping(arg0);
+        if (_endPrefixMappingIndex <= 0) _endPrefixMappingIndex = getEventIndex("endPrefixMapping");
+        raiseEvent(_endPrefixMappingIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.endPrefixMapping(arg0);
     }
+    int _ignorableWhitespaceIndex = 0;
     //@Override
     public void ignorableWhitespace(char[] arg0, int arg1, int arg2) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("ignorableWhitespace", eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.ignorableWhitespace(arg0, arg1, arg2);
+        if (_ignorableWhitespaceIndex <= 0) _ignorableWhitespaceIndex = getEventIndex("ignorableWhitespace");
+        raiseEvent(_ignorableWhitespaceIndex, eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.ignorableWhitespace(arg0, arg1, arg2);
     }
+    int _parseIndex = 0;
     //@Override
     public void parse(java.lang.String arg0) throws java.io.IOException, org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("parse", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.parse(arg0);
+        if (_parseIndex <= 0) _parseIndex = getEventIndex("parse");
+        raiseEvent(_parseIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.parse(arg0);
     }
+    int _parse1Index = 0;
     //@Override
     public void parse(org.xml.sax.InputSource arg0) throws java.io.IOException, org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("parse1", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.parse(arg0);
+        if (_parse1Index <= 0) _parse1Index = getEventIndex("parse1");
+        raiseEvent(_parse1Index, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.parse(arg0);
     }
+    int _processingInstructionIndex = 0;
     //@Override
     public void processingInstruction(java.lang.String arg0, java.lang.String arg1) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("processingInstruction", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.processingInstruction(arg0, arg1);
+        if (_processingInstructionIndex <= 0) _processingInstructionIndex = getEventIndex("processingInstruction");
+        raiseEvent(_processingInstructionIndex, eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.processingInstruction(arg0, arg1);
     }
+    int _setDocumentHandlerIndex = 0;
     //@Override
     public void setDocumentHandler(org.xml.sax.DocumentHandler arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("setDocumentHandler", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDocumentHandler(arg0);
+        if (_setDocumentHandlerIndex <= 0) _setDocumentHandlerIndex = getEventIndex("setDocumentHandler");
+        raiseEvent(_setDocumentHandlerIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDocumentHandler(arg0);
     }
+    int _setDocumentLocatorIndex = 0;
     //@Override
     public void setDocumentLocator(org.xml.sax.Locator arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("setDocumentLocator", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDocumentLocator(arg0);
+        if (_setDocumentLocatorIndex <= 0) _setDocumentLocatorIndex = getEventIndex("setDocumentLocator");
+        raiseEvent(_setDocumentLocatorIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDocumentLocator(arg0);
     }
+    int _setDTDHandlerIndex = 0;
     //@Override
     public void setDTDHandler(org.xml.sax.DTDHandler arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("setDTDHandler", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDTDHandler(arg0);
+        if (_setDTDHandlerIndex <= 0) _setDTDHandlerIndex = getEventIndex("setDTDHandler");
+        raiseEvent(_setDTDHandlerIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDTDHandler(arg0);
     }
+    int _setEntityResolverIndex = 0;
     //@Override
     public void setEntityResolver(org.xml.sax.EntityResolver arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("setEntityResolver", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setEntityResolver(arg0);
+        if (_setEntityResolverIndex <= 0) _setEntityResolverIndex = getEventIndex("setEntityResolver");
+        raiseEvent(_setEntityResolverIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setEntityResolver(arg0);
     }
+    int _setErrorHandlerIndex = 0;
     //@Override
     public void setErrorHandler(org.xml.sax.ErrorHandler arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("setErrorHandler", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setErrorHandler(arg0);
+        if (_setErrorHandlerIndex <= 0) _setErrorHandlerIndex = getEventIndex("setErrorHandler");
+        raiseEvent(_setErrorHandlerIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setErrorHandler(arg0);
     }
+    int _setLocaleIndex = 0;
     //@Override
     public void setLocale(java.util.Locale arg0) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("setLocale", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setLocale(arg0);
+        if (_setLocaleIndex <= 0) _setLocaleIndex = getEventIndex("setLocale");
+        raiseEvent(_setLocaleIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setLocale(arg0);
     }
+    int _skippedEntityIndex = 0;
     //@Override
     public void skippedEntity(java.lang.String arg0) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("skippedEntity", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.skippedEntity(arg0);
+        if (_skippedEntityIndex <= 0) _skippedEntityIndex = getEventIndex("skippedEntity");
+        raiseEvent(_skippedEntityIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.skippedEntity(arg0);
     }
+    int _startDocumentIndex = 0;
     //@Override
     public void startDocument() throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("startDocument", eventDataExchange); if (!eventDataExchange.getHasOverride()) super.startDocument();
+        if (_startDocumentIndex <= 0) _startDocumentIndex = getEventIndex("startDocument");
+        raiseEvent(_startDocumentIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) super.startDocument();
     }
+    int _startElementIndex = 0;
     //@Override
     public void startElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, org.xml.sax.Attributes arg3) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("startElement", eventDataExchange, arg0, arg1, arg2, arg3); if (!eventDataExchange.getHasOverride()) super.startElement(arg0, arg1, arg2, arg3);
+        if (_startElementIndex <= 0) _startElementIndex = getEventIndex("startElement");
+        raiseEvent(_startElementIndex, eventDataExchange, arg0, arg1, arg2, arg3); if (!eventDataExchange.getHasOverride()) super.startElement(arg0, arg1, arg2, arg3);
     }
+    int _startPrefixMappingIndex = 0;
     //@Override
     public void startPrefixMapping(java.lang.String arg0, java.lang.String arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("startPrefixMapping", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.startPrefixMapping(arg0, arg1);
+        if (_startPrefixMappingIndex <= 0) _startPrefixMappingIndex = getEventIndex("startPrefixMapping");
+        raiseEvent(_startPrefixMappingIndex, eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.startPrefixMapping(arg0, arg1);
     }
 
 }

@@ -33,17 +33,33 @@ public final class Consumer implements org.mases.jcobridge.IJCListener, java.uti
     public synchronized void release() {
        _internalListener.release();
     }
+
+    public synchronized int getEventIndex(String eventName) {
+       _internalListener.getEventIndex(eventName);
+    }
     
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
+    }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
     }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -70,16 +86,21 @@ public final class Consumer implements org.mases.jcobridge.IJCListener, java.uti
        _internalListener.setReturnData(retData);
     }
 
+    int _acceptIndex = 0;
     //@Override
     public void accept(java.lang.Object arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("accept", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        if (_acceptIndex <= 0) _acceptIndex = getEventIndex("accept");
+        raiseEvent(_acceptIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
+    int _andThenIndex = 0;
     //@Override
     public java.util.function.Consumer andThen(java.util.function.Consumer arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Consumer.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Consumer)retVal;
+        if (_andThenIndex <= 0) _andThenIndex = getEventIndex("andThen");
+        raiseEvent(_andThenIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Consumer.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Consumer)retVal;
     }
+    int _andThenIndex = 0;
     //@Override
     public java.util.function.Consumer andThenDefault(java.util.function.Consumer arg0) {
         return java.util.function.Consumer.super.andThen(arg0);
