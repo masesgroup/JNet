@@ -43,4 +43,24 @@ public class TestPerformance {
 		if (_predicate == null) throw new UnsupportedOperationException("Predicate is null");
 		return _predicate.test(new Object());
 	}
+
+	public boolean executePredicateIndex(int iterations)
+	{
+		if (_predicate == null) throw new UnsupportedOperationException("Predicate is null");
+		boolean result = false;
+		for(int i = 0; i < iterations; i++) {
+			result |= _predicate.testIndex(new Object());
+		}
+		return result;
+	}
+
+	public boolean executePredicate(int iterations)
+	{
+		if (_predicate == null) throw new UnsupportedOperationException("Predicate is null");
+		boolean result = false;
+		for(int i = 0; i < iterations; i++) {
+			result |= _predicate.test(new Object());
+		}
+		return result;
+	}
 }

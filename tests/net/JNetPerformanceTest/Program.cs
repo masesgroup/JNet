@@ -136,6 +136,11 @@ namespace MASES.JNetPerformanceTest
             //TestPredicateRoundTrip(iterations, true, false);
             TestPredicateRoundTrip(iterations, false, true);
             //TestPredicateRoundTrip(iterations, true, true);
+
+            //TestPredicateSustained(iterations, false, false);
+            //TestPredicateSustained(iterations, true, false);
+            TestPredicateSustained(iterations, false, true);
+            //TestPredicateSustained(iterations, true, true);
         }
 
         static void TestStaticMethod(int requestedIterations, bool feedback)
@@ -284,6 +289,36 @@ namespace MASES.JNetPerformanceTest
                     {
                         jClass.InvokeWithSignature(method, "()Z");
                     }
+                    watcher1.Stop();
+                    Console.WriteLine($"End TestPredicateRoundTrip {method} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                }
+            }
+            catch
+            {
+                Console.WriteLine($"Failed at iteration: {i}");
+                throw;
+            }
+        }
+
+        static void TestPredicateSustained(int requestedIterations, bool byIndex, bool readJVM)
+        {
+            Console.WriteLine($"TestPredicateRoundTrip with {requestedIterations} iterations - byIndex={byIndex} readJVM={readJVM}");
+            int i = 0;
+            try
+            {
+                var method = byIndex ? "executePredicateIndex" : "executePredicate";
+                using (var predicate = new Org.Mases.JNet.Predicate<object>()
+                {
+                    OnTest = (o) =>
+                    {
+                        return true;
+                    }
+                })
+                {
+                    var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance", predicate) as IJavaObject;
+
+                    Stopwatch watcher1 = Stopwatch.StartNew();
+                    jClass.InvokeWithSignature(method, "(I)Z", requestedIterations);
                     watcher1.Stop();
                     Console.WriteLine($"End TestPredicateRoundTrip {method} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
                 }
