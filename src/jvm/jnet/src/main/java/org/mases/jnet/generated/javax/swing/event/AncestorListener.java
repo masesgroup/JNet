@@ -33,17 +33,33 @@ public final class AncestorListener implements org.mases.jcobridge.IJCListener, 
     public synchronized void release() {
        _internalListener.release();
     }
+
+    public synchronized int getEventIndex(String eventName) {
+       _internalListener.getEventIndex(eventName);
+    }
     
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
+    }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
     }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -70,20 +86,26 @@ public final class AncestorListener implements org.mases.jcobridge.IJCListener, 
        _internalListener.setReturnData(retData);
     }
 
+    _ancestorAddedIndex = 0;
     //@Override
     public void ancestorAdded(javax.swing.event.AncestorEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("ancestorAdded", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        if (_ancestorAddedIndex <= 0) _ancestorAddedIndex = getEventIndex("ancestorAdded");
+        raiseEvent(_ancestorAddedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
+    _ancestorMovedIndex = 0;
     //@Override
     public void ancestorMoved(javax.swing.event.AncestorEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("ancestorMoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        if (_ancestorMovedIndex <= 0) _ancestorMovedIndex = getEventIndex("ancestorMoved");
+        raiseEvent(_ancestorMovedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
+    _ancestorRemovedIndex = 0;
     //@Override
     public void ancestorRemoved(javax.swing.event.AncestorEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("ancestorRemoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        if (_ancestorRemovedIndex <= 0) _ancestorRemovedIndex = getEventIndex("ancestorRemoved");
+        raiseEvent(_ancestorRemovedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

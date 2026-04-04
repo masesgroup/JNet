@@ -33,17 +33,33 @@ public final class DropTargetAdapter extends java.awt.dnd.DropTargetAdapter impl
     public synchronized void release() {
        _internalListener.release();
     }
+
+    public synchronized int getEventIndex(String eventName) {
+       _internalListener.getEventIndex(eventName);
+    }
     
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
+    }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
     }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -70,30 +86,40 @@ public final class DropTargetAdapter extends java.awt.dnd.DropTargetAdapter impl
        _internalListener.setReturnData(retData);
     }
 
+    _dropIndex = 0;
     //@Override
     public void drop(java.awt.dnd.DropTargetDropEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("drop", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        if (_dropIndex <= 0) _dropIndex = getEventIndex("drop");
+        raiseEvent(_dropIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
+    _dragEnterIndex = 0;
     //@Override
     public void dragEnter(java.awt.dnd.DropTargetDragEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("dragEnter", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragEnter(arg0);
+        if (_dragEnterIndex <= 0) _dragEnterIndex = getEventIndex("dragEnter");
+        raiseEvent(_dragEnterIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragEnter(arg0);
     }
+    _dragExitIndex = 0;
     //@Override
     public void dragExit(java.awt.dnd.DropTargetEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("dragExit", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragExit(arg0);
+        if (_dragExitIndex <= 0) _dragExitIndex = getEventIndex("dragExit");
+        raiseEvent(_dragExitIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragExit(arg0);
     }
+    _dragOverIndex = 0;
     //@Override
     public void dragOver(java.awt.dnd.DropTargetDragEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("dragOver", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragOver(arg0);
+        if (_dragOverIndex <= 0) _dragOverIndex = getEventIndex("dragOver");
+        raiseEvent(_dragOverIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragOver(arg0);
     }
+    _dropActionChangedIndex = 0;
     //@Override
     public void dropActionChanged(java.awt.dnd.DropTargetDragEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("dropActionChanged", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dropActionChanged(arg0);
+        if (_dropActionChangedIndex <= 0) _dropActionChangedIndex = getEventIndex("dropActionChanged");
+        raiseEvent(_dropActionChangedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dropActionChanged(arg0);
     }
 
 }

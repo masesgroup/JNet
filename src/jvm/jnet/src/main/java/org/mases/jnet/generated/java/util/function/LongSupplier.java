@@ -33,17 +33,33 @@ public final class LongSupplier implements org.mases.jcobridge.IJCListener, java
     public synchronized void release() {
        _internalListener.release();
     }
+
+    public synchronized int getEventIndex(String eventName) {
+       _internalListener.getEventIndex(eventName);
+    }
     
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
+    }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
     }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -70,10 +86,12 @@ public final class LongSupplier implements org.mases.jcobridge.IJCListener, java
        _internalListener.setReturnData(retData);
     }
 
+    _getAsLongIndex = 0;
     //@Override
     public long getAsLong() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("getAsLong", eventDataExchange); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (long)retVal;
+        if (_getAsLongIndex <= 0) _getAsLongIndex = getEventIndex("getAsLong");
+        raiseEvent(_getAsLongIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (long)retVal;
     }
 
 }

@@ -33,17 +33,33 @@ public final class IntPredicate implements org.mases.jcobridge.IJCListener, java
     public synchronized void release() {
        _internalListener.release();
     }
+
+    public synchronized int getEventIndex(String eventName) {
+       _internalListener.getEventIndex(eventName);
+    }
     
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
+    }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
     }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -70,34 +86,45 @@ public final class IntPredicate implements org.mases.jcobridge.IJCListener, java
        _internalListener.setReturnData(retData);
     }
 
+    _testIndex = 0;
     //@Override
     public boolean test(int arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("test", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+        if (_testIndex <= 0) _testIndex = getEventIndex("test");
+        raiseEvent(_testIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
+    _andIndex = 0;
     //@Override
     public java.util.function.IntPredicate and(java.util.function.IntPredicate arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("and", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.IntPredicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.IntPredicate)retVal;
+        if (_andIndex <= 0) _andIndex = getEventIndex("and");
+        raiseEvent(_andIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.IntPredicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.IntPredicate)retVal;
     }
+
     //@Override
     public java.util.function.IntPredicate andDefault(java.util.function.IntPredicate arg0) {
         return java.util.function.IntPredicate.super.and(arg0);
     }
+    _negateIndex = 0;
     //@Override
     public java.util.function.IntPredicate negate() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("negate", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.IntPredicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.IntPredicate)retVal;
+        if (_negateIndex <= 0) _negateIndex = getEventIndex("negate");
+        raiseEvent(_negateIndex, eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.IntPredicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.IntPredicate)retVal;
     }
+
     //@Override
     public java.util.function.IntPredicate negateDefault() {
         return java.util.function.IntPredicate.super.negate();
     }
+    _orIndex = 0;
     //@Override
     public java.util.function.IntPredicate or(java.util.function.IntPredicate arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("or", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.IntPredicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.IntPredicate)retVal;
+        if (_orIndex <= 0) _orIndex = getEventIndex("or");
+        raiseEvent(_orIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.IntPredicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.IntPredicate)retVal;
     }
+
     //@Override
     public java.util.function.IntPredicate orDefault(java.util.function.IntPredicate arg0) {
         return java.util.function.IntPredicate.super.or(arg0);

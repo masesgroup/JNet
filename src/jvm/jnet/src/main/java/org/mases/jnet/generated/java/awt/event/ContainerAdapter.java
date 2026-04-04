@@ -33,17 +33,33 @@ public final class ContainerAdapter extends java.awt.event.ContainerAdapter impl
     public synchronized void release() {
        _internalListener.release();
     }
+
+    public synchronized int getEventIndex(String eventName) {
+       _internalListener.getEventIndex(eventName);
+    }
     
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
+    }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
     }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -70,15 +86,19 @@ public final class ContainerAdapter extends java.awt.event.ContainerAdapter impl
        _internalListener.setReturnData(retData);
     }
 
+    _componentAddedIndex = 0;
     //@Override
     public void componentAdded(java.awt.event.ContainerEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("componentAdded", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentAdded(arg0);
+        if (_componentAddedIndex <= 0) _componentAddedIndex = getEventIndex("componentAdded");
+        raiseEvent(_componentAddedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentAdded(arg0);
     }
+    _componentRemovedIndex = 0;
     //@Override
     public void componentRemoved(java.awt.event.ContainerEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("componentRemoved", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentRemoved(arg0);
+        if (_componentRemovedIndex <= 0) _componentRemovedIndex = getEventIndex("componentRemoved");
+        raiseEvent(_componentRemovedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentRemoved(arg0);
     }
 
 }
