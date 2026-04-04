@@ -2394,7 +2394,7 @@ namespace MASES.JNet.Reflector
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing method {0}", genString);
 
-                var singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_INDEX_VARIABLE_NAME, eventHandlerName)
+                var singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_INDEX_VARIABLE_NAME, string.Format(AllPackageClasses.ClassStub.MethodStub.LISTENER_INDEX_VARIABLE_NAME_FORMAT, eventHandlerName))
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
@@ -2408,7 +2408,7 @@ namespace MASES.JNet.Reflector
                     execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_BASE_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_BASE_EXECUTION_FORMAT,
                                              methodNameOrigin, executionParamsString.Length == 0 ? string.Empty : executionParamsString);
 
-                    var singleBaseMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_INDEX_VARIABLE_NAME, eventHandlerName)
+                    var singleBaseMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_INDEX_VARIABLE_NAME, string.Empty)
                                                    .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                                    .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin + SpecialNames.BaseMethodSuffix)
                                                    .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
@@ -2423,7 +2423,7 @@ namespace MASES.JNet.Reflector
                     execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT,
                                              extendingInterface, methodNameOrigin, executionParamsString.Length == 0 ? string.Empty : executionParamsString);
 
-                    var singleDefaultMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_INDEX_VARIABLE_NAME, eventHandlerName)
+                    var singleDefaultMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_INDEX_VARIABLE_NAME, string.Empty)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin + SpecialNames.DefaultMethodSuffix)
                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
