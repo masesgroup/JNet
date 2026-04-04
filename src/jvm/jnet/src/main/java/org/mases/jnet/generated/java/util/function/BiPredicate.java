@@ -33,17 +33,33 @@ public final class BiPredicate implements org.mases.jcobridge.IJCListener, java.
     public synchronized void release() {
        _internalListener.release();
     }
+
+    public synchronized int getEventIndex(String eventName) {
+       return _internalListener.getEventIndex(eventName);
+    }
     
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
+    }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
     }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -70,34 +86,45 @@ public final class BiPredicate implements org.mases.jcobridge.IJCListener, java.
        _internalListener.setReturnData(retData);
     }
 
+    int _testIndex = 0;
     //@Override
     public boolean test(java.lang.Object arg0, java.lang.Object arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("test", eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+        if (_testIndex <= 0) _testIndex = getEventIndex("test");
+        raiseEvent(_testIndex, eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
     }
+    int _andIndex = 0;
     //@Override
     public java.util.function.BiPredicate and(java.util.function.BiPredicate arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("and", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
+        if (_andIndex <= 0) _andIndex = getEventIndex("and");
+        raiseEvent(_andIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
     }
+
     //@Override
     public java.util.function.BiPredicate andDefault(java.util.function.BiPredicate arg0) {
         return java.util.function.BiPredicate.super.and(arg0);
     }
+    int _negateIndex = 0;
     //@Override
     public java.util.function.BiPredicate negate() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("negate", eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
+        if (_negateIndex <= 0) _negateIndex = getEventIndex("negate");
+        raiseEvent(_negateIndex, eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
     }
+
     //@Override
     public java.util.function.BiPredicate negateDefault() {
         return java.util.function.BiPredicate.super.negate();
     }
+    int _orIndex = 0;
     //@Override
     public java.util.function.BiPredicate or(java.util.function.BiPredicate arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("or", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
+        if (_orIndex <= 0) _orIndex = getEventIndex("or");
+        raiseEvent(_orIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiPredicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiPredicate)retVal;
     }
+
     //@Override
     public java.util.function.BiPredicate orDefault(java.util.function.BiPredicate arg0) {
         return java.util.function.BiPredicate.super.or(arg0);
