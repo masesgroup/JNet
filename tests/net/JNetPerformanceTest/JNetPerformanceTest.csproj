@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\Common\Common.props" />
+	<PropertyGroup>
+		<AssemblyName>JNetPerformanceTest</AssemblyName>
+		<OutputType>Exe</OutputType>
+		<RootNamespace>MASES.JNetPerformanceTest</RootNamespace>
+		<Title>JNetPerformanceTest - a test tool for JNet</Title>
+		<Description>JNetPerformanceTest - a test tool for JNet</Description>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="..\Common\Initializer.cs" Link="Initializer.cs" />
+	</ItemGroup>
+</Project>

@@ -17,13 +17,13 @@ on:
         required: false
         default: false
         type: boolean
-      ExecuteOnLargerJDKSet:
-        description: 'Executes tests on more JDK'
+      ExecuteOnLargerJDKVendorSet:
+        description: 'Executes tests on more JDK vendor'
         required: false
         default: false
         type: boolean
-      EnableLinuxTests:
-        description: 'Enable tests in Linux'
+      ExecuteOnLargerJDKVersionSet:
+        description: 'Executes tests on more JDK version'
         required: false
         default: false
         type: boolean
@@ -149,7 +149,8 @@ jobs:
     uses: ./.github/workflows/build_common.yaml
     with:
       ExecuteOnMoreOSes: ${{ inputs.ExecuteOnMoreOSes || github.event_name == 'schedule' }}
-      ExecuteOnLargerJDKSet: ${{ inputs.ExecuteOnLargerJDKSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
+      ExecuteOnLargerJDKVendorSet: ${{ inputs.ExecuteOnLargerJDKVendorSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
+      ExecuteOnLargerJDKVersionSet: ${{ inputs.ExecuteOnLargerJDKVersionSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
       EnableLinuxTests: true
       EnableWindowsTests: ${{ inputs.EnableWindowsTests || github.ref_name == 'master' || github.event_name == 'schedule' }}
       EnableMacOSTests: ${{ inputs.EnableMacOSTests || github.event_name == 'schedule' }}
