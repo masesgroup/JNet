@@ -17,13 +17,16 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using System;
 
 namespace Java.Awt
 {
-    public partial class Container
+    public partial class Container : IDisposable
     {
         // can be extended with methods not reflected or not available in Java;
 
+        readonly object _lock = new object();
+        bool _disposed = false;
         IJCGraphicContainer _container = null;
         /// <summary>
         /// Creates the <see cref="HostedContainer"/> and returns <see cref="IJCGraphicContainer.GraphicObject"/>
@@ -33,7 +36,7 @@ namespace Java.Awt
         /// <returns>The <see cref="object"/> in the <see cref="IJCGraphicContainer.GraphicObject"/> property</returns>
         public object CreateHostedContainer(bool isWPF, JCWindowsManager manager = null)
         {
-            lock (this)
+            lock (_lock)
             {
                 if (_container == null)
                 {
@@ -49,17 +52,18 @@ namespace Java.Awt
         /// </summary>
         public IJCGraphicContainer HostedContainer { get { lock (this) { return _container; } } }
         /// <inheritdoc/>
-        protected override void Dispose(bool disposing)
+        public virtual void Dispose()
         {
-            lock (this)
+            lock (_lock)
             {
+                if (_disposed) throw new ObjectDisposedException("");
+                _disposed = true;
                 if (_container != null)
                 {
                     Management.ReleaseJCGraphicContainer(_container);
                     _container = null;
                 }
             }
-            base.Dispose(disposing);
         }
 
         // TODO: complete the class

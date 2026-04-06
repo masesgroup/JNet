@@ -29,13 +29,9 @@ namespace Java.Nio.Charset
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/CodingErrorAction.html"/>
     /// </summary>
-    public partial class CodingErrorAction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CodingErrorAction>
+    public partial class CodingErrorAction : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<CodingErrorAction>
     {
         const string _bridgeClassName = "java.nio.charset.CodingErrorAction";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CodingErrorAction() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Nio.Charset
         public CodingErrorAction(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

@@ -29,13 +29,9 @@ namespace Javax.Swing.Plaf.Metal
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.html"/>
     /// </summary>
-    public partial class MetalBorders : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MetalBorders>
+    public partial class MetalBorders : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<MetalBorders>
     {
         const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MetalBorders() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Swing.Plaf.Metal
         public MetalBorders(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,10 +66,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$ButtonBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ButtonBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -84,7 +76,7 @@ namespace Javax.Swing.Plaf.Metal
             public ButtonBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -111,10 +103,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$Flush3DBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Flush3DBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -125,7 +113,7 @@ namespace Javax.Swing.Plaf.Metal
             public Flush3DBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -152,10 +140,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$InternalFrameBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public InternalFrameBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -166,7 +150,7 @@ namespace Javax.Swing.Plaf.Metal
             public InternalFrameBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -193,10 +177,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$MenuBarBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public MenuBarBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -207,7 +187,7 @@ namespace Javax.Swing.Plaf.Metal
             public MenuBarBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -234,10 +214,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$MenuItemBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public MenuItemBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -248,7 +224,7 @@ namespace Javax.Swing.Plaf.Metal
             public MenuItemBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -275,10 +251,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$OptionDialogBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public OptionDialogBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -289,7 +261,7 @@ namespace Javax.Swing.Plaf.Metal
             public OptionDialogBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -316,10 +288,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$PaletteBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public PaletteBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -330,7 +298,7 @@ namespace Javax.Swing.Plaf.Metal
             public PaletteBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -357,10 +325,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$PopupMenuBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public PopupMenuBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -371,7 +335,7 @@ namespace Javax.Swing.Plaf.Metal
             public PopupMenuBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -398,10 +362,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$RolloverButtonBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public RolloverButtonBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -412,7 +372,7 @@ namespace Javax.Swing.Plaf.Metal
             public RolloverButtonBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -439,10 +399,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$ScrollPaneBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ScrollPaneBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -453,7 +409,7 @@ namespace Javax.Swing.Plaf.Metal
             public ScrollPaneBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -480,10 +436,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$TableHeaderBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TableHeaderBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -494,7 +446,7 @@ namespace Javax.Swing.Plaf.Metal
             public TableHeaderBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -521,10 +473,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$TextFieldBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TextFieldBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -535,7 +483,7 @@ namespace Javax.Swing.Plaf.Metal
             public TextFieldBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -562,10 +510,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$ToggleButtonBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ToggleButtonBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -576,7 +520,7 @@ namespace Javax.Swing.Plaf.Metal
             public ToggleButtonBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -603,10 +547,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalBorders$ToolBarBorder";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ToolBarBorder() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -617,7 +557,7 @@ namespace Javax.Swing.Plaf.Metal
             public ToolBarBorder(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -644,6 +584,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalBorders
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.html#javax.swing.plaf.metal.MetalBorders()"/>
+        /// </summary>
+        public MetalBorders()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -703,6 +650,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class ButtonBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.ButtonBorder.html#javax.swing.plaf.metal.MetalBorders$ButtonBorder()"/>
+            /// </summary>
+            public ButtonBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -738,6 +692,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class Flush3DBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.Flush3DBorder.html#javax.swing.plaf.metal.MetalBorders$Flush3DBorder()"/>
+            /// </summary>
+            public Flush3DBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -773,6 +734,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class InternalFrameBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.InternalFrameBorder.html#javax.swing.plaf.metal.MetalBorders$InternalFrameBorder()"/>
+            /// </summary>
+            public InternalFrameBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -808,6 +776,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class MenuBarBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.MenuBarBorder.html#javax.swing.plaf.metal.MetalBorders$MenuBarBorder()"/>
+            /// </summary>
+            public MenuBarBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -843,6 +818,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class MenuItemBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.MenuItemBorder.html#javax.swing.plaf.metal.MetalBorders$MenuItemBorder()"/>
+            /// </summary>
+            public MenuItemBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -878,6 +860,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class OptionDialogBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.OptionDialogBorder.html#javax.swing.plaf.metal.MetalBorders$OptionDialogBorder()"/>
+            /// </summary>
+            public OptionDialogBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -913,6 +902,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class PaletteBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.PaletteBorder.html#javax.swing.plaf.metal.MetalBorders$PaletteBorder()"/>
+            /// </summary>
+            public PaletteBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -948,6 +944,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class PopupMenuBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.PopupMenuBorder.html#javax.swing.plaf.metal.MetalBorders$PopupMenuBorder()"/>
+            /// </summary>
+            public PopupMenuBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -983,6 +986,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class RolloverButtonBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.RolloverButtonBorder.html#javax.swing.plaf.metal.MetalBorders$RolloverButtonBorder()"/>
+            /// </summary>
+            public RolloverButtonBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -1014,6 +1024,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class ScrollPaneBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.ScrollPaneBorder.html#javax.swing.plaf.metal.MetalBorders$ScrollPaneBorder()"/>
+            /// </summary>
+            public ScrollPaneBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -1049,6 +1066,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class TableHeaderBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.TableHeaderBorder.html#javax.swing.plaf.metal.MetalBorders$TableHeaderBorder()"/>
+            /// </summary>
+            public TableHeaderBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -1080,6 +1104,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class TextFieldBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.TextFieldBorder.html#javax.swing.plaf.metal.MetalBorders$TextFieldBorder()"/>
+            /// </summary>
+            public TextFieldBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -1111,6 +1142,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class ToggleButtonBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.ToggleButtonBorder.html#javax.swing.plaf.metal.MetalBorders$ToggleButtonBorder()"/>
+            /// </summary>
+            public ToggleButtonBorder()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -1142,6 +1180,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class ToolBarBorder
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalBorders.ToolBarBorder.html#javax.swing.plaf.metal.MetalBorders$ToolBarBorder()"/>
+            /// </summary>
+            public ToolBarBorder()
+                : base()
+            {
+            }
 
             #endregion
 

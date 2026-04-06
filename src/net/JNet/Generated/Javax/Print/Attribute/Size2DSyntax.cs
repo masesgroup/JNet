@@ -29,14 +29,9 @@ namespace Javax.Print.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/Size2DSyntax.html"/>
     /// </summary>
-    public partial class Size2DSyntax : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Size2DSyntax>
+    public partial class Size2DSyntax : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Size2DSyntax>
     {
         const string _bridgeClassName = "javax.print.attribute.Size2DSyntax";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("Size2DSyntax class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Size2DSyntax() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Print.Attribute
         public Size2DSyntax(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

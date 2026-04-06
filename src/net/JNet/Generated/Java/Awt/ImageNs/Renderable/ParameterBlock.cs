@@ -29,13 +29,9 @@ namespace Java.Awt.ImageNs.Renderable
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/ParameterBlock.html"/>
     /// </summary>
-    public partial class ParameterBlock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ParameterBlock>
+    public partial class ParameterBlock : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ParameterBlock>
     {
         const string _bridgeClassName = "java.awt.image.renderable.ParameterBlock";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ParameterBlock() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Awt.ImageNs.Renderable
         public ParameterBlock(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Java.Awt.ImageNs.Renderable
     public partial class ParameterBlock
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/ParameterBlock.html#java.awt.image.renderable.ParameterBlock()"/>
+        /// </summary>
+        public ParameterBlock()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/ParameterBlock.html#java.awt.image.renderable.ParameterBlock(java.util.Vector,java.util.Vector)"/>
         /// </summary>

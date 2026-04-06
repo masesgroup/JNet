@@ -29,14 +29,9 @@ namespace Javax.Xml.Bind.Annotation.Adapters
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/adapters/XmlAdapter.html"/>
     /// </summary>
-    public partial class XmlAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XmlAdapter>
+    public partial class XmlAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<XmlAdapter>
     {
         const string _bridgeClassName = "javax.xml.bind.annotation.adapters.XmlAdapter";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("XmlAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public XmlAdapter() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Xml.Bind.Annotation.Adapters
         public XmlAdapter(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -74,14 +69,9 @@ namespace Javax.Xml.Bind.Annotation.Adapters
     /// </summary>
     /// <typeparam name="ValueType"></typeparam>
     /// <typeparam name="BoundType"></typeparam>
-    public partial class XmlAdapter<ValueType, BoundType> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XmlAdapter<ValueType, BoundType>>
+    public partial class XmlAdapter<ValueType, BoundType> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<XmlAdapter<ValueType, BoundType>>
     {
         const string _bridgeClassName = "javax.xml.bind.annotation.adapters.XmlAdapter";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("XmlAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public XmlAdapter() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -94,7 +84,7 @@ namespace Javax.Xml.Bind.Annotation.Adapters
         public XmlAdapter(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

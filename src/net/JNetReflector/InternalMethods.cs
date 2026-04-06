@@ -766,7 +766,7 @@ namespace MASES.JNet.Reflector
                                                      .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false, false))
                                                      .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric, false))
                                                      .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
-                                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false, JNetReflectorCore.UseCamel, out _))
+                                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isClassCloseable, isGeneric, false, JNetReflectorCore.UseCamel, out _))
                                                      .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, string.Empty);
             }
             else
@@ -779,7 +779,7 @@ namespace MASES.JNet.Reflector
                                                 .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, false))
                                                 .Replace(AllPackageClasses.ClassStub.CLASS_DIRECT, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, true))
                                                 .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
-                                                .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel, out bool baseClassIsJVMBridgeBase) + (isMainClass ? SpecialNames.MainClassPlaceHolder : string.Empty))
+                                                .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isClassCloseable, isGeneric, jClassIsListener, JNetReflectorCore.UseCamel, out bool baseClassIsJVMBridgeBase) + (isMainClass ? SpecialNames.MainClassPlaceHolder : string.Empty))
                                                 .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric, JNetReflectorCore.UseCamel))
                                                 .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
                                                 .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
@@ -796,6 +796,7 @@ namespace MASES.JNet.Reflector
                 }
                 else
                 {
+                    constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true, baseClassIsJVMBridgeBase).AddTabLevel(1);
                     if (jClass.IsJVMClassWithCallbacks())
                     {
                         operatorClassBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
@@ -818,7 +819,7 @@ namespace MASES.JNet.Reflector
             singleInterfaceStr = string.Empty;
             if (createInterfaceData)
             {
-                string baseInterface = jClass.JVMBaseInterfaceName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel);
+                string baseInterface = jClass.JVMBaseInterfaceName(isClassCloseable, isGeneric, jClassIsListener, JNetReflectorCore.UseCamel);
                 if (!string.IsNullOrWhiteSpace(baseInterface))
                 {
                     baseInterface = " : " + baseInterface;
@@ -949,7 +950,6 @@ namespace MASES.JNet.Reflector
                 var paramCount = constructor.ParameterCount;
                 var methodNameOrigin = constructor.Name;
 
-                if (paramCount == 0) continue; // default constructor managed from AllClasses template as default for any JCOBridge reflected class
                 bool isDeprecated = constructor.IsDeprecated();
                 if (!JNetReflectorCore.ReflectDeprecated && isDeprecated)
                 {
