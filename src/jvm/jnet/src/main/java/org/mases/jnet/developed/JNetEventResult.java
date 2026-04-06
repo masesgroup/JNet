@@ -19,26 +19,32 @@
 package org.mases.jnet.developed;
 
 public class JNetEventResult {
-   boolean _hasOverride = false;
-   Object _returnData;
+   volatile boolean _hasOverrideSet = false;
+   volatile boolean _hasOverride = false;
+   volatile Object _returnData;
 
    public boolean getHasOverride() {
+      if (!_hasOverrideSet) throw new IllegalStateException(".NET side never changed the value of HasOverride property.");
       return _hasOverride;
    }
 
    public void setHasOverride(boolean hasOverride) {
+      _hasOverrideSet = true;
       _hasOverride = hasOverride;
    }
 
    public Object getReturnData() {
+      if (!_hasOverrideSet) throw new IllegalStateException(".NET side never changed the value of HasOverride property.");
       return _returnData;
    }
 
    public void setReturnData(Object retData) {
-      _returnData = retData;
+      throw new IllegalStateException(".NET side shall never invoke this method.");
+      //_returnData = retData;
    }
    
    public void setReturnData(boolean hasOverride, Object retData) {
+      _hasOverrideSet = true;
       _hasOverride = hasOverride;
       _returnData = retData;
    }

@@ -12,8 +12,13 @@ on:
         required: false
         default: false
         type: boolean
-      ExecuteOnLargerJDKSet:
-        description: 'Executes tests on more JDK'
+      ExecuteOnLargerJDKVendorSet:
+        description: 'Executes tests on more JDK vendor'
+        required: false
+        default: false
+        type: boolean
+      ExecuteOnLargerJDKVersionSet:
+        description: 'Executes tests on more JDK version'
         required: false
         default: false
         type: boolean
@@ -227,7 +232,7 @@ jobs:
       - name: Compile JNetPS
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNetPS\JNetPS.csproj
  
-      - uses: nuget/setup-nuget@v2.0.2
+      - uses: nuget/setup-nuget@v3.0.0
         with:
           nuget-version: '5.x'
           
@@ -293,17 +298,17 @@ jobs:
       matrix_mac_os: ${{ steps.set-matrix-mac-os.outputs.matrix_mac || steps.set-matrix-mac-os-ext.outputs.matrix_mac }}
     steps:
       - id: set-jdk-vendor
-        if: ${{ inputs.ExecuteOnLargerJDKSet == false }}
+        if: ${{ inputs.ExecuteOnLargerJDKVendorSet == false }}
         run: echo "matrix_jdk_vendor=[ 'temurin' ]" >> $GITHUB_OUTPUT
       - id: set-jdk-vendor-ext
-        if: ${{ inputs.ExecuteOnLargerJDKSet == true }}
+        if: ${{ inputs.ExecuteOnLargerJDKVendorSet == true }}
         run: echo "matrix_jdk_vendor=[ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle' ]" >> $GITHUB_OUTPUT
-      - id: set-jdk-version
-        if: ${{ inputs.ExecuteOnMoreOSes == false }}
-        run: echo "matrix_jdk_version=[ '8', '11', '17', '21', '25' ]" >> $GITHUB_OUTPUT
       - id: set-jdk-version-ext
-        if: ${{ inputs.ExecuteOnMoreOSes == true }}
+        if: ${{ inputs.ExecuteOnLargerJDKVersionSet == false }}
         run: echo "matrix_jdk_version=[ '17', '21', '25' ]" >> $GITHUB_OUTPUT
+      - id: set-jdk-version
+        if: ${{ inputs.ExecuteOnLargerJDKVersionSet == true }}
+        run: echo "matrix_jdk_version=[ '8', '11', '17', '21', '25' ]" >> $GITHUB_OUTPUT
       - id: set-matrix-win-os
         if: ${{ inputs.ExecuteOnMoreOSes == false }}
         run: echo "matrix_win=[ 'windows-2025' ]" >> $GITHUB_OUTPUT
@@ -334,6 +339,10 @@ jobs:
         jdk_vendor: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_vendor) }}
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
+          - os: windows-11-arm
+            framework: net462
+          - os: windows-11-arm
+            jdk_version: 17
           - jdk_vendor: microsoft
             jdk_version: 8
           - jdk_vendor: oracle
