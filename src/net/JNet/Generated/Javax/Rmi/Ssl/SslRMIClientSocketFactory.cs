@@ -29,13 +29,9 @@ namespace Javax.Rmi.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/ssl/SslRMIClientSocketFactory.html"/>
     /// </summary>
-    public partial class SslRMIClientSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SslRMIClientSocketFactory>
+    public partial class SslRMIClientSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<SslRMIClientSocketFactory>
     {
         const string _bridgeClassName = "javax.rmi.ssl.SslRMIClientSocketFactory";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SslRMIClientSocketFactory() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Rmi.Ssl
         public SslRMIClientSocketFactory(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Javax.Rmi.Ssl
     public partial class SslRMIClientSocketFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/ssl/SslRMIClientSocketFactory.html#javax.rmi.ssl.SslRMIClientSocketFactory()"/>
+        /// </summary>
+        public SslRMIClientSocketFactory()
+            : base()
+        {
+        }
 
         #endregion
 

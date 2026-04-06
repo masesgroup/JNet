@@ -29,13 +29,9 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/tools/DiagnosticCollector.html"/>
     /// </summary>
-    public partial class DiagnosticCollector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DiagnosticCollector>
+    public partial class DiagnosticCollector : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DiagnosticCollector>
     {
         const string _bridgeClassName = "javax.tools.DiagnosticCollector";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DiagnosticCollector() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Tools
         public DiagnosticCollector(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -71,13 +67,9 @@ namespace Javax.Tools
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/tools/DiagnosticCollector.html"/>
     /// </summary>
     /// <typeparam name="S"></typeparam>
-    public partial class DiagnosticCollector<S> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DiagnosticCollector<S>>
+    public partial class DiagnosticCollector<S> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DiagnosticCollector<S>>
     {
         const string _bridgeClassName = "javax.tools.DiagnosticCollector";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DiagnosticCollector() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -89,7 +81,7 @@ namespace Javax.Tools
         public DiagnosticCollector(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -112,6 +104,13 @@ namespace Javax.Tools
     public partial class DiagnosticCollector
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/tools/DiagnosticCollector.html#javax.tools.DiagnosticCollector()"/>
+        /// </summary>
+        public DiagnosticCollector()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -158,6 +157,13 @@ namespace Javax.Tools
     public partial class DiagnosticCollector<S>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/tools/DiagnosticCollector.html#javax.tools.DiagnosticCollector()"/>
+        /// </summary>
+        public DiagnosticCollector()
+            : base()
+        {
+        }
 
         #endregion
 

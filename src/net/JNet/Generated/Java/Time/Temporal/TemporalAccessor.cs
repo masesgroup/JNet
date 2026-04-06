@@ -29,14 +29,9 @@ namespace Java.Time.Temporal
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalAccessor.html"/>
     /// </summary>
-    public partial class TemporalAccessor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalAccessor>
+    public partial class TemporalAccessor : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<TemporalAccessor>
     {
         const string _bridgeClassName = "java.time.temporal.TemporalAccessor";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("TemporalAccessor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public TemporalAccessor() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Java.Time.Temporal
         public TemporalAccessor(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

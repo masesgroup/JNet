@@ -29,13 +29,9 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicStampedReference.html"/>
     /// </summary>
-    public partial class AtomicStampedReference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicStampedReference>
+    public partial class AtomicStampedReference : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AtomicStampedReference>
     {
         const string _bridgeClassName = "java.util.concurrent.atomic.AtomicStampedReference";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AtomicStampedReference() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Util.Concurrent.Atomic
         public AtomicStampedReference(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -71,13 +67,9 @@ namespace Java.Util.Concurrent.Atomic
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicStampedReference.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class AtomicStampedReference<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicStampedReference<V>>
+    public partial class AtomicStampedReference<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AtomicStampedReference<V>>
     {
         const string _bridgeClassName = "java.util.concurrent.atomic.AtomicStampedReference";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AtomicStampedReference() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -89,7 +81,7 @@ namespace Java.Util.Concurrent.Atomic
         public AtomicStampedReference(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

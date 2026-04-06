@@ -29,13 +29,9 @@ namespace Javax.Management.Modelmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/RequiredModelMBean.html"/>
     /// </summary>
-    public partial class RequiredModelMBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RequiredModelMBean>
+    public partial class RequiredModelMBean : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<RequiredModelMBean>
     {
         const string _bridgeClassName = "javax.management.modelmbean.RequiredModelMBean";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RequiredModelMBean() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Management.Modelmbean
         public RequiredModelMBean(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,16 @@ namespace Javax.Management.Modelmbean
     public partial class RequiredModelMBean
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/RequiredModelMBean.html#javax.management.modelmbean.RequiredModelMBean()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        public RequiredModelMBean()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/RequiredModelMBean.html#javax.management.modelmbean.RequiredModelMBean(javax.management.modelmbean.ModelMBeanInfo)"/>
         /// </summary>

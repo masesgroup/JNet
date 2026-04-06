@@ -29,14 +29,9 @@ namespace Javax.Xml.Bind
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/Binder.html"/>
     /// </summary>
-    public partial class Binder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Binder>
+    public partial class Binder : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Binder>
     {
         const string _bridgeClassName = "javax.xml.bind.Binder";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("Binder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Binder() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Xml.Bind
         public Binder(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -73,14 +68,9 @@ namespace Javax.Xml.Bind
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/Binder.html"/>
     /// </summary>
     /// <typeparam name="XmlNode"></typeparam>
-    public partial class Binder<XmlNode> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Binder<XmlNode>>
+    public partial class Binder<XmlNode> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Binder<XmlNode>>
     {
         const string _bridgeClassName = "javax.xml.bind.Binder";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("Binder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Binder() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -93,7 +83,7 @@ namespace Javax.Xml.Bind
         public Binder(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -116,6 +106,13 @@ namespace Javax.Xml.Bind
     public partial class Binder
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/Binder.html#javax.xml.bind.Binder()"/>
+        /// </summary>
+        public Binder()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -261,6 +258,13 @@ namespace Javax.Xml.Bind
     public partial class Binder<XmlNode>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/Binder.html#javax.xml.bind.Binder()"/>
+        /// </summary>
+        public Binder()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -29,14 +29,9 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
-    public partial class TypeVariable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVariable>
+    public partial class TypeVariable : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<TypeVariable>
     {
         const string _bridgeClassName = "java.lang.reflect.TypeVariable";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("TypeVariable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public TypeVariable() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Java.Lang.Reflect
         public TypeVariable(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -73,14 +68,9 @@ namespace Java.Lang.Reflect
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
     /// <typeparam name="D"><see cref="Java.Lang.Reflect.IGenericDeclaration"/></typeparam>
-    public partial class TypeVariable<D> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVariable<D>> where D : Java.Lang.Reflect.IGenericDeclaration
+    public partial class TypeVariable<D> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<TypeVariable<D>> where D : Java.Lang.Reflect.IGenericDeclaration
     {
         const string _bridgeClassName = "java.lang.reflect.TypeVariable";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("TypeVariable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public TypeVariable() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -93,7 +83,7 @@ namespace Java.Lang.Reflect
         public TypeVariable(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

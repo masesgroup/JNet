@@ -29,13 +29,9 @@ namespace Java.Awt.Geom
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/AffineTransform.html"/>
     /// </summary>
-    public partial class AffineTransform : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AffineTransform>
+    public partial class AffineTransform : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AffineTransform>
     {
         const string _bridgeClassName = "java.awt.geom.AffineTransform";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AffineTransform() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Awt.Geom
         public AffineTransform(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Java.Awt.Geom
     public partial class AffineTransform
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/AffineTransform.html#java.awt.geom.AffineTransform()"/>
+        /// </summary>
+        public AffineTransform()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/AffineTransform.html#java.awt.geom.AffineTransform(double,double,double,double,double,double)"/>
         /// </summary>
