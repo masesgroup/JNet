@@ -29,13 +29,9 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/MenuSelectionManager.html"/>
     /// </summary>
-    public partial class MenuSelectionManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MenuSelectionManager>
+    public partial class MenuSelectionManager : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<MenuSelectionManager>
     {
         const string _bridgeClassName = "javax.swing.MenuSelectionManager";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MenuSelectionManager() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Swing
         public MenuSelectionManager(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Javax.Swing
     public partial class MenuSelectionManager
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/MenuSelectionManager.html#javax.swing.MenuSelectionManager()"/>
+        /// </summary>
+        public MenuSelectionManager()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -33,11 +33,6 @@ namespace Java.Awt.Geom
     {
         const string _bridgeClassName = "java.awt.geom.Rectangle2D";
         /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("Rectangle2D class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Rectangle2D() { }
-        /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -49,7 +44,7 @@ namespace Java.Awt.Geom
         public Rectangle2D(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -72,10 +67,6 @@ namespace Java.Awt.Geom
         {
             const string _bridgeClassName = "java.awt.geom.Rectangle2D$Double";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Double() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -86,7 +77,7 @@ namespace Java.Awt.Geom
             public Double(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -113,10 +104,6 @@ namespace Java.Awt.Geom
         {
             const string _bridgeClassName = "java.awt.geom.Rectangle2D$Float";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Float() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -127,7 +114,7 @@ namespace Java.Awt.Geom
             public Float(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -325,6 +312,13 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Rectangle2D.Double.html#java.awt.geom.Rectangle2D$Double()"/>
+            /// </summary>
+            public Double()
+                : base()
+            {
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Rectangle2D.Double.html#java.awt.geom.Rectangle2D$Double(double,double,double,double)"/>
             /// </summary>
             /// <param name="arg0"><see cref="double"/></param>
@@ -386,6 +380,13 @@ namespace Java.Awt.Geom
         public partial class Float
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Rectangle2D.Float.html#java.awt.geom.Rectangle2D$Float()"/>
+            /// </summary>
+            public Float()
+                : base()
+            {
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Rectangle2D.Float.html#java.awt.geom.Rectangle2D$Float(float,float,float,float)"/>
             /// </summary>

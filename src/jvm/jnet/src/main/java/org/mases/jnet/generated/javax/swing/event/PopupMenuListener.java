@@ -33,17 +33,33 @@ public final class PopupMenuListener implements org.mases.jcobridge.IJCListener,
     public synchronized void release() {
        _internalListener.release();
     }
+
+    public synchronized int getEventIndex(String eventName) {
+       return _internalListener.getEventIndex(eventName);
+    }
     
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
+    }
+
+    public synchronized void raiseEvent(int eventIndex) {
+       _internalListener.raiseEvent(eventIndex);
     }
     
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
+
+    public synchronized void raiseEvent(int eventIndex, Object e) {
+       _internalListener.raiseEvent(eventIndex, e);
+    }
     
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
+    }
+
+    public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
+       _internalListener.raiseEvent(eventIndex, e, objects);
     }
     
     public Object getEventData() {
@@ -70,20 +86,26 @@ public final class PopupMenuListener implements org.mases.jcobridge.IJCListener,
        _internalListener.setReturnData(retData);
     }
 
+    int _popupMenuCanceledIndex = 0;
     //@Override
     public void popupMenuCanceled(javax.swing.event.PopupMenuEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("popupMenuCanceled", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        if (_popupMenuCanceledIndex <= 0) _popupMenuCanceledIndex = getEventIndex("popupMenuCanceled");
+        raiseEvent(_popupMenuCanceledIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
+    int _popupMenuWillBecomeInvisibleIndex = 0;
     //@Override
     public void popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("popupMenuWillBecomeInvisible", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        if (_popupMenuWillBecomeInvisibleIndex <= 0) _popupMenuWillBecomeInvisibleIndex = getEventIndex("popupMenuWillBecomeInvisible");
+        raiseEvent(_popupMenuWillBecomeInvisibleIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
+    int _popupMenuWillBecomeVisibleIndex = 0;
     //@Override
     public void popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("popupMenuWillBecomeVisible", eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        if (_popupMenuWillBecomeVisibleIndex <= 0) _popupMenuWillBecomeVisibleIndex = getEventIndex("popupMenuWillBecomeVisible");
+        raiseEvent(_popupMenuWillBecomeVisibleIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
     }
 
 }

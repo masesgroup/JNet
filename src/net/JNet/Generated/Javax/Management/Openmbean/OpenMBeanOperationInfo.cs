@@ -29,14 +29,9 @@ namespace Javax.Management.Openmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanOperationInfo.html"/>
     /// </summary>
-    public partial class OpenMBeanOperationInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OpenMBeanOperationInfo>
+    public partial class OpenMBeanOperationInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<OpenMBeanOperationInfo>
     {
         const string _bridgeClassName = "javax.management.openmbean.OpenMBeanOperationInfo";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("OpenMBeanOperationInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public OpenMBeanOperationInfo() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Management.Openmbean
         public OpenMBeanOperationInfo(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

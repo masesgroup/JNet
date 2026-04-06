@@ -33,10 +33,6 @@ namespace Javax.Swing.Text.Html
     {
         const string _bridgeClassName = "javax.swing.text.html.HTMLDocument";
         /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public HTMLDocument() { }
-        /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -47,7 +43,7 @@ namespace Javax.Swing.Text.Html
         public HTMLDocument(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,10 +66,6 @@ namespace Javax.Swing.Text.Html
         {
             const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$BlockElement";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public BlockElement() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -84,7 +76,7 @@ namespace Javax.Swing.Text.Html
             public BlockElement(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -111,10 +103,6 @@ namespace Javax.Swing.Text.Html
         {
             const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$HTMLReader";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public HTMLReader() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -125,7 +113,7 @@ namespace Javax.Swing.Text.Html
             public HTMLReader(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -148,10 +136,6 @@ namespace Javax.Swing.Text.Html
             {
                 const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$HTMLReader$FormAction";
                 /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public FormAction() { }
-                /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -162,7 +146,7 @@ namespace Javax.Swing.Text.Html
                 public FormAction(params object[] args) : base(args) { }
 
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <inheritdoc/>
@@ -189,10 +173,6 @@ namespace Javax.Swing.Text.Html
             {
                 const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$HTMLReader$CharacterAction";
                 /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public CharacterAction() { }
-                /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -203,7 +183,7 @@ namespace Javax.Swing.Text.Html
                 public CharacterAction(params object[] args) : base(args) { }
 
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <inheritdoc/>
@@ -230,10 +210,6 @@ namespace Javax.Swing.Text.Html
             {
                 const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$HTMLReader$PreAction";
                 /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public PreAction() { }
-                /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -244,7 +220,7 @@ namespace Javax.Swing.Text.Html
                 public PreAction(params object[] args) : base(args) { }
 
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <inheritdoc/>
@@ -271,10 +247,6 @@ namespace Javax.Swing.Text.Html
             {
                 const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$HTMLReader$HiddenAction";
                 /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public HiddenAction() { }
-                /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -285,7 +257,7 @@ namespace Javax.Swing.Text.Html
                 public HiddenAction(params object[] args) : base(args) { }
 
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <inheritdoc/>
@@ -312,10 +284,6 @@ namespace Javax.Swing.Text.Html
             {
                 const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$HTMLReader$IsindexAction";
                 /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public IsindexAction() { }
-                /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -326,7 +294,7 @@ namespace Javax.Swing.Text.Html
                 public IsindexAction(params object[] args) : base(args) { }
 
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <inheritdoc/>
@@ -353,10 +321,6 @@ namespace Javax.Swing.Text.Html
             {
                 const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$HTMLReader$SpecialAction";
                 /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public SpecialAction() { }
-                /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -367,7 +331,7 @@ namespace Javax.Swing.Text.Html
                 public SpecialAction(params object[] args) : base(args) { }
 
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <inheritdoc/>
@@ -394,10 +358,6 @@ namespace Javax.Swing.Text.Html
             {
                 const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$HTMLReader$ParagraphAction";
                 /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public ParagraphAction() { }
-                /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -408,7 +368,7 @@ namespace Javax.Swing.Text.Html
                 public ParagraphAction(params object[] args) : base(args) { }
 
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <inheritdoc/>
@@ -435,10 +395,6 @@ namespace Javax.Swing.Text.Html
             {
                 const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$HTMLReader$BlockAction";
                 /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public BlockAction() { }
-                /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -449,7 +405,7 @@ namespace Javax.Swing.Text.Html
                 public BlockAction(params object[] args) : base(args) { }
 
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <inheritdoc/>
@@ -472,13 +428,9 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.HTMLReader.TagAction.html"/>
             /// </summary>
-            public partial class TagAction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TagAction>
+            public partial class TagAction : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<TagAction>
             {
                 const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$HTMLReader$TagAction";
-                /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public TagAction() { }
                 /// <summary>
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
@@ -490,7 +442,7 @@ namespace Javax.Swing.Text.Html
                 public TagAction(params object[] args) : base(args) { }
 
                 private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <inheritdoc/>
@@ -517,14 +469,9 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.Iterator.html"/>
         /// </summary>
-        public partial class Iterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterator>
+        public partial class Iterator : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Iterator>
         {
             const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$Iterator";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("Iterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Iterator() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -537,7 +484,7 @@ namespace Javax.Swing.Text.Html
             public Iterator(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -564,10 +511,6 @@ namespace Javax.Swing.Text.Html
         {
             const string _bridgeClassName = "javax.swing.text.html.HTMLDocument$RunElement";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public RunElement() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -578,7 +521,7 @@ namespace Javax.Swing.Text.Html
             public RunElement(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -605,6 +548,13 @@ namespace Javax.Swing.Text.Html
     public partial class HTMLDocument
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.html#javax.swing.text.html.HTMLDocument()"/>
+        /// </summary>
+        public HTMLDocument()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.html#javax.swing.text.html.HTMLDocument(javax.swing.text.AbstractDocument.Content,javax.swing.text.html.StyleSheet)"/>
         /// </summary>
@@ -1272,6 +1222,13 @@ namespace Javax.Swing.Text.Html
         public partial class Iterator
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.Iterator.html#javax.swing.text.html.HTMLDocument$Iterator()"/>
+            /// </summary>
+            public Iterator()
+                : base()
+            {
+            }
 
             #endregion
 

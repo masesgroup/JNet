@@ -33,10 +33,6 @@ namespace Javax.Swing.Plaf.Metal
     {
         const string _bridgeClassName = "javax.swing.plaf.metal.MetalIconFactory";
         /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MetalIconFactory() { }
-        /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -47,7 +43,7 @@ namespace Javax.Swing.Plaf.Metal
         public MetalIconFactory(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -66,13 +62,9 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html"/>
         /// </summary>
-        public partial class FileIcon16 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileIcon16>
+        public partial class FileIcon16 : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<FileIcon16>
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalIconFactory$FileIcon16";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public FileIcon16() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -84,7 +76,7 @@ namespace Javax.Swing.Plaf.Metal
             public FileIcon16(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -107,13 +99,9 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html"/>
         /// </summary>
-        public partial class FolderIcon16 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FolderIcon16>
+        public partial class FolderIcon16 : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<FolderIcon16>
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalIconFactory$FolderIcon16";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public FolderIcon16() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -125,7 +113,7 @@ namespace Javax.Swing.Plaf.Metal
             public FolderIcon16(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -148,13 +136,9 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.PaletteCloseIcon.html"/>
         /// </summary>
-        public partial class PaletteCloseIcon : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PaletteCloseIcon>
+        public partial class PaletteCloseIcon : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<PaletteCloseIcon>
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalIconFactory$PaletteCloseIcon";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public PaletteCloseIcon() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -166,7 +150,7 @@ namespace Javax.Swing.Plaf.Metal
             public PaletteCloseIcon(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -189,13 +173,9 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html"/>
         /// </summary>
-        public partial class TreeControlIcon : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeControlIcon>
+        public partial class TreeControlIcon : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<TreeControlIcon>
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalIconFactory$TreeControlIcon";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeControlIcon() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -207,7 +187,7 @@ namespace Javax.Swing.Plaf.Metal
             public TreeControlIcon(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -234,10 +214,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalIconFactory$TreeFolderIcon";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeFolderIcon() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -248,7 +224,7 @@ namespace Javax.Swing.Plaf.Metal
             public TreeFolderIcon(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -275,10 +251,6 @@ namespace Javax.Swing.Plaf.Metal
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalIconFactory$TreeLeafIcon";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TreeLeafIcon() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -289,7 +261,7 @@ namespace Javax.Swing.Plaf.Metal
             public TreeLeafIcon(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -316,6 +288,13 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalIconFactory
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.html#javax.swing.plaf.metal.MetalIconFactory()"/>
+        /// </summary>
+        public MetalIconFactory()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -537,6 +516,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class FileIcon16
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#javax.swing.plaf.metal.MetalIconFactory$FileIcon16()"/>
+            /// </summary>
+            public FileIcon16()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -615,6 +601,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class FolderIcon16
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#javax.swing.plaf.metal.MetalIconFactory$FolderIcon16()"/>
+            /// </summary>
+            public FolderIcon16()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -693,6 +686,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class PaletteCloseIcon
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.PaletteCloseIcon.html#javax.swing.plaf.metal.MetalIconFactory$PaletteCloseIcon()"/>
+            /// </summary>
+            public PaletteCloseIcon()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -844,6 +844,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class TreeFolderIcon
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeFolderIcon.html#javax.swing.plaf.metal.MetalIconFactory$TreeFolderIcon()"/>
+            /// </summary>
+            public TreeFolderIcon()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -875,6 +882,13 @@ namespace Javax.Swing.Plaf.Metal
         public partial class TreeLeafIcon
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalIconFactory.TreeLeafIcon.html#javax.swing.plaf.metal.MetalIconFactory$TreeLeafIcon()"/>
+            /// </summary>
+            public TreeLeafIcon()
+                : base()
+            {
+            }
 
             #endregion
 

@@ -29,13 +29,9 @@ namespace Java.Lang.Invoke
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/invoke/SwitchPoint.html"/>
     /// </summary>
-    public partial class SwitchPoint : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SwitchPoint>
+    public partial class SwitchPoint : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<SwitchPoint>
     {
         const string _bridgeClassName = "java.lang.invoke.SwitchPoint";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SwitchPoint() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Lang.Invoke
         public SwitchPoint(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Java.Lang.Invoke
     public partial class SwitchPoint
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/invoke/SwitchPoint.html#java.lang.invoke.SwitchPoint()"/>
+        /// </summary>
+        public SwitchPoint()
+            : base()
+        {
+        }
 
         #endregion
 

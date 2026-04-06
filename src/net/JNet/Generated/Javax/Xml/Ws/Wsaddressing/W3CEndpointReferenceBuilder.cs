@@ -29,13 +29,9 @@ namespace Javax.Xml.Ws.Wsaddressing
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder.html"/>
     /// </summary>
-    public partial class W3CEndpointReferenceBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<W3CEndpointReferenceBuilder>
+    public partial class W3CEndpointReferenceBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<W3CEndpointReferenceBuilder>
     {
         const string _bridgeClassName = "javax.xml.ws.wsaddressing.W3CEndpointReferenceBuilder";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public W3CEndpointReferenceBuilder() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Xml.Ws.Wsaddressing
         public W3CEndpointReferenceBuilder(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Javax.Xml.Ws.Wsaddressing
     public partial class W3CEndpointReferenceBuilder
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder.html#javax.xml.ws.wsaddressing.W3CEndpointReferenceBuilder()"/>
+        /// </summary>
+        public W3CEndpointReferenceBuilder()
+            : base()
+        {
+        }
 
         #endregion
 
