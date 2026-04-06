@@ -89,6 +89,60 @@ Using the loop-based example as a baseline:
 > - If a task can be completed entirely in the CLR or entirely in the JVM™, keep it there until a
 >   boundary crossing is strictly necessary.
 
+## Discard unwanted JVM™ events early with `ShallManageEventHandler`
+
+When a JVM™ class fires events toward the CLR — for example an AWT component, a Kafka Streams functional interface, or any JNet callback wrapper — the standard flow reads argument data from the JVM™ before invoking the registered handler. For sources that produce many event types, most of them may have no handler registered in the application. Reading and converting argument data for events that will be immediately discarded is wasted work.
+
+JCOBridge 2.6.7 introduces a filter hook that runs **before** any argument data is read: `ShallManageEventHandler` (`Func<string, bool>`) and the equivalent virtual method `bool ShallManageEvent(string eventName)` on the JNet callback base class. The string argument is the event name. The return value controls what happens next:
+
+- **`true`** (default) — proceed normally: argument data is read from the JVM™ and the handler is invoked.
+- **`false`** — discard immediately: no argument data is read, the handler is not invoked. Logic can still run inside `ShallManageEvent` before returning `false` (e.g. incrementing a counter).
+
+### Usage
+
+Override `ShallManageEvent` on a callback subclass:
+
+```csharp
+public class MyActionListener : Java.Awt.Event.ActionListener
+{
+    protected override bool ShallManageEvent(string eventName)
+    {
+        // only process actionPerformed, discard everything else
+        return eventName == "actionPerformed";
+    }
+
+    public override void ActionPerformed(Java.Awt.Event.ActionEvent e)
+    {
+        // handle the event
+    }
+}
+```
+
+Or assign `ShallManageEventHandler` directly on any JNet callback instance:
+
+```csharp
+var listener = new Java.Awt.Event.ActionListener();
+listener.ShallManageEventHandler = eventName => eventName == "actionPerformed";
+listener.ActionPerformed += e => { /* handle */ };
+```
+
+### Performance impact
+
+The cost of an event that is discarded by `ShallManageEvent` depends on how the event trigger is identified:
+
+- **`byIndex` mechanism** (2.6.7+, used automatically by JNet-generated wrappers): the event name is resolved on the CLR side from a numeric index with no JVM™ call. Combined with early discard, the per-event cost on a GitHub Actions runner is **~47 ns (.NET 8 / Temurin 17)** and **~40 ns (.NET 10 / Temurin 25)**, corresponding to throughputs of ~21 M and ~25 M discarded events/sec per thread.
+- **String key lookup** (legacy path): the event name is resolved via a string key lookup. Combined with early discard, the per-event cost is **~600 ns (.NET 8)** and **~500 ns (.NET 10)** — still a significant saving over the full data-read path (~5 µs), but about 12× higher than the index-based path.
+
+For reference, the standard full-path cost (argument data always read) is ~5.2 µs (.NET 8 / Temurin 17) and ~5.0 µs (.NET 10 / Temurin 25). The index-based early-discard path is **~110× faster** than the full standard path.
+
+See [performance](performance.md) for the full benchmark data.
+
+> [!TIP]
+> Apply `ShallManageEventHandler` whenever a JVM™ source fires multiple event types and only a subset have registered handlers. Typical candidates: AWT/Swing components with many listener methods, Kafka Streams topologies with mixed functional interfaces, and any JVM™ observable that emits high-frequency events of heterogeneous types.
+
+> [!NOTE]
+> `ShallManageEventHandler` is available from JCOBridge 2.6.7. On earlier versions the filter hook is not present and all events follow the full data-read path regardless of whether a handler is registered.
+
 ## Memory transfer at CLR-JVM™ boundary
 
 JNet provides APIs to manage data exchange at the CLR-JVM™ boundary using
