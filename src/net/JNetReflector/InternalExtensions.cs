@@ -116,7 +116,9 @@ namespace MASES.JNet.Reflector
         {
             try
             {
-                return Class.ForName(entry, true, Class.SystemClassLoader);
+                var classToGet = entry;
+                if (classToGet.Contains(SpecialNames.BeginGenericDeclaration)) classToGet = classToGet.Remove(classToGet.IndexOf(SpecialNames.BeginGenericDeclaration));
+                return Class.ForName(classToGet, true, Class.SystemClassLoader);
             }
             catch
             {
@@ -788,7 +790,7 @@ namespace MASES.JNet.Reflector
             string result = string.Empty;
             if (bClass != null && bClass.IsInterface())
             {
-                result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true) 
+                result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true)
                          + (enableNewConstraint ? AllPackageClasses.WHERE_CLAUSE_NEW : string.Empty); // the new constraint means the type shall be a class implementing the interface
             }
             else if (parentTypeName != null && bound.TypeName.Contains(SpecialNames.BeginGenericDeclaration)
@@ -1637,7 +1639,11 @@ namespace MASES.JNet.Reflector
         public static bool IsClassToAvoid(this string typeName)
         {
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
-            if (JNetReflectorCore.ClassesToAvoid != null && JNetReflectorCore.ClassesToAvoid.Any((n) => typeName == n)) return true;
+            if (JNetReflectorCore.ClassesToAvoid != null 
+                && JNetReflectorCore.ClassesToAvoid.Any((n) => typeName.StartsWith(n)))
+            {
+                return true;
+            }
             return false;
         }
 
@@ -2672,7 +2678,7 @@ namespace MASES.JNet.Reflector
             return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace(SpecialNames.BeginGenericDeclaration, "%3C").Replace(SpecialNames.EndGenericDeclaration, "%3E"));
         }
 
-#endregion
+        #endregion
 
         #region Field extension
 
