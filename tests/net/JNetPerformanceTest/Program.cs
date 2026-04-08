@@ -46,6 +46,8 @@ namespace Org.Mases.JNet
     /// <typeparam name="TObject">The data type associated to the event</typeparam>
     public class Predicate<TObject> : Predicate
     {
+        readonly bool _test1;
+        readonly bool _test2;
         /// <summary>
         /// The <see cref="Func{TObject, Boolean}"/> to be executed
         /// </summary>
@@ -53,12 +55,24 @@ namespace Org.Mases.JNet
         /// <summary>
         /// Initialize a new instance of <see cref="Predicate{TObject}"/>
         /// </summary>
-        public Predicate() : base()
+        public Predicate(bool test1, bool test2) : base()
         {
             if (InitHandlers)
             {
                 AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<TObject>>>(TestEventHandler)); OnTest = Test;
             }
+            _test1 = test1;
+            _test2 = test2;
+        }
+
+        protected override bool ShallManageEvent(string eventName)
+        {
+            return _test1;
+        }
+
+        protected override bool ShallManageEvent(string eventName, object data)
+        {
+            return _test2;
         }
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<TObject>> data)
@@ -132,15 +146,23 @@ namespace MASES.JNetPerformanceTest
             TestMethod(iterations, false);
             TestMethod(iterations, true);
 
-            TestPredicateRoundTrip(iterations, false, false);
-            TestPredicateRoundTrip(iterations, true, false);
-            TestPredicateRoundTrip(iterations, false, true);
-            TestPredicateRoundTrip(iterations, true, true);
+            TestPredicateRoundTrip(iterations, false, false, false);
+            TestPredicateRoundTrip(iterations, true, false, false);
+            TestPredicateRoundTrip(iterations, false, true, false);
+            TestPredicateRoundTrip(iterations, true, true, false);
+            // TestPredicateRoundTrip(iterations, false, false, true); remoed since it hasn't meaning
+            // TestPredicateRoundTrip(iterations, true, false, true); remoed since it hasn't meaning
+            TestPredicateRoundTrip(iterations, false, true, true);
+            TestPredicateRoundTrip(iterations, true, true, true);
 
-            TestPredicateSustained(iterations, false, false);
-            TestPredicateSustained(iterations, true, false);
-            TestPredicateSustained(iterations, false, true);
-            TestPredicateSustained(iterations, true, true);
+            TestPredicateSustained(iterations, false, false, false);
+            TestPredicateSustained(iterations, true, false, false);
+            TestPredicateSustained(iterations, false, true, false);
+            TestPredicateSustained(iterations, true, true, false);
+            // TestPredicateSustained(iterations, false, false, true); remoed since it hasn't meaning
+            // TestPredicateSustained(iterations, true, false, true); remoed since it hasn't meaning
+            TestPredicateSustained(iterations, false, true, true);
+            TestPredicateSustained(iterations, true, true, true);
         }
 
         static void TestStaticMethod(int requestedIterations, bool feedback)
@@ -267,16 +289,15 @@ namespace MASES.JNetPerformanceTest
             }
         }
 
-        static void TestPredicateRoundTrip(int requestedIterations, bool byIndex, bool readJVM)
+        static void TestPredicateRoundTrip(int requestedIterations, bool byIndex, bool continueFirstCheck, bool continueSecondCheck)
         {
-            Console.WriteLine($"Start TestPredicateRoundTrip with {requestedIterations} iterations - byIndex={byIndex} readJVM={readJVM}");
+            Console.WriteLine($"Start TestPredicateRoundTrip with {requestedIterations} iterations - byIndex={byIndex} continueFirstCheck={continueFirstCheck} continueSecondCheck={continueSecondCheck}");
             int i = 0;
             try
             {
                 var method = byIndex ? "executePredicateIndex" : "executePredicate";
-                using (var predicate = new Org.Mases.JNet.Predicate<object>()
+                using (var predicate = new Org.Mases.JNet.Predicate<object>(continueFirstCheck, continueSecondCheck)
                 {
-                    ShallManageEventHandler = (o) => readJVM,
                     OnTest = (o) =>
                     {
                         return true;
@@ -301,15 +322,14 @@ namespace MASES.JNetPerformanceTest
             }
         }
 
-        static void TestPredicateSustained(int requestedIterations, bool byIndex, bool readJVM)
+        static void TestPredicateSustained(int requestedIterations, bool byIndex, bool continueFirstCheck, bool continueSecondCheck)
         {
-            Console.WriteLine($"Start TestPredicateSustained with {requestedIterations} iterations - byIndex={byIndex} readJVM={readJVM}");
+            Console.WriteLine($"Start TestPredicateSustained with {requestedIterations} iterations - byIndex={byIndex} continueFirstCheck={continueFirstCheck} continueSecondCheck={continueSecondCheck}");
             try
             {
                 var method = byIndex ? "executePredicateIndex" : "executePredicate";
-                using (var predicate = new Org.Mases.JNet.Predicate<object>()
+                using (var predicate = new Org.Mases.JNet.Predicate<object>(continueFirstCheck, continueSecondCheck)
                 {
-                    ShallManageEventHandler = (o) => readJVM,
                     OnTest = (o) =>
                     {
                         return true;

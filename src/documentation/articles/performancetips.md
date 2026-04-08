@@ -89,59 +89,90 @@ Using the loop-based example as a baseline:
 > - If a task can be completed entirely in the CLR or entirely in the JVM™, keep it there until a
 >   boundary crossing is strictly necessary.
 
-## Discard unwanted JVM™ events early with `ShallManageEventHandler`
+## Discard unwanted JVM™ events early with `ShallManageEvent`
 
 When a JVM™ class fires events toward the CLR — for example an AWT component, a Kafka Streams functional interface, or any JNet callback wrapper — the standard flow reads argument data from the JVM™ before invoking the registered handler. For sources that produce many event types, most of them may have no handler registered in the application. Reading and converting argument data for events that will be immediately discarded is wasted work.
 
-JCOBridge 2.6.7 introduces a filter hook that runs **before** any argument data is read: `ShallManageEventHandler` (`Func<string, bool>`) and the equivalent virtual method `bool ShallManageEvent(string eventName)` on the JNet callback base class. The string argument is the event name. The return value controls what happens next:
+JCOBridge 2.6.7 introduces a two-level filter applied before full event handling, through two overloads of `ShallManageEvent` on the JNet callback base class.
 
-- **`true`** (default) — proceed normally: argument data is read from the JVM™ and the handler is invoked.
-- **`false`** — discard immediately: no argument data is read, the handler is not invoked. Logic can still run inside `ShallManageEvent` before returning `false` (e.g. incrementing a counter).
+### First gate — `bool ShallManageEvent(string eventName)`
+
+Called before any argument data is read from the JVM. Receives only the event name. Return `false` to discard immediately (no data read, handler not invoked); return `true` to proceed to the second gate.
+
+### Second gate — `bool ShallManageEvent(string eventName, object data)`
+
+Called after raw argument data is available, but before full argument conversion and handler dispatch. Allows a lightweight inspection of the raw payload — for example checking a type field or a numeric threshold — without paying the cost of full processing. Return `false` to discard after inspection (handler not invoked); return `true` to proceed with full conversion and handler invocation.
+
+The `ShallManageEventHandler` (`Func<string, bool>`) delegate is the assignable equivalent of the first gate; `ShallManageEventWithDataHandler` (`Func<string, object, bool>`) is the assignable equivalent of the second gate.
+
+> [!NOTE]
+> The combination "first gate returns `false`, second gate returns `true`" is never reached — if the first gate discards, the second gate is not called.
+
+Default for both gates is `true` (full processing). Both overloads are available from JCOBridge 2.6.7.
 
 ### Usage
 
-Override `ShallManageEvent` on a callback subclass:
+Override both gates on a callback subclass:
 
 ```csharp
 public class MyActionListener : Java.Awt.Event.ActionListener
 {
     protected override bool ShallManageEvent(string eventName)
     {
-        // only process actionPerformed, discard everything else
+        // first gate: filter by event name alone, no data read yet
         return eventName == "actionPerformed";
+    }
+
+    protected override bool ShallManageEvent(string eventName, object data)
+    {
+        // second gate: raw data available — inspect before committing to full processing
+        // e.g. check a source identifier in the raw payload
+        return data is Java.Awt.Event.ActionEvent ae && ae.GetSource() is MyButton;
     }
 
     public override void ActionPerformed(Java.Awt.Event.ActionEvent e)
     {
-        // handle the event
+        // full handling — only reached when both gates return true
     }
 }
 ```
 
-Or assign `ShallManageEventHandler` directly on any JNet callback instance:
+Or assign either gate via delegates without subclassing:
 
 ```csharp
 var listener = new Java.Awt.Event.ActionListener();
+// first gate — filter by name, no data read
 listener.ShallManageEventHandler = eventName => eventName == "actionPerformed";
+// second gate — inspect raw data before full processing
+listener.ShallManageEventWithDataHandler = (eventName, data) => data is Java.Awt.Event.ActionEvent;
 listener.ActionPerformed += e => { /* handle */ };
 ```
 
 ### Performance impact
 
-The cost of an event that is discarded by `ShallManageEvent` depends on how the event trigger is identified:
+The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7-rc, 1 000 000 iterations):
 
-- **`byIndex` mechanism** (2.6.7+, used automatically by JNet-generated wrappers): the event name is resolved on the CLR side from a numeric index with no JVM™ call. Combined with early discard, the per-event cost on a GitHub Actions runner is **~47 ns (.NET 8 / Temurin 17)** and **~40 ns (.NET 10 / Temurin 25)**, corresponding to throughputs of ~21 M and ~25 M discarded events/sec per thread.
-- **String key lookup** (legacy path): the event name is resolved via a string key lookup. Combined with early discard, the per-event cost is **~600 ns (.NET 8)** and **~500 ns (.NET 10)** — still a significant saving over the full data-read path (~5 µs), but about 12× higher than the index-based path.
+| Gate | `byIndex` | .NET 8 / T17 | .NET 10 / T25 | Events/sec (.NET 10) |
+|---|---|---|---|---|
+| First gate discard (no data read) | `false` | 0.575 µs | 0.535 µs | ~1.9 M |
+| First gate discard (no data read) | `true` | **0.048 µs** | **0.047 µs** | **~21 M** |
+| Second gate discard (raw data inspected) | `false` | 0.602 µs | 0.622 µs | ~1.6 M |
+| Second gate discard (raw data inspected) | `true` | **0.073 µs** | **0.072 µs** | **~14 M** |
+| Full processing | `false` | 5.167 µs | 5.548 µs | ~180 K |
+| Full processing | `true` | 4.538 µs | 4.950 µs | ~202 K |
 
-For reference, the standard full-path cost (argument data always read) is ~5.2 µs (.NET 8 / Temurin 17) and ~5.0 µs (.NET 10 / Temurin 25). The index-based early-discard path is **~110× faster** than the full standard path.
+With `byIndex = true` and first-gate discard, the per-event cost (~48 ns) is within the range of raw JNI overhead measured on dedicated bare-metal hardware — despite running on a shared CI runner and crossing the JVM↔CLR boundary. The second gate adds ~25 ns for the raw data availability step, still roughly 70× cheaper than full processing.
 
-See [performance](performance.md) for the full benchmark data.
+See [performance](performance.md) for the complete benchmark data.
 
 > [!TIP]
-> Apply `ShallManageEventHandler` whenever a JVM™ source fires multiple event types and only a subset have registered handlers. Typical candidates: AWT/Swing components with many listener methods, Kafka Streams topologies with mixed functional interfaces, and any JVM™ observable that emits high-frequency events of heterogeneous types.
+> Use the first gate (`ShallManageEvent(string)`) to filter by event name alone — this is the cheapest path and sufficient for most use cases. Use the second gate (`ShallManageEvent(string, object)`) only when the decision depends on a lightweight check of the raw payload that is not worth deferring to the full handler.
+
+> [!TIP]
+> Apply these filters whenever a JVM™ source fires multiple event types and only a subset have registered handlers. Typical candidates: AWT/Swing components with many listener methods, Kafka Streams topologies with mixed functional interfaces, and any JVM™ observable that emits high-frequency events of heterogeneous types.
 
 > [!NOTE]
-> `ShallManageEventHandler` is available from JCOBridge 2.6.7. On earlier versions the filter hook is not present and all events follow the full data-read path regardless of whether a handler is registered.
+> Both `ShallManageEvent` overloads are available from JCOBridge 2.6.7. On earlier versions all events follow the full data-read path regardless of whether a handler is registered.
 
 ## Memory transfer at CLR-JVM™ boundary
 
