@@ -110,6 +110,7 @@ jobs:
           MASES.JNetReflector.exe --JVMDisableOpenOnJavaNio ${{ env.AVOID_PARALLEL_BUILD }} -TraceLevel ${{ inputs.TraceLevel }} ${{ env.TRACE_TO_FILE }} -OriginRootPath %JAVA_HOME_8_X64%\lib -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
 
       - uses: actions/upload-artifact@v7
+        if: ${{ inputs.TraceToFile == true }}
         with:
           name: JNetReflector report
           path: .\JNetReflector.txt
