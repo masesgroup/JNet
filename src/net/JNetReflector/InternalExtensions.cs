@@ -1638,7 +1638,12 @@ namespace MASES.JNet.Reflector
         {
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
             if (JNetReflectorCore.ClassesToAvoid != null 
-                && JNetReflectorCore.ClassesToAvoid.Any((n) => typeName.StartsWith(n)))
+                && JNetReflectorCore.ClassesToAvoid.Any((n) =>
+                {
+                    if (!typeName.StartsWith(n)) return false;
+                    if (typeName == n) return true;
+                    return typeName[n.Length] == SpecialNames.NestedClassSeparator;
+                }))
             {
                 return true;
             }
