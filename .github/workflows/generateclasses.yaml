@@ -94,7 +94,7 @@ jobs:
       - name: Set trace to file
         if: ${{ inputs.TraceToFile == true }}
         run: |
-          echo "TRACE_TO_FILE=$(echo -TraceTo %GITHUB_WORKSPACE%\JNetReflector.txt)" >> $GITHUB_ENV
+          echo "TRACE_TO_FILE=$(echo -TraceTo %GITHUB_WORKSPACE%\\JNetReflector.txt)" >> $GITHUB_ENV
         shell: bash
 
       - name: Set avoid parallel build
