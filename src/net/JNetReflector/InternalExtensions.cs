@@ -116,9 +116,7 @@ namespace MASES.JNet.Reflector
         {
             try
             {
-                var classToGet = entry;
-                if (classToGet.Contains(SpecialNames.BeginGenericDeclaration)) classToGet = classToGet.Remove(classToGet.IndexOf(SpecialNames.BeginGenericDeclaration));
-                return Class.ForName(classToGet, true, Class.SystemClassLoader);
+                return Class.ForName(entry, true, Class.SystemClassLoader);
             }
             catch
             {
