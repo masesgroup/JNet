@@ -7,8 +7,10 @@ public final class Predicate extends JCListener implements java.util.function.Pr
         super(key);
     }
 
+    int _testIndex = 0;
     public boolean testIndex(Object e) {
-        raiseEvent("test", e);
+        if (_testIndex <= 0) _testIndex = getEventIndex("test");
+        raiseEvent(_testIndex, e);
         Object retVal = getReturnData();
         return retVal != null ? (boolean) retVal : false;
     }

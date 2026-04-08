@@ -6,6 +6,8 @@
   href: currentstate.md
 - name: JNet usage
   href: usage.md
+- name: JNet performance
+  href: performance.md
 - name: JNet performance tips
   href: performancetips.md
 - name: APIs extendibility

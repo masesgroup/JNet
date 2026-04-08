@@ -132,15 +132,15 @@ namespace MASES.JNetPerformanceTest
             TestMethod(iterations, false);
             TestMethod(iterations, true);
 
-            //TestPredicateRoundTrip(iterations, false, false);
-            //TestPredicateRoundTrip(iterations, true, false);
+            TestPredicateRoundTrip(iterations, false, false);
+            TestPredicateRoundTrip(iterations, true, false);
             TestPredicateRoundTrip(iterations, false, true);
-            //TestPredicateRoundTrip(iterations, true, true);
+            TestPredicateRoundTrip(iterations, true, true);
 
-            //TestPredicateSustained(iterations, false, false);
-            //TestPredicateSustained(iterations, true, false);
+            TestPredicateSustained(iterations, false, false);
+            TestPredicateSustained(iterations, true, false);
             TestPredicateSustained(iterations, false, true);
-            //TestPredicateSustained(iterations, true, true);
+            TestPredicateSustained(iterations, true, true);
         }
 
         static void TestStaticMethod(int requestedIterations, bool feedback)
@@ -276,6 +276,7 @@ namespace MASES.JNetPerformanceTest
                 var method = byIndex ? "executePredicateIndex" : "executePredicate";
                 using (var predicate = new Org.Mases.JNet.Predicate<object>()
                 {
+                    ShallManageEventHandler = (o) => readJVM,
                     OnTest = (o) =>
                     {
                         return true;
@@ -308,6 +309,7 @@ namespace MASES.JNetPerformanceTest
                 var method = byIndex ? "executePredicateIndex" : "executePredicate";
                 using (var predicate = new Org.Mases.JNet.Predicate<object>()
                 {
+                    ShallManageEventHandler = (o) => readJVM,
                     OnTest = (o) =>
                     {
                         return true;
