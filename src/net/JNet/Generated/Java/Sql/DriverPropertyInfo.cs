@@ -29,13 +29,9 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/DriverPropertyInfo.html"/>
     /// </summary>
-    public partial class DriverPropertyInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DriverPropertyInfo>
+    public partial class DriverPropertyInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DriverPropertyInfo>
     {
         const string _bridgeClassName = "java.sql.DriverPropertyInfo";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DriverPropertyInfo() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Sql
         public DriverPropertyInfo(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

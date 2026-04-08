@@ -29,14 +29,9 @@ namespace Javax.Security.Auth.Login
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/login/Configuration.html"/>
     /// </summary>
-    public partial class Configuration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Configuration>
+    public partial class Configuration : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Configuration>
     {
         const string _bridgeClassName = "javax.security.auth.login.Configuration";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("Configuration class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Configuration() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Security.Auth.Login
         public Configuration(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -68,14 +63,9 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/login/Configuration.Parameters.html"/>
         /// </summary>
-        public partial class Parameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Parameters>
+        public partial class Parameters : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Parameters>
         {
             const string _bridgeClassName = "javax.security.auth.login.Configuration$Parameters";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("Parameters class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Parameters() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -88,7 +78,7 @@ namespace Javax.Security.Auth.Login
             public Parameters(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

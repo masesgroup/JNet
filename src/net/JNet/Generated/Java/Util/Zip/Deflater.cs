@@ -29,13 +29,9 @@ namespace Java.Util.Zip
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Deflater.html"/>
     /// </summary>
-    public partial class Deflater : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Deflater>
+    public partial class Deflater : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Deflater>
     {
         const string _bridgeClassName = "java.util.zip.Deflater";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Deflater() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Util.Zip
         public Deflater(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Java.Util.Zip
     public partial class Deflater
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Deflater.html#java.util.zip.Deflater()"/>
+        /// </summary>
+        public Deflater()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Deflater.html#java.util.zip.Deflater(int,boolean)"/>
         /// </summary>

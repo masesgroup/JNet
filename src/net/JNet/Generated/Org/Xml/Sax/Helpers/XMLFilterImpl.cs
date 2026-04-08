@@ -29,13 +29,9 @@ namespace Org.Xml.Sax.Helpers
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/XMLFilterImpl.html"/>
     /// </summary>
-    public partial class XMLFilterImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLFilterImpl>
+    public partial class XMLFilterImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<XMLFilterImpl>
     {
         const string _bridgeClassName = "org.xml.sax.helpers.XMLFilterImpl";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public XMLFilterImpl() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Org.Xml.Sax.Helpers
         public XMLFilterImpl(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Org.Xml.Sax.Helpers
     public partial class XMLFilterImpl
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/XMLFilterImpl.html#org.xml.sax.helpers.XMLFilterImpl()"/>
+        /// </summary>
+        public XMLFilterImpl()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/XMLFilterImpl.html#org.xml.sax.helpers.XMLFilterImpl(org.xml.sax.XMLReader)"/>
         /// </summary>

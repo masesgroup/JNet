@@ -29,14 +29,9 @@ namespace Java.Nio.Channels
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/nio/channels/CompletionHandler.html"/>
     /// </summary>
-    public partial class CompletionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionHandler>
+    public partial class CompletionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<CompletionHandler>
     {
         const string _bridgeClassName = "java.nio.channels.CompletionHandler";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("CompletionHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public CompletionHandler() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Java.Nio.Channels
         public CompletionHandler(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -74,14 +69,9 @@ namespace Java.Nio.Channels
     /// </summary>
     /// <typeparam name="V"></typeparam>
     /// <typeparam name="A"></typeparam>
-    public partial class CompletionHandler<V, A> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionHandler<V, A>>
+    public partial class CompletionHandler<V, A> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<CompletionHandler<V, A>>
     {
         const string _bridgeClassName = "java.nio.channels.CompletionHandler";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("CompletionHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public CompletionHandler() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -94,7 +84,7 @@ namespace Java.Nio.Channels
         public CompletionHandler(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

@@ -29,13 +29,9 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html"/>
     /// </summary>
-    public partial class CopyOnWriteArrayList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CopyOnWriteArrayList>
+    public partial class CopyOnWriteArrayList : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<CopyOnWriteArrayList>
     {
         const string _bridgeClassName = "java.util.concurrent.CopyOnWriteArrayList";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CopyOnWriteArrayList() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Util.Concurrent
         public CopyOnWriteArrayList(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -71,13 +67,9 @@ namespace Java.Util.Concurrent
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class CopyOnWriteArrayList<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CopyOnWriteArrayList<E>>
+    public partial class CopyOnWriteArrayList<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<CopyOnWriteArrayList<E>>
     {
         const string _bridgeClassName = "java.util.concurrent.CopyOnWriteArrayList";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CopyOnWriteArrayList() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -89,7 +81,7 @@ namespace Java.Util.Concurrent
         public CopyOnWriteArrayList(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -112,6 +104,13 @@ namespace Java.Util.Concurrent
     public partial class CopyOnWriteArrayList
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList()"/>
+        /// </summary>
+        public CopyOnWriteArrayList()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList(java.util.Collection)"/>
         /// </summary>
@@ -449,6 +448,13 @@ namespace Java.Util.Concurrent
     public partial class CopyOnWriteArrayList<E>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList()"/>
+        /// </summary>
+        public CopyOnWriteArrayList()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList(java.lang.Object[])"/>
         /// </summary>

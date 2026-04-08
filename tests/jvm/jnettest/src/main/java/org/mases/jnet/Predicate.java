@@ -10,7 +10,7 @@ public final class Predicate extends JCListener implements java.util.function.Pr
     int _testIndex = 0;
     public boolean testIndex(Object e) {
         if (_testIndex <= 0) _testIndex = getEventIndex("test");
-        raiseEvent(1, e);
+        raiseEvent(_testIndex, e);
         Object retVal = getReturnData();
         return retVal != null ? (boolean) retVal : false;
     }

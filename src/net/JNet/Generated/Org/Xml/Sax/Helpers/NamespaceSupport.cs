@@ -29,13 +29,9 @@ namespace Org.Xml.Sax.Helpers
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/NamespaceSupport.html"/>
     /// </summary>
-    public partial class NamespaceSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NamespaceSupport>
+    public partial class NamespaceSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<NamespaceSupport>
     {
         const string _bridgeClassName = "org.xml.sax.helpers.NamespaceSupport";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public NamespaceSupport() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Org.Xml.Sax.Helpers
         public NamespaceSupport(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Org.Xml.Sax.Helpers
     public partial class NamespaceSupport
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/NamespaceSupport.html#org.xml.sax.helpers.NamespaceSupport()"/>
+        /// </summary>
+        public NamespaceSupport()
+            : base()
+        {
+        }
 
         #endregion
 

@@ -29,13 +29,9 @@ namespace Javax.Xml.Datatype
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/datatype/DatatypeConstants.html"/>
     /// </summary>
-    public partial class DatatypeConstants : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DatatypeConstants>
+    public partial class DatatypeConstants : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DatatypeConstants>
     {
         const string _bridgeClassName = "javax.xml.datatype.DatatypeConstants";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DatatypeConstants() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Xml.Datatype
         public DatatypeConstants(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -66,13 +62,9 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/datatype/DatatypeConstants.Field.html"/>
         /// </summary>
-        public partial class Field : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Field>
+        public partial class Field : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Field>
         {
             const string _bridgeClassName = "javax.xml.datatype.DatatypeConstants$Field";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Field() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -84,7 +76,7 @@ namespace Javax.Xml.Datatype
             public Field(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

@@ -29,14 +29,9 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RowFilter.html"/>
     /// </summary>
-    public partial class RowFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowFilter>
+    public partial class RowFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<RowFilter>
     {
         const string _bridgeClassName = "javax.swing.RowFilter";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("RowFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public RowFilter() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -49,7 +44,7 @@ namespace Javax.Swing
         public RowFilter(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -72,10 +67,6 @@ namespace Javax.Swing
         {
             const string _bridgeClassName = "javax.swing.RowFilter$ComparisonType";
             /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ComparisonType() { }
-            /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
@@ -86,7 +77,7 @@ namespace Javax.Swing
             public ComparisonType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -109,14 +100,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RowFilter.Entry.html"/>
         /// </summary>
-        public partial class Entry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entry>
+        public partial class Entry : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Entry>
         {
             const string _bridgeClassName = "javax.swing.RowFilter$Entry";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("Entry class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Entry() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -129,7 +115,7 @@ namespace Javax.Swing
             public Entry(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -154,14 +140,9 @@ namespace Javax.Swing
         /// </summary>
         /// <typeparam name="M"></typeparam>
         /// <typeparam name="I"></typeparam>
-        public partial class Entry<M, I> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entry<M, I>>
+        public partial class Entry<M, I> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Entry<M, I>>
         {
             const string _bridgeClassName = "javax.swing.RowFilter$Entry";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [global::System.Obsolete("Entry class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Entry() { }
             /// <summary>
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
@@ -174,7 +155,7 @@ namespace Javax.Swing
             public Entry(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -203,14 +184,9 @@ namespace Javax.Swing
     /// </summary>
     /// <typeparam name="M"></typeparam>
     /// <typeparam name="I"></typeparam>
-    public partial class RowFilter<M, I> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowFilter<M, I>>
+    public partial class RowFilter<M, I> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<RowFilter<M, I>>
     {
         const string _bridgeClassName = "javax.swing.RowFilter";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [global::System.Obsolete("RowFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public RowFilter() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -223,7 +199,7 @@ namespace Javax.Swing
         public RowFilter(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -246,6 +222,13 @@ namespace Javax.Swing
     public partial class RowFilter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RowFilter.html#javax.swing.RowFilter()"/>
+        /// </summary>
+        public RowFilter()
+            : base()
+        {
+        }
 
         #endregion
 
@@ -410,6 +393,13 @@ namespace Javax.Swing
         public partial class Entry
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RowFilter.Entry.html#javax.swing.RowFilter$Entry()"/>
+            /// </summary>
+            public Entry()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -480,6 +470,13 @@ namespace Javax.Swing
         public partial class Entry<M, I>
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RowFilter.Entry.html#javax.swing.RowFilter$Entry()"/>
+            /// </summary>
+            public Entry()
+                : base()
+            {
+            }
 
             #endregion
 
@@ -561,6 +558,13 @@ namespace Javax.Swing
     public partial class RowFilter<M, I>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/RowFilter.html#javax.swing.RowFilter()"/>
+        /// </summary>
+        public RowFilter()
+            : base()
+        {
+        }
 
         #endregion
 

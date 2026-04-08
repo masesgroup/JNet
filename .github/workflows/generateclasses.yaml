@@ -12,7 +12,29 @@ on:
         required: true
         default: false
         type: boolean
-        
+      AvoidParallelBuild:
+        description: 'Avoid parallel build'
+        required: false
+        default: false
+        type: boolean
+      TraceToFile:
+        description: 'Generate trace output to file'
+        required: false
+        default: true
+        type: boolean
+      TraceLevel:
+        description: 'Trace level to report'
+        required: false
+        default: '1'
+        type: choice
+        options:
+          - "0"
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+          - "5"
+
 # This workflow contains one job called "build_documentation"
 jobs:
   build_classes:
@@ -54,10 +76,10 @@ jobs:
         run: mvn "-DbinFolderName=binReflector" --file ./src/jvm/jnetreflector/pom.xml --no-transfer-progress package
 
       - name: Clear C# generated files
-        run: Remove-Item .\src\net\JNet\Generated\* -Recurse -Force -Exclude README.md
+        run: Remove-Item .\src\net\JNet\Generated\* -Recurse -Force -Exclude README.md,.editorconfig
 
       - name: Clear Java generated files
-        run: Remove-Item .\src\jvm\jnet\src\main\java\org\mases\jnet\generated\* -Recurse -Force -Exclude README.md,.editorconfig
+        run: Remove-Item .\src\jvm\jnet\src\main\java\org\mases\jnet\generated\* -Recurse -Force -Exclude README.md
 
       - run: dotnet build --no-incremental --configuration Release src\net\JNetReflector\JNetReflector.csproj
 
@@ -69,13 +91,26 @@ jobs:
           java-package: jre
           cache: 'maven'
 
+      - name: Set trace to file
+        if: ${{ inputs.TraceToFile == true }}
+        run: |
+          echo "TRACE_TO_FILE=$(echo -TraceTo %GITHUB_WORKSPACE%\\JNetReflector.txt)" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Set avoid parallel build
+        if: ${{ inputs.AvoidParallelBuild == true }}
+        run: |
+          echo "AVOID_PARALLEL_BUILD=$(echo -AvoidParallelBuild)" >> $GITHUB_ENV
+        shell: bash
+
       - name: Build classes
         shell: cmd
         run: |
           cd binReflector\net8.0
-          MASES.JNetReflector.exe --JVMDisableOpenOnJavaNio -TraceLevel 1 -TraceTo %GITHUB_WORKSPACE%\JNetReflector.txt -OriginRootPath %JAVA_HOME_8_X64%\lib -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
+          MASES.JNetReflector.exe --JVMDisableOpenOnJavaNio ${{ env.AVOID_PARALLEL_BUILD }} -TraceLevel ${{ inputs.TraceLevel }} ${{ env.TRACE_TO_FILE }} -OriginRootPath %JAVA_HOME_8_X64%\lib -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
 
       - uses: actions/upload-artifact@v7
+        if: ${{ inputs.TraceToFile == true }}
         with:
           name: JNetReflector report
           path: .\JNetReflector.txt

@@ -29,13 +29,9 @@ namespace Javax.Security.Auth.Kerberos
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/kerberos/KerberosTicket.html"/>
     /// </summary>
-    public partial class KerberosTicket : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KerberosTicket>
+    public partial class KerberosTicket : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<KerberosTicket>
     {
         const string _bridgeClassName = "javax.security.auth.kerberos.KerberosTicket";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public KerberosTicket() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Security.Auth.Kerberos
         public KerberosTicket(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

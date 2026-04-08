@@ -29,13 +29,9 @@ namespace Javax.Print.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashAttributeSet.html"/>
     /// </summary>
-    public partial class HashAttributeSet : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HashAttributeSet>
+    public partial class HashAttributeSet : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<HashAttributeSet>
     {
         const string _bridgeClassName = "javax.print.attribute.HashAttributeSet";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public HashAttributeSet() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Javax.Print.Attribute
         public HashAttributeSet(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Javax.Print.Attribute
     public partial class HashAttributeSet
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashAttributeSet.html#javax.print.attribute.HashAttributeSet()"/>
+        /// </summary>
+        public HashAttributeSet()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashAttributeSet.html#javax.print.attribute.HashAttributeSet(javax.print.attribute.Attribute)"/>
         /// </summary>

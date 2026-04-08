@@ -29,13 +29,9 @@ namespace Java.Awt.Im
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/im/InputMethodHighlight.html"/>
     /// </summary>
-    public partial class InputMethodHighlight : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputMethodHighlight>
+    public partial class InputMethodHighlight : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<InputMethodHighlight>
     {
         const string _bridgeClassName = "java.awt.im.InputMethodHighlight";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public InputMethodHighlight() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Awt.Im
         public InputMethodHighlight(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

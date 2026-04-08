@@ -29,13 +29,9 @@ namespace Java.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormatSymbols.html"/>
     /// </summary>
-    public partial class DecimalFormatSymbols : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DecimalFormatSymbols>
+    public partial class DecimalFormatSymbols : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DecimalFormatSymbols>
     {
         const string _bridgeClassName = "java.text.DecimalFormatSymbols";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DecimalFormatSymbols() { }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
@@ -47,7 +43,7 @@ namespace Java.Text
         public DecimalFormatSymbols(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -70,6 +66,13 @@ namespace Java.Text
     public partial class DecimalFormatSymbols
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormatSymbols.html#java.text.DecimalFormatSymbols()"/>
+        /// </summary>
+        public DecimalFormatSymbols()
+            : base()
+        {
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormatSymbols.html#java.text.DecimalFormatSymbols(java.util.Locale)"/>
         /// </summary>

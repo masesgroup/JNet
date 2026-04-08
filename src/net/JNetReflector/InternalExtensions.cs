@@ -788,7 +788,7 @@ namespace MASES.JNet.Reflector
             string result = string.Empty;
             if (bClass != null && bClass.IsInterface())
             {
-                result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true) 
+                result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true)
                          + (enableNewConstraint ? AllPackageClasses.WHERE_CLAUSE_NEW : string.Empty); // the new constraint means the type shall be a class implementing the interface
             }
             else if (parentTypeName != null && bound.TypeName.Contains(SpecialNames.BeginGenericDeclaration)
@@ -1421,7 +1421,7 @@ namespace MASES.JNet.Reflector
             }
         }
 
-        public static string JVMBaseClassName(this Class entry, bool usedInGenerics, bool isListener, bool camel, out bool baseClassIsJVMBridgeBase)
+        public static string JVMBaseClassName(this Class entry, bool isClassCloseable, bool usedInGenerics, bool isListener, bool camel, out bool baseClassIsJVMBridgeBase)
         {
             baseClassIsJVMBridgeBase = false;
             if (isListener)
@@ -1436,7 +1436,8 @@ namespace MASES.JNet.Reflector
             {
                 baseClassIsJVMBridgeBase = true;
                 string className = entry.JVMClassName(null, usedInGenerics, false);
-                return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
+                return isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>"
+                                        : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{className}>";
             }
             try
             {
@@ -1513,7 +1514,8 @@ namespace MASES.JNet.Reflector
                     {
                         baseClassIsJVMBridgeBase = true;
                         string innerName = entry.JVMClassName(null, usedInGenerics, false);
-                        return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
+                        return isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{innerName}>"
+                                                : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{innerName}>";
                     }
                 }
                 else if ((usedInGenerics || !entry.IsJVMGenericClass()) && superCls.IsJVMGenericClass())
@@ -1526,15 +1528,16 @@ namespace MASES.JNet.Reflector
             {
                 baseClassIsJVMBridgeBase = true;
                 string className = entry.JVMClassName(null, usedInGenerics, false);
-                return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
+                return isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>"
+                                        : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{className}>";
             }
         }
 
-        public static string JVMBaseInterfaceName(this Class entry, bool usedInGenerics, bool isListener, bool camel)
+        public static string JVMBaseInterfaceName(this Class entry, bool isClassCloseable, bool usedInGenerics, bool isListener, bool camel)
         {
             if (!entry.HasJVMBaseClassName(usedInGenerics, isListener, camel)) return string.Empty;
 
-            var fName = entry.JVMBaseClassName(usedInGenerics, isListener, camel, out _);
+            var fName = entry.JVMBaseClassName(isClassCloseable, usedInGenerics, isListener, camel, out _);
             return ToFullQualifiedInterfaceName(fName, camel);
         }
 
@@ -1634,7 +1637,16 @@ namespace MASES.JNet.Reflector
         public static bool IsClassToAvoid(this string typeName)
         {
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
-            if (JNetReflectorCore.ClassesToAvoid != null && JNetReflectorCore.ClassesToAvoid.Any((n) => typeName == n)) return true;
+            if (JNetReflectorCore.ClassesToAvoid != null 
+                && JNetReflectorCore.ClassesToAvoid.Any((n) =>
+                {
+                    if (!typeName.StartsWith(n)) return false;
+                    if (typeName == n) return true;
+                    return typeName[n.Length] == SpecialNames.NestedClassSeparator;
+                }))
+            {
+                return true;
+            }
             return false;
         }
 
@@ -2669,7 +2681,7 @@ namespace MASES.JNet.Reflector
             return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace(SpecialNames.BeginGenericDeclaration, "%3C").Replace(SpecialNames.EndGenericDeclaration, "%3E"));
         }
 
-#endregion
+        #endregion
 
         #region Field extension
 
