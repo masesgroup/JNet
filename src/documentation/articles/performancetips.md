@@ -154,14 +154,14 @@ The cost per event at each gate, measured in a sustained JVM-originated stream o
 
 | Gate | `byIndex` | .NET 8 / T17 | .NET 10 / T25 | Events/sec (.NET 10) |
 |---|---|---|---|---|
-| First gate discard (no data read) | `false` | 0.575 µs | 0.535 µs | ~1.9 M |
-| First gate discard (no data read) | `true` | **0.048 µs** | **0.047 µs** | **~21 M** |
-| Second gate discard (raw data inspected) | `false` | 0.602 µs | 0.622 µs | ~1.6 M |
-| Second gate discard (raw data inspected) | `true` | **0.073 µs** | **0.072 µs** | **~14 M** |
-| Full processing | `false` | 5.167 µs | 5.548 µs | ~180 K |
-| Full processing | `true` | 4.538 µs | 4.950 µs | ~202 K |
+| First gate discard (no data read) | `false` | 0.569 µs | 0.473 µs | ~2.1 M |
+| First gate discard (no data read) | `true` | **0.044 µs** | **0.041 µs** | **~24 M** |
+| Second gate discard (raw data inspected) | `false` | 0.605 µs | 0.501 µs | ~2.0 M |
+| Second gate discard (raw data inspected) | `true` | **0.071 µs** | **0.066 µs** | **~15 M** |
+| Full processing | `false` | 5.094 µs | 4.680 µs | ~214 K |
+| Full processing | `true` | 4.391 µs | 4.117 µs | ~243 K |
 
-With `byIndex = true` and first-gate discard, the per-event cost (~48 ns) is within the range of raw JNI overhead measured on dedicated bare-metal hardware — despite running on a shared CI runner and crossing the JVM↔CLR boundary. The second gate adds ~25 ns for the raw data availability step, still roughly 70× cheaper than full processing.
+With `byIndex = true` and first-gate discard, the per-event cost (~41–44 ns) is within the range of raw JNI overhead measured on dedicated bare-metal hardware — despite running on a shared CI runner and crossing the JVM↔CLR boundary. The second gate adds ~25 ns for the raw data availability step, still roughly 70× cheaper than full processing.
 
 See [performance](performance.md) for the complete benchmark data.
 

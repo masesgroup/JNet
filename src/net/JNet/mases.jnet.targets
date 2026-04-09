@@ -1,13 +1,9 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <jnet_jars Include="$(MSBuildThisFileDirectory)\jars\*.*" />
+    <None Include="$(MSBuildThisFileDirectory)\jars\*.*">
+      <Link>jars\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+    </None>
   </ItemGroup>
-
-  <Target Name="JNet_CopyFilesNative" BeforeTargets="Build">
-    <Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(TargetDir)\jars\%(RecursiveDir)" />
-  </Target>
-  
-  <Target Name="JNet_CopyFilesNativePublish" BeforeTargets="Publish">
-    <Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)\jars\%(RecursiveDir)" />
-  </Target>
 </Project>
