@@ -1436,8 +1436,9 @@ namespace MASES.JNet.Reflector
             {
                 baseClassIsJVMBridgeBase = true;
                 string className = entry.JVMClassName(null, usedInGenerics, false);
-                return isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>"
-                                        : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{className}>";
+                return JNetReflectorCore.AlwaysUseIDisposablePattern 
+                       || isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>"
+                                           : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{className}>";
             }
             try
             {
@@ -1514,8 +1515,9 @@ namespace MASES.JNet.Reflector
                     {
                         baseClassIsJVMBridgeBase = true;
                         string innerName = entry.JVMClassName(null, usedInGenerics, false);
-                        return isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{innerName}>"
-                                                : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{innerName}>";
+                        return JNetReflectorCore.AlwaysUseIDisposablePattern
+                               || isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{innerName}>"
+                                                   : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{innerName}>";
                     }
                 }
                 else if ((usedInGenerics || !entry.IsJVMGenericClass()) && superCls.IsJVMGenericClass())
@@ -1528,8 +1530,9 @@ namespace MASES.JNet.Reflector
             {
                 baseClassIsJVMBridgeBase = true;
                 string className = entry.JVMClassName(null, usedInGenerics, false);
-                return isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>"
-                                        : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{className}>";
+                return JNetReflectorCore.AlwaysUseIDisposablePattern
+                       || isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>"
+                                           : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{className}>";
             }
         }
 
