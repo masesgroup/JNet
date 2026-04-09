@@ -199,7 +199,7 @@ listener.ShallManageEventWithDataHandler = (eventName, data) =&gt; data is Java.
 listener.ActionPerformed += e =&gt; { /* handle */ };
 </code></pre>
 <h3 id="performance-impact">Performance impact</h3>
-<p>The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7-rc, 1 000 000 iterations):</p>
+<p>The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7, 1 000 000 iterations):</p>
 <table>
 <thead>
 <tr>
@@ -214,48 +214,48 @@ listener.ActionPerformed += e =&gt; { /* handle */ };
 <tr>
 <td>First gate discard (no data read)</td>
 <td><code>false</code></td>
-<td>0.569 µs</td>
-<td>0.473 µs</td>
+<td>0.601 µs</td>
+<td>0.468 µs</td>
 <td>~2.1 M</td>
 </tr>
 <tr>
 <td>First gate discard (no data read)</td>
 <td><code>true</code></td>
-<td><strong>0.044 µs</strong></td>
+<td><strong>0.045 µs</strong></td>
 <td><strong>0.041 µs</strong></td>
 <td><strong>~24 M</strong></td>
 </tr>
 <tr>
 <td>Second gate discard (raw data inspected)</td>
 <td><code>false</code></td>
-<td>0.605 µs</td>
-<td>0.501 µs</td>
+<td>0.625 µs</td>
+<td>0.493 µs</td>
 <td>~2.0 M</td>
 </tr>
 <tr>
 <td>Second gate discard (raw data inspected)</td>
 <td><code>true</code></td>
-<td><strong>0.071 µs</strong></td>
-<td><strong>0.066 µs</strong></td>
+<td><strong>0.074 µs</strong></td>
+<td><strong>0.067 µs</strong></td>
 <td><strong>~15 M</strong></td>
 </tr>
 <tr>
 <td>Full processing</td>
 <td><code>false</code></td>
-<td>5.094 µs</td>
-<td>4.680 µs</td>
-<td>~214 K</td>
+<td>5.098 µs</td>
+<td>4.725 µs</td>
+<td>~212 K</td>
 </tr>
 <tr>
 <td>Full processing</td>
 <td><code>true</code></td>
-<td>4.391 µs</td>
-<td>4.117 µs</td>
-<td>~243 K</td>
+<td>4.467 µs</td>
+<td>4.141 µs</td>
+<td>~242 K</td>
 </tr>
 </tbody>
 </table>
-<p>With <code>byIndex = true</code> and first-gate discard, the per-event cost (~41–44 ns) is within the range of raw JNI overhead measured on dedicated bare-metal hardware — despite running on a shared CI runner and crossing the JVM↔CLR boundary. The second gate adds ~25 ns for the raw data availability step, still roughly 70× cheaper than full processing.</p>
+<p>With <code>byIndex = true</code> and first-gate discard, the per-event cost (~41–45 ns) is within the range of raw JNI overhead measured on dedicated bare-metal hardware — despite running on a shared CI runner and crossing the JVM↔CLR boundary. The second gate adds ~25–30 ns for the raw data availability step, still roughly 70× cheaper than full processing.</p>
 <p>See <a href="performance.html">performance</a> for the complete benchmark data.</p>
 <div class="TIP">
 <h5>Tip</h5>
