@@ -23,12 +23,14 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html"/>
     /// </summary>
-    public class Record : JVMBridgeBase<Record>
+    public class Record : JVMBridgeBaseCore<Record>
     {
         /// <inheritdoc/>
         public Record() { }
         /// <inheritdoc/>
         public Record(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+        /// <inheritdoc/>
+        public Record(params object[] args) : base(args) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Record";
     }
