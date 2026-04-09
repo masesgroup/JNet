@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Performance | MASES Group - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Performance | MASES Group - JNet ">
+      <meta name="description" content="Benchmark results for JNet — JVM method invocation and callback latency from .NET">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/blob/master/src/documentation/articles/performance.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="jnet-performance">JNet: performance</h1>
+
+<p>This page reports benchmark results for the core JNet interop primitives: JVM method invocation from .NET and JVM→.NET callback latency.
+All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHub Actions</a> runners and are repeated automatically on each release across supported .NET and JDK versions.</p>
+<p>Results are reported for two JCOBridge versions — 2.6.6 and 2.6.7-rc — and two runtime combinations. See <a href="https://www.jcobridge.com/release-notes/">JCOBridge release notes</a> for details.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Benchmarks are run on shared GitHub-hosted runners. Absolute numbers reflect that environment and should be read comparatively rather than as absolute throughput figures for a dedicated host.</p>
+</div>
+<hr>
+<h2 id="test-environment">Test environment</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Combination A</th>
+<th>Combination B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Runner</td>
+<td>GitHub Actions (<code>ubuntu-latest</code>)</td>
+<td>GitHub Actions (<code>ubuntu-latest</code>)</td>
+</tr>
+<tr>
+<td>Iterations per test</td>
+<td>1 000 000</td>
+<td>1 000 000</td>
+</tr>
+<tr>
+<td>.NET version</td>
+<td>.NET 8</td>
+<td>.NET 10</td>
+</tr>
+<tr>
+<td>JDK version</td>
+<td>Temurin 17</td>
+<td>Temurin 25</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="what-is-measured">What is measured</h2>
+<h3 id="jvm-method-invocation-from-net">JVM method invocation from .NET</h3>
+<p>Measures the round-trip latency of calling a JVM method from .NET through JNet, with two resolution strategies and two method signatures.</p>
+<p><strong>Resolution strategies:</strong></p>
+<ul>
+<li><strong>Invoke</strong> — the method is identified by .NET-side type matching against input arguments on every call. The JVM descriptor is cached after first resolution, but argument type validation is re-evaluated on the .NET side at each invocation.</li>
+<li><strong>InvokeWithSignature</strong> (<code>IWS</code>) — the method is identified by name and JNI signature string. Argument validation is delegated to the JVM, eliminating the .NET-side type matching cost.</li>
+</ul>
+<p><strong>Method signatures (<code>feedback</code>):</strong></p>
+<ul>
+<li><strong><code>feedback = false</code></strong> — method takes no arguments and returns <code>void</code>. Measures pure invocation overhead.</li>
+<li><strong><code>feedback = true</code></strong> — method takes a <code>boolean</code> argument and returns the same <code>boolean</code>. Measures the additional cost of argument passing and return value marshalling across the JNI boundary.</li>
+</ul>
+<p>Both static and instance method variants are tested.</p>
+<h3 id="callback-testpredicateroundtrip-net--jvm--net">Callback: <code>TestPredicateRoundTrip</code> (.NET → JVM → .NET)</h3>
+<p>A .NET-initiated test: .NET triggers a JVM call which immediately fires a callback back into .NET. Provides a controlled start-time marker and measures the full bidirectional round-trip. In real usage the JVM initiates the event — see <code>TestPredicateSustained</code> for the realistic reference.</p>
+<h3 id="callback-testpredicatesustained-jvm--net-sustained">Callback: <code>TestPredicateSustained</code> (JVM → .NET, sustained)</h3>
+<p>A JVM-initiated test: .NET sends a single start command to JVM, which then fires 1 000 000 callback events toward the CLR autonomously without returning control to .NET. After all events are fired, the JVM returns and .NET measures the total elapsed time. Aside from the single startup call, this measures the pure cost of receiving a sustained stream of JVM-originated events — the scenario matching real-world usage (e.g. Kafka Streams functional interfaces, AWT event listeners).</p>
+<p>Both callback tests share two configuration axes (2.6.7-beta6 only):</p>
+<p><strong><code>byIndex</code> — event trigger identification:</strong></p>
+<ul>
+<li><strong><code>byIndex = false</code></strong> — the event is identified on the CLR side by a string key lookup.</li>
+<li><strong><code>byIndex = true</code></strong> — the event is identified on the CLR side by a numeric index, without any JVM call. In both cases, JVM object arguments are retrieved as JVM objects after the trigger is received.</li>
+</ul>
+<p><strong>Two-level early-discard filter (<code>ShallManageEvent</code>, 2.6.7+):</strong></p>
+<p>JCOBridge 2.6.7 introduces two overloads of <code>ShallManageEvent</code> on the JNet callback base class, forming a two-gate filter applied before full event handling:</p>
+<p><strong>First gate — <code>bool ShallManageEvent(string eventName)</code>:</strong> called before any argument data is read from the JVM. The return value:</p>
+<ul>
+<li><strong><code>false</code></strong> (<code>continueFirstCheck = false</code>) — discard immediately: no data is read, the handler is not invoked.</li>
+<li><strong><code>true</code></strong> (<code>continueFirstCheck = true</code>) — proceed to the second gate.</li>
+</ul>
+<p><strong>Second gate — <code>bool ShallManageEvent(string eventName, object data)</code>:</strong> called after raw argument data is available but before full event processing and handler dispatch. Allows lightweight inspection of the raw data (e.g. a field check) without paying the cost of full conversion. The return value:</p>
+<ul>
+<li><strong><code>false</code></strong> (<code>continueSecondCheck = false</code>) — discard after raw-data inspection: the registered handler is not invoked.</li>
+<li><strong><code>true</code></strong> (<code>continueSecondCheck = true</code>) — proceed normally: full argument conversion and handler invocation.</li>
+</ul>
+<p>The combination <code>continueFirstCheck = false, continueSecondCheck = true</code> is never reached and is not tested.</p>
+<p><code>ShallManageEventHandler</code> (<code>Func&lt;string, bool&gt;</code>) is the delegate equivalent of the first gate; <code>ShallManageEventWithDataHandler</code> (<code>Func&lt;string, object, bool&gt;</code>) is the delegate equivalent of the second gate. Default for both gates is <code>true</code> (full processing).</p>
+<hr>
+<h2 id="jcobridge-266">JCOBridge 2.6.6</h2>
+<p>In 2.6.6, <code>ShallManageEventHandler</code>, <code>ShallManageEventWithDataHandler</code>, and the native <code>byIndex</code> trigger mechanism are not yet available.</p>
+<h3 id="static-method-invocation">Static method invocation</h3>
+<table>
+<thead>
+<tr>
+<th>Resolution</th>
+<th><code>feedback</code></th>
+<th>.NET 8 / T17</th>
+<th>.NET 10 / T25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Invoke</code></td>
+<td><code>false</code></td>
+<td>0.661 µs</td>
+<td>0.602 µs</td>
+</tr>
+<tr>
+<td><code>IWS</code></td>
+<td><code>false</code></td>
+<td>0.494 µs</td>
+<td>0.414 µs</td>
+</tr>
+<tr>
+<td><code>Invoke</code></td>
+<td><code>true</code></td>
+<td>0.901 µs</td>
+<td>0.803 µs</td>
+</tr>
+<tr>
+<td><code>IWS</code></td>
+<td><code>true</code></td>
+<td>0.686 µs</td>
+<td>0.522 µs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="instance-method-invocation">Instance method invocation</h3>
+<table>
+<thead>
+<tr>
+<th>Resolution</th>
+<th><code>feedback</code></th>
+<th>.NET 8 / T17</th>
+<th>.NET 10 / T25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Invoke</code></td>
+<td><code>false</code></td>
+<td>0.579 µs</td>
+<td>0.490 µs</td>
+</tr>
+<tr>
+<td><code>IWS</code></td>
+<td><code>false</code></td>
+<td>0.468 µs</td>
+<td>0.379 µs</td>
+</tr>
+<tr>
+<td><code>Invoke</code></td>
+<td><code>true</code></td>
+<td>0.856 µs</td>
+<td>0.764 µs</td>
+</tr>
+<tr>
+<td><code>IWS</code></td>
+<td><code>true</code></td>
+<td>0.638 µs</td>
+<td>0.535 µs</td>
+</tr>
+</tbody>
+</table>
+<p>Adding a <code>boolean</code> argument and return value (<code>feedback = true</code>) adds ~45–55% overhead with <code>Invoke</code> and ~35–40% with <code>IWS</code>, reflecting JNI argument marshalling cost.</p>
+<h3 id="callback">Callback</h3>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th><code>byIndex</code></th>
+<th><code>readJVM</code></th>
+<th>.NET 8 / T17</th>
+<th>.NET 10 / T25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RoundTrip</code></td>
+<td><code>false</code></td>
+<td><code>true</code></td>
+<td>6.945 µs</td>
+<td>6.338 µs</td>
+</tr>
+<tr>
+<td><code>Sustained</code></td>
+<td><code>false</code></td>
+<td><code>true</code></td>
+<td>6.116 µs</td>
+<td>5.548 µs</td>
+</tr>
+</tbody>
+</table>
+<p><code>Sustained</code> is the realistic reference for JVM-originated callback cost: <strong>~6.1 µs (.NET 8 / T17) and ~5.5 µs (.NET 10 / T25).</strong></p>
+<hr>
+<h2 id="jcobridge-267-rc2">JCOBridge 2.6.7-rc2</h2>
+<p>JCOBridge 2.6.7 introduces the two-level <code>ShallManageEvent</code> filter and the native <code>byIndex</code> trigger mechanism. General interop improvements reduce baseline overhead across all test types.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>byIndex = true</code> is still simulated on the JVM side by invoking a dedicated class method rather than the interface <code>@Override</code>. The CLR-side numeric index resolution is fully active; a JVM dispatch difference (class method vs interface method) remains. The <code>byIndex = false</code> rows use the real interface override and are directly comparable between the two versions.</p>
+</div>
+<h3 id="static-method-invocation-1">Static method invocation</h3>
+<table>
+<thead>
+<tr>
+<th>Resolution</th>
+<th><code>feedback</code></th>
+<th>.NET 8 / T17</th>
+<th>vs 2.6.6</th>
+<th>.NET 10 / T25</th>
+<th>vs 2.6.6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Invoke</code></td>
+<td><code>false</code></td>
+<td>0.495 µs</td>
+<td>−25%</td>
+<td>0.538 µs</td>
+<td>−11%</td>
+</tr>
+<tr>
+<td><code>IWS</code></td>
+<td><code>false</code></td>
+<td>0.355 µs</td>
+<td>−28%</td>
+<td>0.327 µs</td>
+<td>−21%</td>
+</tr>
+<tr>
+<td><code>Invoke</code></td>
+<td><code>true</code></td>
+<td>0.580 µs</td>
+<td>−36%</td>
+<td>0.535 µs</td>
+<td>−33%</td>
+</tr>
+<tr>
+<td><code>IWS</code></td>
+<td><code>true</code></td>
+<td>0.420 µs</td>
+<td>−39%</td>
+<td>0.382 µs</td>
+<td>−27%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="instance-method-invocation-1">Instance method invocation</h3>
+<table>
+<thead>
+<tr>
+<th>Resolution</th>
+<th><code>feedback</code></th>
+<th>.NET 8 / T17</th>
+<th>vs 2.6.6</th>
+<th>.NET 10 / T25</th>
+<th>vs 2.6.6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Invoke</code></td>
+<td><code>false</code></td>
+<td>0.370 µs</td>
+<td>−36%</td>
+<td>0.296 µs</td>
+<td>−40%</td>
+</tr>
+<tr>
+<td><code>IWS</code></td>
+<td><code>false</code></td>
+<td>0.313 µs</td>
+<td>−33%</td>
+<td>0.268 µs</td>
+<td>−29%</td>
+</tr>
+<tr>
+<td><code>Invoke</code></td>
+<td><code>true</code></td>
+<td>0.563 µs</td>
+<td>−34%</td>
+<td>0.493 µs</td>
+<td>−35%</td>
+</tr>
+<tr>
+<td><code>IWS</code></td>
+<td><code>true</code></td>
+<td>0.433 µs</td>
+<td>−32%</td>
+<td>0.416 µs</td>
+<td>−22%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="callback-testpredicateroundtrip">Callback: <code>TestPredicateRoundTrip</code></h3>
+<table>
+<thead>
+<tr>
+<th><code>byIndex</code></th>
+<th><code>continueFirstCheck</code></th>
+<th><code>continueSecondCheck</code></th>
+<th>.NET 8 / T17</th>
+<th>vs 2.6.6</th>
+<th>.NET 10 / T25</th>
+<th>vs 2.6.6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>false</code></td>
+<td><code>false</code></td>
+<td><code>false</code></td>
+<td>1.073 µs</td>
+<td>—</td>
+<td>1.024 µs</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>false</code></td>
+<td><code>false</code></td>
+<td>0.437 µs</td>
+<td>—</td>
+<td>0.420 µs</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td><code>true</code></td>
+<td><code>false</code></td>
+<td>1.121 µs</td>
+<td>—</td>
+<td>1.057 µs</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>true</code></td>
+<td><code>false</code></td>
+<td>0.474 µs</td>
+<td>—</td>
+<td>0.448 µs</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td><code>true</code></td>
+<td><code>true</code></td>
+<td>5.676 µs</td>
+<td>−18%</td>
+<td>5.318 µs</td>
+<td>−16%</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>true</code></td>
+<td><code>true</code></td>
+<td>4.924 µs</td>
+<td>−29%</td>
+<td>4.558 µs</td>
+<td>−28%</td>
+</tr>
+</tbody>
+</table>
+<p>¹ <code>byIndex = true</code> simulated on the JVM side — see note above.</p>
+<h3 id="callback-testpredicatesustained">Callback: <code>TestPredicateSustained</code></h3>
+<table>
+<thead>
+<tr>
+<th><code>byIndex</code></th>
+<th><code>continueFirstCheck</code></th>
+<th><code>continueSecondCheck</code></th>
+<th>.NET 8 / T17</th>
+<th>vs 2.6.6</th>
+<th>.NET 10 / T25</th>
+<th>vs 2.6.6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>false</code></td>
+<td><code>false</code></td>
+<td><code>false</code></td>
+<td>0.569 µs</td>
+<td>−91%</td>
+<td>0.473 µs</td>
+<td>−91%</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>false</code></td>
+<td><code>false</code></td>
+<td><strong>0.044 µs</strong></td>
+<td>—</td>
+<td><strong>0.041 µs</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td><code>true</code></td>
+<td><code>false</code></td>
+<td>0.605 µs</td>
+<td>−90%</td>
+<td>0.501 µs</td>
+<td>−91%</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>true</code></td>
+<td><code>false</code></td>
+<td><strong>0.071 µs</strong></td>
+<td>—</td>
+<td><strong>0.066 µs</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td><code>true</code></td>
+<td><code>true</code></td>
+<td>5.094 µs</td>
+<td>−17%</td>
+<td>4.680 µs</td>
+<td>−16%</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>true</code></td>
+<td><code>true</code></td>
+<td>4.391 µs</td>
+<td>−28%</td>
+<td>4.117 µs</td>
+<td>−26%</td>
+</tr>
+</tbody>
+</table>
+<p>¹ <code>byIndex = true</code> simulated on the JVM side — see note above.</p>
+<p>The <strong>realistic JVM-originated callback baseline</strong> (full processing, <code>byIndex = false</code>) is <strong>5.1 µs (.NET 8 / T17)</strong> and <strong>4.7 µs (.NET 10 / T25)</strong>.</p>
+<p>The two-level filter reveals three distinct operating points:</p>
+<p><strong>First gate only (<code>continueFirstCheck = false</code>)</strong> — event discarded before any data is read:</p>
+<ul>
+<li><code>byIndex = false</code>: ~0.57 µs / ~0.47 µs — string key lookup dominates.</li>
+<li><code>byIndex = true</code>: <strong>~44 ns (.NET 8) / ~41 ns (.NET 10)</strong> — ~23 M / ~24 M events/sec, within the range of raw JNI overhead on bare-metal hardware.</li>
+</ul>
+<p><strong>Second gate (<code>continueFirstCheck = true, continueSecondCheck = false</code>)</strong> — raw data available for inspection, handler not invoked:</p>
+<ul>
+<li><code>byIndex = false</code>: ~0.61 µs / ~0.50 µs — similar to first-gate-only.</li>
+<li><code>byIndex = true</code>: <strong>~71 ns (.NET 8) / ~66 ns (.NET 10)</strong> — ~14 M / ~15 M events/sec.</li>
+</ul>
+<p><strong>Full processing (<code>continueFirstCheck = true, continueSecondCheck = true</code>)</strong>: ~5.1 µs / ~4.7 µs as above.</p>
+<hr>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>.NET 8 / T17</th>
+<th></th>
+<th>.NET 10 / T25</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>2.6.6</td>
+<td>2.6.7-rc2</td>
+<td>2.6.6</td>
+<td>2.6.7-rc2</td>
+</tr>
+<tr>
+<td>Static <code>Invoke</code> fb=false</td>
+<td>0.661 µs</td>
+<td>0.495 µs (−25%)</td>
+<td>0.602 µs</td>
+<td>0.538 µs (−11%)</td>
+</tr>
+<tr>
+<td>Static <code>IWS</code> fb=false</td>
+<td>0.494 µs</td>
+<td>0.355 µs (−28%)</td>
+<td>0.414 µs</td>
+<td>0.327 µs (−21%)</td>
+</tr>
+<tr>
+<td>Static <code>Invoke</code> fb=true</td>
+<td>0.901 µs</td>
+<td>0.580 µs (−36%)</td>
+<td>0.803 µs</td>
+<td>0.535 µs (−33%)</td>
+</tr>
+<tr>
+<td>Static <code>IWS</code> fb=true</td>
+<td>0.686 µs</td>
+<td>0.420 µs (−39%)</td>
+<td>0.522 µs</td>
+<td>0.382 µs (−27%)</td>
+</tr>
+<tr>
+<td>Instance <code>Invoke</code> fb=false</td>
+<td>0.579 µs</td>
+<td>0.370 µs (−36%)</td>
+<td>0.490 µs</td>
+<td>0.296 µs (−40%)</td>
+</tr>
+<tr>
+<td>Instance <code>IWS</code> fb=false</td>
+<td>0.468 µs</td>
+<td>0.313 µs (−33%)</td>
+<td>0.379 µs</td>
+<td>0.268 µs (−29%)</td>
+</tr>
+<tr>
+<td>Instance <code>Invoke</code> fb=true</td>
+<td>0.856 µs</td>
+<td>0.563 µs (−34%)</td>
+<td>0.764 µs</td>
+<td>0.493 µs (−35%)</td>
+</tr>
+<tr>
+<td>Instance <code>IWS</code> fb=true</td>
+<td>0.638 µs</td>
+<td>0.433 µs (−32%)</td>
+<td>0.535 µs</td>
+<td>0.416 µs (−22%)</td>
+</tr>
+<tr>
+<td>Sustained: full processing, <code>byIndex=false</code></td>
+<td>6.116 µs</td>
+<td>5.094 µs (−17%)</td>
+<td>5.548 µs</td>
+<td>4.680 µs (−16%)</td>
+</tr>
+<tr>
+<td>Sustained: full processing, <code>byIndex=true</code> ¹</td>
+<td>—</td>
+<td>4.391 µs</td>
+<td>—</td>
+<td>4.117 µs</td>
+</tr>
+<tr>
+<td>Sustained: first gate discard, <code>byIndex=false</code></td>
+<td>—</td>
+<td>0.569 µs</td>
+<td>—</td>
+<td>0.473 µs</td>
+</tr>
+<tr>
+<td>Sustained: first gate discard, <code>byIndex=true</code> ¹</td>
+<td>—</td>
+<td><strong>0.044 µs</strong></td>
+<td>—</td>
+<td><strong>0.041 µs</strong></td>
+</tr>
+<tr>
+<td>Sustained: second gate discard, <code>byIndex=false</code></td>
+<td>—</td>
+<td>0.605 µs</td>
+<td>—</td>
+<td>0.501 µs</td>
+</tr>
+<tr>
+<td>Sustained: second gate discard, <code>byIndex=true</code> ¹</td>
+<td>—</td>
+<td><strong>0.071 µs</strong></td>
+<td>—</td>
+<td><strong>0.066 µs</strong></td>
+</tr>
+</tbody>
+</table>
+<p>¹ <code>byIndex = true</code> simulated on the JVM side in 2.6.7-rc2 — see notes above. No 2.6.6 baseline available.</p>
+<h3 id="comparison-with-raw-jni-overhead">Comparison with raw JNI overhead</h3>
+<p>The 41–44 ns figure for <code>byIndex = true</code>, first-gate discard (Sustained) is worth contextualizing against published raw JNI benchmarks on dedicated hardware. Independent JMH benchmarks measure an empty JNI call at ~57 ns via JavaCPP and ~22 ns on a modern laptop for a minimal no-op native method (<a href="https://github.com/zakgof/java-native-benchmark">java-native-benchmark</a>, <a href="https://dkomanov.medium.com/java-native-access-performance-cf4ce0d68ddb">Komanov 2022</a>).</p>
+<p>JNet's first-gate discard path involves a JVM→CLR crossing, the numeric index lookup, and the <code>ShallManageEvent</code> decision — all on shared CI infrastructure. Reaching ~41–44 ns per event places JNet within the range of raw JNI call overhead measured on dedicated bare-metal hardware, despite the additional CLR interop layer.</p>
+<hr>
+<h2 id="guidance">Guidance</h2>
+<ul>
+<li><strong>Prefer <code>InvokeWithSignature</code></strong> (<code>IWS</code>) over <code>Invoke</code> in hot paths — it avoids .NET-side type matching on every call and consistently delivers 20–40% lower latency when arguments are involved.</li>
+<li><strong>The realistic JVM-originated callback reference</strong> is <code>Sustained</code>, full processing, <code>byIndex = false</code>: ~5.1 µs (.NET 8 / T17) and ~4.7 µs (.NET 10 / T25) in 2.6.7-rc2. With <code>byIndex = true</code> this drops to ~4.4 µs and ~4.1 µs.</li>
+<li><strong>Use the two-level <code>ShallManageEvent</code> filter</strong> for high-event-rate sources where only a subset of events require full processing:
+<ul>
+<li>First gate (<code>ShallManageEventHandler</code>) — discard by event name alone, before any data read: ~44 ns (.NET 8) / ~41 ns (.NET 10) with <code>byIndex = true</code>.</li>
+<li>Second gate (<code>ShallManageEventWithDataHandler</code>) — inspect raw data before deciding: ~71 ns (.NET 8) / ~66 ns (.NET 10) with <code>byIndex = true</code>. Use this when a lightweight field check on the raw payload is needed to decide whether to invoke the handler.</li>
+</ul>
+</li>
+<li><strong>Newer runtimes help</strong>: .NET 10 / Temurin 25 is consistently 5–10% faster than .NET 8 / Temurin 17 across most test types.</li>
+<li>The <code>byIndex = true</code> mechanism will deliver its full benefit on the full-processing path once the JVM-side simulation is replaced with real interface dispatch.</li>
+<li>If your application runs callbacks at sustained high frequency, consider the <a href="https://www.jcobridge.com">JCOBridge HPA edition</a> — it addresses GC-boundary instability under sustained JVM↔CLR call pressure, which is the primary reliability concern at high call rates.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/documentation/articles/performance.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2022 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
