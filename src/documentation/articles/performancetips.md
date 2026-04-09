@@ -150,18 +150,18 @@ listener.ActionPerformed += e => { /* handle */ };
 
 ### Performance impact
 
-The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7-rc, 1 000 000 iterations):
+The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7, 1 000 000 iterations):
 
 | Gate | `byIndex` | .NET 8 / T17 | .NET 10 / T25 | Events/sec (.NET 10) |
 |---|---|---|---|---|
-| First gate discard (no data read) | `false` | 0.569 µs | 0.473 µs | ~2.1 M |
-| First gate discard (no data read) | `true` | **0.044 µs** | **0.041 µs** | **~24 M** |
-| Second gate discard (raw data inspected) | `false` | 0.605 µs | 0.501 µs | ~2.0 M |
-| Second gate discard (raw data inspected) | `true` | **0.071 µs** | **0.066 µs** | **~15 M** |
-| Full processing | `false` | 5.094 µs | 4.680 µs | ~214 K |
-| Full processing | `true` | 4.391 µs | 4.117 µs | ~243 K |
+| First gate discard (no data read) | `false` | 0.601 µs | 0.468 µs | ~2.1 M |
+| First gate discard (no data read) | `true` | **0.045 µs** | **0.041 µs** | **~24 M** |
+| Second gate discard (raw data inspected) | `false` | 0.625 µs | 0.493 µs | ~2.0 M |
+| Second gate discard (raw data inspected) | `true` | **0.074 µs** | **0.067 µs** | **~15 M** |
+| Full processing | `false` | 5.098 µs | 4.725 µs | ~212 K |
+| Full processing | `true` | 4.467 µs | 4.141 µs | ~242 K |
 
-With `byIndex = true` and first-gate discard, the per-event cost (~41–44 ns) is within the range of raw JNI overhead measured on dedicated bare-metal hardware — despite running on a shared CI runner and crossing the JVM↔CLR boundary. The second gate adds ~25 ns for the raw data availability step, still roughly 70× cheaper than full processing.
+With `byIndex = true` and first-gate discard, the per-event cost (~41–45 ns) is within the range of raw JNI overhead measured on dedicated bare-metal hardware — despite running on a shared CI runner and crossing the JVM↔CLR boundary. The second gate adds ~25–30 ns for the raw data availability step, still roughly 70× cheaper than full processing.
 
 See [performance](performance.md) for the complete benchmark data.
 
