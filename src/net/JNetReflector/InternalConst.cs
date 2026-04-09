@@ -72,6 +72,7 @@ namespace MASES.JNet.Reflector
         public const string DoNotCamel = "DoNotCamel";
         public const string TraceLevel = "TraceLevel";
         public const string TraceTo = "TraceTo";
+        public const string AlwaysUseIDisposablePattern = "AlwaysUseIDisposablePattern";
     }
 
     public static class SpecialNames
