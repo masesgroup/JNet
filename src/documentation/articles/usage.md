@@ -207,7 +207,10 @@ Most of the time the code works fine, but the failure is non-deterministic and h
 
 ### `using` or `try-finally` with `Dispose`
 
-All JNet classes implement `IDisposable`. Wrapping the object in a `using` block keeps it alive and releases the JVM reference deterministically:
+From 2.6.7+ version only JNet classes extending `AutoCloseable` implement `IDisposable`.
+Naturally the `using` block replaces the equivalent `try-with-resources` of Java and reference is not collected till the end of the object usage.
+For all other classes without `IDisposable` (i.e. does not represent an `AutoCloseable` class), JCOBridge 2.6.8 introduces the `JVMBridgeCoreDisposable` which wraps the input object, make the reference alive and exposes an `IDisposable` interface.
+Wrapping the object in a `using` block keeps it alive and releases the JVM reference deterministically:
 
 ```csharp
 using Java.Util;
@@ -226,7 +229,8 @@ namespace MASES.JNetExample
             MyJNetCore.CreateGlobalInstance();
             try
             {
-                using (Java.Util.Set<string> set = Collections.Singleton("test"))
+                Java.Util.Set<string> set = Collections.Singleton("test");
+                using (var disposeable = JVMBridgeCoreDisposable.Create(set)) // or using (var disposeable = set.ToDisposeable())
                 {
                     ArrayList<string> arrayList = new();
                     arrayList.AddAll(0, set);
@@ -257,20 +261,22 @@ namespace MASES.JNetExample
             MyJNetCore.CreateGlobalInstance();
             try
             {
-                Java.Util.Set<string> set = null;
+                Java.Util.Set<string> set = Collections.Singleton("test");
+                var disposeable = JVMBridgeCoreDisposable.Create(set); // or var disposeable = set.ToDisposeable();
                 try
                 {
-                    set = Collections.Singleton("test");
                     ArrayList<string> arrayList = new();
                     arrayList.AddAll(0, set);
                 }
-                finally { set?.Dispose(); }
+                finally { disposeable?.Dispose(); }
             }
             catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
         }
     }
 }
 ```
+
+
 
 ### `SuppressFinalize`/`ReRegisterForFinalize` pattern
 
