@@ -8,7 +8,7 @@ _description: Benchmark results for JNet — JVM method invocation and callback 
 This page reports benchmark results for the core JNet interop primitives: JVM method invocation from .NET and JVM→.NET callback latency.
 All benchmarks run on [GitHub Actions](https://github.com/masesgroup/JNet/actions) runners and are repeated automatically on each release across supported .NET and JDK versions.
 
-Results are reported for two JCOBridge versions — 2.6.6 and 2.6.7 — and two runtime combinations. See [JCOBridge release notes](https://www.jcobridge.com/release-notes/) for details.
+Results are reported for two JCOBridge versions — 2.6.6 and 2.6.7+ — and two runtime combinations. See [JCOBridge release notes](https://www.jcobridge.com/release-notes/) for details.
 
 > [!NOTE]
 > Benchmarks are run on shared GitHub-hosted runners. Absolute numbers reflect that environment and should be read comparatively rather than as absolute throughput figures for a dedicated host.
@@ -50,15 +50,15 @@ A .NET-initiated test: .NET triggers a JVM call which immediately fires a callba
 
 A JVM-initiated test: .NET sends a single start command to JVM, which then fires 1 000 000 callback events toward the CLR autonomously without returning control to .NET. After all events are fired, the JVM returns and .NET measures the total elapsed time. Aside from the single startup call, this measures the pure cost of receiving a sustained stream of JVM-originated events — the scenario matching real-world usage (e.g. Kafka Streams functional interfaces, AWT event listeners).
 
-Both callback tests share two configuration axes (2.6.7 only):
+Both callback tests share two configuration axes (2.6.7+ only):
 
 **`byIndex` — event trigger identification:**
 - **`byIndex = false`** — the event is identified on the CLR side by a string key lookup.
 - **`byIndex = true`** — the event is identified on the CLR side by a numeric index, without any JVM call. In both cases, JVM object arguments are retrieved as JVM objects after the trigger is received.
 
-**Two-level early-discard filter (`ShallManageEvent`, 2.6.7+):**
+**Two-level early-discard filter (`ShallManageEvent`, 2.6.7++):**
 
-JCOBridge 2.6.7 introduces two overloads of `ShallManageEvent` on the JNet callback base class, forming a two-gate filter applied before full event handling:
+JCOBridge 2.6.7+ introduces two overloads of `ShallManageEvent` on the JNet callback base class, forming a two-gate filter applied before full event handling:
 
 **First gate — `bool ShallManageEvent(string eventName)`:** called before any argument data is read from the JVM. The return value:
 - **`false`** (`continueFirstCheck = false`) — discard immediately: no data is read, the handler is not invoked.
@@ -109,9 +109,9 @@ Adding a `boolean` argument and return value (`feedback = true`) adds ~45–55% 
 
 ---
 
-## JCOBridge 2.6.7
+## JCOBridge 2.6.7+
 
-JCOBridge 2.6.7 introduces the two-level `ShallManageEvent` filter and the native `byIndex` trigger mechanism. General interop improvements reduce baseline overhead across all test types.
+JCOBridge 2.6.7+ introduces the two-level `ShallManageEvent` filter and the native `byIndex` trigger mechanism. General interop improvements reduce baseline overhead across all test types.
 
 > [!NOTE]
 > `byIndex = true` is still simulated on the JVM side by invoking a dedicated class method rather than the interface `@Override`. The CLR-side numeric index resolution is fully active; a JVM dispatch difference (class method vs interface method) remains. The `byIndex = false` rows use the real interface override and are directly comparable between the two versions.
@@ -180,7 +180,7 @@ The two-level filter reveals three distinct operating points:
 
 | Test | .NET 8 / T17 | | .NET 10 / T25 | |
 |---|---|---|---|---|
-| | 2.6.6 | 2.6.7 | 2.6.6 | 2.6.7 |
+| | 2.6.6 | 2.6.7+ | 2.6.6 | 2.6.7+ |
 | Static `Invoke` fb=false | 0.661 µs | 0.517 µs (−22%) | 0.602 µs | 0.480 µs (−20%) |
 | Static `IWS` fb=false | 0.494 µs | 0.356 µs (−28%) | 0.414 µs | 0.335 µs (−19%) |
 | Static `Invoke` fb=true | 0.901 µs | 0.609 µs (−32%) | 0.803 µs | 0.575 µs (−28%) |
@@ -196,7 +196,7 @@ The two-level filter reveals three distinct operating points:
 | Sustained: second gate discard, `byIndex=false` | — | 0.625 µs | — | 0.493 µs |
 | Sustained: second gate discard, `byIndex=true` ¹ | — | **0.074 µs** | — | **0.067 µs** |
 
-¹ `byIndex = true` simulated on the JVM side in 2.6.7 — see notes above. No 2.6.6 baseline available.
+¹ `byIndex = true` simulated on the JVM side in 2.6.7+ — see notes above. No 2.6.6 baseline available.
 
 ### Comparison with raw JNI overhead
 
@@ -209,7 +209,7 @@ JNet's first-gate discard path involves a JVM→CLR crossing, the numeric index 
 ## Guidance
 
 - **Prefer `InvokeWithSignature`** (`IWS`) over `Invoke` in hot paths — it avoids .NET-side type matching on every call and consistently delivers 20–40% lower latency when arguments are involved.
-- **The realistic JVM-originated callback reference** is `Sustained`, full processing, `byIndex = false`: ~5.1 µs (.NET 8 / T17) and ~4.7 µs (.NET 10 / T25) in 2.6.7. With `byIndex = true` this drops to ~4.5 µs and ~4.1 µs.
+- **The realistic JVM-originated callback reference** is `Sustained`, full processing, `byIndex = false`: ~5.1 µs (.NET 8 / T17) and ~4.7 µs (.NET 10 / T25) in 2.6.7+. With `byIndex = true` this drops to ~4.5 µs and ~4.1 µs.
 - **Use the two-level `ShallManageEvent` filter** for high-event-rate sources where only a subset of events require full processing:
   - First gate (`ShallManageEventHandler`) — discard by event name alone, before any data read: ~45 ns (.NET 8) / ~41 ns (.NET 10) with `byIndex = true`.
   - Second gate (`ShallManageEventWithDataHandler`) — inspect raw data before deciding: ~74 ns (.NET 8) / ~67 ns (.NET 10) with `byIndex = true`. Use this when a lightweight field check on the raw payload is needed to decide whether to invoke the handler.

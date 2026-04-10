@@ -93,7 +93,7 @@ Using the loop-based example as a baseline:
 
 When a JVM™ class fires events toward the CLR — for example an AWT component, a Kafka Streams functional interface, or any JNet callback wrapper — the standard flow reads argument data from the JVM™ before invoking the registered handler. For sources that produce many event types, most of them may have no handler registered in the application. Reading and converting argument data for events that will be immediately discarded is wasted work.
 
-JCOBridge 2.6.7 introduces a two-level filter applied before full event handling, through two overloads of `ShallManageEvent` on the JNet callback base class.
+JCOBridge 2.6.7+ introduces a two-level filter applied before full event handling, through two overloads of `ShallManageEvent` on the JNet callback base class.
 
 ### First gate — `bool ShallManageEvent(string eventName)`
 
@@ -108,7 +108,7 @@ The `ShallManageEventHandler` (`Func<string, bool>`) delegate is the assignable 
 > [!NOTE]
 > The combination "first gate returns `false`, second gate returns `true`" is never reached — if the first gate discards, the second gate is not called.
 
-Default for both gates is `true` (full processing). Both overloads are available from JCOBridge 2.6.7.
+Default for both gates is `true` (full processing). Both overloads are available from JCOBridge 2.6.7+.
 
 ### Usage
 
@@ -150,7 +150,7 @@ listener.ActionPerformed += e => { /* handle */ };
 
 ### Performance impact
 
-The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7, 1 000 000 iterations):
+The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7+, 1 000 000 iterations):
 
 | Gate | `byIndex` | .NET 8 / T17 | .NET 10 / T25 | Events/sec (.NET 10) |
 |---|---|---|---|---|
@@ -172,7 +172,7 @@ See [performance](performance.md) for the complete benchmark data.
 > Apply these filters whenever a JVM™ source fires multiple event types and only a subset have registered handlers. Typical candidates: AWT/Swing components with many listener methods, Kafka Streams topologies with mixed functional interfaces, and any JVM™ observable that emits high-frequency events of heterogeneous types.
 
 > [!NOTE]
-> Both `ShallManageEvent` overloads are available from JCOBridge 2.6.7. On earlier versions all events follow the full data-read path regardless of whether a handler is registered.
+> Both `ShallManageEvent` overloads are available from JCOBridge 2.6.7+. On earlier versions all events follow the full data-read path regardless of whether a handler is registered.
 
 ## Memory transfer at CLR-JVM™ boundary
 
