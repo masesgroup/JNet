@@ -29,7 +29,7 @@ namespace Javax.Swing.Text.Html.Parser
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/parser/AttributeList.html"/>
     /// </summary>
-    public partial class AttributeList : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AttributeList>
+    public partial class AttributeList : MASES.JCOBridge.C2JBridge.JVMBridgeCore<AttributeList>
     {
         const string _bridgeClassName = "javax.swing.text.html.parser.AttributeList";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Javax.Swing.Text.Html.Parser
         public AttributeList(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

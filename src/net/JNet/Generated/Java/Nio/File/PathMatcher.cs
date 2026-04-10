@@ -29,7 +29,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/PathMatcher.html"/>
     /// </summary>
-    public partial class PathMatcher : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<PathMatcher>
+    public partial class PathMatcher : MASES.JCOBridge.C2JBridge.JVMBridgeCore<PathMatcher>
     {
         const string _bridgeClassName = "java.nio.file.PathMatcher";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Nio.File
         public PathMatcher(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

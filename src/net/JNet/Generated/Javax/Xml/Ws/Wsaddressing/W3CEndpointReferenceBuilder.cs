@@ -29,7 +29,7 @@ namespace Javax.Xml.Ws.Wsaddressing
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder.html"/>
     /// </summary>
-    public partial class W3CEndpointReferenceBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<W3CEndpointReferenceBuilder>
+    public partial class W3CEndpointReferenceBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeCore<W3CEndpointReferenceBuilder>
     {
         const string _bridgeClassName = "javax.xml.ws.wsaddressing.W3CEndpointReferenceBuilder";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Javax.Xml.Ws.Wsaddressing
         public W3CEndpointReferenceBuilder(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

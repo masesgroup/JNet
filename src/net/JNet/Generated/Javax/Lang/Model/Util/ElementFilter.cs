@@ -29,7 +29,7 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/lang/model/util/ElementFilter.html"/>
     /// </summary>
-    public partial class ElementFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ElementFilter>
+    public partial class ElementFilter : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ElementFilter>
     {
         const string _bridgeClassName = "javax.lang.model.util.ElementFilter";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Javax.Lang.Model.Util
         public ElementFilter(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

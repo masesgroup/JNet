@@ -29,7 +29,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/EventListenerProxy.html"/>
     /// </summary>
-    public partial class EventListenerProxy : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<EventListenerProxy>
+    public partial class EventListenerProxy : MASES.JCOBridge.C2JBridge.JVMBridgeCore<EventListenerProxy>
     {
         const string _bridgeClassName = "java.util.EventListenerProxy";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Util
         public EventListenerProxy(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -68,7 +68,7 @@ namespace Java.Util
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/EventListenerProxy.html"/>
     /// </summary>
     /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-    public partial class EventListenerProxy<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<EventListenerProxy<T>> where T : Java.Util.IEventListener
+    public partial class EventListenerProxy<T> : MASES.JCOBridge.C2JBridge.JVMBridgeCore<EventListenerProxy<T>> where T : Java.Util.IEventListener
     {
         const string _bridgeClassName = "java.util.EventListenerProxy";
         /// <summary>
@@ -83,7 +83,7 @@ namespace Java.Util
         public EventListenerProxy(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

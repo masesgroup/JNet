@@ -29,7 +29,7 @@ namespace Javax.Swing.Tree
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/TreeModel.html"/>
     /// </summary>
-    public partial class TreeModel : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<TreeModel>
+    public partial class TreeModel : MASES.JCOBridge.C2JBridge.JVMBridgeCore<TreeModel>
     {
         const string _bridgeClassName = "javax.swing.tree.TreeModel";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Swing.Tree
         public TreeModel(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

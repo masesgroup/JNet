@@ -29,7 +29,7 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/DocumentEvent.html"/>
     /// </summary>
-    public partial class DocumentEvent : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DocumentEvent>
+    public partial class DocumentEvent : MASES.JCOBridge.C2JBridge.JVMBridgeCore<DocumentEvent>
     {
         const string _bridgeClassName = "javax.swing.event.DocumentEvent";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Swing.Event
         public DocumentEvent(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -63,7 +63,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/DocumentEvent.ElementChange.html"/>
         /// </summary>
-        public partial class ElementChange : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ElementChange>
+        public partial class ElementChange : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ElementChange>
         {
             const string _bridgeClassName = "javax.swing.event.DocumentEvent$ElementChange";
             /// <summary>
@@ -78,7 +78,7 @@ namespace Javax.Swing.Event
             public ElementChange(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -101,7 +101,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/DocumentEvent.EventType.html"/>
         /// </summary>
-        public partial class EventType : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<EventType>
+        public partial class EventType : MASES.JCOBridge.C2JBridge.JVMBridgeCore<EventType>
         {
             const string _bridgeClassName = "javax.swing.event.DocumentEvent$EventType";
             /// <summary>
@@ -115,7 +115,7 @@ namespace Javax.Swing.Event
             public EventType(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

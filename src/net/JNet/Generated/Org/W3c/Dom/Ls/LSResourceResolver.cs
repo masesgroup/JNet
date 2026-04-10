@@ -29,7 +29,7 @@ namespace Org.W3c.Dom.Ls
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/ls/LSResourceResolver.html"/>
     /// </summary>
-    public partial class LSResourceResolver : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<LSResourceResolver>
+    public partial class LSResourceResolver : MASES.JCOBridge.C2JBridge.JVMBridgeCore<LSResourceResolver>
     {
         const string _bridgeClassName = "org.w3c.dom.ls.LSResourceResolver";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Org.W3c.Dom.Ls
         public LSResourceResolver(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

@@ -29,7 +29,7 @@ namespace Java.Awt.ImageNs
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/RasterOp.html"/>
     /// </summary>
-    public partial class RasterOp : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<RasterOp>
+    public partial class RasterOp : MASES.JCOBridge.C2JBridge.JVMBridgeCore<RasterOp>
     {
         const string _bridgeClassName = "java.awt.image.RasterOp";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Awt.ImageNs
         public RasterOp(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

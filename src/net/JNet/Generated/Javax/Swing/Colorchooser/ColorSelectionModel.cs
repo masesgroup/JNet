@@ -29,7 +29,7 @@ namespace Javax.Swing.Colorchooser
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/colorchooser/ColorSelectionModel.html"/>
     /// </summary>
-    public partial class ColorSelectionModel : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ColorSelectionModel>
+    public partial class ColorSelectionModel : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ColorSelectionModel>
     {
         const string _bridgeClassName = "javax.swing.colorchooser.ColorSelectionModel";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Swing.Colorchooser
         public ColorSelectionModel(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

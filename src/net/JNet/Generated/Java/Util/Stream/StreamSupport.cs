@@ -29,7 +29,7 @@ namespace Java.Util.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/StreamSupport.html"/>
     /// </summary>
-    public partial class StreamSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<StreamSupport>
+    public partial class StreamSupport : MASES.JCOBridge.C2JBridge.JVMBridgeCore<StreamSupport>
     {
         const string _bridgeClassName = "java.util.stream.StreamSupport";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Java.Util.Stream
         public StreamSupport(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

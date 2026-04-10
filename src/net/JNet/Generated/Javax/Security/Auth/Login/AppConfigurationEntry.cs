@@ -29,7 +29,7 @@ namespace Javax.Security.Auth.Login
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/login/AppConfigurationEntry.html"/>
     /// </summary>
-    public partial class AppConfigurationEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AppConfigurationEntry>
+    public partial class AppConfigurationEntry : MASES.JCOBridge.C2JBridge.JVMBridgeCore<AppConfigurationEntry>
     {
         const string _bridgeClassName = "javax.security.auth.login.AppConfigurationEntry";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Javax.Security.Auth.Login
         public AppConfigurationEntry(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -62,7 +62,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html"/>
         /// </summary>
-        public partial class LoginModuleControlFlag : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<LoginModuleControlFlag>
+        public partial class LoginModuleControlFlag : MASES.JCOBridge.C2JBridge.JVMBridgeCore<LoginModuleControlFlag>
         {
             const string _bridgeClassName = "javax.security.auth.login.AppConfigurationEntry$LoginModuleControlFlag";
             /// <summary>
@@ -76,7 +76,7 @@ namespace Javax.Security.Auth.Login
             public LoginModuleControlFlag(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

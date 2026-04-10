@@ -29,7 +29,7 @@ namespace Javax.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ServerSocketFactory.html"/>
     /// </summary>
-    public partial class ServerSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ServerSocketFactory>
+    public partial class ServerSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ServerSocketFactory>
     {
         const string _bridgeClassName = "javax.net.ServerSocketFactory";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Net
         public ServerSocketFactory(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

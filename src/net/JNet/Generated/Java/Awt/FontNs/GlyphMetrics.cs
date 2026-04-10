@@ -29,7 +29,7 @@ namespace Java.Awt.FontNs
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/font/GlyphMetrics.html"/>
     /// </summary>
-    public partial class GlyphMetrics : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<GlyphMetrics>
+    public partial class GlyphMetrics : MASES.JCOBridge.C2JBridge.JVMBridgeCore<GlyphMetrics>
     {
         const string _bridgeClassName = "java.awt.font.GlyphMetrics";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Java.Awt.FontNs
         public GlyphMetrics(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
