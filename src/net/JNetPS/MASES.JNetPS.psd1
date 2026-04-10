@@ -8,7 +8,7 @@
 
 RootModule = 'MASES.JNetPS.psm1'
 
-ModuleVersion = '2.6.7'
+ModuleVersion = '2.6.8'
 
 CompatiblePSEditions = 'Desktop', 'Core'
 
