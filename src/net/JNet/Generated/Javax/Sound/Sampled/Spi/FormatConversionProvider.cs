@@ -29,7 +29,7 @@ namespace Javax.Sound.Sampled.Spi
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/spi/FormatConversionProvider.html"/>
     /// </summary>
-    public partial class FormatConversionProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<FormatConversionProvider>
+    public partial class FormatConversionProvider : MASES.JCOBridge.C2JBridge.JVMBridgeCore<FormatConversionProvider>
     {
         const string _bridgeClassName = "javax.sound.sampled.spi.FormatConversionProvider";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Sound.Sampled.Spi
         public FormatConversionProvider(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

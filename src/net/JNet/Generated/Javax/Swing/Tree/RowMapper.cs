@@ -29,7 +29,7 @@ namespace Javax.Swing.Tree
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/RowMapper.html"/>
     /// </summary>
-    public partial class RowMapper : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<RowMapper>
+    public partial class RowMapper : MASES.JCOBridge.C2JBridge.JVMBridgeCore<RowMapper>
     {
         const string _bridgeClassName = "javax.swing.tree.RowMapper";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Swing.Tree
         public RowMapper(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

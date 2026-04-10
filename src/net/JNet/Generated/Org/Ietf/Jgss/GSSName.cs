@@ -29,7 +29,7 @@ namespace Org.Ietf.Jgss
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/ietf/jgss/GSSName.html"/>
     /// </summary>
-    public partial class GSSName : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<GSSName>
+    public partial class GSSName : MASES.JCOBridge.C2JBridge.JVMBridgeCore<GSSName>
     {
         const string _bridgeClassName = "org.ietf.jgss.GSSName";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Org.Ietf.Jgss
         public GSSName(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

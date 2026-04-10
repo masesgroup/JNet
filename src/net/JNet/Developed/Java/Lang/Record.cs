@@ -23,7 +23,7 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html"/>
     /// </summary>
-    public class Record : JVMBridgeBaseCore<Record>
+    public class Record : JVMBridgeCore<Record>
     {
         /// <inheritdoc/>
         public Record() { }

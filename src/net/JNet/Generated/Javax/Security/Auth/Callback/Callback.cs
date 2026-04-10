@@ -29,7 +29,7 @@ namespace Javax.Security.Auth.Callback
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/callback/Callback.html"/>
     /// </summary>
-    public partial class Callback : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Callback>
+    public partial class Callback : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Callback>
     {
         const string _bridgeClassName = "javax.security.auth.callback.Callback";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Security.Auth.Callback
         public Callback(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

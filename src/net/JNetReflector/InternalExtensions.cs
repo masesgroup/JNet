@@ -1438,7 +1438,7 @@ namespace MASES.JNet.Reflector
                 string className = entry.JVMClassName(null, usedInGenerics, false);
                 return JNetReflectorCore.AlwaysUseIDisposablePattern 
                        || isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>"
-                                           : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{className}>";
+                                           : $"MASES.JCOBridge.C2JBridge.JVMBridgeCore<{className}>";
             }
             try
             {
@@ -1517,7 +1517,7 @@ namespace MASES.JNet.Reflector
                         string innerName = entry.JVMClassName(null, usedInGenerics, false);
                         return JNetReflectorCore.AlwaysUseIDisposablePattern
                                || isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{innerName}>"
-                                                   : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{innerName}>";
+                                                   : $"MASES.JCOBridge.C2JBridge.JVMBridgeCore<{innerName}>";
                     }
                 }
                 else if ((usedInGenerics || !entry.IsJVMGenericClass()) && superCls.IsJVMGenericClass())
@@ -1532,7 +1532,7 @@ namespace MASES.JNet.Reflector
                 string className = entry.JVMClassName(null, usedInGenerics, false);
                 return JNetReflectorCore.AlwaysUseIDisposablePattern
                        || isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>"
-                                           : $"MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<{className}>";
+                                           : $"MASES.JCOBridge.C2JBridge.JVMBridgeCore<{className}>";
             }
         }
 

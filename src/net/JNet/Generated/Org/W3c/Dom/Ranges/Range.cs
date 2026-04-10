@@ -29,7 +29,7 @@ namespace Org.W3c.Dom.Ranges
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/ranges/Range.html"/>
     /// </summary>
-    public partial class Range : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Range>
+    public partial class Range : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Range>
     {
         const string _bridgeClassName = "org.w3c.dom.ranges.Range";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Org.W3c.Dom.Ranges
         public Range(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

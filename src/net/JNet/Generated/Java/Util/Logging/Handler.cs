@@ -29,7 +29,7 @@ namespace Java.Util.Logging
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Handler.html"/>
     /// </summary>
-    public partial class Handler : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Handler>
+    public partial class Handler : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Handler>
     {
         const string _bridgeClassName = "java.util.logging.Handler";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Util.Logging
         public Handler(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

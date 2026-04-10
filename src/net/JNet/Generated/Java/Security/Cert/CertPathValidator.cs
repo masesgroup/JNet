@@ -29,7 +29,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/CertPathValidator.html"/>
     /// </summary>
-    public partial class CertPathValidator : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<CertPathValidator>
+    public partial class CertPathValidator : MASES.JCOBridge.C2JBridge.JVMBridgeCore<CertPathValidator>
     {
         const string _bridgeClassName = "java.security.cert.CertPathValidator";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Java.Security.Cert
         public CertPathValidator(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

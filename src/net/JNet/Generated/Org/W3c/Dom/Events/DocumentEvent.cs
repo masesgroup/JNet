@@ -29,7 +29,7 @@ namespace Org.W3c.Dom.Events
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/events/DocumentEvent.html"/>
     /// </summary>
-    public partial class DocumentEvent : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DocumentEvent>
+    public partial class DocumentEvent : MASES.JCOBridge.C2JBridge.JVMBridgeCore<DocumentEvent>
     {
         const string _bridgeClassName = "org.w3c.dom.events.DocumentEvent";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Org.W3c.Dom.Events
         public DocumentEvent(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

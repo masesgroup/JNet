@@ -29,7 +29,7 @@ namespace Java.Util.Jar
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.html"/>
     /// </summary>
-    public partial class Pack200 : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Pack200>
+    public partial class Pack200 : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Pack200>
     {
         const string _bridgeClassName = "java.util.jar.Pack200";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Util.Jar
         public Pack200(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -63,7 +63,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Packer.html"/>
         /// </summary>
-        public partial class Packer : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Packer>
+        public partial class Packer : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Packer>
         {
             const string _bridgeClassName = "java.util.jar.Pack200$Packer";
             /// <summary>
@@ -78,7 +78,7 @@ namespace Java.Util.Jar
             public Packer(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -101,7 +101,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Unpacker.html"/>
         /// </summary>
-        public partial class Unpacker : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Unpacker>
+        public partial class Unpacker : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Unpacker>
         {
             const string _bridgeClassName = "java.util.jar.Pack200$Unpacker";
             /// <summary>
@@ -116,7 +116,7 @@ namespace Java.Util.Jar
             public Unpacker(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

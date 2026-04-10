@@ -29,7 +29,7 @@ namespace Javax.Xml.Crypto
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/KeySelectorResult.html"/>
     /// </summary>
-    public partial class KeySelectorResult : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<KeySelectorResult>
+    public partial class KeySelectorResult : MASES.JCOBridge.C2JBridge.JVMBridgeCore<KeySelectorResult>
     {
         const string _bridgeClassName = "javax.xml.crypto.KeySelectorResult";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Xml.Crypto
         public KeySelectorResult(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

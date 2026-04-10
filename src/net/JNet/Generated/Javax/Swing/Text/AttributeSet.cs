@@ -29,7 +29,7 @@ namespace Javax.Swing.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/AttributeSet.html"/>
     /// </summary>
-    public partial class AttributeSet : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AttributeSet>
+    public partial class AttributeSet : MASES.JCOBridge.C2JBridge.JVMBridgeCore<AttributeSet>
     {
         const string _bridgeClassName = "javax.swing.text.AttributeSet";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Swing.Text
         public AttributeSet(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -63,7 +63,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/AttributeSet.CharacterAttribute.html"/>
         /// </summary>
-        public partial class CharacterAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<CharacterAttribute>
+        public partial class CharacterAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeCore<CharacterAttribute>
         {
             const string _bridgeClassName = "javax.swing.text.AttributeSet$CharacterAttribute";
             /// <summary>
@@ -78,7 +78,7 @@ namespace Javax.Swing.Text
             public CharacterAttribute(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -101,7 +101,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/AttributeSet.ColorAttribute.html"/>
         /// </summary>
-        public partial class ColorAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ColorAttribute>
+        public partial class ColorAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ColorAttribute>
         {
             const string _bridgeClassName = "javax.swing.text.AttributeSet$ColorAttribute";
             /// <summary>
@@ -116,7 +116,7 @@ namespace Javax.Swing.Text
             public ColorAttribute(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -139,7 +139,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/AttributeSet.FontAttribute.html"/>
         /// </summary>
-        public partial class FontAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<FontAttribute>
+        public partial class FontAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeCore<FontAttribute>
         {
             const string _bridgeClassName = "javax.swing.text.AttributeSet$FontAttribute";
             /// <summary>
@@ -154,7 +154,7 @@ namespace Javax.Swing.Text
             public FontAttribute(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -177,7 +177,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/AttributeSet.ParagraphAttribute.html"/>
         /// </summary>
-        public partial class ParagraphAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<ParagraphAttribute>
+        public partial class ParagraphAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ParagraphAttribute>
         {
             const string _bridgeClassName = "javax.swing.text.AttributeSet$ParagraphAttribute";
             /// <summary>
@@ -192,7 +192,7 @@ namespace Javax.Swing.Text
             public ParagraphAttribute(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
