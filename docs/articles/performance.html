@@ -89,7 +89,7 @@
 
 <p>This page reports benchmark results for the core JNet interop primitives: JVM method invocation from .NET and JVM→.NET callback latency.
 All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHub Actions</a> runners and are repeated automatically on each release across supported .NET and JDK versions.</p>
-<p>Results are reported for two JCOBridge versions — 2.6.6 and 2.6.7 — and two runtime combinations. See <a href="https://www.jcobridge.com/release-notes/">JCOBridge release notes</a> for details.</p>
+<p>Results are reported for two JCOBridge versions — 2.6.6 and 2.6.7+ — and two runtime combinations. See <a href="https://www.jcobridge.com/release-notes/">JCOBridge release notes</a> for details.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Benchmarks are run on shared GitHub-hosted runners. Absolute numbers reflect that environment and should be read comparatively rather than as absolute throughput figures for a dedicated host.</p>
@@ -146,14 +146,14 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <p>A .NET-initiated test: .NET triggers a JVM call which immediately fires a callback back into .NET. Provides a controlled start-time marker and measures the full bidirectional round-trip. In real usage the JVM initiates the event — see <code>TestPredicateSustained</code> for the realistic reference.</p>
 <h3 id="callback-testpredicatesustained-jvm--net-sustained">Callback: <code>TestPredicateSustained</code> (JVM → .NET, sustained)</h3>
 <p>A JVM-initiated test: .NET sends a single start command to JVM, which then fires 1 000 000 callback events toward the CLR autonomously without returning control to .NET. After all events are fired, the JVM returns and .NET measures the total elapsed time. Aside from the single startup call, this measures the pure cost of receiving a sustained stream of JVM-originated events — the scenario matching real-world usage (e.g. Kafka Streams functional interfaces, AWT event listeners).</p>
-<p>Both callback tests share two configuration axes (2.6.7 only):</p>
+<p>Both callback tests share two configuration axes (2.6.7+ only):</p>
 <p><strong><code>byIndex</code> — event trigger identification:</strong></p>
 <ul>
 <li><strong><code>byIndex = false</code></strong> — the event is identified on the CLR side by a string key lookup.</li>
 <li><strong><code>byIndex = true</code></strong> — the event is identified on the CLR side by a numeric index, without any JVM call. In both cases, JVM object arguments are retrieved as JVM objects after the trigger is received.</li>
 </ul>
-<p><strong>Two-level early-discard filter (<code>ShallManageEvent</code>, 2.6.7+):</strong></p>
-<p>JCOBridge 2.6.7 introduces two overloads of <code>ShallManageEvent</code> on the JNet callback base class, forming a two-gate filter applied before full event handling:</p>
+<p><strong>Two-level early-discard filter (<code>ShallManageEvent</code>, 2.6.7++):</strong></p>
+<p>JCOBridge 2.6.7+ introduces two overloads of <code>ShallManageEvent</code> on the JNet callback base class, forming a two-gate filter applied before full event handling:</p>
 <p><strong>First gate — <code>bool ShallManageEvent(string eventName)</code>:</strong> called before any argument data is read from the JVM. The return value:</p>
 <ul>
 <li><strong><code>false</code></strong> (<code>continueFirstCheck = false</code>) — discard immediately: no data is read, the handler is not invoked.</li>
@@ -274,8 +274,8 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 </table>
 <p><code>Sustained</code> is the realistic reference for JVM-originated callback cost: <strong>~6.1 µs (.NET 8 / T17) and ~5.5 µs (.NET 10 / T25).</strong></p>
 <hr>
-<h2 id="jcobridge-267">JCOBridge 2.6.7</h2>
-<p>JCOBridge 2.6.7 introduces the two-level <code>ShallManageEvent</code> filter and the native <code>byIndex</code> trigger mechanism. General interop improvements reduce baseline overhead across all test types.</p>
+<h2 id="jcobridge-267">JCOBridge 2.6.7+</h2>
+<p>JCOBridge 2.6.7+ introduces the two-level <code>ShallManageEvent</code> filter and the native <code>byIndex</code> trigger mechanism. General interop improvements reduce baseline overhead across all test types.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p><code>byIndex = true</code> is still simulated on the JVM side by invoking a dedicated class method rather than the interface <code>@Override</code>. The CLR-side numeric index resolution is fully active; a JVM dispatch difference (class method vs interface method) remains. The <code>byIndex = false</code> rows use the real interface override and are directly comparable between the two versions.</p>
@@ -545,9 +545,9 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <tr>
 <td></td>
 <td>2.6.6</td>
-<td>2.6.7</td>
+<td>2.6.7+</td>
 <td>2.6.6</td>
-<td>2.6.7</td>
+<td>2.6.7+</td>
 </tr>
 <tr>
 <td>Static <code>Invoke</code> fb=false</td>
@@ -649,7 +649,7 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 </tr>
 </tbody>
 </table>
-<p>¹ <code>byIndex = true</code> simulated on the JVM side in 2.6.7 — see notes above. No 2.6.6 baseline available.</p>
+<p>¹ <code>byIndex = true</code> simulated on the JVM side in 2.6.7+ — see notes above. No 2.6.6 baseline available.</p>
 <h3 id="comparison-with-raw-jni-overhead">Comparison with raw JNI overhead</h3>
 <p>The 41–45 ns figure for <code>byIndex = true</code>, first-gate discard (Sustained) is worth contextualizing against published raw JNI benchmarks on dedicated hardware. Independent JMH benchmarks measure an empty JNI call at ~57 ns via JavaCPP and ~22 ns on a modern laptop for a minimal no-op native method (<a href="https://github.com/zakgof/java-native-benchmark">java-native-benchmark</a>, <a href="https://dkomanov.medium.com/java-native-access-performance-cf4ce0d68ddb">Komanov 2022</a>).</p>
 <p>JNet's first-gate discard path involves a JVM→CLR crossing, the numeric index lookup, and the <code>ShallManageEvent</code> decision — all on shared CI infrastructure. Reaching ~41–45 ns per event places JNet within the range of raw JNI call overhead measured on dedicated bare-metal hardware, despite the additional CLR interop layer.</p>
@@ -657,7 +657,7 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <h2 id="guidance">Guidance</h2>
 <ul>
 <li><strong>Prefer <code>InvokeWithSignature</code></strong> (<code>IWS</code>) over <code>Invoke</code> in hot paths — it avoids .NET-side type matching on every call and consistently delivers 20–40% lower latency when arguments are involved.</li>
-<li><strong>The realistic JVM-originated callback reference</strong> is <code>Sustained</code>, full processing, <code>byIndex = false</code>: ~5.1 µs (.NET 8 / T17) and ~4.7 µs (.NET 10 / T25) in 2.6.7. With <code>byIndex = true</code> this drops to ~4.5 µs and ~4.1 µs.</li>
+<li><strong>The realistic JVM-originated callback reference</strong> is <code>Sustained</code>, full processing, <code>byIndex = false</code>: ~5.1 µs (.NET 8 / T17) and ~4.7 µs (.NET 10 / T25) in 2.6.7+. With <code>byIndex = true</code> this drops to ~4.5 µs and ~4.1 µs.</li>
 <li><strong>Use the two-level <code>ShallManageEvent</code> filter</strong> for high-event-rate sources where only a subset of events require full processing:
 <ul>
 <li>First gate (<code>ShallManageEventHandler</code>) — discard by event name alone, before any data read: ~45 ns (.NET 8) / ~41 ns (.NET 10) with <code>byIndex = true</code>.</li>

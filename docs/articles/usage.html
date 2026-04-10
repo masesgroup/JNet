@@ -264,7 +264,10 @@ namespace MASES.JNetExample
 The <code>SuppressFinalize</code>/<code>ReRegisterForFinalize</code> pattern is useful when refactoring to <code>using</code> blocks is not practical.</p>
 </div>
 <h3 id="using-or-try-finally-with-dispose"><code>using</code> or <code>try-finally</code> with <code>Dispose</code></h3>
-<p>All JNet classes implement <code>IDisposable</code>. Wrapping the object in a <code>using</code> block keeps it alive and releases the JVM reference deterministically:</p>
+<p>From 2.6.7+ version only JNet classes extending <code>AutoCloseable</code> implement <code>IDisposable</code>.
+Naturally the <code>using</code> block replaces the equivalent <code>try-with-resources</code> of Java and reference is not collected till the end of the object usage.
+For all other classes without <code>IDisposable</code> (i.e. does not represent an <code>AutoCloseable</code> class), JCOBridge 2.6.8 introduces the <code>JVMBridgeCoreDisposable</code> which wraps the input object, make the reference alive and exposes an <code>IDisposable</code> interface.
+Wrapping the object in a <code>using</code> block keeps it alive and releases the JVM reference deterministically:</p>
 <pre><code class="lang-csharp">using Java.Util;
 using MASES.JNet.Extensions;
 using System.Diagnostics;
@@ -281,7 +284,8 @@ namespace MASES.JNetExample
             MyJNetCore.CreateGlobalInstance();
             try
             {
-                using (Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;))
+                Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;);
+                using (var disposeable = JVMBridgeCoreDisposable.Create(set)) // or using (var disposeable = set.ToDisposeable())
                 {
                     ArrayList&lt;string&gt; arrayList = new();
                     arrayList.AddAll(0, set);
@@ -309,14 +313,14 @@ namespace MASES.JNetExample
             MyJNetCore.CreateGlobalInstance();
             try
             {
-                Java.Util.Set&lt;string&gt; set = null;
+                Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;);
+                var disposeable = JVMBridgeCoreDisposable.Create(set); // or var disposeable = set.ToDisposeable();
                 try
                 {
-                    set = Collections.Singleton(&quot;test&quot;);
                     ArrayList&lt;string&gt; arrayList = new();
                     arrayList.AddAll(0, set);
                 }
-                finally { set?.Dispose(); }
+                finally { disposeable?.Dispose(); }
             }
             catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
         }
