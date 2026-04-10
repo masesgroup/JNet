@@ -29,7 +29,7 @@ namespace Java.Util.Prefs
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/prefs/PreferencesFactory.html"/>
     /// </summary>
-    public partial class PreferencesFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<PreferencesFactory>
+    public partial class PreferencesFactory : MASES.JCOBridge.C2JBridge.JVMBridgeCore<PreferencesFactory>
     {
         const string _bridgeClassName = "java.util.prefs.PreferencesFactory";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Util.Prefs
         public PreferencesFactory(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

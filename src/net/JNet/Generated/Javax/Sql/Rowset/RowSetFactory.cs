@@ -29,7 +29,7 @@ namespace Javax.Sql.Rowset
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/RowSetFactory.html"/>
     /// </summary>
-    public partial class RowSetFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<RowSetFactory>
+    public partial class RowSetFactory : MASES.JCOBridge.C2JBridge.JVMBridgeCore<RowSetFactory>
     {
         const string _bridgeClassName = "javax.sql.rowset.RowSetFactory";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Sql.Rowset
         public RowSetFactory(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

@@ -29,7 +29,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/BeanInfo.html"/>
     /// </summary>
-    public partial class BeanInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<BeanInfo>
+    public partial class BeanInfo : MASES.JCOBridge.C2JBridge.JVMBridgeCore<BeanInfo>
     {
         const string _bridgeClassName = "java.beans.BeanInfo";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Beans
         public BeanInfo(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

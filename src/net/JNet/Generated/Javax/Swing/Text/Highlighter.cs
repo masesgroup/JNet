@@ -29,7 +29,7 @@ namespace Javax.Swing.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Highlighter.html"/>
     /// </summary>
-    public partial class Highlighter : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Highlighter>
+    public partial class Highlighter : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Highlighter>
     {
         const string _bridgeClassName = "javax.swing.text.Highlighter";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Swing.Text
         public Highlighter(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -63,7 +63,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Highlighter.Highlight.html"/>
         /// </summary>
-        public partial class Highlight : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Highlight>
+        public partial class Highlight : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Highlight>
         {
             const string _bridgeClassName = "javax.swing.text.Highlighter$Highlight";
             /// <summary>
@@ -78,7 +78,7 @@ namespace Javax.Swing.Text
             public Highlight(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -101,7 +101,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Highlighter.HighlightPainter.html"/>
         /// </summary>
-        public partial class HighlightPainter : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<HighlightPainter>
+        public partial class HighlightPainter : MASES.JCOBridge.C2JBridge.JVMBridgeCore<HighlightPainter>
         {
             const string _bridgeClassName = "javax.swing.text.Highlighter$HighlightPainter";
             /// <summary>
@@ -116,7 +116,7 @@ namespace Javax.Swing.Text
             public HighlightPainter(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

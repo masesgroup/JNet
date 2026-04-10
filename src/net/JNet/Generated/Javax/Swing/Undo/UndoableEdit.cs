@@ -29,7 +29,7 @@ namespace Javax.Swing.Undo
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/undo/UndoableEdit.html"/>
     /// </summary>
-    public partial class UndoableEdit : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<UndoableEdit>
+    public partial class UndoableEdit : MASES.JCOBridge.C2JBridge.JVMBridgeCore<UndoableEdit>
     {
         const string _bridgeClassName = "javax.swing.undo.UndoableEdit";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Swing.Undo
         public UndoableEdit(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

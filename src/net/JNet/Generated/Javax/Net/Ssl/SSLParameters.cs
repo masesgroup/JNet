@@ -29,7 +29,7 @@ namespace Javax.Net.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLParameters.html"/>
     /// </summary>
-    public partial class SSLParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<SSLParameters>
+    public partial class SSLParameters : MASES.JCOBridge.C2JBridge.JVMBridgeCore<SSLParameters>
     {
         const string _bridgeClassName = "javax.net.ssl.SSLParameters";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Javax.Net.Ssl
         public SSLParameters(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

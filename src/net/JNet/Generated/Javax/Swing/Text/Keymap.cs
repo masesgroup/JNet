@@ -29,7 +29,7 @@ namespace Javax.Swing.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Keymap.html"/>
     /// </summary>
-    public partial class Keymap : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Keymap>
+    public partial class Keymap : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Keymap>
     {
         const string _bridgeClassName = "javax.swing.text.Keymap";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Swing.Text
         public Keymap(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

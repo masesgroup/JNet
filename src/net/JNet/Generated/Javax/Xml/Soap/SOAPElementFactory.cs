@@ -29,7 +29,7 @@ namespace Javax.Xml.Soap
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/soap/SOAPElementFactory.html"/>
     /// </summary>
-    public partial class SOAPElementFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<SOAPElementFactory>
+    public partial class SOAPElementFactory : MASES.JCOBridge.C2JBridge.JVMBridgeCore<SOAPElementFactory>
     {
         const string _bridgeClassName = "javax.xml.soap.SOAPElementFactory";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Javax.Xml.Soap
         public SOAPElementFactory(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

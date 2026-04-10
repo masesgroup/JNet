@@ -29,7 +29,7 @@ namespace Javax.Xml.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/stream/XMLReporter.html"/>
     /// </summary>
-    public partial class XMLReporter : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<XMLReporter>
+    public partial class XMLReporter : MASES.JCOBridge.C2JBridge.JVMBridgeCore<XMLReporter>
     {
         const string _bridgeClassName = "javax.xml.stream.XMLReporter";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Xml.Stream
         public XMLReporter(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

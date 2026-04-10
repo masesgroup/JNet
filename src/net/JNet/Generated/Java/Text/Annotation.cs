@@ -29,7 +29,7 @@ namespace Java.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/Annotation.html"/>
     /// </summary>
-    public partial class Annotation : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<Annotation>
+    public partial class Annotation : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Annotation>
     {
         const string _bridgeClassName = "java.text.Annotation";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Java.Text
         public Annotation(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

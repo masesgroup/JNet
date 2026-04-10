@@ -29,7 +29,7 @@ namespace Javax.Xml.Bind
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/DatatypeConverter.html"/>
     /// </summary>
-    public partial class DatatypeConverter : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<DatatypeConverter>
+    public partial class DatatypeConverter : MASES.JCOBridge.C2JBridge.JVMBridgeCore<DatatypeConverter>
     {
         const string _bridgeClassName = "javax.xml.bind.DatatypeConverter";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Javax.Xml.Bind
         public DatatypeConverter(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

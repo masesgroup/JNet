@@ -29,7 +29,7 @@ namespace Javax.Xml.Crypto
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/XMLStructure.html"/>
     /// </summary>
-    public partial class XMLStructure : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<XMLStructure>
+    public partial class XMLStructure : MASES.JCOBridge.C2JBridge.JVMBridgeCore<XMLStructure>
     {
         const string _bridgeClassName = "javax.xml.crypto.XMLStructure";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Xml.Crypto
         public XMLStructure(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

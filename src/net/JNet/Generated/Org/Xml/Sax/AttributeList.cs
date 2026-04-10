@@ -29,7 +29,7 @@ namespace Org.Xml.Sax
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/AttributeList.html"/>
     /// </summary>
-    public partial class AttributeList : MASES.JCOBridge.C2JBridge.JVMBridgeBaseCore<AttributeList>
+    public partial class AttributeList : MASES.JCOBridge.C2JBridge.JVMBridgeCore<AttributeList>
     {
         const string _bridgeClassName = "org.xml.sax.AttributeList";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Org.Xml.Sax
         public AttributeList(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
