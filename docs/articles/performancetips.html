@@ -156,7 +156,7 @@ boundary crossing is strictly necessary.</li>
 </div>
 <h2 id="discard-unwanted-jvm-events-early-with-shallmanageevent">Discard unwanted JVM™ events early with <code>ShallManageEvent</code></h2>
 <p>When a JVM™ class fires events toward the CLR — for example an AWT component, a Kafka Streams functional interface, or any JNet callback wrapper — the standard flow reads argument data from the JVM™ before invoking the registered handler. For sources that produce many event types, most of them may have no handler registered in the application. Reading and converting argument data for events that will be immediately discarded is wasted work.</p>
-<p>JCOBridge 2.6.7 introduces a two-level filter applied before full event handling, through two overloads of <code>ShallManageEvent</code> on the JNet callback base class.</p>
+<p>JCOBridge 2.6.7+ introduces a two-level filter applied before full event handling, through two overloads of <code>ShallManageEvent</code> on the JNet callback base class.</p>
 <h3 id="first-gate--bool-shallmanageeventstring-eventname">First gate — <code>bool ShallManageEvent(string eventName)</code></h3>
 <p>Called before any argument data is read from the JVM. Receives only the event name. Return <code>false</code> to discard immediately (no data read, handler not invoked); return <code>true</code> to proceed to the second gate.</p>
 <h3 id="second-gate--bool-shallmanageeventstring-eventname-object-data">Second gate — <code>bool ShallManageEvent(string eventName, object data)</code></h3>
@@ -166,7 +166,7 @@ boundary crossing is strictly necessary.</li>
 <h5>Note</h5>
 <p>The combination &quot;first gate returns <code>false</code>, second gate returns <code>true</code>&quot; is never reached — if the first gate discards, the second gate is not called.</p>
 </div>
-<p>Default for both gates is <code>true</code> (full processing). Both overloads are available from JCOBridge 2.6.7.</p>
+<p>Default for both gates is <code>true</code> (full processing). Both overloads are available from JCOBridge 2.6.7+.</p>
 <h3 id="usage">Usage</h3>
 <p>Override both gates on a callback subclass:</p>
 <pre><code class="lang-csharp">public class MyActionListener : Java.Awt.Event.ActionListener
@@ -199,7 +199,7 @@ listener.ShallManageEventWithDataHandler = (eventName, data) =&gt; data is Java.
 listener.ActionPerformed += e =&gt; { /* handle */ };
 </code></pre>
 <h3 id="performance-impact">Performance impact</h3>
-<p>The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7, 1 000 000 iterations):</p>
+<p>The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7+, 1 000 000 iterations):</p>
 <table>
 <thead>
 <tr>
@@ -267,7 +267,7 @@ listener.ActionPerformed += e =&gt; { /* handle */ };
 </div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Both <code>ShallManageEvent</code> overloads are available from JCOBridge 2.6.7. On earlier versions all events follow the full data-read path regardless of whether a handler is registered.</p>
+<p>Both <code>ShallManageEvent</code> overloads are available from JCOBridge 2.6.7+. On earlier versions all events follow the full data-read path regardless of whether a handler is registered.</p>
 </div>
 <h2 id="memory-transfer-at-clr-jvm-boundary">Memory transfer at CLR-JVM™ boundary</h2>
 <p>JNet provides APIs to manage data exchange at the CLR-JVM™ boundary using
