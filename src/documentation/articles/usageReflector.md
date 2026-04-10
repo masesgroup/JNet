@@ -76,7 +76,7 @@ _jnetreflector_ accepts the following command-line switch:
 * **DoNotCamel**: Does not use camelized names in methods, class and so on
 * **TraceLevel**: The level of traces to be reported: 0 - Critical ... 5 - Verbose
 * **TraceTo**: The file name where traces will be write, default write to console
-* **AlwaysUseIDisposablePattern**: The generator do not use the JCOBridge base class without IDisposable (JVMBridgeBaseCore) and fallback to previous class JVMBridgeBase
+* **AlwaysUseIDisposablePattern**: The generator do not use the JCOBridge base class without IDisposable (JVMBridgeCore) and fallback to previous class JVMBridgeBase
 
 ## JNet reflected classes
 
