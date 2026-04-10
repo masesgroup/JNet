@@ -160,7 +160,7 @@ namespace MASES.JNet.Reflector.Templates
 
             public static string LISTENER_CLASS_BLOCK = "    const string _bridgeClassName = \"ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER\";" + Environment.NewLine
                                                       + "    private static readonly global::System.Exception _LocalBridgeClazzException = null;" + Environment.NewLine
-                                                      + "    private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBaseCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);" + Environment.NewLine
+                                                      + "    private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);" + Environment.NewLine
                                                       + "    private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($\"Class {_bridgeClassName} was not found.\");" + Environment.NewLine
                                                       + "    " + Environment.NewLine
                                                       + "    /// <inheritdoc />" + Environment.NewLine
