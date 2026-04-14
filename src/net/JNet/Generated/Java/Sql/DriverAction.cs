@@ -29,7 +29,7 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/DriverAction.html"/>
     /// </summary>
-    public partial class DriverAction : MASES.JCOBridge.C2JBridge.JVMBridgeCore<DriverAction>
+    public partial class DriverAction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DriverAction>
     {
         const string _bridgeClassName = "java.sql.DriverAction";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Sql
         public DriverAction(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

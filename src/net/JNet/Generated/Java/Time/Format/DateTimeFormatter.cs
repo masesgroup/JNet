@@ -29,7 +29,7 @@ namespace Java.Time.Format
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html"/>
     /// </summary>
-    public partial class DateTimeFormatter : MASES.JCOBridge.C2JBridge.JVMBridgeCore<DateTimeFormatter>
+    public partial class DateTimeFormatter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DateTimeFormatter>
     {
         const string _bridgeClassName = "java.time.format.DateTimeFormatter";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Java.Time.Format
         public DateTimeFormatter(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

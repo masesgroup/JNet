@@ -29,7 +29,7 @@ namespace Org.Xml.Sax
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/InputSource.html"/>
     /// </summary>
-    public partial class InputSource : MASES.JCOBridge.C2JBridge.JVMBridgeCore<InputSource>
+    public partial class InputSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputSource>
     {
         const string _bridgeClassName = "org.xml.sax.InputSource";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Org.Xml.Sax
         public InputSource(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

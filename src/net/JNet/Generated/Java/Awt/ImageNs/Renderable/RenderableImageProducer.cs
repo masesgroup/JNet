@@ -29,7 +29,7 @@ namespace Java.Awt.ImageNs.Renderable
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/RenderableImageProducer.html"/>
     /// </summary>
-    public partial class RenderableImageProducer : MASES.JCOBridge.C2JBridge.JVMBridgeCore<RenderableImageProducer>
+    public partial class RenderableImageProducer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderableImageProducer>
     {
         const string _bridgeClassName = "java.awt.image.renderable.RenderableImageProducer";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Java.Awt.ImageNs.Renderable
         public RenderableImageProducer(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
