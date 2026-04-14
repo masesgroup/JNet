@@ -164,8 +164,6 @@ namespace MASES.JNet.Reflector
             public int TraceLevel { get; set; }
 
             public string TraceTo { get; set; }
-
-            public bool AlwaysUseIDisposablePattern { get; set; }
         }
 
         #region Initialization
@@ -601,9 +599,6 @@ namespace MASES.JNet.Reflector
         static string _TraceTo;
         public static string TraceTo => _TraceTo ?? _ConfigurationFromFile.TraceTo;
 
-        static bool? _AlwaysUseIDisposablePattern;
-        public static bool AlwaysUseIDisposablePattern => _AlwaysUseIDisposablePattern ?? _ConfigurationFromFile.AlwaysUseIDisposablePattern;
-
         /// <inheritdoc cref="JNetCoreBase{T}.ProcessCommandLine"/>
         protected override string[] ProcessCommandLine()
         {
@@ -836,7 +831,6 @@ namespace MASES.JNet.Reflector
             if (ParsedArgs.Exist(CLIParam.AvoidParallelBuild)) _AvoidParallelBuild = true;
             if (ParsedArgs.Exist(CLIParam.DryRun)) _DryRun = true;
             if (ParsedArgs.Exist(CLIParam.DoNotCamel)) _UseCamel = false;
-            if (ParsedArgs.Exist(CLIParam.AlwaysUseIDisposablePattern)) _AlwaysUseIDisposablePattern = true;
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
             _TraceTo = ParsedArgs.Get<string>(CLIParam.TraceTo);
 
