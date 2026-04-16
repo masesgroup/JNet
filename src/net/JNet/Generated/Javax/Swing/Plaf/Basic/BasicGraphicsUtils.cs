@@ -29,7 +29,7 @@ namespace Javax.Swing.Plaf.Basic
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicGraphicsUtils.html"/>
     /// </summary>
-    public partial class BasicGraphicsUtils : MASES.JCOBridge.C2JBridge.JVMBridgeCore<BasicGraphicsUtils>
+    public partial class BasicGraphicsUtils : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicGraphicsUtils>
     {
         const string _bridgeClassName = "javax.swing.plaf.basic.BasicGraphicsUtils";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Javax.Swing.Plaf.Basic
         public BasicGraphicsUtils(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

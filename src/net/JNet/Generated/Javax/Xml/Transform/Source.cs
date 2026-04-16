@@ -29,7 +29,7 @@ namespace Javax.Xml.Transform
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/Source.html"/>
     /// </summary>
-    public partial class Source : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Source>
+    public partial class Source : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Source>
     {
         const string _bridgeClassName = "javax.xml.transform.Source";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Xml.Transform
         public Source(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

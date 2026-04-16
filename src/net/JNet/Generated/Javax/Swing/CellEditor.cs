@@ -29,7 +29,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/CellEditor.html"/>
     /// </summary>
-    public partial class CellEditor : MASES.JCOBridge.C2JBridge.JVMBridgeCore<CellEditor>
+    public partial class CellEditor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CellEditor>
     {
         const string _bridgeClassName = "javax.swing.CellEditor";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Swing
         public CellEditor(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

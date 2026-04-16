@@ -29,7 +29,7 @@ namespace Javax.Management.Modelmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/ModelMBean.html"/>
     /// </summary>
-    public partial class ModelMBean : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ModelMBean>
+    public partial class ModelMBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ModelMBean>
     {
         const string _bridgeClassName = "javax.management.modelmbean.ModelMBean";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Management.Modelmbean
         public ModelMBean(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

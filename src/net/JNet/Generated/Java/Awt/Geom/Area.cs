@@ -29,7 +29,7 @@ namespace Java.Awt.Geom
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Area.html"/>
     /// </summary>
-    public partial class Area : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Area>
+    public partial class Area : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Area>
     {
         const string _bridgeClassName = "java.awt.geom.Area";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Java.Awt.Geom
         public Area(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
