@@ -29,7 +29,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RelationSupport.html"/>
     /// </summary>
-    public partial class RelationSupport : MASES.JCOBridge.C2JBridge.JVMBridgeCore<RelationSupport>
+    public partial class RelationSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RelationSupport>
     {
         const string _bridgeClassName = "javax.management.relation.RelationSupport";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Javax.Management.Relation
         public RelationSupport(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

@@ -43,7 +43,7 @@ namespace Javax.Swing.Plaf.Basic
         public BasicSplitPaneUI(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -76,7 +76,7 @@ namespace Javax.Swing.Plaf.Basic
             public BasicHorizontalLayoutManager(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -113,7 +113,7 @@ namespace Javax.Swing.Plaf.Basic
             public BasicVerticalLayoutManager(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -136,7 +136,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardDownRightHandler.html"/>
         /// </summary>
-        public partial class KeyboardDownRightHandler : MASES.JCOBridge.C2JBridge.JVMBridgeCore<KeyboardDownRightHandler>
+        public partial class KeyboardDownRightHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyboardDownRightHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicSplitPaneUI$KeyboardDownRightHandler";
             /// <summary>
@@ -150,7 +150,7 @@ namespace Javax.Swing.Plaf.Basic
             public KeyboardDownRightHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -173,7 +173,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardEndHandler.html"/>
         /// </summary>
-        public partial class KeyboardEndHandler : MASES.JCOBridge.C2JBridge.JVMBridgeCore<KeyboardEndHandler>
+        public partial class KeyboardEndHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyboardEndHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicSplitPaneUI$KeyboardEndHandler";
             /// <summary>
@@ -187,7 +187,7 @@ namespace Javax.Swing.Plaf.Basic
             public KeyboardEndHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -210,7 +210,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardHomeHandler.html"/>
         /// </summary>
-        public partial class KeyboardHomeHandler : MASES.JCOBridge.C2JBridge.JVMBridgeCore<KeyboardHomeHandler>
+        public partial class KeyboardHomeHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyboardHomeHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicSplitPaneUI$KeyboardHomeHandler";
             /// <summary>
@@ -224,7 +224,7 @@ namespace Javax.Swing.Plaf.Basic
             public KeyboardHomeHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -247,7 +247,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardResizeToggleHandler.html"/>
         /// </summary>
-        public partial class KeyboardResizeToggleHandler : MASES.JCOBridge.C2JBridge.JVMBridgeCore<KeyboardResizeToggleHandler>
+        public partial class KeyboardResizeToggleHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyboardResizeToggleHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicSplitPaneUI$KeyboardResizeToggleHandler";
             /// <summary>
@@ -261,7 +261,7 @@ namespace Javax.Swing.Plaf.Basic
             public KeyboardResizeToggleHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -284,7 +284,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardUpLeftHandler.html"/>
         /// </summary>
-        public partial class KeyboardUpLeftHandler : MASES.JCOBridge.C2JBridge.JVMBridgeCore<KeyboardUpLeftHandler>
+        public partial class KeyboardUpLeftHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyboardUpLeftHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicSplitPaneUI$KeyboardUpLeftHandler";
             /// <summary>
@@ -298,7 +298,7 @@ namespace Javax.Swing.Plaf.Basic
             public KeyboardUpLeftHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -321,7 +321,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicSplitPaneUI.PropertyHandler.html"/>
         /// </summary>
-        public partial class PropertyHandler : MASES.JCOBridge.C2JBridge.JVMBridgeCore<PropertyHandler>
+        public partial class PropertyHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PropertyHandler>
         {
             const string _bridgeClassName = "javax.swing.plaf.basic.BasicSplitPaneUI$PropertyHandler";
             /// <summary>
@@ -335,7 +335,7 @@ namespace Javax.Swing.Plaf.Basic
             public PropertyHandler(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

@@ -43,7 +43,7 @@ namespace Javax.Swing
         public TransferHandler(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -62,7 +62,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/TransferHandler.DropLocation.html"/>
         /// </summary>
-        public partial class DropLocation : MASES.JCOBridge.C2JBridge.JVMBridgeCore<DropLocation>
+        public partial class DropLocation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DropLocation>
         {
             const string _bridgeClassName = "javax.swing.TransferHandler$DropLocation";
             /// <summary>
@@ -76,7 +76,7 @@ namespace Javax.Swing
             public DropLocation(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -99,7 +99,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/TransferHandler.TransferSupport.html"/>
         /// </summary>
-        public partial class TransferSupport : MASES.JCOBridge.C2JBridge.JVMBridgeCore<TransferSupport>
+        public partial class TransferSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TransferSupport>
         {
             const string _bridgeClassName = "javax.swing.TransferHandler$TransferSupport";
             /// <summary>
@@ -113,7 +113,7 @@ namespace Javax.Swing
             public TransferSupport(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

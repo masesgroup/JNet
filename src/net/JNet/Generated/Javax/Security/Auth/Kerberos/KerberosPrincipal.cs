@@ -29,7 +29,7 @@ namespace Javax.Security.Auth.Kerberos
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/kerberos/KerberosPrincipal.html"/>
     /// </summary>
-    public partial class KerberosPrincipal : MASES.JCOBridge.C2JBridge.JVMBridgeCore<KerberosPrincipal>
+    public partial class KerberosPrincipal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KerberosPrincipal>
     {
         const string _bridgeClassName = "javax.security.auth.kerberos.KerberosPrincipal";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Javax.Security.Auth.Kerberos
         public KerberosPrincipal(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

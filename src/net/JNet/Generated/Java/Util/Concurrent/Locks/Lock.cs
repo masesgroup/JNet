@@ -29,7 +29,7 @@ namespace Java.Util.Concurrent.Locks
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/Lock.html"/>
     /// </summary>
-    public partial class Lock : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Lock>
+    public partial class Lock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Lock>
     {
         const string _bridgeClassName = "java.util.concurrent.locks.Lock";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Util.Concurrent.Locks
         public Lock(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

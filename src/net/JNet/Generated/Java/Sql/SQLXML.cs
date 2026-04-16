@@ -29,7 +29,7 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLXML.html"/>
     /// </summary>
-    public partial class SQLXML : MASES.JCOBridge.C2JBridge.JVMBridgeCore<SQLXML>
+    public partial class SQLXML : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SQLXML>
     {
         const string _bridgeClassName = "java.sql.SQLXML";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Sql
         public SQLXML(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

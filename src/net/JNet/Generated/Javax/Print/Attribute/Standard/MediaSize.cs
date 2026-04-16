@@ -43,7 +43,7 @@ namespace Javax.Print.Attribute.Standard
         public MediaSize(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -62,7 +62,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/MediaSize.Engineering.html"/>
         /// </summary>
-        public partial class Engineering : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Engineering>
+        public partial class Engineering : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Engineering>
         {
             const string _bridgeClassName = "javax.print.attribute.standard.MediaSize$Engineering";
             /// <summary>
@@ -76,7 +76,7 @@ namespace Javax.Print.Attribute.Standard
             public Engineering(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -99,7 +99,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/MediaSize.ISO.html"/>
         /// </summary>
-        public partial class ISO : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ISO>
+        public partial class ISO : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ISO>
         {
             const string _bridgeClassName = "javax.print.attribute.standard.MediaSize$ISO";
             /// <summary>
@@ -113,7 +113,7 @@ namespace Javax.Print.Attribute.Standard
             public ISO(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -136,7 +136,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/MediaSize.JIS.html"/>
         /// </summary>
-        public partial class JIS : MASES.JCOBridge.C2JBridge.JVMBridgeCore<JIS>
+        public partial class JIS : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JIS>
         {
             const string _bridgeClassName = "javax.print.attribute.standard.MediaSize$JIS";
             /// <summary>
@@ -150,7 +150,7 @@ namespace Javax.Print.Attribute.Standard
             public JIS(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -173,7 +173,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/MediaSize.NA.html"/>
         /// </summary>
-        public partial class NA : MASES.JCOBridge.C2JBridge.JVMBridgeCore<NA>
+        public partial class NA : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NA>
         {
             const string _bridgeClassName = "javax.print.attribute.standard.MediaSize$NA";
             /// <summary>
@@ -187,7 +187,7 @@ namespace Javax.Print.Attribute.Standard
             public NA(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -210,7 +210,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/MediaSize.Other.html"/>
         /// </summary>
-        public partial class Other : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Other>
+        public partial class Other : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Other>
         {
             const string _bridgeClassName = "javax.print.attribute.standard.MediaSize$Other";
             /// <summary>
@@ -224,7 +224,7 @@ namespace Javax.Print.Attribute.Standard
             public Other(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>

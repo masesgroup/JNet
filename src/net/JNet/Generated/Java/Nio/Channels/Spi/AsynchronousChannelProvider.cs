@@ -29,7 +29,7 @@ namespace Java.Nio.Channels.Spi
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/nio/channels/spi/AsynchronousChannelProvider.html"/>
     /// </summary>
-    public partial class AsynchronousChannelProvider : MASES.JCOBridge.C2JBridge.JVMBridgeCore<AsynchronousChannelProvider>
+    public partial class AsynchronousChannelProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousChannelProvider>
     {
         const string _bridgeClassName = "java.nio.channels.spi.AsynchronousChannelProvider";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Nio.Channels.Spi
         public AsynchronousChannelProvider(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
