@@ -17,11 +17,10 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
-using System;
 
 namespace Java.Awt
 {
-    public partial class Container : IDisposable
+    public partial class Container
     {
         // can be extended with methods not reflected or not available in Java;
 
@@ -52,18 +51,17 @@ namespace Java.Awt
         /// </summary>
         public IJCGraphicContainer HostedContainer { get { lock (this) { return _container; } } }
         /// <inheritdoc/>
-        public virtual void Dispose()
+        protected override void Dispose(bool disposing)
         {
             lock (_lock)
             {
-                if (_disposed) throw new ObjectDisposedException("");
-                _disposed = true;
                 if (_container != null)
                 {
                     Management.ReleaseJCGraphicContainer(_container);
                     _container = null;
                 }
             }
+            base.Dispose(disposing);
         }
 
         // TODO: complete the class
