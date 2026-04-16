@@ -29,7 +29,7 @@ namespace Org.W3c.Dom.Views
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/views/DocumentView.html"/>
     /// </summary>
-    public partial class DocumentView : MASES.JCOBridge.C2JBridge.JVMBridgeCore<DocumentView>
+    public partial class DocumentView : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentView>
     {
         const string _bridgeClassName = "org.w3c.dom.views.DocumentView";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Org.W3c.Dom.Views
         public DocumentView(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

@@ -29,7 +29,7 @@ namespace Java.Security.Interfaces
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/interfaces/ECPublicKey.html"/>
     /// </summary>
-    public partial class ECPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ECPublicKey>
+    public partial class ECPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPublicKey>
     {
         const string _bridgeClassName = "java.security.interfaces.ECPublicKey";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Security.Interfaces
         public ECPublicKey(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

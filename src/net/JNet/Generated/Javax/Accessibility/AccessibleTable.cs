@@ -29,7 +29,7 @@ namespace Javax.Accessibility
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleTable.html"/>
     /// </summary>
-    public partial class AccessibleTable : MASES.JCOBridge.C2JBridge.JVMBridgeCore<AccessibleTable>
+    public partial class AccessibleTable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AccessibleTable>
     {
         const string _bridgeClassName = "javax.accessibility.AccessibleTable";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Accessibility
         public AccessibleTable(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

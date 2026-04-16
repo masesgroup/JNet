@@ -29,7 +29,7 @@ namespace Java.Io
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html"/>
     /// </summary>
-    public partial class DataOutput : MASES.JCOBridge.C2JBridge.JVMBridgeCore<DataOutput>
+    public partial class DataOutput : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DataOutput>
     {
         const string _bridgeClassName = "java.io.DataOutput";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Io
         public DataOutput(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

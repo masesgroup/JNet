@@ -29,7 +29,7 @@ namespace Javax.Swing.Filechooser
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/filechooser/FileFilter.html"/>
     /// </summary>
-    public partial class FileFilter : MASES.JCOBridge.C2JBridge.JVMBridgeCore<FileFilter>
+    public partial class FileFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileFilter>
     {
         const string _bridgeClassName = "javax.swing.filechooser.FileFilter";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Swing.Filechooser
         public FileFilter(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

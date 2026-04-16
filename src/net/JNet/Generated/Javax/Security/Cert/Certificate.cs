@@ -29,7 +29,7 @@ namespace Javax.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/cert/Certificate.html"/>
     /// </summary>
-    public partial class Certificate : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Certificate>
+    public partial class Certificate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Certificate>
     {
         const string _bridgeClassName = "javax.security.cert.Certificate";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Security.Cert
         public Certificate(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

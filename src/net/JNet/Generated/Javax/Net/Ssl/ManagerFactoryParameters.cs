@@ -29,7 +29,7 @@ namespace Javax.Net.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/ManagerFactoryParameters.html"/>
     /// </summary>
-    public partial class ManagerFactoryParameters : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ManagerFactoryParameters>
+    public partial class ManagerFactoryParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ManagerFactoryParameters>
     {
         const string _bridgeClassName = "javax.net.ssl.ManagerFactoryParameters";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Net.Ssl
         public ManagerFactoryParameters(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

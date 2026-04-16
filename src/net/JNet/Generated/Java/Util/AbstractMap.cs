@@ -44,7 +44,7 @@ namespace Java.Util
         public AbstractMap(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -63,7 +63,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.SimpleEntry.html"/>
         /// </summary>
-        public partial class SimpleEntry : MASES.JCOBridge.C2JBridge.JVMBridgeCore<SimpleEntry>
+        public partial class SimpleEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleEntry>
         {
             const string _bridgeClassName = "java.util.AbstractMap$SimpleEntry";
             /// <summary>
@@ -77,7 +77,7 @@ namespace Java.Util
             public SimpleEntry(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -102,7 +102,7 @@ namespace Java.Util
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        public partial class SimpleEntry<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeCore<SimpleEntry<K, V>>
+        public partial class SimpleEntry<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleEntry<K, V>>
         {
             const string _bridgeClassName = "java.util.AbstractMap$SimpleEntry";
             /// <summary>
@@ -116,7 +116,7 @@ namespace Java.Util
             public SimpleEntry(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -139,7 +139,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.SimpleImmutableEntry.html"/>
         /// </summary>
-        public partial class SimpleImmutableEntry : MASES.JCOBridge.C2JBridge.JVMBridgeCore<SimpleImmutableEntry>
+        public partial class SimpleImmutableEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleImmutableEntry>
         {
             const string _bridgeClassName = "java.util.AbstractMap$SimpleImmutableEntry";
             /// <summary>
@@ -153,7 +153,7 @@ namespace Java.Util
             public SimpleImmutableEntry(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -178,7 +178,7 @@ namespace Java.Util
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
-        public partial class SimpleImmutableEntry<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeCore<SimpleImmutableEntry<K, V>>
+        public partial class SimpleImmutableEntry<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleImmutableEntry<K, V>>
         {
             const string _bridgeClassName = "java.util.AbstractMap$SimpleImmutableEntry";
             /// <summary>
@@ -192,7 +192,7 @@ namespace Java.Util
             public SimpleImmutableEntry(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -236,7 +236,7 @@ namespace Java.Util
         public AbstractMap(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
