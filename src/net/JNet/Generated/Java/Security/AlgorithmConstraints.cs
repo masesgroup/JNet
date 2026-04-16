@@ -29,7 +29,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/AlgorithmConstraints.html"/>
     /// </summary>
-    public partial class AlgorithmConstraints : MASES.JCOBridge.C2JBridge.JVMBridgeCore<AlgorithmConstraints>
+    public partial class AlgorithmConstraints : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AlgorithmConstraints>
     {
         const string _bridgeClassName = "java.security.AlgorithmConstraints";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Security
         public AlgorithmConstraints(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

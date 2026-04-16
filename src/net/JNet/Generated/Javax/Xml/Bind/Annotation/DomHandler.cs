@@ -29,7 +29,7 @@ namespace Javax.Xml.Bind.Annotation
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/DomHandler.html"/>
     /// </summary>
-    public partial class DomHandler : MASES.JCOBridge.C2JBridge.JVMBridgeCore<DomHandler>
+    public partial class DomHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DomHandler>
     {
         const string _bridgeClassName = "javax.xml.bind.annotation.DomHandler";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Xml.Bind.Annotation
         public DomHandler(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -69,7 +69,7 @@ namespace Javax.Xml.Bind.Annotation
     /// </summary>
     /// <typeparam name="ElementT"></typeparam>
     /// <typeparam name="ResultT"><see cref="Javax.Xml.Transform.IResult"/></typeparam>
-    public partial class DomHandler<ElementT, ResultT> : MASES.JCOBridge.C2JBridge.JVMBridgeCore<DomHandler<ElementT, ResultT>> where ResultT : Javax.Xml.Transform.IResult
+    public partial class DomHandler<ElementT, ResultT> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DomHandler<ElementT, ResultT>> where ResultT : Javax.Xml.Transform.IResult
     {
         const string _bridgeClassName = "javax.xml.bind.annotation.DomHandler";
         /// <summary>
@@ -84,7 +84,7 @@ namespace Javax.Xml.Bind.Annotation
         public DomHandler(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

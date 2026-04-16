@@ -29,7 +29,7 @@ namespace Java.Time.Temporal
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalQuery.html"/>
     /// </summary>
-    public partial class TemporalQuery : MASES.JCOBridge.C2JBridge.JVMBridgeCore<TemporalQuery>
+    public partial class TemporalQuery : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQuery>
     {
         const string _bridgeClassName = "java.time.temporal.TemporalQuery";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Time.Temporal
         public TemporalQuery(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -68,7 +68,7 @@ namespace Java.Time.Temporal
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalQuery.html"/>
     /// </summary>
     /// <typeparam name="R"></typeparam>
-    public partial class TemporalQuery<R> : MASES.JCOBridge.C2JBridge.JVMBridgeCore<TemporalQuery<R>>
+    public partial class TemporalQuery<R> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQuery<R>>
     {
         const string _bridgeClassName = "java.time.temporal.TemporalQuery";
         /// <summary>
@@ -83,7 +83,7 @@ namespace Java.Time.Temporal
         public TemporalQuery(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

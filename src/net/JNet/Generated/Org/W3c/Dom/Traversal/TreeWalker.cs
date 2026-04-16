@@ -29,7 +29,7 @@ namespace Org.W3c.Dom.Traversal
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/traversal/TreeWalker.html"/>
     /// </summary>
-    public partial class TreeWalker : MASES.JCOBridge.C2JBridge.JVMBridgeCore<TreeWalker>
+    public partial class TreeWalker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeWalker>
     {
         const string _bridgeClassName = "org.w3c.dom.traversal.TreeWalker";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Org.W3c.Dom.Traversal
         public TreeWalker(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

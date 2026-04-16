@@ -29,7 +29,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/spec/ECPoint.html"/>
     /// </summary>
-    public partial class ECPoint : MASES.JCOBridge.C2JBridge.JVMBridgeCore<ECPoint>
+    public partial class ECPoint : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPoint>
     {
         const string _bridgeClassName = "java.security.spec.ECPoint";
         /// <summary>
@@ -43,7 +43,7 @@ namespace Java.Security.Spec
         public ECPoint(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

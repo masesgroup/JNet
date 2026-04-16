@@ -29,7 +29,7 @@ namespace Javax.Script
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/script/CompiledScript.html"/>
     /// </summary>
-    public partial class CompiledScript : MASES.JCOBridge.C2JBridge.JVMBridgeCore<CompiledScript>
+    public partial class CompiledScript : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompiledScript>
     {
         const string _bridgeClassName = "javax.script.CompiledScript";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Script
         public CompiledScript(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

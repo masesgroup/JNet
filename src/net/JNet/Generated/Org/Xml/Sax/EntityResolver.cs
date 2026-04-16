@@ -29,7 +29,7 @@ namespace Org.Xml.Sax
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/EntityResolver.html"/>
     /// </summary>
-    public partial class EntityResolver : MASES.JCOBridge.C2JBridge.JVMBridgeCore<EntityResolver>
+    public partial class EntityResolver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EntityResolver>
     {
         const string _bridgeClassName = "org.xml.sax.EntityResolver";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Org.Xml.Sax
         public EntityResolver(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

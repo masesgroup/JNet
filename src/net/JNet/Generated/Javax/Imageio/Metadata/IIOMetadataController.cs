@@ -29,7 +29,7 @@ namespace Javax.Imageio.Metadata
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/metadata/IIOMetadataController.html"/>
     /// </summary>
-    public partial class IIOMetadataController : MASES.JCOBridge.C2JBridge.JVMBridgeCore<IIOMetadataController>
+    public partial class IIOMetadataController : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOMetadataController>
     {
         const string _bridgeClassName = "javax.imageio.metadata.IIOMetadataController";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Javax.Imageio.Metadata
         public IIOMetadataController(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>

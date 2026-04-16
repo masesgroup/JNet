@@ -29,7 +29,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/WatchEvent.html"/>
     /// </summary>
-    public partial class WatchEvent : MASES.JCOBridge.C2JBridge.JVMBridgeCore<WatchEvent>
+    public partial class WatchEvent : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WatchEvent>
     {
         const string _bridgeClassName = "java.nio.file.WatchEvent";
         /// <summary>
@@ -44,7 +44,7 @@ namespace Java.Nio.File
         public WatchEvent(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
@@ -63,7 +63,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/WatchEvent.Kind.html"/>
         /// </summary>
-        public partial class Kind : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Kind>
+        public partial class Kind : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Kind>
         {
             const string _bridgeClassName = "java.nio.file.WatchEvent$Kind";
             /// <summary>
@@ -78,7 +78,7 @@ namespace Java.Nio.File
             public Kind(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -102,7 +102,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/WatchEvent.Kind.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        public partial class Kind<T> : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Kind<T>>
+        public partial class Kind<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Kind<T>>
         {
             const string _bridgeClassName = "java.nio.file.WatchEvent$Kind";
             /// <summary>
@@ -117,7 +117,7 @@ namespace Java.Nio.File
             public Kind(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -140,7 +140,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/WatchEvent.Modifier.html"/>
         /// </summary>
-        public partial class Modifier : MASES.JCOBridge.C2JBridge.JVMBridgeCore<Modifier>
+        public partial class Modifier : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Modifier>
         {
             const string _bridgeClassName = "java.nio.file.WatchEvent$Modifier";
             /// <summary>
@@ -155,7 +155,7 @@ namespace Java.Nio.File
             public Modifier(params object[] args) : base(args) { }
 
             private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <inheritdoc/>
@@ -183,7 +183,7 @@ namespace Java.Nio.File
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/WatchEvent.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class WatchEvent<T> : MASES.JCOBridge.C2JBridge.JVMBridgeCore<WatchEvent<T>>
+    public partial class WatchEvent<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WatchEvent<T>>
     {
         const string _bridgeClassName = "java.nio.file.WatchEvent";
         /// <summary>
@@ -198,7 +198,7 @@ namespace Java.Nio.File
         public WatchEvent(params object[] args) : base(args) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeCore.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
