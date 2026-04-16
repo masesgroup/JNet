@@ -50,10 +50,6 @@ namespace Java.Awt
         /// Returns the hostable <see cref="IJCGraphicContainer"/>
         /// </summary>
         public IJCGraphicContainer HostedContainer { get { lock (this) { return _container; } } }
-        /// <summary>
-        /// Returns the hostable <see cref="IJCGraphicContainer"/>
-        /// </summary>
-        public IJCGraphicContainer HostedContainer { get { lock (this) { return _container; } } }
         /// <inheritdoc/>
         protected override void Dispose(bool disposing)
         {
