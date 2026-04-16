@@ -30,18 +30,6 @@ namespace MASES.JNet.Specific.Extensions
     public static class JNetCoreExtensions
     {
         /// <summary>
-        /// Converts any instance of <see cref="JVMBridgeCore"/> in <paramref name="bridge"/> to an <see cref="IDisposable"/>
-        /// </summary>
-        /// <param name="bridge">The <see cref="JVMBridgeCore"/> instance to convert</param>
-        /// <returns>The <see cref="IDisposable"/> instance</returns>
-        /// <remarks>The method check if <paramref name="bridge"/> implements <see cref="IDisposable"/> and returns that instance, otherwise wraps <paramref name="bridge"/> into an <see cref="JVMBridgeCoreDisposable"/></remarks>
-        public static IDisposable ToDisposable(this JVMBridgeCore bridge)
-        {
-            if (bridge is IDisposable disposable) return disposable;
-            return JVMBridgeCoreDisposable.Create(bridge);
-        }
-
-        /// <summary>
         /// Builds a new var-arg result starting from fixed parameters stored in <paramref name="fixedParameters"/> and the <see langword="params"/> argument available in <paramref name="varArg"/>
         /// </summary>
         /// <typeparam name="T">A supporting type if <see langword="params"/> has a type different from <see langword="object"/></typeparam>
@@ -87,7 +75,7 @@ namespace MASES.JNet.Specific.Extensions
         public static TWrap DirectBufferWithWrap<TData, TWrap>(this TData[] data, bool useMemoryControlBlock = true, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite, Func<ByteBuffer, TWrap> converter = null) where TWrap : IJVMBridgeBase
         {
             var buf = JCOBridge.C2JBridge.JCOBridge.Global.JVM.NewDirectBuffer(data, useMemoryControlBlock, arrangeCapacity, timeToLive);
-            if (data is byte[]) return JVMBridgeCore.WrapsDirect<TWrap>(buf.DisableCleanupAndReturn());
+            if (data is byte[]) return JVMBridgeBase.WrapsDirect<TWrap>(buf.DisableCleanupAndReturn());
             else
             {
                 IJVMBridgeBase ibb;
