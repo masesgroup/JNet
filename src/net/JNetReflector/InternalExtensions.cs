@@ -1421,7 +1421,7 @@ namespace MASES.JNet.Reflector
             }
         }
 
-        public static string JVMBaseClassName(this Class entry, bool isClassCloseable, bool usedInGenerics, bool isListener, bool camel, out bool baseClassIsJVMBridgeBase)
+        public static string JVMBaseClassName(this Class entry, bool usedInGenerics, bool isListener, bool camel, out bool baseClassIsJVMBridgeBase)
         {
             baseClassIsJVMBridgeBase = false;
             if (isListener)
@@ -1436,9 +1436,7 @@ namespace MASES.JNet.Reflector
             {
                 baseClassIsJVMBridgeBase = true;
                 string className = entry.JVMClassName(null, usedInGenerics, false);
-                return JNetReflectorCore.AlwaysUseIDisposablePattern 
-                       || isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>"
-                                           : $"MASES.JCOBridge.C2JBridge.JVMBridgeCore<{className}>";
+                return $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>";
             }
             try
             {
@@ -1515,9 +1513,7 @@ namespace MASES.JNet.Reflector
                     {
                         baseClassIsJVMBridgeBase = true;
                         string innerName = entry.JVMClassName(null, usedInGenerics, false);
-                        return JNetReflectorCore.AlwaysUseIDisposablePattern
-                               || isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{innerName}>"
-                                                   : $"MASES.JCOBridge.C2JBridge.JVMBridgeCore<{innerName}>";
+                        return $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{innerName}>";
                     }
                 }
                 else if ((usedInGenerics || !entry.IsJVMGenericClass()) && superCls.IsJVMGenericClass())
@@ -1530,17 +1526,15 @@ namespace MASES.JNet.Reflector
             {
                 baseClassIsJVMBridgeBase = true;
                 string className = entry.JVMClassName(null, usedInGenerics, false);
-                return JNetReflectorCore.AlwaysUseIDisposablePattern
-                       || isClassCloseable ? $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>"
-                                           : $"MASES.JCOBridge.C2JBridge.JVMBridgeCore<{className}>";
+                return $"MASES.JCOBridge.C2JBridge.JVMBridgeBase<{className}>";
             }
         }
 
-        public static string JVMBaseInterfaceName(this Class entry, bool isClassCloseable, bool usedInGenerics, bool isListener, bool camel)
+        public static string JVMBaseInterfaceName(this Class entry, bool usedInGenerics, bool isListener, bool camel)
         {
             if (!entry.HasJVMBaseClassName(usedInGenerics, isListener, camel)) return string.Empty;
 
-            var fName = entry.JVMBaseClassName(isClassCloseable, usedInGenerics, isListener, camel, out _);
+            var fName = entry.JVMBaseClassName(usedInGenerics, isListener, camel, out _);
             return ToFullQualifiedInterfaceName(fName, camel);
         }
 
