@@ -22,7 +22,7 @@ using SystemNet = System;
 
 namespace Java.Lang
 {
-    public partial class String : JVMBridgeCore<String>, INativeConvertible<String, string>, SystemNet.IComparable<String>, SystemNet.IEquatable<String>
+    public partial class String : JVMBridgeBase<String>, INativeConvertible<String, string>, SystemNet.IComparable<String>, SystemNet.IEquatable<String>
     {
         #region Constructors
         /// <summary>
