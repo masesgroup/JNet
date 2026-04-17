@@ -491,6 +491,13 @@ jobs:
       - uses: actions/upload-artifact@v7
         with:
           if-no-files-found: ignore
+          name: Crash_tests_core_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/**/core*
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v7
+        with:
+          if-no-files-found: ignore
           name: Crash_tests_hs_err__${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/**/hs_err_*
           retention-days: 7
