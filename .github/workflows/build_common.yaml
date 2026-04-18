@@ -342,6 +342,10 @@ jobs:
           - os: windows-11-arm
             framework: net462
           - os: windows-11-arm
+            jdk_version: 8
+          - os: windows-11-arm
+            jdk_version: 11
+          - os: windows-11-arm
             jdk_version: 17
           - jdk_vendor: microsoft
             jdk_version: 8
@@ -380,6 +384,10 @@ jobs:
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED }}
     
     steps:     
+      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
+        if: ${{ matrix.os == 'windows-11-arm' }}
+        run: choco install zstandard
+
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v5
         with:
@@ -392,10 +400,6 @@ jobs:
         with:
           dotnet-version: |
             10.x
-
-      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
-        if: ${{ matrix.os == 'windows-11-arm' }}
-        run: choco install zstandard
 
       - name: Download Procdump and prepare
         if: ${{ inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
@@ -486,6 +490,13 @@ jobs:
           if-no-files-found: ignore
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: .\CrashDumpsDir\*
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v7
+        with:
+          if-no-files-found: ignore
+          name: Crash_tests_core_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/**/core*
           retention-days: 7
 
       - uses: actions/upload-artifact@v7
