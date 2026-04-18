@@ -8,7 +8,7 @@
 
 RootModule = 'MASES.JNetPS.psm1'
 
-ModuleVersion = '2.6.8'
+ModuleVersion = '2.6.9'
 
 CompatiblePSEditions = 'Desktop', 'Core'
 
@@ -110,6 +110,8 @@ AliasesToExport = @()
 PrivateData = @{
 
     PSData = @{
+
+        Prerelease = 'rc'
 
         Tags = @('JNetPS', 'JNet', 'PSEdition_Core', 'PSEdition_Desktop', 'Windows', 'Linux', 'JVM', 'Java', 'Scala', 'Kotlin', 'bridge', 'gateway')
 
