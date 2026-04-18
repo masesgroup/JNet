@@ -342,6 +342,10 @@ jobs:
           - os: windows-11-arm
             framework: net462
           - os: windows-11-arm
+            jdk_version: 8
+          - os: windows-11-arm
+            jdk_version: 11
+          - os: windows-11-arm
             jdk_version: 17
           - jdk_vendor: microsoft
             jdk_version: 8
