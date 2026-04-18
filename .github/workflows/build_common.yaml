@@ -384,6 +384,10 @@ jobs:
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED }}
     
     steps:     
+      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
+        if: ${{ matrix.os == 'windows-11-arm' }}
+        run: choco install zstandard
+
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v5
         with:
@@ -396,10 +400,6 @@ jobs:
         with:
           dotnet-version: |
             10.x
-
-      - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
-        if: ${{ matrix.os == 'windows-11-arm' }}
-        run: choco install zstandard
 
       - name: Download Procdump and prepare
         if: ${{ inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
