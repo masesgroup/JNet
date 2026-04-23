@@ -142,3 +142,56 @@ using (var handler = new Predicate<int>((o1) =>
 > * It creates a **resource leak**: the `Predicate<int>` instance cannot be programmatically disposed.
 > * It incurs **unnecessary overhead**: the JVM™ event-handling infrastructure is allocated on every call
 >   instead of being reused.
+
+## Reducing Dispose overhead in high-frequency callback loops
+
+When a callback handler receives a sustained high-frequency stream of JVM-originated events — for
+example a Kafka Streams functional interface processing thousands of records per second, or an AWT
+event loop under heavy input — the JVM™ may pass one or more JNet-wrapped objects as arguments on
+each invocation. Each of those objects carries a JVM™ global reference that must be released when
+the object is no longer needed.
+
+Releasing each reference immediately on `Dispose` makes a direct native call per object. At high
+event rates this cost accumulates. Opening a `JvmBatchDisposeFastScope` around the event loop
+batches those releases and flushes them in a single native call, keeping the handler body unchanged:
+
+```csharp
+using (var handler = new Predicate<int>((o1) =>
+{
+    if (o1 > 10) return true;
+    return false;
+}))
+using (var batch = new JvmBatchDisposeFastScope())
+{
+    while (!resetEvent.WaitOne(0))
+    {
+        if (o.CanSend(i, handler)) o.Send(i);
+        i++;
+    }
+}
+// all queued releases flushed here when the scope exits
+```
+
+For async callback handlers where continuations may resume on a different thread, use
+`JvmBatchDisposeAsyncScope` instead:
+
+```csharp
+using (var handler = new MyAsyncListener())
+await using (var batch = new JvmBatchDisposeAsyncScope())
+{
+    await foreach (var event in eventSource)
+    {
+        await handler.HandleAsync(event);
+    }
+}
+```
+
+> [!TIP]
+> Batch scopes are most effective when the per-event handler work is lightweight — processing,
+> filtering, or forwarding — and `Dispose` calls represent a meaningful fraction of the total
+> loop time. When the handler itself performs expensive operations (I/O, multiple JVM™ method
+> calls, computation), the release cost is already a small fraction of the total and a batch
+> scope will not produce a measurable difference.
+
+See [performance tips](performancetips.md) for guidance on when batch scopes provide meaningful
+gains and how to select between the two scope types.
