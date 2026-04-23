@@ -89,6 +89,110 @@ Using the loop-based example as a baseline:
 > - If a task can be completed entirely in the CLR or entirely in the JVM™, keep it there until a
 >   boundary crossing is strictly necessary.
 
+## Batch JVM™ global reference releases
+
+Each `Dispose` on a JNet object releases the underlying JVM™ global reference with a direct
+native call. In isolation this cost is small, but in tight loops that create and dispose many
+JNet objects — a Kafka consumer poll loop, a storage block enumeration, a sustained callback
+stream — it accumulates into measurable overhead.
+
+`JvmBatchDisposeFastScope` and `JvmBatchDisposeAsyncScope` address this by queuing release
+requests and flushing them together in a single native call, keeping the per-object `Dispose`
+call cost negligible. The loop body requires no changes.
+
+> [!NOTE]
+> Objects whose `Dispose` is not called explicitly (no `using` block) are eventually released
+> by the .NET finalizer as before — batch scopes do not affect that path. The benefit applies
+> only to explicit `Dispose` calls made while a scope is active.
+
+### `JvmBatchDisposeFastScope` — synchronous hot paths
+
+Use this scope for synchronous code on a controlled thread. It uses `[ThreadStatic]` storage,
+which has negligible access cost compared to the native call it replaces.
+
+```csharp
+// Kafka consumer poll loop — sync
+using var batch = new JvmBatchDisposeFastScope();
+while (!resetEvent.WaitOne(0))
+{
+    using var records = consumer.Poll(200);
+    foreach (var record in records)
+    {
+        using (record)
+        {
+            Console.WriteLine($"Offset={record.Offset()}, Key={record.Key()}");
+        }
+        // record.Dispose() queues the release — no native call here
+    }
+    // records.Dispose() queues the release — no native call here
+}
+// scope exits: all queued releases flushed in a single native call
+```
+
+Automatic mid-loop flushing occurs when the queue reaches the configured limit (default: 64
+references). This bounds memory usage regardless of how long the loop runs.
+
+> [!WARNING]
+> `JvmBatchDisposeFastScope` is not safe across `await` — if a continuation resumes on a
+> different thread the scope state will not be visible on the new thread. Use
+> `JvmBatchDisposeAsyncScope` for async code.
+
+### `JvmBatchDisposeAsyncScope` — async/await contexts
+
+Use this scope when continuations may resume on a different thread. The scope state flows
+automatically across `await` points.
+
+```csharp
+// Async enumeration
+await using var batch = new JvmBatchDisposeAsyncScope();
+await foreach (var item in asyncJvmCollection)
+{
+    using (item)
+    {
+        await ProcessAsync(item);
+    }
+    // item.Dispose() queues the release — no native call here
+}
+// scope exits: all queued releases flushed in a single native call
+```
+
+> [!NOTE]
+> `JvmBatchDisposeAsyncScope` has slightly higher per-access cost than `JvmBatchDisposeFastScope`
+> due to the `ExecutionContext` propagation required for async safety. For synchronous hot paths
+> where throughput matters, prefer `JvmBatchDisposeFastScope`.
+
+### Nesting scopes
+
+Both scope types support nesting. When scopes are nested — for example because library-internal
+code opens its own scope inside a user-opened scope — the inner scope increments a depth counter
+and the flush is deferred until the outermost scope exits. This means library code and user code
+can independently opt in to batching without coordination.
+
+```csharp
+using var outerBatch = new JvmBatchDisposeFastScope();
+// library method internally opens its own JvmBatchDisposeFastScope — depth = 2
+DoSomethingThatUsesABatchScopeInternally();
+// inner scope exits — depth returns to 1, no flush yet
+// outer scope exits — depth reaches 0, flush occurs here
+```
+
+### When to use batch scopes
+
+Batch scopes provide meaningful gains when `Dispose` calls are frequent relative to other work
+in the loop. Typical candidates:
+
+- Kafka consumer poll loops iterating over many records per poll.
+- Storage block enumerations where each entry wraps one or more JVM™ objects.
+- Callback handlers that receive high-frequency JVM-originated events carrying JVM™ object arguments.
+
+For loops where the per-item operation is expensive (multiple JVM™ method calls, I/O, computation),
+the `Dispose` cost is already a small fraction of the total and a batch scope will not produce
+a measurable difference.
+
+> [!TIP]
+> Open the scope as close to the loop as possible — not at application startup — to limit the
+> window in which references are queued rather than immediately released.
+
 ## Discard unwanted JVM™ events early with `ShallManageEvent`
 
 When a JVM™ class fires events toward the CLR — for example an AWT component, a Kafka Streams functional interface, or any JNet callback wrapper — the standard flow reads argument data from the JVM™ before invoking the registered handler. For sources that produce many event types, most of them may have no handler registered in the application. Reading and converting argument data for events that will be immediately discarded is wasted work.

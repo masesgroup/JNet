@@ -199,23 +199,15 @@ At the point `arrayList.AddAll(0, set)` is called:
 - The call passes the JVM™ reference across the boundary, but from .NET's perspective the wrapper `set` has no further uses and is eligible for collection.
 - If the .NET GC runs at this moment — which it may do arbitrarily based on [memory pressure](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/) — the wrapper is collected and the JVM™ receives a null reference.
 
-Most of the time the code works fine, but the failure is non-deterministic and hard to reproduce. The solutions below prevent it.
-
-> [!TIP]
-> The `using` pattern is the most idiomatic approach in modern C# and should be preferred in new code.
-> The `SuppressFinalize`/`ReRegisterForFinalize` pattern is useful when refactoring to `using` blocks is not practical.
+Most of the time the code works fine, but the failure is non-deterministic and hard to reproduce.
 
 ### `using` or `try-finally` with `Dispose`
 
-From 2.6.7+ version only JNet classes extending `AutoCloseable` implement `IDisposable`.
-Naturally the `using` block replaces the equivalent `try-with-resources` of Java and reference is not collected till the end of the object usage.
-For all other classes without `IDisposable` (i.e. does not represent an `AutoCloseable` class), JCOBridge 2.6.8 introduces the `JVMBridgeCoreDisposable` which wraps the input object, make the reference alive and exposes an `IDisposable` interface.
-Wrapping the object in a `using` block keeps it alive and releases the JVM reference deterministically:
+All JNet classes implement `IDisposable`. Wrapping an object in a `using` block keeps it alive for the entire scope and releases the JVM™ global reference deterministically when the block exits:
 
 ```csharp
 using Java.Util;
 using MASES.JNet.Extensions;
-using System.Diagnostics;
 using Java.Lang;
 
 namespace MASES.JNetExample
@@ -229,8 +221,7 @@ namespace MASES.JNetExample
             MyJNetCore.CreateGlobalInstance();
             try
             {
-                Java.Util.Set<string> set = Collections.Singleton("test");
-                using (var disposeable = JVMBridgeCoreDisposable.Create(set)) // or using (var disposeable = set.ToDisposeable())
+                using (var set = Collections.Singleton("test"))
                 {
                     ArrayList<string> arrayList = new();
                     arrayList.AddAll(0, set);
@@ -245,71 +236,77 @@ namespace MASES.JNetExample
 Or equivalently with `try-finally`:
 
 ```csharp
-using Java.Util;
-using MASES.JNet.Extensions;
-using System.Diagnostics;
-using Java.Lang;
-
-namespace MASES.JNetExample
+Java.Util.Set<string> set = Collections.Singleton("test");
+try
 {
-    class MyJNetCore : JNetCore<MyJNetCore> { }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            MyJNetCore.CreateGlobalInstance();
-            try
-            {
-                Java.Util.Set<string> set = Collections.Singleton("test");
-                var disposeable = JVMBridgeCoreDisposable.Create(set); // or var disposeable = set.ToDisposeable();
-                try
-                {
-                    ArrayList<string> arrayList = new();
-                    arrayList.AddAll(0, set);
-                }
-                finally { disposeable?.Dispose(); }
-            }
-            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
-        }
-    }
+    ArrayList<string> arrayList = new();
+    arrayList.AddAll(0, set);
 }
+finally { set?.Dispose(); }
 ```
 
-
+> [!TIP]
+> The `using` pattern is the most idiomatic approach in modern C# and should be preferred in new code.
 
 ### `SuppressFinalize`/`ReRegisterForFinalize` pattern
 
 When restructuring to `using` is not practical, you can suppress finalization for the duration of the cross-boundary call:
 
 ```csharp
-using Java.Util;
-using MASES.JNet.Extensions;
-using System.Diagnostics;
-using Java.Lang;
-
-namespace MASES.JNetExample
+Java.Util.Set<string> set = Collections.Singleton("test");
+try
 {
-    class MyJNetCore : JNetCore<MyJNetCore> { }
+    System.GC.SuppressFinalize(set);
+    ArrayList<string> arrayList = new();
+    arrayList.AddAll(0, set);
+}
+finally { System.GC.ReRegisterForFinalize(set); }
+```
 
-    class Program
+## Reducing Dispose overhead in high-volume loops
+
+Each `Dispose` on a JNet object releases the underlying JVM™ global reference with a direct native call. In tight loops that create and dispose many JNet objects — such as a Kafka consumer poll loop or a storage enumeration — this per-object native call cost accumulates.
+
+`JvmBatchDisposeFastScope` and `JvmBatchDisposeAsyncScope` address this by batching the releases and flushing them in a single native call, keeping the loop body unchanged.
+
+### `JvmBatchDisposeFastScope` — synchronous hot paths
+
+Use this scope in synchronous code on a controlled thread. It uses thread-local storage with minimal access cost.
+
+```csharp
+using var batch = new JvmBatchDisposeFastScope();
+while (!resetEvent.WaitOne(0))
+{
+    using var records = consumer.Poll(200);
+    foreach (var record in records)
     {
-        static void Main(string[] args)
+        using (record)
         {
-            MyJNetCore.CreateGlobalInstance();
-            try
-            {
-                Java.Util.Set<string> set = Collections.Singleton("test");
-                try
-                {
-                    System.GC.SuppressFinalize(set);
-                    ArrayList<string> arrayList = new();
-                    arrayList.AddAll(0, set);
-                }
-                finally { System.GC.ReRegisterForFinalize(set); }
-            }
-            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+            Console.WriteLine($"Offset={record.Offset()}, Key={record.Key()}");
         }
     }
-}
+} // all queued releases flushed here in a single native call
 ```
+
+> [!WARNING]
+> `JvmBatchDisposeFastScope` is not safe across `await` — if a continuation resumes on a different thread the scope state will not be visible. Use `JvmBatchDisposeAsyncScope` for async code.
+
+### `JvmBatchDisposeAsyncScope` — async/await contexts
+
+Use this scope when continuations may resume on a different thread. The scope state flows automatically across `await` points.
+
+```csharp
+await using var batch = new JvmBatchDisposeAsyncScope();
+await foreach (var item in asyncCollection)
+{
+    using (item)
+    {
+        await ProcessAsync(item);
+    }
+} // all queued releases flushed here in a single native call
+```
+
+> [!NOTE]
+> Both scopes are opt-in and additive — code that does not open a scope continues to release references immediately on `Dispose`, with no behavioral change. Scopes are designed to be opened by library code (e.g. storage enumerators, consumer loops) rather than exposed to end users.
+
+See [performance tips](performancetips.md) for guidance on when batch scopes provide meaningful gains.
