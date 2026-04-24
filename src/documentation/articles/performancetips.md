@@ -96,7 +96,7 @@ native call. In isolation this cost is small, but in tight loops that create and
 JNet objects — a Kafka consumer poll loop, a storage block enumeration, a sustained callback
 stream — it accumulates into measurable overhead.
 
-`JvmBatchDisposeFastScope` and `JvmBatchDisposeAsyncScope` address this by queuing release
+`JCOBridgeDisposeFastScope` and `JCOBridgeDisposeAsyncScope` address this by queuing release
 requests and flushing them together in a single native call, keeping the per-object `Dispose`
 call cost negligible. The loop body requires no changes.
 
@@ -105,14 +105,14 @@ call cost negligible. The loop body requires no changes.
 > by the .NET finalizer as before — batch scopes do not affect that path. The benefit applies
 > only to explicit `Dispose` calls made while a scope is active.
 
-### `JvmBatchDisposeFastScope` — synchronous hot paths
+### `JCOBridgeDisposeFastScope` — synchronous hot paths
 
 Use this scope for synchronous code on a controlled thread. It uses `[ThreadStatic]` storage,
 which has negligible access cost compared to the native call it replaces.
 
 ```csharp
 // Kafka consumer poll loop — sync
-using var batch = new JvmBatchDisposeFastScope();
+using var batch = new JCOBridgeDisposeFastScope();
 while (!resetEvent.WaitOne(0))
 {
     using var records = consumer.Poll(200);
@@ -133,21 +133,21 @@ Automatic mid-loop flushing occurs when the queue reaches the configured limit (
 references). This bounds memory usage regardless of how long the loop runs.
 
 > [!WARNING]
-> `JvmBatchDisposeFastScope` is not safe across `await` — if a continuation resumes on a
+> `JCOBridgeDisposeFastScope` is not safe across `await` — if a continuation resumes on a
 > different thread the scope state will not be visible on the new thread. Use
-> `JvmBatchDisposeAsyncScope` for async code.
+> `JCOBridgeDisposeAsyncScope` for async code.
 
-### `JvmBatchDisposeAsyncScope` — async/await contexts
+### `JCOBridgeDisposeAsyncScope` — async/await contexts
 
 Use this scope when continuations may resume on a different thread. The scope state flows
 automatically across `await` points.
 
-On .NET 8 and later `JvmBatchDisposeAsyncScope` implements `IAsyncDisposable`, enabling
+On .NET 8 and later `JCOBridgeDisposeAsyncScope` implements `IAsyncDisposable`, enabling
 `await using` and an asynchronous flush on scope exit:
 
 ```csharp
 // Async enumeration — .NET 8 / 9 / 10
-await using var batch = new JvmBatchDisposeAsyncScope();
+await using var batch = new JCOBridgeDisposeAsyncScope();
 await foreach (var item in asyncJvmCollection)
 {
     using (item)
@@ -164,7 +164,7 @@ the flush on scope exit is synchronous:
 
 ```csharp
 // .NET Framework
-using (var batch = new JvmBatchDisposeAsyncScope())
+using (var batch = new JCOBridgeDisposeAsyncScope())
 {
     foreach (var item in jvmCollection)
     {
@@ -174,9 +174,9 @@ using (var batch = new JvmBatchDisposeAsyncScope())
 ```
 
 > [!NOTE]
-> `JvmBatchDisposeAsyncScope` has slightly higher per-access cost than `JvmBatchDisposeFastScope`
+> `JCOBridgeDisposeAsyncScope` has slightly higher per-access cost than `JCOBridgeDisposeFastScope`
 > due to the `ExecutionContext` propagation required for async safety. For synchronous hot paths
-> where throughput matters, prefer `JvmBatchDisposeFastScope`.
+> where throughput matters, prefer `JCOBridgeDisposeFastScope`.
 
 ### Nesting scopes
 
@@ -186,8 +186,8 @@ and the flush is deferred until the outermost scope exits. This means library co
 can independently opt in to batching without coordination.
 
 ```csharp
-using var outerBatch = new JvmBatchDisposeFastScope();
-// library method internally opens its own JvmBatchDisposeFastScope — depth = 2
+using var outerBatch = new JCOBridgeDisposeFastScope();
+// library method internally opens its own JCOBridgeDisposeFastScope — depth = 2
 DoSomethingThatUsesABatchScopeInternally();
 // inner scope exits — depth returns to 1, no flush yet
 // outer scope exits — depth reaches 0, flush occurs here
@@ -210,44 +210,67 @@ a measurable difference.
 > Open the scope as close to the loop as possible — not at application startup — to limit the
 > window in which references are queued rather than immediately released.
 
-## Discard unwanted JVM™ events early with `ShallManageEvent`
+## Discard unwanted JVM™ events early with `ListenerShallManageEvent`
 
 When a JVM™ class fires events toward the CLR — for example an AWT component, a Kafka Streams functional interface, or any JNet callback wrapper — the standard flow reads argument data from the JVM™ before invoking the registered handler. For sources that produce many event types, most of them may have no handler registered in the application. Reading and converting argument data for events that will be immediately discarded is wasted work.
 
-JCOBridge 2.6.7+ introduces a two-level filter applied before full event handling, through two overloads of `ShallManageEvent` on the JNet callback base class.
+JCOBridge 2.6.7+ introduces a two-level filter applied before full event handling, through two overloads of `ListenerShallManageEvent` on the JNet callback base class. Both gates receive the event as a numeric index — no string conversion is performed unless explicitly requested.
 
-### First gate — `bool ShallManageEvent(string eventName)`
+### First gate — `bool ListenerShallManageEvent(int eventIndex)`
 
-Called before any argument data is read from the JVM. Receives only the event name. Return `false` to discard immediately (no data read, handler not invoked); return `true` to proceed to the second gate.
+Called before any argument data is read from the JVM. Return `false` to discard immediately (no data read, handler not invoked); return `true` to proceed to the second gate.
 
-### Second gate — `bool ShallManageEvent(string eventName, object data)`
+The first gate can be driven by one of the following, evaluated in order:
+- `ListenerShallManageEventIndex` (`Func<int, bool>`) — fastest path: receives the raw event index, no string conversion.
+- `ListenerShallManageEventName` (`Func<string, bool>`) — receives the event name, resolved via `ConvertListenerEventIndexToEventName`.
+- Override of `ListenerShallManageEvent(int)` — virtual method for subclass-based filtering.
+- Default: returns `true`.
 
-Called after raw argument data is available, but before full argument conversion and handler dispatch. Allows a lightweight inspection of the raw payload — for example checking a type field or a numeric threshold — without paying the cost of full processing. Return `false` to discard after inspection (handler not invoked); return `true` to proceed with full conversion and handler invocation.
+### Second gate — `bool ListenerShallManageEvent(int eventIndex, object data)`
 
-The `ShallManageEventHandler` (`Func<string, bool>`) delegate is the assignable equivalent of the first gate; `ShallManageEventWithDataHandler` (`Func<string, object, bool>`) is the assignable equivalent of the second gate.
+Called after raw argument data is available, but before full argument conversion and handler dispatch. Allows a lightweight inspection of the raw payload without paying the cost of full processing. Return `false` to discard after inspection; return `true` to proceed.
+
+The second gate can be driven by one of the following, evaluated in order:
+- `ListenerShallManageEventIndexWithData` (`Func<int, object, bool>`) — receives the raw event index and raw data.
+- `ListenerShallManageEventNameWithData` (`Func<string, object, bool>`) — receives the event name and raw data.
+- Override of `ListenerShallManageEvent(int, object)` — virtual method.
+- Default: returns `true`.
 
 > [!NOTE]
 > The combination "first gate returns `false`, second gate returns `true`" is never reached — if the first gate discards, the second gate is not called.
 
-Default for both gates is `true` (full processing). Both overloads are available from JCOBridge 2.6.7+.
-
 ### Usage
 
-Override both gates on a callback subclass:
+Assign the index-based delegate for the lowest-overhead path:
+
+```csharp
+var listener = new Java.Awt.Event.ActionListener();
+// first gate — filter by index, no string conversion
+listener.ListenerShallManageEventIndex = idx => idx == actionPerformedIndex;
+// second gate — inspect raw data before full processing
+listener.ListenerShallManageEventIndexWithData = (idx, data) => data is Java.Awt.Event.ActionEvent;
+listener.ActionPerformed += e => { /* handle */ };
+```
+
+Or use the name-based variant when filtering by event name is more convenient:
+
+```csharp
+listener.ListenerShallManageEventName = name => name == "actionPerformed";
+listener.ListenerShallManageEventNameWithData = (name, data) => data is Java.Awt.Event.ActionEvent;
+```
+
+Or override the virtual methods on a subclass:
 
 ```csharp
 public class MyActionListener : Java.Awt.Event.ActionListener
 {
-    protected override bool ShallManageEvent(string eventName)
+    protected override bool ListenerShallManageEvent(int eventIndex)
     {
-        // first gate: filter by event name alone, no data read yet
-        return eventName == "actionPerformed";
+        return eventIndex == actionPerformedIndex;
     }
 
-    protected override bool ShallManageEvent(string eventName, object data)
+    protected override bool ListenerShallManageEvent(int eventIndex, object data)
     {
-        // second gate: raw data available — inspect before committing to full processing
-        // e.g. check a source identifier in the raw payload
         return data is Java.Awt.Event.ActionEvent ae && ae.GetSource() is MyButton;
     }
 
@@ -258,42 +281,31 @@ public class MyActionListener : Java.Awt.Event.ActionListener
 }
 ```
 
-Or assign either gate via delegates without subclassing:
-
-```csharp
-var listener = new Java.Awt.Event.ActionListener();
-// first gate — filter by name, no data read
-listener.ShallManageEventHandler = eventName => eventName == "actionPerformed";
-// second gate — inspect raw data before full processing
-listener.ShallManageEventWithDataHandler = (eventName, data) => data is Java.Awt.Event.ActionEvent;
-listener.ActionPerformed += e => { /* handle */ };
-```
-
 ### Performance impact
 
-The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7+, 1 000 000 iterations):
+The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (latest version, 1 000 000 iterations):
 
-| Gate | `byIndex` | .NET 8 / T17 | .NET 10 / T25 | Events/sec (.NET 10) |
+| Gate | `byIndex` | .NET 8 / T17 | .NET 10 / T25 | Events/sec (.NET 8) |
 |---|---|---|---|---|
-| First gate discard (no data read) | `false` | 0.601 µs | 0.468 µs | ~2.1 M |
-| First gate discard (no data read) | `true` | **0.045 µs** | **0.041 µs** | **~24 M** |
-| Second gate discard (raw data inspected) | `false` | 0.625 µs | 0.493 µs | ~2.0 M |
-| Second gate discard (raw data inspected) | `true` | **0.074 µs** | **0.067 µs** | **~15 M** |
-| Full processing | `false` | 5.098 µs | 4.725 µs | ~212 K |
-| Full processing | `true` | 4.467 µs | 4.141 µs | ~242 K |
+| First gate discard (no data read) | `false` | 0.418 µs | 0.462 µs | ~2.4 M |
+| First gate discard (no data read) | `true` | **0.035 µs** | **0.035 µs** | **~29 M** |
+| Second gate discard (raw data inspected) | `false` | 0.435 µs | 0.471 µs | ~2.3 M |
+| Second gate discard (raw data inspected) | `true` | **0.070 µs** | **0.053 µs** | **~14 M** |
+| Full processing | `false` | 3.299 µs | 4.127 µs | ~303 K |
+| Full processing | `true` | 2.780 µs | 3.650 µs | ~360 K |
 
-With `byIndex = true` and first-gate discard, the per-event cost (~41–45 ns) is within the range of raw JNI overhead measured on dedicated bare-metal hardware — despite running on a shared CI runner and crossing the JVM↔CLR boundary. The second gate adds ~25–30 ns for the raw data availability step, still roughly 70× cheaper than full processing.
+With `byIndex = true` and `ListenerShallManageEventIndex`, the per-event cost reaches **35 ns on both .NET 8 and .NET 10** — within the range of raw JNI call overhead on dedicated bare-metal hardware, despite running on a shared CI runner and crossing the JVM↔CLR boundary.
 
-See [performance](performance.md) for the complete benchmark data.
+See [performance](performance.md) for the complete benchmark data across all versions.
 
 > [!TIP]
-> Use the first gate (`ShallManageEvent(string)`) to filter by event name alone — this is the cheapest path and sufficient for most use cases. Use the second gate (`ShallManageEvent(string, object)`) only when the decision depends on a lightweight check of the raw payload that is not worth deferring to the full handler.
+> Use `ListenerShallManageEventIndex` (index-based first gate) for the lowest-overhead path — no string conversion, pure integer check. Use `ListenerShallManageEventName` when filtering by event name is more convenient; it adds the cost of `ConvertListenerEventIndexToEventName`.
 
 > [!TIP]
 > Apply these filters whenever a JVM™ source fires multiple event types and only a subset have registered handlers. Typical candidates: AWT/Swing components with many listener methods, Kafka Streams topologies with mixed functional interfaces, and any JVM™ observable that emits high-frequency events of heterogeneous types.
 
 > [!NOTE]
-> Both `ShallManageEvent` overloads are available from JCOBridge 2.6.7+. On earlier versions all events follow the full data-read path regardless of whether a handler is registered.
+> Both `ListenerShallManageEvent` overloads are available from JCOBridge 2.6.7+. On earlier versions all events follow the full data-read path regardless of whether a handler is registered.
 
 ## Memory transfer at CLR-JVM™ boundary
 

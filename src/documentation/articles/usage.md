@@ -267,14 +267,14 @@ finally { System.GC.ReRegisterForFinalize(set); }
 
 Each `Dispose` on a JNet object releases the underlying JVM™ global reference with a direct native call. In tight loops that create and dispose many JNet objects — such as a Kafka consumer poll loop or a storage enumeration — this per-object native call cost accumulates.
 
-`JvmBatchDisposeFastScope` and `JvmBatchDisposeAsyncScope` address this by batching the releases and flushing them in a single native call, keeping the loop body unchanged.
+`JCOBridgeDisposeFastScope` and `JCOBridgeDisposeAsyncScope` address this by batching the releases and flushing them in a single native call, keeping the loop body unchanged.
 
-### `JvmBatchDisposeFastScope` — synchronous hot paths
+### `JCOBridgeDisposeFastScope` — synchronous hot paths
 
 Use this scope in synchronous code on a controlled thread. It uses thread-local storage with minimal access cost.
 
 ```csharp
-using var batch = new JvmBatchDisposeFastScope();
+using var batch = new JCOBridgeDisposeFastScope();
 while (!resetEvent.WaitOne(0))
 {
     using var records = consumer.Poll(200);
@@ -289,17 +289,17 @@ while (!resetEvent.WaitOne(0))
 ```
 
 > [!WARNING]
-> `JvmBatchDisposeFastScope` is not safe across `await` — if a continuation resumes on a different thread the scope state will not be visible. Use `JvmBatchDisposeAsyncScope` for async code.
+> `JCOBridgeDisposeFastScope` is not safe across `await` — if a continuation resumes on a different thread the scope state will not be visible. Use `JCOBridgeDisposeAsyncScope` for async code.
 
-### `JvmBatchDisposeAsyncScope` — async/await contexts
+### `JCOBridgeDisposeAsyncScope` — async/await contexts
 
 Use this scope when continuations may resume on a different thread. The scope state flows automatically across `await` points.
 
-On .NET 8 and later `JvmBatchDisposeAsyncScope` implements `IAsyncDisposable`, enabling `await using` and an asynchronous flush on scope exit:
+On .NET 8 and later `JCOBridgeDisposeAsyncScope` implements `IAsyncDisposable`, enabling `await using` and an asynchronous flush on scope exit:
 
 ```csharp
 // .NET 8 / 9 / 10 — IAsyncDisposable available
-await using var batch = new JvmBatchDisposeAsyncScope();
+await using var batch = new JCOBridgeDisposeAsyncScope();
 await foreach (var item in asyncCollection)
 {
     using (item)
@@ -313,7 +313,7 @@ On .NET Framework `IAsyncDisposable` is not available. Use a standard `using` bl
 
 ```csharp
 // .NET Framework — IDisposable only
-using (var batch = new JvmBatchDisposeAsyncScope())
+using (var batch = new JCOBridgeDisposeAsyncScope())
 {
     foreach (var item in collection)
     {
