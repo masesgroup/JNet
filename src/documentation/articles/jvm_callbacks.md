@@ -173,15 +173,31 @@ using (var batch = new JvmBatchDisposeFastScope())
 ```
 
 For async callback handlers where continuations may resume on a different thread, use
-`JvmBatchDisposeAsyncScope` instead:
+`JvmBatchDisposeAsyncScope` instead. On .NET 8 and later `IAsyncDisposable` is available,
+enabling `await using` and an asynchronous flush:
 
 ```csharp
+// .NET 8 / 9 / 10
 using (var handler = new MyAsyncListener())
 await using (var batch = new JvmBatchDisposeAsyncScope())
 {
-    await foreach (var event in eventSource)
+    await foreach (var ev in eventSource)
     {
-        await handler.HandleAsync(event);
+        await handler.HandleAsync(ev);
+    }
+}
+```
+
+On .NET Framework use a standard `using` block — the flush is synchronous:
+
+```csharp
+// .NET Framework
+using (var handler = new MyAsyncListener())
+using (var batch = new JvmBatchDisposeAsyncScope())
+{
+    foreach (var ev in eventSource)
+    {
+        handler.Handle(ev);
     }
 }
 ```
