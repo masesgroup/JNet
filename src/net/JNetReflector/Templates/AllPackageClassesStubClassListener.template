@@ -13,7 +13,7 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(params object[] args) : base(args) { InitializeHandlers(); _ListenerRuntimeType = GetType(); }
 
     readonly global::System.Type _ListenerRuntimeType = null;
-    static bool GetMethodIsOverridden(Type thisType, string methodName, params global::System.Type[] types)
+    static bool GetMethodIsOverridden(global::System.Type thisType, string methodName, params global::System.Type[] types)
     {
         var method = thisType.GetMethod(methodName, types);
         var methodOverridden = method.GetBaseDefinition().DeclaringType != method.DeclaringType;
