@@ -22,6 +22,14 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     }
 
     readonly bool _hasALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDERSecondGate = GetMethodIsOverridden(nameof(ListenerShallManageEvent), typeof(int), typeof(object));
+    /// <inheritdoc/>
+    protected override bool ListenerShallManageEvent(int eventIndex)
+    {
+        if (ListenerShallManageEventIndex != null) return ListenerShallManageEventIndex(eventIndex); // test first gate base handler with index
+        if (ListenerShallManageEventName != null) return ListenerShallManageEventName(ConvertListenerEventIndexToEventName(eventIndex)); // or test first gate base handler with name
+        if (ListenerShallManageEventHandlers()) return true;
+        return _hasALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDERSecondGate;
+    }
 
 ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER
 

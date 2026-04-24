@@ -253,12 +253,10 @@ namespace MASES.JNet.Reflector.Templates
                                                                             + "}}" + Environment.NewLine;
 
                 public static readonly string BLOCK_LISTENER_FIRST_GATE_FORMAT = "/// <inheritdoc/>" + Environment.NewLine
-                                                                               + "protected override bool ListenerShallManageEvent(int eventIndex)" + Environment.NewLine
+                                                                               + "protected virtual bool ListenerShallManageEventHandlers(int eventIndex)" + Environment.NewLine
                                                                                + "{{" + Environment.NewLine
-                                                                               + "    if (ListenerShallManageEventIndex != null && ListenerShallManageEventIndex(eventIndex)) return true; // test first gate base handler" + Environment.NewLine
-                                                                               + "    if (ListenerShallManageEventName != null && ListenerShallManageEventName(ConvertListenerEventIndexToEventName(eventIndex)) return true; // test second gate base handler" + Environment.NewLine
                                                                                + "{0}" + Environment.NewLine
-                                                                               + "    return _hasALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDERSecondGate;" + Environment.NewLine
+                                                                               + "    return false; // no one can manage event, continues to caller" + Environment.NewLine
                                                                                + "}}" + Environment.NewLine;
 
                 public static string LISTENER_INDEX_VARIABLE_NAME_FORMAT = "int _{0}Index = 0;";
