@@ -65,12 +65,12 @@ namespace Org.Mases.JNet
             _test2 = test2;
         }
 
-        protected override bool ShallManageEvent(string eventName)
+        protected override bool ListenerShallManageEvent(int eventIndex)
         {
             return _test1;
         }
 
-        protected override bool ShallManageEvent(string eventName, object data)
+        protected override bool ListenerShallManageEvent(int eventIndex, object data)
         {
             return _test2;
         }
