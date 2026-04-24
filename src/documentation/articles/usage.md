@@ -295,7 +295,10 @@ while (!resetEvent.WaitOne(0))
 
 Use this scope when continuations may resume on a different thread. The scope state flows automatically across `await` points.
 
+On .NET 8 and later `JvmBatchDisposeAsyncScope` implements `IAsyncDisposable`, enabling `await using` and an asynchronous flush on scope exit:
+
 ```csharp
+// .NET 8 / 9 / 10 — IAsyncDisposable available
 await using var batch = new JvmBatchDisposeAsyncScope();
 await foreach (var item in asyncCollection)
 {
@@ -303,7 +306,20 @@ await foreach (var item in asyncCollection)
     {
         await ProcessAsync(item);
     }
-} // all queued releases flushed here in a single native call
+} // queued releases flushed asynchronously when the scope exits
+```
+
+On .NET Framework `IAsyncDisposable` is not available. Use a standard `using` block — the flush on scope exit is synchronous:
+
+```csharp
+// .NET Framework — IDisposable only
+using (var batch = new JvmBatchDisposeAsyncScope())
+{
+    foreach (var item in collection)
+    {
+        using (item) { /* item disposal is batched */ }
+    }
+} // queued releases flushed synchronously when the scope exits
 ```
 
 > [!NOTE]

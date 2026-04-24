@@ -142,8 +142,11 @@ references). This bounds memory usage regardless of how long the loop runs.
 Use this scope when continuations may resume on a different thread. The scope state flows
 automatically across `await` points.
 
+On .NET 8 and later `JvmBatchDisposeAsyncScope` implements `IAsyncDisposable`, enabling
+`await using` and an asynchronous flush on scope exit:
+
 ```csharp
-// Async enumeration
+// Async enumeration — .NET 8 / 9 / 10
 await using var batch = new JvmBatchDisposeAsyncScope();
 await foreach (var item in asyncJvmCollection)
 {
@@ -153,7 +156,21 @@ await foreach (var item in asyncJvmCollection)
     }
     // item.Dispose() queues the release — no native call here
 }
-// scope exits: all queued releases flushed in a single native call
+// scope exits: queued releases flushed asynchronously
+```
+
+On .NET Framework `IAsyncDisposable` is not available — use a standard `using` block instead,
+the flush on scope exit is synchronous:
+
+```csharp
+// .NET Framework
+using (var batch = new JvmBatchDisposeAsyncScope())
+{
+    foreach (var item in jvmCollection)
+    {
+        using (item) { /* item disposal is batched */ }
+    }
+} // scope exits: queued releases flushed synchronously
 ```
 
 > [!NOTE]
