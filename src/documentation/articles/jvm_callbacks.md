@@ -143,6 +143,34 @@ using (var handler = new Predicate<int>((o1) =>
 > * It incurs **unnecessary overhead**: the JVM™ event-handling infrastructure is allocated on every call
 >   instead of being reused.
 
+## Discarding events before full processing
+
+When only a subset of events from a listener require full handling, the two-gate filter avoids reading JVM™ argument data for events that will be discarded. The index-based variants — `ListenerShallManageEventIndex` and `ListenerShallManageEventIndexWithData` — operate without any string conversion and represent the lowest-overhead path:
+
+```csharp
+using (var handler = new Predicate<int>((o1) =>
+{
+    if (o1 > 10) return true;
+    return false;
+}))
+{
+    // discard all events except index 0 before any data is read
+    handler.ListenerShallManageEventIndex = idx => idx == 0;
+    // further filter by raw data after read, before full dispatch
+    handler.ListenerShallManageEventIndexWithData = (idx, data) => data != null;
+
+    while (!resetEvent.WaitOne(0))
+    {
+        if (o.CanSend(i, handler)) o.Send(i);
+        i++;
+    }
+}
+```
+
+Name-based variants (`ListenerShallManageEventName`, `ListenerShallManageEventNameWithData`) are available when filtering by event name is more convenient; they resolve the name via `ConvertListenerEventIndexToEventName`. Both approaches can also be implemented by overriding the virtual `ListenerShallManageEvent(int)` and `ListenerShallManageEvent(int, object)` methods on a subclass.
+
+See [performance tips](performancetips.md) for the full gate API description and benchmark data.
+
 ## Reducing Dispose overhead in high-frequency callback loops
 
 When a callback handler receives a sustained high-frequency stream of JVM-originated events — for
@@ -152,7 +180,7 @@ each invocation. Each of those objects carries a JVM™ global reference that mu
 the object is no longer needed.
 
 Releasing each reference immediately on `Dispose` makes a direct native call per object. At high
-event rates this cost accumulates. Opening a `JvmBatchDisposeFastScope` around the event loop
+event rates this cost accumulates. Opening a `JCOBridgeDisposeFastScope` around the event loop
 batches those releases and flushes them in a single native call, keeping the handler body unchanged:
 
 ```csharp
@@ -161,7 +189,7 @@ using (var handler = new Predicate<int>((o1) =>
     if (o1 > 10) return true;
     return false;
 }))
-using (var batch = new JvmBatchDisposeFastScope())
+using (var batch = new JCOBridgeDisposeFastScope())
 {
     while (!resetEvent.WaitOne(0))
     {
@@ -173,13 +201,13 @@ using (var batch = new JvmBatchDisposeFastScope())
 ```
 
 For async callback handlers where continuations may resume on a different thread, use
-`JvmBatchDisposeAsyncScope` instead. On .NET 8 and later `IAsyncDisposable` is available,
+`JCOBridgeDisposeAsyncScope` instead. On .NET 8 and later `IAsyncDisposable` is available,
 enabling `await using` and an asynchronous flush:
 
 ```csharp
 // .NET 8 / 9 / 10
 using (var handler = new MyAsyncListener())
-await using (var batch = new JvmBatchDisposeAsyncScope())
+await using (var batch = new JCOBridgeDisposeAsyncScope())
 {
     await foreach (var ev in eventSource)
     {
@@ -193,7 +221,7 @@ On .NET Framework use a standard `using` block — the flush is synchronous:
 ```csharp
 // .NET Framework
 using (var handler = new MyAsyncListener())
-using (var batch = new JvmBatchDisposeAsyncScope())
+using (var batch = new JCOBridgeDisposeAsyncScope())
 {
     foreach (var ev in eventSource)
     {
