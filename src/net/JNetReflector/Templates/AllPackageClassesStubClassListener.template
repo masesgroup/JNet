@@ -11,6 +11,18 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
     /// </summary>
     public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(params object[] args) : base(args) { InitializeHandlers(); }
+
+    global::System.Type _ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDERRuntimeType = null;
+    bool GetMethodIsOverridden(string methodName, params global::System.Type[] types)
+    {
+        _ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDERRuntimeType ?? GetType();
+        var method = _ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDERRuntimeType.GetMethod(methodName, types);
+        var methodOverridden = method.GetBaseDefinition().DeclaringType != method.DeclaringType;
+        return methodOverridden;
+    }
+
+    readonly bool _hasALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDERSecondGate = GetMethodIsOverridden(nameof(ListenerShallManageEvent), typeof(int), typeof(object));
+
 ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER
 
     // TODO: complete the class

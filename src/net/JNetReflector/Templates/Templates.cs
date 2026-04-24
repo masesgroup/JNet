@@ -126,6 +126,7 @@ namespace MASES.JNet.Reflector.Templates
             public const string CLASS = "ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
             public const string CLASS_DIRECT = "ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER";
             public const string LISTENER_CLASS = "ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER";
+            public const string LISTENER_MANAGE_EVENTS = "ALLPACKAGE_CLASSES_STUB_LISTENER_MANAGE_EVENTS_PLACEHOLDER";
             public const string INTERFACE = "ALLPACKAGE_CLASSES_STUB_INTERFACE_PLACEHOLDER";
             public const string INTERFACE_CONSTRAINT = "ALLPACKAGE_CLASSES_STUB_CLASS_INTERFACE_PLACEHOLDER";
             public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
@@ -208,9 +209,11 @@ namespace MASES.JNet.Reflector.Templates
                 public const string LISTENER_INDEX_VARIABLE_NAME = "METHOD_STUB_LISTENER_INDEX_VARIABLE_NAME";
                 public const string LISTENER_EXECUTION_TYPE = "METHOD_STUB_LISTENER_EXECUTION_TYPE_PLACEHOLDER";
                 public const string LISTENER_EXECUTION = "METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER";
+                public const string LISTENER_PARAMETERS_TYPES = "METHOD_STUB_LISTENER_PARAMETERS_TYPES_PLACEHOLDER";
                 public const string LISTENER_HANDLER_EXECUTION = "METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER";
                 public const string LISTENER_HANDLER_NAME = "METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER";
-                public const string SINGLE_LISTENER_HANDLER_FORMAT = "    AddEventHandler(\"{0}\", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));"; // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
+                public const string SINGLE_LISTENER_HANDLER_FORMAT = "    METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = AddEventHandler(\"{0}\", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));"; // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
+                public const string SINGLE_LISTENER_FIRST_GATE_FORMAT = "    if (eventIndex == METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex) return METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden();";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4}{5});";
                 public const string SINGLE_ARRAY_EXECUTION_FORMAT = "new object[] {{ {0} }}";
                 public const string STATIC_EXECUTION_FORMAT = "{0}{1}{2}(LocalBridgeClazz, \"{3}\"{4}{5});";
@@ -236,10 +239,10 @@ namespace MASES.JNet.Reflector.Templates
 
                 public static readonly string ACTION_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                        + "    methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
-                                                                                       + "    data.EventData.TypedEventData.HasOverride = hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER;";
+                                                                                       + "    data.EventData.TypedEventData.HasOverride = _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER;";
                 public static readonly string FUNC_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                      + "    var executionResult = methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
-                                                                                     + "    data.EventData.TypedEventData.SetReturnData(hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER, executionResult);";
+                                                                                     + "    data.EventData.TypedEventData.SetReturnData(_hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER, executionResult);";
 
                 public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "/// <summary>" + Environment.NewLine
                                                                             + "/// Handlers initializer for <see cref=\"{0}\"/>" + Environment.NewLine
@@ -248,6 +251,15 @@ namespace MASES.JNet.Reflector.Templates
                                                                             + "{{" + Environment.NewLine
                                                                             + "{1}" + Environment.NewLine
                                                                             + "}}" + Environment.NewLine;
+
+                public static readonly string BLOCK_LISTENER_FIRST_GATE_FORMAT = "/// <inheritdoc/>" + Environment.NewLine
+                                                                               + "protected override bool ListenerShallManageEvent(int eventIndex)" + Environment.NewLine
+                                                                               + "{{" + Environment.NewLine
+                                                                               + "    if (ListenerShallManageEventIndex != null && ListenerShallManageEventIndex(eventIndex)) return true; // test first gate base handler" + Environment.NewLine
+                                                                               + "    if (ListenerShallManageEventName != null && ListenerShallManageEventName(ConvertListenerEventIndexToEventName(eventIndex)) return true; // test second gate base handler" + Environment.NewLine
+                                                                               + "{0}" + Environment.NewLine
+                                                                               + "    return _hasALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDERSecondGate;" + Environment.NewLine
+                                                                               + "}}" + Environment.NewLine;
 
                 public static string LISTENER_INDEX_VARIABLE_NAME_FORMAT = "int _{0}Index = 0;";
                 public static string VOID_LISTENER_EXECUTION_FORMAT = "org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();" + Environment.NewLine

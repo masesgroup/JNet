@@ -5,10 +5,16 @@
 /// <remarks>If <see cref="OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER"/> has a value it takes precedence over corresponding class method</remarks>
 public METHOD_STUB_LISTENER_EXECUTION_TYPE_PLACEHOLDER OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER { get; set; } = null;
 
-bool hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = true;
+int METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = 0;
+readonly bool _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = GetMethodIsOverridden(nameof(METHOD_STUB_METHOD_NAME_PLACEHOLDER)METHOD_STUB_LISTENER_PARAMETERS_TYPES_PLACEHOLDER);
+bool METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden() => _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER || OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null;
 void METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
 {
-    hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = true;
+    if (!METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden()) // can be omitted however it is a protection against an user override of ListenerShallManageEvent
+    {
+        // returns immediately without analyze anything, data.EventData.TypedEventData.HasOverride is false by default
+        return;
+    }
 METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER
 }
 

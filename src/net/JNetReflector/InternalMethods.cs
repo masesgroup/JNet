@@ -1302,6 +1302,7 @@ namespace MASES.JNet.Reflector
 
             StringBuilder subClassBlock = new StringBuilder();
             StringBuilder subListenerHandlerBlock = new StringBuilder();
+            StringBuilder subListenerFirstGateBlock = new StringBuilder();
             SortedDictionary<string, Method> methods = new SortedDictionary<string, Method>();
             SortedDictionary<string, IList<Method>> properties = new SortedDictionary<string, IList<Method>>();
 
@@ -1629,6 +1630,7 @@ namespace MASES.JNet.Reflector
                 StringBuilder methodParamsBuilder = new StringBuilder();
                 StringBuilder methodExecutionParamsBuilder = new StringBuilder();
                 StringBuilder listenerParamsBuilder = new StringBuilder();
+                StringBuilder listenerFirstGateParamsBuilder = new StringBuilder();
                 StringBuilder listenerExecutionParamsBuilder = new StringBuilder();
 
                 for (int i = 0; i < parameters.Count; i++)
@@ -1683,6 +1685,7 @@ namespace MASES.JNet.Reflector
                         if (!typeStr.EndsWith(SpecialNames.ArrayTypeTrailer)) typeStr += SpecialNames.ArrayTypeTrailer;
                         methodParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");
                         listenerParamsBuilder.AppendFormat($"{typeStr}, ");
+                        listenerFirstGateParamsBuilder.AppendFormat($"typeof({typeStr}), ");
                         if (parameter.IsJVMException())
                         {
                             listenerExecutionParamsBuilder.AppendFormat($"JVMBridgeException.New(data.EventData.ExtraData.Get({i}) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject), ");
@@ -1697,6 +1700,7 @@ namespace MASES.JNet.Reflector
                         methodParamsBuilder.AppendFormat($"{typeStr} {parameter.Name()}, ");
                         methodExecutionParamsBuilder.AppendFormat($"{parameter.Name()}, ");
                         listenerParamsBuilder.AppendFormat($"{typeStr}, ");
+                        listenerFirstGateParamsBuilder.AppendFormat($"typeof({typeStr}), ");
                         if (parameter.IsJVMException())
                         {
                             listenerExecutionParamsBuilder.AppendFormat($"JVMBridgeException.New(data.EventData.ExtraData.Get({i}) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject), ");
@@ -1776,13 +1780,20 @@ namespace MASES.JNet.Reflector
                 string paramsString = methodParamsBuilder.ToString();
                 string executionParamsString = methodExecutionParamsBuilder.ToString();
                 string listenerParamsString = listenerParamsBuilder.ToString();
+                string listenerFirstGateParamsString = listenerFirstGateParamsBuilder.ToString();
                 string listenerExecutionParamsString = listenerExecutionParamsBuilder.ToString();
                 if (paramCount != 0)
                 {
                     if (paramsString.EndsWith(", ")) paramsString = paramsString.Substring(0, paramsString.Length - 2); // remove last occurrence of ", "
                     if (executionParamsString.EndsWith(", ")) executionParamsString = executionParamsString.Substring(0, executionParamsString.Length - 2); // remove last occurrence of ", "
                     if (listenerParamsString.EndsWith(", ")) listenerParamsString = listenerParamsString.Substring(0, listenerParamsString.Length - 2); // remove last occurrence of ", "
+                    if (listenerFirstGateParamsString.EndsWith(", ")) listenerFirstGateParamsString = listenerFirstGateParamsString.Substring(0, listenerFirstGateParamsString.Length - 2); // remove last occurrence of ", "
                     if (listenerExecutionParamsString.EndsWith(", ")) listenerExecutionParamsString = listenerExecutionParamsString.Substring(0, listenerExecutionParamsString.Length - 2); // remove last occurrence of ", "
+                }
+
+                if (listenerFirstGateParamsString.Length > 0)
+                {
+                    listenerFirstGateParamsString = ", " + listenerFirstGateParamsString;
                 }
 
                 bool isArrayReturnType = false;
@@ -2017,6 +2028,7 @@ namespace MASES.JNet.Reflector
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub.Replace(methodNameOrigin, methodNameOrigin + SpecialNames.BaseMethodSuffix))
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
@@ -2046,6 +2058,7 @@ namespace MASES.JNet.Reflector
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
@@ -2075,6 +2088,7 @@ namespace MASES.JNet.Reflector
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
@@ -2108,6 +2122,9 @@ namespace MASES.JNet.Reflector
                                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName);
 
                         subListenerHandlerBlock.AppendLine(singleListenerHandler);
+                        string singleListenerFirstGate = AllPackageClasses.ClassStub.MethodStub.SINGLE_LISTENER_FIRST_GATE_FORMAT;
+                        singleListenerFirstGate = singleListenerFirstGate.Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName);
+                        subListenerFirstGateBlock.AppendLine(singleListenerFirstGate);
                     }
                 }
 
@@ -2142,6 +2159,7 @@ namespace MASES.JNet.Reflector
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
@@ -2171,6 +2189,7 @@ namespace MASES.JNet.Reflector
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStubDirect)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
@@ -2183,7 +2202,8 @@ namespace MASES.JNet.Reflector
             if (forListener && !forInterface && !staticMethods)
             {
                 var listenerBlock = string.Format(AllPackageClasses.ClassStub.MethodStub.BLOCK_LISTENER_HANDLER_FORMAT, classDefinition.JVMClassName(null, false, false), subListenerHandlerBlock.ToString());
-                returnStr = listenerBlock + returnStr;
+                var firstGateBlock = string.Format(AllPackageClasses.ClassStub.MethodStub.BLOCK_LISTENER_FIRST_GATE_FORMAT, subListenerFirstGateBlock.ToString());
+                returnStr = listenerBlock + firstGateBlock + returnStr;
             }
 
             return returnStr;
