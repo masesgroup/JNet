@@ -2069,7 +2069,7 @@ namespace MASES.JNet.Reflector
                             jDecoration.AppendLine();
                             jDecoration.AppendFormat(AllPackageClasses.ClassStub.MethodStub.HELP_REMARK_HANDLER_WITH_DEFAULT, methodNameDefault);
                         }
-                        executionStub = isVoidMethod ? $"hasOverride{baseHandlerName} = false;" : $"hasOverride{baseHandlerName} = false; return default;";
+                        executionStub = isVoidMethod ? string.Empty : "return default;";
                     }
                     else if (staticMethods && method.IsStatic())
                     {
