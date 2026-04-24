@@ -2101,7 +2101,7 @@ namespace MASES.JNet.Reflector
                     }
                     else
                     {
-                        executionStub = isVoidMethod ? $"hasOverride{baseHandlerName} = false;" : $"hasOverride{baseHandlerName} = false; return default;";
+                        executionStub = isVoidMethod ? string.Empty : "return default;";
                     }
 
                     if (!isVoidMethod)
