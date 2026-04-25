@@ -212,6 +212,7 @@ namespace MASES.JNet.Reflector.Templates
                 public const string LISTENER_PARAMETERS_TYPES = "METHOD_STUB_LISTENER_PARAMETERS_TYPES_PLACEHOLDER";
                 public const string LISTENER_HANDLER_EXECUTION = "METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER";
                 public const string LISTENER_HANDLER_NAME = "METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER";
+                public const string LISTENER_DISPOSE_HANDLER = "METHOD_STUB_LISTENER_DISPOSE_HANDLER_PLACEHOLDER";
                 public static string SINGLE_LISTENER_HANDLER_FORMAT = "    METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = AddEventHandler(\"{0}\", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));" + Environment.NewLine // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
                                                                     + "    _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = MASES.JNet.Specific.JNetEventResult.GetMethodIsOverridden(listenerRuntimeType, nameof(METHOD_STUB_METHOD_NAME_PLACEHOLDER)METHOD_STUB_LISTENER_PARAMETERS_TYPES_PLACEHOLDER);";
                 public const string SINGLE_LISTENER_FIRST_GATE_FORMAT = "    if (eventIndex == METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex) return METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden();";
@@ -238,12 +239,17 @@ namespace MASES.JNet.Reflector.Templates
                 public const string INSTANCE_EXECUTE = "IExecute";
                 public const string SIGNATURE_EXECUTE_TRAILER = "WithSignature";
 
+                public static readonly string LISTENER_DISPOSE_HANDLER_FORMAT = "" + Environment.NewLine
+                                                                              + "public Func<METHOD_STUB_RETURN_TYPE_PLACEHOLDER> OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose { get; set; } = null;" + Environment.NewLine
+                                                                              + "";
+
                 public static readonly string ACTION_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                        + "    methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
                                                                                        + "    data.EventData.TypedEventData.HasOverride = METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden();";
                 public static readonly string FUNC_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                      + "    var executionResult = methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
-                                                                                     + "    data.EventData.TypedEventData.SetReturnData(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden(), executionResult);";
+                                                                                     + "    data.EventData.TypedEventData.SetReturnData(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden(), executionResult);" + Environment.NewLine
+                                                                                     + "    OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose?.Invoke(executionResult);";
 
                 public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "/// <summary>" + Environment.NewLine
                                                                             + "/// Handlers initializer for <see cref=\"{0}\"/>" + Environment.NewLine

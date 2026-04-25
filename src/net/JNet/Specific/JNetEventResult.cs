@@ -55,7 +55,7 @@ namespace MASES.JNet.Specific
         /// <summary>
         /// The <see cref="object"/> to be returned to the JVM side
         /// </summary>
-        public object ReturnData { get => IExecute("getReturnData"); set => IExecute("setReturnData", value); }
+        public object ReturnData { get => IExecute("getReturnData"); } // disabled since JVM side raise an exception in any case set => IExecute("setReturnData", value); }
         /// <summary>
         /// Helper function to set both <see cref="HasOverride"/> and <see cref="ReturnData"/>
         /// </summary>

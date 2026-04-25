@@ -4,7 +4,7 @@
 /// </summary>
 /// <remarks>If <see cref="OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER"/> has a value it takes precedence over corresponding class method</remarks>
 public METHOD_STUB_LISTENER_EXECUTION_TYPE_PLACEHOLDER OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER { get; set; } = null;
-
+METHOD_STUB_LISTENER_DISPOSE_HANDLER_PLACEHOLDER
 int METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = 0;
 bool _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER;
 [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
