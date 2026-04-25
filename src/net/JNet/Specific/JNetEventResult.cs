@@ -19,6 +19,7 @@
 using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
+using System.Reflection;
 
 namespace MASES.JNet.Specific
 {
@@ -74,9 +75,19 @@ namespace MASES.JNet.Specific
         /// <returns><see langword="true"/> if <paramref name="methodName"/> has an override from the user</returns>
         public static bool GetMethodIsOverridden(global::System.Type thisType, string methodName, params global::System.Type[] types)
         {
-            var method = thisType.GetMethod(methodName, types);
-            var methodOverridden = method.GetBaseDefinition().DeclaringType != method.DeclaringType;
-            return methodOverridden;
+            var method = thisType.GetMethod(
+                methodName,
+                BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.FlattenHierarchy,
+                null,
+                types,
+                null
+            );
+
+            if (method == null)
+            {
+                throw new MissingMethodException($"Method '{methodName}' not found on type '{thisType}'");
+            }
+            return method.GetBaseDefinition().DeclaringType != method.DeclaringType;
         }
     }
 }
