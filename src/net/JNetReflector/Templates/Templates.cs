@@ -240,7 +240,15 @@ namespace MASES.JNet.Reflector.Templates
                 public const string SIGNATURE_EXECUTE_TRAILER = "WithSignature";
 
                 public static readonly string LISTENER_DISPOSE_HANDLER_FORMAT = "" + Environment.NewLine
-                                                                              + "public Func<METHOD_STUB_RETURN_TYPE_PLACEHOLDER> OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose { get; set; } = null;" + Environment.NewLine
+                                                                              + "/// <summary>" + Environment.NewLine
+                                                                              + "/// Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event." + Environment.NewLine
+                                                                              + "/// </summary>" + Environment.NewLine
+                                                                              + "/// <remarks>Set <see cref=\"OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose\"/> when the event handler returns a JVM-backed object" + Environment.NewLine
+                                                                              + "/// that is no longer needed after the call. The handler receives the return value and is responsible for calling" + Environment.NewLine
+                                                                              + "/// <see cref=\"IDisposable.Dispose\"/> on it, releasing the underlying JVM global reference immediately" + Environment.NewLine
+                                                                              + "/// instead of waiting for the .NET garbage collector to finalize it." + Environment.NewLine
+                                                                              + "/// If not set, the return value is not disposed automatically.</remarks>" + Environment.NewLine
+                                                                              + "public global::System.Action<METHOD_STUB_RETURN_TYPE_PLACEHOLDER> OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose { get; set; } = null;" + Environment.NewLine
                                                                               + "";
 
                 public static readonly string ACTION_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
