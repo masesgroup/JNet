@@ -212,7 +212,8 @@ namespace MASES.JNet.Reflector.Templates
                 public const string LISTENER_PARAMETERS_TYPES = "METHOD_STUB_LISTENER_PARAMETERS_TYPES_PLACEHOLDER";
                 public const string LISTENER_HANDLER_EXECUTION = "METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER";
                 public const string LISTENER_HANDLER_NAME = "METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER";
-                public const string SINGLE_LISTENER_HANDLER_FORMAT = "    METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = AddEventHandler(\"{0}\", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));"; // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
+                public static string SINGLE_LISTENER_HANDLER_FORMAT = "    METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = AddEventHandler(\"{0}\", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));" + Environment.NewLine // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
+                                                                    + "    _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = GetMethodIsOverridden(listenerRuntimeType, nameof(METHOD_STUB_METHOD_NAME_PLACEHOLDER)METHOD_STUB_LISTENER_PARAMETERS_TYPES_PLACEHOLDER);";
                 public const string SINGLE_LISTENER_FIRST_GATE_FORMAT = "    if (eventIndex == METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex) return METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden();";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4}{5});";
                 public const string SINGLE_ARRAY_EXECUTION_FORMAT = "new object[] {{ {0} }}";
@@ -247,7 +248,7 @@ namespace MASES.JNet.Reflector.Templates
                 public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "/// <summary>" + Environment.NewLine
                                                                             + "/// Handlers initializer for <see cref=\"{0}\"/>" + Environment.NewLine
                                                                             + "/// </summary>" + Environment.NewLine
-                                                                            + "protected virtual void InitializeHandlers()" + Environment.NewLine
+                                                                            + "protected virtual void InitializeHandlers(global::System.Type listenerRuntimeType)" + Environment.NewLine
                                                                             + "{{" + Environment.NewLine
                                                                             + "{1}" + Environment.NewLine
                                                                             + "}}" + Environment.NewLine;

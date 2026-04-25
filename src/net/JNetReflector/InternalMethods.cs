@@ -2028,7 +2028,6 @@ namespace MASES.JNet.Reflector
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub.Replace(methodNameOrigin, methodNameOrigin + SpecialNames.BaseMethodSuffix))
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
-                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
@@ -2058,7 +2057,6 @@ namespace MASES.JNet.Reflector
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
-                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
@@ -2088,7 +2086,6 @@ namespace MASES.JNet.Reflector
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
-                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
@@ -2119,7 +2116,8 @@ namespace MASES.JNet.Reflector
                     {
                         string singleListenerHandler = string.Format(AllPackageClasses.ClassStub.MethodStub.SINGLE_LISTENER_HANDLER_FORMAT, eventHandlerName);
                         singleListenerHandler = singleListenerHandler.Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
-                                                                     .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName);
+                                                                     .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
+                                                                     .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString);
 
                         subListenerHandlerBlock.AppendLine(singleListenerHandler);
                         string singleListenerFirstGate = AllPackageClasses.ClassStub.MethodStub.SINGLE_LISTENER_FIRST_GATE_FORMAT;
@@ -2159,7 +2157,6 @@ namespace MASES.JNet.Reflector
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
-                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
@@ -2189,7 +2186,6 @@ namespace MASES.JNet.Reflector
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStubDirect)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
-                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_PARAMETERS_TYPES, listenerFirstGateParamsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
