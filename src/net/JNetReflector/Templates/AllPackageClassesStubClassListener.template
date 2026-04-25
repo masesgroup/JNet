@@ -6,23 +6,19 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     /// Internal constructor: used internally from JCOBridge
     /// </summary>
     [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(IJVMBridgeBaseInitializer initializer) : base(initializer) { _ListenerRuntimeType = GetType(); _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate = GetMethodIsOverridden(_ListenerRuntimeType, nameof(ListenerShallManageEvent), typeof(int), typeof(object)); }
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(IJVMBridgeBaseInitializer initializer) : base(initializer) 
+    {
+        var listenerRuntimeType = GetType(); 
+        _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate = MASES.JNet.Specific.JNetEventResult.GetMethodIsOverridden(listenerRuntimeType, nameof(ListenerShallManageEvent), typeof(int), typeof(object));
+    }
     /// <summary>
     /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
     /// </summary>
     public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(params object[] args) : base(args)
     {
-        _ListenerRuntimeType = GetType();
-        _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate = GetMethodIsOverridden(_ListenerRuntimeType, nameof(ListenerShallManageEvent), typeof(int), typeof(object));
-        InitializeHandlers(_ListenerRuntimeType);
-    }
-
-    readonly global::System.Type _ListenerRuntimeType = null;
-    static bool GetMethodIsOverridden(global::System.Type thisType, string methodName, params global::System.Type[] types)
-    {
-        var method = thisType.GetMethod(methodName, types);
-        var methodOverridden = method.GetBaseDefinition().DeclaringType != method.DeclaringType;
-        return methodOverridden;
+        var listenerRuntimeType = GetType();
+        _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate = MASES.JNet.Specific.JNetEventResult.GetMethodIsOverridden(listenerRuntimeType, nameof(ListenerShallManageEvent), typeof(int), typeof(object));
+        InitializeHandlers(listenerRuntimeType);
     }
 
     readonly bool _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate;
