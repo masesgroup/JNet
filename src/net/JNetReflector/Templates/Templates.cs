@@ -212,9 +212,10 @@ namespace MASES.JNet.Reflector.Templates
                 public const string LISTENER_PARAMETERS_TYPES = "METHOD_STUB_LISTENER_PARAMETERS_TYPES_PLACEHOLDER";
                 public const string LISTENER_HANDLER_EXECUTION = "METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER";
                 public const string LISTENER_HANDLER_NAME = "METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER";
-                public static string SINGLE_LISTENER_HANDLER_FORMAT = "    METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = AddEventHandler(\"{0}\", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));" + Environment.NewLine // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
+                public const string LISTENER_DISPOSE_HANDLER = "METHOD_STUB_LISTENER_DISPOSE_HANDLER_PLACEHOLDER";
+                public static string SINGLE_LISTENER_HANDLER_FORMAT = "    _METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = AddEventHandler(\"{0}\", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));" + Environment.NewLine // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
                                                                     + "    _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = MASES.JNet.Specific.JNetEventResult.GetMethodIsOverridden(listenerRuntimeType, nameof(METHOD_STUB_METHOD_NAME_PLACEHOLDER)METHOD_STUB_LISTENER_PARAMETERS_TYPES_PLACEHOLDER);";
-                public const string SINGLE_LISTENER_FIRST_GATE_FORMAT = "    if (eventIndex == METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex) return METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden();";
+                public const string SINGLE_LISTENER_FIRST_GATE_FORMAT = "    if (eventIndex == _METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex) return METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden();";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4}{5});";
                 public const string SINGLE_ARRAY_EXECUTION_FORMAT = "new object[] {{ {0} }}";
                 public const string STATIC_EXECUTION_FORMAT = "{0}{1}{2}(LocalBridgeClazz, \"{3}\"{4}{5});";
@@ -238,12 +239,25 @@ namespace MASES.JNet.Reflector.Templates
                 public const string INSTANCE_EXECUTE = "IExecute";
                 public const string SIGNATURE_EXECUTE_TRAILER = "WithSignature";
 
+                public static readonly string LISTENER_DISPOSE_HANDLER_FORMAT = "" + Environment.NewLine
+                                                                              + "/// <summary>" + Environment.NewLine
+                                                                              + "/// Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event." + Environment.NewLine
+                                                                              + "/// </summary>" + Environment.NewLine
+                                                                              + "/// <remarks>Set <see cref=\"OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose\"/> when the event handler returns a JVM-backed object" + Environment.NewLine
+                                                                              + "/// that is no longer needed after the call. The handler receives the return value and is responsible for calling" + Environment.NewLine
+                                                                              + "/// <see cref=\"IDisposable.Dispose\"/> on it, releasing the underlying JVM global reference immediately" + Environment.NewLine
+                                                                              + "/// instead of waiting for the .NET garbage collector to finalize it." + Environment.NewLine
+                                                                              + "/// If not set, the return value is not disposed automatically.</remarks>" + Environment.NewLine
+                                                                              + "public global::System.Action<METHOD_STUB_RETURN_TYPE_PLACEHOLDER> OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose { get; set; } = null;" + Environment.NewLine
+                                                                              + "";
+
                 public static readonly string ACTION_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                        + "    methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
                                                                                        + "    data.EventData.TypedEventData.HasOverride = METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden();";
                 public static readonly string FUNC_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                      + "    var executionResult = methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
-                                                                                     + "    data.EventData.TypedEventData.SetReturnData(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden(), executionResult);";
+                                                                                     + "    data.EventData.TypedEventData.SetReturnData(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden(), executionResult);" + Environment.NewLine
+                                                                                     + "    OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose?.Invoke(executionResult);";
 
                 public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "/// <summary>" + Environment.NewLine
                                                                             + "/// Handlers initializer for <see cref=\"{0}\"/>" + Environment.NewLine

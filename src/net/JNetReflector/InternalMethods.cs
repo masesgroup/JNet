@@ -2020,6 +2020,7 @@ namespace MASES.JNet.Reflector
                         template = Template.GetTemplate(Template.SingleMethodTemplate);
                         singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_DISPOSE_HANDLER, returnType == "void" ? string.Empty : AllPackageClasses.ClassStub.MethodStub.LISTENER_DISPOSE_HANDLER_FORMAT)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
@@ -2049,6 +2050,7 @@ namespace MASES.JNet.Reflector
                         template = Template.GetTemplate(Template.SingleMethodTemplate);
                         singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_DISPOSE_HANDLER, returnType == "void" ? string.Empty : AllPackageClasses.ClassStub.MethodStub.LISTENER_DISPOSE_HANDLER_FORMAT)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
@@ -2078,6 +2080,7 @@ namespace MASES.JNet.Reflector
                         template = Template.GetTemplate(Template.SingleMethodTemplate);
                         singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_DISPOSE_HANDLER, returnType == "void" ? string.Empty : AllPackageClasses.ClassStub.MethodStub.LISTENER_DISPOSE_HANDLER_FORMAT)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
                                                .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
@@ -2149,6 +2152,7 @@ namespace MASES.JNet.Reflector
                 {
                     singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_DISPOSE_HANDLER, returnType == "void" ? string.Empty : AllPackageClasses.ClassStub.MethodStub.LISTENER_DISPOSE_HANDLER_FORMAT)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
@@ -2178,6 +2182,7 @@ namespace MASES.JNet.Reflector
 
                     singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                           .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_DISPOSE_HANDLER, returnType == "void" ? string.Empty : AllPackageClasses.ClassStub.MethodStub.LISTENER_DISPOSE_HANDLER_FORMAT)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)

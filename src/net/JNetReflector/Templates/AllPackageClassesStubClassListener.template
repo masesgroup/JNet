@@ -3,16 +3,17 @@ ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER
 public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER
 {
     /// <summary>
-    /// Internal constructor: used internally from JCOBridge
+    /// Initializer used internally by JCOBridge. Do not use directly.
     /// </summary>
     [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(IJVMBridgeBaseInitializer initializer) : base(initializer) 
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(IJVMBridgeBaseInitializer initializer) : base(initializer)
     {
-        var listenerRuntimeType = GetType(); 
+        var listenerRuntimeType = GetType();
         _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate = MASES.JNet.Specific.JNetEventResult.GetMethodIsOverridden(listenerRuntimeType, nameof(ListenerShallManageEvent), typeof(int), typeof(object));
     }
+
     /// <summary>
-    /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+    /// Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.
     /// </summary>
     public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(params object[] args) : base(args)
     {
@@ -21,12 +22,27 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
         InitializeHandlers(listenerRuntimeType);
     }
 
+    /// <summary>
+    /// <see langword="true"/> if the user has overridden <see cref="ListenerShallManageEvent(int, object)"/> in a subclass.
+    /// Cached at construction to avoid per-event reflection cost. When <see langword="true"/>, the first gate always
+    /// returns <see langword="true"/> so that the second gate is reached regardless of whether individual event handlers are registered.
+    /// </summary>
     readonly bool _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate;
+
     /// <inheritdoc/>
+    /// <remarks>
+    /// Evaluated in order:
+    /// <list type="number">
+    /// <item><see cref="ListenerShallManageEventIndex"/> delegate — index-based, no string conversion, lowest overhead.</item>
+    /// <item><see cref="ListenerShallManageEventName"/> delegate — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
+    /// <item><see cref="ListenerShallManageEventHandlers"/> — returns <see langword="true"/> if the specific event has a registered delegate or a virtual method override.</item>
+    /// <item><see cref="_hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate"/> — returns <see langword="true"/> if the second gate is overridden, ensuring all events reach it.</item>
+    /// </list>
+    /// </remarks>
     protected override bool ListenerShallManageEvent(int eventIndex)
     {
-        if (ListenerShallManageEventIndex != null) return ListenerShallManageEventIndex(eventIndex); // test first gate base handler with index
-        if (ListenerShallManageEventName != null) return ListenerShallManageEventName(ConvertListenerEventIndexToEventName(eventIndex)); // or test first gate base handler with name
+        if (ListenerShallManageEventIndex != null) return ListenerShallManageEventIndex(eventIndex);
+        if (ListenerShallManageEventName != null) return ListenerShallManageEventName(ConvertListenerEventIndexToEventName(eventIndex));
         if (ListenerShallManageEventHandlers(eventIndex)) return true;
         return _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate;
     }
@@ -40,28 +56,40 @@ ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER
 
 #region ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER declaration
 /// <summary>
-/// Direct override of <see cref="ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER"/> or its generic type if there is one
+/// Concrete CLR representation of <see cref="ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER"/> returned by the JVM.
 /// </summary>
+/// <remarks>
+/// When the JVM returns an instance of this listener type, JCOBridge needs a concrete CLR class to wrap it.
+/// A full listener implementation cannot be used in this scenario because it would require user-provided handler code
+/// that is not available at the point of construction. This class provides a minimal, handler-free wrapper:
+/// <see cref="InitializeHandlers"/> is a no-op, <see cref="ListenerShallManageEvent(int)"/> unconditionally
+/// returns <see langword="false"/> discarding all events immediately, and <see cref="AutoInit"/> is <see langword="false"/>
+/// to prevent automatic JVM-side registration.
+/// <para>Do not use this class directly to register event handlers — use <see cref="ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER"/> instead.</para>
+/// </remarks>
 public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER
 {
     /// <summary>
-    /// Internal constructor: used internally from JCOBridge
+    /// Initializer used internally by JCOBridge. Do not use directly.
     /// </summary>
     [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
     public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+
     /// <summary>
-    /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+    /// Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.
     /// </summary>
     public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERDirect(params object[] args) : base(args) { }
 
     /// <inheritdoc/>
     public override bool AutoInit => false;
 
-    /// <inheritdoc />
+    /// <inheritdoc/>
+    /// <remarks>No handlers are registered in this direct override — initialization is intentionally skipped.</remarks>
     protected override void InitializeHandlers(global::System.Type _) { }
 
     /// <inheritdoc/>
-    protected override bool ListenerShallManageEvent(int _) { return false; } // early discard since no handlers are registered
+    /// <remarks>Always returns <see langword="false"/> — all events are discarded at the first gate without reading any JVM argument data.</remarks>
+    protected override bool ListenerShallManageEvent(int _) => false;
 
     const string _bridgeClassName = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_DIRECT_PLACEHOLDER";
     private static readonly global::System.Exception _LocalBridgeClazzException = null;
