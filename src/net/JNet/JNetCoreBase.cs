@@ -451,7 +451,7 @@ namespace MASES.JNet
                 {
                     if (args.Length == 0)
                     {
-                        System.Reflection.MethodInfo method = execType.GetMethods().FirstOrDefault(method => method.Name == "SExecute" & method.GetParameters().Length == 2 & method.IsGenericMethod == false);
+                        System.Reflection.MethodInfo method = execType.GetMethods().FirstOrDefault(method => method.Name == "SExecute" && method.GetParameters().Length == 2 && method.IsGenericMethod == false);
                         if (method != null)
                         {
                             method.Invoke(null, new object[] { "main", new object[] { args } });
