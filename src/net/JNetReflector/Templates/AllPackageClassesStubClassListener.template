@@ -6,11 +6,7 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     /// Initializer used internally by JCOBridge. Do not use directly.
     /// </summary>
     [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(IJVMBridgeBaseInitializer initializer) : base(initializer)
-    {
-        var listenerRuntimeType = GetType();
-        _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate = MASES.JNet.Specific.JNetEventResult.GetMethodIsOverridden(listenerRuntimeType, nameof(ListenerShallManageEvent), typeof(int), typeof(object));
-    }
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
 
     /// <summary>
     /// Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.
