@@ -37,6 +37,8 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     /// <item><see cref="ListenerShallManageEventName"/> delegate — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
     /// <item><see cref="ListenerShallManageEventHandlers"/> — returns <see langword="true"/> if the specific event has a registered delegate or a virtual method override.</item>
     /// <item><see cref="_hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate"/> — returns <see langword="true"/> if the second gate is overridden, ensuring all events reach it.</item>
+    /// <item><see cref="ListenerShallManageEventIndexWithData"/> delegate — index-based, no string conversion, lowest overhead.</item>
+    /// <item><see cref="ListenerShallManageEventNameWithData"/> delegate — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
     /// </list>
     /// </remarks>
     protected override bool ListenerShallManageEvent(int eventIndex)
@@ -44,7 +46,7 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
         if (ListenerShallManageEventIndex != null) return ListenerShallManageEventIndex(eventIndex);
         if (ListenerShallManageEventName != null) return ListenerShallManageEventName(ConvertListenerEventIndexToEventName(eventIndex));
         if (ListenerShallManageEventHandlers(eventIndex)) return true;
-        return _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate;
+        return _hasALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERSecondGate || ListenerShallManageEventIndexWithData != null || ListenerShallManageEventNameWithData != null;
     }
 
 ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER
