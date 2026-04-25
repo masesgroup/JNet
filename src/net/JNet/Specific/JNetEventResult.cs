@@ -85,7 +85,8 @@ namespace MASES.JNet.Specific
 
             if (method == null)
             {
-                throw new MissingMethodException($"Method '{methodName}' not found on type '{thisType}'");
+                var signature = (types == null || types.Length == 0) ? string.Empty : global::System.String.Join(", ", global::System.Array.ConvertAll(types, t => t?.ToString() ?? "<null>"));
+                throw new MissingMethodException($"Method '{methodName}({signature})' not found on type '{thisType}'");
             }
             return method.GetBaseDefinition().DeclaringType != method.DeclaringType;
         }
