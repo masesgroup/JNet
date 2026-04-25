@@ -9,7 +9,7 @@
 public METHOD_STUB_LISTENER_EXECUTION_TYPE_PLACEHOLDER OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER { get; set; } = null;
 METHOD_STUB_LISTENER_DISPOSE_HANDLER_PLACEHOLDER
 /// <summary>Index assigned by <see cref="AddEventHandler"/> for the <see cref="METHOD_STUB_METHOD_NAME_PLACEHOLDER"/> event. Used for zero-cost index-based filtering in <see cref="ListenerShallManageEvent(int)"/>.</summary>
-int METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = 0;
+int _METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = 0;
 
 /// <summary><see langword="true"/> if the user has overridden <see cref="METHOD_STUB_METHOD_NAME_PLACEHOLDER"/> in a subclass. Cached at construction to avoid per-event reflection.</summary>
 bool _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER;
