@@ -54,9 +54,12 @@ namespace MASES.JNet.Specific
         /// </summary>
         public bool HasOverride { get => IExecute<bool>("getHasOverride"); set => IExecute("setHasOverride", value); }
         /// <summary>
-        /// The <see cref="object"/> to be returned to the JVM side
+        /// The <see cref="object"/> to be returned to the JVM side.
+        /// This property is intentionally read-only: setting it directly is not supported because
+        /// JVM-side handling raises an exception. Use <see cref="SetReturnData(bool, object)"/>
+        /// to set both override state and return data in a supported way.
         /// </summary>
-        public object ReturnData { get => IExecute("getReturnData"); } // disabled since JVM side raise an exception in any case set => IExecute("setReturnData", value); }
+        public object ReturnData { get => IExecute("getReturnData"); }
         /// <summary>
         /// Helper function to set both <see cref="HasOverride"/> and <see cref="ReturnData"/>
         /// </summary>
@@ -85,7 +88,8 @@ namespace MASES.JNet.Specific
 
             if (method == null)
             {
-                throw new MissingMethodException($"Method '{methodName}' not found on type '{thisType}'");
+                var signature = (types == null || types.Length == 0) ? string.Empty : global::System.String.Join(", ", global::System.Array.ConvertAll(types, t => t?.ToString() ?? "<null>"));
+                throw new MissingMethodException($"Method '{methodName}({signature})' not found on type '{thisType}'");
             }
             return method.GetBaseDefinition().DeclaringType != method.DeclaringType;
         }
