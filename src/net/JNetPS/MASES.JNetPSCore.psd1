@@ -132,7 +132,7 @@ PrivateData = @{
 
     PSData = @{
 
-        Prerelease = 'rc3'
+        Prerelease = 'rc4'
 
         Tags = @('JNetPS', 'JNet', 'PSEdition_Core', 'PSEdition_Desktop', 'Windows', 'Linux', 'JVM', 'Java', 'Scala', 'Kotlin', 'bridge', 'gateway')
 
