@@ -406,7 +406,7 @@ namespace MASES.JNet.Reflector
             {
                 if (entry == null)
                 {
-                    ReportTrace(ReflectionTraceLevel.Error, "Class Entry {0} returned a null Class", entry.GenericString);
+                    ReportTrace(ReflectionTraceLevel.Error, "Class Entry is null and returned a null Class");
                     continue;
                 }
 
