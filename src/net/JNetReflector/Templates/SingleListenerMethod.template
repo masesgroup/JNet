@@ -2,18 +2,29 @@
 /// <summary>
 /// Handler for METHOD_STUB_METHOD_HELP_PLACEHOLDER
 /// </summary>
-/// <remarks>If <see cref="OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER"/> has a value it takes precedence over corresponding class method</remarks>
+/// <remarks>
+/// Assign a delegate to handle the event without subclassing. If both this handler and a virtual method override are present,
+/// the delegate takes precedence. Set to <see langword="null"/> to delegate to the virtual method.
+/// </remarks>
 public METHOD_STUB_LISTENER_EXECUTION_TYPE_PLACEHOLDER OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER { get; set; } = null;
 METHOD_STUB_LISTENER_DISPOSE_HANDLER_PLACEHOLDER
+/// <summary>Index assigned by <see cref="AddEventHandler"/> for the <see cref="METHOD_STUB_METHOD_NAME_PLACEHOLDER"/> event. Used for zero-cost index-based filtering in <see cref="ListenerShallManageEvent(int)"/>.</summary>
 int METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandlerIndex = 0;
+
+/// <summary><see langword="true"/> if the user has overridden <see cref="METHOD_STUB_METHOD_NAME_PLACEHOLDER"/> in a subclass. Cached at construction to avoid per-event reflection.</summary>
 bool _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER;
+
+/// <summary>Returns <see langword="true"/> if this event has an active handler — either a delegate assignment or a virtual method override. Used by <see cref="ListenerShallManageEvent(int)"/> to discard events with no registered handler without reading JVM argument data.</summary>
 [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 bool METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden() => _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER || OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null;
+
 void METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
 {
-    if (!METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden()) // can be omitted however it is a protection against an user override of ListenerShallManageEvent
+    if (!METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden()) // guard: no handler registered — return without reading data.
+                                                                          // Normally unreachable if ListenerShallManageEvent filtered correctly,
+                                                                          // but protects against user overrides of ListenerShallManageEvent that bypass the check.
     {
-        // returns immediately without analyze anything, data.EventData.TypedEventData.HasOverride is false by default
+        // data.EventData.TypedEventData.HasOverride is false by default — JVM receives no return value.
         return;
     }
 METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER
