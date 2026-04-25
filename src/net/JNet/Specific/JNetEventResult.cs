@@ -65,5 +65,18 @@ namespace MASES.JNet.Specific
         {
             IExecute("setReturnData", hasOverride, retData);
         }
+        /// <summary>
+        /// Tests if <paramref name="methodName"/> has an override in <paramref name="thisType"/>
+        /// </summary>
+        /// <param name="thisType">The <see cref="System.Type"/> with possible override</param>
+        /// <param name="methodName">The method name</param>
+        /// <param name="types">The set of <see cref="System.Type"/> of <paramref name="methodName"/> declaration</param>
+        /// <returns><see langword="true"/> if <paramref name="methodName"/> has an override from the user</returns>
+        public static bool GetMethodIsOverridden(global::System.Type thisType, string methodName, params global::System.Type[] types)
+        {
+            var method = thisType.GetMethod(methodName, types);
+            var methodOverridden = method.GetBaseDefinition().DeclaringType != method.DeclaringType;
+            return methodOverridden;
+        }
     }
 }
