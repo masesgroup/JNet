@@ -106,6 +106,8 @@ namespace MASES.JNet.Reflector
         public const string JavaLangListener = "Listener";
         public const string JavaLangAdapter = "Adapter";
         public const string ArrayTypeTrailer = "[]";
+        public const string ArrayTypeMethodTrailer = "Array";
+        public const string StreamTypeMethodTrailer = "Stream";
         public const string PropertySuffix = "Property";
         public const string ClassSuffix = "Class";
         public const string FieldSuffix = "Field";
