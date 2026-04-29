@@ -362,7 +362,7 @@ namespace MASES.JNetTest
             byte[] newArray;
             //JVMBridgeSharedBuffer.TryGetValue(backObj, out newArray);
 
-            var direct = JNetTestCore.GlobalInstance.JVM.NewDirectBuffer(bytes);
+            var direct = JNetTestCore.GlobalInstance.JVM.NewDirectBuffer(bytes, arrangeCapacity: true, timeToLive: -1);
 
             var getSharedBuffer = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<byte>(direct.JavaObject);
             var getSharedBufferInt = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<int>(direct.JavaObject);
@@ -631,7 +631,7 @@ namespace MASES.JNetTest
                 if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
-                var intBuffer = IntBuffer.From(tmpArray, false, false);
+                var intBuffer = IntBuffer.From(tmpArray, false);
                 w.Stop();
                 tuple = new System.Tuple<string, long>("IntBuffer.From from raw array", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
