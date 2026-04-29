@@ -262,7 +262,7 @@ namespace MASES.JNet
         /// Replace environment variable in <paramref name="item"/>
         /// </summary>
         /// <param name="item">The string where the environemnt variables shall be replaced</param>
-        /// <returns>The string with replaced environment varibales</returns>
+        /// <returns>The string with replaced environment variables</returns>
         /// <remarks>Each environment variable is expected in the form $(ENV_VAR)</remarks>
         public static string ReplaceEnvironmentVariable(string item)
         {
