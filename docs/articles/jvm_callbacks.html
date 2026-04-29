@@ -225,6 +225,86 @@ allocated once and disposed deterministically:</p>
 instead of being reused.</li>
 </ul>
 </div>
+<h2 id="discarding-events-before-full-processing">Discarding events before full processing</h2>
+<p>When only a subset of events from a listener require full handling, the two-gate filter avoids reading JVM™ argument data for events that will be discarded. The index-based variants — <code>ListenerShallManageEventIndex</code> and <code>ListenerShallManageEventIndexWithData</code> — operate without any string conversion and represent the lowest-overhead path:</p>
+<pre><code class="lang-csharp">using (var handler = new Predicate&lt;int&gt;((o1) =&gt;
+{
+    if (o1 &gt; 10) return true;
+    return false;
+}))
+{
+    // discard all events except index 0 before any data is read
+    handler.ListenerShallManageEventIndex = idx =&gt; idx == 0;
+    // further filter by raw data after read, before full dispatch
+    handler.ListenerShallManageEventIndexWithData = (idx, data) =&gt; data != null;
+
+    while (!resetEvent.WaitOne(0))
+    {
+        if (o.CanSend(i, handler)) o.Send(i);
+        i++;
+    }
+}
+</code></pre>
+<p>Name-based variants (<code>ListenerShallManageEventName</code>, <code>ListenerShallManageEventNameWithData</code>) are available when filtering by event name is more convenient; they resolve the name via <code>ConvertListenerEventIndexToEventName</code>. Both approaches can also be implemented by overriding the virtual <code>ListenerShallManageEvent(int)</code> and <code>ListenerShallManageEvent(int, object)</code> methods on a subclass.</p>
+<p>See <a href="performancetips.html">performance tips</a> for the full gate API description and benchmark data.</p>
+<h2 id="reducing-dispose-overhead-in-high-frequency-callback-loops">Reducing Dispose overhead in high-frequency callback loops</h2>
+<p>When a callback handler receives a sustained high-frequency stream of JVM-originated events — for
+example a Kafka Streams functional interface processing thousands of records per second, or an AWT
+event loop under heavy input — the JVM™ may pass one or more JNet-wrapped objects as arguments on
+each invocation. Each of those objects carries a JVM™ global reference that must be released when
+the object is no longer needed.</p>
+<p>Releasing each reference immediately on <code>Dispose</code> makes a direct native call per object. At high
+event rates this cost accumulates. Opening a <code>JCOBridgeDisposeFastScope</code> around the event loop
+batches those releases and flushes them in a single native call, keeping the handler body unchanged:</p>
+<pre><code class="lang-csharp">using (var handler = new Predicate&lt;int&gt;((o1) =&gt;
+{
+    if (o1 &gt; 10) return true;
+    return false;
+}))
+using (var batch = new JCOBridgeDisposeFastScope())
+{
+    while (!resetEvent.WaitOne(0))
+    {
+        if (o.CanSend(i, handler)) o.Send(i);
+        i++;
+    }
+}
+// all queued releases flushed here when the scope exits
+</code></pre>
+<p>For async callback handlers where continuations may resume on a different thread, use
+<code>JCOBridgeDisposeAsyncScope</code> instead. On .NET 8 and later <code>IAsyncDisposable</code> is available,
+enabling <code>await using</code> and an asynchronous flush:</p>
+<pre><code class="lang-csharp">// .NET 8 / 9 / 10
+using (var handler = new MyAsyncListener())
+await using (var batch = new JCOBridgeDisposeAsyncScope())
+{
+    await foreach (var ev in eventSource)
+    {
+        await handler.HandleAsync(ev);
+    }
+}
+</code></pre>
+<p>On .NET Framework use a standard <code>using</code> block — the flush is synchronous:</p>
+<pre><code class="lang-csharp">// .NET Framework
+using (var handler = new MyAsyncListener())
+using (var batch = new JCOBridgeDisposeAsyncScope())
+{
+    foreach (var ev in eventSource)
+    {
+        handler.Handle(ev);
+    }
+}
+</code></pre>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Batch scopes are most effective when the per-event handler work is lightweight — processing,
+filtering, or forwarding — and <code>Dispose</code> calls represent a meaningful fraction of the total
+loop time. When the handler itself performs expensive operations (I/O, multiple JVM™ method
+calls, computation), the release cost is already a small fraction of the total and a batch
+scope will not produce a measurable difference.</p>
+</div>
+<p>See <a href="performancetips.html">performance tips</a> for guidance on when batch scopes provide meaningful
+gains and how to select between the two scope types.</p>
 
 </article>
 
