@@ -52,11 +52,11 @@ jobs:
           echo "PRE_N=$preN" >> $env:GITHUB_ENV
 
       # pom.xml: no pre-release, version only
-      - run: (Get-Content ${{ github.workspace }}\src\jvm\jnet\pom.xml).Replace('<jnetversion>${{ inputs.CurrentVersion }}</jnetversion>', '<jnetversion>${{ inputs.NewVersion }}</jnetversion>') | Set-Content ${{ github.workspace }}\src\jvm\jnet\pom.xml
-      - run: (Get-Content ${{ github.workspace }}\src\jvm\jnetreflector\pom.xml).Replace('<jnetversion>${{ inputs.CurrentVersion }}</jnetversion>', '<jnetversion>${{ inputs.NewVersion }}</jnetversion>') | Set-Content ${{ github.workspace }}\src\jvm\jnetreflector\pom.xml
+      - run: (Get-Content ${{ github.workspace }}\src\jvm\jnet\pom.xml).Replace('<jnetversion>${{ inputs.CurrentVersion }}.0</jnetversion>', '<jnetversion>${{ inputs.NewVersion }}.0</jnetversion>') | Set-Content ${{ github.workspace }}\src\jvm\jnet\pom.xml
+      - run: (Get-Content ${{ github.workspace }}\src\jvm\jnetreflector\pom.xml).Replace('<jnetversion>${{ inputs.CurrentVersion }}.0</jnetversion>', '<jnetversion>${{ inputs.NewVersion }}.0</jnetversion>') | Set-Content ${{ github.workspace }}\src\jvm\jnetreflector\pom.xml
 
       # Common.props: uses dash-prefixed pre-release tag
-      - run: (Get-Content ${{ github.workspace }}\src\net\Common\Common.props).Replace('<Version>${{ inputs.CurrentVersion }}${{ env.PRE_C }}</Version>', '<Version>${{ inputs.NewVersion }}${{ env.PRE_N }}</Version>') | Set-Content ${{ github.workspace }}\src\net\Common\Common.props
+      - run: (Get-Content ${{ github.workspace }}\src\net\Common\Common.props).Replace('<Version>${{ inputs.CurrentVersion }}.0${{ env.PRE_C }}</Version>', '<Version>${{ inputs.NewVersion }}.0${{ env.PRE_N }}</Version>') | Set-Content ${{ github.workspace }}\src\net\Common\Common.props
 
       # nuspec files: uses dash-prefixed pre-release tag
       - run: (Get-Content ${{ github.workspace }}\src\net\JNetCLI\JNetCLI.nuspec).Replace('<version>${{ inputs.CurrentVersion }}${{ env.PRE_C }}</version>', '<version>${{ inputs.NewVersion }}${{ env.PRE_N }}</version>') | Set-Content ${{ github.workspace }}\src\net\JNetCLI\JNetCLI.nuspec
