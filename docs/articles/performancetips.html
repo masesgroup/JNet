@@ -154,33 +154,157 @@ Using the loop-based example as a baseline:</p>
 boundary crossing is strictly necessary.</li>
 </ul>
 </div>
-<h2 id="discard-unwanted-jvm-events-early-with-shallmanageevent">Discard unwanted JVM™ events early with <code>ShallManageEvent</code></h2>
+<h2 id="batch-jvm-global-reference-releases">Batch JVM™ global reference releases</h2>
+<p>Each <code>Dispose</code> on a JNet object releases the underlying JVM™ global reference with a direct
+native call. In isolation this cost is small, but in tight loops that create and dispose many
+JNet objects — a Kafka consumer poll loop, a storage block enumeration, a sustained callback
+stream — it accumulates into measurable overhead.</p>
+<p><code>JCOBridgeDisposeFastScope</code> and <code>JCOBridgeDisposeAsyncScope</code> address this by queuing release
+requests and flushing them together in a single native call, keeping the per-object <code>Dispose</code>
+call cost negligible. The loop body requires no changes.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Objects whose <code>Dispose</code> is not called explicitly (no <code>using</code> block) are eventually released
+by the .NET finalizer as before — batch scopes do not affect that path. The benefit applies
+only to explicit <code>Dispose</code> calls made while a scope is active.</p>
+</div>
+<h3 id="jcobridgedisposefastscope--synchronous-hot-paths"><code>JCOBridgeDisposeFastScope</code> — synchronous hot paths</h3>
+<p>Use this scope for synchronous code on a controlled thread. It uses <code>[ThreadStatic]</code> storage,
+which has negligible access cost compared to the native call it replaces.</p>
+<pre><code class="lang-csharp">// Kafka consumer poll loop — sync
+using var batch = new JCOBridgeDisposeFastScope();
+while (!resetEvent.WaitOne(0))
+{
+    using var records = consumer.Poll(200);
+    foreach (var record in records)
+    {
+        using (record)
+        {
+            Console.WriteLine($&quot;Offset={record.Offset()}, Key={record.Key()}&quot;);
+        }
+        // record.Dispose() queues the release — no native call here
+    }
+    // records.Dispose() queues the release — no native call here
+}
+// scope exits: all queued releases flushed in a single native call
+</code></pre>
+<p>Automatic mid-loop flushing occurs when the queue reaches the configured limit (default: 64
+references). This bounds memory usage regardless of how long the loop runs.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p><code>JCOBridgeDisposeFastScope</code> is not safe across <code>await</code> — if a continuation resumes on a
+different thread the scope state will not be visible on the new thread. Use
+<code>JCOBridgeDisposeAsyncScope</code> for async code.</p>
+</div>
+<h3 id="jcobridgedisposeasyncscope--asyncawait-contexts"><code>JCOBridgeDisposeAsyncScope</code> — async/await contexts</h3>
+<p>Use this scope when continuations may resume on a different thread. The scope state flows
+automatically across <code>await</code> points.</p>
+<p>On .NET 8 and later <code>JCOBridgeDisposeAsyncScope</code> implements <code>IAsyncDisposable</code>, enabling
+<code>await using</code> and an asynchronous flush on scope exit:</p>
+<pre><code class="lang-csharp">// Async enumeration — .NET 8 / 9 / 10
+await using var batch = new JCOBridgeDisposeAsyncScope();
+await foreach (var item in asyncJvmCollection)
+{
+    using (item)
+    {
+        await ProcessAsync(item);
+    }
+    // item.Dispose() queues the release — no native call here
+}
+// scope exits: queued releases flushed asynchronously
+</code></pre>
+<p>On .NET Framework <code>IAsyncDisposable</code> is not available — use a standard <code>using</code> block instead,
+the flush on scope exit is synchronous:</p>
+<pre><code class="lang-csharp">// .NET Framework
+using (var batch = new JCOBridgeDisposeAsyncScope())
+{
+    foreach (var item in jvmCollection)
+    {
+        using (item) { /* item disposal is batched */ }
+    }
+} // scope exits: queued releases flushed synchronously
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>JCOBridgeDisposeAsyncScope</code> has slightly higher per-access cost than <code>JCOBridgeDisposeFastScope</code>
+due to the <code>ExecutionContext</code> propagation required for async safety. For synchronous hot paths
+where throughput matters, prefer <code>JCOBridgeDisposeFastScope</code>.</p>
+</div>
+<h3 id="nesting-scopes">Nesting scopes</h3>
+<p>Both scope types support nesting. When scopes are nested — for example because library-internal
+code opens its own scope inside a user-opened scope — the inner scope increments a depth counter
+and the flush is deferred until the outermost scope exits. This means library code and user code
+can independently opt in to batching without coordination.</p>
+<pre><code class="lang-csharp">using var outerBatch = new JCOBridgeDisposeFastScope();
+// library method internally opens its own JCOBridgeDisposeFastScope — depth = 2
+DoSomethingThatUsesABatchScopeInternally();
+// inner scope exits — depth returns to 1, no flush yet
+// outer scope exits — depth reaches 0, flush occurs here
+</code></pre>
+<h3 id="when-to-use-batch-scopes">When to use batch scopes</h3>
+<p>Batch scopes provide meaningful gains when <code>Dispose</code> calls are frequent relative to other work
+in the loop. Typical candidates:</p>
+<ul>
+<li>Kafka consumer poll loops iterating over many records per poll.</li>
+<li>Storage block enumerations where each entry wraps one or more JVM™ objects.</li>
+<li>Callback handlers that receive high-frequency JVM-originated events carrying JVM™ object arguments.</li>
+</ul>
+<p>For loops where the per-item operation is expensive (multiple JVM™ method calls, I/O, computation),
+the <code>Dispose</code> cost is already a small fraction of the total and a batch scope will not produce
+a measurable difference.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Open the scope as close to the loop as possible — not at application startup — to limit the
+window in which references are queued rather than immediately released.</p>
+</div>
+<h2 id="discard-unwanted-jvm-events-early-with-listenershallmanageevent">Discard unwanted JVM™ events early with <code>ListenerShallManageEvent</code></h2>
 <p>When a JVM™ class fires events toward the CLR — for example an AWT component, a Kafka Streams functional interface, or any JNet callback wrapper — the standard flow reads argument data from the JVM™ before invoking the registered handler. For sources that produce many event types, most of them may have no handler registered in the application. Reading and converting argument data for events that will be immediately discarded is wasted work.</p>
-<p>JCOBridge 2.6.7+ introduces a two-level filter applied before full event handling, through two overloads of <code>ShallManageEvent</code> on the JNet callback base class.</p>
-<h3 id="first-gate--bool-shallmanageeventstring-eventname">First gate — <code>bool ShallManageEvent(string eventName)</code></h3>
-<p>Called before any argument data is read from the JVM. Receives only the event name. Return <code>false</code> to discard immediately (no data read, handler not invoked); return <code>true</code> to proceed to the second gate.</p>
-<h3 id="second-gate--bool-shallmanageeventstring-eventname-object-data">Second gate — <code>bool ShallManageEvent(string eventName, object data)</code></h3>
-<p>Called after raw argument data is available, but before full argument conversion and handler dispatch. Allows a lightweight inspection of the raw payload — for example checking a type field or a numeric threshold — without paying the cost of full processing. Return <code>false</code> to discard after inspection (handler not invoked); return <code>true</code> to proceed with full conversion and handler invocation.</p>
-<p>The <code>ShallManageEventHandler</code> (<code>Func&lt;string, bool&gt;</code>) delegate is the assignable equivalent of the first gate; <code>ShallManageEventWithDataHandler</code> (<code>Func&lt;string, object, bool&gt;</code>) is the assignable equivalent of the second gate.</p>
+<p>JCOBridge 2.6.7+ introduces a two-level filter applied before full event handling, through two overloads of <code>ListenerShallManageEvent</code> on the JNet callback base class. Both gates receive the event as a numeric index — no string conversion is performed unless explicitly requested.</p>
+<h3 id="first-gate--bool-listenershallmanageeventint-eventindex">First gate — <code>bool ListenerShallManageEvent(int eventIndex)</code></h3>
+<p>Called before any argument data is read from the JVM. Return <code>false</code> to discard immediately (no data read, handler not invoked); return <code>true</code> to proceed to the second gate.</p>
+<p>The first gate can be driven by one of the following, evaluated in order:</p>
+<ul>
+<li><code>ListenerShallManageEventIndex</code> (<code>Func&lt;int, bool&gt;</code>) — fastest path: receives the raw event index, no string conversion.</li>
+<li><code>ListenerShallManageEventName</code> (<code>Func&lt;string, bool&gt;</code>) — receives the event name, resolved via <code>ConvertListenerEventIndexToEventName</code>.</li>
+<li>Override of <code>ListenerShallManageEvent(int)</code> — virtual method for subclass-based filtering.</li>
+<li>Default: returns <code>true</code>.</li>
+</ul>
+<h3 id="second-gate--bool-listenershallmanageeventint-eventindex-object-data">Second gate — <code>bool ListenerShallManageEvent(int eventIndex, object data)</code></h3>
+<p>Called after raw argument data is available, but before full argument conversion and handler dispatch. Allows a lightweight inspection of the raw payload without paying the cost of full processing. Return <code>false</code> to discard after inspection; return <code>true</code> to proceed.</p>
+<p>The second gate can be driven by one of the following, evaluated in order:</p>
+<ul>
+<li><code>ListenerShallManageEventIndexWithData</code> (<code>Func&lt;int, object, bool&gt;</code>) — receives the raw event index and raw data.</li>
+<li><code>ListenerShallManageEventNameWithData</code> (<code>Func&lt;string, object, bool&gt;</code>) — receives the event name and raw data.</li>
+<li>Override of <code>ListenerShallManageEvent(int, object)</code> — virtual method.</li>
+<li>Default: returns <code>true</code>.</li>
+</ul>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The combination &quot;first gate returns <code>false</code>, second gate returns <code>true</code>&quot; is never reached — if the first gate discards, the second gate is not called.</p>
 </div>
-<p>Default for both gates is <code>true</code> (full processing). Both overloads are available from JCOBridge 2.6.7+.</p>
 <h3 id="usage">Usage</h3>
-<p>Override both gates on a callback subclass:</p>
+<p>Assign the index-based delegate for the lowest-overhead path:</p>
+<pre><code class="lang-csharp">var listener = new Java.Awt.Event.ActionListener();
+// first gate — filter by index, no string conversion
+listener.ListenerShallManageEventIndex = idx =&gt; idx == actionPerformedIndex;
+// second gate — inspect raw data before full processing
+listener.ListenerShallManageEventIndexWithData = (idx, data) =&gt; data is Java.Awt.Event.ActionEvent;
+listener.ActionPerformed += e =&gt; { /* handle */ };
+</code></pre>
+<p>Or use the name-based variant when filtering by event name is more convenient:</p>
+<pre><code class="lang-csharp">listener.ListenerShallManageEventName = name =&gt; name == &quot;actionPerformed&quot;;
+listener.ListenerShallManageEventNameWithData = (name, data) =&gt; data is Java.Awt.Event.ActionEvent;
+</code></pre>
+<p>Or override the virtual methods on a subclass:</p>
 <pre><code class="lang-csharp">public class MyActionListener : Java.Awt.Event.ActionListener
 {
-    protected override bool ShallManageEvent(string eventName)
+    protected override bool ListenerShallManageEvent(int eventIndex)
     {
-        // first gate: filter by event name alone, no data read yet
-        return eventName == &quot;actionPerformed&quot;;
+        return eventIndex == actionPerformedIndex;
     }
 
-    protected override bool ShallManageEvent(string eventName, object data)
+    protected override bool ListenerShallManageEvent(int eventIndex, object data)
     {
-        // second gate: raw data available — inspect before committing to full processing
-        // e.g. check a source identifier in the raw payload
         return data is Java.Awt.Event.ActionEvent ae &amp;&amp; ae.GetSource() is MyButton;
     }
 
@@ -190,16 +314,8 @@ boundary crossing is strictly necessary.</li>
     }
 }
 </code></pre>
-<p>Or assign either gate via delegates without subclassing:</p>
-<pre><code class="lang-csharp">var listener = new Java.Awt.Event.ActionListener();
-// first gate — filter by name, no data read
-listener.ShallManageEventHandler = eventName =&gt; eventName == &quot;actionPerformed&quot;;
-// second gate — inspect raw data before full processing
-listener.ShallManageEventWithDataHandler = (eventName, data) =&gt; data is Java.Awt.Event.ActionEvent;
-listener.ActionPerformed += e =&gt; { /* handle */ };
-</code></pre>
 <h3 id="performance-impact">Performance impact</h3>
-<p>The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (2.6.7+, 1 000 000 iterations):</p>
+<p>The cost per event at each gate, measured in a sustained JVM-originated stream on a GitHub Actions runner (latest version, 1 000 000 iterations):</p>
 <table>
 <thead>
 <tr>
@@ -207,59 +323,59 @@ listener.ActionPerformed += e =&gt; { /* handle */ };
 <th><code>byIndex</code></th>
 <th>.NET 8 / T17</th>
 <th>.NET 10 / T25</th>
-<th>Events/sec (.NET 10)</th>
+<th>Events/sec (.NET 8)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>First gate discard (no data read)</td>
 <td><code>false</code></td>
-<td>0.601 µs</td>
-<td>0.468 µs</td>
-<td>~2.1 M</td>
+<td>0.418 µs</td>
+<td>0.462 µs</td>
+<td>~2.4 M</td>
 </tr>
 <tr>
 <td>First gate discard (no data read)</td>
 <td><code>true</code></td>
-<td><strong>0.045 µs</strong></td>
-<td><strong>0.041 µs</strong></td>
-<td><strong>~24 M</strong></td>
+<td><strong>0.035 µs</strong></td>
+<td><strong>0.035 µs</strong></td>
+<td><strong>~29 M</strong></td>
 </tr>
 <tr>
 <td>Second gate discard (raw data inspected)</td>
 <td><code>false</code></td>
-<td>0.625 µs</td>
-<td>0.493 µs</td>
-<td>~2.0 M</td>
+<td>0.435 µs</td>
+<td>0.471 µs</td>
+<td>~2.3 M</td>
 </tr>
 <tr>
 <td>Second gate discard (raw data inspected)</td>
 <td><code>true</code></td>
-<td><strong>0.074 µs</strong></td>
-<td><strong>0.067 µs</strong></td>
-<td><strong>~15 M</strong></td>
+<td><strong>0.070 µs</strong></td>
+<td><strong>0.053 µs</strong></td>
+<td><strong>~14 M</strong></td>
 </tr>
 <tr>
 <td>Full processing</td>
 <td><code>false</code></td>
-<td>5.098 µs</td>
-<td>4.725 µs</td>
-<td>~212 K</td>
+<td>3.299 µs</td>
+<td>4.127 µs</td>
+<td>~303 K</td>
 </tr>
 <tr>
 <td>Full processing</td>
 <td><code>true</code></td>
-<td>4.467 µs</td>
-<td>4.141 µs</td>
-<td>~242 K</td>
+<td>2.780 µs</td>
+<td>3.650 µs</td>
+<td>~360 K</td>
 </tr>
 </tbody>
 </table>
-<p>With <code>byIndex = true</code> and first-gate discard, the per-event cost (~41–45 ns) is within the range of raw JNI overhead measured on dedicated bare-metal hardware — despite running on a shared CI runner and crossing the JVM↔CLR boundary. The second gate adds ~25–30 ns for the raw data availability step, still roughly 70× cheaper than full processing.</p>
-<p>See <a href="performance.html">performance</a> for the complete benchmark data.</p>
+<p>With <code>byIndex = true</code> and <code>ListenerShallManageEventIndex</code>, the per-event cost reaches <strong>35 ns on both .NET 8 and .NET 10</strong> — within the range of raw JNI call overhead on dedicated bare-metal hardware, despite running on a shared CI runner and crossing the JVM↔CLR boundary.</p>
+<p>See <a href="performance.html">performance</a> for the complete benchmark data across all versions.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Use the first gate (<code>ShallManageEvent(string)</code>) to filter by event name alone — this is the cheapest path and sufficient for most use cases. Use the second gate (<code>ShallManageEvent(string, object)</code>) only when the decision depends on a lightweight check of the raw payload that is not worth deferring to the full handler.</p>
+<p>Use <code>ListenerShallManageEventIndex</code> (index-based first gate) for the lowest-overhead path — no string conversion, pure integer check. Use <code>ListenerShallManageEventName</code> when filtering by event name is more convenient; it adds the cost of <code>ConvertListenerEventIndexToEventName</code>.</p>
 </div>
 <div class="TIP">
 <h5>Tip</h5>
@@ -267,8 +383,64 @@ listener.ActionPerformed += e =&gt; { /* handle */ };
 </div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Both <code>ShallManageEvent</code> overloads are available from JCOBridge 2.6.7+. On earlier versions all events follow the full data-read path regardless of whether a handler is registered.</p>
+<p>Both <code>ListenerShallManageEvent</code> overloads are available from JCOBridge 2.6.7+. On earlier versions all events follow the full data-read path regardless of whether a handler is registered.</p>
 </div>
+<h2 id="bulk-data-from-jvm--jcobridgestreamt-and-jcobridgedirectbuffert">Bulk data from JVM — <code>JCOBridgeStream&lt;T&gt;</code> and <code>JCOBridgeDirectBuffer&lt;T&gt;</code></h2>
+<p>JCOBridge 2.6.9 introduces two typed wrappers for reading bulk data from the JVM with <code>T : unmanaged</code>:</p>
+<ul>
+<li><strong><code>JCOBridgeStream&lt;T&gt;</code></strong> — wraps a JVM native array. Exposes <code>ToStream()</code> (backed by <code>UnmanagedMemoryStream</code>) and <code>ReadOnlySpan&lt;T&gt;</code>.</li>
+<li><strong><code>JCOBridgeDirectBuffer&lt;T&gt;</code></strong> — wraps a JVM <code>DirectByteBuffer</code>. Same surface plus direct native pointer access.</li>
+</ul>
+<p>Both provide .NET Framework-compatible shims for <code>ReadOnlySpan</code>.</p>
+<h3 id="choosing-the-right-api">Choosing the right API</h3>
+<p><strong>For JVM arrays</strong> — use <code>JCOBridgeStream&lt;T&gt;</code>:</p>
+<pre><code class="lang-csharp">// Get a JCOBridgeStream&lt;byte&gt; from a JVM byte[]
+using var stream = jvmByteArray.ToJCOBridgeStream&lt;byte&gt;();
+
+// Option 1: ReadOnlySpan (zero-copy with HPA, local copy without)
+ReadOnlySpan&lt;byte&gt; span = stream.AsSpan();
+ProcessData(span);
+
+// Option 2: chunked stream read — no full allocation
+using var netStream = stream.ToStream();
+byte[] chunk = new byte[4096];
+int read;
+while ((read = netStream.Read(chunk, 0, chunk.Length)) &gt; 0)
+    ProcessChunk(chunk, read);
+</code></pre>
+<p><strong>For <code>DirectByteBuffer</code></strong> — use <code>JCOBridgeDirectBuffer&lt;T&gt;</code>:</p>
+<pre><code class="lang-csharp">// Get a JCOBridgeDirectBuffer&lt;byte&gt; from a JVM DirectByteBuffer
+using var buf = jvmDirectBuffer.ToJCOBridgeDirectBuffer&lt;byte&gt;();
+
+// AsSpan: reads directly from native memory pointer — zero-copy, no HPA needed
+ReadOnlySpan&lt;byte&gt; span = buf.AsSpan();
+ProcessData(span);
+
+// ToStream → chunked: no full intermediate allocation
+using var netStream = buf.ToStream();
+// ... chunked read as above
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>AsSpan</code> on <code>JCOBridgeDirectBuffer&lt;T&gt;</code> is <strong>zero-copy in all JCOBridge editions</strong> — the <code>DirectByteBuffer</code> already lives in off-heap native memory, so no copy is needed regardless of HPA. For JVM arrays (<code>JCOBridgeStream&lt;T&gt;</code>), true zero-copy access requires the <strong>HPA edition</strong>; the standard edition performs an internal local copy.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Avoid <code>ToStream() → MemoryStream.CopyTo() → ToArray()</code> (the &quot;naive&quot; pattern) for payloads above a few KB — it allocates a full intermediate copy and performs up to <strong>7× worse</strong> than <code>ToArray()</code> alone at 100 MB. Use <code>AsSpan</code> or chunked reads instead.</p>
+</div>
+<h3 id="hpa-and-jvm-arrays">HPA and JVM arrays</h3>
+<p>With the HPA edition and its strongest options, <code>JCOBridgeStream&lt;T&gt;</code> accesses JVM array memory directly — the GC is pinned for the duration of the access and no copy is made. This eliminates the main reason to copy JVM arrays into a <code>DirectByteBuffer</code> before reading from .NET.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If you currently copy a JVM array into a <code>DirectByteBuffer</code> in order to read it from .NET without heap copying, use <code>JCOBridgeStream&lt;T&gt;</code> with HPA instead — you get the same zero-copy behavior without the intermediate buffer allocation.</p>
+</div>
+<h3 id="performance-summary">Performance summary</h3>
+<p>See <a href="performance.html#bulk-data-transfer-at-the-jvmclr-boundary">performance — bulk data transfer</a> for the full latency and throughput tables across all size steps (10 B to 100 MB). Highlights:</p>
+<ul>
+<li><code>AsSpan</code> on <code>JCOBridgeStream&lt;T&gt;</code>: <strong>4–8× faster</strong> than <code>Invoke&lt;byte[]&gt;</code> for small payloads (≤10 KB); converges toward memory bandwidth at large sizes.</li>
+<li><code>AsSpan</code> on <code>JCOBridgeDirectBuffer&lt;T&gt;</code>: <strong>~18.5 GB/s</strong> at 100 MB on .NET 10 / Temurin 25 — 2.3× faster than <code>ToArray()</code>.</li>
+<li><code>ToStream → Chunked</code>: good middle ground when a stream-based read pattern is needed, significantly faster than the naive MemoryStream copy.</li>
+</ul>
 <h2 id="memory-transfer-at-clr-jvm-boundary">Memory transfer at CLR-JVM™ boundary</h2>
 <p>JNet provides APIs to manage data exchange at the CLR-JVM™ boundary using
 <a href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/nio/ByteBuffer.html"><code>java.nio.ByteBuffer</code></a>.</p>
