@@ -426,6 +426,41 @@ namespace MASES.JNetByteBufferTest
             }
         }
 
+        static bool AreEqualChunked(System.IO.Stream stream, byte[] array, int bufferSize = 4096)
+        {
+            if (stream.CanSeek && stream.Length != array.Length)
+                return false;
+
+            stream.Position = 0;
+
+            var buffer = new byte[bufferSize];
+            int offset = 0;
+
+            while (true)
+            {
+                int read = stream.Read(buffer, 0, bufferSize);
+
+                if (read == 0)
+                    return offset == array.Length; // entrambi esauriti?
+
+                if (offset + read > array.Length)
+                    return false;
+
+                if (!buffer.AsSpan(0, read).SequenceEqual(array.AsSpan(offset, read)))
+                    return false;
+
+                offset += read;
+            }
+        }
+
+        static bool AreEqualNaive(System.IO.Stream stream, byte[] array)
+        {
+            stream.Position = 0;
+            using var ms = new System.IO.MemoryStream();
+            stream.CopyTo(ms);
+            return ms.ToArray().SequenceEqual(array);
+        }
+
         static void TestGetByteArrayDataUsage(int requestedIterations, int length)
         {
             Console.WriteLine($"TestGetByteArrayDataUsage with {requestedIterations} iterations and {length} length");
@@ -462,13 +497,27 @@ namespace MASES.JNetByteBufferTest
                 {
                     using var res = jClass.Invoke("getArray") as IJavaArray;
                     using JCOBridgeStream<byte> stream = res.ToStream<byte>();
-                    if (!stream.AsSpan().SequenceEqual(bytes)) { throw new System.Exception(); }
+                    if (!AreEqualChunked(stream, bytes)) { throw new System.Exception(); }
                 }
                 watcher2.Stop();
 
-                Console.WriteLine($"End getArray -> AsSpan -> SequenceEqual Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
+                Console.WriteLine($"End getArray -> AreEqualChunked Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
 
-                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - Invoke<byte[]> {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - AsSpan {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%)");
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher3 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    using var res = jClass.Invoke("getArray") as IJavaArray;
+                    using JCOBridgeStream<byte> stream = res.ToStream<byte>();
+                    if (!stream.AsSpan().SequenceEqual(bytes)) { throw new System.Exception(); }
+                }
+                watcher3.Stop();
+
+                Console.WriteLine($"End getArray -> AsSpan -> SequenceEqual Elapsed {watcher3.Elapsed} - Mean {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / iteration)}");
+
+                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - Invoke<byte[]> {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - AreEqualChunked {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - AsSpan {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%)");
             }
             catch
             {
@@ -479,41 +528,6 @@ namespace MASES.JNetByteBufferTest
 
         static void TestGetByteBuffersDataUsage(int requestedIterations, int length)
         {
-            static bool AreEqualChunked(System.IO.Stream stream, byte[] array, int bufferSize = 4096)
-            {
-                if (stream.CanSeek && stream.Length != array.Length)
-                    return false;
-
-                stream.Position = 0;
-
-                var buffer = new byte[bufferSize];
-                int offset = 0;
-
-                while (true)
-                {
-                    int read = stream.Read(buffer, 0, bufferSize);
-
-                    if (read == 0)
-                        return offset == array.Length; // entrambi esauriti?
-
-                    if (offset + read > array.Length)
-                        return false;
-
-                    if (!buffer.AsSpan(0, read).SequenceEqual(array.AsSpan(offset, read)))
-                        return false;
-
-                    offset += read;
-                }
-            }
-
-            static bool AreEqualNaive(System.IO.Stream stream, byte[] array)
-            {
-                stream.Position = 0;
-                using var ms = new System.IO.MemoryStream();
-                stream.CopyTo(ms);
-                return ms.ToArray().SequenceEqual(array);
-            }
-
             Console.WriteLine($"TestGetByteBuffersDataUsage with {requestedIterations} iterations and {length} length");
             int iteration = 0;
             try
