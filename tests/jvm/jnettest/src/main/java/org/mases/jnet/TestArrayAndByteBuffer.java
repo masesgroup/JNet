@@ -13,7 +13,7 @@ public class TestArrayAndByteBuffer {
     public TestArrayAndByteBuffer() {
     }
 
-    public TestArrayAndByteBuffer(int length) throws IOException {
+    public TestArrayAndByteBuffer(int length) throws IOException, java.lang.IllegalAccessException {
         _array = new byte[length];
         for (int i = 0; i < length; i++)
         {
