@@ -307,6 +307,71 @@ See [performance](performance.md) for the complete benchmark data across all ver
 > [!NOTE]
 > Both `ListenerShallManageEvent` overloads are available from JCOBridge 2.6.7+. On earlier versions all events follow the full data-read path regardless of whether a handler is registered.
 
+## Bulk data from JVM — `JCOBridgeStream<T>` and `JCOBridgeDirectBuffer<T>`
+
+JCOBridge 2.6.9 introduces two typed wrappers for reading bulk data from the JVM with `T : unmanaged`:
+
+- **`JCOBridgeStream<T>`** — wraps a JVM native array. Exposes `ToStream()` (backed by `UnmanagedMemoryStream`) and `ReadOnlySpan<T>`.
+- **`JCOBridgeDirectBuffer<T>`** — wraps a JVM `DirectByteBuffer`. Same surface plus direct native pointer access.
+
+Both provide .NET Framework-compatible shims for `ReadOnlySpan`.
+
+### Choosing the right API
+
+**For JVM arrays** — use `JCOBridgeStream<T>`:
+
+```csharp
+// Get a JCOBridgeStream<byte> from a JVM byte[]
+using var stream = jvmByteArray.ToJCOBridgeStream<byte>();
+
+// Option 1: ReadOnlySpan (zero-copy with HPA, local copy without)
+ReadOnlySpan<byte> span = stream.AsSpan();
+ProcessData(span);
+
+// Option 2: chunked stream read — no full allocation
+using var netStream = stream.ToStream();
+byte[] chunk = new byte[4096];
+int read;
+while ((read = netStream.Read(chunk, 0, chunk.Length)) > 0)
+    ProcessChunk(chunk, read);
+```
+
+**For `DirectByteBuffer`** — use `JCOBridgeDirectBuffer<T>`:
+
+```csharp
+// Get a JCOBridgeDirectBuffer<byte> from a JVM DirectByteBuffer
+using var buf = jvmDirectBuffer.ToJCOBridgeDirectBuffer<byte>();
+
+// AsSpan: reads directly from native memory pointer — zero-copy, no HPA needed
+ReadOnlySpan<byte> span = buf.AsSpan();
+ProcessData(span);
+
+// ToStream → chunked: no full intermediate allocation
+using var netStream = buf.ToStream();
+// ... chunked read as above
+```
+
+> [!NOTE]
+> `AsSpan` on `JCOBridgeDirectBuffer<T>` is **zero-copy in all JCOBridge editions** — the `DirectByteBuffer` already lives in off-heap native memory, so no copy is needed regardless of HPA. For JVM arrays (`JCOBridgeStream<T>`), true zero-copy access requires the **HPA edition**; the standard edition performs an internal local copy.
+
+> [!NOTE]
+> Avoid `ToStream() → MemoryStream.CopyTo() → ToArray()` (the "naive" pattern) for payloads above a few KB — it allocates a full intermediate copy and performs up to **7× worse** than `ToArray()` alone at 100 MB. Use `AsSpan` or chunked reads instead.
+
+### HPA and JVM arrays
+
+With the HPA edition and its strongest options, `JCOBridgeStream<T>` accesses JVM array memory directly — the GC is pinned for the duration of the access and no copy is made. This eliminates the main reason to copy JVM arrays into a `DirectByteBuffer` before reading from .NET.
+
+> [!TIP]
+> If you currently copy a JVM array into a `DirectByteBuffer` in order to read it from .NET without heap copying, use `JCOBridgeStream<T>` with HPA instead — you get the same zero-copy behavior without the intermediate buffer allocation.
+
+### Performance summary
+
+See [performance — bulk data transfer](performance.md#bulk-data-transfer-at-the-jvmclr-boundary) for the full latency and throughput tables across all size steps (10 B to 100 MB). Highlights:
+
+- `AsSpan` on `JCOBridgeStream<T>`: **4–8× faster** than `Invoke<byte[]>` for small payloads (≤10 KB); converges toward memory bandwidth at large sizes.
+- `AsSpan` on `JCOBridgeDirectBuffer<T>`: **~18.5 GB/s** at 100 MB on .NET 10 / Temurin 25 — 2.3× faster than `ToArray()`.
+- `ToStream → Chunked`: good middle ground when a stream-based read pattern is needed, significantly faster than the naive MemoryStream copy.
+
 ## Memory transfer at CLR-JVM™ boundary
 
 JNet provides APIs to manage data exchange at the CLR-JVM™ boundary using
