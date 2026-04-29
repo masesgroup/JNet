@@ -37,7 +37,7 @@ namespace Java.Nio
         /// </summary>
         public static implicit operator JCOBridgeDirectBuffer<double>(DoubleBuffer t) => t.ToDirectBuffer();
         /// <summary>
-        /// Converts an instance of <see cref="double"/> array into <see cref="DoubleBuffer"/> using the default parameters of <see cref="From(double[], bool, bool, int)"/>
+        /// Converts an instance of <see cref="double"/> array into <see cref="DoubleBuffer"/> using the default parameters of <see cref="From(double[], bool, int)"/>
         /// </summary>
         /// <remarks>If the JVM supports direct access the function will share with the JVM the memory without JNI, otherwise fallback to the standard memory copy.</remarks>
         public static implicit operator DoubleBuffer(double[] t) => From(t);
@@ -73,17 +73,16 @@ namespace Java.Nio
         /// Creates a new <see cref="DoubleBuffer"/> in the JVM which belongs to <paramref name="data"/>
         /// </summary>
         /// <param name="data">The data to be shared</param>
-        /// <param name="useMemoryControlBlock">Appends to the end of the <paramref name="data"/> a memory block will be used to controls and arbitrates memory between CLR and JVM</param>
         /// <param name="arrangeCapacity">If <see langword="true"/> the <see cref="double"/> array in <paramref name="data"/> will be resized to the next power of 2, 
         /// so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be current size of <paramref name="data"/>
         /// </param>
         /// <param name="timeToLive">The time to live, expressed in milliseconds, the underlying memory shall remain available; if the time to live expires the pinned memory is retired leaving potentially the JVM under the possibility of an access violation.</param>
         /// <returns>A new instance of <see cref="DoubleBuffer"/></returns>
-        public static DoubleBuffer From(double[] data, bool useMemoryControlBlock = true, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite)
+        public static DoubleBuffer From(double[] data,bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite)
         {
             try
             {
-                return data.DirectBufferWithWrap<double, DoubleBuffer>(useMemoryControlBlock, arrangeCapacity, timeToLive);
+                return data.DirectBufferWithWrap<double, DoubleBuffer>(arrangeCapacity, timeToLive);
             }
             catch (UnsupportedOperationException) { }
             catch (System.NotSupportedException) { }
