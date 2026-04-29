@@ -31,7 +31,7 @@ Description = 'PowerShell Module to use JVM and PowerShell side-by-side. With JN
 PowerShellVersion = '5.1'
 
 # Specifies the compatible PSEditions of the module.
-CompatiblePSEditions = @('Desktop', 'Core')
+CompatiblePSEditions = @('Desktop')
 
 # Name of the Windows PowerShell host required by this module
 PowerShellHostName = ''
@@ -134,7 +134,7 @@ PrivateData = @{
 
         Prerelease = 'rc5'
 
-        Tags = @('JNetPS', 'JNet', 'PSEdition_Core', 'PSEdition_Desktop', 'Windows', 'Linux', 'JVM', 'Java', 'Scala', 'Kotlin', 'bridge', 'gateway')
+        Tags = @('JNetPS', 'JNet', 'PSEdition_Desktop', 'Windows', 'Linux', 'JVM', 'Java', 'Scala', 'Kotlin', 'bridge', 'gateway')
 
         LicenseUri = 'https://github.com/masesgroup/JNet/blob/master/LICENSE'
 
