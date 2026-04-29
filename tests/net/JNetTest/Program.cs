@@ -339,7 +339,7 @@ namespace MASES.JNetTest
             }
 
             ByteBuffer bb = (ByteBuffer)ms;
-            bb.IsDirect();
+            System.Console.WriteLine($"ByteBuffer IsDirect={bb.IsDirect()}");
         }
 
         static void TestByteBuffers()
