@@ -31,7 +31,7 @@ Description = 'PowerShell Module to use JVM and PowerShell side-by-side. With JN
 PowerShellVersion = '5.1'
 
 # Specifies the compatible PSEditions of the module.
-CompatiblePSEditions = @('Desktop')
+CompatiblePSEditions = @('Desktop', 'Core')
 
 # Name of the Windows PowerShell host required by this module
 PowerShellHostName = ''
