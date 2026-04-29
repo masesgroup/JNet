@@ -17,6 +17,7 @@
 */
 
 using Java.Nio;
+using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
 using System;
@@ -83,6 +84,11 @@ namespace MASES.JNetByteBufferTest
         static void ExecuteTests()
         {
             Console.WriteLine("Start get from JVM to CLR");
+
+            for (int i = MinValue; i < MaxValue; i *= 10)
+            {
+                TestGetByteBuffersDataUsage(iterations, i);
+            }
 
             for (int i = MinValue; i < MaxValue; i *= 10)
             {
@@ -410,6 +416,111 @@ namespace MASES.JNetByteBufferTest
             catch
             {
                 Console.WriteLine($"Failed at iteration: {i}");
+                throw;
+            }
+        }
+
+        static void TestGetByteBuffersDataUsage(int requestedIterations, int length)
+        {
+            static bool AreEqual(System.IO.Stream stream, byte[] array, int bufferSize = 4096)
+            {
+                if (stream.CanSeek && stream.Length != array.Length)
+                    return false;
+
+                var buffer = new byte[bufferSize];
+                int offset = 0;
+
+                while (true)
+                {
+                    int read = stream.Read(buffer, 0, bufferSize);
+
+                    if (read == 0)
+                        return offset == array.Length; // entrambi esauriti?
+
+                    if (offset + read > array.Length)
+                        return false;
+
+                    if (!buffer.AsSpan(0, read).SequenceEqual(array.AsSpan(offset, read)))
+                        return false;
+
+                    offset += read;
+                }
+            }
+
+            Console.WriteLine($"TestGetByteBuffersDataUsage with {requestedIterations} iterations and {length} length");
+            int iteration = 0;
+            try
+            {
+                byte[] bytes = new byte[length];
+                for (int i = 0; i < length; i++)
+                {
+                    bytes[i] = (byte)(i % sbyte.MaxValue); // use sbyte because in JVM Byte is signed type
+                }
+                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Console.WriteLine($"Created TestArrayAndByteBuffer");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                Stopwatch watcher1 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    var array = res.ToArray();
+                    if (array.Length != length) { throw new System.Exception(); }
+                    if (!array.SequenceEqual(bytes))
+                    {
+                        throw new System.Exception();
+                    }
+                }
+                watcher1.Stop();
+
+                Console.WriteLine($"End getByteBuffer -> ToArray -> SequenceEqual Elapsed {watcher1.Elapsed} - Mean {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / iteration)}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher2 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    using (JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer())
+                    {
+                        if (!AreEqual(res.ToStream(), bytes))
+                        { throw new System.Exception(); }
+                    }
+                }
+                watcher2.Stop();
+
+                Console.WriteLine($"End getByteBuffer -> ToStream -> SequenceEqual Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher3 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    using (JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer())
+                    {
+                        var span = db.AsSpan();
+                        if (span.Length != length) { throw new System.Exception(); }
+
+                        if (!span.SequenceEqual(bytes))
+                        { throw new System.Exception(); }
+                    }
+                }
+                watcher3.Stop();
+
+                Console.WriteLine($"End getByteBuffer -> AsSpan -> SequenceEqual Elapsed {watcher3.Elapsed} - Mean {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / iteration)}");
+
+                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - ToArray {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ToStream {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - AsSpan {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%)");
+            }
+            catch
+            {
+                Console.WriteLine($"Failed at iteration: {iteration}");
                 throw;
             }
         }

@@ -65,10 +65,31 @@ namespace MASES.JNet.Specific
         /// <summary>
         /// Executes the <see href="https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.base/java/util/Arrays.html#asList(T...)"/> over primitive types
         /// </summary>
+        /// <typeparam name="T">
+        /// The .NET primitive type corresponding to the element type. Supported types reflect the JVM primitive
+        /// type system:
+        /// <list type="table">
+        ///   <listheader><term>JVM type</term><description>.NET type</description></listheader>
+        ///   <item><term><c>boolean</c></term><description><see langword="bool"/></description></item>
+        ///   <item><term><c>byte</c></term><description><see langword="byte"/></description></item>
+        ///   <item><term><c>short</c></term><description><see langword="short"/></description></item>
+        ///   <item><term><c>int</c></term><description><see langword="int"/></description></item>
+        ///   <item><term><c>long</c></term><description><see langword="long"/></description></item>
+        ///   <item><term><c>float</c></term><description><see langword="float"/></description></item>
+        ///   <item><term><c>double</c></term><description><see langword="double"/></description></item>
+        ///   <item><term><c>char</c></term><description><see langword="char"/></description></item>
+        /// </list>
+        /// Unsigned types (<see langword="sbyte"/>, <see langword="ushort"/>,
+        /// <see langword="uint"/>, <see langword="ulong"/>) are not supported as
+        /// they have no equivalent in the JVM type system.
+        /// Passing an unsupported type throws <see cref="NotSupportedException"/> at
+        /// runtime; passing a type inconsistent with the actual JVM array element type
+        /// throws <see cref="InvalidOperationException"/> or <see cref="InvalidCastException"/>.
+        /// </typeparam>
         /// <param name="data">Array of primitive types</param>
         /// <param name="buffered">Set to <see langword="true"/> to use <see cref="ByteBuffer"/>, <see cref="IntBuffer"/>, <see cref="DoubleBuffer"/> and so on to transfer data to JVM</param>
         /// <returns>A <see cref="Java.Util.List"/> can be used as input of <see cref="ArrayList{T}"/></returns>
-        public static List ListFrom<T>(T[] data, bool buffered = false)
+        public static List ListFrom<T>(T[] data, bool buffered = false) where T : unmanaged
         {
             if (data == null) throw new ArgumentNullException(nameof(data));
             if (!buffered)
