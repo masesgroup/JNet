@@ -475,9 +475,11 @@ namespace MASES.JNet
                     execType = execType.BaseType;
                 }
                 while (execType != null && execType != typeof(object));
+                throw new ArgumentException($"{type} does not define any IJVMBridgeMain type or interface", "type");
+#else
+                throw;
 #endif
             }
-            throw new ArgumentException($"{type} does not define any IJVMBridgeMain type or interface", "type");
         }
 
         #endregion
