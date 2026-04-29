@@ -312,9 +312,6 @@ A JVM `byte[]` of the given size is pre-allocated once per size step. Each itera
 - **`AreEqualChunked`** — reads via `JCOBridgeStream<byte>` in 4096-byte chunks, comparing directly against the reference array without allocating a full copy.
 - **`AsSpan`** — obtains a `ReadOnlySpan<byte>` from `JCOBridgeStream<byte>` and compares via `SequenceEqual`. In the standard edition an internal local copy is made; with HPA, the array is accessed directly in JVM memory without any copy, with the GC pinned for the duration of the access.
 
-> [!NOTE]
-> These results can also be read as a performance baseline for **HPA with native arrays**: with the strongest HPA options, `JCOBridgeStream<T>` accesses JVM array memory directly — eliminating the copy that the standard edition performs. Users who currently copy JVM arrays into a `DirectByteBuffer` to avoid heap-to-native overhead can use `JCOBridgeStream<T>` with HPA to enter JVM memory directly.
-
 Mean latency per iteration (µs), 100 iterations per size:
 
 | Size | `Invoke<byte[]>` .NET 8 | `AreEqualChunked` .NET 8 | `AsSpan` .NET 8 | `Invoke<byte[]>` .NET 10 | `AreEqualChunked` .NET 10 | `AsSpan` .NET 10 |
@@ -371,6 +368,9 @@ Key observations:
 - **`AsSpan`** is the fastest API for all sizes above 10 KB and is **zero-copy in all editions**. At 100 MB it is **2.5× faster** than `ToArray` on .NET 8 and **2.3× faster** on .NET 10.
 - **`ToStream → Chunked`** is a good middle ground: no full intermediate allocation, significantly faster than `Naive` at large sizes.
 - At **very small sizes** (100 B – 1 KB), `ToArray` and `AsSpan` are comparable (~2–3 µs) — per-call overhead dominates.
+
+> [!NOTE]
+> The ByteBuffer test can be taken as a performance reference for **HPA with native arrays**: because the `DirectByteBuffer` is pre-allocated in native (off-heap) memory and never copied from JVM heap, it represents a scenario where the heap→native copy is absent — exactly what HPA achieves for JVM arrays with its strongest options. Users who currently copy JVM arrays into a `DirectByteBuffer` to avoid heap-to-native overhead can use `JCOBridgeStream<T>` with HPA instead, entering JVM array memory directly without the intermediate buffer.
 
 Effective throughput at 100 MB (standard edition):
 
