@@ -392,7 +392,7 @@ namespace MASES.JNet
         /// Retrieve the object associated to <paramref name="className"/>
         /// </summary>
         /// <param name="className">The java class to be instantiated</param>
-        /// <param name="args">The argument of the costructor</param>
+        /// <param name="args">The argument of the constructor</param>
         /// <returns>The instance associated to the requested <paramref name="className"/></returns>
         public static dynamic New(string className, params object[] args)
         {
