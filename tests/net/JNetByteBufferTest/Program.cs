@@ -366,7 +366,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
                 {
-                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     var array = res.ToArray();
                     if (array.Length != length) { throw new System.Exception(); }
                 }
@@ -380,7 +380,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
                 {
-                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     res.ToArray(ref bytes, false);
                     if (bytes.Length != length) { throw new System.Exception(); }
                 }
@@ -396,7 +396,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher4 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
                 {
-                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     res.ToDirectBuffer().CopyTo(handle.AddrOfPinnedObject(), bytes.Length, 0, bytes.Length);
                     if (bytes.Length != length) { throw new System.Exception(); }
                 }
@@ -410,7 +410,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher5 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
                 {
-                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     if (res.Remaining() != length) { throw new System.Exception(); }
                 }
                 watcher5.Stop();
@@ -547,7 +547,8 @@ namespace MASES.JNetByteBufferTest
                 System.GC.Collect();
                 Java.Lang.System.Gc();
 
-                var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
@@ -568,11 +569,10 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
-                    using (JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer())
-                    {
-                        if (!AreEqualNaive(res.ToStream(), bytes))
-                        { throw new System.Exception(); }
-                    }
+                    JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer();
+                    using var stream = res.ToStream();
+                    if (!AreEqualNaive(stream, bytes))
+                    { throw new System.Exception(); }
                 }
                 watcher2.Stop();
 
@@ -584,11 +584,10 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
-                    using (JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer())
-                    {
-                        if (!AreEqualChunked(res.ToStream(), bytes))
-                        { throw new System.Exception(); }
-                    }
+                    JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer();
+                    using var stream = res.ToStream();
+                    if (!AreEqualChunked(stream, bytes))
+                    { throw new System.Exception(); }
                 }
                 watcher3.Stop();
 
@@ -600,14 +599,12 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher4 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
-                    using (JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer())
-                    {
-                        var span = db.AsSpan();
-                        if (span.Length != length) { throw new System.Exception(); }
+                    JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer();
+                    var span = db.AsSpan();
+                    if (span.Length != length) { throw new System.Exception(); }
 
-                        if (!span.SequenceEqual(bytes))
-                        { throw new System.Exception(); }
-                    }
+                    if (!span.SequenceEqual(bytes))
+                    { throw new System.Exception(); }
                 }
                 watcher4.Stop();
 
