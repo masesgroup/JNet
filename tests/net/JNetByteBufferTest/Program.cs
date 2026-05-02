@@ -570,7 +570,7 @@ namespace MASES.JNetByteBufferTest
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
                     JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer();
-                    using var stream = res.ToStream();
+                    using var stream = db.ToStream();
                     if (!AreEqualNaive(stream, bytes))
                     { throw new System.Exception(); }
                 }
@@ -585,7 +585,7 @@ namespace MASES.JNetByteBufferTest
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
                     JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer();
-                    using var stream = res.ToStream();
+                    using var stream = db.ToStream();
                     if (!AreEqualChunked(stream, bytes))
                     { throw new System.Exception(); }
                 }

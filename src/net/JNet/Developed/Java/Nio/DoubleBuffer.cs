@@ -81,7 +81,7 @@ namespace Java.Nio
         /// </param>
         /// <param name="timeToLive">The time to live, expressed in milliseconds, the underlying memory shall remain available; if the time to live expires the pinned memory is retired leaving potentially the JVM under the possibility of an access violation.</param>
         /// <returns>A new instance of <see cref="DoubleBuffer"/></returns>
-        public static DoubleBuffer From(double[] data,bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite)
+        public static DoubleBuffer From(double[] data, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite)
         {
             try
             {
@@ -102,7 +102,8 @@ namespace Java.Nio
             // Rewind(); removed to avoid the build of a new ByteBuffer object will be discarded and replace with a more simple invocation
             // still remains the allocation of a returning object that is the copy of the current managed ByteBuffer, the copy will be immediately disposed to avoid GEN1 in GC
             using var _ = IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject;
-            return _directBuffer ?? JVM.GetDirectBuffer<double>(BridgeInstance);
+            if (_directBuffer == null) _directBuffer = JVM.GetDirectBuffer<double>(BridgeInstance);
+            return _directBuffer;
         }
         /// <inheritdoc/>
         protected override void Dispose(bool disposing)
