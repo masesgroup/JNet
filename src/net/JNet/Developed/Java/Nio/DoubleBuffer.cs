@@ -101,7 +101,7 @@ namespace Java.Nio
         {
             // Rewind(); removed to avoid the build of a new ByteBuffer object will be discarded and replace with a more simple invocation
             // still remains the allocation of a returning object that is the copy of the current managed ByteBuffer, the copy will be immediately disposed to avoid GEN1 in GC
-            using (var iJobj = IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject) { }
+            using var _ = IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject;
             return _directBuffer ?? JVM.GetDirectBuffer<double>(BridgeInstance);
         }
         /// <inheritdoc/>
