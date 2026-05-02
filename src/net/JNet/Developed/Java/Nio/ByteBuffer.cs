@@ -18,6 +18,7 @@
 
 using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNet;
 using MASES.JNet.Specific.Extensions;
 using Microsoft.IO;
@@ -30,6 +31,8 @@ namespace Java.Nio
 {
     public partial class ByteBuffer
     {
+        #region RecyclableMemoryStream
+
         static readonly ConcurrentDictionary<string, RecyclableMemoryStream> _storer = new();
 
         static readonly object _configurationLock = new object();
@@ -174,7 +177,11 @@ namespace Java.Nio
             return stream;
         }
 
+        #endregion
+
         // can be extended with methods not reflected or not available in Java;
+
+        JCOBridgeDirectBuffer<byte> _directBuffer = null;
 
         #region Operators
 
@@ -322,8 +329,17 @@ namespace Java.Nio
         /// <remarks>The returned <see cref="JCOBridgeDirectBuffer{T}"/> can be used to directly access and manages JVM memory without any memory move</remarks>
         public JCOBridgeDirectBuffer<byte> ToDirectBuffer()
         {
-            Rewind();
-            return JVM.GetDirectBuffer<byte>(BridgeInstance);
+            // Rewind(); removed to avoid the build of a new ByteBuffer object will be discarded and replace with a more simple invocation
+            // still remains the allocation of a returning object that is the copy of the current managed ByteBuffer, the copy will be immediately disposed to avoid GEN1 in GC
+            using ((IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject)) { }
+            if (_directBuffer == null) _directBuffer = JVM.GetDirectBuffer<byte>(BridgeInstance);
+            return _directBuffer;
+        }
+        /// <inheritdoc/>
+        protected override void Dispose(bool disposing)
+        {
+            _directBuffer?.Dispose();
+            base.Dispose(disposing);
         }
 
         #endregion

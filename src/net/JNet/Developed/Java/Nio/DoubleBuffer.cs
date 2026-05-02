@@ -18,6 +18,7 @@
 
 using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNet.Specific.Extensions;
 
 namespace Java.Nio
@@ -25,6 +26,8 @@ namespace Java.Nio
     public partial class DoubleBuffer
     {
         // can be extended with methods not reflected or not available in Java;
+
+        JCOBridgeDirectBuffer<double> _directBuffer = null;
 
         #region Operators
 
@@ -78,7 +81,7 @@ namespace Java.Nio
         /// </param>
         /// <param name="timeToLive">The time to live, expressed in milliseconds, the underlying memory shall remain available; if the time to live expires the pinned memory is retired leaving potentially the JVM under the possibility of an access violation.</param>
         /// <returns>A new instance of <see cref="DoubleBuffer"/></returns>
-        public static DoubleBuffer From(double[] data,bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite)
+        public static DoubleBuffer From(double[] data, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite)
         {
             try
             {
@@ -96,8 +99,17 @@ namespace Java.Nio
         /// <remarks>The returned <see cref="JCOBridgeDirectBuffer{T}"/> can be used to directly access and manages JVM memory without any memory move</remarks>
         public JCOBridgeDirectBuffer<double> ToDirectBuffer()
         {
-            Rewind();
-            return JVM.GetDirectBuffer<double>(BridgeInstance);
+            // Rewind(); removed to avoid the build of a new ByteBuffer object will be discarded and replace with a more simple invocation
+            // still remains the allocation of a returning object that is the copy of the current managed ByteBuffer, the copy will be immediately disposed to avoid GEN1 in GC
+            using var _ = IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject;
+            if (_directBuffer == null) _directBuffer = JVM.GetDirectBuffer<double>(BridgeInstance);
+            return _directBuffer;
+        }
+        /// <inheritdoc/>
+        protected override void Dispose(bool disposing)
+        {
+            _directBuffer?.Dispose();
+            base.Dispose(disposing);
         }
 
         #endregion
