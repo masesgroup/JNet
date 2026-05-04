@@ -128,7 +128,11 @@ namespace Java.Nio
         /// Returns an instance of <see cref="JCOBridgeDirectBuffer{T}"/> can be used to directly access and manages JVM memory without any memory move
         /// </summary>
         /// <returns>The <see cref="JCOBridgeDirectBuffer{T}"/> associated to this <see cref="ByteBuffer"/> instance</returns>
-        /// <remarks>DO NOT DISPOSE: the returned <see cref="JCOBridgeDirectBuffer{T}"/> is an internal value disposed when this instance will be disposed</remarks>
+        /// <remarks>
+        /// <b>Do not call Dispose()</b> on the returned instance.
+        /// Its lifetime is managed by the owning object.
+        /// </remarks>
+        [Obsolete("DO NOT CALL Dispose() on the returned JCOBridgeDirectBuffer: it is an internal instance whose lifetime is managed by the owning object.", error: false)]
         public JCOBridgeDirectBuffer<double> ToDirectBuffer()
         {
             // Rewind(); removed to avoid the build of a new ByteBuffer object will be discarded and replace with a more simple invocation
