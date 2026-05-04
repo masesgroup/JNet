@@ -322,18 +322,52 @@ namespace Java.Nio
         {
             return ToDirectBuffer().ToStream();
         }
+#if NET5_0_OR_GREATER
+        /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsSpan"/>
+        public ReadOnlySpan<byte> AsSpan()
+        {
+            return _directBuffer.AsSpan();
+        }
+
+        /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsSpanFromIndex"/>
+        public ReadOnlySpan<byte> AsSpanFromIndex(int fromIndex)
+        {
+            return _directBuffer.AsSpanFromIndex(fromIndex);
+        }
+
+        /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsWritableSpan"/>
+        public Span<byte> AsWritableSpan()
+        {
+            return _directBuffer.AsWritableSpan();
+        }
+
+        /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsWritableSpanFromIndex(int)"/>
+        public Span<byte> AsWritableSpanFromIndex(int fromIndex)
+        {
+            return _directBuffer.AsWritableSpanFromIndex(fromIndex);
+        }
+
+        /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.FlushOnDispose"/>
+        public void FlushOnDispose()
+        {
+
+        }
+#endif
         /// <summary>
-        /// Returns an instance of <see cref="JCOBridgeDirectBuffer{T}"/>
+        /// Returns an instance of <see cref="JCOBridgeDirectBuffer{T}"/> can be used to directly access and manages JVM memory without any memory move
         /// </summary>
         /// <returns>The <see cref="JCOBridgeDirectBuffer{T}"/> associated to this <see cref="ByteBuffer"/> instance</returns>
-        /// <remarks>The returned <see cref="JCOBridgeDirectBuffer{T}"/> can be used to directly access and manages JVM memory without any memory move</remarks>
+        /// <remarks>
+        /// <b>Do not call Dispose()</b> on the returned instance.
+        /// Its lifetime is managed by the owning object.
+        /// </remarks>
+        [Obsolete("DO NOT CALL Dispose() on the returned JCOBridgeDirectBuffer: it is an internal instance whose lifetime is managed by the owning object.", error: false)]
         public JCOBridgeDirectBuffer<byte> ToDirectBuffer()
         {
             // Rewind(); removed to avoid the build of a new ByteBuffer object will be discarded and replace with a more simple invocation
             // still remains the allocation of a returning object that is the copy of the current managed ByteBuffer, the copy will be immediately disposed to avoid GEN1 in GC
             using ((IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject)) { }
-            if (_directBuffer == null) _directBuffer = JVM.GetDirectBuffer<byte>(BridgeInstance);
-            return _directBuffer;
+            return _directBuffer ??= JVM.GetDirectBuffer<byte>(BridgeInstance);
         }
         /// <inheritdoc/>
         protected override void Dispose(bool disposing)
@@ -342,6 +376,6 @@ namespace Java.Nio
             base.Dispose(disposing);
         }
 
-        #endregion
+#endregion
     }
 }
