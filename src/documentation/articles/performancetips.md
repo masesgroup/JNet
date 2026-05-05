@@ -311,66 +311,122 @@ See [performance](performance.md) for the complete benchmark data across all ver
 
 JCOBridge 2.6.9 introduces two typed wrappers for reading bulk data from the JVM with `T : unmanaged`:
 
-- **`JCOBridgeStream<T>`** — wraps a JVM native array. Exposes `ToStream()` (backed by `UnmanagedMemoryStream`) and `ReadOnlySpan<T>`.
-- **`JCOBridgeDirectBuffer<T>`** — wraps a JVM `DirectByteBuffer`. Same surface plus direct native pointer access.
+- **`JCOBridgeStream<T>`** — wraps a JVM native array. Exposes `ToStream()` (backed by `UnmanagedMemoryStream`) and `ReadOnlySpan<T>`. With the **HPA edition**, accesses JVM array memory directly without any copy (GC pinned for the duration). Without HPA, an internal local copy is made.
+- **`JCOBridgeDirectBuffer<T>`** — wraps a JVM `DirectByteBuffer`. Same surface plus direct native pointer access. **Zero-copy in all editions** — the buffer already lives in off-heap native memory.
 
 Both provide .NET Framework-compatible shims for `ReadOnlySpan`.
 
-### Choosing the right API
+> [!NOTE]
+> `JCOBridgeStream<T>` zero-copy access requires the **JCOBridge HPA edition**. Check `JCOBridge.IsHPAEdition` at startup to determine which path is active. Without HPA, `JCOBridgeStream<T>` still provides a faster access pattern than `Invoke<byte[]>` for small payloads (up to 8×), but is not truly zero-copy.
 
-**For JVM arrays** — use `JCOBridgeStream<T>`:
+### How to obtain a `JCOBridgeStream<T>`
+
+JNetReflector does **not** generate dedicated `xxxStream()` methods alongside existing array-returning methods. The limitation is fundamental: with generic types such as `Map<K, V>`, the concrete element type (e.g. `byte[]` for `V`) is not deducible from reflection and only becomes known when the instance is used at runtime. Generating all possible combinations would be impractical and is not useful.
+
+Instead, `JCOBridgeStream<T>` is obtained from the **raw type** via extension methods. JNetReflector generates a raw type alongside every generic that exposes `object` (backed by a plain `IExecute` returning `IJavaObject` or `IJavaArray`). From there:
+
+**Via `Convert<T>()` extension** — when the returned object is directly convertible:
 
 ```csharp
-// Get a JCOBridgeStream<byte> from a JVM byte[]
-using var stream = jvmByteArray.ToJCOBridgeStream<byte>();
+// e.g. iterating a Map<K, byte[]> via its raw EntrySet
+foreach (var entry in map.EntrySet())
+{
+    var value = entry.Value; // object — IJavaObject
+    using JCOBridgeStream<byte> stream = value.Convert<JCOBridgeStream<byte>>();
+    ReadOnlySpan<byte> span = stream.AsSpan();
+    // process span — zero-copy with HPA
+}
+```
 
-// Option 1: ReadOnlySpan (zero-copy with HPA, local copy without)
+**Via `IJavaArray.ToStream<T>()` extension** — when the object is an array:
+
+```csharp
+var value = entry.Value as IJavaArray;
+using JCOBridgeStream<byte> stream = value.ToStream<byte>(FileAccess.ReadWrite, true);
 ReadOnlySpan<byte> span = stream.AsSpan();
+```
+
+> [!NOTE]
+> This requires user attention when writing the code — the type of array is known to the user from context but not to the reflector. This is intentional: `JCOBridgeStream<T>` is a precision tool for performance-critical paths, not a general-purpose replacement for array access.
+
+### `JCOBridgeStream<T>` in listeners and callbacks
+
+For listener/callback methods, the second overload of `ListenerShallManageEvent` provides access to raw event parameters before full processing:
+
+```csharp
+protected override bool ListenerShallManageEvent(int eventIndex, object data)
+{
+    var result = data as CLRListenerEventArgs<JNetEventResult>;
+    CLREventData<JNetEventResult> parameters = result.EventData;
+
+    // access the first JVM parameter (index 0)
+    IJavaObject firstParameter = parameters[0];
+    using (firstParameter)
+    {
+        using IJavaArray array = firstParameter.ToJavaArray();
+        using JCOBridgeStream<byte> stream = array.ToStream<byte>();
+        ReadOnlySpan<byte> span = stream.AsSpan();
+        // inspect span to decide whether to proceed
+        return ShouldProcess(span);
+    }
+}
+```
+
+- `CLRListenerEventArgs<JNetEventResult>` carries the event result and parameters
+- `CLREventData<JNetEventResult>` provides indexed access to each JVM parameter as `IJavaObject`
+- `IJavaObject` can be converted to `IJavaArray` and then to `JCOBridgeStream<T>`
+
+This pattern lets you inspect array data at the second gate of `ListenerShallManageEvent` — deciding whether to invoke the full handler — without allocating a managed array.
+
+> [!TIP]
+> Use this pattern when a listener receives large arrays (e.g. audio buffers, sensor data, binary payloads) and you want to inspect or process them without a full JVM→CLR copy. With HPA enabled, the data never leaves JVM memory.
+
+### `IsHPAEdition`
+
+```csharp
+if (JCOBridge.IsHPAEdition)
+{
+    // JCOBridgeStream<T>.AsSpan() is truly zero-copy
+    // GC is pinned for the duration of the access
+}
+else
+{
+    // JCOBridgeStream<T>.AsSpan() performs an internal local copy
+    // still faster than Invoke<byte[]> for small payloads
+}
+```
+
+Check `IsHPAEdition` once at startup and use it to decide whether to apply the `JCOBridgeStream<T>` path or fall back to the standard `Invoke<T[]>` approach for latency-sensitive code.
+
+### Choosing the right API
+
+**For `DirectByteBuffer`** — use `JCOBridgeDirectBuffer<T>`:
+
+```csharp
+using var buf = jvmDirectBuffer.ToJCOBridgeDirectBuffer<byte>();
+
+// AsSpan: zero-copy from native memory — no HPA needed
+ReadOnlySpan<byte> span = buf.AsSpan();
 ProcessData(span);
 
-// Option 2: chunked stream read — no full allocation
-using var netStream = stream.ToStream();
+// ToStream + chunked read: no full intermediate allocation
+using var netStream = buf.ToStream();
 byte[] chunk = new byte[4096];
 int read;
 while ((read = netStream.Read(chunk, 0, chunk.Length)) > 0)
     ProcessChunk(chunk, read);
 ```
 
-**For `DirectByteBuffer`** — use `JCOBridgeDirectBuffer<T>`:
-
-```csharp
-// Get a JCOBridgeDirectBuffer<byte> from a JVM DirectByteBuffer
-using var buf = jvmDirectBuffer.ToJCOBridgeDirectBuffer<byte>();
-
-// AsSpan: reads directly from native memory pointer — zero-copy, no HPA needed
-ReadOnlySpan<byte> span = buf.AsSpan();
-ProcessData(span);
-
-// ToStream → chunked: no full intermediate allocation
-using var netStream = buf.ToStream();
-// ... chunked read as above
-```
-
 > [!NOTE]
-> `AsSpan` on `JCOBridgeDirectBuffer<T>` is **zero-copy in all JCOBridge editions** — the `DirectByteBuffer` already lives in off-heap native memory, so no copy is needed regardless of HPA. For JVM arrays (`JCOBridgeStream<T>`), true zero-copy access requires the **HPA edition**; the standard edition performs an internal local copy.
-
-> [!NOTE]
-> Avoid `ToStream() → MemoryStream.CopyTo() → ToArray()` (the "naive" pattern) for payloads above a few KB — it allocates a full intermediate copy and performs up to **7× worse** than `ToArray()` alone at 100 MB. Use `AsSpan` or chunked reads instead.
-
-### HPA and JVM arrays
-
-With the HPA edition and its strongest options, `JCOBridgeStream<T>` accesses JVM array memory directly — the GC is pinned for the duration of the access and no copy is made. This eliminates the main reason to copy JVM arrays into a `DirectByteBuffer` before reading from .NET.
-
-> [!TIP]
-> If you currently copy a JVM array into a `DirectByteBuffer` in order to read it from .NET without heap copying, use `JCOBridgeStream<T>` with HPA instead — you get the same zero-copy behavior without the intermediate buffer allocation.
+> `AsSpan` on `JCOBridgeDirectBuffer<T>` is **zero-copy in all editions** — the `DirectByteBuffer` already lives in off-heap native memory. Avoid `ToStream() → MemoryStream.CopyTo() → ToArray()` for payloads above a few KB — it is up to 7× slower than `ToArray()` alone at 100 MB.
 
 ### Performance summary
 
-See [performance — bulk data transfer](performance.md#bulk-data-transfer-at-the-jvmclr-boundary) for the full latency and throughput tables across all size steps (10 B to 100 MB). Highlights:
+See [performance — bulk data transfer](performance.md#bulk-data-transfer-at-the-jvmclr-boundary) for the full latency and throughput tables (10 B to 100 MB, 100 iterations per size). Highlights:
 
-- `AsSpan` on `JCOBridgeStream<T>`: **4–8× faster** than `Invoke<byte[]>` for small payloads (≤10 KB); converges toward memory bandwidth at large sizes.
-- `AsSpan` on `JCOBridgeDirectBuffer<T>`: **~18.5 GB/s** at 100 MB on .NET 10 / Temurin 25 — 2.3× faster than `ToArray()`.
-- `ToStream → Chunked`: good middle ground when a stream-based read pattern is needed, significantly faster than the naive MemoryStream copy.
+- `AsSpan` on `JCOBridgeStream<T>`: up to **8× faster** than `Invoke<byte[]>` for small payloads (≤10 KB); converges toward memory bandwidth at large sizes.
+- `AsSpan` on `JCOBridgeDirectBuffer<T>`: **~18.5 GB/s** at 100 MB on .NET 10 / Temurin 25.
+- The ByteBuffer benchmark (pre-allocated native memory, no heap→native copy) represents the expected performance of `JCOBridgeStream<T>` with HPA — the same absence of heap→native copy that HPA provides for JVM arrays.
 
 ## Memory transfer at CLR-JVM™ boundary
 

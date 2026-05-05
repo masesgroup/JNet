@@ -98,7 +98,7 @@ namespace MASES.JNet.Specific
             }
             else
             {
-                var buf = JCOBridge.C2JBridge.JCOBridge.Global.JVM.NewDirectBuffer(data, arrangeCapacity: false, timeToLive: -1);
+                var buf = JCOBridge.C2JBridge.JCOBridge.Global.JVM.NewDirectBuffer(data);
                 ByteBuffer bb = JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.DisableCleanupAndReturn());
                 if (data is byte[]) return ListFrom(bb);
                 else
