@@ -45,11 +45,11 @@ namespace MASES.JNetByteBufferTest
             }
 #endif
 
-            Initialize();
+            var args = Initialize();
 
             Stopwatch stopwatch = Stopwatch.StartNew();
 
-            ExecuteTests();
+            ExecuteTests(args);
 
             Console.WriteLine("Enabling Critical methods");
 
@@ -58,13 +58,13 @@ namespace MASES.JNetByteBufferTest
             management.EnableCriticalMethods = true;
             management.EnableCriticalMethodsOnGetThreshold = management.EnableCriticalMethodsOnSetThreshold = 0;
 
-            ExecuteTests();
+            ExecuteTests(args);
 
             stopwatch.Stop();
             System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
         }
 
-        static void Initialize()
+        static string[] Initialize()
         {
             try
             {
@@ -75,6 +75,8 @@ namespace MASES.JNetByteBufferTest
                 var appArgs = JNetTestCore.FilteredArgs;
 
                 System.Console.WriteLine("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
+
+                return appArgs;
             }
             catch (Exception ex)
             {
@@ -83,44 +85,36 @@ namespace MASES.JNetByteBufferTest
             }
         }
 
-        static void ExecuteTests()
+        static void ExecuteTests(string[] args)
         {
             Console.WriteLine("Start get from JVM to CLR");
 
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestGetByteArrayDataUsage(iterations, i);
-            }
+            if (args.Length == 0) throw new InvalidOperationException("Set test to execute");
 
             for (int i = MinValue; i < MaxValue; i *= 10)
             {
-                TestGetByteBuffersDataUsage(iterations, i);
-            }
-
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestGetByteBuffers(iterations, i);
-            }
-
-            Console.WriteLine("Start insert from CLR to JVM");
-
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestInsertByteBuffers(iterations, i);
-            }
-
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestInsertByteBuffersNativeStream(iterations, i);
-            }
-
-            ByteBuffer.EnableRecyclableMemoryStream(true);
-
-            Console.WriteLine("Start insert from CLR to JVM with RecyclableMemoryStream");
-
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestInsertByteBuffersRecyclableMemoryStream(iterations, i);
+                switch (args[0])
+                {
+                    case "TestGetByteArrayDataUsage":
+                        TestGetByteArrayDataUsage(iterations, i);
+                        break;
+                    case "TestGetByteBuffersDataUsage":
+                        TestGetByteBuffersDataUsage(iterations, i);
+                        break;
+                    case "TestGetByteBuffers":
+                        TestGetByteBuffers(iterations, i);
+                        break;
+                    case "TestInsertByteBuffers":
+                        TestInsertByteBuffers(iterations, i);
+                        break;
+                    case "TestInsertByteBuffersNativeStream":
+                        TestInsertByteBuffersNativeStream(iterations, i);
+                        break;
+                    case "TestInsertByteBuffersRecyclableMemoryStream":
+                        ByteBuffer.EnableRecyclableMemoryStream(true);
+                        TestInsertByteBuffersRecyclableMemoryStream(iterations, i);
+                        break;
+                }
             }
         }
 
