@@ -45,11 +45,11 @@ namespace MASES.JNetByteBufferTest
             }
 #endif
 
-            var args = Initialize();
+            var filteredArgs = Initialize();
 
             Stopwatch stopwatch = Stopwatch.StartNew();
 
-            ExecuteTests(args);
+            ExecuteTests(filteredArgs);
 
             Console.WriteLine("Enabling Critical methods");
 
@@ -58,7 +58,7 @@ namespace MASES.JNetByteBufferTest
             management.EnableCriticalMethods = true;
             management.EnableCriticalMethodsOnGetThreshold = management.EnableCriticalMethodsOnSetThreshold = 0;
 
-            ExecuteTests(args);
+            ExecuteTests(filteredArgs);
 
             stopwatch.Stop();
             System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
