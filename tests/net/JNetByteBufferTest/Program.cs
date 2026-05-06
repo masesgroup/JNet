@@ -236,8 +236,8 @@ namespace MASES.JNetByteBufferTest
                     bytes[i] = (byte)(i % byte.MaxValue);
                 }
 
-                var stream = Java.Nio.ByteBuffer.Rent(bytes.LongLength);
-                stream.Write(bytes, 0, bytes.Length);
+                var stream = Java.Nio.ByteBuffer.Rent(bytes.LongLength / 2); // build with less memory
+                stream.Write(bytes, 0, bytes.Length); // to test auto-grow
                 var bbCast = Java.Nio.ByteBuffer.From(stream);
 
                 var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
