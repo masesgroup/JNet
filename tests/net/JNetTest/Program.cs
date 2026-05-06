@@ -364,8 +364,8 @@ namespace MASES.JNetTest
 
             var direct = JNetTestCore.GlobalInstance.JVM.NewDirectBuffer(bytes, arrangeCapacity: true, timeToLive: -1);
 
-            var getSharedBuffer = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<byte>(direct.JavaObject);
-            var getSharedBufferInt = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<int>(direct.JavaObject);
+            var getSharedBuffer = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<byte>(direct.BridgeInstance);
+            var getSharedBufferInt = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<int>(direct.BridgeInstance);
 
             direct[10] = 4;
 

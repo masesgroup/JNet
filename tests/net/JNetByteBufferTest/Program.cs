@@ -17,6 +17,7 @@
 */
 
 using Java.Nio;
+using Javax.Xml.Crypto;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
@@ -44,11 +45,11 @@ namespace MASES.JNetByteBufferTest
             }
 #endif
 
-            Initialize();
+            var filteredArgs = Initialize();
 
             Stopwatch stopwatch = Stopwatch.StartNew();
 
-            ExecuteTests();
+            ExecuteTests(filteredArgs);
 
             Console.WriteLine("Enabling Critical methods");
 
@@ -57,13 +58,13 @@ namespace MASES.JNetByteBufferTest
             management.EnableCriticalMethods = true;
             management.EnableCriticalMethodsOnGetThreshold = management.EnableCriticalMethodsOnSetThreshold = 0;
 
-            ExecuteTests();
+            ExecuteTests(filteredArgs);
 
             stopwatch.Stop();
             System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
         }
 
-        static void Initialize()
+        static string[] Initialize()
         {
             try
             {
@@ -74,6 +75,8 @@ namespace MASES.JNetByteBufferTest
                 var appArgs = JNetTestCore.FilteredArgs;
 
                 System.Console.WriteLine("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
+
+                return appArgs;
             }
             catch (Exception ex)
             {
@@ -82,39 +85,36 @@ namespace MASES.JNetByteBufferTest
             }
         }
 
-        static void ExecuteTests()
+        static void ExecuteTests(string[] args)
         {
             Console.WriteLine("Start get from JVM to CLR");
 
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestGetByteArrayDataUsage(iterations, i);
-            }
+            if (args.Length == 0) throw new InvalidOperationException("Set test to execute");
 
             for (int i = MinValue; i < MaxValue; i *= 10)
             {
-                TestGetByteBuffersDataUsage(iterations, i);
-            }
-
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestGetByteBuffers(iterations, i);
-            }
-
-            Console.WriteLine("Start insert from CLR to JVM");
-
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestInsertByteBuffers(iterations, i);
-            }
-
-            ByteBuffer.EnableRecyclableMemoryStream(true);
-
-            Console.WriteLine("Start insert from CLR to JVM with RecyclableMemoryStream");
-
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestInsertByteBuffersRecyclableMemoryStream(iterations, i);
+                switch (args[0])
+                {
+                    case "TestGetByteArrayDataUsage":
+                        TestGetByteArrayDataUsage(iterations, i);
+                        break;
+                    case "TestGetByteBuffersDataUsage":
+                        TestGetByteBuffersDataUsage(iterations, i);
+                        break;
+                    case "TestGetByteBuffers":
+                        TestGetByteBuffers(iterations, i);
+                        break;
+                    case "TestInsertByteBuffers":
+                        TestInsertByteBuffers(iterations, i);
+                        break;
+                    case "TestInsertByteBuffersNativeStream":
+                        TestInsertByteBuffersNativeStream(iterations, i);
+                        break;
+                    case "TestInsertByteBuffersRecyclableMemoryStream":
+                        ByteBuffer.EnableRecyclableMemoryStream(true);
+                        TestInsertByteBuffersRecyclableMemoryStream(iterations, i);
+                        break;
+                }
             }
         }
 
@@ -131,6 +131,115 @@ namespace MASES.JNetByteBufferTest
                 }
 
                 var bbCast = Java.Nio.ByteBuffer.From(bytes, false);
+                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Console.WriteLine($"Created TestArrayAndByteBuffer");
+
+                Stopwatch watcher1 = Stopwatch.StartNew();
+                for (i = 0; i < requestedIterations; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertArray", bytes);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertArray at iteration {i} due to {ex}");
+                        break;
+                    }
+                }
+                watcher1.Stop();
+
+                Console.WriteLine($"End insertArray Elapsed {watcher1.Elapsed}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher2 = Stopwatch.StartNew();
+                for (i = 0; i < requestedIterations; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertByteBuffer", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBuffer at iteration {i} due to {ex}");
+                        break;
+                    }
+                }
+                watcher2.Stop();
+
+                Console.WriteLine($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher3 = Stopwatch.StartNew();
+                for (i = 0; i < requestedIterations; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertByteBufferNoNew", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBufferNoNew at iteration {i} due to {ex}");
+                        break;
+                    }
+                }
+                watcher3.Stop();
+
+                Console.WriteLine($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher4 = Stopwatch.StartNew();
+                for (i = 0; i < requestedIterations; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertByteBufferNoGet", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBufferNoGet at iteration {i} due to {ex}");
+                        break;
+                    }
+                }
+                watcher4.Stop();
+
+                Console.WriteLine($"End insertByteBufferNoGet Elapsed {watcher4.Elapsed}");
+
+                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - Array {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
+            }
+            catch
+            {
+                Console.WriteLine($"Failed at iteration: {i}");
+                throw;
+            }
+        }
+
+        static void TestInsertByteBuffersNativeStream(int requestedIterations, int length)
+        {
+            Console.WriteLine($"TestInsertByteBuffersNativeStream with {requestedIterations} iterations and {length} length");
+            int i = 0;
+            try
+            {
+                byte[] bytes = new byte[length];
+                for (i = 0; i < bytes.Length; i++)
+                {
+                    bytes[i] = (byte)(i % byte.MaxValue);
+                }
+
+                var stream = Java.Nio.ByteBuffer.Rent(bytes.LongLength / 2); // build with less memory
+                stream.Write(bytes, 0, bytes.Length); // to test auto-grow
+                var bbCast = Java.Nio.ByteBuffer.From(stream);
+
                 var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
 
                 System.GC.Collect();

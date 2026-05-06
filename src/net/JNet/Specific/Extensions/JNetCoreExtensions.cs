@@ -95,7 +95,7 @@ namespace MASES.JNet.Specific.Extensions
             where TData : unmanaged
             where TWrap : IJVMBridgeBase
         {
-            var buf = JCOBridge.C2JBridge.JCOBridge.Global.JVM.NewDirectBuffer(data, arrangeCapacity, timeToLive);
+            var buf = JCOBridge.C2JBridge.JCOBridge.Global.JVM.NewDirectBuffer(data, false, arrangeCapacity, timeToLive);
             if (data is byte[]) return JVMBridgeBase.WrapsDirect<TWrap>(buf.DisableCleanupAndReturn());
             else
             {

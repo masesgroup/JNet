@@ -78,7 +78,7 @@ namespace Java.Nio
         /// </summary>
         /// <param name="data">The data to be shared</param>
         /// <param name="arrangeCapacity">If <see langword="true"/> the <see cref="long"/> array in <paramref name="data"/> will be resized to the next power of 2, 
-        /// so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be current size of <paramref name="data"/>
+        /// so capacity will be memory aligned and the limit of java.nio.LongBuffer will be current size of <paramref name="data"/>
         /// </param>
         /// <param name="timeToLive">The time to live, expressed in milliseconds, the underlying memory shall remain available; if the time to live expires the pinned memory is retired leaving potentially the JVM under the possibility of an access violation.</param>
         /// <returns>A new instance of <see cref="LongBuffer"/></returns>
@@ -93,6 +93,53 @@ namespace Java.Nio
 
             return LongBuffer.Wrap(data);
         }
+
+
+        /// <summary>
+        /// Returns a <see cref="JCOBridgeSharedBufferStream{T}"/> with a capacity defined by <paramref name="capacity"/>, to be passed to <see cref="From(JCOBridgeSharedBufferStream{long})"/>.
+        /// </summary>
+        /// <param name="capacity">The number of elements of <see langword="long"/> type; the measure will be computed using <see langword="sizeof"/> over <see langword="long"/>.</param>
+        /// <returns>A pooled instance of <see cref="JCOBridgeSharedBufferStream{T}"/> ready to be written via Stream-based APIs and then passed to <see cref="From(JCOBridgeSharedBufferStream{long})"/>.</returns>
+        /// <remarks>
+        /// The returned <see cref="JCOBridgeSharedBufferStream{T}"/> is drawn from an internal pool. The HPA (High Performance Application) runtime variant uses a highly optimized pool tuned for high-throughput scenarios,
+        /// while the standard runtime variant uses a lighter pool suitable for moderate workloads.
+        /// The instance must not be manually disposed; its lifecycle is fully managed by the subsystem and it is automatically returned to the pool once the JVM has finished with the
+        /// <see cref="LongBuffer"/> created by <see cref="From(JCOBridgeSharedBufferStream{long})"/>, i.e. when the JVM Garbage Collector retires the associated <see cref="LongBuffer"/>.
+        /// </remarks>
+        public static JCOBridgeSharedBufferStream<long> Rent(long capacity)
+        {
+            return JCOBridge.Global.JVM.Rent<long>(capacity);
+        }
+
+        /// <summary>
+        /// Creates a new <see cref="LongBuffer"/> in the JVM which shares the memory of <paramref name="stream"/>.
+        /// This is the preferred overload for high-rate scenarios as it avoids repeated array copies from CLR to JVM and benefits from pooled buffer management.
+        /// </summary>
+        /// <param name="stream">A <see cref="JCOBridgeSharedBufferStream{T}"/> obtained from <see cref="Rent"/> and populated via Stream-based APIs,
+        /// to be used directly within the JVM from a <see cref="LongBuffer"/>.</param>
+        /// <returns>A new instance of <see cref="JCOBridgeDirectBuffer{T}"/> holding the memory of <paramref name="stream"/> shared with the <see cref="LongBuffer"/>.</returns>
+        /// <remarks>
+        /// The memory associated to <paramref name="stream"/> will be retained until the JVM reference of the newly created <see cref="LongBuffer"/> is garbage collected.
+        /// Under heavy pressure the memory footprint can raise up and generate an <see cref="OutOfMemoryException"/>; use the functionality with caution.
+        /// <para>
+        /// <b>Lifecycle management:</b> the subsystem automatically returns <paramref name="stream"/> to the internal pool once the JVM Garbage Collector retires the associated
+        /// <see cref="LongBuffer"/>, i.e. when the <see cref="LongBuffer"/> has been fully consumed by the JVM.
+        /// A direct call to <see cref="IDisposable.Dispose"/> on the returned <see cref="JCOBridgeDirectBuffer{T}"/> is therefore a no-op; do not attempt to manually dispose <paramref name="stream"/> after passing it to this method.
+        /// </para>
+        /// <para>
+        /// <b>Pool strategy:</b> the HPA (High Performance Application) runtime variant draws <paramref name="stream"/> instances from a highly optimized pool tuned for high-throughput workloads,
+        /// while the standard runtime variant uses a lighter pool. In both cases the pooling is fully transparent to the caller.
+        /// </para>
+        /// </remarks>
+        /// <exception cref="ArgumentException">Thrown when <paramref name="stream"/> was not obtained through <see cref="Rent"/>.</exception>
+        /// <exception cref="NotSupportedException">Thrown when the JVM is unable to generate a <see cref="LongBuffer"/> instance.</exception>
+        public static JCOBridgeDirectBuffer<long> From(JCOBridgeSharedBufferStream<long> stream)
+        {
+            var buf = JCOBridge.Global.JVM.NewDirectBuffer(stream);
+            return JVMBridgeBase.WrapsDirect<LongBuffer>(buf.DisableCleanupAndReturn());
+        }
+
+
 #if NET5_0_OR_GREATER
         /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsSpan"/>
         public ReadOnlySpan<long> AsSpan()
@@ -127,7 +174,7 @@ namespace Java.Nio
         /// <summary>
         /// Returns an instance of <see cref="JCOBridgeDirectBuffer{T}"/> can be used to directly access and manages JVM memory without any memory move
         /// </summary>
-        /// <returns>The <see cref="JCOBridgeDirectBuffer{T}"/> associated to this <see cref="ByteBuffer"/> instance</returns>
+        /// <returns>The <see cref="JCOBridgeDirectBuffer{T}"/> associated to this <see cref="LongBuffer"/> instance</returns>
         /// <remarks>
         /// <b>Do not call Dispose()</b> on the returned instance.
         /// Its lifetime is managed by the owning object.
@@ -135,8 +182,8 @@ namespace Java.Nio
         [Obsolete("DO NOT CALL Dispose() on the returned JCOBridgeDirectBuffer: it is an internal instance whose lifetime is managed by the owning object.", error: false)]
         public JCOBridgeDirectBuffer<long> ToDirectBuffer()
         {
-            // Rewind(); removed to avoid the build of a new ByteBuffer object will be discarded and replace with a more simple invocation
-            // still remains the allocation of a returning object that is the copy of the current managed ByteBuffer, the copy will be immediately disposed to avoid GEN1 in GC
+            // Rewind(); removed to avoid the build of a new LongBuffer object will be discarded and replace with a more simple invocation
+            // still remains the allocation of a returning object that is the copy of the current managed LongBuffer, the copy will be immediately disposed to avoid GEN1 in GC
             using (IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject) { }
             return _directBuffer ??= JVM.GetDirectBuffer<long>(BridgeInstance);
         }
