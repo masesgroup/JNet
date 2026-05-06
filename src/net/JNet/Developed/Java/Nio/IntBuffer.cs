@@ -94,19 +94,28 @@ namespace Java.Nio
             return IntBuffer.Wrap(data);
         }
 
-
         /// <summary>
-        /// Returns a <see cref="JCOBridgeSharedBufferStream{T}"/> with a capacity defined by <paramref name="capacity"/>, to be passed to <see cref="From(JCOBridgeSharedBufferStream{int})"/>.
+        /// Returns a <see cref="JCOBridgeSharedBufferStream{T}"/> with an initial capacity derived from <paramref name="capacity"/>,
+        /// to be populated via Stream-based APIs and then passed to <see cref="From(JCOBridgeSharedBufferStream{int})"/>.
         /// </summary>
-        /// <param name="capacity">The number of elements of <see langword="int"/> type; the measure will be computed using <see langword="sizeof"/> over <see langword="int"/>.</param>
+        /// <param name="capacity">The plausible number of elements of <see langword="int"/> type to be written into the stream; the byte size is computed as <c>capacity * sizeof(<see langword="int"/>)</c>.
+        /// The default value of <c>-1</c> instructs the subsystem to allocate the minimum meaningful unit, which corresponds to one system memory page (see <see cref="Environment.SystemPageSize"/>).
+        /// Regardless of the value provided, the effective allocation is always rounded up to the nearest multiple of the system page size, since the underlying native allocator operates at page granularity.
+        /// Passing a value smaller than one page therefore has no practical advantage over using the default.
+        /// This value is a hint, not a hard limit: if the actual data written exceeds the initial allocation, the underlying buffer will grow automatically via reallocation.
+        /// However, providing a value greater than or equal to the actual data size is strongly recommended to avoid reallocation overhead, especially in high-rate scenarios.
+        /// Callers that process data of a known or predictable size are encouraged to implement their own estimation strategy — for example, tracking the stable size observed in previous invocations —
+        /// so that the initial capacity converges toward the real value over time and reallocations become increasingly rare or disappear entirely.
+        /// </param>
         /// <returns>A pooled instance of <see cref="JCOBridgeSharedBufferStream{T}"/> ready to be written via Stream-based APIs and then passed to <see cref="From(JCOBridgeSharedBufferStream{int})"/>.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="capacity"/> is zero or any positive value that, once multiplied by <c>sizeof(<see langword="int"/>)</c>, overflows a <see cref="long"/>.</exception>
         /// <remarks>
         /// The returned <see cref="JCOBridgeSharedBufferStream{T}"/> is drawn from an internal pool. The HPA (High Performance Application) runtime variant uses a highly optimized pool tuned for high-throughput scenarios,
         /// while the standard runtime variant uses a lighter pool suitable for moderate workloads.
-        /// The instance must not be manually disposed; its lifecycle is fully managed by the subsystem and it is automatically returned to the pool once the JVM has finished with the
-        /// <see cref="IntBuffer"/> created by <see cref="From(JCOBridgeSharedBufferStream{int})"/>, i.e. when the JVM Garbage Collector retires the associated <see cref="IntBuffer"/>.
+        /// The instance must not be manually disposed; its lifecycle is fully managed by the subsystem and it is automatically returned to the pool once the JVM Garbage Collector retires the associated
+        /// <see cref="IntBuffer"/> created by <see cref="From(JCOBridgeSharedBufferStream{int})"/>.
         /// </remarks>
-        public static JCOBridgeSharedBufferStream<int> Rent(long capacity)
+        public static JCOBridgeSharedBufferStream<int> Rent(long capacity = -1)
         {
             return JCOBridge.Global.JVM.Rent<int>(capacity);
         }
