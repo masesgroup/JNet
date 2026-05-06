@@ -117,14 +117,14 @@ namespace Java.Nio
         /// </summary>
         /// <param name="stream">A <see cref="JCOBridgeSharedBufferStream{T}"/> obtained from <see cref="Rent"/> and populated via Stream-based APIs,
         /// to be used directly within the JVM from a <see cref="DoubleBuffer"/>.</param>
-        /// <returns>A new instance of <see cref="JCOBridgeDirectBuffer{T}"/> holding the memory of <paramref name="stream"/> shared with the <see cref="DoubleBuffer"/>.</returns>
+        /// <returns>A new instance of <see cref="DoubleBuffer"/> holding the memory of <paramref name="stream"/> shared with the <see cref="DoubleBuffer"/>.</returns>
         /// <remarks>
         /// The memory associated to <paramref name="stream"/> will be retained until the JVM reference of the newly created <see cref="DoubleBuffer"/> is garbage collected.
         /// Under heavy pressure the memory footprint can raise up and generate an <see cref="OutOfMemoryException"/>; use the functionality with caution.
         /// <para>
         /// <b>Lifecycle management:</b> the subsystem automatically returns <paramref name="stream"/> to the internal pool once the JVM Garbage Collector retires the associated
         /// <see cref="DoubleBuffer"/>, i.e. when the <see cref="DoubleBuffer"/> has been fully consumed by the JVM.
-        /// A direct call to <see cref="IDisposable.Dispose"/> on the returned <see cref="JCOBridgeDirectBuffer{T}"/> is therefore a no-op; do not attempt to manually dispose <paramref name="stream"/> after passing it to this method.
+        /// A direct call to <see cref="IDisposable.Dispose"/> on the returned <see cref="DoubleBuffer"/> is therefore a no-op; do not attempt to manually dispose <paramref name="stream"/> after passing it to this method.
         /// </para>
         /// <para>
         /// <b>Pool strategy:</b> the HPA (High Performance Application) runtime variant draws <paramref name="stream"/> instances from a highly optimized pool tuned for high-throughput workloads,
@@ -133,7 +133,7 @@ namespace Java.Nio
         /// </remarks>
         /// <exception cref="ArgumentException">Thrown when <paramref name="stream"/> was not obtained through <see cref="Rent"/>.</exception>
         /// <exception cref="NotSupportedException">Thrown when the JVM is unable to generate a <see cref="DoubleBuffer"/> instance.</exception>
-        public static JCOBridgeDirectBuffer<double> From(JCOBridgeSharedBufferStream<double> stream)
+        public static DoubleBuffer From(JCOBridgeSharedBufferStream<double> stream)
         {
             var buf = JCOBridge.Global.JVM.NewDirectBuffer(stream);
             return JVMBridgeBase.WrapsDirect<DoubleBuffer>(buf.DisableCleanupAndReturn());

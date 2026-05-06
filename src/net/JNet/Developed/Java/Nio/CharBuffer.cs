@@ -114,17 +114,16 @@ namespace Java.Nio
         /// Creates a new <see cref="CharBuffer"/> in the JVM which shares the memory of <paramref name="stream"/>.
         /// This is the preferred overload for high-rate scenarios as it avoids repeated array copies from CLR to JVM and benefits from pooled buffer management.
         /// </summary>
-        /// <typeparam name="T">The native type of the resulting <see cref="JCOBridgeDirectBuffer{T}"/></typeparam>
         /// <param name="stream">A <see cref="JCOBridgeSharedBufferStream{T}"/> obtained from <see cref="Rent"/> and populated via Stream-based APIs,
         /// to be used directly within the JVM from a <see cref="CharBuffer"/>.</param>
-        /// <returns>A new instance of <see cref="JCOBridgeDirectBuffer{T}"/> holding the memory of <paramref name="stream"/> shared with the <see cref="CharBuffer"/>.</returns>
+        /// <returns>A new instance of <see cref="CharBuffer"/> holding the memory of <paramref name="stream"/> shared with the <see cref="CharBuffer"/>.</returns>
         /// <remarks>
         /// The memory associated to <paramref name="stream"/> will be retained until the JVM reference of the newly created <see cref="CharBuffer"/> is garbage collected.
         /// Under heavy pressure the memory footprint can raise up and generate an <see cref="OutOfMemoryException"/>; use the functionality with caution.
         /// <para>
         /// <b>Lifecycle management:</b> the subsystem automatically returns <paramref name="stream"/> to the internal pool once the JVM Garbage Collector retires the associated
         /// <see cref="CharBuffer"/>, i.e. when the <see cref="CharBuffer"/> has been fully consumed by the JVM.
-        /// A direct call to <see cref="IDisposable.Dispose"/> on the returned <see cref="JCOBridgeDirectBuffer{T}"/> is therefore a no-op; do not attempt to manually dispose <paramref name="stream"/> after passing it to this method.
+        /// A direct call to <see cref="IDisposable.Dispose"/> on the returned <see cref="CharBuffer"/> is therefore a no-op; do not attempt to manually dispose <paramref name="stream"/> after passing it to this method.
         /// </para>
         /// <para>
         /// <b>Pool strategy:</b> the HPA (High Performance Application) runtime variant draws <paramref name="stream"/> instances from a highly optimized pool tuned for high-throughput workloads,
@@ -133,7 +132,7 @@ namespace Java.Nio
         /// </remarks>
         /// <exception cref="ArgumentException">Thrown when <paramref name="stream"/> was not obtained through <see cref="Rent"/>.</exception>
         /// <exception cref="NotSupportedException">Thrown when the JVM is unable to generate a <see cref="CharBuffer"/> instance.</exception>
-        public static JCOBridgeDirectBuffer<char> From(JCOBridgeSharedBufferStream<char> stream)
+        public static CharBuffer From(JCOBridgeSharedBufferStream<char> stream)
         {
             var buf = JCOBridge.Global.JVM.NewDirectBuffer(stream);
             return JVMBridgeBase.WrapsDirect<CharBuffer>(buf.DisableCleanupAndReturn());
