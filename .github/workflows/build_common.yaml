@@ -450,16 +450,16 @@ jobs:
 
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
+
+      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: bash
         run: |
           for TEST in TestGetByteArrayDataUsage TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
           done
 
-      - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
-        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll ${{ env.EXTRA_ARGUMENT }}
-        
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: .\bin\${{ matrix.framework }}\JNetPerformanceTest.exe ${{ env.EXTRA_ARGUMENT }}
