@@ -198,6 +198,7 @@ namespace MASES.JNet.Specific.Extensions
             return tInstance;
         }
 
+        /// <inheritdoc cref="ToNetDictionary{TDictionaryType, K, V, TJVMK, TJVMV}(Map{TJVMK, TJVMV}, Func{TJVMK, K}, Func{TJVMV, V})"/>
         [Obsolete("Use ToNetDictionary instead.")]
         public static TDictionaryType ToNetDictiony<TDictionaryType, K, V, TJVMK, TJVMV>(this Map<TJVMK, TJVMV> map, Func<TJVMK, K> keyConverter = null, Func<TJVMV, V> valueConverter = null)
             where TDictionaryType : IDictionary<K, V>, new()
