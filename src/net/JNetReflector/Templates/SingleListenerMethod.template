@@ -24,7 +24,7 @@ void METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler(object sender, CL
                                                                           // Normally unreachable if ListenerShallManageEvent filtered correctly,
                                                                           // but protects against user overrides of ListenerShallManageEvent that bypass the check.
     {
-        // data.EventData.TypedEventData.HasOverride is false by default — JVM receives no return value.
+        // data.EventData.HasOverride is false by default — JVM receives no return value.
         return;
     }
 METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER
