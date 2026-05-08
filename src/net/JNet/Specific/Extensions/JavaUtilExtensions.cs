@@ -118,11 +118,10 @@ namespace MASES.JNet.Specific.Extensions
 #else
                 var jvmData = func != null ? func(item) : TJVMTypeInner.ToJVM(item);
 #endif
-                try
+                using (var disposable = jvmData as IDisposable)
                 {
                     tInstance.Add(jvmData);
                 }
-                finally { (jvmData as IDisposable)?.Dispose(); }
             }
             return tInstance;
         }
@@ -191,16 +190,10 @@ namespace MASES.JNet.Specific.Extensions
             using var keySet = map.KeySet();
             foreach (var key in keySet)
             {
+                using var keyDisposable = key as IDisposable;
                 var value = map.Get(key);
-                try
-                {
-                    tInstance.Add(keyConverter != null ? keyConverter(key) : key.ToCLR(), valueConverter != null ? valueConverter(value) : value.ToCLR());
-                }
-                finally
-                {
-                    (key as IDisposable)?.Dispose();
-                    (value as IDisposable)?.Dispose();
-                }
+                using var valueDisposable = value as IDisposable;
+                tInstance.Add(keyConverter != null ? keyConverter(key) : key.ToCLR(), valueConverter != null ? valueConverter(value) : value.ToCLR());
             }
             return tInstance;
         }
@@ -261,15 +254,9 @@ namespace MASES.JNet.Specific.Extensions
                 var key = keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key);
                 var value = valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value);
 #endif
-                try
-                {
-                    tInstance.Put(key, value);
-                }
-                finally
-                {
-                    (key as IDisposable)?.Dispose();
-                    (value as IDisposable)?.Dispose();
-                }
+                using IDisposable keyDisposable = key as IDisposable;
+                using IDisposable valueDisposable = value as IDisposable;
+                tInstance.Put(key, value);
             }
             return tInstance;
         }
@@ -295,14 +282,10 @@ namespace MASES.JNet.Specific.Extensions
             {
                 var key = keyConverter(item.Key);
                 var value = valueConverter(item.Value);
-                try
+                using (var keyDisposable = key as IDisposable)
+                using (var valueDisposable = value as IDisposable)
                 {
                     tInstance.Put(key, value);
-                }
-                finally
-                {
-                    (key as IDisposable)?.Dispose();
-                    (value as IDisposable)?.Dispose();
                 }
             }
             return tInstance;
@@ -346,15 +329,9 @@ namespace MASES.JNet.Specific.Extensions
                 var key = keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key);
                 var value = valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value);
 #endif
-                try
-                {
-                    tInstance.Put(key, value);
-                }
-                finally
-                {
-                    (key as IDisposable)?.Dispose();
-                    (value as IDisposable)?.Dispose();
-                }
+                using var keyToDispose = key as IDisposable;
+                using var valueToDispose = value as IDisposable;
+                tInstance.Put(key, value);
             }
             return tInstance;
         }
@@ -380,15 +357,9 @@ namespace MASES.JNet.Specific.Extensions
             {
                 var key = keyConverter(item.Key);
                 var value = valueConverter(item.Value);
-                try
-                {
-                    tInstance.Put(key, value);
-                }
-                finally
-                {
-                    (key as IDisposable)?.Dispose();
-                    (value as IDisposable)?.Dispose();
-                }
+                using var keyToDispose = key as IDisposable;
+                using var valueToDispose = value as IDisposable;
+                tInstance.Put(key, value);
             }
             return tInstance;
         }
