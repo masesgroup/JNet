@@ -39,7 +39,7 @@ namespace Java.Nio
         /// <summary>
         /// Converts an instance of <see cref="ShortBuffer"/> into <see cref="JCOBridgeDirectBuffer{T}"/>
         /// </summary>
-        public static implicit operator JCOBridgeDirectBuffer<short>(ShortBuffer t) => t.ToDirectBuffer();
+        public static implicit operator JCOBridgeDirectBuffer<short>(ShortBuffer t) => t.ToDirectBuffer(true);
         /// <summary>
         /// Converts an instance of <see cref="short"/> array into <see cref="ShortBuffer"/> using the default parameters of <see cref="From(short[], bool, int)"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Nio
             {
                 try
                 {
-                    return ToDirectBuffer().ToArray<short>();
+                    return ToDirectBuffer(true).ToArray<short>();
                 }
                 catch (UnsupportedOperationException) { }
                 catch (System.NotSupportedException) { }
@@ -177,23 +177,27 @@ namespace Java.Nio
         /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.FlushOnDispose"/>
         public void FlushOnDispose()
         {
-
+            _directBuffer.FlushOnDispose();
         }
 #endif
         /// <summary>
         /// Returns an instance of <see cref="JCOBridgeDirectBuffer{T}"/> can be used to directly access and manages JVM memory without any memory move
         /// </summary>
+        /// <param name="rewind"><see cref="Buffer.Rewind()"/> the instance before return <see cref="JCOBridgeDirectBuffer{T}"/></param>
         /// <returns>The <see cref="JCOBridgeDirectBuffer{T}"/> associated to this <see cref="ShortBuffer"/> instance</returns>
         /// <remarks>
         /// <b>Do not call Dispose()</b> on the returned instance.
         /// Its lifetime is managed by the owning object.
         /// </remarks>
         [Obsolete("DO NOT CALL Dispose() on the returned JCOBridgeDirectBuffer: it is an internal instance whose lifetime is managed by the owning object.", error: false)]
-        public JCOBridgeDirectBuffer<short> ToDirectBuffer()
+        public JCOBridgeDirectBuffer<short> ToDirectBuffer(bool rewind)
         {
-            // Rewind(); removed to avoid the build of a new ShortBuffer object will be discarded and replace with a more simple invocation
-            // still remains the allocation of a returning object that is the copy of the current managed ShortBuffer, the copy will be immediately disposed to avoid GEN1 in GC
-            using var _ = IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject;
+            if (rewind)
+            {
+                // Rewind(); removed to avoid the build of a new ShortBuffer object will be discarded and replace with a more simple invocation
+                // still remains the allocation of a returning object that is the copy of the current managed ShortBuffer, the copy will be immediately disposed to avoid GEN1 in GC
+                using var _ = IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject;
+            }
             return _directBuffer ??= JVM.GetDirectBuffer<short>(BridgeInstance);
         }
         /// <inheritdoc/>

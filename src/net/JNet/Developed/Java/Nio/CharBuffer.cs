@@ -39,7 +39,7 @@ namespace Java.Nio
         /// <summary>
         /// Converts an instance of <see cref="CharBuffer"/> into <see cref="JCOBridgeDirectBuffer{T}"/>
         /// </summary>
-        public static implicit operator JCOBridgeDirectBuffer<char>(CharBuffer t) => t.ToDirectBuffer();
+        public static implicit operator JCOBridgeDirectBuffer<char>(CharBuffer t) => t.ToDirectBuffer(true);
         /// <summary>
         /// Converts an instance of <see cref="char"/> array into <see cref="CharBuffer"/> using the default parameters of <see cref="From(char[], bool, int)"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Nio
             {
                 try
                 {
-                    return ToDirectBuffer().ToArray<char>();
+                    return ToDirectBuffer(true).ToArray<char>();
                 }
                 catch (UnsupportedOperationException) { }
                 catch (System.NotSupportedException) { }
@@ -152,47 +152,51 @@ namespace Java.Nio
         /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsSpan"/>
         public ReadOnlySpan<char> AsSpan()
         {
-            return _directBuffer.AsSpan();
+            return ToDirectBuffer(false).AsSpan();
         }
 
         /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsSpanFromIndex"/>
         public ReadOnlySpan<char> AsSpanFromIndex(int fromIndex)
         {
-            return _directBuffer.AsSpanFromIndex(fromIndex);
+            return ToDirectBuffer(false).AsSpanFromIndex(fromIndex);
         }
 
         /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsWritableSpan"/>
         public Span<char> AsWritableSpan()
         {
-            return _directBuffer.AsWritableSpan();
+            return ToDirectBuffer(false).AsWritableSpan();
         }
 
         /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsWritableSpanFromIndex(int)"/>
         public Span<char> AsWritableSpanFromIndex(int fromIndex)
         {
-            return _directBuffer.AsWritableSpanFromIndex(fromIndex);
+            return ToDirectBuffer(false).AsWritableSpanFromIndex(fromIndex);
         }
 
         /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.FlushOnDispose"/>
         public void FlushOnDispose()
         {
-
+            ToDirectBuffer(false).FlushOnDispose();
         }
 #endif
         /// <summary>
         /// Returns an instance of <see cref="JCOBridgeDirectBuffer{T}"/> can be used to directly access and manages JVM memory without any memory move
         /// </summary>
+        /// <param name="rewind"><see cref="Buffer.Rewind()"/> the instance before return <see cref="JCOBridgeDirectBuffer{T}"/></param>
         /// <returns>The <see cref="JCOBridgeDirectBuffer{T}"/> associated to this <see cref="CharBuffer"/> instance</returns>
         /// <remarks>
         /// <b>Do not call Dispose()</b> on the returned instance.
         /// Its lifetime is managed by the owning object.
         /// </remarks>
         [Obsolete("DO NOT CALL Dispose() on the returned JCOBridgeDirectBuffer: it is an internal instance whose lifetime is managed by the owning object.", error: false)]
-        public JCOBridgeDirectBuffer<char> ToDirectBuffer()
+        public JCOBridgeDirectBuffer<char> ToDirectBuffer(bool rewind)
         {
-            // Rewind(); removed to avoid the build of a new CharBuffer object will be discarded and replace with a more simple invocation
-            // still remains the allocation of a returning object that is the copy of the current managed CharBuffer, the copy will be immediately disposed to avoid GEN1 in GC
-            using var _ = IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject;
+            if (rewind)
+            {
+                // Rewind(); removed to avoid the build of a new CharBuffer object will be discarded and replace with a more simple invocation
+                // still remains the allocation of a returning object that is the copy of the current managed CharBuffer, the copy will be immediately disposed to avoid GEN1 in GC
+                using var _ = IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject;
+            }
             return _directBuffer ??= JVM.GetDirectBuffer<char>(BridgeInstance);
         }
         /// <inheritdoc/>

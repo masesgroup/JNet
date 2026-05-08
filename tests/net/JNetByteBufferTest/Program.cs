@@ -506,7 +506,7 @@ namespace MASES.JNetByteBufferTest
                 for (i = 0; i < requestedIterations; i++)
                 {
                     using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
-                    res.ToDirectBuffer().CopyTo(handle.AddrOfPinnedObject(), bytes.Length, 0, bytes.Length);
+                    res.ToDirectBuffer(true).CopyTo(handle.AddrOfPinnedObject(), bytes.Length, 0, bytes.Length);
                     if (bytes.Length != length) { throw new System.Exception(); }
                 }
                 watcher4.Stop();
@@ -678,8 +678,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
-                    JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer();
-                    using var stream = db.ToStream();
+                    using var stream = res.ToStream();
                     if (!AreEqualNaive(stream, bytes))
                     { throw new System.Exception(); }
                 }
@@ -693,8 +692,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
-                    JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer();
-                    using var stream = db.ToStream();
+                    using var stream = res.ToStream();
                     if (!AreEqualChunked(stream, bytes))
                     { throw new System.Exception(); }
                 }
@@ -708,7 +706,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher4 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
-                    JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer();
+                    JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer(false);
                     var span = db.AsSpan();
                     if (span.Length != length) { throw new System.Exception(); }
 
