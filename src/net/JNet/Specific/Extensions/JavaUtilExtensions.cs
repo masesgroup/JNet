@@ -255,7 +255,7 @@ namespace MASES.JNet.Specific.Extensions
             foreach (var item in dictionary)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                var key = keyConverter(item.Key)
+                var key = keyConverter(item.Key);
                 var value = valueConverter(item.Value);
 #else
                 var key = keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key);
@@ -340,7 +340,7 @@ namespace MASES.JNet.Specific.Extensions
             foreach (var item in dictionary)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                var key = keyConverter(item.Key)
+                var key = keyConverter(item.Key);
                 var value = valueConverter(item.Value);
 #else
                 var key = keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key);
