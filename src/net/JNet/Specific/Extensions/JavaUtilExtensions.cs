@@ -114,10 +114,14 @@ namespace MASES.JNet.Specific.Extensions
             foreach (var item in set)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                tInstance.Add(func(item));
+                var jvmData = func(item);
 #else
-                tInstance.Add(func != null ? func(item) : TJVMTypeInner.ToJVM(item));
+                var jvmData = func != null ? func(item) : TJVMTypeInner.ToJVM(item);
 #endif
+                using (var disposable = jvmData as IDisposable)
+                {
+                    tInstance.Add(jvmData);
+                }
             }
             return tInstance;
         }
@@ -183,9 +187,12 @@ namespace MASES.JNet.Specific.Extensions
         {
             if (map == null) throw new ArgumentNullException(nameof(map));
             var tInstance = new TDictionaryType();
-            foreach (var key in map.KeySet())
+            using var keySet = map.KeySet();
+            foreach (var key in keySet)
             {
+                using var keyDisposable = key as IDisposable;
                 var value = map.Get(key);
+                using var valueDisposable = value as IDisposable;
                 tInstance.Add(keyConverter != null ? keyConverter(key) : key.ToCLR(), valueConverter != null ? valueConverter(value) : value.ToCLR());
             }
             return tInstance;
@@ -241,10 +248,15 @@ namespace MASES.JNet.Specific.Extensions
             foreach (var item in dictionary)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key);
+                var value = valueConverter(item.Value);
 #else
-                tInstance.Put(keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key), valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value));
+                var key = keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key);
+                var value = valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value);
 #endif
+                using IDisposable keyDisposable = key as IDisposable;
+                using IDisposable valueDisposable = value as IDisposable;
+                tInstance.Put(key, value);
             }
             return tInstance;
         }
@@ -268,7 +280,13 @@ namespace MASES.JNet.Specific.Extensions
             var tInstance = new HashMap<TJVMK, TJVMV>();
             foreach (var item in dictionary)
             {
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key);
+                var value = valueConverter(item.Value);
+                using (var keyDisposable = key as IDisposable)
+                using (var valueDisposable = value as IDisposable)
+                {
+                    tInstance.Put(key, value);
+                }
             }
             return tInstance;
         }
@@ -305,10 +323,15 @@ namespace MASES.JNet.Specific.Extensions
             foreach (var item in dictionary)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key);
+                var value = valueConverter(item.Value);
 #else
-                tInstance.Put(keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key), valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value));
+                var key = keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key);
+                var value = valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value);
 #endif
+                using var keyToDispose = key as IDisposable;
+                using var valueToDispose = value as IDisposable;
+                tInstance.Put(key, value);
             }
             return tInstance;
         }
@@ -332,7 +355,11 @@ namespace MASES.JNet.Specific.Extensions
             var tInstance = new Hashtable<TJVMK, TJVMV>();
             foreach (var item in dictionary)
             {
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key);
+                var value = valueConverter(item.Value);
+                using var keyToDispose = key as IDisposable;
+                using var valueToDispose = value as IDisposable;
+                tInstance.Put(key, value);
             }
             return tInstance;
         }

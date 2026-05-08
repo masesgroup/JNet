@@ -113,6 +113,15 @@ namespace Java.Util.Function
         /// </summary>
         public virtual Func<T, U, TReturn> OnApply { get; set; }
         /// <summary>
+        /// Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.
+        /// </summary>
+        /// <remarks>Set <see cref="OnApplyDispose"/> when the event handler returns a JVM-backed object
+        /// that is no longer needed after the call. The handler receives the return value and is responsible for calling
+        /// <see cref="IDisposable.Dispose"/> on it, releasing the underlying JVM global reference immediately
+        /// instead of waiting for the .NET garbage collector to finalize it.
+        /// If not set, the return value is not disposed automatically.</remarks>
+        public global::System.Action<TReturn> OnApplyDispose { get; set; } = null;
+        /// <summary>
         /// Initialize a new instance of <see cref="BiFunction{T, U, TReturn}"/>
         /// </summary>
         public BiFunction()
@@ -127,6 +136,7 @@ namespace Java.Util.Function
         {
             var retVal = OnApply(data.EventData.TypedEventData, data.EventData.To<U>(0));
             data.SetReturnValue(retVal);
+            OnApplyDispose?.Invoke(retVal);
         }
         /// <summary>
         /// Executes the Function action in the CLR
