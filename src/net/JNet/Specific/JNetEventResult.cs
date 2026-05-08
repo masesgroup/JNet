@@ -94,4 +94,14 @@ namespace MASES.JNet.Specific
             return method.GetBaseDefinition().DeclaringType != method.DeclaringType;
         }
     }
+    /// <summary>
+    /// Helper class able to simpify definition of data associated to events
+    /// </summary>
+    public sealed class JNetEventData : CLREventData<MASES.JNet.Specific.JNetEventResult>
+    {
+        /// <inheritdoc cref="CLREventData{TObject}.CLREventData(IJavaObject)"/>
+        public JNetEventData(IJavaObject javaObject) : base(javaObject)
+        {               
+        }
+    }
 }
