@@ -180,7 +180,7 @@ namespace MASES.JNet.Specific.Extensions
         /// <typeparam name="TJVMV">JVM value type</typeparam>
         /// <param name="map">The <see cref="Map{TJVMK, TJVMV}"/></param>
         /// <returns>The <see cref="IDictionary{K, V}"/></returns>
-        public static TDictionaryType ToNetDictiony<TDictionaryType, K, V, TJVMK, TJVMV>(this Map<TJVMK, TJVMV> map, Func<TJVMK, K> keyConverter = null, Func<TJVMV, V> valueConverter = null)
+        public static TDictionaryType ToNetDictionary<TDictionaryType, K, V, TJVMK, TJVMV>(this Map<TJVMK, TJVMV> map, Func<TJVMK, K> keyConverter = null, Func<TJVMV, V> valueConverter = null)
             where TDictionaryType : IDictionary<K, V>, new()
             where TJVMK : INativeConvertible<TJVMK, K>
             where TJVMV : INativeConvertible<TJVMV, V>
@@ -196,6 +196,15 @@ namespace MASES.JNet.Specific.Extensions
                 tInstance.Add(keyConverter != null ? keyConverter(key) : key.ToCLR(), valueConverter != null ? valueConverter(value) : value.ToCLR());
             }
             return tInstance;
+        }
+
+        [Obsolete("Use ToNetDictionary instead.")]
+        public static TDictionaryType ToNetDictiony<TDictionaryType, K, V, TJVMK, TJVMV>(this Map<TJVMK, TJVMV> map, Func<TJVMK, K> keyConverter = null, Func<TJVMV, V> valueConverter = null)
+            where TDictionaryType : IDictionary<K, V>, new()
+            where TJVMK : INativeConvertible<TJVMK, K>
+            where TJVMV : INativeConvertible<TJVMV, V>
+        {
+            return ToNetDictionary<TDictionaryType, K, V, TJVMK, TJVMV>(map, keyConverter, valueConverter);
         }
 
         /// <summary>
