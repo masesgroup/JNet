@@ -114,10 +114,15 @@ namespace MASES.JNet.Specific.Extensions
             foreach (var item in set)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                tInstance.Add(func(item));
+                var jvmData = func(item);
 #else
-                tInstance.Add(func != null ? func(item) : TJVMTypeInner.ToJVM(item));
+                var jvmData = func != null ? func(item) : TJVMTypeInner.ToJVM(item);
 #endif
+                try
+                {
+                    tInstance.Add(jvmData);
+                }
+                finally { (jvmData as IDisposable)?.Dispose(); }
             }
             return tInstance;
         }
@@ -183,10 +188,19 @@ namespace MASES.JNet.Specific.Extensions
         {
             if (map == null) throw new ArgumentNullException(nameof(map));
             var tInstance = new TDictionaryType();
-            foreach (var key in map.KeySet())
+            using var keySet = map.KeySet();
+            foreach (var key in keySet)
             {
                 var value = map.Get(key);
-                tInstance.Add(keyConverter != null ? keyConverter(key) : key.ToCLR(), valueConverter != null ? valueConverter(value) : value.ToCLR());
+                try
+                {
+                    tInstance.Add(keyConverter != null ? keyConverter(key) : key.ToCLR(), valueConverter != null ? valueConverter(value) : value.ToCLR());
+                }
+                finally
+                {
+                    (key as IDisposable)?.Dispose();
+                    (value as IDisposable)?.Dispose();
+                }
             }
             return tInstance;
         }
@@ -241,10 +255,21 @@ namespace MASES.JNet.Specific.Extensions
             foreach (var item in dictionary)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key)
+                var value = valueConverter(item.Value);
 #else
-                tInstance.Put(keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key), valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value));
+                var key = keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key);
+                var value = valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value);
 #endif
+                try
+                {
+                    tInstance.Put(key, value);
+                }
+                finally
+                {
+                    (key as IDisposable)?.Dispose();
+                    (value as IDisposable)?.Dispose();
+                }
             }
             return tInstance;
         }
@@ -268,7 +293,17 @@ namespace MASES.JNet.Specific.Extensions
             var tInstance = new HashMap<TJVMK, TJVMV>();
             foreach (var item in dictionary)
             {
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key);
+                var value = valueConverter(item.Value);
+                try
+                {
+                    tInstance.Put(key, value);
+                }
+                finally
+                {
+                    (key as IDisposable)?.Dispose();
+                    (value as IDisposable)?.Dispose();
+                }
             }
             return tInstance;
         }
@@ -305,10 +340,21 @@ namespace MASES.JNet.Specific.Extensions
             foreach (var item in dictionary)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key)
+                var value = valueConverter(item.Value);
 #else
-                tInstance.Put(keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key), valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value));
+                var key = keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key);
+                var value = valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value);
 #endif
+                try
+                {
+                    tInstance.Put(key, value);
+                }
+                finally
+                {
+                    (key as IDisposable)?.Dispose();
+                    (value as IDisposable)?.Dispose();
+                }
             }
             return tInstance;
         }
@@ -332,7 +378,17 @@ namespace MASES.JNet.Specific.Extensions
             var tInstance = new Hashtable<TJVMK, TJVMV>();
             foreach (var item in dictionary)
             {
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key);
+                var value = valueConverter(item.Value);
+                try
+                {
+                    tInstance.Put(key, value);
+                }
+                finally
+                {
+                    (key as IDisposable)?.Dispose();
+                    (value as IDisposable)?.Dispose();
+                }
             }
             return tInstance;
         }

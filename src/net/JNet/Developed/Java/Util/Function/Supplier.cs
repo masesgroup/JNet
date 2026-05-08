@@ -91,6 +91,15 @@ namespace Java.Util.Function
         /// </summary>
         public virtual Func<TReturn> OnGet { get; set; }
         /// <summary>
+        /// Optional handler invoked after the event handler returns, to dispose the JVM object returned by this event.
+        /// </summary>
+        /// <remarks>Set <see cref="OnGetDispose"/> when the event handler returns a JVM-backed object
+        /// that is no longer needed after the call. The handler receives the return value and is responsible for calling
+        /// <see cref="IDisposable.Dispose"/> on it, releasing the underlying JVM global reference immediately
+        /// instead of waiting for the .NET garbage collector to finalize it.
+        /// If not set, the return value is not disposed automatically.</remarks>
+        public global::System.Action<TReturn> OnGetDispose { get; set; } = null;
+        /// <summary>
         /// Initialize a new instance of <see cref="Supplier{TReturn}"/>
         /// </summary>
         public Supplier()
@@ -105,6 +114,7 @@ namespace Java.Util.Function
         {
             var retVal = OnGet();
             data.SetReturnValue(retVal);
+            OnGetDispose?.Invoke(retVal);
         }
         /// <summary>
         /// Executes the Supplier action in the CLR
