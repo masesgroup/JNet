@@ -253,10 +253,10 @@ namespace MASES.JNet.Reflector.Templates
 
                 public static readonly string ACTION_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                        + "    methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
-                                                                                       + "    data.EventData.TypedEventData.HasOverride = METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden();";
+                                                                                       + "    data.EventData.HasOverride = METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden();";
                 public static readonly string FUNC_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
                                                                                      + "    var executionResult = methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
-                                                                                     + "    data.EventData.TypedEventData.SetReturnData(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden(), executionResult);" + Environment.NewLine
+                                                                                     + "    data.EventData.SetReturnData(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden(), executionResult);" + Environment.NewLine
                                                                                      + "    OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose?.Invoke(executionResult);";
 
                 public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "/// <summary>" + Environment.NewLine
