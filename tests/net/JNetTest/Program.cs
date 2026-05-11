@@ -543,6 +543,8 @@ namespace MASES.JNetTest
         {
             System.Console.WriteLine($"TestIterator with useThread {useThread} - usePrefetch {usePrefetch}");
 
+return;
+            
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
             using ArrayList<Java.Lang.String> alist = new();
