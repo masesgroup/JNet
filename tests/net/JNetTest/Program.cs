@@ -545,7 +545,7 @@ namespace MASES.JNetTest
 
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
-            ArrayList<Java.Lang.String> alist = new();
+            using ArrayList<Java.Lang.String> alist = new();
             for (int i = 0; i < execution; i++)
             {
                 alist.Add(i.ToString());
