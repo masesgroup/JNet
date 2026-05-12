@@ -88,32 +88,35 @@ namespace MASES.JNetByteBufferTest
         static void ExecuteTests(string[] args)
         {
             Console.WriteLine("Start get from JVM to CLR");
+            string[] tests = new string[] { "TestGetByteArrayDataUsage", "TestGetByteBuffersDataUsage", "TestGetByteBuffers", "TestInsertByteBuffers", "TestInsertByteBuffersNativeStream", "TestInsertByteBuffersRecyclableMemoryStream" };
+            if (args.Length == 1) tests = new string[] { args[0] };
 
-            if (args.Length == 0) throw new InvalidOperationException("Set test to execute");
-
-            for (int i = MinValue; i < MaxValue; i *= 10)
+            foreach (var item in tests)
             {
-                switch (args[0])
+                for (int i = MinValue; i < MaxValue; i *= 10)
                 {
-                    case "TestGetByteArrayDataUsage":
-                        TestGetByteArrayDataUsage(iterations, i);
-                        break;
-                    case "TestGetByteBuffersDataUsage":
-                        TestGetByteBuffersDataUsage(iterations, i);
-                        break;
-                    case "TestGetByteBuffers":
-                        TestGetByteBuffers(iterations, i);
-                        break;
-                    case "TestInsertByteBuffers":
-                        TestInsertByteBuffers(iterations, i);
-                        break;
-                    case "TestInsertByteBuffersNativeStream":
-                        TestInsertByteBuffersNativeStream(iterations, i);
-                        break;
-                    case "TestInsertByteBuffersRecyclableMemoryStream":
-                        ByteBuffer.EnableRecyclableMemoryStream(true);
-                        TestInsertByteBuffersRecyclableMemoryStream(iterations, i);
-                        break;
+                    switch (item)
+                    {
+                        case "TestGetByteArrayDataUsage":
+                            TestGetByteArrayDataUsage(iterations, i);
+                            break;
+                        case "TestGetByteBuffersDataUsage":
+                            TestGetByteBuffersDataUsage(iterations, i);
+                            break;
+                        case "TestGetByteBuffers":
+                            TestGetByteBuffers(iterations, i);
+                            break;
+                        case "TestInsertByteBuffers":
+                            TestInsertByteBuffers(iterations, i);
+                            break;
+                        case "TestInsertByteBuffersNativeStream":
+                            TestInsertByteBuffersNativeStream(iterations, i);
+                            break;
+                        case "TestInsertByteBuffersRecyclableMemoryStream":
+                            ByteBuffer.EnableRecyclableMemoryStream(true);
+                            TestInsertByteBuffersRecyclableMemoryStream(iterations, i);
+                            break;
+                    }
                 }
             }
         }
@@ -130,8 +133,8 @@ namespace MASES.JNetByteBufferTest
                     bytes[i] = (byte)(i % byte.MaxValue);
                 }
 
-                var bbCast = Java.Nio.ByteBuffer.From(bytes, false);
-                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+                using var bbCast = Java.Nio.ByteBuffer.From(bytes, false);
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -238,9 +241,9 @@ namespace MASES.JNetByteBufferTest
 
                 var stream = Java.Nio.ByteBuffer.Rent(bytes.LongLength / 2); // build with less memory
                 stream.Write(bytes, 0, bytes.Length); // to test auto-grow
-                var bbCast = Java.Nio.ByteBuffer.From(stream);
+                using var bbCast = Java.Nio.ByteBuffer.From(stream);
 
-                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -347,8 +350,8 @@ namespace MASES.JNetByteBufferTest
 
                 var bytes = ms.ToArray();
 
-                var bbCast = Java.Nio.ByteBuffer.From(ms);
-                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+                using var bbCast = Java.Nio.ByteBuffer.From(ms);
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
                 if (jClass == null)
                 {
                     throw new InvalidOperationException("Failed to create IJavaObject for org.mases.jnet.TestArrayAndByteBuffer.");
@@ -452,7 +455,7 @@ namespace MASES.JNetByteBufferTest
             try
             {
                 byte[] bytes = new byte[length];
-                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -501,15 +504,18 @@ namespace MASES.JNetByteBufferTest
                 Java.Lang.System.Gc();
 
                 System.Runtime.InteropServices.GCHandle handle = System.Runtime.InteropServices.GCHandle.Alloc(bytes, System.Runtime.InteropServices.GCHandleType.Pinned);
-
                 Stopwatch watcher4 = Stopwatch.StartNew();
-                for (i = 0; i < requestedIterations; i++)
+                try
                 {
-                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
-                    res.ToDirectBuffer(true).CopyTo(handle.AddrOfPinnedObject(), bytes.Length, 0, bytes.Length);
-                    if (bytes.Length != length) { throw new System.Exception(); }
+                    for (i = 0; i < requestedIterations; i++)
+                    {
+                        using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                        res.ToDirectBuffer(true).CopyTo(handle.AddrOfPinnedObject(), bytes.Length, 0, bytes.Length);
+                        if (bytes.Length != length) { throw new System.Exception(); }
+                    }
+                    watcher4.Stop();
                 }
-                watcher4.Stop();
+                finally { handle.Free(); }
 
                 Console.WriteLine($"End getByteBuffer -> ByteBuffer -> ToDirectBuffer -> CopyTo Elapsed {watcher4.Elapsed}");
 
@@ -581,7 +587,7 @@ namespace MASES.JNetByteBufferTest
                 {
                     bytes[i] = (byte)(i % sbyte.MaxValue); // use sbyte because in JVM Byte is signed type
                 }
-                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -646,7 +652,7 @@ namespace MASES.JNetByteBufferTest
                 {
                     bytes[i] = (byte)(i % sbyte.MaxValue); // use sbyte because in JVM Byte is signed type
                 }
-                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
