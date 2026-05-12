@@ -484,7 +484,7 @@ namespace MASES.JNetTest
                 alist.Add(i.ToString());
             }
             w.Stop();
-
+            using var scope = new JCOBridgeDisposeAsyncScope();
             await foreach (var item in ((List<string>)alist).WithPrefetch())
             {
                 if (!int.TryParse(item, out int i))
@@ -545,20 +545,24 @@ namespace MASES.JNetTest
 
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
-            ArrayList<Java.Lang.String> alist = new();
+            using ArrayList<Java.Lang.String> alist = new();
             for (int i = 0; i < execution; i++)
             {
-                alist.Add(i.ToString());
+                using Java.Lang.String str = i.ToString();
+                alist.Add(str);
             }
             w.Stop();
-
             for (int iteration = 0; iteration < 10; iteration++)
             {
+                using var scope = new JCOBridgeDisposeFastScope();
                 foreach (var item in (alist).WithPrefetch(usePrefetch).WithThread(useThread))
                 {
-                    if (!int.TryParse(item, out int i))
+                    using (item)
                     {
-                        throw new System.InvalidOperationException($"Failed to parse: {item}");
+                        if (!int.TryParse(item, out int i))
+                        {
+                            throw new System.InvalidOperationException($"Failed to parse: {item}");
+                        }
                     }
                 }
             }
