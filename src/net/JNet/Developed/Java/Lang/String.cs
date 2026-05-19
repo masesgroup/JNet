@@ -41,28 +41,38 @@ namespace Java.Lang
         /// <summary>
         /// Converter from <see cref="String"/> to <see cref="string"/>
         /// </summary>
-        public static implicit operator string(String b) => b is null ? null : b.ToString();
+        public static implicit operator string(Java.Lang.String b) => b is null ? null : b.ToString();
         /// <summary>
         /// Converter from <see cref="string"/> to <see cref="String"/>
         /// </summary>
         public static implicit operator String(string b) => b is null ? null : new Java.Lang.String(b);
         /// <inheritdoc/>
-        public static bool operator ==(String left, string right)
+        public static bool operator ==(Java.Lang.String left, Java.Lang.String right)
+        {
+            return left.Equals(right);
+        }
+        /// <inheritdoc/>
+        public static bool operator ==(Java.Lang.String left, string right)
         {
             return left.StringBridgeInstance.Equals(right);
         }
         /// <inheritdoc/>
-        public static bool operator ==(string left, String right)
+        public static bool operator ==(string left, Java.Lang.String right)
         {
             return right.StringBridgeInstance.Equals(left);
         }
         /// <inheritdoc/>
-        public static bool operator !=(String left, string right)
+        public static bool operator !=(Java.Lang.String left, Java.Lang.String right)
+        {
+            return !left.Equals(right);
+        }
+        /// <inheritdoc/>
+        public static bool operator !=(Java.Lang.String left, string right)
         {
             return !left.StringBridgeInstance.Equals(right);
         }
         /// <inheritdoc/>
-        public static bool operator !=(string left, String right)
+        public static bool operator !=(string left, Java.Lang.String right)
         {
             return !right.StringBridgeInstance.Equals(left);
         }
@@ -76,7 +86,7 @@ namespace Java.Lang
         {
             return base.GetHashCode();
         }
-        #endregion
+
         /// <summary>
         /// Binary operator managing concatanation within JVM
         /// </summary>
@@ -84,13 +94,14 @@ namespace Java.Lang
         /// <param name="b">The right <see cref="String"/></param>
         /// <returns>A new <see cref="String"/> which is the concatanation of <paramref name="a"/> and <paramref name="b"/></returns>
         /// <remarks>This overload can be very helpful because it avoids to move string contant from JVM to .NET and viceversa</remarks>
-        public static String operator +(String a, String b) => b is null ? a : a?.Concat(b);
+        public static String operator +(Java.Lang.String a, Java.Lang.String b) => b is null ? a : a?.Concat(b);
         /// <summary>
         /// Returns the character at <paramref name="index"/>
         /// </summary>
         /// <param name="index">The index of the character to return</param>
         /// <returns><see cref="char"/> at <paramref name="index"/></returns>
         public char this[int index] => this.CharAt(index);
+        #endregion
 
         #region IStringJavaObject
 
