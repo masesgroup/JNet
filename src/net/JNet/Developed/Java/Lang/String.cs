@@ -94,7 +94,7 @@ namespace Java.Lang
 
         #region IStringJavaObject
 
-        IStringJavaObject StringBridgeInstance { get { if (BridgeInstance is IStringJavaObject stringJavaObject) return stringJavaObject; else throw new InvalidOperationException($"Current instance is not an {IStringJavaObject}"); } }
+        IStringJavaObject StringBridgeInstance { get { if (BridgeInstance is IStringJavaObject stringJavaObject) return stringJavaObject; else throw new InvalidOperationException($"Current instance is not an {nameof(IStringJavaObject)}"); } }
 
         /// <inheritdoc/>
         public bool Equals(string other) => StringBridgeInstance.Equals(other);
