@@ -425,6 +425,9 @@ namespace MASES.JNetTest
         {
             System.Console.WriteLine("TestOperators");
 
+            const string StringA = "StringA";
+            const string StringB = "StringB";
+
             Java.Lang.Short a = 10;
             Java.Lang.Short b = 100;
 
@@ -433,8 +436,17 @@ namespace MASES.JNetTest
 
             if (a < d) { a++; d = (short)(c / a); }
 
-            Java.Lang.String strA = new String("StringA");
-            Java.Lang.String strB = new String("StringB");
+            Java.Lang.String strA = new String(StringA);
+            if (strA != StringA)
+            {
+                throw new System.Exception($"Compare of \"{StringA}\" failed");
+            }
+
+            Java.Lang.String strB = new String(StringB);
+            if (strB != StringB)
+            {
+                throw new System.Exception($"Compare of \"{StringB}\" failed");
+            }
 
             if (strA != strB)
             {
