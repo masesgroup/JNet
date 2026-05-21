@@ -640,7 +640,7 @@ namespace MASES.JNetTest
 
                 w.Restart();
                 var tmpJList = JNetHelper.ListFrom(tmpArray);
-                alist = new Java.Util.ArrayList<Integer>(tmpJList);
+                alist = new Java.Util.ArrayList(tmpJList);
                 w.Stop();
                 tuple = new System.Tuple<string, long>("Java.Util.ArrayList from array", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
@@ -663,7 +663,7 @@ namespace MASES.JNetTest
 
                 w.Restart();
                 var tmpJList3 = JNetHelper.ListFrom(tmpArray, true);
-                alist = new Java.Util.ArrayList<Integer>(tmpJList3);
+                alist = new Java.Util.ArrayList(tmpJList3);
                 w.Stop();
                 tuple = new System.Tuple<string, long>("Java.Util.ArrayList from raw array buffered", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
