@@ -34,8 +34,9 @@ namespace Java.Util.Concurrent
         /// <param name="arg8"><see cref="long"/></param>
         /// <param name="arg9"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         public ForkJoinPool(int arg0, Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory arg1, Java.Lang.Thread.UncaughtExceptionHandler arg2, bool arg3, int arg4, int arg5, int arg6, Java.Util.Function.Predicate arg7, long arg8, Java.Util.Concurrent.TimeUnit arg9)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
+            : base(MASES.JCOBridge.C2JBridge.JVMBridgeBase.InitializerInstance)
         {
+            InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html#%3Cinit%3E(int,java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory,java.lang.Thread.UncaughtExceptionHandler,boolean)"/>
@@ -45,8 +46,9 @@ namespace Java.Util.Concurrent
         /// <param name="arg2"><see cref="Java.Lang.Thread.UncaughtExceptionHandler"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         public ForkJoinPool(int arg0, Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory arg1, Java.Lang.Thread.UncaughtExceptionHandler arg2, bool arg3)
-            : base(arg0, arg1, arg2, arg3)
+            : base(MASES.JCOBridge.C2JBridge.JVMBridgeBase.InitializerInstance)
         {
+            InvokeInitializer(arg0, arg1, arg2, arg3);
         }
     }
 }
