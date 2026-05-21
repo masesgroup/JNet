@@ -13,6 +13,36 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     /// <summary>
     /// Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.
     /// </summary>
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER() : base() { }
+
+    /// <summary>
+    /// Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.
+    /// </summary>
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(object arg0) : base(arg0) { }
+
+    /// <summary>
+    /// Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.
+    /// </summary>
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(object arg0, object arg1) : base(arg0, arg1) { }
+
+    /// <summary>
+    /// Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.
+    /// </summary>
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(object arg0, object arg1, object arg2) : base(arg0, arg1, arg2) { }
+
+    /// <summary>
+    /// Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.
+    /// </summary>
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(object arg0, object arg1, object arg2, object arg3) : base(arg0, arg1, arg2, arg3) { }
+
+    /// <summary>
+    /// Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.
+    /// </summary>
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(object arg0, object arg1, object arg2, object arg3, object arg4) : base(arg0, arg1, arg2, arg3, arg4) { }
+
+    /// <summary>
+    /// Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.
+    /// </summary>
     public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(params object[] args) : base(args) { }
 
     private static readonly global::System.Exception _LocalBridgeClazzException = null;
