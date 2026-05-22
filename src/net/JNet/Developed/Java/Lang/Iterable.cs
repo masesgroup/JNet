@@ -43,16 +43,8 @@ namespace Java.Lang
         public override string BridgeClassName => "java.lang.Iterable";
         /// <inheritdoc />
         public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Iterable() { }
         /// <inheritdoc/>
         public Iterable(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Iterable(params object[] args) : base(args) { }
         /// <summary>
         /// Returns an iterator over elements of type <see langref="object"/>
         /// </summary>
@@ -84,16 +76,8 @@ namespace Java.Lang
         public override string BridgeClassName => "java.lang.Iterable";
         /// <inheritdoc />
         public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Iterable() { }
         /// <inheritdoc/>
         public Iterable(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Iterable(params object[] args) : base(args) { }
 
         /// <summary>
         /// Returns an iterator over elements of type <typeparamref name="T"/>.

@@ -31,16 +31,8 @@ namespace Java.Util
         public override string BridgeClassName => "java.util.Iterator";
         /// <inheritdoc />
         public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Iterator() { }
         /// <inheritdoc/>
         public Iterator(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Iterator(params object[] args) : base(args) { }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html#hasNext()"/> 
         /// </summary>
@@ -106,16 +98,8 @@ namespace Java.Util
         public override string BridgeClassName => "java.util.Iterator";
         /// <inheritdoc />
         public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Iterator() { }
         /// <inheritdoc/>
         public Iterator(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Iterator(params object[] args) : base(args) { }
         /// <summary>
         /// Converts an <see cref="Iterator{E}"/> to a <see cref="JVMBridgeBaseEnumerator{E}"/>
         /// </summary>

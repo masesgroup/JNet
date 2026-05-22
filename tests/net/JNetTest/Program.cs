@@ -614,7 +614,7 @@ namespace MASES.JNetTest
                 if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed ticks: {w.Elapsed.Ticks}");
 
                 w.Restart();
-                Java.Util.ArrayList<Integer> alist = new Java.Util.ArrayList<Integer>();
+                Java.Util.ArrayList<Integer> alist = new();
                 for (int i = 0; i < elementsInexecution; i++)
                 {
                     alist.Add(i);
@@ -640,7 +640,7 @@ namespace MASES.JNetTest
 
                 w.Restart();
                 var tmpJList = JNetHelper.ListFrom(tmpArray);
-                alist = new Java.Util.ArrayList<Integer>(tmpJList);
+                Java.Util.ArrayList rawArraylist = new(tmpJList);
                 w.Stop();
                 tuple = new System.Tuple<string, long>("Java.Util.ArrayList from array", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
@@ -663,7 +663,7 @@ namespace MASES.JNetTest
 
                 w.Restart();
                 var tmpJList3 = JNetHelper.ListFrom(tmpArray, true);
-                alist = new Java.Util.ArrayList<Integer>(tmpJList3);
+                rawArraylist = new Java.Util.ArrayList(tmpJList3);
                 w.Stop();
                 tuple = new System.Tuple<string, long>("Java.Util.ArrayList from raw array buffered", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
