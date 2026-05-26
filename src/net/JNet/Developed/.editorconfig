@@ -2,3 +2,4 @@
 generated_code = true
 dotnet_analyzer_diagnostic.severity = none
 dotnet_diagnostic.CS0108.severity = none
+dotnet_diagnostic.CS0612.severity = none
