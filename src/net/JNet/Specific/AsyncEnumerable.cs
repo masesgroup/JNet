@@ -52,7 +52,6 @@ namespace MASES.JNet.Specific
         {
             _sync?.Dispose();
             _sync = null;
-            _enumeratorBase = default;
             _cancellationToken = default;
             base.Dispose(disposing);
         }
@@ -71,9 +70,10 @@ namespace MASES.JNet.Specific
         /// <inheritdoc cref="IAsyncDisposable.DisposeAsync"/>
         ValueTask IAsyncDisposable.DisposeAsync()
         {
-            _sync.Set();
-            _enumeratorBase.Dispose();
-            _sync.Dispose();
+            _sync?.Set();
+            _enumeratorBase?.Dispose();
+            _sync?.Dispose();
+            _sync = null;
             GC.SuppressFinalize(this);
             return new ValueTask();
         }
