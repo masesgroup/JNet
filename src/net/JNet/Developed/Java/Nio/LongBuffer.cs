@@ -204,6 +204,7 @@ namespace Java.Nio
         protected override void Dispose(bool disposing)
         {
             _directBuffer?.Dispose();
+            _directBuffer = null;
             base.Dispose(disposing);
         }
 

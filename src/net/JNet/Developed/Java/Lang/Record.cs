@@ -26,11 +26,7 @@ namespace Java.Lang
     public class Record : JVMBridgeBase<Record>
     {
         /// <inheritdoc/>
-        public Record() { }
-        /// <inheritdoc/>
         public Record(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
-        /// <inheritdoc/>
-        public Record(params object[] args) : base(args) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Record";
     }
