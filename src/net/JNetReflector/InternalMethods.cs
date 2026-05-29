@@ -2509,7 +2509,7 @@ namespace MASES.JNet.Reflector
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing field {0}", field.GenericString);
 
-                bool isFinal = field.IsFinal();
+                bool isFinal = false; // disable usage to be compliant with HPA pooling field.IsFinal();
                 string getFunction;
                 string getFormat;
                 string setFormat;
