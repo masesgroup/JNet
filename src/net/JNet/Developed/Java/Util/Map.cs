@@ -16,6 +16,8 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     public partial class Map
@@ -30,7 +32,7 @@ namespace Java.Util
         /// </summary>
         public static implicit operator Java.Util.Properties(Map<K, V> t)
         {
-            Properties p = new Properties();
+            Properties p = JVMBridgeBase.New<Properties>();
             p.PutAll(t);
             return p;
         }

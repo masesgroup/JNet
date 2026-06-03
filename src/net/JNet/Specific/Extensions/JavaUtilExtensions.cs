@@ -17,6 +17,7 @@
 */
 
 using Java.Util;
+using MASES.JCOBridge.C2JBridge;
 using System;
 using System.Collections.Generic;
 
@@ -110,7 +111,7 @@ namespace MASES.JNet.Specific.Extensions
                 func = GetToJVMMethod<TNetType, TJVMTypeInner>();
             }
 #endif
-            var tInstance = new TIterableType();
+            var tInstance = JVMBridgeBase.New<TIterableType>();
             foreach (var item in set)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
@@ -272,7 +273,7 @@ namespace MASES.JNet.Specific.Extensions
             }
 #endif
             if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
-            var tInstance = new TMapType();
+            var tInstance = JVMBridgeBase.New<TMapType>();
             foreach (var item in dictionary)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
@@ -284,7 +285,7 @@ namespace MASES.JNet.Specific.Extensions
 #endif
                 using IDisposable keyDisposable = key as IDisposable;
                 using IDisposable valueDisposable = value as IDisposable;
-                tInstance.Put(key, value);
+                using var _ = tInstance.Put(key, value) as IDisposable;
             }
             return tInstance;
         }
@@ -305,7 +306,7 @@ namespace MASES.JNet.Specific.Extensions
             if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
             if (keyConverter == null) throw new ArgumentNullException(nameof(keyConverter));
             if (valueConverter == null) throw new ArgumentNullException(nameof(valueConverter));
-            var tInstance = new HashMap<TJVMK, TJVMV>();
+            var tInstance = JVMBridgeBase.New<HashMap<TJVMK, TJVMV>>();
             foreach (var item in dictionary)
             {
                 var key = keyConverter(item.Key);
@@ -313,7 +314,7 @@ namespace MASES.JNet.Specific.Extensions
                 using (var keyDisposable = key as IDisposable)
                 using (var valueDisposable = value as IDisposable)
                 {
-                    tInstance.Put(key, value);
+                    using var _ = tInstance.Put(key, value) as IDisposable;
                 }
             }
             return tInstance;
@@ -347,7 +348,7 @@ namespace MASES.JNet.Specific.Extensions
             }
 #endif
             if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
-            var tInstance = new TDictionaryType();
+            var tInstance = JVMBridgeBase.New<TDictionaryType>();
             foreach (var item in dictionary)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
@@ -359,7 +360,7 @@ namespace MASES.JNet.Specific.Extensions
 #endif
                 using var keyToDispose = key as IDisposable;
                 using var valueToDispose = value as IDisposable;
-                tInstance.Put(key, value);
+                using var _ = tInstance.Put(key, value) as IDisposable;
             }
             return tInstance;
         }
@@ -380,14 +381,14 @@ namespace MASES.JNet.Specific.Extensions
             if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
             if (keyConverter == null) throw new ArgumentNullException(nameof(keyConverter));
             if (valueConverter == null) throw new ArgumentNullException(nameof(valueConverter));
-            var tInstance = new Hashtable<TJVMK, TJVMV>();
+            var tInstance = JVMBridgeBase.New<Hashtable<TJVMK, TJVMV>>();
             foreach (var item in dictionary)
             {
                 var key = keyConverter(item.Key);
                 var value = valueConverter(item.Value);
                 using var keyToDispose = key as IDisposable;
                 using var valueToDispose = value as IDisposable;
-                tInstance.Put(key, value);
+                using var _ = tInstance.Put(key, value) as IDisposable;
             }
             return tInstance;
         }

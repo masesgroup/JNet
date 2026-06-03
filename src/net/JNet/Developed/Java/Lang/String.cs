@@ -45,7 +45,7 @@ namespace Java.Lang
         /// <summary>
         /// Converter from <see cref="string"/> to <see cref="String"/>
         /// </summary>
-        public static implicit operator String(string b) => b is null ? null : new Java.Lang.String(b);
+        public static implicit operator String(string b) => b is null ? null : JVMBridgeBase.New<Java.Lang.String>(b);
         /// <inheritdoc/>
         public static bool operator ==(Java.Lang.String left, Java.Lang.String right)
         {
@@ -167,7 +167,7 @@ namespace Java.Lang
         /// <returns>The converted <see cref="String"/></returns>
         public static String ToJVM(string clrValue)
         {
-            return clrValue is null ? null : new Java.Lang.String(clrValue);
+            return clrValue is null ? null : JVMBridgeBase.New<Java.Lang.String>(clrValue);
         }
 
         #endregion
