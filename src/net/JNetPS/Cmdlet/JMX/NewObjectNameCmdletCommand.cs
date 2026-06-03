@@ -66,16 +66,16 @@ namespace MASES.JNet.PowerShell.Cmdlet.JMX
             {
                 var name = NameOrDomain;
                 if (ApplyQuote.IsPresent) name = ObjectName.Quote(name);
-                result = new ObjectName(name);
+                result = JVMBridgeBase.New<ObjectName>(name);
             }
             else if (Key != null)
             {
                 if (Value == null) throw new ArgumentException("If Key is set, Value must be set too.", "Value");
-                result = new ObjectName(NameOrDomain, Key, Value);
+                result = JVMBridgeBase.New<ObjectName>(NameOrDomain, Key, Value);
             }
             else if (Table != null)
             {
-                result = new ObjectName(NameOrDomain, Table.ToJVMDictionary<Hashtable<Java.Lang.String, Java.Lang.String>, Java.Lang.String, Java.Lang.String, string, string>());
+                result = JVMBridgeBase.New<ObjectName>(NameOrDomain, Table.ToJVMDictionary<Hashtable<Java.Lang.String, Java.Lang.String>, Java.Lang.String, Java.Lang.String, string, string>());
             }
             else throw new InvalidOperationException("Never been here.");
 

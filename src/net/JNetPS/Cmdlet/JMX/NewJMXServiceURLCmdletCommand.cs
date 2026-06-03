@@ -17,6 +17,7 @@
 */
 
 using Javax.Management.Remote;
+using MASES.JCOBridge.C2JBridge;
 using MASES.JNet.PowerShell.Cmdlet;
 using System;
 using System.Management.Automation;
@@ -59,18 +60,18 @@ namespace MASES.JNet.PowerShell.Cmdlet.JMX
             JMXServiceURL result;
             if (HostName == null)
             {
-                result = new JMXServiceURL(ServiceURLOrProtocol);
+                result = JVMBridgeBase.New<JMXServiceURL>(ServiceURLOrProtocol);
             }
             else
             {
                 if (!Port.HasValue) throw new ArgumentException("If HostName is set, Port must be set too.", "Port");
                 if (UrlPath != null)
                 {
-                    result = new JMXServiceURL(ServiceURLOrProtocol, HostName, Port.Value, UrlPath);
+                    result = JVMBridgeBase.New<JMXServiceURL>(ServiceURLOrProtocol, HostName, Port.Value, UrlPath);
                 }
                 else
                 {
-                    result = new JMXServiceURL(ServiceURLOrProtocol, HostName, Port.Value);
+                    result = JVMBridgeBase.New<JMXServiceURL>(ServiceURLOrProtocol, HostName, Port.Value);
                 }
             }
 

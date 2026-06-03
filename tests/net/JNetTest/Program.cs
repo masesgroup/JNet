@@ -402,7 +402,7 @@ namespace MASES.JNetTest
         {
             System.Console.WriteLine("TestArrays");
 
-            ArrayList<int[]> arr = new();
+            ArrayList<int[]> arr = JVMBridgeBase.New<ArrayList<int[]>>();
             arr.Add(new int[] { 0, 1 });
 
             ArrayList<int> arr1 = new();
@@ -411,7 +411,7 @@ namespace MASES.JNetTest
             ArrayList<string> arr2 = new();
             arr2.Add("a");
 
-            ArrayList<Java.Lang.String> arr3 = new();
+            ArrayList<Java.Lang.String> arr3 = JVMBridgeBase.New<ArrayList<Java.Lang.String>>();
             arr3.Add("a");
             arr3.Add("b");
 
@@ -442,7 +442,7 @@ namespace MASES.JNetTest
                 throw new System.Exception($"Compare of \"{StringA}\" failed");
             }
 
-            Java.Lang.String strB = new String(StringB);
+            Java.Lang.String strB = JVMBridgeBase.New<String>(StringB);
             if (strB != StringB)
             {
                 throw new System.Exception($"Compare of \"{StringB}\" failed");

@@ -17,6 +17,8 @@
 */
 
 using Javax.Management;
+using Javax.Management.Remote;
+using MASES.JCOBridge.C2JBridge;
 using MASES.JNet.PowerShell.Cmdlet;
 using System.Management.Automation;
 
@@ -29,7 +31,7 @@ namespace MASES.JNet.PowerShell.Cmdlet.JMX
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            AttributeChangeNotificationFilter listener = new AttributeChangeNotificationFilter();
+            AttributeChangeNotificationFilter listener = JVMBridgeBase.New<AttributeChangeNotificationFilter>();
             WriteObject(listener);
         }
     }
