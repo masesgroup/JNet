@@ -48,6 +48,14 @@ namespace MASES.JNet.Specific.Extensions
             }
             return varArgs.ToArray();
         }
+        /// <summary>
+        /// Disposes the result of an operation if it is not needed for other purposes
+        /// </summary>
+        /// <param name="obj">The <see cref="object"/> to use for <see cref="IDisposable"/> interface identification</param>
+        public static void DisposeIfDisposable(this object obj)
+        {
+            if (obj is IDisposable disposable) disposable.Dispose();
+        }
 
         /// <summary>
         /// Retrieve the <see cref="Java.Lang.Class{TClass}"/> from the <typeparamref name="TClass"/>
